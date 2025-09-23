@@ -1,0 +1,144 @@
+<!--
+    * Please find the below iframe, change its src to your real Docs URL 
+-->
+<html>
+<script src='api.js'></script>
+<script>
+    var loaded = false;
+    function onIFrameload(e){
+        var iframe = document.getElementById("iDocsFrame");
+        setTimeout(function(){
+            loaded = true;
+            console.info("iframe loaded");
+            DocumentApp.registerIDocsWindow(iframe.contentWindow);
+            DocumentApp.getDocType(checkDocument);
+            document.getElementById("buttons").style.visibility = "visible";
+            document.getElementById("buttons2").style.visibility = "visible";
+        }, 1 * 1000);
+    }
+    function checkDocument(type) {
+    	if (type != "text")
+    		alert("It is not one word document");
+    }
+    function getSelectedTextInScope()
+    {
+    	DocumentApp.execCommand("getSelectedTextInScope", ["paragraph"], function(data){
+            console.info(data)
+        });
+    }
+    function selectTextInScope()
+    {
+    	DocumentApp.execCommand("selectTextInScope", ["paragraph", "self"], function(data){
+            console.info(data)
+        });
+    }
+    function selectTextInScope2()
+    {
+    	DocumentApp.execCommand("selectTextInScope", ["paragraph", "nextSibling"], function(data){
+            console.info(data)
+        });
+    }
+    function setTextInScope()
+    {
+    	DocumentApp.execCommand("setTextInScope", ["My Text", "paragraph"], function(data){
+            console.info(data)
+        });
+    }
+    
+    var listenerEventId = null;
+    function addListener()
+    {
+        this.removeListener();
+        var name = "IDOCS.EVENT.selectionChange";
+        listenerEventId = DocumentApp.addListener(name, function(){
+            console.info(name + " happens")
+        });
+    }
+    function removeListener()
+    {
+        if (listenerEventId)
+            DocumentApp.removeListener(listenerEventId)
+    }
+    
+    function getDocumentName() {    	
+    	DocumentApp.getName(function(name){
+    		console.info("file name: " + name);
+    	});
+    }
+    
+    var body = DocumentApp.getBody();
+    var activePara;
+    var lastPara;
+    function getParagragh() {
+    	body.getParagraphs(function (paras) {
+    		activePara = paras[0];
+    		console.info("active paragraph " + activePara.id);
+    	});
+    }
+    
+    function getParagraghText() {
+    	activePara.getText(function (str) {
+    		console.info(str);
+    	});
+    }
+    
+    function setParagraghText() {
+    	var paraStr = "A paragraph is a collection of related sentences dealing with a single topic.";
+    	activePara.setText(paraStr, function (data) {
+    		console.info(data.detail);
+    	});
+    }
+    
+    function setCursor() {
+    	var pos = new Position(activePara, 12);
+    	DocumentApp.setCursor(pos);
+    }
+
+ 	function insertText() {
+ 		DocumentApp.getCursor(function (pos) {
+ 			pos.insertText("(the fundamental unit of composition)");
+ 		})
+    }
+
+ 	function appendParagraph() {
+ 		var str = "A new paragraph is appended here.";
+ 		body.appendParagraph(str, function (para) {
+ 			lastPara = para;
+    	});
+    }
+ 	
+ 	function setSelection() {
+    	var start = new Position(activePara , 12);
+    	var end = new Position(lastPara , 5);
+    	var range = new DocumentApp.Range(start, end);
+    	DocumentApp.setSelection(range);
+    }
+ 	
+ 	function publish() {
+ 		DocumentApp.save();
+    }
+</script>
+
+<body>
+    <div id='buttons' style='visibility:hidden;padding:10px 0 10px 0'>
+        <button onclick='getSelectedTextInScope()'>getSelectedTextInScope</button>
+        <button onclick='selectTextInScope()'>selectTextInScope</button>
+        <button onclick='selectTextInScope2()'>selectTextInScope::next para</button>
+        <button onclick='setTextInScope()'>setTextInScope</button>
+        <button onclick='addListener()'>listen IDOCS.EVENT.selectionChange</button>
+        <button onclick='removeListener()'>removeListener</button>
+        <button onclick='publish()'>publish</button>
+    </div>
+    <div id='buttons2' style='visibility:hidden;padding:10px 0 10px 0'>
+   		<button onclick='getParagragh()'>getParagragh</button>
+   		<button onclick='getParagraghText()'>getParagraghText</button>
+   		<button onclick='setParagraghText()'>setParagraghText</button>
+    	<button onclick='setCursor()'>setCursor</button>
+        <button onclick='insertText()'>insertText</button>
+        <button onclick='appendParagraph()'>appendParagraph</button>    
+        <button onclick='setSelection()'>setSelection</button>         
+    </div>
+    <iframe id='iDocsFrame' onload="onIFrameload(event)" width="100%" height="800px" style='display:block' src="http://localhost:9080/docs/app/doc/concord.storage/test.docx/edit/content"></iframe>
+</body>
+
+</html>

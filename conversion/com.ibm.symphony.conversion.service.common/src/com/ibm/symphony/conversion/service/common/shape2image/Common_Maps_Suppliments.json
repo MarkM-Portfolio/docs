@@ -1,0 +1,29 @@
+{
+	"ODF-Map":{
+	  "style:border-line-width":"border-width",
+      "style:border-line-width-left":"border-left-width",
+      "style:border-line-width-right":"border-right-width",
+      "style:border-line-width-top":"border-top-width",
+      "style:border-line-width-bottom":"border-bottom-width",
+      "style:font-family-asian":"font-family",
+      "style:font-family-complex":"font-family",
+	  "style:text-underline-style":"text-decoration",
+	  "style:text-overline-style":"text-decoration",
+	  "style:text-line-through-style":"text-decoration",
+	  "table:table-column":"col",
+	  "style:paragraph-properties":"p",
+	  "text:list-style":"ul",
+	  "text:list-level-style-bullet":"li", 
+	  "style:width":"width",
+	  "svg:title":"div",
+	  "svg:desc":"div",
+	  "svg:stroke-color":"border-color"
+	},
+	"Html-Map":{
+	  "left":"svg:x",
+	  "top":"svg:y",
+	  "width":"svg:width",
+	  "height":"svg:height",
+	  "img":"draw:image"
+	}
+}

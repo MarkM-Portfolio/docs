@@ -1,0 +1,34 @@
+<!--
+
+ IBM Confidential
+
+ Copyright IBM Corp. 2012
+ The source code for this program is not published or otherwise
+ divested of its trade secrets, irrespective of what has been
+ deposited with the U.S. Copyright Office.
+-->
+<project name="Concord_Pseudo" default="rpx_build" basedir=".">
+	<description>Pseudo translate concord javascript resource</description> 
+	<property environment="env" /> 
+	
+	<property name="langs" value="zh ja ru el tr fr pl de" />
+	
+	<path id="rpx.specific.classpath">
+		<pathelement location="${rpx.path}/rpx.jar}"/>
+		<fileset dir="${rpx.path}">
+			<include name="**/*.jar" /> 
+		</fileset>
+	</path>
+
+	<taskdef name="fullwidth" classname="com.ibm.rpx.ant.FullWidthPseudoTranslation" classpathref="rpx.specific.classpath" /> 
+	<target name="rpx_build" description="Runs RPX class to do pseudo translation">
+		<echo message="Runs RPX class to do pseudo translation" />
+		<fullwidth classpath="${rpx.path};${rpx.path}/rpx.jar;${ant.path}/ant.jar;${env.CLASSPATH}"> 
+			<fileset dir="${piisrcdir}">
+				<include name="**/*.js" /> 
+				<include name="**/*.html" /> 
+			</fileset>
+		</fullwidth>
+	</target>
+	
+</project>

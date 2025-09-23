@@ -1,0 +1,644 @@
+.track_change_pane
+{
+	padding: 15px 20px;
+    font-size: 13px;
+}
+
+.track_change_pane > .head
+{
+    font-size: 14px;
+	color: #292929;
+    font-weight: bold;
+}
+
+.track_change_pane > .head2
+{
+	font-size: 18px;
+	color: #325c80;
+}
+
+.track_change_pane > .head2 .head
+{
+	display: inline-block;
+}
+
+.track_change_pane > .head2 .number
+{
+	font-size: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.track_change_pane > .head2 .acceptall
+{
+    position: absolute;
+    top: 20px;
+    left: 85%;
+    right: auto;
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+    display: inline-block;
+    background-image: url("../document/img/clearchangesu.png") !important;
+    background-repeat: no-repeat;
+    margin-top: 18px;
+}
+.dj_a11y .track_change_pane > .head2 .acceptall
+{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    height: 16px;
+    width: auto;
+    z-index: 2;
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.track_change_pane > .head2 .acceptall:hover
+{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 85%;
+    right: auto;
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+    display: inline-block;
+    background-image: url("../document/img/clearchangesh.png") !important;
+    background-repeat: no-repeat;
+    margin-top: 18px;
+    border: 1px solid #999999 !important;
+}
+
+.dj_a11y .track_change_pane > .head2 .acceptall:hover
+{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    height: 16px;
+    width: auto;
+    z-index: 2;
+    display: inline-block;
+    margin-top: 18px;
+    border: 1px solid #999999 !important;
+}
+
+.dj_a11y .track_change_pane > .head2 .acceptall .acceptall_high_contrast
+{
+    display: block;
+    font-size: 13px;
+    height: 100%;
+    line-height: 120%;
+    text-align: center;
+    width: 100%;
+}
+.track_change_pane > .head2 .acceptall .acceptall_high_contrast
+{
+    display: none;
+}
+
+.track_change_pane > .time
+{
+    font-size: 12px;
+    color: #676767 !important;
+    text-decoration: none !important;
+}
+
+.track_change_pane .avatarsWrapper
+{
+    position: relative;
+}
+
+.track_change_pane .avatarsArrow
+{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 14px;
+    cursor: pointer;
+}
+
+.track_change_pane .autoHeight .avatars 
+{
+    height: auto;
+}
+
+.track_change_pane .avatars 
+{
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 3px 0;
+    max-height: 90px;
+}
+
+.avatars .initial_name .initial_name_ch {
+    cursor: pointer;
+}
+
+.track_change_pane .avatars .avatar{
+    display: inline-block;
+    position: relative;
+    padding-right: 6px;
+    margin-bottom: 8px;
+}
+
+.track_change_pane .timeIcon
+{
+    margin-left: 4px;
+}
+
+.track_change_pane .slider
+{
+    position: relative;
+}
+
+.track_change_time_tooltip
+{
+    z-index: 2000;
+    color: white;
+    position: relative;
+    outline: none !important;
+}
+
+.track_change_time_tooltip .anchor
+{
+    position: absolute;
+    width: 5px !important;
+    height: 5px !important;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    position: absolute;
+    top: 0 !important;
+    display: inline-block !important; 
+}
+
+.track_change_time_tooltip .anchor:after
+{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-100px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 120px solid #4679BD;
+}
+.dj_a11y .track_change_time_tooltip .anchor:after
+{
+    display: none;
+}
+
+.track_change_time_tooltip.red .anchor:after
+{
+    border-bottom: 120px solid #ee0000;;
+}
+
+.dj_a11y .track_change_time_tooltip.red .anchor:after
+{
+	display: none;
+}
+
+.track_change_time_tooltip .content
+{
+    font-size:12px;
+    position: relative;
+    background: #4178be;
+    padding: 1px 3px;
+    margin-top: 5px;
+}
+
+.track_change_time_tooltip.red .content
+{
+    background: #ee0000;
+}
+
+.track_change_time_chooser
+{
+    height: 2px;
+    position: relative;
+    margin: 16px 4px 35px 3px;
+}
+
+.track_change_time_chooser .line
+{
+     position: absolute;
+     background: #d5d5d5;
+     height: 2px;
+     margin-top:2px;
+     z-index:1;
+}
+
+.track_change_time_chooser .line.selected
+{
+    background: #4178be;
+}
+
+.dj_a11y .track_change_time_chooser .line
+{
+     position: absolute;
+     background: #d5d5d5;
+     height: 4px;
+     margin-top:2px;
+     z-index:1;
+     border: 1px solid;
+     box-sizing: border-box;
+}
+
+.dj_a11y .track_change_time_chooser .line.selected
+{
+    border: 2px solid;
+}
+
+.track_change_time_chooser .dotWrapper
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    z-index: 2;
+    top: -6px;
+    margin-left: -6px;
+}
+
+.track_change_time_chooser .dot
+{
+    margin: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: WHITE;
+    box-shadow: 0 0 0 2px #d5d5d5;
+    margin: 5px auto 0 auto;
+}
+
+.dj_a11y .track_change_time_chooser .dot
+{
+    margin: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 5px auto 0 auto;
+    box-sizing: border-box;
+    border: 2px solid;
+}
+
+.track_change_time_chooser .dot_now .dot
+{
+    background: #4178be;
+    box-shadow: 0 0 0 2px #4178be;
+}
+
+.dj_a11y .track_change_time_chooser .dot_now .dot
+{
+    border: 6px solid;
+}
+
+.track_change_time_chooser .dotWrapper:hover .dot_red,
+.track_change_time_chooser .dotWrapper.covered .dot_red
+{
+     box-shadow: 0 0 0 2px #ee0000;;
+     cursor: pointer;
+}
+
+.track_change_time_chooser .selected .dot_red
+{
+    background: #ee0000;;
+    box-shadow: 0 0 0 2px #ee0000;;
+}
+.dj_a11y .track_change_time_chooser .selected .dot_red
+{
+    border: 6px solid;
+}
+
+.track_change_time_chooser .dotWrapper:hover .dot_blue,
+.track_change_time_chooser .dotWrapper.covered .dot_blue
+{
+     box-shadow: 0 0 0 2px #4178be;
+     cursor: pointer;
+}
+.track_change_time_chooser .selected .dot_blue
+{
+    background: #4178be;
+    box-shadow: 0 0 0 2px #4178be;
+}
+.dj_a11y .track_change_time_chooser .selected .dot_blue
+{
+    border: 6px solid;
+}
+
+.track_change_time_chooser .selected .dot_now
+{
+    background: #4178be;
+    box-shadow: 0 0 0 2px #4178be;
+}
+
+.track_change_pane .list
+{
+	padding-bottom: 4px;
+    position: relative;
+    overflow: auto;
+    min-height: 30px;
+}
+
+.track_change_pane .list .refresh_button{
+    position: absolute;
+    top: 0px;
+    background-color: #F0634F;
+    padding: 3px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: white;
+}
+
+.track_change_pane .list.empty
+{
+	border-top: 0px solid grey;
+}
+
+.track_change_pane .list .action
+{
+    padding: 10px 10px 10px 6px;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: pink;
+    background: white;
+    position: static;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.track_change_pane .list .action
+{
+    margin-top: 10px;
+    position: relative;
+}
+
+/* anim for first 10 actions, performance */
+/*
+.track_change_pane .list div > .action.fresh.anim:nth-child(-n+10)
+{
+    -webkit-animation: fadein 1s; 
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    animation: fadein 1s
+}
+*/
+
+.track_change_pane .list .action.fresh:after
+{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #ee0000;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.track_change_pane .action .avatar
+{
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+
+.track_change_pane .avatar .unified_editor
+{
+    margin-bottom: 0;
+    top: 4px;
+    left: 4px;
+}
+
+.track_change_pane .avatar .count
+{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #676767;
+    color: #676767;
+    background: white;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    right: -1px;
+    top: -3px;
+    font-size: 12px;
+}
+
+.track_change_pane .avatar .unified_editor .initial_name_bg
+{
+    border-radius: 50%;
+    border: 1px solid rgb(241, 241, 241);
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+.track_change_pane .avatars .avatar .unified_editor .initial_name_bg
+{
+    opacity: 1;
+    filter: none;
+}
+
+.track_change_pane .list .avatar .unified_editor .initial_name_bg
+{
+    border: 0px;
+    position: relative;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+}
+
+.track_change_pane .avatars .avatar .unified_editor .default_photo_base > img
+{
+    border: 2px solid rgb(241, 241, 241);
+    cursor: pointer;
+}
+
+.track_change_pane .avatar .unified_editor .default_photo_base > img
+{
+    border-radius: 50%;
+}
+
+.track_change_pane .action .userTypeTime
+{
+    margin-left: 46px;    
+}
+
+.track_change_pane .action .userNameWrapper.image .imageTable
+{
+    width: 18px;
+    height: 18px;
+    float:right;
+    background: url(img/insert_image.png)
+}
+
+.track_change_pane .action .userNameWrapper.table .imageTable
+{
+    width: 18px;
+    height: 18px;
+    float:right;
+    background: url(img/insert_table.png)
+}
+
+.track_change_pane .action .userName
+{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.track_change_pane .action .typeTime
+{
+    display: block;   
+    font-size: 13px;
+    color: #292929;
+    font-weight: bold;
+}
+
+.track_change_pane .action .typeTime .time
+{
+    color: #676767;
+    font-weight: normal;
+}
+
+.track_change_pane .action .desc
+{
+    margin-top: 10px;
+}
+
+.track_change_pane .list .action .del_txt
+{
+	text-decoration: line-through
+}
+
+.track_change_pane .list .action .ins_txt
+{
+}
+
+.track_change_pane .list .action .crt_tbl
+{
+	display: block;
+}
+
+.track_change_pane .list .action .del_tbl
+{
+	text-decoration: line-through;
+	display: block;
+}
+
+.track_change_pane .list .action .crt_para
+{
+    
+}
+
+.track_change_pane .list .action .mge_para
+{
+	text-decoration: line-through;
+}
+
+.track_change_pane .list .action .del_large_text
+{
+	font-weight: normal;
+	font-size: 13px;
+}
+
+body.dijitRtl #track_change_unread_div 
+{
+    left: -2px;
+}
+
+body.dijitRtl .track_change_pane 
+{
+    text-align: right;
+}
+
+body.dijitRtl .track_change_pane > .head2 .acceptall 
+{
+    left: auto;
+    right: 85%;
+}
+
+body.dijitRtl .track_change_pane > .head2 
+{
+    direction: rtl;
+}
+
+body.dijitRtl .track_change_pane > .head2 .number 
+{
+    margin-left: 10px;
+}
+
+body.dijitRtl .track_change_pane .avatars 
+{
+    direction: rtl;
+}
+
+body.dijitRtl .track_change_pane .avatar .count 
+{
+    left: -1px;
+}
+
+body.dijitRtl .track_change_time_chooser .dotWrapper 
+{
+    margin-right: -6px;
+    direction: rtl;
+}
+
+body.dijitRtl .track_change_pane .list 
+{
+    direction: rtl;
+}
+
+body.dijitRtl .track_change_pane .action .avatar 
+{
+    float: right;
+}
+
+body.dijitRtl .track_change_pane .action .userTypeTime 
+{
+    margin-right: 46px;
+}
+
+body.dijitRtl .track_change_pane .list .action.fresh:after 
+{
+    left: 0;
+    right: auto;
+    transform: scaleX(-1);
+}
+
+body.dijitRtl .track_change_pane .list .action 
+{
+    border-left: initial;
+    border-right: 4px solid pink;
+    padding: 10px 6px 10px 10px;
+}
+
+body.dijitRtl .track_change_time_tooltip 
+{
+    direction: rtl;
+}

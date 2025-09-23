@@ -1,0 +1,153 @@
+/*styles for title page title element*/
+.Bluewaves-title p
+{
+	text-align:left;
+}
+.Bluewaves-title {
+	/*font-size:45pt;*/
+	font-size:2.5em;
+	font-family:Arial;
+	color:#ffffff;
+}
+.Bluewaves-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+}
+.Bluewaves-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Bluewaves-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Bluewaves-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Bluewaves-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:left;
+	text-indent:0cm;
+}
+.Bluewaves-subtitle {
+	/*font-size:36pt;*/
+	font-size:2em;
+	font-family:Arial;
+	color:#FFFFFF;
+}
+.Bluewaves-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+}
+.Bluewaves-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Bluewaves-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Bluewaves-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.concord .Bluewaves-datetime {
+	font-family:Arial;
+	color:#ffffff;
+	text-align:left;	
+}
+.concord .Bluewaves-pagenumber {
+	font-family:Arial;
+	color:#ffffff;
+	text-align:right;
+}
+.concord .Bluewaves-footer {
+	font-family:Arial;
+	color:#ffffff;
+	text-align:center;
+}
+.Bluewaves_default {
+	/*font-size:44pt;*/
+	/*font-size:2em;*/
+	font-family:Arial;
+	color:#ffffff;
+}
+/*styles for other page (non title page) title */
+.Bluewaves_text-title p
+{
+	text-align:center;
+}
+.Bluewaves_text-title {
+	/*font-size:36pt;*/
+	font-size:2em;
+	font-family:Arial;
+	color:#ffffff;
+}
+.Bluewaves_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+		text-align:center;
+}
+.Bluewaves_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Bluewaves_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Bluewaves_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Bluewaves_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Bluewaves_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Bluewaves_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Bluewaves_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Bluewaves_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Bluewaves_text-outline1 {
+	/*font-size:25.2pt;*/
+	font-size:1.4em;
+	font-family:Arial;
+	color:#ffffff;
+}
+
+body.lotusJapanese .Bluewaves-title, body.lotusJapanese .Bluewaves-subtitle,body.lotusJapanese .Bluewaves_default, body.lotusJapanese .Bluewaves_text-title,body.lotusJapanese  .Bluewaves_text-outline1{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+body.lotusKorean .Bluewaves-title, body.lotusKorean .Bluewaves-subtitle, body.lotusKorean .Bluewaves_default, body.lotusKorean .Bluewaves_text-title,body.lotusKorean .Bluewaves_text-outline1{
+    font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}

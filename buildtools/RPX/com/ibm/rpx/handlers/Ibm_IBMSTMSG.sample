@@ -1,0 +1,6 @@
+>>> 06900
+It is forbidden to modify an existing class attribute.
+>>> 06700
+"$1" class does not belong to the "$2" class.
+>>> 06800
+"$1" attribute already exists in "$2" class (leaf class of "$3").

@@ -1,0 +1,665 @@
+body{
+	overflow: hidden;
+}
+
+#print{
+	display: none;
+}
+
+p.viewerVersionContent{
+	float: right;
+	color: #ffffff;	
+	margin-top: 0px;
+}
+
+.pres_toolbar .normalModeIcon, .text_toolbar .normalModeIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px 0px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.pres_toolbar .normalPlayIcon, .text_toolbar .normalPlayIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -16px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.pres_toolbar .dijitButtonDisabled .normalPlayIcon, .text_toolbar .dijitButtonDisabled .normalPlayIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -474px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.zoomInIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -51px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.dijitButtonDisabled .zoomInIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -67px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.zoomOutIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -85px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.dijitButtonDisabled .zoomOutIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -101px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.fitWidthIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -32px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.helpButtonIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -186px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.helpButtonIcon_ar{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -512px !important;
+	background-repeat: no-repeat;	
+	height: 16px;
+    width: 16px;
+}
+.printIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -220px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.dijitButtonDisabled .printIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -456px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+div.thumbnailPicker {
+	overflow-y: scroll; 
+	background: #ffffff;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	display: block;
+	position: absolute !important;
+}
+
+.thumbnailPicker table {
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 2px;
+}
+
+.thumbnailPicker td{
+	vertical-align: top;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-weight: bold;
+	border: 0px;
+}
+
+.thumbnailPicker tr{
+	border: 0px;
+	padding: 0px;
+}
+
+.oneui30 .thumbnailPicker img{
+	border: 1px solid #c0c0c0;
+}
+
+.thumbnailPicker .imageUnload div.thumbnailImagePlaceHolder{
+	border: 1px solid #c0c0c0;
+	display: block;
+}
+
+.thumbnailPicker .imageLoaded div.thumbnailImagePlaceHolder{
+	display: none;
+}
+
+.thumbnailPicker .selected img, .thumbnailPicker .selected div.thumbnailImagePlaceHolder{
+	border: 5px solid #c0c0c0; 
+}
+
+.thumbnailPicker .imageUnload div.thumbnailImagePlaceHolder{
+	display: block;
+}
+
+.imageLoadErr div.thumbnailImagePlaceHolder{
+	border: 1px solid #c0c0c0;
+	display: block;
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -492px !important;
+	background-repeat: no-repeat;	
+}
+
+.thumbnailPicker td.selected{
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.thumbnailPicker .hover img, .thumbnailPicker .hover div.thumbnailImagePlaceHolder{
+	border: 2px solid #c0c0c0; 
+}
+
+.thumbnailPicker td.hover{
+	padding-top: 8px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+.pagePicker{
+	font-weight: bold;
+}
+
+.pagePicker .prevButton{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -119px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;	
+}
+.dijitRtl .pagePicker .prevButton{
+	background-position: -24px -151px !important;
+}
+
+.pagePicker .dijitButtonDisabled .prevButton{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -135px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;	
+}
+.dijitRtl .pagePicker .dijitButtonDisabled .prevButton{
+	background-position: -24px -167px !important;
+}
+.pagePicker .nextButton{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -151px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;	
+}
+.dijitRtl .pagePicker .nextButton{
+	background-position: -24px -119px !important;
+}
+.pagePicker .dijitButtonDisabled .nextButton{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -167px !important;
+	background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;	
+}
+.dijitRtl .pagePicker .dijitButtonDisabled .nextButton{
+	background-position: -24px -135px !important;
+}
+div.pagePicker{
+	text-align: center;
+	overflow: hidden;	
+	vertical-align:middle;
+}
+
+.pagePicker div.pageInput{
+	width: 30px;
+}
+
+.pageIndicator{
+	text-align: center;
+	overflow: hidden;	
+	vertical-align:middle;
+	color: white;
+	opacity: 1;
+	background-color: #000;
+  	width: 60px;
+  	height: 26px;
+  	top: 40px;
+  	position: absolute !important;
+  	line-height: 26px
+}
+
+div.normalContentContainer{
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: block;
+	position: absolute !important;
+	overflow: auto;
+}
+
+div.normalMarginContainer{
+	margin: 3px;
+	position: absolute !important;
+	display: block;
+}
+
+div.normalImageWrapper{
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: block;
+	position: absolute !important;
+	border: 1px solid #000000;
+}
+
+div.normalImageWrapper.imageLoadErr{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -492px !important;
+	background-repeat: no-repeat;	
+}
+
+/*
+div.normalContentPlaceHolder{
+	background-image: url(../../../images/loading32.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+*/
+
+div.continuousContainer{
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: block;
+	position: absolute !important;
+	overflow: auto;
+}
+
+table.continuousViewTable{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.continuousViewTable td{
+	padding: 3px;	
+}
+
+.oneui30 .continuousViewTable img{
+	border: 1px solid #000000;
+}
+
+.oneui30 .imageUnload img, .imageLoadErr img{
+	display: none;
+}
+
+.continuousViewTable .imageUnload div.contentImagePlaceHolder{
+	border: 1px solid #000000;
+	display: block;
+}
+
+.continuousViewTable div.contentImagePlaceHolder{
+	display: none;
+}
+
+.continuousViewTable .imageLoadErr div.contentImagePlaceHolder{
+	border: 1px solid #000000;
+	display: block;
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -492px !important;
+	background-repeat: no-repeat;	
+}
+.sizeSelector{
+	width:80px;
+	margin-top:3px;
+	margin-bottom:3px;
+	margin-left:5px;
+	margin-right:10px;
+	padding-left:2px;
+}
+.zoomerContainer{
+	width:200px;
+}
+
+.viewerDialogBold {
+font-weight:bold !important;
+}
+
+
+.reloadIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -244px !important;
+	background-repeat: no-repeat;
+	height: 16px;
+    width: 16px;
+}
+
+.thumbnailPicker .imageUnload .ContentReloadButton{
+	display: none;
+}
+
+.normalImageWrapper .ContentReloadButton{
+	display: none;
+}
+
+[preferredBtnSize="16"] .reloadIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -24px -242px !important;
+	background-repeat: no-repeat;
+	height: 16px;
+    width: 16px;
+}
+
+[preferredBtnSize="24"] .reloadIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -20px -262px !important;
+	background-repeat: no-repeat;
+	height: 24px;
+    width: 24px;
+}
+
+[preferredBtnSize="32"] .reloadIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -16px -294px !important;
+	background-repeat: no-repeat;
+	height: 32px;
+    width: 32px;
+}
+
+[preferredBtnSize="48"] .reloadIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: -8px -334px !important;
+	background-repeat: no-repeat;
+	height: 48px;
+    width: 48px;
+}
+
+[preferredBtnSize="64"] .reloadIcon{
+	background-image: url(../../../images/viewer/viewer_icons.png);
+	background-position: 0 -388px !important;
+	background-repeat: no-repeat;
+	height: 64px;
+    width: 64px;
+}
+.normalContentContainer .ContentReloadButton, .continuousContainer .ContentReloadButton{
+	display: none;
+}
+
+.normalContentContainer .imageLoadErr .ContentReloadButton, .continuousContainer .imageLoadErr .ContentReloadButton{
+	display: block;
+}
+
+.ContentReloadButton{
+	margin-top: 5px;
+}
+
+.dlg_progress_processing{
+	background-image: url('../../../images/loading32.gif');
+	width:32px;
+	height:32px;
+	background-repeat:no-repeat;
+}
+
+.dijitDialogPaneActionBarWithoutAction{
+	border-style: none;
+}
+
+.oneui30 .dijitButton .dijitButtonNode.lotusBtn{
+	margin: 0px;
+}
+.loaded{
+	margin:1px;
+}
+
+.navNoHover {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: 16px;
+    z-index: 1;
+    cursor: pointer;
+}
+.navInner{
+    padding-left: 3px !important;
+}
+.back_button_div
+{
+	float: left;
+	margin: 1px 2px 1px 6px;
+	width: 16px;
+	height: 30px;
+	
+}
+
+.navHover
+{
+	-moz-border--radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: inset 0 1px 4px rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.15);
+	-webkit-box-shadow: inset 0 1px 4px rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.15);
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.15);
+	background: -moz-linear-gradient(top, rgba(0,0,0,.3), rgba(0,0,0,.5));
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,.5))); 
+	background: -webkit-linear-gradient(top, rgba(0,0,0,.3), rgba(0,0,0,.5));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4B000000', endColorstr='#7F000000', GradientType=1);
+	background: -ms-linear-gradient(top, rgba(0,0,0,.3), rgba(0,0,0,.5)); 
+	background: linear-gradient(top, rgba(0,0,0,.3), rgba(0,0,0,.5));
+	 
+}
+.editBtn
+{
+	padding:1px !important;
+}
+.cloud_text_icon
+{
+	height: 24px !important;
+	width: 24px !important;
+	top: 0px !important;
+	float: left !important;
+	margin-right: 5px !important;
+	background-image: none !important;
+	display: block !important;
+}
+/****************************************************************/
+/*
+#T_Actions .lotusBtn.dijitButtonNode {
+    background-color: #767676;
+    background-image: linear-gradient(to bottom, #767676 0%, #484848 100%);
+}
+*/
+#T_Actions .lotusBtn.dijitButtonNode {
+    background-color: #222222 !important;
+    background-image: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border: 0 none;  
+    color: #FFFFFF;
+    margin: -1px;
+    outline: medium none;
+    padding: 8px 18px;
+}
+
+#a_page_down,#a_page_up,#a_zoomOut,#a_fitWidth,#a_zoomIn,#a_slide_show {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border-left: medium none !important;
+    padding: 0px !important;
+}
+
+#a_page_down .dijitButton, #a_page_up .dijitButton,#a_zoomOut .dijitButton,#a_fitWidth .dijitButton,#a_zoomIn .dijitButton, #a_slide_show .dijitButton{
+	margin: 0;
+}
+	
+#a_page_down .lotusBtn.dijitButtonNode, #a_page_up .lotusBtn.dijitButtonNode, #a_zoomOut .lotusBtn.dijitButtonNode, #a_fitWidth .lotusBtn.dijitButtonNode, #a_zoomIn .lotusBtn.dijitButtonNode, #a_slide_show .lotusBtn.dijitButtonNode{
+	padding: 3px 8px !important;
+}
+
+div[dir="rtl"] #a_page_down, div[dir="rtl"] #a_slide_show {
+	margin: 0 0 0 7px !important;
+}	
+
+.pageUpIcon {
+    background-image: url("../../../images/pageup.png");
+    background-repeat: no-repeat;
+	background-position: center;
+    height: 20px;
+    width: 20px;
+}
+.pageDownIcon {
+    background-image: url("../../../images/pagedown.png");
+    background-repeat: no-repeat;
+	background-position: center;
+    height: 20px;
+    width: 20px;
+}
+.slideShowIcon {
+    background-image: url("../../../images/play.png");
+    background-repeat: no-repeat;
+	background-position: center;
+    height: 20px;
+    width: 20px;
+}
+.dijitRtl .slideShowIcon {
+	transform: rotate(180deg);
+}
+.zoomInIcon1 {
+    background-image: url("../../../images/zoom_in.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+	background-position: center;
+}
+.dijitButtonDisabled .zoomInIcon1 {
+    background-image: url("../../../images/zoomin.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;
+	background-position: center;
+}
+.zoomOutIcon1 {
+    background-image: url("../../../images/zoom_out.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+	background-position: center;
+}
+.dijitButtonDisabled .zoomOutIcon1 {
+    background-image: url("../../../images/zoomout.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;
+	background-position: center;
+}
+.fitWidthIcon1 {
+    background-image: url("../../../images/restore_default.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 23px;
+	background-position: center;
+}
+.overlay {
+    filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity:0.85;
+	display:block;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:998;
+	height:100%;
+	background-color:#000
+}
+
+
+body {
+	background: none transparent;
+}
+
+body.compactMode{
+	background: none transparent;
+}
+
+.compactMode #a_page_down .dijit .lotusBtn.dijitButtonNode,
+.compactMode #a_page_up .lotusBtn.dijitButtonNode,
+.compactMode #a_zoomOut .lotusBtn.dijitButtonNode,
+.compactMode #a_fitWidth .lotusBtn.dijitButtonNode,
+.compactMode #a_zoomIn .lotusBtn.dijitButtonNode,
+.compactMode #a_slide_show .lotusBtn.dijitButtonNode {
+   background: rgba(0, 0, 0, 0.75) !important;
+   width: 33px;
+   height: 40px;
+}
+
+.dj_ie8 .compactMode #T_Actions {
+   filter: alpha(opacity=75);
+}
+
+.compactMode #T_Actions .lotusBtn.dijitButtonNode {
+   margin: 0;   
+}
+
+.compactMode .dijitButton .dijitButtonNode {
+   border-radius: 0;   
+}
+
+.compactMode #a_page_down .dijitButtonContents,
+.compactMode #a_page_up .dijitButtonContents,
+.compactMode #a_zoomOut .dijitButtonContents,
+.compactMode #a_fitWidth .dijitButtonContents,
+.compactMode #a_zoomIn .dijitButtonContents {
+   position: relative;
+   top: 11px;
+}
+
+/* Only needed because the Play icon is not centered */
+.compactMode #a_slide_show .dijitButtonContents {
+   position: relative;
+   top: 11px;
+   left: 3px;
+}
+
+.compactMode #T_PageIndicator {
+   background-color: rgba(0, 0, 0, 0.6);
+   font-weight: bold;
+   padding: 6px 10px;
+}
+
+.dj_ie8 .compactMode #T_PageIndicator {
+   background-color: rgb(36, 36, 36);
+}

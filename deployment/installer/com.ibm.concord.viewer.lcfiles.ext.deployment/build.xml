@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.concord.viewer.lcfiles.ext.deployment" basedir="." default="ext.deploy">
+	<property name="installer.dir" value="installer"/>
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${bin.dir}/classes"/>
+
+	<target name="ext.deploy">
+		<mkdir dir="${build.home}/ext/installer"/>
+		<copy todir="${build.home}/ext/installer">
+			<fileset dir="${installer.dir}" includes="**/*"/>
+		</copy>
+		<echo file="${build.home}/ext/installer/version.txt">
+	        {
+	            "component_name" : "File Viewer", 
+	            "build_version" :  "${build.version}" ,
+	            "build_timestamp" : "${build.timestamp}" 
+	        }
+		</echo>
+
+		<mkdir dir="${build.home}/ext/installer/Python"/>
+		<unzip src="Python273.zip" dest="${build.home}/ext/installer/Python"></unzip>
+  </target>
+</project>
+

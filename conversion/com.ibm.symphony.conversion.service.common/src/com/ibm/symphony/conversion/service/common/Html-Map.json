@@ -1,0 +1,14 @@
+{
+  "body":"office:body",
+  "p":"text:p",
+  "a":"text:a",
+  "span":"text:span",
+  "ul":"text:list",
+  "ol":"text:list",
+  "li":"text:list-item",
+  "br":"text:line-break",
+  "left":"svg:x",
+  "top":"svg:y",
+  "width":"svg:width",
+  "height":"svg:height"
+}

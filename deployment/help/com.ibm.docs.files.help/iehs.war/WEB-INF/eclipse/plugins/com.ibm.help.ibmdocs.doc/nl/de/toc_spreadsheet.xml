@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Mit Arbeitsblättern arbeiten"
+     topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="Mit Arbeitsblättern arbeiten"
+          href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="Arbeitsblätter erstellen und importieren"
+             href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="Arbeitsblätter aus Vorlagen erstellen"
+                href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="Standarddateiformat von Arbeitsblättern ändern"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="Arbeitsblätter zur Freigabe hochladen"
+                href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="Bestehende Arbeitsblätter importieren"
+                href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="Import von Textdateien in Arbeitsblätter"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="Kennwortgeschützte Excel-Dateien öffnen"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="Dateikompatibilität und Export von Arbeitsblättern"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="In Arbeitsblättern unterstützte Dateiformate"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="Spreadsheets speichern"
+                href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="Veröffentlichen einer Arbeitsblattversion"
+                href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="Arbeitsblätter in andere Dateiformate exportieren"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="Arbeitsblätter als CSV-Dateien exportieren"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="Arbeitsblätter freigeben" href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="Arbeitsblätter für Personen oder Communitys freigeben"
+                href="text/spreadsheet/s_share_file.html"/>
+         <topic label="Zugriffsebenen für Arbeitsblätter festlegen"
+                href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="An Arbeitsblättern in Echtzeit zusammenarbeiten"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="Co-Editing in Echtzeit in Arbeitsblättern"
+                href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="Info zu Co-Editing in Arbeitsblättern"
+                   href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="Co-Editing in Arbeitsblättern gemeinsam mit anderen"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="Änderungen von jedem Editor in Arbeitsblättern anzeigen"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Über Kommentare in Arbeitsblättern zusammenarbeiten"
+                href="text/spreadsheet/s_comments_overview.html">
+            <topic label="Info zu Kommentaren in Arbeitsblättern"
+                   href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="Kommentare in Arbeitsblättern erstellen"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="Kommentare in Arbeitsblättern anzeigen"
+                   href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="Kommentare in Arbeitsblättern suchen"
+                   href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Aussehen des Arbeitsblatts ändern"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="Schriftarten, Rahmen und Farbe"
+                href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="Schriftarten in Arbeitsblättern ändern"
+                href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="Zeilenhöhe oder Spaltenbreite ändern"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="Rahmen in Arbeitsblättern ändern"
+                href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="Standardformatierung in Arbeitsblattzellen wiederherstellen"
+                href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="Zahlen formatieren" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="Daten eingeben und bearbeiten"
+             href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="Grundlagen der Datenbearbeitung"
+                href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="Zellinhalte suchen und ersetzen"
+                href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="Hyperlink in eine Zelle hinzufügen."
+                href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="Link von einem Hyperlink entfernen"
+                href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="AutoAusfüllen zum Ausfüllen eines Bereichs verwenden"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="Blattzellen zusammenfügen oder aufteilen"
+                href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="Rechtschreibprüfung in Arbeitsblättern"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="Arbeitsblätter als PDF-Datei drucken"
+                href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Mit Grafiken in Arbeitsblättern arbeiten"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="Grafiken in Arbeitsblätter einfügen"
+                href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="Grafiken in Arbeitsblättern verschieben oder die Größe ändern"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="Bildeigenschaften in Arbeitsblättern festlegen"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Mit Diagrammen in Arbeitsblättern arbeiten"
+             href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="Diagramme in Arbeitsblätter einfügen"
+                href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="Diagramme in Arbeitsblättern verschieben und Größe ändern"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="Diagramme in Arbeitsblätter kopieren"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="Datenbereiche verwalten" href="text/spreadsheet/s_data_ranges.html">
+         <topic label="Daten sortieren" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="Verwenden von AutoFiltern" href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="Zeilen und Spalten in Arbeitsblättern fixieren"
+                href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="Zeilen und Spalten ausblenden" href="text/spreadsheet/s_hide.html"/>
+         <topic label="Zeilen und Spalten anzeigen" href="text/spreadsheet/s_show.html"/>
+         <topic label="Auf Zellen aus einem anderen Blatt verweisen"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="Daten und Bilder in Arbeitsblätter kopieren"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="Bereich benennen" href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="Benannte Bereiche suchen oder bearbeiten"
+                href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="Benannten Bereich entfernen"
+                href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="Relative und absolute Verweise"
+                href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="Formeln in Berechnungen verwenden"
+             href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="Informationen zu Formeln und Funktionen"
+                href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="Die Funktionen im Einzelnen:"
+                href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="Nach Kategorien gruppiert"
+                   href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="Bereichsfunktionen" href="text/spreadsheet/s_functions_array.html">
+                  <topic label="Bereichskonstanten in Formel integrieren"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="Bedingte Bereichsberechnungen"
+                         href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="Datum- und Uhrzeitfunktionen"
+                      href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="Konstruktionsfunktion"
+                      href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="Informationsfunktionen" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="Logische Funktionen" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="Mathematische Funktionen" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="Arbeitsblattfunktionen" href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="Statistische Funktionen"
+                      href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="Textfunktionen" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="ABS-Funktion" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="ARCCOS-Funktion" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="ARCCOSHYP-Funktion" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="ADDRESSE-Funktion"
+                   href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="UND-Funktion" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="ARCSIN-Funktion" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="ARCSINHYP-Funktion" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="ARCTAN-Funktion" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="ATAN2-Funktion" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="ATANH-Funktion" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="MITTELWERT-Funktion"
+                   href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="MITTELWERTA-Funktion"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="BASIS-Funktion" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="OBERGRENZE-Funktion"
+                   href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="WAHL-Funktion" href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="ZEICHEN-Funktion" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="CODE-Funktion" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="SPALTE-Funktion" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="SPALTEN-Funktion" href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="KOMBINATIONEN-Funktion"
+                   href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="VERKETTEN-Funktion"
+                   href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="UMWANDELN-Funktion"
+                   href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="COS-Funktion" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="COSH-Funktion" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="ANZAHL-Funktion"
+                   href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="ANZAHL2-Funktion"
+                   href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="ANZAHLLEEREZELLEN-Funktion"
+                   href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="ZÄHLENWENN-Funktion"
+                   href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="DATUM-Funktion" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="DATEDIF-Funktion"
+                   href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="DATWERT-Funktion" href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="TAG-Funktion" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="TAGE-Funktion" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="DEG-Funktion" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="DM-Funktion" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="FEHLERTYP-Funktion"
+                   href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="GERADE-Funktion" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="EXP-Funktion" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="IDENTISCH-Funktion" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="FAKULTÄT-Funktion" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="FALSCH-Funktion" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="FEST-Funktion" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="UNTERGRENZE-Funktion" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="FORMEL-Funktion" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="HÄUFIGKEIT-Funktion"
+                   href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="WVERWEIS-Funktion"
+                   href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="STUNDE-Funktion" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="HYPERLINK-Funktion"
+                   href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="IF-Funktion" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="INDEX-Funktion" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="INDIREKT-Funktion"
+                   href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="GANZZAHL-Funktion" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="ISTLEER-Funktion" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="ISTFEHL-Funktion" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="ISTFEHLER-Funktion" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="ISTGERADE-Funktion" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="ISTFORMEL-Funktion"
+                   href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="ISTLOG-Funktion" href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="ISTNV-Funktion" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="ISTKTEXT-Funktion"
+                   href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="ISTZAHL-Funktion" href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="ISTUNGERADE-Funktion" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="ISTBEZUG-Funktion" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="ISTTEXT-Funktion" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="KGRÖSSTE-Funktion"
+                   href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="LINKS-Funktion" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="LÄNGE-Funktion" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="LÄNGEB-Funktion" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="LOG-Funktion" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="LOG-Funktion" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="LOG10-Funktion" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="KLEIN-Funktion" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="MAX-Funktion" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="MEDIAN-Funktion" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="TEIL-Funktion" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="MIN-Funktion" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="MINUTE-Funktion" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="MMULT-Funktion" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="QUOTIENT-Funktion" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="MODALWERT-Funktion"
+                   href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="MONAT-Funktion" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="N-Funktion" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="NV-Funktion" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="NETTOARBEITSTAGE-Funktion"
+                   href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="NICHT-Funktion" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="JETZT-Funktion" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="UNGERADE-Funktion" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="BEREICH.VERSCHIEBEN-Funktion"
+                   href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="ODER-Funktion" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="PI-Funktion" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="Funktion POWER" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="PRODUKT-Funktion" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="GROSS2-Funktion" href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="RAD-Funktion" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="ZUFALLSZAHL-Funktion" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="ZUFALLSBEREICH-Funktion"
+                   href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="RANG-Funktion" href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="ERSETZEN-Funktion" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="WIEDERHOLEN-Funktion" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="RECHTS-Funktion" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="RECHTSB-Funktion" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="RÖMISCH-Funktion" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="RUNDEN-Funktion" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="ABRUNDEN-Funktion"
+                   href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="AUFRUNDEN-Funktion" href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="ZEILE-Funktion" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="ZEILEN-Funktion" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="SUCHEN-Funktion" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="SEKUNDE-Funktion" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="ARBEITSBLATT-Funktion"
+                   href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="SIN-Funktion" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="SINH-Funktion" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="KKLEINSTE-Funktion"
+                   href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="WURZEL-Funktion" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="STABW.S-Funktion" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="STABW.N-Funktion" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="WECHSELN-Funktion"
+                   href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="TEILERGEBNIS-Funktion"
+                   href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="SUMME-Funktion" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="SUMIF-Funktion" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="SUMMENPRODUKT-Funktion"
+                   href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="T-Funktion" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="TEXT-Funktion" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="ZEIT-Funktion" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="HEUTE-Funktion" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="GLÄTTEN-Funktion" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="WAHR-Funktion" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="KÜRZEN-Funktion" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="TYP-Funktion" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="GROSS-Funktion" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="WERT-Funktion" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="SVERWEIS-Funktion"
+                   href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="VARIANZ-Funktion"
+                   href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="VARIANZA-Funktion"
+                   href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="VARIANZEN-Funktion"
+                   href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="VARIANZENA-Funktion"
+                   href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="WOCHENTAG-Funktion" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="KALENDERWOCHE-Funktion"
+                   href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="JAHR-Funktion" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="Kurzübersicht Arbeitsblätter" href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="Tastenkombinationen für Arbeitsblätter"
+             href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

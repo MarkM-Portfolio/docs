@@ -1,0 +1,23 @@
+<div>
+    <div class='track_change_pane' data-dojo-attach-point='root' style='display:none'>
+        <div class='head' style='display:none'>${nls.panel_title}</div>
+        <div class='head2'><div class='head' data-dojo-attach-point='head'>${nls.panel_new_changes}</div><div class='acceptall' data-dojo-attach-point='acceptall' ></div></div>
+        <div class='head3'><span class='desc' data-dojo-attach-point='desc'></span></div>
+         <div class='avatarsWrapper' data-dojo-attach-point='avatarsWrapper'>
+             <div class='avatars' data-dojo-attach-point='avatars'></div>
+             <div class='avatarsArrow' data-dojo-attach-point='avatarsArrow' data-dojo-attach-event="ondijitclick:__onAvatarsArrowClick" role="button" style="-webkit-user-select: none;" aria-expanded="false">
+                 <span class="dijitReset dijitInline">
+                     <span data-dojo-attach-point='avatarsArrowInner' class="dijitReset dijitStretch dijitButtonContents dijitDownArrowButton">
+                         <span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+                         <span class="dijitReset dijitInline dijitArrowButtonInner"></span><span class="dijitReset dijitInline dijitArrowButtonChar">¨‹</span>
+                     </span>
+                 </span>
+             </div>
+             <div style='clear:both'></div> 
+         </div>
+        
+        <span class='time' data-dojo-attach-point='timeWrapper'><span data-dojo-attach-point='timeDesc'>${nls.panel_time_today}</span></span>
+        <div class='slider' data-dojo-attach-point='sliderWrapper'></div>
+        <div class='list' data-dojo-attach-point='list'></div>
+    </div>
+</div>

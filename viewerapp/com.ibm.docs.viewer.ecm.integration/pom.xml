@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>viewerapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.docs.viewer.ecm.integration</artifactId>
+  <name>com.ibm.docs.viewer.ecm.integration- jar</name>
+  <packaging>jar</packaging>
+  <!--
+   lib/com.ibm.concord.presentation.common.jar lib/com.ibm.concord.spreadsheet.common.jar  lib/lc.core.files.spi.remote_NONE.jar
+  -->
+  <dependencies>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.config</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.platform</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.spi</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.common</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<!-- third party -->
+	<dependency>
+        <groupId>org.apache.chemistry.opencmis</groupId>
+        <artifactId>chemistry-opencmis-client-api</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.chemistry.opencmis</groupId>
+        <artifactId>chemistry-opencmis-client-impl</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.chemistry.opencmis</groupId>
+        <artifactId>chemistry-opencmis-client-bindings</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.chemistry.opencmis</groupId>
+        <artifactId>chemistry-opencmis-commons-api</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.chemistry.opencmis</groupId>
+        <artifactId>chemistry-opencmis-commons-impl</artifactId>
+    </dependency>
+	<dependency>
+        <groupId>org.apache.ws.commons.axiom</groupId>
+        <artifactId>axiom-api</artifactId>
+    </dependency>
+    <dependency>
+	    <groupId>org.apache.ws.commons.axiom</groupId>
+        <artifactId>axiom-impl</artifactId>
+    </dependency>
+	<dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+    </dependency>
+	<dependency>
+        <groupId>jaxen</groupId>
+        <artifactId>jaxen</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+    </dependency>
+	<dependency>
+        <groupId>commons-httpclient</groupId>
+        <artifactId>commons-httpclient</artifactId>
+        <version>3.1</version>
+    </dependency>
+	<dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>lc.customAuthClient</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+    </dependency>	
+
+  </dependencies>
+</project>

@@ -1,0 +1,124 @@
+
+.revisionPane {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-Index: 200;
+}
+
+.revisionTitle {
+	font-weight:bold;
+	padding-left: 6px;
+}
+
+.revisionTable{ 
+	white-space: nowrap;
+	overflow:hidden;
+	width:20%;
+}
+
+.revisionItem {
+	border-bottom: 1px solid #cecece;
+}
+
+.revisionItemClickable {
+	cursor: pointer;
+}
+
+.revisionItemHover {
+	background:#e0f0ff;
+}
+
+.revisionItemHighLight {
+	background:#add8e6;
+}
+
+.revisionItemTitle { 
+	font-weight:bold;
+	padding-left: 4px;
+}
+
+.revisionItemTitleHighLight {
+	color:#1569C7; 
+	cursor: pointer;
+}
+
+.revisionAuthor { 
+	float:left; 
+	width:100%;  
+	margin-left:15px; 
+	height:1.5em; 
+	white-space: nowrap; 
+	overflow:hidden;
+}
+	
+.revisionDate {
+	width:100%;
+	padding-left: 4px;
+}
+
+.revisionHeader {
+	position:absolute;
+	left: 0;
+	top: 0;
+	height: 2.1em;
+	border-bottom: 1px solid #cecece;
+	width: 100%;
+    background-color: #F4F4F4;
+    background-image: -moz-linear-gradient(center top , #F4F4F4 0%, #EAEAEA 100%);
+    border: 1px solid #CCCCCC;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0 3px 5px #EEEEEE;
+
+}
+
+.revisionFooter {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1.9em;
+	border-top: 1px solid #cecece;
+	width: 100%;
+	padding-left: 4px;
+}
+
+.revisionFooterLabel {
+	font-weight:bold;
+}
+
+.revisionCloseBtn {
+	float: right;
+	cursor: pointer;
+	padding: 3px 1px 2px 4px;
+	display:inline;
+}
+
+.revisionRestoreDiv {
+/*	float: right;*/
+/*	bottom: 1.65em;*/
+/*	right: 0.4em;*/
+/*	position: relative;*/
+	color:#1569C7; 
+	cursor: pointer;
+	font-weight:bold;	
+	display:inline;
+	padding-left: 6px;
+}
+		
+.revisionMoreBtn {
+	margin-left: 17px;  
+	display:inline;
+	color:#1569C7; 
+	cursor: pointer;	
+	font-weight:bold;
+}
+
+.revisionMoreHover {
+	display:block; 
+	background:#e0f0ff;
+	cursor: pointer;
+} 
+

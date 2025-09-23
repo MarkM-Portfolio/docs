@@ -1,0 +1,3 @@
+({	
+	dialogtitle	: "Bildeegenskaper"
+})

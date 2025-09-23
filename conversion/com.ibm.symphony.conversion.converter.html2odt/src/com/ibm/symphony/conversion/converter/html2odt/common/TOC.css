@@ -1,0 +1,72 @@
+div p.toc_title
+{
+  font-size: 14pt;
+  font-weight: bold;
+  text-indent: 0;
+  margin-top: 0pt;
+  margin-bottom: 5pt;
+}
+
+div p.toc1
+{
+  font-size: 12pt;
+  text-indent: 0;
+  text-align: left;
+  margin-left: 0pt;
+  margin-top: 3pt;
+  margin-bottom: 3pt;
+}
+div p.toc2
+{
+  font-size: 12pt;
+  text-indent: 0;
+  text-align: left;
+  margin-left: 11pt;
+  margin-bottom: 0pt;
+}
+div p.toc3
+{
+  font-size: 12pt;
+  text-indent: 0;
+  text-align: left;
+  margin-left: 22pt;
+  margin-bottom: 0pt;
+}
+
+div p.toc4
+{
+  font-size: 12pt;
+  text-indent: 0;
+  text-align: left;
+  margin-left: 33pt;
+  margin-bottom: 0pt;
+}
+div p.toc5
+{
+  font-size: 12pt;
+  text-indent: 0;
+  text-align: left;
+  margin-left: 44pt;
+  margin-bottom: 0pt;
+}
+div p.toc6
+{
+  font-size: 12pt;
+  text-indent: 0;
+  text-align: left;
+  margin-left: 55pt;
+  margin-bottom: 0pt;
+}
+
+a.toclink span, a.toclink
+{
+	text-decoration: none;
+	color:black;
+	cursor:pointer;
+}
+
+div.TOC_uneditable, div.TOC{
+	padding:11pt;
+	background-color:#EBEBEB;
+	display:block;
+}

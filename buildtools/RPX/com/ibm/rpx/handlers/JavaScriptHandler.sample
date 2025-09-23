@@ -1,0 +1,15 @@
+/* Here is a comment statement */
+// Here is an alternate method of coding a comment line.
+
+sFieldsMissing = 'All fields should be "filled" to submit the form.'
+sFieldsBad     = "Field " + fieldname + " contains 'incorrect' data."
+
+// START NON-TRANSLATABLE 
+sFieldNonTrans = "http:\\www.ibm.com\sample\test.html"
+// END NON-TRANSLATABLE
+
+function displayHelp(panel) {
+  var helpWindow = window.open('','Help', 'scrollbars=yes, width=400, height=190')
+  helpWindow.location=("/subdir1/subdir2/" + panel + ".htm")
+}
+

@@ -1,0 +1,38 @@
+{
+  "lotusJapanese":{
+    "style:country-asian": "JP", 
+    "style:language-asian": "ja", 
+  	"style:font-name-asian": "ＭＳ Ｐ明朝,ＭＳ 明朝,MS PMincho,MS PGothic,Apple Gothic,MS Mincho,MS Gothic",
+  	"style:font-name": "Arial",
+  	"dc:language":"ja-JP",
+  	"font-face-name": "ＭＳ Ｐゴシック",
+  	},
+  "lotusKorean":{
+    "style:country-asian": "KR", 
+    "style:language-asian": "ko", 
+  	"style:font-name-asian": "바탕,Gulim,GulimChe",
+  	"style:font-name": "Arial",
+  	"dc:language":"ko-KR",
+  	},
+  "lotusZHCN":{
+    "style:country-asian": "CN", 
+    "style:language-asian": "zh", 
+  	"style:font-name-asian": "宋体",
+  	"style:font-name": "Arial",
+  	"dc:language":"zh-CN",
+  	},
+  "lotusZHTW":{
+    "style:country-asian": "TW", 
+    "style:language-asian": "zh", 
+  	"style:font-name-asian": "宋体",
+  	"style:font-name": "Arial",
+  	"dc:language":"zh-TW",
+  	},
+  "lotusZH":{
+    "style:country-asian": "CN", 
+    "style:language-asian": "zh", 
+  	"style:font-name-asian": "宋体",
+  	"style:font-name": "Arial",
+  	"dc:language":"zh-CN",
+  	}
+}

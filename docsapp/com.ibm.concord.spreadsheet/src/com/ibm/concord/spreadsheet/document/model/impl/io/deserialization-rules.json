@@ -1,0 +1,303 @@
+{
+	"rules": [{
+		"version": {
+			"__action__": "META_VERSION"
+		},
+		"sheets": {
+			"*": {
+				"__action__": "META_SHEET"
+			}
+		},
+		"sheetsIdArray": {
+			"__action__": "META_SHEETSIDARRAY"
+		},
+		"sheetsArray": {
+			"__action__": "META_SHEETSARRAY",
+			"*": {
+				"rowsIdArray": {
+					"__action__": "META_ROWSIDARRAY"
+				},
+				"columnsIdArray": {
+					"__action__": "META_COLUMNSIDARRAY"
+				}
+			}
+		},
+		"rows": {
+			"*": {
+				"__action__": "META_ROW_SHEET",
+				"*": {
+					"__action__": "META_ROW"
+				}
+			}
+		},
+		"columns": {
+			"*": {
+				"__action__": "META_COLUMN_SHEET",
+				"*": {
+					"__action__": "META_COLUMN"
+				}
+			}
+		},
+		"locale": {
+			"__action__": "META_LOCALE"
+		},
+		"defaultcolumnwidth": {
+			"__action__": "META_DEFAULT_COLUMN_WIDTH"
+		},
+		"initrow": {
+			"__action__": "META_INIT_ROWCOUNT"
+		},
+		"initcol": {
+			"__action__": "META_INIT_COLUMNCOUNT"
+		},
+		"initstyle": {
+			"__action__": "META_INIT_STYLECOUNT"
+		},
+		"initsheet": {
+			"__action__": "META_INIT_SHEETCOUNT"
+		},
+		"csv": {
+			"__action__": "META_CSV"
+		},
+		"date1904": {
+			"__action__": "META_DATE1904"
+		}
+	},
+	{
+		"styles": {
+			"*": {
+				"__action__": "CONTENT_STYLE",
+				"hidden": {
+					"__action__": "CONTENT_STYLE_HIDDEN"
+				},
+				"unlocked": {
+					"__action__": "CONTENT_STYLE_UNLOCKED"
+				},
+				"bg": {
+					"__action__": "CONTENT_STYLE_BGC"
+				},
+				"align": {
+					"__action__": "CONTENT_STYLE_ALIGN"
+				},
+				"valign": {
+					"__action__": "CONTENT_STYLE_VALIGN"
+				},
+				"wrap": {
+					"__action__": "CONTENT_STYLE_WRAP"
+				},
+				"dir": {
+					"__action__": "CONTENT_STYLE_DIRECTION"
+				},
+				"indent": {
+					"__action__": "CONTENT_STYLE_INDENT"
+				},
+				"w": {
+					"__action__": "CONTENT_STYLE_WIDTH"
+				},
+				"h": {
+					"__action__": "CONTENT_STYLE_HEIGHT"
+				},
+				"preserve": {
+					"__action__": "CONTENT_STYLE_PRESERVE"
+				},
+				"dxfId": {
+					"__action__": "CONTENT_STYLE_DXFID"
+				},				
+				"bordercolor": {
+					"bc": {
+						"__action__": "CONTENT_STYLE_BBC"
+					},
+					"rc": {
+						"__action__": "CONTENT_STYLE_BRC"
+					},
+					"lc": {
+						"__action__": "CONTENT_STYLE_BLC"
+					},
+					"tc": {
+						"__action__": "CONTENT_STYLE_BTC"
+					}
+				},
+				"borderstyle": {
+					"bs": {
+						"__action__": "CONTENT_STYLE_BBS"
+					},
+					"rs": {
+						"__action__": "CONTENT_STYLE_BRS"
+					},
+					"ls": {
+						"__action__": "CONTENT_STYLE_BLS"
+					},
+					"ts": {
+						"__action__": "CONTENT_STYLE_BTS"
+					}
+				},
+				"border": {
+					"b": {
+						"__action__": "CONTENT_STYLE_BBW"
+					},
+					"r": {
+						"__action__": "CONTENT_STYLE_BRW"
+					},
+					"l": {
+						"__action__": "CONTENT_STYLE_BLW"
+					},
+					"t": {
+						"__action__": "CONTENT_STYLE_BTW"
+					}
+				},
+				"font": {
+					"italic": {
+						"__action__": "CONTENT_STYLE_FONT_ITALIC"
+					},
+					"i": {
+						"__action__": "CONTENT_STYLE_FONT_ITALIC"
+					},
+					"size": {
+						"__action__": "CONTENT_STYLE_FONT_SIZE"
+					},
+					"sz": {
+						"__action__": "CONTENT_STYLE_FONT_SIZE"
+					},
+					"strikethrough": {
+						"__action__": "CONTENT_STYLE_FONT_ST"
+					},
+					"st": {
+						"__action__": "CONTENT_STYLE_FONT_ST"
+					},
+					"color": {
+						"__action__": "CONTENT_STYLE_FONT_COLOR"
+					},
+					"c": {
+						"__action__": "CONTENT_STYLE_FONT_COLOR"
+					},
+					"bold": {
+						"__action__": "CONTENT_STYLE_FONT_BOLD"
+					},
+					"bd": {
+						"__action__": "CONTENT_STYLE_FONT_BOLD"
+					},
+					"name": {
+						"__action__": "CONTENT_STYLE_FONT_NAME"
+					},
+					"n": {
+						"__action__": "CONTENT_STYLE_FONT_NAME"
+					},
+					"underline": {
+						"__action__": "CONTENT_STYLE_FONT_UL"
+					},
+					"u": {
+						"__action__": "CONTENT_STYLE_FONT_UL"
+					}
+				},
+				"format": {
+					"currency": {
+						"__action__": "CONTENT_STYLE_FM_CUR"
+					},
+					"cur": {
+						"__action__": "CONTENT_STYLE_FM_CUR"
+					},
+					"fmcolor": {
+						"__action__": "CONTENT_STYLE_FM_COLOR"
+					},
+					"clr": {
+						"__action__": "CONTENT_STYLE_FM_COLOR"
+					},
+					"code": {
+						"__action__": "CONTENT_STYLE_FM_CODE"
+					},
+					"category": {
+						"__action__": "CONTENT_STYLE_FM_CAT"
+					},
+					"cat": {
+						"__action__": "CONTENT_STYLE_FM_CAT"
+					}
+				}
+			}
+		},
+		"sheets": {
+			"*": {
+				"__action__": "CONTENT_SHEET",
+				"rows": {
+					"__action__": "CONTENT_SHEET_ROWS",
+					"*": {
+						"__action__": "CONTENT_SHEET_ROW",
+						"*": {
+							"__action__": "CONTENT_SHEET_ROW_CELL",
+							"*": {
+								"__action__": "CONTENT_SHEET_ROW_CELL_PROPS"
+							}
+						}
+					}
+				}
+			}
+		},
+		"names": {
+			"*": {
+				"__action__": "CONTENT_NAME"
+			}
+		},
+		"unnames": {
+			"*": {
+				"__action__": "CONTENT_UNNAME"
+			}
+		},
+		"pnames": {
+			"*": {
+				"__action__": "CONTENT_PNAME"
+			}
+		},
+		"calculated": {
+			"__action__": "CONTENT_CALCULATED"
+		}
+	},
+	{
+		"sheets": {
+			"*": {
+				"__action__": "REFERENCE_SHEET",
+				"*": {
+					"__action__": "REFERENCE_SHEET_ROW",
+					"*": {
+						"__action__": "REFERENCE_SHEET_ROW_COLUMN",
+						"ep":{
+							"__action__": "REFERENCE_CELLS_ERRORPROPS"
+						},
+						"cells": {
+							"__action__": "REFERENCE_CELLS_LIST"
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"maxrow": {
+			"*": {
+				"__action__": "PRESERVE_MAXROW"
+			}
+		},
+		"style": {
+			"*": {
+				"__action__": "PRESERVE_STYLE_SHEET",
+				"*": {
+					"__action__": "PRESERVE_STYLE_SHEET_RANGE"
+				}
+			}
+		},
+		"value": {
+			"*": {
+				"__action__": "PRESERVE_VALUE_SHEET",
+				"*": {
+					"__action__": "PRESERVE_VALUE_SHEET_ROW"
+				}
+			}
+		},
+		"pnames": {
+			"*": {
+				"__action__": "PRESERVE_RANGE",
+				"*": {
+					"__action__": "PRESERVE_RANGE_INNER"
+				}
+			}
+		}
+	}]
+}

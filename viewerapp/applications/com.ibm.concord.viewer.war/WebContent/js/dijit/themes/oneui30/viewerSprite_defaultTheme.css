@@ -1,0 +1,53 @@
+/* Licensed Materials - Property of IBM.                                    */
+/* (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.          */
+/* U.S. Government Users Restricted Rights:  Use, duplication or disclosure */
+/* restricted by GSA ADP Schedule Contract with IBM Corp.                   */
+/*                                                                          */
+/* The "yourProductSprite" CSS classes and PNG files are an example of what */
+/* a product-specific sprite might look like.  Products should not to use   */
+/* the "yourProductSprite" example CSS classes or PNG files directly.       */
+/* It is up to each product development team to create their own            */
+/* product-specific CSS sprite containing any images needed (including any  */
+/* images needed from the "yourProductSprite" example sprite).  The example */
+/* markup used in the product would be modified to use your actual          */
+/* product-specific CSS sprite classes instead of the "yourProductSprite"   */
+/* example classes.                                                         */
+/*                                                                          */
+.viewerSprite-iconPlaceholder16{width:16px;height:16px;background-position:0 0}
+.viewerSprite-iconPlaceholder24{width:24px;height:24px;background-position:0 -20px}
+.viewerSprite-ChatGray16{width:16px;height:16px;background-position:0 -48px}
+.viewerSprite-ftBlogs16{width:16px;height:16px;background-position:0 -68px}
+.viewerSprite-Comment16{width:16px;height:16px;background-position:0 -88px}
+.viewerSprite-stAvailable9{width:9px;height:9px;background-position:0 -108px}
+.viewerSprite-ftGraphic16{width:16px;height:16px;background-position:0 -121px}
+.viewerSprite-ftPresentation16{width:16px;height:16px;background-position:0 -141px}
+.viewerSprite-ftFolder16{width:16px;height:16px;background-position:0 -161px}
+.viewerSprite-ftText16{width:16px;height:16px;background-position:0 -181px}
+.viewerSprite-msgConfirm16{width:16px;height:16px;background-position:0 -201px}
+.viewerSprite-msgError16{width:16px;height:16px;background-position:0 -221px}
+.viewerSprite-msgInfo16{width:16px;height:16px;background-position:0 -241px}
+.viewerSprite-msgWarning16{width:16px;height:16px;background-position:0 -261px}
+.viewerSprite-msgWarning48{width:48px;height:48px;background-position:0 -281px}
+.viewerSprite-msgError48{width:48px;height:48px;background-position:0 -333px}
+.viewerSprite-Recommended1{width:16px;height:16px;background-position:0 -385px}
+.viewerSprite-Recommended2{width:16px;height:16px;background-position:0 -405px}
+.viewerSprite-Help12{width:12px;height:12px;background-position:0 -425px}
+.viewerSprite-iconCollapseTree{width:14px;height:14px;background-position:0 -441px}
+.viewerSprite-iconExpandTree{width:14px;height:14px;background-position:0 -459px}
+.viewerSprite-javaCompatibleLogoWhite{width:60px;height:80px;background-position:0 -477px}
+.viewerSprite-NoPhotoPerson24{width:24px;height:24px;background-position:0 -561px}
+.viewerSprite-NoPhotoPerson32{width:32px;height:32px;background-position:0 -589px}
+.viewerSprite-NoPhotoPerson64{width:64px;height:64px;background-position:0 -625px}
+.viewerSprite-NoPhotoPerson128{width:128px;height:128px;background-position:0 -693px}
+
+.viewerSprite{background-image:url('images/viewerSprite-8bit.png');background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.lotusImagesOff .yourProductSprite{display:none}
+/*  Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on February 28 2011. (version: OneUI-3.0.0_20110228-2229)
+*/
+
+/* overrides go here - not currently used */
+
+

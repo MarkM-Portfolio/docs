@@ -1,0 +1,145 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2022                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<project name="com.ibm.symphony.conversion.converter.conversionlib" basedir="." default="deploy">
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${bin.dir}/classes"/>
+	<property name="jar.dir" value="${bin.dir}/jar"/>
+	<property name="ear.dir" value="../com.ibm.symphony.conversion.service.rest.was.ear"/>
+
+	<path id="project.classpath">
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.service.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.service.common.jar"/>
+	</path>
+
+	<path id="lib.classpath">
+	    <pathelement path="${ear.dir}/lib/acf-2.5.0.23.jar"/>
+		<pathelement path="${ear.dir}/lib/html-parser-2.5.0.23.jar"/>
+	    <pathelement path="${ear.dir}/lib/json4j.jar"/>
+	</path>
+
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath"/>
+			<classpath refid="lib.classpath"/>
+		</javac>
+	</target>
+
+	<target name="gather" depends="compile">
+		<copy todir="${classes.dir}" failonerror="true" overwrite="true">
+	   		<fileset dir="${src.dir}">
+      			<exclude name="**/*.java"/>
+    		</fileset>
+		</copy>
+	</target>
+
+	<target name="fetchlib" if="ServerADDR" depends="gather">
+		<property name="remoteBaseDir" value="${env.ConversionLibrary_RPATH}"/>
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteBaseDir}">
+			<fileset dir="${build.home}" includes="currentBuildLabel.txt"/>
+		</ftp> -->
+
+		<echo message="remoteBaseDir = ${remoteBaseDir}" />
+		<echo message="env.ConversionLibrary_RPATH = ${env.ConversionLibrary_RPATH}" />
+		<echo message="build.home = ${build.home}" />
+
+		<copy todir="${build.home}">
+			<fileset dir="${remoteBaseDir}">
+				<include name="currentBuildLabel.txt"/>
+			</fileset>
+		</copy>
+
+		<loadfile property="curBldLabel" srcFile="${build.home}/currentBuildLabel.txt">
+			<filterchain>
+				<striplinebreaks/>
+			</filterchain>
+		</loadfile>
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteBaseDir}/${curBldLabel}/repository/conversionlib/">
+			<fileset dir="." includes="fe.zip"/>
+		</ftp> -->
+
+		<echo message="remoteBaseDir = ${remoteBaseDir}" />
+		<echo message="curBldLabel = ${curBldLabel}" />
+
+		<copy todir=".">
+			<fileset dir="${remoteBaseDir}/${curBldLabel}/repository/conversionlib/">
+				<include name="fe.zip"/>
+			</fileset>
+		</copy>
+
+		<delete includeEmptyDirs="true">
+			<file file="OOXMLConvertor.exe"/>
+			<fileset dir="data"/>
+		</delete>
+		<unzip src="fe.zip" dest="."/>
+		<unzip src="lwp/build/conversionlib/data/pptx/template/template.zip" dest="lwp/build/conversionlib/data/pptx/template"/>
+		<delete file="lwp/build/conversionlib/data/pptx/template/template.zip"/>
+		<copy file="lwp/build/conversionlib/bin/OOXMLConvertor.exe" tofile="OOXMLConvertor.exe"/>
+		<copy todir="data">
+			<fileset dir="lwp/build/conversionlib/data"/>
+		</copy>
+		<delete includeEmptyDirs="true">
+			<file file="fe.zip"/>
+			<fileset dir="lwp"/>
+		</delete>
+	</target>
+
+	<target name="jar" depends="fetchlib">
+		<pathconvert property="manifest.project.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+				</chainedmapper>
+			</mapper>
+			<path refid="project.classpath"/>
+		</pathconvert>
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+					<globmapper from="*" to="lib/*"/>
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath"/>
+		</pathconvert>
+
+		<mkdir dir="${jar.dir}"/>
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Created-By" value="IBM"/>
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}"/>
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="deploy" depends="jar">
+		<copy todir="${build.home}">
+			<fileset dir="${jar.dir}"/>
+		</copy>
+		<mkdir dir="${build.home}/conversionlib"/>
+		<copy todir="${build.home}/conversionlib" file="OOXMLConvertor.exe"/>
+		<mkdir dir="${build.home}/conversionlib/data"/>
+		<copy todir="${build.home}/conversionlib/data">
+			<fileset dir="data"/>
+		</copy>
+	</target>
+</project>
+

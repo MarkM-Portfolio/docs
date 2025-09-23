@@ -1,0 +1,137 @@
+/*styles for title page title element*/
+.Opera-title p
+{
+	text-align:left;
+}
+.Opera-title {
+	/*font-size:44pt;*/
+	font-size:2em;
+	font-family:Georgia;
+	font-weight:bold;
+	color:#FFF000;
+}
+.Opera-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+}
+.Opera-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Opera-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Opera-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Opera-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:right;
+	text-indent:0cm;
+}
+.Opera-subtitle {
+	/*font-size:32pt;*/
+	font-size:1em;
+	font-family:Georgia;
+	font-weight:bold;
+	color:#F9F0D9;
+}
+.Opera-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+}
+.Opera-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Opera-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Opera-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.Opera-defaultTitle {
+	/*font-size:44pt;*/
+	font-family:Georgia;
+	color:#FFFFFF;
+}
+.Opera-defaultText {
+	/*font-size:44pt;*/
+	font-family:Georgia;
+	color:#000000;
+}
+
+/*styles for other page (non title page) title */
+.Opera_text-title p
+{
+	text-align:center;
+}
+.Opera_text-title {
+	/*font-size:44pt;*/
+	font-size:2em;
+	font-weight: bold;
+	font-family:Georgia;
+	color:#2F1D09;
+}
+.Opera_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+}
+.Opera_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Opera_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Opera_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Opera_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Opera_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Opera_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Opera_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Opera_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Opera_text-outline1 {
+	/*font-size:32pt;*/
+	font-size:1.4em;
+	font-family:Georgia;
+	color:#000000;
+}

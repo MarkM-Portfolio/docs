@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Mar 17 17:18:57 CST 2015
+jersey-core-1.17.jar>=
+jersey-core-1.17.pom>central=
+jersey-core-1.17.jar>central=

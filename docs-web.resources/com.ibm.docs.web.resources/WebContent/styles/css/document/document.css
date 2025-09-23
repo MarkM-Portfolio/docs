@@ -1,0 +1,136 @@
+#C_d_InsertImageInputFile{
+   height:1.8em;
+}
+.oneui30 .concordInsertImage{
+	border-color : #aaa !important;
+}
+
+.table-picker .table-picker-highlighted{
+	outline:0px solid black;
+}
+/*
+.dijitReset input{
+	height:1.4em;
+}
+*/
+/* color pallette in table properties dialog */
+.tablePropertiesDlgColorPallette, .headerfooterColorPallette
+{
+	width : 186px;
+}
+
+.oneui30 .dijitColorPalettePopup .tablePropertiesDlgColorPallette .dijitPaletteCell,
+.oneui30 .dijitColorPalettePopup .headerfooterColorPallette .dijitPaletteCell
+{
+	border : 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	width : 10px; 
+	height: 10px;
+	padding: 2px;
+}
+.oneui30 .dijitColorPalettePopup .tablePropertiesDlgColorPallette .dijitPaletteImg,
+.oneui30 .dijitColorPalettePopup .tablePropertiesDlgColorPallette .dijitPaletteCellHover .dijitPaletteImg,
+.oneui30 .dijitColorPalettePopup .headerfooterColorPallette .dijitPaletteImg,
+.oneui30 .dijitColorPalettePopup .headerfooterColorPallette .dijitPaletteCellHover .dijitPaletteImg{
+	width : 10px; 
+	height: 10px;
+	border: 1px solid #808080;
+	margin: 0px;
+	padding: 0px;
+}
+
+.oneui30 .dijitColorPalettePopup .tablePropertiesDlgColorPallette img.dijitColorPaletteSwatch,
+.oneui30 .dijitColorPalettePopup .headerfooterColorPallette img.dijitColorPaletteSwatch{
+	width : 10px; 
+	height: 10px;
+}
+
+.oneui30 .dijitColorPalettePopup .tablePropertiesDlgColorPallette .dijitPaletteCellSelected,
+.oneui30 .dijitColorPalettePopup .tablePropertiesDlgColorPallette .dijitPaletteCellHover,
+.oneui30 .dijitColorPalettePopup .headerfooterColorPallette .dijitPaletteCellSelected,
+.oneui30 .dijitColorPalettePopup .headerfooterColorPallette .dijitPaletteCellHover{
+	background-color: #dff1ff;
+    border: 1px solid #316ac5;
+}
+
+.oneui30 .dijitColorPalettePopup .tablePropertiesDlgColorPallette .dijitPaletteCellActive .dijitPaletteImg,
+.oneui30 .dijitColorPalettePopup .tablePropertiesDlgColorPallette .dijitPaletteCellSelected .dijitPaletteImg,
+.oneui30 .dijitColorPalettePopup .headerfooterColorPallette .dijitPaletteCellActive .dijitPaletteImg,
+.oneui30 .dijitColorPalettePopup .headerfooterColorPallette .dijitPaletteCellSelected .dijitPaletteImg{
+	border: 1px solid #808080;
+}
+
+.skin_lotus *,
+.skin_lotus a:hover,
+.skin_lotus a:link,
+.skin_lotus a:visited,
+.skin_lotus a:active
+{
+	/*margin: 0;
+	padding: 0;
+	*/
+	/*border: 0;
+	background: transparent;
+	text-decoration: none;
+	font: normal normal normal 100% Sans-Serif;
+	width: auto;
+	height: auto;
+	border-collapse: collapse;
+	text-align: left;
+	vertical-align: baseline;
+	white-space: nowrap;
+	cursor: auto;
+	color: #000;*/
+
+    /*font-size: 12px;  Modified (11px) */
+    /*font-family: 'Microsoft Sans Serif' , Tahoma, Arial, Verdana, Sans-Serif;*/ /* Removed */
+	/*font-family: Arial, Tahoma, Verdana, Sans-Serif;*/ /* Removed */
+}
+
+.skin_lotus .cke_rtl *,
+.skin_lotus .cke_rtl a:hover,
+.skin_lotus .cke_rtl a:link,
+.skin_lotus .cke_rtl a:visited,
+.skin_lotus .cke_rtl a:active,
+.cke_rtl .skin_lotus *,
+.cke_rtl .skin_lotus a:hover,
+.cke_rtl .skin_lotus a:link,
+.cke_rtl .skin_lotus a:visited,
+.cke_rtl .skin_lotus a:active
+{
+	text-align: right;
+}
+
+.skin_lotus iframe
+{
+	vertical-align: inherit;	/** For IE */
+}
+
+.skin_lotus textarea
+{
+	white-space: pre;
+}
+
+.skin_lotus .cke_browser_gecko textarea
+{
+	cursor: text;
+}
+
+.skin_lotus .cke_browser_gecko textarea[disabled]
+{
+	cursor: default;
+}
+
+.skin_lotus input[type="text"],
+.skin_lotus input[type="password"]
+{
+	cursor: text;
+}
+
+.skin_lotus input[type="text"][disabled],
+.skin_lotus input[type="password"][disabled]
+{
+	cursor: default;
+}
+
+

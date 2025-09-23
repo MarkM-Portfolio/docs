@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Sunumlarla çalışma" topic="text/presentation/presentations_frame.html">
+   <topic label="Sunumlarla çalışma" href="text/presentation/presentations_frame.html">
+      <topic label="Sunumları oluşturma ve karşıya yükleme"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Sunum oluşturma" href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Sunumların varsayılan dosya biçimini değiştirme"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Paylaşılacak sunumları karşıya yükleme"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Var olan sunumları alma"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Dosya uyumluluğu ve sunumları verme"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Sunumlarda desteklenen dosya biçimleri"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Sunumları kaydetme" href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Sunumların sürümlerini yayınlama"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Sunumları diğer dosya biçimlerine verme"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Sunumları paylaşma" href="text/presentation/p_sharing_a_document.html">
+         <topic label="Sunumları kişi ya da topluluklarla paylaşma"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Sunumların erişim düzeylerini ayarlama"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Sunumlar üzerinde gerçek zamanlı işbirliği yapma"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Sunumlarda gerçek zamanlı olarak birlikte düzenleme"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Sunumlarda birlikte düzenleme hakkında"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Sunumlarda diğer kişilerle birlikte düzenleme"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Sunumlarda düzenleyici değişiklikleri gösterme"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Sunumlardaki yorumları kullanarak işbirliği yapma"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Sunumlardaki yorumlar hakkında"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Sunumlarda yorum oluşturma"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Sunumlardaki yorumları görüntüleme"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Sunumlardaki yorumlarda arama yapma"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Slaytları biçimlendirme"
+             href="text/presentation/p_formatting_slides.html">
+         <topic label="Sunumlarda yazı tiplerini değiştirme"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Nesneleri seçme ve taşıma"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Nesne sırasını ayarlama"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Slaytlara numara ya da madde işareti ekleme"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Slayt düzeni uygulama"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Ana stili değiştirme"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Sunumlarda yazım denetimi"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Sunumları kaydetme ve yazdırma"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Sunumları PDF dosyası olarak yazdırma"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Sunumlarda resimlerle çalışma"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Sunumlara grafik ekleme"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Sunumlardaki resimleri taşıma ve yeniden boyutlandırma"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Sunumlarda resim özelliklerini ayarlama"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Slaytlarla çalışma" href="text/presentation/p_slide_show.html">
+         <topic label="Slayt gösterilerini yürütme"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Slaytlar arasında geçişleri uygulama"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Slaytları silme" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Slayt ekleme" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Slaytları taşıma" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Slaytları yineleme" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Sunumlarda tablolarla çalışma"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Sunumlarda tablo oluşturma"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Sunumlara satır ve sütun ekleme"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Sunumlardaki satır ve sütunları taşıma"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Sunumlardaki satır ve sütunları yeniden boyutlandırma"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Hücrelerdeki metni hizalama"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Sunumlardaki tablo stillerini değiştirme"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Sunumlardaki tablo üstbilgilerini tanımlama"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Konuşmacı notlarını düzenleme"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Sunumlara ilişkin hızlı başvuru"
+             href="text/presentation/p_quick_ref.html"/>
+      <topic label="Sunumlar için klavye kısayolları"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

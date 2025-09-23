@@ -1,0 +1,261 @@
+.cellBorder {
+	width: 199px;
+	text-align: center;
+	background: white;
+	padding-bottom: 10px;
+}
+
+.cellBorder .dijitPaletteCell,
+.cellBorder .dijitPaletteSpan
+{
+	/*outline: none !important;*/
+}
+
+.cellBorderType .solid
+{
+	border-top: 3px solid #898989;
+}
+
+.cellBorderType .dashed
+{
+	border-top: 3px dashed #898989;
+}
+
+.cellBorderType .dotted
+{
+	border-top: 3px dotted #898989;
+}
+
+.cellBorderType .double
+{
+	border-top: 5px double #898989;
+	margin: 8px 3px !important;
+}
+
+.cellBorderType .dijitIcon
+{
+	width: 45px;
+	height: 0px;
+	margin: 10px 3px;
+}
+
+
+.cellBorderColor .dijitButtonText {
+	width: 15px;
+	height: 12px;
+	margin: 6px 18px 5px !important;
+	padding: 0 !important;
+}
+
+.cellBorderType .dijitArrowButtonInner,.cellBorderType .dijitArrowButtonChar,.cellBorderColor .dijitArrowButtonInner,.cellBorderColor .dijitArrowButtonChar
+{
+	display: none !important;
+}
+
+.cellBorderType .dijitButtonText
+{
+	padding: 0 !important;
+}
+
+.cellBorderSep {
+	height: 1px;
+	margin: 0px 11px;
+	background: #d5d5d5;
+}
+
+.cellBorder .cellBorderDetails {
+	margin: 10px 0px 0px 5px;
+}
+
+.cellBorderRange.docPalette {
+	padding: 10px 0px!important;
+}
+
+.cellBorderRange .clearBorder {
+	background-position: 0px 0px;
+}
+
+.cellBorderRange .allBorder {
+	background-position: 0px -15px;
+}
+
+.cellBorderRange .innerBorder {
+	background-position: 0px -30px;
+}
+
+.cellBorderRange .horizontalBorder {
+	background-position: 0px -45px;
+}
+
+.cellBorderRange .verticalBorder {
+	background-position: 0px -60px;
+}
+
+.cellBorderRange .outerBorder {
+	background-position: 0px -75px;
+}
+
+.cellBorderRange .leftBorder {
+	background-position: 0px -90px;
+}
+
+.cellBorderRange .topBorder {
+	background-position: 0px -105px;
+}
+
+.cellBorderRange .rightBorder {
+	background-position: 0px -120px;
+}
+
+.cellBorderRange .bottomBorder {
+	background-position: 0px -135px;
+}
+
+.cellBorderRange .dijitPaletteSpan {
+	background-image: url(../images/cellb_sprite.png);
+	background-repeat: no-repeat;
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+}
+
+.cellBorderRange .docPalette .borderRangerCell {
+	margin: 0 5px 0px 5px !important;
+}
+
+.cellBorderRange .docPalette .dijitPaletteCell.selected{
+	/* Copy from .docPalette .dijitPaletteCell:hover */
+	background-color: transparent;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0
+		, 0, 0) ), color-stop(100%, rgba(0, 0, 0, 0.08) ) );
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* W3C */
+	filter: progid :                        
+		  DXImageTransform.Microsoft.gradient (    
+		  
+		        
+		            startColorstr =             
+		             '#00000000', endColorstr =                        
+		  '#14000000', GradientType =         
+		      
+		          0 );
+	/* IE6-9 */
+	border: 1px solid #999999 !important;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .2);
+	opacity: 1;
+	cursor: default;
+}
+
+.cellBorderWidth,.cellBorderType {
+	height: 23px !important;
+	border: 1px solid #a0a0a0 !important;
+}
+
+.cellBorderColor {
+	height: 23px !important;;
+	width: 51px !important;;
+	border: 1px solid #a0a0a0 !important;;
+}
+
+.cellBorderColor .dijitButtonNode,.cellBorderWidth .dijitButtonNode,.cellBorderType .dijitButtonNode
+	{
+	background: white !important;
+	border: none !important;
+	padding: 0 !important;
+	padding-right: 0 !important;
+	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+}
+
+.oneui30 .dijitInline  #writer_ui_widget_CellBorderWidth_0_label {
+	width: 33px;
+	font-size: 12px;
+	font-weight: normal!important;
+	padding: 3px;
+}
+
+.cellBorderWidth .dijitButtonNode .dijitArrowButtonInner .fontSizeWrapper
+rd{
+	height: 11px;
+}
+
+.fontSize .dijitArrowButtonInner {
+	height: 23px !important;
+	background-image: none !important;
+	position: relative;
+}
+
+.fontSizeUpDown {
+	width: 11px;
+}
+
+.fontSizeUp {
+	background-image:
+		url("../../../js/dijit/themes/oneui30/form/images/smallbuttonArrows.png");
+	background-repeat: no-repeat;
+	background-position: 0px 1%;
+	width: 15px;
+	height: 11px;
+	float: right;
+}
+
+.fontSizeWrapperSep {
+	width: 15px;
+	height: 1px;
+	float: right;
+	background: transparent;
+}
+
+.fontSizeDown {
+	background-image:
+		url("../../../js/dijit/themes/oneui30/form/images/smallbuttonArrows.png");
+	background-repeat: no-repeat;
+	background-position: -51px 53%;
+	width: 15px;
+	height: 11px;
+	float: right;
+}
+
+.oneui30 .dijitToolbar span.fontSizeWrapper {
+	width: 15px;
+	height: 11px;
+	float: right;
+	transition: background-color .1s linear, border .1s linear, box-shadow
+		.1s linear;
+	background: transparent !important;
+}
+
+.oneui30 .dijitToolbar #toolbar_font_size {
+	display: inline-block;
+}
+
+.fontSizeWrapper:not (.dijitDisabled ):focus {
+	outline: 1px dotted black !important;
+}
+
+.fontSizeWrapper {
+	float: left;
+}
+
+.dijitDisabled .fontSizeUp,.dijitDisabled.fontSizeUp {
+	background-image:
+		url("../../../js/dijit/themes/oneui30/form/images/smallbuttonArrows.png");
+	background-repeat: no-repeat;
+	background-position: -100px 1%;
+}
+
+.dijitDisabled .fontSizeDown,.dijitDisabled.fontSizeDown {
+	background-image:
+		url("../../../js/dijit/themes/oneui30/form/images/smallbuttonArrows.png");
+	background-repeat: no-repeat;
+	background-position: -151px 53%;
+}

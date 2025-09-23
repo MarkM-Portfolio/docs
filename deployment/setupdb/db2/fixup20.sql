@@ -1,0 +1,47 @@
+-- ***************************************************************** 
+--                                                                   
+-- IBM Confidential                                                  
+--                                                                   
+-- IBM Docs Source Materials                                         
+--                                                                   
+-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          
+--                                                                   
+-- U.S. Government Users Restricted Rights: Use, duplication or      
+-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+--                                                                   
+-- ***************************************************************** 
+
+CONNECT TO CONCORD@
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#38A7FF' WHERE "COLOR" = '#C7E3E4' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#FA6400' WHERE "COLOR" = '#F9CECE' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#FF4EC2' WHERE "COLOR" = '#BFE0BD' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#009E69' WHERE "COLOR" = '#FEF8BF' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#AC32FF' WHERE "COLOR" = '#DAC6DD' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#B87F28' WHERE "COLOR" = '#FFE2B6' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#00D4C0' WHERE "COLOR" = '#D6D8D2' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#FF3D51' WHERE "COLOR" = '#E2E5B0' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#B8BB28' WHERE "COLOR" = '#E4D2C2' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#D819C6' WHERE "COLOR" = '#BCC5D0' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#FF9900' WHERE "COLOR" = '#EAA9A6' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#33D159' WHERE "COLOR" = '#9CD29A' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#FF4E7F' WHERE "COLOR" = '#F1DC93' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#C399FF' WHERE "COLOR" = '#C1A8E6' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#83F133' WHERE "COLOR" = '#DECDB9' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#57D9FF' WHERE "COLOR" = '#A9BFE3' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#FF7F51' WHERE "COLOR" = '#9EDCD7' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#66A2D6' WHERE "COLOR" = '#DCDC96' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#7D54FF' WHERE "COLOR" = '#D5B0D1' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#64BD83' WHERE "COLOR" = '#BECDCE' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#B29B66' WHERE "COLOR" = '#FACB96' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#FF9EBB' WHERE "COLOR" = '#BEDC93' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#64D4C0' WHERE "COLOR" = '#D1C1CC' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#99B7FF' WHERE "COLOR" = '#AABED3' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#64BB28' WHERE "COLOR" = '#F1B798' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#CF5CFF' WHERE "COLOR" = '#AAD0BD' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#00E378' WHERE "COLOR" = '#F4B0C3' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#96EB99' WHERE "COLOR" = '#BAC5CF' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#FF8030' WHERE "COLOR" = '#CDCDB5' @
+UPDATE "CONCORDDB"."DOCEDITORS" SET "COLOR" = '#C8ED00' WHERE "COLOR" = '#DBC2C2' @
+
+COMMIT WORK@
+CONNECT RESET@

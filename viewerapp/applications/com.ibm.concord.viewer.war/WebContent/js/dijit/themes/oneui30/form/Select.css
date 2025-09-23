@@ -1,0 +1,88 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+.oneui30 .dijitSelect .dijitButtonText {
+    padding: 0px 5px 2px;
+}
+
+/* normal status */
+.oneui30 .dijitSelect {
+    margin: 0;
+	border: 1px solid #aaa;
+    background-color: #fff;
+    border-collapse: separate;
+}
+
+.oneui30 .dijitSelect .dijitButtonContents {
+    border: 0px solid #aaa !important;
+}
+
+.oneui30 .dijitSelect .dijitArrowButton {
+    padding: 0;
+    border: 0px solid #fff; /* inner white border on button node */
+    border-top: none;
+}
+
+.oneui30 .dijitSelect .dijitArrowButton .dijitArrowButtonInner {
+    background-image: url("images/smallcommonFormArrows.png");
+    background-position: -35px 50%;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+/* hover status */
+.oneui30 .dijitSelectHover .dijitArrowButton .dijitArrowButtonInner {
+    background-position: -70px 50%;
+}
+
+/* focused status */
+.oneui30 .dijitSelectFocused {
+    border: 1px solid #aaa;
+}
+
+.oneui30 .dijitSelectFocused .dijitButtonContents {
+    border-color: #aaa;
+}
+
+.oneui30 .dijitSelectFocused .dijitArrowButton {
+    padding: 0;
+	border: 0;
+	background-position: 0px -177px;   
+}
+
+.oneui30 .dijitSelectFocused .dijitArrowButton .dijitArrowButtonInner {
+    margin-bottom: 1px;
+	background-position: -70px 50%;
+}
+
+/* disable status */
+.oneui30 .dijitSelectDisabled {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    background-image: none;
+    color: #666;
+}
+
+.oneui30 .dijitSelectDisabled .dijitArrowButton {
+    background-color: #eee;
+}
+
+/* Dropdown menu style for select */
+.oneui30 .dijitSelectMenu td.dijitMenuItemIconCell, .oneui30 .dijitSelectMenu td.dijitMenuArrowCell { 
+	/* so that arrow and icon cells from MenuItem are not displayed */
+    display: none;
+}
+
+.oneui30 .dijitSelectMenu td.dijitMenuItemLabel { 
+	/* line up menu text with text in select box (in LTR and RTL modes) */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.oneui30 .dijitSelectMenu .dijitMenuSeparatorTop {
+    border-bottom: 1px solid #aaa;
+}

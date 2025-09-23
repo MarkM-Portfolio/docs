@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Pilih bahasa untuk memformat angka, mata uang, tanggal, dan jam.",
+	INPUT_INVALID_LOCALENAME: "Nama bahasa yang tidak valid",
+	INPUT_EMPTY_LOCALENAME: "Pilih bahasa.",
+	
+	Spain_Catalan: "Spanyol (Katalan)",
+	Denmark: "Denmark",
+	Germany: "Jerman",
+	Greek: "Yunani",
+	United_States: "Amerika Serikat",
+	United_Kingdom: "Inggris",
+	Spain: "Spanyol",
+	Finland: "Finlandia",
+	France: "Prancis",
+	Italy: "Italia",
+	Japan: "Jepang",
+	Korean: "Korea Selatan",
+	Norway: "Norwegia",
+	Netherlands: "Belanda",
+	Poland: "Polandia",
+	Brazil: "Brazil",
+	Portugal: "Portugal",
+	Russia: "Rusia",
+	Sweden: "Swedia",
+	Thailand: "Thailand",
+	Turkey: "Turki",
+	China: "Tiongkok",
+	Taiwan_China: "Taiwan (Tiongkok)",
+	Israel: "Israel"
+})
+

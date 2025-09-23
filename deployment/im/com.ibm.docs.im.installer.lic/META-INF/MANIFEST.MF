@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IBM Docs Installer Lic
+Bundle-SymbolicName: com.ibm.docs.im.installer.lic;singleton:=true
+Bundle-Version: 2.0.0.qualifier
+Bundle-Vendor: IBM
+Bundle-Localization: plugin
+Require-Bundle: com.ibm.cic.common.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

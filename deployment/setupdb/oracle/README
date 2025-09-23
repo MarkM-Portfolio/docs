@@ -1,0 +1,14 @@
+Steps to create Oracle database for HCL Docs
+
+1. Log in with the same user ID that you used to install the Oracle database system, usually Administrator
+2. Start Windows command line window
+3. Set the ORACLE_SID, like "set ORACLE_SID=idocs", idocs is the oracle SID when you create Oracle database for HCL Docs, following our WIKI guide
+
+ a) Run createDb.bat|sh to create database scheme
+ b) Run dropDb.bat|sh to drop database scheme completely
+ c) Run updateDBSchema.bat|sh to apply the DB migration of IBM docs, that is to apply the fixupN.sqls, based on your current DB scheme
+ 
+Notes: 
+
+ i) Please be attention that in 3.a, you will be asked to input database password for Oracle user DOCSUSER, this password will be used as database password during Docs installation.
+ ii) The createDb.sh script needs dos2unix command and write permission to your directory. 

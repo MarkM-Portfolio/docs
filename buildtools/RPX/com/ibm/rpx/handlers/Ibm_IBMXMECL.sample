@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding='UTF-8'?>
+  <?NLS TYPE="org.eclipse.help.contexts"?>
+  <contexts>
+    <context  id="add_bookmark_action_context" >
+      <description><b>Bookmarks</b> place an "anchor" at a specific line 
+        in a workbench resource.</description>
+      <topic label="Adding a Bookmark" href="../publish/2089/$File/tasks-81.htm"/>
+      <topic alt="Working with Bookmarks" href="../publish/2089/$File/tasks-80.htm"/>
+      <topic label="Bookmarks View" href="../publish/2089/$File/ref-28.htm"/>
+    </context>
+  </contexts>
+

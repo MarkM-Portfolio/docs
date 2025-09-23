@@ -1,0 +1,26 @@
+{
+	"id":"test.odt",
+	"version": "1.0",
+	"name":"test.odt",
+	"description":"This is a test document",
+	"size":9223,
+	"created_at":"2015-04-08T04:21:56-07:00",
+	"modified_at":"2015-04-08T04:21:56-07:00",
+	"created_by":
+	{
+		"id":"5c11a0c0-7f6f-1033-982d-eba7a40afa7a",
+		"name":"fake user",
+		"email":"fakeuser@gmail.com"
+	},
+	"modified_by":
+	{
+		"id":"5c11a0c0-7f6f-1033-982d-eba7a40afa7a",
+		"name":"fake user",
+		"email":"fakeuser@gmail.com"
+	},
+	"permissions":
+	{
+		"read": "true",
+		"write": "true"
+	}
+}

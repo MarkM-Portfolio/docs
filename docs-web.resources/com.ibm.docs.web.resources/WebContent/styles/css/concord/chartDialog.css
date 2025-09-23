@@ -1,0 +1,251 @@
+#S_d_ChartProp .dijitContentPane.dijitTabPane.dijitTabContainerTop-child.dijitTabContainerTop-dijitContentPane.dijitVisible {
+	height:320px;
+	width:720px;
+	overflow: hidden;
+}
+.dijitContentPane.dijitTabPane.dijitTabContainerTop-child.dijitTabContainerTop-dijitContentPane.dijitVisible.pane2 { 
+	width:815px!important;
+}
+
+.oneui30 .lotusTabDialog .dijitAlignClient{
+	position:static
+}
+
+.lotusui30 .lotusTabDialog .lotusSection2 .lotusSectionHeader {
+    border-top: medium none;
+}
+
+#S_d_ChartProp .lotusArrow{
+	background-image: none;
+}
+
+#S_d_ChartProp .lotusTwistyClosed{
+   background-position: 2px -102px;
+}
+
+.lotusui30 .lotusTabDialog .lotusSection2 .lotusArrow img {
+    background-image: url("../images/lotusSprite-8bit.png");
+}
+
+.leftcol {
+	width:330px;
+	float:left;
+	height: 320px;
+	overflow-y: auto;
+}
+
+.rightcol {
+	float:right;
+	width:400px;
+	margin-top:10px;
+}
+
+.dijitRtl#S_d_ChartProp .leftcol {
+	float:right;
+}
+
+.dijitRtl#S_d_ChartProp .rightcol {
+	float:left;
+}
+
+.dijitRtl#S_d_ChartProp .lotusArrow {
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
+
+.chartPreview{
+    width:400px;
+    height: 300px;
+}
+
+.lotusSectionBody .row1 {
+	overflow:hidden;
+}
+.lotusSectionBody .row2 {
+	clear:both;
+}
+
+.lotusSection2, .lotusSectionBody, .lotusChunk, .lotusChunk10, .lotusChunk15, .lotusChunk20{
+	overflow: hidden;
+}
+.dijitTabListContainer-top {
+	height: 35px;
+}
+
+.lotusui30 .lotusSection2 .lotusHeading, .lotusSection2 .lotusHeading2 {
+    font-size: 1.15em!important;
+}
+
+.lotusui30 .lotusSection2 .lotusSubheader .lotusHeading2 {
+	font-size:1.05em!important;
+}
+
+.lotusui30 .lotusSection2 label.lotusHeading {
+	font-size:1em!important;
+}
+.lotusui30 .lotusForm2 .lotusText, .lotusui30 .lotusForm2 textarea {
+	color:#666666;
+	width:98%;
+}
+.lotusui30 .leftcol.lotusForm2 .lotusText, .lotusui30 .leftcol.lotusForm2 textarea, .lotusui30 .leftcol.lotusForm2 select {
+	width:98%;
+}
+
+/*** font style button group ***/
+.fontstyle { margin-top:5px;clear:both;}
+.fontstyle img {
+	margin-right:6px;
+}
+.fontstyle.lotusRight {
+	clear:none;
+	margin-top:0;
+}
+.fontstyle.lotusRight .lastone {
+	margin-right:0;
+}
+
+.checkbox img {
+	border:1px solid #aaa;
+	border-radius:2px;
+	width:12px; height:12px;
+	margin-right:10px;
+}
+
+.leftcol .lotusText.inputnumberunit {
+	width:40px!important;
+	margin-right:5px;
+}
+
+.lotusui30 .lotusSection2 .lotusSectionBody {
+	padding: 5px 5px 5px 10px!important;
+}
+.scale .valuesetting {
+	overflow:hidden;
+	clear:both;
+}
+.lotusui30 .lotusForm2 .lotusRight.lotusText, .lotusui30 .lotusForm2 textarea.lotusRight, .lotusui30 .lotusForm2 select.lotusRight {
+	width:180px;
+	text-align:left;
+	margin-right: 5px;
+}
+.lotusui30 .lotusSection2 .lotusSectionBody .lotusSubheader.lotusChunk15 {
+	margin-top:15px;
+}
+
+/*** DATA PANE ***/
+/*set margin between radio button rows*/
+.lotusui30 .lotusForm2 fieldset .lotusFieldWrapper {
+	margin-bottom:5px;
+}
+
+.buttonLabelTruncate
+{
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+}
+
+.fontfamilylabel{
+   width: 120px;
+}
+
+.chartdropmenuPopup{
+   /* max-height: 150px;*/
+   overflow-y: auto !important;
+   overflow-x: hidden !important;
+   border: 1px solid black !important;
+}
+
+.onpremise .chartdropmenuPopup .dijitMenuActive .dijitMenuItemHover .dijitMenuItemSelected, 
+.onpremise .chartdropmenuPopup .dijitMenuActive .dijitMenuItemSelected {
+    background-color: #181818;
+    border: 0px solid white;
+}
+
+.chartdropmenuPopup table.chartdropmenu 
+{
+ 	border: none !important;
+}
+
+.fontToolbarIcon {
+	background-image: url(../websheet/img/ssToolbarSprite.png);
+    background-position: 100px center;
+    background-repeat: no-repeat;
+    display:inline-block!important;
+    height: 16px;
+    width: 16px;
+    margin: 0px !important;
+}
+
+.fontToolbarIcon.boldIcon {
+    padding-top:2px;
+	background-position: 0px -96px;
+}
+
+.fontToolbarIcon.italicIcon {
+    padding-top:2px;
+	background-position: 0px -112px;
+}
+
+.fontToolbarIcon.fontColorIcon {
+    padding-top:2px;
+	background-position: 0px -160px;
+}
+
+#S_d_ChartProp .dijitButtonContents{
+    height: 18px
+}
+
+.oneui30 #S_d_ChartProp .dijitToggleButton .dijitButtonNode
+{
+	padding: 4px 6px 2px;
+}
+
+.oneui30 #S_d_ChartProp .dijitTabContainer .dijitButtonText
+{
+    font-weight: normal !important;
+}
+
+.dijit_a11y .itemInvisible
+{
+   display: none;
+}
+
+.dijit_a11y .inputBorder
+{
+   border: medium inset #000000 !important;
+}
+
+.dijit_a11y .itemVisible
+{
+   display: inline !important;
+}
+/*For dojo tab container that's used in chart types dialog, applicable for Dojo 1.9.x +*/
+#S_d_select_chart_style .dijitTabContainerTop-container, #S_d_ChartProp .dijitTabContainerTop-container {
+	top: 0 !important;
+	position: relative !important;
+}
+#S_d_select_chart_style .dijitTabInner.dijitTabContent.dijitTab.dijitTabChecked, #S_d_ChartProp .dijitTabInner.dijitTabContent.dijitTab.dijitTabChecked{
+	background-image: url("../images/TabSharkfinLightUp.png");
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 9px;
+}
+#S_d_select_chart_style .dijitTabInner:first-child,  #S_d_select_chart_style .dijitTabInner.dijitTabChecked, #S_d_ChartProp .dijitTabInner:first-child, #S_d_ChartProp .dijitTabInner.dijitTabChecked{
+	border-left: 0 none !important;
+}
+
+#S_d_select_chart_style .dijitTabContainerTop-tabs div:first-child:not(.dijitTabChecked), #S_d_ChartProp .dijitTabContainerTop-tabs div:first-child:not(.dijitTabChecked) {
+	border-right: 1px solid #666666;
+}
+/*:~*/
+
+/* For FF only, defect 46485*/
+#S_d_select_chart_style .dijitTabContainerTop-tabs, #S_d_ChartProp .dijitTabContainerTop-tabs {
+	right: 0px;
+}
+
+.dijitRtl#S_d_select_chart_style .dijitTabContainerTop-tabs, .dijitRtl#S_d_ChartProp .dijitTabContainerTop-tabs {
+	left: 0px;
+	right: auto;
+}
+/**/

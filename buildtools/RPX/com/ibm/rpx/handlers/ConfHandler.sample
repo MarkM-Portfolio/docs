@@ -1,0 +1,20 @@
+// Comments are begun with two forward slashes (//) and continue to the end of the
+// line. 
+"System Configuration View"
+"Vendor"		= OVWDB vendor
+"Contact"		= OVWDB SNMP sysContact
+"Agent"			= OVWDB SNMPAgent
+"Location"		= OVWDB SNMP sysLocation
+"Description"		= OVWDB SNMP sysDescr
+
+"Health View"
+"Health %"		= TCL \usr\ov\tcl\healthtip.tcl:SubmapExplorer:1
+"Members"		= TCL \usr\ov\tcl\healthtip.tcl:SubmapExplorer:2
+"IP Status"		= TCL \usr\ov\tcl\healthtip.tcl:SubmapExplorer:3
+"Service Status"	= TCL \usr\ov\tcl\healthtip.tcl:SubmapExplorer:4
+
+"Availability View"
+"Up Time"		= ODBC UpTime
+"Down Time"		= ODBC DownTime
+"Mean Time Between Failure" = ODBC MeanTimeBetweenFailure
+

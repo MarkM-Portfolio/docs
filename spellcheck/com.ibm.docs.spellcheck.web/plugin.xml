@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.equinox.http.registry.servlets">
+        <servlet 
+	 	 	alias="/spell" 
+	 	 	class="com.ibm.docs.spellcheck.servlets.SpellCheckServlet"
+	 	 	load-on-startup="true"> 	
+	 	</servlet>
+	 	<servlet 
+	 	 	alias="/protect/config" 
+	 	 	class="com.ibm.docs.spellcheck.servlets.ConfigurationServlet"
+	 	 	load-on-startup="true">
+	 	 	
+	 	 	<init-param
+               name="UseSpellcheckPool"
+               value="false">
+         	</init-param>
+         	<init-param
+               name="PoolSize"
+               value="50">
+         	</init-param>
+         	
+         	<init-param name="VERSION"
+               value="20120215-1830">
+			</init-param> 	
+	 	</servlet>  
+   </extension>
+
+</plugin>

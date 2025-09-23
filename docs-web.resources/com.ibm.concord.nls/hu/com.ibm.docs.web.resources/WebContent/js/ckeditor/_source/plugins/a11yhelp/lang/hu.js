@@ -1,0 +1,125 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+
+
+Portions Copyright IBM Corp., 2010-2011.
+*/
+
+CKEDITOR.plugins.setLang( "a11yhelp", "en",
+{
+
+	// When translating all fields in accessibilityHelp object, do not translate anything with the form ${xxx}
+	accessibilityHelp :
+	{
+		title : "A kisegítő lehetőségekkel kapcsolatos útmutatók",
+		contents : "A súgó tartalomjegyzéke. A párbeszédpanel bezárásához nyomja meg az ESC billentyűt.",
+		legend :
+		[
+			{
+				name : "Általános rész",
+				items :
+				[
+					{
+						name : "Szerkesztő eszközsáv",
+						legend:
+							"Az eszközsávra ugráshoz nyomja meg a ${toolbarFocus} lehetőséget." +
+							"A következő, illetve előző eszközsávcsoportra ugráshoz használja a TABULÁTOR billentyűt, illetve a SHIFT+TABULÁTOR billentyűkombinációt. " +
+							"A következő, illetve előző eszközsávgombra ugráshoz használja a JOBBRA NYÍL, illetve a BALRA NYÍL billentyűt." +
+							"Az eszközsávgomb aktiválásához nyomja meg a SZÓKÖZ vagy az ENTER billentyűt."
+					},
+
+					{
+						name : "Szerkesztő párbeszédpanel",
+						legend :
+							"A párbeszédpanelen belül a következő párbeszédmezőre ugráshoz nyomja meg a TABULÁTOR billentyűt, az előző mezőre ugráshoz a SHIFT+TABULÁTOR billentyűkombinációt, a párbeszédpanel tartalmának elfogadásához az ENTER billentyűt, a párbeszédpanel bezárásához pedig az ESC billentyűt." +
+							"Többlapos párbeszédpanelek esetén az ALT+F10 billentyűkombinációval ugorhat a lapok listájára." +
+							"Ezután a következő lapra a TABULÁTOR vagy a JOBBRA NYÍL billentyűvel válthat." +
+							"Az előző lapra a SHIFT+TABULÁTOR billentyűkombinációval vagy a BALRA NYÍL billentyűvel ugorhat." +
+							"A lap kiválasztásához nyomja meg a SZÓKÖZ vagy ENTER billentyűt."
+					},
+
+					{
+						name : "A szerkesztő helyi menüje",
+						legend :
+							"A helyi menü megnyitásához nyomja meg a ${contextMenu} vagy az ALKALMAZÁS gombot." +
+							"Ezután ugorjon a következő menüpontra a TABULÁTOR vagy a LEFELÉ NYÍL billentyűvel." +
+							"Az előző pontra a SHIFT+TABULÁTOR vagy a FELFELÉ NYÍL billentyűvel ugorhat." +
+							"A menüpont kiválasztásához nyomja meg a SZÓKÖZ vagy ENTER billentyűt." +
+							"Az aktuális menüpont almenüjét a SZÓKÖZ, ENTER vagy JOBBRA NYÍL billentyűvel nyithatja meg." +
+							"A szülő menüponthoz az ESC vagy a BALRA NYÍL billentyűvel térhet vissza." +
+							"A helyi menü bezáráshoz nyomja meg az ESC billentyűt."
+					},
+
+					{
+						name : "Szerkesztő lista",
+						legend :
+							"A listán belül a következő elemre a TABULÁTOR vagy a LEFELÉ NYÍL billentyűvel léphet." +
+							"Az előző listaelemre a SHIFT+TABULÁTOR vagy a FELFELÉ NYÍL billentyűvel léphet." +
+							"A lista megfelelő elemének kiválasztásához nyomja meg a SZÓKÖZ vagy az ENTER billentyűt." +
+							"A lista bezáráshoz nyomja meg az ESC billentyűt."
+					},
+
+					{
+						name : "Szerkesztőelem elérési útja sáv (ha elérhető*)",
+						legend :
+							"Az elem elérési útjának sávjára az ${elementsPathFocus} ikonra kattintva ugorhat." +
+							"A következő elem gombjára a TABULÁTOR vagy a JOBBRA NYÍL billentyűvel léphet." +
+							"Az előző elem gombjára a SHIFT+TABULÁTOR vagy a BALRA NYÍL billentyűvel léphet." +
+							"A szerkesztőben a SZÓKÖZ vagy az ENTER billentyű megnyomásával választhatja ki az elemet."
+					}
+				]
+			},
+			{
+				name : "Parancsok",
+				items :
+				[
+					{
+						name : " Visszavonás parancs",
+						legend : "Nyomja meg az ${undo} elemet."
+					},
+					{
+						name : " Újra parancs",
+						legend : "Nyomja meg a ${redo} elemet."
+					},
+					{
+						name : " Félkövér parancs",
+						legend : "Nyomja meg a ${bold} elemet."
+					},
+					{
+						name : " Dőlt parancs",
+						legend : "Nyomja meg a ${italic} elemet."
+					},
+					{
+						name : " Aláhúzás parancs",
+						legend : "Nyomja meg a ${underline} elemet."
+					},
+					{
+						name : " Hivatkozás parancs",
+						legend : "Nyomja meg a ${link} elemet."
+					},
+					{
+						name : " Eszköztár összecsukása parancs (ha elérhető*)",
+						legend : "Nyomja meg a ${toolbarCollapse} elemet."
+					},
+					{
+						name : " Kisegítő lehetőségek súgója",
+						legend : "Nyomja meg a ${a11yHelp} elemet."
+					}
+				]
+			},
+
+			{	//added by ibm
+				name : "",
+				items :
+				[
+					{
+						name : "Megjegyzés",
+						legend : "* Lehet, hogy néhány funkciót letiltott a rendszergazda."
+					}
+				]
+			}
+		]
+	}
+
+});

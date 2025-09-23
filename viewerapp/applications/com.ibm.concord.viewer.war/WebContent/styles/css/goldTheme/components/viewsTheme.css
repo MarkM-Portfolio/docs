@@ -1,0 +1,47 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for display controls
+companion file is views.css*/
+/***************************************/
+/*** D I S P L A Y   C O N T R O L S ***/
+/***************************************/
+.lotusViewControl div{background-color:#fff;background-image:url(../../images/btnBkgd.png);border-color:#c0c7cd}
+.lotusDetailsOff {background-image:url(../../images/viewDetails.png)}
+.lotusDetailsOff:hover, .lotusDetailsOff:focus{background-image:url(../../images/viewDetailsHover.png)}
+.lotusDetailsOn {background-image:url(../../images/viewDetailsSelected.png)}
+.lotusSummaryOff {background-image:url(../../images/viewSummary.png)}
+.lotusSummaryOff:hover, .lotusSummaryOff:focus {background-image:url(../../images/viewSummaryHover.png)}
+.lotusSummaryOn {background-image:url(../../images/viewSummarySelected.png)}
+.lotusTreeOff {background-image:url(../../images/viewTree.png)}
+.lotusTreeOff:hover, .lotusTreeOff:focus {background-image:url(../../images/viewTreeHover.png)}
+.lotusTreeOn {background-image:url(../../images/viewTreeSelected.png)}
+.lotusTileOff {background-image:url(../../images/viewThumbnail.png)}
+.lotusTileOff:hover, .lotusTileOff:focus {background-image:url(../../images/viewThumbnailHover.png)}
+.lotusTileOn {background-image:url(../../images/viewThumbnailSelected.png)}
+.lotusFolderOff {background-image:url(../../images/viewFolder.png)}
+.lotusFolderOff:hover, .lotusFolderOff:focus {background-image:url(../../images/viewFolderHover.png)}
+.lotusFolderOn {background-image:url(../../images/viewFolderSelected.png)}
+
+/*sprites on*/
+/*[sprite]*/
+.lotusSpritesOn .lotusViewControl div{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 0}
+.lotusSpritesOn .lotusViewControl a.lotusView{background-image:url(../themeImages/lotusSprite-8bit.png)}
+.lotusSpritesOn .lotusDetailsOff {background-position:0 -6438px}
+.lotusSpritesOn .lotusDetailsOff:hover, .lotusSpritesOn .lotusDetailsOff:focus{background-position:0 -6558px}
+.lotusSpritesOn .lotusDetailsOn {background-position:0 -6678px}
+.lotusSpritesOn .lotusSummaryOff {background-position:0 -7158px}
+.lotusSpritesOn .lotusSummaryOff:hover, .lotusSpritesOn .lotusSummaryOff:focus {background-position:0 -7218px}
+.lotusSpritesOn .lotusSummaryOn {background-position:0 -7278px}
+.lotusSpritesOn .lotusTreeOff {background-position:0 -7518px}
+.lotusSpritesOn .lotusTreeOff:hover, .lotusSpritesOn .lotusTreeOff:focus {background-position:0 -7578px}
+.lotusSpritesOn .lotusTreeOn {background-position:0 -7638px}
+.lotusSpritesOn .lotusTileOff {background-position:0 -7338px}
+.lotusSpritesOn .lotusTileOff:hover, .lotusSpritesOn .lotusTileOff:focus {background-position:0 -7398px}
+.lotusSpritesOn .lotusTileOn {background-position:0 -7458px}
+.lotusSpritesOn .lotusFolderOff {background-position:0 -6798px}
+.lotusSpritesOn .lotusFolderOff:hover, .lotusSpritesOn .lotusFolderOff:focus {background-position:0 -6918px}
+.lotusSpritesOn .lotusFolderOn {background-position:0 -7038px}
+/*[/sprite]*/
+/***********************************************************/

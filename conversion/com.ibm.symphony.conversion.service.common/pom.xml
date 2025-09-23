@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>conversion</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.symphony.conversion.service.common</artifactId>
+  <name>com.ibm.symphony.conversion.service.common - jar</name>
+  <packaging>jar</packaging>
+
+  <dependencies>    
+    <!-- 3rd party dependencies -->
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+    </dependency>
+	<dependency>
+	  <groupId>org.apache.xmlgraphics</groupId>
+	  <artifactId>batik-dom</artifactId>
+    </dependency>	
+	<dependency>
+	  <groupId>org.apache.xmlgraphics</groupId>
+	  <artifactId>batik-awt-util</artifactId>
+    </dependency>
+	<dependency>
+	  <groupId>org.apache.xmlgraphics</groupId>
+	  <artifactId>batik-svg-dom</artifactId>
+    </dependency>	
+	<dependency>
+	  <groupId>org.apache.xmlgraphics</groupId>
+	  <artifactId>batik-transcoder</artifactId>
+    </dependency>	
+	<dependency>
+	  <groupId>org.apache.xmlgraphics</groupId>
+	  <artifactId>batik-util</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>acf</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>3rd-dependencies</groupId>
+      <artifactId>odfdom</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>3rd-dependencies</groupId>
+      <artifactId>jtidy</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>	
+    </dependency>	
+  </dependencies>
+
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="create.im.package.zip">
+	<property name="cic.authoring.project" value="${basedir}" />
+	<property name="cic.im.target" value="1.7.3" />
+	<property name="cic.copy.artifacts" value="false" />
+
+	<property name="cic.output.repository" value="${BUILD_OUTPUT}/cic.output.repository" />
+	
+	<target name="build.im.repository">
+		<cic.build imtarget="${cic.im.target}">
+			<metadata path="${cic.authoring.project}/com.ibm.docs.im.installer.content.shu" />
+			<metadata path="${cic.authoring.project}/com.ibm.docs.im.installer.main.asy" />
+			<metadata path="${cic.authoring.project}/com.ibm.docs.im.installer.off" />
+			<artifact path="${cic.authoring.project}/" recursive="true" />
+			<output artifactDestination="${cic.output.repository}" copyArtifacts="${cic.copy.artifacts}" metadataDestination="${cic.output.repository}">			
+				<shareableEntity id="com.ibm.docs.im.installer.content" tolerance="[0.0.0,0.0.0]" />
+				<shareableEntity id="com.ibm.docs.im.installer.main" tolerance="[0.0.0,0.0.0]" />
+				<offering id="com.ibm.docs.im.installer" tolerance="[0.0.0,0.0.0]" />
+			</output>
+		</cic.build>
+	</target>
+	
+	<target name="create.im.package.zip" depends="build.im.repository">
+		<copy todir="${cic.output.repository}">
+			<fileset dir="${cic.authoring.project}">
+				<include name="upgrade/**"/>				
+			</fileset>
+		</copy><!--
+		<zip destfile="${BUILD_OUTPUT}/IBMConnectionsDocs_${VERSION}.zip" basedir="${cic.output.repository}" />-->
+	</target>
+</project>

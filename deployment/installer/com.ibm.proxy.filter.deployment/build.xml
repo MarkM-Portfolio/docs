@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="com.ibm.docs.deployment" basedir="." default="deploy">
+	<property name="installer.dir" value="installer" />
+	<property name="installer_im.dir" value="installer_im" />
+
+	<target name="deploy">
+		<mkdir dir="${build.home}/installer" />
+		<copy todir="${build.home}/installer">
+			<fileset dir="${installer.dir}">
+				<exclude name="**/ut/" />
+				<exclude name="**/ut.py" />
+			</fileset>
+		</copy>
+		<echo file="${build.home}/installer/version.txt">
+            {
+            "product_name" : "HCL Docs Proxy", 
+            "build_version" :  "${build.version}" ,
+            "build_timestamp" : "${build.timestamp}" 
+            }
+		</echo>
+		<mkdir dir="${build.home}/installer_im" />
+		<copy todir="${build.home}/installer_im">
+			<fileset dir="${installer_im.dir}">
+				<exclude name="**/ut/" />
+				<exclude name="**/ut.py" />
+			</fileset>
+		</copy>
+	</target>
+</project>

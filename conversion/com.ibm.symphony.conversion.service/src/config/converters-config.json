@@ -1,0 +1,822 @@
+{
+	"formartConverters":
+	[
+		{
+			"source_mimetype": "text/csv",
+		 	"target_mimetype": "application/json",
+		 	"class": "com.ibm.symphony.conversion.converter.csv2json.CSV2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/msword",
+		 	"target_mimetype": "text/html",
+		 	"class": "com.ibm.symphony.conversion.converter.doc2html.DOC2HTMLConverter"
+		},
+		{		
+			"source_mimetype": "application/msword",
+			"target_mimetype": "application/vnd.oasis.opendocument.text",
+			"class": "com.ibm.symphony.conversion.converter.doc2odt.DOC2ODTConverter"
+		},
+		{
+			"source_mimetype": "application/msword",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.doc2pdf.DOC2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.docx2html.DOCX2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.docx2html.DOCX2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+			"target_mimetype": "application/vnd.oasis.opendocument.text",
+			"class": "com.ibm.symphony.conversion.converter.docx2odt.DOCX2ODTConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+			"target_mimetype": "application/vnd.oasis.opendocument.text",
+			"class": "com.ibm.symphony.conversion.converter.docx2odt.DOCX2ODTConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.docx2pdf.DOCX2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.docx2pdf.DOCX2PDFConverter"
+		},
+		{
+			"source_mimetype": "text/html",
+			"target_mimetype": "application/msword",
+			"class": "com.ibm.symphony.conversion.converter.html2doc.HTML2DOCConverter"
+		},
+		{
+			"source_mimetype": "text/html",
+			"target_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"class": "com.ibm.symphony.conversion.converter.html2odp.HTML2ODPConverter"
+		},
+		{
+			"source_mimetype": "text/html",
+			"target_mimetype": "application/vnd.oasis.opendocument.text",
+			"class": "com.ibm.symphony.conversion.converter.html2odt.HTML2ODTConverter"
+		},
+		{
+			"source_mimetype": "text/html",
+			"target_mimetype": "application/vnd.ms-powerpoint",
+			"class": "com.ibm.symphony.conversion.converter.html2ppt.HTML2PPTConverter"
+		},
+		{
+			"source_mimetype": "text/html",
+			"target_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"class": "com.ibm.symphony.conversion.converter.html2pptx.HTML2PPTXConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+			"target_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"class": "com.ibm.symphony.conversion.converter.json2ods.JSON2ODSConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+			"target_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"class": "com.ibm.symphony.conversion.converter.json2ots.JSON2OTSConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.json2pdf.JSON2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+			"target_mimetype": "application/vnd.ms-excel",
+			"class": "com.ibm.symphony.conversion.converter.json2xls.JSON2XLSConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+			"target_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+			"class": "com.ibm.symphony.conversion.converter.json2xlsx.JSON2XLSXConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+			"target_mimetype": "application/vnd.ms-excel.sheet.macroEnabled",
+			"class": "com.ibm.symphony.conversion.converter.json2xlsx.JSON2XLSXConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+			"target_mimetype": "application/vnd.ms-excel.sheet.macroEnabled.12",
+			"class": "com.ibm.symphony.conversion.converter.json2xlsx.JSON2XLSXConverter"
+		},				
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation-template",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation-template",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation-template",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation-template",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.odf2image.ODF2ImageConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.odp2html.ODP2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation-template",
+			"target_mimetype": "text/html",
+		 	"class": "com.ibm.symphony.conversion.converter.odp2html.ODP2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.odp2pdf.ODP2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation-template",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.odp2pdf.ODP2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"target_mimetype": "application/vnd.ms-powerpoint",
+			"class": "com.ibm.symphony.conversion.converter.odp2ppt.ODP2PPTConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.presentation-template",
+			"target_mimetype": "application/vnd.ms-powerpoint",
+			"class": "com.ibm.symphony.conversion.converter.odp2ppt.ODP2PPTConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.ods2json.ODS2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.ods2json.ODS2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.ods2pdf.ODS2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.ods2pdf.ODS2PDFConverter"
+		},		
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"target_mimetype": "application/vnd.ms-excel",
+			"class": "com.ibm.symphony.conversion.converter.ods2xls.ODS2XLSConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "application/vnd.ms-excel",
+			"class": "com.ibm.symphony.conversion.converter.ods2xls.ODS2XLSConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.odsjson2html.ODSJSON2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text",
+			"target_mimetype": "application/msword",
+			"class": "com.ibm.symphony.conversion.converter.odt2doc.ODT2DOCConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+			"target_mimetype": "application/msword",
+			"class": "com.ibm.symphony.conversion.converter.odt2doc.ODT2DOCConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.odt2html.ODT2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.odt2html.ODT2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.odt2pdf.ODT2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.odt2pdf.ODT2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.ots2html.OTS2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.spreadsheet-template",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.ots2pdf.OTS2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.ott2pdf.OTT2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-powerpoint",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.ppt2html.PPT2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-powerpoint",
+			"target_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"class": "com.ibm.symphony.conversion.converter.ppt2odp.PPT2ODPConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-powerpoint",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.ppt2pdf.PPT2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.pptx2html.PPTX2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.template",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.pptx2html.PPTX2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"target_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"class": "com.ibm.symphony.conversion.converter.pptx2odp.PPTX2ODPConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.template",
+			"target_mimetype": "application/vnd.oasis.opendocument.presentation",
+			"class": "com.ibm.symphony.conversion.converter.pptx2odp.PPTX2ODPConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.pptx2pdf.PPTX2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.template",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.pptx2pdf.PPTX2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"target_mimetype": "application/vnd.ms-powerpoint",
+			"class": "com.ibm.symphony.conversion.converter.pptx2ppt.PPTX2PPTConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.template",
+			"target_mimetype": "application/vnd.ms-powerpoint",
+			"class": "com.ibm.symphony.conversion.converter.pptx2ppt.PPTX2PPTConverter"
+		},
+		{
+			"source_mimetype": "application/msword",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-powerpoint",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.template",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/rtf",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "text/plain",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/msword",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+	
+		{
+			"source_mimetype": "application/vnd.ms-excel",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-powerpoint",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.template",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/rtf",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "text/plain",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/msword",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-powerpoint",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.template",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/rtf",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "text/plain",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/msword",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-powerpoint",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.presentationml.template",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/rtf",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "text/plain",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		
+		{
+			"source_mimetype": "application/pdf",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/pdf",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/pdf",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/pdf",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/gif",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel.sheet.macroEnabled",
+			"target_mimetype": "application/gif",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel.sheet.macroEnabled",
+			"target_mimetype": "application/png",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel.sheet.macroEnabled",
+			"target_mimetype": "application/bmp",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel.sheet.macroEnabled",
+			"target_mimetype": "application/jpeg",
+			"class": "com.ibm.symphony.conversion.converter.libre.LibreViewerConverter"
+		},
+		{
+			"source_mimetype": "image/svg-xml",
+			"target_mimetype": "image/png",
+			"class": "com.ibm.symphony.conversion.converter.svg2png.SVG2PNGConverter"
+		},
+		{
+			"source_mimetype": "image/svm",
+			"target_mimetype": "image/png",
+			"class": "com.ibm.symphony.conversion.converter.svm2png.SVM2PNGConverter"
+		},
+		{
+			"source_mimetype": "text/plain",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.txt2html.TXT2HTMLConverter"
+		},
+		{
+			"source_mimetype": "text/plain",
+			"target_mimetype": "application/vnd.oasis.opendocument.text",
+			"class": "com.ibm.symphony.conversion.converter.txt2odt.TXT2ODTConverter"
+		},
+		{
+			"source_mimetype": "application/x-msmetafile",
+			"target_mimetype": "image/png",
+			"class": "com.ibm.symphony.conversion.converter.wmf2png.WMF2PNGConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel",
+			"target_mimetype": "text/html",
+			"class": "com.ibm.symphony.conversion.converter.xls2html.XLS2HTMLConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.xls2json.XLS2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel",
+			"target_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"class": "com.ibm.symphony.conversion.converter.xls2ods.XLS2ODSConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.xls2pdf.XLS2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2json.XLSX2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel.sheet.macroEnabled",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2json.XLSX2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel.sheet.macroEnabled.12",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2json.XLSX2JSONConverter"
+		},		
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2json.XLSX2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+			"target_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2ods.XLSX2ODSConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+			"target_mimetype": "application/vnd.oasis.opendocument.spreadsheet",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2ods.XLSX2ODSConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2pdf.XLSX2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2pdf.XLSX2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel.sheet.macroEnabled",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2pdf.XLSX2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.ms-excel.sheet.macroEnabled.12",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.xlsx2pdf.XLSX2PDFConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.oasis.opendocument.text",
+		 	"target_mimetype": "application/json",
+		 	"class": "com.ibm.symphony.conversion.converter.odt2json.ODT2JSONConverter"
+		},
+		{
+		 	"source_mimetype": "application/vnd.oasis.opendocument.text-template",
+		 	"target_mimetype": "application/json",
+		 	"class": "com.ibm.symphony.conversion.converter.odt2json.ODT2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+		 	"target_mimetype": "application/vnd.oasis.opendocument.text",
+		 	"class": "com.ibm.symphony.conversion.converter.json2odt.JSON2ODTConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+		 	"target_mimetype": "application/msword",
+		 	"class": "com.ibm.symphony.conversion.converter.json2doc.JSON2DOCConverter"
+		},
+		{
+			"source_mimetype": "application/msword",
+		 	"target_mimetype": "application/json",
+		 	"class": "com.ibm.symphony.conversion.converter.doc2json.DOC2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+		 	"target_mimetype": "application/json",
+		 	"class": "com.ibm.symphony.conversion.converter.docx2json.DOCX2JSONConverter"
+		},		
+		{
+			"source_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+		 	"target_mimetype": "application/json",
+		 	"class": "com.ibm.symphony.conversion.converter.docx2json.DOCX2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/json",
+		 	"target_mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+		 	"class": "com.ibm.symphony.conversion.converter.json2docx.JSON2DOCXConverter"
+		},
+		{
+			"source_mimetype": "text/plain",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.txt2json.TXT2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/rtf",
+			"target_mimetype": "application/vnd.oasis.opendocument.text",
+			"class": "com.ibm.symphony.conversion.converter.rtf2odt.RTF2ODTConverter"
+		},
+		{
+			"source_mimetype": "application/rtf",
+			"target_mimetype": "application/json",
+			"class": "com.ibm.symphony.conversion.converter.rtf2json.RTF2JSONConverter"
+		},
+		{
+			"source_mimetype": "application/rtf",
+			"target_mimetype": "application/pdf",
+			"class": "com.ibm.symphony.conversion.converter.rtf2pdf.RTF2PDFConverter"
+		}
+	]
+}

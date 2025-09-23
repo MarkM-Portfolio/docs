@@ -1,0 +1,17 @@
+{
+  "1.0.1":[
+  			"draw:frame",
+  			"draw:line",
+  			"draw:connector",
+  			"draw:custom-shape",
+  			"draw:ellipse",
+  			"draw:measure",
+  			"draw:rect",
+  			"draw:path",
+  			"draw:g",
+  			"draw:polygon",
+  			"draw:polyline",
+  			"draw:regular-polygon",
+  			"dr3d:scene",
+  		  ]
+}

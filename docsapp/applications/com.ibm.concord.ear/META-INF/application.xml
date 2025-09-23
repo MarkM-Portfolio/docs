@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2020                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<application id="Application_ID" version="5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
+	<display-name>IBMDocs</display-name>
+	<module id="WebModule_1271666549375">
+		<web>
+			<web-uri>com.ibm.concord.war.war</web-uri>
+			<context-root>docs</context-root>
+		</web>
+	</module>
+	<module id="EjbModule_1314248803984">
+		<ejb>com.ibm.concord.admin.jar</ejb>
+	</module>
+	<module id="WebModule_1312265974187">
+		<web>
+			<web-uri>rtc4web_server.war</web-uri>
+			<context-root>docs/rtc</context-root>
+		</web>
+	</module>
+	<security-role id="SecurityRole_1359355712677">
+		<description>
+		The role for all the entitled users of HCL Docs.</description>
+		<role-name>entitledDocsUser4DefaultLevel</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1366253804234">
+		<description>
+		The role for all the entitled users of HCL Docs for Custom1 level.</description>
+		<role-name>entitledDocsUser4Custom1</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1366253988093">
+		<description>
+		The role for all the entitled users of HCL Docs for Custom2 level.</description>
+		<role-name>entitledDocsUser4Custom2</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1366253988094">
+		<description>
+		The role for all the entitled users of HCL Docs for Custom3 level.</description>
+		<role-name>entitledDocsUser4Custom3</role-name>
+	</security-role>
+	<security-role>
+		<role-name>docsAdmin</role-name>
+	</security-role>
+ </application>

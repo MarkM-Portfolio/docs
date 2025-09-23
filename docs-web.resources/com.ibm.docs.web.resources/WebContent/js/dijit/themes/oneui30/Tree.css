@@ -1,0 +1,121 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* Tree
+ * Styling Tree mostly means styling the TreeRow (dijitTreeRow)
+ * There are 4 basic states to style:
+ * Tree Row:
+ * 1. tree row (default styling):
+ * 		.dijitTreeRow - for background-color, border
+ * 2. hovered tree row (ie, mouse hover on a tree row)
+ * 		.dijitTreeRowHover - for background-color, border
+ * 3. active tree row (ie, mouse down on a tree row)
+ * 		.dijitTreeRowActive - for background-color, border
+ * 4. selected tree row
+ * 		dijitTreeRowSelected - for background-color, border
+ * Tree Expando:
+ * 	    dijitTreeExpando - for background-image, border, size
+ * Drag and Drop on TreeNodes:(insert line on dijitTreeContent node so it's aligned w/ target element
+ * 		.dijitTreeNode .dojoDndItemBefore - for border
+ * 		.dijitTreeNode .dojoDndItemAfter  - for border
+ */
+.oneui30 .dijitTreeNode {
+    zoom: 1; /* force layout on IE (TODO:may not be needed anymore) */
+}
+
+.oneui30 .dijitTreeNode, .oneui30 .dijitTreeNode * {
+    cursor: pointer;
+}
+
+.oneui30 .dijitTreeIsRoot {
+    background-image: none;
+}
+
+.oneui30 .dijitTreeRow { /* so insert line shows up on IE when dropping after a target element */
+    padding: 2px 0 4px;
+    margin: 0 1px;
+}
+
+.dj_ie .oneui30 .dijitTreeRow {
+    padding-top: 4px;
+}
+
+.dj_ie6 .oneui30 .dijitTreeRow {
+    background-image: none;
+}
+
+.oneui30 .dijitTreeRowHover {
+    padding: 1px 0 3px;
+	margin: 0;
+	background-color: #eee;
+    border: solid 1px #eee;
+    color: #000;
+    cursor: pointer;
+}
+
+/* also include when the selected has hover to keep the border */
+.oneui30 .dijitTreeRowSelected, .oneui30 .dijitTreeRowActive, .oneui30 .dijitTreeRowSelected .dijitTreeRowHover {
+    padding: 1px 0 3px;
+    margin: 0;
+	background-color: #eee;
+    border: solid 1px #ccc;
+    color: #000;
+}
+
+.dj_ie .oneui30 .dijitTreeRowSelected, .dj_ie .oneui30 .dijitTreeRowHover, .dj_ie .oneui30 .dijitTreeRowActive {
+	padding-top: 3px;
+}
+
+/* expando (open/closed) icon */
+.oneui30 .dijitTreeExpando {
+    background-image: url('images/treeExpandImages.png');
+    width: 16px;
+    height: 16px;
+    background-position: -35px 0; /* for dijitTreeExpandoOpened */
+}
+
+.oneui30 .dijitTreeRowHover .dijitTreeExpandoOpened {
+    background-position: -53px 0;
+}
+
+.oneui30 .dijitTreeExpandoClosed {
+    background-position: 1px 0;
+}
+
+.oneui30 .dijitTreeRowHover .dijitTreeExpandoClosed {
+    background-position: -17px 0;
+}
+
+.oneui30 .dijitRtl .dijitTreeExpandoClosed {
+    background-image: url("images/calendarArrows.png");
+    background-position: 1px 0;
+}
+
+.oneui30 .dijitRtl .dijitTreeRowHover .dijitTreeExpandoClosed {
+    background-image: url("images/calendarArrows.png");
+    background-position: -36px 0;
+}
+
+.oneui30 .dijitTreeExpandoLeaf {
+    background-image: none;
+}
+
+.oneui30 .dijitTreeExpandoLoading {
+    background-image: url('images/loadingAnimation.gif');
+}
+
+/* Drag and Drop on TreeNodes Put insert line on dijitTreeContent node so it's aligned w/ (ie, indented equally with) target element, even though dijitTreeRowNode is the actual "drag object" */
+.oneui30 .dijitTreeNode .dojoDndItemBefore, .oneui30 .dijitTreeNode .dojoDndItemAfter {
+    border-bottom: none;
+    border-top: none;
+}
+
+.oneui30 .dijitTreeNode .dojoDndItemBefore .dijitTreeContent {
+    border-top: 1px solid #aaa;
+}
+
+.oneui30 .dijitTreeNode .dojoDndItemAfter .dijitTreeContent {
+    border-bottom: 1px solid #aaa;
+}

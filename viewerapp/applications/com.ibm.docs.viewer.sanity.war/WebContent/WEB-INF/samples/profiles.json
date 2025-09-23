@@ -1,0 +1,30 @@
+{ "items":
+  [
+    {
+	"id" : "5c11a0c0-7f6f-1033-982d-eba7a40afa7a",
+	"name" : "docs09",
+	"display_name" : "docs09",
+	"email" : "docs09@mailinator.com",
+	"photo_url" : "https://localhost:9443/com.ibm.docs.api.rest.sample.war/statics/NoPhoto_Person_48.png",
+	"org_id" : "default_org",
+	"org_name": "IBM",
+	"job_title": "Developer"
+    },
+    {
+	"id" : "5c11a0c0-7f6f-1033-982d-eba7a40afa7b",
+	"name" : "docs10",
+	"display_name" : "docs10",
+	"email" : "docs10@mailinator.com",
+	"photo_url" : "photo_url",
+	"org_id" : "default_org"
+    },
+    {
+	"id" : "5c11a0c0-7f6f-1033-982d-eba7a40afa7c",
+	"name" : "docs11",
+	"display_name" : "docs11",
+	"email" : "docs11@mailinator.com",
+	"photo_url" : "photo_url",
+	"org_id" : "default_org"
+    }
+  ]
+}

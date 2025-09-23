@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Belgelerle çalışma" topic="text/document/documents_frame.html">
+   <topic label="Belgelerle çalışma" href="text/document/documents_frame.html">
+      <topic label="Belge oluşturma ve alma"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="Şablonlar hakkında" href="text/document/d_templates.html"/>
+         <topic label="Şablonlardan belge oluşturma"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Belgelerin varsayılan dosya biçimini değiştirme"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Paylaşılacak belgeleri karşıya yükleme"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Var olan belgeleri alma"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Parola korumalı Word dosyalarını açma"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Dosya uyumluluğu ve belgeleri verme"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Belgelerde desteklenen dosya biçimleri"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Belgeleri kaydetme" href="text/document/d_saving_documents.html"/>
+         <topic label="Belgelerin sürümlerini yayınlama"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Belgeleri diğer dosya biçimlerine verme"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Belgeleri paylaşma"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Belgeleri kişi ya da topluluklarla paylaşma"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Belgelerin erişim düzeylerini ayarlama"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Belgeler üzerinde gerçek zamanlı işbirliği yapma"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Belgelerde gerçek zamanlı olarak birlikte düzenleme"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="Belgelerde birlikte düzenleme hakkında"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Belgelerde diğer kişilerle birlikte düzenleme"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Belgelerde her bir düzenleyicinin değişikliklerini gösterme"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Belgelerdeki yorumları kullanarak işbirliği yapma"
+                href="text/document/d_comments_overview.html">
+            <topic label="Belgelerdeki yorumlar hakkında"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Belgelerde yorum oluşturma"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Belgelerdeki yorumları görüntüleme"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Belgelerdeki yorumlarda arama yapma"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Belgeleri düzenleme"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Belgelerdeki metni biçimlendirme"
+                href="text/document/d_formatting_text.html">
+            <topic label="Yazı tipi efektlerini ayarlama"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="Metin üst simgesi ya da alt simgesi oluşturma"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Yazı tipi boyutunu ayarlama"
+                   href="text/document/d_setting_font_size.html"/>
+            <topic label="Metni hizalama" href="text/document/d_aligning_text.html"/>
+            <topic label="Metni girintileme" href="text/document/d_indenting_text.html"/>
+            <topic label="Belgelere madde işareti ya da numara ekleme"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Belgelerde çok düzeyli liste oluşturma"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Bağlantı ekleme" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Üstbilgi ve altbilgi oluşturma"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="İçindekiler tablosu oluşturma" href="text/document/d_create_toc.html"/>
+         <topic label="Belgelere alan ekleme" href="text/document/d_inserting_fields.html"/>
+         <topic label="Belgelerde yazım denetimi"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Belgeleri yazdırma" href="text/document/d_printing_a_document.html">
+            <topic label="Belgeleri PDF dosyası olarak yazdırma"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Belgelerde resimlerle çalışma"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Belgelere resim ekleme" href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Belgelerde resim özelliklerini ayarlama"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Belgelerde tablolarla çalışma"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Belgelerde tablo oluşturma" href="text/document/d_creating_a_table.html"/>
+         <topic label="Belgelerdeki tablo stillerini değiştirme"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Belgelerde tablo özelliklerini ayarlama"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Tablo hücreleri için arka plan renklerini ayarlama"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Belgelerdeki tablo hücrelerinde metni hizalama"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Tablolara satır ve sütun ekleme"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Tablolardaki satır ve sütunları taşıma"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Tablo hücrelerini birleştirme ya da bölme"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Belgelerdeki tabloları yeniden boyutlandırma"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Belgelerdeki tablolara başlık ekleme"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Belgelerdeki tablolara ilişkin üstbilgileri tanımlama"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Belgelere ilişkin hızlı başvuru" href="text/document/d_quick_ref.html"/>
+      <topic label="Belgeler için klavye kısayolları"
+             href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

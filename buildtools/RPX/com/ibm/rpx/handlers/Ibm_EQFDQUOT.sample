@@ -1,0 +1,12 @@
+/* Here is a "comment" statement.   */
+// Here is an alternate method of coding a "comment" line.
+
+  STRING1 , "Here is some translatable text"
+  STRING2 , "Here are replacement variables: %s, %d, and %c."
+  STRING3 , "Text can be split." code_variable "More translatable text." more_code
+  STRING4 , "Text can
+             span lines and everything is translatable
+             up to the next double quote character."
+// Here is another "comment" line.
+  STRING5    variable_name
+  "Text can occur anywhere in the file." more_code

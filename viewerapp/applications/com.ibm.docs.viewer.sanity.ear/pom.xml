@@ -1,0 +1,94 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>applications.viewer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.docs.viewer.sanity.ear</artifactId>
+  <name>com.ibm.docs.viewer.sanity.ear - ear</name>
+  <packaging>pom</packaging>
+  
+  <dependencies>
+    <!-- 3rd party dependencies-->
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+    </dependency> 
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+    </dependency>  
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.websphere.lib</groupId>
+      <artifactId>j2ee</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.websphere.plugins</groupId>
+      <artifactId>com.ibm.ws.admin.core</artifactId>
+    </dependency>
+    <dependency>
+	  <groupId>com.ibm</groupId>
+	  <artifactId>lc.customAuthClient</artifactId>
+    </dependency>        
+    <dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpclient</artifactId>
+    </dependency>
+    <dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpcore</artifactId>
+    </dependency>    
+    <dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpmime</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.viewer.sanity.war</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+    </dependency>
+  </dependencies>  
+
+  <build>
+       <plugins>
+         <plugin>
+           <artifactId>maven-assembly-plugin</artifactId>
+           <executions>
+             <execution>
+               <id>build for ${project.groupId}:${project.artifactId}</id>
+               <phase>package</phase>
+               <goals>
+                 <goal>single</goal>
+               </goals>
+               <configuration>
+                 <descriptors>
+                   <descriptor>${project.basedir}/assembly_com.ibm.docs.viewer.sanity.ear.xml</descriptor>
+                 </descriptors>
+                 <archiverConfig>
+                   <appxml>${project.basedir}/META-INF/application.xml</appxml><!--
+                   <manifest>${project.parent.basedir}/META-INF/MANIFEST.MF</manifest>-->
+                 </archiverConfig>
+                 <finalName>${project.artifactId}</finalName>
+                 <appendAssemblyId>false</appendAssemblyId>
+               </configuration>
+             </execution>
+           </executions>
+         </plugin>
+       </plugins>
+     </build>
+</project>

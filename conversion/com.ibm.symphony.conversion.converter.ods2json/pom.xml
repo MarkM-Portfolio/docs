@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>conversion</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.symphony.conversion.converter.ods2json</artifactId>
+  <name>com.ibm.symphony.conversion.converter.ods2json - jar</name>
+  <packaging>jar</packaging>
+
+  <dependencies>    
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.symphony.conversion.service</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.symphony.conversion.service.common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.symphony.conversion.converter.ods.common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+	<!-- 3rd party dependencies -->
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>3rd-dependencies</groupId>
+      <artifactId>odfdom</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+    </dependency>
+  </dependencies>
+
+</project>

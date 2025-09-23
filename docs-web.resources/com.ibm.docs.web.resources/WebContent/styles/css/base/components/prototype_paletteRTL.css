@@ -1,0 +1,60 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for the customization palette
+companion file is prototype_paletteTheme.css*/
+/*** P A L E T T E ***/
+/*this is the palette that opens under the place bar to allow users to customize the UI */
+.prototypePalette{overflow:hidden;zoom:1;border-bottom-width:6px;border-bottom-style:solid}
+.prototypePaletteHeader{padding:7px 10px 5px 10px;overflow:hidden;zoom:1;position:relative;line-height:1.9em;border-width:1px 0;border-style:solid}
+.prototypePaletteHeader h2{float:right;}
+.prototypePaletteHeader a{text-decoration:none}
+.prototypePaletteHeader ul.lotusTabs{left:225px;width:50%}
+.prototypePaletteHeader .lotusTabs li{border-width:0}
+.prototypePaletteHeader .lotusTabs a, .prototypePaletteHeader .lotusTabs a:visited{margin:2px 0 8px 0;padding:3px 8px;}
+.prototypePaletteHeader .lotusTabs li.lotusSelected a{font-weight:bold}
+.prototypePaletteHeader .lotusTabs li a:hover, .prototypePaletteHeader .lotusTabs li a:focus{text-decoration:underline}
+.prototypePaletteHeader .lotusTabs li.lotusSelected a:hover, .prototypePaletteHeader .lotusTabs li.lotusSelected a:focus{text-decoration:none}
+.prototypePalette .lotusClose{margin-right:20px;padding:2px;float:left}
+.prototypePaletteBody{margin-bottom:1px;border-width:2px 0;border-style:solid;overflow:hidden;zoom:1}
+.prototypePaletteNav{width:205px;float:right;height:20em;padding:10px 0}
+.prototypePalette .lotusChunk{margin:0 10px 10px 0;overflow:hidden}
+.prototypePalette .lotusSearch input.lotusText{width:143px}
+.prototypePaletteNav h3{margin-right:10px;margin-bottom:3px}
+.prototypePaletteNav h3 .lotusBtnImg{vertical-align:bottom;padding:0 2px}
+.prototypePalette .lotusMenu{margin-right:10px;border-width:0;-moz-border-radius:0;-webkit-border-radius:0;height:15em/*11em*/;overflow:auto}
+.lotusui_ie .prototypePalette .lotusMenu{height:12.8em}/*we want 6 items to show. Adjustment for IE*/
+.prototypePalette .lotusMenu li a, .prototypePalette .lotusMenu li a:visited, .prototypePalette .lotusMenu li a:active{margin-left:2px;}/*to keep horizontal scrollbar from showing on click*/
+.prototypePalette .lotusMenu li.lotusSelected a, .prototypePalette .lotusMenu li.lotusSelected a:visited{border-width:0;}
+.prototypePalette .lotusMenu li.lotusMore a{margin-left:5px;background-position:3px center;background-repeat:no-repeat}
+.prototypePaletteContent{padding:10px 0 10px 25px;overflow:hidden;zoom:1;height:20em;position:relative}
+.prototypePaletteContent.lotusPlain div.lotusIcon, .lotusui_ie6 .lotusPlain div.lotusIcon{width:1em} /*when there are no icons, add this additional class to lotusPaletteContent and write out the lotusIcon div with an &nbsp;*/
+.prototypePaletteWidget{margin:0 0 .5em 10px;padding:.5em 0;width:18em;height:2.6em;float:right;overflow:hidden;line-height:1.4em;border-width:1px;border-style:solid;display:table;}
+.lotusui_ie .lotusPaletteWidget{direction:ltr}/*we only set the direction of rtl on the text of the widget to help solve layout issues*/
+.prototypePaletteWidget .lotusInner{display:table-row}
+.prototypePaletteWidget div{font-weight:bold;display:table-cell;vertical-align:middle;}
+.prototypePaletteWidget div.lotusIcon{width:34px;text-align:center}
+.prototypePaletteWidget div.lotusIcon span{display:block;height:16px;width:16px;padding:3px;margin:.5em 5px;}
+.lotusui_ie .prototypePaletteWidget div.lotusIcon span{margin-top:0}
+.prototypePaletteWidget div.lotusIcon img{width:16px;height:16px;}/*need to force this size to preserve layout - so widgets will float properly*/
+.prototypePaletteWidget a.lotusIcon{display:table-cell;width:25px;vertical-align:middle;background-position:right center;background-repeat:no-repeat;font-size:2em/*to make alt text larger*/}
+.prototypePaletteWidget a.lotusIcon:hover, .prototypePaletteWidget a.lotusIcon:focus{text-decoration:none}
+.lotusui_ie .prototypePaletteWidget div{float:right;margin-top:.25em;}
+.lotusui_ie .prototypePaletteWidget img{margin-top:0}
+.lotusui_ie .prototypePaletteWidget a.lotusIcon{float:left;display:block;}
+.prototypePaletteWidget .prototypeTitle h4{display:block;height:1.2em;font-weight:normal}
+.lotusui_ie6 .prototypePaletteWidget .prototypeTitle h4{width:10em;direction:rtl}
+.prototypePaletteWidget .prototypeRating0, .prototypePaletteWidget .prototypeRating1, .prototypePaletteWidget .prototypeRating2, .prototypePaletteWidget .prototypeRating3, .prototypePaletteWidget .prototypeRating4, .prototypePaletteWidget .prototypeRating5{background-position:right bottom;background-repeat:no-repeat;padding:0 0 12px 2px} 
+.prototypeLargeWidgets .prototypePaletteWidget{height:5.3em}
+.prototypeLargeWidgets .prototypePaletteWidget div.lotusIcon{width:50px}
+.prototypeLargeWidgets .prototypePaletteWidget div.lotusIcon span{height:50px;width:50px;margin:0;padding:0 5px;border-width:0}
+.prototypeLargeWidgets .prototypePaletteWidget div.lotusIcon img{width:48px;height:48px;border-width:1px;border-style:solid}
+.prototypePaletteContent .lotusPaging{padding:2px 0;position:absolute;bottom:2px;left:25px;right:0}
+.prototypePaletteContent .lotusPaging div{padding-right:0;margin-right:0}
+.prototypePaletteContent .lotusPaging .lotusInlinelist{margin-left:5px;}
+.prototypePalette .lotusPaging input.lotusText{border-width:1px;border-style:solid}
+.prototypePalette .lotusPaging a, .prototypePalette .lotusPaging a:visited{text-decoration:none}
+.prototypePalette .lotusPaging a:hover, .prototypePalette .lotusPaging a:focus{text-decoration:underline}
+/***********************************************************/
+

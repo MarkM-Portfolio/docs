@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Class-Path: lib/accesscontrol.jar 
+ lib/configuration.jar 
+ lib/json4j.jar 
+ lib/polledcontainers.jar 
+ lib/rtc.common.jar 
+ lib/rtc4web.ext.samp.jar
+

@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>root-pom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>conversion</artifactId>
+  <name>conversion - pom</name>
+  <packaging>pom</packaging>
+  
+  <properties>
+	<build.ftp.oo_remotedir>daily/Symphony/Sym_CS1.x/SymCS1.x_20170718.1400/setup/w32</build.ftp.oo_remotedir>  
+	<build.ftp.oo_remotefilename>OOo_*_W32x86_install.zip</build.ftp.oo_remotefilename>
+	<build.ftp.ooxml_remotedir>daily/ConversionLib/ConversionLibrary-Main</build.ftp.ooxml_remotedir>  	
+  </properties>
+  
+  <!-- Modules -->
+  <modules>
+	<module>com.ibm.symphony.conversion.converter.conversionlib</module>
+	<module>com.ibm.symphony.conversion.converter.ods.common</module>
+	<module>com.ibm.symphony.conversion.converter.csv2json</module>
+	<module>com.ibm.symphony.conversion.converter.doc2html</module>
+	<module>com.ibm.symphony.conversion.converter.doc2json</module>
+	<module>com.ibm.symphony.conversion.converter.doc2odt</module>
+	<module>com.ibm.symphony.conversion.converter.doc2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.docx2html</module>
+	<module>com.ibm.symphony.conversion.converter.docx2json</module>
+	<module>com.ibm.symphony.conversion.converter.docx2odt</module>
+	<module>com.ibm.symphony.conversion.converter.docx2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.html2doc</module>
+	<module>com.ibm.symphony.conversion.converter.html2odp</module>
+	<module>com.ibm.symphony.conversion.converter.html2odt</module>
+	<module>com.ibm.symphony.conversion.converter.json2doc</module>
+	<module>com.ibm.symphony.conversion.converter.json2docx</module>
+	<module>com.ibm.symphony.conversion.converter.html2ppt</module>
+	<module>com.ibm.symphony.conversion.converter.html2pptx</module>
+	<module>com.ibm.symphony.conversion.converter.json2odt</module>
+	<module>com.ibm.symphony.conversion.converter.json2ots</module>
+	<module>com.ibm.symphony.conversion.converter.odp.common</module>
+	<module>com.ibm.symphony.conversion.converter.json2ods</module>
+	<module>com.ibm.symphony.conversion.converter.json2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.json2xls</module>
+	<module>com.ibm.symphony.conversion.converter.json2xlsx</module>
+	<module>com.ibm.symphony.conversion.converter.metafile.common</module>
+	<module>com.ibm.symphony.conversion.converter.odf2image</module>
+	<module>com.ibm.symphony.conversion.converter.odp2html</module>
+	<module>com.ibm.symphony.conversion.converter.odp2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.odp2ppt</module>
+	<module>com.ibm.symphony.conversion.converter.ods2json</module>
+	<module>com.ibm.symphony.conversion.converter.ods2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.ods2xls</module>
+	<module>com.ibm.symphony.conversion.converter.odsjson2html</module>
+	<module>com.ibm.symphony.conversion.converter.odt2doc</module>
+	<module>com.ibm.symphony.conversion.converter.odt2html</module>
+	<module>com.ibm.symphony.conversion.converter.odt2json</module>
+	<module>com.ibm.symphony.conversion.converter.odt2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.ots2html</module>
+	<module>com.ibm.symphony.conversion.converter.ots2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.ott2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.ppt2html</module>
+	<module>com.ibm.symphony.conversion.converter.ppt2odp</module>
+	<module>com.ibm.symphony.conversion.converter.ppt2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.pptx2html</module>
+	<module>com.ibm.symphony.conversion.converter.pptx2odp</module>
+	<module>com.ibm.symphony.conversion.converter.pptx2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.pptx2ppt</module>
+	<module>com.ibm.symphony.conversion.converter.svg2png</module>
+	<module>com.ibm.symphony.conversion.converter.svm2png</module>
+	<module>com.ibm.symphony.conversion.converter.txt2html</module>
+	<module>com.ibm.symphony.conversion.converter.txt2json</module>
+	<module>com.ibm.symphony.conversion.converter.txt2odt</module>
+	<module>com.ibm.symphony.conversion.converter.wmf2png</module>
+	<module>com.ibm.symphony.conversion.converter.xls2html</module>
+	<module>com.ibm.symphony.conversion.converter.xls2json</module>
+	<module>com.ibm.symphony.conversion.converter.xls2ods</module>
+	<module>com.ibm.symphony.conversion.converter.xls2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.xlsx2json</module>
+	<module>com.ibm.symphony.conversion.converter.xlsx2ods</module>
+	<module>com.ibm.symphony.conversion.converter.xlsx2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.rtf2odt</module>
+	<module>com.ibm.symphony.conversion.converter.rtf2json</module>
+	<module>com.ibm.symphony.conversion.converter.rtf2pdf</module>
+	<module>com.ibm.symphony.conversion.converter.sym</module>
+	<module>com.ibm.symphony.conversion.service</module>
+	<module>com.ibm.symphony.conversion.service.common</module>
+	<module>com.ibm.symphony.conversion.service.rest.was</module>
+    <module>applications</module>
+    <module>com.ibm.symphony.conversion.converter.libre</module>
+  </modules>
+  
+  <dependencyManagement>
+	<dependencies>
+	  <dependency>
+        <groupId>commons-configuration</groupId>
+        <artifactId>commons-configuration</artifactId>
+        <version>1.1</version>
+      </dependency>
+	</dependencies>
+  </dependencyManagement>
+</project>

@@ -1,0 +1,40 @@
+/* Tweaks for embedding mode */
+span#embeddedWidget {
+	display: block;
+}
+
+span#embeddedWidget,
+span#embeddedWidget div.mm_content.view {
+	width: 100%;
+	height: 98%;
+}
+
+
+/* Tweaks for builder */
+span.mm_iWidget,
+span.mm_iWidget div.mm_content.view {
+	width: 100%;
+	height: 100%;
+}
+
+span.mm_iWidget {
+	display: block;
+	overflow: hidden;
+}
+
+
+/* Broader layout */
+/*
+div.mm_content.view + div {
+	width: 100% !important;
+}
+div.actionDiv1,
+div.contentDiv1 {
+	width: 90%;
+}
+
+div#_freeform_container {
+	background-image: none;
+	background-color: #1B68B8;
+}
+*/

@@ -1,0 +1,41 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for comments
+companion files: comments.css / commentsTheme.css
+companion files: commentsRTL.css / commentsThemeRTL.css*/
+/*** C O M M E N T ***/
+
+
+
+.lotusui30 .lotusAddComment{background-color:#E8EDF3;}
+.lotusui30 .lotusAddComment a.lotusCommentInput, .lotusui30 .lotusAddComment a.lotusCommentInput:hover, .lotusui30 .lotusAddComment a.lotusCommentInput:focus{background-color:#fff;border-color:#BDC7DB;}
+.lotusui30 .lotusUpdateStatus{background-color:#eee;}
+/*comment containers*/
+.lotusui30 ul.lotusCommentList li{border-top-color:#e3e2e2;}
+/*style adjustments for comments on the board/wall*/
+.lotusui30 .lotusBoard .lotusPost{border-color:#E8EDF3;}
+.lotusui30 .lotusBoard .lotusCommentPaging{background-color:#E8EDF3;}
+/*styles for comments in a discussion forum*/
+.lotusui30 .lotusForum .lotusPostDetails blockquote{background-color:#eee;border-color:#DFE4E9;}
+/*----------------------FORUMS------------------------*/
+.lotusui30 .lotusForum .lotusPaging{margin:0;padding-right:0;background-color:#fff;border-width:1px 0;border-style:solid;border-color:#ccc;}
+.lotusui30 .lotusForum .lotusPostContent{border-width:0;}
+.lotusui30 .lotusForum .lotusPostDetails blockquote{width:auto;}
+.lotusui_ie6 .lotusui30 .lotusForum .lotusPostDetails blockquote{width:95%;}/*fixes display issues with gray box*/
+.lotusui30 .lotusForum .lotusPostAuthorInfo{padding:10px;background-position:100% -1373px;background-repeat:no-repeat;}
+.lotusui30 .lotusForum .lotusCaption{margin-top:0;background-color:#fff;border-width:0;float:right;}
+.lotusui30 .lotusForum .lotusFeeds{float:left;}
+.lotusui30 .lotusForum .lotusPost{margin-top:0;margin-bottom:10px;padding-top:4px;padding-bottom:4px;background-color:#fff; border:1px solid #ccc;-webkit-box-shadow:0 2px 5px #eee;-moz-box-shadow:0 2px 5px #eee;box-shadow:0px 2px 5px #eee;}
+.lotusui30 .lotusForum ul.lotusCommentList .lotusPost{background-color:#fff;}
+.lotusui30 .lotusForum ul.lotusCommentList .lotusChild{background-color:#fff;border-top-width:0;}
+.lotusui30 .lotusForum ul.lotusCommentList .lotusChild li{margin-right:0;padding:0 5px 0 0;background-color:#fff;background-image:none;background-repeat:repeat-y;}
+.lotusui30 .lotusForum ul.lotusCommentList .lotusChild .lotusActions li{padding:0 7px;1px 0 0 0;}
+.lotusui30 .lotusForum ul.lotusCommentList .lotusChild .lotusActions li.lotusFirst{padding-right:0;border-right-width:0;}
+.lotusui30 .lotusForum .lotusPostAuthorInfo{text-align:right;}
+
+.lotusui30 .lotusColLeft .lotusCommentBubble, .lotusui30 .lotusColRight .lotusCommentBubble{background-position:90% -1669px}
+.lotusui30 .lotusColLeft .lotusCommentBubbleBody, .lotusui30 .lotusColRight .lotusCommentBubbleBody{background-color:#fff;}
+
+/***********************************************************/

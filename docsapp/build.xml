@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Concord" basedir="." default="concord.build">
+
+	<property name="ear.lib" value="./com.ibm.concord.ear/lib"/>
+	<property name="ear.ext" value="./com.ibm.concord.ear/ext"/>
+	<property name="build.debug" value="true"/>
+	<property name="build.debuglevel" value="source,lines"/>
+	<echo message="enable Find Bugs is ${findbugs.enable}, build fail when finding bugs is ${findbugs.fail}."/>
+	<target name="config.build" depends="commons.build">
+		<ant dir="com.ibm.concord.config" inheritAll="true"/>
+	</target>
+	<target name="spi.build" depends="directory.build">
+		<ant dir="com.ibm.concord.spi" inheritAll="true"/>
+	</target>
+	<target name="platform.build" depends="config.build, spi.build, framework.build, repository.build, commons.build, authentication.build">
+		<ant dir="com.ibm.concord.platform" inheritAll="true"/>
+	</target>
+	<target name="framework.build">
+		<ant dir="com.ibm.docs.framework" inheritAll="true"/>
+	</target>
+	<target name="commons.build" depends="spi.build">
+		<ant dir="com.ibm.docs.common" inheritAll="true"/>
+	</target>
+	<target name="repository.build" depends="config.build, spi.build, framework.build">
+		<ant dir="com.ibm.docs.repository" inheritAll="true"/>
+	</target>
+	<target name="repository.files.build" depends="config.build, spi.build, repository.build, framework.build, commons.build">
+		<ant dir="com.ibm.docs.repository.files" inheritAll="true"/>
+	</target>
+
+	<target name="repository.ecm.build" depends="config.build, spi.build, repository.build, framework.build, commons.build">
+		<ant dir="com.ibm.docs.repository.ecm" inheritAll="true"/>
+	</target>
+
+	<target name="repository.local.build" depends="config.build, spi.build, repository.build, framework.build, commons.build">
+		<ant dir="com.ibm.docs.repository.local" inheritAll="true"/>
+	</target>
+	
+	<target name="directory.build" depends="framework.build">
+		<ant dir="com.ibm.docs.directory" inheritAll="true"/>
+	</target>
+	<target name="directory.connections.build" depends="framework.build, commons.build, directory.build">
+		<ant dir="com.ibm.docs.directory.connections" inheritAll="true"/>
+	</target>
+	<target name="directory.ecm.build" depends="framework.build, commons.build, directory.build">
+		<ant dir="com.ibm.docs.directory.ecm" inheritAll="true"/>
+	</target>
+	<target name="directory.local.build" depends="framework.build, commons.build, directory.build">
+		<ant dir="com.ibm.docs.directory.local" inheritAll="true"/>
+	</target>
+	<target name="directory.lotuslive.build" depends="framework.build, commons.build, directory.build">
+		<ant dir="com.ibm.docs.directory.lotuslive" inheritAll="true"/>
+	</target>	
+	
+	<target name="entitlement.build" depends="framework.build, commons.build, directory.build">
+		<ant dir="com.ibm.docs.entitlement" inheritAll="true"/>
+	</target>
+	<target name="authentication.build" depends="config.build, framework.build, commons.build, directory.build, directory.connections.build, directory.ecm.build, directory.lotuslive.build, directory.local.build, entitlement.build">
+		<ant dir="com.ibm.docs.authentication" inheritAll="true"/>
+	</target>
+	
+	<target name="lc3.integration.build" depends="platform.build, commons.build">
+		<ant dir="com.ibm.concord.lc3.integration" inheritAll="true"/>
+	</target>
+	<target name="ecm.integration.build" depends="platform.build">
+		<ant dir="com.ibm.docs.ecm.integration" inheritAll="true"/>
+	</target>
+
+	<target name="dao.build" depends="platform.build">
+		<ant dir="com.ibm.concord.dao.db2" inheritAll="true"/>
+	</target>
+
+	<target name="document.common.build" depends="platform.build, documentservice.build">
+		<ant dir="com.ibm.concord.document.common" inheritAll="true"/>
+	</target>
+
+	<target name="services.build" depends="platform.build, config.build, document.common.build, migration.build">
+		<ant dir="com.ibm.concord.services" inheritAll="true"/>
+	</target>
+	
+	<target name="presentation.common.build">
+		<ant dir="com.ibm.concord.presentation.common" inheritAll="true"/>
+	</target>
+	<target name="presentation.build" depends="platform.build, document.common.build, presentation.common.build">
+		<ant dir="com.ibm.concord.presentation" inheritAll="true"/>
+	</target>
+
+	<target name="spreadsheet.common.build">
+		<ant dir="com.ibm.concord.spreadsheet.common" inheritAll="true"/>
+	</target>
+
+	<target name="spreadsheet.build" depends="platform.build, document.common.build, spreadsheet.common.build">
+		<ant dir="com.ibm.concord.spreadsheet" inheritAll="true"/>
+	</target>
+
+	<target name="localtest.integration.build" depends="platform.build">
+		<ant dir="com.ibm.concord.localtest.integration" inheritAll="true"/>
+	</target>
+
+	<target name="lotuslive.integration.build" depends="platform.build">
+		<ant dir="com.ibm.concord.lotuslive.integration" inheritAll="true"/>
+	</target>
+
+	<target name="webmsg.rtc4web.build" depends="platform.build">
+		<ant dir="com.ibm.concord.webmsg.rtc4web" inheritAll="true"/>
+	</target>
+
+	<target name="writer.build" depends="platform.build, document.common.build">
+		<ant dir="com.ibm.concord.writer" inheritAll="true"/>
+	</target>
+
+	<target name="job.build">
+		<ant dir="com.ibm.concord.job" inheritAll="true"/>
+	</target>
+
+	<target name="draft.build" depends="revision.build">
+		<ant dir="com.ibm.concord.draft" inheritAll="true"/>
+	</target>
+
+	<target name="revision.build" depends="platform.build">
+		<ant dir="com.ibm.concord.revision" inheritAll="true"/>
+	</target>
+
+	<target name="collaboration.build">
+		<ant dir="com.ibm.concord.collaboration" inheritAll="true"/>
+	</target>
+	<target name="documentservice.build" depends="draft.build">
+		<ant dir="com.ibm.concord.document.services" inheritAll="true"/>
+	</target>
+
+	<target name="admin.build">
+		<ant dir="com.ibm.concord.admin" inheritAll="true"/>
+	</target>
+
+	<target name="journal.subscriber.build">
+		<ant dir="com.ibm.docs.journal.subscriber.sample" inheritAll="true"/>
+	</target>
+	
+	<target name="migration.build" depends="platform.build,documentservice.build,draft.build,job.build">
+		<ant dir="com.ibm.concord.migration" inheritAll="true"/>
+	</target>
+
+	<target name="spellcheck.service">
+		<ant dir="com.ibm.docs.spellcheck.service" inheritAll="true"/>
+	</target>
+
+	<target name="spellcheck.plugins" depends="spellcheck.service">
+		<ant dir="com.ibm.docs.spellcheck.web" inheritAll="true"/>
+	</target>
+
+	<target name="spellcheck.war" depends="spellcheck.plugins">
+		<ant dir="com.ibm.rcp.spellcheck.webapp" inheritAll="true"/>
+	</target>
+
+	<target name="spellcheck.ear" depends="spellcheck.war">
+		<ant dir="com.ibm.docs.spellcheck.ear" inheritAll="true"/>
+	</target>
+	
+	<target name="installer.build">
+		<ant dir="com.ibm.docs.deployment" inheritAll="true"/>
+		<ant dir="com.ibm.docs.common.deployment" inheritAll="true"/>
+	</target>
+
+	<target name="license.build">
+		<ant dir="com.ibm.docs.license" inheritAll="true"/>
+	</target>
+
+	<!--target name="help.build">
+		<ant dir="com.ibm.docs.help" inheritAll="true"/>
+	</target-->
+
+	<target name="sanity.build">
+		<copy todir="../ConcordProjectsWAS/com.ibm.docs.sanity.war">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.sanity.war"/>
+		</copy>
+		<copy todir="../ConcordProjectsWAS/com.ibm.docs.sanity.ear">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.sanity.ear"/>
+		</copy>
+		<copy todir="../ConcordProjectsWAS/com.ibm.docs.sanity.rpm">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.sanity.rpm"/>
+		</copy>
+		<copy todir="../ConcordProjectsWAS/com.ibm.docs.common.deployment">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.common.deployment"/>
+		</copy>	
+	</target>
+	
+	<target name="serverapitest.build">
+		<ant dir="../IBMDocsAutomation/com.ibm.docs.integration.test" inheritAll="true" />
+		<ant dir="../IBMDocsAutomation/com.ibm.docs.integration.ut" inheritAll="true" />
+		<zip destfile="${build.home}/serverapitest.zip">
+			<zipfileset dir="${build.home}/test-data" prefix="test-data" />
+			<fileset dir="${build.home}" includes="com.ibm.docs.integration.*.jar" />
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}" includes="com.ibm.docs.integration.*.jar" />
+			<fileset dir="${build.home}/test-data" />
+		</delete>
+	</target>	
+
+	<target name="war.build" depends="webmsg.rtc4web.build, localtest.integration.build,
+		lotuslive.integration.build, repository.build,
+                draft.build, revision.build, job.build,collaboration.build, documentservice.build, 
+		spreadsheet.build, spreadsheet.common.build, lc3.integration.build, ecm.integration.build, presentation.common.build, presentation.build,
+		dao.build, writer.build, services.build, admin.build, journal.subscriber.build, sanity.build, 
+		repository.files.build, repository.ecm.build, repository.local.build, directory.connections.build, directory.ecm.build, 
+		directory.lotuslive.build, directory.local.build, entitlement.build, authentication.build, framework.build, commons.build">
+		<ant dir="com.ibm.concord.war" inheritAll="true"/>
+		<ant dir="com.ibm.docs.web.resources" inheritAll="true" />
+		<ant dir="com.ibm.docs.sanity.war" inheritAll="true"/>
+		<ant dir="rtc4web_server" inheritAll="true"/>
+	</target>
+
+	<!--target name="package.ut" depends="spi.package" if="${ut.enabled}">
+		<move file="${build.home}/DocsApp_SPI_Standard.tmp" tofile="${build.home}/Concord_SPI_PRE_UT.zip"/>
+		<zip destfile="${build.home}/DocsApp_SPI_Standard.tmp">
+			<zipfileset src="${build.home}/Concord_SPI_PRE_UT.zip" includes="*"/>
+			<fileset dir="${ear.lib}" includes="**/junit*.jar"/>
+		</zip>
+		<delete file="${build.home}/Concord_SPI_PRE_UT.zip"/>
+	</target-->
+
+	<!--target name="spi.package" depends="war.build">
+		<zip destfile="${build.home}/DocsApp_SPI_Standard.tmp">
+			<fileset dir="${build.home}" includes="com.ibm.concord.spi*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/abdera*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/commons*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/json4j*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/html-parser*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/axiom-*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/jaxen-*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/com.ibm.connections*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/lc.custom*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/accesscontrol.jar"/>
+			<fileset dir="${ear.lib}" includes="**/configuration.jar"/>
+			<fileset dir="${ear.lib}" includes="**/polledcontainers.jar"/>
+			<fileset dir="${ear.lib}" includes="**/rtc.common.jar"/>
+			<fileset dir="${ear.lib}" includes="**/rtc4web.ext.samp.jar"/>
+			<fileset dir="${ear.lib}" includes="**/log4j*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/jsoup*.jar"/>
+		</zip>
+
+		<zip destfile="${build.home}/DocsApp_SPI_LotusLive.tmp">
+			<fileset dir="${build.home}" includes="com.ibm.concord.spi*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/abdera*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/commons*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/json4j*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/html-parser*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/axiom-*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/jaxen-*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/com.ibm.connections*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/lc.custom*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/accesscontrol.jar"/>
+			<fileset dir="${ear.lib}" includes="**/configuration.jar"/>
+			<fileset dir="${ear.lib}" includes="**/polledcontainers.jar"/>
+			<fileset dir="${ear.lib}" includes="**/rtc.common.jar"/>
+			<fileset dir="${ear.lib}" includes="**/rtc4web.ext.samp.jar"/>
+			<fileset dir="${ear.lib}" includes="**/log4j*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/bss.shim*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/connections.waltz*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/slf4j*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/json-1.0*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/shared.authentication*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/shared.httpclient_wrapper_noauth*.jar"/>
+			<fileset dir="${ear.lib}" includes="**/shared.httpclient_wrapper*.jar"/>
+		</zip>
+	</target-->
+	
+	<!--target name="adapters.package" depends="war.build">
+		<zip destfile="${build.home}/DocsApp_Adapters_Standard.tmp">
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.localtest.integration*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.lc3.integration*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.webmsg*.jar"/>
+		</zip>
+
+		<zip destfile="${build.home}/DocsApp_Adapters_LotusLive.tmp">
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.localtest.integration*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.lc3.integration*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.lotuslive.integration*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.webmsg*.jar"/>
+		</zip>
+
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.localtest.integration*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.lc3.integration*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.lotuslive.integration*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.webmsg.rtc4web*.jar"/>
+		</delete>
+	</target-->
+
+	<target name="plugins.package">
+		<zip destfile="${build.home}/DocsApp_Plugins.zip">
+			<fileset dir="${ear.ext}" includes="**/httpqueue.channel.jar"/>
+		</zip>
+	</target>
+
+	<!--com.ibm.concord.ear will be built for two times,this one is for SmartCloud-->
+	<!--target name="sc.ear.build" depends="spi.package, adapters.package, plugins.package, package.ut"-->
+	<target name="sc.ear.build" depends="war.build,plugins.package">
+		<condition property="isOnPremise">
+			<istrue value="false"/>
+		</condition>
+		<ant dir="com.ibm.concord.ear" inheritAll="true"/>
+		<ant dir="com.ibm.docs.web.resources.ear" inheritAll="true"/>
+		<condition property="isDocs">
+			<istrue value="true"/>
+		</condition>
+		<ant dir="com.ibm.docs.sanity.ear" inheritAll="true"/>
+	</target>
+
+	<target name="concord.build" depends="sc.ear.build, installer.build, license.build, serverapitest.build, spellcheck.ear">
+		<ant dir="com.ibm.docs.sanity.rpm" inheritAll="true"/>
+
+		<!--First, build rpm for LotusLive -->
+		<move file="${build.home}/com.ibm.docs.sanity.ear" tofile="${build.home}/com.ibm.docs.sanity.ear.keep"/>
+		<!--move file="${build.home}/DocsApp_Adapters_LotusLive.tmp" tofile="${build.home}/DocsApp_Adapters.zip"/-->
+		<!--move file="${build.home}/DocsApp_SPI_LotusLive.tmp" tofile="${build.home}/DocsApp_SPI.zip"/-->
+		<zip destfile="${build.home}/DocsApp.zip">
+			<fileset dir="${build.home}" includes="**/*.ear"/>
+			<fileset dir="${build.home}" includes="**/*.zip" excludes="**/doc.zip,**/serverapitest.zip"/>
+			
+			<zipfileset dir="${build.home}/config" prefix="config"/>
+			<zipfileset dir="${build.home}/installer" prefix="installer"  excludes="product/**"/>
+			<zipfileset dir="${build.home}/setupDB" prefix="setupDB"/>
+			<zipfileset dir="${build.home}/oracle" prefix="oracle"/>
+			<zipfileset dir="${build.home}/License" prefix="License"/>
+			<!--zipfileset dir="${build.home}/Help" prefix="Help"/ -->
+		</zip>
+		<ant dir="com.ibm.docs.rpm" inheritAll="true"/>
+		<ant dir="com.ibm.docs.db.rpm" inheritAll="true"/>
+		<delete file="${build.home}/DocsApp.zip"/>
+		<delete file="${build.home}/com.ibm.concord.ear.ear"/>
+		<delete file="${build.home}/com.ibm.docs.web.resources.ear"/>
+		<move file="${build.home}/com.ibm.docs.sanity.ear.keep" tofile="${build.home}/com.ibm.docs.sanity.ear"/>
+		<antcall target="premise.concord.build">                        
+		</antcall>
+	</target>
+	<target name="premise.ear.build">
+		<condition property="isOnPremise">			
+			<istrue value="true"/>
+		</condition>
+		<ant dir="com.ibm.concord.ear" inheritAll="true"/>
+		<ant dir="com.ibm.docs.web.resources.ear" inheritAll="true"/>
+		<!--antcall target="premise.concord.build">
+		</antcall-->
+	</target>
+	<!--target name="premise.concord.build" depends="premise.ear.build, installer.build, license.build, help.build"-->
+	<target name="premise.concord.build" depends="premise.ear.build">
+		<!--Second, build standard Zip -->
+		<!--move file="${build.home}/DocsApp_Adapters_Standard.tmp" tofile="${build.home}/DocsApp_Adapters.zip"/-->
+		<!--move file="${build.home}/DocsApp_SPI_Standard.tmp" tofile="${build.home}/DocsApp_SPI.zip"/-->
+		<!--copy file="${build.home}/com.ibm.docs.sanity.ear.keep" tofile="${build.home}/com.ibm.docs.sanity.ear"/-->
+		<zip destfile="${build.home}/DocsApp.zip">
+			<fileset dir="${build.home}" includes="**/*.ear"/>
+			<fileset dir="${build.home}">
+				<include name="**/*.zip"/>
+				<exclude name="**/doc.zip"/>
+				<exclude name="**/JSTest.zip" />
+				<exclude name="**/viewer_offerings.zip" />
+				<exclude name="**/serverapitest.zip" />
+			</fileset>
+			<zipfileset dir="${build.home}/config" prefix="config"/>
+			<zipfileset dir="${build.home}/installer" prefix="installer"/>
+			<zipfileset dir="${build.home}/setupDB" prefix="setupDB"/>
+			<zipfileset dir="${build.home}/oracle" prefix="oracle"/>
+			<zipfileset dir="${build.home}/License" prefix="License"/>
+			<!--zipfileset dir="${build.home}/Help" prefix="Help"/-->
+		</zip>
+
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}" includes="**/*.jar"/>
+			<fileset dir="${build.home}" includes="**/*.war"/>
+			<fileset dir="${build.home}" includes="**/*.ear"/>
+			<fileset dir="${build.home}" includes="**/spreadsheet_nodejs_offerings.zip" />
+			<fileset dir="${build.home}" includes="**/DocsApp_Adapters.zip"/>
+			<fileset dir="${build.home}" includes="**/DocsApp_SPI.zip"/>
+			<fileset dir="${build.home}" includes="**/DocsApp_Plugins.zip"/>
+			<fileset dir="${build.home}/config"/>
+			<fileset dir="${build.home}/installer"/>
+			<fileset dir="${build.home}/setupDB"/>
+			<fileset dir="${build.home}/oracle"/>
+			<fileset dir="${build.home}/License"/>
+			<!--fileset dir="${build.home}/Help"/-->
+		</delete>
+		<!--move file="${build.home}/com.ibm.docs.sanity.ear.keep" tofile="${build.home}/com.ibm.docs.sanity.ear"/-->
+	</target>
+</project>

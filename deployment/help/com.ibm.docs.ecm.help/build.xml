@@ -1,0 +1,12 @@
+<project name="ecm.help" basedir="." default="ecm.help">
+		
+	<target name="ecm.help" depends="">
+		<zip destfile="${build.home}/IBMDocsECMHelp.zip">
+            <fileset dir=".">
+                <exclude name="build.xml" />
+				<exclude name=".project" />
+            </fileset>
+		</zip>
+	</target>
+	
+</project>

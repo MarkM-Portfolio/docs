@@ -1,0 +1,7 @@
+<span dojoAttachPoint="outerNode" class="zoomerContainer" style="text-align: center;">
+	<button dojoType="dijit.form.Button" label="${labelZoomIn}" showLabel="false" title= "${labelZoomIn}" iconClass= "zoomInIcon" class="lotusDijitButtonImg" dojoAttachPoint="zoomIn" dojoAttachEvent="onClick:_onZoomInSelect"></button>
+	<button dojoType="dijit.form.Button" label="${labelZoomOut}" showLabel="false" title= "${labelZoomOut}" iconClass= "zoomOutIcon"  class="lotusDijitButtonImg" dojoAttachPoint="zoomOut" dojoAttachEvent="onClick:_onZoomOutSelect"></button>
+	<label for="selector_zoomer" alt="${labelZoom}" style="display:none;">${labelZoom}</label>
+	<select id="selector_zoomer" dojoType="dijit.form.ComboBox" class="sizeSelector" dojoAttachPoint="sizeSelector" dojoAttachEvent="onChange:_onSizeChange">  		
+	</select>
+</span>

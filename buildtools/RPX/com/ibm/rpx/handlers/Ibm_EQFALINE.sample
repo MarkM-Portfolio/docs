@@ -1,0 +1,5 @@
+Here is a translatable line of text.
+There are no comment lines defined in this format.
+Each physical line will be translated separately from the surrounding lines.
+Sentences cannot be split or reflowed onto multiple lines.
+Each line could be a separate message for a product.

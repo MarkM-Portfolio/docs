@@ -1,0 +1,23 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+
+dojo.provide("websheet.test.stubs.grid.GridCell");
+dojo.provide("websheet.legacygrid.cells._base");
+
+dojo.declare("websheet.legacygrid.cells.Cell", null, {
+	constructor: function() {
+		this.customClasses = [];
+		this.customStyles = [];
+	}
+
+});

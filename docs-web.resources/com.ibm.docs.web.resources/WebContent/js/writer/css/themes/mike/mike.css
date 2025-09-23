@@ -1,0 +1,213 @@
+div.hello_class{
+color:#333;
+background-color:#fff;
+width:auto;/*200px;*/
+height:auto;/*200px;*/
+display:block;
+padding:0;
+margin:0;
+/*font-family:sans-serif
+border-top:1px solid #cdcdcd;
+border-left:1px solid #cdcdcd;*/
+}
+div.hello_class table{
+
+}
+div.hello_class table tbody tr{
+height:80px;
+}
+div.hello_class table tbody tr td{
+padding:15px;
+border-right:1px solid #cdcdcd;
+border-bottom:1px solid #cdcdcd;
+cursor:pointer;
+width:62px;
+}
+div.hello_class table tbody tr td.multi{
+	padding:10px;
+}
+div.hello_class table tbody tr td p{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+div.hello_class table tbody tr td p span{
+}
+div.hello_class table tbody tr td.DisabledItem{
+    opacity: 0.3;
+}
+div.hello_class table tbody tr td.leftMost{
+    border-left:1px solid #cdcdcd;
+}
+div.hello_class table tbody tr td.topMost{
+    border-top:1px solid #cdcdcd;
+}
+div.hello_class table tbody tr td.ItemHover{
+background-color:rgb(223,241,255);
+border-right:1px solid rgb(49,106,197);
+border-bottom:1px solid rgb(49,106,197);
+}
+div.hello_class table tbody tr td.ItemHoverHelperLeft{
+border-right:1px solid rgb(49,106,197);
+}
+div.hello_class table tbody tr td.ItemHoverHelperTop{
+border-bottom:1px solid rgb(49,106,197);
+}
+div.hello_class table tbody tr td.ItemHoverLeft{
+border-left:1px solid rgb(49,106,197);
+}
+div.hello_class table tbody tr td.ItemHoverTop{
+border-top:1px solid rgb(49,106,197);
+}
+
+div.hello_class table tbody tr td ul{
+padding-left: 0;
+margin:0;
+list-style:none;
+}
+div.hello_class table tbody tr td ul.indent-first{
+	margin-left:10px;
+}
+div.hello_class table tbody tr td ul.indent-second{
+	margin-left:20px;
+}
+
+div.hello_class table tbody tr td ul.noindent-fix{
+	width: 140px;
+}
+
+div.hello_class.rtl table tbody tr td ul li{
+	direction: rtl;
+}
+div.hello_class.rtl table tbody tr td ul{
+	padding-right: 0;
+	padding-left: initial;
+}
+div.hello_class.rtl table tbody tr td ul.indent-first{
+	margin-right:10px;
+	margin-left: auto;
+}
+div.hello_class.rtl table tbody tr td ul.indent-second{
+	margin-right:20px;
+	margin-left: auto;
+}
+
+div.hello_class.rtl table tbody tr td ul.noindent-fix{
+	width: 140px;
+}
+
+.oneui30 .dijitCheckedMenuItemRtl td.dijitMenuItemIconCell {
+    padding: 0 14px 0 0 !important;
+}
+div.hello_class table tbody tr td ul li span{
+    border-top: 2px solid #BBBBBB;
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+    height: 2px;
+	margin-left:10px;
+}
+div.hello_class table tbody tr td ul li span.single-line{
+	height:1.5em;
+	border:none;
+	margin:0;
+	overflow:hidden;
+	width:110px;
+	white-space:nowrap;
+}
+
+div.hello_class table tbody tr td ul.upper-alpha{
+/*list-style-type:upper-alpha;*/
+}
+div.hello_class table tbody tr td ul.lower-alpha{
+/*list-style-type:lower-alpha;*/
+}
+div.hello_class table tbody tr td ul.lower-roman{
+/*list-style-type:lower-roman;*/
+}
+div.hello_class table tbody tr td ul.upper-roman{
+/*list-style-type:upper-roman;*/
+}
+div.hello_class table tbody tr td ul.circle{
+/*list-style-type:circle;*/
+}
+div.hello_class table tbody tr td ul.square{
+/*list-style-type:square;*/
+}
+div.hello_class table tbody tr td ul.decimal{
+/*list-style-type:decimal;*/
+}
+
+div.hello_class table.bulletList tr td{
+    width:40px;
+    height:40px;
+    text-align:center;
+}
+div.hello_class table.bulletList tr td p{
+    font-size:16pt;
+}
+/**
+* ColorPalette style.
+*
+**/
+table.dijitPaletteTable thead tr td,table.dijitPaletteTable tfoot tr td{
+	cursor:pointer;
+	border:	1px solid #FFFFFF;
+}
+table.dijitPaletteTable thead tr td:focus,table.dijitPaletteTable tfoot tr td:focus{
+	border:	1px solid #ccc;
+}
+
+/*
+* ButtonDropDown style.
+*
+*/
+
+.btnPadding{
+padding:1px;
+border:none;
+}
+.iconButton{
+border:1px solid #ccc;
+padding:0;
+}
+
+/*
+* Table picker style.
+*
+*/
+.table-picker{
+font-size:18px;
+}
+
+.table-picker-mousecatcher{
+position:absolute;
+left:5px;
+top:10px;
+z-index:1001;
+}
+
+.dijit_a11y .table-picker-unhighlighted{
+border:1px solid black;
+position:relative;
+}
+.dijit_a11y .table-picker-highlighted{
+position:absolute;
+border:1px solid black;
+left:5px;
+top:10px;
+}
+.table-picker-unhighlighted{
+background:url("images/table-picker-unhighlighted.png") repeat scroll 0 0 transparent;
+position:relative;
+}
+.table-picker-highlighted{
+background:url("images/table-picker-highlighted.png") repeat scroll 0 0 transparent;
+position:absolute;
+left:5px;
+top:10px;
+}
+.table-picker-status{
+text-align:center;
+font-size:10pt;
+}

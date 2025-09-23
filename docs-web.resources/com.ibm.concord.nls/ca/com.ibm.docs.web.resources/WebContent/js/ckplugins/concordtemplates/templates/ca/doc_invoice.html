@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Factura</title>
+</head>
+<body  class="concord_Doc_Style_7">
+
+<p class="page" id="invoice">
+
+	<p documentBlock="true" restyle="false"  concordTemplateComponent="letterhead" class="letterhead">
+		<p>Remetre el pagament a: </p>
+		<h1>Nom d'empresa</h1>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li class="addressLine1">Carrer, número 1234</li>
+			<li class="addressLine2">Ciutat, Província 12345</li>
+			<li class="email">email@example.com</li>
+			<li class="phone">(123) 456-7890</li>
+		</ul>
+		<hr></hr>
+	</p>
+
+	<p documentBlock="true"  class="section summary">
+		<h2>Informació de factura</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li>Número de factura</li>
+			<li class="date">Data de factura</li>
+			<li class="date">Data de venciment</li>
+		</ul>
+	</p>
+
+	<p documentBlock="true"  class="section">
+		<h2>Facturar a</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list_16">
+			<li class="name">Nom Cognoms</li>
+			<li class="addressLine1">Carrer, número 1234</li>
+			<li class="addressLine2">Ciutat, Província 12345</li>
+			<li class="email">email@example.com</li>
+			<li class="phone">(123) 456-7890</li>
+		</ul>
+	</p>
+	
+	<p documentBlock="true"  class="section">
+		<h2>Detalls</h2>
+		<table documentBlock="true" restyle="true" class="smartTable STStyle3" concordTemplateComponent="smartTable">
+			<tr class="tableHeaderRow">
+				<th>Data</th>
+				<th>Element</th>
+				<th>Descripció</th>
+				<th>Quantitat</th>
+			</tr>
+			<tr>
+				<td>MM/DD/AAAA</td>
+				<td>Feina</td>
+		<!--
+				<td>Dignissim definiebas intellegebat eu qui, laoreet impedit</td>
+		-->
+				<td>50,00 &euro;</td>
+			</tr>
+			<tr class="alternateRow">
+				<td>MM/DD/AAAA</td>
+				<td>Feina</td>
+		<!--
+				<td>Sit ne sint aliquip nusquam, ut oblique salutandi sea, no erat </td>
+		-->
+				<td>50,00 &euro;</td>
+			</tr>
+			<tr>
+				<td colspan="3">Total</td>
+				<td>0,00 &euro;</td>
+			</tr>
+		</table>
+	</p>
+		
+	<p documentBlock="true" class="section conclusion">
+		<h2>Venciment del pagament</h2>
+		<ul>
+			<li>Total factura: 0,00 &euro;</li>
+			<li>Pagaments/crèdits: 0,00 &euro;</li>
+			<li>Saldo pendent: 0,00 &euro;</li>
+		</ul>
+	</p>
+	
+</p>
+</body>
+</html>

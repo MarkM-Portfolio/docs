@@ -1,0 +1,88 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* HCL Confidential                                                  */
+/*                                                                   */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* Copyright HCL Technologies Limited 2020                           */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        LOADING: "Содржината се вчитува.",
+        LOAD_FINISHED: "Вчитувањето содржина заврши.",
+        PAGE_SETUP: "Дефиниција на страница",
+        NOTE_INVALIDACTION_FOOTNOTE: "Ова не е важечко дејство за фуснота.",
+        NOTE_INVALIDACTION_ENDNOTE: "Ова не е важечко дејство за белешка.",
+        PAGENUMBER_OF_TOTALNUMBER: "Страница ${0} од ${1}", //page 1 of N
+        PAGE_NUMBER: "Страница: ${pageNumber} / ${totalPageNumber}",
+        toc: {
+            title: "Содржина",
+            update: "Ажурирај",
+            del: "Избриши",
+            toc: "Содржина",
+            linkTip: "Кликнете Ctrl за навигација",
+            linkTip_Mac: "\u2318 кликнете за да отидете до",
+            pageNumber: "Само број на страница",
+            entireTable: "Целосна табела"
+        },
+        link: {
+            addlink: "Додај врска",
+            gotolink: "Отвори врска",
+            unlink: "Отстрани врска",
+            editlink: "Уреди врска",
+            internalLink: "Внатрешна врска",
+            ctrlLink: "Кликнете Ctrl+Клик за да одите до врска",
+            ctrlLink_Mac: "\u2318Клик за да одите до врска",
+            cannotOpen: " не може да се отвори од ${productName}."
+        },
+        field: {
+            update: "Ажурирај поле"
+        },
+        insertTime: "Вметни време",
+        insertDate: "Вметни датум",
+        selectDate: "Избери датум",
+        selectTime: "Избери време",
+        acc_blank: "празно", // when selection is nothing but space char and empty paragraph
+        acc_space: "празно место", // string read out when the cursor is before one space char
+        acc_inLink: "во врска ",
+        acc_inField: "во поле ",
+        acc_selected: " избрано",
+        acc_inTable: "во табела ред ${0} колона ${1} ",
+        acc_imageSelected: "избрана графика",
+        acc_canvasSelected: "избран облик",
+        acc_textboxSelected: "избрано текстуално поле",
+        ACC_TABLE_TABLESIZE: "Избравте ${0} редови, ${1} колони",
+        ACC_TABLE_MAXSIZE: " Максималната поддржана големина на табела е 20*20",
+        ACC_headerFooterMode: "режим на уредување заглавие и подножје",
+        ACC_EditorMode: "режим на уредување уредник",
+        ACC_FootnotesMode: "режим на уредување фуснота",
+        ACC_EndnotesMode: "режим на уредување белешки",
+        ACC_uniformTable: "Се додаде нов ред",
+        Acc_column: "колона  ${0}",
+        acc_page: "страница  ${0}",
+        acc_section: "дел  ${0}",
+        acc_spellWarn: "Неточен правопис",
+        acc_outTable: "надвор од табела",
+        acc_link: "врска",
+        acc_field: "поле",
+        acc_footnote: "фуснота",
+        acc_endnote: "белешка",
+        acc_editor: "Уредил ${0}",
+        tablePropertyTitle: "Својства на табела",
+        headerTitle: "Заглавие",
+        footerTitle: "Подножје",
+        firstheaderTitle: "Заглавие на прва страница",
+        firstfooterTitle: "Подножје на прва страница",
+        evenheaderTitle: "Заглавие на парна страница",
+        evenfooterTitle: "Подножје на парна страница",
+        oddheaderTitle: "Заглавие на непарна страница",
+        oddfooterTitle: "Подножје на непарна страница",
+        showTableBorder: "Прикажи рабови на табела",
+        list_none: "Нема",
+        SET_NUMBERING_VALUE: "Постави вредност на нумерирање",
+        BIDI_CONTENT_EDITING: "Документот вклучува двонасочна содржина. За правилно работење со документот вклучете двонасочна поддршка во претпочитаните вредности на HCL Connections."
+});

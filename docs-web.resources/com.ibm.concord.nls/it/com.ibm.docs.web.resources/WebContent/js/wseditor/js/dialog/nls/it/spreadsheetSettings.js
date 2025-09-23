@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Selezionare la locale per formattare numeri, valuta, data e ora.",
+	INPUT_INVALID_LOCALENAME: "Nome locale non valido",
+	INPUT_EMPTY_LOCALENAME: "Selezionare una locale.",
+	
+	Spain_Catalan: "Spagna (Catalano)",
+	Denmark: "Danimarca",
+	Germany: "Germania",
+	Greek: "Grecia",
+	United_States: "Stati Uniti",
+	United_Kingdom: "Regno Unito",
+	Spain: "Spagna",
+	Finland: "Finlandia",
+	France: "Francia",
+	Italy: "Italia",
+	Japan: "Giappone",
+	Korean: "Corea del Sud",
+	Norway: "Norvegia",
+	Netherlands: "Paesi Bassi",
+	Poland: "Polonia",
+	Brazil: "Brasile",
+	Portugal: "Portogallo",
+	Russia: "Russia",
+	Sweden: "Svezia",
+	Thailand: "Thailandia",
+	Turkey: "Turchia",
+	China: "Cina",
+	Taiwan_China: "Taiwan (Cina)",
+	Israel: "Israele"
+})
+

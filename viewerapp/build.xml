@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2022                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="webviewer" basedir="." default="on-premise.build">
+	<property name="ear.lib" value="./com.ibm.concord.viewer.ear/lib" />
+	<property name="build.debug" value="true" />
+	<property name="build.debuglevel" value="source,lines" />
+	<property name="tab" value="&#x0009;" />
+	<property name="viewernext.lan.filter" value="${tab}&lt;filter&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;LanguageFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;filter-class&gt;com.ibm.concord.viewer.filters.LanguageFilter&lt;/filter-class&gt;${line.separator}${tab}&lt;/filter&gt;${line.separator}"/>
+	<property name="viewernext.lan.mapping" value="${tab}&lt;filter-mapping&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;LanguageFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;url-pattern&gt;/app/*&lt;/url-pattern&gt;${line.separator}${tab}&lt;/filter-mapping&gt;${line.separator}"/>
+	<property name="sessionfilter.class" value="&lt;filter-class&gt;com.ibm.concord.viewer.filters.SessionUserFilter&lt;/filter-class&gt;${line.separator}${tab}${tab}&lt;init-param&gt;${line.separator}${tab}${tab}${tab}&lt;param-name&gt;com.ibm.ws.webcontainer.async-supported&lt;/param-name&gt;${line.separator}${tab}${tab}${tab}&lt;param-value&gt;true&lt;/param-value&gt;${line.separator}${tab}${tab}&lt;/init-param&gt;${line.separator}${tab}&lt;/filter&gt;"/>
+	<property name="sessionfilter.mapping" value="&lt;filter-mapping&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;SessionUserFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;url-pattern&gt;/api/*&lt;/url-pattern&gt;${line.separator}${tab}&lt;/filter-mapping&gt;"/>
+
+	<target name="config.build">
+		<ant dir="com.ibm.concord.viewer.config" inheritAll="true" />
+	</target>
+	<target name="spi.build">
+		<ant dir="com.ibm.concord.viewer.spi" inheritAll="true" />
+	</target>
+	<target name="platform.build" depends="config.build, spi.build">
+		<ant dir="com.ibm.concord.viewer.platform" inheritAll="true" />
+	</target>
+	<target name="lc3.integration.build" depends="platform.build">
+		<ant dir="com.ibm.concord.viewer.lc3.integration" inheritAll="true" />
+	</target>
+
+	<target name="document.common.build" depends="tempstorage.build">
+		<ant dir="com.ibm.concord.viewer.document.common" inheritAll="true" />
+	</target>
+
+	<target name="journal.subscriber.build">
+		<ant dir="com.ibm.docs.viewer.journal.subscriber.sample" inheritAll="true" />
+	</target>
+
+	<target name="tempstorage.build" depends="platform.build, spi.build, cache.build">
+		<ant dir="com.ibm.concord.viewer.tempstorage.integration" inheritAll="true" />
+	</target>
+
+	<target name="services.build" depends="platform.build, config.build, document.common.build, lc3.integration.build, tempstorage.build, ecm.build, mail.build">
+		<ant dir="com.ibm.concord.viewer.services" inheritAll="true" />
+	</target>
+
+	<target name="job.build">
+		<ant dir="com.ibm.concord.viewer.job" inheritAll="true" />
+	</target>
+
+	<target name="cache.build" depends="platform.build">
+		<ant dir="com.ibm.concord.viewer.cache" inheritAll="true" />
+	</target>
+
+	<target name="documentservice.build">
+		<ant dir="com.ibm.concord.viewer.document.services" inheritAll="true" />
+	</target>
+
+	<target name="admin.build">
+		<ant dir="com.ibm.concord.viewer.admin" inheritAll="true" />
+	</target>
+
+	<target name="lcExtensions.build">
+		<ant dir="viewer_LCExtensions" inheritAll="true" />
+	</target>
+
+	<target name="license.build">
+		<ant dir="com.ibm.docs.viewer.license" inheritAll="true" />
+	</target>
+
+	<target name="ecm.build">
+		<ant dir="com.ibm.docs.viewer.ecm.integration" inheritAll="true" />
+	</target>
+	<target name="mail.build">
+		<ant dir="com.ibm.docs.viewer.mail.integration" inheritAll="true" />
+	</target>
+
+	<target name="war.build" depends="cache.build, job.build, documentservice.build,
+		lc3.integration.build, ecm.build, services.build, admin.build, journal.subscriber.build, tempstorage.build">
+		<ant dir="com.ibm.concord.viewer.war" inheritAll="true" />
+	</target>
+
+	<target name="installer">
+		<ant dir="com.ibm.concord.viewer.deployment" inheritAll="true" />
+	</target>
+
+	<target name="ear.build" depends="war.build, sanity.build">
+		<ant dir="com.ibm.concord.viewer.ear" inheritAll="true" />
+	</target>
+
+	<target name="sanity.war.build">
+		<ant dir="com.ibm.docs.viewer.sanity.war" inheritAll="true" />
+	</target>
+
+	<target name="sanity.build" depends="sanity.war.build">
+		<ant dir="com.ibm.docs.viewer.sanity.ear" inheritAll="true" />
+	</target>
+
+	<target name="ut" depends="ear.build">
+		<ant dir="com.ibm.docs.viewer.test" inheritAll="true" />
+	</target>
+
+	<target name="rpm">
+		<ant dir="com.ibm.docs.viewer.rpm" inheritAll="true" />
+	</target>
+
+	<target name="ext.rpm" depends="rpm">
+		<ant dir="com.ibm.docs.viewer.ext.rpm" inheritAll="true" />
+	</target>
+
+	<target name="webseal.rpm">
+		<ant dir="com.ibm.viewernext.webseal.config" inheritAll="true" />
+	</target>
+
+	<target name="getDocs">
+		<property name="remoteBaseDir" value="${DocsBuildURI}" />
+		<mkdir dir="./HTMLViewer" />
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteBaseDir}">
+			<fileset dir="./HTMLViewer" includes="currentBuildLabel.txt" />
+		</ftp> -->
+
+		<copy todir="./HTMLViewer">
+			<fileset dir="${remoteBaseDir}">
+				<include name="currentBuildLabel.txt"/>
+			</fileset>
+		</copy>
+
+		<echo message="DocsBuildURI = ${DocsBuildURI}" />
+		<echo message="remoteBaseDir = ${remoteBaseDir}" />
+
+		<loadfile property="curBldLabel" srcFile="./HTMLViewer/currentBuildLabel.txt">
+			<filterchain>
+				<striplinebreaks />
+			</filterchain>
+		</loadfile>
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteBaseDir}/${curBldLabel}">
+			<fileset dir="./HTMLViewer" includes="viewer_offerings.zip, viewer_offerings_ext.zip" />
+		</ftp> -->
+
+		<copy todir="./HTMLViewer">
+			<fileset dir="${remoteBaseDir}/${curBldLabel}">
+				<include name="viewer_offerings.zip"/>
+				<include name="viewer_offerings_ext.zip"/>
+			</fileset>
+		</copy>
+
+		<echo message="remoteBaseDir = ${remoteBaseDir}" />
+		<echo message="curBldLabel = ${curBldLabel}" />
+
+		<unzip src="./HTMLViewer/viewer_offerings.zip" dest="./HTMLViewer" />
+		<unzip src="./HTMLViewer/viewer_offerings_ext.zip" dest="./HTMLViewer" />
+		<move todir="./com.ibm.concord.viewer.ear/lib">
+			<fileset dir="./HTMLViewer">
+				<include name="com.ibm.concord.spreadsheet.common.jar" />
+				<include name="com.ibm.concord.presentation.common.jar" />
+			</fileset>
+		</move>
+		<move todir="./com.ibm.concord.viewer.war/WebContent/jsp">
+			<fileset dir="./HTMLViewer/jsp">
+				<include name="header*" />
+				<include name="footer*" />
+			</fileset>
+		</move>
+		<move todir="./HTMLViewer">
+			<fileset dir="./">
+				<include name="currentBuildLabel.txt" />
+			</fileset>
+		</move>
+		<move todir="${build.home}">
+			<fileset dir="./HTMLViewer/docsext" includes="**/*" />
+		</move>
+		<delete includeEmptyDirs="true">
+			<fileset dir="./HTMLViewer/jsp" />
+		</delete >
+	</target>
+
+	<target name="webviewer.build" depends="getDocs, ut, lcExtensions.build, ext.rpm, webseal.rpm, installer, license.build">
+		<!-- For main build -->
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/sc" />
+		</delete>
+
+		<zip destfile="${build.home}/Viewer.zip">
+			<fileset dir="${build.home}" includes="*.ear" />
+			<zipfileset dir="${build.home}/config" prefix="config" />
+			<zipfileset dir="${build.home}/installer" prefix="installer" />
+			<zipfileset dir="${build.home}/License" prefix="License" />
+		</zip>
+
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}" includes="**/*.jar" />
+			<fileset dir="${build.home}" includes="**/*.war" />
+			<fileset dir="${build.home}" includes="**/*.ear" />
+			<fileset dir="${build.home}/config" />
+
+			<fileset dir="${build.home}/installer" />
+			<fileset dir="${build.home}/License" />
+		</delete>
+	</target>
+
+	<target name="viewernext.build" depends="webviewer.build">
+		<!--unzip viewer.zip-->
+		<echo message="Unzip Viewer.zip..." />
+		<unzip src="${build.home}/Viewer.zip" dest="${build.home}/ViewerNext/Viewer" />
+		<move file="${build.home}/ViewerNext/Viewer/config/viewernext-config-sc-template.json" tofile="${build.home}/ViewerNext/Viewer/config/viewer-config-premise-template.json" overwrite="true" />
+
+		<replace file="${build.home}/ViewerNext/Viewer/installer/version.txt">
+			<replacefilter token="&quot;Viewer&quot;" value="&quot;ViewerVerse&quot;" />
+		</replace>
+
+		<unzip src="${build.home}/ViewerNext/Viewer/com.ibm.concord.viewer.ear.ear" dest="${build.home}/ViewerNext/Viewer/ear" />
+		<replace file="${build.home}/ViewerNext/Viewer/ear/META-INF/application.xml">
+			<replacefilter token="&lt;context-root&gt;viewer&lt;/context-root&gt;" value="&lt;context-root&gt;viewer/verse&lt;/context-root&gt;" />
+		</replace>
+
+		<unzip src="${build.home}/ViewerNext/Viewer/ear/com.ibm.concord.viewer.war.war" dest="${build.home}/ViewerNext/Viewer/ear/war">
+			<patternset>
+				<include name="version.txt" />
+				<include name="**/WEB-INF/web.xml" />
+			</patternset>
+		</unzip>
+		<!--
+			inject an SC filter to web.xml.  The classes are provided by smartcloud spi which is a shared library provided by AC team
+
+			    <filter>
+			        <filter-name>LanguageFilter</filter-name>
+			        <filter-class>com.ibm.concord.viewer.filters.LanguageFilter</filter-class>
+			    </filter>
+				...
+				<filter-mapping>
+					<filter-name>SessionUserFilter</filter-name>
+					<url-pattern>/api/*</url-pattern>
+				</filter-mapping>
+			    <filter-mapping>
+			        <filter-name>LanguageFilter</filter-name>
+			        <url-pattern>/*</url-pattern>
+			    </filter-mapping>
+		-->
+	    <replace file="${build.home}/ViewerNext/Viewer/ear/war/WEB-INF/web.xml" token="${sessionfilter.class}" value="${sessionfilter.class}${line.separator}${viewernext.lan.filter}"/>
+		<replace file="${build.home}/ViewerNext/Viewer/ear/war/WEB-INF/web.xml" token="${sessionfilter.mapping}" value="${sessionfilter.mapping}${line.separator}${viewernext.lan.mapping}"/>
+		<replace file="${build.home}/ViewerNext/Viewer/ear/war/version.txt">
+			<replacefilter token="&quot;Viewer&quot;" value="&quot;ViewerVerse&quot;" />
+		</replace>
+		<zip destfile="${build.home}/ViewerNext/Viewer/ear/com.ibm.concord.viewer.war.war" update="true">
+			<fileset dir="${build.home}/ViewerNext/Viewer/ear/war" includes="**/*" />
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/ViewerNext/Viewer/ear/war" />
+		</delete>
+
+		<zip destfile="${build.home}/ViewerNext/Viewer/com.ibm.concord.viewer.ear.ear" update="true">
+			<fileset dir="${build.home}/ViewerNext/Viewer/ear" includes="**/*" />
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/ViewerNext/Viewer/ear" />
+		</delete>
+		<echo message="Finished" />
+
+		<!--get Conversion package-->
+		<mkdir dir="${build.home}/ViewerNext/Conversion" />
+
+		<property name="remoteConversionBaseDir" value="${env.ConversionWebkitsURI}" />
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteConversionBaseDir}">
+			<fileset dir="${build.home}/ViewerNext/Zip/Conversion" includes="latestVersion.txt" />
+		</ftp> -->
+
+
+
+		<echo message="env.ConversionWebkitsURI = ${env.ConversionWebkitsURI}" />
+		<echo message="remoteConversionBaseDir = ${remoteConversionBaseDir}" />
+
+		<replaceregexp file="${build.home}/ViewerNext/Zip/Conversion/latestVersion.txt" match="(.*)=" replace="" byline="false" flags="s" />
+
+		<loadfile property="curConversionBldLabel" srcFile="${build.home}/ViewerNext/Zip/Conversion/latestVersion.txt">
+			<filterchain>
+				<striplinebreaks />
+			</filterchain>
+		</loadfile>
+
+		<echo message="curConversionBldLabel = ${curConversionBldLabel}" />
+		<echo message="remoteConversionBaseDir/${curConversionBldLabel}" />
+
+		<!-- ftp get conversion install package-->
+		<echo message="Downloading Conversion package" />
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteConversionBaseDir}/${curConversionBldLabel}">
+			<fileset dir="${build.home}/ViewerNext/Zip/Conversion" includes="**/WebKits/*.zip" />
+		</ftp> -->
+
+		<echo message="curConversionBldLabel = ${curConversionBldLabel}" />
+		<echo message="${remoteConversionBaseDir}/${curConversionBldLabel}" />
+
+		<copy todir="${build.home}/ViewerNext/Zip/Conversion">
+			<fileset dir="${remoteConversionBaseDir}/${curConversionBldLabel}">
+				<include name="**/WebKits/*.zip"/>
+			</fileset>
+		</copy>
+
+		<echo message="Finished" />
+
+		<!-- unzip -->
+		<echo message="Unzip Conversion package" />
+		<unzip dest="${build.home}/ViewerNext/Conversion">
+			<fileset dir="${build.home}/ViewerNext/Zip/Conversion">
+				<include name="**/WebKits/*.zip" />
+			</fileset>
+		</unzip>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/ViewerNext/Zip" includes="**/*" />
+		</delete>
+
+		<replaceregexp file="${build.home}/ViewerNext/Conversion/installer/util/F00ConfigureDocsCR.py" match="was.server1" replace="was.serverViewerNextC" byline="false" flags="s" />
+
+		<echo message="Finished" />
+
+		<!-- zip -->
+		<echo message="Zip ViewerNext package" />
+		<mkdir dir="${build.home}/SC10.0_ViewerNext_${build.timestamp}/WebKits" />
+		<zip destfile="${build.home}/SC10.0_ViewerNext_${build.timestamp}/WebKits/SC-ViewerNext-Config-${build.version}-${build.timestamp}.zip">
+			<zipfileset dir="${build.home}/ViewerNext/Viewer" prefix="ViewerNext/Viewer" />
+			<zipfileset dir="${build.home}/ViewerNext/Conversion" prefix="ViewerNext/Conversion" excludes="latestVersion.txt" />
+			<zipfileset dir="${build.home}" includes="ViewerNext/Viewer/installer/installViewerNext.bat" fullpath="install.bat" />
+		</zip>
+		<echo message="Finished" />
+
+		<!-- interface.xml -->
+		<copy file="${build.home}/ViewerNext/Viewer/installer/viewer/interface.xml" tofile="${build.home}/SC10.0_ViewerNext_${build.timestamp}/WebKits/interface.xml" />
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/ViewerNext" />
+		</delete>
+
+		<!-- copy Webseal rpm -->
+		<move todir="${build.home}/SC10.0_ViewerNext_${build.timestamp}/WebKits" failonerror="false">
+			<fileset dir="${build.home}/SC-TAM-WebSEAL-Config-ViewerNext">
+				<include name="SC-TAM-WebSEAL-Config-ViewerNext-*.rpm" />
+			</fileset>
+		</move>
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="${build.home}/SC-TAM-WebSEAL-Config-ViewerNext" />
+		</delete>
+	</target>
+
+	<target name="on-premise.build" depends="viewernext.build">
+		<echo message="Unzip Viewer.zip..." />
+		<unzip src="${build.home}/Viewer.zip" dest="${build.home}/On-premise/Viewer" />
+		<echo message="Unzip Viewer.ear..." />
+		<unzip src="${build.home}/On-premise/Viewer/com.ibm.concord.viewer.ear.ear" dest="${build.home}/On-premise/Viewer/ear" />
+		<echo message="Remove bss releated jar from lib..." />
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/On-premise/Viewer/ear/lib">
+				<include name="**/bss.shim*.jar" />
+				<include name="**/bss.json*.jar" />
+				<include name="**/shared.config*.jar" />
+			</fileset>
+		</delete>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/On-premise/Viewer" includes="**/com.ibm.concord.viewer.ear.ear" />
+		</delete>
+		<echo message="Zip Viewer.ear..." />
+		<zip destfile="${build.home}/On-premise/Viewer/com.ibm.concord.viewer.ear.ear" update="true">
+			<fileset dir="${build.home}/On-premise/Viewer/ear" includes="**/*" />
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/On-premise/Viewer/ear" />
+		</delete>
+		<echo message="Zip Viewer.zip..." />
+		<zip destfile="${build.home}/Viewer.zip" update="true">
+			<fileset dir="${build.home}/On-premise/Viewer" includes="**/*" />
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}/On-premise" />
+		</delete>
+		<echo message="Finished" />
+	</target>
+</project>

@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>Viewer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.OnPremise</groupId>
+  <artifactId>Viewer</artifactId>
+  <name>OnPremise Viewer - zip</name>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ibm.docs.OnPremise</groupId>
+      <artifactId>com.ibm.concord.viewer.ear</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.viewer.sanity.ear</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>    
+    <dependency>
+      <groupId>com.ibm.docs.OnPremise</groupId>
+      <artifactId>viewerInstaller-version.txt</artifactId>
+      <version>${project.version}</version>
+      <type>txt</type>
+    </dependency>
+  </dependencies>   
+
+  <build>
+    <plugins>  
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>Build OnPremise Viewer.zip</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_OnPremise_Viewer.zip.xml</descriptor>
+              </descriptors>
+              <finalName>Viewer</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>        
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>    
+</project>

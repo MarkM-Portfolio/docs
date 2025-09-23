@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Vælg sprogkonvention for at formatere tal, valuta, datoer og klokkeslæt",
+	INPUT_INVALID_LOCALENAME: "Ugyldigt navn på sprogkonvention",
+	INPUT_EMPTY_LOCALENAME: "Vælg en sprogkonvention",
+	
+	Spain_Catalan: "Spanien (katalansk)",
+	Denmark: "Danmark",
+	Germany: "Tyskland",
+	Greek: "Grækenland",
+	United_States: "USA",
+	United_Kingdom: "Storbritannien",
+	Spain: "Spanien",
+	Finland: "Finland",
+	France: "Frankrig",
+	Italy: "Italien",
+	Japan: "Japan",
+	Korean: "Sydkorea",
+	Norway: "Norge",
+	Netherlands: "Holland",
+	Poland: "Polen",
+	Brazil: "Brasilien",
+	Portugal: "Portugal",
+	Russia: "Rusland",
+	Sweden: "Sverige",
+	Thailand: "Thailand",
+	Turkey: "Tyrkiet",
+	China: "Kina",
+	Taiwan_China: "Taiwan (Kina)",
+	Israel: "Israel"
+})
+

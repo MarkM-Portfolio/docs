@@ -1,0 +1,24 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<configuration>
+	<!--
+		A "component" tag's or "param" tag's id attribute must not contain any of '," or \ or any characters considered invalid as a file name
+		The value attribute of the "option" tag must not contain any of the 3 of '," or \, but the text content of the "option" tag can contain any characters
+		The "name", "description" and "initial_value" tags can contain any characters
+		The text and text_area input types can accept user input of any characters
+		The types "file" and "password" cannot have an "initial_value"
+	-->
+	<component id="FileViewer" depends_on="Connections">
+	</component>
+</configuration>

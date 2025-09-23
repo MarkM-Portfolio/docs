@@ -1,0 +1,55 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.concord.viewer.ear" basedir="." default="deploy">
+	<property name="bin.dir" value="bin"/>
+	<property name="lib.dir" value="lib"/>
+
+	<property name="journal.module.xml" value="&lt;module id='EjbModule_1336481157820'&gt;&lt;ejb&gt;com.ibm.docs.viewer.journal.subscriber.sample.jar&lt;/ejb&gt;&lt;/module&gt; ${line.separator} &lt;/application&gt;" />
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+
+	<target name="init" depends="clean">
+		<mkdir dir="${bin.dir}"/>
+	</target>
+
+	<target name="main" depends="init">
+		<mkdir dir="${build.home}/sc/META-INF" />
+		<copy file="${basedir}/META-INF/application.xml" tofile="${build.home}/sc/META-INF/application.xml" />
+		<replace file ="${build.home}/sc/META-INF/application.xml" token="&lt;/application&gt;" value="${journal.module.xml}" />
+		<ear destfile="${build.home}/${ant.project.name}.ear" appxml="${build.home}/sc/META-INF/application.xml">
+			<fileset dir="." includes="lib/**/*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.viewer*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.docs.viewer*.jar"/>
+			
+			<fileset dir="${build.home}/" includes="**/*.war"/>
+			<fileset dir="." includes="META-INF/"/>
+			<fileset dir="." includes="product/**/*.swidtag"/>
+		</ear>
+	</target>
+	
+	<target name="smart_cloud" depends="init">
+		<ear destfile="${build.home}/sc/viewer.ear" appxml="${basedir}/META-INF/application.xml">
+			<fileset dir="." includes="lib/**/*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.viewer*.jar" excludes="**/com.ibm.concord.viewer.localtest.integration.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.docs.viewer.ecm*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.docs.viewer.mail*.jar"/>
+			<fileset dir="${build.home}/sc/" includes="**/*.war"/>
+			<fileset dir="." includes="product/**/*.swidtag"/>
+			<fileset dir="." includes="META-INF/"/>
+		</ear>
+	</target>
+	
+	<target name="deploy" depends="main, smart_cloud"/>
+</project>
+

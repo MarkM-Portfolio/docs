@@ -1,0 +1,37 @@
+.docsSTBtn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #333333;
+    background-image: none;
+    border-bottom: 1px solid #444444;
+    border-image: none;
+    border-left: 1px solid #444444;
+    border-right: 0 none !important;
+    border-top: 1px solid #444444;
+    color: #FFFFFF !important;
+    height: 24px !important;
+    margin-bottom: 0;
+    margin-left: -1px;
+    margin-right: -1px !important;
+    margin-top: 0;
+    outline: 1px solid #000000;
+    padding: 3px 10px;
+}
+
+.docsSTActionBarContainer {
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.docsSTActionBarContainer .docsSTActionBar {
+    float: right;
+    margin: 0 !important;
+    overflow: hidden;
+    width: auto;
+}

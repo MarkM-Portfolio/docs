@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctors>
+<doctor number="one">William Hartnell</doctor>
+<doctor number="two">Patrick Troughton</doctor>
+<doctor number="three">Jon Pertwee</doctor>
+<!-- Start do not translate block -->
+<doctor number="four">Tom Baker</doctor>
+<doctor number="five">Peter Davison</doctor>
+<!-- End do not translate block -->
+<doctor number="six">Colin Baker</doctor>
+<doctor number="seven">Sylvester McCoy</doctor>
+<doctor number="eight">Paul McGann</doctor>
+</doctors>

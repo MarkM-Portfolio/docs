@@ -1,0 +1,35 @@
+<div>
+        <div class="lotusChunk">
+            <div class="row1">
+              <label class="lotusLeft lotusHeading">${nls.font}</label> 
+              <div class="lotusRight" value="${nls.selectFontName}" title="${nls.selectFontName}" dojoType='concord.chart.widget.FontNameDropDownButton' dojoAttachPoint="chart_font"></div>
+            </div>
+        </div><!--end lotusChunk-->
+
+        <div class="lotusChunk10" dojoType='concord.chart.widget.Title' dojoAttachPoint="chart_title">
+        </div><!--end lotusChunk-->
+
+        <div class="lotusChunk10">
+            <div class="row1">
+                <label class="lotusHeading">${nls.legend}</label> 
+                <div>
+                	<div class="lotusLeft" dojoType='concord.chart.widget.DropDownButton' value="${nls.setLegendPos}" title="${nls.setLegendPos}" dojoAttachPoint="legend_place"></div>
+                	<div class="fontstyle lotusRight" dojoType='concord.chart.widget.FontToolbar' dojoAttachPoint="legend_font"></div>
+                </div>
+            </div>
+        </div><!--end lotusChunk-->
+
+        <div class="lotusChunk">
+            <label class="lotusHeading lotusLeft">${nls.background}</label> 
+            <div class="fontstyle lotusRight" value="${nls.setBackColor}" title="${nls.setBackColor}" dojoType='concord.chart.widget.ColorPickerDropDownButton' dojoAttachPoint="chart_fill_color"></div>
+        </div><!--end lotusChunk-->
+        <div class="lotusChunk">
+            <label class="lotusHeading lotusLeft">${nls.border}</label> 
+            <div class="fontstyle lotusRight" dojoType='concord.chart.widget.Border' dojoAttachPoint="chart_border"></div>
+        </div><!--end lotusChunk-->
+        
+         <div class="lotusChunk" dojoAttachPoint="plot_fill_section">
+            <label class="lotusHeading lotusLeft">${nls.plotarea}</label> 
+            <div class="fontstyle lotusRight" value="${nls.setPlotAreaColor}" title="${nls.setPlotAreaColor}" dojoType='concord.chart.widget.ColorPickerDropDownButton' dojoAttachPoint="plot_fill_color"></div>
+        </div><!--end lotusChunk-->
+</div>

@@ -1,0 +1,132 @@
+# *****************************************************************
+#
+# HCL Confidential
+#
+# OCO Source Materials
+#
+# Copyright HCL Technologies Limited 2007, 2022
+#
+# The source code for this program is not published or otherwise
+# divested of its trade secrets, irrespective of what has been
+# deposited with the U.S. Copyright Office.
+#
+# *****************************************************************
+# IBM Conversion section
+[Conversion]
+# conversion_install_root:
+# Specify the location where you want to install IBM Conversion service
+conversion_install_root=/opt/IBM/IBMConversion
+
+# docs_shared_storage_type:
+# Specify the storage type which you want to share the conversion file with IBMDocs server.
+# If you install IBMDocs and Document Format Conversion server in one machine, you should specify this value as "local".
+# If you install IBMDocs and Document Format Conversion server on different machines and the remote shared directory is NFS,
+# you should specify this value as "nfs".
+# If you install IBMDocs and Document Format Conversion server on different machines and the remote shared directory is NFS4,
+# you should specify this value as "nfs4".
+docs_shared_storage_type=nfs
+
+# viewer_shared_storage_type:
+# Specify the storage type which you want to share the conversion file with IBMDocs Viewer server.
+# If you install IBMDocs Viewer and Document Format Conversion server in one machine, you should specify this value as "local".
+# If you install IBMDocs Viewer and Document Format Conversion server on different machines and the remote shared directory is NFS,
+# you should specify this value as "nfs".
+# If you install IBMDocs Viewer and Document Format Conversion server on different machines and the remote shared directory is NFS4,
+# you should specify this value as "nfs4".
+# If you use CIFS as shared directory, you should specify this value as "cifs".
+# CIFS automation mount is not supported, you need to follow installation guide to mount this type of storage.
+viewer_shared_storage_type=nfs
+
+# docs_shared_storage_local_path:
+# The value can be a local directory or a local mount point for a shared remote directory,
+# which must point to the same directory specified by shared_data_dir in HCL Docs cfg.properties.
+# If the value is a local mount point on Windows, it must be a drive name (such as W:).
+docs_shared_storage_local_path=W:
+
+# docs_shared_storage_remote_server:
+# The host name or IP address of the remote shared storage server for HCL Docs,
+# valid only when docs_shared_storage_local_path points to a driver-based path.
+docs_shared_storage_remote_server=nas-docs.ibm.com
+
+# docs_shared_storage_remote_path:
+# The shared remote path on the shared storage server for HCL Docs, valid
+# only when docs_shared_storage_local_path points to a driver-based path.
+docs_shared_storage_remote_path=/opt/IBM/IBMDocs/data/shared
+
+# viewer_shared_storage_local_path:
+# The value can be a local directory or a local mount point for a shared remote directory,
+# and must point to the same directory specified by shared_data_dir in File Viewer cfg.properties.
+# If the value is a local mount point on Windows, it should be a drive name (such as Y:).
+viewer_shared_storage_local_path=Y:
+
+# viewer_shared_storage_remote_server:
+# The host name or IP address of the remote shared storage server for File Viewer,
+# valid only when viewer_shared_storage_local_path points to a driver-based path.
+viewer_shared_storage_remote_server=nas-docs.ibm.com
+
+# viewer_shared_storage_remote_path:
+# The shared remote path on the shared storage server for File Viewer, valid
+# only when viewer_shared_storage_local_path points to a driver-based path.
+viewer_shared_storage_remote_path=/opt/IBM/IBMDocs/data/shared
+
+# The hostname, port and context path for IBM File Viewer
+# Input the host address of the load balancing server if the Viewer application is clustered
+# Input the host name address of the webseal server when integrate with TAM without SPNEGO
+# Single sign-on requires that the browser pass LTPA cookies to WebSphere Application Server.
+# These cookies must contain the fully qualified host name, please use fully qualified host name in the url.
+viewer_url=http://viewer.yourdomain.com/viewer
+
+# was_install_root:
+# Specify the path of WebSphere Application Server profile used on this server.
+# on Linux, the default location is /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+# on Windows, the default location is C:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01
+was_install_root=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+
+# was_soap_port:
+# Specify the Deployment Manager SOAP port, default is 8879
+was_soap_port=8879
+
+# scope:
+# Specify the scope you want the application to be installed, the value can be:
+# Server: If you want the application to be installed on a single server
+# Cluster: If you want the application to a cluster
+scope=Cluster
+
+# scope_name:
+# If the scope=Cluster, specify the cluster name
+# If the scope=Server, specify the application server name
+# you also must specify node_name where the application server is on, if the scope is server
+scope_name=ConversionCluster
+
+# node_name:
+# If the scope=Server, this value must not be empty, must be the node name of the application server is on
+node_name=
+
+# sym_count:
+# number of symphony process instances
+# recommended value is equals to CPU core number of your machine or double
+# for example, the node has 4 CPU, each has 2 cores, the value can be set to 8 or 16
+sym_count=2
+
+# sym_start_port:
+# Specify the starting port number that symphony process can be listening on
+# if you have 2 symphony instance, starting port is 8100, then 8100, 8101 will be used
+sym_start_port=8100
+
+# decide the software deployment mode, now supports only two options: SC (SmartCloud) and Premise (On-Premise), the default value is 'Premise'
+software_mode=Premise
+
+#specified the webserver name to configure the ear application when you have multiple web servers
+#the webserver should be managed by your dmgr
+#default value is empty
+#if you have only one webserver within your cell or you need to configure all webservers within the cell for the ear application,please just let it as default empty value
+#if you want to configure only one webserver when you have multiple webservers within your cell, you must select the right one here to configure
+#for the webserver outside your cell of the ear application, it will be invalid
+webserver_name=
+
+#specified for whether to restart webservers
+restart_webservers=False
+
+#For special requirements, the deployment environment is non-root/admin. And also it forbids commenting any sudo configurations in OS,that means WAS job manager is not able to provide sudo function for non root.
+#Thus, job manager will not work. This configuration item is to avoid calling was job manager, support to deploy Conversion component through script in each Conversion Cluster members.
+non_job_mgr_mode=True

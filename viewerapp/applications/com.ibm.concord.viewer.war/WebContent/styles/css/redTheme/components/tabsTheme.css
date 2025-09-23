@@ -1,0 +1,15 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for tabs
+companion file is tabs.css*/
+/*** T A B S ***/
+.lotusTabContainer{border-bottom-color:#d9d9d9;}
+.lotusTabs li, .portlet-tab li{border-color:#e7e9ea;border-bottom-color:#d9d9d9;background-color:#e7e9ea}
+.lotusTabs li.lotusSelected, .portlet-tab li.lotusSelected{background-color:#fff;border-color:#d9d9d9;border-bottom-color:#fff;}
+.lotusTabs li.lotusSelected a, .lotusTabs li.lotusSelected a:visited, .portlet-tab li.lotusSelected a, .portlet-tab li.lotusSelected a:visited{color:#000;}
+/*a style that can be applied to a div that allows you to surround a tab content area with a border*/
+.lotusTabContent{border-color:#d9d9d9;}
+/***********************************************************/
+

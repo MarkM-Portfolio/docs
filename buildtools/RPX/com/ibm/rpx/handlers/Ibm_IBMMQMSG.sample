@@ -1,0 +1,28 @@
+:MSGL.
+:USER.ENDUSR
+:PROGNOTE.
+63H9336 (C) Copyright IBM Corp. 1995, 1996   All rights reserved
+:EPROGNOTE.
+TRANNOTE.
+slip = Serial Link Internet Protocol
+slattach = Process which attaches a serial line
+:ETRANNOTE.
+:MSG.Failed to start slip/slattach process
+:EMSG.
+:XPL.
+Another process is already running slip/attach.
+:EXPL.
+:URESP.
+Check that slip/slattach is not already running and being used by
+another process.
+:EURESP.
+:PRESP.
+Try running the process again.
+:EPRESP.
+:GROUP IDF='REPLVAR' LEN='3 32 20' COLHDR1='Symbol' COLHDR2='Data Passed Desc'
+COLHDR3='Format'.
+:ITEM1.&1
+:ITEM2.Name parameter keyword
+:ITEM3.*CHAR 10
+:EGROUP.
+EMSGL.

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="webviewer4catalog" basedir="." default="catalog.build">
+  <!--
+	<property name="viewer.path" value="D:\Viewerblds\testblds"/>
+	<property name="conversion.path" value="D:\Viewerblds\testblds"/>
+	<property name="product" value="ViewerCatalog"/>
+  -->
+
+	<target name="catalog.build">
+		<mkdir dir="../build/${product}-${build.version}.${build.timestamp}" />
+		
+		<echo message="Updating Conversion License and Tag..." />
+		<unzip dest="../build/Conversion-unzipped">
+			<fileset dir="${conversion.path}">
+				<include name="DocsConversion.zip" />
+			</fileset>
+		</unzip>
+		<delete includeemptydirs="true">
+			<fileset dir="../build/Conversion-unzipped/installer/product" />
+		</delete>
+		<delete includeemptydirs="true">
+			<fileset dir="../build/Conversion-unzipped/License" includes="**/*" />
+		</delete>
+		<copy todir="../build/Conversion-unzipped/License" failonerror="true" overwrite="true">
+			<fileset dir="${basedir}/licenses/conversion/License" includes="**/*"/>
+		</copy>
+		<zip destfile="../build/${product}-${build.version}.${build.timestamp}/DocsConversion.zip">
+			<zipfileset dir="../build/Conversion-unzipped" includes="**/*" />
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="../build/Conversion-unzipped" />
+		</delete>
+		<echo message="Finished" />
+		
+		<echo message="Updating Viewer License and Tag..." />
+		<unzip dest="../build/Viewer-unzipped">
+			<fileset dir="${viewer.path}">
+				<include name="Viewer.zip" />
+			</fileset>
+		</unzip>
+		<unzip dest="../build/Viewer-unzipped/ear">
+			<fileset dir="../build/Viewer-unzipped/">
+				<include name="com.ibm.concord.viewer.ear.ear" />
+			</fileset>
+		</unzip>
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="../build/Viewer-unzipped/ear/product" />
+		</delete>
+		<!-- delete the original ear file -->
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="../build/Viewer-unzipped/">
+				<include name="com.ibm.concord.viewer.ear.ear" />
+			</fileset>
+		</delete>
+		<zip destfile="../build/Viewer-unzipped/com.ibm.concord.viewer.ear.ear">
+			<zipfileset dir="../build/Viewer-unzipped/ear" includes="**/*" />
+		</zip>
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="../build/Viewer-unzipped/ear" />
+		</delete>
+		<delete includeemptydirs="true">
+			<fileset dir="../build/Viewer-unzipped/License" includes="**/*" />
+		</delete>
+		<copy todir="../build/Viewer-unzipped/License" failonerror="true" overwrite="true">
+			<fileset dir="${basedir}/licenses/viewer/License" includes="**/*"/>
+		</copy>
+		<zip destfile="../build/${product}-${build.version}.${build.timestamp}/Viewer.zip">
+			<zipfileset dir="../build/Viewer-unzipped" includes="**/*" />
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="../build/Viewer-unzipped" />
+		</delete>
+		<echo message="Finished" />
+		
+		<echo message="Updating Viewer Extension License..." />
+		<unzip dest="../build/ViewerExt-unzipped">
+			<fileset dir="${viewer.path}">
+				<include name="ViewerLCCustomizeApp.zip" />
+			</fileset>
+		</unzip>
+		<delete includeemptydirs="true">
+			<fileset dir="../build/ViewerExt-unzipped/License" includes="**/*" />
+		</delete>
+		<copy todir="../build/ViewerExt-unzipped/License" failonerror="true" overwrite="true">
+			<fileset dir="${basedir}/licenses/lcfiles.ext/License" includes="**/*"/>
+		</copy>
+		<zip destfile="../build/${product}-${build.version}.${build.timestamp}/ViewerLCCustomizeApp.zip">
+			<zipfileset dir="../build/ViewerExt-unzipped" includes="**/*" />
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="../build/ViewerExt-unzipped" />
+		</delete>
+		<echo message="Finished" />
+	
+		<tar destfile="../build/${product}-${build.version}.${build.timestamp}.tar">
+			<fileset dir="../build/${product}-${build.version}.${build.timestamp}" includes="*.zip"/>
+		</tar>
+		
+		<delete includeemptydirs="true">
+			<fileset dir="../build/${product}-${build.version}.${build.timestamp}" />
+		</delete>		
+	</target>
+</project>

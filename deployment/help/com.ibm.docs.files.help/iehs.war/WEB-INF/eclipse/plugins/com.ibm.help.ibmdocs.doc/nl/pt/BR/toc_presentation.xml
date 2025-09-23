@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Trabalhando com Apresentações"
+     topic="text/presentation/presentations_frame.html">
+   <topic label="Trabalhando com Apresentações"
+          href="text/presentation/presentations_frame.html">
+      <topic label="Criando e Fazendo Upload de Apresentações"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Criando Apresentações"
+                href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Alterando o Formato de Arquivo Padrão de Apresentações"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Fazendo Upload de Apresentações para Compartilhar"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Importando Apresentações Existentes"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Compatibilidade de Arquivo e Exportação de Apresentações"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Formatos de Arquivo Suportados em Apresentações"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Salvando Apresentações"
+                href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Publicando uma Versão de Apresentações"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Exportando Apresentações para outros Formatos de Arquivo"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Compartilhando Apresentações"
+             href="text/presentation/p_sharing_a_document.html">
+         <topic label="Compartilhando Apresentações com Pessoas ou Comunidades"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Configurando Níveis de Acesso para Apresentações"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Colaborando em Apresentações em Tempo Real"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Coeditando em Tempo Real em Apresentações"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Sobre Coedição em Apresentações"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Coeditando com outros em Apresentações"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Mostrando Mudanças do Editor em Apresentações"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Colaborando Usando Comentários em Apresentações"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Sobre Comentários em Apresentações"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Criando Comentários em Apresentações"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Visualizando Comentários em Apresentações"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Procurando Comentários em Apresentações"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Formatando Slides" href="text/presentation/p_formatting_slides.html">
+         <topic label="Alterando Fontes em Apresentações"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Selecionando e Movendo Objetos"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Organizando a Ordem de Objetos"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Incluindo Números ou Marcadores em Slides"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Aplicando um Layout do Slide"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Alterando o Estilo Principal"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Apresentações de Verificação Ortográfica"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Salvando e Imprimindo Apresentações"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Imprimindo Apresentações em Arquivos PDF"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Trabalhando com Imagens em Apresentações"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Inserindo Gráficos em Apresentações"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Movendo e Redimensionando Imagens em Apresentações"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Configurando Propriedades de Imagem em Apresentações"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Trabalha com Slides" href="text/presentation/p_slide_show.html">
+         <topic label="Reproduzindo Apresentação de Slides"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Aplicando Transições entre Slides"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Excluindo Slides" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Incluindo Slides" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Movendo Slides" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Duplicando Slides" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Trabalhando com Tabelas em Apresentações"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Criando Tabelas em Apresentações"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Incluindo Linhas e Colunas nas Apresentações"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Movendo Linhas e Colunas em Apresentações"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Redimensionando Linhas e Colunas nas Apresentações"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Alinhando Texto em Células"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Alterando Estilos de Tabela em Apresentações"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Definindo Cabeçalhos da Tabela em Apresentações"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Editando Notas do Palestrante"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Referência Rápida de Apresentações"
+             href="text/presentation/p_quick_ref.html"/>
+      <topic label="Atalhos do Teclado de Apresentações"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

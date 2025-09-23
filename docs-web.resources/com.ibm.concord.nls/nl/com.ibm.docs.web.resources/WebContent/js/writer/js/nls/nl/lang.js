@@ -1,0 +1,93 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* HCL Confidential                                                  */
+/*                                                                   */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* Copyright HCL Technologies Limited 2020                           */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        PAGE_BREAK_TEXT: "Paginaeinde",
+        SECTION_BREAK_TEXT: "Sectiescheiding",
+        LINE_BREAK_TEXT: "Regeleinde",
+        COLUMN_BREAK_TEXT: "Kolomeinde",
+        INSERT_IMAGE_NOT_PROPER_PLACE: "Afbeeldingen kunnen helaas alleen worden toegevoegd in de tekst en in tabellen, niet op de huidige locatie.",
+        LOADING: "Content wordt geladen.",
+        LOAD_FINISHED: "Content is geladen.",
+        PAGE_SETUP: "Pagina-indeling",
+        NOTE_INVALIDACTION_FOOTNOTE: "Dit is geen geldige actie voor een voetnoot.",
+        NOTE_INVALIDACTION_ENDNOTE: "Dit is geen geldige actie voor een eindnoot.",
+        PAGENUMBER_OF_TOTALNUMBER: "Pagina ${0} van ${1}", //page 1 of N
+        PAGE_NUMBER: "Pagina: ${pageNumber} / ${totalPageNumber}",
+        toc: {
+            title: "Inhoudsopgave",
+            update: "Bijwerken",
+            del: "Wissen",
+            toc: "Inhoudsopgave",
+            linkTip: "Ctrl+klik om te navigeren",
+            linkTip_Mac: "\u2318+klik om te navigeren",
+            pageNumber: "Alleen paginanummer",
+            entireTable: "Hele tabel"
+        },
+        link: {
+            addlink: "Link toevoegen",
+            gotolink: "Link openen",
+            unlink: "Link verwijderen",
+            editlink: "Link bewerken",
+            internalLink: "Interne Link",
+            ctrlLink: "Ctrl+klik om link te openen",
+            ctrlLink_Mac: "\u2318+klik om link te openen",
+            cannotOpen: " kan niet worden geopend in ${productName}."
+        },
+        field: {
+            update: "Veld bijwerken"
+        },
+        insertTime: "Tijd invoegen",
+        insertDate: "Datum invoegen",
+        selectDate: "Datum selecteren",
+        selectTime: "Tijd selecteren",
+        acc_blank: "blanco", // when selection is nothing but space char and empty paragraph
+        acc_space: "spatie", // string read out when the cursor is before one space char
+        acc_inLink: "in link ",
+        acc_inField: "in veld",
+        acc_selected: " geselecteerd",
+        acc_inTable: "in tabel, rij ${0} kolom ${1} ",
+        acc_imageSelected: "afbeelding geselecteerd",
+        acc_canvasSelected: "vorm geselecteerd",
+        acc_textboxSelected: "tekstvak geselecteerd",
+        ACC_TABLE_TABLESIZE: "U hebt ${0} rijen en ${1} kolommen geselecteerd.",
+        ACC_TABLE_MAXSIZE: " De maximale tabelgrootte is 20*20",
+        ACC_headerFooterMode: "bewerkingsmodus voor koptekst/voettekst",
+        ACC_EditorMode: "bewerkingsmodus voor editor",
+        ACC_FootnotesMode: "bewerkingsmodus voor voetnoten",
+        ACC_EndnotesMode: "bewerkingsmodus voor eindnoten",
+        ACC_uniformTable: "Er is een nieuwe rij toegevoegd",
+        Acc_column: "kolom ${0}",
+        acc_page: "pagina ${0}",
+        acc_section: "sectie ${0}",
+        acc_spellWarn: "spelling is onjuist",
+        acc_outTable: "buiten tabel",
+        acc_link: "link",
+        acc_field: "veld",
+        acc_footnote: "voetnoot",
+        acc_endnote: "eindnoot",
+        acc_editor: "Bewerken door ${0}",
+        tablePropertyTitle: "Tabeleigenschappen",
+        headerTitle: "Koptekst",
+        footerTitle: "Voettekst",
+        firstheaderTitle: "Koptekst eerste pagina",
+        firstfooterTitle: "Voettekst eerste pagina",
+        evenheaderTitle: "Koptekst even pagina's",
+        evenfooterTitle: "Voettekst even pagina's",
+        oddheaderTitle: "Koptekst oneven pagina's",
+        oddfooterTitle: "Voettekst oneven pagina's",
+        showTableBorder: "Tabelgrenzen afbeelden",
+        list_none: "Geen",
+        SET_NUMBERING_VALUE: "Nummering instellen",
+        BIDI_CONTENT_EDITING: "Dit document bevat bidirectionele content. Schakel voor een juiste verwerking van dit document de ondersteuning voor bidirectionele talen in in de voorkeursinstellingen van HCL Connections."
+});

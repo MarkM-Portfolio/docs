@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: IBM
+Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
+Rsrc-Main-Class: com.ibm.docs.viewer.automation.ViewerTestsRunner
+Rsrc-Class-Path: ./ commons-codec-1.6.jar commons-logging-1.1.1.jar fl
+ uent-hc-4.2.3.jar hamcrest-core-1.3.jar httpclient-4.2.3.jar httpclie
+ nt-cache-4.2.3.jar httpcore-4.2.2.jar httpmime-4.2.3.jar json4j-1.0.0.1.jar j
+ unit-4.12.jar
+Class-Path: .
+

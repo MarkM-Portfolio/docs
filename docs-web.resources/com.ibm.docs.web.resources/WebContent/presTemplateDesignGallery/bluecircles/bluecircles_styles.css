@@ -1,0 +1,162 @@
+/*styles for title page title element*/
+.Bluecircles-title p
+{
+	text-align:left;
+}
+.Bluecircles-title {
+	/*font-size:24.3pt;*/
+	color: #003F69;
+  font-family:Arial;
+  font-size:1.35em;     
+    text-transform: uppercase;
+    /*padding-left: 4%;*/
+}
+.Bluecircles-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+}
+.Bluecircles-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Bluecircles-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Bluecircles-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Bluecircles-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:left;
+	text-indent:0cm;
+}
+
+.element.style {
+	left: 10.5%;	
+}
+
+.Bluecircles-subtitle {
+	/*font-size:23.4pt;*/
+	color: #336699;
+  font-family:Georgia;
+  font-size:1.3em;
+    /*padding-left: 4%;*/
+}
+.Bluecircles-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+}
+.Bluecircles-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Bluecircles-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Bluecircles-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.concord .Bluecircles-datetime {
+	font-family:Arial;
+	color:#003f69;
+	text-align:left;	
+}
+
+.concord .Bluecircles-pagenumber {
+	font-family:Arial;
+	color:#003f69;
+	text-align:right;	
+}
+
+.concord .Bluecircles-footer {
+	font-family:Arial;
+	color:#003f69;
+	text-align:center;	
+}
+.Bluecircles_default {
+	/*font-size:44pt;*/
+	/*font-size:2em;*/
+	font-family:Arial;
+	color:#003f69;
+}
+/*styles for other page (non title page) title */
+.Bluecircles_text-title p
+{
+	text-align:left;
+}
+.Bluecircles_text-title {
+	/*font-size:30.6pt;*/
+	font-size:1.7em;
+	font-family:Arial;
+	color:#336699;
+}
+.Bluecircles_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+}
+.Bluecircles_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Bluecircles_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Bluecircles_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Bluecircles_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Bluecircles_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Bluecircles_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Bluecircles_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Bluecircles_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Bluecircles_text-outline1 {
+	/*font-size:25.2pt;*/
+	font-size:1.4em;
+	font-family:Arial;
+	color:#003f69;
+}
+
+body.lotusJapanese .Bluecircles-title, body.lotusJapanese .Bluecircles-subtitle,body.lotusJapanese .Bluecircles_default, body.lotusJapanese .Bluecircles_text-title,body.lotusJapanese  .Bluecircles_text-outline1{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+body.lotusKorean .Bluecircles-title, body.lotusKorean .Bluecircles-subtitle, body.lotusKorean .Bluecircles_default, body.lotusKorean .Bluecircles_text-title,body.lotusKorean .Bluecircles_text-outline1{
+    font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}

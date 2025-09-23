@@ -1,0 +1,75 @@
+({
+	LOADING: "Načítava sa obsah.",
+	LOAD_FINISHED: "Dokončilo sa načítavanie obsahu.",
+	PAGE_SETUP: "Nastavenie strany",
+	NOTE_INVALIDACTION_FOOTNOTE:"Toto nie je platná akcia pre poznámku pod čiarou.",
+	NOTE_INVALIDACTION_ENDNOTE:"Toto nie je platná akcia pre poznámku na konci.",
+	PAGENUMBER_OF_TOTALNUMBER:"Stránka ${0} z ${1}", //page 1 of N
+	PAGE_NUMBER: "Stránka: ${pageNumber}/${totalPageNumber}",
+	toc:{
+		title : "Obsah",
+		update: "Aktualizovať",
+		del: "Vymazať",
+		toc: "Obsah",
+		linkTip: "Na navigáciu použite kláves Ctrl a kliknutie",
+		pageNumber: "Iba číslo strany",
+		entireTable: "Celá tabuľka"
+	},
+	link:{
+		addlink:"Pridať odkaz",
+		gotolink: "Otvoriť odkaz",
+		unlink	: "Odstrániť odkaz",
+		editlink: "Upraviť odkaz",
+		internalLink: "Interný odkaz",
+		ctrlLink: "Ak chcete prejsť na odkaz, použite Ctrl + kliknutie",
+		cannotOpen: " nemožno otvoriť z ${productName}."
+	},
+	field:{
+		update: "Aktualizovať pole"
+	},
+	insertTime:"Vložiť čas",
+	insertDate:"Vložiť dátum",
+	selectDate:"Vybrať dátum",
+	selectTime:"Vybrať čas",
+	acc_blank: "prázdne",// when selection is nothing but space char and empty paragraph
+	acc_space: "medzera",// string read out when the cursor is before one space char
+	acc_inLink: "v odkaze ",
+	acc_inField: "v poli ",
+	acc_selected :" vybraté",
+	acc_inTable: "v riadku ${0}, stĺpci ${1} tabuľky ",
+	acc_imageSelected: "vybratá grafika",
+	acc_canvasSelected:"vybratý tvar",
+	acc_textboxSelected:"vybraté textové pole",
+	ACC_TABLE_TABLESIZE:"Vybrali ste ${0} riadkov a ${1} stĺpcov",
+	ACC_TABLE_MAXSIZE:" Podporovaná maximálna veľkosť tabuľky je 20x20",
+	ACC_headerFooterMode: "režim úpravy hlavičky a päty",
+	ACC_EditorMode: "režim úpravy editora",
+	ACC_FootnotesMode: "režim úpravy poznámok pod čiarou",
+	ACC_EndnotesMode: "režim úpravy poznámok na konci",
+	ACC_uniformTable: "Bol pridaný nový riadok",
+	Acc_column :"stĺpec ${0}",
+	acc_page :"stránka ${0}",
+	acc_section:"sekcia ${0}",
+	acc_spellWarn:"nesprávny pravopis",
+	acc_outTable:"mimo tabuľky",
+	acc_link :"odkaz",
+	acc_field :"pole",
+	acc_footnote:"poznámka pod čiarou",
+	acc_endnote:"poznámka na konci",	
+	acc_editor:"Upravil ${0}",
+	tablePropertyTitle: "Vlastnosti tabuľky",
+	headerTitle:"Hlavička",
+	footerTitle:"Päta",
+	firstheaderTitle:"Hlavička prvej stránky",
+	firstfooterTitle:"Päta prvej stránky",
+	evenheaderTitle:"Hlavička párnej stránky",
+	evenfooterTitle:"Päta párnej stránky",
+	oddheaderTitle:"Hlavička nepárnej stránky",
+	oddfooterTitle:"Päta nepárnej stránky",
+	showTableBorder:"Zobraziť ohraničenie tabuľky",
+	list_none: "Žiadny",
+	SET_NUMBERING_VALUE: "Nastaviť hodnotu číslovania",
+	BIDI_CONTENT_EDITING: "Tento dokument obsahuje obojsmerný obsah. Ak chcete správne pracovať s týmto dokumentom, aktivujte obojsmernú podporu vo svojich preferenciách produktu HCL Connections."
+})
+	
+

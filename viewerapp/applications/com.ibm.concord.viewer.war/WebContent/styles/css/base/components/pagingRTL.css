@@ -1,0 +1,25 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for paging
+companion files: paging.css / pagingTheme.css
+companion files: pagingRTL.css / pagingThemeRTL.css*/
+/*** P A G I N G ***/
+/*these are the page bars at the top and bottom of a table/list of entries*/
+
+.lotusui30 .lotusPaging{margin-top:2px;padding:2px 5px;height:2em;line-height:2;clear:both;text-align:center;font-size:.9em;background-color:#fafafa;border:1px solid #ccc;}
+.lotusui30 .lotusPaging a, .lotusui30 .lotusPaging a:visited{font-weight:bold;}
+.lotusui30 .lotusPaging input{width:20px;text-align:center;font:inherit;line-height:1;}
+.lotusui_ie .lotusui30 .lotusPaging input{line-height:1.4;}
+.lotusui30 .lotusPaging div, 
+.lotusui30 .lotusPaging .lotusInlinelist li.lotusFirst{padding-right:5px;}
+.lotusui30 .lotusPaging .lotusInlinelist li{padding:0 6px;border-color:#8d8d8d;}
+.lotusui30 .lotusPaging .lotusInlinelist li.lotusLast{padding-right:0;}
+
+
+
+
+
+/***********************************************************/
+

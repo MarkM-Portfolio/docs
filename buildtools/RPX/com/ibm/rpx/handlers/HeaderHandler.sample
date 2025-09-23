@@ -1,0 +1,11 @@
+// This is a comment
+//
+// This program is not published or otherwise divested of its trade secrets, 
+// it should be considered artistic rather than silly.
+#define CHEESE "GOUDA"
+#define PLAY "Macbeth"
+#define IDEA "E=mc2"
+#define COUNTRY "Belgium"
+#define CANNED_MEAT	"Hormel Spam."
+#define	FOUR_LETTER_WORD	"rude"
+#define SOMETHING_GROSS	"The greenstuff found underneath the toenails of a dead hedgehog"

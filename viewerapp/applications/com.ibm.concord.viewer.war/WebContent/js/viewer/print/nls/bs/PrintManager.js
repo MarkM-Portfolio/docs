@@ -1,0 +1,26 @@
+({
+	labelPrintConfig: "Za najbolje rezultate ispisivanja, upotrijebite sljedeću konfiguraciju postavke stranice u pretraživaču:",
+	labelConfigPageSize: "Veličina stranice: ${0}",
+	labelConfigOrientation: "Orijentacija: ${0}",
+	labelConfigHeader: "Zaglavlje: prazno",
+	labelConfigFooter: "Donje zaglavlje: prazno",
+	labelConfigMargins: "Margine: ",
+	labelConfigMarginTop: "Vrh: ${0}${1}",
+	labelConfigMarginBottom: "Dno: ${0}${1}",
+	labelConfigMarginLeft: "Lijevo: ${0}${1}",
+	labelConfigMarginRight: "Desno: ${0}${1}",
+	labelPrintContinue: "Nakon postavljanja postavki pretraživača, kliknite na OK za nastavak ispisivanja datoteke.",
+	labelMm: "milimetri",
+	labelInch: "inči",
+	labelPortrait: "Portret",
+	labelPageA4: "A4",
+	labelLetter: "Pismo",
+	labelLandscape: "Pejsaž",
+	titlePrintConfig: "Postavke ispisa",
+	titlePrepare: "Priprema za ispis",
+	msgPrepare: "Datoteka se priprema za ispis. Priprema može dugo trajati.",
+	errPrepare: "Pojavila se greška za vrijeme pripreme podataka.\nŽelite li pokušati ponovo?",
+	titleErr: "Greška",
+	btnRetry: "Pokušaj ponovo"
+})
+

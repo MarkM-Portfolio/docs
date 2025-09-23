@@ -1,0 +1,26 @@
+({
+	labelPrintConfig: "Inprimatzean emaitza hoberena lortzeko, aldatu arakatzailearen orriaren ezarpenak ondorengo konfigurazioa erabili dezan:",
+	labelConfigPageSize: "Orriaren tamaina: ${0}",
+	labelConfigOrientation: "Orientazioa: ${0}",
+	labelConfigHeader: "Goiburua: hutsik",
+	labelConfigFooter: "Orri-oina: hutsik",
+	labelConfigMargins: "Marjinak: ",
+	labelConfigMarginTop: "Goikoa: ${0}${1}",
+	labelConfigMarginBottom: "Behekoa: ${0}${1}",
+	labelConfigMarginLeft: "Ezkerrekoa: ${0}${1}",
+	labelConfigMarginRight: "Eskuinekoa: ${0}${1}",
+	labelPrintContinue: "Arakatzailearen ezarpenak aldatu ondoren, sakatu Ados fitxategia inprimatzeko.",
+	labelMm: "milimetro",
+	labelInch: "hazbete",
+	labelPortrait: "Bertikala",
+	labelPageA4: "A4",
+	labelLetter: "Gutuna",
+	labelLandscape: "Horizontala",
+	titlePrintConfig: "Inprimatzearen ezarpenak",
+	titlePrepare: "Inprimatzeko prestatzen",
+	msgPrepare: "Fitxategia inprimatzeko prestatzen ari da. Prestaketa luzea izan daiteke.",
+	errPrepare: "Datuak prestatzean errore bat gertatu da.\nBerriro saiatu nahi duzu?",
+	titleErr: "Errorea",
+	btnRetry: "Saiatu berriro"
+})
+

@@ -1,0 +1,21 @@
+<project name="com.ibm.concord.lcfiles.extension.provision" basedir="." default="deploy">
+	<target name="deploy">
+		<copy todir="./resources/nls/zh" failonerror="false">
+			<fileset dir="./resources/nls/zh-cn" includes="*.js"/>
+		</copy>	
+		<jar destfile="${build.home}/${ant.project.name}_${build.version}.${build.timestamp}.jar">
+			<manifest>
+				<attribute name="Manifest-Version" value="1.0"/>
+				<attribute name="Bundle-ManifestVersion" value="2"/>
+				<attribute name="Bundle-Name" value="LotusLive JavaScript"/>
+				<attribute name="Bundle-SymbolicName" value="com.ibm.concord.lcfiles.extension.provision;singleton:=true"/>
+				<attribute name="Bundle-Version" value="${build.version}.${build.timestamp}"/>
+				<attribute name="Bundle-Vendor" value="IBM"/>
+				<attribute name="Bundle-RequiredExecutionEnvironment" value="J2SE-1.5"/>
+				<attribute name="Bundle-ActivationPolicy" value="lazy"/>
+			</manifest>
+            <fileset dir="." includes="resources/**"/>
+        	<fileset dir="." includes="plugin.xml"/>
+		</jar>
+	</target>
+</project>

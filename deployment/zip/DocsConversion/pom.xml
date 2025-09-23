@@ -1,0 +1,222 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>zip</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs</groupId>
+  <artifactId>DocsConversion</artifactId>
+  <name>DocsConversion - pom</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>OnPremise</module>
+    <module>SmartCloud</module>
+  </modules>
+
+  <properties>
+    <!--<file_server_mount>/mnt/mlsa2</file_server_mount>
+    <workplace>${file_server_mount}/workplace</workplace>
+    <dailybuilds>${workplace}/dailybuilds</dailybuilds>
+    <symphony>${dailybuilds}/Symphony</symphony>
+
+    <echo message="file_server_mount = ${file_server_mount}"/>
+    <echo message="workplace = ${workplace}"/>
+    <echo message="dailybuilds = ${dailybuilds}"/>
+    <echo message="symphony = ${symphony}"/> -->
+
+    <!-- <build.ftp.oo_remotedir>daily/Symphony/Sym_CS1.x/SymCS1.x_20171031.1400/setup/w32</build.ftp.oo_remotedir> -->
+    <!-- <build.ftp.oo_remotedir>${symphony}/Sym_CS1.x/SymCS1.x_20171031.1400/setup/w32</build.ftp.oo_remotedir> -->
+    <build.ftp.oo_remotedir>${env.SYMPHONY}/Sym_CS1.x/SymCS1.x_20171031.1400/setup/w32</build.ftp.oo_remotedir>
+
+    <!-- <build.ftp.linux_oo_remotedir>daily/Symphony/Sym_Linux</build.ftp.linux_oo_remotedir> -->
+    <!-- <build.ftp.linux_oo_remotedir>${symphony}/Sym_Linux</build.ftp.linux_oo_remotedir> -->
+    <build.ftp.linux_oo_remotedir>${env.SYMPHONY}/Sym_Linux</build.ftp.linux_oo_remotedir>
+
+    <build.ftp.oo_remotefilename>OOo_*_W32x86_install.zip</build.ftp.oo_remotefilename>
+
+    <build.ftp.linux_oo_remotefilename>OOo_*_unxlngi6_install.tar.gz</build.ftp.linux_oo_remotefilename>
+
+    <build.ftp.ooxml_remotedir>${build.ftp.ooxml.path}</build.ftp.ooxml_remotedir>
+
+    <build.ftp.linux_ooxml_remotedir>${build.ftp.linux.ooxml.path}</build.ftp.linux_ooxml_remotedir>
+
+    <build.lo_remotepath>${build.artifactory.third.party.path}/libreoffice/stable/7.2.6/win/x86_64/</build.lo_remotepath>
+    
+    <build.linux_lo_remotepath>${build.artifactory.third.party.path}/libreoffice/stable/7.2.6/rpm/x86_64/</build.linux_lo_remotepath>
+
+    <build.lo_filename>LibreOffice_7.2.6_Win_x64.msi</build.lo_filename>
+
+    <build.linux_lo_filename>LibreOffice_7.2.6_Linux_x86-64_rpm.tar.gz</build.linux_lo_filename>
+
+    <build.lo_remotefilename>${build.lo_remotepath}${build.lo_filename}</build.lo_remotefilename>
+
+    <build.linux_lo_remotefilename>${build.linux_lo_remotepath}${build.linux_lo_filename}</build.linux_lo_remotefilename>
+
+    <echo message="build.ftp.oo_remotedir = ${build.ftp.oo_remotedir}"/>
+    <echo message="build.ftp.linux_oo_remotedir = ${build.ftp.linux_oo_remotedir}"/>
+    <echo message="build.ftp.oo_remotefilename = ${build.ftp.oo_remotefilename}"/>
+    <echo message="build.ftp.linux_oo_remotefilename = ${build.ftp.linux_oo_remotefilename}"/>
+    <echo message="build.lo_remotefilename = ${build.lo_remotefilename}"/>
+    <echo message="build.linux_lo_remotefilename = ${build.linux_lo_remotefilename}"/>
+    <echo message="build.ftp.ooxml_remotedir = ${build.ftp.ooxml_remotedir}"/>
+    <echo message="build.ftp.linux_ooxml_remotedir = ${build.ftp.linux_ooxml_remotedir}"/>
+
+
+  </properties>
+
+  <profiles>
+    <!-- Only parent POM do the download-->
+    <profile>
+      <id>Profile for download files</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <file>
+          <exists>${basedir}/fetch_openoffice.xml</exists>
+        </file>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-antrun-plugin</artifactId>
+           <dependencies>
+             <dependency>
+               <groupId>commons-net</groupId>
+               <artifactId>commons-net</artifactId>
+      	  	 <version>3.3</version>
+             </dependency>
+             <dependency>
+      	  	 <groupId>org.apache.ant</groupId>
+      	  	 <artifactId>ant-commons-net</artifactId>
+      	  	 <version>1.9.4</version>
+      	     </dependency>
+           </dependencies>
+            <executions>
+              <execution>
+      	      <id>Download open office</id>
+      	      <phase>package</phase>
+      	      <goals>
+      	       <goal>run</goal>
+      	      </goals>
+      	      <configuration>
+      	       <target>
+      	        <property name="remoteserver" value="${build.ftp.remoteserver}" />
+      	        <property name="username" value="${build.ftp.username}" />
+      	        <property name="password" value="${build.ftp.password}" />
+      	        <property name="remotedir" value="${build.ftp.oo_remotedir}" />
+      	        <property name="linuxremotedir" value="${build.ftp.linux_oo_remotedir}" />
+      	        <property name="remotefilename" value="${build.ftp.oo_remotefilename}" />
+      	        <property name="linuxremotefilename" value="${build.ftp.linux_oo_remotefilename}" />
+                <property name="build.target" value="${project.build.directory}"/>
+
+                <echo message="remoteserver = ${remoteserver}"/>
+                <echo message="build.ftp.remoteserver = ${build.ftp.remoteserver}"/>
+                <echo message="remotedir = ${remotedir}"/>
+                <echo message="build.ftp.oo_remotedir = ${build.ftp.oo_remotedir}"/>
+                <echo message="linuxremotedir = ${linuxremotedir}"/>
+                <echo message="build.ftp.linux_oo_remotedir = ${build.ftp.linux_oo_remotedir}"/>
+                <echo message="remotefilename = ${remotefilename}"/>
+                <echo message="build.ftp.oo_remotefilename = ${build.ftp.oo_remotefilename}"/>
+                <echo message="build.ftp.linux_oo_remotefilename = ${build.ftp.linux_oo_remotefilename}"/>
+                <echo message="build.target = ${build.target}"/>
+                <echo message="project.build.directory = ${project.build.directory}"/>
+
+      	        <ant antfile="fetch_openoffice.xml" />
+      	       </target>
+      	      </configuration>
+              </execution>
+      	      <execution>
+      	        <id>Download conversion lib</id>
+      	        <phase>package</phase>
+      	        <goals>
+      	         <goal>run</goal>
+      	        </goals>
+      	        <configuration>
+      	          <target>
+                    <mkdir dir="${project.build.directory}/conversionlib"/>
+                    <property environment="env"/>
+      	            <property name="remoteserver" value="${build.ftp.remoteserver}" />
+      	            <property name="username" value="${build.ftp.username}" />
+      	            <property name="password" value="${build.ftp.password}" />
+      	            <property name="remotedir" value="${build.ftp.ooxml_remotedir}" />
+      	            <property name="linuxremotedir" value="${build.ftp.linux_ooxml_remotedir}" />
+                    <property name="build.target" value="${project.build.directory}/conversionlib"/>
+
+                    <echo message="project.build.directory = ${project.build.directory}"/>
+                    <echo message="remoteserver = ${remoteserver}"/>
+                    <echo message="build.ftp.remoteserver = ${build.ftp.remoteserver}"/>
+                    <echo message="remotedir = ${remotedir}"/>
+                    <echo message="build.ftp.ooxml_remotedir = ${build.ftp.ooxml_remotedir}"/>
+                    <echo message="linuxremotedir = ${linuxremotedir}"/>
+                    <echo message="build.ftp.linux_ooxml_remotedir = ${build.ftp.linux_ooxml_remotedir}"/>
+                    <echo message="build.target = ${build.target}"/>
+                    <echo message="project.build.directory = ${project.build.directory}"/>
+
+      	            <ant antfile="fetch_conversionlib.xml"/>
+      	          </target>
+      	        </configuration>
+      	      </execution>
+              <execution>
+      	        <id>Download libre office</id>
+      	        <phase>package</phase>
+      	        <goals>
+      	         <goal>run</goal>
+      	        </goals>
+      	        <configuration>
+      	          <target>
+      	          	<property name="build.target" value="${project.build.directory}"/>
+      	          	<echo message="build.target = ${build.target}"/>
+                    <echo message="downloading libre office from ${build.lo_remotefilename}"/>
+                     <get src="${build.lo_remotefilename}" dest="${build.target}" verbose="true"/>
+                     <echo message="downloading linux libre office linux from ${build.linux_lo_remotefilename}"/>
+                     <get src="${build.linux_lo_remotefilename}" dest="${build.target}" verbose="true"/>
+      	          </target>
+      	        </configuration>
+      	      </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>build_ooxml_wmf_emf.zip</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>assembly_native.zip.xml</descriptor>
+                  </descriptors>
+                  <finalName>native</finalName>
+                  <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+              </execution>
+<!-- 			  <execution>
+                <id>build_org_oracle_oiexport_win32_x64.zip</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>org_oracle_oiexport_win32_x64.zip.xml</descriptor>
+                  </descriptors>
+                  <finalName>org.oracle.oiexport.win32_x64</finalName>
+                  <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+              </execution> -->
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+  </profile>
+  </profiles>
+</project>

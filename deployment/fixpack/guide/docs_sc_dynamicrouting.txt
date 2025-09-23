@@ -1,0 +1,83 @@
+The python below should run with the root
+Check Routing Policy from Docs Tab on DPUI, if the value is "Dynamic Routing" or "is Docs Multiactive" is true, follow the guide as below
+
+-------
+Patch/restart Docs server
+For MA & non-MA 
+-------
+Step for docs1a:
+  Part I: Drop the Docs server from F5 and all Docs Proxy servers
+    1. Forced Offline docs1a from F5(GZ) in side specific pool
+    2. login to any of the docsrp server of the same side as docs1a(such as docsrp1a), run cmd as below:
+	   cd /opt/ll/scripts/docsrp/
+       python manageZkNodes.py --action inactivating --node docs1a
+  Part II: apply patch/restart to docs1a
+  Part III: Enable the Docs server from F5 and all Docs Proxy servers
+    1. login to any of the docsrp server of the same side as docs1a(such as docsrp1a), run cmd as below:
+	   cd /opt/ll/scripts/docsrp/
+       a. run script to make sure it return active
+	      python manageZkNodes.py --status --node docs1a --side A
+       b. if docs1a is not active, login to docsrp1a, go to the folder that has manageZkNodes.py, run script and make sure it is succeed
+          python manageZkNodes.py --action active --node docs1a
+	2. enable docs1a from F5(GZ) in side specific pool
+
+-------
+If docsrp also need to be drop from F5, such as high cpu which need restart
+Patch Docs proxy server
+-------
+For non MA
+    Forced Offline docsrp from F5(YZ) in side specific pool
+For MA
+    Forced Offline docsrp from F5(YZ) in engage pool. 
+	PAY ATTENTION!!!Should operate in engage pool of F5 instead of side specific pool
+	
+------
+Drain Traffic of all the docs server of one side when MA
+------
+1. ManageMulti on dpui server to disable the docs component of specific side
+    cd /opt/ll/lib/f5
+    python manageMulti.py --environment=MA1 --component=docs --side=B --disable
+2. Login to one of docsrp server, prepare python to set data center updating and wait for inactive
+    cd /opt/ll/scripts/docsrp/
+    python manageZkNodes.py --action upgrading --side B
+	
+	
+------
+If you upgrading the wrong side A, roll back as below:
+------
+1. Login to one of docsrp server, prepare python to set data center updating and wait for inactive
+    cd /opt/ll/scripts/docsrp/
+    python manageZkNodes.py --action active --side A
+    python manageZkNodes.py --action active --node all --side A
+2. ManageMulti on dpui server to enable the docs component of specific side
+    cd /opt/ll/lib/f5
+    python manageMulti.py --environment=MA1 --component=docs --side=B --enable
+    
+
+------
+Check LOG to verify inactivating docs server or upgrading data center is ok
+------
+1. inactivating docs server
+Docs server log should contains string as
+"is now in inactivating status" which means docs server start to drain
+"Start to set inactive" which means docs server has drained completely
+
+2. upgrading data center
+2.1 Check all the docsrp server's log, only one docsrp server contains log
+"Now Data center xxx status is upgrading"
+xxx should be the topolgoy name
+
+2.2 The other docsrp server, should contains log 
+either
+"Now Data center xxx status is inactive" or "Do not need to upgrading data center" 
+which means the side has already been set to inactive by other rp, no further action needed
+or
+"Have not require the data center upgrading" which means the current rp have not acquire the mutex and will do nothing
+
+2.3 
+Log contains
+"even though some of the server still have not drained completely" 
+means the docs server have not drained completely, but time out(default 5min) when upgrading side, so set side to inactive directly
+while docs server should continue drain the traffic until done. "Start to set inactive" of the docs server indicate that drain is done.
+
+2.4 Should also check the docs server inactivating log as above 1. inactivating docs server

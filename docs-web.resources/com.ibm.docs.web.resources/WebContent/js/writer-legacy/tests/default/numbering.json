@@ -1,0 +1,9930 @@
+{
+	"abstractNum0": {
+		"nsid": {
+			"val": "00000001"
+		},
+		"multiLevelType": {
+			"val": "hybridMultilevel"
+		},
+		"tmpl": {
+			"val": "00000001"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈼�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "34.0pt"
+				}],
+				"indent": {
+					"left": "34.0pt",
+					"hanging": "25.50pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈼�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "68.050pt"
+				}],
+				"indent": {
+					"left": "68.050pt",
+					"hanging": "25.50pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈥�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "102.050pt"
+				}],
+				"indent": {
+					"left": "102.050pt",
+					"hanging": "22.70pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈼�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "136.050pt"
+				}],
+				"indent": {
+					"left": "136.050pt",
+					"hanging": "17.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈥�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "170.10pt"
+				}],
+				"indent": {
+					"left": "170.10pt",
+					"hanging": "17.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈼�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "204.10pt"
+				}],
+				"indent": {
+					"left": "204.10pt",
+					"hanging": "17.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈼�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "238.10pt"
+				}],
+				"indent": {
+					"left": "238.10pt",
+					"hanging": "17.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈼�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "272.150pt"
+				}],
+				"indent": {
+					"left": "272.150pt",
+					"hanging": "17.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tplc": "FFFFFFFF",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "鈼�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "306.150pt"
+				}],
+				"indent": {
+					"left": "306.150pt",
+					"hanging": "17.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#auto"
+			}
+		}]
+	},
+	"abstractNum1": {
+		"nsid": {
+			"val": "005B588F"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "64C0AA26"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum2": {
+		"nsid": {
+			"val": "009B70D6"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "14EE6A22"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum3": {
+		"nsid": {
+			"val": "09151FA4"
+		},
+		"multiLevelType": {
+			"val": "hybridMultilevel"
+		},
+		"tmpl": {
+			"val": "34564FBC"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"tplc": "9564C17A",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%1."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"hint": "default"
+				}
+			}
+		},
+		{
+			"ilvl": "1",
+			"tplc": "04090019",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%2."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "2",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%3."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "3",
+			"tplc": "0409000F",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%4."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "4",
+			"tplc": "04090019",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%5."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "5",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%6."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "6",
+			"tplc": "0409000F",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%7."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "7",
+			"tplc": "04090019",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%8."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "8",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%9."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		}]
+	},
+	"abstractNum4": {
+		"nsid": {
+			"val": "144B251C"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "C9A67DA6"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum5": {
+		"nsid": {
+			"val": "1C4074E9"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "E536F372"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum6": {
+		"nsid": {
+			"val": "1D061338"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "E4308420"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum7": {
+		"nsid": {
+			"val": "1D2F4B95"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "B3BCB7C0"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum8": {
+		"nsid": {
+			"val": "25E74874"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "9C4A3A68"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum9": {
+		"nsid": {
+			"val": "25FA18F9"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "85022CF4"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum10": {
+		"nsid": {
+			"val": "3A516B2D"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "D744D878"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum11": {
+		"nsid": {
+			"val": "3A55146F"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "13B08A98"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum12": {
+		"nsid": {
+			"val": "42C6614D"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "399C9ED8"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum13": {
+		"nsid": {
+			"val": "47F96817"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "32984DAA"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum14": {
+		"nsid": {
+			"val": "483D02A7"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "FF50664C"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum15": {
+		"nsid": {
+			"val": "4A4F0A1A"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "960A96C0"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum16": {
+		"nsid": {
+			"val": "538F625A"
+		},
+		"multiLevelType": {
+			"val": "hybridMultilevel"
+		},
+		"tmpl": {
+			"val": "CD20D37A"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"tplc": "0AB2A390",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%1."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tplc": "04090019",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%2."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "2",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%3."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "3",
+			"tplc": "0409000F",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%4."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "4",
+			"tplc": "04090019",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%5."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "5",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%6."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "6",
+			"tplc": "0409000F",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%7."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "7",
+			"tplc": "04090019",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%8."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "8",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%9."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		}]
+	},
+	"abstractNum17": {
+		"nsid": {
+			"val": "545F12A4"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "8940EBA6"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum18": {
+		"nsid": {
+			"val": "54755F6F"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "E18C403A"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum19": {
+		"nsid": {
+			"val": "58161498"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "A426BCE6"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum20": {
+		"nsid": {
+			"val": "5883581D"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "0CC6490C"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum21": {
+		"nsid": {
+			"val": "65C17212"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "F28694F2"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum22": {
+		"nsid": {
+			"val": "690108E0"
+		},
+		"multiLevelType": {
+			"val": "hybridMultilevel"
+		},
+		"tmpl": {
+			"val": "6FD4A4D6"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"tplc": "0AB2A390",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%1."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tplc": "04090019",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%2."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "2",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%3."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "3",
+			"tplc": "0409000F",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%4."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "4",
+			"tplc": "04090019",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%5."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "5",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%6."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "6",
+			"tplc": "0409000F",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "decimal"
+			},
+			"lvlText": {
+				"val": "%7."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "7",
+			"tplc": "04090019",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerLetter"
+			},
+			"lvlText": {
+				"val": "%8."
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			}
+		},
+		{
+			"ilvl": "8",
+			"tplc": "0409001B",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "lowerRoman"
+			},
+			"lvlText": {
+				"val": "%9."
+			},
+			"lvlJc": {
+				"val": "right"
+			},
+			"pPr": {
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "9.0pt"
+				}
+			}
+		}]
+	},
+	"abstractNum23": {
+		"nsid": {
+			"val": "69356C9B"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "6820ED84"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum24": {
+		"nsid": {
+			"val": "6A8C4546"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "BB66A9FA"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum25": {
+		"nsid": {
+			"val": "6B0433A4"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "C270ECEA"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum26": {
+		"nsid": {
+			"val": "6C216E9F"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "0D18D7F0"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum27": {
+		"nsid": {
+			"val": "6DF77B9B"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "79726682"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum28": {
+		"nsid": {
+			"val": "740529C0"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "CBE45E80"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum29": {
+		"nsid": {
+			"val": "75BA35C9"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "30E0487A"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum30": {
+		"nsid": {
+			"val": "77CD461D"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "25C8B35A"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"abstractNum31": {
+		"nsid": {
+			"val": "77CF2134"
+		},
+		"multiLevelType": {
+			"val": "multilevel"
+		},
+		"tmpl": {
+			"val": "06FAE66C"
+		},
+		"lvl": [{
+			"ilvl": "0",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "36.0pt"
+				}],
+				"indent": {
+					"left": "36.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Symbol",
+					"hAnsi": "Symbol",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "1",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "o"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "72.0pt"
+				}],
+				"indent": {
+					"left": "72.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Courier New",
+					"hAnsi": "Courier New",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "2",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "108.0pt"
+				}],
+				"indent": {
+					"left": "108.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "3",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "144.0pt"
+				}],
+				"indent": {
+					"left": "144.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "4",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "180.0pt"
+				}],
+				"indent": {
+					"left": "180.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "5",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "216.0pt"
+				}],
+				"indent": {
+					"left": "216.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "6",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "252.0pt"
+				}],
+				"indent": {
+					"left": "252.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "7",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "288.0pt"
+				}],
+				"indent": {
+					"left": "288.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		},
+		{
+			"ilvl": "8",
+			"tentative": "1",
+			"start": {
+				"val": "1"
+			},
+			"numFmt": {
+				"val": "bullet"
+			},
+			"lvlText": {
+				"val": "飩�"
+			},
+			"lvlJc": {
+				"val": "left"
+			},
+			"pPr": {
+				"tabs": [{
+					"val": "num",
+					"pos": "324.0pt"
+				}],
+				"indent": {
+					"left": "324.0pt",
+					"hanging": "18.0pt"
+				}
+			},
+			"rPr": {
+				"rFonts": {
+					"ascii": "Wingdings",
+					"hAnsi": "Wingdings",
+					"hint": "default"
+				},
+				"font-size": "10.0pt"
+			}
+		}]
+	},
+	"num1": {
+		"abstractNumId": "3"
+	},
+	"num2": {
+		"abstractNumId": "22"
+	},
+	"num3": {
+		"abstractNumId": "16"
+	},
+	"num4": {
+		"abstractNumId": "0"
+	},
+	"num5": {
+		"abstractNumId": "26"
+	},
+	"num6": {
+		"abstractNumId": "20"
+	},
+	"num7": {
+		"abstractNumId": "18"
+	},
+	"num8": {
+		"abstractNumId": "15"
+	},
+	"num9": {
+		"abstractNumId": "30"
+	},
+	"num10": {
+		"abstractNumId": "8"
+	},
+	"num11": {
+		"abstractNumId": "5"
+	},
+	"num12": {
+		"abstractNumId": "29"
+	},
+	"num13": {
+		"abstractNumId": "27"
+	},
+	"num14": {
+		"abstractNumId": "4"
+	},
+	"num15": {
+		"abstractNumId": "21"
+	},
+	"num16": {
+		"abstractNumId": "17"
+	},
+	"num17": {
+		"abstractNumId": "2"
+	},
+	"num18": {
+		"abstractNumId": "7"
+	},
+	"num19": {
+		"abstractNumId": "23"
+	},
+	"num20": {
+		"abstractNumId": "12"
+	},
+	"num21": {
+		"abstractNumId": "11"
+	},
+	"num22": {
+		"abstractNumId": "14"
+	},
+	"num23": {
+		"abstractNumId": "28"
+	},
+	"num24": {
+		"abstractNumId": "19"
+	},
+	"num25": {
+		"abstractNumId": "6"
+	},
+	"num26": {
+		"abstractNumId": "9"
+	},
+	"num27": {
+		"abstractNumId": "31"
+	},
+	"num28": {
+		"abstractNumId": "13"
+	},
+	"num29": {
+		"abstractNumId": "24"
+	},
+	"num30": {
+		"abstractNumId": "10"
+	},
+	"num31": {
+		"abstractNumId": "1"
+	},
+	"num32": {
+		"abstractNumId": "25"
+	}
+}

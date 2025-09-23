@@ -1,0 +1,4 @@
+({
+	offlineMsg : "Belge sunucuya güncelleştirilemedi"
+})
+

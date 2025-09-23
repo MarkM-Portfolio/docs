@@ -1,0 +1,20 @@
+<project name="com.ibm.docs.spellcheck.ear" basedir="." default="deploy">
+	<property name="bin.dir" value="bin"/>
+	<property name="lib.dir" value="lib"/>
+	<property name="bundles.dir" value="bundles"/>
+	
+	<target name="clean">
+	</target>
+	
+	<target name="init" depends="clean">
+	</target>
+	
+	<target name="deploy" depends="init">
+        <ear destfile="${build.home}/${ant.project.name}.ear" appxml="${basedir}/META-INF/application.xml">        	
+            <fileset dir="${build.home}" includes="**/com.ibm.rcp.spellcheck.webapp.war"/>
+            <fileset dir="." includes="META-INF/"/>
+        </ear>
+        
+    </target>
+</project>
+

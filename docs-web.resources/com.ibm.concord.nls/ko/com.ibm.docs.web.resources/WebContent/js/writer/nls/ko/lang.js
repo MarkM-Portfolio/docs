@@ -1,0 +1,75 @@
+({
+	LOADING: "컨텐츠를 로드하는 중입니다.",
+	LOAD_FINISHED: "컨텐츠 로드가 완료되었습니다.",
+	PAGE_SETUP: "페이지 설정",
+	NOTE_INVALIDACTION_FOOTNOTE:"이는 각주에 대한 올바른 조치가 아닙니다.",
+	NOTE_INVALIDACTION_ENDNOTE:"이는 미주에 대한 올바른 조치가 아닙니다.",
+	PAGENUMBER_OF_TOTALNUMBER:"${0}/${1} 페이지", //page 1 of N
+	PAGE_NUMBER: "페이지: ${pageNumber}/${totalPageNumber}",
+	toc:{
+		title : "목차",
+		update: "업데이트",
+		del: "삭제",
+		toc: "목차",
+		linkTip: "탐색하려면 Ctrl 키를 누른 상태에서 클릭하십시오.",
+		pageNumber: "페이지 번호만",
+		entireTable: "전체 테이블"
+	},
+	link:{
+		addlink:"링크 추가",
+		gotolink: "링크 열기",
+		unlink	: "링크 제거",
+		editlink: "링크 편집",
+		internalLink: "내부 링크",
+		ctrlLink: "링크로 이동하려면 Ctrl을 누른 상태에서 클릭하십시오.",
+		cannotOpen: " ${productName}에서 열 수 없습니다."
+	},
+	field:{
+		update: "필드 업데이트"
+	},
+	insertTime:"시간 삽입",
+	insertDate:"날짜 삽입",
+	selectDate:"날짜 선택",
+	selectTime:"시간 선택",
+	acc_blank: "공백",// when selection is nothing but space char and empty paragraph
+	acc_space: "공간",// string read out when the cursor is before one space char
+	acc_inLink: "링크 ",
+	acc_inField: "필드",
+	acc_selected :" 선택됨",
+	acc_inTable: "테이블 ${0}행 ${1}열 ",
+	acc_imageSelected: "그래픽이 선택됨",
+	acc_canvasSelected:"형태가 선택됨",
+	acc_textboxSelected:"입력란이 선택됨",
+	ACC_TABLE_TABLESIZE:"${0} 행, ${1} 열을 선택했습니다.",
+	ACC_TABLE_MAXSIZE:" 지원되는 최대 테이블 크기는 20*20입니다.",
+	ACC_headerFooterMode: "머리글 바닥글 편집 모드",
+	ACC_EditorMode: "편집기 편집 모드",
+	ACC_FootnotesMode: "각주 편집 모드",
+	ACC_EndnotesMode: "미주 편집 모드",
+	ACC_uniformTable: "새로운 행이 추가되었습니다.",
+	Acc_column :"${0} 열",
+	acc_page :"${0} 페이지",
+	acc_section:"${0} 섹션",
+	acc_spellWarn:"맞춤법이 올바르지 않습니다.",
+	acc_outTable:"테이블 부족",
+	acc_link :"링크",
+	acc_field :"필드",
+	acc_footnote:"각주",
+	acc_endnote:"미주",	
+	acc_editor:"편집자 ${0}",
+	tablePropertyTitle: "테이블 특성",
+	headerTitle:"머리글",
+	footerTitle:"바닥글",
+	firstheaderTitle:"첫 페이지 머리글",
+	firstfooterTitle:"첫 페이지 바닥글",
+	evenheaderTitle:"짝수 페이지 머리글",
+	evenfooterTitle:"짝수 페이지 바닥글",
+	oddheaderTitle:"홀수 페이지 머리글",
+	oddfooterTitle:"홀수 페이지 바닥글",
+	showTableBorder:"테이블 경계 표시",
+	list_none: "없음",
+	SET_NUMBERING_VALUE: "번호 매기기 값 설정",
+	BIDI_CONTENT_EDITING: "이 문서는 양방향 컨텐츠가 포함되어 있습니다. 이 문서를 올바르게 작동하려면, HCL Connections 환경 설정의 양방향 지원을 켜십시오."
+})
+	
+

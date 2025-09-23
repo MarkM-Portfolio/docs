@@ -1,0 +1,125 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+
+
+Portions Copyright IBM Corp., 2010-2011.
+*/
+
+CKEDITOR.plugins.setLang( "a11yhelp", "en",
+{
+
+	// When translating all fields in accessibilityHelp object, do not translate anything with the form ${xxx}
+	accessibilityHelp :
+	{
+		title : "Instruccions d\'accessibilitat",
+		contents : "Contingut de l\'ajuda. Premeu ESC per tancar aquest diàleg.",
+		legend :
+		[
+			{
+				name : "General",
+				items :
+				[
+					{
+						name : "Barra d\'eines de l\'editor",
+						legend:
+							"Premeu ${toolbarFocus} per anar a la barra d\'eines. " +
+							"Passeu al següent i a l\'anterior grup de la barra d\'eines amb les tecles TABULACIÓ i  MAJÚS + TABULACIÓ ." +
+							"Passeu al següent i a l\'anterior botó de la barra d\'eines amb les tecles de fletxa dreta i fletxa esquerra." +
+							"Premeu ESPAI o INTRO per activar el botó de la barra d\'eines."
+					},
+
+					{
+						name : "Diàleg de l\'editor",
+						legend :
+							"Dins un diàleg, premeu TABULACIÓ per anar al següent camp del diàleg, premeu MAJÚS + TABULACIÓ per anar al camp anterior, premeu INTRO per enviar el diàleg, premeu ESC per cancel·lar el diàleg." +
+							"Als diàlegs que tenen diverses pàgines amb pestanyes, premeu ALT + F10 per anar a la llista de pestanyes. " +
+							"A continuació, passeu a la següent pestanya amb el tabulador o la fletxa dreta. " +
+							"Passeu a la pestanya anterior amb MAJÚS+TABULACIÓ o la FLETXA ESQUERRA. " +
+							"Premeu ESPAI o INTRO per seleccionar la pàgina amb pestanya."
+					},
+
+					{
+						name : "Menú contextual de l\'editor",
+						legend :
+							"Premeu ${contextMenu} o TECLA DE L'APLICACIÓ per obrir el menú contextual. " +
+							"A continuació, passeu a la següent opció de menú amb TABULACIÓ o FLETXA AVALL. " +
+							"Passeu a l\'opció anterior amb la tecla MAJÚS+TABULACIÓ o la FLETXA AMUNT. " +
+							"Premeu ESPAI o INTRO per seleccionar l\'opció de menú." +
+							"Obriu el submenú de l\'opció actual amb l\'ESPAI o INTRO o la FLETXA DRETA. " +
+							"Torneu a l\'element del menú pare amb ESC o la FLETXA ESQUERRA. " +
+							"Tanqueu el menú contextual amb ESC."
+					},
+
+					{
+						name : "Quadre de llista de l\'editor",
+						legend :
+							"Dins un quadre de llista, passeu al següent element de la llista amb la tecla TABULACIÓ o la FLETXA AVALL." +
+							"Passeu a l\'element anterior de la llista amb MAJÚS+TABULACIÓ o la FLETXA AMUNT. " +
+							"Premeu ESPAI o INTRO per seleccionar l\'opció de la llista." +
+							"Premeu ESC per tancar el quadre de llista."
+					},
+
+					{
+						name : "Barra de camí d\'accés d\'elements de l\'editor (si està disponible*)",
+						legend :
+							"Premeu ${elementsPathFocus} per anar a la barra de camí d\'accés d\'elements. " +
+							"Passeu al següent botó d\'element amb la tecla TABULACIÓ o la FLETXA DRETA." +
+							"Passeu al botó anterior amb la tecla MAJÚS+TABULACIÓ o la FLETXA ESQUERRA. " +
+							"Premeu ESPAI o INTRO per seleccionar l\'element a l\'editor."
+					}
+				]
+			},
+			{
+				name : "Ordres",
+				items :
+				[
+					{
+						name : "Desfés l\'ordre",
+						legend : "Premeu ${undo}"
+					},
+					{
+						name : "Refés l\'ordre",
+						legend : "Premeu ${redo}"
+					},
+					{
+						name : "Ordre de negreta",
+						legend : "Premeu ${bold}"
+					},
+					{
+						name : "Ordre de cursiva",
+						legend : "Premeu ${italic}"
+					},
+					{
+						name : "Ordre de subratllat",
+						legend : "Premeu ${underline}"
+					},
+					{
+						name : "Ordre d\'enllaç",
+						legend : "Premeu ${link}"
+					},
+					{
+						name : "Ordre de reduir la barra d\'eines (si està disponible*)",
+						legend : "Premeu ${toolbarCollapse}"
+					},
+					{
+						name : " Ajuda d\'accessibilitat",
+						legend : "Premeu ${a11yHelp}"
+					}
+				]
+			},
+
+			{	//added by ibm
+				name : "",
+				items :
+				[
+					{
+						name : "Nota",
+						legend : "* El vostre administrador pot inhabilitar algunes característiques."
+					}
+				]
+			}
+		]
+	}
+
+});

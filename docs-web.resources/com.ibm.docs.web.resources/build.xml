@@ -1,0 +1,262 @@
+<project name="com.ibm.docs.web.resources" basedir="." default="deploy">
+	<property name="src.dir" value="src" />
+	<property name="webcontent.dir" value="WebContent" />
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin" />
+	<property name="classes.dir" value="${webinf.dir}/classes" />
+	<property name="war.dir" value="${bin.dir}/war" />
+	<property name="ear.dir" value="../com.ibm.docs.web.resources.ear/" />
+	<property name="jstest.dir" value="${bin.dir}/jstest" />
+	<property name="version.dir" value="${webcontent.dir}/${build.timestamp}" />
+	<property name="report.dir" value="${build.home}/report" />
+
+	<path id="lib.classpath">
+		<pathelement path="${ear.dir}/lib/json4j.jar" />		
+	</path>
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar" />
+	</path>
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+		<delete dir="${basedir}/buildtools/util/doh" />
+		<delete dir="${basedir}/buildtools/util/shrinksafe" />
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="lib.classpath" />
+			<classpath refid="was.classpath" />
+		</javac>
+	</target>
+
+	<target name="prepare build js" depends="compile">
+		<copy todir="${basedir}/buildtools/dojo">
+			<fileset dir="${basedir}/WebContent/js/dojo" />
+		</copy>
+		<copy todir="${basedir}/buildtools/util/doh">
+			<fileset dir="${basedir}/WebContent/js/util/doh" />
+		</copy>
+		<copy todir="${basedir}/buildtools/util/shrinksafe">
+			<fileset dir="${basedir}/WebContent/js/util/shrinksafe" />
+		</copy>
+		<mkdir dir="${bin.dir}/${version.dir}/" />
+		<mkdir dir="${jstest.dir}/" />
+		<!--mkdir dir="${jstest.dir}/concord" />
+		<mkdir dir="${jstest.dir}/wseditor" /-->
+
+		<copy todir="${basedir}/${jstest.dir}">
+			<fileset dir="${webcontent.dir}/" >
+				<include name="js/concord/tests/**" />
+		<!--		<include name="js/wseditor/js/test/**" /> -->
+				<include name="js/wseditor/test/**" />
+				<include name="js/util/**" />
+			</fileset>
+			<fileset dir="${basedir}/teststools" >
+				<include name="run_ut.log" />
+				<include name="automation.html" />
+				<include name="jscover-report/**" />
+				<include name="jscover-report-spreadsheet/**" />
+				<include name="jscover-report-presentation/**" />
+				<include name="jscover-report-document/**" />
+			</fileset>
+		</copy>		
+
+		<condition property="dojo.command" value="${basedir}/buildtools/util/buildscripts/build.sh" else="${basedir}/buildtools/util/buildscripts/build.bat">
+			<os family="unix" />
+		</condition>
+		<condition property="nodejs.command" value="../../../buildtools/nodejs/node-v0.10.0-linux-x86/bin/node" else="../../../buildtools/nodejs/node.exe">
+		    <os family="unix" />
+		</condition>
+		<condition property="ck.command" value="${basedir}/buildtools/release.sh" else="${basedir}/buildtools/ckreleaser.exe">
+			<os family="unix" />
+		</condition>
+		<!-- For unix OS, need to chmod +x for NodeJS executable-->
+		<exec osfamily="unix" executable="/bin/chmod">
+			<arg line="+x" />
+			<arg line="${basedir}/buildtools/nodejs/node-v0.10.0-linux-x86/bin/node" />
+		</exec>
+		<!-- <condition property="antlr.command" value="`which bash` ${basedir}/buildtools/release4antlr.sh" else="${basedir}/buildtools/release4antlr.bat">
+		<os family="unix"/>
+	  </condition> -->
+	</target>
+	<target name="build js" depends="prepare build js">
+		<!-- build dojo and concord js code -->
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${dojo.command}" failonerror="false">
+			<arg line="action=release" />
+			<arg line="mini=true" />
+			<arg line="profile=concord" />
+			<arg line="layerOptimize=shrinksafe" />
+			<arg line="releaseDir=../../../${bin.dir}/${version.dir}/" />
+			<arg line="releaseName=js" />
+			<arg line="cssOptimize=comments" />
+			<arg line="optimize=shrinksafe" />
+			<arg line="copyTests=true" />
+			<arg line="nodejs=${nodejs.command}" />
+			<arg line="uglifyjs=../../../buildtools/uglifyjs/UglifyJS-1.3.5/bin/uglifyjs" />
+		</exec>
+		<!--
+		  for story 10846. the new additional bash shell release4antlr.sh need to find a way to be added the exe mode. 
+		-->
+		<!-- build antlr -->
+		<!--<target name="Build Antlr">
+		<exec executable="${antlr.command}" failonerror="true">
+			<arg line="'${basedir}'/buildtools/temp_parser"/>
+			<arg line="'${basedir}'/WebContent/js/parser/LexerParser.js"/>
+			<arg line="'${basedir}'/buildtools/temp_parser/LexerParser.js"/>
+			<arg line="'${basedir}'/WebContent/js/parser/FormulaLexerParser.js"/>
+			<arg line="'${basedir}'/buildtools/temp_parser/FormulaLexerParser.js"/>
+		</exec>
+		<copy file="${basedir}/buildtools/temp_parser/LexerParser.js" tofile="${basedir}/WebContent/js/parser/LexerParser.js"/>
+		<copy file="${basedir}/buildtools/temp_parser/FormulaLexerParser.js" tofile="${basedir}/WebContent/js/parser/FormulaLexerParser.js"/>			
+		</target>-->
+	</target>
+	<target name="release webcontent" depends="build js">
+		<!-- release dojo and concord js code -->
+		<move todir="${bin.dir}/${version.dir}/styles">
+			<fileset dir="${bin.dir}/${version.dir}/js/styles" />
+		</move>
+		<move todir="${bin.dir}/${version.dir}/js/wseditor/js">
+			<fileset dir="${bin.dir}/${version.dir}/js/websheet" />
+		</move>
+		<move todir="${bin.dir}/${version.dir}/js/presentation/js">
+			<fileset dir="${bin.dir}/${version.dir}/js/pres" />
+		</move>
+		<delete dir="${basedir}/buildtools/dojo" />
+		<copy todir="${bin.dir}/${version.dir}/js/ckresource">
+			<fileset dir="${basedir}/WebContent/js/ckresource" />
+		</copy>
+		<delete>
+		    <fileset dir="${basedir}/${bin.dir}/${version.dir}/js">
+		    	<include name="**/*uncompressed.js"/>
+		    	<exclude name="**/dijit_extra*.uncompressed.js"/>
+		    	<exclude name="**/concord_text*.uncompressed.js"/>
+		    	<exclude name="**/concord_view*.uncompressed.js"/>
+		    	<exclude name="**/concord_pres*.uncompressed.js"/>
+		    	<exclude name="**/concord_sheet*.uncompressed.js"/>
+		    </fileset>
+		</delete>
+		<!-- <delete dir="${basedir}/buildtools/temp_parser"/> -->
+		<!-- copy other resources -->
+		<copy todir="${basedir}/${bin.dir}/${version.dir}">
+			<fileset dir="${webcontent.dir}">
+				<include name="clipshare/" />
+				<include name="images/" />
+				<include name="js/antlr/antlr3-all*.js" />
+				<include name="js/mobile/" />
+				<include name="js/parser/FormulaLexerParser.js" />
+				<include name="js/parser/JsFormulaCommaParserParser.js" />
+				<include name="js/parser/JsFormulaCommaParserLexer.js" />
+				<include name="js/parser/LexerParser.js" />
+				<include name="js/util/" />
+				<include name="js/writer/tests/" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="war" depends="release webcontent">
+		<!--
+		<echo file="${bin.dir}/${webcontent.dir}/version.txt">
+			{"build_description" : "${ReleaseInfo}" , "product_name" : "Docs", 
+			"build_version" :  "${build.version}" , "build_timestamp" : "${build.timestamp}" }
+		</echo>
+		-->
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper />
+					<globmapper from="*" to="lib/*" />
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath" />
+		</pathconvert>
+		<mkdir dir="${war.dir}" />
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${bin.dir}/${webcontent.dir}/" />
+			<fileset dir="${webcontent.dir}">
+				<include name="META-INF/" />
+				<include name="presTemplateDesignGallery/" />
+				<include name="sampleDoc/" />
+				<include name="WEB-INF/" />
+				<exclude name="WEB-INF/web.xml" />
+			</fileset>
+			<manifest>
+				<attribute name="Created-By" value="IBM" />
+				<attribute name="Class-Path" value="${manifest.lib.classpath}" />
+			</manifest>
+		</war>
+	</target>
+	<target name="build viewer offerings" depends="release webcontent">
+		<zip destfile="${bin.dir}/viewer_offerings.zip">
+			<fileset dir="${bin.dir}/${version.dir}/">
+				<include name="js/concord/concord_pres*" />
+				<include name="js/concord/nls/concord_pres*" />
+				<include name="js/concord/concord_sheet_view*" />
+				<include name="js/concord/concord_sheet_extras*" />
+				<include name="js/concord/concord_sheet_widgets*" />
+				<include name="js/concord/beans/" />				
+				<include name="js/concord/editor/nls" />
+				<include name="js/concord/nls/concord_sheet_extras*" />
+				<include name="js/concord/nls/concord_sheet_view*" />
+				<include name="js/concord/nls/concord_sheet_widgets*" />
+				<include name="js/concord/util/dialogs.html" />
+				<include name="js/viewer/" />
+				<include name="js/dojo/" />
+				<include name="js/dijit/" />
+				<include name="js/dojox/" />
+				<!-- include name="js/dojo/dojo.*" />
+				<include name="js/dojo/cldr/" />
+				<include name="js/dojo/resources/" />
+				<include name="js/dojox/gfx/*" />
+				<include name="js/dijit/themes/" / -->
+				<include name="js/antlr/" />
+				<include name="js/parser/" />
+				<include name="js/wseditor/js/i18n/" />
+				<include name="js/wseditor/css/" />
+				<include name="images/" />
+				<include name="styles/" />
+				<include name="js/concord/nls/concord_text*" />
+				<include name="js/concord/text/concord_document.css" />
+				<include name="js/concord/concord_text*" />
+				<include name="js/ckresource/lang/" />
+				<include name="js/concord/widgets/css/images/bidiToolbarSprite.png" />
+				<!--
+				<include name="js/document/ckeditor/ckeditor*" />
+				<include name="js/document/ckeditor/ckconfig*" />
+				<include name="js/document/ckeditor/content*" />
+				<include name="js/document/ckeditor/plugins/pagebreak/images/" />
+				<include name="js/document/ckeditor/_source/plugins/pagebreak/images/" />
+				<include name="js/document/ckeditor/lang/" />
+				<include name="js/document/ckplugins/concordtemplates/templates/" />
+				<include name="js/document/ckeditor/skins/lotus/" />
+				<include name="js/concord/widgets/headerfooter/skin/" />
+				-->
+			</fileset>
+			<fileset dir="${basedir}/WebContent/">
+				<include name="jsp/header*" />
+				<include name="jsp/footer*" />
+			</fileset>
+			<fileset dir="${build.home}/">
+				<include name="com.ibm.concord.spreadsheet.common*" />
+				<include name="com.ibm.concord.presentation.common*" />
+			</fileset>
+		</zip>
+	</target>	
+	
+	<target name="jstest" depends="release webcontent">
+		<!--mkdir dir="${bin.dir}/${jstest.dir}/" /-->
+		<zip destfile="${bin.dir}/JSTest.zip">
+			<fileset dir="${jstest.dir}/" />
+		</zip>
+	</target>		
+	<!-- Comment this for story 1645. After presentation changes the template fix we will enable it.-->
+	<target name="deploy" depends="war, build viewer offerings, jstest">
+		<copy todir="${build.home}">
+			<fileset dir="${war.dir}" />
+			<fileset dir="${bin.dir}" includes="viewer_offerings.zip" />
+			<fileset dir="${bin.dir}" includes="JSTest.zip" />
+		</copy>
+		<delete dir="${bin.dir}/${webcontent.dir}/" />
+		<delete dir="${bin.dir}/" includes="viewer_offerings.zip" />
+		<delete dir="${bin.dir}/" includes="JSTest.zip" />
+	</target>
+</project>

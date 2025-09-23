@@ -1,0 +1,100 @@
+<html>
+<head>
+<script src="/docs/js/dojo/dojo.js" type="text/javascript"></script>
+<link href="/docs/js/dojo/resources/dojo.css" type="text/css" rel="stylesheet"></link>
+<link href="/docs/js/dijit/themes/tundra/tundra.css" type="text/css" rel="stylesheet"></link>
+
+<script>
+dojo.require("concord.i18n.LineBreak");
+dojo.require("concord.tests.i18n.LineBreakTestData");
+
+function processSurrogate(item)
+{
+	var newCp = [];
+	var newBrk = [];
+	var cp, offset;
+	for (var i = 0; i < item.cps.length; i++)
+	{
+		cp = item.cps[i];
+		if (cp > 0xFFFF) {
+			offset = cp - 0x10000;
+			newCp.push(0xD800 + (offset >> 10));
+			newCp.push(0xDC00 + (offset & 0x3FF));
+			newBrk.push(item.brk[i]);
+			newBrk.push(false);
+		} else {
+			var clazz = concord.i18n.LineBreak._getClass(cp);
+			if (clazz.name == "BK" || clazz.name == "CR" || clazz.name == "LF" || clazz.name == "NL")
+			{
+				return true;
+			}
+			newCp.push(cp);
+			newBrk.push(item.brk[i]);
+		}
+	}
+	item.cps = newCp;
+	item.brk = newBrk;
+}
+
+function test()
+{
+	var container = document.getElementById("class_output");
+	var i;
+	var j = 0;
+	var startTime = new Date();
+	for (i = 0; i < concord.tests.i18n.LineBreakTestData.length; i++)
+	{
+		var item = concord.tests.i18n.LineBreakTestData[i];
+		
+		var skip = processSurrogate(item);
+		
+		if (skip) continue;
+		var str = String.fromCharCode.apply(null, item.cps);
+		var res = concord.i18n.LineBreak.findAll(str);
+		if (!isArrayEqual(res, item.brk))
+		{
+			var p = document.createElement("p");
+			p.innerHTML = "<span style='color:red'>" + i + "</span>" + "<span>" + item.desc + "</span>";
+			container.appendChild(p);
+			p = document.createElement("p");
+			p.innerHTML = "<span style='color:red'>" + item.brk + "</span>";
+			container.appendChild(p);
+			var p = document.createElement("p");
+			p.innerHTML = "<span style='color:red'>" + res + "</span>";
+			container.appendChild(p);
+			
+			j++;
+		}
+	}
+	var currTime = new Date();
+	var p = document.createElement("p");
+	p.innerHTML = "<span style='color:blue'>" + "TOTALS: " + (i) + " PROCESSED in " + (currTime - startTime) + "</span>";
+	container.appendChild(p);
+	p = document.createElement("p");
+	p.innerHTML = "<span style='color:red'>" + "ERRORS: " + (j) + " FAILED" + "</span>";
+	container.appendChild(p);
+}
+
+function isArrayEqual(a, b)
+{
+	for (var i = 0; i < a.length; i++)
+	{
+		if (a[i] != b[i]) return false;
+	}
+	return true;
+}
+
+</script>
+
+</head>
+<body>
+<div>Press button to start testing</div>
+<div>
+<input type="button" value="Start" onclick="test()" />
+</div>
+<div>RESULT: </div>
+<div id="class_output">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<div dojoType="dijit.MenuBar" id="mainMenu">
+    <div dojoType="dijit.PopupMenuBarItem" id="fileMenuBarItem">
+        <span></span>
+        <div dojoType="dijit.Menu">
+            <div dojoType="dijit.MenuItem" onClick="exportToPDF(); " id="exportToPDFItem"></div>
+            <div dojoType="dijit.MenuItem" onClick="printHtml(); " id="printItem"></div>
+        </div>
+    </div>
+    <div dojoType="dijit.PopupMenuBarItem" id="helpMenuBarItem">
+        <span></span>
+        <div dojoType="dijit.Menu" id="helpMenu">
+            <div dojoType="dijit.MenuItem" onClick="helpOverview(); " id="overviewItem"></div>
+            <div dojoType="dijit.MenuItem" onClick="helpAbout(); " id="aboutItem"></div>
+        </div>
+    </div>
+</div>
+<div dojoType="dijit.Dialog" id="showHideColTableDialog" duration="1" id="smartTableDialog" style="width:400px">
+	<form class="lotusDialog lotusForm" style="margin:0;padding:0px; border:1px solid #FFFFFF;background-color:#FFFFFF" method="post" action="javascript:;"> 
+		<h1 id="showHideColumns" style="padding:0 12px 12px 20px"></h1>
+		<div class="lotusDialogContent" > 
+			<fieldset style="border-width: 0px;"> 
+				<table class="lotusFormTable" cellpadding="0" cellspacing="0" border="0" summary="" > 
+					<tbody id="dialogTbody"> 
+					
+					</tbody> 
+				</table>
+				<div id="smartTableDes"></div>
+			</fieldset> 
+		</div><!--end lotusDialogContent--> 
+		<div class="lotusDialogFooter">
+			<button dojoType="dijit.form.Button" type="submit" id="OKNodeSaveBtn"></button>
+			<button dojoType="dijit.form.Button" type="button" id="cancelBtn" onclick="dijit.byId('showHideColTableDialog').hide();"></button>
+		</div> 
+	</form>
+</div><!--end dijit dialog--> 
+    

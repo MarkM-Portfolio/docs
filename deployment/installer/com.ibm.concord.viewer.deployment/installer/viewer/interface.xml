@@ -1,0 +1,86 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2020                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<configuration>
+	<!-- A "component" tag's or "param" tag's id attribute must not contain
+		any of '," or \ or any characters considered invalid as a file name The value
+		attribute of the "option" tag must not contain any of the 3 of '," or \,
+		but the text content of the "option" tag can contain any characters The "name",
+		"description" and "initial_value" tags can contain any characters The text
+		and text_area input types can accept user input of any characters The types
+		"file" and "password" cannot have an "initial_value" -->
+	<component id="ViewerNext">
+		<param id="num_viewernext_nodes" type="option" publish="true">
+                  <name>Number of HCL Docs ViewerNext Server Nodes</name>
+                  <description>The number of HCL Docs ViewerNext Server nodes to deploy</description>
+                  <options>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                  </options>
+                  <initial_value>2</initial_value>
+        </param>
+		<param id="symphony_instance_number" type="text">
+			<name>Symphony Instance Number</name>
+			<description>The number of Symphony instances to deploy to each IBM
+				Conversion servers. The value should be exactly the same to CPU
+				number of the machine.</description>
+			<initial_value>4</initial_value>
+		</param>
+		<param id="stellent_instance_number" type="text">
+			<name>Stellent Instance Number</name>
+			<description>The number of Stellent instances to deploy to each IBM
+				Conversion servers. The value should be exactly the same to CPU
+				number of the machine.</description>
+			<initial_value>4</initial_value>
+		</param>
+		<param id="docscr_drive_disk" type="option" publish="true">
+			<name>ViewerNext Conversion server deployment drive disk</name>
+			<description>The drive disk name ViewerNext Conversion will be deployed to.
+				"C:" is used as default value.</description>
+			<options>
+				<option value="C:">C:</option>
+				<option value="D:">D:</option>
+			</options>
+			<initial_value>C:</initial_value>
+		</param>
+        <param id="viewer_toscana_url" type="text" >
+             <name>Toscana url for IBM Viewer</name>
+             <description>The toscana url for IBM Viewer . Example:  http://toscana.ibm.com.cn</description>
+             <initial_value></initial_value>
+        </param>
+        <param id="viewer_toscana_oauth_url" type="text" >
+             <name>Toscana oauth endpoint for IBM Viewer</name>
+             <description>The toscana oauth endpoint for IBM Viewer . Example:  http://toscana.ibm.com.cn/oauth/token</description>
+             <initial_value></initial_value>
+        </param>
+	</component>
+</configuration>

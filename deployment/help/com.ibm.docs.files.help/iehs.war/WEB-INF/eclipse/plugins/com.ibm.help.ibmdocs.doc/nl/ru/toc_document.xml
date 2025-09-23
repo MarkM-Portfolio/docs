@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Работа с документами" topic="text/document/documents_frame.html">
+   <topic label="Работа с документами" href="text/document/documents_frame.html">
+      <topic label="Создание и импорт документов"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="О шаблонах" href="text/document/d_templates.html"/>
+         <topic label="Создание документов из шаблонов"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Изменение формата файла по умолчанию документов"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Загрузка документов в хранилище"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Импорт документов"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Открытие файлов Word, защищенных с помощью пароля"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Совместимость файлов и экспорт документов"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Форматы файлов, поддерживаемые программой Documents"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Сохранение документов" href="text/document/d_saving_documents.html"/>
+         <topic label="Публикация версии документа"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Экспорт документов в другие форматы"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Предоставление общего доступа к документам"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Предоставление пользователям и сообществам общего доступа к документам"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Настройка уровней доступа для документов"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Совместная работа с документами в реальном времени"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Совместное редактирование документов в реальном времени."
+                href="text/document/d_real_time_coediting.html">
+            <topic label="О совместно редактируемых документах"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Совместное редактирование документов"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Просмотр изменений от каждого редактора в документах"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Совместная работа в документах с помощью комментариев"
+                href="text/document/d_comments_overview.html">
+            <topic label="О комментариях в документах"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Создание комментариев в документах"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Просмотр комментариев в документах"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Поиск комментариев в документах"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Редактирование документов"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Форматирование текста в документах"
+                href="text/document/d_formatting_text.html">
+            <topic label="Настройка оформления текста"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="Превращение текста в верхний или нижний индекс"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Настройка размера шрифта" href="text/document/d_setting_font_size.html"/>
+            <topic label="Выравнивание текста" href="text/document/d_aligning_text.html"/>
+            <topic label="Управление отступом текста" href="text/document/d_indenting_text.html"/>
+            <topic label="Добавление маркировки или нумерации в документы"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Создание многоуровневых списков в документах"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Вставка ссылок" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Создание верхних и нижних колонтитулов"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Создание оглавления" href="text/document/d_create_toc.html"/>
+         <topic label="Вставка полей в документы" href="text/document/d_inserting_fields.html"/>
+         <topic label="Проверка орфографии в документах"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Печать документов" href="text/document/d_printing_a_document.html">
+            <topic label="Печать документов в файлы PDF"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Работа с изображениями в документах"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Вставка изображений в документы"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Настройка свойств изображений в документах"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Работа с таблицами в документах"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Создание таблиц в документах"
+                href="text/document/d_creating_a_table.html"/>
+         <topic label="Настройка стилей таблиц в документах"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Настройка свойств таблиц в документах"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Выбор цвета фона для ячеек таблицы"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Выравнивание текста в ячейках таблиц в документах"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Добавление строк и столбцов в таблицы"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Перемещение строк и столбцов в таблицах"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Слияние и разбиение ячеек таблицы"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Изменение размера таблиц в документах"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Добавление заголовков таблиц в документы"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Создание заголовков в таблицах в документах"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Documents - краткий справочник" href="text/document/d_quick_ref.html"/>
+      <topic label="Клавиши быстрого доступа для документов"
+             href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

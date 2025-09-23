@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.docs.directory.connections.jar 
+ com.ibm.docs.directory.ecm.jar 
+ com.ibm.docs.directory.jar 
+ com.ibm.docs.directory.local.jar 
+ com.ibm.docs.directory.lotuslive.jar 
+ com.ibm.docs.entitlement.jar 
+ com.ibm.docs.framework.jar
+

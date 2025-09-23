@@ -1,0 +1,430 @@
+<cellGroup name="target">
+    <!-- cell section -->
+    <cell name="docs1Node01Cell">
+        <property name="isWebSphere" value="true"/>
+        <property name="arfmMode" value="Automatic"/>
+        <property name="magicN" value="-1"/>
+        <property name="magicNMode" value="false"/>
+        <property name="boostCPUThreshold" value="90"/>
+        <property name="profilerPeriod" value="60000"/>
+        <property name="profilerHalfLife" value="600000"/>
+        <property name="useODRs" value="true"/>
+        <property name="useProcessCPU" value="true"/>
+        <property name="useOverhead" value="false"/>
+        <property name="cp.enableAdminAuthorizationCache" value="true"/>
+        <!-- node section -->
+        <node name="ocs_app_node_docs1">
+            <property name="isWebSphere" value="true"/>
+            <property name="isXD" value="false"/>
+            <property name="hostName" value="docs1.docsdev.cn.ibm.com"/>
+            <!-- server section -->
+            <server name="server1">
+                <property name="id" priority="1" value="839688895"/>
+                <property name="type" priority="1" value="APPLICATION_SERVER"/>
+                <property name="state" priority="2" value="STARTED"/>
+                <property name="ODR" priority="1" value="false"/>
+                <property name="reachable" priority="0" value="true"/>
+                <property name="weight" priority="2" value="0"/>
+                <property name="staticweight" value="0"/>
+                <property name="threadPoolMin" priority="1" value="20"/>
+                <property name="threadPoolMax" priority="1" value="20"/>
+                <property name="threadPoolIsGrowable" priority="1" value="false"/>
+                <property name="sessionPersistenceMode" priority="1" value="NONE"/>
+                <property name="sessionAffinityCookies" priority="1" value="JSESSIONID"/>
+                <!-- serverApplication section -->
+                <serverApplication name="SchedulerCalendars">
+                    <property name="state" priority="1" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="ManagementEJB">
+                    <property name="state" priority="1" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="filetransferSecured">
+                    <property name="state" priority="1" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="Spellcheck4IBMDocs">
+                    <property name="state" priority="2" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="DefaultApplication">
+                    <property name="state" priority="2" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="query">
+                    <property name="state" priority="1" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="ivtApp">
+                    <property name="state" priority="2" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="ibmasyncrsp">
+                    <property name="state" priority="2" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="isclite">
+                    <property name="state" priority="1" value="STARTED"/>
+                </serverApplication>
+                <serverApplication name="IBMDocs">
+                    <property name="state" priority="2" value="STARTED"/>
+                </serverApplication>
+                <!-- transport section -->
+                <transport name="http.9080">
+                    <property name="host" priority="1" value="docs1.docsdev.cn.ibm.com"/>
+                    <property name="port" priority="1" value="9080"/>
+                    <property name="protocol" priority="1" value="http"/>
+                    <property name="class" priority="1" value="com.ibm.ws.ctmodels.config.serverindex.CT_NamedEndPoint"/>
+                    <property name="ssl" priority="1" value="false"/>
+                    <property name="ODR" value="false"/>
+                    <property name="isActive" priority="2" value="true"/>
+                    <property name="isConfig" priority="1" value="true"/>
+                    <!-- channelChain section -->
+                    <channelChain name="http">
+                        <!-- channel section -->
+                        <channel name="http">
+                            <property name="factoryClass" priority="1" value="com.ibm.ws.http.channel.outbound.impl.HttpOutboundChannelFactory"/>
+                        </channel>
+                        <channel name="tcp">
+                            <property name="factoryClass" priority="1" value="com.ibm.ws.tcp.channel.impl.TCPChannelFactory"/>
+                        </channel>
+                    </channelChain>
+                    <channelChain name="WCInboundDefault">
+                        <property name="CFEndpoint" priority="1" value="rO0ABXNyADBjb20uaWJtLndzLmNoYW5uZWwuZnJhbWV3b3JrLmltcGwuQ0ZFbmRQb2ludEltcGzHyHfC1PeISAIACVoAB2lzTG9jYWxaAAxpc1NTTEVuYWJsZWRJAARwb3J0TAAHYWRkcmVzc3QAFkxqYXZhL25ldC9JbmV0QWRkcmVzcztMAA9jaGFubmVsQWNjZXNzb3J0ABFMamF2YS9sYW5nL0NsYXNzO0wABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZztbABNvdXRib3VuZENoYW5uZWxEZWZzdAA8W0xjb20vaWJtL3dzc3BpL2NoYW5uZWwvZnJhbWV3b3JrL091dGJvdW5kQ2hhbm5lbERlZmluaXRpb247TAAFdmhvc3RxAH4AA1sACnZob3N0QXJyYXl0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAAI3hzcgAUamF2YS5uZXQuSW5ldEFkZHJlc3Mtm1evn+Pr2wIAA0kAB2FkZHJlc3NJAAZmYW1pbHlMAAhob3N0TmFtZXEAfgADeHAJe2hlAAAAAnQAGGRvY3MxLmRvY3NkZXYuY24uaWJtLmNvbXZyAD5jb20uaWJtLndzc3BpLmh0dHAuY2hhbm5lbC5vdXRib3VuZC5IdHRwT3V0Ym91bmRTZXJ2aWNlQ29udGV4dAAAAAAAAAAAAAAAeHB0ABBXQ0luYm91bmREZWZhdWx0dXIAPFtMY29tLmlibS53c3NwaS5jaGFubmVsLmZyYW1ld29yay5PdXRib3VuZENoYW5uZWxEZWZpbml0aW9uOyCNaJ0K1nWcAgAAeHAAAAACc3IAPWNvbS5pYm0ud3MuaHR0cC5jaGFubmVsLmluYm91bmQuaW1wbC5XU0h0dHBPdXRib3VuZERlZmluaXRpb24A0k5MErGTrQIAAUwABmNvbmZpZ3QAD0xqYXZhL3V0aWwvTWFwO3hwc3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA/QAAAAAAADHcIAAAAEAAAAAB4c3IAOGNvbS5pYm0ud3MudGNwLmNoYW5uZWwuaW1wbC5UQ1BPdXRib3VuZENoYW5uZWxEZWZpbml0aW9u1tyMvuDkSoECAAB4cHQADGRlZmF1bHRfaG9zdHVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAFxAH4AFg=="/>
+                    </channelChain>
+                    <channelChain name="HttpQueueInboundDefault">
+                        <property name="CFEndpoint" priority="1" value="rO0ABXNyADBjb20uaWJtLndzLmNoYW5uZWwuZnJhbWV3b3JrLmltcGwuQ0ZFbmRQb2ludEltcGzHyHfC1PeISAIACVoAB2lzTG9jYWxaAAxpc1NTTEVuYWJsZWRJAARwb3J0TAAHYWRkcmVzc3QAFkxqYXZhL25ldC9JbmV0QWRkcmVzcztMAA9jaGFubmVsQWNjZXNzb3J0ABFMamF2YS9sYW5nL0NsYXNzO0wABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZztbABNvdXRib3VuZENoYW5uZWxEZWZzdAA8W0xjb20vaWJtL3dzc3BpL2NoYW5uZWwvZnJhbWV3b3JrL091dGJvdW5kQ2hhbm5lbERlZmluaXRpb247TAAFdmhvc3RxAH4AA1sACnZob3N0QXJyYXl0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAAI3hzcgAUamF2YS5uZXQuSW5ldEFkZHJlc3Mtm1evn+Pr2wIAA0kAB2FkZHJlc3NJAAZmYW1pbHlMAAhob3N0TmFtZXEAfgADeHAJe2hlAAAAAnQAGGRvY3MxLmRvY3NkZXYuY24uaWJtLmNvbXZyAD5jb20uaWJtLndzc3BpLmh0dHAuY2hhbm5lbC5vdXRib3VuZC5IdHRwT3V0Ym91bmRTZXJ2aWNlQ29udGV4dAAAAAAAAAAAAAAAeHB0ABdIdHRwUXVldWVJbmJvdW5kRGVmYXVsdHVyADxbTGNvbS5pYm0ud3NzcGkuY2hhbm5lbC5mcmFtZXdvcmsuT3V0Ym91bmRDaGFubmVsRGVmaW5pdGlvbjsgjWidCtZ1nAIAAHhwAAAAAnNyAD1jb20uaWJtLndzLmh0dHAuY2hhbm5lbC5pbmJvdW5kLmltcGwuV1NIdHRwT3V0Ym91bmREZWZpbml0aW9uANJOTBKxk60CAAFMAAZjb25maWd0AA9MamF2YS91dGlsL01hcDt4cHNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAAAeHNyADhjb20uaWJtLndzLnRjcC5jaGFubmVsLmltcGwuVENQT3V0Ym91bmRDaGFubmVsRGVmaW5pdGlvbtbcjL7g5EqBAgAAeHB0AAxkZWZhdWx0X2hvc3R1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAABcQB+ABY="/>
+                    </channelChain>
+                </transport>
+                <transport name="https.9443">
+                    <property name="host" priority="1" value="docs1.docsdev.cn.ibm.com"/>
+                    <property name="port" priority="1" value="9443"/>
+                    <property name="protocol" priority="1" value="https"/>
+                    <property name="class" priority="1" value="com.ibm.ws.ctmodels.config.serverindex.CT_NamedEndPoint"/>
+                    <property name="ssl" priority="1" value="true"/>
+                    <property name="ODR" value="false"/>
+                    <property name="isActive" priority="2" value="true"/>
+                    <property name="isConfig" priority="1" value="true"/>
+                    <!-- channelChain section -->
+                    <channelChain name="https">
+                        <!-- channel section -->
+                        <channel name="http">
+                            <property name="factoryClass" priority="1" value="com.ibm.ws.http.channel.outbound.impl.HttpOutboundChannelFactory"/>
+                        </channel>
+                        <channel name="ssl">
+                            <property name="factoryClass" priority="1" value="com.ibm.ws.ssl.channel.impl.SSLChannelFactory"/>
+                        </channel>
+                        <channel name="tcp">
+                            <property name="factoryClass" priority="1" value="com.ibm.ws.tcp.channel.impl.TCPChannelFactory"/>
+                        </channel>
+                    </channelChain>
+                    <channelChain name="HttpQueueInboundDefaultSecure">
+                        <property name="CFEndpoint" priority="1" value="rO0ABXNyADBjb20uaWJtLndzLmNoYW5uZWwuZnJhbWV3b3JrLmltcGwuQ0ZFbmRQb2ludEltcGzHyHfC1PeISAIACVoAB2lzTG9jYWxaAAxpc1NTTEVuYWJsZWRJAARwb3J0TAAHYWRkcmVzc3QAFkxqYXZhL25ldC9JbmV0QWRkcmVzcztMAA9jaGFubmVsQWNjZXNzb3J0ABFMamF2YS9sYW5nL0NsYXNzO0wABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZztbABNvdXRib3VuZENoYW5uZWxEZWZzdAA8W0xjb20vaWJtL3dzc3BpL2NoYW5uZWwvZnJhbWV3b3JrL091dGJvdW5kQ2hhbm5lbERlZmluaXRpb247TAAFdmhvc3RxAH4AA1sACnZob3N0QXJyYXl0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHAAAQAAJONzcgAUamF2YS5uZXQuSW5ldEFkZHJlc3Mtm1evn+Pr2wIAA0kAB2FkZHJlc3NJAAZmYW1pbHlMAAhob3N0TmFtZXEAfgADeHAJe2hlAAAAAnQAGGRvY3MxLmRvY3NkZXYuY24uaWJtLmNvbXZyAD5jb20uaWJtLndzc3BpLmh0dHAuY2hhbm5lbC5vdXRib3VuZC5IdHRwT3V0Ym91bmRTZXJ2aWNlQ29udGV4dAAAAAAAAAAAAAAAeHB0AB1IdHRwUXVldWVJbmJvdW5kRGVmYXVsdFNlY3VyZXVyADxbTGNvbS5pYm0ud3NzcGkuY2hhbm5lbC5mcmFtZXdvcmsuT3V0Ym91bmRDaGFubmVsRGVmaW5pdGlvbjsgjWidCtZ1nAIAAHhwAAAAA3NyAD1jb20uaWJtLndzLmh0dHAuY2hhbm5lbC5pbmJvdW5kLmltcGwuV1NIdHRwT3V0Ym91bmREZWZpbml0aW9uANJOTBKxk60CAAFMAAZjb25maWd0AA9MamF2YS91dGlsL01hcDt4cHNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAAAeHNyADhjb20uaWJtLndzLnNzbC5jaGFubmVsLmltcGwuU1NMT3V0Ym91bmRDaGFubmVsRGVmaW5pdGlvbo948w04PgKDAgABTAARY2hhbm5lbFByb3BlcnRpZXNxAH4AEHhwc3EAfgASP0AAAAAAAAx3CAAAABAAAAAAeHNyADhjb20uaWJtLndzLnRjcC5jaGFubmVsLmltcGwuVENQT3V0Ym91bmRDaGFubmVsRGVmaW5pdGlvbtbcjL7g5EqBAgAAeHB0AAxkZWZhdWx0X2hvc3R1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAABcQB+ABk="/>
+                    </channelChain>
+                    <channelChain name="WCInboundDefaultSecure">
+                        <property name="CFEndpoint" priority="1" value="rO0ABXNyADBjb20uaWJtLndzLmNoYW5uZWwuZnJhbWV3b3JrLmltcGwuQ0ZFbmRQb2ludEltcGzHyHfC1PeISAIACVoAB2lzTG9jYWxaAAxpc1NTTEVuYWJsZWRJAARwb3J0TAAHYWRkcmVzc3QAFkxqYXZhL25ldC9JbmV0QWRkcmVzcztMAA9jaGFubmVsQWNjZXNzb3J0ABFMamF2YS9sYW5nL0NsYXNzO0wABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZztbABNvdXRib3VuZENoYW5uZWxEZWZzdAA8W0xjb20vaWJtL3dzc3BpL2NoYW5uZWwvZnJhbWV3b3JrL091dGJvdW5kQ2hhbm5lbERlZmluaXRpb247TAAFdmhvc3RxAH4AA1sACnZob3N0QXJyYXl0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHAAAQAAJONzcgAUamF2YS5uZXQuSW5ldEFkZHJlc3Mtm1evn+Pr2wIAA0kAB2FkZHJlc3NJAAZmYW1pbHlMAAhob3N0TmFtZXEAfgADeHAJe2hlAAAAAnQAGGRvY3MxLmRvY3NkZXYuY24uaWJtLmNvbXZyAD5jb20uaWJtLndzc3BpLmh0dHAuY2hhbm5lbC5vdXRib3VuZC5IdHRwT3V0Ym91bmRTZXJ2aWNlQ29udGV4dAAAAAAAAAAAAAAAeHB0ABZXQ0luYm91bmREZWZhdWx0U2VjdXJldXIAPFtMY29tLmlibS53c3NwaS5jaGFubmVsLmZyYW1ld29yay5PdXRib3VuZENoYW5uZWxEZWZpbml0aW9uOyCNaJ0K1nWcAgAAeHAAAAADc3IAPWNvbS5pYm0ud3MuaHR0cC5jaGFubmVsLmluYm91bmQuaW1wbC5XU0h0dHBPdXRib3VuZERlZmluaXRpb24A0k5MErGTrQIAAUwABmNvbmZpZ3QAD0xqYXZhL3V0aWwvTWFwO3hwc3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA/QAAAAAAADHcIAAAAEAAAAAB4c3IAOGNvbS5pYm0ud3Muc3NsLmNoYW5uZWwuaW1wbC5TU0xPdXRib3VuZENoYW5uZWxEZWZpbml0aW9uj3jzDTg+AoMCAAFMABFjaGFubmVsUHJvcGVydGllc3EAfgAQeHBzcQB+ABI/QAAAAAAADHcIAAAAEAAAAAB4c3IAOGNvbS5pYm0ud3MudGNwLmNoYW5uZWwuaW1wbC5UQ1BPdXRib3VuZENoYW5uZWxEZWZpbml0aW9u1tyMvuDkSoECAAB4cHQADGRlZmF1bHRfaG9zdHVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAFxAH4AGQ=="/>
+                    </channelChain>
+                </transport>
+                <transport name="sip.5060">
+                    <property name="host" priority="1" value="docs1.docsdev.cn.ibm.com"/>
+                    <property name="port" priority="1" value="5060"/>
+                    <property name="protocol" priority="1" value="sip"/>
+                    <property name="class" priority="1" value="com.ibm.ws.ctmodels.config.serverindex.CT_NamedEndPoint"/>
+                    <property name="ssl" priority="1" value="false"/>
+                    <property name="ODR" value="false"/>
+                    <property name="isActive" priority="2" value="true"/>
+                    <property name="isConfig" priority="1" value="true"/>
+                </transport>
+                <transport name="sipu.5060">
+                    <property name="host" priority="1" value="docs1.docsdev.cn.ibm.com"/>
+                    <property name="port" priority="1" value="5060"/>
+                    <property name="protocol" priority="1" value="sipu"/>
+                    <property name="class" priority="1" value="com.ibm.ws.ctmodels.config.serverindex.CT_NamedEndPoint"/>
+                    <property name="ssl" priority="1" value="false"/>
+                    <property name="ODR" value="false"/>
+                    <property name="isActive" priority="2" value="true"/>
+                    <property name="isConfig" priority="1" value="true"/>
+                </transport>
+                <transport name="sips.5061">
+                    <property name="host" priority="1" value="docs1.docsdev.cn.ibm.com"/>
+                    <property name="port" priority="1" value="5061"/>
+                    <property name="protocol" priority="1" value="sips"/>
+                    <property name="class" priority="1" value="com.ibm.ws.ctmodels.config.serverindex.CT_NamedEndPoint"/>
+                    <property name="ssl" priority="1" value="true"/>
+                    <property name="ODR" value="false"/>
+                    <property name="isActive" priority="2" value="true"/>
+                    <property name="isConfig" priority="1" value="true"/>
+                </transport>
+                <!-- webModule section -->
+                <link name="/cell/docs1Node01Cell/application/Spellcheck4IBMDocs/webModule/com.ibm.rcp.spellcheck.webapp.war"/>
+                <link name="/cell/docs1Node01Cell/application/DefaultApplication/webModule/DefaultWebApplication.war"/>
+                <link name="/cell/docs1Node01Cell/application/ivtApp/webModule/ivt_app.war"/>
+                <link name="/cell/docs1Node01Cell/application/ibmasyncrsp/webModule/ibmasyncrsp.war"/>
+                <link name="/cell/docs1Node01Cell/application/IBMDocs/webModule/com.ibm.concord.war.war"/>
+                <link name="/cell/docs1Node01Cell/application/IBMDocs/webModule/rtc4web_server.war"/>
+            </server>
+        </node>
+        <!-- vHostGroup section -->
+        <vHostGroup name="default_host">
+            <!-- vHost section -->
+            <vHost name="*:9080">
+                <property name="port" value="9080"/>
+            </vHost>
+            <vHost name="*:80">
+                <property name="port" value="80"/>
+            </vHost>
+            <vHost name="*:9443">
+                <property name="port" value="9443"/>
+            </vHost>
+            <vHost name="*:5060">
+                <property name="port" value="5060"/>
+            </vHost>
+            <vHost name="*:5061">
+                <property name="port" value="5061"/>
+            </vHost>
+            <vHost name="*:443">
+                <property name="port" value="443"/>
+            </vHost>
+            <!-- webModule section -->
+            <link name="/cell/docs1Node01Cell/application/DefaultApplication/webModule/DefaultWebApplication.war"/>
+            <link name="/cell/docs1Node01Cell/application/Spellcheck4IBMDocs/webModule/com.ibm.rcp.spellcheck.webapp.war"/>
+            <link name="/cell/docs1Node01Cell/application/ivtApp/webModule/ivt_app.war"/>
+            <link name="/cell/docs1Node01Cell/application/ibmasyncrsp/webModule/ibmasyncrsp.war"/>
+            <link name="/cell/docs1Node01Cell/application/IBMDocs/webModule/com.ibm.concord.war.war"/>
+            <link name="/cell/docs1Node01Cell/application/IBMDocs/webModule/rtc4web_server.war"/>
+        </vHostGroup>
+        <!-- application section -->
+        <application name="ManagementEJB">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="ManagementEJB"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="true"/>
+            <property name="isHidden" value="false"/>
+            <property name="lastChangeTime" value="1334311910047"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+        </application>
+        <application name="SchedulerCalendars">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="SchedulerCalendars"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="true"/>
+            <property name="isHidden" value="false"/>
+            <property name="lastChangeTime" value="1334311910051"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+        </application>
+        <application name="filetransferSecured">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="filetransferSecured"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="true"/>
+            <property name="isHidden" value="false"/>
+            <property name="lastChangeTime" value="1334311910092"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+        </application>
+        <application name="DefaultApplication">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="DefaultApplication"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="false"/>
+            <property name="isHidden" value="false"/>
+            <property name="lastChangeTime" value="1334311910751"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+            <!-- webModule section -->
+            <webModule name="DefaultWebApplication.war">
+                <property name="id" value="docs1Node01Cell/DefaultApplication/DefaultWebApplication.war"/>
+                <property name="contextRoot" value=""/>
+                <property name="fileServingEnabled" value="false"/>
+                <property name="serveServletsByName" value="true"/>
+                <property name="protocolMap" value="direct"/>
+                <property name="routingEnabled" value="true"/>
+                <!-- uri section -->
+                <uri name="/*.jsp"/>
+                <uri name="/*.jsv"/>
+                <uri name="/*.jsw"/>
+                <uri name="/servlet/*"/>
+                <uri name="/snoop/*"/>
+                <uri name="/hello"/>
+                <uri name="/hitcount"/>
+            </webModule>
+        </application>
+        <application name="Spellcheck4IBMDocs">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="Spellcheck4IBMDocs"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="false"/>
+            <property name="isHidden" value="false"/>
+            <property name="lastChangeTime" value="1334311910823"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+            <!-- webModule section -->
+            <webModule name="com.ibm.rcp.spellcheck.webapp.war">
+                <property name="id" value="docs1Node01Cell/Spellcheck4IBMDocs/com.ibm.rcp.spellcheck.webapp.war"/>
+                <property name="contextRoot" value="/docs/spellcheck"/>
+                <property name="fileServingEnabled" value="true"/>
+                <property name="serveServletsByName" value="false"/>
+                <property name="protocolMap" value="direct"/>
+                <property name="routingEnabled" value="true"/>
+                <!-- uri section -->
+                <uri name="/*"/>
+                <uri name="/*.jsp"/>
+                <uri name="/*.jsv"/>
+                <uri name="/*.jsw"/>
+                <uri name="/rest/*"/>
+            </webModule>
+        </application>
+        <application name="ivtApp">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="ivtApp"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="false"/>
+            <property name="isHidden" value="false"/>
+            <property name="lastChangeTime" value="1334311910829"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+            <!-- webModule section -->
+            <webModule name="ivt_app.war">
+                <property name="id" value="docs1Node01Cell/ivtApp/ivt_app.war"/>
+                <property name="contextRoot" value="/ivt"/>
+                <property name="fileServingEnabled" value="true"/>
+                <property name="serveServletsByName" value="false"/>
+                <property name="protocolMap" value="direct"/>
+                <property name="routingEnabled" value="true"/>
+                <!-- uri section -->
+                <uri name="/*"/>
+                <uri name="/*.jsp"/>
+                <uri name="/*.jsv"/>
+                <uri name="/*.jsw"/>
+                <uri name="/ivtservlet"/>
+                <uri name="/ivtejb"/>
+                <uri name="/ivtserver"/>
+            </webModule>
+        </application>
+        <application name="query">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="query"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="false"/>
+            <property name="isHidden" value="false"/>
+            <property name="lastChangeTime" value="1334311911932"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+        </application>
+        <application name="ibmasyncrsp">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="ibmasyncrsp"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="false"/>
+            <property name="isHidden" value="true"/>
+            <property name="lastChangeTime" value="1334311912102"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+            <!-- webModule section -->
+            <webModule name="ibmasyncrsp.war">
+                <property name="id" value="docs1Node01Cell/ibmasyncrsp/ibmasyncrsp.war"/>
+                <property name="contextRoot" value="/IBM_WS_SYS_RESPONSESERVLET"/>
+                <property name="fileServingEnabled" value="false"/>
+                <property name="serveServletsByName" value="false"/>
+                <property name="protocolMap" value="direct"/>
+                <property name="routingEnabled" value="true"/>
+                <!-- uri section -->
+                <uri name="/*.jsp"/>
+                <uri name="/*.jsv"/>
+                <uri name="/*.jsw"/>
+                <uri name="/*"/>
+            </webModule>
+        </application>
+        <application name="isclite">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="isclite"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="true"/>
+            <property name="isHidden" value="true"/>
+            <property name="lastChangeTime" value="1334311912632"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="true"/>
+            <property name="sessionAffinityCookies" value="JSESSIONID"/>
+            <property name="isDynamicEar" value="false"/>
+        </application>
+        <application name="IBMDocs">
+            <property name="isWebSphere" value="true"/>
+            <property name="root" value="IBMDocs"/>
+            <property name="edition" value=""/>
+            <property name="state" value="ACTIVE"/>
+            <property name="isSystem" value="false"/>
+            <property name="isHidden" value="false"/>
+            <property name="lastChangeTime" value="1334311914049"/>
+            <property name="sessionAffinityCookie" value="JSESSIONID"/>
+            <property name="sessionOverride" value="false"/>
+            <property name="isDynamicEar" value="false"/>
+            <!-- webModule section -->
+            <webModule name="com.ibm.concord.war.war">
+                <property name="id" value="docs1Node01Cell/IBMDocs/com.ibm.concord.war.war"/>
+                <property name="contextRoot" value="/docs"/>
+                <property name="fileServingEnabled" value="true"/>
+                <property name="serveServletsByName" value="true"/>
+                <property name="protocolMap" value="direct"/>
+                <property name="routingEnabled" value="true"/>
+                <!-- uri section -->
+                <uri name="/*"/>
+                <uri name="/*.jsp"/>
+                <uri name="/*.jsv"/>
+                <uri name="/*.jsw"/>
+                <uri name="/servlet/*"/>
+                <uri name="/app/newdoc"/>
+                <uri name="/app/doc/*"/>
+                <uri name="/api/*"/>
+                <uri name="/error"/>
+                <uri name="/login"/>
+                <uri name="/SaveTemplateServlet"/>
+                <uri name="/ut/*"/>
+                <uri name="/provisioning/endpoint"/>
+            </webModule>
+            <webModule name="rtc4web_server.war">
+                <property name="id" value="docs1Node01Cell/IBMDocs/rtc4web_server.war"/>
+                <property name="contextRoot" value="/docs/rtc"/>
+                <property name="fileServingEnabled" value="true"/>
+                <property name="serveServletsByName" value="true"/>
+                <property name="protocolMap" value="direct"/>
+                <property name="routingEnabled" value="true"/>
+                <!-- uri section -->
+                <uri name="/*"/>
+                <uri name="/*.jsp"/>
+                <uri name="/*.jsv"/>
+                <uri name="/*.jsw"/>
+                <uri name="/servlet/*"/>
+                <uri name="/RTCServlet/*"/>
+                <uri name="/map/*"/>
+                <uri name="/list/*"/>
+                <uri name="/channel/*"/>
+            </webModule>
+        </application>
+        <!-- cluster section -->
+        <cluster name="ocs_app_node_docs1:server1">
+            <property name="type" value="single-server"/>
+            <property name="isReal" value="false"/>
+            <!-- server section -->
+            <link name="/cell/docs1Node01Cell/node/ocs_app_node_docs1/server/server1"/>
+            <!-- webModule section -->
+            <link name="/cell/docs1Node01Cell/application/DefaultApplication/webModule/DefaultWebApplication.war"/>
+            <link name="/cell/docs1Node01Cell/application/Spellcheck4IBMDocs/webModule/com.ibm.rcp.spellcheck.webapp.war"/>
+            <link name="/cell/docs1Node01Cell/application/ivtApp/webModule/ivt_app.war"/>
+            <link name="/cell/docs1Node01Cell/application/ibmasyncrsp/webModule/ibmasyncrsp.war"/>
+            <link name="/cell/docs1Node01Cell/application/IBMDocs/webModule/com.ibm.concord.war.war"/>
+            <link name="/cell/docs1Node01Cell/application/IBMDocs/webModule/rtc4web_server.war"/>
+        </cluster>
+    </cell>
+</cellGroup>

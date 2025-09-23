@@ -1,0 +1,17 @@
+.slideEditor .resizableContainerSelected{
+	border-width:0px;
+	padding:0px;	
+}
+
+.slideEditor .resizableContainer{
+	padding:0px;
+}
+
+img.imgcomment {
+	width: 30px !important;
+	height: 22px !important;
+}
+
+body {
+	-webkit-user-select: none;
+}

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.concord.draft.jar 
+ com.ibm.concord.platform.jar 
+ com.ibm.concord.collaboration.jar 
+ com.ibm.concord.spi.jar 
+ com.ibm.concord.job.jarcom.ibm.concord.revision.jar
+ com.ibm.docs.common.jar 
+ com.ibm.docs.directory.jar 
+ com.ibm.docs.entitlement.jar 
+ lib/acf-2.5.0.29.jar 
+ lib/html-parser-2.5.0.29.jar
+

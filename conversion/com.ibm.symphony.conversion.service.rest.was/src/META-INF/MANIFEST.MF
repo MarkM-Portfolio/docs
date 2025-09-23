@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Class-Path: lib/commons-collections-3.2.1.jar 
+ lib/commons-configuration-1.1.jar 
+ lib/commons-configuration-1.5-plus-node-clone.jar 
+ com.ibm.symphony.conversion.converter.conversionlib.jar 
+ com.ibm.symphony.conversion.converter.stellent.jar 
+ com.ibm.symphony.conversion.converter.sym.jar 
+ com.ibm.symphony.conversion.service.common.jar 
+ com.ibm.symphony.conversion.service.jar 
+ lib/commons-fileupload-1.2.1.jar 
+ lib/commons-io-1.4.jar 
+ lib/json4j.jar
+

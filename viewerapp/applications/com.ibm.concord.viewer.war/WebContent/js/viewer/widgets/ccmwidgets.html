@@ -1,0 +1,233 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright IBM Corp. 2013, 2014                                    -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=9" >
+   <link rel="stylesheet" href="/connections/resources/web/_style?include=com.ibm.lconn.core.styles.oneui3/base/package3.css" />
+   <link rel="stylesheet" href="/connections/resources/web/_style?include=com.ibm.lconn.core.styles.oneui3/sprites.css" />
+   <link rel="stylesheet" href="/connections/resources/web/_lconntheme/gen4.css?version=oneui3" />
+   <link rel="stylesheet" href="/connections/resources/web/_lconnappstyles/gen4/communities.css?version=oneui3" />
+   <link rel="stylesheet" href="/connections/resources/web/_style?include=quickr.lw/css/styles.css" />
+   <link rel="stylesheet" href="/connections/resources/web/_style?include=quickr.lw/css/sprite-quickr-lw.css" />
+   
+   <script>
+	  // for elder browser such as IE7, which dose not support X-Frame-Options, use JS code to prevent UI readdressing
+      if(self!=top)
+	  {
+		try{
+			if(self.location.hostname!=top.location.hostname)
+				top.location = self.location;
+		}
+		catch(e)
+		{
+			top.location = self.location;
+		}
+	  }
+      <!-- Dojo setup -->
+      var root = location.pathname.replace(/\/[^/]*$/, '');
+      
+      window.baseUrl = window.parent.location.protocol + "//" + window.parent.location.hostname; //'http://bxv7v610.cn.ibm.com/'
+      var eTag = new Date().valueOf();
+      var blankGif = "/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif";
+      var djConfig = {
+         baseUrl: window.baseUrl,
+         blankGif: blankGif
+      };          
+   </script>      
+   <script>
+      <!-- Set up global variables -->
+      ibmConfig = {};
+      ibmConfig.contextRootEnabler = "/communities"
+      ibmConfig.loadServices = false;
+      ibmConfig.proxyURL = "/communities/ajaxProxy";
+      ibmConfig.serviceName = "communities";
+      ibmConfig.loadingHTML = '<img src="/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif" height="130" width="0"></img>';
+      ibmConfig.versionStamp = eTag;
+      
+      communityUuid = window.parent.DOC_SCENE.reviewData.communityInfo.communityId; //"eb6b0659-60c5-4e86-a252-a0a504545045";
+      ic_comm_communityUuid = window.parent.DOC_SCENE.reviewData.communityInfo.communityId;
+      ic_comm_communityType = window.parent.DOC_SCENE.reviewData.communityInfo.communityType; //"public"
+      ic_comm_communitiesSvcRef = window.parent.DOC_SCENE.reviewData.communityInfo.communityURL; //"http://bxv7v610.cn.ibm.com/communities"      
+   </script>
+</head>
+<body class="lotusui lotusui30dojo lotusui30_body lotusui30_fonts lotusui30 lotusSpritesOn" style="background: none transparent;">
+   <script src="../../dojo/dojo.js"></script>   
+   <script type="text/javascript">
+   if (dojo.isFF){
+   			window.oldGetComputedStyle = window .getComputedStyle;
+   			window.getComputedStyle = function (element, pseudoElt) {
+      			var t = window.oldGetComputedStyle(element, pseudoElt);
+      			if (t === null) {
+        			 return {};
+      			} else{
+        			 return t;
+      			}
+   			};
+		 }
+   </script>
+   <script src="/connections/resources/web/_js/?include=dojo.main"></script>
+   <script src="/connections/resources/web/_js?include=dojo.i18n~net.jazz.ajax.xdloader~quickr.lw.iwidget.MultiModeLibraryWidgetQCS~quickr.lw.enabler.IContext~quickr.lw.action.SubmitForReview~quickr.lw.action.ApproveReview~quickr.lw.action.RejectReview~quickr.lw.action.StopReview&exclude=dojo.main"></script>
+   <script>
+      dojo.addOnLoad(function() {
+      
+         var library = new quickr.lw.iwidget.MultiModeLibraryWidgetQCS();
+         
+         var widgetProperties = {};
+         widgetProperties["rootFeed"] = baseUrl + "/dm/atom/library/" + window.parent.DOC_SCENE.reviewData.libraryInfo.componentId + "/feed"; //"http://bxv7v610.cn.ibm.com/dm/atom/library/669DCFBD-0666-440D-9B76-5B6828D22618;7AED15BB-92E6-415D-8942-3780710A255C/feed";
+         widgetProperties["generator"] = window.parent.DOC_SCENE.reviewData.libraryInfo.generator; //"Social ECM Documents: P8";
+         
+         var iContext = new quickr.lw.enabler.IContext("madeupid", widgetProperties);
+         iContext.getRootElement = function() {
+            return dojo.body();
+         }
+
+         library.iContext = iContext;
+         
+         var mydiv = dojo.create("div", {}, dojo.body());
+         library.getDiv = function() {
+             return mydiv;
+         }
+         
+         library.onLoad();
+         library.onfullpage();		 
+
+         runImpl = function(dialogType) {
+            var docId = window.parent.DOC_SCENE.docUri.split("@")[0].substr(4);
+            var itemUrl = baseUrl + "/dm/atom/library/" + window.parent.DOC_SCENE.reviewData.libraryInfo.componentId + "/draft/%7B" + docId + "%7D/entry?acls=true&includeRecommendation=true&includeTags=true&includeNotification=true&includeDownloadInfo=true&includeCurrentVersion=true&includeSecurityInheritance=true&includeLocked=true&includeLockOwner=true&includeWorkingDraftInfo=true&includeApprovers=true";
+            var feedItemUrl = baseUrl + "/dm/atom/library/" + window.parent.DOC_SCENE.reviewData.libraryInfo.componentId + "/feed";            
+            var ds = library.fullWidget.df.getDataStore("LibraryFeed", {url: feedItemUrl});
+            
+            var item = ds.newItem({category:"draft", urlEntry:itemUrl});     
+            var feedItem = {feedItem: library.fullWidget.df.iw.library};                   
+                        
+            var itemLoaded = function(result, ioArgs) {              
+               var approveState=quickr.lw.util.dom.getChildElementTextContentNS(result.documentElement, "approvalState", quickr.lw.util.dom.DOCUMENTS_ATOM_NAMESPACE);
+               if((dialogType !== "StopReview" && approveState !== "pending")
+                  ||(result.type && result.type === "ItemNotFound")) {
+	               	setTimeout(function(){
+		               	window.parent.pe.scene.reviewFail();
+    	           	}, 100);            	             
+               }else{
+                    var newItem = new quickr.lw.bean.qcs.Draft(result.documentElement, null);
+                    newItem.ds = item.ds;
+               
+                    var hideFrame = function(){
+                        setTimeout(function(){
+		               	window.parent.pe.scene.hideReviewFrame();
+                        }, 100);            	             
+                    }
+               
+                    var onsuccess = function(){
+                        setTimeout(function(){
+		               	window.parent.pe.scene.closeViewer();
+                        }, 100);            	             
+                    }
+               
+                    var dialog = null;
+                    if (dialogType == "ApproveReview")
+                    {
+                        dialog = new quickr.lw.action.ApproveReview(library.fullWidget);
+                        dojo.connect(dialog, "ondraftpromote", onsuccess);
+                   }
+                   else if (dialogType == "RejectReview")
+                   {
+                        dialog = new quickr.lw.action.RejectReview(library.fullWidget);
+                        dojo.connect(dialog, "onsuccess", onsuccess);
+                    }
+                   else if (dialogType == "StopReview")
+                   {
+                       dialog = new quickr.lw.action.StopReview(library.fullWidget);
+                       dojo.connect(dialog, "onsuccess", onsuccess);
+                   }    
+                   
+                   dialog.connect(dialog, "onDialogCancel", itemLoaded, hideFrame);
+                   //dialog.connect(dialog, "onsuccess", itemLoaded, onsuccess)
+                   dialog.execute(ds, newItem);
+               }
+            }
+            
+            var opts = {
+                  url: itemUrl,
+                  handleAs: "xml",
+                  sync: false,
+                  handle: dojo.hitch(this, itemLoaded)
+            };
+
+            library.fullWidget.net.get(opts);
+            ds.revert();
+         };
+         
+         onError = function()
+         {
+         	console.warn("The widgets can not been initialized correctly!");
+         	window.parent.pe.scene.hideReviewFrame();
+         };
+         
+         processUntilAvailable = function (callback, errback, test, passedInParam, pThrowIfExhausted, pWaitBetweenTries, pMaxTries) 
+   		 {
+   			if( typeof(callback) != "function" ) 
+   				return; // nothing to call back, so just get out
+   			// defaults
+   			var waitBetweenTries = 100; // milliseconds
+   			var maxTries = 200; // intervals before giving up
+   			var throwIfExhausted = true; // throw err exhausted all tries
+   			if( typeof(pWaitBetweenTries) == "number") waitBetweenTries = pWaitBetweenTries; // override with supplied parameter
+   				if( typeof(pMaxTries) == "number") 
+   					maxTries = pMaxTries; // override with supplied parameter
+   			if( typeof(pThrowIfExhausted) == "boolean") 
+   				throwIfExhausted = pThrowIfExhausted; // override with supplied parameter
+   			var intervalId = "";
+   			var tried = 0;
+   			if(eval(test))
+   			{
+   				if(passedInParam != null)
+   					callback(passedInParam);
+				else
+   					callback();
+   				return;
+   			}
+   			intervalId = window.setInterval(function()
+   			{
+   				tried++;
+   				if(eval(test))
+   				{
+   					window.clearInterval(intervalId);
+   					if(passedInParam != null)
+   						callback(passedInParam);
+   					else
+   						callback();
+   				}
+   				else if(tried == maxTries)
+   				{
+   					window.clearInterval(intervalId);
+   					if (errback)
+   						errback();
+   					if( throwIfExhausted ) 
+   						throw new Error( "processUntilAvailable: test was never met: " + test );
+   				}
+   			}, waitBetweenTries);
+   		 };  
+   		 
+   		 run = function(type)
+   		 {
+   		 	processUntilAvailable(runImpl,onError,"library&& library.fullWidget &&library.fullWidget.df &&library.fullWidget.df.getDataStore ",type,false);
+   		 };       
+      });
+   </script>
+   <div>
+   <div>
+</body>
+</html>

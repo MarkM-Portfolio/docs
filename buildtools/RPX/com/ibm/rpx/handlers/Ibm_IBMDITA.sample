@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' ?>
+  <!DOCTYPE topic PUBLIC "IBM//DTD DITA//EN" "..\dtd\ditabase.dtd">
+  <topic id="f01">
+    <title> Single machine topology</title>
+    <prolog>
+      <copyright>
+        <copyryear year="2001"/>
+        <copyrholder>IBM Corporation</copyrholder>
+      </copyright>
+    </prolog>
+    <body>
+      <p><required-cleanup>[ID=d]Discussion</required-cleanup></p>
+      <p product="se">To set up the single-machine configuration, perform the Typical
+      installation. See <xref href="../publish/2089/$File/02.xml">Section 2 (installation) </xref> for
+      detailed instructions pertaining to particular operating system and Web server
+      choices.</p>
+    </body>
+	<topicref navtitle="Manage Policies" href="uimanagepolicies.dita" type="topic">
+	</topicref>
+	<topicref navtitle="Create a Policy" href="uicreateapolicy.dita" type="topic">
+	</topicref>
+
+  </topic>

@@ -1,0 +1,44 @@
+<div class='linkPanel'><form dojoAttachEvent='onsubmit:onSubmit'>
+<table cellspacing=0 role="presentation" cellspadding=0 class='linkPanelTable'>
+<tr dojoAttachPoint='linkBox' class='linkBox selectLinkBox'>
+<td class='left'>
+	<div class='select' dojoAttachPoint='selectWrapper'></div>
+</td>
+<td class='right'>
+	<input type='text'  dojoAttachPoint='linkInput' dojoType="dijit.form.TextBox" ></input> 
+	<div  class='select' dojoAttachPoint='bookmarksWrapper'></div> 
+</td>
+</tr>
+<tr dojoAttachPoint='subjectBox' class='linkBox' style='display:none'>
+	<td class='left'>
+		<label for='mailSubject'>${strs.link_subject}</label>
+	</td>
+	<td class='right'>
+		<input type='text' id='mailSubject' class="textInput" dojoAttachPoint='subjectInput' maxlength='256'/> 
+	</td>
+</tr>
+<tr dojoAttachPoint='textBox' class='linkBox'  style='display:none'>
+	<td class='left'>
+		<label for='displayText'>${strs.link_text}</label>
+	</td>
+	<td class='right'>
+		<input type='text' id='displayText' class="textInput" dojoAttachPoint='textInput'/> 
+	</td>
+</tr>
+<tr dojoAttachPoint='errorBox' class='linkBox'  style='display:none'>
+	<td class='right errorBox' colspan=2>
+		<input type='text' dojoAttachPoint='errorInput' dojoType="dijit.form.TextBox" value='${strs.link_not_support}' disabled/> 
+	</td>
+</tr>
+<tr dojoAttachPoint='buttons' class='linkButtons'>
+	<td class='left'>
+		<button dojoattachevent='onclick:gotoLink' dojoAttachPoint='gotoButton' class='gotolink_button'>${strs.link_goto}</button>
+	</td>
+	<td class='right'>
+		<button dojoAttachPoint='doneButton' type='submit' class='done_button'>${strs.link_done}</button>
+		<button dojoattachevent='onclick:removeLink' dojoAttachPoint='removeButton' class='remove_button'>${strs.link_remove}</button>
+	</td>
+</tr>
+</table>
+</form>
+</div>

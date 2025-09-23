@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.symphony.conversion.converter.odp.common.jar 
+ com.ibm.symphony.conversion.service.common.jar 
+ com.ibm.symphony.conversion.service.jar 
+ lib/com.ibm.symphony.conversion11.converter.html2odp_1.0.0.jar 
+ lib/com.ibm.symphony.conversion11.converter.odp.common_1.0.0.jar 
+ lib/com.ibm.symphony.conversion11.service.common_1.0.0.jar 
+ lib/com.ibm.symphony.conversion11.service_1.0.0.jar 
+ lib/commons-lang-2.4.jar 
+ lib/xml-apis-ext.jar 
+ lib/json4j.jar 
+ lib/jtidy.jar 
+ lib/odfdom.jar
+

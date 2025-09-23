@@ -1,0 +1,48 @@
+body.concord_Doc_Style_1 h1.cssHeading {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 0cm;
+    margin-top: 0cm;
+    text-align: left;
+	}	
+body.concord_Doc_Style_1 h2.cssHeading {
+    font-size: 14pt;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0cm;
+    margin-top: 0cm;
+    text-align: left;
+	}
+body.concord_Doc_Style_1 h3.cssHeading {
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 0.21209cm;
+    margin-top: 0.42291cm;
+    text-align: left;
+	}
+body.concord_Doc_Style_1 h4.cssHeading {
+    font-family: Arial;
+    font-size: 12pt;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0.21209cm;
+    margin-top: 0.42291cm;
+    text-align: left;
+	}
+body.concord_Doc_Style_1 h5.cssHeading {
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 0.21209cm;
+    margin-top: 0.42291cm;
+    text-align: left;
+	}
+body.concord_Doc_Style_1 h6.cssHeading {
+    font-family: Arial;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-bottom: 0.21209cm;
+    margin-top: 0.42291cm;
+    text-align: left;
+	}

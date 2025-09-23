@@ -1,0 +1,14 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for tag cloud
+companion file is tagCloud.css*/
+/*** T A G   C L O U D ***/
+a.lotusF5, a.lotusF5:visited{color:#1c5229}
+a.lotusF4, a.lotusF4:visited{color:#2b8e3b}
+a.lotusF3, a.lotusF3:visited{color:#44bb5a}
+a.lotusF2, a.lotusF2:visited{color:#64d873}
+a.lotusF1, a.lotusF1:visited{color:#8be893}
+/***********************************************************/
+

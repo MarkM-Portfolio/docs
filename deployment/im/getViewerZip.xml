@@ -1,0 +1,62 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2022                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<project name="getViewerZipPkg" basedir="." default="deploy">
+	<!--target name="fetchviewer" if="ServerADDR"-->
+	<target name="fetchviewer">
+		<property name="remoteBaseDir" value="daily/Viewer/On-premise1.0.7_Viewer"/>
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteBaseDir}">
+			<fileset dir="${DOWNLOAD_HOME}" includes="currentBuildLabel.txt"/>
+		</ftp> -->
+
+		<copy todir="${DOWNLOAD_HOME}">
+			<fileset dir="${remoteBaseDir}">
+				<include name="currentBuildLabel.txt"/>
+			</fileset>
+		</copy>
+
+		<echo message="remoteBaseDir = ${remoteBaseDir}" />
+		<echo message="DOWNLOAD_HOME = ${DOWNLOAD_HOME}" />
+
+		<loadfile property="curBldLabel" srcFile="${DOWNLOAD_HOME}/currentBuildLabel.txt">
+			<filterchain>
+				<striplinebreaks/>
+			</filterchain>
+		</loadfile>
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteBaseDir}/${curBldLabel}/">
+			<fileset dir="${DOWNLOAD_HOME}" includes="Viewer.zip"/>
+			<fileset dir="${DOWNLOAD_HOME}" includes="ViewerLCCustomizeApp.zip"/>
+		</ftp> -->
+
+		<echo message="remoteBaseDir = ${remoteBaseDir}" />
+		<echo message="DOWNLOAD_HOME = ${DOWNLOAD_HOME}" />
+		<echo message="curBldLabel = ${curBldLabel}" />
+
+		<copy todir="${DOWNLOAD_HOME}">
+			<fileset dir="${remoteBaseDir}/${curBldLabel}">
+				<include name="Viewer.zip"/>
+				<include name="ViewerLCCustomizeApp.zip"/>
+			</fileset>
+		</copy>
+
+		<delete includeEmptyDirs="true">
+			<fileset dir="${DOWNLOAD_HOME}" includes="currentBuildLabel.txt"/>
+		</delete>
+	</target>
+	<target name="deploy" depends="fetchviewer">
+	</target>
+</project>
+

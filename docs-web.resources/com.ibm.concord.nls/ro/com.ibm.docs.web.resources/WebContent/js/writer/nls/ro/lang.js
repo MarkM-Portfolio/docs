@@ -1,0 +1,75 @@
+({
+	LOADING: "Conţinutul se încarcă.",
+	LOAD_FINISHED: "Încărcarea conţinutului s-a finalizat.",
+	PAGE_SETUP: "Setare pagină",
+	NOTE_INVALIDACTION_FOOTNOTE:"Aceasta nu este o acţiune validă pentru nota de subsol.",
+	NOTE_INVALIDACTION_ENDNOTE:"Aceasta nu este o acţiune validă pentru nota de sfârşit.",
+	PAGENUMBER_OF_TOTALNUMBER:"Pagina ${0} din ${1}", //page 1 of N
+	PAGE_NUMBER: "Pagina: ${pageNumber} / ${totalPageNumber}",
+	toc:{
+		title : "Cuprins",
+		update: "Actualizare",
+		del: "Ştergere",
+		toc: "Cuprins",
+		linkTip: "Ctrl clic pentru navigare",
+		pageNumber: "Numai număr pagină",
+		entireTable: "Întregul tabel"
+	},
+	link:{
+		addlink:"Adăugare legătură",
+		gotolink: "Deschidere legătură",
+		unlink	: "Înlăturare legătură",
+		editlink: "Editare legătură",
+		internalLink: "Legătură internă",
+		ctrlLink: "Ctrl+Clic pentru a vă deplasa la legătură",
+		cannotOpen: " nu se poate deschide din ${productName}."
+	},
+	field:{
+		update: "Actualizare câmp"
+	},
+	insertTime:"Inserare oră",
+	insertDate:"Inserare dată",
+	selectDate:"Selectare dată",
+	selectTime:"Selectare oră",
+	acc_blank: "blanc",// when selection is nothing but space char and empty paragraph
+	acc_space: "spaţiu",// string read out when the cursor is before one space char
+	acc_inLink: "în legătură ",
+	acc_inField: "în câmp ",
+	acc_selected :" selectat",
+	acc_inTable: "în tabel rândul ${0} coloana ${1} ",
+	acc_imageSelected: "grafică selectată",
+	acc_canvasSelected:"formă selectată",
+	acc_textboxSelected:"casetă de text selectată",
+	ACC_TABLE_TABLESIZE:"Aţi selectat ${0} rânduri, ${1} coloane",
+	ACC_TABLE_MAXSIZE:" Dimensiunea maximă de tabel suportată este 20*20",
+	ACC_headerFooterMode: "mod de editare antet şi subsol",
+	ACC_EditorMode: "mod de editare editor",
+	ACC_FootnotesMode: "mod de editare note de subsol",
+	ACC_EndnotesMode: "mod de editare note de terminare",
+	ACC_uniformTable: "Este adăugat un rând nou",
+	Acc_column :"coloana  ${0}",
+	acc_page :"pagina  ${0}",
+	acc_section:"secţiunea  ${0}",
+	acc_spellWarn:"verificarea ortografiei este incorectă",
+	acc_outTable:"în afara tabelei",
+	acc_link :"legătură",
+	acc_field :"câmp",
+	acc_footnote:"notă de subsol",
+	acc_endnote:"notă de final",	
+	acc_editor:"Editare de ${0}",
+	tablePropertyTitle: "Proprietăţi tabel",
+	headerTitle:"Antet",
+	footerTitle:"Subsol",
+	firstheaderTitle:"Antet prima pagină",
+	firstfooterTitle:"Subsol prima pagină",
+	evenheaderTitle:"Antet pagină pară",
+	evenfooterTitle:"Subsol pagină pară",
+	oddheaderTitle:"Antet pagină impară",
+	oddfooterTitle:"Subsol pagină impară",
+	showTableBorder:"Afişare chenare tabel",
+	list_none: "Fără",
+	SET_NUMBERING_VALUE: "Setare valori de numerotare",
+	BIDI_CONTENT_EDITING: "Acest document include conţinut bidirecţional. Pentru a lucra corespunzător cu acest document, porniţi suportul bidirecţional în preferinţele dumneavoastră pentru HCL Connections."
+})
+	
+

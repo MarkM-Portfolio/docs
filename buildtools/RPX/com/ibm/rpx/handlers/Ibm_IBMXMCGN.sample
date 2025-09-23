@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding='UTF-8'?>
+  <stringTable usage="Message source for CCLMessageFramework">
+    <component name="AFP">
+      <section type="UI" name="GNL">
+        <string name="IDS_ERR_EXIT" whiteSpace="preserve">Exiting application.</string>
+        <string name="IDS_DMS_ERR_STATUS" whiteSpace="preserve">UDA Status: %0.</string>
+        <string name="CANNOT_CONNECT">Cannot connect to the provider at the URL <param type="string" index="1"/>. Code: <param type="integer" index="2"/>.</string>
+      </section>
+    </component>
+  </stringTable>

@@ -1,0 +1,72 @@
+({
+		SAVE: "Зачувај",
+		UNDO:"Врати",
+		REDO:"Повтори",
+		INSERTROW:"Вметни ред",
+		DELETEROW:"Избриши ред",
+		INSERTCOLUMN:"Вметни колона",
+		DELETECOLUMN:"Избриши колона",
+		FONTSIZE:"Големина на фонт",
+		FONTCOLOR:"Боја на фонт",
+		BOLD:"Задебелено",
+		ITALIC:"Курзив",
+		UNDERLINE:"Подвлечено",
+		STRIKETHROUGH:"Прецртано",
+		CURRENCYTIP:"Формат како валута",
+		PERCENTLABEL:"%",
+		PERCENTTIP:"Формат како процент",
+		NUMBERFORMAT:"Број на формат",
+		ALIGNLEFT:"Порамни налево",
+		ALIGNCENTER:"Порамни централно",
+		ALIGNRIGHT:"Порамни надесно",
+		SETCELLBORDER:"Постави раб на ќелија",
+		BACKGROUNDCOLOR:"Боја на заднина",
+		TASK:"Додели дел",
+		COMMENTS:"Додај коментар",
+		SUBMIT:"Поднеси",
+		MERGECELL: "Спој или раздели ќелии",
+		QUICKFORMULA: "Брза формула",
+		WRAPTEXT: "Прелом на текст",
+		EIGHT:"8pt",
+		NINE:"9pt",
+		TEN:"10pt",
+		ELEVEN:"11pt",
+		TWELVE:"12pt",
+		FOURTEEN:"14pt",
+		SIXTEEN:"16pt",
+		EIGHTEEN:"18pt",
+		TWENTY:"20pt",
+		TWENTYTWO:"22pt",
+		TWENTYFOUR:"24pt",
+		NUMBER:"Број",
+		CURRENCY:"Валута",
+		PERCENT:"Процент",
+		DATE:"Датум",
+		TIME:"Време",
+		DATETIME: "DateTime",
+		MORECURRENCY:"Повеќе валути",
+		MOREDATE:"Повеќе формати",
+		
+		
+		CAD: "канадски долар",
+		USD: "долар",
+		EUR: "евро",
+		CHF: "швајцарски франци",
+		HKD: "хонгконшки долар",
+		DKK: "круна",
+		LTL: "литас",
+		PHP: "пезос",
+		BRL: "реал",
+		RUR: "рубља",
+		GBP: "фунта",
+		NLG: "гилдер", // Netherlands
+		TWD: "нов Тајвански долар",
+		THB: "бахт", // Thailand
+		ITL: "лири", // Turkey
+		BGL: "лев", // Uzbekistan
+		VND: "донг", // Vietnam
+		KRW: "вон",	// Korean 
+		CNY: "јуан", // RMB
+		JPY: "јен" // Japan Yen
+})
+

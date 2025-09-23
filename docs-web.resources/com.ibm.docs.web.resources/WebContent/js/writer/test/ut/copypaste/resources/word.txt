@@ -1,0 +1,325 @@
+<div class="lotusErrorContent" contenteditable="true"><p class="MsoTitle"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_s1027" type="#_x0000_t75"
+ style='position:absolute;margin-left:327pt;margin-top:46.4pt;width:171pt;
+ height:96pt;z-index:-251659264;visibility:visible'>
+ <v:imagedata src="file:///C:\Users\IBM_AD~1\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:
+absolute;z-index:251657211;margin-left:436px;margin-top:62px;width:228px;
+height:128px"><img width="228" height="128" src="file:///C:/Users/IBM_AD~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png" v:shapes="Picture_x0020_1"></span><!--[endif]-->HCL Connections<br>
+Cloud Performance<br>
+and Networking<o:p></o:p></p>
+
+<p class="MsoSubtitle"><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="Text_x0020_Box_x0020_1" o:spid="_x0000_s1026"
+ type="#_x0000_t202" alt="Text box sidebar for laying out a highlighted story and photo."
+ style='position:absolute;margin-left:0;margin-top:56.05pt;width:176.4pt;
+ height:555pt;z-index:251656192;visibility:visible;mso-wrap-distance-left:21.6pt;
+ mso-wrap-distance-top:14.4pt;mso-wrap-distance-right:21.6pt;
+ mso-wrap-distance-bottom:14.4pt;mso-position-horizontal-relative:margin;
+ mso-width-relative:margin;mso-height-relative:margin' o:gfxdata="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
+AAAAAAQABADzAAAAtwUAAAAA
+" o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt">
+ <v:textbox style='mso-next-textbox:#Text_x0020_Box_x0020_1;
+  mso-fit-shape-to-text:t' inset="0,0,0,0">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-yfti-tbllook:
+     1184;mso-padding-alt:0cm 0cm 0cm 0cm'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:302.4pt;
+      mso-height-rule:exactly'>
+      <td width=235 valign=top style='width:175.9pt;background:#0070C0;
+      padding:14.4pt 0cm 14.4pt 0cm;height:302.4pt;mso-height-rule:exactly'>
+      <p class=BlockHeading>performance<br>
+      and Availability <br>
+      Information<br>
+      paper<o:p></o:p></p>
+      <p class=MsoBlockText>How do you get a feel on how performant the HCL Connections
+      Cloud is in real life scenarios?<br>
+      What can you view?<o:p></o:p></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;height:14.4pt;mso-height-rule:exactly'>
+      <td width=235 valign=top style='width:175.9pt;padding:0cm 0cm 0cm 0cm;
+      height:14.4pt;mso-height-rule:exactly'>
+      <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:165.6pt;mso-height-rule:
+      exactly'>
+      <td width=235 valign=top style='width:175.9pt;padding:0cm 0cm 0cm 0cm;
+      height:165.6pt;mso-height-rule:exactly'>
+      <p class=MsoNormal><v:shape id="_x0000_i1028" type="#_x0000_t75" style='width:171pt;
+       height:171.75pt'>
+       <v:imagedata src="file:///C:\Users\IBM_AD~1\AppData\Local\Temp\msohtmlclip1\01\clip_image003.png"
+        o:href="http://enbuconsulting.com/wp-content/uploads/2015/02/performance_icon1.png"/>
+      </v:shape><o:p></o:p></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoCaption><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" anchorx="margin"/>
+</v:shape><![endif]--><!--[if !vml]--><img width="239" height="744" src="file:///C:/Users/IBM_AD~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png" align="left" hspace="29" vspace="19" alt="Text box sidebar for laying out a highlighted story and photo." v:shapes="Text_x0020_Box_x0020_1"><!--[endif]-->How
+do you measure what?<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<h1>Background<o:p></o:p></h1>
+
+<p class="MsoNormal">The HCL Connections Cloud is managed, maintained, updated
+and serviced by IBM as a true SaaS (Software as a Service) platform. IBM
+maintains and monitors its platforms using both internal and external tools to
+secure availability and performance awareness for SaaS delivery purposes.<br>
+It is important to keep in mind that network performance and service
+availability are two different things. <br>
+With network performance the whole chain of network infrastructure components
+and multiple service providers are involved. This includes IBM Softlayer network
+infrastructure, your client internal network(s) as well as telecom providers
+and not forgetting potential VPN software, proxy servers, firewalls and
+workstations or mobile devices. This document is intended as a guide on how to
+see availability and performance awareness using the tools out there today.<o:p></o:p></p>
+
+<h1>network acceleration with akamai<o:p></o:p></h1>
+
+<p class="MsoNormal"><span style="color:windowtext;mso-font-kerning:0pt;
+mso-fareast-language:EN-US"><a href="http://www-10.lotus.com/ldd/bhwiki.nsf/xpDocViewer.xsp?lookupName=IBM+Redbooks%3A+Preparing+your+enterprise+for+IBM+Connections+Cloud#action=openDocument&amp;res_title=2.1.1_Network_Accelerator&amp;content=pdcontent"><span style="mso-bidi-font-family:Arial;color:#424282">Network acceleration</span></a></span><span style="mso-bidi-font-family:Arial;color:black;mso-font-kerning:0pt;mso-fareast-language:
+EN-US"> </span>to the IBM data centers is an active enhanced solution that benefits your users as it will
+improve overall responsiveness of the IBM SaaS services worldwide. For network
+acceleration, IBM leverages Akamai (<span style="mso-bidi-font-family:
+Arial;color:black;mso-font-kerning:0pt;mso-fareast-language:EN-US"><a href="http://www.akamai.com/"><span style="color:#424282">www.akamai.com</span></a></span>) to assist with the optimizing of network traffic between users
+worldwide and the IBM data centers. Akamai accomplishes this by calculating the
+most efficient route between the data center and the end user based on the
+nature of the content, as well as by caching static content on the network
+edge, closest to the end user. Akamai resolves the following HCL Connections
+Cloud<span style="mso-bidi-font-family:Arial;color:black;mso-font-kerning:
+0pt;mso-fareast-language:EN-US"> <a href="http://www-10.lotus.com/ldd/bhwiki.nsf/dx/Cheat_Sheetcol_Firewall_Settings_for_IBM_SmartCloud_Engage_Advanced"><span style="color:#424282">public host names</span></a> </span>to IP addresses owned by its network points of presence worldwide (where
+xx is the specific data center, EU = ce, US = na and Asia = ap): apps.xx.collabserv.com,
+downloads.xx.collabserv.com, webchat.xx.collabserv.com<br>
+This means that the IP addresses assigned to these domains will be dynamically
+chosen from a long list of possible addresses and will no longer be a single
+predictable address. This will allow for the best possible performance of the
+public HCL Connections Cloud services.<o:p></o:p></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:460.5pt;
+ height:191.25pt;visibility:visible'>
+ <v:imagedata src="file:///C:\Users\IBM_AD~1\AppData\Local\Temp\msohtmlclip1\01\clip_image005.png"
+  o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="614" height="255" src="file:///C:/Users/IBM_AD~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" v:shapes="Picture_x0020_1"><!--[endif]--><o:p></o:p></p>
+
+<h1>Availability<o:p></o:p></h1>
+
+<p class="MsoNormal"><span style="color:#767171;mso-no-proof:yes">HCL Connections
+Cloud availability is publicly displayed on the main website in the system
+status section at</span> <a href="file:///C:/Users/IBM_ADMIN/Downloads/ibmcloud.com/social/maintenance">ibmcloud.com/social/maintenance</a>:<o:p></o:p></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:220.5pt;height:129pt;
+ visibility:visible'>
+ <v:imagedata src="file:///C:\Users\IBM_AD~1\AppData\Local\Temp\msohtmlclip1\01\clip_image007.png"
+  o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="294" height="172" src="file:///C:/Users/IBM_AD~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" v:shapes="_x0000_i1026"><!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><span style="background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">This
+system status information is provided as a courtesy to IBM clients. It is for
+informational purposes only and may not be redistributed or referenced as a
+substitute for formal IBM incident analysis or service level reporting.<span class="apple-converted-space">&nbsp;<o:p></o:p></span></span></p>
+
+<p class="MsoNormal"><span class="apple-converted-space">On top of this, any HCL Connections Cloud client named contact
+can be subscribed to system status and maintenance notifications by contacting
+the Client Services Group at </span><span class="apple-converted-space"><span style="color: rgb(51, 51, 51); background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><a href="mailto:cloudcsg@us.ibm.com">cloudcsg@us.ibm.com</a></span></span><span class="apple-converted-space">. It is recommended to include alerts via both email and SMS to make
+sure you are alerted any time any place anywhere.</span><o:p></o:p></p>
+
+<h1>IBM Softlayer (softlayer.com)<o:p></o:p></h1>
+
+<p class="MsoNormal"><!--[if gte vml 1]><v:shape id="_x0000_s1028" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:0;width:171.35pt;height:122pt;
+ z-index:-251658240;visibility:visible;mso-position-horizontal:left'
+ wrapcoords="-95 0 -95 21467 21600 21467 21600 0 -95 0">
+ <v:imagedata src="file:///C:\Users\IBM_AD~1\AppData\Local\Temp\msohtmlclip1\01\clip_image009.png"
+  o:title=""/>
+ <w:wrap type="tight"/>
+</v:shape><![endif]--><!--[if !vml]--><img width="228" height="163" src="file:///C:/Users/IBM_AD~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" align="left" hspace="12" v:shapes="_x0000_s1028"><!--[endif]-->IBM Softlayer provides the Infrastructure as a Service (IaaS) services for
+the HCL Connections Cloud instances in Europe and the United States. The
+IBM data centers are connected by the industry��s most advanced network within a
+network, which integrates distinct public, private, and internal management
+networks to deliver lower total networking costs, better access, and higher
+speed. 2Tbps between locations. Less than 40ms of latency into the private
+network from locations around the world. On <a href="http://www.softlayer.com/network">softlayer.com/network</a> <span class="apple-converted-space"><span style="line-height: 125%; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">you will be able to
+understand details of the IBM Cloud IaaS platform. <br>
+If you would like to see the performance to the HCL Connections Cloud
+datacenter in </span></span><span class="apple-converted-space">(e.g.) Amsterdam or</span><span class="apple-converted-space"><span style="line-height: 125%; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"> Frankfurt you can perform a
+test and measure the performance of the end to end network from your location.
+You can do this by using the IBM Softlayer tool called Looking Glass, located
+at </span></span><a href="file:///C:/Users/IBM_ADMIN/Downloads/lg.softlayer.com">lg.softlayer.com</a><span style="color:#767171;mso-no-proof:yes">. </span><span class="apple-converted-space">By default the back end (data center to data center) latency indications
+are shown in nearly real time.<br>
+If you proceed, by clicking ��I Agree��, you can measure the ping response times,
+traceroute information and BGP table lookups/summary information between the
+HCL Connections Cloud infrastructure layer and any of your own locations.</span><span style="color:#231F20"><o:p></o:p></span></p>
+
+<h1>HCL Connections Cloud meetings<o:p></o:p></h1>
+
+<p class="MsoNormal"><!--[if gte vml 1]><v:shape id="_x0000_s1029" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:.3pt;width:277.35pt;
+ height:2in;z-index:-251657216;visibility:visible;mso-position-horizontal:left'
+ wrapcoords="-58 0 -58 21488 21600 21488 21600 0 -58 0">
+ <v:imagedata src="file:///C:\Users\IBM_AD~1\AppData\Local\Temp\msohtmlclip1\01\clip_image011.png"
+  o:title=""/>
+ <w:wrap type="tight"/>
+</v:shape><![endif]--><!--[if !vml]--><img width="370" height="192" src="file:///C:/Users/IBM_AD~1/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg" align="left" hspace="12" v:shapes="_x0000_s1029"><!--[endif]-->The HCL Connections Cloud provides the ability to see meeting performance
+straight from your meeting room.<o:p></o:p></p>
+
+<p class="MsoNormal">Simply click on: <br>
+��Gear�� icon &gt; View Network Performance <br>
+and you are presented with network latency indications for the Meeting room presentation
+as well as Conference Call latency for Minimum, Average and Maximum indications.<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div style="mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0cm 0cm 31.0pt 0cm">
+
+<h1 style="border:none;mso-border-bottom-alt:solid windowtext .75pt;padding:
+0cm;mso-padding-alt:0cm 0cm 31.0pt 0cm"><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:352.5pt;height:287.25pt;visibility:visible'>
+ <v:imagedata src="file:///C:\Users\IBM_AD~1\AppData\Local\Temp\msohtmlclip1\01\clip_image013.png"
+  o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="470" height="383" src="file:///C:/Users/IBM_AD~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg" v:shapes="_x0000_i1027"><!--[endif]--><o:p></o:p></h1>
+
+</div>
+
+<h1>Network bandwidth calculations<o:p></o:p></h1>
+
+<p class="MsoNormal">IBM is happy to work with its clients and provide you with indications
+of required network capacity that will allow you to understand the impact on
+your Internet connections from your office locations to the public cloud
+instances of IBM.<o:p></o:p></p>
+
+<p class="MsoNormal">If you wish to obtain this HCL Connections Cloud Bandwidth
+Estimation Models, please contact your local IBM Client Technical Professional.
+He will be happy to perform the joined analysis of your network infrastructure.<o:p></o:p></p>
+
+<p class="MsoNormal">sd<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+ <tbody><tr>
+  <td width="245" valign="top" style="width:183.6pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal">3123<o:p></o:p></p>
+  </td>
+  <td width="490" colspan="2" valign="top" style="width:367.2pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal">123123<o:p></o:p></p>
+  <p class="MsoNormal">123213123<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="245" valign="top" style="width:183.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><b><span style="font-family:����;mso-ascii-theme-font:minor-fareast;mso-fareast-theme-font:
+  minor-fareast;mso-hansi-theme-font:minor-fareast;color:red;background:#D9D9D9;
+  mso-shading:white;mso-pattern:gray-15 auto">zxczxc<o:p></o:p></span></b></p>
+  </td>
+  <td width="245" rowspan="2" valign="top" style="width:183.6pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><b><span style="font-family:����;mso-ascii-theme-font:minor-fareast;mso-fareast-theme-font:
+  minor-fareast;mso-hansi-theme-font:minor-fareast;color:red;background:#D9D9D9;
+  mso-shading:white;mso-pattern:gray-15 auto">czxczc<o:p></o:p></span></b></p>
+  <p class="MsoNormal">1231223<b><span style="font-family:����;mso-ascii-theme-font:minor-fareast;mso-fareast-theme-font:
+  minor-fareast;mso-hansi-theme-font:minor-fareast;color:red;background:#D9D9D9;
+  mso-shading:white;mso-pattern:gray-15 auto"><o:p></o:p></span></b></p>
+  </td>
+  <td width="245" valign="top" style="width:183.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal">23123<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="245" valign="top" style="width:183.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal">213123<o:p></o:p></p>
+  </td>
+  <td width="245" valign="top" style="width:183.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<h1><o:p>&nbsp;</o:p></h1><div class="lotusErrorForm"><h1 id="scene-title"></h1></div></div>

@@ -1,0 +1,16 @@
+<div>
+	<div style="background-color: #ffffff; padding-top:15px; padding-bottom:15px; border: 1px solid #aaaaaa" dojoAttachPoint = "pane">
+		<div>
+			<div style = "height: 28px;">
+				<div dojoAttachPoint="refValue"></div>
+			</div>
+			<div class = "errorValidationInput" style = 'height: auto; margin-bottom: 10px;' >
+				<div role = "alert" dojoAttachPoint="warning">${nls.mulInfo}</div>
+			</div>			
+		</div>
+		<div dojoAttachPoint = "buttonContainer1" style = "text-align: right">
+			<div class = 'dvButton' dojoType='dijit.form.ToggleButton' value="${nls.removeAll}" title="${nls.removeAll}" dojoAttachPoint="removeAll">${nls.removeAll}</div>
+			<div style = "margin-right: 5%"  class = 'dvButton' dojoType='dijit.form.ToggleButton' value="${nls.cancel}" title="${nls.cancel}" dojoAttachPoint="cancel">${nls.cancel}</div>
+		</div>
+	</div>
+</div>

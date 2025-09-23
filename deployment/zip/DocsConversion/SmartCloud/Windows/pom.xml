@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs.SmartCloud</groupId>
+    <artifactId>DocsConversion</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.SmartCloud.Windows</groupId>   
+  <artifactId>DocsConversion</artifactId>
+  <name>Windows: DocsConversion - zip</name>
+  <packaging>pom</packaging>
+    <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>invoke ant task for repackage windows native.zip for SC</id>
+            <phase>prepare-package</phase>
+            <configuration>
+              <target name="repackage_native_windows.zip">
+              <ant antfile="repackage_native_windows.zip.xml"/>
+              </target>
+             </configuration>
+             <goals>
+             <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>Build SmartCloud Windows DocsConversion.zip</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_SmartCloud_DocsConversion_Windows.zip.xml</descriptor>
+              </descriptors>
+              <finalName>SC-DocsConversion-Config-${build.smartcloud.version}-${docs.build.timestamp}</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>        
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build> 
+</project>

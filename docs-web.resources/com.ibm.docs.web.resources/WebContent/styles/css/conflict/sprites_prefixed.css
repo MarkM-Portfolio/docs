@@ -1,0 +1,1400 @@
+.docs_st_biz  #semtagmenu {z-index:10000;}
+
+*html .javlinHover {width:auto !important;}
+.docs_st_biz  .javlinHover {background:url("/connections/resources/web/com.ibm.lconn.core.styles/images/javlinHoverIcon.gif?etag=20140219.071924") no-repeat #fef89a; border:1px solid #afaeac;background-position:3px;padding:2px 3px 2px 21px;width:auto;font-size:.9em;white-space:nowrap}
+.docs_st_biz  .X-javlin-display-inline .personMenu { background-color:#CBD2DF;}
+.docs_st_biz  .X-javlin-display-inline .photoCard { padding: 2px 2px 2px 2px;}
+.docs_st_biz  .X-javlin-display-inline .photoCard img { padding: 2px 2px 2px 2px;}
+.docs_st_biz  .X-javlin-display-inline .businessCard {}
+.docs_st_biz  .X-javlin-display-inline .businessCard ul { list-style:none;}
+.docs_st_biz  .X-javlin-display-inline .businessCard .cardName {}
+.docs_st_biz  .X-javlin-display-inline .businessCard li { color:#555555; font-size:7pt; margin:2px; padding: 2px 2px 2px 2px; font-family:Tahoma,  Verdana,  Arial,  Helvetica,  sans-serif; }
+.docs_st_biz  .X-javlin-display-inline .personMenuActions { background-color:#4477BB;}
+.docs_st_biz  .X-javlin-display-inline .personMenuActions ul {}
+.docs_st_biz  .X-javlin-display-inline .personMenuActions li { padding: 2px 2px 2px 2px; font-size:7pt; font-family:Tahoma,  Verdana,  Arial,  Helvetica,  sans-serif; }
+.docs_st_biz  .X-javlin-display-inline .personMenuActions a:link, .docs_st_biz  .X-javlin-display-inline .personMenuActions a:visited{ color:#FFFFFF; text-decoration:none;}
+.docs_st_biz  .popupPersonCard { width:400px;}
+.docs_st_biz  #container .inlinelist{margin:0;padding:0}
+.docs_st_biz  #container .inlinelist li{display:inline;margin:0 0 0 -4px;padding:0 10px;border-left:1px solid #ccc;}
+.docs_st_biz  #container .inlinelist li.first{margin-left:0;padding-left:0;border-left-width:0;}
+.docs_st_biz  #container .inlinelist li.first, .docs_st_biz  .popupPersonCard .inlinelist li.last{margin-left:-5px;padding-left:0;border-left-width:0;}
+.docs_st_biz  .awareness{color: #444444;text-decoration: none;background-repeat: no-repeat;background-position: left center;padding: 4px 0px 4px 18px;cursor: pointer;}
+.docs_st_biz  .lconnSTBtn {
+border-right:0px !important;margin-right:-1px !important; height:24px !important;
+margin:0 0 0 -1px;padding:3px 10px;outline:1px solid #000;border:1px solid #444;-moz-border-radius:2px;
+color:#fff !important;background-color:#333;background-image:none;}
+.docs_st_biz  .lconnSTBtn:focus::-moz-focus-inner {
+border-color:#fff;}
+.docs_st_biz  .lconnSTActionBarContainer {
+margin:0;padding:0;position:fixed;bottom:0; left:0;width:100%;}
+.docs_st_biz  .lconnSTActionBar{
+margin:0 !important;overflow:hidden;float:right;width:auto;}
+.docs_st_biz  .lconnSTBtn:hover{
+border-color:#444;}
+.docs_st_biz  .lotusui .lconnSTActionBar .lconnSTBtn .lotusDropDownSprite{
+background-position:0 -656px}
+.docs_st_biz  .lconnSTErrorIcon {
+padding-bottom: 2px;}
+.docs_st_biz  .lconnSTErrorBtn {
+border-right:0px !important;
+height:24px !important;
+margin:0 0 0 -1px;
+padding:3px 5px;
+outline:1px solid #000000;
+border:1px solid #444444;
+color:#fff !important;
+background-color:#333333;
+background-image:none;}
+.docs_st_biz  .lotusPaletteContent{ height: 19.2em;}
+.docs_st_biz  .lotusPaletteNav{ height: 19.2em;}
+.docs_st_biz  .dj_ff3 .lotusPaletteContent{ height: 20.2em;}
+.docs_st_biz  .dj_ff3 .lotusPaletteNav{ height: 20.2em;}
+.docs_st_biz  .lotusui_ie6 .lotusPaletteContent{ height: 20.3em;}
+.docs_st_biz  .lotusui_ie6 .lotusPaletteWidget{ width: 18.9em !important;}
+.docs_st_biz  .lotusui_ie6 .lotusPalette .lotusPaletteWidget h4.lotusAdded span { font-size: 0.75em;}
+.docs_st_biz  .lotusui_ie6 .lotusPalette .lotusPaletteWidget h4 { margin-top: 0.6em !important;}
+.docs_st_biz  .lotusui_ie6 .lotusPalette .lotusLargeWidgets .lotusPaletteWidget h4 { margin-top: 0em !important;}
+.docs_st_biz  .lotusui_ie6 .lotusPalette .lotusPaletteWidget h4.lotusAdded { margin-top: 0em !important;}
+.docs_st_biz  .lotusui_ie6 .lotusPalette .lotusPaletteWidget div.lotusTitle { margin-top: -0.5em !important;}
+.docs_st_biz  .lotusui_ie6 .lotusPaletteNoShelf .lotusPaletteContent { left: 0px !important;}
+.docs_st_biz  .lotusui_ie .lotusPaletteWidget .lotusTitle h4.lotusAdded{ width: auto;}
+.docs_st_biz  .lotusui_ie .lotusPaletteWidget .lotusTitle h4 { width: 11.5em !important;}
+.docs_st_biz  .lotusui_ie .lotusLargeWidgets .lotusPaletteWidget .lotusTitle h4 { width: 10em !important;}
+.docs_st_biz  .lotusPaletteWidget div.lotusIcon { height: 34px;}
+.docs_st_biz  .lotusPaletteNav li a { outline-style: none; -moz-outline-style: none;}
+.docs_st_biz  .lotusPalette .lotusMenu{ height: 17.5em !important;}
+.docs_st_biz  .lotusui_ie7 .lotusPalette .lotusMenu{ height: 17.5em !important;}
+.docs_st_biz  .lotusui_ie6 .lotusPalette .lotusMenu{ height: 17.5em !important;}
+.docs_st_biz  .lotusPaletteWidgets{ min-height: 16.7em}
+.docs_st_biz  .lotusPaletteContent .lotusPaging { width: auto;}
+.docs_st_biz  .lotusPaletteDisabledBtn: hover{ cursor: auto !important; border-color: #222222 !important;}
+.docs_st_biz  .lotusPaletteDisabledBtn: focus{ cursor: auto !important; border-color: #222222 !important;}
+.docs_st_biz  .lotusui_ie .lotusLargeWidgets div.lotusIcon { width: 65px !important;}
+.docs_st_biz  .lotusui_ie .lotusLargeWidgets .lotusPaletteWidget div { line-height: 5em !important;}
+.docs_st_biz  .lotusui_ie .lotusLargeWidgets h4 { margin-top: -0.5em !important;}
+.docs_st_biz  .personinlinemenu .h2 { width: auto; word-wrap: break-word;}
+.docs_st_biz  .personinlinemenu .lotusInlinePhoto img { boder: 1px solid #666666; padding: 5px 0;}
+.docs_st_biz  .lconnTypeHighlighted { border: 1px solid #b9cfeb; background: #e6f1fe; color: #666; padding: 0 5px;}
+.docs_st_biz  .lotusMenu .lconnTypeHighlighted { display: inline-block; font-weight: normal; font-size: .9em; margin-top: 2px;}
+.docs_st_biz  .lotusTable .cnxnsType, .docs_st_biz  .lotusTable .lconnTypeHighlighted { font-size: 0.75em; font-weight: normal; margin-left: 5px;}
+.docs_st_biz  .lotusTable .lotusType img, .docs_st_biz  .lotusTable .cnxnsType img, .docs_st_biz  .lotusTable .lconnTypeHighlighted img { display: none;}
+.docs_st_biz  .lotusContent h1 .lconnTypeHighlighted { font-size: .53em; vertical-align: bottom;}
+.docs_st_biz  .lotusui_ie .lotusContent h1 .lconnTypeHighlighted { vertical-align: middle;}
+.docs_st_biz  .cnxsDueDateLate { color: red;}
+.docs_st_biz  #commonTagsSubArea #tagCloud { margin-top: 7px;}
+.docs_st_biz  .lotusUpdateStatus #newsStatusFormDiv { background-color: #B4D5FC;}
+.docs_st_biz  .lotusBoard #wallInput .lotusPostContent { padding: 0;}
+.docs_st_biz  .lotusBoard .lotusPostContent .lotusForm textarea { margin-bottom: 0;}
+.docs_st_biz  #associatedInfoSubArea .attributeTitle { margin-bottom: 10px;}
+.docs_st_biz  .lotusForum .lotusPostDetails { padding: 10px 0;}
+.docs_st_biz  .lotusForum ul.lotusCommentList .lotusChildNoIndent{ margin-left: 0; padding-left: 0px; list-style-type: none; background-position: left top; background-repeat: no-repeat;}
+.docs_st_biz  .lotusui_ie7 .lotusui30 ul.lotusCommentList li.lotusCommentItem ol>li { display: list-item;}
+.docs_st_biz  #miscControl label { margin: 0 5px;}
+.docs_st_biz  .blog .entryContentContainer { margin-top: 5px;}
+.docs_st_biz  .notifyPerson label { margin-left: 3px; margin-top: -2px;}
+.docs_st_biz  .dijitMenuItem td.dijitMenuItemLabel { padding: 4px 20px 4px 5px !important;}
+.docs_st_biz  .dijitMenuItem .dijitMenuItemIcon { margin: 2px; vertical-align: text-top;}
+.docs_st_biz  .dijit_a11y .dijitMenuItem td.dijitMenuItemLabel { position: static;}
+.docs_st_biz  .dijit_a11y .dijitCalendarYearLabel .dijitCalendarSelectedYear { border: 1px solid black;}
+.docs_st_biz  #lotusNavBarContainer .lotusMenu .lotusInlinePhoto a img { margin: 5px 0 10px 0; border: 1px solid #666666;}
+.docs_st_biz  .personinlinemenu .lotusMenu .lotusInlinePhoto a img { margin: 5px 0 10px 0; border: 1px solid #666666;}
+.docs_st_biz  .lotusColLeft .sets { margin-bottom: 10px;}
+.docs_st_biz  #statusMessageDiv h1 { word-wrap: break-word; width: auto; overflow: hidden;}
+.docs_st_biz  .lotusPinnedRow{ background-color: #FFFABD;}
+.docs_st_biz  .lotusui_ie6 .dijitMenu .dijitMenuItem { line-height: 1.55em;}
+.docs_st_biz  .SpinnerOverlay { display: none; position: absolute; text-align: center; margin-left: auto; margin-right: auto;}
+.docs_st_biz  .SpinnerOverlay .spinner { background: transparent url("/connections/resources/web/com.ibm.lconn.core.styles/images/loading.gif?etag=20140219.071924") no-repeat scroll top center; height: 16px;}
+.docs_st_biz  .shadowText { color: #999999; font-style: italic;}
+.docs_st_biz  .lotusui .lconnEmpty { font-style: italic; color: #666;}
+.docs_st_biz  .lotusui .lotusContent .lconnEmpty { margin-top: 20px; margin-bottom: 20px;}
+.docs_st_biz  .dijitMenu .searchDirectory { font-weight: bold; background-image: url("/connections/resources/web/com.ibm.lconn.core.styles/images/iconSearchDark16.png?etag=20140219.071924"); background-repeat: no-repeat; background-position: 2px center; padding-left: 20px; color: #105CB6;}
+
+body.lconnHideContent .lotusBanner, 
+body.lconnHideContent .lotusTitleBar, 
+body.lconnHideContent .lotusTitleBar2, 
+body.lconnHideContent .lotusPlaceBar, 
+body.lconnHideContent .lotusMain, 
+body.lconnHideContent .lotusFooter { display: none !important; }
+
+body.lconnHideLoading .lconnApplicationLoading { display: none; }
+.docs_st_biz  .lconnApplicationLoading { color: #BBB; text-align: center; padding-bottom: 10px; position: absolute; top: 40%; width: 100%; font-size: 2em; line-height: 2em; font-weight: bold;}
+.docs_st_biz  .lotusui_ie .lconnApplicationLoading { top: expression( (documentElement.clientHeight * .4) + "px" );}
+.docs_st_biz  .lotusHeader .lotusTags .lotusDelete img { margin-right: 0;}
+.docs_st_biz  .lotusHeader .lotusRecommend IMG { vertical-align: text-top; margin-right: 2px;}
+.docs_st_biz  .lotusRecommend IMG { vertical-align: text-top; margin-right: 2px;}
+.docs_st_biz  .lotusRecommend a.lotusAction { font-size: 1em !important;}
+.docs_st_biz  .lotusWelcomeBox { padding: 20px;}
+.docs_st_biz  .lotusWelcomeBox a.lotusClose { top: 15px; right: 17px;}
+.docs_st_biz  .lotusWelcomeBox .lconnDemoThumbnail { float: right;}
+.docs_st_biz  .lotusWelcomeBox .lconnDemoThumbnail img { width: 48px; height: 48px; vertical-align: baseline; margin: 0px;}
+.docs_st_biz  .lotusWelcomeBox .lconnDemoThumbnail div { text-align: center;}
+.docs_st_biz  .lotusWelcomeBox .lconnDemoThumbnail div a { font-size: 0.9em; font-weight: bold; text-decoration: none;}
+.docs_st_biz  .lotusWelcomeBox p, .docs_st_biz  .lotusWelcomeBox ul { padding-right: 100px;}
+.docs_st_biz  .lotusWelcomeBox .lconnSprite-iconHelp16 { margin: 2px; vertical-align: text-top;}
+.docs_st_biz  .lconnTabBody { padding-left: 10px;}
+.docs_st_biz  .lconnTabBody .lotusVertTable th, .docs_st_biz  .lconnTabBody .lotusVertTable td { padding-left: 0;}
+.docs_st_biz  .lconnTabBody .lotusFeeds { margin: 0; margin-top: 10px;}
+.docs_st_biz  .lconnTabBody div.lotusSort { margin-left: 0;}
+.docs_st_biz  .lconnTabBody p.lotusChunk { margin: 10px 0 0 0;}
+.docs_st_biz  .lconnTabBody table.lotusTable .lotusFirstCell { padding-left: 0;}
+.docs_st_biz  .lconnTabBody table.lotusTable td { padding-top: 3px; padding-bottom: 3px; padding-left: 3px; padding-right: 10px; border-top: 0;}
+
+ul.XlotusCompactList li { margin: 0; margin-top: 2px; padding: 0; }
+.docs_st_biz  .lotusDivider { padding: 0 5px;}
+.docs_st_biz  .lotusui_ie6 .lotusForm2 fieldset, .docs_st_biz  .lotusui_ie6 .lotusForm fieldset { position: relative;}
+.docs_st_biz  .lotusui a.lotusDelete { text-decoration: none !important;}
+.docs_st_biz  .lotusui_ie6 .lotusColLeft, .docs_st_biz  .lotusui_ie6 .lotusColRight { position: relative;}
+.docs_st_biz  .lotusFeeds .lotusInlinelist li a.lotusFeed{ margin-right: 0px;}
+.docs_st_biz  .lotusTitleBar .lotusSearch .lotusSearchButton{ color: #fff;}
+.docs_st_biz  .lotusui_ie6 img.lconnImageReset, .docs_st_biz  .lotusui_ie6 .lotusLogin2 .lotusLoginForm img.lotusIBMLogo { vertical-align: baseline;}
+.docs_st_biz  .lconnDownloadableIcon { position: relative; display: block;}
+.docs_st_biz  .lotusui_ie6 .lconnDownloadableIcon { zoom: 1;}
+.docs_st_biz  .lconnDownloadableIcon .lconnDownloadOverlay { position: absolute; right: 0; bottom: -1px;}
+.docs_st_biz  .dijitPopup .lotusHelp, .docs_st_biz  .dijitTooltipDialog .lotusHelp, .docs_st_biz  .lotusTooltipDialog .lotusHelp { position: relative; left: 0; top: 0; width: auto;}
+.docs_st_biz  .lotusui .dijitTooltipContainer { font-size: 1em;}
+.docs_st_biz  .lotusHelp .lotusInfoBox h3 { float: none; margin-left: 0; padding-left: 0}
+.docs_st_biz  .lotusTooltipDialog .dijitTooltipContainer { background-image: none; background-color: transparent; border: 0; padding: 0;}
+.docs_st_biz  .lotusTooltipDialog .dijitTooltipConnector { display: none;}
+.docs_st_biz  .lconnExternalAccess{ background-color: #666; color: white; padding: 0.1em;}
+.docs_st_biz  .BrowseGroups .fieldAddDisabled { height: 16px; width: 16px; background: transparent url("/connections/resources/web/com.ibm.lconn.core.styles/images/iconAdd.gif?etag=20140219.071924") no-repeat scroll center center; opacity: 0.4; -moz-opacity: 0.4; filter: alpha(opacity=40); border: none;}
+.docs_st_biz  .BrowseGroups .dijit_a11y .fieldAddDisabled { height: 16px; width: 16px; background: transparent url("/connections/resources/web/com.ibm.lconn.core.styles/images/iconAdd.gif?etag=20140219.071924") no-repeat scroll center center; opacity: 0.4; -moz-opacity: 0.4; filter: alpha(opacity=40); border: none;}
+.docs_st_biz  .BrowseGroups .groupList { background-color: white; border: 1px solid #AAA; overflow: auto; display: block; height: 135px; padding: 0; width: 440px; overflow: auto; margin-top: 5px; margin-left: 0;}
+.docs_st_biz  .BrowseGroups .dijitMenuItem { white-space: nowrap; padding: 0 0; overflow: visible;}
+.docs_st_biz  .BrowseGroups .lotusBreadcrumbs { margin: 12px 0px 0px 0px;}
+.docs_st_biz  .BrowseGroups .lotusDialog ul li { margin-bottom: 0px;}
+.docs_st_biz  .BrowseGroups .selectedLabel { font-weight: bold;}
+.docs_st_biz  .BrowseGroups .lotusFormFieldRow td { padding-bottom: 5px !important;}
+.docs_st_biz  .BrowseGroups .groupSelect { padding-left: 5px;}
+.docs_st_biz  .BrowseGroups .browseLink { padding-top: 0px;}
+.docs_st_biz  .lotusui_ie  .lotusPlaceBar .lotusBtnContainer{ overflow: visible}
+.docs_st_biz  .lconnFileUpload { position: relative; padding: 0 20px; z-index: 1}
+.docs_st_biz  .lconnFileUploadIcon { position: absolute; left: 0; top: 0;}
+.docs_st_biz  .dj_iequirks .lconnFileUploadIcon { left: -20px;}
+.docs_st_biz  .lconnFileUploadLabel { width: 100%;}
+.docs_st_biz  .lconnFileUploadLabel .lconnFilenameContainer { overflow: hidden; text-overflow: ellipsis; width: 100%; display: block; white-space: nowrap;}
+.docs_st_biz  .lconnFileUploadAction { position: absolute; right: 0; top: 0;}
+.docs_st_biz  .lconnFileUploadDisabled a { color: #000 !important; text-decoration: none !important; cursor: text !important;}
+.docs_st_biz  .lconnFileUploadDisabled .lconnFileUploadAction a { display: none !important;}
+.docs_st_biz  .lconnFileUploadDisabled .lconnFileUploadIcon, .docs_st_biz  .lconnFileUploadDisabled .lconnFileUploadLabel, .docs_st_biz  .lconnFileUploadDisabled .lconnFileUploadStatus { opacity: 0.5; filter: alpha(opacity=50);}
+.docs_st_biz  .lconnFileUploadDisabled .lconnFileUploadStatus .lotusInlinelist { display: none;}
+.docs_st_biz  .lconnFileUploadDisabled .lconnFileUploadStatus_IsDuplicate, .docs_st_biz  .lconnFileUploadDisabled .lconnFileUploadStatus_FileRenamed, .docs_st_biz  .lconnFileUploadDisabled .lconnUploadContainer { display: none;}
+.docs_st_biz  .lconnFileUploadEditing .lconnFileUploadStatus_IsDuplicate { display: none;}
+.docs_st_biz  .lconnFileUploadStatus { padding-top: 1px; padding-bottom: 2px;}
+.docs_st_biz  .lconnFileUploadStatus .lotusMessage { border: none; padding: 3px; margin-bottom: 2px;}
+.docs_st_biz  .lconnFileUploadStatus .lotusInlinelist { display: inline;}
+.docs_st_biz  .lconnFocusHelper { z-index: 2; position: relative;}
+.docs_st_biz  .lconnInvisibleMovie { background-color: transparent; opacity: 0; position: absolute; top: 0; left: 0; z-index: 3; cursor: crosshair;}
+.docs_st_biz  .lconnUploadContainer { display: inline-block; position: relative; z-index: 2;}
+.docs_st_biz  .lconnUploadMultiple .lconnUploadHover { background-color: #f0f0f0;}
+.docs_st_biz  .lconnFileUploadAction .lconnRemoveLink { padding: 0 4px;}
+.docs_st_biz  .lotusui_ie .lconnInvisibleMovie, .docs_st_biz  .lotusui_ie8 .lconnInvisibleMovie { filter: alpha(opacity=0);}
+.docs_st_biz  .lconnFileInput { z-index: 1; overflow: hidden;}
+.docs_st_biz  .lotusui_ie6 .lconnFileUpload { zoom: 1;}
+.docs_st_biz  .lotusui .lconnSelectAllContainer { padding-left: 10px; padding-right: 5px;}
+.docs_st_biz  .lotusui_ie .lconnSelectAllContainer { padding-top: 1px;}
+.docs_st_biz  .lotusui .lotusTable .lconnSelectAllContainer input.lotusCheckbox, .docs_st_biz  .lotusui .lotusTable .lotusFirstCell input.lotusCheckbox { margin-right: 1px;}
+.docs_st_biz  .lotusui .qkrIcon32  .lconnSelectAllContainer input.lotusCheckbox, .docs_st_biz  .lotusui .qkrIcon32  .lotusFirstCell input.lotusCheckbox { margin-right: 2px;}
+.docs_st_biz  .lotusui .qkrIcon32  td.lotusFirstCell input.lotusCheckbox { margin-top: 10px;}
+.docs_st_biz  .lotusui_ie .qkrIcon32  td.lotusFirstCell input.lotusCheckbox { margin-top: 6px;}
+.docs_st_biz  .lconnCompactMessage .lotusMessage { margin: 0; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;}
+.docs_st_biz  .lotusMessage span { margin: 0px 20px;}
+.docs_st_biz  .lotusui30 .lotusDialog .lotusFormTable td { padding: 0 3px 10px 0;}
+.docs_st_biz  .lotusui30 .lotusDialog .lotusDialogContent .lotusFormTable { padding: 0;}
+.docs_st_biz  .lotusui30 .lotusNavMenu .dijitTooltipFocusNode{ padding: 0;}
+.docs_st_biz  .lotusui30 .lotusNavMenu tr img { margin: 0 3px 0 8px;}
+.docs_st_biz  .lotusui30 .lotusNavMenu tr th span { display: block;margin: 1px;padding: 10px;}
+.docs_st_biz  .lotusui30dojo .dijitMenuActive .dijitMenuItemHover, .docs_st_biz  .lotusui30dojo .dijitMenuActive .dijitMenuItemSelected { background-color: #E1F4F9 !important;}
+.docs_st_biz  .lotusui30dojo .dijitMenuActive .dijitMenuItemHover a, .docs_st_biz  .lotusui30dojo .dijitMenuActive .dijitMenuItemHover a:link, .docs_st_biz  .lotusui30dojo .dijitMenuActive .dijitMenuItemHover a:visited, .docs_st_biz  .lotusui30dojo .dijitMenuActive .dijitMenuItemSelected a, .docs_st_biz  .lotusui30dojo .dijitMenuActive .dijitMenuItemSelected a:link, .docs_st_biz  .lotusui30dojo .dijitMenuActive .dijitMenuItemSelected a:visited { background-color: #E1F4F9 !important;}
+.docs_st_biz  .lotusui30dojo .dijitCalendarContainer { border: solid 1px #aaaaaa; background-color: #ffffff; text-align: center; -webkit-box-shadow: 0 2px 5px #eeeeee; -moz-box-shadow: 0 2px 5px #eeeeee; box-shadow: 0 2px 5px #eeeeee;}
+.docs_st_biz  .lotusui30 .lotusPlaceBar h2 a, .docs_st_biz  .lotusui30 .lotusPlaceBar h2 a: visited { color: #222222;}
+.docs_st_biz  .lotusui30 .lotusHeading img.lotusIcon{ margin-right: 7px}
+.docs_st_biz  .lotusui30 .lotusTabContainer .lotusWidget{ margin: 0 0 20px; padding: 0; border-width: 0; width: auto;}
+.docs_st_biz  .lotusui30 .lotusTabContainer .lotusWidget h2{ margin-bottom: 0; font-size: 1em;}
+.docs_st_biz  .lotusui30 .lotusTabContainer .lotusWidget .lotusTabTitle { outline: none; float: left; padding-top: 6px; padding-bottom: 3px;}
+.docs_st_biz  .lotusui30 .lotusTabContainer .lotusWidget .lotusTabActionMenu { float: left; padding-bottom: 5px; padding-top: 2px;}
+.docs_st_biz  .lotusui30 .lotusTabContainer .lotusWidget h2 a.lotusActionMenu { padding: 0px;}
+.docs_st_biz  .lotusLogin2 .lotusForm2 .lotusFormError{ display: block;}
+.docs_st_biz  .lotusui30 .lotusVCard, .docs_st_biz  #cardDiv { display: table; position: absolute; width: 400px; color: #444444; font-size: 1em; border: 3px solid #ababab; border: 3px solid rgba(3,  3,  3,  0.45); -moz-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 0 5px rgba(34,  34,  34,  0.5); -webkit-box-shadow: 0 0 5px rgba(34,  34,  34,  0.5); box-shadow: 0 0 5px rgba(34,  34,  34,  0.5); background-color: #fff; z-index: 10000; zoom: 1; }
+.docs_st_biz  .lotusui30 .lotusVCard .lotusAppLinks td, .docs_st_biz  #cardDiv .lotusAppLinks td { background: none; border: none; background-color: #fff; text-align: left; line-height: 1;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusAppLinks td a { padding: 0 8px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusAppLinks a { display: inline; padding: 0 10px; border-width: 0 0 0 1px; border-style: solid; border-color: #c5c5c5; color: #003f69; font-size: 0.9em;}
+
+body.dijitRtl .docs_st_biz .lotusui30 .lotusVCard .lotusAppLinks a {border-width: 0 1px 0 0;}
+body.dijitRtl .docs_st_biz .lotusui30 .lotusVCard .lotusAppLinks td, .docs_st_biz #cardDiv .lotusAppLinks td {text-align: right;}
+body.dijitRtl .docs_st_biz .lotusui30 .lotusVCard #cardHeader>td>table {margin: 12px 5px 12px 0; direction: rtl;}
+body.dijitRtl .docs_st_biz  .lotusui30 .lotusVCard .lotusPersonActions .lotusInlinelist li a img { margin-right: 4px;}
+
+.docs_st_biz  .lotusui30 .lotusVCard .lotusAppLinks td.lotusFirst a { border-left-width: 0; padding-left: 11px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusMore { margin-right: 40px; background-position: 10px -2418px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusMoreExpanded { background-position: 10px -2471px;}
+.docs_st_biz  .lotusui30 .lotusVCard #cardHeader>td>table { width: 98%; margin: 12px 0 12px 5px;}
+.docs_st_biz  .lotusui30 .lotusVCard tr#appLinksNext table { margin-top: 5px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusDetails { padding: 0px 16px 20px;}
+.docs_st_biz  .lotusui30 .lotusVCard #cardTable .lotusDetails { background-color: #FFFFFF;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusDetails p, .docs_st_biz  .lotusui30 .lotusVCard .lotusDetails div.adr { margin-left: 126px; line-height: 1.2; font-size: 12px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusDetails div.adr p { margin-left: 0;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusDetails .title { margin-top: 12px; font-weight: bold;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusDetails .lotusRight { margin-top: 20px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPhoto img { width: 100px; height: 100px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPhoto { border: 0 none; padding: 5px; margin-top: 14px;}
+.docs_st_biz  .lotusui30 .lotusVCard h2 { position: relative; color: #003f69; font-size: 18px; font-weight: normal;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPersonInfo { color: #444444; font-size: 11px; margin: 14px 0 0;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPersonInfo h2 { margin-left: 126px; width: 230px;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusVCard .lotusPersonInfo h2 { padding-bottom: 5px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPersonInfo h2 span { vertical-align: top; line-height: 1;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPersonActions .lotusInlinelist li { border-color: #ccc;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPersonActions .lotusInlinelist li a img { margin-left: 4px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPersonActions { padding: 0 16px 12px; font-size: 11px;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPersonActions { border: none; margin-top: -5px; position: relative; overflow: auto;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusPersonActions .email img { display: none;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusActionMenu { margin-top: 0; position: relative; overflow: auto;}
+.docs_st_biz  .lotusui30 .lotusVCard .lotusActionMenu a, .docs_st_biz  .lotusui30 .lotusVCard .lotusActionMenu a: visited { padding-left: 20px;}
+.docs_st_biz  .lotusui30 .lotusTitleBar2 .lotusInner .lotusSearch .lotusLayout .lotusScope{  border-right: 1px solid #E3E3E3; font-size: 1em; line-height: 1.33em; min-width: 11em; padding-right: 14px;}
+.docs_st_biz  .lotusui_ie7 .lotusui30 .lotusTitleBar2 .lotusInner .lotusSearch .lotusLayout .lotusScope{  min-width: 0;}
+.docs_st_biz  .lotusui30 .lotusTitleBar2 .lotusRightCorner{ margin: 0 auto; max-width: 1190px; min-width: 980px; padding: 0 5px;}
+.docs_st_biz  .lotusui30 .lotusTitleBar2 img.lotusIcon { margin-bottom: -3px;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusBoard .lotusStreamUpdate .lotusText { overflow: auto;}
+.docs_st_biz  .lotusui30dojo .dijitDialog { border: 0px; -webkit-box-shadow: 0 0 0px rgba(0,  0,  0,  0.4); -moz-box-shadow: 0 0 0px rgba(0,  0,  0,  0.4); box-shadow: 0 0 0px rgba(0,  0,  0,  0.4); }
+.docs_st_biz  .lotusui30dojo .dijitDialogPaneContent { background: none; padding: 0px; position: static;}
+.docs_st_biz  .lotusui30dojo .dijitTooltipContainer { padding: 0px;}
+.docs_st_biz  .lotusui30dojo div.lcSharebox { -webkit-box-shadow: 0 0 15px rgba(0,  0,  0,  0.4); -moz-box-shadow: 0 0 15px rgba(0,  0,  0,  0.4); box-shadow: 0 0 15px rgba(0,  0,  0,  0.4); }
+.docs_st_biz  .lotusui30dojo .dijitDialogTitleBar { display: none;}
+.docs_st_biz  .lotusui30dojo .lcSharebox .dijitDialogTitleBar { display: block;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusNavMenu tr img { margin-top: 0;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusNavMenu tr th img { margin-top: -10px;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusNavMenu tr td .lotusPerson img { margin-top: 0px;}
+.docs_st_biz  .lotusui30 .lotusNavMenu tr .lotusPerson img { margin: 0 3px;}
+.docs_st_biz  .lotusui30 .lotusNavMenu { margin-top: -3px;}
+.docs_st_biz  .lotusui30 .lotusNavMenu .dijitTooltipContainer { box-shadow: none;}
+.docs_st_biz  .lotusui30dojo .dijitMenuItemHover { background-color: #E1F4F9;}
+.docs_st_biz  .lotusui30 .lotusDelete .lotusMessage { margin-left: 50px;}
+.docs_st_biz  .lotusui30 .lotusDelete .lotusFormHeader { border-bottom: 1px solid #AAAAAA; margin-bottom: 10px;}
+.docs_st_biz  .lotusui30 .lotusDelete .lotusFormHeader img { float: left;}
+.docs_st_biz  .lotusui30 .lotusDelete .lotusFormHeader p { margin-bottom: 20px; margin-left: 50px;}
+.docs_st_biz  .lotusui30 .lotusDelete .lotusFormTitle, .docs_st_biz  .lotusui30 .lotusDelete .lotusFormBody { margin-left: 50px; padding-left: 0;}
+.docs_st_biz  .lotusui30 .lotusForm td label { font-weight: normal;}
+.docs_st_biz  .lotusui30 .lotusForm td.lotusFormLabel { font-weight: normal; text-align: left;}
+.docs_st_biz  .lotusui30 .lotusHeader.lconnSearchHeader { margin-bottom: 4px;}
+.docs_st_biz  .lotusui30 .lotusFilters2 .lotusSearchFilterSection { border-bottom: 1px solid #eee; margin-bottom: 0.25em; padding-bottom: 5px;}
+.docs_st_biz  .lotusui30 .lotusFilters2 .lotusSearchFilterSection div { display: inline-block;}
+.docs_st_biz  .lotusui30 .lotusFilters2 .lotusSearchFilterSection a.lotusFilter{ margin-top: 5px;}
+.docs_st_biz  .lotusui30 .lconnSearchResults .lconnPromotedStatusUpdatesContainer div.lotusHeader { margin-top: 15px; margin-bottom: 3px;}
+.docs_st_biz  .lotusui30 .lconnSearchResults .lconnPromotedStatusUpdatesContainer .lotusHeader h1 { display: inline; margin-right: 15px;}
+.docs_st_biz  .lotusui30 .lconnSearchResults .lconnPromotedStatusUpdatesContainer .lotusTable { border-bottom: 1px solid #EEE;}
+.docs_st_biz  .lotusui30 .lconnSearchResults div.lotusHeader.lconnSearchResultsHeading { margin-top: 15px; margin-bottom: 3px;}
+.docs_st_biz  .lotusui30 .lconnSearchResults .lotusSort a.lotusDisabled{ text-decoration: none;  color: #222;  pointer-events: none;  cursor: default;}
+.docs_st_biz  .lotusui30 .lconnSearchResults .lconnSearchComponentCategory img { margin-right: 3px;}
+.docs_st_biz  .lconnSearchResults .lconnProfilesPhotoContainer { height: 65px;}
+.docs_st_biz  .lconnSearchResults .lconnStatusUpdatePhotoContainer { height: 55px;}
+.docs_st_biz  .lconnSearchResults h4 {  display: inline;}
+.docs_st_biz  .lconnSearchResults .lconnSearchHighlight b, .docs_st_biz  .lconnSearchResults a.lconnSearchHighlight, .docs_st_biz  .lconnSearchResults h4 a b {  background-color: #B1EBF9;}
+.docs_st_biz  .lconnSearchResults .lconnSearchHighlight b {  font-weight: normal;}
+.docs_st_biz  .dijit_a11y .lconnSearchResults .lconnSearchHighlight b, .docs_st_biz  .dijit_a11y .lconnSearchResults a.lconnSearchHighlight, .docs_st_biz  .dijit_a11y .lconnSearchResults h4 a b {  font-style: italic;}
+.docs_st_biz  .lconnSearchResults a: visited { color: #551a8b;}
+.docs_st_biz  .lotusui30 .lconnSearchResults .lconnSearchBookmarkUrl { color: #228822;}
+.docs_st_biz  .lotusui30 .lconnSearchResults .lconnSearchIdeaGraduated { padding: 3px 5px; margin-left: 4px; margin-right: 4px; color: #105CB6; border: 1px solid #8AC4FF; display: inline-block; background-color: #C5E2FF;}
+.docs_st_biz  .lotusDialog .lotusSearchWideDialog { min-width: 600px;}
+.docs_st_biz  .lotusui30 .lotusGlobalSearch .lotusSearch .lotusText: focus, .docs_st_biz  .lotusui30 .lotusGlobalSearch .lotusSearch .lotusText: active { color: #222;}
+.docs_st_biz  .lotusui30 .lotusGlobalSearch .lotusSearch .lotusText { border: 0; padding-top: 4px; padding-right: 0; padding-bottom: 3px; background: none; color: #666;}
+.docs_st_biz  .lotusui30 .lotusGlobalSearch .lotusSearch .lotusLayout { border:1px solid #ececec;
+background:#f1f1f1;
+background:-moz-linear-gradient(center top,  #f4f4f4 25%,  #f1f1f1 100%);
+background:-webkit-gradient(linear,  left top,  left bottom,  from(#f4f4f4),  color-stop(25%,  #f4f4f4),  to(#f1f1f1));
+-moz-border-radius:15px;
+-webkit-border-radius:15px;
+border-radius:15px; }
+.docs_st_biz  .lotusui30 .lotusGlobalSearch .lotusSearch .lotusBtnImg { border: 0; margin-top: 1px; margin-bottom: 4px; margin-left: 1px; background: none;}
+.docs_st_biz  .lotusui30 .lconnSearchHeader .lotusGlobalSearch .lotusSearch .lotusText { padding-left: 9px; width: 99%;}
+.docs_st_biz  .lotusui30 .lconnSearchHeader .lotusGlobalSearch .lotusSearch .lotusLayout { width: 100%;}
+.docs_st_biz  .lotusui30 .lconnSearchHeader .lotusGlobalSearch .lotusSearch .lotusLayout td { width: 100%;}
+.docs_st_biz  .lotusui30 .lconnSearchHeader .lotusGlobalSearch .lotusSearch .lotusBtnImg { margin-right: 5px; padding: 1px}
+.docs_st_biz  .lconnSearchDidYouMean { margin-top: 12px;}
+.docs_st_biz  .lotusDim { opacity: 0.5; filter: alpha(opacity=50);}
+.docs_st_biz  .lotusui30 .lotusPaletteWidget { table-layout: fixed;}
+.docs_st_biz  .lotusui30 .lotusPaletteWidget .lotusWidgetTitle h4.lotusTitle { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.docs_st_biz  .lotusui30 .lotusPaletteWidget .lotusWidgetTitle .lotusTitle span { font-size: 100%; color: #086B3e;}
+.docs_st_biz  .lotusImagesOff.lotusui30 .lotusBtnDisabled{ opacity: 0.50 !important; filter: alpha(opacity=50) !important;}
+.docs_st_biz  .lotusui30.lotusImagesOff .lotusBoard .lotusStreamUpdate .lotusText, .docs_st_biz  .lotusImagesOff .lotusui30 .lotusBoard .lotusStreamUpdate .lotusText{ background: #fff;}
+.docs_st_biz  .lotusui_ie .dijitMenuItem { border: 1px solid transparent;}
+.docs_st_biz  .lotusui_ie .lotusui30dojo .dijitMenuTable { border-collapse: collapse;}
+.docs_st_biz  .lotusPaletteClose { padding: 3px; margin-left: 20px;}
+.docs_st_biz  .lotusui_ie .lotusui30 .peopleList .notifyPerson label.lotusCheckbox { position: static;}
+.docs_st_biz  .lotusui30 div.lotusBanner ul li span.lotusUser { padding: 10px 18px;}
+.docs_st_biz  .lotusui30 div.lotusBanner .lotusRightCorner { border-top: none;}
+.docs_st_biz  .lotusui30 div.lotusBanner .lotusLogo .lotusAltText { margin: 10px 20px 10px 0;}
+.docs_st_biz  .lotusui_ie .lotusui30 div.lotusBanner .lotusLogo img { margin-top: 10px;}
+.docs_st_biz  .lotusui30 div.lotusBanner .lotusLogo img { margin-top: 12px; margin-bottom: 10px;}
+.docs_st_biz  .lotusui30 div.lotusBanner ul li a { padding: 11px 16px 9px;}
+.docs_st_biz  .lotusui30 div.lotusBanner ul.lotusUtility li a { padding: 10px 11px;}
+.docs_st_biz  .lotusui30 div.lotusBanner ul.lotusUtility .lotusBranding { padding: 10px 0 10px 11px;}
+.docs_st_biz  .lotusui30 div.lotusPlaceBar .lotusInner { padding: 10px 0;}
+.docs_st_biz  .lotusui30 div.lotusPlaceBar h2 { padding-top: 0; font-size: 1.2em;}
+.docs_st_biz  .lotusui30 div.lotusTitleBar h2 { padding-top: 12px;}
+.docs_st_biz  .lotusui30 div.lotusTitleBar .lotusInner { height: 4.2em;}
+.docs_st_biz  .lotusui30 div.lotusTitleBar .lotusSearch { top: 13px;}
+.docs_st_biz  .lotusui30 div.lotusTitleBar2 .lotusInner { padding: 12px 0 10px;}
+.docs_st_biz  .lotusui30 div.lotusTitleBar2 .lotusHeading { font-size: 1.5em;}
+.docs_st_biz  .lotusui30 div.lotusTitleBar2 .lotusSearch { margin-top: 2px;}
+.docs_st_biz  .lotusui30 a[name]: hover { color: #000000; text-decoration: none;}
+.docs_st_biz  .lotusui30 a[name] { color: #000000;}
+.docs_st_biz  .lotusui30 .lotusTitleBar2 .lotusHeading a, .docs_st_biz  .lotusui30 .lotusTitleBar .lotusHeading a { color: #222222;}
+.docs_st_biz  .dj_webkit .lotusui30 .lotusForm.lotusDialog .lotusText { width: 97%; margin: 0;}
+.docs_st_biz  .dj_webkit .lotusui30 .lotusForm.lotusDialog textarea { margin: 0;}
+.docs_st_biz  .lotusui30 #editCommunityForm .lotusForm .lotusFormTitle h2 { margin-left: 0;}
+.docs_st_biz  .lotusui30 #editCommunityForm .lotusForm .lotusFormTable td.lotusFormFooter { padding-left: 0;}
+.docs_st_biz  .lotusui30 #editCommunityForm .lotusForm2 .lotusFormTitle { padding-left: 0;}
+.docs_st_biz  .lotusui30 #editCommunityForm .lotusForm2 .lotusFormFooter { padding-left: 0;}
+.docs_st_biz  .lotusui30 #editCommunityForm .lotusLeftLabels .lotusFormBody, .docs_st_biz  .lotusui30 #editCommunityForm .lotusForm2 .lotusFormBody { padding-left: 0;}
+.docs_st_biz  .lotusui30 #editCommunityForm .lotusLeftLabels label, .docs_st_biz  .lotusui30 #editCommunityForm .lotusLeftLabels .lotusFormLabel  { margin-left: 0;}
+.docs_st_biz  .lotusui30 .lotusPaletteWidget a.lotusIcon { opacity: 0.95;}
+.docs_st_biz  .lotusui30 .lotusAccess { width: auto;}
+.docs_st_biz  .lotusui30 .lotusNavMenu .dijitContentPaneError, .docs_st_biz  .lotusui30 .lotusNavMenu .dijitContentPaneLoading { background-color: #fff; display: block; padding: 10px; white-space: nowrap;}
+.docs_st_biz  .lotusui30 .lotusNavMenu .lotusMessage2 { background-color: #fff; border-color: #fff; padding: 10px; margin-bottom: 0px;}
+.docs_st_biz  .lotusui30 .lotusNavMenu .lotusMessage2 .lotusMessageBody { white-space: nowrap;}
+.docs_st_biz  .lotusui_ie .lotusNavMenu.lotusNavMenuError { position: static;}
+ .lotusui30 .docs_st_biz .lotusImagesOff .lotusVCardHover, .lotusImagesOff .lotusui30 .docs_st_biz  .lotusVCardHover { background-color: #fff;}
+.docs_st_biz  .lconnWidgetMsgError { font-size: 0.9em; vertical-align: top; padding-left: 10px;}
+.docs_st_biz  .lconnWidgetMsgError b { padding-left: 10px;}
+.docs_st_biz  .lconnWidgetMsgError.lconnWidgetMsgCompact { padding-left: 5px;}
+.docs_st_biz  .lotusui30 .lotusVCard h2.awareness { padding-left: 18px!important;}
+.docs_st_biz  .lotusui30 .lotusLikeLightBox ul.lotusList li { padding: 5px;}
+.docs_st_biz  .lotusui30dojo .dijitMenuSeparatorTop { border-bottom: 1px dotted #ccc;}
+.docs_st_biz  .lotusui30 .lotusNavMenu tr #recentCommunities { padding: 5px 10px;font-size: 0.9em;color: #666;}
+.docs_st_biz  .lotusLogin2 .lotusMessage2 { margin: 30px auto 10px; width: 465px;}
+.docs_st_biz  .lconnHighlight .dijitMenuItemSelected { background-color: #E1F4F9; color: black;}
+.docs_st_biz  .lotusui30 .lotusLike .lconnLikeCountNoBackground { padding: 2px 4px 2px 22px; margin-right: 7px; position: relative; display: inline-block;}
+.docs_st_biz  .lotusui30 .lotusLike .lconnLikeCountNoBackground .lotusIconLike { position: absolute; left: 3px;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusLike .lconnLikeCountNoBackground { display: inline; zoom: 1; margin-right: 8px;}
+.docs_st_biz  .lotusui30.lotusImagesOff .lotusLike .lconnLikeCountNoBackground, .docs_st_biz  .lotusImagesOff .lotusui30 .lotusLike .lconnLikeCountNoBackground { padding-left: 5px;}
+.docs_st_biz  .lotusLoadingBox { color: #FFF; background: #444; background: -moz-linear-gradient(rgba(62,   62,   62,   0.80),  rgba(37,  37,  37,  0.80)) repeat scroll 0 0 transparent; background: -webkit-gradient(linear,  0 0,  0 100%,  from(rgba(62,   62,   62,   0.80)),  to(rgba(37,  37,  37,  0.80))) repeat scroll 0 0 transparent; background: linear-gradient(rgba(62,   62,   62,   0.80),  rgba(37,  37,  37,  0.80)) repeat scroll 0 0 transparent; border: 1px solid #FFFFFF; -moz-border-radius: 0 0 0 0; border-radius: 0 0 0 0; -moz-box-shadow: 0 0 7px rgba(0,  0,  0,  0.3); font-size: 1.0em; padding: 4px 5px; position: fixed; left: 48%; top: 0; margin-top: 45px; }
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusBoard .lotusStreamUpdate .lotusText { background-color: #FFF;}
+.docs_st_biz  .lotusui .lotusLargeWidgets .lotusPaletteWidget div.lotusIcon { width: 65px !important;}
+.docs_st_biz  .lotusui30 .lotusLikeLightBox .lotusLikeAvatar { vertical-align: middle;}
+.docs_st_biz  .lotusui30 .lotusLikeLightBox .lotusLikeAvatarLink { vertical-align: middle; margin-left: 32px; padding: 7px;}
+.docs_st_biz  .lotusui30 .lotusLikeLightBox ul.lotusList li a { margin: 0px; padding: 0px; display: inline;}
+.docs_st_biz  .lotusui30 .lotusLikeLightBox ul.lotusList li:hover, .docs_st_biz  .lotusui30 .lotusLikeLightBox ul.lotusList li:focus, .docs_st_biz  .lotusui30 .lotusLikeLightBox ul.lotusList li:active { background-color: #E1F4F9;}
+.docs_st_biz  .lotusui30.lotusImagesOff .lotusBanner ul.lotusInlinelist li a:hover, .docs_st_biz  .lotusImagesOff .lotusui30 .lotusBanner ul.lotusInlinelist li a:hover, .docs_st_biz  .lotusui30.lotusImagesOff .lotusBanner ul.lotusInlinelist li a:focus, .docs_st_biz  .lotusImagesOff .lotusui30 .lotusBanner ul.lotusInlinelist li a:focus, .docs_st_biz  .lotusui30.lotusImagesOff .lotusBanner ul.lotusInlinelist li a:active, .docs_st_biz  .lotusImagesOff .lotusui30 .lotusBanner ul.lotusInlinelist li a:active, .docs_st_biz  .lotusui30.lotusImagesOff .lotusBanner ul.lotusInlinelist li.lotusHover a, .docs_st_biz  .lotusImagesOff .lotusui30 .lotusBanner ul.lotusInlinelist li.lotusHover a { outline-color: invert; outline-style: dotted; outline-width: 1px;}
+.docs_st_biz  .lconnNotify { font-size: .9em; width: 170px; height: 20px; overflow: hidden; text-overflow: ellipsis; -ms-text-overflow: ellipsis; white-space: nowrap;}
+.docs_st_biz  .lconnNotify input { display: block;}
+.docs_st_biz  .lconnNotify label { height: 20px; line-height: 18px; overflow: hidden; white-space: nowrap; width: 145px; display: block; text-overflow: ellipsis;}
+.docs_st_biz  .lotusui30 .lotusMessage { font-weight: normal;}
+.docs_st_biz  .lconnOAuthLoading { display: inline-block; width: 16px; height: 16px; margin: 4px;}
+.docs_st_biz  .lotusui30 .lotusFlyoutInner { padding: 0 10px;}
+.docs_st_biz  .lotusui30 .lotusNavMenu { background-color: rgb(255, 255, 255); }
+.docs_st_biz  .lconnStMenuItem .dijitMenuItemIcon { width: 9px; height: 9px; margin-left: 5px; margin-top: 3px;}
+.docs_st_biz  .lotusui30 .lotusFooter li.lotusHidden { display: none;}
+.docs_st_biz  .lotusui30 .lotusOffScreen { top: auto; left: -9999px;}
+.docs_st_biz  .lotusMentionsDiv { -webkit-user-select: text; -moz-appearance: textfield-multiline; white-space: pre-wrap; word-wrap: break-word; border: 1px solid gray; overflow: auto; padding: 5px; width: auto;}
+.docs_st_biz  .lotusMentionsTypeaheadField { position: absolute; visibility: hidden; height: 0px; width: 0px;}
+.docs_st_biz  .lotusui_ie .lconnTypeAhead { overflow: hidden; padding-top: 1px;}
+.docs_st_biz  .lotusui30 .lotusBoard .lotusStreamUpdate .lotusTextCollapsed.lotusText { overflow: hidden;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusBoard .lotusStreamUpdate div.lotusTextCollapsed.lotusText{ height: 1.5em;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusBoard .lotusStreamUpdate .lotusText { padding-top: inherit; padding-bottom: inherit;}
+.docs_st_biz  .lotusui30 .personinlinemenu .lotusMenu .lotusInner { width: 200px;}
+.docs_st_biz  .lotusui30 .personinlinemenu .lotusMenu h3 a.lotusArrow { background-color: #fff;}
+.docs_st_biz  .lotusui30 .personinlinemenu .lotusMenu h3 a.discussCommunityLink { display: inline; background-color: #fff;}
+.docs_st_biz  .lotusui30 .personinlinemenu .lotusMenu li.lconnCommLogo a:hover, .docs_st_biz  .lotusui30 .personinlinemenu .lotusMenu li.lconnCommLogo a:focus, .docs_st_biz  .lotusui30 .personinlinemenu .lotusMenu li.lconnCommLogo a:active { background-color: #fff;}
+.docs_st_biz  .lotusui_ie .lotusui30 .lotusHelp .lotusHelpHeader { clear: both; width: 100%;}
+.docs_st_biz  .lotusui30 .lotusHelp .lotusHelpHeader{ margin: 0px 0px 0px 0px;}
+.docs_st_biz  .lotusui30.lotusImagesOff .lotusPostAvatar, .docs_st_biz  .lotusImagesOff .lotusui30 .lotusPostAvatar { display: inline;}
+.docs_st_biz  .lotusui_ie .lotusui30 #shareboxGlobalForm .lotusFilters2 { vertical-align: bottom;}
+.docs_st_biz  .lotusui30 .lotusBoard .lotusPost .lotusText .lotusPerson { padding-right: 0px;}
+.docs_st_biz  .lotusColLeft .lotusSection .lotusList li .lotusLeft { max-width: 130px; word-wrap: break-word;}
+.docs_st_biz  .lotusui30dojo.lotusImagesOff .dijitMenuItemHover {border: 1px dotted; padding: 0em .1em;}
+.docs_st_biz  .lotusui30dojo.lotusImagesOff .dijitMenuItem.searchDirectory {padding: .1em .3em;}
+.docs_st_biz  .lotusui30dojo.lotusImagesOff .dijitMenuItemHover.searchDirectory {padding: 0em .2em;}
+.docs_st_biz  .lotusui30 .lotusInlineVCard { width:175px;}
+.docs_st_biz  .lotusui30 .lotusInlineVCard .lotusPhoto { padding:0; margin-top:5px;}
+.docs_st_biz  .lotusui30 .lotusInlineVCard h2{ font-size:1.2em;font-weight:bold;color:#444;}
+.docs_st_biz  .lotusui30 .lotusInlineVCard .lotusPersonInfo h2 { margin-left: 60px;}
+.docs_st_biz  .lotusui30 .lotusInlineVCard .lotusPhoto img { height: 35px; width: 35px;}
+.docs_st_biz  .lotusui30 .lotusInlineVCard .lotusPersonActions { margin-top: 5px;}
+.docs_st_biz  .lotusui30 .lotusInlineVCard .lotusAppLinks { font-size:1.2em;}
+.docs_st_biz  .lotusui30 .ublogPost.lotusPersonInactive, .docs_st_biz  .lotusui30 a:hover.ublogPost.lotusPersonInactive, .docs_st_biz  .lotusui30 a:focus.ublogPost.lotusPersonInactive, .docs_st_biz  .lotusui30 a:active.ublogPost.lotusPersonInactive, .docs_st_biz  .lotusui30 a:visited.ublogPost.lotusPersonInactive  {color: #767676;}
+.docs_st_biz  .lotusui30 .lotusBoard .ublogWarningMessage { margin-top: 10px;}
+.docs_st_biz  .lotusui30 #shareboxGlobalForm .lotusBoard .ublogWarningMessage { margin-top: 0px;}
+.docs_st_biz  .lotusui30 .lotusBanner .lconnBannerIcon { display: none;}
+.docs_st_biz  .lotusui30 .ublogFileUploadProgress { float: right;}
+.docs_st_biz  .lotusui30 .ublogActionsList {margin-top: 0px;}
+.docs_st_biz  .lotusui_ie8 .lotusui30 .lotusForm input.IECheckbox {margin-left:0px}
+.docs_st_biz  #lotusBannerMail {
+position: relative;}
+.docs_st_biz  .os-site-mail-notify {
+left: 50%;
+top: 10%;
+position: absolute;}
+.docs_st_biz  .lotusui30dojo .dijitTooltipContainer {
+background-color: #ffffff;
+border: 1px solid #cccccc;
+padding: 0px !important;
+-webkit-box-shadow: 0 2px 5px #eeeeee;
+-moz-box-shadow: 0 2px 5px #eeeeee;
+box-shadow: 0 2px 5px #eeeeee;}
+.docs_st_biz  .os-site-mail-hover {
+position: absolute;
+top: 0;
+left: 0;
+visibility: hidden;
+overflow: hidden;}
+.docs_st_biz  .os-site-calendar-hover {
+position: absolute;
+top: 0;
+left: 0;
+visibility: hidden;
+overflow: hidden;}
+.docs_st_biz  .os-site-mail-hover-preview-messages {
+width: 740px;
+height: 520px;
+overflow: hidden;
+position: relative;}
+.docs_st_biz  .lotusui30dojo .mailMessageDialog {
+border: 3px solid #555;
+border: 3px solid rgba(2,  2,  2,  0.4);
+box-shadow: 0 0 15px rgba(0,  0,  0,  0.4);
+-webkit-box-shadow: 0 0 15px rgba(0,  0,  0,  0.4);
+-moz-box-shadow: 0 0 15px rgba(0,  0,  0,  0.4);
+padding: 0;
+}
+.docs_st_biz  .lotusui30dojo .mailMessageDialog .dijitDialogTitleBar {
+padding: 0;
+display: block;}
+.docs_st_biz  .lotusui30dojo .mailMessageDialog .dijitDialogCloseIcon {
+z-index: 1;
+display: block;}
+.docs_st_biz  .lotusui30dojo .mailMessageDialog .dijitDialogPaneContent {
+padding: 0px;
+background: #ffffff;
+position: relative;}
+.docs_st_biz  #messageSiteProgress {
+position: absolute;
+width: 100%;
+height: 100%;}
+.docs_st_biz  #messageSiteProgress td {
+width: 50%;
+overflow: hidden;}
+.docs_st_biz  .cm-preview-site-container {
+position:relative;
+height:520px;
+width:740px;
+overflow:hidden;}
+.docs_st_biz  .cm-preview-site-container div {
+position:absolute !important;
+height:100%;
+width:100%;}
+.docs_st_biz  .os-site.os-site-mail-hover-preview-messages-ee {
+display:none;}
+.docs_st_biz  .os-site.os-site-mail-hover-preview-messages-ee iframe {
+height:100% !important;}
+.docs_st_biz  .ee-showing .os-site.os-site-mail-hover-preview-messages {
+height:auto;}
+.docs_st_biz  .ee-showing .os-site.os-site-mail-hover-preview-messages-ee {
+display:block;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;}
+.docs_st_biz  .lotusui30dojo .lcSharebox .dijitDialogPaneContent {
+background-color: #ffffff;}
+.docs_st_biz  .lotusui30dojo div.lcSharebox {
+padding: 0 !important;}
+.docs_st_biz  .lotusui30dojo .lcSharebox div.dijitDialogTitleBar {
+padding: 15px 20px 5px 20px !important;}
+.docs_st_biz  .lotusui30dojo .lcSharebox div.shareMessage {
+padding: 10px;}
+.docs_st_biz  .lotusui30dojo .lcSharebox div.shareTabContainer{
+width: 540px;
+min-height: 150px;}
+.docs_st_biz  .lotusui30dojo .lcSharebox a.shareBackTopHidden {
+clip: rect(0px, 0px, 0px, 0px);
+font-size: 0px;
+position: absolute;
+}
+.docs_st_biz  .lotusui30dojo .lcShareboxConfirmDialog div.lotusDialog, .docs_st_biz  .lotusui_ie div.lcShareboxConfirmDialog{
+width: 450px;}
+.docs_st_biz  .lotusui30dojo .lcSharebox div.lotusLoading {
+min-height: 60px;
+width: 100%;
+background-position: center center;}
+.docs_st_biz  .lotusui_ie .lcSharebox .lotusDialogBorder {
+width: auto;}
+.docs_st_biz  .lotusui_ie .lcSharebox div.lotusMessage  {
+width: 500px;}
+.docs_st_biz  .brandingLogos15-ibmLogoBlack15{width:40px;height:15px;background-position:0 0}
+.docs_st_biz  .brandingLogos15-ibmLogoBlue15{width:40px;height:15px;background-position:0 -23px}
+.docs_st_biz  .brandingLogos15-ibmLogoGray15{width:40px;height:15px;background-position:0 -46px}
+.docs_st_biz  .brandingLogos15-ibmLogoWhite15{width:40px;height:15px;background-position:0 -69px}
+.docs_st_biz  .brandingLogos15-ibmLogoOpaque16{width:41px;height:16px;background-position:0 -92px}
+.docs_st_biz  .brandingLogos15-ibmLogoTranslucent16{width:41px;height:16px;background-position:0 -116px}
+.docs_st_biz  .brandingLogos15{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Branding/Logos/brandingLogos15-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .brandingLogos15{display:none}
+.docs_st_biz  .brandingLogos23-ibmLogoBlack23{width:64px;height:23px;background-position:0 0}
+.docs_st_biz  .brandingLogos23-ibmLogoBlue23{width:64px;height:23px;background-position:0 -31px}
+.docs_st_biz  .brandingLogos23-ibmLogoGray23{width:64px;height:23px;background-position:0 -62px}
+.docs_st_biz  .brandingLogos23-ibmLogoWhite23{width:64px;height:23px;background-position:0 -93px}
+.docs_st_biz  .brandingLogos23{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Branding/Logos/brandingLogos23-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .brandingLogos23{display:none}
+.docs_st_biz  .brandingLogos30-ibmLogoBlack30{width:84px;height:30px;background-position:0 0}
+.docs_st_biz  .brandingLogos30-ibmLogoBlue30{width:84px;height:30px;background-position:0 -38px}
+.docs_st_biz  .brandingLogos30-ibmLogoGray30{width:84px;height:30px;background-position:0 -76px}
+.docs_st_biz  .brandingLogos30-ibmLogoWhite30{width:84px;height:30px;background-position:0 -114px}
+.docs_st_biz  .brandingLogos30{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Branding/Logos/brandingLogos30-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .brandingLogos30{display:none}
+.docs_st_biz  .brandingOther128-Docs80{width:80px;height:80px;background-position:0 0}
+.docs_st_biz  .brandingOther128-DocsWhite128{width:128px;height:128px;background-position:0 -88px}
+.docs_st_biz  .brandingOther128{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Branding/Other/brandingOther128-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .brandingOther128{display:none}
+.docs_st_biz  .brandingOther16-Connections16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .brandingOther16-ConnectionsBlue16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .brandingOther16-ConnectionsGray16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .brandingOther16-Docs16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .brandingOther16-DocsBlue16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .brandingOther16-DocsGray16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .brandingOther16-DocsWhite16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .brandingOther16-Notes16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .brandingOther16-Quickr16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .brandingOther16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Branding/Other/brandingOther16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .brandingOther16{display:none}
+.docs_st_biz  .brandingOther24-DocsBlue24{width:24px;height:24px;background-position:0 0}
+.docs_st_biz  .brandingOther24-DocsGray24{width:24px;height:24px;background-position:0 -32px}
+.docs_st_biz  .brandingOther24-DocsWhite24{width:24px;height:24px;background-position:0 -64px}
+.docs_st_biz  .brandingOther24{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Branding/Other/brandingOther24-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .brandingOther24{display:none}
+.docs_st_biz  .brandingOther32-DocsBlue32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .brandingOther32-DocsGray32{width:32px;height:32px;background-position:0 -40px}
+.docs_st_biz  .brandingOther32-DocsWhite32{width:32px;height:32px;background-position:0 -80px}
+.docs_st_biz  .brandingOther32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Branding/Other/brandingOther32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .brandingOther32{display:none}
+.docs_st_biz  .iconsActions16-atnAlignCentered16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsActions16-atnAlignJustified16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsActions16-atnAlignLeft16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsActions16-atnAlignRight16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsActions16-atnBold16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsActions16-atnBulletedList16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .iconsActions16-atnButton16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .iconsActions16-atnCheckSpelling16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .iconsActions16-atnCopy16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .iconsActions16-atnCut16{width:16px;height:16px;background-position:0 -216px}
+.docs_st_biz  .iconsActions16-atnFillColor16{width:16px;height:16px;background-position:0 -240px}
+.docs_st_biz  .iconsActions16-atnFind16{width:16px;height:16px;background-position:0 -264px}
+.docs_st_biz  .iconsActions16-atnGoBack16{width:16px;height:16px;background-position:0 -288px}
+.docs_st_biz  .iconsActions16-atnIndentParagraph16{width:16px;height:16px;background-position:0 -312px}
+.docs_st_biz  .iconsActions16-atnInsertAnchor16{width:16px;height:16px;background-position:0 -336px}
+.docs_st_biz  .iconsActions16-atnInsertChart16{width:16px;height:16px;background-position:0 -360px}
+.docs_st_biz  .iconsActions16-atnInsertCheckmark16{width:16px;height:16px;background-position:0 -384px}
+.docs_st_biz  .iconsActions16-atnInsertEmoticon16{width:16px;height:16px;background-position:0 -408px}
+.docs_st_biz  .iconsActions16-atnInsertFlash16{width:16px;height:16px;background-position:0 -432px}
+.docs_st_biz  .iconsActions16-atnInsertForm16{width:16px;height:16px;background-position:0 -456px}
+.docs_st_biz  .iconsActions16-atnInsertImage16{width:16px;height:16px;background-position:0 -480px}
+.docs_st_biz  .iconsActions16-atnInsertLine16{width:16px;height:16px;background-position:0 -504px}
+.docs_st_biz  .iconsActions16-atnInsertLink16{width:16px;height:16px;background-position:0 -528px}
+.docs_st_biz  .iconsActions16-atnInsertPageBreak16{width:16px;height:16px;background-position:0 -552px}
+.docs_st_biz  .iconsActions16-atnInsertRadioButtons16{width:16px;height:16px;background-position:0 -576px}
+.docs_st_biz  .iconsActions16-atnInsertTable16{width:16px;height:16px;background-position:0 -600px}
+.docs_st_biz  .iconsActions16-atnInsertTextField16{width:16px;height:16px;background-position:0 -624px}
+.docs_st_biz  .iconsActions16-atnItalic16{width:16px;height:16px;background-position:0 -648px}
+.docs_st_biz  .iconsActions16-atnMoveDown16{width:16px;height:16px;background-position:0 -672px}
+.docs_st_biz  .iconsActions16-atnMoveUp16{width:16px;height:16px;background-position:0 -696px}
+.docs_st_biz  .iconsActions16-atnOpenInNewWindow16{width:16px;height:16px;background-position:0 -720px}
+.docs_st_biz  .iconsActions16-atnOutdentParagraph16{width:16px;height:16px;background-position:0 -744px}
+.docs_st_biz  .iconsActions16-atnPaste16{width:16px;height:16px;background-position:0 -768px}
+.docs_st_biz  .iconsActions16-atnQuotes16{width:16px;height:16px;background-position:0 -792px}
+.docs_st_biz  .iconsActions16-atnRedo16{width:16px;height:16px;background-position:0 -816px}
+.docs_st_biz  .iconsActions16-atnRefresh16{width:16px;height:16px;background-position:0 -840px}
+.docs_st_biz  .iconsActions16-atnScrollingList16{width:16px;height:16px;background-position:0 -864px}
+.docs_st_biz  .iconsActions16-atnSpecialCharacter16{width:16px;height:16px;background-position:0 -888px}
+.docs_st_biz  .iconsActions16-atnStrikethrough16{width:16px;height:16px;background-position:0 -912px}
+.docs_st_biz  .iconsActions16-atnStyle16{width:16px;height:16px;background-position:0 -936px}
+.docs_st_biz  .iconsActions16-atnSubscript16{width:16px;height:16px;background-position:0 -960px}
+.docs_st_biz  .iconsActions16-atnSuperscript16{width:16px;height:16px;background-position:0 -984px}
+.docs_st_biz  .iconsActions16-atnTextBox16{width:16px;height:16px;background-position:0 -1008px}
+.docs_st_biz  .iconsActions16-atnTextColor16{width:16px;height:16px;background-position:0 -1032px}
+.docs_st_biz  .iconsActions16-atnTrash16{width:16px;height:16px;background-position:0 -1056px}
+.docs_st_biz  .iconsActions16-atnUnderline16{width:16px;height:16px;background-position:0 -1080px}
+.docs_st_biz  .iconsActions16-atnUndo16{width:16px;height:16px;background-position:0 -1104px}
+.docs_st_biz  .iconsActions16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Actions/iconsActions16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsActions16{display:none}
+.docs_st_biz  .iconsCKActions16-atnArrowDown16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsCKActions16-atnBulletedList16-rtl{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsCKActions16-atnCreateDiv16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsCKActions16-atnDocProperties16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsCKActions16-atnDocumentBookmark16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsCKActions16-atnEditDiv16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .iconsCKActions16-atnExpand16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .iconsCKActions16-atnIframe16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .iconsCKActions16-atnInsertDocLink16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .iconsCKActions16-atnLinkFile16{width:16px;height:16px;background-position:0 -216px}
+.docs_st_biz  .iconsCKActions16-atnLtr16-rtl{width:16px;height:16px;background-position:0 -240px}
+.docs_st_biz  .iconsCKActions16-atnLtr16{width:16px;height:16px;background-position:0 -264px}
+.docs_st_biz  .iconsCKActions16-atnMaximize16{width:16px;height:16px;background-position:0 -288px}
+.docs_st_biz  .iconsCKActions16-atnNewPage16{width:16px;height:16px;background-position:0 -312px}
+.docs_st_biz  .iconsCKActions16-atnNumberedList16-rtl{width:16px;height:16px;background-position:0 -336px}
+.docs_st_biz  .iconsCKActions16-atnNumberedList16{width:16px;height:16px;background-position:0 -360px}
+.docs_st_biz  .iconsCKActions16-atnPasteGeneral16{width:16px;height:16px;background-position:0 -384px}
+.docs_st_biz  .iconsCKActions16-atnPasteLink16{width:16px;height:16px;background-position:0 -408px}
+.docs_st_biz  .iconsCKActions16-atnPasteWord16{width:16px;height:16px;background-position:0 -432px}
+.docs_st_biz  .iconsCKActions16-atnPreview16{width:16px;height:16px;background-position:0 -456px}
+.docs_st_biz  .iconsCKActions16-atnPrint16{width:16px;height:16px;background-position:0 -480px}
+.docs_st_biz  .iconsCKActions16-atnQuickLink16{width:16px;height:16px;background-position:0 -504px}
+.docs_st_biz  .iconsCKActions16-atnRemoveDiv16{width:16px;height:16px;background-position:0 -528px}
+.docs_st_biz  .iconsCKActions16-atnRemoveLink16{width:16px;height:16px;background-position:0 -552px}
+.docs_st_biz  .iconsCKActions16-atnReplace16{width:16px;height:16px;background-position:0 -576px}
+.docs_st_biz  .iconsCKActions16-atnRtl16-rtl{width:16px;height:16px;background-position:0 -600px}
+.docs_st_biz  .iconsCKActions16-atnRtl16{width:16px;height:16px;background-position:0 -624px}
+.docs_st_biz  .iconsCKActions16-atnSave16{width:16px;height:16px;background-position:0 -648px}
+.docs_st_biz  .iconsCKActions16-atnSelect16{width:16px;height:16px;background-position:0 -672px}
+.docs_st_biz  .iconsCKActions16-atnSelectAll16{width:16px;height:16px;background-position:0 -696px}
+.docs_st_biz  .iconsCKActions16-atnShowBlocks16{width:16px;height:16px;background-position:0 -720px}
+.docs_st_biz  .iconsCKActions16-atnSubscript16-rtl{width:16px;height:16px;background-position:0 -744px}
+.docs_st_biz  .iconsCKActions16-atnSuperscript16-rtl{width:16px;height:16px;background-position:0 -768px}
+.docs_st_biz  .iconsCKActions16-atnTemplates16{width:16px;height:16px;background-position:0 -792px}
+.docs_st_biz  .iconsCKActions16-atnViewSource16{width:16px;height:16px;background-position:0 -816px}
+.docs_st_biz  .iconsCKActions16-atnWikiPage16{width:16px;height:16px;background-position:0 -840px}
+.docs_st_biz  .iconsCKActions16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/CKActions/iconsCKActions16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsCKActions16{display:none}
+.docs_st_biz  .iconsComponents128-Activities128{width:128px;height:128px;background-position:0 0}
+.docs_st_biz  .iconsComponents128-Blogs128{width:128px;height:128px;background-position:0 -136px}
+.docs_st_biz  .iconsComponents128-Bookmarks128{width:128px;height:128px;background-position:0 -272px}
+.docs_st_biz  .iconsComponents128-Calendar128{width:128px;height:128px;background-position:0 -408px}
+.docs_st_biz  .iconsComponents128-Charts128{width:128px;height:128px;background-position:0 -544px}
+.docs_st_biz  .iconsComponents128-Chat128{width:128px;height:128px;background-position:0 -680px}
+.docs_st_biz  .iconsComponents128-Events128{width:128px;height:128px;background-position:0 -816px}
+.docs_st_biz  .iconsComponents128-Files128{width:128px;height:128px;background-position:0 -952px}
+.docs_st_biz  .iconsComponents128-Forms128{width:128px;height:128px;background-position:0 -1088px}
+.docs_st_biz  .iconsComponents128-Forums128{width:128px;height:128px;background-position:0 -1224px}
+.docs_st_biz  .iconsComponents128-Home128{width:128px;height:128px;background-position:0 -1360px}
+.docs_st_biz  .iconsComponents128-Mail128{width:128px;height:128px;background-position:0 -1496px}
+.docs_st_biz  .iconsComponents128-Places128{width:128px;height:128px;background-position:0 -1632px}
+.docs_st_biz  .iconsComponents128-Profiles128{width:128px;height:128px;background-position:0 -1768px}
+.docs_st_biz  .iconsComponents128-Tasks128{width:128px;height:128px;background-position:0 -1904px}
+.docs_st_biz  .iconsComponents128-Wikis128{width:128px;height:128px;background-position:0 -2040px}
+.docs_st_biz  .iconsComponents128{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Components/iconsComponents128-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponents128{display:none}
+.docs_st_biz  .iconsComponents16-Activities16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsComponents16-Blogs16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsComponents16-Bookmarks16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsComponents16-Calendar16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsComponents16-Charts16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsComponents16-Chat16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .iconsComponents16-Events16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .iconsComponents16-Files16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .iconsComponents16-Forms16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .iconsComponents16-Forums16{width:16px;height:16px;background-position:0 -216px}
+.docs_st_biz  .iconsComponents16-Home16{width:16px;height:16px;background-position:0 -240px}
+.docs_st_biz  .iconsComponents16-Mail16{width:16px;height:16px;background-position:0 -264px}
+.docs_st_biz  .iconsComponents16-MediaGallery16{width:16px;height:16px;background-position:0 -288px}
+.docs_st_biz  .iconsComponents16-Places16{width:16px;height:16px;background-position:0 -312px}
+.docs_st_biz  .iconsComponents16-Profiles16{width:16px;height:16px;background-position:0 -336px}
+.docs_st_biz  .iconsComponents16-Tasks16{width:16px;height:16px;background-position:0 -360px}
+.docs_st_biz  .iconsComponents16-Wikis16{width:16px;height:16px;background-position:0 -384px}
+.docs_st_biz  .iconsComponents16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Components/iconsComponents16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponents16{display:none}
+.docs_st_biz  .iconsComponents32-Activities32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .iconsComponents32-Blogs32{width:32px;height:32px;background-position:0 -40px}
+.docs_st_biz  .iconsComponents32-Bookmarks32{width:32px;height:32px;background-position:0 -80px}
+.docs_st_biz  .iconsComponents32-Calendar32{width:32px;height:32px;background-position:0 -120px}
+.docs_st_biz  .iconsComponents32-Charts32{width:32px;height:32px;background-position:0 -160px}
+.docs_st_biz  .iconsComponents32-Chat32{width:32px;height:32px;background-position:0 -200px}
+.docs_st_biz  .iconsComponents32-Events32{width:32px;height:32px;background-position:0 -240px}
+.docs_st_biz  .iconsComponents32-Files32{width:32px;height:32px;background-position:0 -280px}
+.docs_st_biz  .iconsComponents32-Forms32{width:32px;height:32px;background-position:0 -320px}
+.docs_st_biz  .iconsComponents32-Forums32{width:32px;height:32px;background-position:0 -360px}
+.docs_st_biz  .iconsComponents32-Home32{width:32px;height:32px;background-position:0 -400px}
+.docs_st_biz  .iconsComponents32-Mail32{width:32px;height:32px;background-position:0 -440px}
+.docs_st_biz  .iconsComponents32-Places32{width:32px;height:32px;background-position:0 -480px}
+.docs_st_biz  .iconsComponents32-Profiles32{width:32px;height:32px;background-position:0 -520px}
+.docs_st_biz  .iconsComponents32-Tasks32{width:32px;height:32px;background-position:0 -560px}
+.docs_st_biz  .iconsComponents32-Wikis32{width:32px;height:32px;background-position:0 -600px}
+.docs_st_biz  .iconsComponents32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Components/iconsComponents32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponents32{display:none}
+.docs_st_biz  .iconsComponents64-Activities64{width:64px;height:64px;background-position:0 0}
+.docs_st_biz  .iconsComponents64-Blogs64{width:64px;height:64px;background-position:0 -72px}
+.docs_st_biz  .iconsComponents64-Bookmarks64{width:64px;height:64px;background-position:0 -144px}
+.docs_st_biz  .iconsComponents64-Calendar64{width:64px;height:64px;background-position:0 -216px}
+.docs_st_biz  .iconsComponents64-Charts64{width:64px;height:64px;background-position:0 -288px}
+.docs_st_biz  .iconsComponents64-Chat64{width:64px;height:64px;background-position:0 -360px}
+.docs_st_biz  .iconsComponents64-Events64{width:64px;height:64px;background-position:0 -432px}
+.docs_st_biz  .iconsComponents64-Files64{width:64px;height:64px;background-position:0 -504px}
+.docs_st_biz  .iconsComponents64-Forms64{width:64px;height:64px;background-position:0 -576px}
+.docs_st_biz  .iconsComponents64-Forums64{width:64px;height:64px;background-position:0 -648px}
+.docs_st_biz  .iconsComponents64-Home64{width:64px;height:64px;background-position:0 -720px}
+.docs_st_biz  .iconsComponents64-Mail64{width:64px;height:64px;background-position:0 -792px}
+.docs_st_biz  .iconsComponents64-Places64{width:64px;height:64px;background-position:0 -864px}
+.docs_st_biz  .iconsComponents64-Profiles64{width:64px;height:64px;background-position:0 -936px}
+.docs_st_biz  .iconsComponents64-Tasks64{width:64px;height:64px;background-position:0 -1008px}
+.docs_st_biz  .iconsComponents64-Wikis64{width:64px;height:64px;background-position:0 -1080px}
+.docs_st_biz  .iconsComponents64{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Components/iconsComponents64-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponents64{display:none}
+.docs_st_biz  .iconsComponentsBlue16-ActivitiesBlue16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsComponentsBlue16-BlogsBlue16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsComponentsBlue16-BookmarksBlue16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsComponentsBlue16-CalendarBlue16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsComponentsBlue16-CommunitiesBlue16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsComponentsBlue16-FilesBlue16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .iconsComponentsBlue16-ForumsBlue16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .iconsComponentsBlue16-HomeBlue16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .iconsComponentsBlue16-MailBlue16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .iconsComponentsBlue16-MetricsBlue16{width:16px;height:16px;background-position:0 -216px}
+.docs_st_biz  .iconsComponentsBlue16-NewsFeedBlue16{width:16px;height:16px;background-position:0 -240px}
+.docs_st_biz  .iconsComponentsBlue16-ProfilesBlue16{width:16px;height:16px;background-position:0 -264px}
+.docs_st_biz  .iconsComponentsBlue16-StatusUpdateBlue16{width:16px;height:16px;background-position:0 -288px}
+.docs_st_biz  .iconsComponentsBlue16-TodoBlue16{width:16px;height:16px;background-position:0 -312px}
+.docs_st_biz  .iconsComponentsBlue16-WikisBlue16{width:16px;height:16px;background-position:0 -336px}
+.docs_st_biz  .iconsComponentsBlue16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsBlue/iconsComponentsBlue16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsBlue16{display:none}
+.docs_st_biz  .iconsComponentsBlue24-ActivitiesBlue24{width:24px;height:24px;background-position:0 0}
+.docs_st_biz  .iconsComponentsBlue24-BlogsBlue24{width:24px;height:24px;background-position:0 -32px}
+.docs_st_biz  .iconsComponentsBlue24-BookmarksBlue24{width:24px;height:24px;background-position:0 -64px}
+.docs_st_biz  .iconsComponentsBlue24-CalendarBlue24{width:24px;height:24px;background-position:0 -96px}
+.docs_st_biz  .iconsComponentsBlue24-CommunitiesBlue24{width:24px;height:24px;background-position:0 -128px}
+.docs_st_biz  .iconsComponentsBlue24-FilesBlue24{width:24px;height:24px;background-position:0 -160px}
+.docs_st_biz  .iconsComponentsBlue24-ForumsBlue24{width:24px;height:24px;background-position:0 -192px}
+.docs_st_biz  .iconsComponentsBlue24-HomeBlue24{width:24px;height:24px;background-position:0 -224px}
+.docs_st_biz  .iconsComponentsBlue24-MailBlue24{width:24px;height:24px;background-position:0 -256px}
+.docs_st_biz  .iconsComponentsBlue24-ModerationBlue24{width:24px;height:24px;background-position:0 -288px}
+.docs_st_biz  .iconsComponentsBlue24-MetricsBlue24{width:24px;height:24px;background-position:0 -320px}
+.docs_st_biz  .iconsComponentsBlue24-NewsFeedBlue24{width:24px;height:24px;background-position:0 -352px}
+.docs_st_biz  .iconsComponentsBlue24-ProfilesBlue24{width:24px;height:24px;background-position:0 -384px}
+.docs_st_biz  .iconsComponentsBlue24-StatusUpdateBlue24{width:24px;height:24px;background-position:0 -416px}
+.docs_st_biz  .iconsComponentsBlue24-TodoBlue24{width:24px;height:24px;background-position:0 -448px}
+.docs_st_biz  .iconsComponentsBlue24-WikisBlue24{width:24px;height:24px;background-position:0 -480px}
+.docs_st_biz  .iconsComponentsBlue24{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsBlue/iconsComponentsBlue24-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsBlue24{display:none}
+.docs_st_biz  .iconsComponentsBlue32-ActivitiesBlue32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .iconsComponentsBlue32-BlogsBlue32{width:32px;height:32px;background-position:0 -40px}
+.docs_st_biz  .iconsComponentsBlue32-BookmarksBlue32{width:32px;height:32px;background-position:0 -80px}
+.docs_st_biz  .iconsComponentsBlue32-CalendarBlue32{width:32px;height:32px;background-position:0 -120px}
+.docs_st_biz  .iconsComponentsBlue32-CommunitiesBlue32{width:32px;height:32px;background-position:0 -160px}
+.docs_st_biz  .iconsComponentsBlue32-FilesBlue32{width:32px;height:32px;background-position:0 -200px}
+.docs_st_biz  .iconsComponentsBlue32-ForumsBlue32{width:32px;height:32px;background-position:0 -240px}
+.docs_st_biz  .iconsComponentsBlue32-HomeBlue32{width:32px;height:32px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsBlue32-LibraryLinkedBlue32{width:32px;height:32px;background-position:0 -320px}
+.docs_st_biz  .iconsComponentsBlue32-MailBlue32{width:32px;height:32px;background-position:0 -360px}
+.docs_st_biz  .iconsComponentsBlue32-MetricsBlue32{width:32px;height:32px;background-position:0 -400px}
+.docs_st_biz  .iconsComponentsBlue32-NewsFeedBlue32{width:32px;height:32px;background-position:0 -440px}
+.docs_st_biz  .iconsComponentsBlue32-ProfilesBlue32{width:32px;height:32px;background-position:0 -480px}
+.docs_st_biz  .iconsComponentsBlue32-StatusUpdateBlue32{width:32px;height:32px;background-position:0 -520px}
+.docs_st_biz  .iconsComponentsBlue32-TodoBlue32{width:32px;height:32px;background-position:0 -560px}
+.docs_st_biz  .iconsComponentsBlue32-WikisBlue32{width:32px;height:32px;background-position:0 -600px}
+.docs_st_biz  .iconsComponentsBlue32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsBlue/iconsComponentsBlue32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsBlue32{display:none}
+.docs_st_biz  .iconsComponentsBlue48-ActivitiesBlue48{width:48px;height:48px;background-position:0 0}
+.docs_st_biz  .iconsComponentsBlue48-BlogsBlue48{width:48px;height:48px;background-position:0 -56px}
+.docs_st_biz  .iconsComponentsBlue48-BookmarksBlue48{width:48px;height:48px;background-position:0 -112px}
+.docs_st_biz  .iconsComponentsBlue48-CommunitiesBlue48{width:48px;height:48px;background-position:0 -168px}
+.docs_st_biz  .iconsComponentsBlue48-FilesBlue48{width:48px;height:48px;background-position:0 -224px}
+.docs_st_biz  .iconsComponentsBlue48-ForumsBlue48{width:48px;height:48px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsBlue48-NewsFeedBlue48{width:48px;height:48px;background-position:0 -336px}
+.docs_st_biz  .iconsComponentsBlue48-ProfilesBlue48{width:48px;height:48px;background-position:0 -392px}
+.docs_st_biz  .iconsComponentsBlue48-TodoBlue48{width:48px;height:48px;background-position:0 -448px}
+.docs_st_biz  .iconsComponentsBlue48-WikisBlue48{width:48px;height:48px;background-position:0 -504px}
+.docs_st_biz  .iconsComponentsBlue48{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsBlue/iconsComponentsBlue48-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsBlue48{display:none}
+.docs_st_biz  .iconsComponentsBlue64-ActivitiesBlue64{width:62px;height:62px;background-position:0 0}
+.docs_st_biz  .iconsComponentsBlue64-BlogsBlue64{width:62px;height:62px;background-position:0 -70px}
+.docs_st_biz  .iconsComponentsBlue64-BookmarksBlue64{width:62px;height:62px;background-position:0 -140px}
+.docs_st_biz  .iconsComponentsBlue64-CommunitiesBlue64{width:62px;height:62px;background-position:0 -210px}
+.docs_st_biz  .iconsComponentsBlue64-FilesBlue64{width:62px;height:62px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsBlue64-ForumsBlue64{width:62px;height:62px;background-position:0 -350px}
+.docs_st_biz  .iconsComponentsBlue64-NewsFeedBlue64{width:62px;height:62px;background-position:0 -420px}
+.docs_st_biz  .iconsComponentsBlue64-ProfilesBlue64{width:62px;height:62px;background-position:0 -490px}
+.docs_st_biz  .iconsComponentsBlue64-TodoBlue64{width:62px;height:62px;background-position:0 -560px}
+.docs_st_biz  .iconsComponentsBlue64-WikisBlue64{width:62px;height:62px;background-position:0 -630px}
+.docs_st_biz  .iconsComponentsBlue64{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsBlue/iconsComponentsBlue64-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsBlue64{display:none}
+.docs_st_biz  .iconsComponentsGray16-ActivitiesGray16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsComponentsGray16-BlogsGray16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsComponentsGray16-BookmarksGray16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsComponentsGray16-CalendarGray16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsComponentsGray16-CommunitiesGray16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsComponentsGray16-FilesGray16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .iconsComponentsGray16-ForumsGray16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .iconsComponentsGray16-HomeGray16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .iconsComponentsGray16-LibraryLinkedGray16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .iconsComponentsGray16-LibraryManagedGray16{width:16px;height:16px;background-position:0 -216px}
+.docs_st_biz  .iconsComponentsGray16-MailGray16{width:16px;height:16px;background-position:0 -240px}
+.docs_st_biz  .iconsComponentsGray16-MetricsGray16{width:16px;height:16px;background-position:0 -264px}
+.docs_st_biz  .iconsComponentsGray16-NewsFeedGray16{width:16px;height:16px;background-position:0 -288px}
+.docs_st_biz  .iconsComponentsGray16-ProfilesGray16{width:16px;height:16px;background-position:0 -312px}
+.docs_st_biz  .iconsComponentsGray16-StatusUpdateGray16{width:16px;height:16px;background-position:0 -336px}
+.docs_st_biz  .iconsComponentsGray16-TodoGray16{width:16px;height:16px;background-position:0 -360px}
+.docs_st_biz  .iconsComponentsGray16-WikisGray16{width:16px;height:16px;background-position:0 -384px}
+.docs_st_biz  .iconsComponentsGray16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsGray/iconsComponentsGray16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsGray16{display:none}
+.docs_st_biz  .iconsComponentsGray24-ActivitiesGray24{width:24px;height:24px;background-position:0 0}
+.docs_st_biz  .iconsComponentsGray24-BlogsGray24{width:24px;height:24px;background-position:0 -32px}
+.docs_st_biz  .iconsComponentsGray24-BookmarksGray24{width:24px;height:24px;background-position:0 -64px}
+.docs_st_biz  .iconsComponentsGray24-CalendarGray24{width:24px;height:24px;background-position:0 -96px}
+.docs_st_biz  .iconsComponentsGray24-CommunitiesGray24{width:24px;height:24px;background-position:0 -128px}
+.docs_st_biz  .iconsComponentsGray24-FilesGray24{width:24px;height:24px;background-position:0 -160px}
+.docs_st_biz  .iconsComponentsGray24-ForumsGray24{width:24px;height:24px;background-position:0 -192px}
+.docs_st_biz  .iconsComponentsGray24-HomeGray24{width:24px;height:24px;background-position:0 -224px}
+.docs_st_biz  .iconsComponentsGray24-MailGray24{width:24px;height:24px;background-position:0 -256px}
+.docs_st_biz  .iconsComponentsGray24-MetricsGray24{width:24px;height:24px;background-position:0 -288px}
+.docs_st_biz  .iconsComponentsGray24-NewsFeedGray24{width:24px;height:24px;background-position:0 -320px}
+.docs_st_biz  .iconsComponentsGray24-ProfilesGray24{width:24px;height:24px;background-position:0 -352px}
+.docs_st_biz  .iconsComponentsGray24-StatusUpdateGray24{width:24px;height:24px;background-position:0 -384px}
+.docs_st_biz  .iconsComponentsGray24-TodoGray24{width:24px;height:24px;background-position:0 -416px}
+.docs_st_biz  .iconsComponentsGray24-WikisGray24{width:24px;height:24px;background-position:0 -448px}
+.docs_st_biz  .iconsComponentsGray24{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsGray/iconsComponentsGray24-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsGray24{display:none}
+.docs_st_biz  .iconsComponentsGray32-ActivitiesGray32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .iconsComponentsGray32-BlogsGray32{width:32px;height:32px;background-position:0 -40px}
+.docs_st_biz  .iconsComponentsGray32-BookmarksGray32{width:32px;height:32px;background-position:0 -80px}
+.docs_st_biz  .iconsComponentsGray32-CalendarGray32{width:32px;height:32px;background-position:0 -120px}
+.docs_st_biz  .iconsComponentsGray32-CommunitiesGray32{width:32px;height:32px;background-position:0 -160px}
+.docs_st_biz  .iconsComponentsGray32-FilesGray32{width:32px;height:32px;background-position:0 -200px}
+.docs_st_biz  .iconsComponentsGray32-ForumsGray32{width:32px;height:32px;background-position:0 -240px}
+.docs_st_biz  .iconsComponentsGray32-HomeGray32{width:32px;height:32px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsGray32-LibraryLinkedGray32{width:32px;height:32px;background-position:0 -320px}
+.docs_st_biz  .iconsComponentsGray32-MailGray32{width:32px;height:32px;background-position:0 -360px}
+.docs_st_biz  .iconsComponentsGray32-MetricsGray32{width:32px;height:32px;background-position:0 -400px}
+.docs_st_biz  .iconsComponentsGray32-NewsFeedGray32{width:32px;height:32px;background-position:0 -440px}
+.docs_st_biz  .iconsComponentsGray32-ProfilesGray32{width:32px;height:32px;background-position:0 -480px}
+.docs_st_biz  .iconsComponentsGray32-StatusUpdateGray32{width:32px;height:32px;background-position:0 -520px}
+.docs_st_biz  .iconsComponentsGray32-TodoGray32{width:32px;height:32px;background-position:0 -560px}
+.docs_st_biz  .iconsComponentsGray32-WikisGray32{width:32px;height:32px;background-position:0 -600px}
+.docs_st_biz  .iconsComponentsGray32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsGray/iconsComponentsGray32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsGray32{display:none}
+.docs_st_biz  .iconsComponentsGray48-ActivitiesGray48{width:48px;height:48px;background-position:0 0}
+.docs_st_biz  .iconsComponentsGray48-BlogsGray48{width:48px;height:48px;background-position:0 -56px}
+.docs_st_biz  .iconsComponentsGray48-BookmarksGray48{width:48px;height:48px;background-position:0 -112px}
+.docs_st_biz  .iconsComponentsGray48-CommunitiesGray48{width:48px;height:48px;background-position:0 -168px}
+.docs_st_biz  .iconsComponentsGray48-FilesGray48{width:48px;height:48px;background-position:0 -224px}
+.docs_st_biz  .iconsComponentsGray48-ForumsGray48{width:48px;height:48px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsGray48-NewsFeedGray48{width:48px;height:48px;background-position:0 -336px}
+.docs_st_biz  .iconsComponentsGray48-ProfilesGray48{width:48px;height:48px;background-position:0 -392px}
+.docs_st_biz  .iconsComponentsGray48-TodoGray48{width:48px;height:48px;background-position:0 -448px}
+.docs_st_biz  .iconsComponentsGray48-WikisGray48{width:48px;height:48px;background-position:0 -504px}
+.docs_st_biz  .iconsComponentsGray48{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsGray/iconsComponentsGray48-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsGray48{display:none}
+.docs_st_biz  .iconsComponentsGray64-ActivitiesGray64{width:62px;height:62px;background-position:0 0}
+.docs_st_biz  .iconsComponentsGray64-BlogsGray64{width:62px;height:62px;background-position:0 -70px}
+.docs_st_biz  .iconsComponentsGray64-BookmarksGray64{width:62px;height:62px;background-position:0 -140px}
+.docs_st_biz  .iconsComponentsGray64-CommunitiesGray64{width:62px;height:62px;background-position:0 -210px}
+.docs_st_biz  .iconsComponentsGray64-FilesGray64{width:62px;height:62px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsGray64-ForumsGray64{width:62px;height:62px;background-position:0 -350px}
+.docs_st_biz  .iconsComponentsGray64-NewsFeedGray64{width:62px;height:62px;background-position:0 -420px}
+.docs_st_biz  .iconsComponentsGray64-ProfilesGray64{width:62px;height:62px;background-position:0 -490px}
+.docs_st_biz  .iconsComponentsGray64-TodoGray64{width:62px;height:62px;background-position:0 -560px}
+.docs_st_biz  .iconsComponentsGray64-WikisGray64{width:62px;height:62px;background-position:0 -630px}
+.docs_st_biz  .iconsComponentsGray64{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsGray/iconsComponentsGray64-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsGray64{display:none}
+.docs_st_biz  .iconsComponentsWhite128-ActivitiesWhite128{width:128px;height:128px;background-position:0 0}
+.docs_st_biz  .iconsComponentsWhite128-BlogsWhite128{width:128px;height:128px;background-position:0 -136px}
+.docs_st_biz  .iconsComponentsWhite128-BookmarksWhite128{width:128px;height:128px;background-position:0 -272px}
+.docs_st_biz  .iconsComponentsWhite128-CalendarWhite128{width:128px;height:128px;background-position:0 -408px}
+.docs_st_biz  .iconsComponentsWhite128-CommunitiesWhite128{width:128px;height:128px;background-position:0 -544px}
+.docs_st_biz  .iconsComponentsWhite128-FilesWhite128{width:128px;height:128px;background-position:0 -680px}
+.docs_st_biz  .iconsComponentsWhite128-ForumsWhite128{width:128px;height:128px;background-position:0 -816px}
+.docs_st_biz  .iconsComponentsWhite128-HomeWhite128{width:128px;height:128px;background-position:0 -952px}
+.docs_st_biz  .iconsComponentsWhite128-MailWhite128{width:128px;height:128px;background-position:0 -1088px}
+.docs_st_biz  .iconsComponentsWhite128-MetricsWhite128{width:128px;height:128px;background-position:0 -1224px}
+.docs_st_biz  .iconsComponentsWhite128-ModerationWhite128{width:128px;height:128px;background-position:0 -1360px}
+.docs_st_biz  .iconsComponentsWhite128-ProfilesWhite128{width:128px;height:128px;background-position:0 -1496px}
+.docs_st_biz  .iconsComponentsWhite128-StatusUpdateWhite128{width:128px;height:128px;background-position:0 -1632px}
+.docs_st_biz  .iconsComponentsWhite128-ToDoWhite128{width:128px;height:128px;background-position:0 -1768px}
+.docs_st_biz  .iconsComponentsWhite128-WikisWhite128{width:128px;height:128px;background-position:0 -1904px}
+.docs_st_biz  .iconsComponentsWhite128{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsWhite/iconsComponentsWhite128-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsWhite128{display:none}
+.docs_st_biz  .iconsComponentsWhite16-ActivitiesWhite16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsComponentsWhite16-BlogsWhite16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsComponentsWhite16-BookmarksWhite16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsComponentsWhite16-CalendarWhite16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsComponentsWhite16-CommunitiesWhite16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsComponentsWhite16-FilesWhite16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .iconsComponentsWhite16-ForumsWhite16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .iconsComponentsWhite16-HomeWhite16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .iconsComponentsWhite16-MailWhite16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .iconsComponentsWhite16-MetricsWhite16{width:16px;height:16px;background-position:0 -216px}
+.docs_st_biz  .iconsComponentsWhite16-NewsFeedWhite16{width:16px;height:16px;background-position:0 -240px}
+.docs_st_biz  .iconsComponentsWhite16-ProfilesWhite16{width:16px;height:16px;background-position:0 -264px}
+.docs_st_biz  .iconsComponentsWhite16-StatusUpdateWhite16{width:16px;height:16px;background-position:0 -288px}
+.docs_st_biz  .iconsComponentsWhite16-TodoWhite16{width:16px;height:16px;background-position:0 -312px}
+.docs_st_biz  .iconsComponentsWhite16-WikisWhite16{width:16px;height:16px;background-position:0 -336px}
+.docs_st_biz  .iconsComponentsWhite16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsWhite/iconsComponentsWhite16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsWhite16{display:none}
+.docs_st_biz  .iconsComponentsWhite24-ActivitiesWhite24{width:24px;height:24px;background-position:0 0}
+.docs_st_biz  .iconsComponentsWhite24-BlogsWhite24{width:24px;height:24px;background-position:0 -32px}
+.docs_st_biz  .iconsComponentsWhite24-BookmarksWhite24{width:24px;height:24px;background-position:0 -64px}
+.docs_st_biz  .iconsComponentsWhite24-CalendarWhite24{width:24px;height:24px;background-position:0 -96px}
+.docs_st_biz  .iconsComponentsWhite24-CommunitiesWhite24{width:24px;height:24px;background-position:0 -128px}
+.docs_st_biz  .iconsComponentsWhite24-FilesWhite24{width:24px;height:24px;background-position:0 -160px}
+.docs_st_biz  .iconsComponentsWhite24-ForumsWhite24{width:24px;height:24px;background-position:0 -192px}
+.docs_st_biz  .iconsComponentsWhite24-HomeWhite24{width:24px;height:24px;background-position:0 -224px}
+.docs_st_biz  .iconsComponentsWhite24-MailWhite24{width:24px;height:24px;background-position:0 -256px}
+.docs_st_biz  .iconsComponentsWhite24-MetricsWhite24{width:24px;height:24px;background-position:0 -288px}
+.docs_st_biz  .iconsComponentsWhite24-NewsFeedWhite24{width:24px;height:24px;background-position:0 -320px}
+.docs_st_biz  .iconsComponentsWhite24-ProfilesWhite24{width:24px;height:24px;background-position:0 -352px}
+.docs_st_biz  .iconsComponentsWhite24-StatusUpdateWhite24{width:24px;height:24px;background-position:0 -384px}
+.docs_st_biz  .iconsComponentsWhite24-TodoWhite24{width:24px;height:24px;background-position:0 -416px}
+.docs_st_biz  .iconsComponentsWhite24-WikisWhite24{width:24px;height:24px;background-position:0 -448px}
+.docs_st_biz  .iconsComponentsWhite24{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsWhite/iconsComponentsWhite24-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsWhite24{display:none}
+.docs_st_biz  .iconsComponentsWhite32-ActivitiesWhite32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .iconsComponentsWhite32-BlogsWhite32{width:32px;height:32px;background-position:0 -40px}
+.docs_st_biz  .iconsComponentsWhite32-BookmarksWhite32{width:32px;height:32px;background-position:0 -80px}
+.docs_st_biz  .iconsComponentsWhite32-CalendarWhite32{width:32px;height:32px;background-position:0 -120px}
+.docs_st_biz  .iconsComponentsWhite32-CommunitiesWhite32{width:32px;height:32px;background-position:0 -160px}
+.docs_st_biz  .iconsComponentsWhite32-FilesWhite32{width:32px;height:32px;background-position:0 -200px}
+.docs_st_biz  .iconsComponentsWhite32-ForumsWhite32{width:32px;height:32px;background-position:0 -240px}
+.docs_st_biz  .iconsComponentsWhite32-HomeWhite32{width:32px;height:32px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsWhite32-LibraryLinkedWhite32{width:32px;height:32px;background-position:0 -320px}
+.docs_st_biz  .iconsComponentsWhite32-MailWhite32{width:32px;height:32px;background-position:0 -360px}
+.docs_st_biz  .iconsComponentsWhite32-MetricsWhite32{width:32px;height:32px;background-position:0 -400px}
+.docs_st_biz  .iconsComponentsWhite32-NewsFeedWhite32{width:32px;height:32px;background-position:0 -440px}
+.docs_st_biz  .iconsComponentsWhite32-ProfilesWhite32{width:32px;height:32px;background-position:0 -480px}
+.docs_st_biz  .iconsComponentsWhite32-StatusUpdateWhite32{width:32px;height:32px;background-position:0 -520px}
+.docs_st_biz  .iconsComponentsWhite32-TodoWhite32{width:32px;height:32px;background-position:0 -560px}
+.docs_st_biz  .iconsComponentsWhite32-WikisWhite32{width:32px;height:32px;background-position:0 -600px}
+.docs_st_biz  .iconsComponentsWhite32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsWhite/iconsComponentsWhite32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsWhite32{display:none}
+.docs_st_biz  .iconsComponentsWhite48-ActivitiesWhite48{width:48px;height:48px;background-position:0 0}
+.docs_st_biz  .iconsComponentsWhite48-BlogsWhite48{width:48px;height:48px;background-position:0 -56px}
+.docs_st_biz  .iconsComponentsWhite48-BookmarksWhite48{width:48px;height:48px;background-position:0 -112px}
+.docs_st_biz  .iconsComponentsWhite48-CommunitiesWhite48{width:48px;height:48px;background-position:0 -168px}
+.docs_st_biz  .iconsComponentsWhite48-FilesWhite48{width:48px;height:48px;background-position:0 -224px}
+.docs_st_biz  .iconsComponentsWhite48-ForumsWhite48{width:48px;height:48px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsWhite48-NewsFeedWhite48{width:48px;height:48px;background-position:0 -336px}
+.docs_st_biz  .iconsComponentsWhite48-ProfilesWhite48{width:48px;height:48px;background-position:0 -392px}
+.docs_st_biz  .iconsComponentsWhite48-TodoWhite48{width:48px;height:48px;background-position:0 -448px}
+.docs_st_biz  .iconsComponentsWhite48-WikisWhite48{width:48px;height:48px;background-position:0 -504px}
+.docs_st_biz  .iconsComponentsWhite48{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsWhite/iconsComponentsWhite48-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsWhite48{display:none}
+.docs_st_biz  .iconsComponentsWhite64-ActivitiesWhite64{width:62px;height:62px;background-position:0 0}
+.docs_st_biz  .iconsComponentsWhite64-BlogsWhite64{width:62px;height:62px;background-position:0 -70px}
+.docs_st_biz  .iconsComponentsWhite64-BookmarksWhite64{width:62px;height:62px;background-position:0 -140px}
+.docs_st_biz  .iconsComponentsWhite64-CommunitiesWhite64{width:62px;height:62px;background-position:0 -210px}
+.docs_st_biz  .iconsComponentsWhite64-FilesWhite64{width:62px;height:62px;background-position:0 -280px}
+.docs_st_biz  .iconsComponentsWhite64-ForumsWhite64{width:62px;height:62px;background-position:0 -350px}
+.docs_st_biz  .iconsComponentsWhite64-NewsFeedWhite64{width:62px;height:62px;background-position:0 -420px}
+.docs_st_biz  .iconsComponentsWhite64-ProfilesWhite64{width:62px;height:62px;background-position:0 -490px}
+.docs_st_biz  .iconsComponentsWhite64-TodoWhite64{width:62px;height:62px;background-position:0 -560px}
+.docs_st_biz  .iconsComponentsWhite64-WikisWhite64{width:62px;height:62px;background-position:0 -630px}
+.docs_st_biz  .iconsComponentsWhite64{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentsWhite/iconsComponentsWhite64-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentsWhite64{display:none}
+.docs_st_biz  .iconsComponentTypes16-ftActivities16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsComponentTypes16-ftBlogs16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsComponentTypes16-ftBookmarks16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsComponentTypes16-ftCalendar16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsComponentTypes16-ftCharts16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsComponentTypes16-ftChat16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .iconsComponentTypes16-ftDiscussion16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .iconsComponentTypes16-ftEvents16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .iconsComponentTypes16-ftForms16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .iconsComponentTypes16-ftForums16{width:16px;height:16px;background-position:0 -216px}
+.docs_st_biz  .iconsComponentTypes16-ftMail16{width:16px;height:16px;background-position:0 -240px}
+.docs_st_biz  .iconsComponentTypes16-ftMilestone16{width:16px;height:16px;background-position:0 -264px}
+.docs_st_biz  .iconsComponentTypes16-ftPlaces16{width:16px;height:16px;background-position:0 -288px}
+.docs_st_biz  .iconsComponentTypes16-ftProfiles16{width:16px;height:16px;background-position:0 -312px}
+.docs_st_biz  .iconsComponentTypes16-ftReference16{width:16px;height:16px;background-position:0 -336px}
+.docs_st_biz  .iconsComponentTypes16-ftStatusReport16{width:16px;height:16px;background-position:0 -360px}
+.docs_st_biz  .iconsComponentTypes16-ftTask16{width:16px;height:16px;background-position:0 -384px}
+.docs_st_biz  .iconsComponentTypes16-ftWiki16{width:16px;height:16px;background-position:0 -408px}
+.docs_st_biz  .iconsComponentTypes16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/ComponentTypes/iconsComponentTypes16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsComponentTypes16{display:none}
+.docs_st_biz  .iconsDisplayControls16-viewDetails16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsDisplayControls16-viewFolder16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsDisplayControls16-viewSummary16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsDisplayControls16-viewTile16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsDisplayControls16-viewTree16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsDisplayControls16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/DisplayControls/iconsDisplayControls16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsDisplayControls16{display:none}
+.docs_st_biz  .iconsFileTypes128-ftAudio128{width:128px;height:128px;background-position:0 0}
+.docs_st_biz  .iconsFileTypes128-ftCode128{width:128px;height:128px;background-position:0 -136px}
+.docs_st_biz  .iconsFileTypes128-ftCompressed128{width:128px;height:128px;background-position:0 -272px}
+.docs_st_biz  .iconsFileTypes128-ftContact128{width:128px;height:128px;background-position:0 -408px}
+.docs_st_biz  .iconsFileTypes128-ftData128{width:128px;height:128px;background-position:0 -544px}
+.docs_st_biz  .iconsFileTypes128-ftDefault128{width:128px;height:128px;background-position:0 -680px}
+.docs_st_biz  .iconsFileTypes128-ftFlash128{width:128px;height:128px;background-position:0 -816px}
+.docs_st_biz  .iconsFileTypes128-ftFolder128{width:128px;height:128px;background-position:0 -952px}
+.docs_st_biz  .iconsFileTypes128-ftFolderOpen128{width:128px;height:128px;background-position:0 -1088px}
+.docs_st_biz  .iconsFileTypes128-ftGraphic128{width:128px;height:128px;background-position:0 -1224px}
+.docs_st_biz  .iconsFileTypes128-ftLink128{width:128px;height:128px;background-position:0 -1360px}
+.docs_st_biz  .iconsFileTypes128-ftPage128{width:128px;height:128px;background-position:0 -1496px}
+.docs_st_biz  .iconsFileTypes128-ftPdf128{width:128px;height:128px;background-position:0 -1632px}
+.docs_st_biz  .iconsFileTypes128-ftPresentation128{width:128px;height:128px;background-position:0 -1768px}
+.docs_st_biz  .iconsFileTypes128-ftText128{width:128px;height:128px;background-position:0 -1904px}
+.docs_st_biz  .iconsFileTypes128-ftVideo128{width:128px;height:128px;background-position:0 -2040px}
+.docs_st_biz  .iconsFileTypes128-ftVisualization128{width:128px;height:128px;background-position:0 -2176px}
+.docs_st_biz  .iconsFileTypes128-ftWordProcessing128{width:128px;height:128px;background-position:0 -2312px}
+.docs_st_biz  .iconsFileTypes128{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/FileTypes/iconsFileTypes128-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsFileTypes128{display:none}
+.docs_st_biz  .iconsFileTypes16-ftAudio16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsFileTypes16-ftCode16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .iconsFileTypes16-ftCompressed16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .iconsFileTypes16-ftContact16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .iconsFileTypes16-ftData16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .iconsFileTypes16-ftDataDocs16{width:16px;height:16px;background-position:0 -120px}
+.docs_st_biz  .iconsFileTypes16-ftDefault16{width:16px;height:16px;background-position:0 -144px}
+.docs_st_biz  .iconsFileTypes16-ftFlash16{width:16px;height:16px;background-position:0 -168px}
+.docs_st_biz  .iconsFileTypes16-ftFolder16{width:16px;height:16px;background-position:0 -192px}
+.docs_st_biz  .iconsFileTypes16-ftFolderOpen16{width:16px;height:16px;background-position:0 -216px}
+.docs_st_biz  .iconsFileTypes16-ftGraphic16{width:16px;height:16px;background-position:0 -240px}
+.docs_st_biz  .iconsFileTypes16-ftLink16{width:16px;height:16px;background-position:0 -264px}
+.docs_st_biz  .iconsFileTypes16-ftPage16{width:16px;height:16px;background-position:0 -288px}
+.docs_st_biz  .iconsFileTypes16-ftPdf16{width:16px;height:16px;background-position:0 -312px}
+.docs_st_biz  .iconsFileTypes16-ftPresentation16{width:16px;height:16px;background-position:0 -336px}
+.docs_st_biz  .iconsFileTypes16-ftPresentationDocs16{width:16px;height:16px;background-position:0 -360px}
+.docs_st_biz  .iconsFileTypes16-ftText16{width:16px;height:16px;background-position:0 -384px}
+.docs_st_biz  .iconsFileTypes16-ftVideo16{width:16px;height:16px;background-position:0 -408px}
+.docs_st_biz  .iconsFileTypes16-ftVisualization16{width:16px;height:16px;background-position:0 -432px}
+.docs_st_biz  .iconsFileTypes16-ftWordProcessing16{width:16px;height:16px;background-position:0 -456px}
+.docs_st_biz  .iconsFileTypes16-ftWordProcessingDocs16{width:16px;height:16px;background-position:0 -480px}
+.docs_st_biz  .iconsFileTypes16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/FileTypes/iconsFileTypes16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsFileTypes16{display:none}
+.docs_st_biz  .iconsFileTypes256-ftAudio256{width:256px;height:256px;background-position:0 0}
+.docs_st_biz  .iconsFileTypes256-ftCode256{width:256px;height:256px;background-position:0 -264px}
+.docs_st_biz  .iconsFileTypes256-ftCompressed256{width:256px;height:256px;background-position:0 -528px}
+.docs_st_biz  .iconsFileTypes256-ftContact256{width:256px;height:256px;background-position:0 -792px}
+.docs_st_biz  .iconsFileTypes256-ftData256{width:256px;height:256px;background-position:0 -1056px}
+.docs_st_biz  .iconsFileTypes256-ftDefault256{width:256px;height:256px;background-position:0 -1320px}
+.docs_st_biz  .iconsFileTypes256-ftFlash256{width:256px;height:256px;background-position:0 -1584px}
+.docs_st_biz  .iconsFileTypes256-ftFolder256{width:256px;height:256px;background-position:0 -1848px}
+.docs_st_biz  .iconsFileTypes256-ftFolderOpen256{width:256px;height:256px;background-position:0 -2112px}
+.docs_st_biz  .iconsFileTypes256-ftGraphic256{width:256px;height:256px;background-position:0 -2376px}
+.docs_st_biz  .iconsFileTypes256-ftLink256{width:256px;height:256px;background-position:0 -2640px}
+.docs_st_biz  .iconsFileTypes256-ftPage256{width:256px;height:256px;background-position:0 -2904px}
+.docs_st_biz  .iconsFileTypes256-ftPdf256{width:256px;height:256px;background-position:0 -3168px}
+.docs_st_biz  .iconsFileTypes256-ftPresentation256{width:256px;height:256px;background-position:0 -3432px}
+.docs_st_biz  .iconsFileTypes256-ftText256{width:256px;height:256px;background-position:0 -3696px}
+.docs_st_biz  .iconsFileTypes256-ftVideo256{width:256px;height:256px;background-position:0 -3960px}
+.docs_st_biz  .iconsFileTypes256-ftVisualization256{width:256px;height:256px;background-position:0 -4224px}
+.docs_st_biz  .iconsFileTypes256-ftWordProcessing256{width:256px;height:256px;background-position:0 -4488px}
+.docs_st_biz  .iconsFileTypes256{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/FileTypes/iconsFileTypes256-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsFileTypes256{display:none}
+.docs_st_biz  .iconsFileTypes32-ftAudio32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .iconsFileTypes32-ftCode32{width:32px;height:32px;background-position:0 -40px}
+.docs_st_biz  .iconsFileTypes32-ftCompressed32{width:32px;height:32px;background-position:0 -80px}
+.docs_st_biz  .iconsFileTypes32-ftContact32{width:32px;height:32px;background-position:0 -120px}
+.docs_st_biz  .iconsFileTypes32-ftData32{width:32px;height:32px;background-position:0 -160px}
+.docs_st_biz  .iconsFileTypes32-ftDataDocs32{width:32px;height:32px;background-position:0 -200px}
+.docs_st_biz  .iconsFileTypes32-ftDefault32{width:32px;height:32px;background-position:0 -240px}
+.docs_st_biz  .iconsFileTypes32-ftFlash32{width:32px;height:32px;background-position:0 -280px}
+.docs_st_biz  .iconsFileTypes32-ftFolder32{width:32px;height:32px;background-position:0 -320px}
+.docs_st_biz  .iconsFileTypes32-ftFolderOpen32{width:32px;height:32px;background-position:0 -360px}
+.docs_st_biz  .iconsFileTypes32-ftGraphic32{width:32px;height:32px;background-position:0 -400px}
+.docs_st_biz  .iconsFileTypes32-ftLink32{width:32px;height:32px;background-position:0 -440px}
+.docs_st_biz  .iconsFileTypes32-ftPage32{width:32px;height:32px;background-position:0 -480px}
+.docs_st_biz  .iconsFileTypes32-ftPdf32{width:32px;height:32px;background-position:0 -520px}
+.docs_st_biz  .iconsFileTypes32-ftPresentation32{width:32px;height:32px;background-position:0 -560px}
+.docs_st_biz  .iconsFileTypes32-ftPresentationDocs32{width:32px;height:32px;background-position:0 -600px}
+.docs_st_biz  .iconsFileTypes32-ftText32{width:32px;height:32px;background-position:0 -640px}
+.docs_st_biz  .iconsFileTypes32-ftVideo32{width:32px;height:32px;background-position:0 -680px}
+.docs_st_biz  .iconsFileTypes32-ftVisualization32{width:32px;height:32px;background-position:0 -720px}
+.docs_st_biz  .iconsFileTypes32-ftWordProcessing32{width:32px;height:32px;background-position:0 -760px}
+.docs_st_biz  .iconsFileTypes32-ftWordProcessingDocs32{width:32px;height:32px;background-position:0 -800px}
+.docs_st_biz  .iconsFileTypes32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/FileTypes/iconsFileTypes32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsFileTypes32{display:none}
+.docs_st_biz  .iconsFileTypes64-ftAudio64{width:64px;height:64px;background-position:0 0}
+.docs_st_biz  .iconsFileTypes64-ftCode64{width:64px;height:64px;background-position:0 -72px}
+.docs_st_biz  .iconsFileTypes64-ftCompressed64{width:64px;height:64px;background-position:0 -144px}
+.docs_st_biz  .iconsFileTypes64-ftContact64{width:64px;height:64px;background-position:0 -216px}
+.docs_st_biz  .iconsFileTypes64-ftData64{width:64px;height:64px;background-position:0 -288px}
+.docs_st_biz  .iconsFileTypes64-ftDataDocs64{width:64px;height:64px;background-position:0 -360px}
+.docs_st_biz  .iconsFileTypes64-ftDefault64{width:64px;height:64px;background-position:0 -432px}
+.docs_st_biz  .iconsFileTypes64-ftFlash64{width:64px;height:64px;background-position:0 -504px}
+.docs_st_biz  .iconsFileTypes64-ftFolder64{width:64px;height:64px;background-position:0 -576px}
+.docs_st_biz  .iconsFileTypes64-ftFolderOpen64{width:64px;height:64px;background-position:0 -648px}
+.docs_st_biz  .iconsFileTypes64-ftGraphic64{width:64px;height:64px;background-position:0 -720px}
+.docs_st_biz  .iconsFileTypes64-ftLink64{width:64px;height:64px;background-position:0 -792px}
+.docs_st_biz  .iconsFileTypes64-ftPage64{width:64px;height:64px;background-position:0 -864px}
+.docs_st_biz  .iconsFileTypes64-ftPdf64{width:64px;height:64px;background-position:0 -936px}
+.docs_st_biz  .iconsFileTypes64-ftPresentation64{width:64px;height:64px;background-position:0 -1008px}
+.docs_st_biz  .iconsFileTypes64-ftPresentationDocs64{width:64px;height:64px;background-position:0 -1080px}
+.docs_st_biz  .iconsFileTypes64-ftText64{width:64px;height:64px;background-position:0 -1152px}
+.docs_st_biz  .iconsFileTypes64-ftVideo64{width:64px;height:64px;background-position:0 -1224px}
+.docs_st_biz  .iconsFileTypes64-ftVisualization64{width:64px;height:64px;background-position:0 -1296px}
+.docs_st_biz  .iconsFileTypes64-ftWordProcessing64{width:64px;height:64px;background-position:0 -1368px}
+.docs_st_biz  .iconsFileTypes64-ftWordProcessingDocs64{width:64px;height:64px;background-position:0 -1440px}
+.docs_st_biz  .iconsFileTypes64{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/FileTypes/iconsFileTypes64-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsFileTypes64{display:none}
+.docs_st_biz  .iconsMessages16-msgError16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .iconsMessages16-msgErrorInField{width:9px;height:9px;background-position:0 -24px}
+.docs_st_biz  .iconsMessages16-msgInfo16{width:16px;height:16px;background-position:0 -41px}
+.docs_st_biz  .iconsMessages16-msgSuccess16{width:16px;height:16px;background-position:0 -65px}
+.docs_st_biz  .iconsMessages16-msgWarning16{width:16px;height:16px;background-position:0 -89px}
+.docs_st_biz  .iconsMessages16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Messages/iconsMessages16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsMessages16{display:none}
+.docs_st_biz  .iconsMessages48-msgError48{width:48px;height:48px;background-position:0 0}
+.docs_st_biz  .iconsMessages48-msgInfo48{width:48px;height:48px;background-position:0 -56px}
+.docs_st_biz  .iconsMessages48-msgSuccess48{width:48px;height:48px;background-position:0 -112px}
+.docs_st_biz  .iconsMessages48-msgWarning48{width:48px;height:48px;background-position:0 -168px}
+.docs_st_biz  .iconsMessages48{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Messages/iconsMessages48-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsMessages48{display:none}
+.docs_st_biz  .iconsOther16-bannerBadgeStarDark8{width:8px;height:8px;background-position:0 0}
+.docs_st_biz  .iconsOther16-bannerBadgeStarLight8{width:8px;height:8px;background-position:0 -16px}
+.docs_st_biz  .iconsOther16-bannerHelpNormal16-ar{width:16px;height:16px;background-position:0 -32px}
+.docs_st_biz  .iconsOther16-bannerHelpNormal16{width:16px;height:16px;background-position:0 -56px}
+.docs_st_biz  .iconsOther16-bannerShareHover16{width:16px;height:16px;background-position:0 -80px}
+.docs_st_biz  .iconsOther16-bannerShareNormal16{width:16px;height:16px;background-position:0 -104px}
+.docs_st_biz  .iconsOther16-Chart16{width:16px;height:16px;background-position:0 -128px}
+.docs_st_biz  .iconsOther16-Cogs16{width:16px;height:16px;background-position:0 -152px}
+.docs_st_biz  .iconsOther16-Feed12{width:12px;height:12px;background-position:0 -176px}
+.docs_st_biz  .iconsOther16-Feed16{width:16px;height:16px;background-position:0 -196px}
+.docs_st_biz  .iconsOther16-FolderCollapse16{width:16px;height:16px;background-position:0 -220px}
+.docs_st_biz  .iconsOther16-FolderExpand16{width:16px;height:16px;background-position:0 -244px}
+.docs_st_biz  .iconsOther16-FolderNormal16{width:16px;height:16px;background-position:0 -268px}
+.docs_st_biz  .iconsOther16-FolderOpen16{width:16px;height:16px;background-position:0 -292px}
+.docs_st_biz  .iconsOther16-FolderPrivate16{width:16px;height:16px;background-position:0 -316px}
+.docs_st_biz  .iconsOther16-FolderPublic16{width:16px;height:16px;background-position:0 -340px}
+.docs_st_biz  .iconsOther16-FolderShared16{width:16px;height:16px;background-position:0 -364px}
+.docs_st_biz  .iconsOther16-Help12-ar{width:12px;height:12px;background-position:0 -388px}
+.docs_st_biz  .iconsOther16-Help12{width:12px;height:12px;background-position:0 -408px}
+.docs_st_biz  .iconsOther16-iconArrowBack16-rtl{width:16px;height:16px;background-position:0 -428px}
+.docs_st_biz  .iconsOther16-iconArrowBack16{width:16px;height:16px;background-position:0 -452px}
+.docs_st_biz  .iconsOther16-iconContext14{width:14px;height:14px;background-position:0 -476px}
+.docs_st_biz  .iconsOther16-iconContextHover14{width:14px;height:14px;background-position:0 -498px}
+.docs_st_biz  .iconsOther16-iconNewBlog16{width:16px;height:16px;background-position:0 -520px}
+.docs_st_biz  .iconsOther16-iconNewEntry16{width:16px;height:16px;background-position:0 -544px}
+.docs_st_biz  .iconsOther16-ModeratedCommunity16{width:16px;height:16px;background-position:0 -568px}
+.docs_st_biz  .iconsOther16-Refresh16{width:16px;height:16px;background-position:0 -592px}
+.docs_st_biz  .iconsOther16-RelatedActivities16{width:16px;height:16px;background-position:0 -616px}
+.docs_st_biz  .iconsOther16-Repost16{width:16px;height:16px;background-position:0 -640px}
+.docs_st_biz  .iconsOther16-Tags16{width:16px;height:16px;background-position:0 -664px}
+.docs_st_biz  .iconsOther16-Trash16{width:16px;height:16px;background-position:0 -688px}
+.docs_st_biz  .iconsOther16-Vote14{width:16px;height:16px;background-position:0 -712px}
+.docs_st_biz  .iconsOther16-WatchDemoBlue14-rtl{width:14px;height:14px;background-position:0 -736px}
+.docs_st_biz  .iconsOther16-WatchDemoBlue14{width:14px;height:14px;background-position:0 -758px}
+.docs_st_biz  .iconsOther16-WatchDemoWhite14-rtl{width:14px;height:14px;background-position:0 -780px}
+.docs_st_biz  .iconsOther16-WatchDemoWhite14{width:14px;height:14px;background-position:0 -802px}
+.docs_st_biz  .iconsOther16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Other/iconsOther16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsOther16{display:none}
+.docs_st_biz  .iconsOther48-Feed32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .iconsOther48-WatchDemo{width:48px;height:48px;background-position:0 -40px}
+.docs_st_biz  .iconsOther48-WatchDemoWhite48-rtl{width:48px;height:48px;background-position:0 -96px}
+.docs_st_biz  .iconsOther48-WatchDemoWhite48{width:48px;height:48px;background-position:0 -152px}
+.docs_st_biz  .iconsOther48{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/Other/iconsOther48-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsOther48{display:none}
+.docs_st_biz  .iconsStates16-Block14{width:14px;height:14px;background-position:0 0}
+.docs_st_biz  .iconsStates16-CheckedOut{width:16px;height:16px;background-position:0 -22px}
+.docs_st_biz  .iconsStates16-CheckedOutMe{width:16px;height:16px;background-position:0 -46px}
+.docs_st_biz  .iconsStates16-Comment16{width:16px;height:16px;background-position:0 -70px}
+.docs_st_biz  .iconsStates16-Forwarded16{width:16px;height:16px;background-position:0 -94px}
+.docs_st_biz  .iconsStates16-HasAttachment{width:16px;height:16px;background-position:0 -118px}
+.docs_st_biz  .iconsStates16-HighPriority{width:16px;height:16px;background-position:0 -142px}
+.docs_st_biz  .iconsStates16-Importance{width:16px;height:16px;background-position:0 -166px}
+.docs_st_biz  .iconsStates16-Like16{width:16px;height:16px;background-position:0 -190px}
+.docs_st_biz  .iconsStates16-LowPriority{width:16px;height:16px;background-position:0 -214px}
+.docs_st_biz  .iconsStates16-MediumPriority{width:16px;height:16px;background-position:0 -238px}
+.docs_st_biz  .iconsStates16-NoComment16{width:16px;height:16px;background-position:0 -262px}
+.docs_st_biz  .iconsStates16-NoPriority{width:16px;height:16px;background-position:0 -286px}
+.docs_st_biz  .iconsStates16-NotPinned{width:16px;height:16px;background-position:0 -310px}
+.docs_st_biz  .iconsStates16-Pinned{width:16px;height:16px;background-position:0 -334px}
+.docs_st_biz  .iconsStates16-Private{width:16px;height:16px;background-position:0 -358px}
+.docs_st_biz  .iconsStates16-Public{width:16px;height:16px;background-position:0 -382px}
+.docs_st_biz  .iconsStates16-RatingHalf-rtl{width:14px;height:14px;background-position:0 -406px}
+.docs_st_biz  .iconsStates16-RatingHalf{width:14px;height:14px;background-position:0 -428px}
+.docs_st_biz  .iconsStates16-RatingOff{width:16px;height:16px;background-position:0 -450px}
+.docs_st_biz  .iconsStates16-RatingOff12{width:12px;height:12px;background-position:0 -474px}
+.docs_st_biz  .iconsStates16-RatingOff14{width:14px;height:14px;background-position:0 -494px}
+.docs_st_biz  .iconsStates16-RatingOff16{width:16px;height:16px;background-position:0 -516px}
+.docs_st_biz  .iconsStates16-RatingOn{width:16px;height:16px;background-position:0 -540px}
+.docs_st_biz  .iconsStates16-RatingOn12{width:12px;height:12px;background-position:0 -564px}
+.docs_st_biz  .iconsStates16-RatingOn14{width:14px;height:14px;background-position:0 -584px}
+.docs_st_biz  .iconsStates16-RatingOn16{width:16px;height:16px;background-position:0 -606px}
+.docs_st_biz  .iconsStates16-Replied16{width:16px;height:16px;background-position:0 -630px}
+.docs_st_biz  .iconsStates16-RepliedForwarded16{width:16px;height:16px;background-position:0 -654px}
+.docs_st_biz  .iconsStates16-Shared{width:16px;height:16px;background-position:0 -678px}
+.docs_st_biz  .iconsStates16-StarOff{width:16px;height:16px;background-position:0 -702px}
+.docs_st_biz  .iconsStates16-StarOn{width:16px;height:16px;background-position:0 -726px}
+.docs_st_biz  .iconsStates16-TunedOut{width:16px;height:16px;background-position:0 -750px}
+.docs_st_biz  .iconsStates16-WikiPageViews16{width:16px;height:16px;background-position:0 -774px}
+.docs_st_biz  .iconsStates16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/Icons/States/iconsStates16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .iconsStates16{display:none}
+.docs_st_biz  .otherColumnHeadings16-chAttachments16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .otherColumnHeadings16-chImportance16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .otherColumnHeadings16-chIsSortable16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .otherColumnHeadings16-chPriority16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .otherColumnHeadings16-chReplyForward16{width:16px;height:16px;background-position:0 -96px}
+.docs_st_biz  .otherColumnHeadings16-chSortDown8{width:8px;height:8px;background-position:0 -120px}
+.docs_st_biz  .otherColumnHeadings16-chSortHighLow16{width:16px;height:16px;background-position:0 -136px}
+.docs_st_biz  .otherColumnHeadings16-chSortLowHigh16{width:16px;height:16px;background-position:0 -160px}
+.docs_st_biz  .otherColumnHeadings16-chSortUp8{width:8px;height:8px;background-position:0 -184px}
+.docs_st_biz  .otherColumnHeadings16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/ColumnHeadings/otherColumnHeadings16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherColumnHeadings16{display:none}
+.docs_st_biz  .otherFramework16-AddDark12{width:12px;height:12px;background-position:0 0}
+.docs_st_biz  .otherFramework16-AddLight12{width:12px;height:12px;background-position:0 -20px}
+.docs_st_biz  .otherFramework16-ArrowDown12{width:12px;height:14px;background-position:0 -40px}
+.docs_st_biz  .otherFramework16-ArrowThickDownGray12{width:12px;height:12px;background-position:0 -62px}
+.docs_st_biz  .otherFramework16-ArrowThickLeftGray12{width:12px;height:12px;background-position:0 -82px}
+.docs_st_biz  .otherFramework16-ArrowThickRightGray12{width:12px;height:12px;background-position:0 -102px}
+.docs_st_biz  .otherFramework16-ArrowThickUpGray12{width:12px;height:12px;background-position:0 -122px}
+.docs_st_biz  .otherFramework16-ArrowThinDownDark12{width:12px;height:12px;background-position:0 -142px}
+.docs_st_biz  .otherFramework16-ArrowThinDownLight12{width:12px;height:12px;background-position:0 -162px}
+.docs_st_biz  .otherFramework16-ArrowThinLeftDark12{width:12px;height:12px;background-position:0 -182px}
+.docs_st_biz  .otherFramework16-ArrowThinLeftLight12{width:12px;height:12px;background-position:0 -202px}
+.docs_st_biz  .otherFramework16-ArrowThinRightDark12{width:12px;height:12px;background-position:0 -222px}
+.docs_st_biz  .otherFramework16-ArrowThinRightLight12{width:12px;height:12px;background-position:0 -242px}
+.docs_st_biz  .otherFramework16-ArrowThinUpDark12{width:12px;height:12px;background-position:0 -262px}
+.docs_st_biz  .otherFramework16-ArrowThinUpLight12{width:12px;height:12px;background-position:0 -282px}
+.docs_st_biz  .otherFramework16-BackToTopBlack{width:12px;height:12px;background-position:0 -302px}
+.docs_st_biz  .otherFramework16-BackToTopWhite{width:12px;height:12px;background-position:0 -322px}
+.docs_st_biz  .otherFramework16-Close14{width:14px;height:14px;background-position:0 -342px}
+.docs_st_biz  .otherFramework16-CloseHover14{width:14px;height:14px;background-position:0 -364px}
+.docs_st_biz  .otherFramework16-commentIndent-rtl{width:20px;height:15px;background-position:0 -386px}
+.docs_st_biz  .otherFramework16-commentIndent{width:20px;height:15px;background-position:0 -409px}
+.docs_st_biz  .otherFramework16-commentPointForum-rtl{width:10px;height:6px;background-position:0 -432px}
+.docs_st_biz  .otherFramework16-commentPointForum{width:10px;height:6px;background-position:0 -446px}
+.docs_st_biz  .otherFramework16-commentPointGrayNoBorderUpLeft{width:10px;height:11px;background-position:0 -460px}
+.docs_st_biz  .otherFramework16-commentPointGrayNoBorderUpRight{width:10px;height:11px;background-position:0 -479px}
+.docs_st_biz  .otherFramework16-commentPointGrayUpLeft{width:10px;height:10px;background-position:0 -498px}
+.docs_st_biz  .otherFramework16-commentPointGrayUpRight{width:10px;height:10px;background-position:0 -516px}
+.docs_st_biz  .otherFramework16-commentPointWhiteNoBorderUpLeft{width:10px;height:11px;background-position:0 -534px}
+.docs_st_biz  .otherFramework16-commentPointWhiteNoBorderUpRight{width:10px;height:11px;background-position:0 -553px}
+.docs_st_biz  .otherFramework16-commentPointWhiteUpLeft{width:10px;height:11px;background-position:0 -572px}
+.docs_st_biz  .otherFramework16-commentPointWhiteUpRight{width:10px;height:11px;background-position:0 -591px}
+.docs_st_biz  .otherFramework16-DeleteDark12{width:12px;height:12px;background-position:0 -610px}
+.docs_st_biz  .otherFramework16-DeleteLight12{width:12px;height:12px;background-position:0 -630px}
+.docs_st_biz  .otherFramework16-dndHandle{width:9px;height:17px;background-position:0 -650px}
+.docs_st_biz  .otherFramework16-DownloadedCurrent6{width:6px;height:6px;background-position:0 -675px}
+.docs_st_biz  .otherFramework16-DownloadedNever6{width:6px;height:6px;background-position:0 -689px}
+.docs_st_biz  .otherFramework16-DownloadedOlder6{width:6px;height:6px;background-position:0 -703px}
+.docs_st_biz  .otherFramework16-ExpandeeBlackLeft{width:14px;height:14px;background-position:0 -717px}
+.docs_st_biz  .otherFramework16-ExpandeeBlackRight{width:14px;height:14px;background-position:0 -739px}
+.docs_st_biz  .otherFramework16-ExpandeeWhiteLeft{width:14px;height:14px;background-position:0 -761px}
+.docs_st_biz  .otherFramework16-ExpandeeWhiteRight{width:14px;height:14px;background-position:0 -783px}
+.docs_st_biz  .otherFramework16-HideMore12{width:12px;height:12px;background-position:0 -805px}
+.docs_st_biz  .otherFramework16-HideMoreDark12{width:12px;height:12px;background-position:0 -825px}
+.docs_st_biz  .otherFramework16-likeConnectorLeft{width:7px;height:6px;background-position:0 -845px}
+.docs_st_biz  .otherFramework16-likeConnectorRight{width:7px;height:6px;background-position:0 -859px}
+.docs_st_biz  .otherFramework16-menuCheckmark12{width:12px;height:12px;background-position:0 -873px}
+.docs_st_biz  .otherFramework16-OverflowChevron12{width:12px;height:12px;background-position:0 -893px}
+.docs_st_biz  .otherFramework16-OverflowChevronDark12{width:12px;height:12px;background-position:0 -913px}
+.docs_st_biz  .otherFramework16-OverflowChevronLight12{width:12px;height:12px;background-position:0 -933px}
+.docs_st_biz  .otherFramework16-PopupSharkfinDarkDown{width:15px;height:11px;background-position:0 -953px}
+.docs_st_biz  .otherFramework16-PopupSharkfinDarkLeft{width:11px;height:15px;background-position:0 -972px}
+.docs_st_biz  .otherFramework16-PopupSharkfinDarkRight{width:11px;height:15px;background-position:0 -995px}
+.docs_st_biz  .otherFramework16-PopupSharkfinDarkUp{width:15px;height:11px;background-position:0 -1018px}
+.docs_st_biz  .otherFramework16-PopupSharkfinLightDown{width:15px;height:11px;background-position:0 -1037px}
+.docs_st_biz  .otherFramework16-PopupSharkfinLightLeft{width:11px;height:15px;background-position:0 -1056px}
+.docs_st_biz  .otherFramework16-PopupSharkfinLightRight{width:11px;height:15px;background-position:0 -1079px}
+.docs_st_biz  .otherFramework16-PopupSharkfinLightUp{width:15px;height:11px;background-position:0 -1102px}
+.docs_st_biz  .otherFramework16-PreviewSharkfinLeft{width:8px;height:15px;background-position:0 -1121px}
+.docs_st_biz  .otherFramework16-PreviewSharkfinRight{width:8px;height:15px;background-position:0 -1144px}
+.docs_st_biz  .otherFramework16-searchArrow{width:15px;height:4px;background-position:0 -1167px}
+.docs_st_biz  .otherFramework16-searchArrowHover{width:15px;height:4px;background-position:0 -1179px}
+.docs_st_biz  .otherFramework16-SearchDark12{width:12px;height:12px;background-position:0 -1191px}
+.docs_st_biz  .otherFramework16-SearchLight12{width:12px;height:12px;background-position:0 -1211px}
+.docs_st_biz  .otherFramework16-SectionMenu12{width:16px;height:16px;background-position:0 -1231px}
+.docs_st_biz  .otherFramework16-SectionMenuDark12{width:16px;height:16px;background-position:0 -1255px}
+.docs_st_biz  .otherFramework16-SectionMenuLight12{width:16px;height:16px;background-position:0 -1279px}
+.docs_st_biz  .otherFramework16-ShareSharkfinLightLeft{width:7px;height:7px;background-position:0 -1303px}
+.docs_st_biz  .otherFramework16-ShareSharkfinLightRight{width:7px;height:7px;background-position:0 -1318px}
+.docs_st_biz  .otherFramework16-ShareSharkfinMediumLeft{width:7px;height:7px;background-position:0 -1333px}
+.docs_st_biz  .otherFramework16-ShareSharkfinMediumRight{width:7px;height:7px;background-position:0 -1348px}
+.docs_st_biz  .otherFramework16-ShowMore12{width:12px;height:12px;background-position:0 -1363px}
+.docs_st_biz  .otherFramework16-ShowMoreDark12{width:12px;height:12px;background-position:0 -1383px}
+.docs_st_biz  .otherFramework16-TabSharkfinLightUp{width:11px;height:6px;background-position:0 -1403px}
+.docs_st_biz  .otherFramework16-TriangleMediumDarkDown12{width:12px;height:12px;background-position:0 -1417px}
+.docs_st_biz  .otherFramework16-TriangleMediumDarkLeft12{width:12px;height:12px;background-position:0 -1437px}
+.docs_st_biz  .otherFramework16-TriangleMediumDarkRight12{width:12px;height:12px;background-position:0 -1457px}
+.docs_st_biz  .otherFramework16-TriangleMediumDarkUp12{width:12px;height:12px;background-position:0 -1477px}
+.docs_st_biz  .otherFramework16-TriangleMediumGrayDown12{width:12px;height:12px;background-position:0 -1497px}
+.docs_st_biz  .otherFramework16-TriangleMediumGrayLeft12{width:12px;height:12px;background-position:0 -1517px}
+.docs_st_biz  .otherFramework16-TriangleMediumGrayRight12{width:12px;height:12px;background-position:0 -1537px}
+.docs_st_biz  .otherFramework16-TriangleMediumGrayUp12{width:12px;height:12px;background-position:0 -1557px}
+.docs_st_biz  .otherFramework16-TriangleMediumLightDown12{width:12px;height:12px;background-position:0 -1577px}
+.docs_st_biz  .otherFramework16-TriangleMediumLightLeft12{width:12px;height:12px;background-position:0 -1597px}
+.docs_st_biz  .otherFramework16-TriangleMediumLightRight12{width:12px;height:12px;background-position:0 -1617px}
+.docs_st_biz  .otherFramework16-TriangleMediumLightUp12{width:12px;height:12px;background-position:0 -1637px}
+.docs_st_biz  .otherFramework16-TriangleSmallDarkDown8{width:8px;height:8px;background-position:0 -1657px}
+.docs_st_biz  .otherFramework16-TriangleSmallDarkLeft8{width:8px;height:8px;background-position:0 -1673px}
+.docs_st_biz  .otherFramework16-TriangleSmallDarkRight8{width:8px;height:8px;background-position:0 -1689px}
+.docs_st_biz  .otherFramework16-TriangleSmallDarkUp8{width:8px;height:8px;background-position:0 -1705px}
+.docs_st_biz  .otherFramework16-TriangleSmallGrayDown8{width:8px;height:8px;background-position:0 -1721px}
+.docs_st_biz  .otherFramework16-TriangleSmallGrayLeft8{width:8px;height:8px;background-position:0 -1737px}
+.docs_st_biz  .otherFramework16-TriangleSmallGrayRight8{width:8px;height:8px;background-position:0 -1753px}
+.docs_st_biz  .otherFramework16-TriangleSmallGrayUp8{width:8px;height:8px;background-position:0 -1769px}
+.docs_st_biz  .otherFramework16-TriangleSmallLightDown8{width:8px;height:8px;background-position:0 -1785px}
+.docs_st_biz  .otherFramework16-TriangleSmallLightLeft8{width:8px;height:8px;background-position:0 -1801px}
+.docs_st_biz  .otherFramework16-TriangleSmallLightRight8{width:8px;height:8px;background-position:0 -1817px}
+.docs_st_biz  .otherFramework16-TriangleSmallLightUp8{width:8px;height:8px;background-position:0 -1833px}
+.docs_st_biz  .otherFramework16-TriangleSmallOrangeDown8{width:8px;height:8px;background-position:0 -1849px}
+.docs_st_biz  .otherFramework16-TriangleSmallOrangeLeft8{width:8px;height:8px;background-position:0 -1865px}
+.docs_st_biz  .otherFramework16-TriangleSmallOrangeRight8{width:8px;height:8px;background-position:0 -1881px}
+.docs_st_biz  .otherFramework16-TriangleSmallOrangeUp8{width:8px;height:8px;background-position:0 -1897px}
+.docs_st_biz  .otherFramework16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/Framework/otherFramework16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherFramework16{display:none}
+.docs_st_biz  .otherFramework32-ClosePopup32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .otherFramework32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/Framework/otherFramework32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherFramework32{display:none}
+.docs_st_biz  .otherMediaPlayer16-mpScrollSmallLeft{width:10px;height:17px;background-position:0 0}
+.docs_st_biz  .otherMediaPlayer16-mpScrollSmallRight{width:10px;height:17px;background-position:0 -25px}
+.docs_st_biz  .otherMediaPlayer16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/MediaPlayer/otherMediaPlayer16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherMediaPlayer16{display:none}
+.docs_st_biz  .otherMediaPlayer32-mpPlayButton30{width:30px;height:30px;background-position:0 0}
+.docs_st_biz  .otherMediaPlayer32-mpScrollLargeBeginning{width:32px;height:32px;background-position:0 -38px}
+.docs_st_biz  .otherMediaPlayer32-mpScrollLargeLeft{width:32px;height:33px;background-position:0 -78px}
+.docs_st_biz  .otherMediaPlayer32-mpScrollLargeRight{width:32px;height:33px;background-position:0 -119px}
+.docs_st_biz  .otherMediaPlayer32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/MediaPlayer/otherMediaPlayer32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherMediaPlayer32{display:none}
+.docs_st_biz  .otherMediaPlayer45-mpPlayButton45{width:45px;height:45px;background-position:0 0}
+.docs_st_biz  .otherMediaPlayer45{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/MediaPlayer/otherMediaPlayer45-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherMediaPlayer45{display:none}
+.docs_st_biz  .otherMediaPlayer75-mpPlayButton75{width:75px;height:75px;background-position:0 0}
+.docs_st_biz  .otherMediaPlayer75{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/MediaPlayer/otherMediaPlayer75-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherMediaPlayer75{display:none}
+.docs_st_biz  .otherPeople128-LoadingPhotoPerson128{width:128px;height:128px;background-position:0 0}
+.docs_st_biz  .otherPeople128-NoPhotoCommunity128{width:128px;height:128px;background-position:0 -136px}
+.docs_st_biz  .otherPeople128-NoPhotoGroup128{width:128px;height:128px;background-position:0 -272px}
+.docs_st_biz  .otherPeople128-NoPhotoPerson128{width:128px;height:128px;background-position:0 -408px}
+.docs_st_biz  .otherPeople128{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/People/otherPeople128-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherPeople128{display:none}
+.docs_st_biz  .otherPeople155-NoPhotoCommunity155{width:155px;height:155px;background-position:0 0}
+.docs_st_biz  .otherPeople155{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/People/otherPeople155-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherPeople155{display:none}
+.docs_st_biz  .otherPeople16-LoadingPhotoPerson16{width:16px;height:16px;background-position:0 0}
+.docs_st_biz  .otherPeople16-NoPhotoGroup16{width:16px;height:16px;background-position:0 -24px}
+.docs_st_biz  .otherPeople16-NoPhotoGroupComponent16{width:16px;height:16px;background-position:0 -48px}
+.docs_st_biz  .otherPeople16-NoPhotoPerson16{width:16px;height:16px;background-position:0 -72px}
+.docs_st_biz  .otherPeople16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/People/otherPeople16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherPeople16{display:none}
+.docs_st_biz  .otherPeople24-LoadingPhotoPerson24{width:24px;height:24px;background-position:0 0}
+.docs_st_biz  .otherPeople24-NoPhotoGroup24{width:24px;height:24px;background-position:0 -32px}
+.docs_st_biz  .otherPeople24-NoPhotoPerson24{width:24px;height:24px;background-position:0 -64px}
+.docs_st_biz  .otherPeople24{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/People/otherPeople24-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherPeople24{display:none}
+.docs_st_biz  .otherPeople32-LoadingPhotoPerson32{width:32px;height:32px;background-position:0 0}
+.docs_st_biz  .otherPeople32-NoPhotoCommunity32{width:32px;height:32px;background-position:0 -40px}
+.docs_st_biz  .otherPeople32-NoPhotoGroup32{width:32px;height:32px;background-position:0 -80px}
+.docs_st_biz  .otherPeople32-NoPhotoPerson32{width:32px;height:32px;background-position:0 -120px}
+.docs_st_biz  .otherPeople32{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/People/otherPeople32-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherPeople32{display:none}
+.docs_st_biz  .otherPeople48-LoadingPhotoPerson48{width:48px;height:48px;background-position:0 0}
+.docs_st_biz  .otherPeople48-NoPhotoGroup48{width:48px;height:48px;background-position:0 -56px}
+.docs_st_biz  .otherPeople48-NoPhotoPerson48{width:48px;height:48px;background-position:0 -112px}
+.docs_st_biz  .otherPeople48{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/People/otherPeople48-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherPeople48{display:none}
+.docs_st_biz  .otherPeople64-LoadingPhotoPerson64{width:64px;height:64px;background-position:0 0}
+.docs_st_biz  .otherPeople64-NoPhotoCommunity64{width:64px;height:64px;background-position:0 -72px}
+.docs_st_biz  .otherPeople64-NoPhotoGroup64{width:64px;height:64px;background-position:0 -144px}
+.docs_st_biz  .otherPeople64-NoPhotoPerson64{width:64px;height:64px;background-position:0 -216px}
+.docs_st_biz  .otherPeople64-NoPhotoPerson55{width:55px;height:55px;background-position:0 -288px}
+.docs_st_biz  .otherPeople64{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/People/otherPeople64-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherPeople64{display:none}
+.docs_st_biz  .otherStatus9-stAvailable9{width:9px;height:9px;background-position:0 0}
+.docs_st_biz  .otherStatus9-stAway9{width:9px;height:9px;background-position:0 -17px}
+.docs_st_biz  .otherStatus9-stDND9{width:9px;height:9px;background-position:0 -34px}
+.docs_st_biz  .otherStatus9-stInMeeting9{width:9px;height:9px;background-position:0 -51px}
+.docs_st_biz  .otherStatus9{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/Status/otherStatus9-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherStatus9{display:none}
+.docs_st_biz  .otherTree16-iconCollapseTree{width:14px;height:14px;background-position:0 0}
+.docs_st_biz  .otherTree16-iconExpandTree{width:14px;height:14px;background-position:0 -22px}
+.docs_st_biz  .otherTree16-orgBottomNode-rtl{width:17px;height:36px;background-position:0 -44px}
+.docs_st_biz  .otherTree16-orgBottomNode{width:17px;height:36px;background-position:0 -88px}
+.docs_st_biz  .otherTree16-orgParentNode-rtl{width:17px;height:36px;background-position:0 -132px}
+.docs_st_biz  .otherTree16-orgParentNode{width:17px;height:36px;background-position:0 -176px}
+.docs_st_biz  .otherTree16-orgTopNode-rtl{width:17px;height:36px;background-position:0 -220px}
+.docs_st_biz  .otherTree16-orgTopNode{width:17px;height:36px;background-position:0 -264px}
+.docs_st_biz  .otherTree16{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/Tree/otherTree16-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherTree16{display:none}
+.docs_st_biz  .otherVoting12-VoteAccepted12{width:12px;height:12px;background-position:0 0}
+.docs_st_biz  .otherVoting12-VoteNotRequired12{width:12px;height:12px;background-position:0 -20px}
+.docs_st_biz  .otherVoting12-VoteRejected12{width:12px;height:12px;background-position:0 -40px}
+.docs_st_biz  .otherVoting12-VoteUnknown12{width:12px;height:12px;background-position:0 -60px}
+.docs_st_biz  .otherVoting12-VoteUnknown12-ar{width:12px;height:12px;background-position:0 -80px}
+.docs_st_biz  .otherVoting12{background-image:url("/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/OtherImages/Voting/otherVoting12-8bit.png?etag=20140219.071924");background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.docs_st_biz  .lotusImagesOff .otherVoting12{display:none}
+
+
+
+

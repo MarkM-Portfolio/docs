@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Trabalhar com documentos" topic="text/document/documents_frame.html">
+   <topic label="Trabalhar com documentos" href="text/document/documents_frame.html">
+      <topic label="Criar e importar documentos"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="Acerca de modelos" href="text/document/d_templates.html"/>
+         <topic label="Criar documentos a partir de modelos"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Alterar o formato predefinido de documentos"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Transferir documentos para partilhar"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Importar documentos existentes"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Abrir ficheiros Word protegidos por palavra-passe"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Compatibilidade de ficheiro e exportar documentos"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Formatos de ficheiro suportados em documentos"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Guardar documentos" href="text/document/d_saving_documents.html"/>
+         <topic label="Publicar uma versão de documentos"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Exportar documentos para outros formatos de ficheiro"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Partilhar documentos"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Partilhar documentos com pessoas ou comunidades"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Definir níveis de acesso para documentos"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Colaborar em documentos em tempo real"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Co-edição de documentos em tempo real"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="Sobre a co-edição de documentos"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Co-edição de documentos com outros"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Mostrar alterações de cada editor em documentos"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Colaborar utilizando comentários em documentos"
+                href="text/document/d_comments_overview.html">
+            <topic label="Acerca de comentários em documentos"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Criar comentários em documentos"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Ver comentários em documentos"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Procurar comentários em documentos"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Editar documentos"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Formatar texto em documentos"
+                href="text/document/d_formatting_text.html">
+            <topic label="Definir efeitos do tipo de letra"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="Criar texto com formatação superior ou inferior à linha"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Definir o tamanho do tipo de letra"
+                   href="text/document/d_setting_font_size.html"/>
+            <topic label="Alinhar texto" href="text/document/d_aligning_text.html"/>
+            <topic label="Indentar texto" href="text/document/d_indenting_text.html"/>
+            <topic label="Adicionar marcas ou números em documentos"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Criar listas multinível em documentos"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Inserir ligações" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Criar cabeçalhos e rodapés"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Criar um índice" href="text/document/d_create_toc.html"/>
+         <topic label="Inserir campos em documentos"
+                href="text/document/d_inserting_fields.html"/>
+         <topic label="Efectuar a verificação ortográfica a documentos"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Imprimir documentos" href="text/document/d_printing_a_document.html">
+            <topic label="Imprimir documentos como ficheiros PDF"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Trabalhar com imagens em documentos"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Inserir imagens em documentos"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Definir propriedades da imagem em documentos"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Trabalhar com tabelas em documentos"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Criar tabelas em documentos"
+                href="text/document/d_creating_a_table.html"/>
+         <topic label="Alterar estilos de tabela em documentos"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Definir propriedades da tabela em documentos"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Definir as cores de segundo plano para células de tabela"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Alinhar texto em células de tabela em documentos"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Adicionar linhas e colunas em tabelas"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Mover linhas e colunas em tabelas"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Unir ou dividir células de tabela"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Redimensionar tabelas em documentos"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Adicionar legendas a tabelas em documentos"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Definir cabeçalhos para tabelas em documentos"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Guia de consulta rápida para documentos"
+             href="text/document/d_quick_ref.html"/>
+      <topic label="Atalhos de teclado em documentos"
+             href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

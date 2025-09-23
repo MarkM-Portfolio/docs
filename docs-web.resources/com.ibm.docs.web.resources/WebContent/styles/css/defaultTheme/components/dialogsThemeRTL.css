@@ -1,0 +1,39 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for dialogs
+companion filea: dialogs.css / dialogsTheme.css
+companion filea: dialogsRTL.css / dialogsThemeRTL.css*/
+/*** D I A L O G ***/
+/*this can be wrapped in a dojo dialog, if desired, which gives you the lightbox behavior for free, else, wrap it in a div assigned the class lotusDialogWrapper*/
+
+
+
+
+
+.lotusui30 .lotusDialogBorder {border:7px solid #999/*this is needed for IE*/; border:7px solid rgba(3, 3, 3, 0.33);
+	-moz-border-radius:8px;
+	border-radius:8px;
+	-moz-box-shadow:0 0 15px #aaa;
+	-webkit-box-shadow:0 0 15px #aaa;
+	box-shadow:0 0 15px #aaa;}
+.lotusui30 .lotusDialog .lotusDialogHeader {padding:15px 20px; border-bottom:1px solid #111;	text-align:right; background:#222428;
+	background-image:-moz-linear-gradient(top, #424448 0%, #393B3F 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#424448), color-stop(100%,#393B3F));}
+.lotusImagesOff .lotusui30 .lotusDialog .lotusDialogHeader {text-align:left;}
+.lotusui_ie7 .lotusui30 .lotusDialog .lotusDialogHeader {overflow:visibleR0znogyt;}
+.lotusui30 .lotusDialog .lotusHeading {display:block; font-weight:normal; color:#fff; text-shadow:0 1px 2px #000; float:none;}
+.lotusImagesOff .lotusui30 .lotusDialog .lotusHeading {float:right;}
+
+/* close icon */
+.lotusui30 .lotusDialog .lotusDialogHeader .lotusDialogClose {position:absolute; top:-18px; left:-18px; padding:0; border:0;}
+.lotusImagesOff .lotusui30 .lotusDialog .lotusDialogHeader .lotusDialogClose {position:static; padding:3px; border:1px solid #000;}
+.lotusui30 .lotusDialog .lotusDialogHeader .lotusDialogClose img {background-image:url(../../images/lotusHSprite-8bit.png); background-position:-110px 0; width:32px; height:32px;}
+
+.lotusui30 .lotusDialog .lotusFormTable, .lotusui30 .lotusDialog .lotusFormTable td, .lotusui30 .lotusDialog .lotusDialogContent {padding:15px 20px; border:0;}
+.lotusui30 .lotusDialog .lotusDialogFooter {background-color:#fff; margin:0 20px; padding:15px 0; border-top:1px solid #aaa;}
+.lotusui30 .lotusDialogFooter .lotusBtn {margin-right:10px; margin-left:0;}
+
+/***********************************************************/
+

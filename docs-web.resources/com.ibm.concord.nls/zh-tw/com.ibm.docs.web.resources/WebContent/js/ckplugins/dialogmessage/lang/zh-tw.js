@@ -1,0 +1,24 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+
+CKEDITOR.plugins.setLang("dialogmessage", "en", {
+
+	dialogmessage:
+	{
+		title : "訊息",
+		dlgTitle : "訊息",
+		validate : "驗證",
+		dialogMessage : "這裡是對話訊息"
+	}
+});
+ 

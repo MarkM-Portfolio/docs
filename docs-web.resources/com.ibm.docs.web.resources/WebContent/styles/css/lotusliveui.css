@@ -1,0 +1,23 @@
+@import url("green.css");
+
+.lotusBanner ul {
+	float: left;
+}
+
+.lotusBanner ul.lotusLinks {
+	background: transparent url(/theming/custom/2352.jpeg) no-repeat 0 7px;
+	padding: 30.5px 0px 30.5px 108px !important;
+}
+
+.lotusBanner ul.lotusUtility {
+	padding: 30.5px 0px 30.5px !important;
+}
+
+.lotusliveui {
+	font: normal .75em/1.5em Arial, Helvetica, sans-serif;
+}
+
+.lotusliveui button,.lotusliveui input,.lotusliveui select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+}

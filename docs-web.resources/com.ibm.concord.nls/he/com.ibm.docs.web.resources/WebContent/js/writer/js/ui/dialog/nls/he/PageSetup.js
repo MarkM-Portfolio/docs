@@ -1,0 +1,57 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        ORIENTATION_LABEL: "כיווניות",
+        PORTRAIT: "אנכית",
+        LANDSCAPE: "אופקית",
+        HEADER: "כותרת",
+        FOOTER: "כותרת תחתונה",
+        MARGINS_LABEL: "שוליים",
+        TOP: "ראש:",
+        BOTTOM: "תחתית:",
+        LEFT: "שמאל:",
+        RIGHT: "ימין:",
+        PAPER_FORMAT_LABEL: "מבנה נייר",
+        PAPER_SIZE_LABEL: "גודל נייר:",
+        HEIGHT: "גובה:",
+        WIDTH: "רוחב:",
+        HEIGHT_DESC: "גובה נייר, בסנטימטרים",
+        HEIGHT_DESC2: "גובה נייר, באינצ'ים",
+        WIDTH_DESC: "רוחב נייר, בסנטימטרים",
+        WIDTH_DESC2: "רוחב נייר, באינצ'ים",
+        BOTTOM_DESC: "שוליים תחתונים, בסנטימטרים",
+        BOTTOM_DESC2: "שוליים תחתונים, באינצ'ים",
+        TOP_DESC: "שוליים עליונים, בסנטימטרים",
+        TOP_DESC2: "שוליים עליונים, באינצ'ים",
+        LEFT_DESC: "שוליים שמאליים, בסנטימטרים",
+        LEFT_DESC2: "שוליים שמאליים, באינצ'ים",
+        RIGHT_DESC: "שוליים ימניים, בסנטימטרים",
+        RIGHT_DESC2: "שוליים ימניים, באינצ'ים",
+        CM_LABEL: "ס\"מ",
+        LETTER: "Letter",
+        LEGAL: "Legal",
+        TABLOID: "Tabloid",
+        USER: "משתמש",
+        SIZE1: "מעטפה #6 3/4",
+        SIZE2: "מעטפה Monarch",
+        SIZE3: "מעטפה #9",
+        SIZE4: "מעטפה #10",
+        SIZE5: "מעטפה #11",
+        SIZE6: "מעטפה #12",
+        SIZE7: "16 kai",
+        SIZE8: "32 kai",
+        SIZE9: "32 kai large",
+        INVALID_MSG: "הקלט אינו חוקי ותוקן אוטומטית. נסו ערך אחר עם אתם מעוניינים בתוצאה שונה.",
+        INVALID_WIDTH_FOR_COLUMNS: "הקלט אינו חוקי, רוחב התוכן קטן מכדי להכיל את העמודות שבתוכו. "
+});
+

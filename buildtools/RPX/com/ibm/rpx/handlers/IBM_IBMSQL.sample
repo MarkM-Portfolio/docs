@@ -1,0 +1,7 @@
+echo This is a comment statement.
+insert into acc_group (refnum, name, desc) values (-1, 'Shopper', 'Shoppers');
+insert into acc_group (refnum, name, desc) values (-2, 'CatAdmin', 'Catalog Admin');
+insert into acc_group (refnum, name, desc) values (-3, 'OrdAdmin', 'Order Admin');
+insert into acc_cmdgrp (grpc_ref) values (0, (select refnum where url='ExecTask'));
+insert into acc_cmdgrp (grpc_ref) values (0, (select refnum where url='ProdDisplay'));
+insert into tasks (tkname, tkcmt, tkgrp) values ('ERR_STATE', 'Error state', 'ERROR');

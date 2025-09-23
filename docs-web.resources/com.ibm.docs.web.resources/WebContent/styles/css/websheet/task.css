@@ -1,0 +1,220 @@
+.concordTaskContent {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+-moz-border-radius-bottomleft:4px;
+-moz-border-radius-bottomright:4px;
+-moz-border-radius-topleft:4px;
+-moz-border-radius-topright:4px;
+background:#EDEDED none repeat scroll 0 0;
+border:1px solid #B3B3B3;
+font-size:13px;
+height:142px;
+padding:10px;
+width:300px;
+font-family:Tahoma;
+z-index:100;
+}
+
+.concordTaskHead {
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.concordTaskLabel {
+font-size:12px;
+font-weight:bold;
+margin-right:35px;
+}
+
+.dijitDialogRtl .concordTaskLabel {
+margin-left:35px;
+margin-right:0px;
+}
+.concordLiveName {
+font-size:1.2em;
+white-space:nowrap;
+width:250px;
+}
+
+.concordTaskName {
+font-size:12px;
+font-weight:bold;
+margin-right:25px;
+}
+
+.concordTaskDescLabel {
+font-size:12px;
+font-weight:bold;
+margin-right:25px;
+}
+
+.concordTaskDescText {
+margin-top:10px;
+}
+
+.concordTaskRadio {
+margin-right:7px;
+}
+
+.concordTaskWarningMsg {
+font-style:normal; 
+font-weight:bold; 
+color:red; 
+font-size:11px;
+}
+
+.concordTaskTitle {
+position: relative; 
+top: -2px;
+margin-left: 3px;
+background-color: white; 
+font-family:Arial, Helvetica, sans-serif; 
+color:#000000; 
+font-size:11px; 
+font-weight:bold;
+
+white-space:nowrap;
+overflow:hidden;
+}
+
+.concordTaskErrorTitle
+{
+  background-color: #ffe3e0; 
+}
+
+.concordTaskTitle_toprow {
+top: -1px;
+}
+.concordTaskFrame {
+position:absolute; 
+z-index:2000;
+text-overflow:ellipsis;
+line-height:120%;
+overflow:hidden;
+}
+
+.concordTaskDoneBtn {
+position:relative; 
+border:1px #000000 solid; 
+background-color:#666666; 
+font-family:Arial, Helvetica, sans-serif; 
+color:#ffffff; 
+font-size:11px; 
+font-weight:bold;
+}
+
+.concordTaskDropDownBtn {
+position:absolute;
+right: 1px;
+top:-10px;
+}
+
+.oneui30 .concordTaskDropDownBtn .dijitButton .dijitButtonNode, 
+.oneui30 .concordTaskDropDownBtn .dijitDropDownButton .dijitButtonNode, 
+.oneui30 .concordTaskDropDownBtn .dijitComboButton .dijitButtonNode, 
+.oneui30 .concordTaskDropDownBtn .dijitToggleButton .dijitButtonNode{
+padding:0px;
+}
+
+.oneui30 .concordTaskDropDownBtn .dijitDropDownButton{
+padding:0px;
+margin:0px;
+}
+
+.oneui30 .concordTaskDropDownBtn .dijitButtonText{
+padding:0px;
+}
+
+.concordTaskDropDownBtn_toprow {
+top:-5px;
+}
+
+.concordTaskWriteBorder, .concordTaskReviewBorder, .concordTaskWriteCompleteBorder, 
+.concordTaskReviewCompleteBorder, .concordCachedTaskBlockBorder {
+background-color:white;  
+filter:alpha(opacity=10); 
+-moz-opacity:0.1 !important; 
+opacity: 0.1 !important; 
+}
+.concordTaskLockBorder {
+filter:alpha(opacity=60); 
+background-color:#e0e0e0;
+-moz-opacity:0.6 !important; 
+opacity: 0.6 !important;
+}
+
+.concordTaskWriteBorderLeft {
+border-left: 2px solid #98BF21;
+}
+.concordTaskWriteBorderRight {
+border-right: 2px solid #98BF21;
+}
+.concordTaskWriteBorderTop {
+border-top: 2px solid #98BF21;
+}
+.concordTaskWriteBorderBottom {
+border-bottom: 2px solid #98BF21;
+}
+.concordTaskReviewBorderLeft {
+border-left: 2px dashed #98BF21;
+}
+.concordTaskReviewBorderRight {
+border-right: 2px dashed #98BF21;
+}
+.concordTaskReviewBorderTop {
+border-top: 2px dashed #98BF21;
+}
+.concordTaskReviewBorderBottom {
+border-bottom: 2px dashed #98BF21;
+}
+.concordTaskLockBorderLeft {
+border-left: 2px solid #98BF21;
+}
+.concordTaskLockBorderRight {
+border-right: 2px solid #98BF21;
+}
+.concordTaskLockBorderTop {
+border-top: 2px solid #98BF21;
+}
+.concordTaskLockBorderBottom {
+border-bottom: 2px solid #98BF21;
+}
+.concordTaskWriteCompleteBorderLeft {
+border-left: 2px solid #c0c0c0;
+}
+.concordTaskWriteCompleteBorderRight {
+border-right: 2px solid #c0c0c0;
+}
+.concordTaskWriteCompleteBorderTop {
+border-top: 2px solid #c0c0c0;
+}
+.concordTaskWriteCompleteBorderBottom {
+border-bottom: 2px solid #c0c0c0;
+}
+
+.concordCachedTaskBlockBorderLeft {
+border-left: 2px solid #c0c0c0;
+}
+.concordCachedTaskBlockBorderRight {
+border-right: 2px solid #c0c0c0;
+}
+.concordCachedTaskBlockBorderTop {
+border-top: 2px solid #c0c0c0;
+}
+.concordCachedTaskBlockBorderBottom {
+border-bottom: 2px solid #c0c0c0;
+}
+.concordTaskReviewCompleteBorderLeft {
+border-left: 2px dashed #c0c0c0;
+}
+.concordTaskReviewCompleteBorderRight {
+border-right: 2px dashed #c0c0c0;
+}
+.concordTaskReviewCompleteBorderTop {
+border-top: 2px dashed #c0c0c0;
+}
+.concordTaskReviewCompleteBorderBottom {
+border-bottom: 2px dashed #c0c0c0;
+}
+

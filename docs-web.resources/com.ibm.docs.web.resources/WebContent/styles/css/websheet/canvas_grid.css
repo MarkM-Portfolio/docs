@@ -1,0 +1,168 @@
+.grid-container {
+	outline: none;
+}
+
+.grid-overlay-container {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.grid-view-container {
+	position: absolute;
+	z-index: 10;
+	background-color: transparent;
+}
+
+.grid-view-container .mobile-resizer {
+	position: abosolute;
+}
+/*
+.mobile-resize-dragnode-col {
+	background-color: #0B67FF;
+	width: 10px;
+	height: 24px;
+}
+
+.mobile-resize-dragnode-row {
+	background-color: #0B67FF;
+	width: 36px;
+	height: 10px;
+}
+*/
+.mobile-resize-dragnode-col {
+	position: absolute;
+	background-image: url(img/table_resizeCol_sel.png);
+	width: 22px;
+	height: 22px;
+	top: 3px;
+	left: -11px;
+}
+
+.mobile-resize-dragnode-row {
+	position: absolute;
+	background-image: url(img/table_resizeRow_sel.png);
+	width: 22px;
+	height: 22px;
+	top: -11px;
+	left: 20px;
+}
+.mobile-resize-line-col {
+	width : 1px;
+	top: 0;
+	background-color: #777;
+}
+
+.mobile-resize-line-row {
+	height : 1px;
+	left: 0;
+	background-color: #777;
+}
+
+.grid-overlay-container .col-resizer {
+	position: absolute;
+	width: 1px;	
+	top: 0;
+	background-color: #777;
+}
+
+.col-resizing {
+	cursor: col-resize !important;
+}
+
+.grid-overlay-container .row-resizer {
+	position: absolute;
+	height: 1px;
+	left: 0;
+	background-color: #777;
+}
+
+.row-resizing {
+	cursor: row-resize !important;
+}
+
+.noResize {
+	cursor: not-allowed;
+}
+
+.grid-subview {
+	/**
+	 * Important to make image/chart works right;
+	 * Image/Chart DIVS are absolute children of the view, mark relative on parents to prevent overlap;
+	 */
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.websheet-canvas{
+	z-index: 1;
+}
+.canvas-layer {
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.grid-scrollbar {
+	position: absolute;
+	z-index: 20;
+	padding: 0;
+	margin: 0;
+}
+.grid-scrollbar-y {
+	/*border: 1px solid rgba(0,0,0,0.8);
+	border-width:0 0 1px 0;*/
+	overflow-x: hidden;
+	width: 18px;/* This has to be larger than or equal to 18. To make sure IE works!!!!!*/
+}
+.grid-scrollbar-y  > div {
+	height: 100000px;
+	width: 1px;
+	background-color:white;/*This has to be set to make sure Sarari 9 works*/
+	
+}
+
+.grid-scrollbar-x {
+	/*border: 1px solid rgba(0,0,0,0.8);
+	border-width:0 1px 0 0;*/
+	overflow-y: hidden;
+	height: 18px;/* This has to be larger than or equal to 18. To make sure IE works!!!!!*/
+}
+
+.grid-scrollbar-x > div {
+	width: 100000px;
+	height: 1px;
+	background-color:white;/*This has to be set to make sure Sarari 9 works*/
+	
+}
+
+/**
+ *
+ * Canvas Widget CSS
+ *
+ */
+.freeze-slot {
+	background: #a6a6a6;
+	z-index: 11;
+}
+
+.freeze-dragger {
+	background: #a6a6a6;
+	opacity: .35;
+	z-index: 80001;
+}
+
+.freeze-snap {
+	background: #97cd4d;
+	opacity:.35;
+}
+
+.freeze-row-shadow {
+	box-shadow:0 1px 3px  rgb(0, 0, 0);
+}
+
+.freeze-col-shadow {
+	box-shadow:1px 0 3px rgb(0, 0, 0)
+}
+

@@ -1,0 +1,93 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* HCL Confidential                                                  */
+/*                                                                   */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* Copyright HCL Technologies Limited 2020                           */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        PAGE_BREAK_TEXT: "Sivunvaihto",
+        SECTION_BREAK_TEXT: "Osanvaihto",
+        LINE_BREAK_TEXT: "Rivinvaihto",
+        COLUMN_BREAK_TEXT: "Sarakkeenvaihto",
+        INSERT_IMAGE_NOT_PROPER_PLACE: "Kuvia voi lisätä valitettavasti vain leipätekstiin ja taulukoihin, ei nykyiseen sijaintiin.",
+        LOADING: "Sisältö latautuu.",
+        LOAD_FINISHED: "Sisältö on ladattu.",
+        PAGE_SETUP: "Sivun asetukset",
+        NOTE_INVALIDACTION_FOOTNOTE: "Tämä ei ole kelvollinen toiminto alaviitteessä.",
+        NOTE_INVALIDACTION_ENDNOTE: "Tämä ei ole kelvollinen toiminto loppuviitteessä.",
+        PAGENUMBER_OF_TOTALNUMBER: "Sivu ${0} / ${1}", //page 1 of N
+        PAGE_NUMBER: "Sivu: ${pageNumber} / ${totalPageNumber}",
+        toc: {
+            title: "Sisällysluettelo",
+            update: "Päivitä",
+            del: "Poista",
+            toc: "Sisällysluettelo",
+            linkTip: "Voit siirtyä linkin osoitteeseen pitämällä Ctrl-näppäintä painettuna, kun napsautat linkkiä",
+            linkTip_Mac: "Voit siirtyä linkin osoitteeseen pitämällä \u2318-näppäintä painettuna, kun napsautat linkkiä",
+            pageNumber: "Vain sivunumero",
+            entireTable: "Koko taulukko"
+        },
+        link: {
+            addlink: "Lisää linkki",
+            gotolink: "Avaa linkki",
+            unlink: "Poista linkki",
+            editlink: "Muokkaa linkkiä",
+            internalLink: "Sisäinen linkki",
+            ctrlLink: "Siirry linkkiin painamalla Ctrl-näppäintä ja napsauttamalla",
+            ctrlLink_Mac: "Siirry linkkiin painamalla \u2318-näppäintä ja napsauttamalla",
+            cannotOpen: " ei voi avata ohjelmasta ${productName} käsin."
+        },
+        field: {
+            update: "Päivitä kenttä"
+        },
+        insertTime: "Lisää aika",
+        insertDate: "Lisää päivämäärä",
+        selectDate: "Valitse päivämäärä",
+        selectTime: "Valitse kellonaika",
+        acc_blank: "tyhjä", // when selection is nothing but space char and empty paragraph
+        acc_space: "välilyönti", // string read out when the cursor is before one space char
+        acc_inLink: "linkissä ",
+        acc_inField: "kentässä ",
+        acc_selected: " valittuna",
+        acc_inTable: "taulukon rivillä ${0} sarakkeessa ${1} ",
+        acc_imageSelected: "kuva valittuna",
+        acc_canvasSelected: "muoto valittuna",
+        acc_textboxSelected: "tekstiruutu valittuna",
+        ACC_TABLE_TABLESIZE: "Valittuja rivejä on ${0} ja sarakkeita ${1}",
+        ACC_TABLE_MAXSIZE: " Taulukon tuettu enimmäiskoko on 20 x 20",
+        ACC_headerFooterMode: "Ylä- ja alatunnisteen muokkaustila",
+        ACC_EditorMode: "Muokkaajan muokkaustila",
+        ACC_FootnotesMode: "Alaviitteiden muokkaustila",
+        ACC_EndnotesMode: "Loppuviitteiden muokkaustila",
+        ACC_uniformTable: "Uusi rivi on lisätty",
+        Acc_column: "sarake ${0}",
+        acc_page: "sivu ${0}",
+        acc_section: "osa ${0}",
+        acc_spellWarn: "kirjoitusasu on virheellinen",
+        acc_outTable: "taulukon ulkopuolella",
+        acc_link: "linkki",
+        acc_field: "kenttä",
+        acc_footnote: "alaviite",
+        acc_endnote: "loppuviite",
+        acc_editor: "Muokkaaja ${0}",
+        tablePropertyTitle: "Taulukon ominaisuudet",
+        headerTitle: "Ylätunniste",
+        footerTitle: "Alatunniste",
+        firstheaderTitle: "Ensimmäisen sivun ylätunniste",
+        firstfooterTitle: "Ensimäisen sivun alatunniste",
+        evenheaderTitle: "Parillisen sivun ylätunniste",
+        evenfooterTitle: "Parillisen sivun alatunniste",
+        oddheaderTitle: "Parittoman sivun ylätunniste",
+        oddfooterTitle: "Parittoman sivun alatunniste",
+        showTableBorder: "Näytä taulukon reunat",
+        list_none: "Ei mitään",
+        SET_NUMBERING_VALUE: "Määritä numeroinnin arvo",
+        BIDI_CONTENT_EDITING: "Tässä asiakirjassa on kaksisuuntaista sisältöä. Asiakirjaa voi käsitellä oikein vasta, kun kaksisuuntaisuuden tuki on otettu käyttöön HCL Connections -asetuksissa."
+});

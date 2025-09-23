@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Werken met Presentaties"
+     topic="text/presentation/presentations_frame.html">
+   <topic label="Werken met presentaties"
+          href="text/presentation/presentations_frame.html">
+      <topic label="Presentaties maken en uploaden"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Presentaties maken"
+                href="text/presentation/p_creating_presentation.html"/>
+         <topic label="De standaard bestandsindeling van presentaties wijzigen"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Presentaties uploaden om te delen"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Bestaande presentaties importeren"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Bestandscompatibiliteit en presentaties exporteren"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Ondersteunde bestandsindelingen in presentaties"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Presentaties opslaan"
+                href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Een presentatieversie publiceren"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Presentaties exporteren naar andere bestandsindelingen"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Presentaties delen" href="text/presentation/p_sharing_a_document.html">
+         <topic label="Presentaties delen met personen of community's"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Toegangsniveaus instellen voor presentaties"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Samenwerken aan presentaties in real-time"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Gelijktijdige bewerking in real-time van presentaties"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Gelijktijdige bewerking van presentaties - Info"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Gelijktijdige bewerking van presentaties"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Wijzigingen van editors afbeelden in presentaties"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Samenwerken met behulp van commentaar in presentaties"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Commentaar in presentaties"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Commentaar toevoegen aan presentaties"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Commentaar bekijken in presentaties"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Commentaar in presentaties zoeken"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Dia's opmaken" href="text/presentation/p_formatting_slides.html">
+         <topic label="Lettertypen wijzigen in presentaties"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Objecten selecteren en verplaatsen"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="De volgorde van de objecten rangschikken"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Opsommingstekens of nummering aan dia's toevoegen"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Een dia-layout toepassen"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="De masterstijl wijzigen"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Spellingcontrole uitvoeren in presentaties"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Presentaties opslaan en afdrukken"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Presentaties afdrukken naar PDF-bestanden"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Werken met afbeeldingen in presentaties"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Afbeeldingen in presentaties invoegen"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Afbeeldingen verplaatsen en het formaat van afbeeldingen wijzigen in presentaties"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Afbeeldingseigenschappen instellen in presentaties"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Werken met dia's" href="text/presentation/p_slide_show.html">
+         <topic label="Diapresentaties afspelen"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Overgangen tussen dia's toepassen"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Dia's wissen" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Dia's toevoegen" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Dia's verplaatsen" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Dia's dupliceren" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Werken met tabellen in presentaties"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Tabellen in presentaties maken"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Rijen en kolommen toevoegen in presentaties"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Rijen en kolommen in presentaties verplaatsen"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Formaat van rijen en kolommen in presentaties wijzigen"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Tekst in cellen uitlijnen"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Tabelstijlen in presentaties wijzigen"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Tabelkopteksten in presentaties definiëren"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Sprekersnotities bewerken"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Snelkeuzelijst voor presentaties"
+             href="text/presentation/p_quick_ref.html"/>
+      <topic label="Sneltoetscombinaties in presentaties"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

@@ -1,0 +1,228 @@
+/* td br[ type="_moz"] {display:none; }; */
+/* default cell seclected style */
+.ibmdocsTable td p { margin:0; padding-left:0.893%; padding-right:0.893%; }
+.ibmdocsTable th p { margin:0; padding-left:0.893%; padding-right:0.893%; }
+.ibmdocsTable td { vertical-align:top; padding-right:0%; padding-left:0%; padding-top:0.49%; padding-bottom:0.49%;}
+.ibmdocsTable th { vertical-align:top; padding-right:0%; padding-left:0%; padding-top:0.49%; padding-bottom:0.49%;}
+/*
+.smartTable tr.tableHeaderRow { font-weight: bold; }
+*/
+
+.smartTable td.tableHeaderCol{ font-weight: bold !important; }
+
+.customSmartTablePreview {border-collapse:collapse;} 
+
+/* To match the proper specificity of the styles we need to ensure we follow
+   the ODF specification for which style is referenced.  If more than one
+   table cell style reference is applicable to a cell, the first style
+   that is applicable is chosen in the following order:
+       -- First Column <table:first-column>
+       -- Last Column <table:last-column>
+       -- First Row <table:first-row>
+       -- Last Row <table:last-row>
+       -- Even Rows <table:even-rows>
+       -- Odd Rows <table:odd-rows>
+       -- Even Columns <table:even-columns>
+       -- Odd Columns <table:odd-columns>
+       -- Body <table:body>
+*/
+
+/* for imported table, set default style*/
+.smartTable th, .smartTable td {font-weight: normal; font-style:normal; border:1px solid #000000; vertical-align:top; text-align: left;}
+.smartTable.bidiRTL th, .smartTable.bidiRTL td {text-align: right;}
+
+/* for new/imported table, header row should have bold property*/
+.smartTable .tableHeaderRow th {font-weight: bold}
+.smartTable .tableHeaderRow td {font-weight: bold}
+
+/* D32137 Plain text in table change to bold after click table to edit mode in imported pptx*/
+.smartTable.MSO_NoStyleNoGrid .tableHeaderRow th {font-weight: normal}
+.smartTable.MSO_NoStyleNoGrid .tableHeaderRow td {font-weight: normal}
+
+.smartTable.MSO_NoStyleTableGrid .tableHeaderRow th {font-weight: normal}
+.smartTable.MSO_NoStyleTableGrid .tableHeaderRow td {font-weight: normal}
+       
+/* plain style*/
+.st_plain th {color:#000000;border:1px solid #000000; background-repeat:repeat;vertical-align:top;}
+.st_plain td {color:#000000;border:1px solid #000000; background-repeat:repeat;vertical-align:top;}
+.st_plain .tableHeaderRow td  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;font-weight:bold;vertical-align:top;}
+
+/* plain rows style*/
+.st_plain_rows th {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #000000;background-color:#ffffff;padding-bottom:0.49%;border-left:none;padding-top:0.49%;background-repeat:repeat;border-right:none;border-bottom:1px solid #000000;vertical-align:top;}
+.st_plain_rows td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #000000;background-color:#ffffff;padding-bottom:0.49%;border-left:none;padding-top:0.49%;background-repeat:repeat;border-right:none;border-bottom:1px solid #000000;vertical-align:top;}
+
+/* light gray rows style*/
+.st_light_gray_rows th {color:#000000;border-top:1px solid #000000;background-color:#dddddd;border-left:none;background-repeat:repeat;border-right:none;border-bottom:1px solid #000000;vertical-align:top;}
+.st_light_gray_rows td {color:#000000;border-top:1px solid #000000;background-color:#dddddd;border-left:none;background-repeat:repeat;border-right:none;border-bottom:1px solid #000000;vertical-align:top;}
+
+/* dark gray rows style*/
+.st_dark_gray th {padding-right:0%;color:#ffffff;padding-left:0%;background-color:#666666;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #ffffff;vertical-align:top;}
+.st_dark_gray td {padding-right:0%;color:#ffffff;padding-left:0%;background-color:#666666;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #ffffff;vertical-align:top;}
+
+/* blue_style style*/
+.st_blue_style th {padding-right:0%;color:#ffffff;padding-left:0%;background-color:#336666;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #ffffff;vertical-align:top;}
+.st_blue_style td {padding-right:0%;color:#ffffff;padding-left:0%;background-color:#336666;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #ffffff;vertical-align:top;}
+
+/* green style */
+.st_green_style th {padding-right:0%;color:#ffffff;padding-left:0%;background-color:#669933;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #ffffff;vertical-align:top;}
+.st_green_style td {padding-right:0%;color:#ffffff;padding-left:0%;background-color:#669933;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #ffffff;vertical-align:top;}
+
+/* gray tint */
+.st_gray_tint th  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_gray_tint td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#dddddd;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_gray_tint .alternateRow td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#ffffff;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_gray_tint .tableHeaderRow td  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_gray_tint td.tableHeaderCol {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+/* .ck_mainBody .st_gray_tint td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* blue tint */
+.st_blue_tint th  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_blue_tint td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#99ccff;padding-bottom:0.48%;padding-top:0.48%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_blue_tint .alternateRow td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#ffffff;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_blue_tint .tableHeaderRow td  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_blue_tint td.tableHeaderCol  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+/* .ck_mainBody .st_blue_tint td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* purple tint */
+.st_purple_tint th  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_purple_tint td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#cc99ff;padding-bottom:0.48%;padding-top:0.48%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_purple_tint .alternateRow td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#ffffff;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_purple_tint .tableHeaderRow td  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_purple_tint td.tableHeaderCol  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+/* .ck_mainBody .st_purple_tint td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* green tint */
+.st_green_tint th  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_green_tint td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#99cc99;padding-bottom:0.48%;padding-top:0.48%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_green_tint .alternateRow td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#ffffff;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_green_tint .tableHeaderRow td  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_green_tint td.tableHeaderCol  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+/* .ck_mainBody .st_green_tint td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* red tint */
+.st_red_tint th  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_red_tint td  {padding-right:0%;color:#000000;padding-left:0%;background-color:#ff9999;padding-bottom:0.48%;padding-top:0.48%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_red_tint .alternateRow td {padding-right:0%;color:#000000;padding-left:0%;background-color:#ffffff;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_red_tint .tableHeaderRow td  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+.st_red_tint td.tableHeaderCol  {padding-right:0%;color:#000000;padding-left:0%;padding-bottom:0.49%;padding-top:0.49%;background-color:#ffffff;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+/* .ck_mainBody .st_red_tint td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* For each of the header styles there is a FF bug that causes merged */
+/* cells to cause adjoining cells at times to have a bottom border */
+/* According the Mozilla the workaround for this is to have a border */
+/* style defined at the tr level.  This also works for Safari and IE */
+/* When FF fixes the issue each of the <name> tr {border:0px solid;} */
+/* entries can be removed */
+
+/* black header */
+.st_black_header th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #000000;background-color:#1c1c1c;padding-bottom:0.49%;border-left:1px solid #000000;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #000000;border-bottom:2px solid #000000;vertical-align:top;}
+.st_black_header td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #000000;background-color:#ffffff;padding-bottom:0.49%;border-left:1px solid #000000;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #000000;border-bottom:1px solid #000000;vertical-align:top;}
+.st_black_header .alternateRow td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #000000;background-color:#dddddd;padding-bottom:0.49%;border-left:1px solid #000000;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #000000;border-bottom:1px solid #000000;vertical-align:top;}
+.st_black_header .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #000000;background-color:#1c1c1c;padding-bottom:0.49%;border-left:1px solid #000000;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #000000;border-bottom:2px solid #000000;vertical-align:top;}
+.st_black_header td.tableHeaderCol  {padding-right:0%;color:#ffffff;padding-left:0%;background-color:#1c1c1c;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border:1px solid #000000;vertical-align:top;}
+/* .ck_mainBody .st_black_header td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* green header */
+.st_green_header th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #009900;background-color:#669933;padding-bottom:0.49%;border-left:1px solid #009900;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #009900;border-bottom:2px solid #ffffff;vertical-align:top;}
+.st_green_header td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #009900;background-color:#b2b2b2;padding-bottom:0.49%;border-left:1px solid #009900;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #009900;border-bottom:1px solid #009900;vertical-align:top;}
+.st_green_header tr  {border:0px solid;}
+.st_green_header .alternateRow td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #009900;background-color:#dddddd;padding-bottom:0.49%;border-left:1px solid #009900;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #009900;border-bottom:1px solid #009900;vertical-align:top;}
+.st_green_header .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #009900;background-color:#669933;padding-bottom:0.49%;border-left:1px solid #009900;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #009900;border-bottom:2px solid #ffffff;vertical-align:top;}
+.st_green_header td.tableHeaderCol {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #009900;background-color:#669933;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border-left:1px solid #009900;border-right:1px solid #009900;border-bottom:1px solid #009900;vertical-align:top;}
+/* .ck_mainBody .st_green_header td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* blue header style*/
+.st_blue_header th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #000066;background-color:#003366;padding-bottom:0.49%;border-left:1px solid #000066;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #000066;border-bottom:2px solid #ffffff;vertical-align:top;}
+.st_blue_header td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #000066;background-color:#6699cc;padding-bottom:0.49%;border-left:1px solid #000066;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #000066;border-bottom:1px solid #000066;vertical-align:top;}
+.st_blue_header tr  {border:0px solid;}
+.st_blue_header .alternateRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #000066;background-color:#99ccff;padding-bottom:0.49%;border-left:1px solid #000066;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #000066;border-bottom:1px solid #000066;vertical-align:top;}
+.st_blue_header .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #000066;background-color:#003366;padding-bottom:0.49%;border-left:1px solid #000066;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #000066;border-bottom:2px solid #ffffff;vertical-align:top;}
+.st_blue_header td.tableHeaderCol  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #000066;background-color:#003366;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border-left:1px solid #000066;border-right:1px solid #000066;border-bottom:1px solid #000066;vertical-align:top;}
+/* .ck_mainBody .st_blue_header td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* purple header style*/
+.st_purple_header th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #330066;background-color:#663366;padding-bottom:0.49%;border-left:1px solid #330066;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #330066;border-bottom:2px solid #ffffff;vertical-align:top;}
+.st_purple_header td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #330066;background-color:#cc99cc;padding-bottom:0.49%;border-left:1px solid #330066;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #330066;border-bottom:1px solid #330066;vertical-align:top;}
+.st_purple_header tr  {border:0px solid;}
+.st_purple_header .alternateRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #330066;background-color:#ffccff;padding-bottom:0.49%;border-left:1px solid #330066;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #330066;border-bottom:1px solid #330066;vertical-align:top;}
+.st_purple_header .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #330066;background-color:#663366;padding-bottom:0.49%;border-left:1px solid #330066;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #330066;border-bottom:2px solid #ffffff;vertical-align:top;}
+.st_purple_header td.tableHeaderCol {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #330066;background-color:#663366;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border-left:1px solid #330066;border-right:1px solid #330066;border-bottom:1px solid #330066;vertical-align:top;}
+/* .ck_mainBody .st_purple_header td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* red header style*/
+.st_red_header th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #330000;background-color:#990000;padding-bottom:0.49%;border-left:1px solid #330000;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #330000;border-bottom:2px solid #ffffff;vertical-align:top;}
+.st_red_header td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #330000;background-color:#999999;padding-bottom:0.49%;border-left:1px solid #330000;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #330000;border-bottom:1px solid #330000;vertical-align:top;}
+.st_red_header tr  {border:0px solid;}
+.st_red_header .alternateRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #330000;background-color:#dddddd;padding-bottom:0.49%;border-left:1px solid #330000;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #330000;border-bottom:1px solid #330000;vertical-align:top;}
+.st_red_header .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #330000;background-color:#990000;padding-bottom:0.49%;border-left:1px solid #330000;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #330000;border-bottom:2px solid #ffffff;vertical-align:top;}
+.st_red_header td.tableHeaderCol  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #330000;background-color:#990000;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border-left:1px solid #330000;border-right:1px solid #330000;border-bottom:1px solid #330000;vertical-align:top;}
+/* .ck_mainBody .st_red_header td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* dark gray header footer style*/
+.st_dark_gray_header_footer th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#666666;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:2px solid #333333;vertical-align:top;}
+.st_dark_gray_header_footer td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#ffffff;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+.st_dark_gray_header_footer .alternateRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#dddddd;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+.st_dark_gray_header_footer .lastRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#b2b2b2;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;font-weight:bold;vertical-align:top;}
+.st_dark_gray_header_footer .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#666666;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:2px solid #333333;vertical-align:top;}
+.st_dark_gray_header_footer td.tableHeaderCol  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#666666;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border-left:1px solid #333333;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+/* .ck_mainBody .st_dark_gray_header_footer td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* green header footer style*/
+.st_green_header_footer th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#669900;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:2px solid #333333;vertical-align:top;}
+.st_green_header_footer td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#b2b2b2;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+.st_green_header_footer tr  {border:0px solid;}
+.st_green_header_footer .alternateRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#dddddd;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+.st_green_header_footer .lastRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#99cc66;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;font-weight:bold;vertical-align:top;}
+.st_green_header_footer .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#669900;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:2px solid #333333;vertical-align:top;}
+.st_green_header_footer td.tableHeaderCol  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#669900;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border-left:1px solid #333333;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+/*.ck_mainBody .st_green_header_footer td.selectedSTCell {color:#000000; background-color: #ffffcc;}*/
+
+/* red header footer style*/
+.st_red_header_footer th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#ff3333;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:2px solid #333333;vertical-align:top;}
+.st_red_header_footer td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#b2b2b2;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+.st_red_header_footer tr  {border:0px solid;}
+.st_red_header_footer .alternateRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#dddddd;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+.st_red_header_footer .lastRow td {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#ff6666;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;font-weight:bold;vertical-align:top;}
+.st_red_header_footer .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#ff3333;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:2px solid #333333;vertical-align:top;}
+.st_red_header_footer td.tableHeaderCol  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#ff3333;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border-left:1px solid #333333;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+/* .ck_mainBody .st_red_header_footer td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* light blue header footer style*/
+.st_light_blue_header_footer th  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#669999;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:2px solid #333333;vertical-align:top;}
+.st_light_blue_header_footer td  {padding-right:0%;padding-left:0%;border-top:1px solid #333333;background-color:#b2b2b2;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+.st_light_blue_header_footer tr  {border:0px solid;}
+.st_light_blue_header_footer .alternateRow td  {padding-right:0%;padding-left:0%;border-top:1px solid #333333;background-color:#dddddd;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+.st_light_blue_header_footer .lastRow td  {padding-right:0%;color:#000000;padding-left:0%;border-top:1px solid #333333;background-color:#99cccc;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:1px solid #333333;font-weight:bold;vertical-align:top;}
+.st_light_blue_header_footer .tableHeaderRow td  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#669999;padding-bottom:0.49%;border-left:1px solid #333333;padding-top:0.49%;background-repeat:repeat;border-right:1px solid #333333;border-bottom:2px solid #333333;vertical-align:top;}
+.st_light_blue_header_footer td.tableHeaderCol  {padding-right:0%;color:#ffffff;padding-left:0%;border-top:1px solid #333333;background-color:#669999;padding-bottom:0.49%;padding-top:0.49%;background-repeat:repeat;border-left:1px solid #333333;border-right:1px solid #333333;border-bottom:1px solid #333333;vertical-align:top;}
+/* .ck_mainBody .st_light_blue_header_footer td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* plain style*/
+.st_border_plain th {color:#000000;border:1px solid #808080; background-repeat:repeat;vertical-align:top;}
+.st_border_plain td {color:#000000;border:1px solid #808080; background-repeat:repeat;vertical-align:top;}
+
+/* top header*/
+.st_border_top_header td {color:#000000;border:1px solid #808080; background-repeat:repeat;vertical-align:top;}
+.st_border_top_header tr.tableHeaderRow {color:#000000;border:1px solid #808080; background-color:#808080; background-repeat:repeat;}
+
+/* first column header*/
+.st_border_first_column_header td {color:#000000;border:1px solid #808080; background-repeat:repeat;vertical-align:top;}
+.st_border_first_column_header td.tableHeaderCol {color:#000000;border:1px solid #808080; background-color:#808080; background-repeat:repeat;vertical-align:top;}
+/*.ck_mainBody .st_border_first_column_header td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+/* bottom summary*/
+.st_border_bottom_summary td {color:#000000;border:1px solid #808080; background-repeat:repeat;vertical-align:top;}
+.st_border_bottom_summary tr.lastRow {color:#000000;border:1px solid #000000; border-top:1px solid #000000; background-color:#A9A9A9; background-repeat:repeat;font-weight:bold;}
+
+/* last column summary*/
+.st_border_last_column_summary td {color:#000000;border:1px solid #808080; background-repeat:repeat;vertical-align:top;}
+.st_border_last_column_summary td.lastColumn {color:#000000;border:1px solid #808080; background-color:#A9A9A9; background-repeat:repeat;font-weight:bold;vertical-align:top;}
+/* .ck_mainBody .st_border_last_column_summary td.selectedSTCell {color:#000000; background-color: #ffffcc;} */
+
+.tablestyle_gallery_box { padding: 1px; border:1px solid #DCDCDC; } 
+.tablestyle_gallery_box:focus, .tablestyle_gallery_box:active, .tablestyle_gallery_box_selected { padding: 0px; background-color: #DFF1FF; border: 2px solid #316AC5;}
+.tablestyle_gallery_box_selected { padding: 0px; background-color: #DFF1FF; border: 2px solid #316AC5;}
+
+.tablestyle_custom_gallery_box { padding: 1px; border:2px solid #FFFFFF; } 
+.tablestyle_custom_gallery_box:hover, .tablestyle_custom_gallery_box:focus, .tablestyle_custom_gallery_box:active, .tablestyle_custom_gallery_box_selected { padding: 1px; background-color: #DFF1FF; border: 2px solid #316AC5;}
+.tablestyle_custom_gallery_box_selected { padding: 1px, background-color: #DFF1FF; border: 2px solid #316AC5;} 

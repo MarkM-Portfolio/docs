@@ -1,0 +1,45 @@
+<div tabindex="0" role='region' class="sticky" dojoAttachPoint="PopupNode" dojoAttachEvent="onclick:_onStickyclick, onkeydown:_onStickyKeyDown, onmouseenter:_mouseOverHandler, onmouseleave:_mouseOutHandler">  
+  <ul>
+  	<li>
+  		<ul class="scrollbar content">
+  			<li class="comment first" dojoAttachPoint="headerNode">
+  				<img src="" dojoAttachPoint="arrowNode">
+  					<div class="ll_commmon_images_alttext allyArrowup" dojoAttachPoint="allyArrowNode"></div>
+  				</img>	
+  				<div class="meta" dojoAttachPoint="cMetaNode">
+  					<div class="name" dojoAttachPoint="cNameNode"></div>
+  					<div class="time" dojoAttachPoint="cTimeNode"></div>
+  				</div>
+  				<p class="scrollbar hidden commentContent" dojoAttachPoint="cContentNode"></p>
+  				<textarea class="inputbox scrollbar" rows="3" class="hidden" dojoAttachPoint="textareaNode" dojoAttachEvent="onkeydown:_keyDownHandler,onkeyup:_keyUpHandler,onpaste:_pasteHandler"></textarea>
+  			</li>
+  			<li class="separator hidden" dojoAttachPoint="separatorNode">
+  				<div class='viewbutton' tabindex="0" role="button" dojoAttachPoint='viewNode' dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick"></div>
+  			</li>
+  			<li class="hidden" dojoAttachPoint="repliesNode">
+  			</li>		
+  		</ul>
+	</li>
+    <li class="comment replying hidden" dojoAttachPoint="replyDivNode">
+      <div class="meta">
+        <div class="name" dojoAttachPoint="rNameNode"></div>
+        <div class="time" dojoAttachPoint="rTimeNode"></div>
+      </div>
+      <textarea class="inputbox scrollbar" rows="3"  placeholder="" dojoAttachPoint="inputNode" dojoAttachEvent="onkeydown:_keyDownHandler,onkeyup:_keyUpHandler,onpaste:_pasteHandler"></textarea>
+      <p class="hidden"></p>                  
+    </li>   
+    <li class="footer" dojoAttachPoint="footerNode">
+      <div class="actions" dojoAttachPoint="actionsDivNode"> 
+      	<div class="status hidden" dojoAttachPoint="labelNode">500</div>   
+        <a style="text-decoration: none;" class="btn resolve hidden" tabindex="0" role="button" dojoAttachPoint="resolveNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick"></a>
+        <a style="text-decoration: none;" class="btn reply form hidden" tabindex="0" role="button" dojoAttachPoint="replyNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick"></a>
+        <a style="text-decoration: none;" class="btn comment hidden" tabindex="0" role="button" dojoAttachPoint="commentNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick"></a>
+        <a style="text-decoration: none;" class="btn delete hidden" tabindex="0" role="button" dojoAttachPoint="deleteNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick"></a>
+        <a style="text-decoration: none;" class="btn cancel hidden" tabindex="0" role="button" dojoAttachPoint="cancelNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick"></a>
+      </div>
+      <div class="actions_resolved hidden" dojoAttachPoint="reopenDivNode">
+        <a style="text-decoration: none;" class="btn reopen" tabindex="0" role="button" dojoAttachPoint="reopenNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick"></a>
+      </div>
+    </li>     
+  </ul>
+</div>

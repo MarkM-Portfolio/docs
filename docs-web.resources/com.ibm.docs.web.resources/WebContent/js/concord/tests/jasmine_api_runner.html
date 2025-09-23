@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>API test suite runner</title>
+
+  <link rel="stylesheet" type="text/css" href="../../util/jasmine-1.3.1/jasmine.css">
+  <link rel="stylesheet" type="text/css" href="jasmine_extended.css">
+  <script type="text/javascript" src="../../util/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="../../util/jasmine-1.3.1/jasmine-html.js"></script>
+  <script type="text/javascript" src="../../dojo/dojo.js"></script>
+  <script type="text/javascript" src="jasmine_async_support.js"></script>
+  <script type="text/javascript" src="jasmine_api_test_support.js"></script>
+  <script type="text/javascript" src="jasmine_startup.js"></script>
+
+  <script type="text/javascript">
+	// get test ID information from URL query part, code copied from DOH
+	/*
+		HCL Docs API test runner based on jasmine.
+		Accepts parameters from URL query. Parameters:
+		
+			group: test script name, must be recognized by specific editor launcher
+			testFiles: test sample names. In production should be file UUID. Use comma to separate if more than 1 sampels are needed.
+			mode: test mode on how to use multiple test sample files, possible values are
+				slaveSwitchable
+				( TODO ) sequential
+				( TODO ) perf
+				Refer to below comments for details
+			times: used when mode=perf, times for running the test script
+			repoId: repository ID, "concord.files" for local-test, "lc.files" for connections production env
+			timeout: timeout for script running in each test page in minutes, default to 5min
+	*/
+	
+	var qstr = window.location.search.substr(1);
+	var sampleMode = "slaveSwitchable";
+	var repoId = "concord.storage";
+	var perfTimes = 5;
+	var group = null;
+	var timeout = 5 * 60 * 1000;	// 5 minutes
+	var user = null;
+	var password = null;
+	window.slaveWindow = null;
+	
+	var plus = {};
+	
+	if(qstr.length){
+		var qparts = qstr.split("&");
+		for(var x=0; x<qparts.length; x++){
+			var tp = qparts[x].split("="), name=tp[0], value=tp[1].replace(/[<>"':\(\)]/g, "");	// replace() to avoid XSS attack
+			//Avoid URLs that use the same protocol but on other domains, for security reasons.
+			if (value.indexOf("//") === 0 || value.indexOf("\\\\") === 0) {
+				throw "Insupported URL";
+			}
+			switch(name){
+				case "group":
+					group = value;
+					break;
+				case "testFiles":
+					testFiles = value.split(",");
+					break;
+				case "sampleMode":
+					// the mode that how the framework provide samples to the test code,
+					// possible values:
+					//		slaveSwitchable: open the first sample in main iframe as "master", open the 2nd sample in another window
+					//			as slave. The slave window is switchable via global API switchSlave(). Slave window can be accessed
+					//			by global property slaveWindow. This is the default value.
+					//		sequential: samples are opened in main iframe one by one.
+					//		perf: open the first sample several times, provide timer API to let test scripts measure operation durations.
+					sampleMode = value;
+					break;
+				case "times":
+					// special for perf test, determine how many times a test script is run, default to 5
+					perfTimes = parseInt(value);
+					break;
+				case "repoId":
+					repoId = value;
+					break;
+				case "timeout":
+					timeout = parseInt(value) * 60 * 1000;
+					break;
+				case "user":
+					user = value;
+					break;
+				case "password":
+					password = value;
+					break;
+				default:
+					plus[name] = value;
+			}
+		}
+	}
+	
+	// redunt xhr GET to pass auth
+	if (user && password) {
+		var auth = "Basic " + btoa(user + ":" + password);
+		dojo.xhrGet({
+			sync: true,
+			url: "/docs/api/version",
+			headers: {
+				Authorization: auth
+			}
+		}).addCallback(function() {
+			console.log("auth version call resp: ", JSON.stringify(arguments));
+		});
+	}	
+	
+	switch (sampleMode) {
+	case "batch":
+		for (var i = 0; i < testFiles.length; i++) {
+			var f = testFiles[i];
+			var url = ["/docs/app/doc/", repoId, "/", f, "/edit/content", "?group=", group, "&testFiles=", testFiles.join(","), "&sampleMode=", sampleMode].join("");
+			describe("API test on" + f, function() {
+				windowIt(url, timeout);
+		    });
+		}
+		break;
+	case "perf":
+		var url = ["/docs/app/doc/", repoId, "/", testFiles[0], "/edit/content", "?group=", group].join("");
+		for (var i = 0; i < perfTimes; i++) {
+			doh.registerUrl(group, url, /* longer timeout 30min */ 30 * 60 * 1000);
+		}
+		
+		window.timers = {};
+		
+		window.startTimer = function(name) {
+			var t = timers[name];
+			if (t == null) {
+				t = timers[name] = {};
+			}
+			
+			if (t.start != null && t.start > 0) {
+				// timer started but not stopped
+				doh.debug("Automatically stop timer " + name + ".");
+				window.stopTimer(name);
+			}
+			
+			t.start = new Date().getTime();
+		};
+		
+		window.stopTimer = function(name) {
+			var t = timers[name];
+			if (t == null) {
+				doh.error("No opened timer named " + name + ".");
+			}
+			
+			var dur = new Date().getTime() - t.start;
+			doh.debug("Timer " + name + " stopped, duration(ms): " + dur);
+			if (t.dur == null) {
+				t.dur = [];
+			}
+			t.dur.push(dur);
+			
+			t.start = 0;
+		};
+		var __onEnd = doh._onEnd;
+		doh._onEnd = function(){
+			__onEnd.apply(doh, arguments);
+			
+			doh.debug("----------------- TIMER STATS -----------------");
+			for (var p in window.timers) {
+				var t = window.timers[p];
+				doh.debug("Timer " + p + ":");
+				var sum = 0;
+				for (var i = 0; i < t.dur.length; i++) {
+					doh.debug(t.dur[i]);
+					sum += t.dur[i];
+				}
+				doh.debug("average: " + (sum / t.dur.length));
+			}
+		};
+		break;
+	case "slaveSwitchable":
+		var url = ["/docs/app/doc/", repoId, "/", testFiles[0], "/edit/content", "?group=", group, "&testFiles=", testFiles.join(","), "&sampleMode=", sampleMode, "&slave=false"].join("");
+		
+		for (var name in plus) {
+			url += "&" + name + "=" + plus[name];
+		}
+		
+		describe("slaveSwitchable API test on testFiles " + testFiles, function() {
+			windowIt(url, timeout);
+		});
+		break;
+	case "sequential":
+		var groups = group.split(",");
+		var url = null;
+		for (var i = 0; i < groups.length; i++) {
+			url = ["/docs/app/doc/", repoId, "/", testFiles[0], "/edit/content", "?group=", groups[i], "&testFiles=", testFiles[0], "&sampleMode=", sampleMode].join("");
+			describe("Run " + groups[i] +  " on " + testFiles[0], function() {
+				windowIt(url, timeout);
+		    });
+		}
+		break;
+	default:
+		break;
+	}
+  </script>
+</head>
+
+<body>
+</body>
+</html>

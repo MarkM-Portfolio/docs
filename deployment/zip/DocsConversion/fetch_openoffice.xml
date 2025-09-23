@@ -1,0 +1,22 @@
+<project name="fetchfile" basedir="." default="ftp.fetch">
+	<property environment="env"/>
+	<target name="ftp.fetch">
+
+		<copy todir="${build.target}">
+			<fileset dir="${remotedir}" includes="${remotefilename}"/>
+		</copy>
+
+		<echo message="build.target = ${build.target}"/>
+		<echo message="remotedir = ${remotedir}"/>
+		<echo message="remotefilename = ${remotefilename}"/>
+
+		<copy todir="${build.target}">
+			<fileset dir="${linuxremotedir}" includes="${linuxremotefilename}"/>
+		</copy>
+
+		<echo message="build.target = ${build.target}"/>
+		<echo message="linuxremotedir = ${linuxremotedir}"/>
+		<echo message="linuxremotefilename = ${linuxremotefilename}"/>
+
+	</target>
+</project>

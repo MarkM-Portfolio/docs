@@ -1,0 +1,125 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+
+
+Portions Copyright IBM Corp., 2010-2011.
+*/
+
+CKEDITOR.plugins.setLang( "a11yhelp", "en",
+{
+
+	// When translating all fields in accessibilityHelp object, do not translate anything with the form ${xxx}
+	accessibilityHelp :
+	{
+		title : "Istruzioni sull'accessibilità",
+		contents : "Indice della guida. Per chiudere questa finestra di dialogo premere ESC.",
+		legend :
+		[
+			{
+				name : "Generale",
+				items :
+				[
+					{
+						name : "Barra degli strumenti dell'Editor",
+						legend:
+							"Premere ${toolbarFocus} per esplorare la barra degli strumenti." +
+							"Spostarsi al gruppo di barre degli strumenti successivo e precedente con TAB e MAIUSC-TAB. " +
+							"Spostarsi al pulsante della barra degli strumenti successivo e precedente con FRECCIA DESTRA o FRECCIA SINISTRA. " +
+							"Premere SPAZIO o INVIO per attivare il pulsante della barra degli strumenti."
+					},
+
+					{
+						name : "Finestra di dialogo Editor",
+						legend :
+							"All'interno di una finestra di dialogo, premere TAB per esplorare il successivo campo della finestra di dialogo, premere MAIUSC + TAB per spostarsi al campo precedente, premere INVIO per confermare la finestra di dialogo, premere ESC per annullare la finestra di dialogo. " +
+							"Per le finestre di dialogo con più pagine di schede, premere ALT + F10 per esplorare la scheda-elenco. " +
+							"Quindi spostarsi alla scheda successiva con TAB O FRECCIA DESTRA. " +
+							"Spostarsi alla scheda precedente con MAIUSC + TAB o FRECCIA SINISTRA." +
+							"Premere SPAZIO o INVIO per selezionare la pagina della scheda. "
+					},
+
+					{
+						name : "Menu di scelta rapida Editor",
+						legend :
+							"Premere ${contextMenu} o il TASTO MENU DI SCELTA RAPIDA  per aprire il menu di scelta rapida." +
+							"Quindi, spostarsi all'opzione di menu successiva con TAB o FRECCIA GIÙ." +
+							"Spostarsi all'opzione precedente con MAIUSC+TAB o FRECCIA SU." +
+							"Premere SPAZIO o INVIO per selezionare l'opzione di menu. " +
+							"Aprire il sottomenu dell'opzione corrente con SPAZIO o INVIO o FRECCIA DESTRA." +
+							"Tornare all'elemento del menu principale con ESC o FRECCIA SINISTRA." +
+							"Chiudere il menu di scelta rapida con ESC."
+					},
+
+					{
+						name : "Casella di elenco Editor",
+						legend :
+							"All'interno di una casella di elenco, spostarsi al successivo elemento dell'elenco con TAB O FRECCIA GIÙ. " +
+							"Spostarsi al precedente elemento dell'elenco con MAIUSC + TAB o FRECCIA SU. " +
+							"Premere SPAZIO o INVIO per selezionare l'opzione dell'elenco." +
+							"Premere ESC per chiudere la casella di elenco."
+					},
+
+					{
+						name : "Barra del percorso elemento dell'editor (se disponibile*)",
+						legend :
+							"Premere ${elementsPathFocus} per esplorare la barra del percorso degli elementi. " +
+							"Spostarsi al pulsante dell'elemento successivo con TAB o FRECCIA DESTRA." +
+							"Spostarsi al pulsante precedente con MAIUSC+TAB o FRECCIA SINISTRA." +
+							"Premere SPAZIO o INVIO per selezionare l'elemento nell'editor."
+					}
+				]
+			},
+			{
+				name : "Comandi",
+				items :
+				[
+					{
+						name : "Comando Annulla",
+						legend : "Premere ${undo}"
+					},
+					{
+						name : "Comando Ripeti",
+						legend : "Premere ${redo}"
+					},
+					{
+						name : "Comando Grassetto",
+						legend : "Premere ${bold}"
+					},
+					{
+						name : "Comando Corsivo",
+						legend : "Premere ${italic}"
+					},
+					{
+						name : "Comando sottolineato",
+						legend : "Premere ${underline}"
+					},
+					{
+						name : "Comando collegamento",
+						legend : "Premere ${link}"
+					},
+					{
+						name : "Comando comprimi barra degli strumenti (se disponibile*)",
+						legend : "Premere ${toolbarCollapse}"
+					},
+					{
+						name : "Guida di Accessibilità",
+						legend : "Premere ${a11yHelp}"
+					}
+				]
+			},
+
+			{	//added by ibm
+				name : "",
+				items :
+				[
+					{
+						name : "Nota",
+						legend : "* Alcune funzioni possono essere disabilitate dall'amministratore. "
+					}
+				]
+			}
+		]
+	}
+
+});

@@ -1,0 +1,117 @@
+<project name="com.ibm.docs.web.resources" basedir="../com.ibm.docs.web.resources" default="war">
+	<tstamp />
+	<property name="webcontent.dir" value="WebContent" />
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin" />
+	<property name="war.dir" value="${bin.dir}/war" />
+	<property name="version.dir" value="${webcontent.dir}/${DSTAMP}-${TSTAMP}" />
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+	</target>
+	<target name="prepare build js" depends="clean">
+		<mkdir dir="${bin.dir}/${version.dir}/" />
+		<condition property="dojo.command" value="${basedir}/buildtools/util/buildscripts/build.sh" else="${basedir}/buildtools/util/buildscripts/build.bat">
+			<os family="unix" />
+		</condition>
+		<condition property="ck.command" value="${basedir}/buildtools/release.sh" else="${basedir}/buildtools/ckreleaser.exe">
+			<os family="unix" />
+		</condition>
+	</target>
+	<target name="build js" depends="prepare build js">
+		<!-- build ck for presentation -->
+		<exec executable="${ck.command}" failonerror="true">
+			<arg line="'${basedir}'/WebContent/js/ckeditor/ckreleaser.release" />
+			<arg line="'${basedir}'/WebContent/js/ckeditor" />
+			<arg line="'${basedir}'/'${bin.dir}'/'${version.dir}'/temp_presentation" />
+			<arg line="3.1.1" />
+			<arg line="temp_release" />
+		</exec>
+		<!-- build ck for document -->
+		<exec executable="${ck.command}" failonerror="true">
+			<arg line="'${basedir}'/WebContent/js/document/ckeditor/ckreleaser.release" />
+			<arg line="'${basedir}'/WebContent/js/document/ckeditor" />
+			<arg line="'${basedir}'/'${bin.dir}'/'${version.dir}'/temp_document" />
+			<arg line="3.1.1" />
+			<arg line="temp_release" />
+		</exec>
+	</target>
+	<target name="release webcontent" depends="build js">
+		<!-- release ck for presentation -->
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckeditor.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckeditor.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckconfig.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckconfig.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckeditor_basic.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckeditor_basic.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckeditor_basic_source.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckeditor_basic_source.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckeditor_source.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckeditor_source.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/config.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/config.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/contents.css" tofile="${bin.dir}/${version.dir}/js/ckeditor/contents.css" />
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/lang">
+			<fileset dir="${bin.dir}/${version.dir}/temp_presentation/release/lang" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/plugins" includeEmptyDirs="false">
+			<fileset dir="${bin.dir}/${version.dir}/temp_presentation/release/plugins">
+				<exclude name="**/plugin.js" />
+			</fileset>
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckplugins" includeEmptyDirs="false">
+			<fileset dir="${basedir}/WebContent/js/ckplugins">
+				<exclude name="**/plugin.js" />
+			</fileset>
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckresource">
+			<fileset dir="${basedir}/WebContent/js/ckresource" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/skins/lotus">
+			<fileset dir="${bin.dir}/${version.dir}/temp_presentation/release/skins/lotus" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/themes">
+			<fileset dir="${bin.dir}/${version.dir}/temp_presentation/release/themes" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/images">
+			<fileset dir="${basedir}/WebContent/js/ckeditor/images" />
+		</copy>
+		<delete dir="${basedir}/${bin.dir}/${version.dir}/temp_presentation" />
+		<!-- release ck for document -->
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckeditor.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckeditor.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckconfig.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckconfig.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckeditor_basic.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckeditor_basic.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckeditor_basic_source.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckeditor_basic_source.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckeditor_source.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckeditor_source.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/config.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/config.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/contents.css" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/contents.css" />
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/lang">
+			<fileset dir="${bin.dir}/${version.dir}/temp_document/release/lang" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/plugins" includeEmptyDirs="false">
+			<fileset dir="${bin.dir}/${version.dir}/temp_document/release/plugins">
+				<exclude name="**/plugin.js" />
+			</fileset>
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckplugins" includeEmptyDirs="false">
+			<fileset dir="${basedir}/WebContent/js/document/ckplugins">
+				<exclude name="**/plugin.js" />
+			</fileset>
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/skins/lotus">
+			<fileset dir="${bin.dir}/${version.dir}/temp_document/release/skins/lotus" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/themes">
+			<fileset dir="${bin.dir}/${version.dir}/temp_document/release/themes" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/images">
+			<fileset dir="${basedir}/WebContent/js/document/ckeditor/images" />
+		</copy>
+		<delete dir="${basedir}/${bin.dir}/${version.dir}/temp_document" />
+	</target>
+	<target name="war" depends="release webcontent">
+		<echo file="${bin.dir}/${webcontent.dir}/version.txt">
+			{"build_description" : "Build CK Only" , "product_name" : "Docs", 
+			"build_version" :  "0.0" , "build_timestamp" : "${DSTAMP}-${TSTAMP}" }
+		</echo>
+		<mkdir dir="${war.dir}" />
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${bin.dir}/${webcontent.dir}/" />
+		</war>
+		<delete dir="${bin.dir}/${webcontent.dir}/" />
+	</target>
+</project>

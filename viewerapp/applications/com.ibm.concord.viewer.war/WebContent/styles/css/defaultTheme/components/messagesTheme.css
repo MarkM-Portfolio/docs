@@ -1,0 +1,20 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for messages
+companion files: messages.css / messagesTheme.css
+companion files: messagesRTL.css / messagesThemeRTL.css*/
+/*** M E S S A G E S ***/
+/*these are the yellow warning/error messages that show up at the top of the content area*/
+
+
+
+.lotusui30 .lotusMessage{background-color:#ffe3e0;border-color:#efa6a5;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.lotusui30 .lotusWarning{background-color:#ffffbc;border-color:#f6e692;}
+.lotusui30 .lotusSuccess{background-color:#ecf9df;border-color:#c8e2b8;}
+.lotusui30 .lotusInfo{background-color:#e6f1fe;border-color:#b9cfeb;}
+.lotusui30 .lotusConfirm {background-color:#ecf9df;border-color:#c8e2b8;}
+
+/***********************************************************/
+

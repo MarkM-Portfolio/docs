@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Trabalhando com Documentos" topic="text/document/documents_frame.html">
+   <topic label="Trabalhando com Documentos" href="text/document/documents_frame.html">
+      <topic label="Criando e Importando Documentos"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="Sobre Modelos" href="text/document/d_templates.html"/>
+         <topic label="Criando Documentos a partir de Modelos"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Alterando o Formato de Arquivo Padrão de Documentos"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Fazendo Upload de Documentos para Compartilhar"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Importando Documentos Existentes"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Abrindo Arquivos do Word Protegidos por Senha"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Compatibilidade de Arquivo e Exportação de Documentos"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Formatos de Arquivo Suportados em Documentos"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Salvando Documentos" href="text/document/d_saving_documents.html"/>
+         <topic label="Publicando uma Versão de Documentos"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Exportando Documentos para Outros Formatos de Arquivo"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Compartilhando Documentos"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Compartilhando Documentos com Pessoas ou Comunidades"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Configurando Níveis de Acesso para Documentos"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Colaborando em Documentos em Tempo Real"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Coeditando em Tempo Real em Documentos"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="Sobre Coedição em Documentos"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Coeditando com outros em Documentos"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Mostrando Mudanças de cada Editor em Documentos"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Colaborando Usando Comentários em Documentos"
+                href="text/document/d_comments_overview.html">
+            <topic label="Sobre Comentários em Documentos"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Criando Comentários em Documentos"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Visualizando Comentários em Documentos"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Procurando Comentários em Documentos"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Editando Documentos"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Formatando Texto em Documentos"
+                href="text/document/d_formatting_text.html">
+            <topic label="Configurando Efeitos de Fonte"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="Tornando o Texto Sobrescrito ou Subscrito"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Configurando o Tamanho da Fonte"
+                   href="text/document/d_setting_font_size.html"/>
+            <topic label="Alinhando Texto" href="text/document/d_aligning_text.html"/>
+            <topic label="Indentando Texto" href="text/document/d_indenting_text.html"/>
+            <topic label="Incluindo Marcadores ou Números em Documentos"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Criando Listas com Vários Níveis em Documentos"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Inserindo Links" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Criando Cabeçalhos e Rodapés"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Criando um Índice" href="text/document/d_create_toc.html"/>
+         <topic label="Inserindo Campos em Documentos"
+                href="text/document/d_inserting_fields.html"/>
+         <topic label="Fazendo a Verificação Ortográfica em Documentos"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Imprimindo Documentos" href="text/document/d_printing_a_document.html">
+            <topic label="Imprimindo Documentos em Arquivos PDF"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Trabalhando com Imagens em Documentos"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Inserindo Imagens em Documentos"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Configurando Propriedades de Imagem em Documentos"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Trabalhando com Tabelas em Documentos"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Criando Tabelas em Documentos"
+                href="text/document/d_creating_a_table.html"/>
+         <topic label="Alterando Estilos de Tabela em Documentos"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Configurando Propriedades de Tabela em Documentos"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Configurando Cores do Plano de Fundo para Células de Tabela"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Alinhando Texto nas Células de Tabelas em Documentos"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Incluindo Linhas e Colunas em Tabelas"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Movendo Linhas e Colunas em Tabelas"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Mesclando ou Dividindo Células de Tabela"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Redimensionando Tabelas em Documentos"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Incluindo Legendas nas Tabelas em Documentos"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Definindo Cabeçalhos para Tabelas em Documentos"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Referência Rápida de Documentos" href="text/document/d_quick_ref.html"/>
+      <topic label="Atalhos do Teclado de Documentos"
+             href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

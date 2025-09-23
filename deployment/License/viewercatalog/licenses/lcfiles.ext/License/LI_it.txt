@@ -1,0 +1,52 @@
+﻿INFORMAZIONI SULLA LICENZA
+
+Nome programma:
+HCL Connections Docs v2.0.2.0
+
+All'utilizzo del Programma da parte del Licenziatario si applicano i termini standard indicati di seguito.
+
+Diritto all'utilizzo limitato
+
+Come descritto nel contratto di licenza principale HCL e nelle presenti informazioni sulla licenza, HCL concede al Licenziatario un diritto limitato sull'utilizzo del Programma. Tale diritto è limitato al livello di Utilizzo autorizzato, quale Processor Value Unit ("PVU"), Resource Value Unit ("RVU"), Value Unit ("VU") o altro livello di utilizzo specificato, pagato dal Licenziatario come indicato nel certificato Proof of Entitlement. L'utilizzo da parte del Licenziatario può anche essere limitato a una macchina specifica, solo come programma di supporto o soggetto ad altre limitazioni. Poiché il Licenziatario non paga l'intero valore economico del Programma, non è concesso nessun altro utilizzo senza ulteriori pagamenti. Inoltre, il Licenziatario non è autorizzato all'utilizzo del programma per la fornitura di servizi IT commerciali a terzi, la fornitura di hosting o timesharing commerciali o alla concessione in licenza, al noleggio o al leasing del Programma se non indicato espressamente dai contratti applicabili, in cui il Licenziatario ottiene le autorizzazioni all'utilizzo del Programma. Il Licenziatario può godere di diritti aggiuntivi soggetti a ulteriori pagamenti o secondo termini diversi o supplementari. HCL si riserva il diritto di determinare se concedere tali diritti aggiuntivi al Licenziatario.
+
+Specifiche
+
+Le specifiche del Programma si trovano nelle sezioni collettive relative a Descrizione e Informazioni tecniche delle Lettere di annuncio del Programma.
+
+Programmi di supporto
+
+Il Programma è concesso in licenza come pacchetto multiprodotto e comprende i Programmi di supporto identificati di seguito. Il Licenziatario è autorizzato a installare e utilizzare tali Programmi di supporto solo per supportare l'utilizzo del Programma principale da parte del Licenziatario ed entro i limiti dei certificati Proof of Entitlement per il Programma (a meno che nel presente documento di informazione sulla licenza siano concessi diritti più estesi). La dichiarazione "supportare l'utilizzo da parte del Licenziatario" comprende solo gli utilizzi necessari o altrimenti direttamente correlati a un utilizzo dietro licenza del Programma principale o di un altro Programma di supporto o in bundle. I Programmi di supporto non possono essere utilizzati per nessun altro scopo. Il Licenziatario non è autorizzato a trasferire o rivendere i Programmi di supporto separatamente dal Programma principale. Un Programma di supporto può essere accompagnato da termini di licenza. Tali termini, se esistenti, si applicano all'utilizzo di tale Programma di supporto da parte del Licenziatario. In caso di conflitto, valgono i termini nel presente documento di Informazioni sulla licenza e non i termini del Programma di supporto. Quando il diritto di utilizzo del Programma da parte del Licenziatario scade o termina, il Licenziatario deve smettere di utilizzarlo e distruggere o restituire tempestivamente tutte le copie dei Programmi di supporto alla parte presso cui ha acquisito il Programma. Se il Licenziatario ha scaricato i Programmi di supporto, deve contattare la parte presso cui ha acquisito il Programma. Se il Licenziatario desidera ottenere la licenza per i Programmi di supporto per qualsiasi utilizzo oltre i limiti definiti sopra, deve rivolgersi a un Rappresentante delle vendite HCL o alla parte presso cui ha acquisito il Programma per ottenere la licenza adeguata.
+
+Di seguito si trovano i Programmi di supporto concessi in licenza insieme al Programma:
+IBM WebSphere Application Server Network Deployment V8.5.5
+IBM DB2 Enterprise Server Edition, v11.1
+
+Termini per la tecnologia Oracle Outside In
+
+I Programmi concessi in licenza secondo il presente Contratto comprendono la tecnologia di filtraggio e visualizzazione di documenti Outside In ("Tecnologia Outside In") fornita da Oracle USA, Inc. ("Oracle"). Il termine "Tecnologia Outside In" comprende qualsiasi tecnologia concessa in licenza a Oracle dai propri fornitori. Come utilizzato nel Contratto, il termine "fornitore di HCL" comprende Oracle e i relativi fornitori. Oltre ai termini e alle condizioni del presente Contratto, come condizione per l'utilizzo della tecnologia Outside In, il Licenziatario accetta specificatamente quanto segue:
+
+(1) Oracle USA, Inc. è una terza parte beneficiaria nel presente Contratto
+
+(2) Il Licenziatario può trasferire il Programma solo fornendo previa notifica scritta a HCL e ad altri soggetti secondo i termini del presente Contratto.
+
+(3) Il Licenziatario non può pubblicare i risultati di test di benchmark eseguiti sulla tecnologia Oracle Outside In senza previa autorizzazione scritta.
+
+(4) HCL può informare i propri fornitori dei risultati di verifica della conformità relativi ai componenti di tali fornitori di HCL..
+
+(5) Nella misura concessa dalla legge applicabile, lo Uniform Computer Information Transactions Act ("UCITA") non si applica.
+
+Utente autorizzato
+
+L'Utente autorizzato è un'unità di misura mediante la quale è possibile concedere in licenza il Programma. Un Utente autorizzato è una persona univoca a cui viene fornito accesso al Programma. Il Programma può essere installato su qualsiasi numero di computer o server e ciascun Utente autorizzato può avere accesso simultaneo a qualsiasi numero di istanze del Programma per volta. Il Licenziatario deve ottenere autorizzazioni separate e dedicate per ciascun Utente autorizzato a cui viene fornito accesso al Programma in qualsiasi modo, direttamente o indirettamente (per esempio: mediante un programma in multiplex, un dispositivo o un server delle applicazioni) mediante qualsiasi mezzo. Un'autorizzazione per un Utente autorizzato è unica per tale Utente autorizzato e non può essere condivisa né riassegnata se non per il trasferimento permanente dell'autorizzazione dell'Utente autorizzato a un'altra persona.
+
+Termini unici per il Programma
+
+Dettagli sui programmi di supporto
+
+IBM DB2
+- Autorizzazione: Rapporto 1 PVU/1 PVU
+- Limitazioni di utilizzo: Utilizzo da parte del Programma principale
+
+"Rapporto n/m" significa che il Licenziatario riceve un numero ("n") di autorizzazioni per il Programma di supporto per ogni numero ("m") di autorizzazioni del Programma principale nel suo complesso. Se non diversamente specificato, il numero di autorizzazioni per il Programma di supporto è arrotondato per eccesso a un multiplo di "n". Per esempio, se un Programma comprende 100 PVU per un Programma di supporto ogni 500 PVU ottenute per il Programma principale e il Licenziatario acquisisce 1.200 PVU del Programma, può installare il Programma di supporto e avere core di processore disponibili per esso o gestiti da esso per un massimo di 300 PVU. Tali PVU non devono essere contate come parte della richiesta di PVU totali per l'installazione da parte del Licenziatario del Programma nell'installazione del Programma di supporto (sebbene possa essere necessario contare tali PVU per altri motivi, per esempio i core di processore resi disponibili anche per il Programma principale).
+
+"Utilizzo da parte del Programma principale" significa che il Programma di supporto è fornito esclusivamente per l'utilizzo da parte del Programma principale. Né il Licenziatario né altre applicazioni, programmi o dispositivi sono autorizzati all'utilizzo diretto o all'accesso ai servizi del Programma di supporto. Il Licenziatario può accedere al Programma di supporto per effettuare funzioni amministrative per il Programma di supporto quali backup, ripristino e configurazione autorizzata.

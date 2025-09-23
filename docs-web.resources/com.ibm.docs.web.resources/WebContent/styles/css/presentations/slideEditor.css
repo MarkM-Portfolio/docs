@@ -1,0 +1,246 @@
+@import url("documentContent.css");
+@import url("liststyles.css");
+@import url("../concord/clipArt.css");
+/******************** CAEDITOR  *********************/
+
+div.slideEditor {
+	border: 1px solid;
+	margin: 0px;
+	/*background-color:#FFFFFF;*/
+	padding: 0em;
+	top:0px;
+	left:0px;
+	position: relative;
+	display:none;	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;	
+	border-spacing:0px 0px;
+}
+.slideEditor.transition{
+	transition: all 0.3s ease 0s;
+}
+.slideEditor .resizableContainerSelected{
+	border-style:solid;
+	border-color:lightblue;
+	border-width:8px;
+	padding:0px;	
+	position: absolute;
+	/*background-color:transparent;*/
+	/*background url transparent is being set dynamically using javascript as the path is dynamic among deployments*/
+	/*this is needed for IE #14347*/
+	/*background: url('../images/realTransparent.png') repeat;*/
+	cursor: move;	
+}
+
+.slideEditor .resizableContainer{
+	border-style:none;
+	border-width:0px;
+	padding:8px;
+	position: absolute;
+	/*background-color:transparent;*/
+	/*background url transparent is being set dynamically using javascript as the path is dynamic among deployments*/
+	/*this is needed for IE #14347*/
+	/*background: url('../images/realTransparent.png') repeat;*/
+	cursor: move;
+	
+}
+
+.slideEditor .resizableConnector{
+	position: absolute;
+	cursor: move;
+}
+
+.slideEditor .resizableGContainer{
+	border-style:none;
+	border-width:0px;
+	padding:0px;
+	position: absolute;
+	background-color:transparent;
+	cursor: move;
+}
+
+.slideEditor .tempLayer {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding:0px;
+	margin :0px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color: transparent;
+	opacity:0.5;
+}
+
+.layoutClass .defaultContentImage {
+	border:0 none;
+	height:25%;
+	left:39%;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:39%;
+	width:25%;	
+	opacity:.5;
+}
+
+/*
+.layoutClass .defaultContentText{
+	border:0 none;
+	padding:0;
+	position:absolute;
+	text-align:center;
+	top:5%;
+	width:100%;
+}
+
+.layoutClass .outline{
+	border:0 none;
+	padding:0 0 0 10px;
+	position:absolute;
+	text-align:left;
+	top:5%;
+	width:100%;
+}
+
+.layoutClass .title{
+	border:0 none;
+	padding:0 0 0 10px;
+	position:absolute;
+	text-align:center;
+	top:30%;
+	width:100%;
+}
+
+.layoutClass .subtitle{
+	border:0 none;
+	padding:0 0 0 10px;
+	position:absolute;
+	text-align:center;
+	top:30%;
+	width:100%;
+}
+*/
+.slideEditor .moveContainerSelected {
+	border:7px solid lightblue;	
+	cursor: move;
+	background-color:white;
+	margin:0px;
+	padding: 0px;
+	height: 98%;
+	width:98%;
+}
+.slideEditor .moveContainer {
+	border:7px solid transparent;	
+	cursor: move;
+	background-color:white;
+	margin:0px;
+	padding: 0px;
+	height: 98%;
+	width:98%;
+}
+
+.slideEditor .handle {
+	position:absolute;
+	border:none;
+	/*width:10px;
+	height:10px;*/	
+	margin: 0px;
+	padding: 0px;	
+}
+
+.slideEditor .tl {
+	cursor:nw-resize	
+}
+
+.slideEditor .contentBoxDataNode{	
+	height: 100%;
+	width: 100%;	
+	margin: 0;
+}
+
+
+.slideEditor .ca_content_data {
+	cursor:move;
+}
+
+.slideEditor .ca_content_defaultdata {
+	border: 0px;
+	padding: 5px;
+}
+
+/* jmt: Moved to documentContent.css 
+p, ul{
+	margin-top:0px;
+	margin-bottom: 0px;
+	line-height:1em;
+}
+*/
+
+/****************
+For CKEDitor
+******************/
+body.slideEditor{
+ 	margin:0px;
+ 	width:100%;
+ 	height:100%;
+ 	padding:0px;
+}
+
+div.slideEditor *:focus { outline: none; }
+
+
+/******************************************
+START Shared Slide Show dialog dataGrid 19824
+*******************************************/
+
+.userList .dojoxGridCell:focus {
+    outline: none;
+}
+
+.userList .editorCss .dojoxGridRowSelected {
+    background-color: transparent !important;
+}
+
+.userList .editorCss .dojoxGridRowOdd {
+    background-color: transparent !important;
+}
+
+
+/************************************************
+END Shared Slide Show dialog dataGrid 19824
+**************************************************/
+
+/******************************************************
+ Concord Gallery CSS
+*******************************************************/
+
+/* Search input area */
+
+.presentationNonModalDialog .dijitTextBox input {
+	height: 16px;
+	padding: 1px 0 !important;
+}
+
+ 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*D14974*/
+#slideEditorCell {
+ -moz-user-select: none;
+}
+
+/*
+.tundra .dijitTooltipContainer {
+	background:#FFFFFF url(images/popupMenuBg.gif) repeat-x scroll left bottom;
+	border:1px solid #7EABCD;
+	max-height:350px;
+	max-width:550px;
+	overflow:hidden;
+	padding:0.45em;
+}*/

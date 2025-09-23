@@ -1,0 +1,402 @@
+#slideEditorCell
+{
+	vertical-align:top;
+	overflow:hidden;
+	background-color: #E0E0E0;
+	
+}
+/*
+.header ul
+{
+	display:none;
+}
+*/
+
+#lotus_text_message
+{
+	list-style:none;
+	width: 30%;
+	text-align: right;
+}
+
+#slideSorterCell
+{
+	vertical-align:top; 
+}
+
+#toolbar
+{
+	border-top: 1px solid #696969;
+	border-bottom: 1px solid #696969;
+}
+
+.horizontalRuler
+{
+	position: absolute;
+	overflow: hidden;
+	background-color: #F1F1F1;
+	/*background-color: #FFFFFF;*/
+	color: #A9A9A9;
+	border-bottom: 1px solid #A9A9A9;
+	border-top: none;
+	border-left: 1px solid #A9A9A9;
+	border-right: none;
+}
+
+.horizontalRulerPositionIndicator
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	width: 1px;
+	height: 15px;
+	border-bottom: none;
+	border-top: none;
+	border-left: 1px solid #666666;
+	border-right: none;
+}
+
+.verticalRuler
+{
+	position: absolute;
+	overflow: hidden;
+	background-color: #F1F1F1;
+	color: #A9A9A9;
+	border-bottom: 1px solid #A9A9A9;
+	border-top: 1px solid #A9A9A9;
+	border-left: none;
+	border-right: 1px solid #A9A9A9;
+}
+
+/* Begin Presentation Dialog Styles */
+
+.presentationDialog {
+	width: 699px;
+	height:440px;
+	/*background:#eff0f1;*/
+	/*font-family:arial;*/
+	font-size:12px;
+	border:4px solid #999999;	
+	outline: none;  		
+	background-color:#FFFFFF;
+	/* TODO defect 15588 background needs to be background-color:#CCCCCC; */
+	height:auto;
+	/*min-height:440px;*/
+	padding:0;
+	z-index:910;		
+}
+
+.verticalRulerPositionIndicator
+{
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	width: 15px;
+	height: 1px;
+	border-bottom: 1px solid #666666;;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.presentationDialogTitleBar{
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:0;
+	/*height:20px;*/		
+	background-color:#FFFFFF;
+	background-image:url("../images/spritesHeaderClose.png");
+	background-position:0 -50px;
+	background-repeat:repeat-x;
+	/*border-bottom:1px solid #DDDDDD;*/
+	color:#444444;
+	cursor:move;
+	font-size:20px;
+	font-weight:bold;
+	padding:12px 20px 3px;
+	position:relative;
+}
+
+.presentationDialogTitleText {
+	position:relative;
+	top:-5px;
+}
+
+.presentationDialogCloseBtn {
+	-moz-user-select:none;
+	background-image:url("../images/spritesHeaderClose.png");
+	background-position:-15px -15px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	height:15px;
+	position:absolute;
+	right:12px;
+	text-align:center;
+	top:12px;
+	width:15px;
+}
+
+.presentationDialogBody{
+	padding-top: 8px;
+}
+
+.presentationDialogButtonsSection{
+	background-color:#E0E8F0;
+	border-top:1px solid gray;
+	color:#000000;
+	font-family:arial;
+	height:25px;
+	margin:0;
+	padding:10px 25px;
+	position:absolute;
+	bottom:0px;
+}
+/*
+.presentationDialogButton {	
+	background-color:#2C86EB;
+	background-image:url("../images/btnSpecialBkgd.png");
+	background-position:left center;
+	background-repeat:repeat-x;
+	border:1px solid #2C86EB;
+	color:#FFFFFF;
+	cursor:pointer;
+	display:inline-block;
+	font-size:0.9em;
+	font-weight:bold;
+	line-height:1.7em;
+	padding:1px 10px;
+	text-align:center;
+	width:35px;	
+}*/
+
+.cancelButton{
+	position: relative; 
+	left: 10px; 
+	top: 7px;
+}
+
+.tundra .presentationDialogBody .dijitTabContainerTop-container {
+	border-bottom:medium none;
+	border-top:medium none;
+}
+
+.tundra .dijitTabContainerTop-dijitContentPane, .tundra .dijitTabContainerLeft-dijitContentPane, .tundra .dijitTabContainerBottom-dijitContentPane, .tundra .dijitTabContainerRight-dijitContentPane, .tundra .dijitAccordionContainer-dijitContentPane {
+	background-color:#FFFFFF;
+	padding:10px 1px 5px 10px;
+	
+}
+.slideSorterTool
+{
+	visibility:visible;
+	background-color:#CCCCCC;
+	font-size:12px;
+	font-weight:bold;
+	height: 20px;
+	padding-left:4px;
+}
+/*WJ*/
+.slideSorterTopTap
+{
+	border-color: #696969;
+	border-style: solid;
+    border-width: 0 1px 0 0;
+	visibility:visible;
+	background-color:#d0d0d0;
+	font-size:12px;
+	font-weight:bold;
+	height: 21px;
+	padding-left:0px;
+	margin-left:0px;
+}
+.slideSorterTopTabIcon
+{
+ border-color: #696969;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    float: left;
+    font-family: Arial,Verdana,Sans-Serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: 13px;
+    line-height: 100%;
+   margin-right: 3px;
+    padding: 4px;
+}
+.commentsContainer
+{
+	border-color: #696969;
+	border-style: solid;
+    border-width: 1px 1px 0 0;
+	visibility:visible;
+	padding-left:0px;
+	margin-left:0px;
+}
+.slideSorterContainer
+{
+	border-color: #696969;
+	border-style: solid;
+    border-width: 0 1px 0 0;
+	visibility:visible;
+}
+.slideSorterMsg{
+	font-size:0.9em;
+	font-weight:bold;
+	/*color:#CCCCCC;*/
+	padding:5px;
+}
+.assignmentSummaryTable{
+}
+.assignmentSummaryHeading{
+	color:#999999;
+}
+.assignmentSummaryHeading th{
+	padding:3px;
+}
+.assignmentSummaryTable tr td {
+	padding:3px;
+}
+.setDueDateDiv{
+	background-image: url("../images/taskhistory/SetNextDueDate_16.png");
+    background-repeat: no-repeat;
+    border: 5px solid transparent;
+    float: left;
+    width: 16px;
+    height:16px;
+}
+.setDueDateDivHover{
+	background-color:#DFF1FF;
+	border: 5px solid #DFF1FF;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+/* End Presentation Dialog Styles */
+
+/* CK3621 fix for defect 5115 */
+.cke_dialog_contents *:focus
+{
+	outline: 1px dotted #696969;
+	outline: auto 5px -webkit-focus-ring-color;
+}
+/* CK3621 fix for defect 5115 */
+.cke_dialog_ui_button:focus
+{
+	outline: 1px dotted #696969;
+	outline: auto 5px -webkit-focus-ring-color;
+}
+.dojoxFloatingPane
+{
+	overflow: visible;
+	outline: medium none;
+    border:7px solid #999/*this is needed for IE*/;
+	border:7px solid rgba(3, 3, 3, 0.33);
+    -moz-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 0px 0px 15px #aaa;
+	-webkit-box-shadow:  0px 0px 15px #aaa;
+	box-shadow: 0px 0px 15px #aaa;
+ }
+ 
+.dojoxFloatingPaneContent
+{
+ 	outline: none;
+}
+ 
+.dojoxFloatingPaneTitle
+{
+    padding: 15px 20px;
+	border-bottom:1px solid #111;
+	background: #222428;
+	background:-moz-linear-gradient(top, #424448 0%, #393B3F 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#424448), color-stop(100%,#393B3F));
+	cursor:move;
+}
+.dijit_a11y .dojoxFloatingPaneTitle
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.dojoxFloatingPaneCanvas
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.dojoxFloatingCloseIcon
+{
+	background-image: url("../../../js/dijit/themes/oneui30/images/ClosePopup32.png");
+    height: 32px;
+    position: absolute;
+    right: -18px;
+    top: -18px;
+    width: 32px;
+    cursor: pointer;
+}
+.dijit_a11y .dojoxFloatingCloseIcon
+{
+   background-image: none;
+   height: auto;
+   width: auto;
+   top: 5px;
+   right: 10px;
+}
+.dojoxFloatingCloseIcon .floatingCloseText
+{
+   display:none;
+}
+.dijit_a11y .dojoxFloatingCloseIcon .floatingCloseText
+{
+   display: inline-block;
+
+}
+
+.dijitTitleNode
+{
+	color: #FFFFFF;
+    display: block;
+    font-size: 1.5em;
+    line-height: 1.2;
+    text-shadow: 0 1px 2px #000000;
+}
+
+.dojoxFloatingPaneCanvas
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 15px 20px;
+    position: relative;
+}
+
+#C_d_Welcome p
+{
+	line-height: 1.3;
+	margin: 5px 0 0;
+}
+
+/* fix for defect 15307 */
+#ConcordContent ul li
+{
+	line-height: 1.5;
+}
+/* fix for defect 15307 */
+#ConcordContent ul
+{
+ 	margin-bottom: 10px;
+}
+
+/* fix for defect 43266 */
+.dj_ie10 .oneui30 .dijitMenuItemDisabled .dijitMenuItemIconCell,
+.dj_ie10 .oneui30 .dijitMenuItemDisabled  *
+{
+	opacity: 1;
+	filter : none;
+	color: lightgray;
+}
+
+.dj_ie10 .oneui30 .dijitMenuItemDisabled.dijitMenuItemHover
+{
+	background: #181818 !important;
+	background-color: #181818 !important;
+}

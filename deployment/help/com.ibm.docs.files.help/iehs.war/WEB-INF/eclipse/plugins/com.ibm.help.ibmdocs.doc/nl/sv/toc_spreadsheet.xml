@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013--><!--© Copyright IBM Corp 2013-->
+<toc label="Arbeta med kalkylark" topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="Arbeta med kalkylark" href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="Skapa och importera kalkylark"
+             href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="Skapa kalkylark från mallar"
+                href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="Ändra standadrdfilformatet för kalkylark"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="Överföra och dela kalkylark"
+                href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="Importera kalkylark" href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="Importera textfiler till kalkylark"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="Öppna lösenordsskyddade Excel-filer"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="Filkompatibilitet och export av kalkylark"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="Filformat som hanteras i kalkylark"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="Spara kalkylark" href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="Publicera en version av kalkylark"
+                href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="Exportera kalkylark i andra filformat"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="Exportera kalkylark till CSV-filer"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="Dela kalkylark" href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="Dela kalkylark med personer eller gemenskaper"
+                href="text/spreadsheet/s_share_file.html"/>
+         <topic label="Ange behörighetsnivåer för kalkylark"
+                href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="Samarbeta om kalkylark i realtid"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="Samredigering i realtid i kalkylark"
+                href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="Om samredigering i kalkylark"
+                   href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="Samredigering med andra i kalkylark"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="Visa ändringar från varje redigerare i kalkylark"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Samarbeta med kommentarer i kalkylark"
+                href="text/spreadsheet/s_comments_overview.html">
+            <topic label="Om kommentarer i kalkylark"
+                   href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="Skriva kommentarer i kalkylark"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="Läsa kommentarer i kalkylark"
+                   href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="Söka efter kommentarer i kalkylark"
+                   href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Ändra utseendet på kalkylark"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="Teckensnitt, kantlinjer och färg"
+                href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="Ändra teckensnitt i kalkylark"
+                href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="Ändra radhöjd eller kolumnbredd"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="Ändra kantlinjer i kalkylark"
+                href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="Återställa standardformat i kalkylarksceller"
+                href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="Formatera tal" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="Skriva och redigera data" href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="Grundläggande dataredigering"
+                href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="Söka och ersätta cellinnehåll"
+                href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="Lägga till en hyperlänk i en cell"
+                href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="Ta bort länken från en hyperlänk"
+                href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="Använda automatisk fyllning till att fylla ett intervall"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="Sammanfoga eller dela celler i ark"
+                href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="Stavningskontrollera kalkylark"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="Skriva ut kalkylark till PDF-filer"
+                href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Arbeta med bilder i kalkylark"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="Infoga bilder i kalkylark"
+                href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="Flytta och storleksändra bilder i kalkylark"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="Ange bildegenskaper i kalkylark"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Arbeta med diagram i kalkylark"
+             href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="Infoga diagram i kalkylark"
+                href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="Flytta och storleksändra diagram i kalkylark"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="Kopiera diagram i kalkylark"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="Hantera dataintervall" href="text/spreadsheet/s_data_ranges.html">
+         <topic label="Sortera data" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="Använda snabbfiltret" href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="Låsa rader och kolumner i kalkylark"
+                href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="Gömma rader och kolumner" href="text/spreadsheet/s_hide.html"/>
+         <topic label="Visa rader och kolumner" href="text/spreadsheet/s_show.html"/>
+         <topic label="Referenser till celler från ett annat ark"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="Kopiera data och bilder i kalkylark"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="Namnge ett intervall" href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="Hitta eller redigera namngivna intervall"
+                href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="Ta bort ett namngivet intervall"
+                href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="Relativa och absoluta referenser"
+                href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="Använda formler i beräkningar"
+             href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="Om formler och funktioner"
+                href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="Lista över funktioner" href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="Grupperade efter kategori"
+                   href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="Matrisfunktioner" href="text/spreadsheet/s_functions_array.html">
+                  <topic label="Integrerade matriskonstanter i formler"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="Villkorliga matrisberäkningar"
+                         href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="Datum- och tidsfunktioner" href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="Teknikfunktioner" href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="Informationsfunktioner" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="Logikfunktioner" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="Matematiska funktioner" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="Kalkylarksfunktioner" href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="Statistikfunktioner"
+                      href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="Textfunktioner" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="Funktionen ABS" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="Funktionen ACOS" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="ACOSH" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="Funktionen ADDRESS"
+                   href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="Funktionen AND" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="Funktionen ASIN" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="ASINH" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="Funktionen ATAN" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="ATAN2" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="ATANH" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="Funktionen AVERAGE"
+                   href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="Funktionen AVERAGEA"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="Funktionen BASE" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="CEILING" href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="CHOOSE" href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="CHAR" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="CODE" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="Funktionen COLUMN" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="Funktionen COLUMNS"
+                   href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="COMBIN" href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="Funktionen CONCATENATE"
+                   href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="Funktionen CONVERT"
+                   href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="COS" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="COSH" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="Funktionen COUNT"
+                   href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="Funktionen COUNTA"
+                   href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="Funktionen COUNTBLANK"
+                   href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="Funktionen COUNTIF" href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="Funktionen DATE" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="Funktionen DATEDIF"
+                   href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="DATEVALUE" href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="DAY" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="Funktionen DAYS" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="DEGREES" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="DOLLAR" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="Funktionen ERRORTYPE"
+                   href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="Funktionen EVEN" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="Funktionen EXP" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="Funktionen EXACT" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="Funktionen FACT" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="Funktionen FALSE" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="FIXED" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="FLOOR" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="Funktionen FORMULA" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="Funktionen FREQUENCY"
+                   href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="Funktionen HLOOKUP"
+                   href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="Funktionen HOUR" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="Funktionen HYPERLINK"
+                   href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="IF" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="Funktionen INDEX" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="Funktionen INDIRECT"
+                   href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="Funktionen INT" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="Funktionen ISBLANK" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="Funktionen ISERR" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="Funktionen ISERROR" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="Funktionen ISEVEN" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="Funktionen ISFORMULA"
+                   href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="Funktionen ISLOGICAL"
+                   href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="Funktionen ISNA" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="Funktionen ISNONTEXT"
+                   href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="Funktionen ISNUMBER"
+                   href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="Funktionen ISODD" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="Funktionen ISREF" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="Funktionen ISTEXT" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="Funktionen LARGE"
+                   href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="Funktionen LEFT" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="Funktionen LEN" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="LENB" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="Funktionen LN" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="Funktionen LOG" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="LOG10" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="Funktionen LOWER" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="Funktionen MAX" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="Funktionen MEDIAN" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="funktionen MID" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="Funktionen MIN" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="Funktionen MINUTE" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="Funktionen MMULT" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="Funktionen MOD" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="Funktionen MODE"
+                   href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="MONTH" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="Funktionen N" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="Funktionen NA" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="Funktionen NETWORKDAYS"
+                   href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="Funktionen NOT" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="Funktionen NOW" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="Funktionen ODD" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="Funktionen OFFSET" href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="Funktionen OR" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="Funktionen PI" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="POWER" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="Funktionen PRODUCT" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="Funktionen PROPER" href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="RADIANS" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="Funktionen RAND" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="RANDBETWEEN" href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="Funktionen RANK"
+                   href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="REPLACE" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="Funktionen REPT" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="Funktionen RIGHT" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="Funktionen RIGHTB" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="ROMAN" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="Funktionen ROUND" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="Funktionen ROUNDDOWN"
+                   href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="Funktionen ROUNDUP" href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="Funktionen ROW" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="Funktionen ROWS" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="Funktionen SEARCH" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="Funktionen SECOND" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="Funktionen SHEET" href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="SIN" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="SINH" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="Funktionen SMALL"
+                   href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="Funktionen SQRT" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="Funktionen STDEV" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="Funktionen STDEVP" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="Funktionen SUBSTITUTE"
+                   href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="Funktionen SUBTOTAL"
+                   href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="Funktionen SUM" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="Funktionen SUMIF" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="Funktionen SUMPRODUCT"
+                   href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="T" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="Funktionen TEXT" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="Funktionen TIME" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="Funktionen TODAY" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="Funktionen TRIM" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="Funktionen TRUE" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="Funktionen TRUNC" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="Funktionen TYPE" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="Funktionen UPPER" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="VALUE" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="Funktionen VLOOKUP"
+                   href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="VAR" href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="VARA" href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="VARP" href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="VARPA" href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="Funktionen WEEKDAY" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="WEEKNUM" href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="YEAR" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="Snabbreferens för kalkylark" href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="Kortkommandon för kalkylark"
+             href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

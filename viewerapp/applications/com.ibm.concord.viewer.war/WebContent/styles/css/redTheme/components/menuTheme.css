@@ -1,0 +1,27 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for menu
+companion file is menu.css*/
+/*** M E N U ***/
+.lotusMenu, .portlet-menu{background-color:#eefee1;border-color:#ccebb5}
+.lotusMenu .lotusMenuSection{border-bottom-color:#ccebb5;}
+.lotusMenu h3{color:#4f9815}
+.lotusMenu h3.selected, .portlet-menu h3.selected{color:#fff;background-color:#73be59;border-color:#73be59;}
+.lotusMenu li.lotusSelected a, .lotusMenu li.lotusSelected a:visited, .lotusMenu li.lotusSelected a:active, .portlet-menu li.lotusSelected a, .portlet-menu li.lotusSelected a:visited, .portlet-menu li.lotusSelected a:active{color:#fff !important;background-color:#73be59;border-color:#73be59;}
+/*menu arrows are created as CSS sprites, using the lotusArrow class found in baseTheme.css*/
+.lotusTwistyOpenMenu{background-image:url(../../images/arrowOpenAlt.png)}/*the section is selected*/
+.lotusTwistyClosedMenu{background-image:url(../../images/arrowClosedAlt.png)}
+.lotusMenu h3.selected .lotusTwistyOpenMenu{background-image:url(../../images/arrowOpenReversed.png)}/*the section is selected*/
+.lotusMenu h3.selected .lotusTwistyClosedMenu{background-image:url(../../images/arrowClosedReversed.png)}
+.lotusMenu .lotusArrow, .lotusMenu .lotusArrow:hover, .lotusMenu .lotusArrow:focus{color:#fff;text-decoration:none}/*for alt text +/- icons*/
+
+/*[sprite]*/
+.lotusSpritesOn .lotusTwistyOpenMenu{background-position:0 -464px}
+.lotusSpritesOn .lotusTwistyClosedMenu{background-position:0 0}
+.lotusSpritesOn .lotusMenu h3.selected .lotusTwistyOpenMenu{background-image:url(../themeImages/lotusSprite-32bit.png);background-position:0 -580px}/*the section is selected*/
+.lotusSpritesOn .lotusMenu h3.selected .lotusTwistyClosedMenu{background-position:0 -348px}
+/*[/sprite]*/
+/***********************************************************/
+

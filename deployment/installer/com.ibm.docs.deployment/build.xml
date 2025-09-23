@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="com.ibm.docs.deployment" basedir="." default="deploy">
+	<property name="installer.dir" value="installer" />
+	<property name="src.dir" value="src" />
+	<property name="bin.dir" value="bin" />
+	<property name="classes.dir" value="${bin.dir}/classes" />
+	<property name="jar.dir" value="${bin.dir}/jar" />
+	<property name="report.dir" value="${build.home}/report" />
+	<path id="findbugs.classpath">
+		<fileset dir="${findbugs.home}/lib" includes="*.jar" />
+	</path>
+
+	<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" classpathref="findbugs.classpath" />
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" source="${javac.source}" target="${javac.target}" />
+	</target>
+	<target name="findbugs-condition" depends="compile">
+		<condition property="enablefindbugs">
+			<istrue value="${findbugs.enable}" />
+		</condition>
+	</target>
+	<target name="findbugs" depends="findbugs-condition" if="enablefindbugs">
+		<mkdir dir="${report.dir}" />
+		<findbugs home="${findbugs.home}" output="xml" outputFile="${report.dir}/${ant.project.name}.xml" warningsProperty="bugs.found">
+			<sourcePath path="${src.dir}" />
+			<class location="${classes.dir}" />
+		</findbugs>
+		<condition property="build.fail">
+			<and>
+				<istrue value="${bugs.found}" />
+				<istrue value="${findbugs.fail}" />
+			</and>
+		</condition>
+		<fail if="build.fail" message="Find bugs in ${ant.project.name}, see ${report.dir}/${ant.project.name}.xml for details." />
+	</target>
+	<target name="jar" depends="findbugs">
+		<mkdir dir="${jar.dir}" />
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Created-By" value="IBM" />
+			</manifest>
+		</jar>
+	</target>
+	<target name="deploy" depends="jar">
+		<mkdir dir="${build.home}/installer" />
+		<copy todir="${build.home}/installer">
+			<fileset dir="${installer.dir}">
+				<exclude name="**/ut/" />
+				<exclude name="**/ut.py" />
+			</fileset>
+		</copy>
+		<copy file="${basedir}/installer/cfg.properties" tofile="${build.home}/installer/cfg.properties.sample"/>
+		<copy file="${basedir}/installer/cfg.node.properties" tofile="${build.home}/installer/cfg.node.properties.sample"/>
+		<mkdir dir="${build.home}/python"/>
+		<copy todir="${build.home}/python" file="${basedir}/python/python-2.7.3.amd64.msi"/> 
+		<mkdir dir="${build.home}/installer/Python"/>
+		<unzip src="Python273.zip" dest="${build.home}/installer/Python"></unzip>
+		<echo file="${build.home}/installer/version.txt">
+            {
+            "product_name" : "HCL Docs", 
+            "build_version" :  "${build.version}" ,
+            "build_timestamp" : "${build.timestamp}" 
+            }
+        </echo>
+		<copy todir="${build.home}/installer/util">
+			<fileset dir="${jar.dir}" includes="**/*" />
+		</copy>
+	</target>
+</project>

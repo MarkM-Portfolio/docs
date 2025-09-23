@@ -1,0 +1,26 @@
+{
+	"id":"test.odp",
+	"version": "1.0",
+	"name":"test.odp",
+	"description":"This is a test presentation",
+	"size":9223,
+	"created_at":"2015-04-08T04:21:56-07:00",
+	"modified_at":"2015-04-08T04:21:56-07:00",
+	"created_by":
+	{
+		"id":"12345678",
+		"name":"fake user",
+		"email":"fakeuser@gmail.com"
+	},
+	"modified_by":
+	{
+		"id":"12345678",
+		"name":"fake user",
+		"email":"fakeuser@gmail.com"
+	},
+	"permissions":
+	{
+		"read": "true",
+		"write": "true"
+	}
+}

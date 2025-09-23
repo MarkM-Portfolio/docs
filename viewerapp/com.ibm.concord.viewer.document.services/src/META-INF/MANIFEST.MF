@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.concord.viewer.job.jar 
+ com.ibm.concord.viewer.platform.jar 
+ com.ibm.concord.viewer.spi.jar 
+ com.ibm.concord.viewer.cache.jar
+

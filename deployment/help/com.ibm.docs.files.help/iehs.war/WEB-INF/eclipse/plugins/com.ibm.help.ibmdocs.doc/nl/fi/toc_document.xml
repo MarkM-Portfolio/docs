@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Asiakirjojen käsittely" topic="text/document/documents_frame.html">
+   <topic label="Asiakirjojen käsittely" href="text/document/documents_frame.html">
+      <topic label="Asiakirjojen luonti ja tuonti"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="Tietoja mallipohjista" href="text/document/d_templates.html"/>
+         <topic label="Asiakirjojen luonti mallipohjista"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Asiakirjojen oletustiedostomuodon muutto"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Asiakirjojen siirto palvelimeen yhteiskäyttöä varten"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Aiemmin luotujen asiakirjojen tuonti"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Salasanalla suojattujen Word-tiedostojen avaus"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Tiedostojen yhteensopivuus ja asiakirjojen vienti"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Tuetut tiedostomuodot Documents-ohjelmassa"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Asiakirjojen tallennus" href="text/document/d_saving_documents.html"/>
+         <topic label="Asiakirjan version julkaisu"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Asiakirjojen vienti muihin tiedostomuotoihin"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Asiakirjojen määritys yhteiskäyttöön"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Asiakirjojen määritys yhteiskäyttöön henkilöiden tai yhteisöjen kanssa"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Asiakirjojen käyttötasojen määritys"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Reaaliaikainen asiakirjojen yhteismuokkaus"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Asiakirjojen reaaliaikainen yhteismuokkaus"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="Tietoja asiakirjojen yhteismuokkauksesta"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Asiakirjojen yhteismuokkaus"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Kunkin muokkaajan muutosten näyttö asiakirjoissa"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Kommenttien käyttö yhteistyöhön asiakirjoissa"
+                href="text/document/d_comments_overview.html">
+            <topic label="Tietoja kommenteista asiakirjoissa"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Kommenttien luonti asiakirjoihin"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Kommenttien tarkastelu asiakirjoissa"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Kommenttien haku asiakirjoissa"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Asiakirjojen muokkaus"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Tekstin muotoilu asiakirjoissa"
+                href="text/document/d_formatting_text.html">
+            <topic label="Fonttitehosteiden määritys"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="Tekstin muuttaminen ylä- tai alaindeksiin"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Fonttikoon määritys" href="text/document/d_setting_font_size.html"/>
+            <topic label="Tekstin tasaus" href="text/document/d_aligning_text.html"/>
+            <topic label="Tekstin sisennys" href="text/document/d_indenting_text.html"/>
+            <topic label="Luettelomerkkien tai numeroiden lisäys asiakirjoihin"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Monitasoisten luetteloiden luonti asiakirjoihin"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Linkkien lisäys" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Otsikoiden ja alatunnisteiden luonti"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Sisällysluettelon luonti" href="text/document/d_create_toc.html"/>
+         <topic label="Kenttien lisäys asiakirjoihin"
+                href="text/document/d_inserting_fields.html"/>
+         <topic label="Asiakirjojen oikeinkirjoituksen tarkistus"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Asiakirjojen tulostus" href="text/document/d_printing_a_document.html">
+            <topic label="Asiakirjojen tulostaminen PDF-tiedostoihin"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Kuvien käsittely asiakirjoissa"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Kuvien lisäys asiakirjoihin"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Kuvan ominaisuuksien määritys asiakirjoissa"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Taulukoiden käsittely asiakirjoissa"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Taulukoiden luonti asiakirjoissa"
+                href="text/document/d_creating_a_table.html"/>
+         <topic label="Taulukon tyylien muuttaminen asiakirjoissa"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Taulukon ominaisuuksien määritys asiakirjoissa"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Taulukon solujen taustavärien määritys"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Tekstin tasaus asiakirjojen taulukkosoluihin"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Rivien ja sarakkeiden lisäys taulukkoon"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Taulukoiden rivien ja sarakkeiden siirto"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Taulukon solujen yhdistäminen ja jakaminen"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Asiakirjojen taulukoiden koon muutto"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Kuvatekstien lisäys asiakirjojen taulukoihin"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Taulukoiden otsikoiden määritys asiakirjoissa"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Asiakirjojen pikaohje" href="text/document/d_quick_ref.html"/>
+      <topic label="Asiakirjojen pikanäppäimet" href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

@@ -1,0 +1,380 @@
+<html>
+	<head>
+		<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+		<title>dialogs</title>
+		<script type="text/javascript">
+			if( top == self )
+			{
+				var htmlText =
+				'<scr'+'ipt type="text/javascript" src="../../dojo/dojo.js"></scr'+'ipt>\n'
+				+'		<style type="text/css">\n'
+				+'			@import "../../../styles/css/lotuslive/skin.css";\n'
+				+'			@import "../../../styles/css/lotuslive/bs_font.css";\n'
+				+'		</style>\n'
+				+'\n'
+				+'		<link href="../../../styles/css/concord/sidebar.css" type="text/css" rel="stylesheet">\n'
+				+'		<link class="editorCss" href="../../../styles/css/concord/editor.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../concord/widgets/css/dialog.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../dojo/resources/dojo.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../dijit/themes/tundra/tundra.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../../styles/css/concord/common.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../../styles/css/lotuslive/skin.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../../styles/css/smartTables/smartTablesExhibit.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../../styles/css/ck/dialog.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../../styles/css/ck/reset.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../dijit/themes/oneui30/oneui30.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../../styles/css/base/core.css" type="text/css" rel="stylesheet">\n'
+				+'		<link href="../../../styles/css/defaultTheme/defaultTheme.css" type="text/css" rel="stylesheet">\n'
+				+'\n';
+				document.write( htmlText );
+			}
+		</script>
+		<script type="text/javascript">
+			function showInsertImageDlg()
+			{
+				dojo.require("concord.widgets.InsertImageDlg");
+				concord.widgets.InsertImageDlg.show("",
+				function(attrs){ alert(dojo.toJson(attrs)); } );
+			}
+			function showImgPropDlg()
+			{
+				dojo.require("concord.widgets.ImagePropDlg");
+				concord.widgets.ImagePropDlg.show({width:640,height:480},
+				function(attrs){ alert(dojo.toJson(attrs)); } );
+			}
+			function showLinkDlg()
+			{
+				dojo.require("concord.widgets.LinkDialog");
+				concord.widgets.LinkDialog.show(
+				{execute:function(attrs){ alert(dojo.toJson(attrs)); }} );
+			}
+			function showFindReplaceDlg()
+			{
+				dojo.require("concord.widgets.FindReplaceDlg");
+				concord.widgets.FindReplaceDlg.show("replace",null,null);
+			}
+			function showNewFindReplaceDlg()
+			{
+				dojo.require("writer.ui.dialog.FindReplaceDlg");
+				concord.widgets.FindReplaceDlg.show("replace",null,null);
+			}
+			function showInsertTableDlg()
+			{
+				dojo.require("concord.widgets.InsertTableDlg");
+				concord.widgets.InsertTableDlg.show(null,null);
+			}
+			function showPasteDlg()
+			{
+				dojo.require("concord.widgets.PasteDlg");
+				concord.widgets.PasteDlg.show( function(html){ alert(html); } );
+			}
+			function showSpecialcharDlg()
+			{
+				dojo.require("concord.widgets.specialcharDlg");
+				concord.widgets.specialcharDlg.show();
+			}
+		</script>
+
+	</head>
+
+	<body class="oneui30 lotusui30" style="overflow: hidden;">
+		<div name="image property div">
+			<button dojoType="dijit.form.Button" onclick="showImgPropDlg()">Show Image Property Dialog</button>
+			<div name="parseRoot">
+				<div id="C_d_ImageProp" dojoType="concord.widgets.ImagePropDlg" jsId="imagePropDialog" title="$ Image Properties" nls="title:title" style="display:none;">
+					<table role="presentation">
+						<tbody>
+							<tr>
+								<td>
+									<table role="presentation">
+										<tr>
+											<td>
+												<a title="$ Lock the width and height ratio" nls="title:lockRatio" tabindex="0" role="textbox" class="image_btn_locked" id="C_d_ImagePropLockRatio" name="lock">
+												</a>
+											</td>
+											<td align="right">
+												<label for="C_d_ImagePropImgWidthInput" nls="innerHTML:width">$ Width</label>
+											</td>
+											<td>
+												<input dojoType="dijit.form.TextBox" jsId="imagePropDialog.imgWidthInput" type="text" id="C_d_ImagePropImgWidthInput" style="width:8em;height:1.8em;" name="width"/>
+											</td>
+											<td>
+											</td>
+											<td align="right">
+												<label for="C_d_ImagePropImgHeightInput" nls="innerHTML:height">$ Height</label>
+											</td>
+											<td>
+												<input dojoType="dijit.form.TextBox" jsId="imagePropDialog.imgHeightInput" type="text" id="C_d_ImagePropImgHeightInput" style="width:8em;height:1.8em;" name="height"/>
+											</td>
+										</tr>
+<!-- 										
+										<tr>
+											<td>
+											</td>
+											<td>
+												<label for="C_d_ImagePropHSpace" nls="innerHTML:hSpace">$ HSpace</label>
+											</td>
+											<td>
+												<input dojoType="dijit.form.TextBox" jsId="imagePropDialog.imgHspaceInput" type="text" id="C_d_ImagePropHSpace" style="width:8em;height:1.8em;" name="hspace" value="0"/>
+											</td>
+											<td style="width:10px;">
+											</td>
+											<td>
+												<label for="C_d_ImagePropVSpace" nls="innerHTML:vSpace">$ VSpace</label>
+											</td>
+											<td>
+												<input dojoType="dijit.form.TextBox" jsId="imagePropDialog.imgVspaceInput" type="text" id="C_d_ImagePropVSpace" style="width:8em;height:1.8em;" name="vspace" value="0"/>
+											</td>
+										</tr>
+ -->										
+										<tr>
+											<td>
+											</td>
+											<td align="right">
+												<label for="C_d_ImagePropBorder" nls="innerHTML:border">$ Border</label>
+											</td>
+											<td>
+												<input dojoType="dijit.form.TextBox" jsId="imagePropDialog.imgBorderInput" type="text" id="C_d_ImagePropBorder" style="width:8em;height:1.8em;" name="border" value="0"/>
+											</td>
+											<td style="width:10px;">
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+											<td align="right">
+												<label for="C_d_ImagePropAltTextInput" nls="innerHTML:alt">$ Alternate text</label>
+											</td>
+											<td colspan="4">
+												<input dojoType="dijit.form.TextBox" id="C_d_ImagePropAltTextInput" type="text" size="30" name="alt" style="width:100%;height:1.8em;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;"/>							
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div align="right" style="padding-top: 10px;">
+						<button dojoType="concord.widgets.LotusTextButton" type="submit" id="C_d_ImagePropOkButton" nls="innerHTML:oKLabel">$ OK</button>
+						<button dojoType="concord.widgets.LotusTextButton" type="button" id="C_d_ImagePropCancelButton" nls="innerHTML:cancelLabel" onClick="imagePropDialog.hide();">$ Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div name="link dialog div"><button dojoType="dijit.form.Button" onclick="showLinkDlg()">Show Link Dialog</button><div name="parseRoot"><div id="C_d_Link" jsId="linkDialog" dojoType="concord.widgets.LinkDialog" title="$ Add a Link" nls="title:title" style="display:none;"><div id="basicPane" title="$ Link Information" nls="title:info" style="height:100px;width:400px;overflow:auto;"><table role="presentation" cellspacing="0" border="0" align="left" style="width: 100%; heigth:100"><tbody><tr><td><div name="url"><table cellspacing="0" border="0" align="left" style="width: 100%;" role="presentation"><tbody><tr><td><table style="width: 100%;height:80px" role="presentation"><tbody><tr><td style="width: 25%;"><div style="width: 100%;"><label for="C_d_LinkProtocol" nls="innerHTML:protocol">$ Protocol</label><div><select dojoType="dijit.form.Select" jsId="C_d_LinkProtocol" id="C_d_LinkProtocol" style="width: 100%;" name="url.protocol"><option value="http://"> http://</option><option value="https://"> https://</option><option value="ftp://"> ftp://</option><option value="news://"> news://</option></select></div></div></td><td style="width: 75%;"><div><label nls="innerHTML:url" for="C_d_LinkUrlInput">$ URL</label><div><div><input type="text" dojoType="dijit.form.ValidationTextBox"  id="C_d_LinkUrlInput" name="url.url" style="width:100%;" required="true"></div></div></div></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></div><div class="dijitDialogPaneActionBar"><button dojoType="concord.widgets.LotusTextButton" id="C_d_LinkOkButton" jsId="linkDialog.okButton" type="button" nls="innerHTML:oKLabel">$ OK</button>	<button dojoType="concord.widgets.LotusTextButton" id="C_d_LinkCancelButton" type="button" nls="innerHTML:cancelLabel" onClick="linkDialog.hide();">$ Cancel</button></div></div></div></div>
+		<div name="find replace div">
+			<button dojoType="dijit.form.Button" onclick="showFindReplaceDlg()">Show Find Replace Dialog</button>
+			<div name="parseRoot">
+				<div id="C_d_FindReplace" dojoType="concord.widgets.FindReplaceDlg" jsId="findReplaceDialog" title="s Find and Replace" nls="title:title" style="display:none;">
+					<div jsId="findReplaceDialog.replacePane" doLayout="false" id="C_d_FindReplaceReplacePane" style="width:350px">
+						<table style="width:100%" role="presentation">
+							<tbody>
+								<tr>
+									<td style="width: auto; padding: 0px;">
+										<label nls="innerHTML:findWhat" for="C_d_FindReplaceFindText_Replace">s Text to find:</label>
+									</td>
+									<td style="width: auto; padding: 0px;">
+										<input tabindex="1" style="width: 100%; padding: 0px;" dojoType="dijit.form.TextBox" type="text" jsId="findReplaceDialog.findText_replace" id="C_d_FindReplaceFindText_Replace">
+									</td>
+									<td style="width: 3%; padding: 0px;">
+									</td>
+									<td style="width: auto; padding: 0px;">
+										<button tabindex="2" dojoType="concord.widgets.LotusTextButton" type="button" nls="innerHTML:find" jsId="findReplaceDialog.findButton" id="C_d_FindReplaceFindButton">s Find</button>
+									</td>
+								</tr>
+								<tr>
+									<td style="width: auto; padding: 0px;">
+										<label nls="innerHTML:replaceWith" for="C_d_FindReplaceReplaceText">s Replace with:</label>
+									</td>
+									<td style="width: auto; padding: 0px;">
+										<input tabindex="3" style="width: 100%; padding: 0px;" dojoType="dijit.form.TextBox" type="text" jsId="findReplaceDialog.replaceText" id="C_d_FindReplaceReplaceText">
+									</td>
+									<td style="width: 3%; padding: 0px;">
+									</td>										
+									<td style="width: auto; padding: 0px;">
+										<button tabindex="4" dojoType="concord.widgets.LotusTextButton" type="button" nls="innerHTML:replace" jsId="findReplaceDialog.replaceButton" id="C_d_FindReplaceReplaceButton">s Replace</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+								    <td colspan="2">
+										<div><input dojoType="dijit.form.CheckBox" tabindex="5" type="checkbox" id="C_d_FindReplaceReplaceCaseChk" name="FindReplaceReplaceCaseChk"></input> <label nls="innerHTML:matchCase" for="C_d_FindReplaceReplaceCaseChk">s Match Case</label></div>
+									</td>
+									<td style="width: auto; padding: 0px;" rowspan="3">
+										<button tabindex="8" dojoType="concord.widgets.LotusTextButton" type="button" nls="innerHTML:replaceAll" jsId="findReplaceDialog.replaceAllButton" id="C_d_FindReplaceReplaceAllButton">s Replace All</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td  colspan="2">
+										<div><input dojoType="dijit.form.CheckBox" tabindex="6" type="checkbox" id="C_d_FindReplaceReplaceWordChk" name="FindReplaceReplaceWordChk"></input> <label nls="innerHTML:matchWord" for="C_d_FindReplaceReplaceWordChk">s Match whole word</label></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td colspan="2">
+										<div><input dojoType="dijit.form.CheckBox" tabindex="7" type="checkbox" id="C_d_FindReplaceReplaceCyclicChk" name="FindReplaceReplaceCyclicChk" value="on" checked="checked"></input> <label nls="innerHTML:matchCyclic" for="C_d_FindReplaceReplaceCyclicChk">s Wrap at start or end</label></div>
+									</td>
+								</tr>																						
+							</tbody>
+						</table>				
+					<div class="dijitDialogPaneActionBar">
+						<button tabindex="9" dojoType="concord.widgets.LotusTextButton" type="button" id="C_d_FindReplaceCancelButton" nls="innerHTML:cancelLabel" onClick="findReplaceDialog.hide();">Cancel</button>
+					</div>
+				</div>
+			</div>
+		<div name="find replace div">
+			<button dojoType="dijit.form.Button" onclick="showNewFindReplaceDlg()">Show Find Replace Dialog</button>
+			<div name="parseRoot">
+				<div id="P_FindReplace" dojoType="writer.ui.dialog.FindReplaceDlg" jsId="findReplaceDialog" title="s Find and Replace" nls="title:title" style="display:none;">
+					<div jsId="findReplaceDialog.replacePane" doLayout="false" id="P_FindReplaceReplacePane" style="width:350px">
+						<table style="width:100%" role="presentation">
+							<tbody>
+								<tr>
+									<td style="width: auto; padding: 0px;">
+										<label nls="innerHTML:findWhat" for="P_FindReplaceFindText_Replace">s Text to find:</label>
+									</td>
+									<td style="width: auto; padding: 0px;">
+										<input tabindex="1" style="width: 100%; padding: 0px;" dojoType="dijit.form.TextBox" type="text" jsId="findReplaceDialog.findText_replace" id="P_FindReplaceFindText_Replace">
+									</td>
+									<td style="width: 3%; padding: 0px;">
+									</td>
+									<td style="width: auto; padding: 0px;">
+										<button tabindex="2" dojoType="concord.widgets.LotusTextButton" type="button" nls="innerHTML:Prev <<" jsId="findReplaceDialog.preButton" id="P_FindReplacePreButton">s Prev</button>
+										<button tabindex="2" dojoType="concord.widgets.LotusTextButton" type="button" nls="innerHTML:Next >>" jsId="findReplaceDialog.nextButton" id="P_FindReplaceNextButton">s Next</button>
+									</td>
+								</tr>
+								<tr>
+									<td style="width: auto; padding: 0px;">
+										<label nls="innerHTML:replaceWith" for="P_FindReplaceReplaceText">s Replace with:</label>
+									</td>
+									<td style="width: auto; padding: 0px;">
+										<input tabindex="3" style="width: 100%; padding: 0px;" dojoType="dijit.form.TextBox" type="text" jsId="findReplaceDialog.replaceText" id="P_FindReplaceReplaceText">
+									</td>
+									<td style="width: 3%; padding: 0px;">
+									</td>										
+									<td style="width: auto; padding: 0px;">
+										<button tabindex="4" dojoType="concord.widgets.LotusTextButton" type="button" nls="innerHTML:replace" jsId="findReplaceDialog.replaceButton" id="P_FindReplaceReplaceButton">s Replace</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+								    <td colspan="2">
+										<div><input dojoType="dijit.form.CheckBox" tabindex="5" type="checkbox" id="P_FindReplaceReplaceCaseChk" name="FindReplaceReplaceCaseChk"></input> <label nls="innerHTML:matchCase" for="P_FindReplaceReplaceCaseChk">s Match Case</label></div>
+									</td>
+									<td style="width: auto; padding: 0px;" rowspan="3">
+										<button tabindex="8" dojoType="concord.widgets.LotusTextButton" type="button" nls="innerHTML:replaceAll" jsId="findReplaceDialog.replaceAllButton" id="P_FindReplaceReplaceAllButton">s Replace All</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td  colspan="2">
+										<div><input dojoType="dijit.form.CheckBox" tabindex="6" type="checkbox" id="P_FindReplaceReplaceWordChk" name="FindReplaceReplaceWordChk"></input> <label nls="innerHTML:matchWord" for="P_FindReplaceReplaceWordChk">s Match whole word</label></div>
+									</td>
+								</tr>	
+								<tr>
+									<td>
+									</td>
+									<td colspan="2">
+										<div><input dojoType="dijit.form.CheckBox" tabindex="7" type="checkbox" id="P_FindReplaceReplaceHighlightChk" name="FindReplaceReplaceHighlightChk" value="on" checked="checked"></input> <label nls="innerHTML:Highlight All" for="P_FindReplaceReplaceHighlightChk">s Highlight All</label></div>
+									</td>
+								</tr>																					
+							</tbody>
+						</table>				
+					<div class="dijitDialogPaneActionBar">
+						<span tabindex="9" id="P_FindReplaceTotolNum">0 / 0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div name="insert table div">
+			<button dojoType="dijit.form.Button" onclick="showInsertTableDlg()">Show Insert Table Dialog</button>
+			<div name="parseRoot">
+				<div id="C_d_InsertTable" dojoType="concord.widgets.InsertTableDlg" jsId="insertTableDialog" title="s Create a Table" nls="title:dlgTitleAddST" style="display:none;" aria-describedby="C_d_InsertTableRowsDesciption">
+					<table style="width:350px; padding-top: 10px;" role="presentation">
+						<tbody>
+							<tr>
+								<td colspan="2" style="width: 100%; padding-bottom: 5px;" >
+									<span nls="innerHTML:dlgLabelSTInstruction" id="C_d_InsertTableRowsDesciption">s Enter the number of rows and columns. The maximum value is 200 for rows and 25 for columns.</span>
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; padding: 0px;" >
+									<label nls="innerHTML:dlgLabelSTRows" for="C_d_InsertTableRows">s Number of rows</label>
+								</td>
+								<td style="width: 20%; padding: 0px;" >
+									<input name="InsertTableRows" dojoType="dijit.form.NumberTextBox" jsId="insertTableDialog.stRows" id="C_d_InsertTableRows" style="width: 50%; padding: 0px;" type="text" value="4" required="true" constraints='{"min":1,"max":200,"places":0}' />	
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; padding: 0px;" >
+									<label nls="innerHTML:dlgLabelSTCols" for="C_d_InsertTableCols">s Number of columns</label>
+								</td>
+								<td style="width: 20%; padding: 0px;" >
+									<input name="InsertTableCols" dojoType="dijit.form.NumberTextBox" jsId="insertTableDialog.stCols" id="C_d_InsertTableCols" style="width: 50%; padding: 0px;" type="text" value="4" required="true" constraints='{"min":1,"max":25,"places":0}' />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="dijitDialogPaneActionBar" style="padding-top: 15px;" >
+						<button dojoType="concord.widgets.LotusTextButton" type="button" jsId="insertTableDialog.okButton" id="C_d_InsertTableOkButton" nls="innerHTML:oKLabel">s OK</button>					
+						<button dojoType="concord.widgets.LotusTextButton" type="button" id="C_d_InsertTableCancelButton" nls="innerHTML:cancelLabel" onClick="insertTableDialog.hide();">s Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div name="paste div">
+			<button dojoType="dijit.form.Button" onclick="showPasteDlg()">Show Paste Dialog</button>
+			<div name="parseRoot">
+				<div dojoType="concord.widgets.PasteDlg" jsId="pasteDlg" id="C_d_Paste" title="$ Paste" nls="title:title" style="display:none;">
+					<div style="white-space: normal;width:300px" nls="innerHTML:securityMsg">$ Because of your browser's security settings, the application cannot access your clipboard.  To access your clipboard, type Ctrl+V to paste the content into this field and then click OK.</div>
+					<fieldset id="C_d_PasteDlg_fieldset">
+						<!--
+						<script type="text/javascript">
+							if( typeof(dojo) != "undefined" )
+							{
+								dojo.require("concord.widgets.PasteDlg");
+								concord.widgets.PasteDlg.setEditable = function( iframe )
+								{
+									iframe.style.display = "";
+									var doc = iframe.contentWindow.document;
+									if( dojo.isIE )
+										doc.body.contentEditable = "true";
+									else 
+										doc.designMode = "on";
+									dojo.connect( doc, "onkeypress", function(e){if(e.keyCode==dojo.keys.ESCAPE)pasteDlg.hide();} );
+									setTimeout( function(){iframe.contentWindow.focus();}, 500 );
+								};
+								concord.widgets.PasteDlg.execute = function()
+								{
+									this.callback( dojo.byId("C_d_PasteDlg_iframe").contentWindow.document.body.innerHTML );
+								};
+							}
+						</script>
+						<iframe id="C_d_PasteDlg_iframe" 
+							style="height: 130px; background-color: white; border: 1px solid black;display:none" 
+							onload="if(typeof(concord) != 'undefined')concord.widgets.PasteDlg.setEditable(this);">
+						</iframe>
+						-->
+					</fieldset>
+					<div>
+						<button dojoType="concord.widgets.LotusTextButton" type="submit" id="C_d_PasteOkButton" nls="innerHTML:oKLabel">$ OK</button>
+						<button dojoType="concord.widgets.LotusTextButton" type="button" id="C_d_PasteCancelButton" nls="innerHTML:cancelLabel" onClick="pasteDlg.hide();">$ Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</body>
+
+</html>

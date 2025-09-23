@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Dec 18 09:55:21 CST 2015
+https\://repo.maven.apache.org/maven2/.lastUpdated=1450321993838
+@default-java.net-http\://download.java.net/maven/2/.lastUpdated=1450321993319
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.lastUpdated=1450403721119
+http\://download.java.net/maven/2/.error=Could not transfer artifact org.powermock\:powermock-api\:pom\:1.6.2 from/to java.net (http\://download.java.net/maven/2/)\: Failed to transfer file\: http\://download.java.net/maven/2/org/powermock/powermock-api/1.6.2/powermock-api-1.6.2.pom. Return code is\: 408 , ReasonPhrase\:Request Time-out.

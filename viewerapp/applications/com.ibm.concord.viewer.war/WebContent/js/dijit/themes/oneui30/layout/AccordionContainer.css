@@ -1,0 +1,71 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* Accordion
+ * Styling AccordionContainer basically means styling the accordion pane (dijitAccordionInnerContainer)
+ * and the title inside of it (dijitAccordionTitle).   There are 4 basic states to style:
+ * 1. closed pane (and default styling):
+ * 		.dijitAccordionInnerContainer - for background-color, border
+ * 		.dijitAccordionTitle - for text color
+ * 2. active closed pane (ie, mouse down on a title bar)
+ * 		.dijitAccordionInnerContainerActive - for background-color, border
+ * 		.dijitAccordionInnerContainerActive dijitAccordionTitle - for text color
+ * 3. open pane
+ * 		These rules need to override the closed pane active:
+ * 		.dijitAccordionInnerContainerSelected - for background-color, border
+ * 		.dijitAccordionInnerContainerSelected .dijitAccordionTitle - for text color
+ * 4. hovered pane, open or closed
+ * 		The selectors below affect hovering over both a closed pane (ie, hovering a title bar),
+ * 		and hovering over an open pane.   Also, treat mouse down on an open pane as a hover:
+ * 		.dijitAccordionInnerContainerHover, .dijitAccordionInnerContainerSelectedActive - for background-color, border
+ * 		.dijitAccordionInnerContainerHover .dijitAccordionTitle - for text color
+ */
+
+.oneui30 .dijitAccordionContainer {
+    border: 0;
+}
+
+.oneui30 .dijitAccordionInnerContainer {
+    margin: 0 15px 15px;
+}
+
+.oneui30 .dijitAccordionTitle {
+	padding:4px 5px 6px;
+	border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));
+    font-weight:bold;
+	color:#000;
+	-moz-border-radius:3px 3px 0 0;
+	-webkit-border-top-right-radius:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	border-top-left-radius:3px;
+	-webkit-box-shadow: #eee 0px 3px 5px;
+    -moz-box-shadow: #eee 0 3px 5px;
+    box-shadow: #eee 0 3px 5px;
+}
+
+.dj_ie .oneui30 .dijitAccordionTitle {
+    padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.dj_ie6 .oneui30 .dijitAccordionTitle, .dj_ie7 .oneui30 .dijitAccordionTitle {
+    padding-top: 6px;
+	padding-bottom: 7px;
+}
+
+.oneui30 .dijitAccordionContainer .dijitAccordionContainer-child {
+    margin: 0;
+    padding: 5px 10px;
+	background-color: #fff;
+    border: 1px solid #ccc !important;
+    border-top: 0 !important;
+    -webkit-box-shadow: #eee 0px 3px 5px;
+    -moz-box-shadow: #eee 0 3px 5px;
+    box-shadow: #eee 0 3px 5px;
+}

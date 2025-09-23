@@ -1,0 +1,28 @@
+.importSCDivLabel{
+	font-weight:bold;
+}
+.importSCOptionLabel{
+    margin-right: 10px;
+}
+
+.dijitDialogRtl .importSCOptionLabel{
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.importSCInputLabel{
+	margin-right: 2px;
+}
+
+.dijitDialogRtl .importSCInputLabel{
+    margin-left: 2px;
+    margin-right: 0;
+}
+
+.dj_chrome #separatorOptionsSelection .dijitCheckBoxInput {
+	width: 18px;
+}
+
+.dj_chrome #separatorOptionsSelection .dijitRadio {
+	width: 20px;
+}

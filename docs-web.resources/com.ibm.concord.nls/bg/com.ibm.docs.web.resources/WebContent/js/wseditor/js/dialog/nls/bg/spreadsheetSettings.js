@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Изберете разположение за форматиране на числа, валути, дати и часове.",
+	INPUT_INVALID_LOCALENAME: "Невалидно име на разположение",
+	INPUT_EMPTY_LOCALENAME: "Изберете разположение.",
+	
+	Spain_Catalan: "Испания (Каталонски)",
+	Denmark: "Дания",
+	Germany: "Германия",
+	Greek: "Гърция",
+	United_States: "САЩ",
+	United_Kingdom: "Обединено кралство",
+	Spain: "Испания",
+	Finland: "Финландия",
+	France: "Франция",
+	Italy: "Италия",
+	Japan: "Япония",
+	Korean: "Южна Корея",
+	Norway: "Норвегия",
+	Netherlands: "Холандия",
+	Poland: "Полша",
+	Brazil: "Бразилия",
+	Portugal: "Португалия",
+	Russia: "Русия",
+	Sweden: "Швеция",
+	Thailand: "Тайланд",
+	Turkey: "Турция",
+	China: "Китай",
+	Taiwan_China: "Тайван (Китай)",
+	Israel: "Израел"
+})
+

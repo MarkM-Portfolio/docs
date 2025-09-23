@@ -1,0 +1,26 @@
+({
+	labelPrintConfig: "За да добиете најдобри резултати од печатење, поставете дефиницијата на страницата на прегледувачот да ја користи следнава конфигурација:",
+	labelConfigPageSize: "Големина на страница: ${0}",
+	labelConfigOrientation: "Ориентација: ${0}",
+	labelConfigHeader: "Заглавие: празно",
+	labelConfigFooter: "Подножје: празно",
+	labelConfigMargins: "Маргини: ",
+	labelConfigMarginTop: "Горе: ${0}${1}",
+	labelConfigMarginBottom: "Долу: ${0}${1}",
+	labelConfigMarginLeft: "Лево: ${0}${1}",
+	labelConfigMarginRight: "Десно: ${0}${1}",
+	labelPrintContinue: "Откако ќе ги поставите поставките на прегледувачот, кликнете ОК за да продолжите со печатење на датотеката.",
+	labelMm: "милиметри",
+	labelInch: "инчи",
+	labelPortrait: "Портрет",
+	labelPageA4: "A4",
+	labelLetter: "Писмо",
+	labelLandscape: "Пејзаж",
+	titlePrintConfig: "Поставки за печатење",
+	titlePrepare: "Подготовка за печатење",
+	msgPrepare: "Датотеката се подготвува за печатење. Подготовката може да потрае подолго време.",
+	errPrepare: "Се појави грешка при подготвување на податоците.\nДали сакате да се обидете повторно?",
+	titleErr: "Грешка",
+	btnRetry: "Обиди се повторно"
+})
+

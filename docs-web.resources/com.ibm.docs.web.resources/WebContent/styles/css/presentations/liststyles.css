@@ -1,0 +1,644 @@
+/* get rid of competing styles defined elsewhere */
+.concord ol li, .concord ul li {
+	display : block;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display:block;
+}
+
+.concord .MP_defaulttitle_1 {text-align:center;margin-top:0%;}
+.concord .ML_defaulttitle_1:before {content:;font-family:Arial;white-space:pre;}
+.concord .MP_defaultsubtitle_1 {text-align:center;vertical-align:middle;margin-top:0%;color:#8b8b8b;}
+.concord .ML_defaultsubtitle_1:before {content:;font-family:Arial;white-space:pre;}
+.concord .MP_defaultoutline_1 {text-align:left;mso_marL:342900;}
+.concord .ML_defaultoutline_1:before {margin-right:2%;content: "\2022";font-family:Arial;white-space:pre;}
+.concord .ML_defaultoutline_1[style*="direction: rtl"]:before{content: "\2022\200F";margin-left: 2%;margin-right: auto !important;}
+.concord .MP_defaultoutline_2 {text-align:left;mso_marL:742950;abs-text-indent:-793;}
+.concord .ML_defaultoutline_2:before {margin-right:2%;content: "\2013";font-family:Arial;white-space:pre;}
+.concord .MP_defaultoutline_3 {text-align:left;mso_marL:1143000;}
+.concord .ML_defaultoutline_3:before {margin-right:2%;content: "\2022";font-family:Arial;white-space:pre;}
+.concord .MP_defaultoutline_4 {text-align:left;mso_marL:1600200;}
+.concord .ML_defaultoutline_4:before {margin-right:2%;content: "\2013";font-family:Arial;white-space:pre;}
+.concord .MP_defaultoutline_5 {text-align:left;mso_marL:2057400;}
+.concord .ML_defaultoutline_5:before {margin-right:2%;content: "\bb";font-family:Arial;white-space:pre;}
+.concord .MP_defaultoutline_6 {text-align:left;mso_marL:2514600;}
+.concord .ML_defaultoutline_6:before {margin-right:2%;content: "\2022";font-family:Arial;white-space:pre;}
+.concord .MP_defaultoutline_7 {text-align:left;mso_marL:2971800;}
+.concord .ML_defaultoutline_7:before {margin-right:2%;content: "\2022";font-family:Arial;white-space:pre;}
+.concord .MP_defaultoutline_8 {text-align:left;mso_marL:3429000;}
+.concord .ML_defaultoutline_8:before {margin-right:2%;content: "\2022";font-family:Arial;white-space:pre;}
+.concord .MP_defaultoutline_9 {text-align:left;mso_marL:3886200;}
+.concord .ML_defaultoutline_9:before {margin-right:2%;content: "\2022";font-family:Arial;white-space:pre;}
+
+
+/* list-style-type circle */
+.concord li.lst-c:before {
+	white-space: pre;
+	content: "\2022";
+	padding-right: 0;
+	margin-right: 2%;
+	font-family: Arial;
+}
+
+.concord li.lst-c[style*="direction: rtl"]:before {
+	content: "\2022\200F";
+	padding-left: 0;
+	margin-left: 2%;
+	margin-right: auto !important;
+	padding-right: initial !important;
+}
+
+/* list-style-type upper-roman */
+.concord li.lst-ur:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+/* list-style-type lower-roman */
+.concord li.lst-lr:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+/* list-style-type upper-alpha */
+.concord li.lst-ua:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+/* list-style-type-lower-alpha */
+.concord li.lst-la:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+/* list-style-type number */
+.concord li.lst-n:before {
+	white-space: pre;
+	content: attr(values) "." "   ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+.concord li.lst-n[style*="direction: rtl"]:before {
+	content: attr(values) "." "   \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type numeric with leading zero */
+.concord li.lst-numwz:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+.concord li.lst-ur[style*="direction: rtl"]:before,
+.concord li.lst-lr[style*="direction: rtl"]:before,
+.concord li.lst-ua[style*="direction: rtl"]:before,
+.concord li.lst-la[style*="direction: rtl"]:before,
+.concord li.lst-numwz[style*="direction: rtl"]:before{
+	content: attr(values) "\002e" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type-number-2 */
+.concord li.lst-n2:before{
+	white-space: pre;
+	content: attr(values)  "\003A" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+.concord li.lst-n2[style*="direction: rtl"]:before{
+	content: attr(values)  "\003A" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type upper-alpha-parenthesis */
+.concord li.lst-uap:before {
+	white-space: pre;
+	content: attr(values) "\0029" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+.concord li.lst-uap[style*="direction: rtl"]:before {
+	content: attr(values) "\0029" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type-lower-alpha-parenthesis */ 
+.concord li.lst-lap:before {
+	white-space: pre;
+	content: "\0028" attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+.concord li.lst-lap[style*="direction: rtl"]:before {
+	content: "\0028" attr(values) "\0029" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type number-parenthesis */
+.concord li.lst-np:before{
+	white-space: pre;
+	content: attr(values) "\0029" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+/* list-style-type-japanese-1 */
+.concord li.lst-j1:before {
+	white-space: pre;
+	content: attr(values) "\0029" " ";
+	padding-right: 0;
+	font-family: Arial;
+}
+
+.concord li.lst-np[style*="direction: rtl"]:before,
+.concord li.lst-j1[style*="direction: rtl"]:before
+ {
+	content: attr(values) "\0029" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+.concord li.lst-np.arabic[style*="direction: rtl"]:before {
+	content: attr(values_arabic) "\0029" " \200F";
+}
+
+.concord li.lst-n2.arabic[style*="direction: rtl"]:before{
+	content: attr(values_arabic)  "\003A" " \200F";
+}
+
+.concord li.lst-n.arabic[style*="direction: rtl"]:before {
+	content: attr(values_arabic) "." "   \200F";
+}
+
+/* list-style-type-japanese-2 */
+.concord li.lst-j2:before {
+	white-space: pre;
+	content: "\0028" attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+.concord li.lst-j2[style*="direction: rtl"]:before {
+	content: "\0028" attr(values) "\0029" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type cutout-square */
+.concord li.lst-cs:before{
+	white-space: pre;
+	content: "\25D8" " ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+.concord li.lst-cs[style*="direction: rtl"]:before{
+	content: "\25D8" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type right-arrow */
+.concord li.lst-ra:before{
+	white-space: pre;
+	content: "\F034" "";
+	font-family: Webdings, Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+.concord li.lst-ra[style*="direction: rtl"]:before{
+	content: "\F034" "\200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+/* list-style-type diamond */
+.concord li.lst-d:before{
+	white-space: pre;
+	content: "\2666" " ";
+	font-family: "Times New Roman", Times, serif;
+	padding-right: 0;
+}
+
+.concord li.lst-d[style*="direction: rtl"]:before{
+	content: "\2666" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type double-arrow*/
+.concord li.lst-da:before{
+	white-space: pre;
+	content: "\00BB" " ";
+	font-family: "Times New Roman", Times, serif;
+	padding-right: 0;
+}
+
+.concord li.lst-da[style*="direction: rtl"]:before{
+	content: "\00BB" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type asterisk */
+.concord li.lst-a:before{
+	white-space: pre;
+	content: "\2217" " ";
+	font-family: Symbol, sans-serif;
+	padding-right: 0;
+}
+
+.concord li.lst-a[style*="direction: rtl"]:before{
+	content: "\2217" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type thin-arrow */
+.concord li.lst-ta:before {
+	white-space: pre;
+	content: "\F0E0" " ";
+	font-family: Wingdings, "Zapf Dingbats", Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+.concord li.lst-ta[style*="direction: rtl"]:before{
+	content: "\F0E0" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* list-style-type checkmark */
+.concord li.lst-cm:before{
+	white-space: pre;
+	content: "\F061" " ";
+	font-family: Webdings, Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+.concord li.lst-cm[style*="direction: rtl"]:before{
+	content: "\F061" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+/* list-style-type plus-sign */
+.concord li.lst-ps:before{
+	white-space: pre;
+	content: "\002B" " ";
+	font-family: Impact, Charcoal, sans-serif;
+	padding-right: 0;
+}
+
+.concord li.lst-ps[style*="direction: rtl"]:before{
+	content: "\002B" " \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+/* make LIs:before default */
+.concord li.lst-ur:before, 
+.concord li.lst-lr:before, 
+.concord li.lst-ua:before, 
+.concord li.lst-la:before, 
+.concord li.lst-n:before, 
+.concord li.lst-n2:before, 
+.concord li.lst-numwz:before, 
+.concord li.lst-uap:before, 
+.concord li.lst-lap:before, 
+.concord li.lst-np:before, 
+.concord li.lst-c:before, 
+.concord li.lst-cs:before, 
+.concord li.lst-ra:before, 
+.concord li.lst-d:before, 
+.concord li.lst-da:before, 
+.concord li.lst-a:before, 
+.concord li.lst-ta:before, 
+.concord li.lst-cm:before, 
+.concord li.lst-ps:before,
+.concord li.lst-bc:before, 
+.concord li.lst-bs:before, 
+.concord li.lst-ba:before, 
+.concord li.lst-s:before, 
+.concord li.lst-reda:before, 
+.concord li.lst-blacka:before, 
+.concord li.lst-pa:before, 
+.concord li.lst-gc:before, 
+.concord li.lst-rx:before, 
+.concord li.lst-gf:before, 
+.concord li.lst-rf:before, 
+.concord li.lst-star:before,
+.concord li.lst-j1:before, 
+.concord li.lst-j2:before
+{
+	display:inline;
+	background: none;
+	margin-right: 2%;
+}
+
+.concord li.lst-ur[style*="direction: rtl"]:before, 
+.concord li.lst-lr[style*="direction: rtl"]:before, 
+.concord li.lst-ua[style*="direction: rtl"]:before, 
+.concord li.lst-la[style*="direction: rtl"]:before, 
+.concord li.lst-n[style*="direction: rtl"]:before, 
+.concord li.lst-n2[style*="direction: rtl"]:before, 
+.concord li.lst-numwz[style*="direction: rtl"]:before, 
+.concord li.lst-uap[style*="direction: rtl"]:before, 
+.concord li.lst-lap[style*="direction: rtl"]:before, 
+.concord li.lst-np[style*="direction: rtl"]:before, 
+.concord li.lst-c[style*="direction: rtl"]:before, 
+.concord li.lst-cs[style*="direction: rtl"]:before, 
+.concord li.lst-ra[style*="direction: rtl"]:before, 
+.concord li.lst-d[style*="direction: rtl"]:before, 
+.concord li.lst-da[style*="direction: rtl"]:before, 
+.concord li.lst-a[style*="direction: rtl"]:before, 
+.concord li.lst-ta[style*="direction: rtl"]:before, 
+.concord li.lst-cm[style*="direction: rtl"]:before, 
+.concord li.lst-ps[style*="direction: rtl"]:before,
+.concord li.lst-bc[style*="direction: rtl"]:before, 
+.concord li.lst-bs[style*="direction: rtl"]:before, 
+.concord li.lst-ba[style*="direction: rtl"]:before, 
+.concord li.lst-s[style*="direction: rtl"]:before, 
+.concord li.lst-reda[style*="direction: rtl"]:before, 
+.concord li.lst-blacka[style*="direction: rtl"]:before, 
+.concord li.lst-pa[style*="direction: rtl"]:before, 
+.concord li.lst-gc[style*="direction: rtl"]:before, 
+.concord li.lst-rx[style*="direction: rtl"]:before, 
+.concord li.lst-gf[style*="direction: rtl"]:before, 
+.concord li.lst-rf[style*="direction: rtl"]:before, 
+.concord li.lst-star[style*="direction: rtl"]:before,
+.concord li.lst-j1[style*="direction: rtl"]:before, 
+.concord li.lst-j2[style*="direction: rtl"]:before
+{
+	margin-left: 2%;
+	margin-right: auto !important;
+}
+
+/*
+Image bullet ======================================
+*/
+/* when in high contrast mode, 
+background images don't get displayed, 
+so display image bullets using a default bullet character */
+.concord.dijit_a11y li.lst-bc:before,
+.concord.dijit_a11y li.lst-bs:before,
+.concord.dijit_a11y li.lst-ba:before,
+.concord.dijit_a11y li.lst-s:before,
+.concord.dijit_a11y li.lst-reda:before,
+.concord.dijit_a11y li.lst-blacka:before,
+.concord.dijit_a11y li.lst-pa:before,
+.concord.dijit_a11y li.lst-gc:before,
+.concord.dijit_a11y li.lst-rx:before,
+.concord.dijit_a11y li.lst-gf:before,
+.concord.dijit_a11y li.lst-rf:before,
+.concord.dijit_a11y li.lst-star:before
+ {
+    white-space: pre;
+	content: "\2022" "  ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+.concord.dijit_a11y li[style*="direction: rtl"]:before[class*=" lst-"] {
+	content: "\2022" "  \200F";
+	padding-left: 0;
+	padding-right: initial !important;
+}
+
+.concord.dijit_a11y li.lst-bc,
+.concord.dijit_a11y li.lst-bs,
+.concord.dijit_a11y li.lst-ba,
+.concord.dijit_a11y li.lst-s,
+.concord.dijit_a11y li.lst-reda,
+.concord.dijit_a11y li.lst-blacka,
+.concord.dijit_a11y li.lst-pa,
+.concord.dijit_a11y li.lst-gc,
+.concord.dijit_a11y li.lst-rx,
+.concord.dijit_a11y li.lst-gf,
+.concord.dijit_a11y li.lst-rf,
+.concord.dijit_a11y li.lst-star
+ {
+    background: none;
+}
+
+/* 
+	list-style-type
+   		various images
+*/
+/* .concord span.lst-bc { */
+.concord li.lst-bc:before {
+	background: url(../images/IBMDocs_1cube.png) no-repeat;
+}
+
+/* .concord span.lst-bs { */
+.concord li.lst-bs:before {
+	background: url(../images/IBMDocs_2square.png) no-repeat;
+}
+
+/* .concord span.lst-ba { */
+.concord li.lst-ba:before {
+	background: url(../images/IBMDocs_3leaf.png) no-repeat;
+}
+
+/* .concord span.lst-s { */
+.concord li.lst-s:before {
+	background: url(../images/IBMDocs_4bullet.png) no-repeat;
+}
+
+/* .concord span.lst-reda { */
+.concord li.lst-reda:before {
+	background: url(../images/IBMDocs_5arrow.png) no-repeat;
+}
+
+/* .concord span.lst-blacka { */
+.concord li.lst-blacka:before {
+	background: url(../images/IBMDocs_6arrow2.png) no-repeat;
+}
+
+/* .concord span.lst-pa { */
+.concord li.lst-pa:before {
+	background: url(../images/IBMDocs_7arrow3.png) no-repeat;
+}
+
+/* .concord span.lst-gc { */
+.concord li.lst-gc:before {
+	background: url(../images/IBMDocs_8check.png) no-repeat;
+}
+
+/* .concord span.lst-rx { */
+.concord li.lst-rx:before {
+	background: url(../images/IBMDocs_9x.png) no-repeat;
+}
+
+/* .concord span.lst-gf { */
+.concord li.lst-gf:before {
+	background: url(../images/IBMDocs_10flag.png) no-repeat;
+}
+
+/* .concord span.lst-rf { */
+.concord li.lst-rf:before {
+	background: url(../images/IBMDocs_11flag2.png) no-repeat;
+}
+
+/* .concord span.lst-star { */
+.concord li.lst-star:before {
+	background: url(../images/IBMDocs_12star.png) no-repeat;
+}
+
+/* 1st-level image bullet */
+.concord li.lst-bc:before,
+.concord li.lst-bs:before,
+.concord li.lst-ba:before,
+.concord li.lst-s:before,
+.concord li.lst-reda:before,
+.concord li.lst-blacka:before,
+.concord li.lst-pa:before,
+.concord li.lst-gc:before,
+.concord li.lst-rx:before,
+.concord li.lst-gf:before,
+.concord li.lst-rf:before,
+.concord li.lst-star:before {
+	background-position: center center;
+	background-size: 0.6em auto;
+	/* for FF 3.6 */
+	-moz-background-size: 0.6em auto;
+	content:"\8" " ";
+    display: inline-block;
+    /*font-size: 1em; picture size, should be set by "IL_" class*/
+    width: 1em;
+    margin-right: 2%;
+    text-indent: -2%;
+}
+
+.concord li.lst-bc[style*="direction: rtl"]:before,
+.concord li.lst-bs[style*="direction: rtl"]:before,
+.concord li.lst-ba[style*="direction: rtl"]:before,
+.concord li.lst-s[style*="direction: rtl"]:before,
+.concord li.lst-reda[style*="direction: rtl"]:before,
+.concord li.lst-blacka[style*="direction: rtl"]:before,
+.concord li.lst-pa[style*="direction: rtl"]:before,
+.concord li.lst-gc[style*="direction: rtl"]:before,
+.concord li.lst-rx[style*="direction: rtl"]:before,
+.concord li.lst-gf[style*="direction: rtl"]:before,
+.concord li.lst-rf[style*="direction: rtl"]:before,
+.concord li.lst-star[style*="direction: rtl"]:before {
+    margin-left: 2%;
+    text-indent: 2%;
+    margin-right: auto !important;
+}
+
+.slideWrapper.ie8ss li.lst-bc {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_1cube_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-bs {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_2square_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-ba {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_3leaf_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-s {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_4bullet_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-reda {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_5arrow_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-blacka {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_6arrow2_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-pa {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_7arrow3_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-gc {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_8check_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-rx {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_9x_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-gf {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_10flag_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-rf {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_11flag2_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-star {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_12star_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+/* system list hidden class,used to hidden invisible list*/
+.concord li.sys-list-hidden:before{
+	white-space: pre;
+	content: " ";
+	padding-right: 0;
+	background-image: none;
+}
+
+li[style*="direction: rtl"][class^="ML_defaultMaster_Content_outline_"]:before {
+    margin-left: 2% !important;
+    margin-right: auto !important;
+}

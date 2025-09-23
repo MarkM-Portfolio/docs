@@ -1,0 +1,7 @@
+<service-config>
+  <handlers product="rest.api.sample">
+    <handler url="/([^/]+)/meta" class="com.ibm.docs.api.rest.sample.handlers.GetMetaHandler"/>
+    <handler url="/([^/]+)/content" class="com.ibm.docs.api.rest.sample.handlers.DocumentContentHandler"/>   
+    <handler url="/profiles" class="com.ibm.docs.api.rest.sample.handlers.ProfilesHandler"/>
+  </handlers>
+</service-config>

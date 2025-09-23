@@ -1,0 +1,235 @@
+<project name="com.ibm.docs.web.resources" basedir="../com.ibm.docs.web.resources" default="war">
+	<tstamp />
+	<property name="webcontent.dir" value="WebContent" />
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin" />
+	<property name="war.dir" value="${bin.dir}/war" />
+	<property name="version.dir" value="${webcontent.dir}/${DSTAMP}-${TSTAMP}" />
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+		<delete dir="${basedir}/buildtools/util/doh" />
+		<delete dir="${basedir}/buildtools/util/shrinksafe" />
+	</target>
+	<target name="prepare build js" depends="clean">
+		<copy todir="${basedir}/buildtools/dojo">
+			<fileset dir="${basedir}/WebContent/js/dojo" />
+		</copy>
+		<copy todir="${basedir}/buildtools/util/doh">
+			<fileset dir="${basedir}/WebContent/js/util/doh" />
+		</copy>
+		<copy todir="${basedir}/buildtools/util/shrinksafe">
+			<fileset dir="${basedir}/WebContent/js/util/shrinksafe" />
+		</copy>
+		<mkdir dir="${bin.dir}/${version.dir}/" />
+		<condition property="dojo.command" value="${basedir}/buildtools/util/buildscripts/build.sh" else="${basedir}/buildtools/util/buildscripts/build.bat">
+			<os family="unix" />
+		</condition>
+		<condition property="nodejs.command" value="../../../buildtools/nodejs/node-v0.10.0-linux-x86/bin/node" else="../../../buildtools/nodejs/node.exe">
+		    <os family="unix" />
+		</condition>
+		<condition property="ck.command" value="${basedir}/buildtools/release.sh" else="${basedir}/buildtools/ckreleaser.exe">
+			<os family="unix" />
+		</condition>
+		<!-- For unix OS, need to chmod +x for NodeJS executable-->
+		<exec osfamily="unix" executable="/bin/chmod">
+		    <arg line="+x" />
+		    <arg line="${basedir}/buildtools/nodejs/node-v0.10.0-linux-x86/bin/node" />
+		</exec>
+		<!-- <condition property="antlr.command" value="`which bash` ${basedir}/buildtools/release4antlr.sh" else="${basedir}/buildtools/release4antlr.bat">
+		<os family="unix"/>
+	  </condition> -->
+	</target>
+	<target name="build js" depends="prepare build js">
+		<!-- build dojo and concord js code -->
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${dojo.command}" failonerror="true">
+			<arg line="action=release" />
+			<arg line="mini=true" />
+			<arg line="profile=concord" />
+			<arg line="layerOptimize=shrinksafe" />
+			<arg line="releaseDir=../../../${bin.dir}/${version.dir}/" />
+			<arg line="releaseName=js" />
+			<arg line="cssOptimize=comments" />
+			<arg line="optimize=shrinksafe" />
+			<arg line="copyTests=true" />
+			<arg line="nodejs=${nodejs.command}" />
+			<arg line="uglifyjs=../../../buildtools/uglifyjs/UglifyJS-1.3.5/bin/uglifyjs" />
+		</exec>
+		<!-- build ck for presentation -->
+		<exec executable="${ck.command}" failonerror="true">
+			<arg line="'${basedir}'/WebContent/js/ckeditor/ckreleaser.release" />
+			<arg line="'${basedir}'/WebContent/js/ckeditor" />
+			<arg line="'${basedir}'/'${bin.dir}'/'${version.dir}'/temp_presentation" />
+			<arg line="3.1.1" />
+			<arg line="temp_release" />
+		</exec>
+		<!-- build ck for document -->
+		<exec executable="${ck.command}" failonerror="true">
+			<arg line="'${basedir}'/WebContent/js/document/ckeditor/ckreleaser.release" />
+			<arg line="'${basedir}'/WebContent/js/document/ckeditor" />
+			<arg line="'${basedir}'/'${bin.dir}'/'${version.dir}'/temp_document" />
+			<arg line="3.1.1" />
+			<arg line="temp_release" />
+		</exec>
+		<!--
+		  for story 10846. the new additional bash shell release4antlr.sh need to find a way to be added the exe mode. 
+		-->
+		<!-- build antlr -->
+		<!--<target name="Build Antlr">
+		<exec executable="${antlr.command}" failonerror="true">
+			<arg line="'${basedir}'/buildtools/temp_parser"/>
+			<arg line="'${basedir}'/WebContent/js/parser/LexerParser.js"/>
+			<arg line="'${basedir}'/buildtools/temp_parser/LexerParser.js"/>
+			<arg line="'${basedir}'/WebContent/js/parser/FormulaLexerParser.js"/>
+			<arg line="'${basedir}'/buildtools/temp_parser/FormulaLexerParser.js"/>
+		</exec>
+		<copy file="${basedir}/buildtools/temp_parser/LexerParser.js" tofile="${basedir}/WebContent/js/parser/LexerParser.js"/>
+		<copy file="${basedir}/buildtools/temp_parser/FormulaLexerParser.js" tofile="${basedir}/WebContent/js/parser/FormulaLexerParser.js"/>			
+		</target>-->
+	</target>
+	<target name="release webcontent" depends="build js">
+		<!-- release dojo and concord js code -->
+		<move todir="${bin.dir}/${version.dir}/styles">
+			<fileset dir="${bin.dir}/${version.dir}/js/styles" />
+		</move>
+		<move todir="${bin.dir}/${version.dir}/js/wseditor/js">
+			<fileset dir="${bin.dir}/${version.dir}/js/websheet" />
+		</move>
+		<delete dir="${basedir}/buildtools/dojo" />
+		<!-- release ck for presentation -->
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckeditor.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckeditor.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckconfig.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckconfig.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckeditor_basic.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckeditor_basic.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckeditor_basic_source.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckeditor_basic_source.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/ckeditor_source.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/ckeditor_source.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/config.js" tofile="${bin.dir}/${version.dir}/js/ckeditor/config.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_presentation/release/contents.css" tofile="${bin.dir}/${version.dir}/js/ckeditor/contents.css" />
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/lang">
+			<fileset dir="${bin.dir}/${version.dir}/temp_presentation/release/lang" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/plugins" includeEmptyDirs="false">
+			<fileset dir="${bin.dir}/${version.dir}/temp_presentation/release/plugins">
+				<exclude name="**/plugin.js" />
+			</fileset>
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckplugins" includeEmptyDirs="false">
+			<fileset dir="${basedir}/WebContent/js/ckplugins">
+				<exclude name="**/plugin.js" />
+			</fileset>
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckresource">
+			<fileset dir="${basedir}/WebContent/js/ckresource" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/skins/lotus">
+			<fileset dir="${bin.dir}/${version.dir}/temp_presentation/release/skins/lotus" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/themes">
+			<fileset dir="${bin.dir}/${version.dir}/temp_presentation/release/themes" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/ckeditor/images">
+			<fileset dir="${basedir}/WebContent/js/ckeditor/images" />
+		</copy>
+		<delete dir="${basedir}/${bin.dir}/${version.dir}/temp_presentation" />
+		<!-- release ck for document -->
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckeditor.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckeditor.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckconfig.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckconfig.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckeditor_basic.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckeditor_basic.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckeditor_basic_source.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckeditor_basic_source.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/ckeditor_source.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/ckeditor_source.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/config.js" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/config.js" />
+		<copy file="${bin.dir}/${version.dir}/temp_document/release/contents.css" tofile="${bin.dir}/${version.dir}/js/document/ckeditor/contents.css" />
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/lang">
+			<fileset dir="${bin.dir}/${version.dir}/temp_document/release/lang" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/plugins" includeEmptyDirs="false">
+			<fileset dir="${bin.dir}/${version.dir}/temp_document/release/plugins">
+				<exclude name="**/plugin.js" />
+			</fileset>
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckplugins" includeEmptyDirs="false">
+			<fileset dir="${basedir}/WebContent/js/document/ckplugins">
+				<exclude name="**/plugin.js" />
+			</fileset>
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/skins/lotus">
+			<fileset dir="${bin.dir}/${version.dir}/temp_document/release/skins/lotus" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/themes">
+			<fileset dir="${bin.dir}/${version.dir}/temp_document/release/themes" />
+		</copy>
+		<copy todir="${bin.dir}/${version.dir}/js/document/ckeditor/images">
+			<fileset dir="${basedir}/WebContent/js/document/ckeditor/images" />
+		</copy>
+		<delete dir="${basedir}/${bin.dir}/${version.dir}/temp_document" />
+		<delete>
+		    <fileset dir="${basedir}/${bin.dir}/${version.dir}/js">
+		    	<include name="**/*uncompressed.js"/>
+		    	<exclude name="**/dijit_extra*.uncompressed.js"/>
+		    	<exclude name="**/concord_text*.uncompressed.js"/>
+		    	<exclude name="**/concord_view*.uncompressed.js"/>
+		    	<exclude name="**/concord_pres*.uncompressed.js"/>
+		    	<exclude name="**/concord_sheet*.uncompressed.js"/>
+		    </fileset>
+		</delete>		
+		<!-- <delete dir="${basedir}/buildtools/temp_parser"/> -->
+		<!-- copy other resources -->
+		<copy todir="${basedir}/${bin.dir}/${version.dir}">
+			<fileset dir="${webcontent.dir}">
+				<include name="clipshare/" />
+				<include name="images/" />
+				<include name="js/antlr/antlr3-all*.js" />
+				<include name="js/mobile/" />
+				<include name="js/parser/FormulaLexerParser.js" />
+				<include name="js/parser/JsFormulaCommaParserParser.js" />
+				<include name="js/parser/JsFormulaCommaParserLexer.js" />
+				<include name="js/parser/LexerParser.js" />
+				<include name="js/util/" />
+				<include name="js/writer/tests/" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="build viewer offerings" depends="release webcontent">
+		<zip destfile="${bin.dir}/viewer_offerings_${DSTAMP}-${TSTAMP}.zip">
+			<fileset dir="${bin.dir}/${version.dir}/">
+				<include name="js/concord/concord_pres*" />
+				<include name="js/concord/concord_sheet_view*" />
+				<include name="js/concord/concord_sheet_extras*" />
+				<include name="js/concord/concord_sheet_widgets*" />
+				<include name="js/concord/beans/" />				
+				<include name="js/concord/nls/concord_sheet_extras*" />
+				<include name="js/concord/nls/concord_sheet_view*" />
+				<include name="js/concord/nls/concord_sheet_widgets*" />
+				<include name="js/concord/util/dialogs.html" />
+				<include name="js/dojo/dojo.*" />
+				<include name="js/dojo/cldr/" />
+				<include name="js/dojo/resources/" />
+				<include name="js/dojox/gfx/*" />
+				<include name="js/dijit/themes/" />
+				<include name="js/antlr/" />
+				<include name="js/parser/" />
+				<include name="js/wseditor/i18n/" />
+				<include name="js/wseditor/css/" />
+				<include name="images/" />
+				<include name="styles/" />
+			</fileset>
+			<fileset dir="${basedir}/WebContent/">
+				<include name="jsp/header*" />
+				<include name="jsp/footer*" />
+			</fileset>			
+		</zip>
+	</target>
+	<target name="war" depends="release webcontent, build viewer offerings">
+		<mkdir dir="${war.dir}" />
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${bin.dir}/${webcontent.dir}/" />
+			<fileset dir="${webcontent.dir}">
+				<include name="META-INF/" />
+				<include name="presTemplateDesignGallery/" />
+				<include name="sampleDoc/" />
+				<include name="WEB-INF/" />
+				<exclude name="WEB-INF/web.xml" />
+			</fileset>
+		</war>
+		<delete dir="${bin.dir}/${webcontent.dir}/" />
+	</target>
+</project>

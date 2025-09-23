@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>docsapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.concord.job</artifactId>
+  <name>com.ibm.concord.job - jar</name>
+  <packaging>jar</packaging>
+
+  <dependencies>
+    <!-- Project dependencies -->
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.spi</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.platform</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.draft</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    
+    <!-- 3rd party dependencies -->
+    <dependency>
+      <groupId>org.apache.abdera</groupId>
+      <artifactId>abdera</artifactId>
+    </dependency>
+    <dependency>
+	  <groupId>commons-io</groupId>
+	  <artifactId>commons-io</artifactId>
+    </dependency>
+  </dependencies>
+
+  <!-- Build Settings -->
+  <build>
+    <!-- There are 2 source folder (src and test) for this project!!! -->
+    <plugins>
+      <plugin>  
+        <groupId>org.codehaus.mojo</groupId>  
+        <artifactId>build-helper-maven-plugin</artifactId>  
+        <executions>  
+          <execution>  
+            <id>add-source</id>  
+            <phase>generate-sources</phase>  
+            <goals>  
+              <goal>add-source</goal>  
+            </goals>  
+            <configuration>  
+              <sources>  
+                <source>${project.basedir}/test</source>
+              </sources>  
+            </configuration>  
+          </execution>  
+        </executions>  
+      </plugin>
+    </plugins>      
+  </build>  
+
+</project>

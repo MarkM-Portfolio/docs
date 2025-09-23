@@ -1,0 +1,188 @@
+.commonSidePaneHeader .title{
+    color: rgb(238,240,242);
+    font-size: 14px;
+    margin-right:10px;
+}
+
+.dijitRtl .commonSidePaneHeader .title {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.dijitRtl .commonSidePaneHeader {
+    text-align: right;
+}
+
+.closePaneBtn{
+    position: absolute;
+    cursor : pointer;
+    right  : 10px;
+    top    : 13px;
+}
+
+.dijitRtl .closePaneBtn {
+    left: 10px;
+    right: auto;
+}
+
+.closePaneIcon{
+    background-image: url(img/ss1212close_icon.png);
+    background-repeat: no-repeat;
+    width  : 12px;
+    height : 12px;
+}
+
+
+.commonSidePaneHeader{
+    background-color: #325c80;
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+.commonSidePaneSubTitle
+{
+    padding: 15px 20px;
+}
+
+.columnsWarningText
+{
+     padding: 15px 20px;
+}
+
+.dijitRtl .columnsWarningText {
+    direction: rtl;
+}
+
+.columnsList
+{
+    padding: 0 20px;
+}	
+
+.columnsLine
+{
+    padding: 10px 0 0 20px;
+}
+
+.columnsList .columnWrapper
+{
+    clear: both;
+    display: block;
+    padding:0 10px;
+    outline: none !important;
+    color: #222 !important;
+    text-decoration: none !important;
+}
+
+.columnsList .column
+{
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 10px 0 10px 38px;
+}
+
+.dijitRtl .columnsList .column
+{
+    background-position: right center;
+    padding: 10px 38px 10px 0;
+    direction: rtl;
+}
+
+.dijitRtl .columnsLine {
+    direction: rtl;
+    padding: 10px 20px 0 0;
+}
+
+.dijitRtl .commonSidePaneSubTitle {
+    direction: rtl;
+}
+.columnsList .columnWrapper:focus
+{
+    background: lightgray;
+}
+
+.columnsList .columnWrapper.selected
+{
+	background: lightgray;
+}
+
+.columnsList .column1
+{
+    background-image: url(img/column_one.png);
+}
+
+.columnsList .column2
+{
+    background-image: url(img/column_two.png);
+}
+
+.columnsList .column3
+{
+    background-image: url(img/column_three.png);
+}
+
+.navigationPane {
+    margin: 0px;
+}
+
+.navigationPane .naviPaneHeader{
+    background-color: rgba(224, 224, 224, 0);
+    margin: 0px 0px 16px 0px;
+}
+
+.naviPaneHeader .title{
+    color: rgb(0,0,0);
+    font-size: 14px;
+}
+
+.navigationPane .naviWarningText{
+    color: #595859;
+    font-size: 12px;
+    margin: 10px
+}
+
+.dijitRtl .navigationPane .naviWarningText {
+    direction: rtl;
+}
+
+.naviPaneContent .naviList{
+    margin-left: 5px;
+}
+
+.naviPaneContent .listLvl{
+    margin: 5px 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.naviPaneContent .listLvl:hover
+{
+     box-shadow: 0 0 0 2px #4178be;
+     cursor: pointer;
+}
+
+.naviPaneContent .naviLstSymbol
+{
+    margin-right: 13px;
+}
+
+.naviPaneContent div[style*="direction: rtl"] .naviLstSymbol  {
+    margin-left: 13px;
+    margin-right: auto;
+}
+
+.dijitRtl .navigationPane .naviPaneHeader {
+    direction: rtl;
+}
+
+.closeNaviPaneIcon
+{
+    background-image: url(img/docToolbarSprite.png);
+    background-position: 0 -432px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width  : 16px;
+    height : 16px;
+    margin: 0px;
+    
+}

@@ -1,0 +1,57 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        ORIENTATION_LABEL: "الاتجاه",
+        PORTRAIT: "طولي",
+        LANDSCAPE: "عرضي",
+        HEADER: "الرأس",
+        FOOTER: "نص الطرف",
+        MARGINS_LABEL: "الهوامش",
+        TOP: "أعلى:",
+        BOTTOM: "الأسفل:",
+        LEFT: "يسار:",
+        RIGHT: "اليمين:",
+        PAPER_FORMAT_LABEL: "نسق الورقة",
+        PAPER_SIZE_LABEL: "حجم الورقة:",
+        HEIGHT: "الارتفاع:",
+        WIDTH: "العرض:",
+        HEIGHT_DESC: "ارتفاع الورقة، بالسنتيمتر",
+        HEIGHT_DESC2: "ارتفاع الورقة، بالبوصة",
+        WIDTH_DESC: "عرض الورقة، بالسنتيمتر",
+        WIDTH_DESC2: "عرض الورقة، بالبوصة",
+        BOTTOM_DESC: "الهامش السفلى بالسنتيمتر",
+        BOTTOM_DESC2: "الهامش السفلى بالبوصة",
+        TOP_DESC: "الهامش العلوي بالسنتيمتر",
+        TOP_DESC2: "الهامش العلوي بالبوصة",
+        LEFT_DESC: "الهامش الأيسر بالسنتيمتر",
+        LEFT_DESC2: "الهامش الأيسر بالبوصة",
+        RIGHT_DESC: "الهامش الأيمن بالسنتيمتر",
+        RIGHT_DESC2: "الهامش الأيمن بالبوصة",
+        CM_LABEL: "سم",
+        LETTER: "Letter",
+        LEGAL: "Legal",
+        TABLOID: "Tabloid",
+        USER: "المستخدم",
+        SIZE1: "Env. #6 3/4",
+        SIZE2: "Env. Monarch",
+        SIZE3: "Env. #9",
+        SIZE4: "Env. #10",
+        SIZE5: "Env. #11",
+        SIZE6: "Env. #12",
+        SIZE7: "16 kai",
+        SIZE8: "32 kai",
+        SIZE9: "32 kai large",
+        INVALID_MSG: "المدخلات غير صحيحة وتم تصحيحها آليا. اذا كنت تريد الحصول على نتيجة مختلفة حاول استخدام قيمة أخرى.",
+        INVALID_WIDTH_FOR_COLUMNS: "المدخلات غير صحيحة، عرض المحتويات صغير جدا ليتضمن الأعمدة بداخله."
+});
+

@@ -1,0 +1,72 @@
+#!/usr/bin/python
+
+# ***************************************************************** 
+#                                                                   
+# Licensed Materials - Property of IBM.                                               
+#                                                                   
+# IBM Docs Source Materials                                              
+#                                                                   
+# (c) Copyright IBM Corporation 2012. All Rights Reserved.                                        
+#                                                                   
+# U.S. Government Users Restricted Rights: Use, duplication or 
+# disclosure restricted by GSA ADP Schedule Contract with 
+# IBM Corp.              
+#                                                                   
+# ***************************************************************** 
+
+import re,sys,os,subprocess,shutil,distutils,time
+sys.path.append('/opt/ll/lib/registry')
+sys.path.append('/opt/ll/lib/apache/zookeeper')
+sys.path.append('/opt/ll/lib/nfs')
+sys.path.append('/opt/ll/lib/gluster')
+from registryLib import *
+from zooKeeperLib import *
+import mountLib
+import traceback
+try:
+   import glusterMount
+except ImportError:
+   pass
+os.umask(00022)
+
+
+#---------------------------------------------------------------------------------------------
+# Main
+#---------------------------------------------------------------------------------------------
+
+#Initialize objects
+registryParser = RegistryParser()
+zooKeeperClient = ZooKeeperClient()
+
+useGluster = "false"
+try:
+   useGluster = registryParser.getSetting('MiddlewareStorage','enable_gluster')
+except:
+   useGluster = "false"
+
+#Remount the NAS
+zooKeeperClient.updateActivationStatus('Remounting NAS')
+try:
+   if useGluster == "true":
+      try:
+         glusterMount.configureMountFlip("/mnt/nas/docs", "docs")
+         mountLib.linkFilesystem('/opt/ll/runtime/data', '/mnt/nas/docs')
+      except:
+         traceback.print_exc()
+         err_msg = 'Failed to configure gluster mount flip'
+         print err_msg
+         raise Exception(err_msg)
+   else:
+      if (registryParser.getSetting('Docs','docs_nas_share') is not None):
+         #Mount the DataFS Share
+         nfsShare=registryParser.getSetting('Docs','docs_nas_share')
+         mountLib.setupFSTab(nfsShare)
+      else:
+         mountLib.setupFSTab('docs')
+      mountLib.unmountFilesystem()
+      mountLib.mountFilesystem()
+      mountLib.linkFilesystem('/opt/ll/runtime/data')
+   zooKeeperClient.updateActivationStatus('NAS remount complete')
+except:
+   zooKeeperClient.updateActivationStatus('Failed to Remount NAS','failed')
+

@@ -1,0 +1,102 @@
+{
+	"text": {
+		"feature":[
+			{
+				"versionID": "1.3.3",
+				"featureIDs": ["TEXT_FormatPainter","TEXT_DOWNLOAD","TEXT_ClearFormat"]
+			},
+			{
+				"versionID": "1.3.6",
+				"featureIDs": ["CREATE_BOOKMARK"]
+			},
+			{
+				"versionID": "1.3.8",
+				"featureIDs": ["AUTO_PUBLISH", "PUBLISH_BUTTON"]
+			},
+			{
+				"versionID": "1.3.9",
+				"featureIDs": ["AUTO_PUBLISH", "PUBLISH_BUTTON"]
+			},		
+			{
+				"versionID": "1.3.11",
+				"featureIDs": ["TEXT_MORE_CO_EDITORS", "TEXT_PARA_CONTROL", "AUTO_PUBLISH"]
+			},
+			{
+				"versionID": "1.4.1",
+				"featureIDs": ["TEXT_TABLE_BORDERS"]
+			},
+			{
+				"versionID": "1.5.11",
+				"featureIDs": ["TEXT_TRACK_CHANGE"]
+			}
+		]
+	},
+	"sheet": {
+		"feature":[
+			{
+				"versionID": "1.3.3",
+				"featureIDs": ["SHEET_NEW_FORMULA","SHEET_DOWNLOAD"]
+			},
+			{
+				"versionID": "1.3.6",
+				"featureIDs": ["SHEET_NEW_MORECOLUMNS", "SHEET_NEW_VERTICALMERGE"]
+			},
+			{
+				"versionID": "1.3.8",
+				"featureIDs": ["AUTO_PUBLISH", "PUBLISH_BUTTON"]
+			},
+			{
+				"versionID": "1.3.9",
+				"featureIDs": ["AUTO_PUBLISH", "SHEET_NEW_MULTICOLUMNSORT", "PUBLISH_BUTTON", ]
+			},
+			{
+				"versionID": "1.3.11",
+				"featureIDs": ["SHEET_NEW_3D_REFERENCE", "SHEET_DATA_VALIDATION", "SHEET_NEW_MORE_COEDITORS", "AUTO_PUBLISH"]
+			},
+			{
+				"versionID": "1.4.3",
+				"featureIDs": ["SHEET_PROTECTED_AREA"]
+			},
+			{
+				"versionID": "1.4.4",
+				"featureIDs": ["SHEET_GRID_LINES"]
+			},
+			{
+				"versionID": "1.4.10",
+				"featureIDs": ["SHEET_NEW_FORMULA"]
+			},
+			{
+				"versionID": "1.4.11",
+				"featureIDs": ["SHEET_NEW_FORMULA"]
+			}				
+		]	
+	},
+	"pres": {
+		"feature":[
+			{
+				"versionID": "1.3.3",
+				"featureIDs": ["PRES_Sorter","PRES_Zoom","PRES_Download","PRES_Toolbar","PRES_Shape"]
+			},
+			{
+				"versionID": "1.3.6",
+				"featureIDs": ["PRES_NINE_NEW_SHAPE","PRES_HYPERLINK","PRES_LINESPACE","PRES_COMMENTS_ROUNDTRIP"]
+			},
+			{
+				"versionID": "1.3.8",
+				"featureIDs": ["AUTO_PUBLISH", "PUBLISH_BUTTON","PRES_OPACITY_IMAGE","PRES_OPACITY_OBJECT"]
+			},
+			{
+				"versionID": "1.3.9",
+				"featureIDs": ["AUTO_PUBLISH", "PUBLISH_BUTTON"]
+			},
+			{
+				"versionID": "1.3.10",
+				"featureIDs": ["PRES_LINE_STYLE"]
+			},		
+			{
+				"versionID": "1.3.11",
+				"featureIDs": ["PRES_LINE_STYLE", "PRES_MORE_COEDITOR", "AUTO_PUBLISH"]
+			}					
+		]	
+	}
+}

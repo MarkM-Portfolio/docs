@@ -1,0 +1,26 @@
+<div>
+        <div class="lotusChunk">
+        	<label class="lotusLeft lotusHeading">${nls.series}</label>
+        	<div class="lotusRight" dojoType='concord.chart.widget.DropDownButton' value="${nls.selectSeries}" title="${nls.selectSeries}" dojoAttachPoint="series_list_btn"></div>
+        </div>
+        
+        <div class="lotusChunk" dojoAttachPoint="fill_section" id="S_d_chartPro_fillSection">
+            <label class="lotusLeft lotusHeading" dojoAttachPoint="fill_label">${nls.fill}</label> 
+            <div class="lotusRight" dojoType='concord.chart.widget.ColorPickerDropDownButton' value="${nls.setFillColor}" title="${nls.setFillColor}" dojoAttachPoint="fill"></div>
+        </div><!--end lotusChunk-->
+        
+        <div class="lotusChunk" dojoAttachPoint="line_section" id="S_d_chartPro_lineSection">
+            <label class="lotusLeft lotusHeading" dojoAttachPoint="line_label">${nls.line}</label> 
+            <div class="lotusRight" dojoType='concord.chart.widget.Border' dojoAttachPoint="line"></div>
+        </div><!--end lotusChunk-->
+        
+        <div class="lotusChunk" dojoAttachPoint="marker_section">
+        	<div class="lotusLeft lotusCheckbox" dojoType='dijit.form.CheckBox' dojoAttachPoint="marker" id="marker" ></div>
+            <label class="lotusCheckbox" dojoAttachPoint="marker_label" for = "marker">${nls.marker}</label>
+        </div>
+        
+         <div class="lotusChunk" dojoAttachPoint="smooth_section">
+        	<div class="lotusLeft lotusCheckbox" dojoType='dijit.form.CheckBox' dojoAttachPoint="smooth" id="smooth" ></div>
+            <label class="lotusCheckbox" dojoAttachPoint="smooth_label" for = "smooth">${nls.smooth}</label>
+        </div>
+</div>

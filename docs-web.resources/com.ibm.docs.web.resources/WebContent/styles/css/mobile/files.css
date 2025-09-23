@@ -1,0 +1,289 @@
+.lotusui {
+	color:#000000;
+	font:75%/1.5em Arial,Helvetica,sans-serif #FFFFFF;
+	#background: #000000 url('<%= contextPath + staticRootPath %>/images/lc3/texture_mobilebg.png') repeat center;
+
+}
+.lotusui a, .lotusui a:visited {
+	color:#000000;
+	text-decoration:none;
+	font-family: Arial,sans-serif;
+}
+table, caption, tbody, tfoot, thead, tr, th, td, textarea {
+    font-size: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+ul,ol{
+	border: 0 none;
+    font-size: inherit;
+    outline: 0 none;
+    vertical-align: baseline;
+}
+.lotusui .lotusui_files{
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: #F1F3F6;
+ 	overflow: hidden;
+}
+.lotusui_files .lotusui_main{
+	clear: both;
+	margin-top: -2px;
+	display: block;
+	position: relative;
+}
+.lotusui_files .lotusui_banner{
+	text-align: center;
+	background-color: #333333;
+	color: #FFFFFF;
+	border-bottom: 1px solid #CCCCCC;
+}
+.lotusui_banner:after{
+	display: block;
+	height: 0;
+	content: ".";
+	clear: both;
+}
+.lotusui_banner .lotusui_banner_userSection{
+	float: right;
+	margin: 10px 25px 0;
+}
+.lotusui_banner_userSection span{
+	padding: 0 8px;
+	text-align: left;
+	color: #EEEEEE;
+    font: bold 75%/1.5em Arial,Helvetica,sans-serif;
+}
+.lotusui_banner_userSection a:visited,.lotusui_banner_userSection a{
+	border-color: transparent;
+	border-width: 0;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+.lotusui_banner_userSection a:active, .lotusui_banner_userSection a:hover{
+	 text-decoration: underline;
+}
+.lotusui_files .lotusui_leftControl{
+	background-color; transparent;
+	width: 220px;
+	float: left;
+	margin: 0;
+	background-color: transparent;
+}
+.lotusui_leftControl .lotusui_leftUL{
+	list-style: none outside none;
+	margin: 0;
+	padding: 10px 2px;
+}
+.lotusui_leftControl li{
+	margin: 0px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+.lotusui_leftControl .lotusui_leftUL a,.lotusui_leftControl .lotusui_leftUL a:active, .lotusui_leftControl .lotusui_leftUL a:visited{
+	display: block;
+	text-decoration:none;
+	padding: 6px 10px 8px 18px;
+	font-family: Arial,sans-serif;
+}
+
+.lotusui_leftControl .lotusSelected a {
+    background-color: #324F76;
+    background-image: -moz-linear-gradient(#6F849F 0%, #283F5E 100%);
+    background-image: -webkit-gradient(linear,left top, left 80%,from(#6F849F), to(#283F5E));
+    border-color: #1E2F47;
+    border-width: 1px 0;
+    color: #FFFFFF !important;
+    margin: 0;
+    padding-left: 20px;
+}
+.lotusui_leftUL .lotusBtn{
+	display: block;
+	width: 95%;
+	height: 95%;
+	margin: 2px;
+}
+.lotusui_content{
+	overflow: hidden;
+	box-shadow: 0 2px 10px #EEEEEE;
+	height: 100%;
+	border-style: solid;
+}
+.lotusui_files .lotusui_content{
+	background-color: transparent;
+	margin: 0;
+	border-top-width: 0 !important;
+	border: 1px solid #AAAAAA;
+	padding: 5px 15px 0;
+	height: 100%;
+}
+.lotusui_content .lotus_filesContent{
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+.lotus_filesContent .lotus_filesList{
+	overflow: auto;
+}
+.files_scrollbar{
+	background-color: #AAAAAA;
+}
+.lotusui_content li {
+    border-left: 1px solid #CCCCCC;
+    display: inline;
+    margin: 0;
+    padding: 0 9px;
+}
+
+.lotusui_content li.firstLotus{
+	 border-left-width: 0;
+	 padding-left: 7px;
+}
+.lotus_paging{
+	border: 1px solid #DDDDDD;
+    margin: 5px 1px;
+    padding: 2px 5px 3px;
+}
+.lotus_paging:after{
+	content: ".";
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+.lotus_paging .fs_paging_info{
+	padding: 1px 10px 0 0;
+	color: #222222;
+	 font: 0.9em/1.8em bold;
+}
+.lotus_paging a{
+	color: #105CB6;
+	font: bold;
+}
+.lotus_paging a.pre_page_a_disabled, .lotus_paging a.next_page_a_disabled{
+	color: #8D8D8D;
+	cursor: default;
+}
+.lotusui_content .lotus_paging{
+	color: #848484;
+    background-color: #FAFAFA;
+    font-size: 0.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 350px;
+    margin-left: 2%;
+    margin-bottom: 10px;
+}
+.lotus_paging .page_ctl{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.lotusui_content .lotus_files_table{
+	border: 1px solid #CCCCCC;
+    width: 95%;
+    margin-top: 1px;
+    margin-left: 2%;
+    background-color: #F6F6F6;
+    -moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+    #border-collapse: collapse;
+}
+.lotus_files_extralInfor{
+	font: 0.75em normal;
+	padding: 5px;
+	color: #666666;
+}
+.lotus_files_extralInfor .files_key_value{
+	color: #105CB6;
+	font-weight: normal;
+}
+.lotus_files_row_highLight{
+	background: #5973F1;
+	background: -webkit-gradient(linear,0% 0%, 0% 100%,from(#FFFFFF), to(#FFFFFF),color-stop(0.1,#5973F1),color-stop(0.9,#5973F1));
+}
+
+.lotus_files_row_highLight .lotus_files_td a,.lotus_files_row_highLight .lotus_files_extralInfor{
+	color: #FFFFFF;
+}
+.lotus_files_table th, .lotus_files_table td{
+	border-top: 1px solid #DDDDDD;
+	padding: 3px 2px;
+	text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.lotus_files_td_arrow{
+	width: 20px;
+	margin-top: 13px;
+	background: transparent;
+	#background: #FFFFFF url("../../../images/lc3/arrow.png") no-repeat center;
+}
+.lotus_files_table th.firstCellLotus, .lotus_files_table td.firstCellLotus{
+	padding-left: 8px;
+	padding-right: 8px;
+} 
+.lotus_files_table .firstLotus td{
+	border-top-width: 0;
+}
+.lotus_files_table .indexCell{
+	color: #885577;
+}
+.lotus_files_td a{
+	color: #105CB6;
+}
+.lotus_files_td span{
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.lotus_mimeType_a{
+	position: relative;
+	display: block;
+}
+
+.lotus_mimeType_a .lutos_mimeType32{
+	width: 32px;
+	height: 32px;
+	display: inline;
+	border-width: 0;
+	background-repeat: no-repeat;
+	background-image: url("../../../images/lc3/lotusFtype1632Sprite-8bit.png");
+	cursor: pointer;
+}
+.lotus_mimeType_a .lotus_mimeType32_unknown{
+	background-position: 0 -632px;
+}
+
+.lotus_mimeType_a .lotus_mimeType32_image{
+	background-position: 0 -632px;
+}
+.lotus_mimeType_a .lotus_mimeType32_text{
+	background-position: 0 -1112px;
+}
+.lotus_mimeType_a .lotus_mimeType32_pres{
+	background-position: 0 -952px;
+}
+.lotus_mimeType_a .lotus_mimeType32_sheet{
+	 background-position: 0 -592px;
+}
+.lotus_mimeType_a .lotus_mimeType32_audio{
+	background-position: 0 -432px;
+}
+.lotus_mimeType_a .lotus_mimeType32_zip{
+	 background-position: 0 -512px;
+}
+.lotus_mimeType_a .lotus_mimeType32_pdf{
+	background-position: 0 -912px;
+}
+.lotusui_files .lotusui_foot{
+	text-align: center;
+}
+.clear {
+     clear: both;
+     height:1px;
+     margin-top:-1px;
+     overflow:hidden;
+}

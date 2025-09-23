@@ -1,0 +1,103 @@
+<project name="com.ibm.docs.sanity.ear" basedir="." default="deploy">
+	<target name="clean">
+	</target>
+
+	<target name="init" depends="clean">
+	</target>
+
+	<target name="deploy" depends="init">
+		<antcall target="isFalse">
+		</antcall>
+		<antcall target="isTrue">
+		</antcall>
+	</target>
+	<target name="isFalse" unless="isDocs">
+		<!--taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
+		<xmltask source="${basedir}/META-INF/application.xml" dest="${basedir}/META-INF/applicationNew.xml">
+			<replace path="/application/display-name/test()" withText="IBMConversionSanity"/>
+		</xmltask-->
+		<xslt processor="trax" in="${basedir}/META-INF/application.xml" out="${basedir}/META-INF/applicationNew.xml" style="${basedir}/META-INF/conversionapp.xsl">					
+		</xslt>
+		<move file="${basedir}/META-INF/application.xml" tofile="${basedir}/applicationBak.xml"/>
+		<move file="${basedir}/META-INF/applicationNew.xml" tofile="${basedir}/META-INF/application.xml"/>
+	  	<ear destfile="${build.home}/${ant.project.name}" appxml="${basedir}/META-INF/application.xml">
+	      	<fileset dir="${build.home}/" includes="**/com.ibm.docs.sanity.war"/>
+	   		<fileset dir="." includes="META-INF/"/>
+	   		<fileset dir="." includes="lib/**/bss.json-*.jar"/>
+	       	<fileset dir="." includes="lib/**/bss.shim-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-beanutils-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-codec-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-collections-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-configuration-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-dbcp-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-digester-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-httpclient-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-io-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-lang-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-logging-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-pool-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-validator-*.jar"/>	       	
+	       	<fileset dir="." includes="lib/**/httpclient-*.jar"/>
+	       	<fileset dir="." includes="lib/**/httpcore-*.jar"/>	      	
+	       	<fileset dir="." includes="lib/**/json4j.jar"/>
+	       	<!--Upgrading log4j version 2.17.2-->
+	       	<fileset dir="." includes="lib/**/log4j-1.2-api-2.17.2.jar"/>
+			<fileset dir="." includes="lib/**/log4j-api-2.17.2.jar"/>
+			<fileset dir="." includes="lib/**/log4j-core-2.17.2.jar"/>
+	       	<fileset dir="." includes="lib/**/oro-2.0.8.jar"/>
+	  		<fileset dir="." includes="lib/**/com.ibm.icu_*.jar"/>
+	  		<fileset dir="." includes="lib/**/lc.customAuthClient.jar"/>
+	  		<fileset dir="." includes="lib/**/jsoup-*.jar"/>
+	  		<!--fileset dir="." includes="lib/**/db2jcc_license_cu-*.jar"/>
+	  		<fileset dir="." includes="lib/**/db2jcc-*.jar"/>
+	       	<fileset dir="." includes="lib/**/sanity-agent-1.40.14-SNAPSHOT.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.authentication-1.40.1-20120126.155534-55.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.config-1.40.14-SNAPSHOT.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.httpclient_wrapper_noauth-1.40.14-20121003.103724-22.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.httpclient_wrapper-1.40.1-20120126.155534-55.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.stringutils-1.40.1-20120126.155534-55.jar"/-->
+	  	</ear>
+		<delete file="${basedir}/META-INF/application.xml"/>
+		<move file="${basedir}/applicationBak.xml" tofile="${basedir}/META-INF/application.xml"/>
+	</target>
+	<target name="isTrue" if="isDocs">
+	   	<ear destfile="${build.home}/${ant.project.name}" appxml="${basedir}/META-INF/application.xml">
+	       	<fileset dir="${build.home}/" includes="**/com.ibm.docs.sanity.war"/>
+	   		<fileset dir="." includes="META-INF/"/>
+	   		<fileset dir="." includes="lib/**/bss.json-*.jar"/>
+	       	<fileset dir="." includes="lib/**/bss.shim-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-beanutils-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-codec-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-collections-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-configuration-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-dbcp-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-digester-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-httpclient-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-io-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-lang-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-logging-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-pool-*.jar"/>
+	       	<fileset dir="." includes="lib/**/commons-validator-*.jar"/>	       	
+	       	<fileset dir="." includes="lib/**/httpclient-*.jar"/>
+	       	<fileset dir="." includes="lib/**/httpcore-*.jar"/>	       	
+	       	<fileset dir="." includes="lib/**/json4j.jar"/>
+	       	<!--Upgrading log4j version 2.17.2-->
+	        <fileset dir="." includes="lib/**/log4j-1.2-api-2.17.2.jar"/>
+			<fileset dir="." includes="lib/**/log4j-api-2.17.2.jar"/>
+			<fileset dir="." includes="lib/**/log4j-core-2.17.2.jar"/>
+	       	<fileset dir="." includes="lib/**/oro-2.0.8.jar"/>
+	   		<fileset dir="." includes="lib/**/lc.customAuthClient.jar"/>
+	   		<fileset dir="." includes="lib/**/jsoup-*.jar"/>
+	   		<!--fileset dir="." includes="lib/**/icu4j-*.jar"/>
+	   		<fileset dir="." includes="lib/**/db2jcc_license_cu-*.jar"/>
+	   		<fileset dir="." includes="lib/**/db2jcc-*.jar"/>
+	       	<fileset dir="." includes="lib/**/sanity-agent-1.40.14-SNAPSHOT.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.authentication-1.40.1-20120126.155534-55.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.config-1.40.14-SNAPSHOT.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.httpclient_wrapper_noauth-1.40.14-20121003.103724-22.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.httpclient_wrapper-1.40.1-20120126.155534-55.jar"/>
+	       	<fileset dir="." includes="lib/**/shared.stringutils-1.40.1-20120126.155534-55.jar"/-->
+	  	</ear>
+	</target>    
+</project>
+

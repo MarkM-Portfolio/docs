@@ -1,0 +1,256 @@
+${head}
+
+${script:dijit._Widget~dijit._Templated}
+${script:lconn.core.PeopleTypeAhead}
+${script:lconn.core.TypeAhead}
+${script:lconn.core.TypeAheadDataStore}
+${script:lconn.core.widget.autocomplete.People}
+${script:lconn.core.widget.autocomplete.PeopleDataStore~lconn.core.test.typeahead.FacesPeopleDataStore}
+${script:com.ibm.lconn.layout.people}
+${script:com.ibm.oneui.util.xhrproxy~com.ibm.oneui.util.xhrintercept~net.jazz.ajax.xdloader}
+
+<style>
+	ul.dijitMenu {border: 2px solid red !important; list-style: none; background-color: white; margin: 0; padding: 0; width: 400px !important;}
+	ul.dijitMenu li {list-style-image: none; zoom:1; cursor: pointer; margin: 0; padding: 0;}
+	ul.testVisible {border: 2px solid green !important;}
+	td {vertical-align: top;}
+	.dijitMenuItemSelected {background-color: yellow;}
+	.lotusui input.lotusLoading {background-color: yellow; height: auto; width: auto;}
+	.dijitPopup {position: absolute; z-index: 1000;}
+	
+	.dijitBackgroundIframe {
+		/* iframe used to prevent problems with PDF or other applets overlaying menus etc */
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+</style>
+
+${endhead}
+
+<div class="lotusMain">
+<div class="lotusContent" style="padding-bottom: 500px;">
+
+<script>
+
+function GeneratingTestStore(f, c) {
+	this.requestDelay = 2000;
+	this.perItemDelay = 50;
+	this.createItem = c || function(i) {
+		return {value: "test "+(i+1)};		
+	};
+	this.fetch = function(kwArgs) {
+		var testStoreTimer;
+		kwArgs.abort = function() {clearTimeout(testStoreTimer);};
+		var time = this.requestDelay;
+		if (kwArgs.queryOptions && kwArgs.queryOptions.immediate)
+			time = this.perItemDelay * kwArgs.query.length;
+		testStoreTimer = setTimeout(dojo.hitch(this, f, kwArgs), time);
+		return kwArgs;
+	}
+	this.hasComplexity = function(kwArgs, required) {
+		return kwArgs.query.length >= required;
+	}
+	this.getValue = function(item, attr, defaultValue) {
+		return item[attr] || defaultValue;
+	}
+};
+
+function responseGenerator(kwArgs) {
+	var scope = kwArgs.scope || window;
+	var query = kwArgs.query;
+	if (query == "error") {
+		kwArgs.onError.apply(scope, [{message: "An error has occurred"}, kwArgs]);
+		return;
+	}
+	var arr = [];
+	var start = kwArgs.start || 0;
+	var total = 0, pageSize = kwArgs.count || 5;
+	if (query != "none") {
+		if (/^[0-9]+$/.exec(query)) {
+			total = parseInt(query);
+			for (var i=start,l=Math.min(start+pageSize,total); i<l; i++)
+				arr.push(this.createItem(i));
+		}
+		else {
+		}
+	}
+	if (kwArgs.onBegin)
+		kwArgs.onBegin.apply(scope, [total, kwArgs]);
+	if (kwArgs.onItem)
+		for (var i=0; i<arr.length; i++)
+			kwArgs.onItem.apply(scope, [arr[i], kwArgs]);
+	if (kwArgs.onComplete)
+		kwArgs.onComplete.apply(scope, [arr, kwArgs]);
+}
+
+</script>
+<a onclick="document.body.style.width = '1200px'; return false;" href="#">Page width 1000px</a> |
+<a onclick="document.body.style.width = '400px'; return false;" href="#">Page width 400px</a>
+<br>
+
+<table style="width: 100%;" cellpadding="1" cellspacing="1" border="1">
+<thead><tr>
+<th>Test case</th><th>Description</th>
+</tr></thead><tbody>
+
+<tr><td>
+	<input id="input2" autocomplete="off" name="value">
+	<script>
+	var store2 = new GeneratingTestStore(responseGenerator, function(i) {
+		return {name: "test_"+i, member: "test_"+i+"@test.com"};
+	});
+	var w2 = new lconn.core.PeopleTypeAhead({
+		token: " ", // FIXME: bug, shouldn't require a default token
+		store: store2
+	}, dojo.byId("input2"));
+	</script>
+</td><td>
+	Original Connections people typeahead
+	<ol>
+	<li>Search for 'error' to trigger an error condition
+	<li>Search for 'none' to return no results
+	<li>Search for a number to return that number of results
+	</ol>
+</td></tr>
+
+
+<tr><td>
+	<input id="input3" autocomplete="off" name="value">
+	<script>
+	var pictures = ["mshani", "vhanley", "aalain", "hreeds", "khardart"];
+	var store3 = new GeneratingTestStore(responseGenerator, function(i) {
+		return {name: "test_"+i, email: "test_"+i+"@test.com", id: i};
+	});
+	store3.getFeatures = function() {return {}};
+	store3.perItemDelay = 10;
+	store3.requestDelay = 100;
+	store3.getValue = function(item, attr, defaultValue) {
+		if (attr == "photo")
+			return "../sampleUsers/"+encodeURIComponent(pictures[item.id % pictures.length])+".jpg";
+		return item[attr] || defaultValue;
+	};
+
+	var w3 = new lconn.core.widget.autocomplete.People({
+		store: store3
+	}, dojo.byId("input3"));
+	</script>
+</td><td>
+	New Connections people typeahead
+	<ol>
+	<li>Search for 'error' to trigger an error condition
+	<li>Search for 'none' to return no results
+	<li>Search for a number to return that number of results
+	</ol>
+</td></tr>
+
+<tr><td>
+	<input id="input3a" autocomplete="off" name="value">
+	<script>
+	var pictures = ["mshani", "vhanley", "aalain", "hreeds", "khardart"];
+	var store3a = new GeneratingTestStore(responseGenerator, function(i) {
+		return {name: "test_"+i, email: "test_"+i+"@test.com", id: i};
+	});
+	store3a.getFeatures = function() {return {"lconn.core.widget.autocomplete.directorysearch": true}};
+	store3a.perItemDelay = 10;
+	store3a.requestDelay = 100;
+	store3a.getValue = function(item, attr, defaultValue) {
+		if (attr == "photo")
+			return "../sampleUsers/"+encodeURIComponent(pictures[item.id % pictures.length])+".jpg";
+		return item[attr] || defaultValue;
+	};
+
+	var w3a = new lconn.core.widget.autocomplete.People({
+		store: store3a
+	}, dojo.byId("input3a"));
+	</script>
+</td><td>
+	New Connections people typeahead with directory search
+	<ol>
+	<li>Search for 'error' to trigger an error condition
+	<li>Search for 'none' to return no results
+	<li>Search for a number to return that number of results
+	</ol>
+</td></tr>
+
+<tr><td>
+	<input id="input4" autocomplete="off" name="value">
+	<script>
+	dojo.declare("PeopleTestStore1", lconn.core.widget.autocomplete.PeopleDataStore, {
+		supportsDirectorySearch: true,
+		getLocalResults: function(kwArgs) {
+			var dfd;
+			var local = this._local;
+			if (local) {
+				dfd = new dojo.Deferred();
+				if (local instanceof Error)
+					dfd.errback(local);
+				else
+					dfd.callback(local);
+			}
+			else {
+				dfd = dojo.xhrGet({url: "http://tapstage.swg.usma.ibm.com/files/form/api/myshares/users/feed?format=json&pageSize=15&sK=modifiedByName&sO=desc&searchString=&searchType=fastlist", handleAs: "json"});
+				dfd.addCallback(this, "convert", kwArgs).addBoth(this, "saveLocal");
+			}
+			dfd.addCallback(this, "filter", kwArgs);
+			return dfd;
+		},
+		saveLocal: function(response) {
+			this._local = response;
+			return response;
+		},
+		getUrl: function(kwArgs) {
+			var isDirectory = kwArgs.queryOptions.directory;
+			return dojo.replace("http://tapstage.swg.usma.ibm.com/files/form/anonymous/api/people/feed?format=json&sK=relevanceByName&pageSize={pageSize}&searchString={query}&type={type}&sI={start}", {
+				query: encodeURIComponent(kwArgs.query),
+				type: encodeURIComponent(isDirectory ? "directory" : "fastlist"),
+				start: (isDirectory ? 0 : (kwArgs.start || 0))+1,
+				pageSize: isDirectory ? 99 : (kwArgs.count || 100),
+			});
+		}/*,
+		getPhotoUrl: function(item, defaultValue) {
+			return "http://tapstage.swg.usma.ibm.com/profiles/photo.do?userid="+encodeURIComponent(item.id);
+		}*/
+	});
+	var store4 = new PeopleTestStore1();
+	store4.cache = {};
+	var w4 = new lconn.core.widget.autocomplete.People({
+		store: store4
+	}, dojo.byId("input4"));
+	</script>
+</td><td>
+	Connections people typeahead against tapstage, using Files backend
+	<ol>
+	<li>Real users
+	</ol>
+</td></tr>
+
+<tr><td>
+	<input id="input5" autocomplete="off" name="value">
+	<script>
+	var store5 = new lconn.core.test.typeahead.FacesPeopleDataStore();
+	store5.cache = {};
+	var w5 = new lconn.core.widget.autocomplete.People({
+		store: store5
+	}, dojo.byId("input5"));
+	</script>
+</td><td>
+	Connections people typeahead against Faces backend
+	<ol>
+	<li>Real users
+	<li>To get faces to recognize you, set dojo.cookie("facesUser", "uid:&lt;ibm serial #&gt;:name:&lt;username&gt;", {path:"/"})
+	</ol>
+</td></tr>
+
+
+</tbody></table>
+</div>
+</div>
+</body>
+${end}

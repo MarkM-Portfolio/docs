@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013--><!--© Copyright IBM Corp 2013-->
+<toc label="Arbeta med dokument" topic="text/document/documents_frame.html">
+   <topic label="Arbeta med dokument" href="text/document/documents_frame.html">
+      <topic label="Skapa och importera dokument"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="Om mallar" href="text/document/d_templates.html"/>
+         <topic label="Skapa dokument från mallar"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Ändra standadrdfilformatet för dokument"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Överföra och dela dokument"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Importera dokument"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Öppna lösenordsskyddade Word-filer"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Filkompatibilitet och export av dokument"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Filformat som hanteras i dokument"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Spara dokument" href="text/document/d_saving_documents.html"/>
+         <topic label="Publicera en version av dokument"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Exportera dokument till andra filformat"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Dela dokument" href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Dela dokument med personer eller gemenskaper"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Ange åtkomstnivåer för dokument"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Samarbeta om dokument i realtid"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Samredigering i realtid i dokument"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="Om samredigering i dokument"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Samredigering med andra i dokument"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Visa ändringar från varje redigerare i dokument"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Samarbeta med kommentarer i dokument"
+                href="text/document/d_comments_overview.html">
+            <topic label="Om kommentarer i dokument" href="text/document/d_comments_concept.html"/>
+            <topic label="Skapa kommentarer i dokument"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Visa kommentarer i dokument"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Söka kommentarer i dokument"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Redigera dokument"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Formatera text i dokument" href="text/document/d_formatting_text.html">
+            <topic label="Inställning av teckensnittseffekter"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="Göra text upphöjd eller nedsänkt"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Inställning av textstorlek"
+                   href="text/document/d_setting_font_size.html"/>
+            <topic label="Justera text" href="text/document/d_aligning_text.html"/>
+            <topic label="Textindrag" href="text/document/d_indenting_text.html"/>
+            <topic label="Lägga till punkter och numrering i dokument"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Skapa flernivålistor i dokument"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Infoga länkar" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Skapa sidhuvud och sidfot"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Skapa innehållsförteckning" href="text/document/d_create_toc.html"/>
+         <topic label="Infoga fält i dokument" href="text/document/d_inserting_fields.html"/>
+         <topic label="Stavningskontrollera dokument"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Skriva ut dokument" href="text/document/d_printing_a_document.html">
+            <topic label="Skriva ut dokument till PDF-filer"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Arbeta med bilder i dokument"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Infoga bilder i dokument"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Ange bildegenskaper i dokument"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Arbeta med tabeller i dokument"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Skapa tabeller i dokument" href="text/document/d_creating_a_table.html"/>
+         <topic label="Ändra tabellformat i dokument"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Ange tabellegenskaper i dokument"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Ange bakgrundsfärger för tabellceller"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Justera text i tabellceller i dokument"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Lägga till rader och kolumner i tabeller"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Flytta rader och kolumner i tabeller"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Sammanfoga eller dela celler i tabeller"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Storleksändra tabeller i dokument"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Lägga till bildtexter till tabeller i dokument"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Definiera rubriker för tabeller i dokument"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Snabbreferens för dokument" href="text/document/d_quick_ref.html"/>
+      <topic label="Kortkommandon för dokument" href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

@@ -1,0 +1,1885 @@
+.imageGalleryArrow
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/arrows/arrows.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryBullet
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/bullets/bullets.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryComputer
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/computers/computers.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryDiagrams
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/diagrams/diagrams.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryEducation
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/education/education.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryEnvironment
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/environment/environment.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryFinance
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/finance/finance.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryPeople
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/people/people.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryShapes
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/shapes/shapes.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGallerySymbols
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/symbols/symbols.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.imageGalleryTransportation
+{
+	background-image: url("../../../js/concord/widgets/imageGallery/transportation/transportation.jpg");
+	background-repeat:no-repeat;
+	height: 95px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.layoutGallery
+{
+	background-image: url("../../../js/concord/widgets/layoutGallery/layout.png");
+	background-repeat:no-repeat;
+	height: 85px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.templateDesignGallery
+{
+	background-image: url("../../../presTemplateDesignGallery/Masterstyles-thumbsprite-IBM.png");
+	background-repeat:no-repeat;
+	height: 83px;
+	width: 110px;
+	display: inline-block;	
+}
+
+.iga_Arrow01_Gray_thumb
+{    background-position: 0px 0px;
+}
+
+.iga_Arrow02_Gray_thumb
+{    background-position: 0px -95px;
+}
+
+.iga_Arrow03_Red_thumb
+{    background-position: 0px -190px;
+}
+
+.iga_Arrow04_Blue_thumb
+{    background-position: 0px -285px;
+}
+
+.iga_Arrow05_Blue_thumb
+{    background-position: 0px -380px;
+}
+
+.iga_Arrow06_Yellow_thumb
+{    background-position: 0px -475px;
+}
+
+.iga_Arrow07_Red_thumb
+{    background-position: 0px -570px;
+}
+
+.iga_Arrow08_Gray_thumb
+{    background-position: 0px -665px;
+}
+
+.iga_Arrow09_Orange_thumb
+{    background-position: 0px -760px;
+}
+
+.iga_Arrow10_Blue_thumb
+{    background-position: 0px -855px;
+}
+
+.iga_Arrow11_Blue_thumb
+{    background-position: 0px -950px;
+}
+
+.iga_Arrow12_Green_thumb
+{    background-position: 0px -1045px;
+}
+
+.iga_Arrow13_Blue_thumb
+{    background-position: 0px -1140px;
+}
+
+.iga_Arrow14_Green_thumb
+{    background-position: 0px -1235px;
+}
+
+.iga_Arrow15_Orange_thumb
+{    background-position: 0px -1330px;
+}
+
+.iga_Arrow16_Gray_thumb
+{    background-position: 0px -1425px;
+}
+
+.iga_CircleArrow01_Green_thumb
+{    background-position: 0px -1520px;
+}
+
+.iga_CircleArrow02_Multi_thumb
+{    background-position: 0px -1615px;
+}
+
+.iga_CircleArrow03_Multi_thumb
+{    background-position: 0px -1710px;
+}
+
+.iga_CircleArrow04_Multi_thumb
+{    background-position: 0px -1805px;
+}
+
+.iga_CircleArrow05_Multi_thumb
+{    background-position: 0px -1900px;
+}
+
+.iga_CircleArrow06_Multi_thumb
+{    background-position: 0px -1995px;
+}
+
+.iga_CircleArrow07_Blue_thumb
+{    background-position: 0px -2090px;
+}
+
+.iga_CircleArrow08_Green_thumb
+{    background-position: 0px -2185px;
+}
+
+.iga_CircleArrow09_Multi_thumb
+{    background-position: 0px -2280px;
+}
+
+.iga_CurvedArrow01_Gray_thumb
+{    background-position: 0px -2375px;
+}
+
+.iga_CurvedArrow02_Blue_thumb
+{    background-position: 0px -2470px;
+}
+
+.iga_CurvedArrow03_Blue_thumb
+{    background-position: 0px -2565px;
+}
+
+.iga_CurvedArrow04_Orange_thumb
+{    background-position: 0px -2660px;
+}
+
+.iga_CurvedArrow05_Red_thumb
+{    background-position: 0px -2755px;
+}
+
+.iga_CurvedArrow06_Blue_thumb
+{    background-position: 0px -2850px;
+}
+
+.iga_CurvedArrow07_Purple_thumb
+{    background-position: 0px -2945px;
+}
+
+.iga_CurvedArrow08_Green_thumb
+{    background-position: 0px -3040px;
+}
+
+.iga_CurvedArrow09_Gray_thumb
+{    background-position: 0px -3135px;
+}
+
+.iga_CurvedArrow10_Blue_thumb
+{    background-position: 0px -3230px;
+}
+
+.iga_CurvedArrow11_Orange_thumb
+{    background-position: 0px -3325px;
+}
+
+.iga_CurvedArrow12_Blue_thumb
+{    background-position: 0px -3420px;
+}
+
+.iga_CurvedArrow13_Green_thumb
+{    background-position: 0px -3515px;
+}
+
+.iga_CurvedArrow14_Brown_thumb
+{    background-position: 0px -3610px;
+}
+
+.iga_CurvedArrow15_Blue_thumb
+{    background-position: 0px -3705px;
+}
+
+.iga_CurvedArrow16_Gray_thumb
+{    background-position: 0px -3800px;
+}
+
+.iga_CurvedArrow17_Gray_thumb
+{    background-position: 0px -3895px;
+}
+
+.iga_CurvedArrow18_Gray_thumb
+{    background-position: 0px -3990px;
+}
+
+.iga_CurvedArrow19_Gray_thumb
+{    background-position: 0px -4085px;
+}
+
+.iga_CurvedArrow20_Gray_thumb
+{    background-position: 0px -4180px;
+}
+
+.iga_TrendArrow01_Red_thumb
+{    background-position: 0px -4275px;
+}
+
+.iga_TrendArrow02_Green_thumb
+{    background-position: 0px -4370px;
+}
+
+.iga_TrendArrow03_Orange_thumb
+{    background-position: 0px -4465px;
+}
+
+.iga_TrendArrow04_Red_thumb
+{    background-position: 0px -4560px;
+}
+
+.iga_TrendArrow05_Orange_thumb
+{    background-position: 0px -4655px;
+}
+
+.iga_TrendArrow06_Blue_thumb
+{    background-position: 0px -4750px;
+}
+
+.iga_TrendArrow07_Orange_thumb
+{    background-position: 0px -4845px;
+}
+
+.iga_TrendArrow08_Yellow_thumb
+{    background-position: 0px -4940px;
+}
+
+.iga_TrendArrow09_Blue_thumb
+{    background-position: 0px -5035px;
+}
+
+.iga_TrendArrow10_Blue_thumb
+{    background-position: 0px -5130px;
+}
+
+.iga_TrendArrow11_Blue_thumb
+{    background-position: 0px -5225px;
+}
+
+.iga_TrendArrow12_Blue_thumb
+{    background-position: 0px -5320px;
+}
+
+.iga_TrendArrow13_Red_thumb
+{    background-position: 0px -5415px;
+}
+
+.iga_TrendArrow14_Multi_thumb
+{    background-position: 0px -5510px;
+}
+
+.iga_TrendArrow15_Blue_thumb
+{    background-position: 0px -5605px;
+}
+
+.igb_Bullet01_Circle_DarkRed_thumb
+{    background-position: 0px 0px;
+}
+
+.igb_Bullet02_Circle_Blue_thumb
+{    background-position: 0px -95px;
+}
+
+.igb_Bullet03_Circle_Green_thumb
+{    background-position: 0px -190px;
+}
+
+.igb_Bullet04_Square_Black_thumb
+{    background-position: 0px -285px;
+}
+
+.igb_Bullet05_Square_Orange_thumb
+{    background-position: 0px -380px;
+}
+
+.igb_Bullet06_Square_Purple_thumb
+{    background-position: 0px -475px;
+}
+
+.igb_Bullet07_Diamond_Blue_thumb
+{    background-position: 0px -570px;
+}
+
+.igb_Bullet08_Diamond_LightBlue_thumb
+{    background-position: 0px -665px;
+}
+
+.igb_Bullet09_Diamond_Red_thumb
+{    background-position: 0px -760px;
+}
+
+.igb_Bullet10_Star_Yellow_thumb
+{    background-position: 0px -855px;
+}
+
+.igb_Bullet11_Star_Blue_thumb
+{    background-position: 0px -950px;
+}
+
+.igb_Bullet12_Triangle_Blue_thumb
+{    background-position: 0px -1045px;
+}
+
+.igb_Bullet13_Triangle_DarkGreen_thumb
+{    background-position: 0px -1140px;
+}
+
+.igb_Bullet14_Arrow_Red_thumb
+{    background-position: 0px -1235px;
+}
+
+.igb_Bullet15_Arrow_Blue_thumb
+{    background-position: 0px -1330px;
+}
+
+.igb_Bullet16_Box_Blue_thumb
+{    background-position: 0px -1425px;
+}
+
+.igb_Bullet17_Box_Red_thumb
+{    background-position: 0px -1520px;
+}
+
+.igb_Bullet18_Asterisk_LightBlue_thumb
+{    background-position: 0px -1615px;
+}
+
+.igb_Bullet19_Leaves_Red_thumb
+{    background-position: 0px -1710px;
+}
+
+.igb_Bullet20_Target_Blue_thumb
+{    background-position: 0px -1805px;
+}
+
+.igb_Bullet21_Arrow_Blue_thumb
+{    background-position: 0px -1900px;
+}
+
+.igb_Bullet22_Arrow_DarkBlue_thumb
+{    background-position: 0px -1995px;
+}
+
+.igb_Bullet23_Arrow_Brown_thumb
+{    background-position: 0px -2090px;
+}
+
+.igb_Bullet24_Flag_Red_thumb
+{    background-position: 0px -2185px;
+}
+
+.igb_Bullet25_Flag_Green_thumb
+{    background-position: 0px -2280px;
+}
+
+.igb_Bullet26_X_Red_thumb
+{    background-position: 0px -2375px;
+}
+
+.igb_Bullet27_X_Black_thumb
+{    background-position: 0px -2470px;
+}
+
+.igb_Bullet28_Checkmark_Green_thumb
+{    background-position: 0px -2565px;
+}
+
+.igb_Bullet29_Checkmark_Blue_thumb
+{    background-position: 0px -2660px;
+}
+
+.igb_Bullet30_Square_DarkRed_thumb
+{    background-position: 0px -2755px;
+}
+
+.igc_camera_thumb
+{    background-position: 0px 0px;
+}
+
+.igc_Computer_Cloud_thumb
+{    background-position: 0px -95px;
+}
+
+.igc_Computer_Desktop_thumb
+{    background-position: 0px -190px;
+}
+
+.igc_Computer_Laptop_Black_thumb
+{    background-position: 0px -285px;
+}
+
+.igc_Computer_Laptop_Silver_thumb
+{    background-position: 0px -380px;
+}
+
+.igc_computer1_thumb
+{    background-position: 0px -475px;
+}
+
+.igc_computer2_thumb
+{    background-position: 0px -570px;
+}
+
+.igc_computer3_thumb
+{    background-position: 0px -665px;
+}
+
+.igc_Database_thumb
+{    background-position: 0px -760px;
+}
+
+.igc_evelope_thumb
+{    background-position: 0px -855px;
+}
+
+.igc_newspapers_thumb
+{    background-position: 0px -950px;
+}
+
+.igc_openevelope_thumb
+{    background-position: 0px -1045px;
+}
+
+.igc_Server_thumb
+{    background-position: 0px -1140px;
+}
+
+.igc_speaker_thumb
+{    background-position: 0px -1235px;
+}
+
+.igc_WirelessAccessPoint_thumb
+{    background-position: 0px -1330px;
+}
+
+.igd_Cycle01_Transparent_thumb
+{    background-position: 0px 0px;
+}
+
+.igd_Cycle02_Transparent_Blue_thumb
+{    background-position: 0px -95px;
+}
+
+.igd_Cycle03_Blue_thumb
+{    background-position: 0px -190px;
+}
+
+.igd_Cycle04_Blue_thumb
+{    background-position: 0px -285px;
+}
+
+.igd_Cycle05_thumb
+{    background-position: 0px -380px;
+}
+
+.igd_Cycle06_thumb
+{    background-position: 0px -475px;
+}
+
+.igd_Cycle07_thumb
+{    background-position: 0px -570px;
+}
+
+.igd_Cycle08_Blue_thumb
+{    background-position: 0px -665px;
+}
+
+.igd_Cycle09_Orange_thumb
+{    background-position: 0px -760px;
+}
+
+.igd_Donut01_LightBlue_thumb
+{    background-position: 0px -855px;
+}
+
+.igd_Donut02_Blue_thumb
+{    background-position: 0px -950px;
+}
+
+.igd_Donut03_Blue_thumb
+{    background-position: 0px -1045px;
+}
+
+.igd_Donut04_DarkBlue_thumb
+{    background-position: 0px -1140px;
+}
+
+.igd_Donut05_DarkBlue_thumb
+{    background-position: 0px -1235px;
+}
+
+.igd_Donut06_Blue_thumb
+{    background-position: 0px -1330px;
+}
+
+.igd_Donut07_Blue_thumb
+{    background-position: 0px -1425px;
+}
+
+.igd_Graph_thumb
+{    background-position: 0px -1520px;
+}
+
+.igd_People01_Blue_thumb
+{    background-position: 0px -1615px;
+}
+
+.igd_People02_thumb
+{    background-position: 0px -1710px;
+}
+
+.igd_Pillars01_Orange_thumb
+{    background-position: 0px -1805px;
+}
+
+.igd_Pillars02_LightBlue_thumb
+{    background-position: 0px -1900px;
+}
+
+.igd_Process01_Blue_thumb
+{    background-position: 0px -1995px;
+}
+
+.igd_Process02_Blue_thumb
+{    background-position: 0px -2090px;
+}
+
+.igd_Process03_Blue_thumb
+{    background-position: 0px -2185px;
+}
+
+.igd_Process04_GoUp_Blue_thumb
+{    background-position: 0px -2280px;
+}
+
+.igd_Process05_GoUp_Red_thumb
+{    background-position: 0px -2375px;
+}
+
+.igd_Process06_GoUp_Yellow_thumb
+{    background-position: 0px -2470px;
+}
+
+.igd_Process07_Blue_thumb
+{    background-position: 0px -2565px;
+}
+
+.igd_Pyramid01_thumb
+{    background-position: 0px -2660px;
+}
+
+.igd_Pyramid02_Blue_thumb
+{    background-position: 0px -2755px;
+}
+
+.igd_Pyramid03_thumb
+{    background-position: 0px -2850px;
+}
+
+.igd_Radial01_Green_thumb
+{    background-position: 0px -2945px;
+}
+
+.igd_Radial02_Green_thumb
+{    background-position: 0px -3040px;
+}
+
+.igd_Radial03_Sphere_thumb
+{    background-position: 0px -3135px;
+}
+
+.igd_Radial04_Sphere_Red_thumb
+{    background-position: 0px -3230px;
+}
+
+.igd_Radial05_Sphere_Blue_thumb
+{    background-position: 0px -3325px;
+}
+
+.igd_Radial06_Arrows_DarkBlue_thumb
+{    background-position: 0px -3420px;
+}
+
+.igd_Radial07_Arrows_DarkBlue_thumb
+{    background-position: 0px -3515px;
+}
+
+.igd_Section_Circle_thumb
+{    background-position: 0px -3610px;
+}
+
+.igd_Section_Cubes01_thumb
+{    background-position: 0px -3705px;
+}
+
+.igd_Section_Cubes02_Blue_thumb
+{    background-position: 0px -3800px;
+}
+
+.igd_Section_Cubes03_Orange_thumb
+{    background-position: 0px -3895px;
+}
+
+.igd_Section_Cubes04_thumb
+{    background-position: 0px -3990px;
+}
+
+.igd_Section_Cubes05_thumb
+{    background-position: 0px -4085px;
+}
+
+.igd_Section_Cuboids01_Blue_thumb
+{    background-position: 0px -4180px;
+}
+
+.igd_Section_Cuboids02_Blue_thumb
+{    background-position: 0px -4275px;
+}
+
+.igd_Section_Cuboids03_thumb
+{    background-position: 0px -4370px;
+}
+
+.igd_Section_Gears01_thumb
+{    background-position: 0px -4465px;
+}
+
+.igd_Section_Gears02_thumb
+{    background-position: 0px -4560px;
+}
+
+.igd_Section_Gears03_thumb
+{    background-position: 0px -4655px;
+}
+
+.igd_Section_Hexagons01_thumb
+{    background-position: 0px -4750px;
+}
+
+.igd_Section_Hexagons02_Blue_thumb
+{    background-position: 0px -4845px;
+}
+
+.igd_Section_Hexagons03_Blue_thumb
+{    background-position: 0px -4940px;
+}
+
+.igd_Section_Hexagon04_Orange_thumb
+{    background-position: 0px -5035px;
+}
+
+.igd_Section_Leaves01_LightBlue_thumb
+{    background-position: 0px -5130px;
+}
+
+.igd_Section_Leaves02_Green_thumb
+{    background-position: 0px -5225px;
+}
+
+.igd_Section_Pasters01_thumb
+{    background-position: 0px -5320px;
+}
+
+.igd_Section_Pasters02_Blue_thumb
+{    background-position: 0px -5415px;
+}
+
+.igd_Section_Puzzle01_thumb
+{    background-position: 0px -5510px;
+}
+
+.igd_Section_Puzzle02_thumb
+{    background-position: 0px -5605px;
+}
+
+.igd_Section_Puzzle03_thumb
+{    background-position: 0px -5700px;
+}
+
+.igd_Section_Rectangles_thumb
+{    background-position: 0px -5795px;
+}
+
+.igd_Section_Squares_thumb
+{    background-position: 0px -5890px;
+}
+
+.igd_Section_Triangle_thumb
+{    background-position: 0px -5985px;
+}
+
+.igd_Target_thumb
+{    background-position: 0px -6080px;
+}
+
+.igd_Venn01_thumb
+{    background-position: 0px -6175px;
+}
+
+.igd_Venn02_thumb
+{    background-position: 0px -6270px;
+}
+
+.igd_Venn03_thumb
+{    background-position: 0px -6365px;
+}
+
+.igd_Venn04_thumb
+{    background-position: 0px -6460px;
+}
+
+.igd_Venn05_thumb
+{    background-position: 0px -6555px;
+}
+
+.igd_Venn06_Blue_thumb
+{    background-position: 0px -6650px;
+}
+
+.igd_Venn07_Blue_thumb
+{    background-position: 0px -6745px;
+}
+
+.igd_Venn08_thumb
+{    background-position: 0px -6840px;
+}
+
+.ige_Blackboard_thumb
+{    background-position: 0px 0px;
+}
+
+.ige_Books_thumb
+{    background-position: 0px -95px;
+}
+
+.ige_Books1_thumb
+{    background-position: 0px -190px;
+}
+
+.ige_books2_thumb
+{    background-position: 0px -285px;
+}
+
+.ige_Chalk_thumb
+{    background-position: 0px -380px;
+}
+
+.ige_clock_thumb
+{ 
+	background-position: 0px -570px;   
+}
+
+.ige_Globe_thumb
+{   
+	background-position: 0px -665px; 
+}
+
+.ige_Glue_thumb
+{  
+	background-position: 0px -760px;  
+}
+
+.ige_GraduationCap_thumb
+{  
+	background-position: 0px -855px;  
+}
+
+.ige_magnifyingglass_thumb
+{
+	background-position: 0px -1045px;    
+}
+
+.ige_Microscope_thumb
+{ 
+	background-position: 0px -1140px;   
+}
+
+.ige_Notebook_thumb
+{  
+	background-position: 0px -1235px;  
+}
+
+.ige_notepad1_thumb
+{ 
+	background-position: 0px -1330px;   
+}
+
+.ige_notepad2_thumb
+{  
+	background-position: 0px -1425px;  
+}
+
+.ige_notepad3_thumb
+{    background-position: 0px -1520px;
+}
+
+.ige_PaperClip_Blue_thumb
+{    background-position: 0px -1615px;
+}
+
+.ige_PaperClip_Red_thumb
+{    background-position: 0px -1710px;
+}
+
+.ige_Pencil_thumb
+{    background-position: 0px -1805px;
+}
+
+.ige_Ruler_thumb
+{    background-position: 0px -1900px;
+}
+
+.ige_TestTubes_thumb
+{    background-position: 0px -1995px;
+}
+
+.ige_thumbtack_thumb
+{    background-position: 0px -2090px;
+}
+
+.igen_clouds_thumb
+{    background-position: 0px 0px;
+}
+
+.igen_DrippingFaucet_thumb
+{    background-position: 0px -95px;
+}
+
+.igen_Earth_thumb
+{    background-position: 0px -190px;
+}
+
+.igen_EndangeredAnimals1_thumb
+{    background-position: 0px -285px;
+}
+
+.igen_EndangeredAnimals2_thumb
+{    background-position: 0px -380px;
+}
+
+.igen_GreenCar_thumb
+{    background-position: 0px -475px;
+}
+
+.igen_GreenFactory_thumb
+{    background-position: 0px -570px;
+}
+
+.igen_GreenHouse_thumb
+{    background-position: 0px -665px;
+}
+
+.igen_Leaf1_thumb
+{    background-position: 0px -760px;
+}
+
+.igen_Leaf2_thumb
+{    background-position: 0px -855px;
+}
+
+.igen_LightBulb_Flourescent_Off_thumb
+{    background-position: 0px -950px;
+}
+
+.igen_LightBulb_Flourescent_On_thumb
+{    background-position: 0px -1045px;
+}
+
+.igen_LightBulb_Standard_Off1_thumb
+{    background-position: 0px -1140px;
+}
+
+.igen_LightBulb_Standard_Off2_thumb
+{    background-position: 0px -1235px;
+}
+
+.igen_LightBulb_Standard_On_thumb
+{    background-position: 0px -1330px;
+}
+
+.igen_lightbulb_thumb
+{    background-position: 0px -1425px;
+}
+
+.igen_lightningcloud_thumb
+{    background-position: 0px -1520px;
+}
+
+.igen_Pollution_Car_thumb
+{    background-position: 0px -1615px;
+}
+
+.igen_Pollution_Factory_thumb
+{    background-position: 0px -1710px;
+}
+
+.igen_Raindrop_thumb
+{    background-position: 0px -1805px;
+}
+
+.igen_RecycleBin_thumb
+{    background-position: 0px -1900px;
+}
+
+.igen_RecycleSymbol_thumb
+{    background-position: 0px -1995px;
+}
+
+.igen_RenewableEnergy_Solar_thumb
+{    background-position: 0px -2090px;
+}
+
+.igen_RenewableEnergy_Water_thumb
+{    background-position: 0px -2185px;
+}
+
+.igen_RenewableEnergy_Wind_thumb
+{    background-position: 0px -2280px;
+}
+
+.igen_RenewableEnergySymbol_thumb
+{    background-position: 0px -2375px;
+}
+
+.igen_sun_thumb
+{    background-position: 0px -2470px;
+}
+
+.igen_Sun1_thumb
+{    background-position: 0px -2565px;
+}
+
+.igen_Sun2_thumb
+{    background-position: 0px -2660px;
+}
+
+.igen_sundandcloud_thumb
+{    background-position: 0px -2755px;
+}
+
+.igen_world_thumb
+{    background-position: 0px -2850px;
+}
+
+.igf_Agreement_thumb
+{    background-position: 0px 0px;
+}
+
+.igf_ATM01_thumb
+{    background-position: 0px -95px;
+}
+
+.igf_ATM02_thumb
+{    background-position: 0px -190px;
+}
+
+.igf_Balance_Balanced1_thumb
+{    background-position: 0px -285px;
+}
+
+.igf_Balance_Balanced2_thumb
+{    background-position: 0px -380px;
+}
+
+.igf_Balance_Unbalanced1_thumb
+{    background-position: 0px -475px;
+}
+
+.igf_Balance_Unbalanced2_thumb
+{    background-position: 0px -570px;
+}
+
+.igf_Calculator_thumb
+{    background-position: 0px -665px;
+}
+
+.igf_Chart_Decrease1_thumb
+{    background-position: 0px -760px;
+}
+
+.igf_Chart_Decrease2_thumb
+{    background-position: 0px -855px;
+}
+
+.igf_Chart_Increase1_thumb
+{    background-position: 0px -950px;
+}
+
+.igf_Chart_Increase2_thumb
+{    background-position: 0px -1045px;
+}
+
+.igf_Chart_Plateau_thumb
+{    background-position: 0px -1140px;
+}
+
+.igf_Check_thumb
+{    background-position: 0px -1235px;
+}
+
+.igf_Contract_thumb
+{    background-position: 0px -1330px;
+}
+
+.igf_CreditCard_Black_thumb
+{    background-position: 0px -1425px;
+}
+
+.igf_CreditCard_Cut_thumb
+{    background-position: 0px -1520px;
+}
+
+.igf_CreditCard_Gold_thumb
+{    background-position: 0px -1615px;
+}
+
+.igf_Currency_Dollar_thumb
+{    background-position: 0px -1710px;
+}
+
+.igf_Currency_Dollars_thumb
+{    background-position: 0px -1805px;
+}
+
+.igf_Currency_Stack_thumb
+{    background-position: 0px -1900px;
+}
+
+.igf_Currency_StackCoins_thumb
+{    background-position: 0px -1995px;
+}
+
+.igf_GoldBar_Stack_thumb
+{    background-position: 0px -2185px;
+}
+
+.igf_GoldBar_thumb
+{ 
+	background-position: 0px -2090px;   
+}
+
+.igf_MoneyBag01_thumb
+{    background-position: 0px -2280px;
+}
+
+.igf_MoneyBag02_thumb
+{    background-position: 0px -2375px;
+}
+
+.igf_PercentSign_thumb
+{    background-position: 0px -2470px;
+}
+
+.igf_PiggyBank_Coins_thumb
+{    background-position: 0px -2565px;
+}
+
+.igf_PiggyBank_Currency_thumb
+{    background-position: 0px -2660px;
+}
+
+.igf_PiggyBank01_Broken_thumb
+{    background-position: 0px -2755px;
+}
+
+.igf_PiggyBank02_Broken_thumb
+{    background-position: 0px -2850px;
+}
+
+.igf_Portfolio_thumb
+{    background-position: 0px -2945px;
+}
+
+.igf_PriceTag_thumb
+{    background-position: 0px -3040px;
+}
+
+.igf_Safe_Closed_thumb
+{    background-position: 0px -3135px;
+}
+
+.igf_Safe_Empty_thumb
+{    background-position: 0px -3230px;
+}
+
+.igf_Safe_Full_thumb
+{    background-position: 0px -3325px;
+}
+
+.igf_Seal_Gold_thumb
+{    background-position: 0px -3420px;
+}
+
+.igf_Seal_Red_thumb
+{    background-position: 0px -3515px;
+}
+
+.igf_Seal_Silver_thumb
+{    background-position: 0px -3610px;
+}
+
+.igf_Wallet_Empty_thumb
+{    background-position: 0px -3705px;
+}
+
+.igf_Wallet_Full1_thumb
+{    background-position: 0px -3800px;
+}
+
+.igf_Wallet_Full2_thumb
+{    background-position: 0px -3895px;
+}
+
+.igp_BusinessPerson_Female6_thumb
+{    background-position: 0px 0px;
+}
+
+.igp_BusinessPerson_Male3_thumb
+{    background-position: 0px -95px;
+}
+
+.igp_Computer_User_Female1_thumb
+{    background-position: 0px -190px;
+}
+
+.igp_ConstructionWorker2_thumb
+{    background-position: 0px -285px;
+}
+
+.igp_Presenter_Female1_thumb
+{    background-position: 0px -380px;
+}
+
+.igs_Component_Circle01_Transparent_DarkBlue_thumb
+{    background-position: 0px 0px;
+}
+
+.igs_Component_Circle02_Transparent_Bule_thumb
+{    background-position: 0px -95px;
+}
+
+.igs_Component_Circle03_Transparent_Green_thumb
+{    background-position: 0px -190px;
+}
+
+.igs_Component_Circle04_Transparent_Orange_thumb
+{    background-position: 0px -285px;
+}
+
+.igs_Component_Circle05_Transparent_Red_thumb
+{    background-position: 0px -380px;
+}
+
+.igs_Component_Cube01_DarkBlue_thumb
+{    background-position: 0px -475px;
+}
+
+.igs_Component_Cube02_LightBlue_thumb
+{    background-position: 0px -570px;
+}
+
+.igs_Component_Cube03_Green_thumb
+{    background-position: 0px -665px;
+}
+
+.igs_Component_Cube04_Orange_thumb
+{    background-position: 0px -760px;
+}
+
+.igs_Component_Cube05_DarkRed_thumb
+{    background-position: 0px -855px;
+}
+
+.igs_Component_Cuboid01_DarkBlue_thumb
+{    background-position: 0px -950px;
+}
+
+.igs_Component_Cuboid02_Blue_thumb
+{    background-position: 0px -1045px;
+}
+
+.igs_Component_Cuboid03_Green_thumb
+{    background-position: 0px -1140px;
+}
+
+.igs_Component_Cuboid04_Orange_thumb
+{    background-position: 0px -1235px;
+}
+
+.igs_Component_Cuboid05_Red_thumb
+{    background-position: 0px -1330px;
+}
+
+.igs_Component_Gear01_DarkBlue_thumb
+{    background-position: 0px -1425px;
+}
+
+.igs_Component_Gear02_LightBlue_thumb
+{    background-position: 0px -1520px;
+}
+
+.igs_Component_Gear03_Green_thumb
+{    background-position: 0px -1615px;
+}
+
+.igs_Component_Gear04_DarkRed_thumb
+{    background-position: 0px -1710px;
+}
+
+.igs_Component_Gear05_Orange_thumb
+{    background-position: 0px -1805px;
+}
+
+.igs_Component_Person01_DarkBlue_thumb
+{    background-position: 0px -1900px;
+}
+
+.igs_Component_Person02_Blue_thumb
+{    background-position: 0px -1995px;
+}
+
+.igs_Component_Person03_Green_thumb
+{    background-position: 0px -2090px;
+}
+
+.igs_Component_Person04_DarkRed_thumb
+{    background-position: 0px -2185px;
+}
+
+.igs_Component_Person05_Orange_thumb
+{    background-position: 0px -2280px;
+}
+
+.igs_Component_PuzzlePiece01_DarkBlue_thumb
+{    background-position: 0px -2375px;
+}
+
+.igs_Component_PuzzlePiece02_Blue_thumb
+{    background-position: 0px -2470px;
+}
+
+.igs_Component_PuzzlePiece03_Green_thumb
+{    background-position: 0px -2565px;
+}
+
+.igs_Component_PuzzlePiece04_Red_thumb
+{    background-position: 0px -2660px;
+}
+
+.igs_Component_PuzzlePiece05_Orange_thumb
+{    background-position: 0px -2755px;
+}
+
+.igs_Component_Sphere01_DarkBlue_thumb
+{    background-position: 0px -2850px;
+}
+
+.igs_Component_Sphere02_LightBlue_thumb
+{    background-position: 0px -2945px;
+}
+
+.igs_Component_Sphere03_Green_thumb
+{    background-position: 0px -3040px;
+}
+
+.igs_Component_Sphere04_DarkRed_thumb
+{    background-position: 0px -3135px;
+}
+
+.igs_Component_Sphere05_Orange_thumb
+{    background-position: 0px -3230px;
+}
+
+.igsy_Book_thumb
+{    background-position: 0px 0px;
+}
+
+.igsy_Box01_thumb
+{    background-position: 0px -95px;
+}
+
+.igsy_Box02_thumb
+{    background-position: 0px -190px;
+}
+
+.igsy_Bulb01_Yellow_thumb
+{    background-position: 0px -285px;
+}
+
+.igsy_Bulb02_Yellow_thumb
+{    background-position: 0px -380px;
+}
+
+.igsy_Calendar_thumb
+{    background-position: 0px -475px;
+}
+
+.igsy_Chart_thumb
+{    background-position: 0px -570px;
+}
+
+.igsy_Clipboard_thumb
+{    background-position: 0px -665px;
+}
+
+.igsy_Clock_thumb
+{    background-position: 0px -760px;
+}
+
+.igsy_Compass_thumb
+{    background-position: 0px -855px;
+}
+
+.igsy_Flag01_Red_thumb
+{    background-position: 0px -950px;
+}
+
+.igsy_Flag02_Green_thumb
+{    background-position: 0px -1045px;
+}
+
+.igsy_Flag03_Blue_thumb
+{    background-position: 0px -1140px;
+}
+
+.igsy_Gift_thumb
+{    background-position: 0px -1235px;
+}
+
+.igsy_House_thumb
+{    background-position: 0px -1330px;
+}
+
+.igsy_Icon_Computer01_White_thumb
+{    background-position: 0px -1425px;
+}
+
+.igsy_Icon_Computer02_Black_thumb
+{    background-position: 0px -1520px;
+}
+
+.igsy_Icon_Disk01_Blue_thumb
+{    background-position: 0px -1615px;
+}
+
+.igsy_Icon_Disk02_Green_thumb
+{    background-position: 0px -1710px;
+}
+
+.igsy_Icon_Document01_Grey_thumb
+{    background-position: 0px -1805px;
+}
+
+.igsy_Icon_Document02_Grey_thumb
+{    background-position: 0px -1900px;
+}
+
+.igsy_Icon_Document03_Blue_thumb
+{    background-position: 0px -1995px;
+}
+
+.igsy_Icon_Document04_Blue_thumb
+{    background-position: 0px -2090px;
+}
+
+.igsy_Icon_Envelope01_Blue_thumb
+{    background-position: 0px -2185px;
+}
+
+.igsy_Icon_Envelope02_Yellow_thumb
+{    background-position: 0px -2280px;
+}
+
+.igsy_Icon_Envelope03_Open_Yellow_thumb
+{    background-position: 0px -2375px;
+}
+
+.igsy_Icon_Envelope04_Open_Yellow_thumb
+{    background-position: 0px -2470px;
+}
+
+.igsy_Icon_Folder01_Yellow_thumb
+{    background-position: 0px -2565px;
+}
+
+.igsy_Icon_Folder02_Yellow_thumb
+{    background-position: 0px -2660px;
+}
+
+.igsy_Icon_Folder03_Open_Yellow_thumb
+{    background-position: 0px -2755px;
+}
+
+.igsy_Icon_Folder04_Open_Yellow_thumb
+{    background-position: 0px -2850px;
+}
+
+.igsy_Icon_Gear01_Grey_thumb
+{    background-position: 0px -2945px;
+}
+
+.igsy_Icon_Gear02_Blue_thumb
+{    background-position: 0px -3040px;
+}
+
+.igsy_Icon_Network01_Blue_thumb
+{    background-position: 0px -3135px;
+}
+
+.igsy_Icon_Network02_thumb
+{    background-position: 0px -3230px;
+}
+
+.igsy_Icon_Pencil01_thumb
+{    background-position: 0px -3325px;
+}
+
+.igsy_Icon_Pencil02_thumb
+{    background-position: 0px -3420px;
+}
+
+.igsy_Icon_Printer01_White_thumb
+{    background-position: 0px -3515px;
+}
+
+.igsy_Icon_Printer02_Black_thumb
+{    background-position: 0px -3610px;
+}
+
+.igsy_Key01_thumb
+{    background-position: 0px -3705px;
+}
+
+.igsy_Key02_thumb
+{    background-position: 0px -3800px;
+}
+
+.igsy_Lock01_Yellow_thumb
+{    background-position: 0px -3895px;
+}
+
+.igsy_Lock02_Yellow_thumb
+{    background-position: 0px -3990px;
+}
+
+.igsy_Lock03_Blue_thumb
+{    background-position: 0px -4085px;
+}
+
+.igsy_Lock04_Blue_thumb
+{    background-position: 0px -4180px;
+}
+
+.igsy_Magnet_thumb
+{    background-position: 0px -4275px;
+}
+
+.igsy_MagnifyingGlass_thumb
+{    background-position: 0px -4370px;
+}
+
+.igsy_Medal_thumb
+{    background-position: 0px -4465px;
+}
+
+.igsy_Notebook_thumb
+{    background-position: 0px -4560px;
+}
+
+.igsy_Phone_thumb
+{    background-position: 0px -4655px;
+}
+
+.igsy_PieChart_thumb
+{    background-position: 0px -4750px;
+}
+
+.igsy_Pin_thumb
+{    background-position: 0px -4845px;
+}
+
+.igsy_PuzzlePiece_thumb
+{    background-position: 0px -4940px;
+}
+
+.igsy_PuzzlePieces_thumb
+{    background-position: 0px -5035px;
+}
+
+.igsy_Roadblock_thumb
+{    background-position: 0px -5130px;
+}
+
+.igsy_Scissors_thumb
+{    background-position: 0px -5225px;
+}
+
+.igsy_Shield01_thumb
+{    background-position: 0px -5320px;
+}
+
+.igsy_Shield02_Orange_thumb
+{    background-position: 0px -5415px;
+}
+
+.igsy_Shield03_Blue_thumb
+{    background-position: 0px -5510px;
+}
+
+.igsy_Sign_Ban01_thumb
+{    background-position: 0px -5605px;
+}
+
+.igsy_Sign_Ban02_thumb
+{    background-position: 0px -5700px;
+}
+
+.igsy_Sign_CheckBox01_thumb
+{    background-position: 0px -5795px;
+}
+
+.igsy_Sign_CheckBox02_Unchecked_thumb
+{    background-position: 0px -5890px;
+}
+
+.igsy_Sign_Checkmark01_Green_thumb
+{    background-position: 0px -5985px;
+}
+
+.igsy_Sign_Checkmark02_Green_thumb
+{    background-position: 0px -6080px;
+}
+
+.igsy_Sign_DoNotEnter_thumb
+{    background-position: 0px -6175px;
+}
+
+.igsy_Sign_Error01_thumb
+{    background-position: 0px -6270px;
+}
+
+.igsy_Sign_Error02_thumb
+{    background-position: 0px -6365px;
+}
+
+.igsy_Sign_ExclamationPoint01_Red_thumb
+{    background-position: 0px -6460px;
+}
+
+.igsy_Sign_ExclamationPoint02_Orange_thumb
+{    background-position: 0px -6555px;
+}
+
+.igsy_Sign_Help01_Green_thumb
+{    background-position: 0px -6650px;
+}
+
+.igsy_Sign_Help02_Blue_thumb
+{    background-position: 0px -6745px;
+}
+
+.igsy_Sign_Information_thumb
+{    background-position: 0px -6840px;
+}
+
+.igsy_Sign_Null_thumb
+{    background-position: 0px -6935px;
+}
+
+.igsy_Sign_QuestionMark01_Blue_thumb
+{    background-position: 0px -7030px;
+}
+
+.igsy_Sign_QuestionMark02_Red_thumb
+{    background-position: 0px -7125px;
+}
+
+.igsy_Sign_RadioButton01_thumb
+{    background-position: 0px -7220px;
+}
+
+.igsy_Sign_RadioButton02_Unchecked_thumb
+{    background-position: 0px -7315px;
+}
+
+.igsy_Sign_Warning01_Red_thumb
+{    background-position: 0px -7410px;
+}
+
+.igsy_Sign_Warning02_Orange_thumb
+{    background-position: 0px -7505px;
+}
+
+.igsy_Sign_X01_Red_thumb
+{    background-position: 0px -7600px;
+}
+
+.igsy_Sign_X02_Red_thumb
+{    background-position: 0px -7695px;
+}
+
+.igsy_Star_Yellow_thumb
+{    background-position: 0px -7790px;
+}
+
+.igsy_Wrench_thumb
+{    background-position: 0px -7885px;
+}
+
+.igt_Airplane_Blue_thumb
+{    background-position: 0px 0px;
+}
+
+.igt_Bicycle_Blue_thumb
+{    background-position: 0px -95px;
+}
+
+.igt_Bus_thumb
+{    background-position: 0px -190px;
+}
+
+.igt_Canoe_Blue_thumb
+{    background-position: 0px -285px;
+}
+
+.igt_Car_Red_thumb
+{    background-position: 0px -380px;
+}
+
+.igt_Helicopter_Blue_thumb
+{    background-position: 0px -475px;
+}
+
+.igt_Motorcycle_Red_thumb
+{    background-position: 0px -570px;
+}
+
+.igt_Pedestrian_Blue_thumb
+{    background-position: 0px -665px;
+}
+
+.igt_PersonalTransporter_Green_thumb
+{    background-position: 0px -760px;
+}
+
+.igt_Sailboat_Red_thumb
+{    background-position: 0px -855px;
+}
+
+.igt_Scooter_Orange_thumb
+{    background-position: 0px -950px;
+}
+
+.igt_Train_Red_thumb
+{    background-position: 0px -1045px;
+}
+
+.igt_Truck_Blue_thumb
+{    background-position: 0px -1140px;
+}
+
+.lg_blank
+{    background-position: 0px -0px;
+}
+
+.lg_ALT0
+{    background-position: 0px -170px;
+}
+
+.lg_ALT1
+{    background-position: 0px -255px;
+}
+
+.lg_ALT3
+{    background-position: 0px -340px;
+}
+
+.lg_ALT19
+{    background-position: 0px -85px;
+}
+
+.lg_ALT32
+{    background-position: 0px -595px;
+}
+
+.lg_ALT9
+{    background-position: 0px -425px;
+}
+
+.lg_ALT6
+{    background-position: 0px -510px;
+}
+.lg_ALT1-RTL
+{    background-position: 0px -680px;
+}
+
+.lg_ALT3-RTL
+{    background-position: 0px -765px;
+}
+
+.lg_ALT6-RTL
+{    background-position: 0px -850px;
+}
+
+.lg_ALT9-RTL
+{    background-position: 0px -935px;
+}
+
+.templateDesign_default
+{
+	background-color: white;
+	background-image: none;
+	background-repeat: none;
+}
+
+.templateDesign_transform
+{
+	background-position: 0px -664px;
+}
+
+.templateDesign_purpletwist
+{
+	background-position: 0px -913px;
+}
+
+.templateDesign_bluewaves
+{
+	background-position: 0px -747px;
+}
+
+.templateDesign_block
+{
+	background-position: 0px -498px;
+}
+
+.templateDesign_bluecircles
+{
+	background-position: 0px -415px;
+}
+
+.templateDesign_diagonal
+{
+	background-position: 0px -332px;
+}
+
+.templateDesign_greenblocks
+{
+	background-position: 0px -581px;
+}
+
+.templateDesign_grid
+{
+	background-position: 0px -249px;
+}
+
+.templateDesign_yellowdots
+{
+	background-position: 0px -166px;
+}
+
+.templateDesign_delicate
+{
+	background-position: 0px -83px;
+}
+.templateDesign_orange
+{
+	background-position: 0px -830px;
+}
+.templateDesign_socialbusiness
+{
+	background-position: 0px -0px;
+}
+
+
+
+
+
+
+
+
+
+
+

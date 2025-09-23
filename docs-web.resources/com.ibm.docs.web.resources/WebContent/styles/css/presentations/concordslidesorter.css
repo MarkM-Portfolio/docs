@@ -1,0 +1,538 @@
+@import url("documentContent.css");
+.concord .PM1_concord {
+				height:98px; 
+				/* jmt comment out for LOLA width:130px;  */
+				width:130.50px;
+				border:1px #cccccc solid;
+				margin-left:35px;
+				margin-right:7px;
+				/*margin-top:15px;*/
+				/*font-family: Arial, sans-serif, sans;*/
+				/* jmt comment out for LOLA font-size: 3px !important; */
+				/* Font size is now set inline for variable page formats */
+				/* Removed !important due to this change */
+				font-size: 2.970747px;
+				position: relative;
+				overflow:hidden;
+			}
+
+.concord div[dir="rtl"] .PM1_concord {
+    margin-left: 7px;
+    margin-right: 35px;
+    direction: ltr;
+}
+
+.concord .slideWrapper{
+	margin-top:15px;
+	position: relative;
+}
+.concord .slideContent
+{
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+.concord .slideUtil
+{
+	width:22px;
+	height:98px;
+	top:4px;
+	left:8px;
+	float:left;
+	position:absolute
+}
+
+.concord div[dir="rtl"] .slideUtil {
+    float: right;
+    right: 8px;
+    left: auto;
+}
+
+.concord .slideNumber
+{
+    color: #4C4C4C;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    height: 20px;
+    text-align: left;
+    vertical-align: middle;
+	
+}
+
+.concord div[dir="rtl"] .slideNumber {
+    text-align: right
+}
+
+.concord .slideTransitions_wipeDown
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_wipeDown.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_wipeLeft
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_wipeLeft.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_wipeUp
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_wipeUp.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_wipeRight
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_wipeRight.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_coverDown
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_coverDown.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_coverLeft
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_coverLeft.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_coverRight
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_coverRight.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_coverUp
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_coverUp.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_pushDown
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_pushDown.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_pushLeft
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_pushLeft.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_pushRight
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_pushRight.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_pushUp
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_pushUp.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_fadeSmoothly
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_fadeSmoothly.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_notSupported
+{
+  background-image: url("../presentation2/images/slidetrans/slideTransitions_notSupported.png");	
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .slideTransitions_none
+{
+    height: 12px;
+    width: 14px;    
+    margin-left: 1px;
+    display: block;
+    overflow: hidden;
+}
+
+.concord .backgroundImage{
+	-webkit-user-select: none;  
+	-khtml-user-select: none;   
+	-moz-user-select: none; 
+	-o-user-select: none;    
+	user-select: none; 
+
+}
+
+/* jmt moved to documentContent.css 
+	p {margin: 0px; }
+	ul {margin: 0px; padding-left:12px;}
+*/
+.concord p,.concord ul,.concord ol {
+	-webkit-text-size-adjust: none;
+}
+
+/* Newly added CSS */
+.concord ol li,.concord ul li {
+	font-size:1em;
+	line-height:1.3;
+/*	list-style-type: disc;*/
+	padding: 0px;
+	margin:0;
+}
+/*
+.concord ul,.concord ol {
+	margin:0 0 0 7px;
+	padding-left:2px;
+}
+*/
+.concord .slideSelected
+{
+	/*border: 3px #cccccc solid;*/
+	border: 7px #CFCFCF solid;
+	-moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.concord .slideSelectedWithTask
+{
+	border: 7px #CFCFCF solid;
+	-moz-border-radius: 7px 7px 0 0;
+    -webkit-border-radius: 7px 7px 0 0;
+    -khtml-border-radius: 7px 7px 0 0;
+    border-radius: 7px 7px 0 0;
+}
+
+.concord .draw_page:hover{
+	border: 1px #000000 solid;
+	cursor: pointer;
+}
+
+.concord .slideOver{
+	/*border: 1px #000000 solid;*/
+}
+.concord .slideSelected:hover
+{
+	/*border: 3px #cccccc solid;*/
+	border: 7px #CFCFCF solid;
+	-moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px;
+}
+.concord .slideSelectedWithTask:hover
+{
+	border: 7px #CFCFCF solid;
+	-moz-border-radius: 7px 7px 0 0;
+    -webkit-border-radius: 7px 7px 0 0;
+    -khtml-border-radius: 7px 7px 0 0;
+    border-radius: 7px 7px 0 0;
+}
+.concord .taskContainer{
+	/*border: 1px blue solid;
+	/*width:130px;
+	margin-left:15px;
+	margin-right:7px;
+	margin-top:2px;
+	padding:3px;
+	*/
+	font-size: 12px;
+}
+.concord .taskEntryWrite{
+	/*background: none repeat scroll 0 0 #CFCFCF;*/
+    height: 23px;
+    margin-left: 35px;
+    margin-right: 14px;
+    text-align: left;
+    width: 130.5px;
+}
+.concord .taskEntryImg{
+    padding-right: 2px;
+}
+
+.concord .taskEntryWriteImg{
+	background-image: url("../images/taskhistory/Write16.png");
+    background-repeat: no-repeat;
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+.concord .taskEntryReview{
+	/*background: none repeat scroll 0 0 #CFCFCF;*/
+    height: 23px;
+    margin-left: 35px;
+    margin-right: 14px;
+    text-align: left;
+    width: 130.5px;
+}
+.concord .taskEntryReviewImg{
+	background-image: url("../images/taskhistory/Review16.png");
+    background-repeat: no-repeat;
+    float: left;
+    width: 16px;
+    height: 16px;    
+}
+.concord .taskEntryRejectImg{
+	background-image: url("../images/taskhistory/ClipboardReject16.png");
+    background-repeat: no-repeat;
+    float: left;
+    width: 16px;
+    height: 16px;    
+}
+.concord .taskEntryCompleteImg{
+	background-image: url("../images/taskhistory/Checkbox16.png");
+    background-repeat: no-repeat;
+    float: left;
+    width: 16px;
+    height: 16px;    
+}
+.concord .taskEntryApproveImg{
+	background-image: url("../images/taskhistory/ClipboardApprove16.png");
+    background-repeat: no-repeat;
+    float: left;
+    width: 16px;
+    height: 16px;    
+}
+
+.concord div[dir="rtl"] .taskEntryWrite,
+.concord div[dir="rtl"] .taskEntryReview,
+.concord div[dir="rtl"] .taskEntryReject,
+.concord div[dir="rtl"] .taskEntryComplete,
+.concord div[dir="rtl"] .taskEntryApprove {
+    margin-left: 14px;
+    margin-right: 35px;
+    text-align: right;
+}
+
+.concord div[dir="rtl"] .taskEntryWriteImg,
+.concord div[dir="rtl"] .taskEntryReviewImg,
+.concord div[dir="rtl"] .taskEntryRejectImg,
+.concord div[dir="rtl"] .taskEntryCompleteImg,
+.concord div[dir="rtl"] .taskEntryApproveImg{
+    float: right;
+}
+
+.concord .taskEntryTxt{
+    padding-left: 5px;
+}
+
+.concord div[dir="rtl"] .taskEntryTxt{
+    padding-right: 5px;
+}
+
+.concord .taskEntryCompleteTxt{
+	text-decoration: line-through;
+}
+.concord .taskWithSlideSelected{
+	-moz-border-radius: 0 0 7px 7px;
+    -webkit-border-radius: 0 0 7px 7px;
+    -khtml-border-radius: 0 0 7px 7px;
+    border-radius: 0 0 7px 7px;
+    background: none repeat scroll 0 0 #CFCFCF;
+    border-color: -moz-use-text-color #CFCFCF #CFCFCF;
+    border-right: 7px solid #CFCFCF;
+    border-left: 7px solid #CFCFCF;
+    border-style: none solid solid;
+    border-width: 0 7px 0;
+}
+/*
+.taskEntryReview{
+	border: 1px green dotted;
+	width:130px;
+	margin-left:35px;
+	margin-right:7px;
+	margin-top:2px;
+}
+
+.taskEntryComplete{
+	border: 1px blue solid;
+	width:130px;
+	margin-left:35px;
+	margin-right:7px;
+	margin-top:2px;
+}
+*/
+.taskContainerHidden{
+	display:none;
+}
+
+
+
+
+/* temp DND css */
+
+/*
+
+	there are basically all the classes you can set 
+	for the various dojo.dnd states and elements in
+	their simplest form. hacking welcome. 
+
+*/
+.dndDropPosBefore{
+	position: absolute;
+	width:130px;
+	margin-left:35px;
+	margin-right:7px;
+	top: -10px;
+}
+.dndDropPosAfter{
+	position: absolute;
+	width:130px;
+	margin-left:35px;
+	margin-right:7px;
+	bottom:-10px;
+}
+.container {
+	border: 3px solid #ccc;
+	padding: 1em 3em; 
+	cursor: default;
+	radius: 8pt;
+	background: #fff;
+	-moz-border-radius: 8pt 8pt;
+}
+
+.dojoDndContainerOver {
+	/* cursor:pointer; */
+	/* border: 3px solid #aaa;*/
+}
+
+.dojoDndTargetDisabled {
+	background: #eee;
+}
+
+.dojoDndItem { 
+	padding: 3px;
+}
+
+.dj_ff2 .dojoDndItem {
+	-moz-user-select: none; /* workaround FF2 dragging bug, see #6345, #4854, #6350 */
+} 
+
+.dojoDndItemOver {
+	/*background: #ededed;*/
+	/*cursor: pointer;*/
+}
+
+.dojoDndItemSelected {
+	/*background: #ccf; color: #444;*/
+}
+
+.dojoDndItemAnchor {
+	/*background: #ccf; color: black;*/
+	/*border: 1px dashed #000000;*/
+}
+
+.dojoDndItemOver .dojoDndItemSelected {
+	background: #ededed;
+}
+
+.dojoDndItemOver .dojoDndItemAnchor {
+	background: #ededed;
+}
+
+.dojoDndItemBefore {
+	/*border-top: 2px solid #369;*/
+}
+
+.dojoDndItemAfter {
+	/*border-bottom: 2px solid #369;*/
+}
+
+.dojoDndAvatar {
+	font-size: 75%;
+	-moz-border-radius: 8pt 8pt;
+	radius: 8pt;	
+	opacity:.5;
+}
+	
+.dojoDndAvatarHeader {
+	background: #aaa;
+	display:none;
+}
+
+.dojoDndAvatarItem {
+	background: #fff;
+	border-bottom: 1px solid #666;
+}
+
+ .dojoDndAvatarItem .PM1_concord {
+	border:1px dashed #CCCCCC;
+	font-size:3px !important;
+	height:98px;
+	position:relative;
+	width:130px;
+	margin:0px;
+}
+/*
+//defect 9707, the tablestyles.css already sets word-wrap on the td and th for tables
+//but in the sorter, it is overwritten by these settings. 
+//Looks like these settings may be an old code that we no longer use because now  we have tablestyles.css
+.table_table td {
+	word-wrap: normal;
+}
+.table_table th {
+	word-wrap: normal;
+}
+*/

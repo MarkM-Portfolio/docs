@@ -1,0 +1,97 @@
+{
+	"repositoryPath": "$conversion_install_root/data",
+	"keepResultTime" :  36000,
+	"maxFileSize" : 10240,
+	   
+	"corePoolSize": 3,	
+	"maximumPoolSize" : 100,
+	"queueCapacity" : 3000,
+	"keepAliveTime" : 60000,
+	
+	"cleanTempFilesSchedule" : 60,
+	
+	"token" : "fallseason2011",
+	
+	"j2c_alias": "docsAdmin",
+	
+	"viewer_j2c_alias": "viewerAdmin",
+	
+	"software_mode" : "$software_mode",
+	
+	"symphony": {
+		"host-config":
+		[
+			$host_list
+		],
+		"used-host-count": $sym_count,
+		"max-queue-size": $sym_count
+	},
+	"document": {
+		"comments":"The items in this section are set by default and are not allowed to be customized.",
+		"max-page-count":300,
+		"max-pure-text-size":768
+	},
+	"spreadSheet":{
+		"comments":"The items in this section are set by default and are not allowed to be customized.",
+		"max-sheet-rows":30000,
+		"max-sheet-columns": 1024,
+		"cell-max-num":1000000,
+		"formula-cell-max-num":100000
+	},
+	"presentation":{
+	   "comments":"The items in this section are set by default and are not allowed to be customized.",
+	   "image-down-size-width": 800,
+	   "image-down-size-height": 600,
+	   "image-down-size": 768,
+	   "image-down-size-pool": 10,
+	   "max-pages": 150,
+	   "max-graphics": 3000,
+	   "encode-graphics": true,
+	   "encode-threshold-graphics": 2048
+	},
+	"stellent":{
+		"path":"$conversion_install_root/stellent",
+		"timeout":120000,
+		"poolSize":4,	
+		"queueCapacity":32,
+		"tempdir":""
+	},
+	"libreOffice":{
+		"path":"/opt/libreoffice7.2/program",
+		"timeout":120000,
+		"poolSize":4,	
+		"queueCapacity":32
+	},
+	"convertDuringUpload":{
+		"idleResourcePercent":75
+	},
+	"conversionLib": {
+		"path": "$conversion_install_root/conversionlib/",
+		"enabled": true,
+		"timeout":120000,
+		"maxInstanceNum": $sym_count
+	},
+	"shared_storage" :
+	{
+	    "docs": {
+	        "type": "$docs_shared_storage_type",
+	    	"server": "$docs_shared_storage_remote_server",
+	    	"from": "$docs_shared_storage_remote_path",
+	    	"to": "$docs_shared_storage_local_path",
+	    	"retry": "-1",
+	    	"timeo": "-1"
+	    },
+	    "viewer": {
+	        "type": "$viewer_shared_storage_type",
+	    	"server": "$viewer_shared_storage_remote_server",
+	    	"from": "$viewer_shared_storage_remote_path",
+	    	"to": "$viewer_shared_storage_local_path",
+	    	"retry": "-1",
+	    	"timeo": "-1"
+	    }
+	},
+	"topology":
+	{
+		"viewer": "$viewer_url"
+	}
+}

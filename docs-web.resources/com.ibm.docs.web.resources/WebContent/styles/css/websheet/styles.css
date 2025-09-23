@@ -1,0 +1,2081 @@
+/*
+ div.runsAsWidget {
+ height: 400px;
+ width:  100% !important;
+ cursor: auto;
+ }
+*/
+
+.dj_gecko .input-box{
+	outline	: none;
+}
+
+/*for formula suggestion list styles*/
+
+#ws_formula_suggestion{
+	font: 12px Helvetica, Arial ;
+}
+.websheet-name, .ws-n {
+    font-style: italic;
+}
+
+.dijitMenuItemSelected .ws-f,
+.dijitMenuItemSelected .ws-n{
+    font-weight: bold;
+}
+
+.dijitRtl .ws-f,
+.dijitRtl .ws-n{
+    text-align: left;
+	display: block !important;
+}
+
+
+.websheet-formula-description, .ws-f-d {
+	width: 194px;
+	word-wrap: break-word;
+	white-space: normal !important;
+	text-indent: 0;
+	display : none;
+	color: #C3C3C3;
+}
+.websheet-argument-candidates, .ws-c {
+	color: black;
+}
+.dijitMenuItemSelected .ws-c{
+	color: #FFFFFF;
+}
+
+.websheet-argument-candidates, .ws-a-c {
+	color: #999999;
+}
+
+.dijitMenuItemSelected .ws-a-c{
+	color: #C3C3C3;
+}
+.dijitRtl .ws-a-c {
+	text-align: left;
+	display: block !important;
+}
+
+#ws_formula_suggestion.dijitMenu{
+	border: 1px solid #A9A9A9 !important;
+}
+
+#ws_formula_suggestion .dijitMenuItem  {
+	padding: 3px 6px;
+	text-indent: 0px; 
+}
+
+.dijitMenuItemSelected  .websheet-formula-description,
+.dijitMenuItemSelected  .ws-f-d {
+	display : block !important;
+}
+/*for websheet status bar*/
+.websheet-statusbar {
+	height: 24px;
+	float: right;
+	width: 99.5%;
+	position: relative;
+	padding-top: 5px;
+	padding-right: 10px;
+	border: 1px solid #cecece;
+	/*box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);*/
+	background-color: #eeeeee;
+}
+.dijitRtl .websheet-statusbar{
+	float: left;
+	direction: rtl;
+}
+
+.websheet-statusbar .dijitDropDownButton .dijitButtonNode{
+	background-color: #eeeeee !important;
+	background-image: none !important;
+}
+.websheet-statusbar #status_menu{
+	padding-left: 20px;
+}
+.websheet-statusbar .status_value{
+	font-weight: bold;
+	padding-left: 7px;
+}
+.websheet-statusbar .status_func{
+	padding-left: 25px;
+}
+.websheet-statusbar > span {
+	float: right;
+	cursor: default;
+	font: 12px Arial,Helvetica,sans-serif;
+}
+.dijitRtl .websheet-statusbar > span {
+	float: left;
+}
+.websheet-statusbar.HTMLView, .websheet-statusbar.HTMLView .dijitButtonContents.dijitDownArrowButton {
+	color:#ffffff;
+}
+.websheet-statusbar.HTMLView .dijitButtonContents.dijitDownArrowButton{
+	background-color: rgba(0,0,0,0.8);
+}
+.websheetMobile .websheet-statusbar {
+	display: none !important;
+}
+/*status-bar:~*/
+
+/*websheet tab container for mobile */
+.websheetMobile #sheet_node .dijitTabListContainer-bottom.dijitTabController.dijitScrollingTabController {
+	display: none !important;
+}
+.websheetMobile #sheet_node .dijitTabListWrapper.dijitTabContainerBottomNone {
+	height: 0 !important;
+}
+
+#sheet_node .websheet-statusbar .dijitDropDownButton .dijitButtonNode {
+	padding: 0;
+	border: 0;
+} 
+
+/*custmized tab container for websheet*/
+#sheet_node .dijitTabContainerBottom-tabs .dijitTabContent{
+	padding: 2px 15px 2px 15px;
+	line-height: normal;
+	display: inline-block;
+}
+#sheet_node .dijitTabContainerBottom-tabs .dijitTab {
+	margin: 0;
+	height: 18px;
+	background-color: #eeeeee;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	border-color: #cecece;
+	border-width: 1px 1px 0 0;
+}
+
+#sheet_node .dijitTabContainerBottom-tabs .dijitTabChecked {
+	background-color: #fff;
+	font-weight: bold;
+}
+
+#sheet_node .dijitTabListWrapper, #sheet_node .dijitTabListContainer-bottom{
+	height: 2em !important;
+}
+
+#sheet_node .tabStripButton {
+	padding: 2px 3px;
+}
+#sheet_node .dijitTabContainerBottomChildWrapper {
+	height: 100%;
+	width: 100%;
+}
+/*~*/
+
+/*datagrid, text layout*/
+div.canvas-measure-node, canvas.canvas-measure-node {
+	position : absolute;
+	z-index: -1;
+}
+.canvas-measure-node .c-wrap
+{
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow: hidden !important;
+	line-height: 1;
+}
+/*~*/
+/*data grid table nodes outline, we no longer rely on 'focus' on cell node to support A11Y*/
+#sheet_node td:focus {
+	outline:none;
+}
+/**/
+.c-cs-editing{
+	box-shadow: inset 0 0 5px #404040;
+}
+
+.input-box {
+	border: 2px solid #000000;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    word-wrap: break-word;
+    resize:none;
+    white-space: pre-wrap;
+    background-color: #FFFFFF;
+    cursor: text;
+    line-height: 1;
+}
+
+.input-box.conflict-removed {
+	border: 2px solid #FF0000;
+}
+
+.edit-cell-indicator{
+	cursor: move;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	position: absolute;
+	height : 17px;
+	background-color: #404040;
+	color : #fff;
+	padding : 0px 2px 0px 2px;
+	z-index: 100000; /*keep same with input box, defined in selectRect.css*/
+}
+
+.formula-detail-container{
+	font: 12px Helvetica, Arial;
+	background-color: white;
+	/*border: 1px solid #404040;*/
+	word-wrap:break-word;
+	overflow-x:hidden;
+	overflow-y:auto;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+}
+
+.formula-detail-title{
+	color: #999999;
+	background-color: #e5e5e5;
+	padding:1px 12px 1px 12px
+}
+
+.formula-detail-title .highlightFormulaParam , .highlightFormulaName{
+	font-weight: bold;
+	color: black;
+}
+
+.formula-detail-content{
+	/*padding:5px 0 5px 10px;*/
+}
+
+.input-box-hidden {
+	position: absolute;
+	float: left;	
+	font: 1em/1.2em Arial,Helvetica,sans-serif;
+}
+
+.freezeSlotDiv {
+	background: #a6a6a6;
+}
+
+.freezeDragDiv {
+	background: #a6a6a6;
+	opacity: .35;
+	z-index: 80001;
+}
+
+.freezeSnapDiv {
+	background: #97cd4d;
+	opacity:.35;
+}
+
+.viewGapRight {
+	border-right: 3px solid #a6a6a6;
+}
+
+.viewGapBottom {
+	border-bottom: 3px solid #a6a6a6;
+}
+
+.rowShadow {
+	box-shadow:0 1px 3px  rgb(0, 0, 0);
+}
+
+.colShadow {
+	box-shadow:1px 0 3px rgb(0, 0, 0)
+}
+
+span:focus{
+	outline:1px dotted;
+}
+
+/*Customized Grid Layout*/
+
+.sheetHeaderNode, .columnHeaderNodde, .columnLeftHeader, .columnRightHeader{
+	position: relative;
+	display: inline-block;
+}
+
+.columnLeftHeader, .columnRightHeader {
+	overflow: hidden;
+}
+
+.gridTopContainer, .gridBottomContainer{
+	position: relative;
+}
+
+.gridContentSubview{
+	position: relative;
+	display:  inline-block;
+	overflow: hidden;
+}
+
+.header-wrapper{
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.dojoxGridRowTable tr.fake
+{	
+	height: 0;
+}
+table tr.fake th
+{
+	height: 0px;
+	line-height: 12px;
+	overflow: hidden;
+	padding-top: 0 !important;
+	padding-bottom:0 !important;
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	empty-cells: show;
+	font-size: 12px;
+}
+
+table tr.fake > th *
+{
+	display: none;
+}
+
+/*Specify a max height for the MoreCurrencies Popup menu (Format => Number => more...)*/
+.moreCurrenciesPopup {
+	max-height: 300px;
+}
+/**/
+.ibmdocColorPalette {
+    background-color: #FFFFFF;
+    border: 0;   
+    padding: 8px;
+}
+
+.ibmdocColorPalette .dijitPaletteColorSpan { 
+    border: none;
+    cursor: default;
+    width: 14px;
+    height: 14px;   
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.25); 
+    margin: 1px;
+}
+
+.ibmdocColorPalette .dijitPaletteCell
+{
+	transition: background-color .1s linear,  border .1s linear, box-shadow .1s linear;
+	border-radius: 2px !important;
+}
+
+.ibmdocColorPalette .dijitPaletteCell.dijitPaletteCellSelectedHighlight,
+.ibmdocColorPalette .dijitPaletteCell.dijitPaletteCellSelectedHighlight:hover {
+ 	background-color: rgba(0, 0, 0, 0.10) !important;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.18) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.18))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#2e000000',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #808080 !important;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.2) !important;
+    opacity: 1;
+    cursor: default;
+}
+
+.ibmdocColorPalette .dijitPaletteCell:hover {
+	background-color: transparent;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.08))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#14000000',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #999999 !important;
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+	opacity: 1;
+	cursor: default;
+}
+
+
+.oneui30 .ibmdocColorPalette .dijitPaletteCell {
+	border: 1px solid transparent;
+    padding: 3px;
+    height: 16px;
+    line-height: 0;
+    width: 16px;
+   	cursor: default !important;
+   	margin-right: -1px !important;
+
+}
+
+.oneui30 .ibmdocColorPalette  div+div .dijitPaletteCell
+{
+   	margin-top:  -1px !important;
+}
+
+.unsupportFeature
+{
+	margin: 0px 0px 1px 10px;
+}
+/*
+ .dijitTooltipContents {
+ font-size: 0.85em;
+ }
+ */ .formula {
+    background-image: url(./img/tb_16_function_n.png);
+    background-position: left center;
+    padding-left: 18px !important;
+    background-repeat: no-repeat;
+} .smallMenuNote {
+    font-size: smaller;
+} .calcError {
+    color: red;
+    background-image: url(./img/sever_warn_obj12.gif);
+    background-position: left center;
+    padding-left: 18px !important;
+    padding-top: 3px;
+    background-repeat: no-repeat;
+    font-style: italic;
+} .dojoxGrid-cell-focus-color-0 {
+   border-color #8DC0F3 !important;
+} .dojoxGrid-cell-focus-color-1 {
+    border-color black !important;
+} .dojoxGrid-cell-focus-color-2 {
+    border-color #7CE27C !important;
+} .dojoxGrid-cell-focus-color-3 {
+    border-color gray !important;
+} .dojoxGrid-cell-focus-color-4 {
+    border-color #FFEE94 !important;
+} .dojoxGrid-cell-focus-color-5 {
+    border-color #FFC0C0 !important;
+} .dojoxGrid-cell-focus-color-6 {
+    border-color orange !important;
+} .dojoxGrid-cell-focus-color-7 {
+    border-color #FF007F !important;
+} .bubble-color-0 {
+    background-color: #8DC0F3;
+} .bubble-color-1 {
+    background-color: black;
+} .bubble-color-2 {
+    background-color: #7CE27C;
+} .bubble-color-3 {
+    background-color: gray;
+} .bubble-color-4 {
+    background-color: #FFEE94;
+} .bubble-color-5 {
+    background-color: #FFC0C0;
+} .bubble-color-6 {
+    background-color: orange;
+} .bubble-color-7 {
+    background-color: #FF007F;
+} .dojoxGrid-cell-locked {
+    background-image: url(./img/lock.gif) !important;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.dojoxGridRow {
+	border: none !important;
+}
+
+/*
+ * Tweaks for tundraGrid style
+ */ 
+.dojoxGridRowOver .dojoxGridCell, .dojoxGrid-row-over .dojoxGrid-cell {
+   
+}
+ .dojoxGridRowSelected, .dojoxGridRowEditing td {
+    /*background-color: transparent !important;*/
+}
+ .dojoxGridRowOdd.dojoxGridRowSelected, .dojoxGridRowOdd.dojoxGridRowEditing, .dojoxGridRowOdd.dojoxGridRowOver {
+   
+}
+ .tundra .dojoxExpandoTitle {
+    border: none;
+} 
+
+/*Tool bar border*/
+.unsupportedformula {
+	position:relative; 
+	float:right; 
+	display:block; 
+	width:10px; 
+	height:10px; 
+	padding:1px; 
+	cursor:default;
+	clear:right;
+}
+.fullStringAlignRight{
+	float:right; 
+	position:relative; 
+	display:block; 
+/*	z-index:10; */
+}
+.fullStringAlignLeft{
+	float:left; 
+	position:relative; 
+	display:block; 
+}
+
+/*Space between toolbar and worksheetcontainer*/
+.tundra .dijitSplitterH, .tundra .dijitGutterH {
+	height:1px !important;
+}
+
+.headerFocus {
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    background-color: #eee;
+    border-right: 1px #a9a9a9 solid !important;
+    border-bottom: 1px #a9a9a9 solid;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	height: 17px;
+}
+
+.dojoxGridRowTable td.rowIndex {
+	/* rowIndex needs to re-write all import styles in case they are overwrite by default cell style */ 
+    text-align: center  !important;
+    
+    font: bold 11px Arial !important;
+	color: #222 !important;
+	text-decoration: none !important;
+	 
+    background-color: #eee;
+    border-right: 1px #a9a9a9 solid !important;
+    border-bottom: 1px #a9a9a9 solid;
+    vertical-align: middle;
+    padding: 0 0px 1px 0px;
+} 
+.dojoxGridRowTable th.sheetHeader {
+	border-right: 1px #a9a9a9 solid !important;
+    border-bottom: 1px #a9a9a9 solid;
+    padding-bottom: 2px !important;
+    width: 35px !important;
+}
+
+.fake th.sheetHeader{
+	padding: 0px !important;
+}
+
+.dojoxGridRowTable td.hiddenRow {
+    border-top:1px #A9A9A9 solid;
+}
+.dj_webkit .dojoxGridRowTable td.hiddenRow {
+    padding-bottom: 0px !important;
+}
+
+.dojoxGridRowTable td.hiddenRowBottom {
+	border-bottom: 1px #A9A9A9 solid;
+} 
+.dojoxGridRowTable th.hiddenColumnLeft {
+    border-left:1px #A9A9A9 solid;
+}
+.dojoxGridRowTable th.hiddenColumnRight {
+    border-right:1px #A9A9A9 solid !important;
+}
+
+.dojoxGridRowTable td {
+	border-color: #d2d2d2;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	color: #000;	
+    font-size: 10pt;
+    font-family: Arial;
+    vertical-align: bottom;
+    line-height: 1;
+    padding: 0 1px 1px 1px;
+    text-align: right;
+    white-space: pre;
+    overflow: hidden;
+	/*background-color: transparent !important*/;
+}
+
+.extendCellContent {
+	overflow: visible !important;
+}
+
+.gridCellFullString .dojoxGridRowTable td
+{
+	overflow:visible;
+	outline:none;
+}
+
+.dojoxGridRowTable .c-wrap
+{
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow: hidden !important;
+}
+
+.dojoxGridRowTable .c-al
+{
+	text-align: left;
+}
+
+.dojoxGridRowTable .c-ac
+{
+	text-align: center;
+}
+
+.dojoxGridRowTable .c-vt
+{
+	vertical-align: top;
+}
+
+.lotusJapanese .dojoxGridRowTable td {
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+.lotusKorean .dojoxGridRowTable td {
+	font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif;
+}
+
+.dijit_a11y .imgcoedit{
+	position:relative; 
+	display:block; 
+	float:right; 
+	padding:0px; 
+	top:0px; 
+	text-decoration:none;
+}
+
+.pasteContainer
+{
+	position: absolute;
+	top: -50010px;
+	left: -50010px;
+	width: 50000px;
+	height: 50000px;
+	overflow: hidden;
+}
+
+.copyContainer
+{
+	z-index: 1020;
+	position: absolute;
+	top: -50px;
+	width: 1px;
+	height: 1px;
+	overflow: scroll;
+	background-color: white;
+}
+
+
+.imgcomment{
+	position:relative; 
+	display:block; 
+	float:right; 
+	padding:0px; 
+	top:0px;
+	height:6px;
+	text-decoration:none;
+}
+.commentInView{
+  cursor: default;
+}
+
+.activeCommentImg{
+background: url(./img/withComment2.gif) no-repeat top right;
+}
+
+.sheetRTL .activeCommentImg{
+background: url(./img/withComment2_rtl.gif) no-repeat top left;
+}
+
+.inactiveCommentImg{
+background: url(./img/withComment1.gif) no-repeat top right;
+}
+
+.sheetRTL .inactiveCommentImg{
+background: url(./img/withComment1_rtl.gif) no-repeat top left;
+}
+
+.resolvedCommentImg{
+background: url(./img/spreadsheet_comments_resolved.gif) no-repeat top right;
+}
+
+.dj_webkit .imgcomment{
+	/*float:none !important;*/
+	text-align:right;
+	right:0;
+}
+
+.dijitPaletteCell {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	overflow: hidden;
+	z-index: 10;
+	outline-width: 0;
+}
+.dijitPaletteCellAA {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	overflow: visible;
+	z-index: 10;
+	outline-width: 0;
+}
+.dijitPaletteImgAA {
+	width: 195px; /*This is the width of one color in the provided palettes. */
+	height: 14px; /* Height of one color in the provided palettes. */
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	overflow: visible;
+	cursor: default;
+	border:1px solid #999;
+	/* -moz-border-radius:2pt; */
+}
+.dijitPaletteCellHighlight img {
+	width: 14px; /*This is the width of one color in the provided palettes. */
+	height: 12px; /* Height of one color in the provided palettes. */
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	overflow: hidden;
+	cursor: default;
+	border:2px solid #000;
+	outline:1px solid #dedede;
+	/* -moz-border-radius:0; */
+}
+.dijitPaletteCellSelectedHighlight img {
+	width: 14px; /*This is the width of one color in the provided palettes. */
+	height: 12px; /* Height of one color in the provided palettes. */
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	overflow: hidden;
+	cursor: default;
+	border:2px solid #000;
+	outline:1px solid #000;
+	/* -moz-border-radius:0; */
+}
+.dijitPaletteCellHighlightBake img {
+	width: 195px; /*This is the width of one color in the provided palettes. */
+	height: 12px; /* Height of one color in the provided palettes. */
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	overflow: visible;
+	cursor: default;
+	border:2px solid #000;
+	outline:1px solid #dedede;
+	/* -moz-border-radius:0; */
+}
+img.dijitColorPaletteUnder {
+	border-style:none;
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+
+.coedit-indicator {
+	background-color: #e0e0e0 !important;
+	background: #e0e0e0 url('./img/ico_coedit.gif') no-repeat right center !important;
+	/* border: 1px solid #0066cc; */
+}
+
+/*New vertical virtual scroller*/
+.webSheetGridScrollbox {
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	width: 100%;
+}
+
+.dijit_a11y .webSheetGridVScroller {  
+     width: 40px;   
+     /*border: none;*/  
+}
+
+.webSheetGridHScrollerWrapper
+{
+     overflow: hidden;
+     position: absolute;  
+     bottom: 0px;  
+     right: 0px;  
+     height: 26px;   
+     z-index: 80000;
+     background-color: #E5E7EB;
+}
+
+.webSheetGridHScroller {  
+     position: absolute;  
+     bottom: 0px;  
+     right: 0px;  
+     overflow-y: hidden;
+     overflow-x: scroll; 
+     height: 26px;   
+     z-index: 30;
+     /*border: none;*/  
+}
+
+.webSheetGridVScroller {  
+     position: absolute;  
+     top: 0px;  
+     right: 0px;
+     overflow-x: hidden;  
+     overflow-y: scroll;
+     z-index: 80000;
+     /*border: none;*/  
+}
+/*New scroller*/
+
+/*start for row resize*/
+.dojoxGridResizeRowLine {
+	height: 1px;
+	background-color: #777;
+	position: absolute;
+	cursor: row-resize;
+	z-index:10000;
+    overflow:hidden; 
+}
+.dijit_a11y .dojoxGridResizeRowLine {
+	border-bottom: 1px solid;
+	border-right: 1px solid;
+}
+
+.dojoxGridRowNoResize{
+	cursor: not-allowed !important;
+}
+.dojoxGridRowResize, 
+.dojoxGridRowResizing,
+.dojoxGridRowResizing .dojoDndItemOver{
+	cursor: row-resize !important;
+}
+/*end for row resize*/
+
+/*defect 39624*/
+.websheetlocaleListDiv  .dijitInputField {
+    overflow: hidden;  
+}
+/*add!important to override.dj_ie .dijitInputField INPUT in dijit.css */
+.dj_ie .websheetlocaleListDiv .dijitInputField .dijitReset { 	
+ margin:1px !important;	
+ font:100%/1.5 Arial, Helvetica, sans-serif;
+}
+.dj_ie .websheetlocaleListDiv .dijitButtonNode{
+height:17px !important;
+}
+
+.dijitArrowButton {
+    padding: 0 0 !important;
+}
+
+.dj_safari .dojoxGridInput {
+	outline: none !important;
+}
+
+.dj_safari .dojoxGridCellFocus {
+	outline: none !important;
+}
+
+.dj_safari .dijitRadio {
+    padding-left: 1px !important;
+}
+
+#sheet_node .dojoxGridCell {
+	padding: 0 0 1px 0;
+	line-height: 1;
+}
+
+#sheet_node .websheetWorksheetContainer th.dojoxGridCell {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.image-resize-handle {
+	background-color: #00FF00;
+    border: 1px solid #99C0FF;
+	width:6px;
+	height:6px;
+    position: absolute;
+}
+
+.mobile-resize-handle.image-resize-handle {
+	width:10px;
+	height:10px;
+}
+#S_m_Border{
+ 	padding: 0;
+ 	background-image:none; 
+ 	background-color: #FFFFFF;
+ 	border: 1px solid #A9A9A9 !important;
+ 	width: 200px;
+ 	filter: none !important;
+}
+
+#S_m_FontColor, #S_m_BackgroundColor
+{
+	border: 1px solid #A9A9A9 !important;
+}
+
+#S_m_Border .dijitButton .dijitButtonNode, 
+#S_m_Border .dijitDropDownButton .dijitButtonNode, 
+#S_m_Border .dijitComboButton .dijitButtonNode, 
+#S_m_Border .dijitToggleButton .dijitButtonNode {
+ 	background-color: #FFFFFF;
+   	background-image: none;   
+}
+
+#S_m_Border .dijitToggleButton, #S_m_Border .dijitButton{	
+	 margin-right: 0;
+}
+
+#S_m_Border .dijitButtonActive .dijitButtonNode,
+#S_m_Border .dijitToggleButtonActive .dijitButtonNode, 
+#S_m_Border .dijitToggleButtonChecked .dijitButtonNode {
+    background-color: rgba(0, 0, 0, 0.10);
+	background: -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18));
+	border: 1px solid #808080;
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+	opacity: 1;
+}
+
+#S_m_Border .dijitButtonHover .dijitButtonNode, 
+#S_m_Border .dijitToggleButtonHover .dijitButtonNode 
+ {
+    background-color: transparent;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08));
+	border: 1px solid #999999;
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+	opacity: 1;
+}
+
+
+#S_m_Border .borderToolbar{
+	width:120px;
+	padding: 8px;
+	
+}
+#S_m_Border .borderStyleToolbar{
+	/*width:100%;*/	
+	border-top: 1px solid #a6a6a6;
+	border-bottom: 1px solid #a6a6a6;
+    padding: 8px;
+}
+
+.linkdiv {
+    background-color: #FFFFFF;
+    border: 1px solid #99C0FF;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 2px;
+    padding: 3px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 13;
+}
+.dj_ie #sheet_node .dojoxGridRowTable {
+	border-collapse: separate;
+}
+
+/*override dijit css property*/
+#lotus_editor_toolbar .dijitReadOnly *,
+#lotus_editor_toolbar .dijitDisabled *,
+#lotus_editor_toolbar .dijitReadOnly,
+#lotus_editor_toolbar .dijitDisabled,
+#lotus_editor_toolbar .dijitDisabledClickableRegion {	/* a region the user would be able to click on, but it's disabled */
+	cursor: default !important;
+}
+
+.websheet_toolbar_grayout{
+	filter: alpha(opacity=60); /* IE */
+	opacity: 0.6; /* Safari, Opera */
+	-moz-opacity: 0.60; /* FireFox */
+}
+
+.dataSelectionList{
+   width: 14px;
+   height: 14px;
+   position: absolute;
+   outline:none !important;
+}
+
+.dataSelectionList .dijitButtonNode{
+   border: 0 !important;
+   padding: 0 !important;
+}
+
+.dataSelectionList .dijitDownArrowButton
+{
+   outline:none !important;
+}
+
+.dataSelectionList .dijitArrowButtonInner
+{
+	width: 5px !important;
+	height: 5px !important;
+}
+
+.dataSelectionIcon
+{
+    background-image: url(img/ssFilterCelNoRules_12x12.png);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    border: 1px solid #808080 !important;
+    border-radius: 2px;
+    height: 12px;
+    width: 12px;
+	position:absolute;
+	outline: none !important;
+	
+}
+
+.filterHeader{
+   width: 14px;
+   height: 14px;
+   position: absolute;
+   outline:none !important;
+}
+
+.filterHeader .dijitDownArrowButton
+{
+   outline:none !important;
+}
+
+.filterHeader .dijitArrowButtonInner
+{
+	width: 5px !important;
+	height: 5px !important;
+}
+
+.filterHeader .dijitButtonNode{
+   border: 0 !important;
+   padding: 0 !important;
+}
+
+.filterHeaderIconWithRule
+{
+    background-image: url(img/ssFilterCel_12x12.png);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    border: 1px solid #808080 !important;
+    border-radius: 2px;
+    height: 12px;
+    width: 12px;
+	position:absolute;
+	outline: none !important;	
+}
+
+.filterHeaderIcon
+{
+    background-image: url(img/ssFilterCelNoRules_12x12.png);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    border: 1px solid #808080 !important;
+    border-radius: 2px;
+    height: 12px;
+    width: 12px;
+	position:absolute;
+	outline: none !important;	
+	
+}
+
+.dijitDropDownButtonHover .filterHeaderIcon , .dijitDropDownButtonHover .filterHeaderIconWithRule
+{
+    background-color: #D3D3D3 !important;
+    border-color: #808080 !important;
+    border-width: 1px;
+    color: #666 !important;
+}
+
+.customFilterConditionInputbox{
+	width:  220px;
+	height: 14px;
+	font-size: 11px !important;
+	padding  : 5px 2px 5px 6px;
+	margin-left	 : 10px;
+}
+.filterContextMenu{
+    width:250px;
+    height: 380px;
+	overflow-y:auto;
+	border: 1px solid #AAAAAA;
+	padding: 4px 0 8px;
+	background: white;
+    cursor: default;
+    font-size: 13px;
+    margin: 0;
+    outline: medium none;	
+	z-index:90000;
+}
+.filterContextMenu .dijitMenu{
+   border: 0 !important;
+}
+.filterContextMenu .lotusActionMenu .dijitMenuItemLabel {
+    padding: 8px 1px 8px 0 !important;
+}
+.filterContextMenu .filterKeywordList .dijitMenuItemLabel{
+	padding: 4px 1px 4px 1px !important;
+}
+
+.filterClearArea{
+   height: 20px;
+   margin: 2px 4px 4px 26px;
+}
+
+.filterContextMenu .filterClearArea .dijitButtonNode{
+   border: 0 !important;
+   padding: 0 !important;
+   color: #105cb6 !important;
+   font-weight: normal !important;
+   background-image: none !important;
+}
+
+.filterContextMenu .dijitMenuItemHover, .filterContextMenu .dijitMenuItemSelected{
+/*    background-color: #E1E1E1 !important;
+    border-color: #E1E1E1 !important;
+    border-width: 1px;
+    color: #666 !important;
+*/
+}
+
+
+.filterKeywordList{
+   margin: 6px 6px 6px 26px;
+   height: 180px;
+   overflow-y: auto;
+   overflow-x: auto;
+ }
+ 
+
+ .filterContextMenu  .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon{
+    background-image: url(../images/icons.png) !important;
+    background-repeat: no-repeat;
+    height: 13px !important;
+    width: 16px !important;
+    background-position: 0px -1932px !important;
+    padding-bottom: 8px;
+ }
+ 
+
+ .filterContextMenu  td.dijitMenuItemIconCell{
+    width: 14px;
+ }
+
+ .filterContextMenu .filterKeywordList td.dijitMenuItemLabel{
+    min-width: 160px;
+ }
+
+.imageLayer{
+	padding: 0pt;
+	position: absolute;
+	z-index:5;
+	opacity: 1;
+}
+
+.aclBetaLabel{
+	border: 1px solid #d3d3d3;
+	border-radius: 4px;
+	padding: 0px 2px;
+	color: black;
+	background-color: #d3d3d3;
+}
+
+.permissionWarningDiv{
+	margin: 5px auto;
+	width: 260px;
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+.permissionRectangle{
+	z-index: -1;
+}
+
+.narrowPane .permissionWarningDiv{
+	width:220px;
+}
+
+.permissionWarningPhotoContainer{
+	float: left;
+	margin: 12px 5px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+
+.dijitRtl .permissionWarningPhotoContainer {
+	float: right;
+}
+
+.permissionWarningMsg{
+	text-align: left;
+	margin: 0px;
+	padding: 10px 10px 10px 40px;
+}
+
+.dijitRtl .permissionWarningMsg {
+	text-align: right;
+	padding: 10px 40px 10px 10px;
+}
+
+.closeWarningBtn{
+	background-image: url(img/1212close_icon.png);
+	background-repeat: no-repeat;
+   	width  : 12px;
+	height : 12px;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	cursor: pointer;
+}
+
+.dijitRtl  .closeWarningBtn {
+    left: 3px;
+    right: auto;
+}
+
+.newPermissionContainerDiv{
+	margin: 0px;
+	padding: 0px;
+}
+.sheetLabelDiv{
+	margin: 0px;
+	padding: 15px 20px 5px 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+.newPermissionDiv{
+	margin: 10px auto;
+	width: 190px;
+}
+
+.newPermissionDiv .dijitButton{
+	margin: 0px !important;
+	padding: 0px;
+}
+.newPermissionDiv .dijitButtonNode{
+	border: 0 !important;
+	border-radius: 0px !important;
+	margin: 0px !important;
+	padding: 9px 25px !important;
+	width: 140px ;
+	color: white !important;
+	background-color:#4178be !important;
+	background-image: none !important;
+}
+.newPermissionDiv .dijitButtonText{
+	white-space: pre-wrap;
+}
+
+.aclSeperatorBar{
+	margin: 0px 20px;
+  	border-top: 1px solid #cecece;
+}
+
+.narrowPane .aclSeperatorBar{
+	margin: 0px 3px;
+}
+
+.userSelectorDiv{
+	padding:0px;
+	margin: 0px;
+}
+
+.userSelectorDiv input::-ms-clear{
+	display:none !important;
+	width: 0px;
+	height: 0px;
+}
+
+.userSelectorDiv .dijitValidationTextBox{
+	height: 26px;
+	width: 258px;
+}
+
+.narrowPane .userSelectorDiv .dijitValidationTextBox{
+   width: 207px;
+}
+
+.narrowPane .hasScroll .userSelectorDiv .dijitValidationTextBox{
+   width: 201px;
+}
+
+.userSelectorDiv .dijitValidationTextBox .dijitDownArrowButton{
+	margin: 5px;
+}
+.userSelectorDiv .dijitValidationTextBox  .dijitInputContainer{
+	margin: 5px;
+}
+
+.userSelectorDiv  input.dijitArrowButtonInner{
+   background-position: -70px 53% !important;
+}
+
+.userSelectorDiv  input.dijitArrowButtonInner.upper{
+   background-position: -175px 53% !important;
+}
+
+.userSelectorMenu .dijitMenuItem{
+	padding: 5px 0px;
+}
+
+.userSelectorMenu .dijitMenuItem .dijitCheckBox{
+	background-image: url(img/checkbox16x16.png);
+	background-repeat: no-repeat;
+   	width  : 17px;
+	height : 17px;
+}
+
+.userSelectorMenu .dijitMenuItem .dijitCheckBoxChecked{
+	background-image: url(img/checkedbox16x16.png) !important;
+	background-repeat: no-repeat;
+   	width  : 17px;
+	height : 17px;
+}
+
+.userSelectorMenu .dijitMenuItem.disable .dijitCheckBoxChecked{
+	background-image: url(img/checkbox16x16_dis.png) !important;
+}
+
+.userSelectorMenu .dijitMenuItem .dijitCheckBoxInput{
+	opacity: 0.01;
+}
+
+body.oneui30 .dijitMenu.userSelectorMenu .dijitMenuItem.dijitMenuItemHover:not(.dijitMenuItemDisabled),
+body.oneui30 .dijitMenu.userSelectorMenu .dijitMenuItem.dijitMenuItemSelected:not(.dijitMenuItemDisabled)
+{
+	background-color:#ecf2fa !important;
+	color: rgb(34, 34, 34) !important;
+}
+
+.permissionWidget{
+	margin: 9px;
+	padding:10px;
+	border: 1px solid #d0d0d0;
+	background-color: #fafafa;
+}
+
+.narrowPane .permissionWidget{
+	margin: 9px 2px;
+	padding: 10px 5px;
+}
+
+.permissionWidget .footer{
+/*	padding-left: 140px; */
+	padding-top: 10px;
+	text-align: right;
+}
+
+#mainNode[dir="rtl"] .permissionWidget .footer{
+	text-align: left;
+}
+
+#mainNode[dir="rtl"] .rangeSelect .dijitInputField {
+	padding-right: 5px;
+}
+
+#mainNode[dir="rtl"] .userSelectorDiv .dijitDownArrowButton {
+	float: left;
+}
+.footer .dijitButton, .footer .lotusBtn {
+	margin: 0px !important;
+}
+
+.permissionWidget .footer > span:first-child{
+	margin-right: 5px !important;
+}
+
+.footer .dijitButton .dijitButtonNode{
+ 	background-color: rgb(255, 255, 255);
+  	background-image: none !important;
+  	color: #4178be !important;
+  	padding: 5px 10px !important;
+ 	border: 1px solid #4178be !important;
+ 	border-radius: 0px !important;
+}
+.footer .dijitButton.dijitButtonDisabled .dijitButtonNode{
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #d0d0d0 !important;
+}
+
+/*.narrowPane .permissionWidget .footer{
+	padding-left: 90px;
+}
+
+.narrowPane .hasScroll .permissionWidget .footer{
+	padding-left: 80px;
+}
+*/
+
+.rangeTypeSelectArea{
+	padding-bottom: 0px;
+}
+
+
+.rangeTypeSelectArea  div{
+	display: inline-block;
+	margin: 0px;
+} 
+
+.rangeTypeSelectArea .dijitTextBox{
+	width: 123px;
+	height: 26px;
+}
+
+.permissionWidget .dijitTextBox, .rangeTypeSelectArea .dijitButtonNode{
+   border-color: #d0d0d0 !important;
+}
+
+.rangeTypeSelectArea .rangeSelect .dijitTextBoxDisabled{
+	background-color: #fafafa !important;
+	
+}
+
+.rangeTypeSelectArea .rangeSelect .dijitTextBoxDisabled INPUT{
+	color: black !important;
+}
+
+.narrowPane .rangeTypeSelectArea .dijitTextBox{
+	width: 98px;
+}
+
+.narrowPane .hasScroll .rangeTypeSelectArea .dijitTextBox{
+	width: 95px;
+}
+
+.rangeTypeSelectArea .typeSelect .dijitDropDownButton{
+	margin: 0px !important;
+}
+
+.rangeTypeSelectArea .typeSelect .dijitButtonNode{
+	border-radius: 0px !important;
+	padding: 4px 6px 4px 4px !important;
+}
+
+.rangeTypeSelectArea .typeSelect .dijitButtonContents .dijitButtonText{
+  font-weight: normal;
+}
+ 
+.rangeTypeSelectArea input{
+	margin: 4px 3px !important;
+}
+
+.typeSelect{
+	padding-left: 6px;
+	padding-left: 5px\0;
+}
+
+.narrowPane .typeSelect.safari_only{
+	padding-left: 5px;
+}
+
+.narrowPane .hasScroll .typeSelect{
+	padding-left: 3px;
+}
+
+.typeSelect .dijitButtonText{
+	width: 77px;
+}
+
+.oneui30 .dijitMenu.ACLTypeSelectorMenu {
+  border: 1px solid #d0d0d0 !important;
+}
+
+.narrowPane .typeSelect .dijitButtonText{
+	width: 52px;
+	overflow: hidden;
+}
+
+.typeSelect .dijitDropDownButton .dijitButtonNode{
+	background-image:none !important;
+	background-color: #fff !important;
+}
+
+
+.oneui30 .dijitComboBoxMenuPopup .userSelectorMenu{
+	border:1px solid #d0d0d0 !important;
+}
+
+.rangeTypeEditableIcon{
+	background-image: url(img/editable20x12.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 12px;
+}
+
+.rangeTypeReadOnlyIcon{
+	background-image: url(img/readOnly20x12.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 12px;
+}
+
+.warningMsg{
+	margin: 0px;
+	color:#e71d32;
+	height:10px;
+}
+
+.warningMsg.max{
+	height:16px;
+	font: 10px / 16px "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+}
+
+
+.userIconListArea{
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+}
+
+.userIconListContainer{
+	overflow-y: auto;
+  	overflow-x: hidden; 
+}
+
+.unified_editor .everyOneIcon{
+	background-image: url(img/everyone128.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.unified_editor .everyOneExcepteMeIcon{
+	background-image: url(img/everyoneexceptme128.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.userIconList ul{
+  	list-style: none ;
+  	padding: 0px;
+  	width: 100%;
+  	margin: 0px;
+}
+
+.userIconList li{
+	float: left;
+	position: relative;
+	margin-right:3px !important;
+	margin-bottom:4px !important;
+	height: 34px;
+}
+
+.dijitRtl .userIconList li {
+    float: right;
+}
+.permissionItemsContainer{
+	overflow-y: auto;
+  	overflow-x: hidden;
+  	height: 400px;
+  	margin: 0px;
+  	padding: 0px;
+}
+
+.hasScroll .permissionWidget{
+	margin: 9px 5px;
+	padding:10px 5px;
+}
+
+.narrowPane .hasScroll .permissionWidget{
+	margin: 9px 0px;
+	padding:10px 1px;
+}
+
+.permissionWidget .userIconListArea{
+	padding-top: 10px !important;
+}
+
+.permissionItemOutter{
+	margin: 0px;
+	padding: 0px;
+}
+
+.permissionItemOutter:first-child .permissionItemDiv{
+	border-top: 1px solid #cecece;
+}
+
+.permissionItemOutter:hover{
+	background-color: #fafafa;
+}
+
+.permissionItemDiv{
+	margin: 0px 20px;
+	border-bottom: 1px solid #cecece;
+	padding: 5px 0px 5px 0px;
+}
+
+.narrowPane .permissionItemDiv{
+	margin: 0px 3px;
+}
+
+.permissionTypeIcon{
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 12px;
+}
+.permissionTypeIcon.editable{
+	background-image: url(img/editable20x12.png);
+}
+.permissionTypeIcon.readOnly{
+	background-image: url(img/readOnly20x12.png);
+}
+
+.permissionAddr{
+	margin: 0px;
+	padding: 0px 5px 0px 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.permissionItemDiv .creator{
+	margin: 0px;
+	paddding-left: 10px;
+	font-size: 12px;
+	color: #878787;
+	text-overflow: ellipsis;
+}
+
+.permissionItemHeader span{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.permissionItemDiv:hover{
+	background-color: #fafafa;
+}
+
+.editPermissionIcon{
+	background-image: url(img/editPerm14x14.png);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	margin-right: 4px;
+}
+
+.editPermissionIcon.disable{
+	background-image: url(img/editPerm14x14_d.png);
+}
+
+.removePermissionIcon{
+	background-image: url(img/removePerm12x16.png);
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 16px;
+	margin-right: 4px;
+}
+
+.removePermissionIcon.disable{
+	background-image: url(img/removePerm12x16_d.png);
+}
+
+.permissionItemHeader .actionIconSpan{
+	float: right;
+	display: none;
+}
+
+.dijitRtl .permissionItemHeader .actionIconSpan {
+    float: left;
+}
+
+.permissionItemDiv .actionIconSpan.hover{
+	display: inline-block;
+}
+
+.permissionItemDiv .actionIconSpan .hover{
+	display: inline-block;
+	cursor: pointer;
+}
+
+.permissionItemDiv .actionIconSpan .disable{
+	cursor:not-allowed !important;
+}
+
+.commonSidePaneHeader .title{
+	color: rgb(238,240,242);
+	font-size: 14px;
+	margin-right:10px;
+}
+
+.dijitRtl .commonSidePaneHeader .title {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.dijitRtl .commonSidePaneHeader {
+    text-align: right;
+}
+
+.oneui30 .ACLCotent .dijitTextBox .dijitArrowButton{
+	display: block;
+}
+
+.userLable{
+	display: inline-block;
+	overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.disable .userLable{
+	color:#878787;
+}
+.userSelectorMenu.narrow .userLable{
+	width: 180px;
+}
+.userSelectorMenu .userLable{
+	width: 230px;
+}
+
+.closePaneBtn{
+	position: absolute;
+	cursor : pointer;
+	right  : 10px;
+	top    : 13px;
+}
+
+.dijitRtl .closePaneBtn {
+    left: 10px;
+    right: auto;
+}
+
+.closePaneIcon{
+	background-image: url(img/ss1212close_icon.png);
+    background-repeat: no-repeat;
+   	width  : 14px;
+	height : 14px;
+}
+
+
+.commonSidePaneHeader{
+	background-color: #325c80;
+	padding: 10px 12px;
+	margin: 0px;
+}
+
+
+
+.validationTitle{
+	font-size: 14px;
+	color: #222222
+}
+
+#validation_pane{
+	background-image:none;
+}
+
+.validationInput::-ms-clear{display:none;}
+
+.addItemBtn{
+	cursor : pointer;
+   	width  : 16px;
+	height : 16px;
+	background-image: url(img/add.png);
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	margin-top: 6px;
+}
+
+.dijitRtl #validation_sidebar_div .dijitTextBox .dijitArrowButtonContainer, 
+.dijitRtl #validation_sidebar_div .dijitValidationTextBox .dijitValidationContainer,
+.dijitRtl #validation_sidebar_div .addItemBtn {
+    float: left;
+}
+
+.addItemBtnSelected{
+	background-image: url(img/add_selected.png) !important;
+	outline: 1px dotted #FFFFFF;
+}
+
+.errorValidationInput{
+	color: #e71d32;
+	font-size: 10px !important;
+	padding-top: 2px;
+	min-height: 18px;
+}
+
+.errorDVInput{
+	border-color: #e71d32 !important;
+}
+.validationInput{
+	font-size: 12px !important;
+	color: #666 !important;	
+	border: 1px solid #aaaaaa;
+	height:28px !important;
+	padding-left: 5px !important;	
+}
+
+.cellIcon{
+ 	width  : 19px;
+	height : 11px;
+	background-image: url(img/Cell_Icon.png);
+	position: relative;
+	top: -20px;
+	cursor : pointer;
+}
+
+.cellIconHovered{
+	background-image: url(img/Cell_Icon_selected.png) !important;
+}
+
+.btnFocused{
+	outline: 1px dotted;
+}
+
+.validationDropBtn{
+	background-color:#FFFFFF !important;
+	background-image:none !important;
+	font-size: 12px !important;
+	color: #666 !important;
+	border: 1px solid #aaaaaa !important;
+	height:28px;
+	text-align: left !important;
+	padding: 0px 0px 0px 0px !important;
+}
+
+.validationFocus{
+	padding-left: 5px !important;
+	height: 28px;
+}
+
+.validationDropCon{
+	text-align: left !important;
+	font-size: 12px !important;
+	color: #666 !important;
+	height: 28px !important;
+	line-height: 28px !important;
+	padding: 0px !important;
+	font-weight: normal !important;
+	overflow: hidden;
+	float: left;	
+}
+
+.oneui30.dijitRtl #validation_sidebar_div .dijitDropDownButton {
+    margin-right: 0;
+}
+
+.oneui30.dijitRtl .validationDropCon{
+	text-align: right !important;
+	float: right;
+}
+
+.dvListItem{
+	font-size: 12px !important;
+	border: 1px solid;
+	color: #4178be;
+	margin-right: 6px;
+	height: 18px;
+	line-height: 18px;
+	padding-left: 6px;
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+.dvDelItem{
+	background-image: url(img/cross.png);
+	background-repeat: no-repeat;
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	margin-left: 6px;
+	margin-right: 6px;
+	float: right;
+	margin-top: 6px;
+	cursor : pointer;
+}
+
+.dvDelItemHovered{
+	background-image: url(img/cross_blue.png) !important;
+}
+
+.dvButton{	
+	border: 1px #4178be solid !important;
+	margin-right: 0px !important;
+}
+
+.dvButtonInner{
+	padding-left: 14px !important;
+	padding-top: 6px !important;
+	padding-right: 14px !important;
+	padding-bottom: 6px !important;
+	font-size: 10px !important;
+	color: #4178be !important;
+	background-image: none !important;
+	background-color: #FFFFFF !important;
+	border: 0px soid !important;
+	box-show: none !important;
+}
+
+.dvButtonCancel{	
+	border: 1px #aaaaaa solid !important;
+	margin-right: 0px !important;
+}
+
+.dateButton{
+    width: 14px !important;
+    background-image: url(img/Date_Picker.png) !important;
+    background-position: 0px 0px !important;
+    margin-top: 3px !important;
+}
+
+.dateButtonHovered{
+    width: 14px !important;
+    background-image: url(img/Date_Picker_selected.png) !important;
+    background-position: 0px 0px !important;
+    margin-top: 3px !important;
+}
+
+.redIndicate .arrowup {
+	height: 7px;
+	background-image: url(img/Polygon_red.png) !important;
+}
+
+.redIndicate .arrowdown {
+	height: 8px;
+    background-image: url(img/Polygon_redfan.png) !important;
+}
+
+.greyIndicate .arrowup {
+	height: 7px;
+	background-image: url(img/Polygon_grey.png) !important;
+}
+
+.greyIndicate .arrowdown {
+	height: 8px;
+    background-image: url(img/Polygon_greyfan.png) !important;
+}
+
+.popupIndicate .arrow{
+    width: 12px;
+    position: absolute;
+}
+
+.ll_DV_image_alttext {
+	display: none;
+}
+
+.dijit_a11y .ll_DV_image_alttext{display: block;} 
+
+.popupIndicate .allyArrowup {
+	position: absolute;
+}
+
+.popupIndicate{
+	position: absolute;
+	border: 1px solid;
+	font-size: 10px;
+	color: #676767;
+	background-color: #FFFFFF;
+	min-width: 80px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.redIndicate{
+	border-color: #E71D32;
+}
+
+.greyIndicate{
+	border-color: #676767;
+}
+
+/* the loading overlay of data grid */
+.loadingOverlay {
+	position: absolute;
+	z-index: 999;
+	background: none repeat scroll 0 0 #000000;
+	opacity: 0.3;
+}
+
+/*Range Sorting, sort dialog styles*/
+
+#S_d_sortRange .dijitDialogPaneContent {
+	padding: 15px 17px 15px 20px;
+}
+
+.ws-sort-rule-tr {
+	white-space: nowrap;
+}
+.ws-sort-rule-tr td {
+	padding: 10px 10px 10px 0;
+}
+.ws-sort-rule-label { 
+	min-width: 54px;
+}
+.dijitDialogPaneContentArea .wsSortRulesContainer {
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 257px;
+	margin-bottom: 10px;
+}
+
+.ws-sort-rule-selector table,.ws-sort-order-selector table {
+	height: 27px;
+}
+
+.ws-sort-order-label {
+	padding-left: 12px;
+	padding-right: 10px;
+}
+.ws-sort-order-selector {
+	padding-right: 0px;
+}
+.ws-sort-order-selector table{
+	width: 110px;
+}
+.ws-sort-rule-delete {
+	color: #999;
+	cursor: pointer;
+	margin-right: 5px;
+	width: 10px;
+	text-decoration: none;
+	padding-left: 12px;
+	padding-right: 2px;
+}
+
+.ws-sort-rule-delete div {
+	background-image: url("img/ss1212close_icon.png");
+	width: 12px;
+	height: 12px;
+}
+td.ws-sort-rule-delete {
+	padding-right: 18px;
+}
+
+.ws-sort-rule-delete.ws-sort-rule-delete-none {
+	cursor: default;
+}
+
+.ws-sort-add-rule-link {
+	border-style: none;
+	border-width: 0px;
+	font-size: 12px;
+	color: #15C;
+	cursor: pointer;
+	padding: 2px 0px 0px 6px;
+	vertical-align: middle;
+}
+.ws-sort-rule-selector {
+	padding-left: 5px;
+}
+.ws-sort-rule-selector table {
+	width: 110px;
+}
+
+/*sort range finish*/
+
+.oneui30 .loadingOverlayNotice {
+	position: absolute;
+	margin: 0.3em 0 0 0.3em;
+	z-index: 1;
+}
+
+.dj_ie #sheet_node .dojoxGridMasterView > .dojoxGridView + .dojoxGridView
+{
+	position: relative;
+}
+
+.dijitCheckedMenuItemRtl td.dijitMenuItemIconCell {
+    padding: 0 14px 0 0 !important;
+}
+
+.dijitRtl .dijitMenuPopup [id^="S_d_sortSelector"] .dijitMenuItemLabel,
+.dijitRtl .dijitMenuPopup [id^="S_d_orderSelector"] .dijitMenuItemLabel {
+    padding: 8px 14px 8px 0 !important;
+}

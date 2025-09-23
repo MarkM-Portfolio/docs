@@ -1,0 +1,64 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<configuration>
+	<!--
+		A "component" tag's or "param" tag's id attribute must not contain any of '," or \ or any characters considered invalid as a file name
+		The value attribute of the "option" tag must not contain any of the 3 of '," or \, but the text content of the "option" tag can contain any characters
+		The "name", "description" and "initial_value" tags can contain any characters
+		The text and text_area input types can accept user input of any characters
+		The types "file" and "password" cannot have an "initial_value"
+	-->
+	<component id="Docs" depends_on="MiddlewareWebSphere MiddlewareZooKeeper MiddlewareDB2">
+		<param id="num_docs_nodes" type="option" publish="true">
+			<name>Number of IBMDocs Server Nodes</name>
+			<description>The number of IBMDocs Server nodes to deploy</description>
+			<options>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</options>
+			<initial_value>2</initial_value>
+		</param>
+        <param id="docs_nas_share" type="text" publish="true"> 
+             <name>IBM Docs NAS Runtime Production Share</name> 
+             <description>The NAS share dedicated to the IBM Docs runtime Production content with a syntax of &lt;hostname>:&lt;share>.  This share is mirrored. Example:  nfs1.lotuslivedaily.swg.usma.ibm.com:/smartcloud/docs.  Leave blank if using a non-production Linux VM to function as the NAS</description> 
+             <initial_value></initial_value> 
+        </param>		
+        <param id="docs_nas_share_test" type="text" publish="true"> 
+             <name>IBM Docs NAS Runtime Test Share</name> 
+             <description>The NAS share dedicated to the IBM Docs runtime Test content with a syntax of &lt;hostname>:&lt;share>.  This share is mirrored. Example:  nfs1.lotuslivedaily.swg.usma.ibm.com:/smartcloud/docs.  Leave blank if using a non-production Linux VM to function as the NAS</description> 
+             <initial_value></initial_value> 
+        </param>
+        <param id="is_docs_multiactive" type="boolean">
+             <name>Is Docs Multiactive</name>
+             <description>Select true if Docs is Multiactive. Default value is false.</description>
+             <initial_value>false</initial_value>
+        </param>
+        <param id="docsrp_routing_policy" type="option">
+             <name>Select the docsrp routing policy</name>
+             <description>Docsrp can enable the dynamic routing policy and monitor each node via zookeeper. Default value is Static Routing.</description>
+             <options>
+				<option value="static">Static Routing</option>
+				<option value="dynamic">Dynamic Routing</option>
+			 </options>
+             <initial_value>dynamic</initial_value>
+        </param>
+	</component>
+</configuration>
+

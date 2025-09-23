@@ -1,0 +1,157 @@
+/*styles for title page title element*/
+.Block-title p
+{
+	text-align:right;
+}
+.Block-title {
+	/*font-size:30.6pt;*/
+	font-size:1.7em;
+	font-family:Arial;
+	color: #FFFFFF;
+	font-weight: bold
+}
+.Block-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+		text-align:right;
+}
+.Block-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Block-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Block-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Block-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:left;
+	text-indent:0cm;
+}
+.Block-subtitle {
+	/*font-size:14.4pt;*/
+	font-size:0.8em;
+	font-family:Arial;
+	color: #333333;		
+	text-transform: uppercase
+}
+.Block-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+}
+.Block-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Block-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Block-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.concord .Block-datetime {
+	color:#333333;
+	font-family:Arial;
+	text-align:right;			
+}
+
+.concord .Block-pagenumber {
+	color:#333333;
+	font-family:Arial;
+	text-align:right;		
+}
+
+.concord .Block-footer {
+	color:#333333;
+	font-family:Arial;
+	text-align:left;		
+}
+.Block_default {
+	/*font-size:44pt;*/
+	/*font-size:2em;*/
+	font-family:Arial;
+	color:#333333;
+}
+/*styles for other page (non title page) title */
+.Block_text-title p
+{
+	text-align:left;
+}
+.Block_text-title {
+	/*font-size:36pt;*/
+	font-size:2em;
+	font-family:Arial;
+	color:#006666;
+}
+.Block_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+}
+.Block_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Block_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Block_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Block_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Block_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Block_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Block_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Block_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Block_text-outline1 {
+	/*font-size:25.2pt;*/
+	font-size:1.4em;
+	font-family:Arial;
+	color:#333333;
+}
+
+body.lotusJapanese .Block-title, body.lotusJapanese .Block-subtitle,body.lotusJapanese .Block_default, body.lotusJapanese .Block_text-title,body.lotusJapanese  .Block_text-outline1{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+body.lotusKorean .Block-title, body.lotusKorean .Block-subtitle, body.lotusKorean .Block_default, body.lotusKorean .Block_text-title,body.lotusKorean .Block_text-outline1{
+    font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}

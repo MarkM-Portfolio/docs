@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Faktura</title>
+</head>
+<body  class="concord_Doc_Style_7">
+
+<p class="page" id="invoice">
+
+	<p documentBlock="true" restyle="false"  concordTemplateComponent="letterhead" class="letterhead">
+		<p>Vennligst betal til</p>
+		<h1>Firmanavn</h1>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li class="addressLine1">1234 gateadresse</li>
+			<li class="addressLine2">1234 Poststed</li>
+			<li class="email">epost@eksempel.com</li>
+			<li class="phone">12345678</li>
+		</ul>
+		<hr></hr>
+	</p>
+
+	<p documentBlock="true"  class="section summary">
+		<h2>Fakturainformasjon</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li>Fakturanummer</li>
+			<li class="date">Fakturadato</li>
+			<li class="date">Frist</li>
+		</ul>
+	</p>
+
+	<p documentBlock="true"  class="section">
+		<h2>Fakturer til</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list_16">
+			<li class="name">Fornavn Etternavn</li>
+			<li class="addressLine1">1234 gateadresse</li>
+			<li class="addressLine2">1234 Poststed</li>
+			<li class="email">epost@eksempel.com</li>
+			<li class="phone">12345678</li>
+		</ul>
+	</p>
+	
+	<p documentBlock="true"  class="section">
+		<h2>Detaljer</h2>
+		<table documentBlock="true" restyle="true" class="smartTable STStyle3" concordTemplateComponent="smartTable">
+			<tr class="tableHeaderRow">
+				<th>Dato</th>
+				<th>Artikkel</th>
+				<th>Beskrivelse</th>
+				<th>Beløp</th>
+			</tr>
+			<tr>
+				<td>MM/DD/ÅÅÅÅ</td>
+				<td>Arbeid</td>
+		<!--
+				<td>Dignissim definiebas intellegebat eu qui, laoreet impedit</td>
+		-->
+				<td>$50.00</td>
+			</tr>
+			<tr class="alternateRow">
+				<td>MM/DD/ÅÅÅÅ</td>
+				<td>Arbeid</td>
+		<!--
+				<td>Sit ne sint aliquip nusquam, ut oblique salutandi sea, no erat </td>
+		-->
+				<td>$50.00</td>
+			</tr>
+			<tr>
+				<td colspan="3">Totalt</td>
+				<td>$0.00</td>
+			</tr>
+		</table>
+	</p>
+		
+	<p documentBlock="true" class="section conclusion">
+		<h2>Forfall</h2>
+		<ul>
+			<li>Fakturatotal: $0.00</li>
+			<li>Betalinger/kreditt: $0.00</li>
+			<li>Forfalt saldo: $0.00</li>
+		</ul>
+	</p>
+	
+</p>
+</body>
+</html>

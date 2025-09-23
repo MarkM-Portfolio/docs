@@ -1,0 +1,8 @@
+@import url("../../dijit/themes/oneui30/oneui30.css");
+@import url("../../html/css/widgets.css");
+@import url("../../../styles/css/base.css");
+@import url("pdfJs/pdfJsViewer.css");
+@import url("noprint.css");
+
+.commonsprites{background-image:url('../../../images/pdf_filetype_16.png') !important;background-repeat:no-repeat;display:-moz-inline-box;display:inline-block}
+.commonsprites-doc16{width:16px !important;height:16px !important;overflow:hidden;float: left !important;margin-right: 6px !important;display: block !important;margin-top: 9px !important;}

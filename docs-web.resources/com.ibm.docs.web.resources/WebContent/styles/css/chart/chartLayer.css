@@ -1,0 +1,367 @@
+	.drawingRange{
+		
+		-moz-opacity:1 !important; 
+		opacity: 1 !important;		
+	}
+	.chartLayer{
+		border:solid #999999 1px;
+		background-color: White;		
+		padding: 0pt;
+		position: absolute;
+		z-index:2000;
+		opacity: 1;
+	}
+	.selectedChart{
+		border:solid #000099 1px;		
+	}
+  
+  .chartWizardDetailDiv {
+     width: 330px;
+  	 height: 320px; 	 
+  	 background-color: White; 
+  }
+  
+  .childTypeItemDiv{ 
+     background-position: center center;      
+  	 position:relative;
+     background-repeat:no-repeat;
+     display:block; 
+     height:48px;
+     width: 48px;
+     border:solid white 1px;
+     padding: 8px;
+     outline: none;
+     overflow: hidden!important;
+     text-overflow: ellipsis!important;
+  }
+  
+  .dijit_a11y .childTypeItemDiv:focus{
+     
+     outline: medium inset #000000 !important;
+  }
+  
+   .itemSelected{
+     border: 1px solid #808080;
+     box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+     opacity: 1;
+     background: rgba(0, 0, 0, 0.10) no-repeat center center;
+	}
+
+  .itemHovered{
+     border: 1px solid #999999;
+     box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+     opacity: 1;
+     background: transparent no-repeat center center;
+  }
+  
+  .clusteredColumn{
+       background-image: url(./img/chart_columns.png);
+  }
+  
+  .clusteredColumn.itemHovered {
+	background-image: url(./img/chart_columns.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_columns.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_columns.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_columns.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .clusteredColumn.itemSelected {  
+	background-image: url(./img/chart_columns.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_columns.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_columns.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_columns.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .stackedColumn{
+      background-image: url(./img/chart_stackedColumns.png);
+  }
+  
+  .stackedColumn.itemHovered {
+	background-image: url(./img/chart_stackedColumns.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedColumns.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedColumns.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_stackedColumns.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .stackedColumn.itemSelected {  
+	background-image: url(./img/chart_stackedColumns.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedColumns.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedColumns.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_stackedColumns.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .clusteredBar{
+       background-image: url(./img/chart_bar.png);
+  }
+  
+  .clusteredBar.itemHovered {
+	background-image: url(./img/chart_bar.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_bar.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_bar.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_bar.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .clusteredBar.itemSelected {  
+	background-image: url(./img/chart_bar.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_bar.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_bar.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_bar.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .stackedBar{
+      background-image: url(./img/chart_stackedBar.png);
+  }
+  
+   .stackedBar.itemHovered {
+	background-image: url(./img/chart_stackedBar.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedBar.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedBar.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_stackedBar.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .stackedBar.itemSelected {  
+	background-image: url(./img/chart_stackedBar.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedBar.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedBar.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_stackedBar.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .pie_basic{
+       background-image: url(./img/chart_pie.png);
+  }
+  
+   .pie_basic.itemHovered {
+	background-image: url(./img/chart_pie.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_pie.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_pie.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_pie.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .pie_basic.itemSelected {  
+	background-image: url(./img/chart_pie.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_pie.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_pie.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_pie.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .area{
+      background-image: url(./img/chart_area.png);
+  }
+  
+  .area.itemHovered {
+	background-image: url(./img/chart_area.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_area.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_area.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_area.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .area.itemSelected {  
+	background-image: url(./img/chart_area.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_area.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_area.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_area.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .stackedArea{
+      background-image: url(./img/chart_stackedArea.png);
+  }
+  
+  .stackedArea.itemHovered {
+	background-image: url(./img/chart_stackedArea.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedArea.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedArea.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_stackedArea.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .stackedArea.itemSelected {  
+	background-image: url(./img/chart_stackedArea.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedArea.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedArea.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_stackedArea.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .line{
+      background-image: url(./img/chart_line.png);
+  }
+  
+  .line.itemHovered {
+	background-image: url(./img/chart_line.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_line.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_line.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_line.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .line.itemSelected {  
+	background-image: url(./img/chart_line.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_line.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_line.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_line.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .stackedLine{
+      background-image: url(./img/chart_stackedLine.png);
+  }
+ 
+  .stackedLine.itemHovered {
+	background-image: url(./img/chart_stackedLine.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedLine.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedLine.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_stackedLine.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .stackedLine.itemSelected {  
+	background-image: url(./img/chart_stackedLine.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedLine.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedLine.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_stackedLine.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .line_marker{
+      background-image: url(./img/chart_lineWithMarkers.png);
+  }
+  
+  .line_marker.itemHovered {
+	background-image: url(./img/chart_lineWithMarkers.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_lineWithMarkers.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_lineWithMarkers.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_lineWithMarkers.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .line_marker.itemSelected {  
+	background-image: url(./img/chart_lineWithMarkers.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_lineWithMarkers.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_lineWithMarkers.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_lineWithMarkers.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .stackedLine_marker{
+       background-image: url(./img/chart_stackedLineWithMarkers.png);
+  }
+  
+  .stackedLine_marker.itemHovered {
+	background-image: url(./img/chart_stackedLineWithMarkers.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedLineWithMarkers.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedLineWithMarkers.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_stackedLineWithMarkers.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .stackedLine_marker.itemSelected {  
+	background-image: url(./img/chart_stackedLineWithMarkers.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_stackedLineWithMarkers.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_stackedLineWithMarkers.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_stackedLineWithMarkers.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .scatter_marker{
+       background-image: url(./img/chart_scatter.png);
+  }
+  
+  .scatter_marker.itemHovered {
+	background-image: url(./img/chart_scatter.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatter.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_scatter.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_scatter.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .scatter_marker.itemSelected {  
+	background-image: url(./img/chart_scatter.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatter.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_scatter.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_scatter.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .scatter_smooth_line_marker{
+       background-image: url(./img/chart_scatterSmoothWithMarkers.png);
+  }
+  
+  .scatter_smooth_line_marker.itemHovered {
+	background-image: url(./img/chart_scatterSmoothWithMarkers.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatterSmoothWithMarkers.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_scatterSmoothWithMarkers.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_scatterSmoothWithMarkers.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .scatter_smooth_line_marker.itemSelected {  
+	background-image: url(./img/chart_scatterSmoothWithMarkers.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatterSmoothWithMarkers.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_scatterSmoothWithMarkers.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_scatterSmoothWithMarkers.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .scatter_smooth_line{
+       background-image: url(./img/chart_scatterSmooth.png);
+  }
+  
+  .scatter_smooth_line.itemHovered {
+	background-image: url(./img/chart_scatterSmooth.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatterSmooth.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_scatterSmooth.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_scatterSmooth.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .scatter_smooth_line.itemSelected {  
+	background-image: url(./img/chart_scatterSmooth.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatterSmooth.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_scatterSmooth.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_scatterSmooth.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .scatter_straight_line_marker{
+       background-image: url(./img/chart_scatterLineWithMarkers.png);
+  }
+  
+  .scatter_straight_line_marker.itemHovered {
+	background-image: url(./img/chart_scatterLineWithMarkers.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatterLineWithMarkers.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_scatterLineWithMarkers.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_scatterLineWithMarkers.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .scatter_straight_line_marker.itemSelected {  
+	background-image: url(./img/chart_scatterLineWithMarkers.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatterLineWithMarkers.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_scatterLineWithMarkers.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_scatterLineWithMarkers.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+  
+  .scatter_straight_line{
+       background-image: url(./img/chart_scatterLine.png);
+  }
+  
+  .scatter_straight_line.itemHovered {
+	background-image: url(./img/chart_scatterLine.png), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatterLine.png), -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* FF3.6+ */
+	background-image: url(./img/chart_scatterLine.png), -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* IE10 */
+	background-image: url(./img/chart_scatterLine.png), linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.08)); /* W3C */
+  }
+  
+  .scatter_straight_line.itemSelected {  
+	background-image: url(./img/chart_scatterLine.png), -webkit-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* Chrome 10+, Saf5.1+ */
+	background-image: url(./img/chart_scatterLine.png), -moz-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* FF3.6+ */
+	background-image: url(./img/chart_scatterLine.png), -ms-linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* IE10 */
+	background-image: url(./img/chart_scatterLine.png), linear-gradient(top, rgba(0,0,0,.10), rgba(0,0,0,.18)); /* W3C */
+  }
+
+  
+	.oneui30 .dijitToggleButton.dijitToggleButtonChecked .dijitButtonNode,
+	.oneui30 .dijitToggleButton.dijitToggleButtonChecked:hover .dijitButtonNode,
+	.oneui30 .dijitToggleButton.dijitToggleButtonChecked:focus .dijitButtonNode,
+	.oneui30 .dijitToggleButton.dijitToggleButtonChecked:active .dijitButtonNode,
+	.oneui30 .textToolbarButton.dijitToggleButtonChecked .dijitButtonNode,
+	.oneui30 .textToolbarButton.dijitToggleButtonChecked:hover .dijitButtonNode,
+	.oneui30 .textToolbarButton.dijitToggleButtonChecked:focus .dijitButtonNode,
+	.oneui30 .textToolbarButton.dijitToggleButtonChecked:active .dijitButtonNode {
+    background-color: rgba(0, 0, 0, 0.10) !important;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.18) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.18))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#2e000000',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #808080 !important;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.2) !important;
+    opacity: 1;
+   }
+  
+	

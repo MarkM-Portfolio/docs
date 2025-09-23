@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.concord.platform.jar 
+ com.ibm.concord.document.common.jar 
+ com.ibm.concord.document.services.jar 
+ com.ibm.concord.job.jar 
+ com.ibm.concord.spi.jar 
+ lib/json4j.jar 
+ lib/junit.jarcom.ibm.concord.config.jar 
+ com.ibm.docs.directory.jar
+

@@ -1,0 +1,48 @@
+@import url("concordslidesorter.css");
+
+html.CSS1Compat{
+	/*overflow: scroll;*/
+}
+
+html.CSS1Compat body{
+	/*overflow: scroll;*/
+    -webkit-overflow-scrolling: touch;
+    height:600px;
+}
+.presMobile div.office_presentation {
+    height: 600px;
+}
+
+.concord .slideWrapper{
+	margin-top: 0px;
+	float:left;
+}
+
+.concord .PM1_concord{
+	margin-left:0px;
+	margin-right:0px;
+	border: 0px;
+}
+/* the content.html including the slideSelected css 
+so we must to rewrite it.
+ */
+.concord .slideSelected
+{
+	border: 0px;
+	-moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    border-radius: 0px;
+}
+.concord .slideSelected:hover
+{
+	border: 0px;
+	-moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.dojoDndItem { 
+	padding: 0px;
+}

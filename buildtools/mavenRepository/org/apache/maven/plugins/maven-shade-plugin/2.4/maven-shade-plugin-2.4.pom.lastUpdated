@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Dec 22 10:08:43 CST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1450750123524
+file\://C\:\\Rationalsdp\\Sandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.lastUpdated=1450750038036
+http\://download.java.net/maven/2/.lastUpdated=1450750043008
+file\://C\:\\Rationalsdp\\Sandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.error=
+@default-central-orig-https\://repo.maven.apache.org/maven2/.lastUpdated=1450750039816
+http\://download.java.net/maven/2/.error=
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.maven.plugins\:maven-shade-plugin\:pom\:2.4 from/to central-orig (https\://repo.maven.apache.org/maven2)\: java.lang.ClassNotFoundException\: Cannot find the specified class com.ibm.websphere.ssl.protocol.SSLSocketFactory

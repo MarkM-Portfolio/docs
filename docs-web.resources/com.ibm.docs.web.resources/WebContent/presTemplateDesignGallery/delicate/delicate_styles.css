@@ -1,0 +1,160 @@
+/*styles for title page title element*/
+.Delicate-title p
+{
+	text-align:center;
+}
+.Delicate-title {
+	/*font-size:27pt;*/
+	font-size:1.5em;
+	font-family:Georgia;
+	color: #44788C;
+	font-weight:bold;
+	text-transform: uppercase
+}
+.Delicate-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+		text-align:center;
+}
+.Delicate-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Delicate-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Delicate-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Delicate-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:center;
+	text-indent:0cm;
+}
+.Delicate-subtitle {
+	/*font-size:16.2pt;*/
+	font-size:0.9em;
+	font-family:Georgia;
+	color: #333333;	
+	text-transform: uppercase
+}
+.Delicate-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+		text-align:center;
+}
+.Delicate-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Delicate-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Delicate-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.concord .Delicate-datetime {
+	color: #666666;
+	font-family:Arial;
+	text-align:right;			
+}
+
+.concord .Delicate-pagenumber {
+	color: #666666;
+	font-family:Arial;
+	text-align:right;		
+}
+
+.concord .Delicate-footer {
+	color: #666666;
+	font-family:Arial;
+	text-align:left;		
+}
+.Delicate-default {
+	/*font-size:44pt;*/
+	color: #666666;
+	font-family:Arial;
+}
+
+/*styles for other page (non title page) title */
+.Delicate_text-title p
+{
+	text-align:center;
+}
+.Delicate_text-title {
+	/*font-size:36pt;*/
+	font-size:2em;
+	font-family:Georgia;
+	color: #44788C;	
+}
+.Delicate_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+		text-align:center;
+}
+.Delicate_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Delicate_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Delicate_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Delicate_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Delicate_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Delicate_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Delicate_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Delicate_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Delicate_text-outline1 {
+	/*font-size:25.2pt;*/
+	font-size:1.4em;
+	font-family:Arial;
+	color:#666666;
+}
+
+body.lotusJapanese .Delicate-title, body.lotusJapanese .Delicate-subtitle,body.lotusJapanese .Delicate_default, body.lotusJapanese .Delicate_text-title,body.lotusJapanese  .Delicate_text-outline1{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+body.lotusKorean .Delicate-title, body.lotusKorean .Delicate-subtitle, body.lotusKorean .Delicate_default, body.lotusKorean .Delicate_text-title,body.lotusKorean .Delicate_text-outline1{
+    font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}

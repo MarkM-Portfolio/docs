@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>com.ibm.concord.viewer.war</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.ViewerVerse</groupId>
+  <artifactId>com.ibm.concord.viewer.war</artifactId>
+  <name>ViewerVerse: com.ibm.concord.viewer.war - war</name>
+  <packaging>war</packaging>
+
+  <properties>
+    <webcontent.dir>${project.parent.basedir}/WebContent</webcontent.dir>
+    <file.webXml>${project.build.directory}/web.xml</file.webXml>
+  </properties>
+    
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>update the web.xml for ViewerVerse</id>
+            <phase>prepare-package</phase>
+            <configuration>
+              <target>
+                <ant antfile="build_viewernextWar.xml"/>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>    
+
+      <!--Build the parent src -->
+      <plugin>  
+        <groupId>org.codehaus.mojo</groupId>  
+        <artifactId>build-helper-maven-plugin</artifactId>  
+        <executions>
+          <execution>
+            <id>add-source</id>  
+            <phase>generate-sources</phase>  
+            <goals>  
+              <goal>add-source</goal>  
+            </goals>  
+            <configuration>  
+              <sources>  
+                <source>${project.parent.basedir}/src</source>
+              </sources>  
+            </configuration>  
+          </execution>
+          <execution>
+            <id>add-resources</id>  
+            <phase>generate-resources</phase>  
+            <goals>  
+              <goal>add-resource</goal>  
+            </goals>  
+            <configuration>  
+              <resources>
+                <resource>
+                  <directory>${project.parent.basedir}/src</directory>
+                  <filtering>false</filtering>
+                  <excludes>
+                    <exclude>**/*.java</exclude>
+                  </excludes>          
+                </resource>
+              </resources>
+            </configuration>  
+          </execution>           
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

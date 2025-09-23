@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1299575622890" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp_ID"/>
+  <resRefBindings xmi:id="ResourceRefBinding_1310377797696" jndiName="com/ibm/symphony/conversion/workmanager">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1310377797696"/>
+  </resRefBindings>
+</webappbnd:WebAppBinding>

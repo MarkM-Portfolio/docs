@@ -1,0 +1,24 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for widget
+companion file is widget.css*/
+/*** W I D G E T ***/
+.lotusWidget2{border-color:#E8ECEE;}
+.lotusWidget2 h2{background-color:#E8ECEE;background-image:url(../../images/titleBkgd.png);border-color:#E8ECEE;}
+.lotusWidget2 .lotusWidgetBody h2 {background-image:none}
+.lotusWidget2 h3{color:#444;border-bottom-color:#e8ecee}
+.lotusWidget2 .lotusWidgetFooter{border-top-color:#e8ecee}
+.lotusWidget2 .lotusPaging{background-color:transparent}/*paging controls within a widget*/
+/*action menu icon*/
+.lotusWidget2 h2 a.lotusActionMenu{background-image:url(../../images/iconActions.png)}
+.lotusWidget2 h2 a.lotusActionMenu:hover, .lotusWidget h2 a.lotusActionMenu:focus{background-image:url(../../images/iconActionsHover.png)}
+/*add any additional buttons you need to expose here*/
+
+/*[sprite]*/
+.lotusSpritesOn .lotusWidget2 h2{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -900px}
+.lotusSpritesOn .lotusWidget2 h2 a.lotusActionMenu{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -1921px}
+.lotusSpritesOn .lotusWidget2 h2 a.lotusActionMenu:hover, .lotusSpritesOn .lotusWidget2 h2 a.lotusActionMenu:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -2011px}
+/*[/sprite]*/
+/***********************************************************/

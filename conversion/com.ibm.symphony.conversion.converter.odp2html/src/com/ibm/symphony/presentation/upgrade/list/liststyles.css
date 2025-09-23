@@ -1,0 +1,843 @@
+/* get rid of competing styles defined elsewhere */
+.concord ol li, .concord ul li {
+	margin: 0;
+	padding: 0;
+}
+
+/* list-style-type upper-roman */
+/* .concord span.lst-ur:before, */
+.concord li.lst-ur:before,
+.concord h1.lst-ur:before,
+.concord h2.lst-ur:before,
+.concord h3.lst-ur:before,
+.concord h4.lst-ur:before,
+.concord h5.lst-ur:before,
+.concord h6.lst-ur:before {
+	white-space: pre;
+	content: counter(lst-ur, upper-roman) "\002e" " ";
+	counter-increment: lst-ur;
+	padding-right: 0;
+}
+
+/* list-style-type lower-roman */
+/* .concord span.lst-lr:before, */
+.concord li.lst-lr:before,
+.concord h1.lst-lr:before,
+.concord h2.lst-lr:before,
+.concord h3.lst-lr:before,
+.concord h4.lst-lr:before,
+.concord h5.lst-lr:before,
+.concord h6.lst-lr:before {
+	white-space: pre;
+	content: counter(lst-lr, lower-roman) "\002e" " ";
+	counter-increment: lst-lr;
+	padding-right: 0;
+}
+
+/* list-style-type upper-alpha */
+/* .concord span.lst-ua:before, */
+.concord li.lst-ua:before,
+.concord h1.lst-ua:before,
+.concord h2.lst-ua:before,
+.concord h3.lst-ua:before,
+.concord h4.lst-ua:before,
+.concord h5.lst-ua:before,
+.concord h6.lst-ua:before {
+	white-space: pre;
+	content: counter(lst-ua, upper-alpha) "\002e" " ";
+	counter-increment: lst-ua;
+	padding-right: 0;
+}
+
+/* list-style-type-lower-alpha */
+/* .concord span.lst-la:before, */
+.concord li.lst-la:before,
+.concord h1.lst-la:before,
+.concord h2.lst-la:before,
+.concord h3.lst-la:before,
+.concord h4.lst-la:before,
+.concord h5.lst-la:before,
+.concord h6.lst-la:before {
+	white-space: pre;
+	content: counter(lst-la, lower-alpha) "\002e" " ";
+	counter-increment: lst-la;
+	padding-right: 0;
+}
+
+/* list-style-type number */
+/* .concord span.lst-n:before, */
+.concord li.lst-n:before,
+.concord h1.lst-n:before,
+.concord h2.lst-n:before,
+.concord h3.lst-n:before,
+.concord h4.lst-n:before,
+.concord h5.lst-n:before,
+.concord h6.lst-n:before {
+	white-space: pre;
+	content: counter(lst-n, decimal) "\002e" " ";
+	counter-increment: lst-n;
+	padding-right: 0;
+}
+
+/* list-style-type numeric with leading zero */
+/* .concord span.lst-numwz:before, */
+.concord li.lst-numwz:before,
+.concord h1.lst-numwz:before,
+.concord h2.lst-numwz:before,
+.concord h3.lst-numwz:before,
+.concord h4.lst-numwz:before,
+.concord h5.lst-numwz:before,
+.concord h6.lst-numwz:before {
+	white-space: pre;
+	content: counter(lst-numwz, decimal-leading-zero) "\002e" " ";
+	counter-increment: lst-numwz;
+	padding-right: 0;
+}
+
+/* list-style-type-number-2 */
+/* .concord span.lst-n2:before, */
+.concord li.lst-n2:before,
+.concord h1.lst-n2:before,
+.concord h2.lst-n2:before,
+.concord h3.lst-n2:before,
+.concord h4.lst-n2:before,
+.concord h5.lst-n2:before,
+.concord h6.lst-n2:before {
+	white-space: pre;
+	content: counter(lst-n2, decimal) "\003A" " ";
+	counter-increment: lst-n2;
+	padding-right: 0;
+}
+
+/* list-style-type upper-alpha-parenthesis */
+/* .concord span.lst-uap:before, */
+.concord li.lst-uap:before,
+.concord h1.lst-uap:before,
+.concord h2.lst-uap:before,
+.concord h3.lst-uap:before,
+.concord h4.lst-uap:before,
+.concord h5.lst-uap:before,
+.concord h6.lst-uap:before {
+	white-space: pre;
+	content: counter(lst-uap, upper-alpha) "\0029" " ";
+	counter-increment: lst-uap;
+	padding-right: 0;
+}
+
+/* list-style-type-lower-alpha-parenthesis */ 
+/* .concord span.lst-lap:before, */
+.concord li.lst-lap:before,
+.concord h1.lst-lap:before,
+.concord h2.lst-lap:before,
+.concord h3.lst-lap:before,
+.concord h4.lst-lap:before,
+.concord h5.lst-lap:before,
+.concord h6.lst-lap:before {
+	white-space: pre;
+	content: "\0028" counter(lst-lap, lower-alpha) "\0029" " ";
+	counter-increment: lst-lap;
+	padding-right: 0;
+}
+
+/* list-style-type number-parenthesis */
+/* .concord span.lst-np:before, */
+.concord li.lst-np:before,
+.concord h1.lst-np:before,
+.concord h2.lst-np:before,
+.concord h3.lst-np:before,
+.concord h4.lst-np:before,
+.concord h5.lst-np:before,
+.concord h6.lst-np:before {
+	white-space: pre;
+	/* content: "\0028" counter(lst-np, decimal) "\0029" " "; */
+	content: counter(lst-np, decimal) "\0029" " ";
+	counter-increment: lst-np;
+	padding-right: 0;
+}
+
+/* list-style-type-japanese-1 */
+.concord li.lst-j1:before,  h1.lst-j1:before, h2.lst-j1:before, h3.lst-j1:before, h4.lst-j1:before, h5.lst-j1:before, h6.lst-j1:before {
+	white-space: pre;
+	content: attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+/* list-style-type-japanese-2 */
+.concord li.lst-j2:before,  h1.lst-j2:before, h2.lst-j2:before, h3.lst-j2:before, h4.lst-j2:before, h5.lst-j2:before, h6.lst-j2:before {
+	white-space: pre;
+	content: "\0028" attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+/* list-style-type circle */
+/* .concord span.lst-c:before, */
+.concord li.lst-c:before,
+.concord h1.lst-c:before,
+.concord h2.lst-c:before,
+.concord h3.lst-c:before,
+.concord h4.lst-c:before,
+.concord h5.lst-c:before,
+.concord h6.lst-c:before {
+	white-space: pre;
+	content: "\2022" "  ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+/* 2nd-level circle */
+/* .concord span.lst-c span.lst-c:before, */
+.concord li.lst-c li.lst-c:before,
+.concord h1.lst-c h1.lst-c:before,
+.concord h2.lst-c h2.lst-c:before,
+.concord h3.lst-c h3.lst-c:before,
+.concord h4.lst-c h4.lst-c:before,
+.concord h5.lst-c h5.lst-c:before,
+.concord h6.lst-c h6.lst-c:before {
+	white-space: pre;
+	content: "\25E6" "  ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+/* 3rd-level circle */
+/* .concord span.lst-c span.lst-c span.lst-c:before, */
+.concord li.lst-c li.lst-c li.lst-c:before,
+.concord h1.lst-c h1.lst-c h1.lst-c:before,
+.concord h2.lst-c h2.lst-c h2.lst-c:before,
+.concord h3.lst-c h3.lst-c h3.lst-c:before,
+.concord h4.lst-c h4.lst-c h4.lst-c:before,
+.concord h5.lst-c h5.lst-c h5.lst-c:before,
+.concord h6.lst-c h6.lst-c h6.lst-c:before {
+	white-space: pre;
+	content: "\25AA" " ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type cutout-square */
+/* .concord span.lst-cs:before, */
+.concord li.lst-cs:before,
+.concord h1.lst-cs:before,
+.concord h2.lst-cs:before,
+.concord h3.lst-cs:before,
+.concord h4.lst-cs:before,
+.concord h5.lst-cs:before,
+.concord h6.lst-cs:before {
+	white-space: pre;
+	content: "\25D8" " ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type right-arrow */
+/* .concord span.lst-ra:before, */
+.concord li.lst-ra:before,
+.concord h1.lst-ra:before,
+.concord h2.lst-ra:before,
+.concord h3.lst-ra:before,
+.concord h4.lst-ra:before,
+.concord h5.lst-ra:before,
+.concord h6.lst-ra:before {
+	white-space: pre;
+	content: "\F034" "";
+	font-family: Webdings, Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type diamond */
+/* .concord span.lst-d:before, */
+.concord li.lst-d:before,
+.concord h1.lst-d:before,
+.concord h2.lst-d:before,
+.concord h3.lst-d:before,
+.concord h4.lst-d:before,
+.concord h5.lst-d:before,
+.concord h6.lst-d:before {
+	white-space: pre;
+	content: "\2666" " ";
+	font-family: "Times New Roman", Times, serif;
+	padding-right: 0;
+}
+
+/* list-style-type double-arrow*/
+/* .concord span.lst-da:before, */
+.concord li.lst-da:before,
+.concord h1.lst-da:before,
+.concord h2.lst-da:before,
+.concord h3.lst-da:before,
+.concord h4.lst-da:before,
+.concord h5.lst-da:before,
+.concord h6.lst-da:before {
+	white-space: pre;
+	content: "\00BB" " ";
+	font-family: "Times New Roman", Times, serif;
+	padding-right: 0;
+}
+
+/* list-style-type asterisk */
+/* .concord span.lst-a:before, */
+.concord li.lst-a:before,
+.concord h1.lst-a:before,
+.concord h2.lst-a:before,
+.concord h3.lst-a:before,
+.concord h4.lst-a:before,
+.concord h5.lst-a:before,
+.concord h6.lst-a:before {
+	white-space: pre;
+	content: "\2217" " ";
+	font-family: Symbol, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type thin-arrow */
+/* .concord span.lst-ta:before, */
+.concord li.lst-ta:before,
+.concord h1.lst-ta:before,
+.concord h2.lst-ta:before,
+.concord h3.lst-ta:before,
+.concord h4.lst-ta:before,
+.concord h5.lst-ta:before,
+.concord h6.lst-ta:before {
+	white-space: pre;
+	content: "\F0E0" " ";
+	font-family: Wingdings, "Zapf Dingbats", Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type checkmark */
+/* .concord span.lst-cm:before, */
+.concord li.lst-cm:before,
+.concord h1.lst-cm:before,
+.concord h2.lst-cm:before,
+.concord h3.lst-cm:before,
+.concord h4.lst-cm:before,
+.concord h5.lst-cm:before,
+.concord h6.lst-cm:before {
+	white-space: pre;
+	content: "\F061" " ";
+	font-family: Webdings, Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type plus-sign */
+/* .concord span.lst-ps:before, */
+.concord li.lst-ps:before,
+.concord h1.lst-ps:before,
+.concord h2.lst-ps:before,
+.concord h3.lst-ps:before,
+.concord h4.lst-ps:before,
+.concord h5.lst-ps:before,
+.concord h6.lst-ps:before {
+	white-space: pre;
+	content: "\002B" " ";
+	font-family: Impact, Charcoal, sans-serif;
+	padding-right: 0;
+}
+
+/* 
+	list-style-type
+   		various images
+*/
+/* .concord span.lst-bc { */
+.concord li.lst-bc {
+	background: url(../images/IBMDocs_1cube.png) no-repeat;
+}
+
+/* .concord span.lst-bs { */
+.concord li.lst-bs {
+	background: url(../images/IBMDocs_2square.png) no-repeat;
+}
+
+/* .concord span.lst-ba { */
+.concord li.lst-ba {
+	background: url(../images/IBMDocs_3leaf.png) no-repeat;
+}
+
+/* .concord span.lst-s { */
+.concord li.lst-s {
+	background: url(../images/IBMDocs_4bullet.png) no-repeat;
+}
+
+/* .concord span.lst-reda { */
+.concord li.lst-reda {
+	background: url(../images/IBMDocs_5arrow.png) no-repeat;
+}
+
+/* .concord span.lst-blacka { */
+.concord li.lst-blacka {
+	background: url(../images/IBMDocs_6arrow2.png) no-repeat;
+}
+
+/* .concord span.lst-pa { */
+.concord li.lst-pa {
+	background: url(../images/IBMDocs_7arrow3.png) no-repeat;
+}
+
+/* .concord span.lst-gc { */
+.concord li.lst-gc {
+	background: url(../images/IBMDocs_8check.png) no-repeat;
+}
+
+/* .concord span.lst-rx { */
+.concord li.lst-rx {
+	background: url(../images/IBMDocs_9x.png) no-repeat;
+}
+
+/* .concord span.lst-gf { */
+.concord li.lst-gf {
+	background: url(../images/IBMDocs_10flag.png) no-repeat;
+}
+
+/* .concord span.lst-rf { */
+.concord li.lst-rf {
+	background: url(../images/IBMDocs_11flag2.png) no-repeat;
+}
+
+/* .concord span.lst-star { */
+.concord li.lst-star {
+	background: url(../images/IBMDocs_12star.png) no-repeat;
+}
+
+/* 1st-level image bullet */
+.concord li.lst-bc,
+.concord li.lst-bs,
+.concord li.lst-ba,
+.concord li.lst-s,
+.concord li.lst-reda,
+.concord li.lst-blacka,
+.concord li.lst-pa,
+.concord li.lst-gc,
+.concord li.lst-rx,
+.concord li.lst-gf,
+.concord li.lst-rf,
+.concord li.lst-star {
+	background-position: 0 0.4em;
+	background-size: 0.6em 0.6em;
+	/* for FF 3.6 */
+	-moz-background-size: 0.6em 0.6em;
+}
+
+.slideWrapper.ie8ss li.lst-bc {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_1cube_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-bs {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_2square_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-ba {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_3leaf_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-s {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_4bullet_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-reda {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_5arrow_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-blacka {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_6arrow2_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-pa {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_7arrow3_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-gc {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_8check_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-rx {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_9x_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-gf {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_10flag_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-rf {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_11flag2_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-star {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_12star_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+/* make LIs blocks */
+.concord li.lst-ur, .concord li.lst-lr, .concord li.lst-ua, .concord li.lst-la, .concord li.lst-n, .concord li.lst-n2, .concord li.lst-numwz, .concord li.lst-uap, .concord li.lst-lap, .concord li.lst-np, .concord li.lst-c, .concord li.lst-cs, .concord li.lst-ra, .concord li.lst-d, .concord li.lst-da, .concord li.lst-a, .concord li.lst-ta, .concord li.lst-cm, .concord li.lst-ps,
+.concord li.lst-bc, .concord li.lst-bs, .concord li.lst-ba, .concord li.lst-s, .concord li.lst-reda, .concord li.lst-blacka, .concord li.lst-pa, .concord li.lst-gc, .concord li.lst-rx, .concord li.lst-gf, .concord li.lst-rf, .concord li.lst-star
+{
+	display:block;
+}
+
+.concord li.lst-j1, .concord li.lst-j2
+{
+	display:block;
+}
+
+/* Margin and padding settings for regular text boxes */
+.concord li.lst-c,
+.concord li.lst-cs,
+.concord li.lst-ra,
+.concord li.lst-d,
+.concord li.lst-da,
+.concord li.lst-a,
+.concord li.lst-ta,
+.concord li.lst-cm,
+.concord li.lst-ps,
+.concord li.lst-n,
+.concord li.lst-n2,
+.concord li.lst-np,
+.concord li.lst-numwz,
+.concord li.lst-ua,
+.concord li.lst-uap,
+.concord li.lst-la,
+.concord li.lst-lap,
+.concord li.lst-ur,
+.concord li.lst-lr {
+	padding-left: 5%;
+	text-indent: -3.9%;
+}
+
+.concord li.lst-j1,
+.concord li.lst-j2 {
+	padding-left: 9%;
+	text-indent: -9%;
+}
+
+.concord li.lst-bc,
+.concord li.lst-bs,
+.concord li.lst-ba,
+.concord li.lst-s,
+.concord li.lst-reda,
+.concord li.lst-blacka,
+.concord li.lst-pa,
+.concord li.lst-gc,
+.concord li.lst-rx,
+.concord li.lst-gf,
+.concord li.lst-rf,
+.concord li.lst-star {
+	padding-left: 2%;
+	text-indent: 0.6em;
+}
+
+.concord li.lst-bc > span,
+.concord li.lst-bs > span,
+.concord li.lst-ba > span,
+.concord li.lst-s > span,
+.concord li.lst-reda > span,
+.concord li.lst-blacka > span,
+.concord li.lst-pa > span,
+.concord li.lst-gc > span,
+.concord li.lst-rx > span,
+.concord li.lst-gf > span,
+.concord li.lst-rf > span,
+.concord li.lst-star > span {
+	text-indent: -3.9%;
+}
+
+/* do some padding to make it look good in the panel */
+.concord ul.lst-ur,
+.concord ul.lst-lr,
+.concord ul.lst-ua,
+.concord ul.lst-la,
+.concord ul.lst-n,
+.concord ul.lst-n2,
+.concord ul.lst-numwz,
+.concord ul.lst-uap,
+.concord ul.lst-lap,
+.concord ul.lst-np,
+.concord ul.lst-j1,
+.concord ul.lst-j2,
+.concord ul.lst-c,
+.concord ul.lst-cs,
+.concord ul.lst-ra,
+.concord ul.lst-d,
+.concord ul.lst-da,
+.concord ul.lst-a,
+.concord ul.lst-ta,
+.concord ul.lst-cm,
+.concord ul.lst-ps {
+	margin-left: 2%;
+	padding-left: 0;
+}
+
+/* numbered */
+.concord ol.lst-ur,
+.concord ol.lst-lr,
+.concord ol.lst-ua,
+.concord ol.lst-la,
+.concord ol.lst-n,
+.concord ol.lst-n2,
+.concord ol.lst-numwz,
+.concord ol.lst-uap,
+.concord ol.lst-lap,
+.concord ol.lst-np,
+.concord ol.lst-j1,
+.concord ol.lst-j2,
+.concord ol.lst-c,
+.concord ol.lst-cs,
+.concord ol.lst-ra,
+.concord ol.lst-d,
+.concord ol.lst-da,
+.concord ol.lst-a,
+.concord ol.lst-ta,
+.concord ol.lst-cm,
+.concord ol.lst-ps {
+	margin-left: 2%;
+	padding-left: 0;
+}
+
+/* image bullets */
+.concord ul.lst-bc,
+.concord ul.lst-bs,
+.concord ul.lst-ba,
+.concord ul.lst-s,
+.concord ul.lst-reda,
+.concord ul.lst-blacka,
+.concord ul.lst-pa,
+.concord ul.lst-gc,
+.concord ul.lst-rx,
+.concord ul.lst-gf,
+.concord ul.lst-rf,
+.concord ul.lst-star {
+	margin-left: 2%;
+	padding-left: 0;
+} 
+
+/* adding padding to fix spacing issue */
+.concord ol.lst-ur,
+.concord ol.lst-lr,
+.concord ol.lst-lap,
+.concord ol.lst-la,
+.concord ol.lst-uap,
+.concord ol.lst-ua,
+.concord ol.lst-np,
+.concord ol.lst-j1,
+.concord ol.lst-j2,
+.concord ol.lst-n2,
+.concord ol.lst-n {
+}
+
+/* Margin and padding settings for speaker notes, which are typically wider than the slide.
+   Here we roughly halve all the maring and padding values. */
+.notes_tweaks li.lst-c,
+.notes_tweaks li.lst-cs,
+.notes_tweaks li.lst-ra,
+.notes_tweaks li.lst-d,
+.notes_tweaks li.lst-da,
+.notes_tweaks li.lst-a,
+.notes_tweaks li.lst-ta,
+.notes_tweaks li.lst-cm,
+.notes_tweaks li.lst-ps,
+.notes_tweaks li.lst-n,
+.notes_tweaks li.lst-n2,
+.notes_tweaks li.lst-np,
+.notes_tweaks li.lst-numwz,
+.notes_tweaks li.lst-ua,
+.notes_tweaks li.lst-uap,
+.notes_tweaks li.lst-la,
+.notes_tweaks li.lst-lap,
+.notes_tweaks li.lst-ur,
+.notes_tweaks li.lst-lr {
+	padding-left: 2%;
+	text-indent: -2%;
+}
+
+.notes_tweaks li.lst-j1,
+.notes_tweaks li.lst-j2 {
+	padding-left: 4%;
+	text-indent: -4%;
+}
+
+.notes_tweaks li.lst-bc,
+.notes_tweaks li.lst-bs,
+.notes_tweaks li.lst-ba,
+.notes_tweaks li.lst-s,
+.notes_tweaks li.lst-reda,
+.notes_tweaks li.lst-blacka,
+.notes_tweaks li.lst-pa,
+.notes_tweaks li.lst-gc,
+.notes_tweaks li.lst-rx,
+.notes_tweaks li.lst-gf,
+.notes_tweaks li.lst-rf,
+.notes_tweaks li.lst-star {
+	padding-left: 2%;
+	text-indent: 0%;
+}
+
+.notes_tweaks li.lst-bc > span,
+.notes_tweaks li.lst-bs > span,
+.notes_tweaks li.lst-ba > span,
+.notes_tweaks li.lst-s > span,
+.notes_tweaks li.lst-reda > span,
+.notes_tweaks li.lst-blacka > span,
+.notes_tweaks li.lst-pa > span,
+.notes_tweaks li.lst-gc > span,
+.notes_tweaks li.lst-rx > span,
+.notes_tweaks li.lst-gf > span,
+.notes_tweaks li.lst-rf > span,
+.notes_tweaks li.lst-star > span {
+	text-indent: -2%;
+}
+
+.notes_tweaks ul.lst-ur,
+.notes_tweaks ul.lst-lr,
+.notes_tweaks ul.lst-ua,
+.notes_tweaks ul.lst-la,
+.notes_tweaks ul.lst-n,
+.notes_tweaks ul.lst-n2,
+.notes_tweaks ul.lst-numwz,
+.notes_tweaks ul.lst-uap,
+.notes_tweaks ul.lst-lap,
+.notes_tweaks ul.lst-np,
+.notes_tweaks ul.lst-j1,
+.notes_tweaks ul.lst-j2,
+.notes_tweaks ul.lst-c,
+.notes_tweaks ul.lst-cs,
+.notes_tweaks ul.lst-ra,
+.notes_tweaks ul.lst-d,
+.notes_tweaks ul.lst-da,
+.notes_tweaks ul.lst-a,
+.notes_tweaks ul.lst-ta,
+.notes_tweaks ul.lst-cm,
+.notes_tweaks ul.lst-ps {
+	margin-left: 1%;
+	padding-left: 0;
+}
+
+/* numbered (speaker notes) */
+.notes_tweaks ol.lst-ur,
+.notes_tweaks ol.lst-lr,
+.notes_tweaks ol.lst-ua,
+.notes_tweaks ol.lst-la,
+.notes_tweaks ol.lst-n,
+.notes_tweaks ol.lst-n2,
+.notes_tweaks ol.lst-numwz,
+.notes_tweaks ol.lst-uap,
+.notes_tweaks ol.lst-lap,
+.notes_tweaks ol.lst-np,
+.notes_tweaks ol.lst-j1,
+.notes_tweaks ol.lst-j2,
+.notes_tweaks ol.lst-c,
+.notes_tweaks ol.lst-cs,
+.notes_tweaks ol.lst-ra,
+.notes_tweaks ol.lst-d,
+.notes_tweaks ol.lst-da,
+.notes_tweaks ol.lst-a,
+.notes_tweaks ol.lst-ta,
+.notes_tweaks ol.lst-cm,
+.notes_tweaks ol.lst-ps {
+	margin-left: 1%;
+	padding-left: 0;
+}
+
+/* image bullets (speaker notes) */
+.notes_tweaks ul.lst-bc,
+.notes_tweaks ul.lst-bs,
+.notes_tweaks ul.lst-ba,
+.notes_tweaks ul.lst-s,
+.notes_tweaks ul.lst-reda,
+.notes_tweaks ul.lst-blacka,
+.notes_tweaks ul.lst-pa,
+.notes_tweaks ul.lst-gc,
+.notes_tweaks ul.lst-rx,
+.notes_tweaks ul.lst-gf,
+.notes_tweaks ul.lst-rf,
+.notes_tweaks ul.lst-star {
+	margin-left: 1%;
+	padding-left: 0;
+} 
+
+/* when in high contrast mode, background images don't get displayed, so display image bullets using a default bullet character */
+.concord.dijit_a11y li.lst-bc:before,
+.concord.dijit_a11y li.lst-bs:before,
+.concord.dijit_a11y li.lst-ba:before,
+.concord.dijit_a11y li.lst-s:before,
+.concord.dijit_a11y li.lst-reda:before,
+.concord.dijit_a11y li.lst-blacka:before,
+.concord.dijit_a11y li.lst-pa:before,
+.concord.dijit_a11y li.lst-gc:before,
+.concord.dijit_a11y li.lst-rx:before,
+.concord.dijit_a11y li.lst-gf:before,
+.concord.dijit_a11y li.lst-rf:before,
+.concord.dijit_a11y li.lst-star:before
+ {
+    white-space: pre;
+	content: "\2022" "  ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+.concord.dijit_a11y li.lst-bc,
+.concord.dijit_a11y li.lst-bs,
+.concord.dijit_a11y li.lst-ba,
+.concord.dijit_a11y li.lst-s,
+.concord.dijit_a11y li.lst-reda,
+.concord.dijit_a11y li.lst-blacka,
+.concord.dijit_a11y li.lst-pa,
+.concord.dijit_a11y li.lst-gc,
+.concord.dijit_a11y li.lst-rx,
+.concord.dijit_a11y li.lst-gf,
+.concord.dijit_a11y li.lst-rf,
+.concord.dijit_a11y li.lst-star
+ {
+    background: none;
+	padding-left: 5%;
+	text-indent: -3.9%;
+}
+
+.concord.dijit_a11y ul.lst-bc,
+.concord.dijit_a11y ul.lst-bs,
+.concord.dijit_a11y ul.lst-ba,
+.concord.dijit_a11y ul.lst-s,
+.concord.dijit_a11y ul.lst-reda,
+.concord.dijit_a11y ul.lst-blacka,
+.concord.dijit_a11y ul.lst-pa,
+.concord.dijit_a11y ul.lst-gc,
+.concord.dijit_a11y ul.lst-rx,
+.concord.dijit_a11y ul.lst-gf,
+.concord.dijit_a11y ul.lst-rf,
+.concord.dijit_a11y ul.lst-star
+ {
+	margin-left: 2%;
+	padding-left: 0;
+} 

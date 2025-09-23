@@ -1,0 +1,70 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* Copyright IBM Corp. 2014                                          */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+
+body {
+	background: none transparent;
+}
+
+body.compactMode{
+	background: none transparent;
+}
+
+.compactMode #a_page_down .dijit .lotusBtn.dijitButtonNode,
+.compactMode #a_page_up .lotusBtn.dijitButtonNode,
+.compactMode #a_zoomOut .lotusBtn.dijitButtonNode,
+.compactMode #a_fitWidth .lotusBtn.dijitButtonNode,
+.compactMode #a_zoomIn .lotusBtn.dijitButtonNode,
+.compactMode #a_slide_show .lotusBtn.dijitButtonNode {
+   background: rgba(0, 0, 0, 0.75) !important;
+   width: 33px;
+   height: 40px;
+}
+
+.dj_ie8 .compactMode #T_Actions {
+   filter: alpha(opacity=75);
+}
+
+.compactMode #T_Actions .lotusBtn.dijitButtonNode {
+   margin: 0;   
+}
+
+.compactMode .dijitButton .dijitButtonNode {
+   border-radius: 0;   
+}
+
+.compactMode #a_page_down .dijitButtonContents,
+.compactMode #a_page_up .dijitButtonContents,
+.compactMode #a_zoomOut .dijitButtonContents,
+.compactMode #a_fitWidth .dijitButtonContents,
+.compactMode #a_zoomIn .dijitButtonContents {
+   position: relative;
+   top: 9px;
+}
+
+/* Only needed because the Play icon is not centered */
+.compactMode #a_slide_show .dijitButtonContents {
+   position: relative;
+   top: 12px;
+   left: 3px;
+}
+
+.compactMode #T_PageIndicator {
+   background-color: rgba(0, 0, 0, 0.6);
+   font-weight: bold;
+   padding: 6px 10px;
+}
+
+.dj_ie8 .compactMode #T_PageIndicator {
+   background-color: rgb(36, 36, 36);
+}

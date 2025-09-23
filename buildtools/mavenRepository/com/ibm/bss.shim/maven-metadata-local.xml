@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ibm</groupId>
+  <artifactId>bss.shim</artifactId>
+  <versioning>
+    <versions>
+      <version>2.48-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20150825084126</lastUpdated>
+  </versioning>
+</metadata>

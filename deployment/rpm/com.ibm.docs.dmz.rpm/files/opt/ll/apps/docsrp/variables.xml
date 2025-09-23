@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variables:VariableMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:variables="http://www.ibm.com/websphere/appserver/schemas/5.0/variables.xmi" xmi:id="VariableMap_1">
+<entries xmi:id="VariableSubstitutionEntry_1330582750668" symbolicName="DOCS_TFIM_URL" value="https://apps.docsdev.cn.ibm.com/sps/idp/saml11/login" description="The url of the TFIM."/>
+<entries xmi:id="VariableSubstitutionEntry_1330582750669" symbolicName="DOCS_PROVIDER_ID" value="https://apps.docsdev.cn.ibm.com/docs" description="The url of PROVIDER_ID."/>
+<entries xmi:id="VariableSubstitutionEntry_1330582750670" symbolicName="DOCS_NOEXISTING_PAGE_IDP" value="https://apps.docsdev.cn.ibm.com/docs/shouldnotexist1" description="The url should not exist."/>
+<entries xmi:id="VariableSubstitutionEntry_1330582750671" symbolicName="DOCS_NOEXISTING_PAGE_AUTHED" value="https://apps.docsdev.cn.ibm.com/docs/shouldnotexist2" description="The url should not exist."/>
+<entries xmi:id="VariableSubstitutionEntry_1330582750672" symbolicName="DOCS_BACKFROMSAML_PAGE" value="/docs/backfromsaml" description="This is uri rather than url."/>
+<entries xmi:id="VariableSubstitutionEntry_1330582750673" symbolicName="DOCS_HOME_PAGE" value="https://apps.docsdev.cn.ibm.com/files" description="Home Page."/>
+<entries xmi:id="VariableSubstitutionEntry_1330582750674" symbolicName="DOCS_HOST_PAGE" value="https://apps.docsdev.cn.ibm.com" description="Host Page."/>
+<entries xmi:id="VariableSubstitutionEntry_1330582750675" symbolicName="DOCS_SAML_JKSKEY" value="lotusliveidp" description="The jks key for SAML CA."/>
+<entries xmi:id="VariableSubstitutionEntry_1330582750676" symbolicName="DOCS_SAML_JKSPASSWORD" value="cGFzc3cwcmQ=" description="The jks password for SAML CA."/>
+</variables:VariableMap>

@@ -1,0 +1,19 @@
+Lock explain 
+
+---------------------
+
+1. Slide or Element can have a user list, element can only be locked by one person
+2. When user load document, user may get an element lock table from server, and initial a locker object with it.
+3. UserJoined -> "/scene/user/joined" -> SlideEditor send lock out + Sorter send slide out.
+              -> "requestLockStatus" -> Ask other user send yours to me. (Just in case the user joined is not called in other user side)
+4. CoeditStarted -> "/scene/coedit/started" -> SlideEditor send lock out + Sorter send slide out. 
+                 -> "requestLockStatus" -> Ask other user send yours to me. (3 + 4 is a double safe)
+5. Leave    -> send remove lock from me message.
+6. UserLeft -> remove the user from local lock. (5 + 6 is a double safe)
+
+---------------------
+
+Lock OT
+
+1. Server will lock box for Who take lock first, ignore the later lock request
+2. The later user will receive lock message from the earlier, then exit edit mode and unlock the box in UI. 

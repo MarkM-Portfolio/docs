@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejb="ejb.xmi" xmlns:ejbbnd="ejbbnd.xmi" xmi:id="EJBJarBinding_1107123385685">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:type="ejbbnd:MessageDrivenBeanBinding" xmi:id="MessageDrivenBeanBinding_1107123385675" ejbName="PackageReceived" activationSpecJndiName="eis/ViewerActivationSpec" destinationJndiName="jms/ViewerJournalTopic">
+    <enterpriseBean xmi:type="ejb:MessageDriven" href="META-INF/ejb-jar.xml#com.ibm.docs.viewer.journal.subscriber.sample.PackageReceivedBean"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

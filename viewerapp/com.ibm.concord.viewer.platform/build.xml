@@ -1,0 +1,119 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.concord.viewer.platform" basedir="." default="findbugs">
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${bin.dir}/classes"/>
+	<property name="jar.dir" value="${bin.dir}/jar"/>
+	<property name="ear.dir" value="../com.ibm.concord.viewer.ear/"/>
+  <property name="jar.path" value="${build.home}/${ant.project.name}.jar"/>
+	<path id="project.classpath">
+		<pathelement path="${build.home}/com.ibm.concord.viewer.config.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.spi.jar"/>
+	</path>
+	
+	<path id="lib.classpath">
+		<fileset dir="${ear.dir}/lib">
+			<include name="**/json4j.jar"/>
+			<include name="**/abdera*incubating.jar"/>
+			<include name="**/commons-lang*.jar"/>
+			<include name="**/axiom-api*.jar"/>
+			<include name="**/axiom-impl*.jar"/>
+			<include name="**/commons-codec*.jar"/>
+			<include name="**/commons-fileupload*.jar"/>
+			<include name="**/commons-httpclient*.jar"/>
+			<include name="**/commons-io*.jar"/>
+			<include name="**/commons-pool*.jar"/>
+			<include name="**/commons-collections*.jar"/>
+			<include name="**/commons-configuration*.jar"/>
+			<include name="**/commons-configuration*plus-node-clone.jar"/>
+			<include name="**/jaxen*.jar"/>
+			<include name="**/httpclient*.jar"/>
+			<include name="**/httpcore*.jar"/>
+			<include name="**/httpmime*.jar"/>
+			<include name="**/lc.customAuthClient*.jar"/>
+		</fileset> 
+	</path>
+	
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+	</path>
+	
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath"/>
+			<classpath refid="lib.classpath"/>
+			<classpath refid="was.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="gather" depends="compile">
+		<copy todir="${classes.dir}" failonerror="true" overwrite="true">
+	   		<fileset dir="${src.dir}">
+      			<exclude name="**/*.java"/>
+    		</fileset>
+		</copy>		 
+	</target>
+	<target name="jar" depends="gather">
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">		    
+			<mapper>
+				<chainedmapper>  
+					<flattenmapper/>
+					<globmapper from="*" to ="lib/*"/>
+				</chainedmapper>  
+			</mapper>
+			<path refid="lib.classpath"/>
+  		</pathconvert>
+  		<pathconvert property="manifest.project.classpath" pathsep=" ">		    
+			<mapper>
+				<chainedmapper>  
+					<flattenmapper/>
+				</chainedmapper>  
+			</mapper>
+			<path refid="project.classpath"/>
+  		</pathconvert>
+		<mkdir dir="${jar.dir}"/>
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Created-By" value="IBM"/>
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}"/>
+			</manifest>
+			<fileset dir="." includes="native/libFileUtil.so"/>
+			<fileset dir="." includes="native/libFileUtilSuSE11SP3.so"/>
+			<fileset dir="." includes="native/libFileUtilSuSE11SP3_bigendian.so"/>
+			<fileset dir="." includes="native/FileUtil64.dll"/>
+			<fileset dir="." includes="native/FileUtil32.dll"/>
+		</jar>
+	</target>
+	<target name="deploy" depends="jar">
+		<copy todir="${build.home}">
+			<fileset dir="${jar.dir}"/>
+		</copy>
+		<mkdir dir="${build.home}/config"/>
+		<copy todir="${build.home}/config">
+			<fileset dir="${basedir}/config">
+				<exclude name="local-test-users.json"/>
+				<exclude name="viewer-config-localtest.json"/>
+			</fileset>
+			<fileset dir="${basedir}/journal" includes="**/*"/>
+		</copy>
+  </target>
+	<target name="findbugs" depends="deploy">
+    <ant dir="${findbugs.home}" inheritAll="true"/>
+  </target>
+</project>
+

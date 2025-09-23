@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM                              -->
+<!--                                                                   -->
+<!-- 5724-S31                                                          -->
+<!--                                                                   -->
+<!-- Copyright IBM Corp. 2009, 2010  All Rights Reserved.              -->
+<!--                                                                   -->
+<!-- US Government Users Restricted Rights - Use, duplication or       -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with           -->
+<!-- IBM Corp.                                                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<!-- 5724-S68                                                          -->
+<plugin
+   id="com.ibm.concord.uiextensions"
+   version="3.0.0"
+   name="Lotus Concord UI Extesions"
+   provider-name="IBM">
+
+   <!-- Add and remove items from this list to control which extensions are added
+        to the Files application.
+        -->
+   <extension point="com.ibm.lconn.files.javascript" id="example_js">
+      <!--<include context-root="/uiextension" url="/js/enableDragAndDrop.js" />
+      <include context-root="/uiextension" url="/js/imageRenderer.js" />
+      <include context-root="/uiextension" url="/js/confidentialExample.js" />
+      -->
+      <!-- The following lines will include the simple examples-->
+      
+      <include context-root="/concordfilesext" url="/js/concord/addEditsOnFiles.js" />
+      <include context-root="/concordfilesext" url="/js/concord/actionNewDoc.js" />
+      <include context-root="/concordfilesext" url="/js/concord/ODFRenderer.js" />
+      <include context-root="/concordfilesext" url="/js/concord/draftTab.js" />
+	  <!--
+      <include context-root="/uiextension" url="/js/simpleImageRendererExample.js" />
+      -->
+      
+   </extension>
+   
+   <!-- Add and remove items from this list to control which extensions are added
+        to the Community Files widget.
+        -->
+   <extension point="com.ibm.lconn.files.javascript-communityref" id="example_community_js">
+   	  <!--
+      <include context-root="/uiextension" url="/js/enableDragAndDrop.js" />
+      <include context-root="/uiextension" url="/js/imageRenderer.js" />
+      <include context-root="/uiextension" url="/js/confidentialExample.js" />
+      -->
+      <!-- The following lines will include the simple examples if uncommented.
+      
+      <include context-root="/uiextension" url="/js/actionExample.js" />
+      <include context-root="/uiextension" url="/js/tabsExample.js" />
+      <include context-root="/uiextension" url="/js/simpleImageRendererExample.js" />
+      -->
+     
+      <include context-root="/concordfilesext" url="/js/concord/addEditsOnCommFiles.js" />
+      <include context-root="/concordfilesext" url="/js/concord/actionNewDoc.js" />
+      <include context-root="/concordfilesext" url="/js/concord/ODFRenderer.js" />
+      <include context-root="/concordfilesext" url="/js/concord/draftTab.js" />
+   </extension>
+</plugin>

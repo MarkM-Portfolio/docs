@@ -1,0 +1,67 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2014. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<project name="com.ibm.docs.spellcheck.web" basedir="." default="deploy">
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${bin.dir}/classes"/>
+	<property name="jar.dir" value="${bin.dir}/jar"/>
+	<property name="bundles.dir" value="../com.ibm.rcp.spellcheck.webapp/WebContent/WEB-INF/eclipse/plugins"/>
+	<property name="lib.dir" value="lib"/>
+	
+	<path id="lib.classpath">
+		<fileset dir="${lib.dir}" includes="**/*.jar"/>
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+		<fileset dir="${bundles.dir}" includes="**/*.jar"/>
+		<fileset dir="${build.home}" includes="**/com.ibm.docs.spellcheck.service*.jar"/>
+	</path>
+	
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+	</path>
+	
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="lib.classpath"/>
+			<classpath refid="was.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="gather" depends="compile">
+		<copy todir="${classes.dir}" failonerror="true" overwrite="true">
+	   		<fileset dir="${src.dir}">
+      			<exclude name="**/*.java"/>
+    		</fileset>
+		</copy>		 
+		<copy todir="${basedir}/lib">
+			<fileset dir="${build.home}" includes="**/com.ibm.docs.spellcheck.service*"/>
+		</copy>
+	</target>
+
+	<target name="jar" depends="gather"> <mkdir dir="${jar.dir}"/>
+		<zip destfile="${jar.dir}/${ant.project.name}_${build.version}_${build.timestamp}.jar" basedir="${classes.dir}">
+   			<zipfileset dir="META-INF" prefix="META-INF"/>
+   			<zipfileset dir="." includes="plugin.xml"/>
+			<zipfileset dir="lib" prefix="lib"/>
+		</zip>
+	</target>
+	<target name="deploy" depends="jar">
+		<copy todir="${build.home}">
+			<fileset dir="${jar.dir}"/>
+		</copy>
+	</target>
+</project>

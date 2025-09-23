@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "数値、通貨、日付、時刻を書式設定するためのロケールを選択します。",
+	INPUT_INVALID_LOCALENAME: "ロケール名が無効です",
+	INPUT_EMPTY_LOCALENAME: "ロケールを選択してください。",
+	
+	Spain_Catalan: "スペイン (カタロニア語)",
+	Denmark: "デンマーク",
+	Germany: "ドイツ",
+	Greek: "ギリシャ",
+	United_States: "米国",
+	United_Kingdom: "英国",
+	Spain: "スペイン",
+	Finland: "フィンランド",
+	France: "フランス",
+	Italy: "イタリア",
+	Japan: "日本",
+	Korean: "韓国",
+	Norway: "ノルウェー",
+	Netherlands: "オランダ",
+	Poland: "ポーランド",
+	Brazil: "ブラジル",
+	Portugal: "ポルトガル",
+	Russia: "ロシア",
+	Sweden: "スウェーデン",
+	Thailand: "タイ",
+	Turkey: "トルコ",
+	China: "中華人民共和国",
+	Taiwan_China: "台湾 (中国)",
+	Israel: "イスラエル"
+})
+

@@ -1,0 +1,172 @@
+@import url("documentContent.css");
+.PM1_concord {
+				height:98px; 
+				/* jmt comment out for LOLA width:130px;  */
+				width:130.50px; 
+				border:1px #cccccc solid;
+				margin-left:15px;
+				margin-right:7px;
+				/*margin-top:15px;*/
+				/*font-family: Arial, sans-serif, sans;*/
+				/* jmt comment out for LOLA font-size: 3px !important; */
+				font-size: 2.970747px !important;
+				position: relative;
+			}
+.slideWrapper{
+	margin-top:15px;
+	position: relative;
+}
+.slideContent
+{
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+
+/* jmt moved to documentContent.css 
+	p {margin: 0px; }
+	ul {margin: 0px; padding-left:12px;}
+*/
+
+.slideSelected
+{
+	border: 3px #cccccc solid;
+}
+.slideOver{
+	border: 1px #000000 solid;
+}
+.taskContainer{
+	/*border: 1px blue solid;
+	/*width:130px;
+	margin-left:15px;
+	margin-right:7px;
+	margin-top:2px;
+	padding:3px;
+	*/
+	font-size: 12px;
+}
+.taskEntryWrite{
+	border: 1px green solid;
+	width:130px;
+	margin-left:15px;
+	margin-right:7px;
+	margin-top:2px;
+}
+.taskEntryReview{
+	border: 1px green dotted;
+	width:130px;
+	margin-left:15px;
+	margin-right:7px;
+	margin-top:2px;
+}
+.taskContainerHidden{
+	display:none;
+}
+
+
+/* temp DND css */
+
+/*
+
+	there are basically all the classes you can set 
+	for the various dojo.dnd states and elements in
+	their simplest form. hacking welcome. 
+
+*/
+.dndDropPosBefore{
+	position: absolute;
+	width:130px;
+	margin-left:15px;
+	margin-right:7px;
+	top: -10px;
+}
+.dndDropPosAfter{
+	position: absolute;
+	width:130px;
+	margin-left:15px;
+	margin-right:7px;
+	bottom:-10px;
+}
+.container {
+	border: 3px solid #ccc;
+	padding: 1em 3em; 
+	cursor: default;
+	radius: 8pt;
+	background: #fff;
+	-moz-border-radius: 8pt 8pt;
+}
+
+.dojoDndContainerOver {
+	/* cursor:pointer; */
+	/* border: 3px solid #aaa;*/
+}
+
+.dojoDndTargetDisabled {
+	background: #eee;
+}
+
+.dojoDndItem { 
+	padding: 3px;
+}
+
+.dj_ff2 .dojoDndItem {
+	-moz-user-select: none; /* workaround FF2 dragging bug, see #6345, #4854, #6350 */
+} 
+
+.dojoDndItemOver {
+	/*background: #ededed;*/
+	cursor: pointer;
+}
+
+.dojoDndItemSelected {
+	/*background: #ccf; color: #444;*/
+}
+
+.dojoDndItemAnchor {
+	/*background: #ccf; color: black;*/
+	/*border: 1px dashed #000000;*/
+}
+
+.dojoDndItemOver .dojoDndItemSelected {
+	background: #ededed;
+}
+
+.dojoDndItemOver .dojoDndItemAnchor {
+	background: #ededed;
+}
+
+.dojoDndItemBefore {
+	/*border-top: 2px solid #369;*/
+}
+
+.dojoDndItemAfter {
+	/*border-bottom: 2px solid #369;*/
+}
+
+.dojoDndAvatar {
+	font-size: 75%;
+	-moz-border-radius: 8pt 8pt;
+	radius: 8pt;	
+	opacity:.5;
+}
+	
+.dojoDndAvatarHeader {
+	background: #aaa;
+	display:none;
+}
+
+.dojoDndAvatarItem {
+	background: #fff;
+	border-bottom: 1px solid #666;
+}
+
+ .dojoDndAvatarItem .PM1_concord {
+	border:1px dashed #CCCCCC;
+	font-size:3px !important;
+	height:98px;
+	position:relative;
+	width:130px;
+	margin:0px;
+}

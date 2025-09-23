@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>com.ibm.docs.spellcheck.ear</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.SmartCloud</groupId>
+  <artifactId>com.ibm.docs.spellcheck.ear</artifactId>
+  <name>SmartCloud: com.ibm.docs.spellcheck.ear - ear</name>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <!-- Project dependencies -->
+    <dependency>
+      <groupId>com.ibm.docs.SmartCloud</groupId>
+      <artifactId>com.ibm.rcp.spellcheck.webapp</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>Build for com.ibm.docs.spellcheck.ear</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_com.ibm.docs.spellcheck.ear.xml</descriptor>
+              </descriptors>
+              <archiverConfig>
+                <appxml>${parent.basedir}/META-INF/application.xml</appxml>
+              </archiverConfig>
+              <finalName>${project.artifactId}</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

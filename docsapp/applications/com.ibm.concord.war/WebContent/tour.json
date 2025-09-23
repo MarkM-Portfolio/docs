@@ -1,0 +1,23 @@
+{
+	"text": {
+		"feature":[
+			{
+				"featureIDs": ["TEXT_TOOLBAR","TEXT_LAYOUT","COMMON_COEDIT","TEXT_COMMENT","TEXT_AUTO_PUBLISH","TEXT_TRACK_CHANGE","COMMON_TOUR"]
+			}			
+		]
+	},
+	"sheet": {
+		"feature":[
+			{		
+				"featureIDs": ["SHEET_FORMULA","SHEET_DATA","COMMON_COEDIT","SHEET_COMMENT","SHEET_AUTO_PUBLISH","COMMON_TOUR"]
+			}			
+		]	
+	},
+	"pres": {
+		"feature":[
+			{			
+				"featureIDs": ["PRES_SLIDES","PRES_ORDER","COMMON_COEDIT","PRES_COMMENT","PRES_AUTO_PUBLISH","COMMON_TOUR"]
+			}
+		]	
+	}
+}

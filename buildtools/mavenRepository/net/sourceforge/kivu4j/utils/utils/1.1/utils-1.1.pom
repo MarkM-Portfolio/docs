@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Kivu4j. Copyright (C) 2010 . see<http://kivu4j.sourceforge.net /> This 
+	program is free software: you can redistribute it and/or modify it under 
+	the terms of the GNU General Public License as published by the Free Software 
+	Foundation, either version 3 of the License, or (at your option) any later 
+	version. This program is distributed in the hope that it will be useful, 
+	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
+	or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for 
+	more details. You should have received a copy of the GNU General Public License 
+	along with this program. If not, see <http://www.gnu.org/licenses />. -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>net.sourceforge.kivu4j</groupId>
+		<artifactId>kivu4j</artifactId>
+		<version>5</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.sourceforge.kivu4j.utils</groupId>
+	<artifactId>utils</artifactId>
+	<version>1.1</version>
+	<packaging>pom</packaging>
+	<name>Kivu4j : Utils</name>
+
+	<modules>
+		<module>lang</module>
+		<module>json</module>
+		<module>hibernate</module>
+		<module>struts</module>
+		<module>test</module>
+		<module>api</module>
+		<module>action</module>
+		<module>job</module>
+	</modules>
+
+	<developers>
+		<developer>
+			<id>Lucky Yang</id>
+			<email>1290308475@qq.com</email>
+			<url />
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:svn:http://svn.code.sf.net/p/kivu4j/code-0/tags/utils-1.1</connection>
+		<developerConnection>scm:svn:https://svn.code.sf.net/p/kivu4j/code-0/tags/utils-1.1</developerConnection>
+		<url>scm:svn:http://svn.code.sf.net/p/kivu4j/code-0/tags/utils-1.1</url>
+	</scm>
+
+	<issueManagement>
+		<system>sourceforge</system>
+		<url>http://sourceforge.net/p/kivu4j/tickets/</url>
+	</issueManagement>
+
+	<distributionManagement>
+		<site>
+			<id>kivu4j.sourceforge.net</id>
+			<url>scp://shell.sourceforge.net/home/project-web/kivu4j/htdocs/utils</url>
+		</site>
+	</distributionManagement>
+</project>

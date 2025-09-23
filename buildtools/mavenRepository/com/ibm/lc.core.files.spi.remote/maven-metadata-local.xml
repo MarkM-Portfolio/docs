@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ibm</groupId>
+  <artifactId>lc.core.files.spi.remote</artifactId>
+  <versioning>
+    <release>20160210-1352</release>
+    <versions>
+      <version>20160210-1352</version>
+    </versions>
+    <lastUpdated>201602122314</lastUpdated>
+  </versioning>
+</metadata>

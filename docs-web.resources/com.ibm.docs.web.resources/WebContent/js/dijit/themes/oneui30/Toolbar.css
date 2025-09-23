@@ -1,0 +1,132 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* Toolbar
+ * Styling Toolbar means styling the toolbar container and the widget inside toolbar  (dijitToolbar)
+ * 1. toolbar (default styling):
+ * 		.dijitTreeRow - for background-color, border
+ * 2. widget inside toolbar
+ * 		.dijitToolbar .dijitButtonNode   - mainly for Button widget background-color, border
+ * 					  .dijitComboButton  - mainly for ComboButton background-color, border
+ * 					  .dijitDropDownButton  - mainly for DropDownButton background-color, border
+ * 					  .dijitToggleButton  - mainly for ToggleButton background-color, border
+ * 3. hovered widget inside toolbar (ie, mouse hover on the widget inside)
+ * 			.dijitToolbar .dijitButtonNodeHover  - mainly for hovered Button widget background-color, border
+ * 				also for .dijitComboButtonHover .dijitDropDownButtonHover .dijitToggleButtonHover
+ * 4. actived widget inside toolbar (ie, mouse down on the widget inside)
+ * 			.dijitToolbar .dijitButtonNodeActive  - mainly for actived Button widget background-color, border
+ * 				also for .dijitComboButtonActive .dijitDropDownButtonActive .dijitToggleButtonActive
+ */
+.oneui30 .dijitToolbar {
+    padding: 2px 0 2px 4px;
+	border-bottom: 1px solid #aaa;
+    background-color: #fafafa;
+    background-image: -moz-linear-gradient(center top , #fff 0%, #ebebeb 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ebebeb));
+	zoom: 1;
+}
+
+.dj_ie6 .oneui30 .dijitToolbar {
+   	padding-top: 1px;
+	padding-bottom: 3px;
+}
+
+.dj_ie6 .oneui30 .dijitToolbar .dijitTextBox {
+	position: relative;
+}
+
+.oneui30 .dijitToolbar label {
+    padding: 0 3px 0 6px;
+}
+
+/** override oneui/form/Button.css **/
+.oneui30 .dijitToolbar .dijitButtonNode {
+    padding: 2px;
+	border: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.dj_ie .oneui30 .dijitToolbar .dijitButtonNode {
+    background-color: transparent; /* for IE, which doesn't understand rgba(...) */
+}
+
+.dj_ie6 .oneui30 .dijitToolbar .dijitButtonNode {
+    background: none; /* because background-color:transparent above doesn't work */
+}
+
+.oneui30 .dijitToolbar .dijitComboBox .dijitButtonNode {
+    padding: 2px 2px 2px 0;
+}
+
+.oneui30 .dijitToolbar .dijitComboButton {
+    padding: 1px;
+}
+
+/* hover status */
+.oneui30 .dijitToolbar .dijitButtonHover .dijitButtonNode, .oneui30 .dijitToolbar .dijitDropDownButtonHover .dijitButtonNode, .oneui30 .dijitToolbar .dijitToggleButtonHover .dijitButtonNode {
+    padding: 1px;
+	border: solid 1px #ccc;
+}
+
+.oneui30 .dijitToolbar .dijitComboButtonHover {
+    padding: 0;
+	border: solid 1px #ccc;
+}
+
+.oneui30 .dijitToolbar .dijitComboButtonHover .dijitButtonNode, .oneui30 .dijitToolbar .dijitComboButtonHover .dijitDownArrowButton {
+	padding: 2px;
+	background-position: 0 0;
+   
+}
+
+/* actve status */
+.oneui30 .dijitToolbar .dijitButtonActive .dijitButtonNode, .oneui30 .dijitToolbar .dijitDropDownButtonActive .dijitButtonNode, .oneui30 .dijitToolbar .dijitToggleButtonActive .dijitButtonNode {
+    padding: 1px;
+	border: solid 1px #aaa;
+    background-color: #fff;
+}
+
+.oneui30 .dijitToolbar .dijitComboButtonActive {
+    padding: 0;
+	border: solid 1px #aaa;
+}
+
+.oneui30 .dijitToolbar .dijitComboButtonActive .dijitButtonNode {
+    padding: 2px;
+	background-color: #fff;
+}
+
+.oneui30 .dijitToolbar .dijitComboButton .dijitDownArrowButtonActive {
+    background-color: #7dbefa;
+}
+
+/* toggle button checked status */
+.oneui30 .dijitToolbar .dijitToggleButtonChecked .dijitButtonNode {
+    padding: 1px;
+	border-color: #666;
+    background-color: #fff;
+}
+
+.dj_ie6 .oneui30 .dijitToolbar .dijitButtonHover .dijitButtonNode, .dj_ie6 .oneui30 .dijitToolbar .dijitDropDownButtonHover .dijitButtonNode, .dj_ie6 .oneui30 .dijitToolbar .dijitComboButton .dijitButtonNodeHover, .dj_ie6 .oneui30 .dijitToolbar .dijitComboButton .dijitDownArrowButtonHover, .dj_ie6 .oneui30 .dijitToolbar .dijitToggleButtonHover .dijitButtonNode, .dj_ie6 .oneui30 .dijitToolbar .dijitButtonActive .dijitButtonNode, .dj_ie6 .oneui30 .dijitToolbar .dijitDropDownButtonActive .dijitButtonNode, .dj_ie6 .oneui30 .dijitToolbar .dijitComboButton .dijitButtonNodeActive, .dj_ie6 .oneui30 .dijitToolbar .dijitComboButton .dijitDownArrowButtonActive, .dj_ie6 .oneui30 .dijitToolbar .dijitToggleButtonActive .dijitButtonNode, .oneui30 .dijitToolbar .dijitToggleButtonChecked .dijitButtonNode {
+    margin: 0; /* remove margin and add a border */
+    border-width: 1px;
+    border-style: solid;
+}
+
+.dj_ie6 .oneui30 .dijitToolbar .dijitComboButton .dijitButtonNodeHover, .dj_ie6 .oneui30 .dijitToolbar .dijitComboButton .dijitDownArrowButtonHover, .dj_ie6 .oneui30 .dijitToolbar .dijitComboButton .dijitButtonNodeActive, .dj_ie6 .oneui30 .dijitToolbar .dijitComboButton .dijitDownArrowButtonActive {
+    padding: 1px; /* ComboButton use table td has no margin, so we minus padding 2px -> 1px for the 1px border. ie6... */
+}
+
+.oneui30 .dijitToolbarSeparator { /* separator icon in the editor sprite */
+    background: url('images/editorIcons.png');
+}
+
+/* Toolbar inside of disabled Editor */
+.oneui30 .dijitDisabled .dijitToolbar {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}

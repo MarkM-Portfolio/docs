@@ -1,0 +1,72 @@
+({
+		SAVE: "Sačuvaj",
+		UNDO:"Opozovi",
+		REDO:"Ponovi",
+		INSERTROW:"Umetni red",
+		DELETEROW:"Izbriši red",
+		INSERTCOLUMN:"Umetni kolonu",
+		DELETECOLUMN:"Izbriši kolonu",
+		FONTSIZE:"Veličina fonta",
+		FONTCOLOR:"Boja fonta",
+		BOLD:"Podebljano",
+		ITALIC:"Kurziv",
+		UNDERLINE:"Podvučeno",
+		STRIKETHROUGH:"Precrtano",
+		CURRENCYTIP:"Oblikuj kao valutu",
+		PERCENTLABEL:"%",
+		PERCENTTIP:"Oblikuj kao procenat",
+		NUMBERFORMAT:"Format broja",
+		ALIGNLEFT:"Poravnaj levo",
+		ALIGNCENTER:"Poravnaj po centru",
+		ALIGNRIGHT:"Poravnaj desno",
+		SETCELLBORDER:"Podesi ivicu ćelije",
+		BACKGROUNDCOLOR:"Boja pozadine",
+		TASK:"Dodeli odeljak",
+		COMMENTS:"Dodaj komentar",
+		SUBMIT:"Pošalji",
+		MERGECELL: "Objedini ili razdeli ćelije",
+		QUICKFORMULA: "Brza formula",
+		WRAPTEXT: "Prelomi tekst",
+		EIGHT:"8pt",
+		NINE:"9pt",
+		TEN:"10pt",
+		ELEVEN:"11pt",
+		TWELVE:"12pt",
+		FOURTEEN:"14pt",
+		SIXTEEN:"16pt",
+		EIGHTEEN:"18pt",
+		TWENTY:"20pt",
+		TWENTYTWO:"22pt",
+		TWENTYFOUR:"24pt",
+		NUMBER:"Broj",
+		CURRENCY:"Valuta",
+		PERCENT:"Procenat",
+		DATE:"Datum",
+		TIME:"Vreme",
+		DATETIME: "Datum i vreme",
+		MORECURRENCY:"Više valuta",
+		MOREDATE:"Više formata",
+		
+		
+		CAD: "kanadski dolar",
+		USD: "dolar",
+		EUR: "evro",
+		CHF: "švajcarski franak",
+		HKD: "hongkonški dolar",
+		DKK: "kruna",
+		LTL: "lita",
+		PHP: "pezos",
+		BRL: "real",
+		RUR: "rublja",
+		GBP: "funta",
+		NLG: "gulden", // Netherlands
+		TWD: "novi tajvanski dolar",
+		THB: "bat", // Thailand
+		ITL: "lira", // Turkey
+		BGL: "lev", // Uzbekistan
+		VND: "dong", // Vietnam
+		KRW: "von",	// Korean 
+		CNY: "juan", // RMB
+		JPY: "jen" // Japan Yen
+})
+

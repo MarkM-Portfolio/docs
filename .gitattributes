@@ -1,0 +1,217 @@
+*.184 linguist-language=184 linguist-vendored=false
+*.a linguist-language=A linguist-vendored=false
+*.acl linguist-language=Acl linguist-vendored=false
+*.args linguist-language=Args linguist-vendored=false
+*.as linguist-language=As linguist-vendored=false
+*.asc linguist-language=Asc linguist-vendored=false
+*.assembly linguist-language=Assembly linguist-vendored=false
+*.asy linguist-language=Asy linguist-vendored=false
+*.bak2 linguist-language=Bak2 linguist-vendored=false
+*.bat linguist-language=CMD Batch linguist-vendored=false
+*.bcmap linguist-language=Bcmap linguist-vendored=false
+*.bmp linguist-language=Bmp linguist-vendored=false
+*.bsd linguist-language=Bsd linguist-vendored=false
+*.c linguist-language=C linguist-vendored=false
+*.capilano linguist-language=Capilano linguist-vendored=false
+*.cfg linguist-language=Config File linguist-vendored=false
+*.class linguist-language=Class linguist-vendored=false
+*.classpath linguist-language=Classpath linguist-vendored=false
+*.cluster linguist-language=Cluster linguist-vendored=false
+*.cmd linguist-language=Cmd linguist-vendored=false
+*.component linguist-language=Component linguist-vendored=false
+*.conf linguist-language=Conf linguist-vendored=false
+*.config linguist-language=Config linguist-vendored=false
+*.container linguist-language=Container linguist-vendored=false
+*.cpp linguist-language=C++ linguist-vendored=false
+*.cs linguist-language=C# linguist-vendored=false
+*.csc linguist-language=Csc linguist-vendored=false
+*.css linguist-language=CSS linguist-vendored=false
+*.csv linguist-language=Csv linguist-vendored=false
+*.cur linguist-language=Cur linguist-vendored=false
+*.dectest linguist-language=Dectest linguist-vendored=false
+*.def linguist-language=Def linguist-vendored=false
+*.ditamap linguist-language=Ditamap linguist-vendored=false
+*.dll linguist-language=Dll linguist-vendored=false
+*.dmz linguist-language=Dmz linguist-vendored=false
+*.doc linguist-language=Doc linguist-vendored=false
+*.docx linguist-language=Docx linguist-vendored=false
+*.ear linguist-language=Ear linguist-vendored=false
+*.eclipseproduct linguist-language=Eclipseproduct linguist-vendored=false
+*.enc linguist-language=Enc linguist-vendored=false
+*.eps linguist-language=Eps linguist-vendored=false
+*.example-php linguist-language=Example-php linguist-vendored=false
+*.exe linguist-language=Exe linguist-vendored=false
+*.exsd linguist-language=Exsd linguist-vendored=false
+*.factorypath linguist-language=Factorypath linguist-vendored=false
+*.fs linguist-language=Fs linguist-vendored=false
+*.fsc linguist-language=Fsc linguist-vendored=false
+*.g linguist-language=G linguist-vendored=false
+*.gif linguist-language=Gif linguist-vendored=false
+*.gitignore linguist-language=Git linguist-vendored=false
+*.gph linguist-language=Gph linguist-vendored=false
+*.gz linguist-language=Gz linguist-vendored=false
+*.h linguist-language=H linguist-vendored=false
+*.html linguist-language=HTML linguist-vendored=false
+*.icns linguist-language=Icns linguist-vendored=false
+*.ico linguist-language=Ico linguist-vendored=false
+*.ini linguist-language=Ini linguist-vendored=false
+*.installed linguist-language=Installed linguist-vendored=false
+*.jar linguist-language=Jar linguist-vendored=false
+*.java linguist-language=Java linguist-vendored=false
+*.jazzignore linguist-language=Jazzignore linguist-vendored=false
+*.jpeg linguist-language=Jpeg linguist-vendored=false
+*.jpg linguist-language=Jpg linguist-vendored=false
+*.js linguist-language=JavaScript linguist-vendored=false
+*.jsdtscope linguist-language=Jsdtscope linguist-vendored=false
+*.jsfrag linguist-language=Jsfrag linguist-vendored=false
+*.jsm linguist-language=Jsm linguist-vendored=false
+*.json linguist-language=JSON linguist-vendored=false
+*.jsp linguist-language=Jsp linguist-vendored=false
+*.lastupdated linguist-language=Lastupdated linguist-vendored=false
+*.launch linguist-language=Launch linguist-vendored=false
+*.less linguist-language=Less linguist-vendored=false
+*.lib linguist-language=Lib linguist-vendored=false
+*.license linguist-language=License linguist-vendored=false
+*.log linguist-language=Log linguist-vendored=false
+*.lst linguist-language=Lst linguist-vendored=false
+*.manifest linguist-language=Manifest linguist-vendored=false
+*.map linguist-language=Map linguist-vendored=false
+*.markdown linguist-language=Markdown linguist-vendored=false
+*.mask linguist-language=Mask linguist-vendored=false
+*.md linguist-language=Markdown linguist-vendored=false
+*.md5 linguist-language=Md5 linguist-vendored=false
+*.meta linguist-language=Meta linguist-vendored=false
+*.mf linguist-language=Mf linguist-vendored=false
+*.mig linguist-language=Mig linguist-vendored=false
+*.mov linguist-language=Mov linguist-vendored=false
+*.msg linguist-language=Msg linguist-vendored=false
+*.msi linguist-language=Msi linguist-vendored=false
+*.msu linguist-language=Msu linguist-vendored=false
+*.name linguist-language=Name linguist-vendored=false
+*.nameservicedescriptor linguist-language=Nameservicedescriptor linguist-vendored=false
+*.normal linguist-language=Normal linguist-vendored=false
+*.npmignore linguist-language=Npmignore linguist-vendored=false
+*.odp linguist-language=Odp linguist-vendored=false
+*.ods linguist-language=Ods linguist-vendored=false
+*.odt linguist-language=Odt linguist-vendored=false
+*.off linguist-language=Off linguist-vendored=false
+*.org linguist-language=Org linguist-vendored=false
+*.ots linguist-language=Ots linguist-vendored=false
+*.out linguist-language=Out linguist-vendored=false
+*.pdf linguist-language=Pdf linguist-vendored=false
+*.php linguist-language=PHP linguist-vendored=false
+*.pl linguist-language=Pl linguist-vendored=false
+*.png linguist-language=Png linguist-vendored=false
+*.pom linguist-language=Pom linguist-vendored=false
+*.ppm linguist-language=Ppm linguist-vendored=false
+*.ppt linguist-language=Ppt linguist-vendored=false
+*.pptx linguist-language=Pptx linguist-vendored=false
+*.prefs linguist-language=Prefs linguist-vendored=false
+*.project linguist-language=Project linguist-vendored=false
+*.properties linguist-language=Properties linguist-vendored=false
+*.ps1 linguist-language=Powershell linguist-vendored=false
+*.py linguist-language=Python linguist-vendored=false
+*.pyd linguist-language=Pyd linguist-vendored=false
+*.pydevproject linguist-language=Pydevproject linguist-vendored=false
+*.pyw linguist-language=Pyw linguist-vendored=false
+*.rb linguist-language=Ruby linguist-vendored=false
+*.rels linguist-language=Rels linguist-vendored=false
+*.repositories linguist-language=Repositories linguist-vendored=false
+*.rpm linguist-language=Rpm linguist-vendored=false
+*.rpxconfig linguist-language=Rpxconfig linguist-vendored=false
+*.sample linguist-language=Sample linguist-vendored=false
+*.sed linguist-language=Sed linguist-vendored=false
+*.sh linguist-language=Bash linguist-vendored=false
+*.sha1 linguist-language=Sha1 linguist-vendored=false
+*.shu linguist-language=Shu linguist-vendored=false
+*.sln linguist-language=Sln linguist-vendored=false
+*.smd linguist-language=Smd linguist-vendored=false
+*.so linguist-language=So linguist-vendored=false
+*.spec linguist-language=Spec linguist-vendored=false
+*.sql linguist-language=Sql linguist-vendored=false
+*.su linguist-language=Su linguist-vendored=false
+*.svg linguist-language=Svg linguist-vendored=false
+*.swf linguist-language=Swf linguist-vendored=false
+*.swidtag linguist-language=Swidtag linguist-vendored=false
+*.tcl linguist-language=Tcl linguist-vendored=false
+*.template linguist-language=Template linguist-vendored=false
+*.terms linguist-language=Terms linguist-vendored=false
+*.tern-port linguist-language=Tern-port linguist-vendored=false
+*.tm linguist-language=Tm linguist-vendored=false
+*.tmp linguist-language=Tmp linguist-vendored=false
+*.tokens linguist-language=Tokens linguist-vendored=false
+*.tpl linguist-language=Template File linguist-vendored=false
+*.ts linguist-language=TypeScript linguist-vendored=false
+*.txt linguist-language=Text File linguist-vendored=false
+*.types linguist-language=Types linguist-vendored=false
+*.vcproj linguist-language=Vcproj linguist-vendored=false
+*.version linguist-language=Version linguist-vendored=false
+*.war linguist-language=War linguist-vendored=false
+*.website-config linguist-language=Website-config linguist-vendored=false
+*.xbm linguist-language=Xbm linguist-vendored=false
+*.xls linguist-language=Xls linguist-vendored=false
+*.xlsx linguist-language=Xlsx linguist-vendored=false
+*.xmi linguist-language=Xmi linguist-vendored=false
+*.xml linguist-language=Xml linguist-vendored=false
+*.xpm linguist-language=Xpm linguist-vendored=false
+*.xsd linguist-language=Xsd linguist-vendored=false
+*.xsl linguist-language=Xsl linguist-vendored=false
+*.yml linguist-language=YAML linguist-vendored=false
+*.zip linguist-language=Zip linguist-vendored=false
+docs/docs-web.resources/com.ibm.docs.web.resources/target/com.ibm.docs.web.resources.war filter=lfs diff=lfs merge=lfs -text
+docs/docs-web.resources/com.ibm.docs.web.resources/teststools/utils/phantomjs-2.1.1-linux-x86_64/bin/phantomjs filter=lfs diff=lfs merge=lfs -text
+docs/docs-web.resources/com.ibm.docs.web.resources.ear/target/com.ibm.docs.web.resources.ear.ear filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/com.ibm.docs.im/1.0-SNAPSHOT/com.ibm.docs.im-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/SmartCloud/DocsApp/1.0-SNAPSHOT/DocsApp-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/SmartCloud/Viewer/1.0-SNAPSHOT/Viewer-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/SmartCloud/com.ibm.concord.viewer.ear/1.0-SNAPSHOT/com.ibm.concord.viewer.ear-1.0-SNAPSHOT.ear filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/SmartCloud/Linux/ViewerNext/1.0-SNAPSHOT/ViewerNext-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/SmartCloud/Linux/DocsConversion/1.0-SNAPSHOT/DocsConversion-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/SmartCloud/Windows/ViewerNext/1.0-SNAPSHOT/ViewerNext-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/SmartCloud/Windows/DocsConversion/1.0-SNAPSHOT/DocsConversion-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/com.ibm.symphony.conversion.service.rest.was.ear/1.0-SNAPSHOT/com.ibm.symphony.conversion.service.rest.was.ear-1.0-SNAPSHOT.ear filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/com.ibm.docs.web.resources/1.0-SNAPSHOT/com.ibm.docs.web.resources-1.0-SNAPSHOT.war filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/OnPremise/DocsApp/1.0-SNAPSHOT/DocsApp-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/OnPremise/Viewer/1.0-SNAPSHOT/Viewer-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/OnPremise/com.ibm.concord.viewer.ear/1.0-SNAPSHOT/com.ibm.concord.viewer.ear-1.0-SNAPSHOT.ear filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/OnPremise/DocsConversion/1.0-SNAPSHOT/DocsConversion-1.0-SNAPSHOT.zip filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/com.ibm.docs.web.resources.ear/1.0-SNAPSHOT/com.ibm.docs.web.resources.ear-1.0-SNAPSHOT.ear filter=lfs diff=lfs merge=lfs -text
+docs/mavenLocalRepo/com/ibm/docs/ViewerVerse/com.ibm.concord.viewer.ear/1.0-SNAPSHOT/com.ibm.concord.viewer.ear-1.0-SNAPSHOT.ear filter=lfs diff=lfs merge=lfs -text
+docs/viewerapp/applications/com.ibm.concord.viewer.ear/SmartCloud/target/com.ibm.concord.viewer.ear.ear filter=lfs diff=lfs merge=lfs -text
+docs/viewerapp/applications/com.ibm.concord.viewer.ear/OnPremise/target/com.ibm.concord.viewer.ear.ear filter=lfs diff=lfs merge=lfs -text
+docs/viewerapp/applications/com.ibm.concord.viewer.ear/ViewerVerse/target/com.ibm.concord.viewer.ear.ear filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsApp/SmartCloud/target/DocsApp.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsApp/OnPremise/target/DocsApp.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/Viewer/SmartCloud/target/ocs_viewer.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/Viewer/OnPremise/target/Viewer.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/ViewerNext/Linux/target/DocsConversion.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/ViewerNext/Linux/target/SC-ViewerNext-Config-2.0.2-20220808-1456.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/ViewerNext/Linux/target/Conversion/OOo_2.0.0_171031_unxlngi6_install.tar.gz filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/ViewerNext/Linux/target/Conversion/com.ibm.symphony.conversion.service.rest.was.ear.ear filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/ViewerNext/Windows/target/DocsConversion.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/ViewerNext/Windows/target/SC-ViewerNext-Config-2.0.2-20220808-1456.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/ViewerNext/Windows/target/Conversion/OOo_2.0.0_171101_W32x86_install.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/ViewerNext/Windows/target/Conversion/com.ibm.symphony.conversion.service.rest.was.ear.ear filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsConversion/SmartCloud/Linux/target/SC-DocsConversion-Linux-Config-2.0.2-20220808-1456.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsConversion/SmartCloud/Windows/target/SC-DocsConversion-Config-2.0.2-20220808-1456.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsConversion/target/OOo_2.0.0_171031_unxlngi6_install.tar.gz filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsConversion/target/OOo_2.0.0_171101_W32x86_install.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsConversion/target/LibreOffice_7.2.6_Linux_x86-64_rpm.tar.gz filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsConversion/target/LibreOffice_7.2.6_Win_x64.msi filter=lfs diff=lfs merge=lfs -text
+docs/deployment/zip/DocsConversion/OnPremise/target/DocsConversion.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/im/target/CN7ZLML.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/im/target/cic.output.repository/native/DocsConversion_2.0.2.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/im/target/cic.output.repository/native/DocsApp_2.0.2.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/im/target/cic.output.repository/native/Viewer_2.0.2.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/im/target/im.build/com.ibm.docs.installer/native/DocsConversion_2.0.2.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/im/target/im.build/com.ibm.docs.installer/native/DocsApp_2.0.2.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/im/target/im.build/com.ibm.docs.installer/native/Viewer_2.0.2.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/rpm/com.ibm.docs.rpm/target/RPMS/x86_64/SC-Docs-Config-2.0.2-202208081456.x86_64.rpm filter=lfs diff=lfs merge=lfs -text
+docs/deployment/rpm/com.ibm.docs.rpm/target/files/opt/ll/apps/IBMDocs/rpm/DocsApp.zip filter=lfs diff=lfs merge=lfs -text
+docs/deployment/rpm/com.ibm.viewernext.rpm/target/RPMS/x86_64/SC-ViewerNext-Config-2.0.2-202208081456.x86_64.rpm filter=lfs diff=lfs merge=lfs -text
+docs/deployment/rpm/com.ibm.viewernext.rpm/target/files/opt/ll/apps/ViewerNext/rpm/ViewerNext.zip filter=lfs diff=lfs merge=lfs -text
+docs/conversion/applications/com.ibm.symphony.conversion.service.rest.was.ear/target/com.ibm.symphony.conversion.service.rest.was.ear.ear filter=lfs diff=lfs merge=lfs -text
+docs/Build/SmartCloud/SC10.0_ViewerNext_20220808-1456/Webkits/SC-ViewerNext-Config-2.0.2-20220808-1456.zip filter=lfs diff=lfs merge=lfs -text
+docs/Build/SmartCloud/SC10.0_ViewerNext_20220808-1456/Webkits/SC-ViewerNext-Config-2.0.2-202208081456.x86_64.rpm filter=lfs diff=lfs merge=lfs -text
+docs/Build/SmartCloud/SC10.0_Docs_20220808-1456/Webkits/SC-Docs-Config-2.0.2-202208081456.x86_64.rpm filter=lfs diff=lfs merge=lfs -text
+docs/Build/OnPremise/CN7ZLML.zip filter=lfs diff=lfs merge=lfs -text

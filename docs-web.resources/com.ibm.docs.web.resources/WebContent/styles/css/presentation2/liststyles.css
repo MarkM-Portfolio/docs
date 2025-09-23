@@ -1,0 +1,363 @@
+.dijitPopup .hello_class td ol
+{
+	padding-left: 0 !important;
+	margin-left: 20px !important;
+	text-align: center;
+}
+
+.dijitPopup div.hello_class.rtl 
+{
+	direction: rtl;
+}
+
+.dijitPopup .hello_class.rtl td ol
+{
+	padding-right: 0 !important;
+	margin-right: 20px !important;
+	padding-left: initial !important;
+	margin-left: auto !important;
+}
+
+/* list-style-type upper-roman */
+.dijitPopup li.lst-ur{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-ur:before {
+	white-space: pre;
+	content: counter(lst-ur, upper-roman) "\002e" " ";
+	counter-increment: lst-ur;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type lower-roman */
+.dijitPopup li.lst-lr {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-lr:before {
+	white-space: pre;
+	content: counter(lst-lr, lower-roman) "\002e" " ";
+	counter-increment: lst-lr;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type upper-alpha */
+.dijitPopup li.lst-ua {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-ua:before {
+	white-space: pre;
+	content: counter(lst-ua, upper-alpha) "\002e" " ";
+	counter-increment: lst-ua;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type-lower-alpha */
+.dijitPopup li.lst-la {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-la:before{
+	content: counter(lst-la, lower-alpha) "\002e" " ";
+	counter-increment: lst-la;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type number */
+.dijitPopup li.lst-n {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-n:before{
+	white-space: pre;
+	content: counter(lst-n, decimal) "\002e" " " !important;
+	counter-increment: lst-n;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type numeric with leading zero */
+.dijitPopup li.lst-numwz {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-numwz:before {
+	white-space: pre;
+	content: counter(lst-numwz, decimal-leading-zero) "\002e" " ";
+	counter-increment: lst-numwz;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type-number-2 */
+.dijitPopup li.lst-n2 {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-n2:before {
+	white-space: pre;
+	content: counter(lst-n2, decimal) "\003A" " ";
+	counter-increment: lst-n2;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type upper-alpha-parenthesis */
+.dijitPopup li.lst-uap {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-uap:before{
+	white-space: pre;
+	content: counter(lst-uap, upper-alpha) "\0029" " ";
+	counter-increment: lst-uap;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type-lower-alpha-parenthesis */ 
+.dijitPopup li.lst-lap {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-lap:before{
+	white-space: pre;
+	content: "\0028" counter(lst-lap, lower-alpha) "\0029" " ";
+	counter-increment: lst-lap;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type number-parenthesis */
+.dijitPopup li.lst-np{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-np:before {
+	white-space: pre;
+	/* content: "\0028" counter(lst-np, decimal) "\0029" " "; */
+	content: counter(lst-np, decimal) "\0029" " ";
+	counter-increment: lst-np;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+.dijitPopup li.lst-np.arabic:before {
+	content: attr(values) "\0029" " " !important;
+}
+
+.dijitPopup li.lst-n.arabic:before{
+	content: attr(values) "\002e" " " !important;
+}
+
+/* list-style-type-japanese-1 */
+.dijitPopup li.lst-j1{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-j1:before{
+	white-space: pre;
+	content: attr(values) "\0029" " ";
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type-japanese-2 */
+.dijitPopup li.lst-j2,  h1.lst-j2, h2.lst-j2, h3.lst-j2, h4.lst-j2, h5.lst-j2, h6.lst-j2 {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+.dijitPopup li.lst-j2:before {
+	white-space: pre;
+	content: "\0028" attr(values) "\0029" " ";
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11pt;
+}
+
+/* list-style-type circle */
+.dijitPopup li.lst-c:before {
+	white-space: pre;
+	content: "\2022" " ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left:0.2em;
+}
+
+/* 2nd-level circle */
+/* span.lst-c span.lst-c:before, */
+.dijitPopup li.lst-c .dijitPopup li.lst-c:before
+ {
+	white-space: pre;
+	content: "\25E6" " ";
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 3rd-level circle */
+/* span.lst-c span.lst-c span.lst-c:before, */
+.dijitPopup li.lst-c .dijitPopup li.lst-c .dijitPopup li.lst-c:before {
+	white-space: pre;
+	content: "\25AA" " ";
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* list-style-type cutout-square */
+.dijitPopup li.lst-cs:before{
+	white-space: pre;
+	content: "\25D8" " ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left:0.2em;
+}
+
+
+/* list-style-type right-arrow */
+.dijitPopup li.lst-ra:before {
+	white-space: pre;
+	content: "\F034" " ";
+	font-family: Webdings, Dingbats, sans-serif;
+}
+
+/* list-style-type diamond */
+.dijitPopup li.lst-d:before {
+	white-space: pre;
+	content: "\2666" " ";
+	font-family: "Times New Roman", Times, serif;
+	padding-left:0.2em;
+}
+
+/* list-style-type double-arrow*/
+.dijitPopup li.lst-da:before {
+	white-space: pre;
+	content: "\00BB" " ";
+	font-family: "Times New Roman", Times, serif;
+	padding-left:0.2em;
+}
+
+/* list-style-type asterisk */
+.dijitPopup li.lst-a:before {
+	white-space: pre;
+	content: "\2217" " ";
+	font-family: Symbol, sans-serif;
+	padding-left:0.2em;
+}
+
+/* list-style-type thin-arrow */
+.dijitPopup li.lst-ta:before{
+	white-space: pre;
+	content: "\F0E0" " ";
+	font-family: Wingdings, "Zapf Dingbats", Dingbats, sans-serif;
+}
+
+/* list-style-type checkmark */
+.dijitPopup li.lst-cm:before {
+	white-space: pre;
+	content: "\F061" " ";
+	font-family: Webdings, Dingbats, sans-serif;
+}
+
+/* list-style-type plus-sign */
+.dijitPopup li.lst-ps:before {
+	white-space: pre;
+	content: "\002B" " ";
+	font-family: Impact, Charcoal, sans-serif;
+	padding-left:0.2em;
+}
+
+/* 
+	list-style-type
+   		various images
+*/
+.dijitPopup li.lst-bc {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_1cube.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-bs {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_2square.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-ba {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_3leaf.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-s {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_4bullet.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-reda {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_5arrow.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-blacka {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_6arrow2.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-pa {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_7arrow3.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-gc {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_8check.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-rx {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_9x.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-gf {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_10flag.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-rf {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_11flag2.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+.dijitPopup li.lst-star {
+	/* padding-left: 10px; */
+	background: url(../images/IBMDocs_12star.png) no-repeat;
+	background-position: 0 50%;
+	background-size: 0.7em 0.7em;
+}
+
+/* make LIs blocks */
+.dijitPopup li.lst-ur, .dijitPopup li.lst-lr, .dijitPopup li.lst-ua, .dijitPopup li.lst-la, .dijitPopup li.lst-n, .dijitPopup li.lst-n2, .dijitPopup li.lst-numwz, .dijitPopup li.lst-uap, .dijitPopup li.lst-lap, .dijitPopup li.lst-np, .dijitPopup li.lst-j1, .dijitPopup li.lst-j2, .dijitPopup li.lst-c, .dijitPopup li.lst-cs, .dijitPopup li.lst-ra, .dijitPopup li.lst-d, .dijitPopup li.lst-da, .dijitPopup li.lst-a, .dijitPopup li.lst-ta, .dijitPopup li.lst-cm, .dijitPopup li.lst-ps,
+.dijitPopup li.lst-bc, .dijitPopup li.lst-bs, .dijitPopup li.lst-ba, .dijitPopup li.lst-s, .dijitPopup li.lst-reda, .dijitPopup li.lst-blacka, .dijitPopup li.lst-pa, .dijitPopup li.lst-gc, .dijitPopup li.lst-rx, .dijitPopup li.lst-gf, .dijitPopup li.lst-rf, .dijitPopup li.lst-star
+{
+	display:block;
+}

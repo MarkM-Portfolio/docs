@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Dec 17 11:29:55 CST 2015
+https\://repo.maven.apache.org/maven2/.lastUpdated=1450322995957
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.error=
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.lastUpdated=1450322952743
+@default-java.net-http\://download.java.net/maven/2/.lastUpdated=1450322995084
+http\://download.java.net/maven/2/.error=Could not transfer artifact org.powermock\:powermock\:pom\:1.5.6 from/to java.net (http\://download.java.net/maven/2/)\: Connect to download.java.net\:80 [download.java.net/184.26.162.89, download.java.net/184.26.162.88] failed\: Connection timed out\: connect

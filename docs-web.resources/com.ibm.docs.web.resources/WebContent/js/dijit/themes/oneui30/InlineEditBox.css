@@ -1,0 +1,19 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* InlineEditBox */
+.oneui30 .dijitInlineEditBoxDisplayMode {
+    border: 1px solid transparent;
+}
+
+.oneui30 .dijitInlineEditBoxDisplayModeHover {
+    background-color: #fafafa;
+    border: solid 1px #ccc;
+    cursor: hover;
+}
+
+.dj_ie6 .oneui30 .dijitInlineEditBoxDisplayMode {
+    border: none;
+}

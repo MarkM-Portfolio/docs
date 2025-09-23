@@ -1,0 +1,21 @@
+Scope File: pulldown
+
+{
+!-------------------------------------------------------------------------
+
+"Show version tree..." _v \
+%PNAME(INVOB ELEM NHIJACKED NSYMLINK) \
+f.call "VTREE %SELECTION()" \
+f.help "
+Show version tree
+
+    Bring up a version tree (vtree) browser for 
+    the selected element.
+
+    Enabled because: You have selected an element.
+"
+
+!-------------------------------------------------------------------------
+
+}
+

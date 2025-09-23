@@ -1,0 +1,133 @@
+<project name="com.ibm.concord.war" basedir="." default="deploy">
+	<property name="src.dir" value="src" />
+	<property name="webcontent.dir" value="WebContent" />
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin" />
+	<property name="classes.dir" value="${webinf.dir}/classes" />
+	<property name="war.dir" value="${bin.dir}/war" />
+	<property name="ear.dir" value="../com.ibm.concord.ear/" />
+	<property name="report.dir" value="${build.home}/report" />
+
+	<path id="project.classpath">
+		<pathelement path="${build.home}/com.ibm.concord.config.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.platform.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.services.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.localtest.integration.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.draft.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.document.services.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.job.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.document.common.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.presentation.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.lc3.integration.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.ecm.integration.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.lotuslive.integration.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.webmsg.rtc4web.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.dao.db2.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.document.common.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.presentation.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.spreadsheet.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.writer.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.spi.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.repository.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.repository.files.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.repository.ecm.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.repository.local.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.common.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.framework.jar" />		
+		<pathelement path="${build.home}/com.ibm.docs.authentication.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.directory.connections.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.directory.ecm.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.directory.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.directory.local.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.directory.lotuslive.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.entitlement.jar" />		 		  		  		  		  		  		  
+	</path>
+	<path id="lib.classpath">
+		<pathelement path="${ear.dir}/lib/json4j.jar" />
+		<pathelement path="${ear.dir}/lib/commons-codec-1.4.jar" />
+		<pathelement path="${ear.dir}/lib/httpclient-4.1.1.jar" />
+		<pathelement path="${ear.dir}/lib/httpcore-4.1.jar" />
+		<<!--Upgrading log4j version 2.17.2-->
+		<pathelement path="${ear.dir}/lib/log4j-1.2-api-2.17.2.jar" />
+		<pathelement path="${ear.dir}/lib/log4j-api-2.17.2.jar" />
+		<pathelement path="${ear.dir}/lib/log4j-core-2.17.2.jar" />
+		<pathelement path="${ear.dir}/lib/acf-2.5.0.29.jar" />
+		<pathelement path="${ear.dir}/lib/html-parser-2.5.0.29.jar" />
+		<pathelement path="${ear.dir}/lib/bss.shim-2.32-20140117.200827-88.jar" />
+		<pathelement path="${ear.dir}/lib/bss.json-2.32-20140114.114305-42.jar" />
+		<pathelement path="${ear.dir}/lib/shared.authentication-1.40.13-SNAPSHOT.jar" />
+		<pathelement path="${ear.dir}/lib/shared.httpclient_wrapper_noauth-1.40.13-SNAPSHOT.jar" />
+		<pathelement path="${ear.dir}/lib/shared.httpclient_wrapper-1.40.13-SNAPSHOT.jar" />
+		<pathelement path="${ear.dir}/lib/slf4j-api-1.5.11.jar" />
+		<pathelement path="${ear.dir}/lib/slf4j-jdk14-1.5.11.jar" />
+		<pathelement path="${ear.dir}/lib/slf4j-log4j12-1.5.11.jar" />
+		<pathelement path="${ear.dir}/lib/connections.waltz-1.40.49-SNAPSHOT.jar" />
+	</path>
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar" />
+	</path>
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath" />
+			<classpath refid="lib.classpath" />
+			<classpath refid="was.classpath" />
+		</javac>
+	</target>
+	
+	<target name="prepare" depends="compile">
+		<mkdir dir="${bin.dir}/${webcontent.dir}/" />
+	</target>
+
+	<target name="war" depends="prepare">
+		<echo file="${bin.dir}/${webcontent.dir}/version.txt">
+			{"build_description" : "${ReleaseInfo}" , "product_name" : "Docs", 
+			"build_version" :  "${build.version}" , "build_timestamp" : "${build.timestamp}" }
+		</echo>
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper />
+					<globmapper from="*" to="lib/*" />
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath" />
+		</pathconvert>
+		<pathconvert property="manifest.project.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper />
+				</chainedmapper>
+			</mapper>
+			<path refid="project.classpath" />
+		</pathconvert>
+		<mkdir dir="${war.dir}" />
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${bin.dir}/${webcontent.dir}/" />
+			<fileset dir="${webcontent.dir}">
+				<include name="js/concord/widgets/imageGallery/" />
+				<include name="js/concord/widgets/newPresentationGallery/" />
+				<include name="jsp/" />
+				<include name="META-INF/" />
+				<include name="WEB-INF/" />
+				<include name="feature.json" />
+				<exclude name="WEB-INF/web.xml" />
+			</fileset>
+			<manifest>
+				<attribute name="Created-By" value="IBM" />
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}" />
+			</manifest>
+		</war>
+	</target>
+	<!-- Comment this for story 1645. After presentation changes the template fix we will enable it.-->
+	<target name="deploy" depends="war">
+		<copy todir="${build.home}">
+			<fileset dir="${war.dir}" />
+		</copy>
+		<delete dir="${bin.dir}/${webcontent.dir}/" />
+	</target>
+</project>

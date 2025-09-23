@@ -1,0 +1,44 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for section
+companion files: section.css / sectionTheme.css
+companion files: sectionRTL.css / sectionThemeRTL.css*/
+/*S E C T I O N */
+/*this is used to space out different elements in all three columns*/
+/*a section contains a header*/
+
+
+
+.lotusui30 .lotusSection2{margin:0 0 20px;padding:0;}
+.lotusui30 .lotusSectionPlain .lotusSectionHeader{border-width:0;background-image:none;}
+.lotusui30 .lotusSection2 .lotusSectionHeader .lotusArrow{padding-left:5px}
+.lotusui30 .lotusSection2 .lotusHeading, .lotusSection2 .lotusHeading2{font-size:1em;color:#000;}
+.lotusui30 .lotusSection2 .lotusSectionHeader .lotusIcon{padding:5px 0}
+.lotusui30 .lotusSection2 .lotusDragHandle{left:0; top:6px;}
+.lotusui30 .lotusSection2 .lotusSectionBody{margin:0;}
+.lotusui30 .lotusSection2 .lotusSubheader .lotusIcon{padding-right:0;}
+.lotusui30 .lotusSection2 .lotusChunk{margin-top:0;margin-bottom:5px;}
+.lotusui30 .lotusSection2 .lotusSectionFooter{border-top:1px solid #eee;}
+.lotusui30 .lotusSection2 .lotusSectionFooter .lotusPaging{margin:0;}
+/*lists within a section*/
+.lotusui30 .lotusSection2 .lotusList{margin:0 -10px;} /*allows selection to extend to the left and right of the list items*/
+.lotusui30 .lotusSection2 .lotusList li{padding-left:10px;padding-right:10px;}
+
+
+
+
+
+.lotusui30 .lotusSection2 {border:0;}
+.lotusui30 .lotusSection2 .lotusSectionHeader {border-top:3px solid #000; border-bottom:1px solid #e5e5e5; margin:0;}
+.lotusui30 .lotusSection2 .lotusSectionBody {background-color:transparent; padding:5px;}
+.lotusui30 .lotusPortlet {padding:10px; background-color:#fff;
+	-moz-box-shadow:0 1px 3px #D7D7D7;
+	-webkit-box-shadow:0 1px 3px #D7D7D7; 
+	box-shadow:0 1px 3px #D7D7D7;}
+.lotusui30 .lotusPortlet .lotusSectionHeader {background-color:transparent; background-image:none;}
+.lotusui30 .lotusSection2 .lotusDragHandle{top:9px;}
+
+/****************************************************************/
+

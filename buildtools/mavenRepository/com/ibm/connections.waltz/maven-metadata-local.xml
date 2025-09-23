@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ibm</groupId>
+  <artifactId>connections.waltz</artifactId>
+  <versioning>
+    <versions>
+      <version>1.40.49-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>201602122314</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,204 @@
+<!--
+    * Please find the below iframe, change its src to your real Docs URL 
+-->
+<html>
+<head>
+ <meta charset="utf-8">
+</head>
+<script src='api.js'></script>
+<script>
+    var loaded = false;
+    var sheet = null;
+    var sheetIdx = 0;
+    function onIFrameload(e){
+        var iframe = document.getElementById("iDocsFrame");
+        setTimeout(function(){
+            loaded = true;
+            console.info("iframe loaded");
+            SpreadsheetApp.registerIDocsWindow(iframe.contentWindow);
+            SpreadsheetApp.getDocType(checkSpreadsheet);
+            SpreadsheetApp.getSheets(function(sheets) {
+            	sheet = sheets[0];
+            	sheetIdx = sheets.length + 1;
+            })
+            document.getElementById("buttons").style.visibility = "visible";
+            document.getElementById("buttons2").style.visibility = "visible";
+        }, 1 * 1000);
+    }
+    function checkSpreadsheet(type) {
+    	if (type != "sheet")
+    		alert("It is not one spreadsheet document");
+    }
+    function getSelectedTextInScope()
+    {
+    	SpreadsheetApp.execCommand("getSelectedTextInScope", ["cell"], function(data){
+            console.info(data)
+        });
+    }
+    function selectTextInScope()
+    {
+    	SpreadsheetApp.execCommand("selectTextInScope", ["cell", "self"], function(data){
+            console.info(data)
+        });
+    }
+    function selectTextInScope2()
+    {
+    	SpreadsheetApp.execCommand("selectTextInScope", ["cell", "nextSibling"], function(data){
+            console.info(data)
+        });
+    }
+    function setTextInScope()
+    {
+    	SpreadsheetApp.execCommand("setTextInScope", ["My Text", "cell"], function(data){
+            console.info(data)
+        });
+        
+        SpreadsheetApp.execCommand("selectTextInScope", ["cell", "nextSibling"], function(data){
+            console.info(data)
+        });
+    }
+    
+    var listenerEventId = null;
+    function addListener()
+    {
+        this.removeListener();
+        var name = "IDOCS.EVENT.selectionChange";
+        listenerEventId = SpreadsheetApp.addListener(name, function(){
+            console.info(name + " happens")
+            SpreadsheetApp.execCommand("getSelectedTextInScope", ["cell"], function(data){
+            	console.info(data)
+        	});
+        });
+    }
+    function removeListener()
+    {
+        if (listenerEventId)
+            SpreadsheetApp.removeListener(listenerEventId);
+    }
+    
+ 	function publish() {
+ 		SpreadsheetApp.save();
+    }
+
+ 	function addFonts() {
+ 		SpreadsheetApp.addFonts(['Helvetica','宋体']);
+    }
+
+    function getActiveSheet()
+    {
+    	SpreadsheetApp.getActiveSheet(function(activeSheet){
+    		sheet = activeSheet;
+    		console.info(sheet.sheetId);
+    	});
+    }
+    
+    function getSheetByName()
+    {
+    	SpreadsheetApp.getSheetByName("Sheet1", function(activeSheet){
+    		sheet = activeSheet;
+    	});
+    }
+    
+    function setCellValue()
+    {
+    	var range = new Range(sheet, 1, 1, 1, 1);
+    	range.setValue("cell value");
+    }
+    
+    function getCellValue()
+    {
+    	var range = new Range(sheet, 1, 1, 1, 1);
+    	range.getDisplayValue(function(data){
+    		console.info(data);
+    	});
+    }
+    
+    var sheetName = 'Sheet1';
+    function getSheetName() {
+    	sheet.getSheetName(function(name) {
+   			sheetName = name;
+   			console.info(name);
+   		});
+    }
+
+    function setSheetName() {
+    	sheetName += '_copy';
+   	   	sheet.setSheetName(sheetName);
+    }
+
+    function insertSheet() {
+        SpreadsheetApp.insertSheetByName('Sheet' + sheetIdx);
+        sheetIdx++;
+    }
+
+ 	function hideShowSheet() {
+ 		SpreadsheetApp.getSheetByName(sheetName, function (activeSheet) {
+ 			activeSheet.isHiddenSheet(function (data) {
+ 				if (data) {
+ 					activeSheet.showSheet();
+ 				} else {
+ 					activeSheet.hideSheet();
+ 				}
+ 			}); 
+ 		});
+    }
+ 	
+ 	var range = null;
+ 	function setActiveRange() {
+   		range = sheet.getRange(1, 1, 5, 5);
+ 		sheet.setActiveRange(range);
+ 	}
+
+ 	var values = [];
+ 	function getCellValues() {
+     	range.getDisplayValues(function(data){
+     		values = data;
+     		console.info(data);
+     	});
+     }
+ 	
+ 	function setCellValues() {
+ 		range = new Range(sheet, 11, 1, 15, 5);
+ 		range.setValues(values);
+    }
+ 	
+	function setCellStyles() {
+		var sr = range.getRow();
+		var er = range.getEndRow();
+		var sc = range.getColumn();
+		var ec = range.getEndColumn();
+		var tempRange = null;
+		for (var i = sr; i <= er; i+=2) {
+			tempRange = sheet.getRange(i, sc, i, ec);
+			tempRange.setBackground('#0000FF');
+			tempRange.setFontColor('#FFFF00');
+		}
+	}
+</script>
+
+<body>
+    <div id='buttons' style='visibility:hidden;padding:10px 0 10px 0'>
+        <button onclick='getSelectedTextInScope()'>getSelectedTextInScope</button>
+        <button onclick='selectTextInScope()'>selectTextInScope</button>
+        <button onclick='selectTextInScope2()'>selectTextInScope::next para</button>
+        <button onclick='setTextInScope()'>setTextInScope</button>
+        <button onclick='addListener()'>listen IDOCS.EVENT.selectionChange</button>
+        <button onclick='removeListener()'>removeListener</button>
+        <button onclick='addFonts()'>addFonts</button>
+        <button onclick='publish()'>publish</button>
+    </div>
+    <div id='buttons2' style='visibility:hidden;padding:10px 0 10px 0'>
+        <button onclick='getActiveSheet()'>getActiveSheet</button>
+        <button onclick='getSheetName()'>getSheetName</button>
+        <button onclick='setSheetName()'>setSheetName</button>
+        <button onclick='insertSheet()'>insertSheet</button>
+        <button onclick='hideShowSheet()'>hideShowSheet</button>
+        <button onclick='setActiveRange()'>setActiveRange</button>
+        <button onclick='getCellValues()'>getCellValues</button>
+        <button onclick='setCellValues()'>setCellValues</button>
+        <button onclick='setCellStyles()'>setCellStyles</button>
+    </div>
+    <iframe id='iDocsFrame' onload="onIFrameload(event)" width="100%" height="800px" style='display:block' src="http://localhost:9080/docs/app/doc/concord.storage/test.xlsx/edit/content"></iframe>
+</body>
+
+</html>

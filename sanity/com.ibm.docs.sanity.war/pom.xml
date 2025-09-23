@@ -1,0 +1,186 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>sanity</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.docs.sanity.war</artifactId>
+  <name>com.ibm.docs.sanity.war - war</name>
+  <packaging>war</packaging>
+
+  <properties>
+    <webcontent.dir>${project.basedir}/WebContent</webcontent.dir>
+  </properties>
+
+  <dependencies>
+    <!-- WAS lib dependencies -->
+    <dependency>
+      <groupId>com.ibm.websphere.plugins</groupId>
+      <artifactId>com.ibm.ws.admin.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.websphere.lib</groupId>
+      <artifactId>j2ee</artifactId>
+    </dependency>
+    
+    <!-- 3rd party dependencies -->
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <!--Upgrading log4j version 2.17.2-->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j-1.2-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+	<dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+	<dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <scope>provided</scope>
+    </dependency>   
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>bss.shim</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>bss.json</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+      <scope>provided</scope>
+    </dependency>    
+    
+    <!-- these artifacts use different version !!! -->
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-digester</groupId>
+      <artifactId>commons-digester</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+	  <groupId>commons-logging</groupId>
+	  <artifactId>commons-logging</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-pool</groupId>
+      <artifactId>commons-pool</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-validator</groupId>
+      <artifactId>commons-validator</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpclient</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpcore</artifactId>
+      <scope>provided</scope>
+    </dependency>    
+    <dependency>
+      <groupId>oro</groupId>
+      <artifactId>oro</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>com.ibm.icu</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+	  <groupId>com.ibm</groupId>
+	  <artifactId>lc.customAuthClient</artifactId>
+	  <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <configuration>
+            <webResources>
+              <resource>
+                <directory>${webcontent.dir}</directory>
+                <filtering>false</filtering>
+                <includes>
+                  <include>**/*</include>
+                </includes>           
+              </resource>             
+            </webResources>
+            <webXml>${webcontent.dir}/WEB-INF/web.xml</webXml>
+            <outputFileNameMapping>@{artifactId}@.@{extension}@</outputFileNameMapping>
+            <warName>${project.artifactId}</warName>
+            <archive>
+              <addMavenDescriptor>false</addMavenDescriptor>
+              <manifest>                      
+                  <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+                  <addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
+                  <addClasspath>false</addClasspath>
+              </manifest>
+            </archive> 
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>      
+  </build> 
+
+</project>

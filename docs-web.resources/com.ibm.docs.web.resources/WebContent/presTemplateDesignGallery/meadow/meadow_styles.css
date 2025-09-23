@@ -1,0 +1,143 @@
+/*styles for title page title element*/
+.Meadow-title p
+{
+	text-align:left;
+}
+.Meadow-title {
+	/*font-size:44pt;*/
+	font-size:2em;
+	font-family:Arial;
+	font-weight: bold;
+	color:#502508;
+}
+.Meadow-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+}
+.Meadow-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Meadow-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Meadow-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Meadow-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:right;
+	text-indent:0cm;
+}
+.Meadow-subtitle {
+	/*font-size:32pt;*/
+	font-size:1.6em;
+	font-family:Arial;
+	color:#000000;
+	font-weight: bold;
+}
+.Meadow-subtitle li {
+		/*font-family:StarSymbol;*/
+		/*font-size:45%;*/
+}
+.Meadow-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Meadow-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Meadow-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.Meadow-defaultTitle {
+	/*font-size:44pt;*/
+	color:#657383;
+	font-family:Arial;
+	font-weight:bold;
+}
+.Meadow-defaultText {
+	/*font-size:44pt;*/
+	color:#000000;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+/*styles for other page (non title page) title */
+.Meadow_text-title p
+{
+	text-align:center;
+}
+.Meadow_text-title {
+	/*font-size:44pt;*/
+	font-size:2em;
+	font-family:Arial;
+	font-weight: bold;
+	color:#2F1205;
+}
+.Meadow_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+}
+.Meadow_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Meadow_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Meadow_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Meadow_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Meadow_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Meadow_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Meadow_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Meadow_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Meadow_text-outline1 {
+	/*font-size:32pt;*/
+	font-size:1.4em;
+	font-family:Arial;
+	color:#000000;
+}
+/*table*/
+.SymDefCell1 {background: none;border:0.02cm solid #FFFFFF;}  
+.SymDefCell2 {background: none;border:0.02cm solid #FFFFFF;}  
+.SymDefCell3 {background: none;border:0.02cm solid #FFFFFF;}

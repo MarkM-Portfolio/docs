@@ -1,0 +1,3 @@
+({	
+	dialogtitle	: "Proprietà immagine"
+})

@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>root-pom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>viewerapp</artifactId>
+  <name>viewerapp - pom</name>
+  <packaging>pom</packaging>
+
+  <!-- Modules -->
+  <modules>
+    <module>com.ibm.concord.viewer.admin</module>
+    <module>com.ibm.concord.viewer.cache</module>
+    <module>com.ibm.concord.viewer.config</module>
+    <module>com.ibm.concord.viewer.sharedlib</module>
+    <module>com.ibm.concord.viewer.gatekeeper</module>
+    <module>com.ibm.concord.viewer.document.common</module>
+    <module>com.ibm.concord.viewer.document.services</module>
+    <module>com.ibm.concord.viewer.lc3.integration</module>
+    <module>com.ibm.concord.viewer.platform</module>
+    <module>com.ibm.concord.viewer.services</module>
+    <module>com.ibm.concord.viewer.spi</module>
+    <module>com.ibm.concord.viewer.job</module>
+    <module>com.ibm.concord.viewer.tempstorage.integration</module>
+    <module>com.ibm.docs.viewer.ecm.integration</module>
+    <module>com.ibm.docs.viewer.journal.subscriber.sample</module>
+    <module>com.ibm.docs.viewer.mail.integration</module>
+    <module>com.ibm.docs.viewer.external.integration</module>
+    <module>com.ibm.concord.viewer.localtest.integration</module>
+    <module>applications</module>   
+  </modules>
+
+</project>

@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Hautatu tokia zenbakiei, diruari, datari eta orduari formatua emateko.",
+	INPUT_INVALID_LOCALENAME: "Toki-izen baliogabea",
+	INPUT_EMPTY_LOCALENAME: "Hautatu toki bat.",
+	
+	Spain_Catalan: "Espainia (katalana)",
+	Denmark: "Danimarka",
+	Germany: "Alemania",
+	Greek: "Grezia",
+	United_States: "Estatu Batuak",
+	United_Kingdom: "Erresuma Batua",
+	Spain: "Espainia",
+	Finland: "Finlandia",
+	France: "Frantzia",
+	Italy: "Italia",
+	Japan: "Japonia",
+	Korean: "Hego Korea",
+	Norway: "Norvegia",
+	Netherlands: "Herbehereak",
+	Poland: "Polonia",
+	Brazil: "Brasil",
+	Portugal: "Portugal",
+	Russia: "Errusia",
+	Sweden: "Suedia",
+	Thailand: "Tailandia",
+	Turkey: "Turkia",
+	China: "Txina",
+	Taiwan_China: "Taiwan (Txina)",
+	Israel: "Israel"
+})
+

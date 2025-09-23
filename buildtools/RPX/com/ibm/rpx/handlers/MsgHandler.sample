@@ -1,0 +1,20 @@
+$ Here is a comment statement.
+$ Comments can occur anywhere in the source file.
+
+$quote "
+$set MSG_GROUP_1
+
+MESSAGE_1001 "Here is a very simple message."
+MESSAGE_1002 "Here are replacement variables: %1$s, %2$d, and %3$s."
+MESSAGE_1003 "Here is a message \
+where the text exists on multiple lines.\n  Each line containing text must \
+end with a continuation character."
+
+$quote
+$set MSG_GROUP_2
+
+1001 Message identifiers may be a symbolic name or a number.
+1002 Message text does not have to be enclosed in double quotes, \
+although this is normally done.  Almost any character can be \
+used to delimit the message text.
+1003 This is the last message in this example file.

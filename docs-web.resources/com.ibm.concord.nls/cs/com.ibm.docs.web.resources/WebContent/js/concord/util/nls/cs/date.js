@@ -1,0 +1,22 @@
+({
+	question:"Otázka",
+	issue:"Problém",
+	toDo:"Úkol",
+	comment:"Komentář",
+	done:"Hotovo",
+	jan:"Led",
+	feb:"Úno",
+	mar:"Bře",
+	apr:"Dub",
+	may:"Kvě",
+	june:"Črv",
+	july:"Črc",
+	aug:"Srp",
+	sept:"Září",
+	oct:"Říj",
+	nov:"Lis",
+	dec:"Pro",
+	pm:"odp.",
+	am:"dop.",
+	assignTo:"Přiřadit komu: "
+})

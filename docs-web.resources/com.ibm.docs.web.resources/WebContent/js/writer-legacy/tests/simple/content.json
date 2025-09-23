@@ -1,0 +1,137 @@
+{
+	"body": [{
+		"t": "p",
+		"id": "id_0041846763346500",
+		"rPr": {
+			"rFonts": {
+				"ascii": "Arial",
+				"hAnsi": "Arial",
+				"cs": "Arial"
+			},
+			"font-weight": "bold",
+			"font-size": "14.0pt",
+			"preserve": {
+				"szCs": "14.0pt"
+			}
+		},
+		"c": "This is a very simple document for header\/footer and section.",
+		"fmt": [{
+			"rt": "rPr",
+			"style": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"font-weight": "bold",
+				"font-size": "14.0pt",
+				"preserve": {
+					"szCs": "14.0pt"
+				}
+			},
+			"s": "0",
+			"l": "61"
+		}]
+	},
+	{
+		"t": "p",
+		"id": "id_9169572414789358",
+		"rPr": {
+			"rFonts": {
+				"ascii": "Arial",
+				"hAnsi": "Arial",
+				"cs": "Arial"
+			},
+			"font-weight": "bold",
+			"font-size": "14.0pt",
+			"preserve": {
+				"szCs": "14.0pt"
+			}
+		},
+		"c": "This page is the first normal page with header\/footer.",
+		"fmt": [{
+			"rt": "rPr",
+			"style": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"font-weight": "bold",
+				"font-size": "14.0pt",
+				"preserve": {
+					"szCs": "14.0pt"
+				}
+			},
+			"s": "0",
+			"l": "35"
+		},
+		{
+			"rt": "rPr",
+			"style": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"font-weight": "bold",
+				"color": "#00CCFF",
+				"font-size": "14.0pt",
+				"preserve": {
+					"szCs": "14.0pt"
+				}
+			},
+			"s": "35",
+			"l": "19"
+		}]
+	},
+	{
+		"t": "p",
+		"id": "id_3281682799610491",
+		"rPr": {
+			"rFonts": {
+				"ascii": "Arial",
+				"hAnsi": "Arial",
+				"cs": "Arial"
+			},
+			"font-size": "14.0pt",
+			"preserve": {
+				"szCs": "14.0pt"
+			}
+		}
+	},
+	{
+		"t": "p",
+		"id": "id_2995194248275436",
+		"rPr": {
+			"rFonts": {
+				"ascii": "Arial",
+				"hAnsi": "Arial",
+				"cs": "Arial"
+			},
+			"color": "#FF0000",
+			"font-size": "14.0pt",
+			"preserve": {
+				"szCs": "14.0pt"
+			}
+		},
+		"c": "Hello world",
+		"fmt": [{
+			"rt": "rPr",
+			"style": {
+				"rFonts": {
+					"ascii": "Arial",
+					"hAnsi": "Arial",
+					"cs": "Arial"
+				},
+				"color": "#FF0000",
+				"font-size": "14.0pt",
+				"preserve": {
+					"szCs": "14.0pt"
+				}
+			},
+			"s": "0",
+			"l": "11"
+		}]
+	}]
+}

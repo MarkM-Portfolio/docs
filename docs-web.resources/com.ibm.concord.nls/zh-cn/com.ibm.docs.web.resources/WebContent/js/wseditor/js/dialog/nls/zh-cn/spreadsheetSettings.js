@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "选择语言环境以确定数字、货币、日期和时间的格式。",
+	INPUT_INVALID_LOCALENAME: "无效的语言环境名称",
+	INPUT_EMPTY_LOCALENAME: "选择语言环境。",
+	
+	Spain_Catalan: "西班牙（加泰罗尼亚语）",
+	Denmark: "丹麦",
+	Germany: "德国",
+	Greek: "希腊",
+	United_States: "美国",
+	United_Kingdom: "英国",
+	Spain: "西班牙",
+	Finland: "芬兰",
+	France: "法国",
+	Italy: "意大利",
+	Japan: "日本",
+	Korean: "韩国",
+	Norway: "挪威",
+	Netherlands: "荷兰",
+	Poland: "波兰",
+	Brazil: "巴西",
+	Portugal: "葡萄牙",
+	Russia: "俄罗斯",
+	Sweden: "瑞典",
+	Thailand: "泰国",
+	Turkey: "土耳其",
+	China: "中国",
+	Taiwan_China: "台湾（中国）",
+	Israel: "以色列"
+})
+

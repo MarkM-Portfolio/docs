@@ -1,0 +1,11 @@
+<div style='width:100%;height:100%' gutters="false" class="pres_app">
+	<iframe dojoAttachPoint="iframe" name="menutoolbarFrame"  id="menutoolbarFrame" src="${iframeSrc}" style='position:absolute;top:0;left:0;width:100%;height:0px;border:0'></iframe>
+    <div dojoType="dijit.layout.BorderContainer" gutters="false" region="center" style='margin-top:0px' dojoAttachPoint='belowContainer'>
+    	<div dojoType="dijit.layout.BorderContainer" gutters="false" class='sorter' region="left" style='margin-top:0px' dojoAttachPoint='sorterContainer' role="region" aria-label="slides">
+    		<div dojoType='pres.widget.SorterHeader' dojoAttachPoint='sorterHeader' region="top" class='sorterHeader' style=''></div>
+       		<div dojoType='pres.widget.Sorter' dojoAttachPoint='sorter' region="center" style='height:100%;overflow-y:auto'></div>
+        </div>
+        <div dojoType='pres.widget.Editor' dojoAttachPoint='editor' region="center" style='width:100%;height:100%' role="region" aria-label="editor"></div>
+    	<div dojoType='pres.widget.SideBar' dojoAttachPoint='sideBar' region="right" class='presSidebar' style='display:none'></div>
+    </div>
+</div>

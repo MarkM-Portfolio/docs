@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="com.ibm.cic.common.core.licenseText">
+      <license
+            licenseId="com.ibm.docs.im.installer.license"
+            file="license/license.txt">
+      </license>
+      <licenseOfferingBinding
+            licenseId="com.ibm.docs.im.installer.license"
+            offeringVersion="[1.0.7,9.0.0)"
+            offeringId="com.ibm.docs.im.installer"
+            label="%LA.name"
+            primary="true">
+      </licenseOfferingBinding>
+   </extension>
+
+</plugin>

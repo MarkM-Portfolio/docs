@@ -1,0 +1,5105 @@
+/*
+	Essential styles that themes can inherit.
+	In other words,  works but doesn't look great.
+*/
+
+
+
+
+/****
+		GENERIC PIECES
+ ****/
+.docs_st_biz  .dijitReset {
+	/* Use this style to null out padding,  margin,  border in your template elements
+		so that page specific styles don't break them.
+		- Use in all TABLE,  TR and TD tags.
+	*/
+
+	margin:0;
+	border:0;
+	padding:0;
+	line-height:normal;
+	font: inherit;
+	color: inherit;
+}
+.docs_st_biz  .dijit_a11y .dijitReset {
+	-moz-appearance: none; /* remove predefined high-contrast styling in Firefox*/
+
+}
+.docs_st_biz  .dijitInline {
+	/*  To inline block elements.
+		Similar to InlineBox below,  but this has fewer side-effects in Moz.
+		Also,  apparently works on a DIV as well as a FIELDSET.
+	*/
+
+	display:inline-block;			/* webkit and FF3 */
+.docs_st_biz  #zoom: 1; /* set hasLayout:true to mimic inline-block*/
+.docs_st_biz  #display:inline; /* don't use .dj_ie since that increases the priority*/
+
+	border:0;
+	padding:0;
+	vertical-align:middle;
+	#vertical-align: auto;	/* makes TextBox, Button line up w/native counterparts on IE6 */
+
+}
+.docs_st_biz  .dijitHidden {
+	/* To hide unselected panes in StackContainer etc.*/
+
+	display: none !important;
+}
+.docs_st_biz  .dijitVisible {
+	/* To show selected pane in StackContainer etc.*/
+
+	display: block !important;	/* override user's display:none setting via style setting or indirectly via class */
+
+	position: relative;			/* to support setting width/height,  see #2033 */
+
+}
+.docs_st_biz  .dijitInputContainer {
+	/* for positioning of placeHolder*/
+.docs_st_biz  #zoom: 1;
+	overflow: hidden;
+	float: none !important; /* needed by FF to squeeze the INPUT in*/
+
+	position:relative;
+}
+.docs_st_biz  .dj_ie INPUT.dijitTextBox, .docs_st_biz  .dj_ie .dijitTextBox INPUT {
+	font-size: 100%;}
+.docs_st_biz  .dijitTextBox .dijitSpinnerButtonContainer, .docs_st_biz  .dijitTextBox .dijitArrowButtonContainer, .docs_st_biz  .dijitTextBox .dijitValidationContainer {
+	float: right;
+	text-align: center;}
+.docs_st_biz  .dijitTextBox INPUT.dijitInputField {
+	/* override unreasonable user styling of buttons and icons*/
+
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.docs_st_biz  .dijitTextBox .dijitValidationContainer {
+	display: none;}
+.docs_st_biz  .dijitInlineTable {
+	/* To inline tables with a given width set (otherwise,  use dijitInline above) */
+
+	display:inline-table;
+	display:inline-block;		/* webkit and FF3 */
+.docs_st_biz  #zoom: 1; /* set hasLayout:true to mimic inline-block*/
+.docs_st_biz  #display:inline; /* don't use .dj_ie since that increases the priority*/
+
+	box-sizing: content-box; -moz-box-sizing: content-box;
+	border:0;
+	padding:0;
+}
+.docs_st_biz  .dijitTeeny {
+	font-size:1px;
+	line-height:1px;}
+.docs_st_biz  .dijitOffScreen {
+	position: absolute;
+	visibility: hidden;
+	left: 50%;
+	top: -10000px;}
+
+
+/*
+ * Popup items have a wrapper div (dijitPopup)
+ * with the real popup inside,  and maybe an iframe too
+ */
+.docs_st_biz  .dijitPopup {
+	position: absolute;
+	background-color: transparent;
+	margin: 0;
+	border: 0;
+	padding: 0;}
+.docs_st_biz  .dijit_a11y .dijitPopup, .docs_st_biz  .dijit_ally .dijitPopup DIV, .docs_st_biz  .dijit_a11y .dijitPopup TABLE, .docs_st_biz  .dijit_a11y .dijitTooltipContainer {
+	background-color: white !important;}
+.docs_st_biz  .dijitPositionOnly {
+	/* Null out all position-related properties*/
+
+	padding: 0 !important;
+	border: 0 !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	height: auto !important;
+	width: auto !important;
+}
+.docs_st_biz  .dijitNonPositionOnly {
+	/* Null position-related properties*/
+
+	float: none !important;
+	position: static !important;
+	margin: 0 0 0 0 !important;
+	vertical-align: middle !important;
+}
+.docs_st_biz  .dijitBackgroundIframe {
+	/* iframe used to prevent problems with PDF or other applets overlaying menus etc*/
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+.docs_st_biz  .dijitDisplayNone {
+	/* hide something.  Use this as a class rather than element.style so another class can override*/
+
+	display:none !important;
+}
+.docs_st_biz  .dijitContainer {
+	/* for all layout containers*/
+
+	overflow: hidden;	/* need on IE so something can be reduced in size,  and so scrollbars aren't temporarily displayed when resizing */
+
+}
+
+
+/****
+		A11Y
+ ****/
+.docs_st_biz  .dijit_a11y * {
+	background-image:none !important;}
+.docs_st_biz  .dijit_a11y .dijitIcon, .docs_st_biz  .dijit_a11y DIV.dijitArrowButtonInner,  /* is this only for Spinner?  if so,  it should be deleted */
+.docs_st_biz  .dijit_a11y SPAN.dijitArrowButtonInner, .docs_st_biz  .dijit_a11y IMG.dijitArrowButtonInner, .docs_st_biz  .dijit_a11y .dijitCalendarIncrementControl {
+	/* hide icon nodes in high contrast mode; when necesary they will be replaced by character equivalents
+	 * exception for INPUT.dijitArrowButtonInner,  because the icon and character are controlled by the same node */
+
+	display: none;
+}
+.docs_st_biz  .dijitSpinner DIV.dijitArrowButtonInner {
+	display: block; /* override previous rule*/
+
+}
+.docs_st_biz  .dijit_a11y .dijitA11ySideArrow {
+	display: inline !important; /* display text instead*/
+
+	cursor: pointer;
+}
+
+
+/*
+ * Since we can't use shading in a11y mode,  and since the underline indicates today's date, 
+ * use a border to show the selected date.
+ * Avoid screen jitter when switching selected date by compensating for the selected node's
+ * border w/padding on other nodes.
+ */
+.docs_st_biz  .dijit_a11y .dijitCalendarDateLabel {
+	padding: 1px;}
+.docs_st_biz  .dijit_a11y .dijitCalendarSelectedDate .dijitCalendarDateLabel {
+	border-style: dotted !important;
+	border-width: 1px;
+	padding: 0px;}
+.docs_st_biz  .dijit_a11y .dijitCalendarDateTemplate {
+	padding-bottom: 0.1em !important;	/* otherwise bottom border doesn't appear on IE*/
+
+}
+.docs_st_biz  .dijit_a11y .dijit * {
+	background:white !important;
+	color:black !important;}
+.docs_st_biz  .dijit_a11y .dijitButtonNode {
+	border-color: black!important;
+	border-style: outset!important;
+	border-width: medium!important;}
+.docs_st_biz  .dijit_a11y .dijitTextBoxReadOnly .dijitInputField, .docs_st_biz  .dijit_a11y .dijitTextBoxReadOnly .dijitButtonNode {
+	border-style: outset!important;
+	border-width: medium!important;
+	border-color: #999 !important;
+	color:#999 !important;}
+
+
+/* button inner contents - labels,  icons etc. */
+.docs_st_biz  .dijitButtonNode * {
+	vertical-align: middle;}
+.docs_st_biz  .dijitButtonNode .dijitArrowButtonInner {
+	/* the arrow icon node*/
+
+	background: no-repeat center;
+	width: 12px;
+	height: 12px;
+	direction: ltr; /* needed by IE/RTL */
+
+}
+
+
+/****
+	3-element borders:  ( dijitLeft + dijitStretch + dijitRight )
+	These were added for rounded corners on dijit.form.*Button but never actually used.
+ ****/
+.docs_st_biz  .dijitLeft {
+	/* Left part of a 3-element border*/
+
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.docs_st_biz  .dijitStretch {
+	/* Middle (stretchy) part of a 3-element border*/
+
+	white-space:nowrap;			/* MOW: move somewhere else */
+
+	background-repeat:repeat-x;
+}
+.docs_st_biz  .dijitRight {
+	/* Right part of a 3-element border*/
+.docs_st_biz  #display:inline;				/* IE7 sizes to outer size w/o this*/
+
+	background-position:right top;
+	background-repeat:no-repeat;
+}
+
+
+/* Buttons */
+.docs_st_biz  .dijitToggleButton, .docs_st_biz  .dijitButton, .docs_st_biz  .dijitDropDownButton, .docs_st_biz  .dijitComboButton {
+	/* outside of button*/
+
+	margin: 0.2em;
+}
+.docs_st_biz  .dijitButtonContents {
+	display: block;		/* to make focus border rectangular*/
+
+}
+
+td.dijitButtonContents {
+	display: table-cell;	/* but don't affect Select,  ComboButton */
+
+}
+.docs_st_biz  .dijitButtonNode IMG {
+	/* make text and images line up cleanly*/
+
+	vertical-align:middle;
+	/*margin-bottom:.2em;*/
+
+}
+
+
+TABLE.dijitComboButton { /* TODO: why not add dijitReset class to ComboButton? */
+
+	/* In ComboButton,  borders are on each cell rather than on <table> itself */
+
+	border-collapse: collapse;
+	border:0;
+	padding:0;
+	margin:0;
+}
+.docs_st_biz  .dijitToolbar .dijitComboButton {
+	/* because Toolbar only draws a border around the hovered thing*/
+
+	border-collapse: separate;
+}
+.docs_st_biz  .dijitToolbar .dijitToggleButton, .docs_st_biz  .dijitToolbar .dijitButton, .docs_st_biz  .dijitToolbar .dijitDropDownButton, .docs_st_biz  .dijitToolbar .dijitComboButton {
+	margin: 0;}
+.docs_st_biz  .dijitToolbar .dijitButtonContents {
+	/* just because it used to be this way*/
+
+	padding: 1px 2px;
+}
+.docs_st_biz  .dj_ie .dijitComboButton {
+	/* hack to get inline-table to vertically align w/other buttons*/
+
+	margin-bottom: -3px;
+}
+.docs_st_biz  .dj_webkit .dijitToolbar .dijitDropDownButton {
+	padding-left: 0.3em;}
+.docs_st_biz  .dj_gecko .dijitToolbar .dijitButtonNode::-moz-focus-inner {
+	padding:0;}
+.docs_st_biz  .dijitButtonNode {
+	/* Node that is acting as a button -- may or may not be a BUTTON element*/
+
+	border:1px solid gray;
+	margin:0;
+	line-height:normal;
+	vertical-align: middle;
+	#vertical-align: auto;
+	text-align:center;
+	white-space: nowrap;
+}
+.docs_st_biz  .dj_webkit .dijitSpinner .dijitSpinnerButtonContainer {
+	/* apparent WebKit bug where messing with the font coupled with line-height:normal X 2 (dijitReset & dijitButtonNode)
+	can be different than just a single line-height:normal,  visible in InlineEditBox/Spinner */
+
+	line-height:inherit;
+}
+.docs_st_biz  .dijitTextBox .dijitButtonNode {
+	border-width: 0;}
+.docs_st_biz  .dijitButtonNode, .docs_st_biz  .dijitButtonNode * {
+	cursor: pointer;}
+.docs_st_biz  .dj_ie .dijitButtonNode {
+	/* ensure hasLayout*/
+
+	zoom: 1;
+}
+.docs_st_biz  .dj_ie .dijitButtonNode button {
+	/*
+		disgusting hack to get rid of spurious padding around button elements
+		on IE. MSIE is truly the web's boat anchor.*/
+
+	overflow: visible;
+}
+
+
+DIV.dijitArrowButton {
+	float: right;
+}
+
+
+/******
+	TextBox related.
+	Everything that has an <input>
+*******/
+.docs_st_biz  .dijitTextBox {
+	border: solid black 1px;
+	#overflow: hidden; /* #6027, .docs_st_biz  #6067*/
+
+	width: 15em;	/* need to set default size on outer node since inner nodes say <input style="width:100%"> and <td width=100%>.  user can override */
+
+	vertical-align: middle;
+	#vertical-align: auto;
+}
+.docs_st_biz  .dijitTextBoxReadOnly, .docs_st_biz  .dijitTextBoxDisabled {
+	color: gray;}
+.docs_st_biz  .dj_webkit .dijitTextBoxDisabled INPUT {
+	color: #eee; /* because WebKit lightens disabled input/textarea no matter what color you specify*/
+
+}
+.docs_st_biz  .dj_webkit TEXTAREA.dijitTextAreaDisabled {
+	color: #333; /* because WebKit lightens disabled input/textarea no matter what color you specify*/
+
+}
+.docs_st_biz  .dj_gecko .dijitTextBoxReadOnly INPUT, .docs_st_biz  .dj_gecko .dijitTextBoxDisabled INPUT {
+	-moz-user-input: none; /* prevent focus of disabled textbox buttons*/
+
+}
+.docs_st_biz  .dijitPlaceHolder {
+	/* hint text that appears in a textbox until user starts typing*/
+
+	color: #AAAAAA;
+	font-style: italic;
+	position: absolute;
+	top: 0;
+	left: 0;
+	#filter: ""; /* make this showup in IE6 after the rendering of the widget */
+
+}
+.docs_st_biz  .dijitTimeTextBox {
+	width: 8em;}
+
+
+/* rules for webkit to deal with fuzzy blue focus border */
+.docs_st_biz  .dijitTextBox INPUT:focus {
+	outline: none;	/* blue fuzzy line looks wrong on combobox or something w/validation icon showing*/
+
+}
+.docs_st_biz  .dijitTextBoxFocused {
+	outline: auto 5px -webkit-focus-ring-color;}
+.docs_st_biz  .dijitTextBox INPUT {
+	float: left; /* needed by IE to remove secret margin*/
+
+}
+.docs_st_biz  .dijitInputInner {
+	/* for when an <input> is embedded inside an inline-block <div> with a size and border*/
+
+	border:0 !important;
+	vertical-align:middle !important;
+	background-color:transparent !important;
+	width:100% !important;
+	/* IE dislikes horizontal tweaking combined with width:100% so punish everyone for consistency */
+
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.docs_st_biz  .dijit_a11y .dijitTextBox INPUT {
+	margin: 0 !important;}
+.docs_st_biz  .dijitTextBoxError INPUT.dijitValidationInner, .docs_st_biz  .dijitTextBox INPUT.dijitArrowButtonInner {
+	/* <input> used to display arrow icon/validation icon,  or in arrow character in high contrast mode.
+	 * The css below is a trick to hide the character in non-high-contrast mode
+	 */
+
+	text-indent: -1em !important;
+	direction: ltr !important;
+	text-align: left !important;
+	height: auto !important;
+	#text-indent: 0 !important;
+	#letter-spacing: -5em !important;
+	#text-align: right !important;
+}
+.docs_st_biz  .dj_ie .dijitTextBox INPUT, .docs_st_biz  .dj_ie INPUT.dijitTextBox {
+	overflow-y: visible; /* INPUTs need help expanding when padding is added or line-height is adjusted*/
+
+	line-height: normal; /* strict mode */
+
+}
+.docs_st_biz  .dj_ie7 .dijitTextBox INPUT.dijitValidationInner, .docs_st_biz  .dj_ie7 .dijitTextBox INPUT.dijitArrowButtonInner {
+	line-height: 86%; /* IE7 problem where the icon is vertically too low w/o this - real input stays at normal*/
+
+}
+.docs_st_biz  .dj_ie6 .dijitTextBox INPUT, .docs_st_biz  .dj_ie6 INPUT.dijitTextBox, .docs_st_biz  .dj_iequirks .dijitTextBox INPUT.dijitValidationInner, .docs_st_biz  .dj_iequirks .dijitTextBox INPUT.dijitArrowButtonInner, .docs_st_biz  .dj_iequirks .dijitTextBox INPUT.dijitSpinnerButtonInner, .docs_st_biz  .dj_iequirks .dijitTextBox INPUT.dijitInputInner, .docs_st_biz  .dj_iequirks INPUT.dijitTextBox {
+	line-height: 100%; /* IE7 problem where the icon is vertically way too low w/o this*/
+
+}
+.docs_st_biz  .dijit_a11y INPUT.dijitValidationInner, .docs_st_biz  .dijit_a11y INPUT.dijitArrowButtonInner {
+	/* (in high contrast mode) revert rules from above so character displays*/
+
+	text-indent: 0 !important;
+	width: 1em !important;
+	#text-align: left !important;
+}
+.docs_st_biz  .dijitTextBoxError .dijitValidationContainer {
+	display: inline;
+	cursor: default;}
+
+
+/* ComboBox & Spinner */
+.docs_st_biz  .dijitSpinner .dijitSpinnerButtonContainer, .docs_st_biz  .dijitComboBox .dijitArrowButtonContainer {
+	/* dividing line between input area and up/down button(s) for ComboBox and Spinner*/
+
+	border-width: 0 0 0 1px !important; /* !important needed due to wayward ".theme .dijitButtonNode" rules */
+
+}
+.docs_st_biz  .dijitSpinner .dijitSpinnerButtonContainer .dijitButtonNode {
+	/* dividing line between input area and up/down button(s) for ComboBox and Spinner*/
+
+	border-width: 0;
+}
+.docs_st_biz  .dj_ie .dijit_a11y .dijitSpinner .dijitSpinnerButtonContainer .dijitButtonNode {
+	clear: both; /* IE workaround*/
+
+}
+.docs_st_biz  .dijit_a11y .dijitTextBox .dijitValidationContainer, .docs_st_biz  .dijit_a11y .dijitTextBox .dijitSpinnerButtonContainer, .docs_st_biz  .dijit_a11y .dijitComboBox .dijitArrowButtonContainer {
+	/* dividing line between input area and up/down button(s) for ComboBox and Spinner*/
+
+	border: solid black !important;
+	border-width: 0 0 0 1px !important;
+}
+.docs_st_biz  .dj_ie .dijitToolbar .dijitComboBox {
+	/* make combobox buttons align porperly with other buttons in a toolbar*/
+
+	vertical-align: middle;
+}
+
+
+/* Spinner */
+.docs_st_biz  .dijitTextBox .dijitSpinnerButtonContainer {
+	width: 1em;
+	position: relative !important;
+	overflow: hidden;}
+.docs_st_biz  .dijitSpinner .dijitSpinnerButtonInner {
+	width:1em;
+	visibility:hidden !important; /* just a sizing element*/
+
+	overflow-x:hidden;
+}
+.docs_st_biz  .dijitComboBox .dijitButtonNode, .docs_st_biz  .dijitSpinnerButtonContainer .dijitButtonNode {
+	border-width: 0;}
+.docs_st_biz  .dijit_a11y .dijitSpinnerButtonContainer .dijitButtonNode {
+	border: 0 none !important;}
+.docs_st_biz  .dijit_a11y .dijitTextBox .dijitSpinnerButtonContainer, .docs_st_biz  .dijit_a11y .dijitSpinner .dijitArrowButtonInner, .docs_st_biz  .dijit_a11y .dijitSpinnerButtonContainer INPUT {
+	width: 1em !important;}
+.docs_st_biz  .dijit_a11y .dijitSpinner .dijitArrowButtonInner {
+	margin: 0 auto !important; /* should auto-center*/
+
+}
+.docs_st_biz  .dj_ie .dijit_a11y .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	padding-left: 0.3em !important;
+	padding-right: 0.3em !important;
+	margin-left: 0.3em !important;
+	margin-right: 0.3em !important;
+	width: 1.4em !important;}
+.docs_st_biz  .dj_ie7 .dijit_a11y .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	padding-left: 0.0em !important; /* manually center INPUT: character is .5em and total width = 1em*/
+
+	padding-right: 0.0em !important;
+	width: 1em !important;
+}
+.docs_st_biz  .dj_ie6 .dijit_a11y .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	margin-left: 0.1em !important;
+	margin-right: 0.1em !important;
+	width: 1em !important;}
+.docs_st_biz  .dj_iequirks .dijit_a11y .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	width: 2em !important;}
+.docs_st_biz  .dijitSpinner .dijitSpinnerButtonContainer .dijitArrowButton {
+	/* note: .dijitInputLayoutContainer makes this rule override .dijitArrowButton settings
+	 * for dijit.form.Button*/
+
+	padding: 0;
+	position: absolute !important;
+	right: 0;
+	float: none;
+	height: 50%;
+	width: 100%;
+	bottom: auto;
+	left: 0;
+	right: auto;
+}
+.docs_st_biz  .dj_iequirks .dijitSpinner .dijitSpinnerButtonContainer .dijitArrowButton {
+	width: auto;}
+.docs_st_biz  .dijit_a11y .dijitSpinnerButtonContainer .dijitArrowButton {
+	overflow: visible !important;}
+.docs_st_biz  .dijitSpinner .dijitSpinnerButtonContainer .dijitDownArrowButton {
+	top: 50%;
+	border-top-width: 1px !important;}
+.docs_st_biz  .dijitSpinner .dijitSpinnerButtonContainer .dijitUpArrowButton {
+	#bottom: 50%;	/* otherwise (on some machines) top arrow icon too close to splitter border (IE6/7)*/
+
+	top: 0;
+}
+.docs_st_biz  .dijitSpinner .dijitArrowButtonInner {
+	margin: auto;
+	overflow-x: hidden;
+	height: 100% !important;}
+.docs_st_biz  .dj_iequirks .dijitSpinner .dijitArrowButtonInner {
+	height: auto !important;}
+.docs_st_biz  .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	-moz-transform: scale(0.5);
+	-moz-transform-origin: center top;
+	-webkit-transform: scale(0.5);
+	-webkit-transform-origin: center top;
+	-o-transform: scale(0.5);
+	-o-transform-origin: center top;
+	transform: scale(0.5);
+	transform-origin: left top;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	width: 100%;}
+.docs_st_biz  .dj_ie .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	zoom: 50%; /* emulate transform: scale(0.5)*/
+
+}
+.docs_st_biz  .dijitSpinner .dijitSpinnerButtonContainer .dijitArrowButtonInner {
+	overflow: hidden;}
+.docs_st_biz  .dijit_a11y .dijitSpinner .dijitSpinnerButtonContainer .dijitArrowButton {
+	width: 100%;}
+.docs_st_biz  .dj_iequirks .dijit_a11y .dijitSpinner .dijitSpinnerButtonContainer .dijitArrowButton {
+	width: 1em; /* matches .dijit_a11y .dijitTextBox .dijitSpinnerButtonContainer rule - 100% is the whole screen width in quirks*/
+
+}
+.docs_st_biz  .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	visibility: hidden;}
+.docs_st_biz  .dijit_a11y .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	vertical-align:top;
+	visibility: visible;}
+.docs_st_biz  .dijit_a11y .dijitSpinnerButtonContainer {
+	width: 1em;}
+.docs_st_biz  .dijit_a11y .dijitSpinnerButtonContainer .dijitButtonNode {
+	border-width: 1px 0px 0px 0px;
+	border-style: solid !important;}
+
+
+/****
+		dijit.form.CheckBox
+ 	 &
+  		dijit.form.RadioButton
+ ****/
+.docs_st_biz  .dijitCheckBox, .docs_st_biz  .dijitRadio, .docs_st_biz  .dijitCheckBoxInput {
+	padding: 0;
+	border: 0;
+	width: 16px;
+	height: 16px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	overflow: hidden;}
+.docs_st_biz  .dijitCheckBox INPUT, .docs_st_biz  .dijitRadio INPUT {
+	margin: 0;
+	padding: 0;
+	display: block;}
+.docs_st_biz  .dijitCheckBoxInput {
+	/* place the actual input on top,  but all-but-invisible */
+
+	opacity: 0.01;
+}
+.docs_st_biz  .dj_ie .dijitCheckBoxInput {
+	filter: alpha(opacity=0);}
+.docs_st_biz  .dijit_a11y .dijitCheckBox, .docs_st_biz  .dijit_a11y .dijitRadio {
+	/* in a11y mode we display the native checkbox (not the icon),  so don't restrict the size */
+
+	width: auto !important;
+	height: auto !important;
+}
+.docs_st_biz  .dijit_a11y .dijitCheckBoxInput {
+	opacity: 1;
+	filter: none;
+	width: auto;
+	height: auto;}
+
+
+
+/****
+		dijit.ProgressBar
+ ****/
+.docs_st_biz  .dijitProgressBarEmpty {
+	/* outer container and background of the bar that's not finished yet*/
+
+	position:relative;overflow:hidden;
+	border:1px solid black; 	/* a11y: border necessary for high-contrast mode */
+
+	z-index:0;			/* establish a stacking context for this progress bar */
+
+}
+.docs_st_biz  .dijitProgressBarFull {
+	/* outer container for background of bar that is finished*/
+
+	position:absolute;
+	overflow:hidden;
+	z-index:-1;
+	top:0;
+	width:100%;
+}
+.docs_st_biz  .dj_ie6 .dijitProgressBarFull {
+	height:1.6em;}
+.docs_st_biz  .dijitProgressBarTile {
+	/* inner container for finished portion*/
+
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:0;
+	padding:0;
+	width:auto;
+	height:auto;
+	background-color:#aaa;
+	background-attachment: fixed;
+}
+.docs_st_biz  .dijit_a11y .dijitProgressBarTile {
+	/* a11y:  The border provides visibility in high-contrast mode*/
+
+	border-width:2px;
+	border-style:solid;
+	background-color:transparent !important;
+}
+.docs_st_biz  .dj_ie6 .dijitProgressBarTile {
+	/* width:auto works in IE6 with position:static but not position:absolute*/
+
+	position:static;
+	/* height:auto or 100% does not work in IE6 */
+
+	height:1.6em;
+}
+.docs_st_biz  .dijitProgressBarIndeterminate .dijitProgressBarLabel {
+	visibility:hidden;}
+.docs_st_biz  .dijitProgressBarIndeterminate .dijitProgressBarTile {
+	/* animated gif for 'indeterminate' mode*/
+
+}
+.docs_st_biz  .dijitProgressBarIndeterminateHighContrastImage {
+	display:none;}
+.docs_st_biz  .dijit_a11y .dijitProgressBarIndeterminate .dijitProgressBarIndeterminateHighContrastImage {
+	display:block;
+	position:absolute;
+	top:0;
+	bottom:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:auto;}
+.docs_st_biz  .dijitProgressBarLabel {
+	display:block;
+	position:static;
+	width:100%;
+	text-align:center;
+	background-color:transparent !important;}
+
+
+/****
+		dijit.Tooltip
+ ****/
+.docs_st_biz  .dijitTooltip {
+	position: absolute;
+	z-index: 2000;
+	display: block;
+	/* make visible but off screen*/
+
+	left: 50%;
+	top: -10000px;
+	overflow: visible;
+}
+.docs_st_biz  .dijitTooltipContainer {
+	border: solid black 2px;
+	background: #b8b5b5;
+	color: black;
+	font-size: small;}
+.docs_st_biz  .dijitTooltipFocusNode {
+	padding: 2px 2px 2px 2px;}
+.docs_st_biz  .dijitTooltipConnector {
+	position: absolute;}
+.docs_st_biz  .dijit_a11y .dijitTooltipConnector {
+	display: none;	/* won't show b/c it's background-image; hide to avoid border gap*/
+
+}
+.docs_st_biz  .dijitTooltipData {
+	display:none;}
+
+
+/* Layout widgets. This is essential CSS to make layout work (it isn't "styling" CSS)
+   make sure that the position:absolute in dijitAlign* overrides other classes */
+.docs_st_biz  .dijitLayoutContainer {
+	position: relative;
+	display: block;
+	overflow: hidden;}
+
+
+body .dijitAlignTop, 
+body .dijitAlignBottom, 
+body .dijitAlignLeft, 
+body .dijitAlignRight {
+	position: absolute;
+	overflow: hidden;
+}
+
+
+body .dijitAlignClient { position: absolute; }
+
+
+/*
+ * BorderContaienr
+ *
+ * .dijitBorderContainer is a stylized layout where panes have border and margin.
+ * .dijitBorderContainerNoGutter is a raw layout.
+ */
+.docs_st_biz  .dijitBorderContainer, .docs_st_biz  .dijitBorderContainerNoGutter {
+	position:relative;
+	overflow: hidden;}
+.docs_st_biz  .dijitBorderContainerPane, .docs_st_biz  .dijitBorderContainerNoGutterPane {
+	position: absolute !important;	/* !important to override position:relative in dijitTabContainer etc.*/
+
+	z-index: 2;		/* above the splitters so that off-by-one browser errors don't cover up border of pane */
+
+}
+.docs_st_biz  .dijitBorderContainer > .dijitTextArea {
+	/* On Safari,  for SimpleTextArea inside a BorderContainer, 
+		don't want to display the grip to resize */
+
+	resize: none;
+}
+.docs_st_biz  .dijitGutter {
+	/* gutter is just a place holder for empty space between panes in BorderContainer*/
+
+	position: absolute;
+	font-size: 1px;		/* needed by IE6 even though div is empty,  otherwise goes to 15px */
+
+}
+
+
+/* SplitContainer
+
+	'V' == container that splits vertically (up/down)
+	'H' = horizontal (left/right)
+*/
+.docs_st_biz  .dijitSplitter {
+	position: absolute;
+	overflow: hidden;
+	z-index: 10;		/* above the panes so that splitter focus is visible on FF,  see #7583*/
+
+	background-color: #fff;
+	border-color: gray;
+	border-style: solid;
+	border-width: 0;
+}
+.docs_st_biz  .dj_ie .dijitSplitter {
+	z-index: 1;	/* behind the panes so that pane borders aren't obscured see test_Gui.html/[14392]*/
+
+}
+.docs_st_biz  .dijitSplitterActive {
+	z-index: 11 !important;}
+.docs_st_biz  .dijitSplitterCover {
+	position:absolute;
+	z-index:-1;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;}
+.docs_st_biz  .dijitSplitterCoverActive {
+	z-index:3 !important;}
+
+
+/* #6945: stop mouse events */
+.docs_st_biz  .dj_ie .dijitSplitterCover {
+	background: white;
+	filter: alpha(opacity=0);}
+.docs_st_biz  .dijitSplitterH {
+	height: 7px;
+	border-top:1px;
+	border-bottom:1px;
+	cursor: ns-resize;}
+.docs_st_biz  .dijitSplitterV {
+	width: 7px;
+	border-left:1px;
+	border-right:1px;
+	cursor: ew-resize;}
+.docs_st_biz  .dijitSplitContainer {
+	position: relative;
+	overflow: hidden;
+	display: block;}
+.docs_st_biz  .dj_ff3 .dijit_a11y div.dijitSplitter:focus {
+	outline-style:dotted;
+	outline-width: 2px;}
+.docs_st_biz  .dijitSplitPane {
+	position: absolute;}
+.docs_st_biz  .dijitSplitContainerSizerH, .docs_st_biz  .dijitSplitContainerSizerV {
+	position:absolute;
+	font-size: 1px;
+	cursor: move;
+	cursor: w-resize;
+	background-color: ThreeDFace;
+	border: 1px solid;
+	border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+	margin: 0;}
+.docs_st_biz  .dijitSplitContainerSizerH .thumb, .docs_st_biz  .dijitSplitterV .dijitSplitterThumb {
+	overflow:hidden;
+	position:absolute;
+	top:49%;}
+.docs_st_biz  .dijitSplitContainerSizerV .thumb, .docs_st_biz  .dijitSplitterH .dijitSplitterThumb {
+	position:absolute;
+	left:49%;}
+.docs_st_biz  .dijitSplitterShadow, .docs_st_biz  .dijitSplitContainerVirtualSizerH, .docs_st_biz  .dijitSplitContainerVirtualSizerV {
+	font-size: 1px;
+	background-color: ThreeDShadow;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	filter: Alpha(Opacity=50);
+	margin: 0;}
+.docs_st_biz  .dj_ie .dijitSplitterV, .docs_st_biz  .dijitSplitContainerVirtualSizerH {
+	cursor: w-resize;}
+.docs_st_biz  .dj_ie .dijitSplitterH, .docs_st_biz  .dijitSplitContainerSizerV, .docs_st_biz  .dijitSplitContainerVirtualSizerV {
+	cursor: n-resize;}
+.docs_st_biz  .dijit_a11y .dijitSplitterH {
+	border-top:1px solid #d3d3d3 !important;
+	border-bottom:1px solid #d3d3d3 !important;}
+.docs_st_biz  .dijit_a11y .dijitSplitterV {
+	border-left:1px solid #d3d3d3 !important;
+	border-right:1px solid #d3d3d3 !important;}
+
+
+/* ContentPane */
+.docs_st_biz  .dijitContentPane {
+	display: block;
+	overflow: auto;	/* if we don't have this (or overflow:hidden),  then Widget.resizeTo() doesn't make sense for ContentPane */
+
+}
+.docs_st_biz  .dijitContentPaneSingleChild {
+	/*
+	 * if the ContentPane holds a single layout widget child which is being sized to match the content pane, 
+	 * then the ContentPane should never get a scrollbar (but it does due to browser bugs,  see #9449
+	 */
+
+	overflow: hidden;
+}
+
+
+/* TitlePane */
+.docs_st_biz  .dijitTitlePane {
+	display: block;
+	overflow: hidden;}
+.docs_st_biz  .dijitTitlePaneTitle {
+	cursor: pointer;}
+.docs_st_biz  .dijitFixedOpen {
+	/* TitlePane that cannot be closed*/
+
+	cursor: default;
+}
+.docs_st_biz  .dijitTitlePaneTitle * {
+	vertical-align: middle;}
+.docs_st_biz  .dijitTitlePane .dijitArrowNodeInner {
+	/* normally,  hide arrow text in favor of icon */
+
+	display: none;
+}
+.docs_st_biz  .dijit_a11y .dijitTitlePane .dijitArrowNodeInner {
+	/* ... except in a11y mode,  then show text arrow */
+
+	display:inline !important;
+	font-family: monospace;		/* because - and + are different widths */
+
+}
+.docs_st_biz  .dijit_a11y .dijitTitlePane .dijitArrowNode {
+	/* ... and hide icon*/
+
+	display:none;
+}
+.docs_st_biz  .dj_ie6 .dijitTitlePaneContentOuter, .docs_st_biz  .dj_ie6 .dijitTitlePane .dijitTitlePaneTitle {
+	/* force hasLayout to ensure borders etc,  show up */
+
+	zoom: 1;
+}
+
+
+/* Color Palette
+ * Sizes designed so that table cell positions match icons in underlying image, 
+ * which appear at 20x20 intervals.
+ */
+.docs_st_biz  .dijitColorPalette {
+	border: 1px solid #999;
+	background: #fff;
+	position: relative;}
+
+
+img.dijitColorPaletteUnder {
+	/* This single image contains the "icons" for every color in the color palette,  and sits behind the transparent <table> */
+
+	border-style: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.docs_st_biz  .dijitColorPalette .dijitPaletteTable {
+	/* Table that holds the palette cells,  and overlays image file with color swatches.
+	 * padding/margin to align table with image.
+	 */
+
+	padding: 2px 3px 3px 3px;
+	position: relative;
+	overflow: hidden;
+	outline: 0;
+	border-collapse: separate;
+}
+.docs_st_biz  .dj_ie6 .dijitColorPalette .dijitPaletteTable, .docs_st_biz  .dj_ie7 .dijitColorPalette .dijitPaletteTable, .docs_st_biz  .dj_iequirks .dijitColorPalette .dijitPaletteTable {
+	/* using padding above so that focus border isn't cutoff on moz/webkit, 
+	 * but using margin on IE because padding doesn't seem to work
+	 */
+
+	padding: 0;
+	margin: 2px 3px 3px 3px;
+}
+.docs_st_biz  .dijitColorPalette .dijitPaletteCell {
+	/* <td> in the <table>,  matching size of color swatches embedded in the img.dijitColorPaletteUnder */
+
+	height: 20px;
+	width: 20px;
+	font-size: 1px;
+	vertical-align: middle;
+	text-align: center;
+}
+.docs_st_biz  .dijitColorPalette .dijitPaletteImg {
+	/* transparent (but clickable) <img> node inside of each <td>,  overlaying the color swatch.
+	 * displays border around a color swatch
+	 */
+
+	width: 16px;
+	height: 14px;
+	border: 1px solid #999;
+	cursor: default;
+	vertical-align: middle;
+}
+.docs_st_biz  .dj_iequirks .dijitColorPalette .dijitPaletteImg {
+	margin: 1px;	/* needed to fix spacing for ColorPalette in TooltipDialog on IE/quirks*/
+
+}
+.docs_st_biz  .dijitPaletteTable td {
+		padding: 0px;}
+.docs_st_biz  .dijitColorPalette .dijitPaletteCellHover .dijitPaletteImg {
+	/* hovered color swatch*/
+
+	border: 1px solid #000;
+}
+.docs_st_biz  .dijitColorPalette .dijitPaletteCellActive .dijitPaletteImg, .docs_st_biz  .dijitColorPalette .dijitPaletteCellSelected .dijitPaletteImg {
+	border: 2px solid #000;}
+.docs_st_biz  .dijit_a11y .dijitColorPalette .dijitPaletteTable, .docs_st_biz  .dijit_a11y .dijitColorPalette .dijitPaletteTable * {
+	/* table cells are to catch events,  but the swatches are in the PaletteImg behind the table */
+
+	background-color: transparent !important;
+}
+.docs_st_biz  .dj_gecko .dijit_a11y .dijitColorPalette .dijitPaletteCellFocused .dijitPaletteImg {
+	border: 3px dotted #000;	/* focus border on table cells broken in FF high contrast :-(*/
+
+	margin: -1px;
+}
+.docs_st_biz  .dijit_a11y  .dijitColorPalette .dijitPaletteCellHover .dijitPaletteImg {
+	border: 2px solid #000 !important;}
+
+
+/* AccordionContainer */
+.docs_st_biz  .dijitAccordionContainer {
+	border:1px solid #b7b7b7;
+	border-top:0 !important;}
+.docs_st_biz  .dijitAccordionTitle {
+	cursor: pointer;}
+.docs_st_biz  .dijitAccordionTitleSelected {
+	cursor: default;}
+
+
+/* images off,  high-contrast mode styles */
+.docs_st_biz  .dijitAccordionTitle .arrowTextUp, .docs_st_biz  .dijitAccordionTitle .arrowTextDown {
+	display: none;
+	font-size: 0.65em;
+	font-weight: normal !important;}
+.docs_st_biz  .dijit_a11y .dijitAccordionTitle .arrowTextUp, .docs_st_biz  .dijit_a11y .dijitAccordionTitleSelected .arrowTextDown {
+	display: inline;}
+.docs_st_biz  .dijit_a11y .dijitAccordionTitleSelected .arrowTextUp {
+	display: none;}
+.docs_st_biz  .dj_ie6 .dijitAccordionTitle, .docs_st_biz  .dj_iequirks .dijitAccordionTitle {
+	/* avoid IE6/IE quirks size calc bug where accordion ends up too short (themeTesterQuirk.html)
+	 * and IE6 bug where the first title bar turns white upon hovering any title bar*/
+
+	zoom: 1;
+}
+
+
+/* Calendar */
+.docs_st_biz  .dijitCalendarContainer {
+	width: auto;	/* in case user has specified a width for the TABLE nodes,  see #10553 */
+
+}
+.docs_st_biz  .dijitCalendarContainer th, .docs_st_biz  .dijitCalendarContainer td {
+	padding: 0;}
+.docs_st_biz  .dijitCalendarNextYear {
+	margin:0 0 0 0.55em;}
+.docs_st_biz  .dijitCalendarPreviousYear {
+	margin:0 0.55em 0 0;}
+.docs_st_biz  .dijitCalendarIncrementControl {
+	vertical-align: middle;}
+.docs_st_biz  .dijitCalendarIncrementControl, .docs_st_biz  .dijitCalendarDateTemplate, .docs_st_biz  .dijitCalendarMonthLabel, .docs_st_biz  .dijitCalendarPreviousYear, .docs_st_biz  .dijitCalendarNextYear {
+	cursor: pointer;}
+.docs_st_biz  .dijitCalendarDisabledDate {
+	color: gray;
+	text-decoration: line-through;
+	cursor: default;}
+.docs_st_biz  .dijitSpacer {
+	/* don't display it,  but make it affect the width */
+
+  	position: relative;
+  	height: 1px;
+  	overflow: hidden;
+  	visibility: hidden;
+}
+
+
+
+/* Menu */
+.docs_st_biz  .dijitMenu {
+	border:1px solid black;
+	background-color:white;}
+.docs_st_biz  .dijitMenuTable {
+	border-collapse:collapse;
+	border-width:0;
+	background-color:white;}
+
+
+/* workaround for webkit bug #8427,  remove this when it is fixed upstream */
+.docs_st_biz  .dj_webkit .dijitMenuTable td[colspan="2"]{
+	border-right:hidden;}
+.docs_st_biz  .dijitMenuItem {
+	text-align: left;
+	white-space: nowrap;
+	padding:.1em .2em;
+	cursor:pointer;}
+.docs_st_biz  .dijitMenuPassive .dijitMenuItemHover, .docs_st_biz  .dijitMenuItemSelected {
+	/*
+	 * dijitMenuItemHover refers to actual mouse over
+	 * dijitMenuItemSelected is used after a menu has been "activated" by
+	 * clicking it,  tabbing into it,  or being opened from a parent menu, 
+	 * and denotes that the menu item has focus or that focus is on a child
+	 * menu
+	 */
+
+	background-color:black;
+	color:white;
+}
+.docs_st_biz  .dijitMenuItemIcon, .docs_st_biz  .dijitMenuExpand {
+	background-repeat: no-repeat;}
+.docs_st_biz  .dijitMenuItemDisabled * {
+	/* for a disabled menu item,  just set it to mostly transparent */
+
+	opacity:0.5;
+	cursor:default;
+}
+.docs_st_biz  .dj_ie .dijit_a11y .dijitMenuItemDisabled, .docs_st_biz  .dj_ie .dijit_a11y .dijitMenuItemDisabled td, .docs_st_biz  .dj_ie .dijitMenuItemDisabled *, .docs_st_biz  .dj_ie .dijitMenuItemDisabled td {
+	color:gray !important;
+	filter: alpha(opacity=35);}
+.docs_st_biz  .dijitMenuItemLabel {
+	position: relative;
+	vertical-align: middle;}
+.docs_st_biz  .dijit_a11y .dijitMenuItemSelected {
+	border: 1px dotted black !important;}
+.docs_st_biz  .dj_ff3 .dijit_a11y .dijitMenuItem td {
+	padding: none !important;
+	background:none !important;}
+.docs_st_biz  .dijit_a11y .dijitMenuItemSelected .dijitMenuItemLabel {
+	border-width: 1px;
+	border-style: solid;}
+.docs_st_biz  .dj_ie8 .dijit_a11y .dijitMenuItemLabel {
+	position:static;}
+.docs_st_biz  .dijitMenuExpandA11y {
+	display: none;}
+.docs_st_biz  .dijit_a11y .dijitMenuExpandA11y {
+	display: inline;}
+.docs_st_biz  .dijitMenuSeparator td {
+	border: 0;
+	padding: 0;}
+
+
+/* separator can be two pixels -- set border of either one to 0 to have only one */
+.docs_st_biz  .dijitMenuSeparatorTop {
+	height: 50%;
+	margin: 0;
+	margin-top:3px;
+	font-size: 1px;}
+.docs_st_biz  .dijitMenuSeparatorBottom {
+	height: 50%;
+	margin: 0;
+	margin-bottom:3px;
+	font-size: 1px;}
+
+
+/* the checked menu item */
+.docs_st_biz  .dijitCheckedMenuItemIconChar {
+	vertical-align: middle;
+	visibility:hidden;}
+.docs_st_biz  .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIconChar {
+	visibility: visible;}
+.docs_st_biz  .dijit_a11y .dijitCheckedMenuItemIconChar {
+	display:inline !important;}
+.docs_st_biz  .dijit_a11y .dijitCheckedMenuItemIcon {
+	display: none;}
+.docs_st_biz  .dj_ie .dijit_a11y .dijitMenuBar .dijitMenuItem {
+	/* so bottom border of MenuBar appears on IE7 in high-contrast mode*/
+
+	margin: 0px;
+}
+
+
+/* StackContainer */
+.docs_st_biz  .dijitStackController .dijitToggleButtonChecked * {
+	cursor: default;	/* because pressing it has no effect*/
+
+}
+
+
+/* TabContainer */
+.docs_st_biz  .dijitTabContainerNoLayout {
+	width: 100%;	/* otherwise ScrollingTabController goes to 50K pixels wide*/
+
+}
+.docs_st_biz  .dijitTabContainerBottom-tabs, .docs_st_biz  .dijitTabContainerTop-tabs, .docs_st_biz  .dijitTabContainerLeft-tabs, .docs_st_biz  .dijitTabContainerRight-tabs {
+	overflow: visible !important;  /* so tabs can cover up border adjacent to container*/
+
+}
+.docs_st_biz  .dijitTabContainerBottom-container, .docs_st_biz  .dijitTabContainerTop-container, .docs_st_biz  .dijitTabContainerLeft-container, .docs_st_biz  .dijitTabContainerRight-container {
+	z-index:0;
+	overflow: hidden;
+	border: 1px solid black;}
+.docs_st_biz  .nowrapTabStrip {
+	width: 50000px;
+	display: block;
+	position: relative;}
+.docs_st_biz  .dijitTabListWrapper {
+	overflow: hidden;}
+.docs_st_biz  .dijit_a11y .tabStripButton img {
+	/* hide the icons (or rather the empty space where they normally appear) because text will appear instead*/
+
+	display: none;
+}
+.docs_st_biz  .dijitTabContainerTop-tabs {
+	border-bottom: 1px solid black;}
+.docs_st_biz  .dijitTabContainerTop-container {
+	border-top: 0px;}
+.docs_st_biz  .dijitTabContainerLeft-tabs {
+	border-right: 1px solid black;
+	float: left;}
+.docs_st_biz  .dijitTabContainerLeft-container {
+	border-left: 0px;}
+.docs_st_biz  .dijitTabContainerBottom-tabs {
+	border-top: 1px solid black;}
+.docs_st_biz  .dijitTabContainerBottom-container {
+	border-bottom: 0px;}
+.docs_st_biz  .dijitTabContainerRight-tabs {
+	border-left: 1px solid black;
+	float: left;}
+.docs_st_biz  .dijitTabContainerRight-container {
+	border-right: 0px;}
+
+
+DIV.dijitTabDisabled, .docs_st_biz  .dj_ie DIV.dijitTabDisabled {
+	cursor: auto;}
+.docs_st_biz  .dijitTab {
+	position:relative;
+	cursor:pointer;
+	white-space:nowrap;
+	z-index:3;}
+.docs_st_biz  .dijitTab * {
+	/* make tab icons and close icon line up w/text*/
+
+	vertical-align: middle;
+}
+.docs_st_biz  .dijitTabChecked {
+	cursor: default;	/* because clicking will have no effect*/
+
+}
+.docs_st_biz  .dijitTabContainerTop-tabs .dijitTab {
+	top: 1px;	/* to overlap border on .dijitTabContainerTop-tabs*/
+
+}
+.docs_st_biz  .dijitTabContainerBottom-tabs .dijitTab {
+	top: -1px;	/* to overlap border on .dijitTabContainerBottom-tabs*/
+
+}
+.docs_st_biz  .dijitTabContainerLeft-tabs .dijitTab {
+	left: 1px;	/* to overlap border on .dijitTabContainerLeft-tabs*/
+
+}
+.docs_st_biz  .dijitTabContainerRight-tabs .dijitTab {
+	left: -1px;	/* to overlap border on .dijitTabContainerRight-tabs*/
+
+}
+.docs_st_biz  .dijitTabContainerTop-tabs .dijitTab, .docs_st_biz  .dijitTabContainerBottom-tabs .dijitTab {
+	/* Inline-block*/
+
+	display:inline-block;			/* webkit and FF3 */
+.docs_st_biz  #zoom: 1; /* set hasLayout:true to mimic inline-block*/
+.docs_st_biz  #display:inline; /* don't use .dj_ie since that increases the priority*/
+
+}
+.docs_st_biz  .dijitTabInnerDiv {
+	position:relative;}
+.docs_st_biz  .tabStripButton {
+	z-index: 12;}
+.docs_st_biz  .dijitTabButtonDisabled .tabStripButton {
+	display: none;}
+.docs_st_biz  .dijitTabCloseButton {
+	margin-left: 1em;}
+.docs_st_biz  .dijitTabCloseText {
+	display:none;}
+
+
+/* images off,  high-contrast mode styles */
+.docs_st_biz  .dijit_a11y .dijitTabCloseButton {
+	background-image: none !important;
+	width: auto !important;
+	height: auto !important;
+	border: thin dotted;	/* non-hover state*/
+
+}
+.docs_st_biz  .dijit_a11y .dijitTabCloseButtonHover {
+	border:thin solid;	/* hover state*/
+
+}
+.docs_st_biz  .dijit_a11y .dijitTabCloseText {
+	display: inline;}
+.docs_st_biz  .dijit_a11y .dijitTabChecked {
+	/* the selected tab*/
+
+	border-style:dashed !important;
+}
+.docs_st_biz  .dijit_a11y .dijitTabInnerDiv {
+	border-left:none !important;}
+.docs_st_biz  .dijitTabPane, .docs_st_biz  .dijitStackContainer-child, .docs_st_biz  .dijitAccordionContainer-child {
+	/* children of TabContainer,  StackContainer,  and AccordionContainer shouldn't have borders
+	 * b/c a border is already there from the TabContainer/StackContainer/AccordionContainer itself.
+	 */
+
+    border: none !important;
+}
+
+
+/* InlineEditBox */
+.docs_st_biz  .dijitInlineEditBoxDisplayMode {
+	border: 1px solid transparent;	/* so keyline (border) on hover can appear without screen jump*/
+
+	cursor: text;
+}
+.docs_st_biz  .dijit_a11y .dijitInlineEditBoxDisplayMode, .docs_st_biz  .dj_ie6 .dijitInlineEditBoxDisplayMode {
+	/* except that IE6 doesn't support transparent borders,  nor does high contrast mode */
+
+	border: none;
+}
+.docs_st_biz  .dijitInlineEditBoxDisplayModeHover, .docs_st_biz  .dijit_a11y .dijitInlineEditBoxDisplayModeHover, .docs_st_biz  .dj_ie6 .dijitInlineEditBoxDisplayModeHover {
+	/* An InlineEditBox in view mode (click this to edit the text)*/
+
+	background-color: #e2ebf2;
+	border: solid 1px black;
+}
+.docs_st_biz  .dijitInlineEditBoxDisplayModeDisabled {
+	cursor: default;}
+
+
+/* Tree */
+.docs_st_biz  .dijitTreeIndent {
+	/* amount to indent each tree node (relative to parent node)*/
+
+	width: 19px;
+}
+.docs_st_biz  .dijitTreeRow, .docs_st_biz  .dijitTreeContent {
+	white-space: nowrap;}
+.docs_st_biz  .dijitTreeRow img {
+	/* make the expando and folder icons line up with the label*/
+
+	vertical-align: middle;
+}
+.docs_st_biz  .dijitTreeContent {
+    cursor: default;}
+.docs_st_biz  .dijitExpandoText {
+	display: none;}
+.docs_st_biz  .dijit_a11y .dijitExpandoText {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: monospace;
+	border-style: solid;
+	border-width: thin;
+	cursor: pointer;}
+.docs_st_biz  .dijitTreeLabel {
+	margin: 0px 4px;}
+
+
+/* Dialog */
+.docs_st_biz  .dijitDialog {
+	position: absolute;
+	z-index: 999;
+	overflow: hidden;       /* override overflow: auto; from ContentPane to make dragging smoother*/
+
+}
+.docs_st_biz  .dijitDialogTitleBar {
+	cursor: move;}
+.docs_st_biz  .dijitDialogFixed .dijitDialogTitleBar {
+	cursor:default;}
+.docs_st_biz  .dijitDialogCloseIcon {
+	cursor: pointer;}
+.docs_st_biz  .dijitDialogUnderlayWrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 998;
+	display: none;
+	background: transparent !important;}
+.docs_st_biz  .dijitDialogUnderlay {
+	background: #eee;
+	opacity: 0.5;}
+.docs_st_biz  .dj_ie .dijitDialogUnderlay {
+	filter: alpha(opacity=50);}
+
+
+/* images off,  high-contrast mode styles */
+.docs_st_biz  .dijit_a11y .dijitSpinnerButtonContainer, .docs_st_biz  .dijit_a11y .dijitDialog {
+	opacity: 1 !important;
+	background-color: white !important;}
+.docs_st_biz  .dijitDialog .closeText {
+	display:none;
+	/* for the onhover border in high contrast on IE:*/
+
+	position:absolute;
+}
+.docs_st_biz  .dijit_a11y .dijitDialog .closeText {
+	display:inline;}
+
+
+/* Slider */
+.docs_st_biz  .dijitSliderMoveable {
+	z-index:99;
+	position:absolute !important;
+	display:block;
+	vertical-align:middle;}
+.docs_st_biz  .dijitSliderMoveableH {
+	right:0;}
+.docs_st_biz  .dijitSliderMoveableV {
+	right:50%;}
+.docs_st_biz  .dijit_a11y DIV.dijitSliderImageHandle, .docs_st_biz  .dijitSliderImageHandle {
+	margin:0;
+	padding:0;
+	position:relative !important;
+	border:8px solid gray;
+	width:0;
+	height:0;
+	cursor: pointer;}
+.docs_st_biz  .dj_iequirks .dijit_a11y .dijitSliderImageHandle {
+	font-size: 0;}
+.docs_st_biz  .dj_ie7 .dijitSliderImageHandle {
+	overflow: hidden; /* IE7 workaround to make slider handle VISIBLE in non-a11y mode*/
+
+}
+.docs_st_biz  .dj_ie7 .dijit_a11y .dijitSliderImageHandle {
+	overflow: visible; /* IE7 workaround to make slider handle VISIBLE in a11y mode*/
+
+}
+.docs_st_biz  .dijit_a11y .dijitSliderFocused .dijitSliderImageHandle {
+	border:4px solid #000;
+	height:8px;
+	width:8px;}
+.docs_st_biz  .dijitSliderImageHandleV {
+	top:-8px;
+	right: -50%;}
+.docs_st_biz  .dijitSliderImageHandleH {
+	left:50%;
+	top:-5px;
+	vertical-align:top;}
+.docs_st_biz  .dijitSliderBar {
+	border-style:solid;
+	border-color:black;
+	cursor: pointer;}
+.docs_st_biz  .dijitSliderBarContainerV {
+	position:relative;
+	height:100%;
+	z-index:1;}
+.docs_st_biz  .dijitSliderBarContainerH {
+	position:relative;
+	z-index:1;}
+.docs_st_biz  .dijitSliderBarH {
+	height:4px;
+	border-width:1px 0;}
+.docs_st_biz  .dijitSliderBarV {
+	width:4px;
+	border-width:0 1px;}
+.docs_st_biz  .dijitSliderProgressBar {
+	background-color:red;
+	z-index:1;}
+.docs_st_biz  .dijitSliderProgressBarV {
+	position:static !important;
+	height:0%;
+	vertical-align:top;
+	text-align:left;}
+.docs_st_biz  .dijitSliderProgressBarH {
+	position:absolute !important;
+	width:0%;
+	vertical-align:middle;
+	overflow:visible;}
+.docs_st_biz  .dijitSliderRemainingBar {
+	overflow:hidden;
+	background-color:transparent;
+	z-index:1;}
+.docs_st_biz  .dijitSliderRemainingBarV {
+	height:100%;
+	text-align:left;}
+.docs_st_biz  .dijitSliderRemainingBarH {
+	width:100% !important;}
+
+
+/* the slider bumper is the space consumed by the slider handle when it hangs over an edge */
+.docs_st_biz  .dijitSliderBumper {
+	overflow:hidden;
+	z-index:1;}
+.docs_st_biz  .dijitSliderBumperV {
+	width:4px;
+	height:8px;
+	border-width:0 1px;}
+.docs_st_biz  .dijitSliderBumperH {
+	width:8px;
+	height:4px;
+	border-width:1px 0;}
+.docs_st_biz  .dijitSliderBottomBumper, .docs_st_biz  .dijitSliderLeftBumper {
+	background-color:red;}
+.docs_st_biz  .dijitSliderTopBumper, .docs_st_biz  .dijitSliderRightBumper {
+	background-color:transparent;}
+.docs_st_biz  .dijitSliderDecoration {
+	text-align:center;}
+.docs_st_biz  .dijitSliderV TD {
+	position: relative; /* needed for IE+quirks+RTL+vertical (rendering bug) but add everywhere for custom styling consistency but this messes up IE horizontal sliders*/
+
+}
+.docs_st_biz  .dijitSliderDecorationH {
+	width: 100%;}
+.docs_st_biz  .dijitSliderDecorationV {
+	height: 100%;}
+.docs_st_biz  .dijitSliderButton {
+	font-family:monospace;
+	margin:0;
+	padding:0;
+	display:block;}
+.docs_st_biz  .dijit_a11y .dijitSliderButtonInner {
+	visibility:visible !important;}
+.docs_st_biz  .dijitSliderButtonContainer {
+	text-align:center;
+	height:0;	/* ???*/
+
+}
+.docs_st_biz  .dijitSliderButtonContainer * {
+	cursor: pointer;}
+.docs_st_biz  .dijitSlider .dijitButtonNode {
+	padding:0;
+	display:block;}
+.docs_st_biz  .dijitRuleContainer {
+	position:relative;
+	overflow:visible;}
+.docs_st_biz  .dijitRuleContainerV {
+	height:100%;
+	line-height:0;
+	float:left;
+	text-align:left;}
+.docs_st_biz  .dj_opera .dijitRuleContainerV {
+	line-height:2%;}
+.docs_st_biz  .dj_ie .dijitRuleContainerV {
+	line-height:normal;}
+.docs_st_biz  .dj_gecko .dijitRuleContainerV {
+	margin:0 0 1px 0; /* mozilla bug workaround for float:left, height:100% block elements */
+
+}
+.docs_st_biz  .dijitRuleMark {
+	position:absolute;
+	border:1px solid black;
+	line-height:0;
+	height:100%;}
+.docs_st_biz  .dijitRuleMarkH {
+	width:0;
+	border-top-width:0 !important;
+	border-bottom-width:0 !important;
+	border-left-width:0 !important;}
+.docs_st_biz  .dijitRuleLabelContainer {
+	position:absolute;}
+.docs_st_biz  .dijitRuleLabelContainerH {
+	text-align:center;
+	display:inline-block;}
+.docs_st_biz  .dijitRuleLabelH {
+	position:relative;
+	left:-50%;}
+.docs_st_biz  .dijitRuleLabelV {
+	/* so that long labels don't overflow to multiple rows,  or overwrite slider itself */
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.docs_st_biz  .dijitRuleMarkV {
+	height:0;
+	border-right-width:0 !important;
+	border-bottom-width:0 !important;
+	border-left-width:0 !important;
+	width:100%;
+	left:0;}
+.docs_st_biz  .dj_ie .dijitRuleLabelContainerV {
+	margin-top:-.55em;}
+.docs_st_biz  .dijit_a11y .dijitSliderReadOnly, .docs_st_biz  .dijit_a11y .dijitSliderDisabled {
+	opacity:0.6;}
+.docs_st_biz  .dj_ie .dijit_a11y .dijitSliderReadOnly .dijitSliderBar, .docs_st_biz  .dj_ie .dijit_a11y .dijitSliderDisabled .dijitSliderBar {
+	filter: alpha(opacity=40);}
+
+
+/* + and - Slider buttons: override theme settings to display icons */
+.docs_st_biz  .dijit_a11y .dijitSlider .dijitSliderButtonContainer DIV {
+	font-family: monospace; /* otherwise hyphen is larger and more vertically centered*/
+
+	font-size: 1em;
+	line-height: 1em;
+	height: auto;
+	width: auto;
+	margin: 0px 4px;
+}
+
+
+/* Icon-only buttons (often in toolbars) still display the text in high-contrast mode */
+.docs_st_biz  .dijit_a11y .dijitButtonContents .dijitButtonText, .docs_st_biz  .dijit_a11y .dijitTab .tabLabel {
+	display: inline !important;}
+
+
+/* TextArea,  SimpleTextArea */
+.docs_st_biz  .dijitTextArea {
+	width:100%;
+	overflow-y: auto;	/* w/out this IE's SimpleTextArea goes to overflow: scroll*/
+
+}
+.docs_st_biz  .dijitTextArea[cols] {
+	width:auto; /* SimpleTextArea cols*/
+
+}
+.docs_st_biz  .dj_ie .dijitTextAreaCols {
+	width:auto;}
+
+
+/* Toolbar
+ * Note that other toolbar rules (for objects in toolbars) are scattered throughout this file.
+ */
+.docs_st_biz  .dijitToolbarSeparator {
+	height: 18px;
+	width: 5px;
+	padding: 0 1px;
+	margin: 0;}
+
+
+/* Editor */
+.docs_st_biz  .dijitIEFixedToolbar {
+	position:absolute;
+	/* top:0;*/
+
+	top: expression(eval((document.documentElement||document.body).scrollTop));
+}
+.docs_st_biz  .dijitEditor {
+	display: block;	/* prevents glitch on FF with InlineEditBox,  see #8404 */
+
+}
+.docs_st_biz  .dijitEditorDisabled, .docs_st_biz  .dijitEditorReadOnly {
+	color: gray;}
+
+
+/* TimePicker */
+.docs_st_biz  .dijitTimePickerItemInner {
+	text-align:center;
+	border:0;
+	padding:2px 8px 2px 8px;}
+.docs_st_biz  .dijitTimePickerTick, .docs_st_biz  .dijitTimePickerMarker {
+	border-bottom:1px solid gray;}
+.docs_st_biz  .dijitTimePicker .dijitDownArrowButton {
+	border-top: none !important;}
+.docs_st_biz  .dijitTimePickerTick {
+	color:#CCC;}
+.docs_st_biz  .dijitTimePickerMarker {
+	color:black;
+	background-color:#CCC;}
+.docs_st_biz  .dijitTimePickerItemSelected {
+	font-weight:bold;
+	color:#333;
+	background-color:#b7cdee;}
+.docs_st_biz  .dijitTimePickerItemHover {
+	background-color:gray;
+	color:white;
+	cursor:pointer;}
+.docs_st_biz  .dijit_a11y .dijitTimePickerItemSelected .dijitTimePickerItemInner {
+	border: solid 4px black;}
+.docs_st_biz  .dijit_a11y .dijitTimePickerItemHover .dijitTimePickerItemInner {
+	border: dashed 4px black;}
+.docs_st_biz  .dijitToggleButtonIconChar {
+	/* character (instead of icon) to show that ToggleButton is checked*/
+
+	display:none !important;
+}
+.docs_st_biz  .dijit_a11y .dijitToggleButton .dijitToggleButtonIconChar {
+	display:inline !important;
+	visibility:hidden;}
+.docs_st_biz  .dj_ie6 .dijitToggleButtonIconChar, .docs_st_biz  .dj_ie6 .tabStripButton .dijitButtonText {
+	font-family: "Arial Unicode MS";	/* otherwise the a11y character (checkmark,  arrow,  etc.) appears as a box */
+
+}
+.docs_st_biz  .dijit_a11y .dijitToggleButtonChecked .dijitToggleButtonIconChar {
+	display: inline !important; /* In high contrast mode,  display the check symbol */
+
+	visibility:visible !important;
+}
+.docs_st_biz  .dijitArrowButtonChar {
+        display:none !important;}
+.docs_st_biz  .dijit_a11y .dijitArrowButtonChar {
+        display:inline !important;}
+.docs_st_biz  .dijit_a11y .dijitDropDownButton .dijitArrowButtonInner, .docs_st_biz  .dijit_a11y .dijitComboButton .dijitArrowButtonInner {
+	display:none !important;}
+
+
+/* Select */
+.docs_st_biz  .dijitSelect {
+	margin: 0.2em;
+	border-collapse: collapse;}
+.docs_st_biz  .dj_ie .dijitSelect, .docs_st_biz  .dj_ie7 .dijitSelect, .docs_st_biz  .dj_iequirks .dijitSelect {
+	vertical-align: middle; /* Set this back for what we hack in dijit inline*/
+
+}
+.docs_st_biz  .dj_ie8 .dijitSelect .dijitButtonText {
+	vertical-align: top;}
+.docs_st_biz  .dijitToolbar .dijitSelect {
+	margin: 0;}
+.docs_st_biz  .dj_webkit .dijitToolbar .dijitSelect {
+	padding-left: 0.3em;}
+.docs_st_biz  .dijit_a11y .dijitSelectDisabled .dijitButtonNode {
+	border-style: outset!important;
+	border-width: medium!important;
+	border-color: #999 !important;
+	color:#999 !important;}
+.docs_st_biz  .dijitSelect .dijitButtonContents {
+	padding: 0px;
+	background: transparent none;
+	white-space: nowrap;
+	text-align: left;}
+.docs_st_biz  .dijitSelectFixedWidth .dijitButtonContents {
+	width: 100%;}
+.docs_st_biz  .dijitSelectMenu .dijitMenuItemIcon {
+	/* avoid blank area in left side of menu (since we have no icons)*/
+
+	display:none;
+}
+.docs_st_biz  .dj_ie6 .dijitSelectMenu .dijitMenuItemLabel, .docs_st_biz  .dj_ie7 .dijitSelectMenu .dijitMenuItemLabel {
+	/* Set back to static due to bug in ie6/ie7 - See Bug #9651*/
+
+	position: static;
+}
+
+
+/* Fix the baseline of our label (for multi-size font elements) */
+.docs_st_biz  .dijitSelectLabel *
+{
+	vertical-align: baseline;}
+
+
+/* Styling for the currently-selected option (rich text can mess this up) */
+.docs_st_biz  .dijitSelectSelectedOption * {
+	font-weight: bold;}
+
+
+/* Fix the styling of the dropdown menu to be more combobox-like */
+.docs_st_biz  .dijitSelectMenu {
+	border-width: 1px;}
+
+
+/* Style the different areas of the button to look like a "real" dropdown */
+
+/* Remove margins on the sub-table */
+.docs_st_biz  .dijitSelectMenu .dijitMenuTable {
+	margin: 0px;
+	background-color: transparent;}
+
+
+/* Used in cases,  such as FullScreen plugin,  when we need to force stuff to static positioning. */
+.docs_st_biz  .dijitForceStatic {
+	position: static !important;}
+
+
+/**** Disabled cursor *****/
+.docs_st_biz  .dijitReadOnly *, .docs_st_biz  .dijitDisabled *, .docs_st_biz  .dijitReadOnly, .docs_st_biz  .dijitDisabled {
+	/* a region the user would be able to click on,  but it's disabled */
+
+	cursor: default;
+}
+
+
+/* Copyright IBM Corp. 2008,  2013  All Rights Reserved.              */
+
+
+/*
+	@import url("oneui/Common.css");
+*/
+
+/* ======= Styling for the document itself (overriding dojo.css) ======== */
+
+/* Headings */
+.docs_st_biz  .stproxy_widget h1 {
+  font-size: 1.545em;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 0.727em;}
+.docs_st_biz  .stproxy_widget .dijitDialog h1 {
+  margin-top: 0;}
+.docs_st_biz  .stproxy_widget h2 {
+  font-size: 1.364em;
+  line-height: 1.455;
+  margin-top: 1em;
+  margin-bottom: 0.60em;}
+.docs_st_biz  .stproxy_widget h3, .docs_st_biz  .stproxy_widget h4, .docs_st_biz  .stproxy_widget h5, .docs_st_biz  .stproxy_widget h6 {
+  font-size: 1.091em;
+  line-height: 1.5;
+  margin-top: 1.5em;
+  margin-bottom: 0;}
+
+/* paragraphs,  quotes and lists */
+.docs_st_biz  .stproxy_widget p {
+  font-size: 1em;
+  line-height: 1.3;}
+.docs_st_biz  .stproxy_widget blockquote {
+  font-size: 0.916em;
+  margin-top: 3.272em;
+  margin-bottom: 3.272em;
+  line-height: 1.636;
+  padding: 1.636em;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;}
+.docs_st_biz  .stproxy_widget ol li, .docs_st_biz  .stproxy_widget ul li {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0;}
+
+/* pre and code */
+.docs_st_biz  .stproxy_widget pre, .docs_st_biz  .stproxy_widget code {
+  font-size: 115%;
+  *font-size: 100%;
+  font-family: inherit;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;}
+.docs_st_biz  .stproxy_widget pre {
+  border-width: 1px 0;
+  padding: 1.5em;}
+
+/* Tables Note that these table definitions make the assumption that you are using tables to display tabular data,  and NOT using tables as layout mechanisms.  If you are using tables for layout,  you will probably want to override these rules with more specific ones. These definitions make tabular data look presentable,  particularly when presented inline with paragraphs. */
+.docs_st_biz  .stproxy_widget table {
+  font-size: 100%;}
+.docs_st_biz  .stproxy_widget table.dojoTabular {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #cccccc;
+  margin: 0 1.5em;}
+.docs_st_biz  .stproxy_widget .dojoTabular th {
+  text-align: center;
+  font-weight: bold;}
+.docs_st_biz  .stproxy_widget table.dojoTabular thead, .docs_st_biz  .stproxy_widget table.dojoTabular tfoot {
+  background-color: #efefef;
+  border: 1px solid #cccccc;
+  border-width: 1px 0;}
+.docs_st_biz  .stproxy_widget table.dojoTabular thead tr th, .docs_st_biz  .stproxy_widget table.dojoTabular thead tr td, .docs_st_biz  .stproxy_widget table.dojoTabular tbody tr td, .docs_st_biz  .stproxy_widget table.dojoTabular tfoot tr td {
+  padding: 0.25em 0.5em;}
+
+/* ========= Styling rules to affect widgets ========= */
+.docs_st_biz  .stproxy_widget .dijitPopup {
+  -webkit-box-shadow: 0 1px 5px rgba(0,  0,  0,  0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0,  0,  0,  0.25);
+  box-shadow: 0 1px 5px rgba(0,  0,  0,  0.25);
+}
+.docs_st_biz  .stproxy_widget .dijitTooltipDialogPopup {
+  /* exception popups: do not use a shadow on these because they aren't rectangular*/
+
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* The highlight is shown in the ComboBox menu.  TODO: move to form/Common.less */
+.docs_st_biz  .stproxy_widget .dijitComboBoxHighlightMatch {
+  background-color: #abd6ff;}
+.docs_st_biz  .stproxy_widget .dijitFocusedLabel {
+  /* for checkboxes or radio buttons,  hatch border around the corresponding label,  to indicate focus */
+
+
+  outline: 1px dotted #666666;
+}
+.docs_st_biz  .stproxy_widget .dijitContentPaneLoading {
+  background: url('oneui/images/loading.gif') no-repeat left center;
+  padding-top: 2px;
+  padding-left: 25px;}
+
+/* .dijitContentPaneError icon renders in a dialog box with the error messsage when  there is an error in a HREF url */
+.docs_st_biz  .stproxy_widget .dijitContentPaneError {
+  background: url('oneui/images/error.png') no-repeat top center;
+  padding-left: 25px;}
+
+/* Drag and Drop */
+.docs_st_biz  .stproxy_widget .dojoDndItemBefore, .docs_st_biz  .stproxy_widget .dojoDndItemAfter {
+  border-top: 1px solid #aaaaaa;}
+.docs_st_biz  .stproxy_widget .dojoDndItemOver {
+  cursor: pointer;}
+.docs_st_biz  .stproxy_widget table.dojoDndAvatar {
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 5px rgba(0,  0,  0,  0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0,  0,  0,  0.25);
+  box-shadow: 0 1px 5px rgba(0,  0,  0,  0.25);
+}
+.docs_st_biz  .stproxy_widget .dojoDndAvatarHeader td {
+  height: 20px;
+  padding-left: 21px;}
+.docs_st_biz  .stproxy_widget .dojoDndMove .dojoDndAvatarHeader, .docs_st_biz  .stproxy_widget .dojoDndCopy .dojoDndAvatarHeader {
+  background-image: url(oneui/images/dnd.png);
+  background-repeat: no-repeat;
+  background-position: 2px -122px;}
+.docs_st_biz  .stproxy_widget .dojoDndAvatarItem td {
+  padding: 5px;}
+.docs_st_biz  .stproxy_widget .dojoDndMove .dojoDndAvatarHeader {
+  background-color: #ffe3e0;
+  background-position: 2px -103px;}
+.docs_st_biz  .stproxy_widget .dojoDndCopy .dojoDndAvatarHeader {
+  background-color: #ffe3e0;
+  background-position: 2px -68px;}
+.docs_st_biz  .stproxy_widget .dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader {
+  background-color: #ecf9df;
+  background-position: 2px -33px;}
+.docs_st_biz  .stproxy_widget .dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader {
+  background-color: #ecf9df;
+  background-position: 2px 2px;}
+
+
+/*
+	@import url("oneui/form/Common.css");
+*/
+
+/* 'dijitTextBox' refers to 'dijit(TextBox|DateTextBox|CurrencyTextBox|...)' */
+
+/* Begin One UI Additions */
+.docs_st_biz  .stproxy_widget a, .docs_st_biz  .stproxy_widget a:visited {
+  color: #00649d;
+  text-decoration: none;}
+.docs_st_biz  .stproxy_widget a:hover, .docs_st_biz  .stproxy_widget a:focus, .docs_st_biz  .stproxy_widget a:active {
+  color: #05386b;
+  text-decoration: underline;}
+.docs_st_biz  .stproxy_widget .dijitSpinner .dijitSpinnerButtonContainer {
+  border-width: 0 !important;}
+.docs_st_biz  .stproxy_widget .dijitSpinner .dijitSpinnerButtonContainer .dijitDownArrowButton {
+  border-top-width: 0 !important;}
+.docs_st_biz  .stproxy_widget .dijitComboBox .dijitArrowButtonContainer {
+  padding: 2px 2px 2px 0;
+  border-width: 0 !important;}
+.docs_st_biz  .stproxy_widget textarea {
+  font-family: Arial,  Helvetica,  sans-serif;
+  font-size: 1em;
+}
+
+/* End One UI Additions */
+.docs_st_biz  .stproxy_widget .dijitTextBoxError .dijitValidationContainer {
+  background-color: #e3352e;
+  background-image: url('oneui/images/error.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: solid #d46464 0;
+  border-left-width: 1px;
+  width: 9px;}
+.docs_st_biz  .stproxy_widget .dijitTextBoxError .dijitValidationIcon {
+  width: 0;
+  background-color: transparent !important;
+  /* so the INPUT doesn't obscure the border in rtl+a11y*/
+
+
+}
+
+/* Padding for the input area of TextBox based widgets,  and corresponding padding for the
+ * down arrow button and the placeholder.   placeholder is explicitly listed  because
+ * dijitPlaceHolder is absolutely positioned,  so padding set on dijitInputField
+ * won't affect it
+ */
+.docs_st_biz  .stproxy_widget .dijitTextArea, .docs_st_biz  .stproxy_widget .dijitInputField .dijitPlaceHolder {
+  padding: 1px;}
+.docs_st_biz  .stproxy_widget .dijitTextBox, .docs_st_biz  .stproxy_widget .dijitTextBox .dijitButtonNode {
+  /* color for (outer) border on *TextBox widgets,  and border between input and buttons on ComboBox and Spinner */
+
+
+  border-color: #aaaaaa;
+}
+.docs_st_biz  .stproxy_widget .dijitTextBox {
+  background-color: #ffffff;
+  padding: 0;}
+
+/* error state */
+.docs_st_biz  .stproxy_widget .dijitTextBoxError, .docs_st_biz  .stproxy_widget .dijitTextBoxError .dijitButtonNode {
+  border-color: #d46464;}
+.docs_st_biz  .stproxy_widget .dijitTextBoxError, .docs_st_biz  .stproxy_widget .dijitTextBoxError .dijitInputContainer {
+  background-color: #ffffff;}
+
+/* focused state */
+.docs_st_biz  .stproxy_widget .dijitTextBoxFocused {
+  background-color: #ffffff;}
+.docs_st_biz  .stproxy_widget .dijitTextBoxFocused .dijitInputContainer {
+  background: #ffffff;}
+.docs_st_biz  .stproxy_widget .dijitTextBoxErrorFocused, .docs_st_biz  .stproxy_widget .dijitTextBoxErrorFocused .dijitButtonNode {
+  border-color: #d46464;}
+
+/* disabled state */
+.docs_st_biz  .stproxy_widget .dijitTextBoxDisabled, .docs_st_biz  .stproxy_widget .dijitTextBoxDisabled .dijitButtonNode {
+  border-color: #cccccc;}
+.docs_st_biz  .stproxy_widget .dijitTextBoxDisabled {
+
+  background-color: #eeeeee;
+  color: #666666;}
+
+/*========================= for special widgets =========================*/
+
+/* ComboBox */
+
+/* Input boxes with an arrow (for a drop down) */
+.docs_st_biz  .stproxy_widget .dijitComboBox .dijitArrowButtonInner {
+  background-image: url("oneui/images/smallcommonFormArrows.png");
+  background-position: -35px 53%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 1px;
+  width: 16px;
+  border: 0 solid #ffffff;
+  height: 100%;}
+
+/* Add 1px vertical padding to the <input> where user types and the validation icon, 
+   to match the 1px border on arrow button */
+.docs_st_biz  .stproxy_widget .dijitTextBox .dijitInputInner, .docs_st_biz  .stproxy_widget .dijitTextBox .dijitValidationContainer {
+  padding: 3px 0;}
+
+/* Arrow "hover" effect:
+ * The arrow button should change color whenever the mouse is in a position such that clicking it
+ * will toggle the drop down.   That's either (1) anywhere over the ComboBox or (2) over the arrow
+ * button,  depending on the openOnClick setting for the widget.
+ */
+
+/* hover state */
+.docs_st_biz  .stproxy_widget .dijitComboBoxHover .dijitArrowButtonInner {
+  background-position: -70px 53%;}
+
+/* Unique to One UI */
+
+/* focused state */
+.docs_st_biz  .stproxy_widget .dijitComboBoxFocused .dijitButtonNode {
+  padding: 2px 2px 2px 0;
+  background-position: 0 -177px;}
+
+/* Unique to One UI */
+
+/* Arrow Button change when drop down is open */
+.docs_st_biz  .stproxy_widget .dijitComboBoxFocused .dijitArrowButtonInner {
+  /* Dojo uses this instead: .stproxy_widget .dijitComboBox .dijitHasDropDownOpen .dijitArrowButtonInner*/
+
+
+  background-position: -70px 53%;
+  border: 0;
+}
+
+/*========================= hacks for browsers =========================*/
+.docs_st_biz  .dj_borderbox .stproxy_widget .dijitComboBox .dijitHasDropDownOpen .dijitArrowButtonInner {
+  width: 18px;}
+.docs_st_biz  .dj_borderbox .stproxy_widget .dijitComboBoxFocused .dijitHasDropDownOpen .dijitArrowButtonInner {
+  width: 16px;}
+
+
+/*
+	@import url("oneui/form/Button.css");
+*/
+
+/* Button | DropDownButton | ComboButton | ToggleButton
+ * 
+ * Styling Buttons mainly includes:
+ * 
+ * 1. Containers
+ * 		.dijitButton
+ * 		.dijitDropDownButton
+ * 		.dijitComboButton
+ * 		.dijitButtonNode - common button/arrow wrapper shared across all three button types
+ *
+ * 2. Button text
+ * 		.dijitButtonText
+ * 
+ * 3. Arrows - only for DropDownButton and ComboButton
+ * 	     There are total four directions arrows - down,  left,  right,  up:
+ * 		.dijitArrowButtonInner - down arrow by default
+ *      .dijitLeftArrowButton .dijitArrowButtonInner - left arrow
+ *      .dijitRightArrowButton .dijitArrowButtonInner - right arrow
+ *      .dijitUpArrowButton .dijitArrowButtonInner - up arrow
+ * 
+ * 4. States - Hover,  Active,  Disabled,  e.g.
+ * 		.dijitButtonHover .dijitButtonNode
+ * 		.dijitButtonActive .dijitButtonNode
+ * 		.dijitButtonDisabled .dijitButtonNode
+ *      
+ *      .dijitDisabled .dijitArrowButtonInner  - disabled arrow states
+ */
+
+/* follows Style Guide's 5px rule. overriding top and bottom messes up InlineEditBox buttons. */
+.docs_st_biz  .stproxy_widget .dijitButton, .docs_st_biz  .stproxy_widget .dijitDropDownButton, .docs_st_biz  .stproxy_widget .dijitComboButton, .docs_st_biz  .stproxy_widget .dijitToggleButton {
+  margin: 0px !important;
+  display: inline-block;
+  /*
+  border: 1px solid #AAA;*/
+
+}
+.docs_st_biz  .stproxy_widget.hasArrow .dijitButton, .docs_st_biz  .stproxy_widget.hasArrow .dijitDropDownButton, .docs_st_biz  .stproxy_widget.hasArrow .dijitComboButton, .docs_st_biz  .stproxy_widget.hasArrow .dijitToggleButton {
+	/*border: 1px solid #FFF;*/
+
+}
+
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitButton .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitDropDownButton .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitComboButton .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToggleButton .dijitButtonNode {
+  /* rules for the dijit.form.*Button widgets (see also ComboButton section below)*/
+
+  font-weight: bold;
+  border: none;
+  padding: 2px 5px 2px 5px;
+  /* 
+  color: #333333;background-color: #e7e7e7;
+  background: -moz-linear-gradient(top,  #ededed 0%,  #e1e1e1 100%);
+  background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(0%,  #ededed),  color-stop(100%,  #e1e1e1));
+  */
+
+}
+
+/* Unique to One UI */
+.docs_st_biz  .dj_gecko .stproxy_widget .dijitButton .dijitButtonNode, .docs_st_biz  .dj_gecko .stproxy_widget .dijitDropDownButton .dijitButtonNode, .docs_st_biz  .dj_gecko .stproxy_widget .dijitComboButton .dijitButtonNode, .docs_st_biz  .dj_gecko .stproxy_widget .dijitToggleButton .dijitButtonNode {
+  /* rules for the dijit.form.*Button widgets (see also ComboButton section below) 
+  font-size: 1.4em;
+  /* 
+  color: #333333;background-color: #e7e7e7;
+  background: -moz-linear-gradient(top,  #ededed 0%,  #e1e1e1 100%);
+  background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(0%,  #ededed),  color-stop(100%,  #e1e1e1));
+  */
+
+}
+.docs_st_biz  .stproxy_widget.hasArrow .dijitDropDownButton .dijitButtonNode {
+	padding: 0 0 5px 0 !important;
+	background: none;}
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitComboButton .dijitArrowButton {
+  border-left-width: 0;
+  padding: 4px 2px;}
+.docs_st_biz  .stproxy_widget .dijitDisabled .dijitButtonText {
+  color: #7c7c7c;}
+
+/* Unique to One UI */
+
+/*arrow styles for down/up/left/right directions*/
+.docs_st_biz  .stproxy_widget .dijitArrowButtonInner {
+  width: 10px;
+  height: 15px;
+  margin: 0 auto;
+  background-image: url("oneui/form/images/smallbuttonArrows.png");
+  background-repeat: no-repeat;
+  background-position: -52px 53%;}
+.docs_st_biz  .stproxy_widget .dijitLeftArrowButton .dijitArrowButtonInner {
+  background-position: -77px 53%;}
+.docs_st_biz  .stproxy_widget .dijitRightArrowButton .dijitArrowButtonInner {
+  background-position: -26px 53%;}
+.docs_st_biz  .stproxy_widget .dijitUpArrowButton .dijitArrowButtonInner {
+  background-position: 0 53%;}
+.docs_st_biz  .stproxy_widget .dijitDisabled .dijitArrowButtonInner {
+  background-position: -152px 53%;}
+.docs_st_biz  .stproxy_widget .dijitDisabled .dijitLeftArrowButton .dijitArrowButtonInner {
+  background-position: -177px 53%;}
+.docs_st_biz  .stproxy_widget .dijitDisabled .dijitRightArrowButton .dijitArrowButtonInner {
+  background-position: -126px 53%;}
+.docs_st_biz  .stproxy_widget .dijitDisabled .dijitUpArrowButton .dijitArrowButtonInner {
+  background-position: -100px 53%;}
+.docs_st_biz  .stproxy_widget .dijitButtonText {
+  text-align: center;}
+
+/* hover status */
+.docs_st_biz  .stproxy_widget .dijitButtonHover .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitDropDownButtonHover .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitComboButtonHover .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToggleButtonHover .dijitButtonNode {
+	/*
+	padding: 1px 4px 1px 4px;
+	border: 1px solid grey;*/
+
+	
+	/*
+	color: #FFF;
+	background-color: #464646;
+	*/
+
+}
+
+/* checked status */
+.docs_st_biz  .stproxy_widget .dijitButtonActive .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitDropDownButtonActive .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitComboButtonActive .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToggleButtonActive .dijitButtonNode {
+	/*
+	padding: 1px 4px 1px 4px;
+	border: 1px solid grey;*/
+
+	
+	/*
+	color: #000;
+	background-color: #FFF;
+	*/
+
+}
+
+/* open/focused status */
+.docs_st_biz  .stproxy_widget .dijitButtonOpened .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitDropDownButtonOpened .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitComboButtonOpened .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToggleButtOpened .dijitButtonNode {
+	padding: 2px 5px 2px 5px;
+	/*
+	padding: 1px 4px 1px 4px;
+	border: 1px solid grey;*/
+
+	
+	/*
+	color: #000;
+	background-color: #FFF;
+	*/
+
+}
+.docs_st_biz  .stproxy_widget .dijitButtonDisabled .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitDropDownButtonDisabled .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitComboButtonDisabled .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToggleButtonDisabled .dijitButtonNode {
+  background-color: #eeeeee;
+  border: none;
+  color: #7c7c7c;}
+.docs_st_biz  .stproxy_widget .dijitComboButtonDisabled .dijitArrowButton {
+  border-left-width: 0;}
+
+/* for ComboButton */
+.docs_st_biz  .stproxy_widget table.dijitComboButton {
+  border-collapse: separate;
+  /* override dijit.css so that ComboBox rounded corners work*/
+
+
+  margin-bottom: 0;
+}
+.docs_st_biz  .dj_ie6 .stproxy_widget table.dijitComboButton, .docs_st_biz  .dj_ie7 .stproxy_widget table.dijitComboButton, .docs_st_biz  .dj_ie8 .stproxy_widget table.dijitComboButton {
+  border-collapse: collapse;}
+.docs_st_biz  .dj_ie6 .stproxy_widget .dijitButtonNode, .docs_st_biz  .dj_ie7 .stproxy_widget .dijitButtonNode, .docs_st_biz  .dj_ie8 .stproxy_widget .dijitButtonNode {}
+.docs_st_biz  .stproxy_widget .dijitComboButton .dijitStretch {}
+.docs_st_biz  .stproxy_widget .dijitComboButton .dijitArrowButton {}
+.docs_st_biz  .stproxy_widget .dijitButtonText{
+	/*font-size: 1.3em;*/
+
+}
+
+
+/*
+	@import url("oneui/Menu.css");
+*/
+
+/* Menu 
+
+There are three areas of styling for the Menu: 
+ 
+ 1. The menu 
+ 	There are three types of menus:
+ 	i)Context Menu
+ 	ii)Drop down Menu
+ 	iii) Navigation Menu
+ 	All three types of menus are affected by the .dijitMenu class in which you can set the background-color,  padding and border
+ 	.dijitMenu affects the drop down menu in TimeTextBox,  Calendar,  ComboBox and FilteringSelect
+  .dijitMenuTable - for padding - also affects Select widget 	
+  	
+ 2. The menu bar
+ 	.dijitMenuBar - for border,  margins,  padding,  background-color of the menu bar
+ 	.dijitMenuBar .dijitMenuItem - for padding,  text color of menu items in the menu bar (overrides .dijitMenuItem) 
+ 	
+ 3. Menu items - items in the menu.  
+ 	.dijitMenuItem - for color
+ 	.dijitMenuItemHover, .docs_st_biz  .dijitMenuItemSelected - for background-color,  border,  text color,  padding of a menu item or menubar item that has been hovered over or selected	
+ 	.dijitMenuItemActive - for bacgkround-color of an active (mousedown) menu item
+	td.dijitMenuItemIconCell - for padding around a  menu item's icon
+	td.dijitMenuItemLabel - for padding around a menu item's label	
+	.dijitMenuSeparatorTop - for border,  top border,  of the separator
+	.dijitMenuSeparatorBottom - for bottom margin of the separator
+	
+	Styles specific to ComboBox and FilteringSelect widgets:
+	.dijitComboBoxMenu .dijitMenuItem - for padding and border of a menu item in a ComboBox or FilteringSelect widget's menu
+	.dijitComboBoxMenu .dijitMenuItemSelected- for text color,  background-color and border of a menu item in a ComboBox or FilteringSelect widget's menu
+
+*/
+.docs_st_biz  .stproxy_widget .dijitMenuBar {
+  border: 1px solid #cccccc;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background: -moz-linear-gradient(top,  #f4f4f4 0%,  #eaeaea 100%);
+  background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(0%,  #f4f4f4),  color-stop(100%,  #eaeaea));
+}
+.docs_st_biz  .stproxy_widget .dijitMenu {
+  background-repeat: repeat-y;
+  background-color: #ffffff;
+  border: 1px solid #aaaaaa;
+  margin-top: -1px;}
+.docs_st_biz  .stproxy_widget .dijitMenuBar .dijitMenuItem {
+  padding: 5px 10px 7px;
+  background-position: 0 100px;
+  color: #222222;
+  margin: -1px -2px;}
+.docs_st_biz  .dj_ie .stproxy_widget .dijitMenuBar .dijitMenuItem {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-left: -1px;
+  margin-right: 0;}
+
+/* Unique to One UI */
+
+/* this prevents jiggling upon hover of a menu item */
+.docs_st_biz  .stproxy_widget .dijitMenuTable {
+  border-collapse: separate;
+  border-spacing: 0 0;
+  padding: 0;}
+.docs_st_biz  .stproxy_widget .dijitMenuPassive, .docs_st_biz  .stproxy_widget .dijitMenuActive {
+  position: relative;}
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitCalendar .dijitMenuPassive {
+  position: absolute;}
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitMenuItem td {
+  padding: 1px;}
+
+/* hover over a MenuBarItem */
+.docs_st_biz  .stproxy_widget .dijitMenuPassive .dijitMenuItemHover, .docs_st_biz  .stproxy_widget .dijitMenuPassive .dijitMenuItemSelected {
+  background-color: #ffffff;
+  border: solid 1px #aaaaaa;
+  margin-left: -1px;
+  color: #000000;
+  padding: 4px 9px 6px 8px;}
+.docs_st_biz  .stproxy_widget .dijitCalendar .dijitMenuPassive .dijitMenuItemHover {
+  margin-left: 0;}
+
+/* Unique to One UI */
+.docs_st_biz  .dj_ie .stproxy_widget .dijitMenuPassive .dijitMenuItemHover, .docs_st_biz  .dj_ie .stproxy_widget .dijitMenuPassive .dijitMenuItemSelected {
+  padding-left: 9px;}
+
+/* Unique to One UI */
+
+/* MenuBarItem that has been selected and menu drops down from it */
+.docs_st_biz  .stproxy_widget .dijitMenuActive .dijitMenuItemHover, .docs_st_biz  .stproxy_widget .dijitMenuActive .dijitMenuItemSelected {
+  border: solid 1px #aaaaaa;
+  padding: 4px 9px 6px;
+  background-color: #ffffff;
+  color: #000000;
+  outline: none;}
+.docs_st_biz  .dj_ie .stproxy_widget .dijitMenuActive .dijitMenuItemHover, .docs_st_biz  .dj_ie .stproxy_widget .dijitMenuActive .dijitMenuItemSelected, .docs_st_biz  .dj_ie .stproxy_widget .dijitMenuPassive .dijitMenuItemHover, .docs_st_biz  .dj_ie .stproxy_widget .dijitMenuPassive .dijitMenuItemSelected {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: -1px;}
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitMenuPopup .dijitMenuActive .dijitMenuItemHover, .docs_st_biz  .stproxy_widget .dijitMenuPopup .dijitMenuActive .dijitMenuItemSelected {
+  background-color: #eee;
+  border: 0px solid white;}
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitMenuActive .dijitMenuItemActive {
+  background-color: #ffffff;}
+.docs_st_biz  .stproxy_widget td.dijitMenuItemIconCell {
+  padding: 0 4px;
+  margin: 0 4px;}
+.docs_st_biz  .stproxy_widget td.dijitMenuItemLabel {
+  padding-top: 4px;
+  padding-bottom: 4px;}
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitMenuExpand {
+  width: 7px;
+  height: 7px;
+  background-image: url('oneui/images/spriteArrows.png');
+  background-position: -14px 0;
+  margin-right: 3px;}
+.docs_st_biz  .stproxy_widget .dijitMenuItemDisabled .dijitMenuItemIconCell {
+  opacity: 1;}
+.docs_st_biz  .stproxy_widget .dijitMenuSeparatorTop {
+  height: auto;
+  margin-top: 0;
+  /* prevents spacing above separator*/
+
+
+  margin-bottom: -1px;
+  border-bottom: 1px dotted #cccccc;
+}
+.docs_st_biz  .stproxy_widget .dijitMenuSeparatorBottom {
+  height: auto;
+  margin-bottom: 1px;}
+
+/* the checked menu item */
+.docs_st_biz  .stproxy_widget .dijitCheckedMenuItemIconChar {
+  display: none;}
+.docs_st_biz  .stproxy_widget .dijitCheckedMenuItemIcon {
+  width: 15px;
+  height: 15px;}
+.docs_st_biz  .stproxy_widget .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon {
+  background-image: url('oneui/form/images/checkboxRadioButtonStates.png');
+  background-repeat: no-repeat;
+  background-position: 0 50%;}
+
+/*ComboBox Menu*/
+.docs_st_biz  .stproxy_widget .dijitComboBoxMenu {
+  margin-left: 0;
+  background-image: none;}
+.docs_st_biz  .stproxy_widget .dijitComboBoxMenu .dijitMenuItem {
+  padding: 2px 0;
+  padding: 2px 0;
+  text-indent: 6px;
+  border-color: #ffffff;}
+.docs_st_biz  .stproxy_widget .dijitComboBoxMenu .dijitMenuItemSelected {
+  color: #000000;
+  background-color: #eeeeee;}
+.docs_st_biz  .stproxy_widget .dijitComboBoxMenuActive .dijitMenuItemSelected {
+  background-position: 0 -177px;
+  background-color: #eeeeee;
+  /* TODO: why is this a different color than normal .dijitMenuItemSelected?*/
+
+
+}
+.docs_st_biz  .stproxy_widget .dijitMenuPreviousButton, .docs_st_biz  .stproxy_widget .dijitMenuNextButton {
+  font-style: italic;}
+
+
+/*
+	@import url("oneui/Toolbar.css");
+*/
+
+/* Toolbar
+ *
+ * Styling Toolbar means styling the toolbar container and the widget inside toolbar  (dijitToolbar)
+ * 
+ * 1. toolbar (default styling):
+ * 		.dijitTreeRow - for background-color,  border
+ *
+ * 2. widget inside toolbar
+ * 		.dijitToolbar .dijitButtonNode   - mainly for Button widget background-color,  border
+ * 					  .dijitComboButton  - mainly for ComboButton background-color,  border
+ * 					  .dijitDropDownButton  - mainly for DropDownButton background-color,  border
+ * 					  .dijitToggleButton  - mainly for ToggleButton background-color,  border
+ * 		
+ * 3. hovered widget inside toolbar (ie,  mouse hover on the widget inside)
+ * 			.dijitToolbar .dijitButtonNodeHover  - mainly for hovered Button widget background-color,  border
+ * 				also for .dijitComboButtonHover .dijitDropDownButtonHover .dijitToggleButtonHover
+ * 4. actived widget inside toolbar (ie,  mouse down on the widget inside)
+ * 			.dijitToolbar .dijitButtonNodeActive  - mainly for actived Button widget background-color,  border
+ * 				also for .dijitComboButtonActive .dijitDropDownButtonActive .dijitToggleButtonActive
+ */
+.docs_st_biz  .stproxy_widget .dijitToolbar {
+  border-bottom: 1px solid #CCCCCC;
+  background: #DCDCDC;
+  padding: 2px 0 2px 4px;
+  zoom: 1;}
+
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitToolbar label {
+  padding: 0 3px 0 6px;}
+
+/** override oneui/form/Button.css **/
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitButtonNode {
+  padding: 2px;
+  border: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;}
+.docs_st_biz  .dj_ie .stproxy_widget .dijitToolbar .dijitButtonNode {
+  background-color: transparent;
+  /* for IE,  which doesn't understand rgba(...) */
+
+
+}
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitComboBox .dijitButtonNode {
+  padding: 2px 2px 2px 0;}
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitComboButton {
+  padding: 1px;}
+
+/* Unique to One UI */
+
+/* hover status */
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitButtonHover .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToolbar .dijitDropDownButtonHover .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToolbar .dijitToggleButtonHover .dijitButtonNode {
+  border: solid 1px #cccccc;
+  padding: 1px;}
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitComboButtonHover .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToolbar .dijitComboButtonHover .dijitDownArrowButton {
+  padding: 2px;
+  background-position: 0 0;}
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitComboButtonHover {
+  padding: 0;
+  border: solid 1px #cccccc;
+  /* Unique to One UI*/
+
+}
+
+/* actve status */
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitButtonActive .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToolbar .dijitDropDownButtonActive .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToolbar .dijitToggleButtonActive .dijitButtonNode {
+  border: solid 1px #aaaaaa;
+  background-color: #ffffff;
+  padding: 1px;}
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitComboButtonActive {
+  border: solid 1px #aaaaaa;
+  padding: 0;}
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitComboButtonActive .dijitButtonNode {
+  background-color: #ffffff;
+  padding: 2px;}
+
+/* Avoid double border between button and arrow */
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitComboButton .dijitDownArrowButtonActive {
+  background-color: #7dbefa;}
+
+/* toggle button checked status */
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitToggleButtonChecked .dijitButtonNode {
+  border-color: #666666;
+  background-color: #ffffff;
+  padding: 1px;}
+
+
+/* Unique to One UI */
+.docs_st_biz  .stproxy_widget .dijitToolbarSeparator {
+  /* separator icon in the editor sprite*/
+
+
+  background: url('oneui/images/editorIcons.png');
+}
+
+/* Toolbar inside of disabled Editor */
+.docs_st_biz  .stproxy_widget .dijitDisabled .dijitToolbar {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #cccccc;}
+.docs_st_biz  .dijitRtl .dijitPlaceHolder {
+	left: auto;
+	right: 0;}
+
+
+/* Menu */
+.docs_st_biz  .dijitMenuItemRtl {
+	text-align: right;}
+
+
+/* Button */
+.docs_st_biz  .dj_iequirks .dijitComboButtonRtl BUTTON {
+	/* workaround bug where label invisible (themeTesterQuirk.html?dir=rtl)*/
+
+	float:left;
+}
+
+
+/* TextBox,  ComboBox,  Spinner */
+.docs_st_biz  .dijit_a11y .dijitTextBoxRtl .dijitValidationContainer, .docs_st_biz  .dijitTextBoxRtl .dijitSpinnerButtonContainer, .docs_st_biz  .dijitComboBoxRtl .dijitArrowButtonContainer {
+	/* combobox and spinner: line between the input area and the drop down button*/
+
+	border-right-width: 1px !important;
+	border-right-style: solid !important;
+	border-left-width: 0px !important;
+	border-left-style: none !important;
+}
+.docs_st_biz  .dijit_a11y .dijitTextBoxRtl .dijitValidationContainer, .docs_st_biz  .dijit_a11y .dijitTextBoxRtl .dijitSpinnerButtonContainer, .docs_st_biz  .dijit_a11y .dijitComboBoxRtl .dijitArrowButtonContainer {
+	border-right: 1px solid black !important;
+	border-left: 0px none black !important;}
+.docs_st_biz  .dijitSpinnerRtl .dijitSpinnerButtonContainer .dijitArrowButton {
+	right: 0;
+	left: auto;}
+.docs_st_biz  .dijitTextBoxRtl .dijitSpinnerButtonContainer, .docs_st_biz  .dijitTextBoxRtl .dijitValidationContainer, .docs_st_biz  .dijitTextBoxRtl .dijitArrowButtonContainer {
+	float: left;}
+
+
+/* Calendar */
+.docs_st_biz  .dijitCalendarRtl .dijitCalendarNextYear {
+	margin:0 0.55em 0 0;}
+.docs_st_biz  .dijitCalendarRtl .dijitCalendarPreviousYear {
+	margin:0 0 0 0.55em;}
+
+
+
+/* Slider */
+.docs_st_biz  .dijitSliderRtl .dijitSliderImageHandleV {
+	left:auto;}
+.docs_st_biz  .dijitSliderRtl .dijitSliderImageHandleH {
+	left:-50%;}
+.docs_st_biz  .dijitSliderRtl .dijitSliderMoveableH {
+	right:auto;
+	left:0;}
+.docs_st_biz  .dijitSliderRtl .dijitRuleContainerV {
+	float:right;}
+.docs_st_biz  .dj_ie .dijitSliderRtl .dijitRuleContainerV {
+	text-align:right;}
+.docs_st_biz  .dj_ie .dijitSliderRtl .dijitRuleLabelV {
+	text-align:left;}
+.docs_st_biz  .dj_ie .dijitSliderRtl .dijitRuleLabelH {
+	zoom:1;}
+.docs_st_biz  .dijitSliderRtl .dijitSliderProgressBarH {
+	/* workarounds for IE and FF*/
+
+	float:right;
+	right:0;
+	left:auto;
+}
+
+
+/* ContentPane*/
+.docs_st_biz  .dijitRtl .dijitContentPaneLoading, .docs_st_biz  .dijitRtl .dijitContentPaneError {
+	background-position:right;
+	padding-right:25px;}
+
+
+/* TabContainer */
+.docs_st_biz  .dijitTabRtl .dijitTabCloseButton {
+	margin-left: 0px;
+	margin-right: 1em;}
+
+
+/* TimePicker */
+.docs_st_biz  .dj_ie .dijitTimePickerRtl .dijitTimePickerItem {
+	width:100%;}
+
+
+
+/* ColorPalette */
+.docs_st_biz  .dijitColorPaletteRtl .dijitColorPaletteUnder {
+	/* needed in RTL mode when DropDownButton expands the ColorPalette beyond it's natural width*/
+
+	left: auto;
+	right: 0;
+}
+
+
+/* Select */
+.docs_st_biz  .dijitSelectRtl .dijitButtonContents {
+	text-align: right;}
+
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001,  2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use,  duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on January 4 2012. (version: OneUI-3.0.2_20120104-1641)*/
+.docs_st_biz  .stproxy_widget .dijitButtonRtl, .docs_st_biz  .stproxy_widget .dijitDropDownButtonRtl, .docs_st_biz  .stproxy_widget .dijitComboButtonRtl, .docs_st_biz  .stproxy_widget .dijitToggleButtonRtl {
+  margin-right: 1px;
+  margin-left: 4px;}
+.docs_st_biz  .stproxy_widget .dijitDropDownButtonRtl .dijitButtonNode {
+  padding-right: 6px;
+  padding-left: 4px;}
+
+/* Combo Button */
+.docs_st_biz  .stproxy_widget .dijitComboButtonRtl .dijitStretch {
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;}
+.docs_st_biz  .stproxy_widget .dijitComboButtonRtl .dijitArrowButton {
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  border-left-width: 1px;
+  border-right-width: 0;}
+
+/* End Combo Button */
+
+
+/* Copyright IBM Corp. 2013  All Rights Reserved.                    */
+
+/* General */
+.docs_st_biz  .stproxy_widget{
+	font-size: 12px;
+	font-family: Arial,  'Helvetica Neue',  HelveticaNeue,  Helvetica,  sans-serif !important;
+	line-height: 1.3;
+}
+.docs_st_biz  .stproxy_font{
+	font-size: 12px;
+	font-family: Arial,  'Helvetica Neue',  HelveticaNeue,  Helvetica,  sans-serif !important;
+	line-height: 1.3;
+}
+.docs_st_biz  .stproxy_widget .stproxy_widget{
+	font-size: 100%;}
+.docs_st_biz  .stproxy_widget table {
+font-size: 100%;}
+.docs_st_biz  .stproxy_overflow_ellipsis{
+	overflow: hidden !important;
+	text-overflow: ellipsis;}
+.docs_st_biz  .stproxy_splashScreenWindow{
+	border: 1px solid #ACB9CD !important;
+    margin: 30px auto 10px;
+    padding: 0;
+    width: 485px;}
+.docs_st_biz  .stproxy_splashScreenBottomLicense{
+	margin: auto;
+    width: 485px;}
+.docs_st_biz  .stproxy_hidden{
+	display: none !important;}
+.docs_st_biz  .stproxy_invisible{
+	visibility: hidden !important;}
+.docs_st_biz  .stproxy_offscreen{
+	position: absolute;
+	top: -9999px;}
+.docs_st_biz  .stproxy_display_inline{
+	display: inline-block;}
+.docs_st_biz  .dj_iequirks .stproxy_display_inline{
+	display: inline;}
+.docs_st_biz  .stproxy_maxSize{
+	width:100%;
+	height:100%;}
+.docs_st_biz  .stproxy_clearfix:before, .docs_st_biz  .stproxy_clearfix:after {
+	content: " ";
+	display: table;}
+.docs_st_biz  .stproxy_clearfix:after {
+	clear: both;}
+.docs_st_biz  .stproxy_disabled {
+	color: #CCCCCC;}
+
+/* sametime.WebClient */
+.docs_st_biz  .stproxy_WebClient {
+	background-color: white;}
+.docs_st_biz  .stproxy_icon{
+	margin-bottom:-1px;}
+.docs_st_biz  .stproxy_iconImg{
+	margin-top: 1px;}
+.docs_st_biz  .stproxy_iconImg.stproxy_iconImg_external{
+	vertical-align: top;}
+
+
+/* sametime.Header */
+.docs_st_biz  .stproxy_header_container{
+	height: 50px;}
+.docs_st_biz  .stproxy_header_container .stproxy_quickfind_input{
+	border: none !important;}
+.docs_st_biz  .stproxy_header_border_wrapper{
+	background: #0d9ad5;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #0075a3;}
+.docs_st_biz  .stproxy_header_top{
+	background: #111;
+	background: -moz-linear-gradient(top,  #464646 50%, .docs_st_biz  #111 100%);
+	background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(50%,  #464646),  color-stop(100%, .docs_st_biz  #111));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#464646',  endColorstr='#111111',  GradientType=0);
+	padding: 10px;
+	color:#FFF
+}
+.docs_st_biz  .dj_quirks .stproxy_header_top{
+	background: #363636 Important;}
+.docs_st_biz  .stproxy_header_table{
+	border-spacing:0;
+	border-collapse:collapse;
+	width: 100%;
+	border: 0;}
+.docs_st_biz  .dj_iequirks .stproxy_header_table {
+	width: auto;}
+.docs_st_biz  .stproxy_header_search_icon{
+	border: 0 none;
+	width: 19px;
+	height: 21px;
+	margin-right:10px;
+	vertical-align: middle;}
+.docs_st_biz  .dijitRtl .stproxy_header_search_icon{
+	margin-right:0;
+	margin-left:10px;}
+.docs_st_biz  .stproxy_header_menu{
+	margin-left:12px;}
+.docs_st_biz  .dijitRtl .stproxy_header_menu{
+	margin-left:0;
+	margin-right:14px;}
+.docs_st_biz  .stproxy_header_menu .dijitArrowButtonInner {
+    background-image: url("images/ST9_dropdown.png") !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    height: 15px !important;
+    width: 10px !important;
+	margin: 0 auto !important;}
+
+
+/* sametime.BusinessCard */
+.docs_st_biz  .stproxy_businesscard_tooltip{
+	position: absolute;
+	top: -9999px;
+	width: 22em;
+	cursor: move;
+	-webkit-box-shadow: 0 2px 10px #DCDCDC;
+	-moz-box-shadow: 0 2px 10px #DCDCDC;
+	box-shadow: 0 2px 10px #DCDCDC;}
+.docs_st_biz  .stproxy_businesscard_container{
+	position: relative;
+	border: 1px solid #C7C7C7;
+	background-color: #FFFFFF;
+    z-index: 998;}
+.docs_st_biz  .stproxy_businesscard_userinfo{
+	background-color: #FFFFFF;}
+.docs_st_biz  .stproxy_businesscard_photo {
+	border: 1px solid #CCC;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	vertical-align: middle;
+	line-height: 0;
+	display: inline-block;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;}
+.docs_st_biz  .dijitRtl .stproxy_businesscard_photo{
+	margin-left: auto;
+	margin-right: 5px;}
+.docs_st_biz  .stproxy_businesscard_userinfo_top{
+	position: relative;
+	padding: 5px}
+.docs_st_biz  .stproxy_businesscard_userinfo_bottom{
+	border-top: 1px solid #C7C7C7;}
+.docs_st_biz  .stproxy_businesscard_userinfo_bottom_details{
+	padding: 5px;}
+.docs_st_biz  .stproxy_businesscard_connecitons_container{
+	padding:5px;
+	border-top:1px solid #CCCCCC;
+	background: #F2F2F2;}
+.docs_st_biz  .stproxy_businesscard_connecitons_icons_td{
+	vertical-align: top;}
+.docs_st_biz  .stproxy_businesscard_connecitons_icon{
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	margin-left: 5px;}
+.docs_st_biz  .stproxy_businesscard_connecitons_update{
+	word-break: break-all;}
+.docs_st_biz  .stproxy_businesscard_userinfo_loading{
+	position: absolute;
+	top: 2em;
+	left: 12em;}
+.docs_st_biz  .dijitRtl .stproxy_businesscard_userinfo_loading{
+	left: auto;
+	right: 12em;}
+.docs_st_biz  .stproxy_businesscard_userinfo_details{
+	margin-left: 70px;
+	white-space: nowrap;}
+.docs_st_biz  .dijitRtl  .stproxy_businesscard_userinfo_details{
+	margin-left: auto;
+	margin-right: 70px;}
+.docs_st_biz  .stproxy_businesscard_userinfo_name{
+	display: block;
+	font-size: 13px !important;
+	color: #047CBD !important;
+	font-weight: bold !important;
+	width: 13em;}
+.docs_st_biz  .stproxy_businesscard_userinfo_detail{
+	font-weight: bold;
+	width: 14em;}
+.docs_st_biz  .stproxy_businesscard_awareness{
+    width: 14em;}
+.docs_st_biz  .stproxy_businesscard_awareness_message{
+	margin-left: 2px;}
+.docs_st_biz  .dijitRtl .stproxy_businesscard_awareness_message{
+	margin-left: auto;
+	margin-right: 2px}
+.docs_st_biz  .stproxy_businesscard_closeIcon{
+	cursor: pointer;
+	padding: 2px 3px 0 2px;
+    position: absolute;
+    right: 1px;
+    top: 2px;}
+.docs_st_biz  .dijitRtl .stproxy_businesscard_closeIcon{
+	padding: 2px 2px 0 3px;
+	right: auto;
+	left: 1px;}
+.docs_st_biz  .stproxy_businesscard_expandIcon{
+	cursor: pointer;
+	padding: 2px 6px 4px 7px;
+    position: absolute;
+    right: 0;
+    bottom: 0;}
+.docs_st_biz  .dijitRtl .stproxy_businesscard_expandIcon{
+	padding: 2px 7px 1px 6px;
+	right: auto;
+	left: 0;}
+
+
+/* sametime.UserInfo */
+.docs_st_biz  .stproxy_userinfo{
+	background-color: #FFF;
+	border-bottom: 1px solid #C7C7C7;
+	background: white;}
+.docs_st_biz  .stproxy_userinfo_top_container{
+	position:relative;
+	height: 55px;}
+.docs_st_biz  .dijit_a11y .stproxy_userinfo_top_container{
+	height: auto;}
+.docs_st_biz  .stproxy_userinfo_photo {
+	background: white;
+	border: 1px solid #CCC;
+	height: 45px;
+	width: 45px;
+	margin: 3px 0 0 5px;
+	position: absolute;
+	vertical-align: middle;
+	line-height: 0;
+	display: inline-block;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;}
+.docs_st_biz  .dijitRtl .stproxy_userinfo_photo{
+	margin: 3px 5px 0 0;}
+.docs_st_biz  .stproxy_userinfo_details_container{
+	margin-left: 60px;
+	white-space: nowrap;
+	padding-top: 2px;}
+.docs_st_biz  .dijitRtl .stproxy_userinfo_details_container{
+		margin-left: 0;
+		margin-right: 60px;}
+.docs_st_biz  .stproxy_userinfo_details{
+	font-weight: bold;}
+.docs_st_biz  .stproxy_userinfo_chatwindow .stproxy_userinfo_name{
+	font-size: 13px !important;
+	color: #047CBD !important;
+	font-weight: bold !important;}
+.docs_st_biz  .stproxy_userinfo_details_loading{
+	margin-bottom: -4px;}
+.docs_st_biz  .stproxy_userinfo_menu{
+	position:absolute;
+	top:0;
+	right:12px;
+	margin:5px;
+	margin-right: 0;}
+.docs_st_biz  .dijitRtl .stproxy_userinfo_menu{
+	right: auto;
+	left:12px;
+	margin-right: auto;
+	margin-left: 0;}
+.docs_st_biz  .stproxy_userinfo_close{
+	position:absolute;
+	top:0;
+	right:0;
+	margin:5px;}
+.docs_st_biz  .dijitRtl .stproxy_userinfo_close{
+	right: auto;
+	left:0;}
+.docs_st_biz  .stproxy_userinfo_menu:hover, .docs_st_biz  .stproxy_userinfo_menu:focus{
+	cursor: pointer;}
+.docs_st_biz  .stproxy_userinfo_expand_container{
+	cursor:pointer;
+	position:absolute;
+	bottom:0;
+	right:5px;
+	margin-bottom:2px;
+	margin-right:3px;}
+.docs_st_biz  .dijitRtl .stproxy_userinfo_expand_container{
+	right: auto;
+	left:5px;
+	margin-right: auto;
+	margin-left: 3px;}
+.docs_st_biz  .stproxy_userinfo_expand_img{
+	padding: 5px 3px 5px 5px;}
+.docs_st_biz  .dijitRtl .stproxy_userinfo_expand_img{
+	padding: 5px 5px 5px 3px;}
+.docs_st_biz  .stproxy_userinfo_bottom_container{
+	border-top:1px solid #C7C7C7;
+	padding: 0 0 2px 60px;}
+.docs_st_biz  .dijitRtl .stproxy_userinfo_bottom_container{
+	padding: 0 60px 2px 0;}
+.docs_st_biz  .stproxy_userinfo_telephone{
+	color: #0075a3;
+	font-weight: bold;}
+.docs_st_biz  .stproxy_userinfo_default_detail{
+	display: block;
+	white-space: nowrap;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	width: 99%;}
+
+
+/* sametime.Awareness*/
+.docs_st_biz  .stproxy_awareness_container{
+	padding-right: 15px;}
+.docs_st_biz  .dijitRtl .stproxy_awareness_container{
+	padding-right: 0;
+	padding-left: 15px;}
+.docs_st_biz  .stproxy_awareness_button_container{
+	display: inline-block;
+	visibility: hidden;}
+.docs_st_biz  .stproxy_awareness_input_container{
+	display:inline-block;
+	border: 1px solid #FFF;
+	padding-left: 2px;
+	width: 90%;}
+.docs_st_biz  .dj_iequirks .stproxy_awareness_input_container {
+	display: inline;}
+.docs_st_biz  .dijit .stproxy_awareness_input_container{
+	padding-left: 0;
+	padding-right: 2px;}
+.docs_st_biz  .stproxy_awareness_input{
+	border: none;
+	width: 99.9%;
+	cursor: pointer;
+	background: transparent;}
+.docs_st_biz  .stproxy_awareness_input_active, .docs_st_biz  .stproxy_awareness_input_container:hover, .docs_st_biz  .stproxy_awareness_input_container:focus{
+	border: 1px solid #C7C7C7;
+	background: #E0F1F7;}
+.docs_st_biz  .stproxy_awareness_icon_preload{
+	width: 9px;
+	height: 9px;
+	background-repeat: no-repeat;
+	margin-left: 3px;
+	position:absolute;
+	top:-3000px;}
+.docs_st_biz  .dijitRtl .stproxy_awareness_icon_preload{
+	margin-left: 0;
+	margin-right: 3px;}
+.docs_st_biz  .stproxy_awareness_icon{
+	width: 9px;
+	height: 9px;}
+.docs_st_biz  .stproxy_awareness_status_chat_icon{
+	vertical-align: bottom;}
+.docs_st_biz  .stproxy_awareness_status_chat{
+	margin-left: 5px;}
+.docs_st_biz  .dijitRtl .stproxy_awareness_status_chat{
+	margin-left: auto;
+	margin-right: 5px;}
+.docs_st_biz  .stproxy_login_status_menu_button_icon{
+	padding-left: 8px;}
+.docs_st_biz  .dijitRtl .stproxy_login_status_menu_button_icon{
+	padding-left: 0;
+	padding-right: 8px;}
+.docs_st_biz  .stproxy_userinfo_chatwindow .stproxy_awareness_icon{
+	margin-right: 5px;}
+.docs_st_biz  .dijitRtl .stproxy_userinfo_chatwindow .stproxy_awareness_icon{
+	margin-right: auto;
+	margin-left: 5px;}
+.docs_st_biz  .stproxy_status_menu_icon{
+	background-repeat: no-repeat;
+	margin-left: 3px;}
+.docs_st_biz  .dijitRtl .stproxy_status_menu_icon{
+	margin-left: auto;
+	margin-right: 3px;}
+.docs_st_biz  .stproxy_status_menu_icon_available{
+	background-image: url(images/ST_Awns_Avail_03.png);}
+.docs_st_biz  .stproxy_status_menu_icon_away{
+	background-image: url(images/ST_Awns_Away_03.png);}
+.docs_st_biz  .stproxy_status_menu_icon_meeting{
+	background-image: url(images/ST_Awns_InAMtng_03.png);}
+.docs_st_biz  .stproxy_status_menu_icon_dnd{
+	background-image: url(images/ST_Awns_DND_03.png);}
+
+
+/*sametime.LiveName */
+.docs_st_biz  .stproxy_liveNamePadding{
+	padding-left: 0px;
+	padding-right: 0px;}
+.docs_st_biz  .dijitRtl .stproxy_liveNamePadding{
+	padding-left: 0px;
+	padding-right: 0px;}
+.docs_st_biz  .stproxy_livename_standalone{
+	cursor: pointer !important;}
+.docs_st_biz  .stproxy_livename_standalone .stproxy_displayname_node{
+	border-bottom: 1px dotted #D4D4D4;}
+.docs_st_biz  .stproxy_livename_standalone:hover .stproxy_displayname_node, .docs_st_biz  .stproxy_livename_standalone:focus .stproxy_displayname_node{
+	border-bottom: 1px dotted #000000;}
+
+
+/* sametime.BuddyList */
+.docs_st_biz  .stproxy_buddylist_container{
+	user-select: none;
+	position: relative;}
+.docs_st_biz  .stproxy_buddylist_toolbar{
+	display: table;
+	width: 100%;}
+.docs_st_biz  .stproxy_buddylist_wrapper{
+	padding: 0 5px 0 6px;
+	overflow: auto;
+	height: 100%;}
+.docs_st_biz  .dijitRtl .stproxy_buddylist_wrapper{
+	padding: 0 6px 0 5px;}
+.docs_st_biz  .stproxy_buddylist_list{}
+.docs_st_biz  .stproxy_buddylist_list_root{
+	font-size: 0.9em;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;}
+.docs_st_biz  .stproxy_buddylist_no_list{
+	color: #9F9F9F;
+    font-size: 1.1em !important;
+    font-style: italic;
+    padding: 20px !important;
+    text-align: center;}
+.docs_st_biz  .stproxy_buddylist_list ul, .docs_st_biz  .stproxy_buddylist_list li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;}
+.docs_st_biz  .stproxy_buddylist_list ul ul{
+	/*display: none;*/
+
+}
+.docs_st_biz  .stproxy_buddylist_list li{
+	background-color:#FFFFFF;
+	position:relative;
+	border-top: 1px solid #CCCCCC;}
+.docs_st_biz  .stproxy_buddylist_list li.stproxy_collector_row {
+  background-color: transparent;}
+.docs_st_biz  .stproxy_buddylist_list_root > li:first-child{
+	border-top: 1px solid #FFFFFF;}
+.docs_st_biz  .stproxy_buddylist_list_item_onmouseover{
+	background-color: #E0F1F7 !important;}
+.docs_st_biz  .stproxy_buddylist_list li li{
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;}
+.docs_st_biz  .dijit_a11y .stproxy_buddylist_list li li{
+	border: none !important;}
+.docs_st_biz  .stproxy_buddylist_list_row{
+	cursor: pointer;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: 15px;}
+.docs_st_biz  .dijit_a11y .stproxy_buddylist_list_row{
+	height: auto;}
+.docs_st_biz  .dijit_a11y .stproxy_buddylist_list_row:hover{
+	border: 1px dashed #FFF;}
+.docs_st_biz  .stproxy_buddylist_list_group{
+	font-weight: bold;
+	/* leave room for the expand icon*/
+
+	padding-left: 15px;
+}
+.docs_st_biz  .dijitRtl .stproxy_buddylist_list_group{
+	padding-left: 0;
+	padding-right: 15px;}
+.docs_st_biz  .stproxy_buddylist_list_livename{
+	font-weight: normal;}
+.docs_st_biz  .stproxy_icon{
+	padding-right:3px;}
+.docs_st_biz  .dijitRtl .stproxy_icon{
+	padding-left:3px;
+	padding-right:0px;}
+.docs_st_biz  .stproxy_buddylist_list_livename_available{
+	font-weight: bold !important;}
+.docs_st_biz  .stproxy_buddylist_list_livename_offline{
+	font-style: italic !important;
+	color: #666666 !important;}
+.docs_st_biz  .stproxy_item_selected .stproxy_buddylist_list_livename_offline{
+	color: #FFFFFF !important;}
+.docs_st_biz  .stproxy_item_selected .stproxy_livename_container, .docs_st_biz  .stproxy_item_selected .stproxy_buddylist_list_group {
+	color: #FFFFFF !important;}
+.docs_st_biz  .stproxy_buddylist_list_expandicon{
+	position:relative;
+	top:5px;
+	left:4px;
+	float:left;
+	cursor: pointer;}
+.docs_st_biz  .dijitRtl .stproxy_buddylist_list_expandicon{
+	right: 4px;
+	left: auto;
+	float:right;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";}
+.docs_st_biz  .dijit_a11y .stproxy_buddylist_list_expandicon{
+	display:none;}
+.docs_st_biz  .stproxy_groupselect .stproxy_buddylist_list_expandicon{
+	top:auto;
+	left:auto;
+	padding: 5px;}
+.docs_st_biz  .dijitRtl .stproxy_groupselect .stproxy_buddylist_list_expandicon{
+	right: auto;}
+.docs_st_biz  .stproxy_buddylist_list_expandHC{
+	display: none;}
+.docs_st_biz  .dijit_a11y  .stproxy_buddylist_list_expandHC{
+	display: block;
+	padding: 2;
+	border: medium;
+	position:relative;
+	top: 3px;
+	left:0;
+	float:left;
+	cursor: pointer;}
+.docs_st_biz  .dijit_a11y  .stproxy_buddylist_list_expanded .stproxy_buddylist_list_expandHC{
+	top: 0;}
+.docs_st_biz  .stproxy_awareness_livename_icon{
+	float:left;
+	padding: 6px 5px 0 0;}
+.docs_st_biz  .dijitRtl .stproxy_awareness_livename_icon{
+	float:right;
+	padding: 6px 0 0 5px;}
+.docs_st_biz  .stproxy_buddylist_list_counter{
+	font-weight: normal !important;
+	padding-left: 12px;}
+.docs_st_biz  .dijitRtl .stproxy_buddylist_list_counter{
+	padding-left: 0;
+	padding-right: 12px;
+	float: right;}
+.docs_st_biz  .stproxy_buddylist_list_group_name{
+	color: #222222;}
+.docs_st_biz  .stproxy_item_selected .stproxy_buddylist_list_group_name{
+	color: #FFFFFF;}
+.docs_st_biz  .dijitRtl .stproxy_buddylist_list_group_name{
+	float: right;}
+.docs_st_biz  .dijit_a11y .stproxy_buddylist_list_group_name{
+	padding-left: 5px;}
+.docs_st_biz  .stproxy_hamburger{
+	padding: 0;
+	position: absolute;
+	right: 10px;
+	top: 2px;}
+.docs_st_biz  .dijitRtl .stproxy_hamburger{
+	right: auto;
+	left: 10px;}
+.docs_st_biz  .dijit_a11y .stproxy_hamburger .stproxy_menu_icon{
+	display: none! important;}
+.docs_st_biz  .stproxy_menu_icon_HC{
+	display: none;}
+.docs_st_biz  .dijit_a11y .stproxy_menu_icon_HC{
+	display:block !important;
+	opacity: 1 !important;
+	filter:alpha(opacity=100);
+	/*border: medium outset;*/
+
+}
+.docs_st_biz  .stproxy_item_selected{
+	background-color: #047CBD;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#047CBD',  endColorstr='#0172AF',  GradientType=0);
+	/*color: #FFFFFF !important;*/
+
+	font-weight: bold;
+}
+.docs_st_biz  .dijit_a11y .stproxy_item_selected{
+	border: 1px solid #FFF;}
+.docs_st_biz  .stproxy_item_selected > .stproxy_hamburger{
+	display: block !important;}
+.docs_st_biz  .stproxy_groupselect .stproxy_item_selected > .stproxy_hamburger, .docs_st_biz  .stproxy_collector_wrapper .stproxy_item_selected > .stproxy_hamburger {
+	display: none !important;}
+.docs_st_biz  .stproxy_item_selected > .stproxy_hamburger:hover{
+	/*
+	opacity: 0.5 !important;
+	filter:alpha(opacity=50) !important;
+	display: block !important;*/
+
+}
+.docs_st_biz  .stproxy_buddylist_list_item_onmouseover .stproxy_hamburger{
+	/*display: block;*/
+
+}
+.docs_st_biz  .stproxy_buddylist_list_item_onmouseout .stproxy_hamburger{
+	/*display: none;*/
+
+}
+.docs_st_biz  .stproxy_hamburger{
+	/*display: none;*/
+
+}
+
+
+/* sametime.LiveName */
+.docs_st_biz  .stproxy_livename_container{
+	white-space: nowrap;
+	display: inline-block;}
+.docs_st_biz  .stproxy_livename_status_icon{
+	vertical-align: middle;}
+
+
+
+/* sametime.MenuBar */
+.docs_st_biz  .stproxy_menubar_container{
+	padding-left: 5px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	height: 30px}
+.docs_st_biz  .dijitRtl .stproxy_menubar_container{
+	right: auto;
+	left : 10px;
+	padding-left: 0;
+	padding-right: 5px;}
+.docs_st_biz  .dijit_a11y  .stproxy_menubar_container{
+	right: 15px;
+	top: 12px;}
+
+
+/* sametime.MenuBar */
+.docs_st_biz  .stproxy_menubar_item{
+	padding: 8px 5px 6px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;}
+.docs_st_biz  .dijit_a11y .stproxy_menubar_item{
+	border: medium outset white;
+	padding: 5px !important;}
+.docs_st_biz  .stproxy_menubar_item_meetings{
+	width: auto !important;
+	height: auto !important;
+	padding: 9px 5px 8px !important;}
+.docs_st_biz  .dijit_a11y .stproxy_menubar_item_meetings{
+	padding: 5px !important;}
+.docs_st_biz  .stproxy_menubar_item:hover, .docs_st_biz  .stproxy_menubar_item:focus, .docs_st_biz  .stproxy_menubar_item_chat:hover, .docs_st_biz  .stproxy_menubar_item_chat:focus{
+	cursor: pointer;
+	background-color: #E3F2F9}
+.docs_st_biz  .stproxy_menubar_item_chat{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding: 7px 6px;}
+.docs_st_biz  .stproxy_menubar_item_notallowed{
+	cursor: not-allowed !important;}
+.docs_st_biz  .stproxy_menubar_item_more{
+	color: #706F6F;
+	font-weight: bold;
+	float}
+.docs_st_biz  .stproxy_menuItemHover {
+	background-color: #EEEEEE !important;}
+
+
+/* sametime.Dialog */
+.docs_st_biz  .stproxy_dialog_container {
+	position:absolute;}
+.docs_st_biz  .stproxy_dialog_border {
+	border:3px solid #555;
+	border:3px solid rgba(2,  2,  2,  0.4);
+	-moz-border-radius:3px;
+	border-radius:3px;
+	-moz-box-shadow:0 0 15px rgba(0,  0,  0,  0.4);
+	-webkit-box-shadow:0 0 15px rgba(0,  0,  0,  0.4);
+	box-shadow:0 0 15px rgba(0,  0,  0,  0.4);
+}
+.docs_st_biz  .stproxy_dialog {
+	background-color:#fff;
+	margin: 0;
+    padding: 0;}
+.docs_st_biz  .dj_safari .stproxy_dialog {
+	min-width: 290px;}
+.docs_st_biz  .stproxy_dialog_header {
+	padding:15px 20px;
+	background-color:#3c3c3c;
+	background-image:-moz-linear-gradient(top,  #3c3c3c 0%,  #252525 100%);
+	background-image:-webkit-gradient(linear,  left top,  left bottom,  color-stop(0%, #3c3c3c),  color-stop(100%, #252525));
+}
+.docs_st_biz  .stproxy_dialog_heading {
+	color: #FFFFFF;
+    display: block;
+    font-size: 1.2em !important;
+    margin: 0 !important;
+	background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    padding: 0;
+	font-weight: bold;
+	position: relative;}
+.docs_st_biz  .stproxy_dialog_content {
+	border: 0 none;
+	max-height: 700px;
+    overflow: auto;
+    padding: 15px 20px;}
+.docs_st_biz  .stproxy_dialog_footer {
+    background-color: #FFFFFF;
+    border-top: 1px solid #AAAAAA;
+    margin: 0 20px;
+    padding: 15px 0;
+	text-align: right;}
+.docs_st_biz  .dijitRtl .stproxy_dialog_footer .stproxy_button {
+    float: right;}
+.docs_st_biz  .dijitRtl .stproxy_dialog_footer .stproxy_dialog_buttonContainer {
+    float: left;}
+.docs_st_biz  .stproxy_dialog_footer .stproxy_button {
+    margin-left: 9px;}
+.docs_st_biz  .dijitRtl .stproxy_dialog_footer .stproxy_button {
+    margin-left: 0;
+    margin-right: 9px;}
+.docs_st_biz  .stproxy_dialog .stproxy_quickfind_wrapper, .docs_st_biz  .stproxy_dialog .stproxy_quickfind_input{
+	border: 1px solid #AAAAAA !important;}
+.docs_st_biz  .stproxy_dialog .stproxy_quickfind_wrapper{
+	-moz-box-shadow: none;
+	-webkit-box-shadow:  none;
+	box-shadow: none;
+	margin-top: -1px;}
+.docs_st_biz  .stproxy_widget .dijitBorderContainerPane, .docs_st_biz  .stproxy_widget .dijitBorderContainerNoGutterPane {
+	position: static !important;}
+
+
+/* sametime.Button */
+.docs_st_biz  .stproxy_button{
+    padding: 5px 15px;
+    text-shadow: 0 1px 1px #FFFFFF;
+    background-color: #E7E7E7;
+    background-image: -moz-linear-gradient(center top,  #EDEDED 0%,  #E1E1E1 100%);
+    border: 0 none;
+    border-collapse: separate;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0,  0,  0,  0.5);
+    color: #333333;
+    font-weight: bold;
+    margin: 0 auto 3px auto;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+.docs_st_biz  .dj_ie8 .stproxy_button{
+	border: 1px solid #AAAAAA;}
+.docs_st_biz  .dijit_a11y .stproxy_button {
+    border: medium outset white;}
+.docs_st_biz  .stproxy_button:active, .docs_st_biz  .stproxy_button:focus, .docs_st_biz  .stproxy_button:hover{
+	box-shadow: 0 2px 1px rgba(0,  0,  0,  0.5);
+	border-color: #666;
+	
+}
+.docs_st_biz  .stproxy_button_disabled{
+	border-width: 0;
+    box-shadow: 0 1px 1px rgba(0,  0,  0,  0.5);
+    color: #7C7C7C;
+    font-weight: normal;
+	background-color: #EEEEEE;
+    border-color: #CCCCCC;
+    color: #B0B0B0;
+    cursor: default;
+}
+
+
+
+/* sametime.Notification */
+.docs_st_biz  .stproxy_notification_icon{
+	float: left;
+	margin: 0 10px 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background-image: url(images/sprites/msgIcons_24bit.png);
+	border: 0;
+	vertical-align:"middle"}
+.docs_st_biz  .dijitRtl .stproxy_notification_icon{
+	margin: 0 0 0 10px;
+	float: left;}
+.docs_st_biz  .stproxy_notification_icon.error{
+	background-position: -1px -69px;}
+.docs_st_biz  .stproxy_notification_icon.warning{
+	background-position: -37px -69px;}
+.docs_st_biz  .stproxy_notification_icon.confirm{
+	background-position: -73px -69px;}
+.docs_st_biz  .stproxy_notification_icon.success{
+	background-position: -109px -69px;}
+.docs_st_biz  .stproxy_notification_icon.information{
+	background-position: -145px -69px;}
+
+
+/* sametime.Layer */
+.docs_st_biz  .stproxy_layer_container{
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background: #777777 !important;
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;}
+.docs_st_biz  .stproxy_layer_loading{
+	opacity: 1;
+	filter:alpha(opacity=100);
+	top: 45%;
+	position: relative;}
+
+
+/* sametime.Information */
+.docs_st_biz  .stproxy_information_icon{
+    float: left !important;
+    margin: 2px 5px 0 15px !important;
+	background-image: url(images/sprites/lotusHSprite-8bit.png) !important;
+	background-repeat: no-repeat !important;
+	display: inline-block !important;
+	height: 16px !important;
+	width: 16px !important;
+	border: 0 none !important;
+	line-height: 0 !important;
+	vertical-align: middle !important;}
+.docs_st_biz  .dijitRtl .stproxy_information_icon{
+	float: right !important;
+	margin: 2px 15px 0 5px !important;}
+.docs_st_biz  .stproxy_information_container{
+	padding: 10px;
+	/*font-size: .9em;*/
+
+	background-color: #FFEBE6;
+	border-color: #F08137;
+	/*
+	border-left: 0px;
+	border-right: 0px;
+	*/
+
+	margin-bottom: 12px;
+	border: 1px solid #CCC;
+	overflow: hidden;
+	zoom: 1;
+	position: relative;
+}
+.docs_st_biz  .stproxy_information_container.warning{
+	background-color: #FDF4C8;
+	border-color: #E48617;}
+.docs_st_biz  .stproxy_information_container.error{
+	background-color: #FFEBE6;
+	border-color: #F08137;}
+.docs_st_biz  .stproxy_information_container.information{
+	background-color: #D9F1FB;
+	border-color: #00B0DA;}
+.docs_st_biz  .stproxy_information_container.success{
+	background-color: #ECF9DF;
+	border-color: #108F53;}
+.docs_st_biz  .stproxy_information_icon{
+    float: left !important;
+    margin-bottom: 0 !important;
+    margin-left: 15px !important;
+    margin-right: 5px !important;
+    margin-top: 2px !important;
+	background-image: url(images/sprites/lotusHSprite-8bit.png) !important;
+	background-repeat: no-repeat !important;
+	display: inline-block !important;
+	height: 16px !important;
+	width: 16px !important;
+	border: 0 none !important;
+	line-height: 0 !important;
+	vertical-align: middle !important;}
+.docs_st_biz  .dijitRtl .stproxy_information_icon{
+	float: right !important;
+	margin: 2px 15px 0 5px !important;}
+.docs_st_biz  .stproxy_information_icon.success{
+	background-position: 0px -8px !important;}
+.docs_st_biz  .stproxy_information_icon.error{
+	background-position: -22px -8px !important;}
+.docs_st_biz  .stproxy_information_icon.information{
+	background-position: -44px -8px !important;}
+.docs_st_biz  .stproxy_information_icon.warning{
+	background-position: -66px -8px !important;}
+.docs_st_biz  .stproxy_information_close_icon{
+	position: absolute;
+	right: 15px;
+	top: 13px;
+	zoom: 1;
+	float: none;
+	width: 12px;
+	height: 12px;
+	background-image: url(images/sprites/lotusHSprite-8bit.png);
+	background-position: -557px -10px;
+	background-repeat: no-repeat;
+	opacity: 0.45;
+	filter: alpha(opacity=45);
+	vertical-align: top;
+	border: 0;
+	vertical-align: middle;
+	line-height: 0;
+	cursor: pointer;}
+.docs_st_biz  .dijitRtl .stproxy_information_close_icon{
+	right: auto;
+	left: 15px;}
+.docs_st_biz  .stproxy_information_message{
+	text-align: center;}
+
+
+/* sametime.Body */
+.docs_st_biz  .stproxy_body_container{
+	display: block;
+	width:100%;
+	height:100%;
+	position: relative;}
+.docs_st_biz  .stproxy_body_sidebar{
+	color: #FFF;
+	width:40px;
+	position: relative;
+	background: #363636;
+	overflow: hidden;}
+.docs_st_biz  .dijit_a11y .stproxy_body_sidebar{
+	border-right: 1px solid #FFF;}
+.docs_st_biz  .stproxy_body_widget{
+	display: block;
+	height: 100%}
+.docs_st_biz  .stproxy_body_menu_icon{
+	height: 17px;
+	width: 17px;
+	display:block;}
+.docs_st_biz  .stproxy_body_menu_select{
+	float: right !important;
+	right: 0 !important;
+	left: auto !important;
+	z-index: 2;}
+.docs_st_biz  .dijitRtl .stproxy_body_menu_select{
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+	
+	float: left !important;
+	right: auto !important;
+	left: 0 !important;}
+.docs_st_biz  .stproxy_body_items_ul{
+	list-style-type:none;
+	margin:0;
+	padding:30px 0;
+	background-color:#363636;}
+.docs_st_biz  .stproxy_body_footer_ul{
+	border-top:1px solid #222222;
+	background-color:#363636;
+	position:absolute;
+	bottom:1px;
+	list-style-type:none;
+	margin:0;
+	padding:0;}
+.docs_st_biz  .dijit_a11y .stproxy_body_item_li:focus, .docs_st_biz  .dijit_a11y .stproxy_body_footer_ul:hover{
+	border: none !important;
+	outline: 1px dotted !important;}
+.docs_st_biz  .stproxy_body_item_li{
+	height:38px;
+	width:38px;
+	line-height:0.99 !important;
+	border: 1px solid #363636;}
+.docs_st_biz  .dj_quirks .stproxy_body_item_li{
+	height:40px;}
+.docs_st_biz  .stproxy_body_item_li:focus{
+	background-color: #222222 !important;
+	cursor: pointer;
+	outline: #FFFFFF dotted thin;}
+.docs_st_biz  .stproxy_body_item_li img{
+	padding: 9px 7px;}
+.docs_st_biz  .dj_quirks .stproxy_body_item_li img{
+	padding: 0px;
+	margin: 9px 7px}
+.docs_st_biz  .stproxy_body_item_li_selected, .docs_st_biz  .stproxy_body_item_li_selected:focus{
+	background-color: #047CBD !important;
+	border-top: 1px solid #035F91 !important;
+	border-bottom: 1px solid #035F91 !important;
+	border-left: 1px solid #047CBD !important;
+	border-right: 1px solid #047CBD !important;}
+.docs_st_biz  .stproxy_body_item_li.stproxy_body_footer_item:hover{
+	background-color: #222222 !important;
+	cursor: pointer;}
+.docs_st_biz  .stproxy_body_item_li.stproxy_body_footer_item img{
+	height:24px;
+	width:24px;
+	padding: 7px;}
+.docs_st_biz  .dj_quirks .stproxy_body_item_li.stproxy_body_footer_item img{
+	padding: 0px;
+	margin: 7px}
+.docs_st_biz  .stproxy_body_footer_item{
+	border-top:1px solid #4A4A4A;}
+.docs_st_biz  .stproxy_body_footer_item:hover{
+	border-top:1px solid #222222;}
+.docs_st_biz  .stproxy_body_section{
+	position: relative;
+	height: 100%;
+	display: block;}
+.docs_st_biz  .stproxy_body_section_header{
+	background: #DCDCDC;
+	border-bottom: 1px solid #ccc;
+	padding: 6px 12px;
+	height:18px;
+	overflow: hidden;}
+.docs_st_biz  .dijit_a11y .stproxy_body_section_header{
+	height: auto;}
+.docs_st_biz  .stproxy_body_section_header_title{
+	margin: 0;
+	font-size: 1.1em;
+	display: inline-block;
+	color: #484848;
+	font-weight: bold}
+.docs_st_biz  .dijit_a11y .stproxy_body_section_header_title{
+	height: 40px;}
+.docs_st_biz  .stproxy_body_section_header_contactlist_menu_icon{
+	width: 12px;
+	height: 12px;
+	background-repeat: no-repeat;
+	margin-left: 3px;
+	display: block !important;}
+.docs_st_biz  .stproxy_body_section_header_contactlist_menu_icon_selected{
+	background-image: url(images/menuCheckmark12.png);}
+.docs_st_biz  .stproxy_body_section_header_menu{
+	float: right;
+	line-height: 1;
+	margin-top: 2px;
+	margin-right: -3px;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	border: 0 none;
+	line-height: 0;
+	vertical-align: middle;}
+.docs_st_biz  .dijitRtl .stproxy_body_section_header_menu{
+	float: left;
+	margin-right: auto;
+	margin-left: -3px;}
+.docs_st_biz  .stproxy_body_section_header_menu:hover{
+	opacity:1;
+	filter:alpha(opacity=100);
+	cursor: pointer;}
+
+
+/* sametime.Login */
+.docs_st_biz  .stproxy_login_container{
+	color: #222222;
+	height: 100%;
+    width: 100%;}
+.docs_st_biz  .stproxy_login_banner {
+	position: relative;
+	border-bottom: 1px solid #0075A3;
+	background: #008ABF;
+	padding-bottom: 2px;
+	text-align: left;
+	overflow: hidden;
+	zoom: 1;}
+.docs_st_biz  .dijitRtl .stproxy_login_banner{
+	text-align: right;}
+.docs_st_biz  .stproxy_login_RightCorner {
+	border-bottom: 1px solid #1A96C6;
+	overflow: hidden;
+	background: #222222;
+	background: -moz-linear-gradient(top,  #474747 0%,  #111111 100%);
+	background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(0%,  #474747),  color-stop(100%,  #111111));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#474747',  endColorstr='#111111',  GradientType=0);
+}
+.docs_st_biz  .stproxy_login_lotusInner{
+	margin-left: 13%;}
+.docs_st_biz  .dijitRtl .stproxy_login_lotusInner{
+	margin-left: auto;
+	margin-right: 13%;}
+.docs_st_biz  .stproxy_login_logo{
+	outline: none;
+	float: left;}
+.docs_st_biz  .dijitRtl .stproxy_login_logo{
+	float: right;}
+.docs_st_biz  .stproxy_login_AltText {
+	margin: 10px 20px 10px 0;
+	font-size: 1.1em;
+	line-height: 1.4;
+	padding: 0;
+	color: #FFFFFF;
+	text-shadow: 0 1px 2px #000;
+	font-weight: bold;
+	display: block;}
+.docs_st_biz  .dijitRtl .stproxy_login_AltText{
+	margin: 10px 0 10px 20px;}
+.docs_st_biz  .stproxy_login_bannerImg{
+	display: none;
+	margin-right: 20px;
+	border: 0;
+	vertical-align: middle;
+	line-height: 0;}
+.docs_st_biz  .dijitRtl .stproxy_login_bannerImg{
+	margin-right: auto;
+	margin-left: 20px;}
+.docs_st_biz  .stproxy_login_legal{
+	margin: 0 auto;
+	text-align: center;
+	color: #666666;
+	width: 245px;}
+.docs_st_biz  .stproxy_login_license{
+	color: #666666;
+	vertical-align: middle;
+	padding: 5px;
+	font-size: 0.8em;
+	line-height: 1.2;
+	text-align: center;}
+.docs_st_biz  .stproxy_login_content_box{
+	max-width: 245px;
+	margin: 35px auto 10px;
+	padding: 0;
+	background-color: #F6F6F6;
+	border: 1px solid #CCCCCC;
+	-webkit-box-shadow: 0 2px 2px #DCDCDC;
+	-moz-box-shadow: 0 2px 2px #DCDCDC;
+	box-shadow: 0 2px 2px #DCDCDC;}
+.docs_st_biz  .stproxy_login_content{
+	position: relative;
+	padding: 15px 15px 5px 15px;
+	zoom: 1;}
+.docs_st_biz  .stproxy_login_heading{
+	margin: 0;
+	margin-bottom: 15px;
+	font-weight: normal;
+	color: #444;
+	line-height: 1.2;
+	display: block;
+	font-size: 1.5em;}
+.docs_st_biz  .stproxy_login_button_container{
+	margin-top: 15px;
+	overflow: hidden;
+	display:inline-block;}
+.docs_st_biz  .stproxy_login_button_container .stproxy_button{
+	padding-left: 30px;
+	padding-right: 30px;}
+.docs_st_biz  .stproxy_login_button{
+    padding: 5px 45px;
+    text-shadow: 0 1px 1px #FFFFFF;
+    background-color: #E7E7E7;
+    background-image: -moz-linear-gradient(center top,  #EDEDED 0%,  #E1E1E1 100%);
+    border: 0 none;
+    border-collapse: separate;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0,  0,  0,  0.5);
+    color: #333333;
+    font-weight: bold;
+    margin: 0 auto 3px auto;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.docs_st_biz  .stproxy_login_button:active, .docs_st_biz  .stproxy_login_button:focus, .docs_st_biz  .stproxy_login_button:hover{
+	box-shadow: 0 2px 1px rgba(0,  0,  0,  0.5);
+	border-color: #666;
+}
+.docs_st_biz  .stproxy_login_bottom{
+	padding-bottom: 10px;
+	position: relative;
+	border-top: 1px solid #DCDCDC;
+	margin: 0 15px;}
+.docs_st_biz  .stproxy_login_ibm_logo{
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	opacity: 0.5;
+	filter:alpha(opacity=50);}
+.docs_st_biz  .dijitRtl .stproxy_login_ibm_logo{
+	right: auto;
+	left: 0;}
+.docs_st_biz  .stproxy_login_fields{
+	clear: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+	overflow: hidden;
+	zoom: 1;}
+.docs_st_biz  .stproxy_login_field{
+width: auto;
+clear: none;
+padding: 0;
+margin-bottom: 13px;
+overflow: hidden;
+zoom: 1;}
+.docs_st_biz  .stproxy_login_input_text{
+	text-indent: 4px;
+	width: 97%;
+	border: 1px solid #AAAAAA;
+	font-size: 100%;
+	font-family: Arial,  'Helvetica Neue',  HelveticaNeue,  Helvetica,  sans-serif !important;
+	margin-top: 4px;
+	height: 18px;
+}
+.docs_st_biz  .dijit_a11y .stproxy_login_input_text{
+	border: 1px inset white !important;
+	height: auto;
+	margin-top: auto;
+	font-size: auto;}
+.docs_st_biz  .stproxy_login_input_radio{
+	margin: 2px 5px 0 0;
+	width: auto;}
+.docs_st_biz  .dijitRtl .stproxy_login_input_radio{
+	margin: 2px 0 0 5px;}
+.docs_st_biz  .djChrome .stproxy_login_input_radio, .docs_st_biz  .dj_gecko .stproxy_login_input_radio{
+	border: 1px solid #AAAAAA;}
+.docs_st_biz  .stproxy_login_rememberme{
+	vertical-align: 2px;}
+.docs_st_biz  .stproxy_login_awareness{
+	margin-top: 20px}
+.docs_st_biz  .stproxy_login_awareness_dropdownbutton{
+	width: 190px;
+	text-align: left !important;}
+.docs_st_biz  .dijitRtl .stproxy_login_awareness_dropdownbutton{
+	text-align: right !important;}
+.docs_st_biz  .stproxy_login_awareness_label{
+	padding-left: 24px;}
+.docs_st_biz  .dijitRtl .stproxy_login_awareness_label{
+	padding-left: 0;
+	padding-right: 24px;}
+.docs_st_biz  .stproxy_login_container .stproxy_awareness_container{
+	background-color: #FFFFFF !important;
+	border: 1px solid #AAAAAA !important;
+	margin: 0 !important;
+	margin-top: 4px !important;
+	float: none !important;
+    overflow: hidden;
+    position: relative;
+	padding-right:0px;
+	padding-left:0px;
+	width: 97% !important;
+	height: 19px;}
+.docs_st_biz  .dijit_a11y .stproxy_login_container .stproxy_awareness_container{
+	border: 1px inset !important;
+	height: auto;}
+.docs_st_biz  .stproxy_login_container .stproxy_awareness_input_container{
+	border: 0 !important;
+	width: 190px !important;
+	margin: 0 0 0 5px !important;
+	position: relative;}
+.docs_st_biz  .dijitRtl .stproxy_login_container .stproxy_awareness_input_container{
+	margin: 0 5px 0 0 !important;}
+.docs_st_biz  .stproxy_login_container .stproxy_awareness_input{
+	border: 0 !important;
+	background-color: #FFFFFF;
+    border: 0 none !important;
+    color: #222222;}
+
+
+/* sametime.About */
+.docs_st_biz  .stproxy_about_container{
+	padding: 0 3px;
+	background-color: #ffffff;}
+.docs_st_biz  .stproxy_about_paragraph{
+	margin-bottom: 15px;}
+.docs_st_biz  .stproxy_about_buildnumber{
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;}
+.docs_st_biz  .stproxy_about_externalLogos {
+	background-image: url(images/running_man_wordmark_small.jpg);
+        height: 42px;
+        width: 68px;
+        margin: 5px 10px;}
+
+
+/*sametime.Renamer */
+.docs_st_biz  .stproxy_renamer_helpIcon{
+	position: relative;
+	top: 1px;}
+.docs_st_biz  .stproxy_renamer_input_wrapper{
+	margin-top: 10px;}
+.docs_st_biz  .stproxy_renamer_input{
+	width: 100%;
+	padding: 2px 0;}
+
+
+/*sametime.RemoveGroup Template Confirm.html*/
+.docs_st_biz  .stproxy_confirm_text1{
+	margin-bottom: 12px;}
+.docs_st_biz  .stproxy_confirm_moreinfo_wrapper{
+	cursor: pointer;}
+.docs_st_biz  .stproxy_confirm_moreinfo_expand_icon{
+    float: left;
+    left: 4px;
+    position: relative;
+    top: 5px;}
+.docs_st_biz  .dijitRtl .stproxy_confirm_moreinfo_expand_icon{
+	float: right;
+	left: auto;
+	right: 4px;}
+.docs_st_biz  .stproxy_confirm_moreinfo_title{
+	margin-bottom: 5px;
+    padding-left: 15px;}
+.docs_st_biz  .stproxy_confirm_icon{
+	height: 16px !important;
+	width: 16px !important;
+	margin-right: 10px;
+	background-image: url(images/sprites/lotusHSprite-8bit.png) !important;
+	background-repeat: no-repeat !important;
+	border: 0 none !important;
+	vertical-align: middle !important;
+	float:left;}
+.docs_st_biz  .dijitRtl .stproxy_confirm_icon{
+	margin-right: auto;
+	margin-left: 10px;
+	float: right;}
+.docs_st_biz  .stproxy_confirm_icon_error{
+	background-position: -22px -8px !important;}
+.docs_st_biz  .stproxy_confirm_icon_information{
+	background-position: -44px -8px !important;}
+.docs_st_biz  .stproxy_confirm_icon_warning{
+	background-position: -66px -8px !important;}
+
+
+
+
+/* sametime.scroll */
+.docs_st_biz  .stproxy_scroll_container{
+	width: 300px;
+	height:300px;
+	overflow: hidden;
+	position: relative;}
+.docs_st_biz  .stproxy_scroll_container_wrapper{
+	height: 100%;
+	outline: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+	width: 150%;}
+.docs_st_biz  .stproxy_scroll_container_Body{
+	width:270px;
+	position: relative;}
+.docs_st_biz  .stproxy_scroll_container_content{}
+.docs_st_biz  .stproxy_scroll_container_track{
+	background-color: red;
+	width: 10px;
+	display: block;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	bottom: 2px;
+	z-index: 2;}
+.docs_st_biz  .stproxy_scroll_container_track_bar{
+	background-color: blue;
+	width: 10px;
+	height: 20px;
+	position: absolute;
+	border: 1px solid black;
+	top: 0;
+	right: 0;}
+
+
+/* sametime.QuickFind */
+.docs_st_biz  .stproxy_quickfind_container{
+	position: realtive;}
+.docs_st_biz  .stproxy_quickfind_wrapper{
+    border: 1px solid #AAAAAA;
+    color: #000000;
+    max-height: 240px;
+	position: absolute;
+	overflow: none;	
+	background-color: #FFFFFF;
+	padding: 0px 5px 5px 5px;
+	padding-bottom: 3px;
+	-moz-border-radius:1px;
+	border-radius:1px;
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+	-moz-box-shadow:0 10px 15px rgba(0,  0,  0,  0.4);
+	-webkit-box-shadow:0 10px 15px rgba(0,  0,  0,  0.4);
+	box-shadow:0 10px 15px rgba(0,  0,  0,  0.4);
+}
+.docs_st_biz  .stproxy_quickfind_input{
+	border: 1px solid #AAAAAA;
+	padding:3px;
+	width:98%;
+	font-size: 100%;
+	font-family: Arial,  'Helvetica Neue',  HelveticaNeue,  Helvetica,  sans-serif !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.docs_st_biz  .dijit_a11y .stproxy_quickfind_input{
+	border: 1px inset !important;}
+.docs_st_biz  .stproxy_quickfind_input_open{
+	-moz-border-radius: 3px 3px 0px 0px;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;}
+.docs_st_biz  .stproxy_quickfind_wrapper li{
+	border: none !important;}
+.docs_st_biz  .stproxy_quickfind_results{
+    overflow: auto;
+	max-height: 220px;
+	padding-bottom: 2px !important;}
+.docs_st_biz  .stproxy_quickfind_loading{
+	text-align:center;
+	padding-top: 6px !important;}
+.docs_st_biz  .stproxy_quickfind_noresults{
+	font-size: 1.1em !important;
+    line-height: 1.7 !important;
+	text-align: center;}
+.docs_st_biz  .stproxy_quickfind_noresults:focus{
+	background-color: #E0F1F7 !important;}
+.docs_st_biz  .stproxy_quickfind_search_wrapper{
+	border-top: 1px solid #AAAAAA !important;
+	cursor: pointer;
+	padding: 1px 5px;
+	padding-top:3px;}
+.docs_st_biz  .stproxy_quickfind_search_wrapper:focus, .docs_st_biz  .stproxy_quickfind_search_wrapper:hover{
+	background-color: #E0F1F7 !important;}
+
+
+/* sametime.PrivacyList */
+.docs_st_biz  .stproxy_privacy_top{
+	margin-bottom: 7px;}
+.docs_st_biz  .stproxy_privacy_quickfind_label{
+    display: block;
+    margin-bottom: 7px;}
+.docs_st_biz  .stproxy_privacy_options_title{
+	font-weight: bold;
+	display: block;
+    margin-bottom: 5px;}
+.docs_st_biz  .stproxy_privacy_options_item{
+	 margin-bottom: 5px;}
+.docs_st_biz  .stproxy_privacy_options_item_last {
+	 margin-bottom: 7px;}
+
+
+/* sametime.AddContact */
+.docs_st_biz  .stproxy_addcontact_top {
+	margin-bottom: 7px;}
+.docs_st_biz  .stproxy_addcontact_bottom {
+	margin-top: 16px;}
+.docs_st_biz  .stproxy_addcontact_bottom .stproxy_buddylist_list {
+	border: 1px solid #AAAAAA;}
+.docs_st_biz  .stproxy_adder_groupSelect {
+	border: 1px solid #CCCCCC;}
+
+
+/* sametime.AddGroup */
+.docs_st_biz  .stproxy_addgroup_radiobuttons, .docs_st_biz  .stproxy_addgroup_checkbox_wrapper {
+	margin-bottom: 16px;}
+.docs_st_biz  .stproxy_addgroup_bottom, .docs_st_biz  .stproxy_addgroup_collector_wrapper {
+	margin-top: 16px;}
+
+
+/* sametime.SendAnnouncement */
+.docs_st_biz  .stproxy_sendannouncement_top, .docs_st_biz  .stproxy_sendannouncement_collector_wrapper {
+	margin-bottom: 16px;}
+
+
+/* sametime.InviteToChat */
+.docs_st_biz  .stproxy_invitetochat_top, .docs_st_biz  .stproxy_invitetochat_middle {
+	margin-bottom: 16px;}
+
+
+/* sametime.InviteToMeeting */
+.docs_st_biz  .stproxy_invitetomeeting_quickfind_wrapper, .docs_st_biz  .stproxy_invitetomeeting_radiobuttons, .docs_st_biz  .stproxy_invitetomeeting_existing_select {
+	margin-bottom: 16px;}
+
+
+/* sametime.Collector */
+.docs_st_biz  .stproxy_collector_wrapper{
+	height:150px;
+	width: 100%;
+	border: 1px solid #AAAAAA;
+	position:relative;
+	overflow: auto;}
+.docs_st_biz  .stproxy_collector_wrapper li{
+	border: none !important;}
+.docs_st_biz  .stproxy_collector_wrapper .stproxy_buddylist_list_row .stproxy_collector_remove_wrapper{
+	float:right;
+	margin-right:10px;}
+.docs_st_biz  .dijitRtl .stproxy_collector_wrapper .stproxy_buddylist_list_row .stproxy_collector_remove_wrapper{
+	float:left;
+	margin-left:10px;
+	margin-right:auto;}
+.docs_st_biz  .stproxy_collector_loading{
+	text-align:center;
+	padding-top: 6px !important;}
+.docs_st_biz  .stproxy_collector_noresults{
+	text-align: center;
+	padding-top: 6px !important;}
+.docs_st_biz  .stproxy_collector_wrapper .stproxy_collector_row:hover{
+	background-color: #E0F1F7 !important;}
+.docs_st_biz  .stproxy_quickfind_collector .stproxy_quickfind_results  .stproxy_buddylist_list_row .stproxy_hamburger{
+	border: 2 px solid red;
+	display: none !important;}
+
+
+/* sametime.MeetingRoom */
+.docs_st_biz  .stproxy_stMeetingRoomsContainer {
+	overflow: auto;
+	position:relative;}
+.docs_st_biz  .stproxy_meetingRoomsTabList { 
+	margin:0; 
+	padding:0;}
+
+
+/* sametime. MeetingRoomItem */
+.docs_st_biz  .stproxy_meetingRoomTitle, .docs_st_biz  .stproxy_meetingRoomDetails { 
+	padding:0;
+	margin:0; 
+	cursor:pointer;}
+.docs_st_biz  .stproxy_meetingRoomDetails {
+	border-bottom:1px solid #ccc;}
+.docs_st_biz  .stproxy_meetingRoomsContainerActive {
+	background:#E7E6E6;}
+.docs_st_biz  .stproxy_meetingRoomTitle {	
+	font-weight:bold; 
+	color: #484848;
+	padding: 6px 26px 0;
+	position:relative;}
+.docs_st_biz  .stproxy_meetingRoomTitle img {
+	position:absolute;
+    right: 18px;
+    top: 16px;}
+.docs_st_biz  .dijitRtl .stproxy_meetingRoomTitle img {
+	left: 18px;  
+	right:auto;}
+.docs_st_biz  .stproxy_meetingRoomDetails {
+	padding: 0 26px 8px;
+	color: #484848;}
+.docs_st_biz  .stproxy_meetingRoomActions {
+	padding: 6px 18px 2px;
+	background:#808080;}
+.docs_st_biz  .stproxy_meetingRoomActions span {
+	float:left;}
+.docs_st_biz  .dijitRtl .stproxy_meetingRoomActions span {
+	float:right;}
+.docs_st_biz  .stproxy_meetingRoomEmpty {
+	color: #9F9F9F;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;}
+.docs_st_biz  .stproxy_button_small {
+	padding: 3px 6px;
+	font-size: 0.9em;}
+
+
+/* sametime.Preferences */
+.docs_st_biz  .stproxy_preference_container{
+	margin-top: -10px;}
+.docs_st_biz  .stproxy_preference_wrapper{
+	margin-bottom: 5px;}
+.docs_st_biz  .stproxy_preference_fieldset {
+	border: none;
+	padding: 0px;}
+.docs_st_biz  .stproxy_preference_fieldset .stproxy_preference_title {
+	width: 100%;}
+.docs_st_biz  .stproxy_preference_option{
+	margin-bottom: 5px;}
+.docs_st_biz  .stproxy_preference_title{
+	border-bottom: 1px solid #AAAAAA;
+	color: #1970B0;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 5px;
+	margin-bottom: 5px;}
+.docs_st_biz  .stproxy_preference_check{
+	margin: 0 5px 0 0;
+	float: left;}
+.docs_st_biz  .dijitRtl .stproxy_preference_check{
+	margin: 0 0 0 5px;
+	float: right;}
+.docs_st_biz  .stproxy_preference_label{
+	display: block;
+	float: left;
+	width: 90%;}
+.docs_st_biz  .dijitRtl .stproxy_preference_label{
+	float: right;}
+.docs_st_biz  .stproxy_preferences_note_label{
+	font-weight: bold;}
+.docs_st_biz  .stproxy_preferences_indent{
+	padding-left: 20px;}
+.docs_st_biz  .dijitRtl .stproxy_preferences_indent{
+	padding-left: 0;
+	padding-right: 20px;}
+
+
+/* sametime.ChatSideBar */
+.docs_st_biz  .stproxy_chatwidget_sidebar{
+	width: 100%;
+	height: 100%;
+	float: left;}
+.docs_st_biz  .dijitRtl .stproxy_chatwidget_sidebar{
+	float: right;}
+.docs_st_biz  .stproxy_chat_sidebar{
+	color: #FFF;
+	height: 100%;
+	position: relative;
+	background-color: #363636;
+	z-index:1;}
+.docs_st_biz  .stproxy_chat_sidebar_ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:#363636;}
+
+
+/*sametime.ChatSideBarItem*/
+.docs_st_biz  .stproxy_chat_sidebar_li{
+	cursor: pointer;
+	border-top: 1px solid #4A4A4A;
+	border-bottom: 1px solid #222222;}
+.docs_st_biz  .stproxy_chat_sidebar_li:first-child{
+	border-top: none;}
+.docs_st_biz  .stproxy_chat_sidebar_li:last-child{
+	border-bottom: none;}
+.docs_st_biz  .stproxy_chat_sidebar_li.stproxy_chat_sidebar_li_active{
+	background-color: #047CBD !important;}
+.docs_st_biz  .stproxy_chat_sidebar_li.stproxy_chat_sidebar_li_message{
+	background: #7B7B7B;}
+.docs_st_biz  .stproxy_chat_sidebar_li:focus{
+	background-color: #222222;}
+.docs_st_biz  .stproxy_chat_sidebar_li_container{}
+.docs_st_biz  .stproxy_chat_sidebar_li_container_item{
+	position: relative;
+	padding: 8px;}
+.docs_st_biz  .stproxy_chat_sidebar_li_container_userphoto{
+	height: 40px;
+	width: 40px;}
+.docs_st_biz  .stproxy_chat_sidebar_li_awareness_icon{
+	position: absolute;
+	bottom: 6px;
+	right: 6px;}
+.docs_st_biz  .stproxy_chat_sidebar_li_photo{
+	width: 40px;
+	height: 40px;}
+
+
+/* sametime.participantlist */
+
+/* change max-width to 250px for gvt. */
+.docs_st_biz  .stproxy_chatwidget_participantlist{
+	height: 100%;
+	background-color: #FFFFFF;}
+.docs_st_biz  .stproxy_participantlist_container{
+    background-color: #F1F1F1;
+    float: left;
+    height: 100%;
+	width: 150px;
+	border-right: 1px solid #CCCCCC;}
+.docs_st_biz  .dijitRtl .stproxy_participantlist_container{
+	float: right;
+	border-right: none;
+	border-left: 1px solid #CCCCCC;}
+.docs_st_biz  .stproxy_participantlist_header{
+	height: 18px;
+	color: #484848;
+	background-color: #DCDCDC;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 6px 10px 6px 10px;}
+.docs_st_biz  .stproxy_participantlist_header_title{
+	margin: 0;
+	font-size: 13px;
+	font-weight: bold;
+	display: inline-block;}
+.docs_st_biz  .stproxy_participantlist_list{
+	padding: 0;
+	margin: 0;
+	list-style: none;}
+
+
+/* sametime.Participant */
+.docs_st_biz  .stproxy_participant_container{
+	background-color: #FFFFFF;
+	padding: 7px;
+	border-bottom: 1px solid #DCDBDB;
+	height: 32px;
+	cursor: pointer;}
+.docs_st_biz  .stproxy_participantlist_list_odd{
+	background-color: #F1F1F1;}
+.docs_st_biz  .stproxy_participantlist_list_even{
+	background-color: #FFFFFF;}
+.docs_st_biz  .stproxy_participant_inactive{
+	font-weight: normal !important;
+	font-style: italic !important;
+	color: #666666 !important;}
+.docs_st_biz  .stproxy_participant_selected{
+	background-color: #DBF1F8 !important;}
+.docs_st_biz  .stproxy_participant_image_container{
+	float: left;}
+.docs_st_biz  .dijitRtl .stproxy_participant_image_container{
+	float: right;}
+.docs_st_biz  .stproxy_participant_details{
+	padding-left: 8px;
+	overflow: hidden;}
+.docs_st_biz  .dijitRtl .stproxy_participant_details{
+	padding-left: 0;
+	padding-right: 8px;
+	float: right;}
+.docs_st_biz  .stproxy_participant_name{
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100%;
+	overflow: hidden !important;}
+.docs_st_biz  .stproxy_participant_title{
+	font-size: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100%;
+	overflow: hidden;}
+
+
+/* sametime.Chat */
+.docs_st_biz  .stproxy_chatwidget_body{
+	float:left;
+	position:relative;}
+.docs_st_biz  .dijitRtl .stproxy_chatwidget_body{
+	float: right;}
+.docs_st_biz  .stproxy_chat_screencapture_image{
+	max-width: 100%;
+	border: 1px solid #DCDCDC;
+	cursor: pointer;}
+
+
+/* sametime.LiveNamePhoto */
+.docs_st_biz  .stproxy_livenamephoto_contianer{
+	position: relative;}
+.docs_st_biz  .stproxy_livenamephoto_awareness_icon{
+	position: absolute;
+	right: -2px;
+	bottom: -2px;
+	z-index: 1;}
+.docs_st_biz  .dijitRtl .stproxy_livenamephoto_awareness_icon{
+	left: -2px;
+	right:auto;
+	z-index: 1;}
+.docs_st_biz  .stproxy_livenamephoto_photo_base{
+	height: 32px;
+	width: 32px;
+	position: relative;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	}
+.docs_st_biz  .stproxy_livenamephoto_typing{
+	position: absolute;
+	left: -2px;
+	bottom: -2px;
+	z-index: 1;}
+.docs_st_biz  .dijitRtl .stproxy_livenamephoto_typing{
+	left: auto;
+	right: -2px;
+	z-index: 1;}
+.docs_st_biz  .stproxy_livenamephoto_close{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;}
+.docs_st_biz  .dijitRtl .stproxy_livenamephoto_close{
+	left: auto;
+	right: 0;
+	z-index: 1;}
+.docs_st_biz  .stproxy_livenamephoto_message{
+	background-color: #D74100;
+	border: 1px solid #A02600;
+	border-radius: 3px 3px 3px 3px;
+	color: #FFFFFF;
+	font-size: 11px;
+	line-height: 1;
+	position: absolute;
+	right: -2px;
+	text-align: center;
+	top: -2px;
+	padding: 1px 3px 0 3px;
+	z-index: 1;}
+.docs_st_biz  .dijitRtl .stproxy_livenamephoto_message{
+	right: auto;
+	left: -2px;
+	z-index: 1;}
+
+
+/* sametime.ChatToolBar */
+.docs_st_biz  .stproxy_chatwidget_menubar{}
+.docs_st_biz  .stproxy_chattoolbar_container{
+	height: 30px;
+	color: #484848;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 0 10px;
+	background-color: #DCDCDC;}
+.docs_st_biz  .stproxy_chattoolbar_wrapper{
+	float: left;
+	margin-left: 2px;
+	height: 100%;}
+.docs_st_biz  .dijitRtl .stproxy_chattoolbar_wrapper{
+	float: right;
+	margin-left: 0px;
+	margin-right: 2px;}
+
+
+/* sametime.ChatTranscript */
+.docs_st_biz  .stproxy_chat_transcript_container{
+	background-color: #FFFFFF;}
+.docs_st_biz  .stproxy_chat_transcript_message_odd{
+	background-color: #F6F6F6;}
+.docs_st_biz  .stproxy_chat_transcript_message_even{
+	background-color: #FAFAFA;}
+.docs_st_biz  .stproxy_chat_transcript_message_even .stproxy_chatmessage_displayname{
+	color: #047CBD;}
+
+
+/* sametime.ChatMessage */
+.docs_st_biz  .stproxy_chatmessage_container{
+	padding: 5px 10px;
+	border-bottom: 1px solid #CCCCCC;
+	word-break: break-word;}
+.docs_st_biz  .dj_ie .stproxy_chatmessage_container{
+	word-break: break-all;}
+.docs_st_biz  .stproxy_chatmessage_displayname{
+	font-weight: bold;
+	padding-bottom: 5px;
+	width: 100%;}
+.docs_st_biz  .stproxy_chatmessage_message{
+	width: 100%;
+	word-break: break-all;}
+.docs_st_biz  .stproxy_chatmessage_info{
+	width: 100%;
+	font-size: 0.9em;}
+.docs_st_biz  .stproxy_chatmessage_container.stproxy_chatmessage_information{
+	background-color: #DBF1F8 !important;}
+.docs_st_biz  .stproxy_chatmessage_container.stproxy_chatmessage_warning{
+	background-color: #FDF4C8 !important;}
+.docs_st_biz  .stproxy_chatmessage_time{
+	white-space: nowrap;
+	vertical-align: top;
+	padding-left: 10px;}
+.docs_st_biz  .dijitRtl .stproxy_chatmessage_time{
+	padding-left: 0;
+	padding-right: 10px;}
+.docs_st_biz  .stproxy_chat_event_message{
+	color: #3683CB;}
+.docs_st_biz  .stproxy_chat_a_disabled{
+	font-style: italic;
+	text-decoration: none !important;}
+
+
+/* sametime.NwayChatInvitation */
+.docs_st_biz  .stproxy_nwaychat_invitation_photo{
+	height: 80px;
+	width: 80px;
+	float: left;}
+.docs_st_biz  .dijitRtl .stproxy_nwaychat_invitation_photo{
+	float: right;}
+.docs_st_biz  .stproxy_nwaychat_invitation_container{
+	float: left;
+	padding: 0 0 0 15px;
+	display: block;
+	width: 65%;}
+.docs_st_biz  .dijitRtl .stproxy_nwaychat_invitation_container{
+	float: right;
+	padding: 0 15px 0 0;
+	width: auto;}
+.docs_st_biz  .stproxy_nwaychat_invitation_marginbottom{
+	margin-bottom: 8px;}
+.docs_st_biz  .stproxy_nwaychat_invitation_details{}
+.docs_st_biz  .stproxy_nwaychat_invitation_name{
+	font-size: 1.2em;
+	font-weight: bold;}
+.docs_st_biz  .stproxy_nwaychat_invitation_additional{
+	color: #777777;}
+.docs_st_biz  .stproxy_nwaychat_invitation_description_wrapper{}
+.docs_st_biz  .stproxy_nwaychat_invitation_description{}
+.docs_st_biz  .stproxy_nwaychat_invitation_topic{}
+
+
+/*sametime.ChatEditor*/
+.docs_st_biz  .stproxy_editorIcon {
+	width: 16px;
+	height: 16px;}
+.docs_st_biz  .stproxy_editorIconBold {
+	background-image: url(images/ST9_bold.png) !important;}
+.docs_st_biz  .stproxy_editorIconBoldDisable {
+	background-image: url(images/ST9_bold_d.png) !important;}
+.docs_st_biz  .stproxy_editorIconItalic {
+	background-image: url(images/ST9_italic.png) !important;}
+.docs_st_biz  .stproxy_editorIconItalicDisable {
+	background-image: url(images/ST9_italic_d.png) !important;}
+.docs_st_biz  .stproxy_editorIconUnderline {
+	background-image: url(images/ST9_underline.png) !important;}
+.docs_st_biz  .stproxy_editorIconUnderlineDisable {
+	background-image: url(images/ST9_underline_d.png) !important;}
+.docs_st_biz  .stproxy_editorIconEmoticon {
+	background-image: url(images/ST9_emoticon.png) !important;}
+.docs_st_biz  .stproxy_editorIconEmoticonDisabled {
+	background-image: url(images/ST9_emoticon_d.png) !important;}
+.docs_st_biz  .stproxy_editorIconForeColor {
+	background-image: url(images/ST9_font_color.png) !important;}
+.docs_st_biz  .stproxy_editorIconForeColorDisable {
+	background-image: url(images/ST9_font_color_d.png) !important;}
+.docs_st_biz  .stproxy_editorIconScreenCapture {
+	background-image: url(images/ST9_screencapture.png) !important;}
+.docs_st_biz  .stproxy_editorIconScreenCaptureDisabled {
+	background-image: url(images/ST9_screencapture_d.png) !important;}
+.docs_st_biz  .stproxy_editorIconFileTransfer {
+	background-image: url(images/ST9_sendfile.png) !important;}
+.docs_st_biz  .stproxy_editorIconFileTransferDisabled {
+	background-image: url(images/ST9_sendfile_d.png) !important;}
+.docs_st_biz  .stproxy_widget .dijitSplitterV, .docs_st_biz  .stproxy_widget .dijitGutterV, .docs_st_biz  .stproxy_widget .dijitSplitterH, .docs_st_biz  .stproxy_widget .dijitGutterH {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	margin: 0;}
+.docs_st_biz  .stproxy_widget .dijitSplitterV, .docs_st_biz  .stproxy_widget .dijitGutterV {
+	width: 5px;
+	border-right: 1px solid #CCCCCC;}
+.docs_st_biz  .dijitRtl .stproxy_widget .dijitSplitterV, .docs_st_biz  .stproxy_widget .dijitGutterV {
+	border-right: none;
+	border-left: 1px solid #CCCCCC;}
+.docs_st_biz  .stproxy_widget .dijitSplitterH, .docs_st_biz  .stproxy_widget .dijitGutterH {
+	height: 5px;}
+.docs_st_biz  .stproxy_widget .dijitSplitterV .dijitSplitterThumb {
+  background: none repeat scroll 0 0 #B0B0B0;
+  width: 1px;
+  height: 19px;
+  left: 2px;}
+.docs_st_biz  .stproxy_widget .dijitSplitterH .dijitSplitterThumb {
+  background: none repeat scroll 0 0 #B0B0B0;
+  width: 19px;
+  height: 1px;
+  top: 2px;}
+.docs_st_biz  .stproxy_chatwidget_transcriptwrapper {
+	border-bottom: 1px solid #CCC;}
+.docs_st_biz  .stproxy_toolbarChat {
+	background: #F1F1F1;
+	padding: 2px 0 2px 12px !important}
+.docs_st_biz  .dijitRtl .stproxy_toolbarChat{
+	padding: 2px 11px 2px 0 !important}
+.docs_st_biz  .stproxy_chatEmoticonIcon {
+	padding: 3px;
+    margin-left:0 !important;
+    margin-right:0 !important;
+	border: 1px solid #FFFFFF;}
+.docs_st_biz  .stproxy_chatEmoticonIcon:hover, .docs_st_biz  .stproxy_chatEmoticonIcon:focus{
+	border: 1px solid #DCDCDC;
+	cursor: pointer;}
+.docs_st_biz  .stproxy_emoticons {
+	padding: 5px 5px 0px 5px !important;
+	background-color: #FFFFFF;
+	-moz-box-shadow:0 0 15px rgba(0,  0,  0,  0.4);
+	-webkit-box-shadow:0 0 15px rgba(0,  0,  0,  0.4);
+	box-shadow:0 0 15px rgba(0,  0,  0,  0.4); 
+}
+.docs_st_biz  .dj_ie8 .stproxy_emoticons{
+	border: 1px solid #AAAAAA;}
+
+
+/* sametime.ProgressBar */
+.docs_st_biz  .stproxy_progressbar {
+	height: 6px;
+	padding: 3px;		
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255, 255, 255, 0.3);          
+	position: relative;
+}
+.docs_st_biz  .stproxy_progressbar span {
+	display: block;
+	height: 100%;	
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+
+	-webkit-transition: width .4s ease-in-out;
+	-moz-transition: width .4s ease-in-out;
+	-ms-transition: width .4s ease-in-out;
+	-o-transition: width .4s ease-in-out;
+	transition: width .4s ease-in-out;}
+.docs_st_biz  .stproxy_progressbar_stripes span {
+	-webkit-background-size: 30px 30px;
+	-moz-background-size: 30px 30px;
+	background-size: 30px 30px;			
+	background-image: -webkit-gradient(linear,  left top,  right bottom, 
+						color-stop(.25,  rgba(255,  255,  255, .docs_st_biz  .15)),  color-stop(.25,  transparent), 
+						color-stop(.5,  transparent),  color-stop(.5,  rgba(255,  255,  255, .docs_st_biz  .15)), 
+						color-stop(.75,  rgba(255,  255,  255, .docs_st_biz  .15)),  color-stop(.75,  transparent), 
+						to(transparent));
+	background-image: -webkit-linear-gradient(135deg,  rgba(255,  255,  255, .docs_st_biz  .15) 25%,  transparent 25%, 
+						transparent 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 75%, 
+						transparent 75%,  transparent);
+	background-image: -moz-linear-gradient(135deg,  rgba(255,  255,  255, .docs_st_biz  .15) 25%,  transparent 25%, 
+						transparent 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 75%, 
+						transparent 75%,  transparent);
+	background-image: -ms-linear-gradient(135deg,  rgba(255,  255,  255, .docs_st_biz  .15) 25%,  transparent 25%, 
+						transparent 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 75%, 
+						transparent 75%,  transparent);
+	background-image: -o-linear-gradient(135deg,  rgba(255,  255,  255, .docs_st_biz  .15) 25%,  transparent 25%, 
+						transparent 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 75%, 
+						transparent 75%,  transparent);
+	background-image: linear-gradient(135deg,  rgba(255,  255,  255, .docs_st_biz  .15) 25%,  transparent 25%, 
+						transparent 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 50%,  rgba(255,  255,  255, .docs_st_biz  .15) 75%, 
+						transparent 75%,  transparent);            
+	
+	-webkit-animation: stproxy_animate-stripes 3s linear infinite;
+	-moz-animation: stproxy_animate-stripes 3s linear infinite;       		
+}
+
+@-webkit-keyframes stproxy_animate-stripes { 
+	0% {background-position: 0 0;}
+ 100% {background-position: 60px 0;}
+
+}
+
+@-moz-keyframes stproxy_animate-stripes {
+	0% {background-position: 0 0;}
+ 100% {background-position: 60px 0;}
+
+}
+
+
+/* sametime.LiveNameItem */
+.docs_st_biz  .stproxy_livenameitem_container{
+	white-space: nowrap;
+	padding: 0 15px 0 5px;}
+.docs_st_biz  .dijitRtl .stproxy_livenameitem_container{
+		padding: 0 5px 0 15px;}
+.docs_st_biz  .stproxy_livenameitem_status_icon{
+	margin-bottom: -1px;}
+.docs_st_biz  .stproxy_livenameitem_status_icon_groupchat{
+	margin-bottom: -3px;}
+.docs_st_biz  .stproxy_livenameitem_displayname{
+	margin: 0 15px 0 3px;
+	overflow: hidden;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	width: 70%;
+	vertical-align: middle;}
+.docs_st_biz  .dijitRtl .stproxy_livenameitem_displayname{
+	margin: 0 3px 0 15px;}
+.docs_st_biz  .stproxy_livename_sidebar .stproxy_chat_sidebar_li_container_item{
+	padding: 5px;}
+.docs_st_biz  .stproxy_livenameitem_close{
+	position: absolute;
+	top:9px;
+	right:10px;}
+.docs_st_biz  .dijitRtl .stproxy_livenameitem_close{
+	right: auto;
+	left: 10px;}
+.docs_st_biz  .stproxy_livenameitem_typing{
+	position: absolute;
+	top: 8px;
+	right: 28px;}
+.docs_st_biz  .dijitRtl .stproxy_livenameitem_typing{
+	left: 28px;
+	right: auto;}
+.docs_st_biz  .stproxy_livenameitem_message{
+	background-color: #D74100;
+	border: 1px solid #A02600;
+	border-radius: 3px 3px 3px 3px;
+	color: #FFFFFF;
+	font-size: 11px;
+	line-height: 1;
+	padding: 1px 3px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 7px;}
+.docs_st_biz  .dijitRtl .stproxy_livenameitem_message{
+	right: auto;
+	left: 10px;}
+
+
+/* sametime.FileTransfer */
+.docs_st_biz  .stproxy_filetransfer_container{
+	width: 270px;}
+.docs_st_biz  .stproxy_filetransfer_icon_wrapper{
+	float: left;}
+.docs_st_biz  .dijitRtl .stproxy_filetransfer_icon_wrapper{
+	float: right;}
+.docs_st_biz  .stproxy_filetransfer_icon{
+	padding-right: 7px;}
+.docs_st_biz  .dijitRtl .stproxy_filetransfer_icon{
+	float: right;
+	padding-right: 0;
+	padding-left: 7px;}
+.docs_st_biz  .storoxy_filetransfer_details{
+	width: 100%;}
+.docs_st_biz  .stproxy_filetransfer_name{
+	margin-bottom: 2px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;}
+.docs_st_biz  .stproxy_filetransfer_nosize .stproxy_filetransfer_name{
+	padding-top: 10px !important;}
+.docs_st_biz  .stproxy_filetransfer_size{
+	white-space: nowrap;}
+.docs_st_biz  .stproxy_filetransfer_nosize .stproxy_filetransfer_size{
+	display: none;}
+.docs_st_biz  .stproxy_filetransfer_incomingmessage_wrapper{
+	cursor: pointer;
+    border: 1px solid #DCDCDC;
+    padding: 4px;
+    display: inline-block;
+	margin-bottom: 5px;
+	max-width: 70%;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	white-space: nowrap;}
+.docs_st_biz  .stproxy_filetransfer_incomingmessage_wrapper:hover, .docs_st_biz  .stproxy_filetransfer_incomingmessage_wrapper:focus{
+	border: 1px solid #222222;}
+.docs_st_biz  .stproxy_filetransfer_incomingmessage_img{
+	vertical-align: bottom;
+	margin-right: 5px;}
+.docs_st_biz  .dijitRtl .stproxy_filetransfer_incomingmessage_img{
+	margin-right: auto;
+	margin-left: 5px}
+.docs_st_biz  .stproxy_filetransfer_incomingmessage_detail{
+	font-size: 1.1em;
+	font-weight: bold;}
+.docs_st_biz  .stproxy_filetransfer_progress_container{
+	width: 200px;
+	height: 20px;}
+.docs_st_biz  .stproxy_filetransfer_container .stproxy_progressbar{
+	margin-top: 10px;}
+.docs_st_biz  .stproxy_filetransfer_input{
+	position: relative;
+	width: 100%;
+	height: 2.2em;}
+.docs_st_biz  .stproxy_filetransfer_input_real{
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+	height: 1.8em;
+	margin-top: 5px;
+	border: 1px solid #AAAAAA;
+	background-color: #E7E7E7;}
+
+
+
+/* ONE UI */
+.docs_st_biz  .stproxy_widget .dijitArrowButtonInner {
+    background-position: -52px 2px;}
+.docs_st_biz  .stproxy_widget .dijitButtonDisabled .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitDropDownButtonDisabled .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitComboButtonDisabled .dijitButtonNode, .docs_st_biz  .stproxy_widget .dijitToggleButtonDisabled .dijitButtonNode {
+  background-color: transparent !important;}
+.docs_st_biz  .stproxy_widget .dijitToolbar .dijitToggleButtonChecked .dijitButtonNode {
+  border: 1px solid #CCCCCC !important;}
+.docs_st_biz  .stproxy_widget input[type=radio]:focus {
+  outline:#000 dotted 1px;}
+  
+  /******** SAMETIME DOCK ************/
+.stproxy_dock {
+bottom: 0;
+position: fixed;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 13px;
+font-size-adjust: none;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+line-height: 1.5;
+z-index: 998;
+}
+.stproxy_dock_ltr{
+right:0;
+}
+.stproxy_dock_rtl{
+left:0;
+}
+.stproxy_dock.stproxy_dock_show_on_css_load{
+display: block !important;
+}
+.stproxy_dock_opacity{
+opacity: 1 !important;
+}
+.stproxy_dock_ActionBar {
+float: right;
+height: auto;
+width: auto;
+margin-bottom: 0;
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+}
+.dijitRtl .stproxy_dock_ActionBar{
+float: left;
+margin-left: 3px;
+}
+.stproxy_dock .stproxy_dock_availability:hover,
+.stproxy_dock .stproxy_dock_availability:focus,
+.stproxy_dock .stproxy_dock_availability:active{
+color: #FFF !important;
+text-decoration:none !important;
+}
+.stproxy_dock .stproxy_dock_availability{
+min-width: 125px;
+}
+.stproxy_dock_tooltip {
+background-color: #FFFABC;
+position: absolute;
+bottom: 3em;
+right: 50px;
+color: #222;
+border: 1px solid #EFD159;
+opacity: 0.9;
+filter: alpha(opacity=90);
+white-space: nowrap !important;
+}
+.dijitRtl .stproxy_dock_tooltip {
+left: 50px;
+right: auto;
+}
+.stproxy_dock_tooltip:after {
+content: ' ';
+height: 0;
+position: absolute;
+width: 0;
+border: 5px solid transparent;
+border-top-color: #EFD159;
+top: 100%;
+right: 10px;
+}
+.dijitRtl .stproxy_dock_tooltip:after {
+left: 10px;
+right:auto;
+}
+.stproxy_dock_tooltip.launcher{
+right: 5px;
+z-index: 999;
+}
+.dijitRtl .stproxy_dock_tooltip.launcher{
+right: auto;
+left: 5px;
+}
+.stproxy_dock_tooltip .tip{
+color: #00;
+display: block;
+padding:1px 10px 1px 6px;
+margin-left:5px;
+font-weight: bold;
+}
+.dijitRtl .stproxy_dock_tooltip .tip{
+margin-left:0px;
+margin-right:5px;
+padding:1px 6px 1px 10px;
+}
+.dijitRtl .stproxy_dock_openMenu{
+float: left;
+}
+.dijitRtl .stproxy_dock_postLoad{
+float: left;
+}
+.stproxy_dock_rtl .stproxy_dock_openMenu {
+direction: rtl;
+}
+.stproxy_dock_Inlinelist {
+list-style-type: none;
+margin-bottom: 0;
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+padding-bottom: 0;
+padding-left: 0;
+padding-right: 0;
+padding-top: 0;
+}
+.stproxy_dock_Inlinelist li {
+border-bottom-color: -moz-use-text-color;
+border-bottom-style: none;
+border-bottom-width: 0;
+border-top-color: -moz-use-text-color;
+border-top-style: none;
+border-top-width: 0;
+display: block;
+float: right;
+margin-right: -1px;
+margin-left: 0;
+padding-bottom: 0;
+padding-bottom: 0;
+padding-left: 0;
+padding-right: 0;
+padding-top: 0;
+}
+.dijitRtl .stproxy_dock_Inlinelist li {
+margin-left: -1px;
+margin-right: 0px;
+}
+.stproxy_dock_Inlinelist li a {
+background-attachment: scroll;
+background-color: transparent;
+background:#2d3033;
+background-image: -moz-linear-gradient(#4B4D51, #2D3033);
+background:#2d3033;
+background-position: 0 0;
+background-repeat: repeat;
+border-bottom-color: #5A5B5C;
+border-top-color: #5A5B5C;
+outline-color: #000000;
+outline-style: solid;
+outline-width: 1px;
+border-top-style: solid;
+border-top-width: 1px;
+color: #FFFFFF;
+display: inline-block;
+height: 1.5em;
+padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+text-decoration: none;
+border-bottom-style: solid;
+border-bottom-width: 0;
+}
+.stproxy_dock_Inlinelist li a:focus {
+outline: 1px dotted gray;
+}
+.stproxy_dock_awarenessIcon{
+padding-right: 3px;
+vertical-align: baseline !important;
+}
+.dijitRtl .stproxy_dock_awarenessIcon{
+padding-left: 3px;
+padding-right: 0;
+}
+.stproxy_dock_statusOptions{
+border-top: 1px #555555 solid;
+}
+.stproxy_dock_login{
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+}
+.stproxy_dock_checkbox_wrapper{
+display: inline-block;
+float: left;
+padding-left: 10px;
+cursor: pointer;
+}
+.dijitRtl .stproxy_dock_checkbox_wrapper{
+float: right;
+padding-right: 10px;
+padding-left: 0;
+}
+.stproxy_dock_loginError{
+padding-top: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+.stproxy_dock_loginErrorMessage{
+display: inline-block;
+padding-bottom: 10px;
+}
+.stproxy_dock_checkbox_label_wrapper{
+display: inline-block;
+padding-left: 5px;
+width: 130px;
+}
+.dijitRtl .stproxy_dock_checkbox_label_wrapper{
+padding-left: 0;
+padding-right: 5px;
+}
+.stproxy_dock_hide{
+display: none !important;
+}
+.stproxy_dock_autoConnect{
+padding-left: 10px;
+padding-bottom: 10px;
+}
+.dijitRtl .stproxy_dock_autoConnect{
+padding-left: 0;
+padding-right: 10px;
+}
+.stproxy_dock_layer img{
+top: 6.6em !important;
+}
+.stproxy_dock_client_launcher_img {
+display: inline-block;
+height: 16px;
+width: 16px;
+}
+.dj_chrome .stproxy_dock_client_launcher_img{
+vertical-align: middle;
+}
+.dijitRtl .stproxy_dock_client_launcher{
+float: left;
+}
+.stproxy_dock_awarenessRow{
+display: table;
+width: 100%;
+cursor: pointer;
+padding: 4px 0;
+}
+.stproxy_dock_awarenessRow:hover, .stproxy_dock_awarenessRowHover{
+background: #E1F4F9;
+}
+.stproxy_dock_cursor{
+cursor: pointer;
+}
+.stproxy_dock_subpanel {
+position: absolute;
+right: 33px;
+bottom: 30px;
+float: right;
+width: 15em;
+border: 1px solid #555;
+background: #fff;
+overflow: hidden;
+}
+.dijitRtl .stproxy_dock_subpanel{
+right: auto !important;
+left: 36px !important;
+float: left !important;
+}
+.dj_safari .stproxy_dock_subpanel{
+bottom: 2.35em;
+right: 2.95em;
+}
+.dijitRtl.dj_safari .stproxy_dock_subpanel{
+left: 3.2em !important;
+}
+.stproxy_dock_menuTitle{
+border-color:#5a5b5c;
+background:#000;
+background:#2d3033;
+background-image: -moz-linear-gradient(#4B4D51, #2D3033);
+padding: 6px 10px;
+color: #fff;
+font-size: 1.0em;
+font-weight: bold;
+height: 20px;
+overflow: hidden;
+text-align:center;
+}
+.stproxy_dock_awarenessTick {
+color: #000;
+visibility: hidden;
+}
+.dijitRtl .stproxy_dock_awarenessTick {
+padding: 0px 5px 0px 0px;
+}
+.stproxy_dock_awarenessTick_Selected {
+visibility: visible;
+}
+.stproxy_dock_subpanel ul{
+padding: 0;
+margin: 0;
+background: #fff;
+width: 100%;
+}
+.stproxy_dock_subpanel li{
+float: none;
+display: block;
+padding:0;
+margin: 0;
+overflow: hidden;
+clear: both;
+background: #fff;
+position: static;
+font-size: 12px;
+}
+.stproxy_dock_subpanel li span {
+padding: 5px;
+background: #fff;
+color: #777;
+float: right;
+}
+.dijitRtl .stproxy_dock_subpanel li span {
+float: left;
+}
+.stproxy_dock .stproxy_checkboxLabel{
+opacity: 1 !important;
+}
+.stproxy_dock .stproxy_float {
+float: left;
+}
+.dijitRtl .stproxy_dock .stproxy_float {
+float: right;
+}
+.stproxy_dock .stproxy_awarenessPad {
+padding-left: 10px;
+position: relative;
+}
+.dijitRtl .stproxy_dock .stproxy_awarenessPad {
+padding-left: auto;
+padding-right: 10px;
+}
+.stproxy_dock .stproxy_menuItemText{
+padding-left: 30px !important;
+}
+.dijitRtl .stproxy_dock .stproxy_menuItemText{
+padding-left: auto;
+padding-right: 30px !important;
+}
+.dijit_a11y .stproxy_dock .stproxy_menuItemText{
+border: 2px solid #ffffff !important;
+}
+.dijit_a11y .stproxy_dock_awarenessRow:hover .stproxy_menuItemText,
+.dijit_a11y .stproxy_dock_awarenessRowHover .stproxy_menuItemText {
+border: 4px dotted #FFFFFF !important;
+}
+.stproxy_dock .stproxy_dock_awarenessIconContainer img {
+position: absolute;
+top: 5px;
+}
+.dj_chrome .stproxy_dock .stproxy_dock_awarenessIconContainer img, .dj_safari .stproxy_dock .stproxy_dock_awarenessIconContainer img {
+top: 4px;
+}
+.stproxy_dock .stproxy_awarenesDivNoWrap {
+white-space: nowrap;
+}
+.stproxy_dock .stproxy_button {
+width: 12em;
+}
+/******* END OF DOCK *******/

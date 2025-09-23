@@ -1,0 +1,22 @@
+# SampleEn_US.properties
+# Here is a comment statement.
+# Comments can occur anywhere in the source file.
+
+StringID = This is translatable text.
+Address =Address (translatable)
+Clear = Clear (translatable)
+InvalidName =Please enter a valid name or address for the server.
+VariableExamples = Variables: {0}, {1,date}, {2,anything}\n
+Message101 = Here is a message \
+where the text exists on multiple lines.\n  Each line containing text must \
+end with a continuation character.
+String2 = Hi!
+String_Do_Not_Translate_3 = FIXED VALUE
+String4 : Hello
+# Do not translate next line
+String5 = Good evening
+String6 = Wassup!
+# Begin do not translate block 
+FieldNonTrans = http:\\www.ibm.com\sample\test.html
+# End do not translate block
+

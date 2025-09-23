@@ -1,0 +1,57 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        ORIENTATION_LABEL: "Ausrichtung",
+        PORTRAIT: "Hochformat",
+        LANDSCAPE: "Querformat",
+        HEADER: "Kopfzeile",
+        FOOTER: "Fußzeile",
+        MARGINS_LABEL: "Randeinstellungen",
+        TOP: "Oben:",
+        BOTTOM: "Unten:",
+        LEFT: "Links:",
+        RIGHT: "Rechts:",
+        PAPER_FORMAT_LABEL: "Papierformat",
+        PAPER_SIZE_LABEL: "Papierformat:",
+        HEIGHT: "Höhe:",
+        WIDTH: "Breite:",
+        HEIGHT_DESC: "Papierlänge in Zentimetern",
+        HEIGHT_DESC2: "Papierlänge in Zoll",
+        WIDTH_DESC: "Papierbreite in Zentimetern",
+        WIDTH_DESC2: "Papierbreite in Zoll",
+        BOTTOM_DESC: "Unterer Rand in Zentimetern",
+        BOTTOM_DESC2: "Unterer Rand in Zoll",
+        TOP_DESC: "Oberer Rand in Zentimetern",
+        TOP_DESC2: "Oberer Rand in Zoll",
+        LEFT_DESC: "Linker Rand in Zentimetern",
+        LEFT_DESC2: "Linker Rand in Zoll",
+        RIGHT_DESC: "Rechter Rand in Zentimetern",
+        RIGHT_DESC2: "Rechter Rand in Zoll",
+        CM_LABEL: "cm",
+        LETTER: "Letter",
+        LEGAL: "Legal",
+        TABLOID: "Tabloid",
+        USER: "Benutzer(spezifisch)",
+        SIZE1: "Umschlag #6 3/4",
+        SIZE2: "Umschlag Monarch",
+        SIZE3: "Umschlag #9",
+        SIZE4: "Umschlag #10",
+        SIZE5: "Umschlag #11",
+        SIZE6: "Umschlag #12",
+        SIZE7: "16 Kai",
+        SIZE8: "32 Kai",
+        SIZE9: "32 Kai groß",
+        INVALID_MSG: "Die Eingabe ist ungültig und wurde automatisch korrigiert. Geben Sie einen anderen Wert ein, wenn Sie ein anderes Ergebnis möchten.",
+        INVALID_WIDTH_FOR_COLUMNS: "Die Eingabe ist ungültig. Die Breite des Inhalts reicht für die enthaltenen Spalten nicht aus."
+});
+

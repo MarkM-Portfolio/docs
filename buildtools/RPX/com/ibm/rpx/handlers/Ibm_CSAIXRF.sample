@@ -1,0 +1,10 @@
+! Here is a comment statement.
+
+*.leadd.helpLabelString: Help
+*.leadd.okLabelString: OK
+
+*.LUHdr.labelString: You configured an LU type 0-3.\nThe next step depends on the LU state.
+
+*.PoolHdr.labelString: You configured an LU pool.\nThe next step depends on the LU state.
+
+*.Another.String: This contains multiple replacement variables $a$, $b$ and $see$.

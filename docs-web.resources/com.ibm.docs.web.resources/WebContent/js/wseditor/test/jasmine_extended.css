@@ -1,0 +1,51 @@
+#RunningWindowResults { font-size: 11px; font-family: Monaco, "Lucida Console", monospace; line-height: 14px; color: #333333; }
+#RunningWindowResults .banner { display: none; }
+#RunningWindowResults a { text-decoration: none; }
+#RunningWindowResults a:hover { text-decoration: underline; }
+#RunningWindowResults p, #RunningWindowResults h1, #RunningWindowResults h2, #RunningWindowResults h3, #RunningWindowResults h4, #RunningWindowResults h5, #RunningWindowResults h6 { margin: 0; line-height: 14px; }
+#RunningWindowResults .banner, #RunningWindowResults .symbolSummary, #RunningWindowResults .summary, #RunningWindowResults .resultMessage, #RunningWindowResults .specDetail .description, #RunningWindowResults .alert .bar, #RunningWindowResults .stackTrace { padding-left: 9px; padding-right: 9px; }
+#RunningWindowResults #jasmine_content { position: fixed; right: 100%; }
+#RunningWindowResults .version { color: #aaaaaa; }
+#RunningWindowResults .banner { margin-top: 14px; }
+#RunningWindowResults .duration { color: #aaaaaa; float: right; }
+#RunningWindowResults .symbolSummary { overflow: hidden; *zoom: 1; margin: 14px 0; }
+#RunningWindowResults .symbolSummary li { display: block; float: left; height: 7px; width: 14px; margin-bottom: 7px; font-size: 16px; }
+#RunningWindowResults .symbolSummary li.passed { font-size: 14px; }
+#RunningWindowResults .symbolSummary li.passed:before { color: #5e7d00; content: "\02022"; }
+#RunningWindowResults .symbolSummary li.failed { line-height: 9px; }
+#RunningWindowResults .symbolSummary li.failed:before { color: #b03911; content: "x"; font-weight: bold; margin-left: -1px; }
+#RunningWindowResults .symbolSummary li.skipped { font-size: 14px; }
+#RunningWindowResults .symbolSummary li.skipped:before { color: #bababa; content: "\02022"; }
+#RunningWindowResults .symbolSummary li.pending { line-height: 11px; }
+#RunningWindowResults .symbolSummary li.pending:before { color: #aaaaaa; content: "-"; }
+#RunningWindowResults .exceptions { color: #fff; float: right; margin-top: 5px; margin-right: 5px; }
+#RunningWindowResults .bar { line-height: 28px; font-size: 14px; display: block; color: #eee; }
+#RunningWindowResults .runningAlert { background-color: #666666; }
+#RunningWindowResults .skippedAlert { background-color: #aaaaaa; }
+#RunningWindowResults .skippedAlert:first-child { background-color: #333333; }
+#RunningWindowResults .skippedAlert:hover { text-decoration: none; color: white; text-decoration: underline; }
+#RunningWindowResults .passingAlert { background-color: #a6b779; }
+#RunningWindowResults .passingAlert:first-child { background-color: #5e7d00; }
+#RunningWindowResults .failingAlert { background-color: #cf867e; }
+#RunningWindowResults .failingAlert:first-child { background-color: #b03911; }
+#RunningWindowResults .results { margin-top: 14px; }
+#RunningWindowResults #details { display: none; }
+#RunningWindowResults .resultsMenu, #RunningWindowResults .resultsMenu a { background-color: #fff; color: #333333; }
+#RunningWindowResults.showDetails .summaryMenuItem { font-weight: normal; text-decoration: inherit; }
+#RunningWindowResults.showDetails .summaryMenuItem:hover { text-decoration: underline; }
+#RunningWindowResults.showDetails .detailsMenuItem { font-weight: bold; text-decoration: underline; }
+#RunningWindowResults.showDetails .summary { display: none; }
+#RunningWindowResults.showDetails #details { display: block; }
+#RunningWindowResults .summaryMenuItem { font-weight: bold; text-decoration: underline; }
+#RunningWindowResults .summary { margin-top: 14px; }
+#RunningWindowResults .summary .suite .suite, #RunningWindowResults .summary .specSummary { margin-left: 14px; }
+#RunningWindowResults .summary .specSummary.passed a { color: #5e7d00; }
+#RunningWindowResults .summary .specSummary.failed a { color: #b03911; }
+#RunningWindowResults .description + .suite { margin-top: 0; }
+#RunningWindowResults .suite { margin-top: 14px; }
+#RunningWindowResults .suite a { color: #333333; }
+#RunningWindowResults #details .specDetail { margin-bottom: 28px; }
+#RunningWindowResults #details .specDetail .description { display: block; color: white; background-color: #b03911; }
+#RunningWindowResults .resultMessage { padding-top: 14px; color: #333333; }
+#RunningWindowResults .resultMessage span.result { display: block; }
+#RunningWindowResults .stackTrace { margin: 5px 0 0 0; max-height: 224px; overflow: auto; line-height: 18px; color: #666666; border: 1px solid #ddd; background: white; white-space: pre; }

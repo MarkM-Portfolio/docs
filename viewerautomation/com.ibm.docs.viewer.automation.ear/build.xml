@@ -1,0 +1,25 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.docs.viewer.automation.ear" basedir="." default="main">
+	<target name="main">
+		<ear destfile="${build.home}/${ant.project.name}.ear" appxml="${basedir}/META-INF/application.xml">
+			<fileset dir="." includes="lib/**/*.jar"/>
+			<fileset dir="${build.home}/" includes="**/*.war"/>
+			<fileset dir="." includes="META-INF/"/>
+		</ear>
+		<delete>
+			<fileset dir="${build.home}/" includes="**/*.war"/>
+		</delete>
+	</target>
+</project>
+

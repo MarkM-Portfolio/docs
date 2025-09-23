@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>DocsLCExtension</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.OnPremise</groupId>
+  <artifactId>DocsLCExtension</artifactId>
+  <name>OnPremise DocsLCExtension - zip</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <build.version>${build.onpremise.version}</build.version>
+  </properties>  
+  
+  <dependencies><!--
+    <dependency>
+      <groupId>com.ibm.docs.OnPremise</groupId>
+      <artifactId>com.ibm.concord.lcfiles.ext</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>-->
+    <dependency>
+      <groupId>com.ibm.docs.OnPremise</groupId>
+      <artifactId>Concord_LC35_OSGIExtension</artifactId>
+      <version>${project.version}</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs.OnPremise</groupId>
+      <artifactId>docs-ext-version.txt</artifactId>
+      <version>${project.version}</version>
+      <type>txt</type>
+    </dependency>    
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.lcfiles.daemon</artifactId>
+      <version>${project.version}</version>
+    </dependency>    
+  </dependencies>   
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>Build OnPremise DocsLCExtension.zip</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_OnPremise_DocsLCExtension.zip.xml</descriptor>
+              </descriptors>
+              <finalName>${project.artifactId}</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>        
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>    
+</project>

@@ -1,0 +1,136 @@
+/*styles for title page title element*/
+.Lantern-title p
+{
+	text-align:right;
+}
+.Lantern-title {
+	/*font-size:44pt;*/
+	font-size:2em;
+	font-family:Arial;
+	color:#FFBA00;
+	font-weight:bold;
+}
+.Lantern-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+}
+.Lantern-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Lantern-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Lantern-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Lantern-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:right;
+	text-indent:0cm;
+}
+.Lantern-subtitle {
+	/*font-size:32pt;*/
+	font-size:1.2em;
+	font-family:Arial;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.Lantern-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+}
+.Lantern-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Lantern-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Lantern-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.Lantern-default {
+	/*font-size:44pt;*/
+	color:#FFFFFF;
+	font-family:Arial;
+}
+
+/*styles for other page (non title page) title */
+.Lantern_text-title p
+{
+	text-align:center;
+}
+.Lantern_text-title {
+	/*font-size:44pt;*/
+	font-size:2em;
+	font-family:Arial;
+	color:#FFC501;
+	font-weight:bold;
+}
+.Lantern_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+}
+.Lantern_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Lantern_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Lantern_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Lantern_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Lantern_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Lantern_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Lantern_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Lantern_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Lantern_text-outline1 {
+	/*font-size:32pt;*/
+	font-size:1.4em;
+	font-family:Arial;
+	color:#FFFFFF;
+}
+/*table*/
+.SymDefCell1 {background: none;border:0.02cm solid #FFFFFF;}  
+.SymDefCell2 {background: none;border:0.02cm solid #FFFFFF;}  
+.SymDefCell3 {background: none;border:0.02cm solid #FFFFFF;}

@@ -1,0 +1,3 @@
+({
+	auto: "Automàtic"
+})

@@ -1,0 +1,21 @@
+define({root:({	
+	label_template:"${user_label}${sessionStatus_label}${colorIndicator_label}${STStatus_label}${BIZCard_label}",
+	user_label_template:"Editor: ${userName}; ",
+	STStatus_label_template:"HCL Sametime status: ${ST_STATUS}; ",
+	stStatusMeeting:"In a Meeting",
+	stStatusMobileMeeting:"In a Meeting in mobile",
+	stStatusAvailable:"Available",
+	stStatusMobileAvailable:"Available in mobile",
+	stStatusAway:"Away",
+	stStatusMobileAway:"Away in mobile",
+	stStatusBusy:"Busy",
+	stStatusOffline:"Offline",
+	stStatusDnd:"Do Not Disturb",
+	stStatusMobileDnd:"Do Not Disturb in mobile",
+	BIZCard_label_template:"${BIZStatus}; ",
+	sessionOnline:"Is editing the document; ",
+	sessionOffline:"Is not currently editing the document; ",
+	color_on_template:"Color indicator is on - click or press enter to turn it off; ",
+	color_off_template:"Color indicator is off - click or press enter to turn it on; ",
+	color_disable_template:"The color indicator is disabled by the main menu View - Co-editing Highlights; "
+})})

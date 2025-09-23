@@ -1,0 +1,156 @@
+/*styles for title page title element*/
+.Transform-title p
+{
+	text-align:left;
+}
+.Transform-title {
+	/*font-size:36pt;*/
+	font-size:2em;
+	font-family:Arial;
+	color:#000000;
+	font-weight:bold;
+}
+.Transform-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+}
+.Transform-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Transform-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Transform-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Transform-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:left;
+	text-indent:0cm;
+}
+.Transform-subtitle {
+	/*font-size:23.4pt;*/
+	font-size:1.3em;
+	font-family:Arial;
+	color:#000000;
+	font-weight:bold;
+}
+.Transform-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+}
+.Transform-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Transform-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Transform-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.concord .Transform-datetime {
+	font-family:Arial;
+	color:#000000;
+	text-align:left;	
+}
+.concord .Transform-pagenumber {
+	font-family:Arial;
+	color:#000000;
+	text-align:right;
+}
+.concord .Transform-footer {
+	font-family:Arial;
+	color:#000000;
+	text-align:center;
+}
+.Transform_default {
+	/*font-size:44pt;*/
+	/*font-size:2em;*/
+	font-family:Arial;
+	color:#000000;
+}
+/*styles for other page (non title page) title */
+.Transform_text-title p
+{
+	text-align:center;
+}
+.Transform_text-title {
+	/*font-size:36pt;*/
+	font-size:2em;
+	font-family:Arial;
+	color:#000000;
+	font-weight:bold;
+}
+.Transform_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+		text-align:center;
+}
+.Transform_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Transform_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Transform_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Transform_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Transform_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Transform_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Transform_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Transform_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Transform_text-outline1 {
+	/*font-size:25.2pt;*/
+	font-size:1.4em;
+	font-family:Arial;
+	color:#000000;
+}
+
+body.lotusJapanese .Transform-title, body.lotusJapanese .Transform-subtitle,body.lotusJapanese .Transform_default, body.lotusJapanese .Transform_text-title,body.lotusJapanese  .Transform_text-outline1{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+body.lotusKorean .Transform-title, body.lotusKorean .Transform-subtitle, body.lotusKorean .Transform_default, body.lotusKorean .Transform_text-title,body.lotusKorean .Transform_text-outline1{
+    font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}

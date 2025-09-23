@@ -1,0 +1,72 @@
+------------
+To do this upgrade, please ask the IBMDocs developers mentioned in the SCCD ticket to join together. 
+------------
+Download the patch files from GSA server.
+File names: SC-Docs-Patch-[Build Timestamp].zip and SC-Docs-Patch-[Build Timestamp].zip.md5
+[Build Timestamp] is the build timestamp in the name of the patch file
+----------------------------------------------------------------
+Suppose we have n active Docs servers on side A
+Note--if current working side is side B, all the related nodes should be docs1b, docs2b ... docs[n]b, docsrp1b 
+For each Docs server, please repeat the operation in Part I to Part IV.
+The sequence like: 
+  Step-1, docs1a(Part I -> Part II -> Part III -> Part IV)
+  Step-2, docs2a(Part I -> Part II -> Part III -> Part IV)
+  ...
+  Step-[n], docs[n]a(Part I -> Part II -> Part III -> Part IV)
+----------------------------------------------------------------
+Step-1 for docs1a:
+  Part I: Prepare patch file
+    1. Login docs1a with user root, upload the patch file and md5 file  to /tmp
+    2. md5sum SC-Docs-Patch-[Build Timestamp].zip
+    3. cat SC-Docs-Patch-[Build Timestamp].zip.md5
+    4. compare the output. It should be the same string.
+    5. unzip -d SC-Docs-Patch-[Build Timestamp] SC-Docs-Patch-[Build Timestamp].zip
+    6. chmod -R 755 SC-Docs-Patch-[Build Timestamp] 
+    7. chown -R websphere:websphere SC-Docs-Patch-[Build Timestamp] 
+  Part II: Drop the Docs server from F5 and Docs Proxy server
+    1. Login the active GZ F5-->Local Traffic --> Nodes --> Node List
+    2. Set the partition to the related partition, and mark docs1a as Forced Offline
+    3. Login to any of the docsrp server of the same side as docs1a(such as docsrp1a), run cmd as below:
+	   cd /opt/ll/scripts/docsrp/
+       python manageZkNodes.py --action inactivating --node docs1a
+  Part III: Patch/restart to docs1a
+    1. Login docs1a
+    2. Check if wsadmin can work or not.
+      Run "sudo -u websphere /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/wsadmin.sh"
+      If it displays nothing or throws an Exception, reboot OS.
+    3. Go to /tmp/SC-Docs-Patch-[Build Timestamp]/ and run "sudo -u websphere python applypatch.py -u {was admin console user} -p {was admin console password}"
+    4. If it succeeds, please run command: "/etc/init.d/was.server1 restart" to restart docs app server. Else contact docs team to check log for details.
+    5. Check http://[server_ip]:9080/sanity/check
+  Part IV: Enable the Docs server from F5 and all Docs Proxy servers
+    1. Login to any of the Docsrp server of the same side as docs1a(such as docsrp1a), run cmd as below:
+	   cd /opt/ll/scripts/docsrp/
+       a. run script to make sure the Docs server return active
+	      python manageZkNodes.py --status --node docs1a
+       b. if docs1a is not active, contact docs team to check log for details.
+	2. Enable docs1a from F5(GZ) in Part II.
+
+Step-2 for docs2a:
+  Repeat work in Step-1 to upgrade docs2 server.
+  Change "docs1a" in Part I -> Part II -> Part III -> Part IV to "docs2a".
+...
+Step-[n] for docs[n]a:
+  Repeat work in Step-1 to upgrade docs[n]a server.
+  Change "docs1a" in Part I -> Part II -> Part III -> Part IV to "docs[n]a"
+
+-------
+ Tips
+-------
+1. How to get machine shortname
+Run the command on server to get the full host name: echo $HOSTNAME, the output like this: 
+usdl3-acb0-ap21.docsdev.cn.ibm.com,
+the short host name is the first part of the full host name, like: 
+usdl3-acb0-ap21
+
+2. Where to find websphere admin user/password
+This can be found in DPUI in Middleware Websphere Tab
+
+Rollback Steps:
+For each docs server
+1. Execute Part II
+2. Execute Part III, in step 3 of Part III, run "sudo -u websphere python rollbackChange.py {was admin console user} {was admin console password}"
+3. Execute Part IV

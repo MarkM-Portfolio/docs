@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>applications.docs</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.api.rest.sample</groupId>
+  <artifactId>com.ibm.docs.api.rest.sample.ear</artifactId>
+  <name>com.ibm.docs.api.rest.sample.ear - pom</name>
+  <packaging>pom</packaging>
+    
+  <dependencies>
+    <dependency>
+      <groupId>com.ibm.docs.api.rest.sample</groupId>
+      <artifactId>com.ibm.docs.api.rest.sample.war</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+    </dependency>
+	<dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+    </dependency>  
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>     
+    </dependency>
+	<dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
+      <dependency>
+        <groupId>com.ibm</groupId>
+        <artifactId>json4j</artifactId>
+      </dependency>		          
+  </dependencies>
+  
+  <profiles>
+    <profile>
+      <id>Profile assembly_com.ibm.docs.api.rest.sample.ear</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <file>
+          <missing>${project.basedir}/assembly_assembly_com.ibm.docs.api.rest.sample.ear.xml</missing>
+        </file>
+      </activation>   
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>build for assembly_com.ibm.docs.api.rest.sample.ear</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>${project.basedir}/assembly_com.ibm.docs.api.rest.sample.ear.xml</descriptor>
+                  </descriptors>
+                  <archiverConfig>
+                    <appxml>${project.basedir}/META-INF/application.xml</appxml>
+                    <manifest>${project.basedir}/META-INF/MANIFEST.MF</manifest>
+                  </archiverConfig>
+                  <finalName>${project.artifactId}</finalName>
+                  <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+  </profile>  
+</profiles>
+</project>

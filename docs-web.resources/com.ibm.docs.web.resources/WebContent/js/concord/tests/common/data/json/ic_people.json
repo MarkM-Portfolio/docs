@@ -1,0 +1,97 @@
+{"items":
+[
+	{
+		"hasEmail":true,
+		"userType":"regular",
+		"userState":"active",
+		"name":"docs09",
+		"hasPersonalPlace":true,
+		"nonce":"29798d33-c46d-42ad-acff-9c460af1223e",
+		"policy":{
+			"following":true,
+			"capabilities":
+			{
+				"canView":
+				{
+					"groups":true,
+					"person":
+					{
+						"everyone":true
+					},
+					"folders":
+					{
+						"public":true
+					},
+					"files":
+					{
+						"public":true
+					}
+				},
+				"canSync":
+				{
+					"folders":
+					{
+						"personal":false,
+						"community":false
+					},
+					"files":
+					{
+						"personal":false,
+						"community":false
+					}
+				},
+				"canCreate":
+				{
+					"folders":
+					{
+						"public":true,
+						"external":true,
+						"internal":true
+					},
+					"files":
+					{
+						"public":true,
+						"external":true,
+						"internal":true
+					}
+				}
+			},
+			"contentFollowing":true,
+			"resharing":
+			{
+				"defaultValue":true,
+				"enabled":true
+			},
+			"previewEnabled":true,
+			"fileSyncEnabled":true,
+			"roundTripEditingEnabled":false,
+			"organizationPublic":true,
+			"isExternalEnabled":true,
+			"isExternalDefault":false,
+			"groupsEnabled":true
+		},
+		"isExternal":true,
+		"preferences":
+		{
+			"pageSize":25,
+			"defaultView":"Details",
+			"fileSync":
+			{
+				"addOnPin":false,
+				"addOnUploadPersonalFiles":false
+			},
+			"preferredColumns":0
+		},
+		"id":"5c11a0c0-7f6f-1033-982d-eba7a40afa7a",
+		"email":"docs09@mailinator.com",
+		"photoURL":"",
+		"roles":["reader","person","files-owner"]
+	}
+],
+"pageSize":10,
+"searchType":"fastlist",
+"label":"name",
+"totalSize":1,
+"identifier":"id",
+"page":1
+}

@@ -1,0 +1,125 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+
+
+Portions Copyright IBM Corp., 2010-2011.
+*/
+
+CKEDITOR.plugins.setLang( "a11yhelp", "en",
+{
+
+	// When translating all fields in accessibilityHelp object, do not translate anything with the form ${xxx}
+	accessibilityHelp :
+	{
+		title : "辅助功能选项指示信息",
+		contents : "帮助内容。要关闭此对话框，请按 ESC 键。",
+		legend :
+		[
+			{
+				name : "常规",
+				items :
+				[
+					{
+						name : "编辑器工具栏",
+						legend:
+							"按 ${toolbarFocus} 以浏览到工具栏。" +
+							"通过 TAB 键和 SHIFT-TAB 分别移动到下一个和上一个工具栏组。" +
+							"通过向右箭头或向左箭头分别移动到下一个和上一个工具栏按钮。" +
+							"按空格键或 ENTER 键以激活工具栏按钮。"
+					},
+
+					{
+						name : "编辑器对话框",
+						legend :
+							"在对话框内，按 TAB 键以浏览到下一个对话框字段，按 SHIFT + TAB 以移动到上一个字段，按 ENTER 键以提交对话框，按 ESC 键以取消对话框。" +
+							"对于具有多个选项卡页面的对话框，按 ALT + F10 以浏览到选项卡列表。" +
+							"然后，通过 Tab 键或向右箭头移动到下一个选项卡。" +
+							"通过 SHIFT + TAB 或向左箭头移动到上一个选项卡。" +
+							"按空格键或 ENTER 键以选择选项卡页面。"
+					},
+
+					{
+						name : "编辑器上下文菜单",
+						legend :
+							"按 ${contextMenu} 或“应用程序键”以打开上下文菜单。" +
+							"然后，通过 TAB 键或向下箭头移动到下一个菜单选项。" +
+							"通过 SHIFT+TAB 或向上箭头移动到上一个选项。" +
+							"按空格键或 ENTER 键以选择菜单选项。" +
+							"通过空格键、ENTER 键或向右箭头打开当前选项的子菜单。" +
+							"通过 ESC 键或向左箭头返回到父菜单项。" +
+							"通过 ESC 键关闭上下文菜单。"
+					},
+
+					{
+						name : "编辑器列表框",
+						legend :
+							"在列表框内，通过 TAB 键或向下箭头移动到下一个列表项。" +
+							"通过 SHIFT + TAB 或向上箭头移动到上一个列表项。" +
+							"按空格键或 ENTER 键以选择列表选项。" +
+							"按 ESC 键以关闭列表框。"
+					},
+
+					{
+						name : "编辑器元素路径栏（如果可用*）",
+						legend :
+							"按 ${elementsPathFocus} 以浏览到元素路径栏。" +
+							"通过 Tab 键或向右箭头移动到下一个元素按钮。" +
+							"通过 SHIFT+TAB 或向左箭头移动到上一个按钮。" +
+							"按空格键或 ENTER 键以选择编辑器中的元素。"
+					}
+				]
+			},
+			{
+				name : "命令",
+				items :
+				[
+					{
+						name : "撤销命令",
+						legend : "按 ${undo}"
+					},
+					{
+						name : "重做命令",
+						legend : "按 ${redo}"
+					},
+					{
+						name : "粗体命令",
+						legend : "按 ${bold}"
+					},
+					{
+						name : "斜体命令",
+						legend : "按 ${italic}"
+					},
+					{
+						name : "下划线命令",
+						legend : "按 ${underline}"
+					},
+					{
+						name : "链接命令",
+						legend : "按 ${link}"
+					},
+					{
+						name : "工具栏折叠命令（如果可用*）",
+						legend : "按 ${toolbarCollapse}"
+					},
+					{
+						name : "辅助功能选项帮助",
+						legend : "按 ${a11yHelp}"
+					}
+				]
+			},
+
+			{	//added by ibm
+				name : "",
+				items :
+				[
+					{
+						name : "注释",
+						legend : "* 管理员可以禁用某些功能。"
+					}
+				]
+			}
+		]
+	}
+
+});

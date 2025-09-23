@@ -1,0 +1,71 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for the banner (layout)
+companion files: banner.css / bannerTheme.css
+companion files: bannerRTL.css / bannerThemeRTL.css*/
+/*** B A N N E R **/
+/*this is the very top of the UI, that contains the logo, application links, user name, login/logout*/
+
+
+
+.lotusui30 .lotusBanner {padding:0 15px 0 5px; background:#34363a; border-bottom: 1px solid #1a1a1a;
+	background:-moz-linear-gradient(top, #444 0%, #34363a 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #444), color-stop(100%, #34363a));}
+.lotusui_ie6 .lotusui30 .lotusBanner {margin-bottom:-3px;}
+.lotusui_ie7 .lotusui30 .lotusBanner, .lotusui_ie8 .lotusui30 .lotusBanner {margin-bottom:-1px;}
+.lotusui30 .lotusBanner .lotusLogo {outline:none;}
+.lotusui30 .lotusBanner .lotusLogo img {margin-top:13px; width:40px;height:15px;background-position:-218px -9px;}
+.lotusui_ie6 .lotusui30 .lotusBanner .lotusLogo img {margin-right:0;}
+.lotusui_ie .lotusui30 .lotusBanner .lotusLogo img {margin-top:10px;}
+.lotusui30 .lotusBanner .lotusLogo .lotusAltText {padding:0; margin:11px 0 10px 20px; color:#ccc; text-shadow:0 1px 2px #000;}
+.lotusui30 .lotusBanner a.lotusLogo:hover, .lotusui30 .lotusBanner a.lotusLogo:focus, .lotusui30 .lotusBanner a.lotusLogo:active {color:#ccc; cursor:pointer/*for IE6/7*/;}
+.lotusui30 .lotusBanner ul.lotusInlinelist li {margin:0;}
+.lotusui30 .lotusBanner ul.lotusInlinelist li a {color:#ccc; font-weight:bold; }
+.lotusui30 .lotusBanner ul.lotusLinks li a, .lotusui30 .lotusBanner ul.lotusLinks li a:visited, .lotusui30 .lotusBanner ul.lotusLinks li a:hover, .lotusui30 .lotusBanner ul.lotusLinks li a:active {color:#ccc;}
+.lotusui30 .lotusBanner ul.lotusLinks li.lotusSelected a {text-decoration:none;}
+.lotusui30 .lotusBanner ul li a {padding:11px 10px 10px;}
+.lotusui30 .lotusBanner ul.lotusUtility li a {padding:12px 10px 11px;}
+.lotusui30 .lotusBanner ul.lotusInlinelist li.lotusUser a {padding-left:10px;}
+.lotusui_ie .lotusui30 .lotusBanner ul.lotusInlinelist li a, .lotusui_ie .lotusui30 .lotusBanner .lotusLogo .lotusAltText {line-height:1.25em;} /*fixes IE6 alignment issues, now that we have arrow icons in some of the items*/
+.lotusui30 .lotusBanner .lotusDropDownSprite {background-position:0 -656px;}
+.lotusui30 .lotusBanner .lotusUnreadBadge {background:#ccc; color:#000; text-shadow:0 1px 2px #ccc;}
+.lotusui30 .lotusBanner ul.lotusUtility a.lotusShare:hover, .lotusui30 .lotusBanner ul.lotusUtility a.lotusShare:focus  {background:#fff;}
+.lotusui30 a.lotusShare:hover .lotusShareConnector, .lotusui30 a.lotusShare:focus .lotusShareConnector {background-position:-990px -13px; width:7px; height:7px; }
+
+
+
+
+
+.lotusui30 .lotusBanner {position:relative; 
+	-moz-box-shadow:-4px 2px 4px #b6b6b6;
+	-webkit-box-shadow:-4px 2px 4px #b6b6b6;
+	-box-shadow:-4px 2px 4px #b6b6b6;}
+.lotusui30 .lotusBanner ul.lotusLinks a, .lotusui30 .lotusBanner ul.lotusLinks a:visited, .lotusui30 .lotusBanner ul.lotusLinks a:hover, .lotusui30 .lotusBanner ul.lotusLinks a:focus, .lotusui30 .lotusBanner ul.lotusLinks a:active {text-decoration:none;}
+.lotusui30 .lotusBanner ul.lotusInlinelist a {text-shadow:0 1px 2px #000;}
+.lotusui30 .lotusBanner ul.lotusLinks li.lotusHover a, .lotusui30 .lotusBanner ul.lotusLinks li a:hover, .lotusui30 .lotusBanner ul.lotusLinks li a:focus {color:#fff; text-shadow:0 1px 1px #000; background:#434549;
+	background:-moz-linear-gradient(#525459, #434549);
+	background:-webkit-gradient(linear, left top, left bottom, from(#525459), to(#434549));}
+.lotusui30 .lotusBanner ul.lotusLinks li a:hover .lotusUnreadBadge, .lotusui30 .lotusBanner ul.lotusLinks li a:focus .lotusUnreadBadge, .lotusui30 .lotusBanner .lotusHover .lotusUnreadBadge {background:#fff; text-shadow:0 1px 2px #fff;}
+.lotusui30 .lotusBanner ul.lotusUtility li.lotusLast a, .lotusui_ie6 .lotusui30 .lotusBanner ul.lotusUtility li.lotusLast a {border-left:1px solid #777;}
+
+/***********************************************************/
+
+
+/*****************************/
+/*** N A V I G A T I O N   M E N U ***/
+/*****************************/
+
+
+
+
+
+.lotusui30 .lotusNavMenu {border:3px solid #999/*this is needed for IE*/; border:3px solid rgba(42, 44, 48, 0.5);
+	-moz-box-shadow: 0 0 4px #222;
+	-webkit-box-shadow: 0 0 4px #222;
+	box-shadow: 0 0 4px #222;
+}
+
+/***********************************************************/
+

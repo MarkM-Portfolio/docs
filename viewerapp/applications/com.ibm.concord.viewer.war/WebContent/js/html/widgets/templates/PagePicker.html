@@ -1,0 +1,10 @@
+<div dojoAttachPoint="outerNode" class="pagePicker" style="text-align: center;">
+	<div dojoAttachPoint="pageInputWrapper" class="inputWrapper">
+	    <button dojoType="dijit.form.Button" title= "${labelPrev}" iconClass= "prevButton" class="lotusDijitButtonImg" showLabel="false" dojoAttachPoint="pagePrevImg" label="${labelPrev}" dojoAttachEvent="onClick:_onPrevSelect"></button>
+		<label for="selector_page" alt="${labelPageInput}"></label>
+		<input id="selector_page" type="text" dojoType="dijit.form.NumberTextBox" class="pageInput" constraints='{pattern: "#"}' regExpGen='return "\\d+";' dojoAttachPoint="pageInput"/>
+		<span>/</span>
+		<span dojoAttachPoint="textPageNum"></span>
+		<button dojoType="dijit.form.Button" title= "${labelNext}" iconClass= "nextButton" class="lotusDijitButtonImg" showLabel="false" dojoAttachPoint="pageNextImg" label="${labelNext}" dojoAttachEvent="onClick:_onNextSelect"></button>
+	</div>
+</div>

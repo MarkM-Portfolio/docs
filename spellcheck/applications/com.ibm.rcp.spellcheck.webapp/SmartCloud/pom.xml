@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>com.ibm.rcp.spellcheck.webapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  
+  <groupId>com.ibm.docs.SmartCloud</groupId>
+  <artifactId>com.ibm.rcp.spellcheck.webapp</artifactId>
+  <name>SmartCloud: com.ibm.rcp.spellcheck.webapp - war</name>
+  <packaging>jar</packaging>
+  
+  <properties>
+    <build.version>${build.smartcloud.version}</build.version>
+  </properties>   
+
+  <dependencies>
+    <!-- Project dependencies -->
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.spellcheck.web</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <!-- eclipse dependency -->
+    <dependency>
+      <groupId>org.eclipse</groupId>
+      <artifactId>org.eclipse.equinox.servletbridge</artifactId>
+      <version>NONE</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/../WebContent/WEB-INF/lib/servletbridge.jar</systemPath>
+    </dependency>
+    <!-- WAS lib dependencies -->
+    <dependency>
+      <groupId>com.ibm.websphere.lib</groupId>
+      <artifactId>j2ee</artifactId>
+    </dependency>
+  </dependencies>  
+  
+  <build>
+      <!--Build the parent src -->
+    <plugins>  
+      <plugin>  
+        <groupId>org.codehaus.mojo</groupId>  
+        <artifactId>build-helper-maven-plugin</artifactId>  
+        <executions>
+          <execution>
+            <id>add-source</id>  
+            <phase>generate-sources</phase>  
+            <goals>  
+              <goal>add-source</goal>  
+            </goals>  
+            <configuration>  
+              <sources>  
+                <source>${project.parent.basedir}/src</source>
+              </sources>  
+            </configuration>  
+          </execution>
+          <execution>
+            <id>add-resources</id>  
+            <phase>generate-resources</phase>  
+            <goals>  
+              <goal>add-resource</goal>  
+            </goals>  
+            <configuration>  
+              <resources>
+                <resource>
+                  <directory>${project.parent.basedir}/src</directory>
+                  <filtering>false</filtering>
+                  <excludes>
+                    <exclude>**/*.java</exclude>
+                  </excludes>          
+                </resource>
+              </resources>
+            </configuration>  
+          </execution>           
+        </executions>
+      </plugin>
+    </plugins>    
+  </build>  
+
+</project>

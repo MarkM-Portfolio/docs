@@ -1,0 +1,251 @@
+/* required for IE only */
+html {
+	height: 100% !important;
+	overflow: visible;
+}
+
+body {
+	background-color: #FFFFFF;
+	margin: 0px;
+	/* for Safari & Firefox */
+	height: 100% !important; 
+	overflow: visible;
+}
+
+#presHtmlPrintToolbar {
+	position: relative;
+	vertical-align: middle;
+	color: #000000;
+	background-color: #F4F4F4;
+	border-bottom: 1px solid #A9A9A9;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-top: none;
+	margin-left: none;
+	margin-right: none;
+	margin-bottom: 20px;
+	overflow: visible;
+	width: 100%;
+	height: 28px;
+	z-index:2147483646;
+}
+
+#presHtmlPrintSelect_dropdown
+{
+	z-index:2147483647 !important;
+}
+
+#presHtmlPrintButton {
+	float: left;
+	cursor: pointer !important;
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+div[dir="rtl"] #presHtmlPrintButton {
+    float: right;
+}
+
+#presHtmlPrintContentSelectDiv {
+	float: left;
+	overflow: visible;
+	margin-top: 4px;
+	margin-left: 10px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+div[dir="rtl"] #presHtmlPrintContentSelectDiv {
+	float: right;
+	margin-left: 4px;
+	margin-right: 10px;
+}
+
+#presHtmlPrintHelpButton {
+	float: right;
+	cursor: pointer !important;
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+div[dir="rtl"] #presHtmlPrintHelpButton {
+    float: left;
+}
+
+#presHtmlPrintHelp {
+	position: absolute;
+	overflow: hidden;
+	display: none;
+	color: #000000;
+	background-color: #F4F4F4;
+	border-bottom: 1px solid #A9A9A9;
+	border-top: 1px solid #A9A9A9;
+	border-left: 1px solid #A9A9A9;
+	border-right: 1px solid #A9A9A9;
+	margin-top: none;
+	margin-left: none;
+	margin-right: none;
+	margin-bottom: none;
+	width: 350px;
+	height: auto;
+	top: 6px;
+	right: 24px;
+}
+
+div[dir="rtl"] #presHtmlPrintHelp {
+    direction: rtl;
+    left: 24px;
+    right: auto;
+}
+
+#presHtmlPrintHelpInnerDiv {
+	position: relative;
+	display: block;
+	color: #000000;
+	border-bottom: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: auto;
+	height: auto;
+}
+
+.presHtmlPrintToolbarSlidesLoading {
+	display: none;
+}
+
+.presHtmlPrintToolbarSlidesLoaded {
+	display: block;
+}
+
+.presHtmlPrintLoadingMsg {
+	display: block;
+	position : relative;
+	width: 100%;
+	height: 100%;
+	border: none;
+	text-align: center;
+}
+
+.presHtmlPrintLoadingMsgDone {
+	display: none;
+}
+
+.presHtmlPrintHelpParagraph {
+	margin-bottom: 10px !important;
+	padding: 0 0 0 0 !important;
+}
+
+.presHtmlPrintHelpList {
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 0 !important;
+}
+
+.presHtmlPrintHelpListItem {
+	padding: 0 0 0 0 !important;
+}
+
+.presHtmlPrintSlide {
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.presHtmlPrintNotes {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: none;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.presHtmlPrintHeaderRow {
+	height:  4%;
+	vertical-align: top;
+}
+
+.presHtmlPrintHeaderRow {
+	height:  4%;
+	vertical-align: bottom;
+}
+
+.presHtmlPrintSlideRow {
+	width: 100%;
+}
+
+.presHtmlPrintHeaderFooterLeftCell {
+	width: 50%;
+}
+
+.presHtmlPrintHeaderFooterRightCell {
+	width: 50%;
+	text-align: right;
+}
+
+.presHtmlPrintSlidePage {
+	position : relative;
+	width: 100%;
+	height:  auto;
+	border: none;
+	cellpadding: 2px;
+}
+
+@media print {
+	.omitFromHtmlPrint {
+    	display: none;
+	}
+	
+	.presHtmlPrintSlide {
+		position: relative;
+		border-top: 1pt solid #000000;
+		border-left: 1pt solid #000000;
+		border-right: 1pt solid #000000;
+		border-bottom: 1pt solid #000000;
+		margin-bottom: 2pt;
+		margin-top: 2pt;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: visible; /* required for IE */
+	}
+	
+	.presHtmlPrintNotes {
+		position: relative;
+		font-size: 12pt;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		margin-bottom: none;
+		margin-top: none;
+		margin-left: none;
+		margin-right: none;
+		overflow: visible; /* required for IE */
+	}
+	
+	.presHtmlPrintSlidePage {
+		position : relative;
+		width: 100%;
+		height:  90%;
+		border: none;
+		cellpadding: 2pt;
+	}
+}

@@ -1,0 +1,22 @@
+	MENUS_BEGIN
+    // GUID:MENUID																PARENT GROUP																		PRIORITY	TYPE						BUTTONTEXT		MENUTEXT								TOOLTIPTEXT				COMMANDTEXT
+	// C# UML Menu
+	guidRTEPackageMenuGroup:IDM_RTE_CSHARP_MENU									GUID_RoseGrpId:IDG_ROSE_ME_NEWITEM_MENU,											0xffff,     ,							"Add &C-Sharp",      "Add &C-Sharp";
+
+	// VB UML Menu
+	guidRTEPackageMenuGroup:IDM_RTE_VB_MENU										GUID_RoseGrpId:IDG_ROSE_ME_NEWITEM_MENU,											0xffff,     ,							"Add &Visual Basic",			 "Add &Visual Basic";
+	
+  MENUS_END
+  
+    BUTTONS_BEGIN
+    // GUID:CMDID																PARENT MENU																			PRIORITY	ICON							TYPE	FLAGS														BUTTON TEXT						MENU TEXT				TOOLTIP TEXT				COMMANDTEXT
+
+	// RTE Synchronize Command
+	guidRTEPackageCommandSet:IDC_RTE_SYNCHRONIZE,								guidRTEPackageMenuGroup:IDG_RTE_SYNC_MENUCONTROLLER_RTE_TOOLBAR,					0x0100,		bmpTwoWaySync,					BUTTON, IconAndText,												"&Synchronize",					"&Synchronize",			"Synchronize",				"Synchronize";
+	guidRTEPackageCommandSet:IDC_RTE_SYNCHRONIZE,								guidRTEPackageMenuGroup:IDG_RTE_COMMANDMENU,										0x0100,		bmpTwoWaySync,					BUTTON, IconAndText | CommandWellOnly,								"&Synchronize",					"&Synchronize",			"Synchronize",				"Synchronize";
+
+	// RTE Generate Code Command
+	guidRTEPackageCommandSet:IDC_RTE_GENERATOCODE,								guidRTEPackageMenuGroup:IDG_RTE_SYNC_MENUCONTROLLER_RTE_TOOLBAR,					0x0200,		bmpUpdateCode,					BUTTON, IconAndText,												"&Generate Code",				"&Generate Code",		"Generate Code",			"Generate Code";
+	guidRTEPackageCommandSet:IDC_RTE_GENERATOCODE,								guidRTEPackageMenuGroup:IDG_RTE_COMMANDMENU,										0x0200,		bmpUpdateCode,					BUTTON, IconAndText | CommandWellOnly,								"&Generate Code",				"&Generate Code",		"Generate Code",			"Generate Code";
+ 
+  BUTTONS_END

@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>conversion</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.symphony.conversion.converter.libre</artifactId>
+  <name>com.ibm.symphony.conversion.converter.libre - jar</name>
+  <packaging>jar</packaging>
+  <dependencies>    
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.symphony.conversion.service</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.symphony.conversion.service.common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.symphony.conversion.converter.sym</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+	 <!-- 3rd party dependencies -->
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+    </dependency>
+    <dependency>
+	  <groupId>com.ibm</groupId>
+	  <artifactId>lc.customAuthClient</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>com.outsideinsdk</groupId>
+      <artifactId>Export</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.openoffice</groupId>
+        <artifactId>unoil</artifactId>
+        <version>4.1.2</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.openoffice</groupId>
+          <artifactId>jurt</artifactId>
+          <version>4.1.2</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.openoffice</groupId>
+          <artifactId>juh</artifactId>
+          <version>4.1.2</version>
+      </dependency>
+      <dependency>
+          <groupId>org.openoffice</groupId>
+          <artifactId>bootstrap-connector</artifactId>
+          <version>0.1.1</version>
+      </dependency>
+  </dependencies>
+
+</project>

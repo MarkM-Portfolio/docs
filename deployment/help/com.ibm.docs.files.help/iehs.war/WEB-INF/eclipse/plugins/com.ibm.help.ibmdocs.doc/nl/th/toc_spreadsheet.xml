@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2556--><!--© ลิขสิทธิ์ของ IBM Corp. 2556-->
+<toc label="การทำงานกับสเปร็ดชีต" topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="การทำงานกับสเปร็ดชีต" href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="การสร้างและการอิมพอร์ตสเปร็ดชีต"
+             href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="การสร้างสเปร็ดชีตจากเท็มเพลต"
+                href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="การเปลี่ยนรูปแบบไฟล์ดีฟอลต์ของสเปร็ดชีต"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="การอัพโหลดสเปร็ดชีตเพื่อแบ่งใช้"
+                href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="การอิมพอร์ตสเปร็ดชีตที่มีอยู่"
+                href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="การอิมพอร์ตไฟล์ข้อความไปเป็นสเปร็ดชีต"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="การเปิดไฟล์ Excel ที่ป้องกันรหัสผ่านไว้"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="ความเข้ากันได้ของไฟล์และการเอ็กซ์พอร์ตสเปร็ดชีต"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="รูปแบบไฟล์ที่สนับสนุนในสเปร็ดชีต"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="การบันทึกสเปร็ดชีต" href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="การเผยแพร่เวอร์ชันของสเปร็ดชีต"
+                href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="การเอ็กซ์พอร์ตสเปร็ดชีตไปยังไฟล์รูปแบบอื่น"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="การเอ็กซ์พอร์ตสเปร็ดชีตไปยังไฟล์ CSV"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="การแบ่งใช้สเปร็ดชีต" href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="การแบ่งใช้สเปร็ดชีตกับบุคคลหรือชุมชน"
+                href="text/spreadsheet/s_share_file.html"/>
+         <topic label="การตั้งค่าระดับการเข้าถึงสำหรับสเปร็ดชีต"
+                href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="การทำงานร่วมกันบนสเปร็ดชีตในแบบเรียลไทม์"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="การแก้ไขร่วมในแบบเรียลไทม์ในสเปร็ดชีต"
+                href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="เกี่ยวกับการแก้ไขร่วมในสเปร็ดชีต"
+                   href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="การแก้ไขร่วมกับผู้อื่นในสเปร็ดชีต"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="การแสดงการเปลี่ยนแปลงในสเปร็ดชีตจากเอดิเตอร์แต่ละราย"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="การทำงานร่วมกันโดยใช้ข้อคิดเห็นในสเปร็ดชีต"
+                href="text/spreadsheet/s_comments_overview.html">
+            <topic label="เกี่ยวกับข้อคิดเห็นในสเปร็ดชีต"
+                   href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="การสร้างข้อคิดเห็นในสเปร็ดชีต"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="การดูข้อคิดเห็นในสเปร็ดชีต"
+                   href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="การค้นหาข้อคิดเห็นในสเปร็ดชีต"
+                   href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="การเปลี่ยนรูปลักษณ์ของสเปร็ดชีตของคุณ"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="ฟอนต์, เส้นขอบ, และสี"
+                href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="การเปลี่ยนฟอนต์ในสเปร็ดชีต" href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="การเปลี่ยนความสูงของแถว หรือความกว้างของคอลัมน์"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="การเปลี่ยนเส้นขอบในสเปร็ดชีต"
+                href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="การเรียกคืนการจัดรูปแบบดีฟอลต์ให้กับเซลล์สเปร็ดชีต"
+                href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="การจัดรูปแบบตัวเลข" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="การป้อนและการแก้ไขข้อมูล" href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="การแก้ไขข้อมูลระดับต้น"
+                href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="การค้นหาและการแทนที่เนื้อหาเซลล์"
+                href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="การเพิ่มไฮเปอร์ลิงก์ในเซลล์"
+                href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="การลบลิงก์จากไฮเปอร์ลิงก์"
+                href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="การใช้การเติมข้อมูลแบบอัตโนมัติเพื่อเติมช่วง"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="การผสานหรือการแบ่งเซลล์ชีต"
+                href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="การตรวจสอบการสะกดคำสเปร็ดชีต"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="การพิมพ์สเปร็ดชีตไปยังไฟล์ PDF"
+                href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="การทำงานกับอิมเมจในสเปร็ดชีต"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="การแทรกอิมเมจในสเปร็ดชีต"
+                href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="การย้ายหรือการปรับขนาดอิมเมจในสเปร็ดชีต"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="การตั้งค่าคุณสมบัติอิมเมจในสเปร็ดชีต"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="การทำงานกับแผนภูมิในสเปร็ดชีต"
+             href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="การแทรกแผนภูมิในสเปร็ดชีต"
+                href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="การย้ายและการปรับขนาดแผนภูมิในสเปร็ดชีต"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="การคัดลอกแผนภูมิในสเปร็ดชีต"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="การจัดการกับช่วงข้อมูล" href="text/spreadsheet/s_data_ranges.html">
+         <topic label="การเรียงลำดับข้อมูล" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="การใช้ตัวกรองแบบทันที" href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="การตรึงแถวและคอลัมน์ในสเปร็ดชีต"
+                href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="การซ่อนแถวและคอลัมน์" href="text/spreadsheet/s_hide.html"/>
+         <topic label="การแสดงแถวและคอลัมน์" href="text/spreadsheet/s_show.html"/>
+         <topic label="การอ้างอิงเซลล์จากชีตอื่น"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="การคัดลอกข้อมูลและอิมเมจในสเปร็ดชีต"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="การตั้งชื่อช่วง" href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="การค้นหาหรือการแก้ไขช่วงที่ระบุชื่อ"
+                href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="การลบช่วงที่ระบุชื่อ" href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="การอ้างอิงที่เกี่ยวข้องและแบบสัมบูรณ์"
+                href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="การใช้สูตรในการคำนวณ"
+             href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="เกี่ยวกับสูตรและฟังก์ชัน"
+                href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="รายการของฟังก์ชัน" href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="การจัดกลุ่มตามหมวดหมู่" href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="ฟังก์ชันอาร์เรย์" href="text/spreadsheet/s_functions_array.html">
+                  <topic label="ค่าคงที่แบบอินไลน์อาร์เรย์ในสูตร"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="การคำนวณอาร์เรย์แบบมีเงื่อนไข"
+                         href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="ฟังก์ชันวันที่และเวลา" href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="ฟังก์ชันวิศวกรรม" href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="ฟังก์ชันข้อมูล" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="ฟังก์ชันโลจิคัล" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="ฟังก์ชันทางคณิตศาสตร์" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="ฟังก์ชันสเปร็ดชีต" href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="ฟังก์ชันทางสถิติ" href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="ฟังก์ชันข้อความ" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="ฟังก์ชัน ABS" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="ฟังก์ชัน ACOS" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="ฟังก์ชัน ACOSH" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="ฟังก์ชัน ADDRESS" href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="ฟังก์ชัน AND" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="ฟังก์ชัน ASIN" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="ฟังก์ชัน ASINH" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="ฟังก์ชัน ATAN" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="ฟังก์ชัน ATAN2" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="ฟังก์ชัน ATANH" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="ฟังก์ชัน AVERAGE"
+                   href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="ฟังก์ชัน AVERAGEA"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="ฟังก์ชัน BASE" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="ฟังก์ชัน CEILING" href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="ฟังก์ชัน CHOOSE" href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="ฟังก์ชัน CHAR" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="ฟังก์ชัน CODE" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="ฟังก์ชัน COLUMN" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="ฟังก์ชัน COLUMNS" href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="ฟังก์ชัน COMBIN" href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="ฟังก์ชัน CONCATENATE"
+                   href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="ฟังก์ชัน CONVERT"
+                   href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="ฟังก์ชัน COS" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="ฟังก์ชัน COSH" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="ฟังก์ชัน COUNT"
+                   href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="ฟังก์ชัน COUNTA"
+                   href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="ฟังก์ชัน COUNTBLANK"
+                   href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="ฟังก์ชัน COUNTIF" href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="ฟังก์ชัน DATE" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="ฟังก์ชัน DATEDIF"
+                   href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="ฟังก์ชัน DATEVALUE"
+                   href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="ฟังก์ชัน DAY" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="ฟังก์ชัน DAYS" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="ฟังก์ชัน DEGREES" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="ฟังก์ชัน DOLLAR" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="ฟังก์ชัน ERRORTYPE"
+                   href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="ฟังก์ชัน EVEN" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="ฟังก์ชัน EXP" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="ฟังก์ชัน EXACT" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="ฟังก์ชัน FACT" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="ฟังก์ชัน FALSE" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="ฟังก์ชัน FIXED" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="ฟังก์ชัน FLOOR" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="ฟังก์ชัน FORMULA" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="ฟังก์ชัน FREQUENCY"
+                   href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="ฟังก์ชัน HLOOKUP" href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="ฟังก์ชัน HOUR" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="ฟังก์ชัน HYPERLINK"
+                   href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="ฟังก์ชัน IF" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="ฟังก์ชัน INDEX" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="ฟังก์ชัน INDIRECT"
+                   href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="ฟังก์ชัน INT" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="ฟังก์ชัน ISBLANK" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="ฟังก์ชัน ISERR" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="ฟังก์ชัน ISERROR" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="ฟังก์ชัน ISEVEN" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="ฟังก์ชัน ISFORMULA"
+                   href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="ฟังก์ชัน ISLOGICAL"
+                   href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="ฟังก์ชัน ISNA" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="ฟังก์ชัน ISNONTEXT"
+                   href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="ฟังก์ชัน ISNUMBER" href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="ฟังก์ชัน ISODD" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="ฟังก์ชัน ISREF" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="ฟังก์ชัน ISTEXT" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="ฟังก์ชัน LARGE"
+                   href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="ฟังก์ชัน LEFT" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="ฟังก์ชัน LEN" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="ฟังก์ชัน LENB" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="ฟังก์ชัน LN" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="ฟังก์ชัน LOG" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="ฟังก์ชัน LOG10" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="ฟังก์ชัน LOWER" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="ฟังก์ชัน MAX" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="ฟังก์ชัน MEDIAN" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="ฟังก์ชัน MID" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="ฟังก์ชัน MIN" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="ฟังก์ชัน MINUTE" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="ฟังก์ชัน MMULT" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="ฟังก์ชัน MOD" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="ฟังก์ชัน MODE" href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="ฟังก์ชัน MONTH" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="ฟังก์ชัน N" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="ฟังก์ชัน NA" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="ฟังก์ชัน NETWORKDAYS"
+                   href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="ฟังก์ชัน NOT" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="ฟังก์ชัน NOW" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="ฟังก์ชัน ODD" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="ฟังก์ชัน OFFSET" href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="ฟังก์ชัน OR" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="ฟังก์ชัน PI" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="ฟังก์ชัน POWER" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="ฟังก์ชัน PRODUCT" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="ฟังก์ชัน PROPER" href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="ฟังก์ชัน RADIANS" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="ฟังก์ชัน RAND" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="ฟังก์ชัน RANDBETWEEN"
+                   href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="ฟังก์ชัน RANK" href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="ฟังก์ชัน REPLACE" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="ฟังก์ชัน REPT" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="ฟังก์ชัน RIGHT" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="ฟังก์ชัน RIGHTB" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="ฟังก์ชัน ROMAN" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="ฟังก์ชัน ROUND" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="ฟังก์ชัน ROUNDDOWN"
+                   href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="ฟังก์ชัน ROUNDUP" href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="ฟังก์ชัน ROW" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="ฟังก์ชัน ROWS" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="ฟังก์ชัน SEARCH" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="ฟังก์ชัน SECOND" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="ฟังก์ชัน SHEET" href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="ฟังก์ชัน SIN" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="ฟังก์ชัน SINH" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="ฟังก์ชัน SMALL"
+                   href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="ฟังก์ชัน SQRT" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="ฟังก์ชัน STDEV" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="ฟังก์ชัน STDEVP" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="ฟังก์ชัน SUBSTITUTE"
+                   href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="ฟังก์ชัน SUBTOTAL" href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="ฟังก์ชัน SUM" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="ฟังก์ชัน SUMIF" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="ฟังก์ชัน SUMPRODUCT"
+                   href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="ฟังก์ชัน T" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="ฟังก์ชัน TEXT" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="ฟังก์ชัน TIME" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="ฟังก์ชัน TODAY" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="ฟังก์ชัน TRIM" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="ฟังก์ชัน TRUE" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="ฟังก์ชัน TRUNC" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="ฟังก์ชัน TYPE" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="ฟังก์ชัน UPPER" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="ฟังก์ชัน VALUE" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="ฟังก์ชัน VLOOKUP" href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="ฟังก์ชัน VAR" href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="ฟังก์ชัน VARA" href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="ฟังก์ชัน VARP" href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="ฟังก์ชัน VARPA"
+                   href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="ฟังก์ชัน WEEKDAY" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="ฟังก์ชัน WEEKNUM"
+                   href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="ฟังก์ชัน YEAR" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="การอ้างอิงแบบด่วนของสเปร็ดชีต" href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="ช็อตคัตคีย์บอร์ดสเปร็ดชีต"
+             href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

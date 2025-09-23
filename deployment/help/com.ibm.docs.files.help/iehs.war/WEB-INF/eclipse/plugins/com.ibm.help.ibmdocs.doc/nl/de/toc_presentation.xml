@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Mit Präsentationen arbeiten"
+     topic="text/presentation/presentations_frame.html">
+   <topic label="Mit Präsentationen arbeiten"
+          href="text/presentation/presentations_frame.html">
+      <topic label="Präsentationen erstellen und hochladen"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Präsentationen erstellen"
+                href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Standarddateiformat von Präsentationen ändern"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Präsentationen zur Freigabe hochladen"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Vorhandene Präsentationen importieren"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Dateikompatibilität und Export von Präsentationen"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="In Presentations unterstützte Dateiformate"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Präsentationen speichern"
+                href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Veröffentlichen einer Präsentationsversion"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Präsentationen in andere Dateiformate exportieren"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Präsentationen freigeben"
+             href="text/presentation/p_sharing_a_document.html">
+         <topic label="Präsentationen für Personen oder Communitys freigeben"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Zugriffsebenen für Präsentationen festlegen"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="An Präsentationen in Echtzeit zusammenarbeiten"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Co-Editing in Echtzeit in Präsentationen"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Info zu Co-Editing in Präsentationen"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Co-Editing in Präsentationen gemeinsam mit anderen"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Änderungen von Bearbeitern in Präsentationen anzeigen"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Mithilfe von Kommentaren in Präsentationen zusammenarbeiten"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Informationen zu Kommentaren in Präsentationen"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Kommentare in Präsentationen erstellen"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Kommentare in Präsentationen anzeigen"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="In Präsentationen nach Kommentaren suchen"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Folien formatieren" href="text/presentation/p_formatting_slides.html">
+         <topic label="Schriftarten in Präsentationen ändern"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Objekte auswählen und verschieben"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Objektreihenfolge anordnen"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Nummern oder Aufzählungszeichen zu Folien hinzufügen"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Folienlayout anwenden"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Masterstil ändern"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Rechtschreibprüfung in Präsentationen"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Präsentationen speichern und drucken"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Präsentationen als PDF-Datei drucken"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Mit Bildern in Präsentationen arbeiten"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Grafiken in Präsentationen einfügen"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Grafiken in Präsentationen verschieben und die Größe verändern"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Bildeigenschaften in Präsentationen festlegen"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Mit Folien arbeiten" href="text/presentation/p_slide_show.html">
+         <topic label="Präsentationen wiedergeben"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Folienübergänge zwischen Folien anwenden"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Folien löschen" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Folien hinzufügen" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Folien verschieben" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Folien duplizieren" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Mit Tabellen in Präsentationen arbeiten"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Tabellen in Präsentationen erstellen"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Zeilen und Spalten in Präsentationen hinzufügen"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Zeilen und Spalten in Präsentationen verschieben"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Größe von Zeilen und Spalten in Präsentationen ändern"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Text in Zellen ausrichten"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Tabellenstile in Präsentationen ändern"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Tabellenüberschrift in Präsentationen definieren"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Sprechernotizen bearbeiten"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Kurzübersicht Präsentationen" href="text/presentation/p_quick_ref.html"/>
+      <topic label="Tastenkombinationen für Präsentationen"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Class-Path: lib/json4j.jar 
+ com.ibm.concord.platform.jar 
+ lib/antlr-3.1.1-runtime.jar 
+ com.ibm.concord.document.services.jar 
+ com.ibm.concord.spi.jar 
+ com.ibm.concord.job.jar 
+ com.ibm.concord.collaboration.jar 
+ com.ibm.concord.draft.jar 
+ com.ibm.concord.document.common.jar 
+ lib/jackson-core-asl-1.7.3.jar 
+ com.ibm.concord.config.jar 
+ lib/commons-collections-3.2.1.jar 
+ lib/poi-3.8-20120326.jar 
+ com.ibm.concord.spreadsheet.common.jar 
+ com.ibm.docs.directory.jar
+

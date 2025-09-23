@@ -1,0 +1,342 @@
+{
+	"component":
+	{
+		"components":
+		[
+			{
+				"id":"com.ibm.concord.viewer.platform.repository",
+				"class":"com.ibm.concord.viewer.platform.repository.RepositoryComponent",
+				"config":
+				{
+					"adapters" : 
+        			[
+						{
+							"id" : "viewer.storage",
+							"class" : "com.ibm.concord.viewer.localtest.integration.repository.LocalFSRepository",
+							"config" :
+							{
+								"folder" : "c:/IBM/Viewer/shared/data/fake_filer"
+							}
+						} 
+			      	],
+			      	"default" : "viewer.storage",
+					"uploadRepository": "viewer.storage"
+				}
+			},
+			{
+				"id":"com.ibm.concord.viewer.platform.conversion",
+				"class":"com.ibm.concord.viewer.platform.conversion.ConversionComponentImpl",
+				"config":
+				{
+					 "symphonyServerConfig" : "symphony-config.xml",
+					 "path": "c:/IBM/Viewer/shared/data/conversion",
+					  "conversionService":
+					 {
+					 		"serviceurl":"http://localhost:9080/conversion/ConversionService",
+					 		"resulturl":"http://localhost:9080/conversion/ConversionResult",
+					 		"intervalofretry":"500",
+					 		"maxPerRoute":"100",
+					 		"maxTotal":"200",
+							"sheet_stellent":{
+								"outputid": "FI_PNG",
+								"usedocpagesettings": "false",
+								"defaultheight": "17",
+								"defaultwidth": "55",
+								"units": "inches",
+								"usedocsettings": "false",
+								"ssshowgridlines": "true",
+								"imagecropping": "nocropping",
+								"graphicoutputdpi": "96",
+								"graphicsizemethod": "quick",
+								"quickthumbnail": "true",
+								"graphicwidthlimit": "0",
+								"graphicwidth": "1024",
+								"whattoexport": "range",
+								"exportstartpage": "0",
+								"exportendpage": "100",
+								"thumbnailwidth": "300",
+								"convertthumbnail":"false"
+							},
+							"text_stellent":{
+								"outputid":"FI_PNG",
+								"graphicoutputdpi": "96",
+								"graphicsizemethod": "quick",
+								"quickthumbnail": "true",
+								"graphicwidth": "1024",
+								"thumbnailwidth": "300"
+							},
+							"pres_stellent":{
+								"outputid":"FI_JPEG",
+								"jpegquality":"80",
+								"graphicoutputdpi": "96",
+								"graphicsizemethod": "quick",
+								"quickthumbnail": "true",
+								"graphicwidth": "1024",
+								"thumbnailwidth": "300"
+							},
+							"stellent":{
+								"outputid":"FI_PNG",
+								"graphicwidth": "1024",
+								"thumbnailwidth": "300",
+								"graphicoutputdpi": "96",
+								"graphicsizemethod": "quick",
+								"quickthumbnail": "true"
+							}
+					 }
+				}
+			},
+			{
+				"id":"com.ibm.concord.viewer.platform.cache",
+				"class":"com.ibm.concord.viewer.platform.cache.CacheComponent",
+				"config":
+				{
+					"adapter" : 
+        			{
+        				"id" : "nls",
+			          	"class" : "com.ibm.concord.viewer.cache.spi.impl.NFSCacheStorageAdapter"
+			        }
+				}
+			},
+			{
+				"id":"com.ibm.concord.viewer.platform.auth",
+				"class":"com.ibm.concord.viewer.platform.auth.AuthenticationComponentImpl",
+				"config":
+				{
+					"adapter":
+					{
+						"class":"com.ibm.concord.viewer.localtest.integration.auth.LocalTestAuth",
+						"config" : {
+							"test_users" : "local-test-users.json",
+						}
+					}
+				}
+			},
+			{
+				"id":"com.ibm.concord.viewer.platform.directory",
+				"class":"com.ibm.concord.viewer.platform.directory.DirectoryComponentImpl",
+				"config":
+				{
+					"adapter":
+					{
+						"class":"com.ibm.concord.viewer.localtest.integration.directory.LocalTestDirectory",
+						"config" : {
+							"test_users" : "local-test-users.json"
+						}
+					}
+				}
+			},
+			{
+				"id":"com.ibm.concord.viewer.document.services",
+				"class":"com.ibm.concord.viewer.document.services.DocumentServiceComponentImpl",
+				"config":
+				{
+					"providers" : [
+						{
+							"name":"text",
+							"class":"com.ibm.concord.viewer.document.common.TextDocumentService",
+							"config":
+							{
+								"limits":
+								{
+									"max-size": "51200"
+								}
+							}
+						},
+						{
+							"name":"sheet",
+							"class":"com.ibm.concord.viewer.document.common.SpreadsheetDocumentService",
+							"config":
+							{
+								"partial-level": "1",
+								"limits":
+								{
+									"max-size": "51200"
+								}
+							}
+						},
+						{
+							"name":"pres",
+							"class":"com.ibm.concord.viewer.document.common.PresentationDocumentService",
+							"config":
+							{
+								"limits":
+								{
+									"max-size": "51200"
+								}
+							}
+						},
+						{
+							"name":"pdf",
+							"class":"com.ibm.concord.viewer.document.common.PDFDocumentService",
+							"config":
+							{
+								"limits":
+								{
+									"max-size": "51200"
+								}
+							}
+						}
+					],
+					"mime-types" : {
+						"application/msword" : "text",
+						"application/vnd.ms-powerpoint" : "pres",
+						"application/vnd.openxmlformats-officedocument.wordprocessingml.document" : "text",
+						"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" : "sheet",
+						"application/vnd.openxmlformats-officedocument.presentationml.presentation" : "pres",
+						"application/vnd.oasis.opendocument.text" : "text",
+						"application/vnd.ms-excel" : "sheet",
+						"application/vnd.oasis.opendocument.spreadsheet" : "sheet",
+						"application/vnd.oasis.opendocument.presentation" : "pres",
+						"application/pdf" : "pdf"
+					}
+				}
+			},
+			{
+				"id":"com.ibm.concord.viewer.platform.journal",
+				"class":"com.ibm.concord.viewer.platform.journal.JournalComponentImpl",
+				"config":
+				{
+					"adapter":
+					{
+						"class":"com.ibm.concord.viewer.localtest.integration.journal.JournalLocalTestJMSPublisher",
+						"config" : {
+						}
+					}
+				}
+			}
+		]
+	},
+	"docentrycache" :
+	{
+		"timetolive-seconds" : "60"
+	},
+	"House_Keeping" :
+	{
+		"frequency" : "weekly",
+		"age_threshold_of_rendition_old_version" : "1",
+		"age_threshold_of_rendition_latest_version" : "30",
+		"size_threshold_of_rendition_cache" : "256"
+	},
+	"IHS_fast_download" :
+	{
+		"enabled" : "false",
+		"cache_root_alias" : "/rendition_content"
+	},
+	"S2S" :
+	{
+		"token" : "fallseason2011"
+	},
+	"browserCache" :
+	{
+		"enabled" : "true"
+	},
+	"http-params":
+	{
+		"cache-control":"365"
+	},
+	"docs_integration":
+	{
+		"host": "http://localhost:9080",
+		"docs_context_root": "/docs/app/doc/lcfiles/{docid}/edit/content",
+		"docs_enabled": "true",
+		"doc_not_supported_by_docs": "pdf",
+		"draft_home": "C:/IBM/Editor/data/shared/draft",
+		"snapshot_dir": "snapshot",
+		"snapshot_service_uri": "/docs/api/docsvr/concord.storage/{docid}/draft/snapshot"
+	},
+	"Help" :
+	{
+		"text_helpurl" : "/help/index.jsp?topic=/com.ibm.cloud.files.doc/documents_viewer_Files.html",  
+		"sheet_helpurl" : "/help/index.jsp?topic=/com.ibm.cloud.files.doc/spreadsheets_viewer_Files.html",        
+		"pres_helpurl" : "/help/index.jsp?topic=/com.ibm.cloud.files.doc/presentations_viewer_Files.html" 	
+	},
+	"deployment":
+	{
+		"env":"localtest"
+	},
+	"iNotes":
+	{
+		"browser_cache": "No",
+		"enable_print": "No"
+	},
+	"file_size_threshold" :
+	{
+		"application/msword" : "0",
+		"application/vnd.ms-powerpoint" : "0",
+		"application/vnd.openxmlformats-officedocument.wordprocessingml.document" : "0",
+		"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" : "0",
+		"application/vnd.openxmlformats-officedocument.presentationml.presentation" : "0",
+		"application/vnd.oasis.opendocument.text" : "0",
+		"application/vnd.ms-excel" : "0",
+		"application/vnd.oasis.opendocument.spreadsheet" : "0",
+		"application/vnd.oasis.opendocument.presentation" : "0",
+		"application/pdf" : "0"
+	},
+	"ProxyErrorRetry":
+	{
+		"count": "60"
+	},
+	"HtmlViewerConfig":
+	{
+		"enabled": "true",
+		"snapshot_mode": "true",
+		"partial-level": "2",
+		"partial-row-count": "200",
+		"hbtimeout":"3000",
+		"text-limits":
+		{
+			"max-size": "10240",
+			"actual-max-size": "11264",
+			"max-image-size": "8192",
+			"max-html-size":"4096"
+		},
+		"sheet-limits":
+		{
+			"max-size": "4196",
+			"actual-max-size": "5120",
+			"max-image-size": "8192",
+			"max-text-size": "2048",
+			"max-sheet-rows": "10000",
+			"max-sheet-columns": "1024",
+			"cell-max-num":"200000",
+			"formula-cell-max-num":"20000"
+		},
+		"pres-limits":
+		{
+			"max-size": "30720",
+			"max-image-size": "8192",
+			"actual-max-size": "36864"
+		},
+		"CustomizedFonts" :
+		{
+			"enabled": "true",
+			"general": ["Arial/Arial, Helvetica, sans-serif", "Times New Roman/Times New Roman, Times, serif"],
+			"globalized":
+			{
+				"ca": [],
+				"da": [],
+				"de": [],
+				"el": [],
+				"en": [],
+				"es": [],
+				"fi": [],
+				"fr": [],
+				"it": [],
+				"ja": [],
+				"ko": [],
+				"nl": [],
+				"no": [],
+				"pl": [],
+				"pt": [],
+				"pt-br": [],
+				"ru": [],
+				"sv": [],
+				"th": [],
+				"tr": [],
+				"zh-cn": [],
+				"zh-tw": []
+			}
+		}
+	}
+}
+

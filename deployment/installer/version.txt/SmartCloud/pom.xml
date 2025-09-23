@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>version.txt</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.SmartCloud</groupId>
+  <artifactId>version.txt</artifactId>
+  <name>SmartCloud: HCL Docs version.txt - pom</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <build.version>${build.smartcloud.version}</build.version>
+  </properties>
+  
+  <modules>
+    <module>Docs</module>
+    <module>ProxyFilter</module>
+    <module>Conversion</module>
+    <module>DocsExtension</module>
+    <module>ViewerExtension</module>
+    <module>Sanity</module>
+    <module>ViewerWar</module>
+    <module>ViewerInstaller</module>
+    <module>ViewerSanity</module>
+    <module>ViewerVerse</module>
+    <module>ViewerVerseInstaller</module>
+  </modules>  
+
+</project>

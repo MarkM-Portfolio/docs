@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="rpm" basedir="." default="rpm">
+
+	<property name="build.version" value="1.40.42" />
+	<property name="build.timestamp" value="1234-2234" />
+    <property name="build.rpm.command" value="${basedir}/buildRpm"/>
+    <property name="rpm.folder" value="SC-TAM-WebSEAL-Config-ViewerNext"/>
+    <property name="checkError" value="false"/> 
+    <property name="build.home" value="bin"/>
+
+	<target name="prereq">
+		<condition property="dorpm">
+    		<os family="unix"/>
+		</condition>
+		<echo message="${dorpm}"/>
+	</target>
+	
+	<target name="quitrpm" unless="dorpm">
+		<echo message="Ignore Webseal RPM package"/>
+	</target>
+
+	<target name="clean">
+		<echo message="clean do nothing now."/>
+		<delete dir="${basedir}/../target" includeEmptyDirs="true"/>
+		<delete dir="${build.home}/${rpm.folder}" includeEmptyDirs="true"/>
+	</target>
+	
+    <target name="rpm" depends="clean, prereq, quitrpm" if="dorpm">
+        <!-- replace timestamp 20120425-0100 with 2012040100 -->
+        <echo message="${build.timestamp}" file="${basedir}\timestamp.tmp" />
+        <loadfile property="rpm.timestamp" srcFile="${basedir}\timestamp.tmp">
+            <filterchain>
+                <tokenfilter>
+                    <replaceregex pattern="-" replace="" flags="g"/>
+                </tokenfilter>
+            </filterchain>
+        </loadfile>        
+       
+        <replace file ="${basedir}\rpm.spec" token="@@@version@@@" value="${build.version}" />
+        <replace file ="${basedir}\rpm.spec" token="@@@timestamp@@@" value="${rpm.timestamp}" />
+         
+        <exec executable="chmod">
+            <arg value="+x"/>
+            <arg value="${build.rpm.command}"/>
+        </exec>
+        <exec executable="chmod" failonerror="${checkError}">
+            <arg value="755"/>
+            <arg value="-R"/>
+            <arg value="${basedir}/files"/>
+        </exec>	
+
+        <!-- do not break build before enable RPM totally -->
+        <exec executable="bash" failonerror="${checkError}" >
+            <arg line="${build.rpm.command} -basedir ${basedir} -timestamp"/>
+        </exec>
+
+        <mkdir dir="${build.home}/${rpm.folder}"/>
+        <copy todir="${build.home}/${rpm.folder}" failonerror="${checkError}">
+            <fileset dir="${basedir}/../target/RPMS/x86_64" includes="*.rpm"/>
+        </copy>
+        
+        <delete dir="${basedir}/../target" includeEmptyDirs="true"/>
+    </target>  
+</project>
+
+

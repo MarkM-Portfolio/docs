@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ConcordConnectionUIExtension" basedir="." default="concord.build">
+   	<target name="lcextUIEAR.build" depends="lcextUIWAR.build">
+        <ant dir="com.ibm.concord.lcfiles.ext" inheritAll="true"/>
+   	</target>
+   	<target name="lcextUIWAR.build" depends="">
+        <ant dir="com.ibm.concord.lcfiles.ext.war" inheritAll="true"/>
+   	</target>
+	<target name="lc35.osgi" depends="">
+	    <ant dir="com.ibm.concord.lcfiles.extension.provision" inheritAll="true"/>
+	</target>
+	<target name="provision.package" depends="lc35.osgi">
+		<zip destfile="${build.home}/Concord_LC35_OSGIExtension.zip">
+			<fileset dir="${build.home}" includes="com.ibm.concord.lcfiles.extension.provision*.jar"/>
+		</zip>
+	</target>	
+	<target name="docs.daemon.package" depends="">
+		<ant dir="com.ibm.docs.lcfiles.daemon" inheritAll="true"/>
+	</target>
+    <target name="deployment">
+		<copy todir="../Concord_LCExtensions/com.ibm.docs.common.deployment">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.common.deployment"/>
+		</copy>	
+		<ant dir="com.ibm.docs.common.deployment" inheritAll="true"/>
+		<ant dir="com.ibm.docs.lcfiles.ext.deployment" inheritAll="true" />
+	</target>
+    <target name="license.build">
+			<ant dir="com.ibm.docs.lcfiles.ext.license" inheritAll="true"/>
+	</target>	
+	<target name="concord.build" depends="lcextUIEAR.build, provision.package, docs.daemon.package, deployment, license.build">
+		<zip destfile="${build.home}/DocsLCExtension.zip">
+			<fileset dir="${build.home}" includes="**/*.ear"/>
+			<fileset dir="${build.home}" includes="Concord_LC35_OSGIExtension.zip"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.docs.lcfiles.daemon.jar"/>
+            <zipfileset dir="${build.home}/installer" prefix="installer" />
+            <zipfileset dir="${build.home}/License" prefix="License"/>
+			<zipfileset dir="${build.home}/config" prefix="config"/>
+		</zip>		
+		<zip destfile="${build.home}/viewer_offerings_ext.zip">
+			<zipfileset dir="${build.home}" includes="com.ibm.concord.lcfiles.extension.provision*.jar" prefix="docsext"/>
+			<zipfileset dir="${build.home}" includes="**/com.ibm.docs.lcfiles.daemon.jar" prefix="docsext"/>
+		</zip>		
+        <delete includeemptydirs="true">
+	        <fileset dir="${build.home}">
+			    <include name="com.ibm.concord.lcfiles.extension.provision*.jar"/>
+	   	        <exclude name="DocsLCExtension.zip" />
+				<exclude name="viewer_offerings_ext.zip" />
+	        	<exclude name="**/report/**" />
+	        </fileset>
+		</delete>
+	</target>
+</project>
+

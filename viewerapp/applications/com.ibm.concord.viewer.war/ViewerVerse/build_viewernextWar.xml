@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="webviewer" basedir="." default="viewernext.build">
+	<property name="tab" value="&#x0009;" />
+	<property name="viewernext.lan.filter" value="${tab}&lt;filter&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;LanguageFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;filter-class&gt;com.ibm.concord.viewer.filters.LanguageFilter&lt;/filter-class&gt;${line.separator}${tab}&lt;/filter&gt;${line.separator}"/>
+	<property name="viewernext.lan.mapping" value="${tab}&lt;filter-mapping&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;LanguageFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;url-pattern&gt;/app/*&lt;/url-pattern&gt;${line.separator}${tab}&lt;/filter-mapping&gt;${line.separator}"/>
+    
+    <!--
+        <filter-class>com.ibm.concord.viewer.filters.SessionUserFilter</filter-class>
+		<init-param>
+			<param-name>com.ibm.ws.webcontainer.async-supported</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+    -->
+	<property name="sessionfilter.class" value="&lt;filter-class&gt;com.ibm.concord.viewer.filters.SessionUserFilter&lt;/filter-class&gt;${line.separator}${tab}${tab}&lt;init-param&gt;${line.separator}${tab}${tab}${tab}&lt;param-name&gt;com.ibm.ws.webcontainer.async-supported&lt;/param-name&gt;${line.separator}${tab}${tab}${tab}&lt;param-value&gt;true&lt;/param-value&gt;${line.separator}${tab}${tab}&lt;/init-param&gt;${line.separator}${tab}&lt;/filter&gt;"/>
+	<!--
+        <filter-mapping>
+            <filter-name>SessionUserFilter</filter-name>
+            <url-pattern>/api/*</url-pattern>
+        </filter-mapping>
+    -->
+    <property name="sessionfilter.mapping" value="&lt;filter-mapping&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;SessionUserFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;url-pattern&gt;/api/*&lt;/url-pattern&gt;${line.separator}${tab}&lt;/filter-mapping&gt;"/>
+		
+	<target name="viewernext.build">
+		<!--
+			inject an SC filter to web.xml.  The classes are provided by smartcloud spi which is a shared library provided by AC team 
+			
+			    <filter>
+			        <filter-name>LanguageFilter</filter-name>
+			        <filter-class>com.ibm.concord.viewer.filters.LanguageFilter</filter-class>
+			    </filter>
+				...
+				<filter-mapping>
+					<filter-name>SessionUserFilter</filter-name>
+					<url-pattern>/api/*</url-pattern>
+				</filter-mapping>
+			    <filter-mapping>
+			        <filter-name>LanguageFilter</filter-name>
+			        <url-pattern>/*</url-pattern>
+			    </filter-mapping>
+		-->	
+        <copy todir="${project.build.directory}" file="../WebContent/WEB-INF/web.xml"/> 
+	    <replace file="${project.build.directory}/web.xml" token="${sessionfilter.class}" value="${sessionfilter.class}${line.separator}${viewernext.lan.filter}"/>
+		<replace file="${project.build.directory}/web.xml" token="${sessionfilter.mapping}" value="${sessionfilter.mapping}${line.separator}${viewernext.lan.mapping}"/>
+	</target>
+</project>

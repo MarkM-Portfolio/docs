@@ -1,0 +1,40 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for tables
+companion file is tables.css*/
+/*** T A B L E S ***/
+/*styles for displaying our data*/
+/*includes vertical tables, horizontal tabular display (summary, detail, and grid views) and highlighted information (announcements)*/
+.lotusVertTable th{color:#666;}
+.lotusTable{border-bottom-color:#e5e5e5;}
+.lotusTable td, .lotusTable th.lotusRowHeader, .lotusTable th.lotusSubHeader{border-top-color:#e5e5e5}
+.lotusTable .lotusLast td, .lotusTable .lotusLast th.lotusRowHeader{border-bottom-color:#e5e5e5}
+.lotusTable .lotusAltRow td, .lotusTable .lotusAltRow th.lotusRowHeader{background-color:#f8f8f8;}
+.lotusTable th.lotusAltCell, .lotusTable td.lotusAltCell{background-color:#f5f5f5;border-right-color:#fff;border-bottom-color:#fff}
+.lotusTable h4.lotusComplete, .lotusTable h4.lotusComplete a{color:#666}
+.lotusTable h5{color:#4f9815}
+.lotusTable caption, .portlet-table caption{color:#666;background-color:#f3f3f3;border-color:#e0e0e0;}
+.lotusTable .lotusSS{color:#666;}
+.lotusTable .lotusType{color:#666;}/*indicates entry types*/
+.lotusPrivate{background-image:url(../../images/iconPrivate.png)}/*private entry*/
+.lotusSecure{background-image:url(../../images/iconSecure.png)}/*secure entry*/
+/*[sprite]*/
+.lotusSpritesOn .lotusPrivate{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2767px}/*private entry*/
+.lotusSpritesOn .lotusSecure{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -3145px}/*secure entry*/
+/*[/sprite]*/
+.lotusTable .lotusPaging, .lotusCaption .lotusPaging, .portlet-table .lotusPaging{background-color:#f3f3f3}
+.lotusTable .lotusPaging td, .portlet-table .lotusPaging td{border-color:#e0e0e0;}
+/*announcements*/
+.lotusInfoTable{background-color:#f0f0f0;background-image:url("../../images/accentBkgd.png");border-color:#e3e3e3;}
+.lotusInfoTable h2 {color:#73BE59;}
+.lotusInfoTable .lotusClose{border-color:#b0b0b0}
+.lotusInfoTable .lotusClose:hover, .lotusInfoTable .lotusClose:focus{border-color:#918f8f}
+.lotusCaption .lotusPaging, .lotusCaption .lotusPaging td{background-color:transparent}
+.lotusCaption select{color:#666}
+/*[sprite]*/
+.lotusSpritesOn .lotusInfoTable{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -450px}
+/*[/sprite]*/
+/***********************************************************/
+

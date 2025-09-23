@@ -1,0 +1,255 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+companion files: deprecated.css / deprecatedTheme.css
+companion files: deprecatedRTL.css / deprecatedThemeRTL.css*/
+/************* D E P R E C A T E D   S T Y L E S ******************/
+/*base styles*/
+
+/*breadcrumbs with active dividers*/
+.lotusui30 .lotusBreadcrumbs .lotusDivider{padding:0 5px;background:url(../../images/lotusSprite-8bit.png) 0 -102px no-repeat;text-decoration:none;text-decoration:none !important;}
+
+/*button in left column, set width*/
+/*use lotusBtn, instead*/
+
+
+
+.lotusui30 .lotusButton a, 
+.lotusui30 .lotusButton a:visited{color:#222;}
+.lotusui30 .lotusDialog .lotusDialogHeader2{padding:12px 12px 12px 20px;margin:0 !important;/*so it doesn't pick up the margins from lotusForm*/position:relative;}
+.lotusui30 .lotusDialog .lotusDialogHeader2 .lotusHeading{font-size:1.2em;font-weight:bold;}
+.lotusui30 .lotusDialog .lotusDialogHeader2 .lotusClose {position:absolute; top:-18px; right:-18px; padding:0; background:none; border:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;}
+.lotusImagesOff .lotusui30 .lotusDialog .lotusDialogHeader2 .lotusClose {top:10px; right:10px;}
+.lotusui30 .lotusDialog .lotusDialogHeader2 .lotusClose img {background-image:url(../../images/lotusHSprite-8bit.png); background-position:-110px 0; width:32px; height:32px; opacity:1; filter:alpha(opacity=100);}
+
+
+/*link buttons*/
+
+
+
+.lotusui30 span.lotusBtn{padding:0;border-width:0;}
+.lotusui30 span.lotusBtn a, .lotusui30 span.lotusBtn a:visited, .lotusui30 span.lotusBtn a:hover, .lotusui30 span.lotusBtn a:focus, .lotusui30 span.lotusBtn a:active, .lotusui30 input.lotusFormButton, .lotusui30 button.lotusFormButton{border:1px solid #aaa;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;color:#000;}
+.lotusui30 span.lotusBtn a{padding:2px 8px 4px;}
+.lotusui30 span.lotusBtn a:hover, .lotusui30 span.lotusBtn a:focus, .lotusui30 span.lotusBtn a:active, .lotusui30 .lotusFormButton:hover, .lotusui30 .lotusFormButton:focus, .lotusui30 .lotusFormButton:active, .lotusui30 .lotusButton:hover, .lotusui30 .lotusButton:focus, .lotusui30 .lotusButton:active{border:1px solid #666;}
+
+/***********************************************************/
+
+/*dialog variations*/
+
+
+
+
+
+
+
+.lotusui30 .lotusFieldBorder{background-color:#eee;} 
+
+
+
+
+/*table-based form*/
+
+
+
+/*inline form background color is set in lotusTable component*/
+.lotusui30 .lotusForm .lotusFieldBorder{background-color:#eee}
+.lotusui30 .lotusForm .lotusFormTable .lotusFormFooter {background-color:#eee;border-width:1px 0 0;border-style:solid;border-color:#aaa;}
+.lotusui30 .lotusForm{background-color:#f4f5f6;}
+.lotusui30 .lotusFormPlain{background-color:#fff;}
+.lotusui30 .lotusColLeft .lotusForm, 
+.lotusui30 .lotusColRight .lotusForm, 
+.lotusui30 .lotusColLeft .lotusForm .lotusFormTable .lotusFormFooter, 
+.lotusui30 .lotusColRight .lotusForm .lotusFormTable .lotusFormFooter, {background-color:transparent;border-width:0;}
+
+
+/*First version of div-based forms*/
+
+
+
+
+
+/*deprecated menu styles*/
+.lotusui30 .lotusMenu h2{margin:0 0 7px 10px;padding:0;font-size:1em;}
+
+/*deprecated message styles*/
+
+/*** M E S S A G E S ***/
+/*these are the yellow warning/error messages that show up at the top of the content area*/
+
+
+
+.lotusui30 .lotusMessage{background-color:#ffe3e0;border-color:#efa6a5;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.lotusui30 .lotusWarning{background-color:#ffffbc;border-color:#f6e692;}
+.lotusui30 .lotusSuccess{background-color:#ecf9df;border-color:#c8e2b8;}
+.lotusui30 .lotusInfo{background-color:#e6f1fe;border-color:#b9cfeb;}
+.lotusui30 .lotusConfirm {background-color:#ecf9df;border-color:#c8e2b8;}
+
+/***********************************************************/
+
+
+.lotusui30 .lotusConfirm {background-color:#ecf9df;border-color:#c8e2b8;} /*these have been changed to lotusSuccess*/
+.lotusui30 .lotusIconMsgConfirm {background-image:url(../../images/lotusHSprite-8bit.png);width:16px;height:16px;background-repeat:no-repeat;display:-moz-inline-box;display:inline-block;background-position:0 -8px;}
+
+/*this is the old, combined tips/help component*/
+
+/*** I N F O   B O X ***/ 
+/*this is used for help and tips*/
+
+
+
+/*----------------------INFO BOX------------------------*/
+.lotusui30 .lotusColLeft .lotusInfoBox, .lotusui30 .lotusColRight .lotusInfoBox{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.lotusui30 .lotusInfoBox{border-color:#efd159;}
+.lotusui30 .lotusHelp .lotusInfoBox{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;background-color:#fff;border-width:0;}
+/***pulled from layout.css because this version is being deprecated*/
+.lotusui30 .lotusColLeft .lotusInfoBox, .lotusui30 .lotusColRight .lotusInfoBox{margin:0 15px 15px;}
+
+/***********************************************************/
+
+
+
+
+/*S E C T I O N */
+/*this is used to space out different elements in all three columns*/
+/*a section contains a header*/
+
+
+
+.lotusui30 .lotusSection{margin:0 0 20px;padding:0;border-width:0;width:auto;}
+.lotusui30 .lotusSection h2, .lotusui30 .dijitTitlePaneTitle{margin-bottom:0;padding:4px 5px 6px;font-size:1em;color:#000;-webkit-box-shadow:#eee 0px 3px 5px;-moz-box-shadow:#eee 0 3px 5px;box-shadow:#eee 0 3px 5px;border:1px solid #ccc;background-color:#f4f4f4;background-image:none;background-image:-moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));background-position:left top;-moz-border-radius-topright:3px;-moz-border-radius-topleft:3px;-webkit-border-top-right-radius:3px;-webkit-border-top-left-radius:3px;border-top-right-radius:3px;border-top-left-radius:3px;}
+.lotusui30 .lotusSection .lotusDragHandle{left:0;}
+.lotusui30 .lotusSection .lotusChunk h3{margin-top:5px;}
+.lotusui30 .lotusSection .lotusSectionBody{margin:0;padding:5px 10px;border-width:0 1px 1px 1px;border-style:solid;border-color:#ccc;background-color:#fff;-webkit-box-shadow:#eee 0 3px 5px;-moz-box-shadow:#eee 0 3px 5px;box-shadow:#eee 0 3px 5px;}
+.lotusui30 .lotusSection .lotusChunk{margin-top:0;margin-bottom:5px;}
+
+/****************************************************************/
+
+
+
+
+/*** W I D G E T ***/
+
+
+
+.lotusui30 .lotusWidget{margin:0 0 20px;padding:0;border-width:0;width:auto;}
+.lotusui30 .lotusWidget h2{margin-bottom:0;padding:5px 5px 5px 10px;font-size:1em;color:#000;border:1px solid #ccc;background-color:#f4f4f4;
+        -webkit-box-shadow:#eee 0px 3px 5px;-moz-box-shadow:#eee 0 3px 5px;box-shadow:#eee 0 3px 5px;-moz-border-radius-topright:3px;-moz-border-radius-topleft:3px;-webkit-border-top-right-radius:3px;-webkit-border-top-left-radius:3px;border-top-right-radius:3px;border-top-left-radius:3px;}
+.lotusui30 .lotusWidget h2 a, .lotusui30 .lotusWidget h2 a:visited, .lotusui30 .lotusWidget h2 a:hover, .lotusui30 .lotusWidget h2 a:focus, .lotusui30 .lotusWidget h2 a:active{color:#222;}
+.lotusui30 .lotusWidget .lotusWidgetBody{margin:0;padding:5px 10px;background-color:#fff;
+        -webkit-box-shadow:#eee 0 3px 5px;-moz-box-shadow:#eee 0 3px 5px;box-shadow:#eee 0 3px 5px;border-width:0 1px 1px 1px;border-style:solid;border-color:#ccc;}
+.lotusui30 .lotusWidgetPlain .lotusWidgetBody{border-width:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+.lotusui30 .lotusWidget .lotusChunk{margin-top:0;margin-bottom:5px;}
+.lotusui30 .lotusWidget .lotusWidgetFooter .lotusPaging{margin:0;padding:5px 0;}
+.lotusui30 .lotusWidget .lotusList{margin:0 -10px;} /*allows selection to extend to the left and right of the list items*/
+.lotusui30 .lotusWidget .lotusList li{padding-left:10px;padding-right:10px;}
+
+/***********************************************************/
+
+
+
+/*** W I D G E T ***/
+
+
+
+.lotusui30 .lotusWidget2{margin:0 0 20px;padding:0;border-width:0;width:auto;}
+.lotusui30 .lotusWidget2 h2{margin-bottom:0;padding:5px 5px 5px 10px;font-size:1em;color:#000;
+    -webkit-box-shadow:#eee 0px 3px 5px;-moz-box-shadow:#eee 0 3px 5px;box-shadow:#eee 0 3px 5px;border:1px solid #ccc;background-color:#f4f4f4;background-image:none;background-image:-moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));background-position:left top;-moz-border-radius-topright:3px;-moz-border-radius-topleft:3px;-webkit-border-top-right-radius:3px;-webkit-border-top-left-radius:3px;border-top-right-radius:3px;border-top-left-radius:3px;}
+.lotusui30 .lotusWidgetPlain h2{border-width:1px;}
+.lotusui30 .lotusWidget2 h2 a, .lotusui30 .lotusWidget2 h2 a:visited, .lotusui30 .lotusWidget2 h2 a:hover, .lotusui30 .lotusWidget2 h2 a:focus, .lotusui30 .lotusWidget2 h2 a:active{color:#222;}
+.lotusWidget2 h3{margin:0;padding:4px 0;}
+.lotusui30 .lotusWidget2 .lotusWidgetBody{margin:0;padding:5px 10px;background-color:#fff;
+    -webkit-box-shadow:#eee 0 3px 5px;-moz-box-shadow:#eee 0 3px 5px;box-shadow:#eee 0 3px 5px;border-width:0 1px 1px;border-style:solid;border-color:#ccc;}
+.lotusui30 .lotusWidgetPlain .lotusWidgetBody{border-width:0;
+    -webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+.lotusui30 .lotusWidget2 .lotusChunk{margin-top:0;margin-bottom:5px;}
+.lotusui30 .lotusWidget2 .lotusWidgetFooter{border-width:0 1px 1px 1px;border-style:solid;border-color:#ccc;background-color:#fff;
+    -webkit-box-shadow:#eee 0 3px 5px;-moz-box-shadow:#eee 0 3px 5px;box-shadow:#eee 0 3px 5px;height:auto;}
+.lotusui30 .lotusWidget2 .lotusWidgetFooter .lotusPaging{margin:0;padding:5px 0;}
+
+/***********************************************************/
+
+
+.lotusui30 .lotusColLeft .lotusWidget2 .lotusSearch .lotusText,
+.lotusui30 .lotusColRight .lotusWidget2 .lotusSearch .lotusText{margin:0 2px 0 0;width:77%;}
+
+/** W E L C O M E ***/
+.lotusui30_layout .lotusWelcome .lotusForm{margin:15px 0;}
+.lotusui30_layout .lotusWelcome input.lotusBtnSpecial{padding:2px;}
+/*welcome panel button*/
+.lotusui30_layout .lotusWelcomeBox a.lotusClose{padding:0;border-width:0;background:none;}
+.lotusui30_layout .lotusWelcomeBox a.lotusClose img{background-image:url(../../images/lotusHSprite-8bit.png);background-position:-461px -10px;opacity:0.25;filter:alpha(opacity=25);}
+.lotusui30_layout .lotusWelcomeBox a.lotusClose:hover img, 
+.lotusui30_layout .lotusWelcomeBox a.lotusClose:focus img, 
+.lotusui30_layout .lotusWelcomeBox a.lotusClose:active img{opacity:0.40;filter:alpha(opacity=40);}
+/***********************************************************/
+
+
+/*this place bar shows up right below the title bar and tells user what place or community they are in*/
+
+
+
+.lotusui30 .lotusPlaceBar {margin:-7px 0 -5px; border-width:0 0 1px 0; border-color:#ccc;}
+.lotusui30 .lotusPlaceBar .lotusHeading {margin-left:0;}
+.lotusImagesOff .lotusui30 .lotusPlaceBar {margin-top:1px;}
+
+/***********************************************************/
+
+/*** T I T L E   B A R ***/
+
+/*** T I T L E   B A R 	***/
+/*the blue bar under the , that contains tabs and search UI*/
+
+
+
+.lotusui30 .lotusTitleBar {margin:0;border-bottom:8px solid #fff;background-color:#222;
+    background-image:-moz-linear-gradient(#8495ad 0, #8495ad 1px, #6f849f 1px, #3c587d 50%, #304b70 50%, #283f5e 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#8495ad), to(#283f5e), color-stop(.03, #8495ad), color-stop(.03, #6f849f), color-stop(50%, #3c587d), color-stop(50%, #304b70), color-stop(100%, #283f5e));-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
+.lotusui30 .lotusTitleBar .lotusInner, .lotusui30 .lotusTitleBar .lotusRightCorner {background-image:none;background-color:transparent;}
+.lotusui30 .lotusTitleBar .lotusRightCorner {border-bottom:1px solid #1e2f47;}
+.lotusui30 .lotusTitleBar .lotusSearch .lotusText, .lotusui30 .lotusTitleBar .lotusSearch .lotusScope, .lotusui30 .lotusTitleBar .lotusSearch .lotusBtnImg, .lotusTitleBar .lotusTabs li{border-color:#1e2f47;}
+.lotusui30 .lotusTitleBar .lotusTabs li{border-color:#1e2f47;border-bottom-color:#1e2f47;background-color:#283f5e;}
+.lotusui30 .lotusTitleBar .lotusSearch .lotusScope, .lotusui30 .lotusTitleBar .lotusSearch .lotusBtnImg{background-color:#283f5e;color:#fff;}
+.lotusui_ie6 .lotusui30 .lotusTitleBar .lotusSearch .lotusScope, .lotusui_ie6 .lotusui30 .lotusTitleBar .lotusSearch .lotusScope:visited{color:#fff;}
+.lotusui30 .lotusTitleBar .lotusTabs li.lotusSelected{border-color:#1e2f47;border-bottom-color:#fff;}
+.lotusui30 .lotusTitleBar .lotusTabs{margin-left:5px;bottom:0;}
+.lotusui_ie6 .lotusui30 .lotusTabs{bottom:-1px;}
+.lotusui30 .lotusTitleBar .lotusHeading{color:#fff;padding-top:8px;}
+.lotusui30 .lotusTitleBar .lotusTabs li{margin-right:3px;padding:0;}
+.lotusui30 .lotusTitleBar .lotusTabs li a{color:#fff;}
+.lotusui30 .lotusTitleBar .lotusTabs li a:hover, .lotusui30 .lotusTitleBar .lotusTabs li a:focus, .lotusui30 .lotusTitleBar .lotusTabs li a:active{color:#fff;}
+.lotusui30 .lotusTitleBar .lotusTabs li.lotusSelected a{background-color:#fff;color:#000;}
+.lotusui30 .lotusTitleBar .lotusSearch {top:.5em;right:20px;}
+.lotusui30 .lotusTitleBar .lotusSearch .lotusBtnImg{padding:3px;background-image:none;}
+
+/* temporary fix for search scope dropdown icon */
+.lotusui30 .lotusTitleBar .lotusSearch .lotusScope{background-position:100% -972px;}
+/*accesibility*/
+.lotusImagesOff .lotusui30 .lotusTitleBar{border-bottom-width:0;}
+.lotusImagesOff .lotusui30 .lotusTitleBar .lotusBtnImg .lotusAltText{color:#fff;}
+
+/***********************************************************/
+
+
+
+
+.lotusui30 .lotusTitleBar, 
+.lotusui30 .lotusPlaceBar{padding:0 20px;}
+
+/***********************************************************/
+
+/*** B A N N E R ***/
+
+
+
+.lotusui30 .lotusBanner ul li span.lotusUser {font-weight:normal; color:#ccc; display:block;}
+.lotusui_ie .lotusui30 .lotusBanner ul li span.lotusUser {line-height:1.25em;} /*fixes IE6 alignment issues, now that we have arrow icons in some of the items*/
+.lotusui30 .lotusBanner ul li span.lotusUser {margin:10px 0 9px; padding:2px 10px;text-shadow:0 1px 2px #000;}
+
+/***********************************************************/
+
+/*** O L D    M E S S A G E ***/
+
+/***********************************************************/

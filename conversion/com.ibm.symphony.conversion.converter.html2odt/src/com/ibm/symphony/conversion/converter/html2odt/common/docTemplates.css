@@ -1,0 +1,501 @@
+body.concord_Doc_Style_2 div.coverpage, div.coverpage_2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 	
+body.concord_Doc_Style_2 div.coverpageshapeA, div.coverpage_2 div.coverpageshapeA {
+	background-color:#0969A2;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_2 div.coverpageshapeB, div.coverpage_2 div.coverpageshapeB {
+	background-color:#FFBB00;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_2 div.coverpageshapeC, div.coverpage_2 div.coverpageshapeC {
+	background-color:#FF3D00;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_2 div.coverpage h1, div.coverpage_2 h1 {
+	font-size: 13.5pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, Times New Roman, Times, serif;
+	}
+body.concord_Doc_Style_2 div.coverpage h2, div.coverpage_2 h2 {
+	font-size: 10.5pt;
+	font-weight: normal;
+	text-transform: capitalize;
+	}
+/* LETTERHEAD */
+body.concord_Doc_Style_2 div.letterhead, div.letterhead_2 {
+	padding: 1.0583cm 0cm 0.3969cm 0cm;
+	margin: 0cm 0cm 0.7938cm 0cm;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	letter-spacing: 0.0529cm;
+	color: #333;
+	background: #fff;
+	text-transform: uppercase;
+	/* border-bottom: 3px solid #e1350d; commented out by JMT */
+	/*width: 17.1979cm; commented this out due to new page width*/
+	}
+body.concord_Doc_Style_2 div.letterhead h1, div.letterhead_2 h1 {
+	font-size: 13.5pt;
+	letter-spacing: 1;
+	margin-bottom: 0.3969cm;
+	padding: 0cm;
+	color: #e1350d;
+	}
+body.concord_Doc_Style_2 div.letterhead h2, div.letterhead_2 h2 {
+	font-size: 9pt;
+	letter-spacing: .1;
+	margin: 0cm 0cm 0.3969cm 0cm;
+	padding: 0cm;
+	}
+	
+body.concord_Doc_Style_2 div.letterhead hr, div.letterhead_2 hr {
+	border: 0;
+	color: #9E9E9E;
+	background-color: #9E9E9E;
+	height: 0.0794cm;
+	width: 100%;
+	text-align: left;
+	}	
+/* SECTION */
+body.concord_Doc_Style_2 div.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8.25pt;
+	/* border-top: 3px solid #e1350d; commented out by JMT */
+	/* border-bottom: 3px solid #e1350d; commented out by JMT */
+	padding: 0.66cm 0cm;
+	margin: 0.2646cm 0cm 0.7938cm 0cm;
+	color: #333;
+	/*width: 17.1979cm; commented this out due to new page width*/
+	}
+body.concord_Doc_Style_2 div.section h2 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: 1.5;
+	color: #e1350d;
+	}
+body.concord_Doc_Style_2 h2 {
+	font-size: 14pt;
+	font-style: normal;
+	margin: 0.5018cm 0cm 0.2018cm 0cm;
+	}
+body.concord_Doc_Style_2 h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_2 h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+body.concord_Doc_Style_2 p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 15pt; commented out by NP*/
+	font-family: Georgia, Times New Roman, Times, serif;	
+	font-size: 9.5pt;
+	}
+body.concord_Doc_Style_2 p.custom1 {
+	border-bottom:0.75pt solid #BEBEBE;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	margin: 0cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_2 p.custom2 {
+	border-bottom:0.75pt solid #BEBEBB;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	margin: 0cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_2 p.custom_header {
+	border-bottom: 1.5pt solid #E1350D;
+	margin: 0cm 0cm 0cm 0cm;
+	color:#00A6A0;
+	font-family:arial;
+	font-size:7.5pt;
+	font-weight:bold;
+	letter-spacing:0.0265cm;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	text-align:left;
+	text-transform:uppercase;
+	}	
+body.concord_Doc_Style_2 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_2 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_2 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+
+body.concord_Doc_Style_4 div.coverpage, div.coverpage_4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 	
+body.concord_Doc_Style_4 div.coverpageshapeA, div.coverpage_4 div.coverpageshapeA {
+	background-color:#EA326A;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_4 div.coverpageshapeB, div.coverpage_4 div.coverpageshapeB {
+	background-color:#2AC281;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_4 div.coverpageshapeC, div.coverpage_4 div.coverpageshapeC {
+	background-color:#D7F835;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_4 div.coverpage h1, div.coverpage_4 h1 {
+	font-size: 13.5pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, Times New Roman, Times, serif;
+	}
+body.concord_Doc_Style_4 div.coverpage h2, div.coverpage_4 h2 {
+	font-size: 10.5pt;
+	font-weight: normal;
+	text-transform: capitalize;
+	}
+/* LETTERHEAD */
+body.concord_Doc_Style_4 div.letterhead, div.letterhead_4 {
+	font-family: Courier New, Courier;
+	font-size: 9pt;
+	color: #333;
+	background: white;
+	text-align: center;
+	padding: 0.7938cm;
+	margin: 1.0583cm 0cm 1.5875cm 0cm;
+	}
+body.concord_Doc_Style_4 div.letterhead h1, div.letterhead_4 h1 {
+	font-size: 15pt;
+	letter-spacing: 2.5;
+	margin: 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	}
+body.concord_Doc_Style_4 div.letterhead h2, div.letterhead_4 h2 {
+	font-size: 10.5pt;
+	letter-spacing: 1;
+	margin: 0cm;
+	padding: 0cm;
+	color: #333;
+	line-height: 0.3704cm;
+	text-transform: none;
+	font-family: Courier New, Courier;
+	}
+
+body.concord_Doc_Style_4 div.letterhead hr, div.letterhead_4 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* SECTION */
+body.concord_Doc_Style_4 div.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	padding: 0.2646cm 0cm;
+	margin: 0.2646cm 1.3229cm 0.7938cm 1.3229cm;
+	line-height: 0.3969cm;
+	color: #333;
+	letter-spacing: .9;
+	}
+body.concord_Doc_Style_4 h2 {
+	font-size: 9.75pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: 1;
+	color: #333;
+	font-family: Courier New, Courier;
+	}
+body.concord_Doc_Style_4 h2.custom {
+	margin: 0.8117cm 0cm 0.2117cm 0cm;
+	font-style: normal;
+	}
+body.concord_Doc_Style_4 h3 {
+	font-size: 10pt;
+	margin: 0cm 0cm 0.1588cm 0cm;
+	padding-top: 0.2646cm;
+	letter-spacing: -.01;
+	font-family: Courier New, Courier;
+	text-transform: uppercase;
+	color: #333;
+	}
+body.concord_Doc_Style_4 h4 {
+	font-size: 8.25pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0.132cm;
+	letter-spacing: none;
+	font-style: light;
+	font-family: Courier New, Courier;
+	}
+body.concord_Doc_Style_4 p {
+	margin: 0.1058cm 0.1058cm 0.7408cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	font-family: Courier New, Courier, mono;
+	text-transform: none;
+	}
+
+body.concord_Doc_Style_4 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_4 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_4 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_4 div.references h2, div.references_4 h2 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: .05;
+	color: #68a818;
+	}
+body.concord_Doc_Style_4 div.references ul, div.references_4 ul {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4763cm;
+	letter-spacing: .05;
+	}
+body.concord_Doc_Style_4 div.references li, div.references_4  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4763cm;
+	letter-spacing: .05;
+	}
+
+
+/* ------------------------------------- #5 GREEN BLOCKS ---------------------------------------------- */
+
+
+/* COVERPAGE Templates : Research Paper*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_5 div.coverpage, div.coverpage_5 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_5 td.coverpageshapeA, div.coverpage_5 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_5 td.coverpageshapeB, div.coverpage_5 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_5 td.coverpageshapeC, div.coverpage_5 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_5 div.coverpageshapeA, div.coverpage_5 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_5 div.coverpageshapeB, div.coverpage_5 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_5 div.coverpageshapeC, div.coverpage_5 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_5 div.coverpage h1, div.coverpage_5 h1 {
+	}
+body.concord_Doc_Style_5 div.coverpage h2, div.coverpage_5 h2 {
+	}
+body.concord_Doc_Style_5 div.coverpage ul, div.coverpage_5 ul {
+	} 
+body.concord_Doc_Style_5 div.coverpage li, div.coverpage_5 li {
+	}
+body.concord_Doc_Style_5 div.coverpage li.authorName, div.coverpage_5 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_5 li.documentDate {
+	}
+body.concord_Doc_Style_5 div.coverpage li.contactInfo1, div.coverpage_5 li.contactInfo1 {
+	}
+body.concord_Doc_Style_5 div.coverpage li.contactInfo2, div.coverpage_5 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+
+body.concord_Doc_Style_17 div.coverpage, div.coverpage_17 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 
+/* specify both if using divisions to lay out the cover page and if using tables to lay out cover page */ 
+/*
+body.concord_Doc_Style_17 td.coverpageshapeA, div.coverpage_17 td.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_17 td.coverpageshapeB, div.coverpage_17 td.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_17 td.coverpageshapeC, div.coverpage_17 td.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_17 div.coverpageshapeA, div.coverpage_17 div.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_17 div.coverpageshapeB, div.coverpage_17 div.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_17 div.coverpageshapeC, div.coverpage_17 div.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_17 div.coverpage h1, div.coverpage_17 h1 {
+	font-size: 16.5pt;
+	letter-spacing: .75;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_17 div.coverpage h2, div.coverpage_17 h2 {
+	font-size: 15pt;
+	font-weight: normal;
+	letter-spacing: .50;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_17 div.coverpage ul, div.coverpage_17 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_17 div.coverpage li, div.coverpage_17 li {
+	}
+body.concord_Doc_Style_17 div.coverpage li.authorName, div.coverpage_17 li.authorName {
+	}
+body.concord_Doc_Style_17 div.coverpage li.documentDate, div.coverpage_17 li.documentDate {
+	}
+body.concord_Doc_Style_17 div.coverpage li.contactInfo1, div.coverpage_17 li.contactInfo1 {
+	}
+body.concord_Doc_Style_17 div.coverpage li.contactInfo2 , div.coverpage_17 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+/* letterhead is individual styled */ 
+body.concord_Doc_Style_17 div.letterhead, div.letterhead_17 {
+	padding: 0cm 0cm 0cm 0cm;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #333;
+	border-top: 1.5pt solid #f6f6ad;
+	border-bottom: 1.5pt solid #f6f6ad;
+	margin: 0.5292cm 1.0583cm 1.3229cm 1.0583cm;
+	text-align: center;
+	color: #fff;
+	background-color:#6896ec;
+	background-image:-moz-linear-gradient(#c7daf8 0%, #88bbfd  7%, #566cb7 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#c7daf8), to(#566cb7), color-stop(.07, #88bbfd));
+	}
+body.concord_Doc_Style_17 div.letterhead h1, div.letterhead_17 h1 {
+	font-size: 16.5pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0.5292cm 0cm 0.132cm 0cm;
+	}
+body.concord_Doc_Style_17 div.letterhead h2, div.letterhead_17 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_17 div.letterhead h2.custom {
+    font-style: normal;
+	}	
+body.concord_Doc_Style_17 div.letterhead hr, div.letterhead_17 hr {
+	background-color: #668899;
+	color: #668899;
+	visibility: hidden;
+	}
+body.concord_Doc_Style_17 div.letterhead p, div.letterhead_17 p {
+	color: #fff;
+	margin: 0.2646cm 0cm 0.2646cm 0cm;
+	}	
+/* LIST */
+/* NOTE: DEFAULT LIST STYLE for document and for individual lists */	
+/*body.concord_Doc_Style_17 ul.list, ul.list_17 {
+	list-style-type: disc !important; 
+	padding: 0.3969cm !important;
+}
+*/
+/* SECTION */
+/* section is styled according to the document style...sections can not be individually styled like other components  */ 
+body.concord_Doc_Style_17 p.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	padding: 0cm;
+	margin: 0.132cm 0cm 0.2646cm 0cm;
+	color: #333;
+	}
+body.concord_Doc_Style_17 h2.section {
+	font-size: 12pt;
+	margin: 0.132cm 0cm 0.4763cm 0cm;
+	padding: 0cm;
+	color: #566cb7;
+	border-bottom: 1.5pt solid #f6f6ad;
+	}
+body.concord_Doc_Style_17 h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0.2381cm 0cm;
+	padding: 0cm;
+	color: #566cb7;
+	}
+body.concord_Doc_Style_17 h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	color: #566cb7;
+	}
+body.concord_Doc_Style_17 p {
+	margin: 0cm 0cm 0.6879cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.5292cm; commented out by NP*/
+	color: #3b3b3b;
+	}
+body.concord_Doc_Style_17 p.subsection {
+	margin: 0.2646cm 0cm 0.2646cm 0cm;
+	font-size: 9pt;
+	}
+body.concord_Doc_Style_17 h3.subsection  {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_17 h4.subsection {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_17 div.references h2, div.references_17 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_17 div.references ul, div.references_17 ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_17 div.references li, div.references_17 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4233cm;
+	}

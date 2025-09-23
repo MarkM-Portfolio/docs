@@ -1,0 +1,14 @@
+{
+    "featuresId": {
+    	"macro" : "701",
+    	"OLE" : "702",
+    	"SmartArt_TextBox_WordArt": "703",
+    	"filter": "704",
+    	"conditionalFormatting": "706",
+    	"group_or_outline": "707",
+    	"Pivot_Table": "708",
+    	"dataValidation": "709",
+    	"Table": "710",
+    	"Form_ActiveX_controls": "711"
+    }
+}

@@ -1,0 +1,21 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for dialogs
+companion file is dialogs.css*/
+/*** D I A L O G ***/
+.lotusDialogBorder{border-color:#aaa;}
+.lotusDialog{background-color:#fff;}
+.lotusDialog h1{border-bottom-color:#E2EBF1;background-image:url(../../images/titleBkgd.png)}
+.lotusDialog .lotusDialogContent{border-bottom-color:#E2EBF1;}
+.lotusDialog .lotusDialogFooter{background-color:#E2EBF1;}
+.lotusDialog .lotusFormTable,
+.lotusDialog .lotusFormTable td{background-color:#fff;}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusDialog h1{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -900px}
+/*[/sprite]*/
+
+/***********************************************************/
+

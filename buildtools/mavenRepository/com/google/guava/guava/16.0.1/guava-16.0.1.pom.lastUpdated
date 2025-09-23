@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jan 25 11:52:13 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1453341078341
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.error=
+@default-java.net-http\://download.java.net/maven/2/.lastUpdated=1453341077873
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.lastUpdated=1453693933347
+http\://download.java.net/maven/2/.error=Could not transfer artifact com.google.guava\:guava\:pom\:16.0.1 from/to java.net (http\://download.java.net/maven/2/)\: Read timed out

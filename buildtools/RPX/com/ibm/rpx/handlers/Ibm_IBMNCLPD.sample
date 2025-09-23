@@ -1,0 +1,10 @@
+# Here is a comment statement.
+
+# NLS_FILEFORMAT_COMMON_LAUNCHPAD
+# NLS_ENCODING=UNICODE
+# NLS_MESSAGEFORMAT_NONE
+
+menu_prereq[text] = "Prerequisite Information"
+menu_prereq[tooltip] = "Software and Hardware prerequisites"
+menu_prod_install[text] = Install
+menu_prod_install[tooltip] = "Install the product"

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LotusLive JavaScript
+Bundle-SymbolicName: com.ibm.concord.viewer.lcfiles.extension.provision;singleton:=true
+Bundle-Version: ${build.version}.${docs.build.timestamp}
+Bundle-Vendor: IBM
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+

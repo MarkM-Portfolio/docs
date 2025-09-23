@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.abdera</groupId>
+  <artifactId>abdera</artifactId>
+  <versioning>
+    <release>1.1.3</release>
+    <versions>
+      <version>0.4.0-incubating</version>
+      <version>1.1.3</version>
+    </versions>
+    <lastUpdated>20150215071753</lastUpdated>
+  </versioning>
+</metadata>

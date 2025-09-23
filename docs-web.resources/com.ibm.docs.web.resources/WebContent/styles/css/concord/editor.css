@@ -1,0 +1,67 @@
+/**
+ * Licensed Materials - Property of IBM.
+ * @comments CKEditor CSS
+ * Copyright IBM Corporation 2011. All Rights Reserved.
+ * U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
+ 
+.editorCss .dojoxGridHeader {
+	display:none;
+}
+.editorCss .dojoxGrid {
+	background-color: #ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:75%/1.5; 
+	position:relative;
+}
+
+.editorCss .dojoxGridScrollbox {
+	background-color: #fefefe;
+}
+
+
+.editorCss .dojoxGridRow {
+	background-color: white;
+	padding: 0px 0px 0px 1px;
+}
+
+.editorCss .dojoxGridRowOver .dojoxGridCell {
+	background-color: #60a1ea; 
+	color:#fff;
+}
+
+.editorCss .dojoxGridRowOdd {
+	background-color: #f2f5f9;
+}
+
+.editorCss .dojoxGridRowTable td {
+	text-decoration: none;
+	background-color: white;
+	color: #222;
+}
+
+.editorCss .dojoxGridCell {
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+}
+.editorCss .dojoxGridRowSelected {
+	background-color: #CACACA !important;
+}
+
+.dijit_a11y .editorCss .dojoxGridRowSelected { 
+    background-color: #aec7e3;     
+    border-style: solid;     
+} 
+ 
+.editorCss .dojoxGridCellFocus {
+	/*border: 1px dashed gray !important;*/
+}
+.editorCss .dojoxGridCellFocus .dojoxGridCellOver{
+	/*border: 1px dashed gray !important;*/
+}
+.dj_ie .editorCss .dojoxGridCell {
+	border: 0px;
+	border-right: 0px;
+}

@@ -1,0 +1,122 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* BorderContainer
+ Splitters and gutters separate panes within a BorderContainer. Splitters can be moved up and down (horizonal splitters) or left and right (vertical splitters), while Gutters are static. A "thumb" is the slit on a Splitter that indicates it is movable.
+ Styling the BorderContainer widget consists of the following:
+ .dijitBorderContainer - for border and padding of the entire border container
+ .dijitSplitContainer-child, .dijitBorderContainer-child - for border or child panes of the border container. By default borders are put on all children of BorderContainer.
+ .dijitBorderContainer-dijitTabContainerTop,
+ .dijitBorderContainer-dijitTabContainerBottom,
+ .dijitBorderContainer-dijitTabContainerLeft,
+ .dijitBorderContainer-dijitTabContainerRight,
+ .dijitBorderContainer-dijitAccordionContainer   -for border of the border containers within TabContainer or AccordionContainer widget
+ .dijitBorderContainer-dijitBorderContainer - for border and padding of nested BorderContainers
+ Splitters and gutters:
+ .dijitSplitterH, .dijitGutterH - for height, background, and border of a horizontal splitter and gutter
+ .dijitSplitterH .dijitSplitterThumb - for color, height/width of the thumb on a horizontal splitter
+ .dijitSplitterV, .dijitGutterV - - for height, background, and border of a vertical splitter and gutter
+ .dijitSplitterV .dijitSplitterThumb - for color, height/width of the thumb on a vertical splitter
+ .dijitSplitterHHover - for background-color of a hovered horizontal splitter
+ .dijitSplitterHHover .dijitSplitterThumb - for background-color of a hovered thumb on a horizontal splitter
+ .dijitSplitterVHover  - for background-color of a hovered vertical splitter
+ .dijitSplitterVHover .dijitSplitterThumb - for background-color of a hovered thumb on a vertical splitter
+ .dijitSplitterHActive - for background-color of an active horizontal splitter
+ .dijitSplitterVActive - for background-color of an active horizontal splitter
+ */
+.oneui30 .dijitBorderContainer {
+    border: 1px #ccc solid;
+    padding: 5px;
+}
+
+.oneui30 .dijitSplitContainer-child, .oneui30 .dijitBorderContainer-child {
+	/* By default put borders on all children of BorderContainer, to give illusion of borders on the splitters themselves. */
+    border: 1px #ccc solid;
+}
+
+.oneui30 .dijitBorderContainer-dijitTabContainerTop, .oneui30 .dijitBorderContainer-dijitTabContainerBottom, .oneui30 .dijitBorderContainer-dijitTabContainerLeft, .oneui30 .dijitBorderContainer-dijitTabContainerRight, .oneui30 .dijitBorderContainer-dijitAccordionContainer {
+	/* except that TabContainer defines borders on it's sub-nodes (tablist and dijitTabPaneWrapper), so override rule setting border on domNode */
+    border: 0;
+}
+
+.oneui30 .dijitBorderContainer-dijitBorderContainer {
+	/* also, make nested BorderContainers look like a single big widget with lots of splitters */
+    border: 1px #ccc solid;
+    padding: 5px;
+}
+
+/* Splitters and gutters */
+.oneui30 .dijitSplitterH, .oneui30 .dijitGutterH {
+    background: none;
+    border: 0;
+    height: 5px;
+}
+
+.oneui30 .dijitSplitterH .dijitSplitterThumb {
+    background: #ccc none;
+    height: 1px;
+    top: 2px;
+    width: 19px;
+}
+
+.oneui30 .dijitSplitterV, .oneui30 .dijitGutterV {
+    background: none;
+    border: 0;
+    width: 5px;
+}
+
+.oneui30 .dijitSplitterV .dijitSplitterThumb {
+    background: #ccc none;
+    height: 19px;
+    left: 2px;
+    width: 1px;
+}
+
+/* hovered splitter */
+.oneui30 .dijitSplitterHHover {
+    font-size: 1px;
+    -moz-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity = 100);
+    margin: 0;
+    background: #eee;
+}
+
+.oneui30 .dijitSplitterHHover .dijitSplitterThumb {
+    background: #aaa none;
+}
+
+.oneui30 .dijitSplitterVHover {
+    font-size: 1px;
+    -moz-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity = 100);
+    margin: 0;
+    background: #eee;
+}
+
+.oneui30 .dijitSplitterVHover .dijitSplitterThumb {
+    background: #aaa none;
+}
+
+/* active splitter */
+.oneui30 .dijitSplitterHActive {
+    font-size: 1px;
+    background-color: #ccc;
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity = 60);
+    margin: 0;
+    border-top: #aaa;
+}
+
+.oneui30 .dijitSplitterVActive {
+    font-size: 1px;
+    background-color: #ccc;
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity = 60);
+    margin: 0;
+}

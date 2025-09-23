@@ -1,0 +1,75 @@
+({
+	LOADING: "El contenido se está cargando.",
+	LOAD_FINISHED: "El contenido se ha terminado de cargar.",
+	PAGE_SETUP: "Configuración de la página",
+	NOTE_INVALIDACTION_FOOTNOTE:"No es una acción válida para la nota a pie de página.",
+	NOTE_INVALIDACTION_ENDNOTE:"No es una acción válida para la nota final.",
+	PAGENUMBER_OF_TOTALNUMBER:"Página ${0} de ${1}", //page 1 of N
+	PAGE_NUMBER: "Página: ${pageNumber} / ${totalPageNumber}",
+	toc:{
+		title : "Índice de contenido",
+		update: "Actualizar",
+		del: "Suprimir",
+		toc: "Índice de contenido",
+		linkTip: "Pulse Control para navegar",
+		pageNumber: "Sólo número de página",
+		entireTable: "Toda la tabla"
+	},
+	link:{
+		addlink:"Añadir enlace",
+		gotolink: "Abrir enlace",
+		unlink	: "Eliminar enlace",
+		editlink: "Editar enlace",
+		internalLink: "Enlace interno",
+		ctrlLink: "Ctrl+Pulsación para ir al enlace",
+		cannotOpen: " no se puede abrir desde ${productName}."
+	},
+	field:{
+		update: "Actualizar campo"
+	},
+	insertTime:"Insertar hora",
+	insertDate:"Insertar fecha",
+	selectDate:"Seleccionar fecha",
+	selectTime:"Seleccionar hora",
+	acc_blank: "en blanco",// when selection is nothing but space char and empty paragraph
+	acc_space: "espacio",// string read out when the cursor is before one space char
+	acc_inLink: "en el enlace ",
+	acc_inField: "en el campo ",
+	acc_selected :" seleccionado",
+	acc_inTable: "en la fila ${0} y columna ${1} de la tabla ",
+	acc_imageSelected: "gráfico seleccionado",
+	acc_canvasSelected:"forma seleccionada",
+	acc_textboxSelected:"cuadro de texto seleccionado",
+	ACC_TABLE_TABLESIZE:"Ha seleccionado ${0} filas, ${1} columnas",
+	ACC_TABLE_MAXSIZE:" El tamaño de tabla máximo seleccionado es de 20*20",
+	ACC_headerFooterMode: "modalidad de edición de pie y cabecera",
+	ACC_EditorMode: "modalidad de edición de editor",
+	ACC_FootnotesMode: "modalidad de edición de notas a pie de página",
+	ACC_EndnotesMode: "modalidad de edición de notas al final",
+	ACC_uniformTable: "Se ha añadido una nueva línea",
+	Acc_column :"columna ${0}",
+	acc_page :"página ${0}",
+	acc_section:"sección ${0}",
+	acc_spellWarn:"ortografía incorrecta",
+	acc_outTable:"fuera de la tabla",
+	acc_link :"enlace",
+	acc_field :"campo",
+	acc_footnote:"nota a pie de página",
+	acc_endnote:"nota al final",	
+	acc_editor:"Editar ${0}",
+	tablePropertyTitle: "Propiedades de tabla",
+	headerTitle:"Cabecera",
+	footerTitle:"Pie de página",
+	firstheaderTitle:"Cabecera de la primera página",
+	firstfooterTitle:"Pie de la primera página",
+	evenheaderTitle:"Cabecera de página par",
+	evenfooterTitle:"Pie de página par",
+	oddheaderTitle:"Cabecera de página impar",
+	oddfooterTitle:"Pie de página impar",
+	showTableBorder:"Mostrar límites de la tabla",
+	list_none: "Ninguna",
+	SET_NUMBERING_VALUE: "Definir valor de numeración",
+	BIDI_CONTENT_EDITING: "Este documento incluye contenido bidireccional. Para poder trabajar con el documento, active el soporte bidireccional en las preferencias de HCL Connections."
+})
+	
+

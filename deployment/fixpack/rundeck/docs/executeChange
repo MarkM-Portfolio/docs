@@ -1,0 +1,119 @@
+#!/bin/bash  
+
+# Load the patch utility functions
+export PATCH_HOME=$(pwd)
+WSADMIN_SHELL_PATH="/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/wsadmin.sh"
+
+# Get the login credentials for wsadmin
+source /opt/ll/lib/registry/registryLib.sh
+source /opt/ll/lib/apache/zookeeper/zooKeeperLib.sh
+getSetting MiddlewareWebSphere admin_username
+username=$REGISTRY_DATA
+getSetting MiddlewareWebSphere admin_password
+password=$REGISTRY_DATA
+getSide
+side=$REGISTRY_DATA
+
+# Get server host name
+hostName=$(hostname)
+i=`expr index "$hostName" '.'`
+hostNameShort=${hostName:0:$i-1}
+    
+# 
+# Process and validate the command line options
+#
+export PATCH_IS_ROLLBACK="false"
+
+while [[ $# > 0 ]]; do
+    key="$1"
+    case $key in
+        --rollback|-r)
+            PATCH_IS_ROLLBACK="true"
+            ;;
+        *)
+            echo "Error: Unrecognized option."
+            usage
+            exit 1
+            ;;
+    esac
+    shift
+done
+
+# 1 permission change
+chown -R websphere:websphere "${PATCH_HOME}"
+rc=$?
+if [ "$rc" -ne "0" ]; then
+    echo "Error: Failed to change ownership websphere on script and patched file in path $PATCH_HOME"
+    exit 1
+fi
+
+chmod -R 755 "${PATCH_HOME}"
+rc=$?
+if [ "$rc" -ne "0" ]; then
+    echo "Error: Failed to change permissions to 755 on script and patched file $PATCH_HOME"
+    exit 1
+fi
+
+# 2 Drain traffic
+PWD=$(pwd)
+cd "${PATCH_HOME}"
+
+drain_cmd="manageZkNodes.py --action inactivating --node $hostNameShort --side $side"
+echo $drain_cmd
+
+drain_result=$(python $drain_cmd)
+echo "$drain_result"
+if [[ ${drain_result} == *"Successful!"* ]]; then
+    echo "Successfully drain session for $hostNameShort"
+else
+    echo "Error: Failed drain session for $hostNameShort"
+    cd "${PWD}"
+    exit 1
+fi   
+            
+# 3 Update concord_config.json and update required ear
+if [[ "${PATCH_IS_ROLLBACK}" == "true" ]]; then
+    echo "rollback change..."
+    rollback_cmd="python rollbackChange.py $username $password"
+    echo $rollback_cmd
+    rollback_result=$(python rollbackChange.py $username $password)
+    echo "${rollback_result}"
+    if [[ ${rollback_result} == *"SUCCESS"* ]]; then
+        echo "Successfully rollback patch."
+    else
+        echo "Error: Failed rollback patch."
+        cd "${PWD}"
+        exit 1
+    fi
+else
+    echo "apply patch..."
+    patch_cmd="sudo -u websphere python applypatch.py -u $username -p $password"
+    echo $patch_cmd
+    patch_result=$(sudo -u websphere python applypatch.py -u $username -p $password)
+    echo "${patch_result}"
+    if [[ ${patch_result} == *"Installation complete"* ]]; then
+        echo "Successfully apply patch for ($hostNameShort)"
+    else
+        echo "Error: Failed apply patch for ($hostNameShort)"
+        cd "${PWD}"
+        exit 1
+    fi
+fi
+
+# 4 Set current server to active so that docsrp could route /docs reqeust to this server
+active_cmd="manageZkNodes.py --action active --node $hostNameShort --side $side"
+echo $active_cmd
+
+active_result=$(python $active_cmd)
+echo "$active_result"
+if [[ ${active_result} == *"Successful!"* ]]; then
+    echo "Successfully activate server for $hostNameShort"
+    cd "${PWD}"
+    exit 0
+else
+    echo "Error: Failed activate server for $hostNameShort"
+    cd "${PWD}"
+    exit 1
+fi    
+
+exit 0

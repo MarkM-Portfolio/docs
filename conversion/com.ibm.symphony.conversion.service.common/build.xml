@@ -1,0 +1,98 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<project name="com.ibm.symphony.conversion.service.common" basedir="." default="deploy">
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${bin.dir}/classes"/>
+	<property name="jar.dir" value="${bin.dir}/jar"/>
+	<property name="ear.dir" value="../com.ibm.symphony.conversion.service.rest.was.ear" />
+	
+	<path id="lib.classpath">
+		<pathelement path="${ear.dir}/lib/json4j.jar"/>
+		<pathelement path="${ear.dir}/lib/jsoup-1.8.1.jar"/>
+		<pathelement path="${ear.dir}/lib/antlr-3.1.1-runtime.jar"/>
+		<pathelement path="${ear.dir}/lib/com.ibm.icu_53.1.jar"/>
+		<pathelement path="${ear.dir}/lib/jtidy.jar"/>
+		<pathelement path="${ear.dir}/lib/odfdom.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-anim.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-awt-util.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-bridge.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-codec.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-css.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-dom.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-ext.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-gvt.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-parser.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-rasterizer.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-script.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-svg-dom.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-svggen.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-transcoder.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-util.jar"/>
+		<pathelement path="${ear.dir}/lib/batik-xml.jar"/>
+		<pathelement path="${ear.dir}/lib/commons-lang-2.4.jar"/>
+		<pathelement path="${ear.dir}/lib/acf-2.5.0.23.jar"/>
+		<pathelement path="${ear.dir}/lib/jackson-core-asl-1.7.3.jar"/>
+		<pathelement path="${ear.dir}/lib/html-parser-2.5.0.23.jar"/>
+	</path>
+	
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+	</path>
+	
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="lib.classpath"/>
+			<classpath refid="was.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="gather" depends="compile">
+		<copy todir="${classes.dir}" failonerror="true" overwrite="true">
+	   		<fileset dir="${src.dir}">
+      			<exclude name="**/*.java"/>
+    		</fileset>
+		</copy>		 
+	</target>
+	
+	<target name="jar" depends="gather">
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+					<globmapper from="*" to="lib/*"/>
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath"/>
+		</pathconvert>
+		<mkdir dir="${jar.dir}"/>
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Created-By" value="IBM" />
+				<attribute name="Class-Path" value="${manifest.lib.classpath}" />
+			</manifest>
+		</jar>
+	</target>
+	
+	<target name="deploy" depends="jar">
+		<copy todir="${build.home}">
+			<fileset dir="${jar.dir}"/>
+		</copy>
+    </target>
+</project>
+

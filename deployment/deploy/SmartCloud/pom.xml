@@ -1,0 +1,298 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>deploy</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.SmartCloud</groupId>
+  <artifactId>deploy</artifactId>
+  <name>SmartCloud deploy - pom</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <!-- DocsApp --> 
+    <RPM.SC-AC-Docs-DB-Media>${deployment.dir}/rpm/com.ibm.docs.db.rpm/SC-AC-Docs-DB-Media/target/RPMS/x86_64</RPM.SC-AC-Docs-DB-Media>
+    <RPM.SC-AC-Docs-DB-Run>${deployment.dir}/rpm/com.ibm.docs.db.rpm/SC-AC-Docs-DB-Run/target/RPMS/x86_64</RPM.SC-AC-Docs-DB-Run>
+	<RPM.ICC-Docs-Migrate-DB-Run>${deployment.dir}/rpm/com.ibm.docs.db.rpm/ICC-Docs-Migrate-DB-Run/target/RPMS/x86_64</RPM.ICC-Docs-Migrate-DB-Run>
+    <RPM.SC-Docs-Config>${deployment.dir}/rpm/com.ibm.docs.rpm/target/RPMS/x86_64</RPM.SC-Docs-Config>
+    <RPM.SC-Docs-Sanity-Config>${deployment.dir}/rpm/com.ibm.docs.sanity.rpm/target/RPMS/x86_64</RPM.SC-Docs-Sanity-Config>
+    <interface.docs.rpm.dir>${deployment.dir}/rpm/com.ibm.docs.rpm</interface.docs.rpm.dir>
+    <docs.sc.output.dir>${build.output.dir}/SmartCloud/SC10.0_Docs_${docs.build.timestamp}/Webkits</docs.sc.output.dir>
+
+    <!-- DocsProxy --> 
+    <RPM.SC-DocsProxy-Config>${deployment.dir}/rpm/com.ibm.docs.dmz.rpm/target/RPMS/x86_64</RPM.SC-DocsProxy-Config>
+    <interface.docsproxy.rpm.dir>${deployment.dir}/rpm/com.ibm.docs.dmz.rpm</interface.docsproxy.rpm.dir>
+    <proxy.sc.output.dir>${build.output.dir}/SmartCloud/SC10.0_DocsProxy_${docs.build.timestamp}/Webkits</proxy.sc.output.dir>
+
+    <RPM.SC-DocsProxy-Config-Update>${deployment.dir}/rpm/com.ibm.docs.dmz.cron.rpm/target/RPMS/x86_64</RPM.SC-DocsProxy-Config-Update>
+    <proxy.sc.output.dir>${build.output.dir}/SmartCloud/SC10.0_DocsProxy_${docs.build.timestamp}/Webkits</proxy.sc.output.dir>    
+
+    <!-- Viewer --> 
+    <RPM.SC-Docs-Ext>${deployment.dir}/rpm/com.ibm.docs.viewer.ext.rpm/target/RPMS/x86_64</RPM.SC-Docs-Ext>
+    <interface.viewer.rpm.dir>${deployment.dir}/rpm/com.ibm.docs.viewer.ext.rpm</interface.viewer.rpm.dir>
+    <viewer.sc.output.dir>${build.output.dir}/SmartCloud/SC10.0_Viewer_${docs.build.timestamp}/Webkits</viewer.sc.output.dir>
+
+    <!-- ViewerNext on Windows-->
+    <RPM.SC-TAM-WebSEAL-Config-ViewerNext>${deployment.dir}/rpm/com.ibm.viewernext.webseal.config/target/RPMS/x86_64</RPM.SC-TAM-WebSEAL-Config-ViewerNext>
+    <viewerNext.sc.zip.dir>${deployment.dir}/zip/ViewerNext/Windows/target</viewerNext.sc.zip.dir>
+    <interface.viewerNext.sc.dir>${viewer.deployment.resources.dir}/installer/viewer</interface.viewerNext.sc.dir>
+    <viewerNext.sc.output.dir>${build.output.dir}/SmartCloud/SC10.0_ViewerNextWindows_${docs.build.timestamp}/Webkits</viewerNext.sc.output.dir>
+    
+    <!-- ViewerNext on Linux-->
+    <viewerNext.sc.rpm.dir>${deployment.dir}/rpm/com.ibm.viewernext.rpm/target/RPMS/x86_64</viewerNext.sc.rpm.dir>
+    <interface.viewerNext.linux.sc.dir>${deployment.dir}/rpm/com.ibm.viewernext.rpm</interface.viewerNext.linux.sc.dir> 
+    <viewerNext.linux.sc.output.dir>${build.output.dir}/SmartCloud/SC10.0_ViewerNext_${docs.build.timestamp}/Webkits</viewerNext.linux.sc.output.dir>
+
+    <!-- Conversion -->
+    <conversion.sc.zip.dir>${deployment.dir}/zip/DocsConversion/SmartCloud/target</conversion.sc.zip.dir>
+    <interface.conversion.sc.dir>${conversion.deployment.resources.dir}/installer</interface.conversion.sc.dir>    
+    <conversion.sc.output.dir>${build.output.dir}/SmartCloud/SC10.0_DocsConversion_${docs.build.timestamp}/Webkits</conversion.sc.output.dir>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <!-- DocsApp -->
+          <execution>
+            <id>Copy Docs SmartCloud package to build directory</id>
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${docs.sc.output.dir}</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${RPM.SC-AC-Docs-DB-Media}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${RPM.SC-AC-Docs-DB-Run}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>
+				<resource>
+                  <directory>${RPM.ICC-Docs-Migrate-DB-Run}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${RPM.SC-Docs-Config}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${RPM.SC-Docs-Sanity-Config}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${RPM.SC-Docs-Sanity-Config}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${interface.docs.rpm.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>interface.xml</include>
+                  </includes>
+                </resource>
+              </resources>                
+            </configuration>
+          </execution>
+          
+          <!-- Conversion -->
+          <!-- <execution>
+            <id>Copy Conversion SmartCloud package to build directory</id>
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${conversion.sc.output.dir}</outputDirectory>
+              <resources>              
+                <resource>
+                  <directory>${conversion.sc.zip.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.zip</include>
+                  </includes>
+                </resource>                   
+                <resource>
+                  <directory>${interface.conversion.sc.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>interface.xml</include>
+                  </includes>
+                </resource>                 
+              </resources>
+            </configuration>
+          </execution> -->
+          
+          <!-- DocsProxy --> 
+          <execution>
+            <id>Copy DocsProxy SmartCloud package to build directory</id>
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${proxy.sc.output.dir}</outputDirectory>
+              <resources>               
+                <resource>
+                  <directory>${RPM.SC-DocsProxy-Config}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${RPM.SC-DocsProxy-Config-Update}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>                
+                <resource>
+                  <directory>${interface.docsproxy.rpm.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>interface.xml</include>
+                  </includes>
+                </resource>                 
+              </resources>
+            </configuration>
+          </execution>
+          
+          <!-- Viewer --> 
+          <execution>
+            <id>Copy Docs-Ext build directory</id>
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${viewer.sc.output.dir}</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${RPM.SC-Docs-Ext}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${interface.viewer.rpm.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>interface.xml</include>
+                  </includes>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+
+          <!-- ViewerNext on Windows -->
+          <!--
+          <execution>
+            <id>Copy ViewerNext SmartCloud package to build directory</id>
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${viewerNext.sc.output.dir}</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${RPM.SC-TAM-WebSEAL-Config-ViewerNext}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>               
+                <resource>
+                  <directory>${viewerNext.sc.zip.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>SC*.zip</include>
+                  </includes>
+                </resource>                   
+                <resource>
+                  <directory>${interface.viewerNext.sc.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>interface.xml</include>
+                  </includes>
+                </resource>                 
+              </resources>
+            </configuration>
+          </execution>
+          -->         
+          <!-- ViewerNext -->
+          <execution>
+            <id>Copy All ViewerNext SmartCloud package to build directory</id>
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${viewerNext.linux.sc.output.dir}</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${viewerNext.sc.zip.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>SC*.zip</include>
+                  </includes>
+                </resource>     
+                <resource>
+                  <directory>${RPM.SC-TAM-WebSEAL-Config-ViewerNext}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>*.rpm</include>
+                  </includes>
+                </resource>               
+                <resource>
+                  <directory>${viewerNext.sc.rpm.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>SC*.rpm</include>
+                  </includes>
+                </resource>                   
+                <resource>
+                  <directory>${interface.viewerNext.linux.sc.dir}</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>interface.xml</include>
+                  </includes>
+                </resource>                 
+              </resources>
+            </configuration>
+          </execution>          
+        </executions>
+      </plugin>
+    </plugins>    
+  </build>
+</project>

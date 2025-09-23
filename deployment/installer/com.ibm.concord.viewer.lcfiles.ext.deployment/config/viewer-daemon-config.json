@@ -1,0 +1,7 @@
+{
+   		"server_url" : "$viewer_server_url",
+		"s2s_token": "fallseason2011",
+		"j2c_alias": "$viewer_admin_j2c_alias",
+		"ignore_event": "$ignore_event",
+		"filenet_repository_id": "ICObjectStore"
+}

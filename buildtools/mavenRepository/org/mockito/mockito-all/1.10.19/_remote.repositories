@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Dec 16 18:15:39 CST 2015
+mockito-all-1.10.19.jar>=
+mockito-all-1.10.19.pom>central=
+mockito-all-1.10.19.pom>central-orig=
+mockito-all-1.10.19.jar>central-orig=

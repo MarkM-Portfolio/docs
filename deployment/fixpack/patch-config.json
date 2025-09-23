@@ -1,0 +1,7 @@
+{
+	"env_type": "OnPremise",
+	"name": "HCLConnectionsDocs_CR3_iFix009",
+	"remote_build_relpath": "OnPremise",
+	"product_name":"HCL Connections Docs",
+	"ifix_version": 34
+}

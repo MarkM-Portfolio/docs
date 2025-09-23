@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: lib/abdera-0.4.0-incubating.jar 
+ lib/json4j.jar 
+ com.ibm.concord.viewer.platform.jar 
+ com.ibm.concord.viewer.spi.jar 
+ com.ibm.concord.viewer.job.jar 
+ com.ibm.concord.viewer.cache.jar 
+ com.ibm.concord.viewer.document.services.jar 
+ com.ibm.docs.viewer.ecm.integration.jar
+

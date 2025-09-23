@@ -1,0 +1,8 @@
+<ul class='dijitReset dijitMenu' dojoAttachPoint='listNode' dojoAttachEvent="onmouseup:select,onmousedown:_onMouseDown,onmouseover:_onMouseOver,onmouseout:_onMouseOut" tabIndex='-1' style='display: none; overflow: auto; overflow-x: hidden;'>
+	<li class='dijitMenuItem dijitMenuPreviousButton _selectable' clickMethod='previousPage' dojoAttachPoint='previousNode' waiRole='option'>${messages.previous}</li>
+	<li class='dijitMenuItem dijitMenuItemText _selectable' dojoAttachPoint='errorNode' waiRole='option'>${messages.error}</li>
+	<li class='dijitMenuItem dijitMenuItemText _selectable' dojoAttachPoint='emptyNode' waiRole='option'>&nbsp;</li>
+	<li class='dijitMenuItem _selectable' dojoAttachPoint='templateNode' waiRole='option' map="value">&nbsp;</li>
+	<li class='dijitMenuItem dijitMenuItemText _selectable' dojoAttachPoint='loadingNode' waiRole='option'>${messages.loading}</li>
+	<li class='dijitMenuItem dijitMenuNextButton _selectable' clickMethod='nextPage' dojoAttachPoint='nextNode' waiRole='option'>${messages.next}</li>
+</ul>

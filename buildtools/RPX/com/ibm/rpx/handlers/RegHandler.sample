@@ -1,0 +1,44 @@
+Application 'CNAT'
+{
+    Description
+    {
+        "Tivoli Comprehensive Network Address Translator NetView Extensions",
+        "Performs Tivoli CNAT management tasks."
+    }
+
+    Version 'V7.1.1';
+
+    Copyright {
+      "Licensed Program Product:",
+      "  Tivoli CNAT NetView Extensions",
+      "    (C) COPYRIGHT 2000-2001 Tivoli Systems Inc., an IBM Company.",
+      "    All Rights Reserved",
+      ""
+    }
+
+    MenuBar "Tools"
+    {
+        <75> "CNAT Operations" _N f.menu CNATMenu;
+    }
+
+    Menu 'CNATMenu'
+    {
+      "Launch All CNAT Discovery and Update Tasks" _A   f.action 'nvcnat_run_all';
+      "Discover All CNAT Nodes"                    _D   f.action 'nvcnat_discover_all';
+      "Determine if Node is CNAT"                  _N   f.action 'nvcnat_discover_selected';
+      "Download Node CNAT Table"                   _C   f.action 'nvcnat_collect_selected';
+      "Download All CNAT Tables"                   _T   f.action 'nvcnat_collect_all';
+      "Build CNAT Master Store"                    _B   f.action 'nvcnat_build_master_store';
+      "Update NetView From Master Store"           _U   f.action 'nvcnat_update_ovw';
+      "Refresh NetView From Master Store"          _R   f.action 'nvcnat_refresh_ovw';
+    }
+
+    Action 'nvcnat_run_all'
+    {
+        /*
+         * Discover all CNAT servers, download all CNAT tables, build
+         * the CNAT Master Store, and update OVw.
+         */
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_run_all.tcl GUI';
+    }
+}

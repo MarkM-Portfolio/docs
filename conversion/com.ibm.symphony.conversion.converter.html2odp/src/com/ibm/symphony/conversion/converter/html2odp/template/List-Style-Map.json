@@ -1,0 +1,10 @@
+{
+	"upper-alpha" : "A",
+	"lower-alpha" : "a",
+	"decimal" : "1",
+	"decimal-leading-zero" : "1",
+	"upper-roman" : "I",
+	"lower-roman" : "i",
+	"lst-j1" : "イ, ロ, ハ, ...",
+	"lst-j2" : "ア, イ, ウ, ..."
+}

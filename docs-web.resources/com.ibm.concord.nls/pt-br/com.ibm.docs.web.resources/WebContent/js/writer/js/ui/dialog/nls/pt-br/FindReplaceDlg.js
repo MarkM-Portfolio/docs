@@ -1,0 +1,40 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        title: "Localizar e Substituir",
+        find: "Localizar",
+        findTab: "Guia Localizar página",
+        SearchTab: "Guia Procurar página",
+        findSearchPanel: "Painel da guia de Localizar e Procurar",
+        replace: "Substituir",
+        findWhat: "Localizar",
+        replaceWith: "Substituir",
+        notFoundMsg: "O texto especificado não foi localizado.",
+        finishSearch: "Todas as ocorrências do texto especificado no arquivo foram localizadas.",
+        matchCase: "Corresponder Caso",
+        matchWord: "Corresponder Palavra Inteira",
+        highlightAll: "Realçar Tudo",
+        pre: "Ant",
+        next: "Avançar",
+        replaceAll: "Substituir Tudo",
+        replaceSuccessMsg: "${replacedCount} ocorrência(s) substituída(s).",
+        completeFindMsg: "A procura deste arquivo está concluída.",
+        noFindVal: "O texto a ser localizado é requerido.",
+        searchToBeginning: "O Docs procurou no início do arquivo",
+        replacedCount: "os locais foram substituídos",
+        moreoption: "mais opções",
+        close: "fechar",
+        findInFile: "Localizar",
+        inputReplace: "Substituir por"
+});
+

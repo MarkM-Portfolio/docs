@@ -1,0 +1,5 @@
+({
+	TRUE: "IGAZ",
+	FALSE: "HAMIS"
+})
+

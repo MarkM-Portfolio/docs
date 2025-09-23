@@ -1,0 +1,32 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for tree
+companion files: orgChart.css / orgChartTheme.css
+companion files: orgChartRTL.css / orgChartThemeRTL.css*/
+/*** T R E E ***/ /*needs review - need additional tree visuals from Jason*/
+
+.lotusui30 ul.lotusTree{margin:0;padding:0;list-style-type:none;line-height:1.5;}
+.lotusui30 .lotusTree ul{margin:0 14px 0 0;padding:0;list-style-type:none;}
+.lotusui30 .lotusTree li{margin:0;padding:1px 0;}
+.lotusui30 .lotusTree a{text-decoration:none;}
+.lotusui30 .lotusTree a:hover, .lotusui30 .lotusTree a:focus{text-decoration:underline;}
+.lotusui30 .lotusTree .lotusIcon{margin-left:3px;}
+.lotusui30 .lotusTree input{margin:0 0 0 3px;padding:0;vertical-align:middle;}
+/*this is a specific type of tree*/
+.lotusui30 .lotusOrgChart ul{margin-right:11px;}
+.lotusui30 .lotusOrgChart li{padding:0;}
+.lotusui30 .lotusOrgChart li a{margin:0;padding:0 20px 2px 0;display:block;}
+.lotusui30 .lotusOrgChart .lotusBottom{padding:0 20px 5px 0;}
+.lotusui30 .lotusOrgChartTop, .lotusui30 .lotusOrgChartMiddle, .lotusui30 .lotusOrgChartBottom{padding-right:20px;}
+/*the second class definition for each type of node accommodates a div version of the org chart*/
+.lotusui30 .lotusOrgChart li a, .lotusui30 .lotusOrgChartMiddle{background:url(../../images/lotusSprite-8bit.png) 100% -2622px no-repeat;}
+.lotusui30 .lotusOrgChart a.lotusTop, .lotusui30 .lotusOrgChartTop{background:url(../../images/lotusSprite-8bit.png) 100% -2850px no-repeat;}
+.lotusui30 .lotusOrgChart .lotusBottom, .lotusui30 .lotusOrgChartBottom{background:url(../../images/lotusSprite-8bit.png) 100% -2394px no-repeat;}
+/*images off adjustments*/
+.lotusImagesOff .lotusui30 ul.lotusTree, .lotusImagesOff .lotusui30 .lotusTree ul * {list-style-type:square;}
+.lotusImagesOff .lotusui30 .lotusOrgChart li a, .lotusImagesOff .lotusui30 .lotusBottom{padding-right:0;}
+
+/***********************************************************/
+

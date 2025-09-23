@@ -1,0 +1,18 @@
+<div id="bookmarkPanel" tabindex="0" role='region' class="popupDlg" tabindex="0" dojoAttachPoint="PopupNode" dojoAttachEvent="onkeydown:_onStickyKeyDown" aria-label='${nls.bookmarkpanel}''>
+    <img  src="" dojoAttachPoint="arrowNode" tabindex="-1">
+  	</img>
+  	<div class="wrapper" >
+	  	<div class="inputCtl inlineDiv">
+		  	<input id="C_i_InputBox" type="text" class="inputbox"  name="bookmarkName" dojoAttachPoint="inputTextBox" value="" dojoType="dijit.form.ValidationTextBox" aria-label='${nls.bookmarkname}'></input>
+		  	<div dojoAttachPoint="listWrapper" class="textAlign"></div>		  	
+	  	</div>
+	  	<div class="inlineDiv">
+	  	 <button class="btn ok" role="button" dojoAttachPoint="okNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick" >OK</button>
+		 <button  class="btn edit" role="button" dojoAttachPoint="editNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick">Edit</button>
+	  	</div>
+	  	<div class="inlineDiv">
+	  	  <button  class="btn cancel" role="button" dojoAttachPoint="cancelNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick">Cancel</button>
+	      <button  class="btn remove" role="button" dojoAttachPoint="removeNode" dojoAttachEvent="onkeydown:_onKeyDown,onclick:_onclick">Remove</button>
+	  	</div>
+  	</div>  	 	
+</div>

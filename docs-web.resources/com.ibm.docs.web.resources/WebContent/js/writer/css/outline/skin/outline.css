@@ -1,0 +1,107 @@
+.toggleOutline {
+	background-image: url("1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 20px;
+	width: 9px;
+	overflow: hidden;
+	color: #999 border :   1px #CECECE solid;
+}
+
+.outlinePanel {
+	position: absolute;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #A3D0E4;
+}
+
+.act {
+	margin: 5px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.hd {
+	cursor: move;
+}
+
+.hd,.ft {
+	background-color: #F4F9FB;
+}
+
+.up,.down {
+	background: url("3.gif") no-repeat 0 0;
+	cursor: pointer;
+	height: 16px;
+	margin-top: 4px;
+	overflow: hidden;
+}
+
+.up {
+	background-position: 0 -692px;
+}
+
+.down {
+	background-position: 0 -673px;
+}
+
+.title {
+	font-weight: bold;
+	margin-left: 3px;
+}
+
+.close {
+	width: 16px;
+	height: 16px;
+	background: url("2.png") no-repeat 0 0;
+	cursor: pointer;
+}
+
+.contentList {
+	background-color: #FFFFFF;
+	border: 1px #CECECE solid;
+	overflow: hidden;
+}
+
+div.contentList>h1,div.contentList>h2,div.contentList>h3{
+	cursor: pointer;
+	margin-left: 3px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url("3.gif") no-repeat scroll 0 0 transparent;
+}
+
+div.contentList>h1
+{
+	background-position: 10px -737px;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-left: 26px;
+}
+
+div.contentList>h2 {
+    background-position: 10px -600px;
+    font-size: 14px;
+    font-weight: normal;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 20px;
+    overflow: hidden;
+    padding-left: 26px;
+}
+
+div.contentList>h3 {
+    background-position: 16px -755px;
+    font-size: 14px;
+    font-weight: normal;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 30px;
+    overflow: hidden;
+    padding-left: 26px;
+}

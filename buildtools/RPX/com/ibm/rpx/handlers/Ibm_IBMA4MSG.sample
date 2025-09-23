@@ -1,0 +1,18 @@
+ADDMSGD MSGID(TCP2525) +
+  MSG('Library') +
+  LVL('09/19/97' 26) CCSID(*JOB) MSGF(QHTTPSVR/QHTTPMSG) DMPLST(*NONE)
+/*MSGTYPE(L) COMP(ZHB ) MAXLEN1(0030) TRANS(Y) USER(       ) READY(Y)         */
+/*PROD(DGO ) VERS(4D30)                                                       */
+ADDMSGD MSGID(TCP70E3) +
+  FMT((*BIN 4)) +
+  SECLVL('&N Cause . . . . . :   The CCSID parameter value specified is an EBCD+
+IC CCSID. Only ASCII CCSID values are valid for the CCSID parameter. &N Recover+
+y  . . . :   Enter an ASCII CCSID value and then try the request again.') +
+  MSG('CCSID parameter value &1 not valid.') +
+  LVL('12/12/97' 18) SEV(40) CCSID(*JOB) MSGF(QHTTPSVR/QHTTPMSG) ALROPT(*NO ) +
+  LOGPRB(*NO) DMPLST(*NONE)
+/*PGMNOTE('The CCSID value specified was found, but is not a valid ASCII CCSI+*/
+/*D value.')                                                                  */
+/*MSGTYPE(E) COMP(ZHB ) MAXLEN1(0132) TRANS(Y) USER(ENDUSR ) READY(Y)         */
+/*PROD(DGO ) VERS(4D30)                                                       */
+/*VAR(&1 EBCDIC CCSID value                                                  )*/

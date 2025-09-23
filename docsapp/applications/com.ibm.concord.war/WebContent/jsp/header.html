@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">   
+ <head> 
+ 	<style type="text/css" media="all">
+		body
+		{ 
+			font-size:10pt; 
+			font-family: Arial,Verdana,sans-serif;
+			margin:0px; 
+			padding:0px;
+		}
+		body.lotusJapanese {
+    		font-family: MS PMincho,MS PGothic,Apple Gothic,Arial,Verdana,sans-serif;
+		}
+		body.lotusKorean {
+   			 font-family: "Gulim","GulimChe",Arial,Helvetica,sans-serif;
+		}
+		p
+		{ 
+			margin:0px; 
+			padding:0px;
+		}
+		.mainDiv{
+			min-height:65px;
+		    height:auto !important;
+		    height:65px;
+			width: 100%;
+			word-wrap:break-word;
+		}
+		.ODT_PN{
+			border:1px dotted black;
+			background:#EEEEEE;
+			-moz-user-select:all;
+			-moz-user-modify:read-only;
+			/*-moz-user-input:disabled;
+			-webkit-user-select:none;
+			-webkit-user-modify:read-only;*/
+			text-indent:0px;
+			margin:1px;
+		}
+		.ODT_DT{
+			border:1px dotted black;
+			background:#EEEEEE;
+			-moz-user-select:all;
+			-moz-user-modify:read-only;
+			/*-moz-user-input:disabled;
+			-webkit-user-select:none;
+			-webkit-user-modify:read-only;*/
+			text-indent:0px;
+			margin:1px;
+		}
+		p[style*="direction: rtl"]  .ODT_DT:before {
+			content:"\200E";
+		}
+		p[style*="direction:rtl"]  .ODT_DT:before {
+			content:"\200E";
+		}
+		img:-moz-broken {
+    		-moz-force-broken-image-icon: 1;
+		}
+		img.ConcordTab,img.listSpacer{
+			background-image: url('../images/spacer.gif');
+			margin-top:0.3cm;
+			height: 0cm;
+			width: 2cm;
+			border-top : 0cm; 
+			border-bottom: 0cm;
+		}
+	</style> 
+	<script type="text/javascript">
+		function updateRange(id,event)
+		{
+			if(event.ctrlKey&&(event.keyCode==67||event.keyCode==86||event.keyCode==89||event.keyCode==90))
+				window.parent.pe.scene.headerfooter.stopEvent(event);
+			var obj=document.getElementById(id);
+			if(obj.contentEditable=="true")
+			{
+				window.parent.pe.scene.headerfooter.updateRange(id,event);
+			}
+		}
+		function setEnable(id)
+		{
+			// view mode, do not allow to edit the header or footer
+			if(window.parent.pe.scene.isViewMode()) {
+				return;
+			}
+			if(document.getElementById(id).contentEditable=="true")
+			{
+				window.parent.pe.scene.headerfooter.updateRangeByClick();
+				return;
+			}
+			window.parent.pe.scene.headerfooter.setStatus("header_div");
+			window.parent.pe.scene.headerfooter.loadObjFromDom("header_div");
+			//window.parent.pe.scene.headerfooter.loadObjFromDom("footer_div");
+			
+			if(window.parent.pe.scene.headerfooter.hlock||window.parent.pe.scene.headerfooter.flock)
+			{
+				window.parent.pe.scene.headerfooter.preventEdit();
+				return;
+			}
+			else
+			{
+				window.parent.pe.scene.headerfooter.lockHeader();
+				window.parent.pe.scene.toolbar._showToolbar();
+				window.parent.pe.scene.toolbar._showBackground();
+				window.parent.pe.scene.headerfooter.currentArea="header";
+				window.parent.pe.scene.toolbar._setLocation();
+				window.parent.pe.scene.headerfooter.HEADER_EDITING=true;
+				var b=document.getElementById(id).parentNode;
+				b.scroll="";
+				b.style.overflow="";
+				window.parent.pe.scene.headerfooter.setCursor();
+			}
+		}
+		function setEditor(id, event)
+		{
+			var obj=document.getElementById(id);
+			if(obj.contentEditable=="true")
+				{
+					window.parent.pe.scene.headerfooter.currentArea="header";
+					window.parent.pe.scene.toolbar._setLocation();
+					window.parent.pe.scene.headerfooter.updateRangeByClick(event);
+				}
+		}
+		function showToolTip()
+		{
+				window.parent.pe.scene.headerfooter.showToolTip(document.getElementById("RTC"),'header');
+		}
+		document.onkeydown=function(e)
+		{
+			e = e || window.event;
+			if(e.ctrlKey&&(e.keyCode==67||e.keyCode==86||e.keyCode==89||e.keyCode==90))
+				window.parent.pe.scene.headerfooter.stopEvent(e);
+		};
+	</script>
+ </head>  
+ <body topmargin="10" leftmargin="10" bgColor="#eeeeee" style="overflow: hidden;" ondblclick="setEnable('RTC')">   
+   <div class="mainDiv" id="RTC" oncontextmenu="return false;" onkeydown="updateRange(this.id,event)" onclick="setEditor(this.id,event)" onMouseUp="setEditor(this.id,event)" onMouseMove="showToolTip()" name="RTC" contenteditable ="false" style="background:#EEEEEE;"> </div>   
+ </body>   
+ </html> 

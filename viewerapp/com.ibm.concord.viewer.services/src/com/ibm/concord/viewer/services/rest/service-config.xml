@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<service-config>
+  <handlers product="concord">
+    <!-- General Services -->
+	<!--  we need repo-id and uri be in the url because of cluster support -->
+	<!--  /job/{repo-id}/{uri}/{version}/{job-id} -->
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit" class="com.ibm.concord.viewer.services.rest.HtmlViewHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/att/(.+)" class="com.ibm.concord.viewer.services.rest.DraftAttachmentHandler" secure="false"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/decrypt" class="com.ibm.concord.viewer.services.rest.DocumentDecryptHandler" secure="true"/>
+	<handler url="/job/([^/]+)/([^/]+)/([^/]+)" class="com.ibm.concord.viewer.services.rest.handlers.job.HtmlJobHandler" secure="false"/>
+	<handler url="/cache/([^/]+)/([^/]+)" class="com.ibm.concord.viewer.services.api.CacheStatusHandler" secure="false"/>
+	<handler url="/version" class="com.ibm.concord.viewer.services.rest.VersionHandler" secure="false"/>
+	<handler url="/job/([^/]+)/([^/]+)/([^/]+)/([^/]+)" class="com.ibm.concord.viewer.services.rest.handlers.job.JobHandler" secure="false"/>
+	<handler url="/filetypes" class="com.ibm.concord.viewer.services.api.FileTypesHandler" secure="false"/>
+	<handler url="/tempstore/inotes/([^/]+)" class="com.ibm.concord.viewer.services.api.ViewDocumentHandler" secure="false"/>
+	<handler url="/attachment/mail/([^/]+)" class="com.ibm.concord.viewer.services.api.MailDocumentHandler" secure="false"/>
+	<handler url="/entitlement" class="com.ibm.concord.viewer.services.rest.EntitlementHandler" secure="false"/>
+    <handler url="/thumbnails/([^/]+)/([^/]+)/(large|medium|small)"  class="com.ibm.concord.viewer.services.rest.thumbnails.ThumbnailsHandler" secure="false"/>
+    <handler url="/thumbnails/([^/]+)/([^/]+)/?([^/]+)?"  class="com.ibm.concord.viewer.services.rest.thumbnails.ThumbnailsHandler" secure="false"/>
+    <handler url="/svg2png/([^/]+)/([^/]+)" class="com.ibm.concord.viewer.services.rest.Svg2PngHandler" secure="false"/>
+    <handler url="/query/([^/]+)/([^/]+)/snoop" class="com.ibm.concord.viewer.services.rest.SnoopHandler" secure="false"/>
+    <handler url="/list" class="com.ibm.concord.viewer.services.api.ListHandler" secure="false"/>
+    <!-- This is used for F5 deploy test -->
+    <!-- <handler url="/hashtest/([^/]+)/([^/]+)" class="com.ibm.concord.viewer.services.api.PersistenceHashTestHandler" secure="false"/> -->
+    <handler url="/domain" class="com.ibm.concord.viewer.services.rest.DomainHandler" secure="false"/>
+  </handlers>
+</service-config>

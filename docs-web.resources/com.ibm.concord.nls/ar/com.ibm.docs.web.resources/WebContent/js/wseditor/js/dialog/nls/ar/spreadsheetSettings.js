@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "قم بتحديد محددات اللغة لتنسيق الأرقام والعملات والتواريخ والبنود.",
+	INPUT_INVALID_LOCALENAME: "اسم غير صحيح لمحددات اللغة",
+	INPUT_EMPTY_LOCALENAME: "قم بتحديد محددات للغة.",
+	
+	Spain_Catalan: "أسبانيا (الكاتالونية)",
+	Denmark: "الدنمارك",
+	Germany: "ألمانيا",
+	Greek: "اليونان",
+	United_States: "الولايات المتحدة",
+	United_Kingdom: "المملكة المتحدة",
+	Spain: "أسبانيا",
+	Finland: "فنلندا",
+	France: "فرنسا",
+	Italy: "ايطاليا",
+	Japan: "اليابان",
+	Korean: "كوريا الجنوبية",
+	Norway: "النرويج",
+	Netherlands: "هولندا",
+	Poland: "بولندا",
+	Brazil: "البرازيل",
+	Portugal: "البرتغال",
+	Russia: "روسيا",
+	Sweden: "السويد",
+	Thailand: "تايلاند",
+	Turkey: "تركيا",
+	China: "الصين",
+	Taiwan_China: "تايوان (الصين)",
+	Israel: "اسرائيل"
+})
+

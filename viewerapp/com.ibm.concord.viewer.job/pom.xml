@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>viewerapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.concord.viewer.job</artifactId>
+  <name>com.ibm.concord.viewer.job- jar</name>
+  <packaging>jar</packaging>
+
+  <dependencies>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.sharedlib</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.platform</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.spi</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.cache</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.common</artifactId>
+	  <version>${project.version}</version>
+    </dependency>
+	<!-- third party -->
+	<dependency>
+      <groupId>org.apache.abdera</groupId>
+      <artifactId>abdera</artifactId>
+    </dependency>
+	<dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.1.1</version>
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>  
+        <groupId>org.codehaus.mojo</groupId>  
+        <artifactId>build-helper-maven-plugin</artifactId>  
+        <executions>
+          <execution>
+            <id>add-resources</id>  
+            <phase>generate-resources</phase>  
+            <goals>  
+              <goal>add-resource</goal>  
+            </goals>  
+            <configuration>  
+              <resources>
+                <resource>
+                  <directory>${project.basedir}/native</directory>
+                  <filtering>false</filtering>
+                  <targetPath>native</targetPath>
+                </resource>
+              </resources>
+            </configuration>  
+          </execution>           
+        </executions>
+      </plugin>  
+    </plugins>
+  </build>
+</project>

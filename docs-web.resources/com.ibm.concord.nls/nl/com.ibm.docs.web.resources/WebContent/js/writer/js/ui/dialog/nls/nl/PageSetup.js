@@ -1,0 +1,57 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        ORIENTATION_LABEL: "Afdrukstand",
+        PORTRAIT: "Staand",
+        LANDSCAPE: "Liggend",
+        HEADER: "Koptekst",
+        FOOTER: "Voettekst",
+        MARGINS_LABEL: "Kantlijnen",
+        TOP: "Boven:",
+        BOTTOM: "Onder:",
+        LEFT: "Links:",
+        RIGHT: "Rechts:",
+        PAPER_FORMAT_LABEL: "Papierformaat",
+        PAPER_SIZE_LABEL: "Papiergrootte:",
+        HEIGHT: "Hoogte:",
+        WIDTH: "Breedte:",
+        HEIGHT_DESC: "Papierlengte, in centimeters",
+        HEIGHT_DESC2: "Papierlengte, in inches",
+        WIDTH_DESC: "Papierbreedte, in centimeters",
+        WIDTH_DESC2: "Papierbreedte, in inches",
+        BOTTOM_DESC: "Ondermarge, in centimeters",
+        BOTTOM_DESC2: "Ondermarge, in inches",
+        TOP_DESC: "Bovenmarge, in centimeters",
+        TOP_DESC2: "Bovenmarge, in inches",
+        LEFT_DESC: "Linkerkantlijn, in centimeters",
+        LEFT_DESC2: "Linkerkantlijn, in inches",
+        RIGHT_DESC: "Rechterkantlijn, in centimeters",
+        RIGHT_DESC2: "Rechterkantlijn, in inches",
+        CM_LABEL: "cm",
+        LETTER: "Letter",
+        LEGAL: "Legal",
+        TABLOID: "Tabloid",
+        USER: "Gebruiker",
+        SIZE1: "Env. #6 3/4",
+        SIZE2: "Env. Monarch",
+        SIZE3: "Env. #9",
+        SIZE4: "Env. #10",
+        SIZE5: "Env. #11",
+        SIZE6: "Env. #12",
+        SIZE7: "16 kai",
+        SIZE8: "32 kai",
+        SIZE9: "32 kai groot",
+        INVALID_MSG: "De invoer is ongeldig en is automatisch gecorrigeerd. Probeer een andere waarde als u een ander resultaat wilt.",
+        INVALID_WIDTH_FOR_COLUMNS: "De invoergegevens zijn ongeldig, de contentbreedte is te klein voor de kolommen erbinnen."
+});
+

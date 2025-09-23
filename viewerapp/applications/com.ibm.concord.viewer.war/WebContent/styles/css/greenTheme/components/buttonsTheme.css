@@ -1,0 +1,64 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for buttons
+companion file is buttons_bidi.css*/
+/*** B U T T O N S ***/
+/*form buttons are the same style right now as the special buttons*/
+/*action buttons (lotusActionBtn) just use the lotusBtn style now, if you want them to look different you can define a style*/
+/*lotusButton is a set width version of the button that goes in the left column*/
+/*our regular buttons*/
+.lotusBtn, .lotusButton{border-color:#c0c7cd;}/*default button outside border*/
+.lotusBtn a, .lotusBtn a:visited, .lotusButton a, .lotusButton a:visited{border-color:#dedede;}/*span buttons have an inside border*/
+.lotusBtn a, .lotusBtn a:visited, .lotusButton a, .lotusButton a:visited, input.lotusBtn, button.lotusBtn{color:#222;background-color:#dedede;background-image:url(../../images/btnBkgd.png);}
+
+/*form and other blue buttons*/
+.lotusBtnSpecial, .lotusFormButton, .lotusBtnImg{border-color:#66ad69}
+.lotusBtnSpecial a, .lotusBtnSpecial a:visited, .lotusBtnImg img, .lotusBtnImg input{color:#fff;border-color:#66ad69;}/*span buttons have an inside border*/
+.lotusBtnSpecial a, .lotusBtnSpecial a:visited, input.lotusBtnSpecial, button.lotusBtnSpecial, .lotusFormButton, .lotusBtnImg{color:#ffffff;background-color:#408253;background-image:url(../themeImages/btnSpecialBkgd.png);}
+
+/*hover states*/
+/*default buttons*/
+.lotusButton:hover, .lotusButton:focus, .lotusBtn:hover, .lotusBtn:focus, .lotusBtn:active{border-color:#8e8e8e;}
+.lotusBtn a:hover, .lotusBtn a:focus, .lotusBtn a:active{color:#222;}
+/*form and blue buttons*/
+.lotusBtnSpecial:hover, .lotusBtnSpecial:focus, .lotusBtnSpecial:active, .lotusFormButton:hover, .lotusFormButton:focus, .lotusBtnImg:hover, .lotusBtnImg:focus, .lotusBtnImg:active{border-color:#385e19}
+.lotusBtnSpecial a:hover, span.lotusBtnSpecial a:focus, .lotusBtnSpecial a:active, .lotusImagesOff  a.lotusBtnImg, .lotusImagesOff  a.lotusBtnImg:visited, .lotusImagesOff  a.lotusBtnImg:hover, .lotusImagesOff  a.lotusBtnImg:focus, .lotusImagesOff  a.lotusBtnImg:active{color:#ffffff}/*to make sure color sticks when images are turned off, etc.*/
+
+/*disabled button - styles need to be at the end of all our button styles so they are picked up.  Uses regular button styles and a grayed out text color*/
+.lotusBtnDisabled{border-color:#c0c7cd !important;}/*we don't want disabled button border color to change on hover*/
+.lotusBtnDisabled a, .lotusBtnDisabled a:visited{border-color:#dedede;}/*span buttons have an inside border*/
+.lotusBtnDisabled a, .lotusBtnDisabled a:visited, input.lotusBtnDisabled, button.lotusBtnDisabled{color:#b0b0b0 !important;background-color:#dedede;background-image:url(../../images/btnBkgd.png);}
+/*miscellaneous*/
+.lotusBtnDivider{border-color:#e0e0e0}/*add this as an additional container class when you need a bottom divider for the buttons*/
+/*not implemented in the prototype yet.*/
+.lotusAdd img{background-image:url(../../images/iconAdd16.png)}
+.lotusClose img{background-image:url(../../images/iconClose16.png)}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusBtn a,.lotusSpritesOn .lotusButton a,.lotusSpritesOn input.lotusBtn,.lotusSpritesOn button.lotusBtn,
+.lotusSpritesOn .lotusBtn a:hover,.lotusSpritesOn .lotusButton a:hover,.lotusSpritesOn input.lotusBtn:hover,.lotusSpritesOn button.lotusBtn:hover,
+.lotusSpritesOn .lotusBtn a:focus,.lotusSpritesOn .lotusButton a:focus,.lotusSpritesOn input.lotusBtn:focus,.lotusSpritesOn button.lotusBtn:focus,
+.lotusSpritesOn .lotusBtn a:active,.lotusSpritesOn .lotusButton a:active,.lotusSpritesOn input.lotusBtn:active,.lotusSpritesOn button.lotusBtn:active,
+.lotusSpritesOn .lotusBtn a:visited,.lotusSpritesOn .lotusButton a:visited,.lotusSpritesOn input.lotusBtn:visited,.lotusSpritesOn button.lotusBtn:visited
+{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 0}
+
+.lotusSpritesOn .lotusBtnDisabled a,.lotusSpritesOn input.lotusBtnDisabled,.lotusSpritesOn button.lotusBtnDisabled,
+.lotusSpritesOn .lotusBtnDisabled a:hover,.lotusSpritesOn input.lotusBtnDisabled:hover,.lotusSpritesOn button.lotusBtnDisabled:hover,
+.lotusSpritesOn .lotusBtnDisabled a:focus,.lotusSpritesOn input.lotusBtnDisabled:focus,.lotusSpritesOn button.lotusBtnDisabled:focus,
+.lotusSpritesOn .lotusBtnDisabled a:active,.lotusSpritesOn input.lotusBtnDisabled:active,.lotusSpritesOn button.lotusBtnDisabled:active,
+.lotusSpritesOn .lotusBtnDisabled a:visited,.lotusSpritesOn input.lotusBtnDisabled:visited,.lotusSpritesOn button.lotusBtnDisabled:visited
+{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 0}
+
+.lotusSpritesOn .lotusBtnSpecial a,.lotusSpritesOn input.lotusBtnSpecial,.lotusSpritesOn button.lotusBtnSpecial,.lotusSpritesOn .lotusFormButton,.lotusSpritesOn .lotusBtnImg,
+.lotusSpritesOn .lotusBtnSpecial a:hover,.lotusSpritesOn input.lotusBtnSpecial:hover,.lotusSpritesOn button.lotusBtnSpecial:hover,.lotusSpritesOn .lotusFormButton:hover,.lotusSpritesOn .lotusBtnImg:hover,
+.lotusSpritesOn .lotusBtnSpecial a:focus,.lotusSpritesOn input.lotusBtnSpecial:focus,.lotusSpritesOn button.lotusBtnSpecial:focus,.lotusSpritesOn .lotusFormButton:focus,.lotusSpritesOn .lotusBtnImg:focus,
+.lotusSpritesOn .lotusBtnSpecial a:active,.lotusSpritesOn input.lotusBtnSpecial:active,.lotusSpritesOn button.lotusBtnSpecial:active,.lotusSpritesOn .lotusFormButton:active,.lotusSpritesOn .lotusBtnImg:active,
+.lotusSpritesOn .lotusBtnSpecial a:visited,.lotusSpritesOn input.lotusBtnSpecial:visited,.lotusSpritesOn button.lotusBtnSpecial:visited,.lotusSpritesOn .lotusFormButton:visited,.lotusSpritesOn .lotusBtnImg:visited
+{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -1350px}
+
+.lotusSpritesOn .lotusAdd img{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2107px}
+.lotusSpritesOn .lotusClose img{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2275px}
+/*[/sprite]*/
+/****************************************************************/

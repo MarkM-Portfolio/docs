@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Sayı, para birimi, tarih ve saati biçimlendirmek için yerel ayarı seçin.",
+	INPUT_INVALID_LOCALENAME: "Geçersiz yerel ayar adı",
+	INPUT_EMPTY_LOCALENAME: "Bir yerel ayar seçin.",
+	
+	Spain_Catalan: "İspanya (Katalanca)",
+	Denmark: "Danimarka",
+	Germany: "Almanya",
+	Greek: "Yunanistan",
+	United_States: "Amerika Birleşik Devletleri",
+	United_Kingdom: "Birleşik Krallık",
+	Spain: "İspanya",
+	Finland: "Finlandiya",
+	France: "Fransa",
+	Italy: "İtalya",
+	Japan: "Japonya",
+	Korean: "Güney Kore",
+	Norway: "Norveç",
+	Netherlands: "Hollanda",
+	Poland: "Polonya",
+	Brazil: "Brezilya",
+	Portugal: "Portekiz",
+	Russia: "Rusya",
+	Sweden: "İsveç",
+	Thailand: "Tayland",
+	Turkey: "Türkiye",
+	China: "Çin",
+	Taiwan_China: "Tayvan (Çince)",
+	Israel: "İsrail"
+})
+

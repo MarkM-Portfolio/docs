@@ -1,0 +1,33 @@
+{
+	"border-width": {
+		"thin": "0.06cm",
+		"medium": "0.12cm",
+		"thick": "0.18cm"
+	},
+	"border-dashed-style": {
+		"thin": {
+			"draw:name": "IBM_DOCS_THIN_DASHED",
+			"draw:display-name": "HCL Docs Thin Dash Style",
+			"draw:style": "rect",
+			"draw:dots1": 1,
+			"draw:dots1-length": "600%",
+			"draw:distance": "600%"
+		},
+		"medium": {
+			"draw:name": "IBM_DOCS_MEDIUM_DASHED",
+			"draw:display-name": "HCL Docs Medium Dash Style",
+			"draw:style": "rect",
+			"draw:dots1": 1,
+			"draw:dots1-length": "400%",
+			"draw:distance": "400%"
+		},
+		"thick": {
+			"draw:name": "IBM_DOCS_THICK_DASHED",
+			"draw:display-name": "HCL Docs Thick Dash Style",
+			"draw:style": "rect",
+			"draw:dots1": 1,
+			"draw:dots1-length": "300%",
+			"draw:distance": "300%"
+		}
+	}
+}

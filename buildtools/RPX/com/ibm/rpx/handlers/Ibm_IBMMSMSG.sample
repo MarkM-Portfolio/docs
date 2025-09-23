@@ -1,0 +1,9 @@
+.* Here is a comment statement.
+.*
+.VENUNHTCP310 5655-0502666
+EZACT01I           Here is a very simple message.
+EZAIN01I  01       Here are replacement var: &PROCNAME., &TASKNAME., &APPL..
+EZAIN01I  02       Replacement variables always start with an ampersand and end with a period.
+EZAIN02I           This format is intended for OS/390 products.
+EZAIN03I           This format is column specific, with trans. text always starting in col. 20.
+EZAIN04I           Each record can be at most 255 characters.

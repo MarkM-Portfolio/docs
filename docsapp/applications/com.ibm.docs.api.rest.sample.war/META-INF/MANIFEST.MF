@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: War
+Bundle-SymbolicName: com.ibm.docs.api.rest.sample.war
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.ibm.docs.api.rest.sample.filters,
+ com.ibm.docs.api.rest.sample.handlers,
+ com.ibm.docs.api.rest.sample.servlet,
+ com.ibm.docs.api.rest.sample.util

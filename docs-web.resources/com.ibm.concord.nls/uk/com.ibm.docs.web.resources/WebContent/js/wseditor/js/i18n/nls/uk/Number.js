@@ -1,0 +1,28 @@
+({
+	TRUE: "TRUE",
+	FALSE: "FALSE",
+	
+	Spain_Catalan: "Spain (Catalan)",
+	Denmark: "Denmark",
+	Germany: "Germany",
+	Greek: "Greece",
+	United_States: "United States",
+	Spain: "Spain",
+	Finland: "Finland",
+	France: "France",
+	Italy: "Italy",
+	Japan: "Japan",
+	Korean: "South Korea",
+	Norway: "Norway",
+	Netherlands: "Netherlands",
+	Poland: "Poland",
+	Brazil: "Brazil",
+	Portugal: "Portugal",
+	Russia: "Russia",
+	Sweden: "Sweden",
+	Thailand: "Thailand",
+	Turkey: "Turkey",
+	China: "China",
+	Taiwan_China: "Taiwan (China)",
+	Israel: "Israel"
+})

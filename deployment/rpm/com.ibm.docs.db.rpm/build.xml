@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Concord" basedir="." default="concord.build">
+  <target name="concord.build" >
+	  <ant dir="SC-AC-Docs-DB-Run" inheritAll="true"/>
+	  <ant dir="SC-AC-Docs-DB-Media" inheritAll="true"/>
+	  <ant dir="ICC-Docs-Migrate-DB-Run" inheritAll="true"/>
+  </target>
+</project>

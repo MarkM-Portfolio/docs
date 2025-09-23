@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Werken met documenten" topic="text/document/documents_frame.html">
+   <topic label="Werken met documenten" href="text/document/documents_frame.html">
+      <topic label="Documenten maken en importeren"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="Sjablonen - Info" href="text/document/d_templates.html"/>
+         <topic label="Documenten maken op basis van sjablonen"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="De standaard bestandsindeling van documenten wijzigen"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Documenten uploaden om te delen"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Bestaande documenten importeren"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Met wachtwoord beveiligde Word-bestanden openen"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Bestandscompatibiliteit en documenten exporteren"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Ondersteunde bestandsindelingen in documenten"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Documenten opslaan" href="text/document/d_saving_documents.html"/>
+         <topic label="Een documentversie publiceren"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Documenten exporteren naar andere bestandsindelingen"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Documenten delen"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Documenten delen met personen of community's"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Toegangsniveaus instellen voor documenten"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Samenwerken aan documenten in real-time"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Gelijktijdige bewerking in real-time van documenten"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="Gelijktijdige bewerking van documenten - Info"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Gelijktijdige bewerking van documenten"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Wijzigingen van editors afbeelden in documenten"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Samenwerken met behulp van commentaar in documenten"
+                href="text/document/d_comments_overview.html">
+            <topic label="Commentaar in documenten - Info"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Commentaar toevoegen aan documenten"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Commentaar bekijken in documenten"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Commentaar zoeken in documenten"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Documenten bewerken"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Tekst opmaken in documenten" href="text/document/d_formatting_text.html">
+            <topic label="Schrifteffecten instellen"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="Superscript of subscript maken van tekst"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Lettergrootte instellen" href="text/document/d_setting_font_size.html"/>
+            <topic label="Tekst uitlijnen" href="text/document/d_aligning_text.html"/>
+            <topic label="Tekst inspringen" href="text/document/d_indenting_text.html"/>
+            <topic label="Opsommingstekens of nummering toevoegen in documenten"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Meervoudige lijsten in documenten maken"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Links invoegen" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Kop- en voetteksten maken"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Inhoudsopgave maken" href="text/document/d_create_toc.html"/>
+         <topic label="Velden in documenten invoegen"
+                href="text/document/d_inserting_fields.html"/>
+         <topic label="Spellingcontrole uitvoeren in documenten"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Documenten afdrukken" href="text/document/d_printing_a_document.html">
+            <topic label="Documenten afdrukken naar PDF-bestanden"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Werken met afbeeldingen in documenten"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Afbeeldingen invoegen in documenten"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Afbeeldingseigenschappen instellen in documenten"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Werken met tabellen in documenten"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Tabellen maken in documenten"
+                href="text/document/d_creating_a_table.html"/>
+         <topic label="Tabelstijlen wijzigen in documenten"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Tabeleigenschappen instellen in documenten"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Achtergrondkleuren instellen voor tabelcellen"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Tekst uitlijnen in tabelcellen in documenten"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Rijen en kolommen aan tabellen toevoegen"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Rijen en kolommen verplaatsen in tabellen"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Tabelcellen samenvoegen of splitsen"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Het formaat van tabellen wijzigen in documenten"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Bijschriften toevoegen aan tabellen in documenten"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Kopteksten voor tabellen in documenten definiëren"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Snelkeuzelijst voor documenten" href="text/document/d_quick_ref.html"/>
+      <topic label="Sneltoetscombinaties in documenten"
+             href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

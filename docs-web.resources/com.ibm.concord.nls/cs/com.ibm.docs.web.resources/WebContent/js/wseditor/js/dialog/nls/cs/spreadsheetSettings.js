@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Vyberte národní prostředí pro formátování čísel, peněžních částek, kalendářních dat a časů.",
+	INPUT_INVALID_LOCALENAME: "Neplatný název národního prostředí.",
+	INPUT_EMPTY_LOCALENAME: "Vyberte národní prostředí.",
+	
+	Spain_Catalan: "Španělsko (katalánština)",
+	Denmark: "Dánsko",
+	Germany: "Německo",
+	Greek: "Řecko",
+	United_States: "Spojené státy americké",
+	United_Kingdom: "Spojené království",
+	Spain: "Španělsko",
+	Finland: "Finsko",
+	France: "Francie",
+	Italy: "Itálie",
+	Japan: "Japonsko",
+	Korean: "Jižní Korea",
+	Norway: "Norsko",
+	Netherlands: "Nizozemsko",
+	Poland: "Polsko",
+	Brazil: "Brazílie",
+	Portugal: "Portugalsko",
+	Russia: "Rusko",
+	Sweden: "Švédsko",
+	Thailand: "Thajsko",
+	Turkey: "Turecko",
+	China: "Čína",
+	Taiwan_China: "Tchaj-wan (Čína)",
+	Israel: "Izrael"
+})
+

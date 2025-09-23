@@ -1,0 +1,38 @@
+body
+{
+	background-color: #000000;
+	margin: 0px;  
+}
+
+#slideShowSlide
+{
+	border: 1px solid #666666;
+	position:relative;
+}
+
+#slideShowContainer *:focus{
+ 	outline:none;
+}
+
+
+/******************************************
+START Shared Slide Show dialog dataGrid 19824
+*******************************************/
+
+.userList .dojoxGridCell:focus {
+    outline: none;
+}
+
+.userList .editorCss .dojoxGridRowSelected {
+    background-color: transparent !important;
+}
+
+.userList .editorCss .dojoxGridRowOdd {
+    background-color: transparent !important;
+}
+
+/************************************************
+END Shared Slide Show dialog dataGrid 19824
+**************************************************/
+
+

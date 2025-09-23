@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Treball amb documents" topic="text/document/documents_frame.html">
+   <topic label="Treball amb documents" href="text/document/documents_frame.html">
+      <topic label="Creació i importació de documents"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="Quant a plantilles" href="text/document/d_templates.html"/>
+         <topic label="Creació de documents a partir de plantilles"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Canvi del format de fitxer per defecte dels documents"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Càrrega de documents per compartir-los"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Importació de documents existents"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Com obrir fitxers del Word protegits amb contrasenya"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Compatibilitat de fitxers i exportació de documents"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Formats de fitxer admesos als documents"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Com desar documents" href="text/document/d_saving_documents.html"/>
+         <topic label="Publicació d'una versió dels documents"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Exportació de documents a altres formats de fitxer"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Ús compartit de documents"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Com compartir documents amb persones o comunitats"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Definició nivells d'accés per a documents"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Col·laboració en documents en temps real"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Coedició de documents en temps real"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="Quant a la coedició de documents"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Coedició amb altres en documents"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Com visualitzar els canvis de cada editor als documents"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Col·laboració amb comentaris als documents"
+                href="text/document/d_comments_overview.html">
+            <topic label="Quant als comentaris a documents"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Creació de comentaris als documents"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Visualització de comentaris als documents"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Cerca de comentaris als documents"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Edició de documents"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Formatació de text a documents"
+                href="text/document/d_formatting_text.html">
+            <topic label="Definició d'efectes de tipus de lletra"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="Conversió de text en superíndex o subíndex"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Definició de la mida del tipus de lletra"
+                   href="text/document/d_setting_font_size.html"/>
+            <topic label="Alineació de text" href="text/document/d_aligning_text.html"/>
+            <topic label="Sagnat de text" href="text/document/d_indenting_text.html"/>
+            <topic label="Addició de vinyetes o números a documents"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Creació de llistes de múltiples nivells a documents"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Inserció d'enllaços" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Creació de capçaleres i peus de pàgina"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Creació d'una taula de contingut" href="text/document/d_create_toc.html"/>
+         <topic label="Inserció de camps a documents"
+                href="text/document/d_inserting_fields.html"/>
+         <topic label="Correcció ortogràfica a documents"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Com imprimir documents" href="text/document/d_printing_a_document.html">
+            <topic label="Impressió de documents a fitxers PDF"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Treball amb imatges a documents"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Inserció d'imatges a documents"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Definició de les propietats d'imatge d'un document"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Treball amb taules als documents"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Creació de taules a documents"
+                href="text/document/d_creating_a_table.html"/>
+         <topic label="Canvi dels estils de taula als documents"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Definició de propietats de taula a documents"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Definició de colors de fons per a cel·les de la taula"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Alineació del text a cel·les de taula en documents"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Addició de files i columnes a taules"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Desplaçament de files i columnes a taules"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Combinació o divisió de cel·les de taula"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Redimensionament de taules als documents"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Addició d'etiquetes a taules en documents"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Definició de capçaleres per a taules a documents"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Consulta ràpida de Documents" href="text/document/d_quick_ref.html"/>
+      <topic label="Dreceres de teclat als documents"
+             href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

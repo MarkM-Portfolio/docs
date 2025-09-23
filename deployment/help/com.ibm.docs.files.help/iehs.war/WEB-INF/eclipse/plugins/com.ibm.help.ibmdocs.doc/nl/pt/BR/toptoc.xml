@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2020                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<toc label="HCL Docs" topic="text/overview/help_welcome_page.html">
+   <topic label="Navegadores Suportados" href="text/overview/browsersupport.html"/>
+   <topic label="Recursos de acessibilidade para o HCL Docs"
+          href="text/overview/accessibility_features.html"/>
+   <link toc="toc_document.xml"/>
+   <link toc="toc_spreadsheet.xml"/>
+   <link toc="toc_presentation.xml"/>
+   <topic label="Glossário" href="text/glossary.html"/>
+</toc>

@@ -1,0 +1,17 @@
+#  Here is a comment statement
+msgid "An error occurred. The installation failed."
+msgstr ""
+"An error occurred. The installation failed."
+#
+# %s is a hostname
+msgid ""
+"The endpoint proxy %proxy_num% is <b>not</b> connected to its gateway.\n"
+"Please install or recycle this endpoint before proceeding."
+msgstr ""
+"The endpoint proxy %proxy_num% is <b>not</b> connected to its gateway.\n"
+"Please install or recycle this endpoint before proceeding."
+#
+msgid "Detected %s modem.\n" 
+msgid_plural "Detected %s modems.\n"
+msgstr[0] "Detected %s modem.\n"
+msgstr[1] "Detected %s modems.\n"

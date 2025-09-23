@@ -1,0 +1,33 @@
+{
+    "filters": [
+        {
+            "id": "finance",
+            "widgetId": "S_d_TemplateFinanceFilter"
+        },
+        {
+            "id": "project",
+            "widgetId": "S_d_TemplateProjectFilter"
+        },
+        {
+            "id": "others",
+            "widgetId": "S_d_TemplateOthersFilter"
+        }
+    ],
+    "templates": [
+        {
+            "id": "marketing_budget",
+            "type": "finance",
+            "previewImg": "marketing_budget.png"
+        },
+        {
+            "id": "project_summary",
+            "type": "project",
+            "previewImg": "project_summary.png"
+        },
+        {
+            "id": "employee_training_course",
+            "type": "others",
+            "previewImg": "employee_training_course.png"
+        }
+    ]
+}

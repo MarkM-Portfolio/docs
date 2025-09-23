@@ -1,0 +1,24 @@
+# Usage statement for wcmd cfg help.  This help is intended for
+# public consumption.
+
+CLI_USAGE=Usage: cfg command [-flags] [args...]\n\
+\  children [<resource>] <pathname> [<pathname>...]\n\
+\  cleanup [-remove] [<resource>...]\n\
+\  clear [<resource>] <pathname> [<pathname>...]\n\
+\  contents [<resource>] <pathname> [<pathname>...]\n\
+\  get [<resource>] <pathname> <key> [<key>...]\n\
+\  getCoalesced [<resource>] <pathname> <key> [<key>...]\n\
+\  getcoalescing <resource> [<resource>...]\n\
+\  getraw [<resource>] <pathname> <key> [<key>...]\n\
+\  help\n\
+\  importXML [<resource>] <xml_url> [<xml_url>...]\n\
+\  keys [<resource>] <pathname> [<pathname>...]\n\
+\  list\n\
+\  listResources\n\
+\  nodeExists [<resource>] <pathname> [<pathname>...]\n\
+\  put [<resource>] <pathname> <key>=<value> [<key>=<value>...]\n\
+\  remove [<resource>] <pathname> <key> [<key>...]\n\
+\  removeNode [<resource>] <pathname> [<pathname>...]\n\
+\  removeResource <resource> [<resource>...]\n\
+\  whence [<resource>] <pathname> <key> [<key>...]\n\
+\  whenceCoalesced [<resource>] <pathname> <key> [<key>...]

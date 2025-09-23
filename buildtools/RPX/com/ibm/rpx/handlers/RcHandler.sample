@@ -1,0 +1,59 @@
+/* Here is a comment statement.   */
+// Here is an alternate method of coding a comment line.
+#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+LANGUAGE 9, 1
+#pragma code_page(1252)
+
+Sample_Accel_Keys ACCELERATORS PRELOAD
+BEGIN
+  VK_F3,           ID_EXIT,             VIRTKEY
+  "O",             ID_OPENDLG,          VIRTKEY, ALT
+END
+
+STRINGTABLE
+BEGIN
+  SAVECHANGES      "Save your changes to this resource section?"
+  LOADFONT         "Cannot load font (%s). \x0DSimulation may be incorrect."
+  MULTILINE	   "This is one line\nthis is another\rand this is a third."
+END
+
+"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res
+
+Sample_Menu MENU PRELOAD
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "&Open",                  ID_OPEN
+    MENUITEM "&Save",                  ID_SAVE
+    MENUITEM "&Close",                 ID_QUIT
+    MENUITEM "E&xit",                  ID_EXIT
+  END
+END
+
+Sample_Dialog DIALOG 8, 8, 182, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Sample Dialog Title Text"
+FONT 8, "Helv"
+BEGIN
+  LTEXT    "Select how to align these items:", 1, 8, 5, 168, 18
+  GROUPBOX "Aligned:",  1, 13, 26, 55, 46, WS_VISIBLE
+  AUTORADIOBUTTON "&Left",   ID_ALIGN_LEFT, 21, 36, 29, 9,
+                             WS_VISIBLE | WS_GROUP
+  AUTORADIOBUTTON "&Right",  ID_ALIGN_RIGHT, 21, 46, 35, 9,
+                             WS_VISIBLE
+  DEFPUSHBUTTON "&Yes",      DID_OK,      31, 80, 35, 12, WS_GROUP
+  DEFPUSHBUTTON "&No",       DID_CANCEL,  90, 80, 35, 12
+END
+

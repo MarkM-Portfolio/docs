@@ -1,0 +1,72 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.docs.viewer.automation" basedir="." default="create_run_jar">
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${bin.dir}/classes"/>
+	<property name="jar.dir" value="${bin.dir}/jar"/>
+	<property name="lib.dir" value="lib"/>
+	
+	<path id="lib.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="lib.classpath"/>
+		</javac>
+		<!--copy jar in jar loader -->
+		<unzip src="${lib.dir}/jarinjarloader.jar" dest="${classes.dir}"/>
+	</target>
+	
+    <target name="create_run_jar" depends="compile">
+    	<mkdir dir="${build.home}/${ant.project.name}"/>
+        <jar destfile="${build.home}/${ant.project.name}/${ant.project.name}.jar">
+            <manifest>
+            	<attribute name="Created-By" value="IBM"/>
+            	<attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+            	<attribute name="Rsrc-Main-Class" value="com.ibm.docs.viewer.automation.ViewerTestsRunner"/>
+            	<attribute name="Class-Path" value="."/>
+            	<attribute name="Rsrc-Class-Path" value="./ commons-codec-1.6.jar commons-logging-1.1.1.jar fluent-hc-4.2.3.jar hamcrest-core-1.3.jar httpclient-4.2.3.jar httpclient-cache-4.2.3.jar httpcore-4.2.2.jar httpmime-4.2.3.jar json4j.jar junit-4.11.jar"/>
+            </manifest>
+            <fileset dir="${classes.dir}"/>
+            <zipfileset dir="${lib.dir}" includes="commons-codec-1.6.jar"/>
+            <zipfileset dir="${lib.dir}" includes="commons-logging-1.1.1.jar"/>
+            <zipfileset dir="${lib.dir}" includes="fluent-hc-4.2.3.jar"/>
+            <zipfileset dir="${lib.dir}" includes="hamcrest-core-1.3.jar"/>
+            <zipfileset dir="${lib.dir}" includes="httpclient-4.2.3.jar"/>
+            <zipfileset dir="${lib.dir}" includes="httpclient-cache-4.2.3.jar"/>
+            <zipfileset dir="${lib.dir}" includes="httpcore-4.2.2.jar"/>
+            <zipfileset dir="${lib.dir}" includes="httpmime-4.2.3.jar"/>
+            <zipfileset dir="${lib.dir}" includes="json4j.jar"/>
+            <zipfileset dir="${lib.dir}" includes="junit-4.11.jar"/>
+        </jar>
+    	<!-- copy config file -->
+    	<copy todir="${build.home}/${ant.project.name}" file="${src.dir}/com/ibm/docs/viewer/automation/config/config.json" />
+    	<copy todir="${build.home}/${ant.project.name}" file="${src.dir}/com/ibm/docs/viewer/automation/config/config_sc.json" />
+    	<!-- copy sample files -->
+    	<mkdir dir="${build.home}/${ant.project.name}/samples"/>
+    	<copy todir="${build.home}/${ant.project.name}/samples">
+			<fileset dir="samples">
+				<include name="**/*"/>
+			</fileset>
+    	</copy>
+    </target>
+</project>

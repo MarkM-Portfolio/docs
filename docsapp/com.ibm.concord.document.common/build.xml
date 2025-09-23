@@ -1,0 +1,97 @@
+<project name="com.ibm.concord.document.common" basedir="." default="deploy">
+	<property name="src.dir" value="src" />
+	<property name="bin.dir" value="bin" />
+	<property name="classes.dir" value="${bin.dir}/classes" />
+	<property name="jar.dir" value="${bin.dir}/jar" />
+	<property name="ear.dir" value="../com.ibm.concord.ear/" />
+	<property name="jar.path" value="${build.home}/${ant.project.name}.jar" />
+	<property name="report.dir" value="${build.home}/report" />
+
+	<path id="project.classpath">
+		<pathelement path="${build.home}/com.ibm.concord.platform.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.document.services.jar" />
+		<pathelement path="${build.home}/com.ibm.concord.config.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.repository.jar" />
+		<pathelement path="${build.home}/com.ibm.docs.common.jar" />
+	</path>
+	<path id="lib.classpath">
+		<pathelement path="${ear.dir}/lib/abdera-0.4.0-incubating.jar" />
+		<pathelement path="${ear.dir}/lib/acf-2.5.0.29.jar" />
+		<pathelement path="${ear.dir}/lib/html-parser-2.5.0.29.jar" />
+	</path>
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar" />
+	</path>
+	<path id="findbugs.classpath">
+			<fileset dir="${findbugs.home}/lib" includes="*.jar"/>
+	</path>
+
+	<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" classpathref="findbugs.classpath" />
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" encoding="UTF-8" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath" />
+			<classpath refid="was.classpath" />
+			<classpath refid="lib.classpath" />
+		</javac>
+	</target>
+
+	<target name="findbugs-condition" depends="compile">
+		<condition property="enablefindbugs">
+			<istrue value="${findbugs.enable}" />
+		</condition>
+	</target>
+	<target name="findbugs" depends="findbugs-condition" if="enablefindbugs">
+		<mkdir dir="${report.dir}" />
+		<findbugs home="${findbugs.home}" output="xml" outputFile="${report.dir}/${ant.project.name}.xml" warningsProperty="bugs.found">
+			<auxClasspath refid="project.classpath" />
+			<auxClasspath refid="lib.classpath" />
+			<auxClasspath refid="was.classpath" />
+			<sourcePath path="${src.dir}" />
+			<class location="${classes.dir}" />
+		</findbugs>
+		<condition property="build.fail">
+			<and>
+				<istrue value="${bugs.found}" />
+				<istrue value="${findbugs.fail}" />
+			</and>
+		</condition>
+		<fail if="build.fail" message="Find bugs in ${ant.project.name}, see ${report.dir}/${ant.project.name}.xml for details." />
+	</target>
+	<target name="jar" depends="findbugs">
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper />
+					<globmapper from="*" to="lib/*" />
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath" />
+		</pathconvert>
+		<pathconvert property="manifest.project.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper />
+				</chainedmapper>
+			</mapper>
+			<path refid="project.classpath" />
+		</pathconvert>
+		<mkdir dir="${jar.dir}" />
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Created-By" value="IBM" />
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}" />
+			</manifest>
+		</jar>
+	</target>
+	<target name="deploy" depends="jar">
+		<copy todir="${build.home}">
+			<fileset dir="${jar.dir}" />
+		</copy>
+	</target>
+</project>
+

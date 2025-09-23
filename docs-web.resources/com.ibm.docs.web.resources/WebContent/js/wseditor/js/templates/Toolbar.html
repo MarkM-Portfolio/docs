@@ -1,0 +1,208 @@
+<div dojoType="dijit.Toolbar" waiRole="toolbar" tabIndex="${tabIndex}" dojoAttachPoint="containerNode" class="dijit dijitToolbar websheetToolbar">
+    <div dojoType="dijit.ToolbarSeparator">
+    </div>
+    <button dojoType="dijit.form.Button" title= 'Save' iconClass= "websheetToolbarIcon saveButtonIcon" showLabel="true" dojoAttachPoint="saveButton">
+    </button>
+    <!--
+    <button dojoType="dijit.form.Button" title= 'print the current sheet' iconClass= "websheetToolbarIcon printButtonIcon" showLabel="true" dojoAttachPoint="printButton">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'the three button' iconClass= "websheetToolbarIcon threeButtonIcon" showLabel="true" dojoAttachPoint="threeButton">
+    </button>
+    -->
+    <div dojoType="dijit.ToolbarSeparator">
+    </div>
+    <button dojoType="dijit.form.Button" title= 'undo' iconClass= "websheetToolbarIcon undoIcon" showLabel="true" dojoAttachPoint="undoButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'redo' iconClass= "websheetToolbarIcon redoIcon" showLabel="true" dojoAttachPoint="redoButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Insert Row' iconClass= "websheetToolbarIcon g2firstButtonIcon" showLabel="true" dojoAttachPoint="g2firstButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Delete Row' iconClass= "websheetToolbarIcon g2secondButtonIcon" showLabel="true" dojoAttachPoint="g2secondButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Insert Column' iconClass= "websheetToolbarIcon g2thirdButtonIcon" showLabel="true" dojoAttachPoint="g2thirdButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Delete Column' iconClass= "websheetToolbarIcon g2fourButtonIcon" showLabel="true" dojoAttachPoint="g2fourButtonIcon">
+    </button>
+    <!--
+    <button dojoType="dijit.form.Button" title= 'Web Link' iconClass= "websheetToolbarIcon g2eightButtonIcon" showLabel="true" dojoAttachPoint="g2eightButtonIcon">
+    </button>
+    -->
+    <div dojoType="dijit.ToolbarSeparator">
+    </div>
+    <!-- <button dojoType="dijit.form.DropDownButton">
+    <span>Font Name</span>
+    <div dojoType="dijit.Menu" title="Font Name options">
+    <div dojoType="dijit.MenuItem" label= "Arial                  " title= 'Arial                  ' dojoAttachPoint="ArialMenuItem" value="1234">
+    </div>
+    <div dojoType="dijit.MenuItem" label= "Comic Sans MS          " title= 'Comic Sans MS          ' dojoAttachPoint="ComicSansMSMenuItem">
+    </div>
+    <div dojoType="dijit.MenuItem" label= "Courier New            " title= 'Courier New            ' dojoAttachPoint="CourierNewMenuItem">
+    </div>
+    <div dojoType="dijit.MenuItem" label= "Georgia                " title= ' Georgia               ' dojoAttachPoint="GeorgiaMenuItem">
+    </div>
+    <div dojoType="dijit.MenuItem" label= "Lucida Sans Unicode    " title= 'Lucida Sans Unicode    ' dojoAttachPoint="LucidaSansUnicodeMenuItem">
+    </div>
+    <div dojoType="dijit.MenuItem" label= "Tahoma                 " title= 'Tahoma                 ' dojoAttachPoint="TahomaMenuItem">
+    </div>
+    <div dojoType="dijit.MenuItem" label= "Times New Roman        " title= 'Times New Roman        ' dojoAttachPoint="TimesNewRomanMenuItem">
+    </div>
+    </div>
+    </button>
+    -->
+    <button dojoType="dijit.form.DropDownButton" dojoAttachPoint="fontSizeDropDown">
+        <span>Font Size</span>
+        <div dojoType="dijit.Menu" title="Font Size options">
+            <div dojoType="dijit.MenuItem" label= "8" title= "8" dojoAttachPoint="firstFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "9 " title= '9' dojoAttachPoint="secondFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "10" title= "10" dojoAttachPoint="thirdFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "11" title= '11' dojoAttachPoint="fourFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "12" title= '12' dojoAttachPoint="fiveFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "14" title= '14' dojoAttachPoint="sixFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "16" title= '16' dojoAttachPoint="sevenFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "18" title= '18' dojoAttachPoint="eightFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "20" title= '20' dojoAttachPoint="nightFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "22" title= '22' dojoAttachPoint="tenFontMenuItem">
+            </div>
+            <div dojoType="dijit.MenuItem" label= "24" title= '24' dojoAttachPoint="eleventFontMenuItem">
+            </div>
+        </div>
+    </button>
+    <button dojoType="dijit.form.DropDownButton" iconClass= "websheetToolbarIcon g3thirdButtonIcon" dojoAttachPoint="fontcolorDropDown">
+        <div dojoType="dijit.TooltipDialog">
+            <div dojoType="websheet.ColorPalette" onChange="alert(this.value);" palette="8x10" dojoAttachPoint="fontcolor">
+            </div>
+        </div>
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Bold' iconClass= "websheetToolbarIcon g3fourButtonIcon" showLabel="true" dojoAttachPoint="g3fourButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'italic' iconClass= "websheetToolbarIcon g3fiveButtonIcon" showLabel="true" dojoAttachPoint="g3fiveButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Underline' iconClass= "websheetToolbarIcon g3sixButtonIcon" showLabel="true" dojoAttachPoint="g3sixButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Strikethrough' iconClass= "websheetToolbarIcon g3sevenButtonIcon" showLabel="true" dojoAttachPoint="g3sevenButtonIcon">
+    </button>
+    <div dojoType="dijit.ToolbarSeparator">
+    </div>
+    <button dojoType="dijit.form.DropDownButton" iconClass= "websheetToolbarIcon g41thirdButtonIcon" dojoAttachPoint="numberFormateDropDown">
+        <span></span>
+        <div dojoType="dijit.Menu" style: "display: none;">
+            <div dojoType="dijit.MenuItem" iconClass="websheetToolbarIcon g41firstButtonIcon" dojoAttachPoint="formatNumberItem1">
+                Number &nbsp;&nbsp;(1,234)
+            </div>
+            <div dojoType="dijit.MenuItem" iconClass="websheetToolbarIcon g41secondButtonIcon" dojoAttachPoint="formatNumberItem2">
+                Number &nbsp;&nbsp;(1,234.00)
+            </div>
+            <div dojoType="dijit.MenuItem" iconClass="websheetToolbarIcon g41thirdButtonIcon" dojoAttachPoint="formatDateItem1">
+                Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Simple)
+            </div>
+            <div dojoType="dijit.MenuItem" iconClass="websheetToolbarIcon g41fourthButtonIcon" dojoAttachPoint="formatDateItem2">
+                Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Abbreviated)
+            </div>
+            <div dojoType="dijit.MenuItem" iconClass="websheetToolbarIcon g41fifthButtonIcon" dojoAttachPoint="formatCurrencyItem1">
+                Currency &nbsp;&nbsp;(USD)
+            </div>
+            <div dojoType="dijit.MenuItem" iconClass="websheetToolbarIcon g41sixthButtonIcon" dojoAttachPoint="formatCurrencyItem2">
+                Currency &nbsp;&nbsp;(EUR)
+            </div>
+            <div dojoType="dijit.MenuItem" iconClass="websheetToolbarIcon g41sixthButtonIcon" dojoAttachPoint="formatCurrencyItem3">
+                Currency &nbsp;&nbsp;(CNY)
+            </div>
+        </div>
+    </button>
+    <!-- <button dojoType="dijit.form.DropDownButton" iconClass= "websheetToolbarIcon g41firstButtonIcon">
+    <div dojoType="dijit.TooltipDialog">
+    <button dojoType="dijit.form.Button" title= 'the g41first button' iconClass= "websheetToolbarIcon g41firstButtonIcon" showLabel="true" dojoAttachPoint="g41firstButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'the g41second button' iconClass= "websheetToolbarIcon g41secondButtonIcon" showLabel="true" dojoAttachPoint="g41secondButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'the g41third button' iconClass= "websheetToolbarIcon g41thirdButtonIcon" showLabel="true" dojoAttachPoint="g41thirdButtonIcon">
+    </button>
+    </div>
+    <button dojoType="dijit.form.Button" title= 'the g41first button' iconClass= "websheetToolbarIcon g41firstButtonIcon" showLabel="true" dojoAttachPoint="g41firstButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'the g41second button' iconClass= "websheetToolbarIcon g41secondButtonIcon" showLabel="true" dojoAttachPoint="g41secondButtonIcon">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'the g41third button' iconClass= "websheetToolbarIcon g41thirdButtonIcon" showLabel="true" dojoAttachPoint="g41thirdButtonIcon">
+    </button>
+    <div dojoType="dijit.form.DropDownButton" iconClass= "websheetToolbarIcon g41fourButtonIcon">
+    <span></span>
+    <div dojoType="dijit.TooltipDialog">
+    <table width="300px" height="200px">
+    <tr height="100px" >
+    <td width="100px" height="100px">
+    <div  style="width:100px;height:100px;"dojoType="dijit.form.Button" title= 'Align left' iconClass= "websheetToolbarIcon g41fourButtonIcon" showLabel="true" dojoAttachPoint="g41fourButtonIcon">
+    </div>
+    </td>
+    <td width="100px" height="100px">
+    <div style="width:100px;height:100px;"dojoType="dijit.form.Button" title= 'Align left' iconClass= "websheetToolbarIcon g41fiveButtonIcon" showLabel="true" dojoAttachPoint="g41fiveButtonIcon">
+    </div>
+    </td>
+    <td width="100px" height="100px">
+    <div style="width:100px;height:100px;" dojoType="dijit.form.Button" title= 'Align left' iconClass= "websheetToolbarIcon g41sixButtonIcon" showLabel="true" dojoAttachPoint="g41sixButtonIcon">
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    21
+    </td>
+    <td>
+    22
+    </td>
+    <td>
+    23
+    </td>
+    </tr>
+    </table>
+    </div>
+    </div>
+    -->
+    <div dojoType="dijit.form.Button" title= 'Align left' iconClass= "websheetToolbarIcon AlignLeftButtonIcon" showLabel="true" dojoAttachPoint="alignLeft">
+    </div>
+    <div dojoType="dijit.form.Button" title= 'Align Center' iconClass= "websheetToolbarIcon ALignCenterButtonIcon" showLabel="true" dojoAttachPoint="alignCenter">
+    </div>
+    <div dojoType="dijit.form.Button" title= 'Align Right' iconClass= "websheetToolbarIcon AlignRgighButtonIcon" showLabel="true" dojoAttachPoint="alignRight">
+    </div>
+	<button dojoType="dijit.form.DropDownButton" iconClass= "websheetToolbarIcon BorderButtonIcon" title= 'set cell border' showLabel="true" dojoAttachPoint="borderDropDown">
+        <div dojoType="dijit.TooltipDialog">
+            <div dojoType="websheet.ColorPalette" palette="8x10" dojoAttachPoint="border">
+            </div>
+        </div>
+    </button>
+    <button dojoType="dijit.form.DropDownButton" iconClass= "websheetToolbarIcon BackGroudColorButtonIcon" dojoAttachPoint="bgcolorDropDown">
+        <div dojoType="dijit.TooltipDialog">
+            <div dojoType="websheet.ColorPalette" palette="8x10" dojoAttachPoint="bgcolor">
+            </div>
+        </div>
+    </button>
+    
+    <div dojoType="dijit.ToolbarSeparator">
+    </div>
+    <button dojoType="dijit.form.Button" title= 'Assign Task' iconClass= "websheetToolbarIcon g2fiveButtonIcon" showLabel="true" dojoAttachPoint="g2fiveButtonIcon">
+    </button>
+    <!--
+    <button dojoType="dijit.form.Button" title= 'Date Format' iconClass= "websheetToolbarIcon g2sixButtonIcon" showLabel="true" dojoAttachPoint="g2sixButtonIcon">
+    </button>
+     -->
+    <button dojoType="dijit.form.Button" title= 'Comments' iconClass= "websheetToolbarIcon g2seveneButtonIcon" showLabel="true" dojoAttachPoint="g2seveneButtonIcon">
+    </button>
+    
+    <button dojoType="dijit.form.Button" title= 'Submit' iconClass= "websheetToolbarIcon tasksubmitIcon" showLabel="true" dojoAttachPoint="tasksubmitIcon">
+    </button>
+    <!--
+    <button dojoType="dijit.form.Button" title= 'Sort Des' iconClass= "websheetToolbarIcon SortDESButtonIcon" showLabel="true" dojoAttachPoint="SortDES">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Sort acs' iconClass= "websheetToolbarIcon SortASCButtonIcon" showLabel="true" dojoAttachPoint="SortASC">
+    </button>
+    <button dojoType="dijit.form.Button" title= 'Formula' iconClass= "websheetToolbarIcon FormulaButtonIcon" showLabel="true" dojoAttachPoint="Formula">
+     -->
+</div>

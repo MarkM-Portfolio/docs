@@ -1,0 +1,31 @@
+{
+	"editors" : 
+	[
+	  {
+	    "userId" : "E66028A9-2177-DF19-8525-77D60072EFA1",
+	    "displayName" : "test1",
+	    "email" : "test1@cn.ibm.com",
+	    "color" : "#345",
+	    "orgId" : "ibm",
+	    "indicators" : 
+	    {
+	    	"E66028A9-2177-DF19-8525-77D60072EFA1": "show",
+	    	"E66028A9-2177-DF19-8525-77D60072EFA2": "show",
+	    	"commentsstatus": "0_0"
+	    }
+	  },
+	  {
+	    "userId" : "E66028A9-2177-DF19-8525-77D60072EFA2",
+	    "displayName" : "test2",
+	    "email" : "test2@cn.ibm.com",
+	    "color" : "#543",
+	    "orgId" : "ibm",
+	    "indicators" :
+	    {
+	    	"E66028A9-2177-DF19-8525-77D60072EFA1": "show",
+	    	"E66028A9-2177-DF19-8525-77D60072EFA2": "show",
+	    	"commentsstatus": "0_0"
+	    }
+	  }
+	]
+}

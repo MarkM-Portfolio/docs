@@ -1,0 +1,6 @@
+IDS_Setup_Title	[ProductName] Setup
+IDS_Setup_Heading	{&MSSWhiteSerif8}InstallShield  
+IDS_Setup_Cancel	{&Tahoma8}Cancel
+IDS_ERROR_1	Error getting file security: [3] GetLastError: [2]
+IDS_ERROR_	Invalid Drive: [2]
+IDS_ERROR_50	Could not create key [2]. {{ Error [3].}}  Verify you have access.

@@ -1,0 +1,52 @@
+INFORMAÇÕES SOBRE A LICENÇA
+
+Nome do Programa:
+HCL Connections Docs v2.0.2.0
+
+Os termos padrão a seguir se aplicam ao uso que o Licenciado faz do programa.
+
+Direito de uso limitado
+
+Conforme descrito no Contrato de Licença Mestre e nestas Informações sobre a Licença, a HCL outorga ao Licenciado o direito limitado de usar o Programa. Esse direito é limitado ao nível de Uso Autorizado, como uma Unidade de Valor de Processador ("PVU"), uma Unidade de Valor de Recurso ("RVU"), uma Unidade de Valor ("VU") ou outro nível especificado de uso, pago pelo Licenciado conforme Prova de Titularidade. O uso do Licenciado também pode ser limitado a uma máquina específica, ou somente como um Programa de Suporte, ou estar sujeito a outras restrições. Como o Licenciado não pagou por todo o valor econômico do Programa, nenhum outro uso é permitido sem o pagamento de tarifas adicionais. Além disso, o Licenciado não está autorizado a usar o Programa para fornecer serviços comerciais de TI a nenhum terceiro, fornecer hospedagem comercial ou compartilhamento de tempo, sublicenciar, alugar ou arrendar o Programa, salvo se expressamente previsto nos contratos aplicáveis em que o Licenciado obtém direitos para usar o Programa. Outros direitos podem estar disponíveis ao Licenciado, sujeitos ao pagamento de tarifas adicionais ou sob termos diferentes ou complementares. A HCL reserva para si o direito de determinar se tais direitos serão disponibilizados ao Licenciado.
+
+Especificações
+
+As especificações do Programa podem ser encontradas nas seções coletivas Descrição e Informações Técnicas das Cartas de Anúncio do Programa.
+
+Programas de Suporte
+
+O Programa é licenciado como um pacote de vários produtos e inclui os Programas de Suporte identificados a seguir. O Licenciado está autorizado a instalar e usar tais Programas de Suporte somente para respaldar o uso que o Licenciado faz do Programa Principal nos termos deste Contrato e dentro dos limites das Provas de Titularidade do Programa (a menos que direitos mais amplos sejam fornecidos em outro lugar neste documento de Informações sobre a Licença). A frase "para respaldar o uso que o Licenciado faz" inclui apenas os usos necessários ou de outra maneira diretamente relacionados a um uso licenciado do Programa Principal ou de outro Programa de Suporte ou em Pacote. Os Programas de Suporte não podem ser usados para nenhuma outra finalidade. O Licenciado não está autorizado a transferir ou revender os Programas de Suporte separadamente do Programa Principal. Um Programa de Suporte pode estar acompanhado de termos de licença. Tais termos, se houver, são aplicáveis ao uso do Licenciado desse Programa de Suporte. Em caso de conflito, os termos neste documento de Informações sobre a Licença prevalecem sobre os termos do Programa de Suporte. Quando o direito do Licenciado de usar o Programa expirar ou for encerrado, o Licenciado deverá descontinuar o uso, destruir ou devolver imediatamente todas as cópias dos Programas de Suporte à parte de quem o Licenciado adquiriu o Programa. Se o Licenciado tiver feito download dos Programas de Suporte, ele deverá entrar em contato com a parte de quem adquiriu o Programa. Se o Licenciado quiser licenciar os Programas de Suporte para qualquer uso além dos limites estabelecidos acima, ele deverá entrar em contato com um Representante de Vendas da HCL ou com a parte de quem adquiriu o Programa para obter a licença apropriada.
+
+Os Programas de Suporte a seguir são licenciados com o Programa:
+IBM WebSphere Application Server Network Deployment v8.5.5
+IBM DB2 Enterprise Server Edition, v11.1
+
+Termos da Tecnologia Outside In da Oracle
+
+Os Programas licenciados sob este Contrato incluem a tecnologia de visualização de documentos e filtragem Outside In (a "Tecnologia Outside In") fornecida pela Oracle USA, Inc. ("Oracle"). O termo "Tecnologia Outside In" inclui qualquer tecnologia licenciada à Oracle por seus fornecedores. Conforme utilizado no Contrato, o termo "fornecedor da HCL" incluirá a Oracle e respectivos fornecedores. Além dos termos e condições deste Contrato, como uma condição de uso da Tecnologia Outside In, o Licenciado concorda especificamente com o seguinte:
+
+(1) Oracle USA, Inc. é um terceiro beneficiário deste Contrato.
+
+(2) O Licenciado só poderá transferir o Programa fornecendo uma notificação antecipada por escrito à HCL e de acordo com os termos deste Contrato.
+
+(3) O Licenciado não poderá publicar os resultados dos testes de benchmark executados na Tecnologia Outside In sem prévia permissão por escrito.
+
+(4) A HCL poderá informar a seus fornecedores os resultados da verificação de conformidade relacionada aos referidos componentes de fornecedores da HCL.
+
+(5) Até o limite permitido pela legislação aplicável, a Uniform Computer Information Transactions Act ("UCITA", Lei Uniforme de Transações de Informações de Computador) não será aplicada.
+
+Usuário Autorizado
+
+Usuário Autorizado é uma unidade de medida pela qual o Programa pode ser licenciado. Um Usuário Autorizado é uma pessoa exclusiva a quem é concedido acesso ao Programa. O Programa pode ser instalado em qualquer número de computadores ou servidores, e cada Usuário Autorizado pode ter acesso simultâneo a qualquer número de instâncias do Programa de cada vez. O Licenciado deve obter direitos distintos e dedicados para cada Usuário Autorizado que recebeu alguma forma de acesso ao Programa direta ou indiretamente (por exemplo: por meio de um programa de multiplexação, dispositivo ou servidor de aplicativos) por quaisquer meios. Um direito para um Usuário Autorizado é exclusivo desse Usuário Autorizado e não pode ser compartilhado nem reatribuído a outra pessoa a não ser em caráter de transferência permanente.
+
+Termos exclusivos do Programa
+
+Detalhes do Programa de Suporte
+
+IBM DB2
+- Direito: Proporção 1 PVU/1 PVU
+- Limitações de Uso: Uso pelo Programa Principal
+
+"Proporção n/m" significa que o Licenciado recebe algum número ("n") de direitos para o Programa de Suporte para cada número ("m") especificado de direitos do Programa Principal como um todo. Salvo especificação contrária, o número de direitos do Programa de Suporte é arredondado para cima, até um múltiplo de "n". Por exemplo, se um programa inclui 100 PVUs para um Programa de Suporte para cada 500 PVUs obtidas do Programa Principal e o Licenciado adquirir 1.200 PVUs do Programa, o Licenciado poderá instalar o Programa de Suporte e ter núcleos de processador disponíveis para ele ou gerenciados por ele até o máximo de 300 PVUs. Essas PVUs não precisam ser contadas como parte do requisito total de PVUs para a instalação do Programa pelo Licenciado por conta da instalação do Programa de Suporte (embora possa ser necessário contar essas PVUs por outros motivos, como núcleos de processador sendo disponibilizados para o Programa Principal, também).
+
+"Uso pelo Programa Principal" significa que o Programa de Suporte é fornecido exclusivamente para uso pelo Programa Principal. Nem o Licenciado nem qualquer aplicativo/dispositivo programador está autorizado a usar ou acessar diretamente os serviços do Programa de Suporte, com exceção do Licenciado, que tem permissão para acessar o Programa de Suporte para executar funções administrativas, como backup, recuperação e configuração autorizada.

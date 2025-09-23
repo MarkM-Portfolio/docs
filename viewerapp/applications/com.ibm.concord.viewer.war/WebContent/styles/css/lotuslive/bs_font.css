@@ -1,0 +1,3 @@
+/*In locale of Japan or Korean, native font should be used to present '\' correctly**/
+.JapaneseFont{font:12px "MS Gothic", "MS PGothic", "Apple Gothic", Arial, Helvetica}
+.KoreanFont{font:12px "Gulim", "GulimChe", Arial, Helvetica}

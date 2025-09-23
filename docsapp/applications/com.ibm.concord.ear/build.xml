@@ -1,0 +1,171 @@
+<project name="com.ibm.concord.ear" basedir="." default="deploy">
+	<property name="bin.dir" value="bin"/>
+	<property name="lib.dir" value="lib"/>
+    <property name="journal.module.xml" value="&lt;module id='EjbModule_1336481157810'&gt;&lt;ejb&gt;com.ibm.docs.journal.subscriber.sample.jar&lt;/ejb&gt;&lt;/module&gt; ${line.separator} &lt;/application&gt;" />   
+    
+	
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+	
+	<target name="init" depends="clean">
+		<mkdir dir="${bin.dir}"/>
+	</target>
+	
+    <replace file ="${basedir}/META-INF/application.xml" token="&lt;/application&gt;" value="${journal.module.xml}" />
+    
+	<target name="deploy" depends="init">			
+		<antcall target="isFalse">
+		</antcall>
+		<antcall target="isTrue">
+		</antcall>
+	</target>
+	<target name="isFalse" unless="isOnPremise">
+		<!--copy todir="${basedir}/lib/">
+			<fileset dir="${build.home}">
+				<include name="com.ibm.concord.spi*.jar"/>
+				<include name="com.ibm.concord.localtest.integration*.jar"/>
+				<include name="com.ibm.concord.lc3.integration*.jar"/>
+				<include name="com.ibm.concord.lotuslive.integration*.jar"/>
+				<include name="com.ibm.concord.webmsg*.jar"/>
+			</fileset>
+		</copy-->
+		<!--copy file="${build.home}/com.ibm.concord.spi*.jar" tofile="${basedir}/lib/com.ibm.concord.spi*.jar"/>
+		<copy file="${build.home}/com.ibm.concord.localtest.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.localtest.integration*.jar"/>
+		<copy file="${build.home}/com.ibm.concord.lc3.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.lc3.integration*.jar"/>
+		<copy file="${build.home}/com.ibm.concord.lotuslive.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.lotuslive.integration*.jar"/>
+		<copy file="${build.home}/com.ibm.concord.webmsg*.jar" tofile="${basedir}/lib/com.ibm.concord.webmsg*.jar"/-->
+        <ear destfile="${build.home}/${ant.project.name}.ear" appxml="${basedir}/META-INF/application.xml">
+        	<fileset dir="." includes="lib/**/acf*.jar"/>
+			<fileset dir="." includes="lib/**/antlr-*.jar"/>
+			<fileset dir="." includes="lib/**/stax-api.jar"/>
+			<fileset dir="." includes="lib/**/xml-apis*.jar"/>
+        	<fileset dir="." includes="lib/**/http*.jar" excludes="lib/**/httpqueue.channel.jar"/>
+        	<fileset dir="." includes="lib/**/apache-mime4j*.jar"/>
+        	<fileset dir="." includes="lib/**/jackson*.jar"/>
+        	<fileset dir="." includes="lib/**/com.ibm.icu*.jar"/>
+        	<fileset dir="." includes="lib/**/poi*.jar"/>
+        	<!--The jars packaged in sc spi-->
+        	<!--copy file="${build.home}/com.ibm.concord.spi*.jar" tofile="${basedir}/lib/com.ibm.concord.spi*.jar"/-->
+        	<!--fileset dir="." includes="lib/**/com.ibm.concord.spi*.jar"/-->
+        	<fileset dir="." includes="lib/**/abdera*.jar"/>
+        	<fileset dir="." includes="lib/**/commons*.jar"/>
+        	<fileset dir="." includes="lib/**/json4j*.jar"/>
+        	<fileset dir="." includes="lib/**/html-parser*.jar"/>
+        	<fileset dir="." includes="lib/**/axiom-*.jar"/>
+        	<fileset dir="." includes="lib/**/jaxen-*.jar"/>
+        	<fileset dir="." includes="lib/**/com.ibm.connections*.jar"/>
+        	<fileset dir="." includes="lib/**/lc.custom*.jar"/>
+        	<fileset dir="." includes="lib/**/accesscontrol.jar"/>
+        	<fileset dir="." includes="lib/**/configuration.jar"/>
+        	<fileset dir="." includes="lib/**/polledcontainers.jar"/>
+        	<fileset dir="." includes="lib/**/rtc.common.jar"/>
+        	<fileset dir="." includes="lib/**/rtc4web.ext.samp.jar"/>
+        	<fileset dir="." includes="lib/**/log4j*.jar"/>
+        	<fileset dir="." includes="lib/**/jsoup*.jar"/>
+        	<fileset dir="." includes="lib/**/bss.shim*.jar"/>
+        	<fileset dir="." includes="lib/**/connections.waltz*.jar"/>
+        	<fileset dir="." includes="lib/**/slf4j*.jar"/>
+        	<fileset dir="." includes="lib/**/bss.json*.jar"/>
+        	<fileset dir="." includes="lib/**/shared.authentication*.jar"/>
+        	<fileset dir="." includes="lib/**/shared.httpclient_wrapper_noauth*.jar"/>
+        	<fileset dir="." includes="lib/**/shared.httpclient_wrapper*.jar"/>
+        	<!--The jars packaged in sc adapter-->
+        	<!--copy file="${build.home}/com.ibm.concord.localtest.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.localtest.integration*.jar"/>
+        	<copy file="${build.home}/com.ibm.concord.lc3.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.lc3.integration*.jar"/>
+        	<copy file="${build.home}/com.ibm.concord.lotuslive.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.lotuslive.integration*.jar"/>
+        	<copy file="${build.home}/com.ibm.concord.webmsg*.jar" tofile="${basedir}/lib/com.ibm.concord.webmsg*.jar"/-->        		
+        	<!--fileset dir="." includes="lib/**/com.ibm.concord.localtest.integration*.jar"/>
+        	<fileset dir="." includes="lib/**/com.ibm.concord.lc3.integration*.jar"/>
+        	<fileset dir="." includes="lib/**/com.ibm.concord.lotuslive.integration*.jar"/>
+        	<fileset dir="." includes="lib/**/com.ibm.concord.webmsg*.jar"/-->
+        	<!--end-->
+			<fileset dir="${build.home}" includes="**/com.ibm.concord*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.docs*.jar"/>
+            <fileset dir="${build.home}/" includes="**/com.ibm.concord*.war"/>
+        	<fileset dir="${build.home}/" includes="**/rtc4web*.war"/>
+        	<fileset dir="." includes="META-INF/"/>
+        </ear>
+		<!--delete file="${basedir}/lib/com.ibm.concord.spi*.jar"/>
+		<delete file="${basedir}/lib/com.ibm.concord.localtest.integration*.jar"/>
+		<delete file="${basedir}/lib/com.ibm.concord.lc3.integration*.jar"/>			
+		<delete file="${basedir}/lib/com.ibm.concord.lotuslive.integration*.jar"/>
+		<delete file="${basedir}/lib/com.ibm.concord.webmsg*.jar"/-->
+    </target>
+	<target name="isTrue" if="isOnPremise">
+		<!--copy todir="${basedir}/lib/">
+			<fileset dir="${build.home}">
+				<include name="com.ibm.concord.spi*.jar"/>
+				<include name="com.ibm.concord.localtest.integration*.jar"/>
+				<include name="com.ibm.concord.lc3.integration*.jar"/>
+				<include name="com.ibm.concord.webmsg*.jar"/>
+			</fileset>
+		</copy-->
+		<!--copy file="${build.home}/com.ibm.concord.spi*.jar" tofile="${basedir}/lib/com.ibm.concord.spi*.jar"/>
+		<copy file="${build.home}/com.ibm.concord.localtest.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.localtest.integration*.jar"/>
+		<copy file="${build.home}/com.ibm.concord.lc3.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.lc3.integration*.jar"/>	        	
+		<copy file="${build.home}/com.ibm.concord.webmsg*.jar" tofile="${basedir}/lib/com.ibm.concord.webmsg*.jar"/-->
+	    <ear destfile="${build.home}/${ant.project.name}.ear" appxml="${basedir}/META-INF/application.xml">        	
+	    	<fileset dir="." includes="lib/**/acf*.jar"/>
+			<fileset dir="." includes="lib/**/antlr-*.jar"/>
+			<fileset dir="." includes="lib/**/stax-api.jar"/>
+			<fileset dir="." includes="lib/**/xml-apis*.jar"/>
+	        <fileset dir="." includes="lib/**/http*.jar" excludes="lib/**/httpqueue.channel.jar"/>
+	        <fileset dir="." includes="lib/**/apache-mime4j*.jar"/>
+	        <fileset dir="." includes="lib/**/jackson*.jar"/>
+	        <fileset dir="." includes="lib/**/com.ibm.icu*.jar"/>
+	        <fileset dir="." includes="lib/**/poi*.jar"/>
+	        <!--The jars packaged in On-Premise spi-->
+	        <!--copy file="${build.home}/com.ibm.concord.spi*.jar" tofile="${basedir}/lib/com.ibm.concord.spi*.jar"/-->
+	        <!--fileset dir="." includes="lib/**/com.ibm.concord.spi*.jar"/-->
+	        <fileset dir="." includes="lib/**/abdera*.jar"/>
+	        <fileset dir="." includes="lib/**/commons*.jar"/>
+	        <fileset dir="." includes="lib/**/json4j*.jar"/>
+	        <fileset dir="." includes="lib/**/html-parser*.jar"/>
+	        <fileset dir="." includes="lib/**/axiom-*.jar"/>
+	        <fileset dir="." includes="lib/**/jaxen-*.jar"/>
+	        <fileset dir="." includes="lib/**/com.ibm.connections*.jar"/>
+	        <fileset dir="." includes="lib/**/lc.custom*.jar"/>
+	        <fileset dir="." includes="lib/**/accesscontrol.jar"/>
+	        <fileset dir="." includes="lib/**/configuration.jar"/>
+	        <fileset dir="." includes="lib/**/polledcontainers.jar"/>
+	        <fileset dir="." includes="lib/**/rtc.common.jar"/>
+	        <fileset dir="." includes="lib/**/rtc4web.ext.samp.jar"/>
+	        <fileset dir="." includes="lib/**/log4j*.jar"/>
+	        <fileset dir="." includes="lib/**/jsoup*.jar"/>
+	    	<fileset dir="." includes="lib/**/activation*.jar"/>
+	        <fileset dir="." includes="lib/**/chemistry-opencmis-*.jar"/>
+	        <fileset dir="." includes="lib/**/jaxb-api-*.jar"/>
+	        <fileset dir="." includes="lib/**/jaxb-impl-*.jar"/>
+	        <fileset dir="." includes="lib/**/jaxws-api-*.jar"/>
+	    	<fileset dir="." includes="lib/**/jaxws-rt-*.jar"/>
+	    	<fileset dir="." includes="lib/**/mimepull-*.jar"/>
+	        <fileset dir="." includes="lib/**/resolver-*.jar"/>
+	    	<fileset dir="." includes="lib/**/saaj-api-*.jar"/>
+	        <fileset dir="." includes="lib/**/saaj-impl-*.jar"/>
+	        <fileset dir="." includes="lib/**/slf4j*.jar"/>
+	        <fileset dir="." includes="lib/**/stax2-api-*.jar"/>
+	        <fileset dir="." includes="lib/**/stax-ex-*.jar"/>
+	    	<fileset dir="." includes="lib/**/streambuffer-*.jar"/>
+	        <fileset dir="." includes="lib/**/woodstox-core-asl-*.jar"/>	        	
+	        <!--The jars packaged in On-Premise adapter-->
+	        <!--copy file="${build.home}/com.ibm.concord.localtest.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.localtest.integration*.jar"/>
+	        <copy file="${build.home}/com.ibm.concord.lc3.integration*.jar" tofile="${basedir}/lib/com.ibm.concord.lc3.integration*.jar"/>	        	
+	        <copy file="${build.home}/com.ibm.concord.webmsg*.jar" tofile="${basedir}/lib/com.ibm.concord.webmsg*.jar"/-->        		
+	        <!--fileset dir="." includes="lib/**/com.ibm.concord.localtest.integration*.jar"/>
+	        <fileset dir="." includes="lib/**/com.ibm.concord.lc3.integration*.jar"/>
+	        <fileset dir="." includes="lib/**/com.ibm.concord.webmsg*.jar"/-->
+	        <!--end-->
+			<fileset dir="${build.home}" includes="**/com.ibm.concord*.jar"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.docs*.jar" excludes="**/com.ibm.docs.deployment.jar"/>
+	        <fileset dir="${build.home}/" includes="**/com.ibm.concord*.war"/>
+	        <fileset dir="${build.home}/" includes="**/rtc4web*.war"/>
+	        <fileset dir="." includes="META-INF/"/>
+	  	</ear>
+		<!--delete file="${basedir}/lib/com.ibm.concord.spi*.jar"/>
+		<delete file="${basedir}/lib/com.ibm.concord.localtest.integration*.jar"/>
+		<delete file="${basedir}/lib/com.ibm.concord.lc3.integration*.jar"/>			
+		<delete file="${basedir}/lib/com.ibm.concord.webmsg*.jar"/-->
+	</target>
+</project>
+

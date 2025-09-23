@@ -1,0 +1,14 @@
+dojo.provide("concord.chart.lib.plot2d.MarkersOnly");
+
+dojo.require("concord.chart.lib.plot2d.Default");
+
+dojo.declare("concord.chart.lib.plot2d.MarkersOnly", concord.chart.lib.plot2d.Default, {
+	//	summary:
+	//		A convenience object to draw only markers (like a scatter but not quite).
+	constructor: function(){
+		//	summary:
+		//		Set up our default plot to only have markers and no lines.
+		this.opt.lines   = false;
+		this.opt.markers = true;
+	}
+});

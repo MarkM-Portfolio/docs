@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<ejb-jar version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd">
+  <display-name>
+  com.ibm.concord.viewer.admin</display-name> 
+  <enterprise-beans>
+  	<session>
+  		<description>
+  			This is an administrative session bean for house keeping.
+  		</description>
+  		<ejb-name>HouseKeeping</ejb-name>
+  		<home>com.ibm.websphere.scheduler.TaskHandlerHome</home>
+  		<remote>com.ibm.websphere.scheduler.TaskHandler</remote>
+  		<ejb-class>com.ibm.concord.viewer.admin.HouseKeepingBean</ejb-class>
+  		<session-type>Stateless</session-type>
+  		<transaction-type>Container</transaction-type>
+  	</session>
+  </enterprise-beans>
+</ejb-jar>

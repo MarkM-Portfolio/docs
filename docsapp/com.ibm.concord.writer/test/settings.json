@@ -1,0 +1,115 @@
+{
+	"clrSchemeMapping": {
+		"followedHyperlink": "followedHyperlink",
+		"hyperlink": "hyperlink",
+		"accent1": "accent1",
+		"accent2": "accent2",
+		"accent3": "accent3",
+		"accent4": "accent4",
+		"accent5": "accent5",
+		"accent6": "accent6",
+		"bg1": "light1",
+		"bg2": "light2",
+		"t1": "dark1",
+		"t2": "dark2"
+	},
+	"compat": {
+		
+	},
+	"dts": "36.0pt",
+	"characterSpacingControl": {
+		"val": "doNotCompress"
+	},
+	"themeFontLang": {
+		"val": "en-US",
+		"eastAsia": "zh-CN"
+	},
+	"listSeparator": {
+		"val": ","
+	},
+	"stylePaneFormatFilter": {
+		"val": "3F01"
+	},
+	"decimalSymbol": {
+		"val": "."
+	},
+	"mathPr": {
+		"rMargin": {
+			"val": "0"
+		},
+		"intLim": {
+			"val": "subSup"
+		},
+		"dispDef": {
+			
+		},
+		"brkBinSub": {
+			"val": "--"
+		},
+		"smallFrac": {
+			"val": "off"
+		},
+		"naryLim": {
+			"val": "undOvr"
+		},
+		"wrapIndent": {
+			"val": "1440"
+		},
+		"mathFont": {
+			"val": "Cambria Math"
+		},
+		"lMargin": {
+			"val": "0"
+		},
+		"brkBin": {
+			"val": "before"
+		},
+		"defJc": {
+			"val": "centerGroup"
+		}
+	},
+	"doNotAutoCompressPictures": {
+		
+	},
+	"displayVerticalDrawingGridEvery": {
+		"val": "2"
+	},
+	"sects": [{
+		"cols": {
+			"space": "36.0pt"
+		},
+		"rsidR": "005C2FE8",
+		"pgMar": {
+			"top": "72.0pt",
+			"left": "90.0pt",
+			"gutter": "0.0pt",
+			"footer": "36.0pt",
+			"bottom": "72.0pt",
+			"right": "90.0pt",
+			"header": "36.0pt"
+		},
+		"rsidRPr": "003C5220",
+		"id": "defalut",
+		"docGrid": {
+			"linePitch": "360"
+		},
+		"pgSz": {
+			"w": "576.0pt",
+			"h": "792.0pt",
+			"code": "1"
+		},
+		"rsidSect": "00975EC3"
+	}],
+	"zoom": {
+		"percent": "90"
+	},
+	"drawingGridHorizontalSpacing": {
+		"val": "120"
+	},
+	"displayHorizontalDrawingGridEvery": {
+		"val": "2"
+	},
+	"doNotIncludeSubdocsInStats": {
+		
+	}
+}

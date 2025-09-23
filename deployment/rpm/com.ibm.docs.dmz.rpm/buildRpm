@@ -1,0 +1,51 @@
+#!/bin/sh
+# singe script that tries to hide all the heavy lifting in the RPM building
+# valid args;
+#  -basedir <directory> : [required] should be passed down from Maven via ${basedir} in pom.xml
+#  -timestamp : [optional] forces the current timestamp to be the revision of the output rpm
+
+# processes the given arguments
+while [ "$1x" != "x" ] ; do
+	if [ "$1" = "-basedir" ] ; then
+		shift
+		BASEDIR=$1
+	elif [ "$1" = "-timestamp" ] ; then
+		REV_ARG="-rev=timestamp"
+	fi
+	shift
+done
+
+if [ "${BASEDIR}x" = "x" ] ; then
+	echo "ERROR: build script needs the '-basedir' argument"
+	exit 1
+fi
+
+# the former 'prepTarget' part...
+	#NEEDSWORK remove the mkdir's once we move to a newer version of rpmbuild that does this automatically...
+	mkdir -p ${BASEDIR}/../target/BUILD
+	mkdir -p ${BASEDIR}/../target/BUILDROOT
+	mkdir -p ${BASEDIR}/../target/RPMS
+	mkdir -p ${BASEDIR}/../target/SOURCES
+	mkdir -p ${BASEDIR}/../target/SPECS
+	mkdir -p ${BASEDIR}/../target/SRPMS
+
+
+# the former 'fixRpmSpec' part...
+	TMPDIR=`mktemp -d`
+	
+	if [ "$REV_ARG" = "-rev=timestamp" ]; then
+		REV=`date +%Y%m%d%H%M`
+		cp ${BASEDIR}/rpm.spec -f ${TMPDIR}/rpm.spec.tmp
+		sed "s/@@@revision@@@/${REV}/" ${TMPDIR}/rpm.spec.tmp >${TMPDIR}/rpm.spec.copy
+	else	
+	    cp ${BASEDIR}/rpm.spec -f ${TMPDIR}/rpm.spec.copy
+	fi
+	
+LOG=`mktemp`
+
+rpmbuild -bb ${TMPDIR}/rpm.spec.copy --target x86_64 --buildroot ${BASEDIR}/files --define="%_topdir ${BASEDIR}/../target" | tee ${LOG}
+
+
+EXITCODE=0
+
+exit ${EXITCODE}

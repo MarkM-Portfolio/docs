@@ -1,0 +1,52 @@
+INFORMATIONS DE LICENCE
+
+Nom du logiciel:
+HCL Connections Docs v2.0.2.0
+
+Les conditions générales suivantes s'appliquent à l'utilisation du Logiciel par le Détenteur de la licence.
+
+Droit d'utilisation limité
+
+Comme décrit dans le Contrat-cadre de licence (Master License Agreement ou "MLA") et dans les présentes Informations de licence, HCL concède au Détenteur de la licence un droit limité pour utiliser le Logiciel. Ce droit est limité au niveau d'Utilisation autorisée, exprimé par exemple en Unités de valeur par cœur de processeur ("PVU"), Unités de valeur ressource ("RVU") ou Unités de valeur ("VU"), ou tout autre niveau d'utilisation spécifié, payé par le Détenteur de la licence, comme en témoigne l'Autorisation d'utilisation. L'utilisation du Logiciel par le Détenteur de la licence peut également être limitée à une machine spécifiée ou à une utilisation en tant que Logiciel auxiliaire, ou être soumise à d'autres restrictions. Comme le Détenteur de la licence n'a pas payé la totalité de la valeur économique du Logiciel, aucune autre utilisation n'est autorisée sans le paiement de frais supplémentaires. En outre, le Détenteur de la licence n'est pas autorisé à utiliser le Logiciel pour fournir des services informatiques commerciaux à une tierce partie ou fournir un hébergement ou un partage de temps commercial, ni à louer le Logiciel ou accorder des sous-licences pour celui-ci, sauf indication contraire expresse dans les contrats applicables au titre desquels le Détenteur de la licence a obtenu les Autorisations d'utilisation du Logiciel. Des droits supplémentaires pourront être concédés au Détenteur de la licence sous réserve du paiement de frais supplémentaires ou sous des conditions différentes ou supplémentaires. Ces droits supplémentaires seront concédés au Détenteur de la licence à la seule discrétion d'HCL.
+
+Spécifications
+
+Les spécifications de ce Logiciel se trouvent dans les sections collectives "Description" et "Technical Information" des Lettres d'annonce dudit Logiciel.
+
+Logiciels auxiliaires
+
+Le Logiciel est concédé sous licence en tant que module multiproduit et inclut les Logiciels auxiliaires répertoriés ci-dessous. Le Détenteur de la licence est autorisé à installer et à utiliser lesdits Logiciels auxiliaires uniquement pour permettre l'utilisation du Logiciel principal au titre du présent Contrat et dans les limites de l'Autorisation d'utilisation dudit Logiciel (sauf si le présent document Informations de licence octroie des droits supplémentaires au Détenteur de la licence). L'expression "pour permettre l'utilisation" inclut uniquement les tâches nécessaires ou liées directement à l'utilisation autorisée du Logiciel principal ou d'un autre Logiciel groupé ou auxiliaire. Les Logiciels auxiliaires ne doivent pas être utilisés à une autre fin. Le Détenteur de la licence n'est pas autorisé à transférer ni à commercialiser les Logiciels auxiliaires séparément du Logiciel principal. Un Logiciel auxiliaire peut inclure des dispositions de licence. Le cas échéant, lesdites dispositions de licence s'appliquent à l'utilisation dudit Logiciel auxiliaire par le Détenteur de la licence. En cas de contradiction entre dispositions, celles du présent document Informations de licence prévalent sur celles du Logiciel auxiliaire. Lorsque le droit d'utilisation du Logiciel par le Détenteur de la licence arrive à expiration ou est résilié, le Détenteur de la licence doit cesser toute utilisation et détruire ou renvoyer rapidement tous les exemplaires des Logiciels auxiliaires au tiers auprès de qui il a acquis le Logiciel. Si le Détenteur de la licence a téléchargé les Logiciels auxiliaires, il doit contacter le tiers auprès de qui il a acquis le Logiciel. Pour toute utilisation des Logiciels auxiliaires non autorisée par le présent Contrat, le Détenteur de la licence doit prendre contact avec un Ingénieur Commercial HCL ou avec le tiers auprès de qui il a acquis le Logiciel, afin d'acquérir la licence correspondante.
+
+Les Logiciels auxiliaires suivants sont concédés sous licence avec le Logiciel :
+IBM WebSphere Application Server Network Deployment version 8.5.5
+IBM DB2 Enterprise Server Edition version 11.1
+
+Conditions relatives à la Technologie Oracle Outside In
+
+Les Logiciels concédés sous licence dans le cadre du présent Contrat comprennent la technologie de visualisation de documents et de filtrage Outside In (la "Technologie Outside In") fournie par Oracle USA, Inc. ("Oracle"). L'expression "Technologie Outside In" comprend toute technologie dont la licence a été accordée à Oracle par ses fournisseurs. Telle qu'elle est utilisée dans le présent Contrat, l'expression "Fournisseur HCL" est réputée inclure Oracle et ses fournisseurs. Pour utiliser la technologie Outside In, le Détenteur de la licence accepte spécifiquement les conditions suivantes, qui s'ajoutent aux conditions générales du présent Contrat :
+
+(1) Oracle USA, Inc. est un tiers bénéficiaire du présent Contrat.
+
+(2) Le Détenteur de la licence ne peut transférer le Logiciel qu'avec un préavis écrit adressé à HCL et sous réserve des dispositions du présent Contrat.
+
+(3) Le Détenteur de la licence ne doit pas publier les résultats des tests de performance portant sur la Technologie Outside In sans autorisation écrite préalable.
+
+(4) HCL est susceptible de communiquer aux fournisseurs HCL les résultats de vérification de conformité en lien avec les composants desdits fournisseurs HCL.
+
+(5) Dans la mesure permise par la loi applicable, le Uniform Computer Information Transactions Act ("UCITA") ne s'applique pas.
+
+Utilisateur autorisé
+
+Un Utilisateur autorisé est une unité de mesure par laquelle le Logiciel peut être concédé sous licence. Un Utilisateur autorisé est un individu unique qui a le droit d'accéder au Logiciel. Le Logiciel peut être installé sur n'importe quel nombre d'ordinateurs ou de serveurs et chaque Utilisateur autorisé peut avoir accès simultanément à n'importe quel nombre d'instances du Logiciel à un moment donné. Le Détenteur de la licence doit se procurer des autorisations distinctes et dédiées pour chaque Utilisateur autorisé ayant reçu l'accès au Logiciel directement ou indirectement (par exemple, via un logiciel de multiplexage, un périphérique ou un serveur d'applications), et ce par quelque moyen que ce soit. L'autorisation d'un Utilisateur autorisé est unique et ne peut être partagée ni réaffectée à d'autres fins que le transfert définitif de l'autorisation de l'Utilisateur autorisé à un autre individu.
+
+Conditions propres au Logiciel
+
+Détails du Logiciel auxiliaire
+
+IBM DB2
+- Autorisation d'utilisation : ratio 1 PVU/1 PVU
+- Restrictions d'utilisation : utilisation par le Logiciel principal
+
+L'expression "Ratio n/m" signifie que le Détenteur de la licence reçoit un certain nombre d'autorisations d'utilisation ('n') pour le Logiciel auxiliaire pour chaque nombre spécifié d'autorisations d'utilisation ('m') du Logiciel principal. Sauf mention contraire, le nombre d'autorisations d'utilisation pour le Logiciel auxiliaire est arrondi à un multiple de 'n'. Par exemple, si un Logiciel comprend 100 PVU de Logiciel auxiliaire pour 500 PVU de Logiciel principal et que le Détenteur de la licence acquiert 1 200 PVU de Logiciel, il peut installer le Logiciel auxiliaire, qui aura à sa disposition et pourra gérer jusqu'à 300 PVU. Ces PVU ne devront pas être comptabilisés dans les exigences de PVU totales pour l'installation du Logiciel par le Détenteur de la licence en raison de l'installation du Logiciel auxiliaire (même si ces PVU seront susceptibles d'être comptabilisés pour d'autres raisons, comme la mise à disposition des cœurs de processeur pour le Logiciel principal).
+
+L'expression "Utilisation par le Logiciel principal" signifie que le Logiciel auxiliaire est fourni pour être utilisé exclusivement par le Logiciel principal. Ni le Détenteur de la licence, ni toute unité de programmation se sont autorisés à utiliser ou à accéder directement aux services du Logiciel auxiliaire, mis à part le Détenteur de la licence, qui est autorisé à accéder au Logiciel auxiliaire pour réaliser des tâches administratives pour le Logiciel auxiliaire, comme la sauvegarde, la restauration ou la configuration autorisée.

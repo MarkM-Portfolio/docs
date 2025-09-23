@@ -1,0 +1,17 @@
+#!/bin/bash  
+
+#
+# Call executeChange with the rollback option
+#
+./executeChange --rollback
+rc=$?
+if [ "$rc" -ne "0" ]; then
+    echo "Error: Rollback failed!"
+    exit 1
+fi
+
+# Success
+exit 0
+
+
+

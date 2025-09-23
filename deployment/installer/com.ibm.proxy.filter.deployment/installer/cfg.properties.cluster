@@ -1,0 +1,64 @@
+# *****************************************************************
+#
+# HCL Confidential
+#
+# OCO Source Materials
+#
+# Copyright HCL Technologies Limited 2020
+#
+# The source code for this program is not published or otherwise
+# divested of its trade secrets, irrespective of what has been
+# deposited with the U.S. Copyright Office.
+#
+# *****************************************************************
+
+[Proxy]
+# HCL Docs proxy filter can be deployed on WebSphere Proxy Server and WebSphere DMZ Secure Proxy Server.
+# If deploy on WebSphere Proxy Server, both proxy cluster and proxy server mode are supported.
+# If deploy on WebSphere DMZ Secure Proxy Server, only proxy server mode are supported.
+
+# docs_install_root:
+# Specify the location where you want to install HCL Docs. HCL Docs proxy server filter will be installed
+# in the sub-directory named "proxy" of this directory.
+docs_install_root=/opt/IBM/IBMDocs
+
+# Specify the profile location of your proxy server.
+# If using WebSphere Proxy Server:
+# On Linux, the default location is /opt/IBM/WebSphere/AppServer/profiles/proxy1
+# On Windows, the default location is C:\Program Files\IBM\WebSphere\AppServer\profiles\proxy1
+# If using WebSphere DMZ Secure Proxy Server:
+# On Linux, the default location is /opt/IBM/WebSphere/AppServer/profiles/SecureProxySrv01
+# On Windows, the default location is C:\Program Files\IBM\WebSphere\AppServer\profiles\SecureProxySrv01
+was_proxy_profile_root=/opt/IBM/WebSphere/AppServer/profiles/proxy1
+
+# If using WebSphere Proxy Server, please specify the SOAP port being used to connect the proxy server,
+# if using WebSphere Network Deployment Server, then the port is deployment manager SOAP port. If using WebSphere
+# Proxy Server, then the port is Proxy Server SOAP port.
+# If using WebSphere DMZ Secure Proxy Server, please don't set was_soap_port.
+was_soap_port=8879
+
+# If using WebSphere DMZ Secure Proxy Server, please specify the IPC port being used to connect the proxy server, default
+# value is 9633. If using WebSphere Network Deployment Server, then the port is deployment manager IPC port, if using
+# WebSphere DMZ Secure Proxy Server, then the port is DMZ Secure Proxy Server IPC port.
+# If using WebSphere Proxy Server, please don't set was_ipc_port.
+was_ipc_port=
+
+# scope:
+# Specify the scope where the proxy filter installed to.
+# The value can be:
+# Server: If the proxy filter is installed on a proxy server
+# Cluster: If the proxy filter is installed on a proxy cluster
+scope=Cluster
+
+# proxy_scope_name:
+# If the scope=Cluster, specify the proxy cluster name, such as IBMDocsProxy.
+# If the scope=Server, specify the proxy server name, such as proxy1.
+# You also must specify node_name where the proxy server is on, if the scope is Server.
+proxy_scope_name=IBMDocsProxy
+
+# proxy_node_name:
+# If the scope=Server, this value must not be empty, must be the node name of the Proxy server.
+proxy_node_name=
+
+# Specify the context path of HCL Docs application, it is used to match the URIs of the requests will be compressed on proxy server
+docs_context_root=/docs

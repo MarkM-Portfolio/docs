@@ -1,0 +1,13 @@
+numPicBullet
+sectPr
+pict
+fldSimple 
+fldChar
+footnoteReference
+dgm
+chart
+ffData
+control
+vbaProject
+tblStylePr
+framePr

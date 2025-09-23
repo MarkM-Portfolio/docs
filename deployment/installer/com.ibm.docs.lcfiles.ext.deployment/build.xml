@@ -1,0 +1,24 @@
+<project name="com.ibm.docs.lcfiles.ext.deployment" basedir="." default="deploy">
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${bin.dir}/classes"/>
+
+	<target name="deploy">
+		<mkdir dir="${build.home}/installer"/>
+		<echo file="${build.home}/installer/version.txt">
+	        {
+	            "product_name" : "HCL Docs Extension", 
+	            "build_version" :  "${build.version}" ,
+	            "build_timestamp" : "${build.timestamp}" 
+	        }
+		</echo>
+
+		<copy todir="${build.home}/installer">
+			<fileset dir="${basedir}/installer" includes="**/*"/>
+		</copy>
+		<copy file="${basedir}/installer/cfg.properties" tofile="${build.home}/installer/cfg.properties.sample"/>
+		<mkdir dir="${build.home}/installer/Python"/>
+		<unzip src="Python273.zip" dest="${build.home}/installer/Python"></unzip>
+    </target>
+</project>
+

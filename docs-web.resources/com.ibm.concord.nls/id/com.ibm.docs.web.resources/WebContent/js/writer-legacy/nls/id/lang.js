@@ -1,0 +1,77 @@
+({
+	LOADING: "Konten sedang memuat.",
+	LOAD_FINISHED: "Konten selesai memuat.",
+	PAGE_SETUP: "Pengaturan Halaman",
+	NOTE_INVALIDACTION_FOOTNOTE:"Ini bukan tindakan yang valid untuk catatan kaki.",
+	NOTE_INVALIDACTION_ENDNOTE:"Ini bukan tindakan yang valid untuk catatan akhir.",
+	PAGENUMBER_OF_TOTALNUMBER:"Halaman ${0} dari ${1}", //page 1 of N
+	PAGE_NUMBER: "Halaman: ${pageNumber} / ${totalPageNumber}",
+	toc:{
+		title : "Daftar Isi",
+		update: "Pembaruan",
+		del: "Hapus",
+		toc: "Daftar Isi",
+		linkTip: "Klik untuk menavigasi",
+		linkTip_Mac: "\u2318 klik untuk menavigasikan",
+		pageNumber: "Hanya Nomor Halaman",
+		entireTable: "Seluruh Tabel"
+	},
+	link:{
+		addlink:"Tambah Tautan",
+		gotolink: "Buka Tautan",
+		unlink	: "Hapus Tautan",
+		editlink: "Edit Tautan",
+		internalLink: "Tautan Internal",
+		ctrlLink: "Ctrl+Klik untuk beralih ke tautan",
+		ctrlLink_Mac: "\u2318 Klik untuk beralih ke tautan",
+		cannotOpen: " tidak dapat dibuka dari ${productName}."
+	},
+	field:{
+		update: "Perbarui Bidang"
+	},
+	insertTime:"Masukkan Waktu",
+	insertDate:"Masukkan Tanggal",
+	selectDate:"Pilih Tanggal",
+	selectTime:"Pilih Waktu",
+	acc_blank: "kosong",// when selection is nothing but space char and empty paragraph
+	acc_space: "spasi",// string read out when the cursor is before one space char
+	acc_inLink: "dalam tautan ",
+	acc_inField: "dalam bidang ",
+	acc_selected :" dipilih",
+	acc_inTable: "dalam tabel baris ${0} kolom ${1} ",
+	acc_imageSelected: "grafik yang dipilih",
+	acc_canvasSelected:"bentuk yang dipilih",
+	acc_textboxSelected:"kotak teks yang dipilih",
+	ACC_TABLE_TABLESIZE:"Anda telah memilih ${0} baris, ${1} kolom",
+	ACC_TABLE_MAXSIZE:" Ukuran tabel maksimum yang didukung adalah 20*20",
+	ACC_headerFooterMode: "mode edit header footer",
+	ACC_EditorMode: "mode edit editor",
+	ACC_FootnotesMode: "mode edit catatan kaki",
+	ACC_EndnotesMode: "mode edit catatan akhir",
+	ACC_uniformTable: "Sebuah baris baru ditambahkan",
+	Acc_column :"kolom  ${0}",
+	acc_page :"halaman  ${0}",
+	acc_section:"bagian  ${0}",
+	acc_spellWarn:"ejaan tidak tepat",
+	acc_outTable:"di luar tabel",
+	acc_link :"tautan",
+	acc_field :"bidang",
+	acc_footnote:"catatan kaki",
+	acc_endnote:"catatan akhir",	
+	acc_editor:"Edit dengan ${0}",
+	tablePropertyTitle: "Properti Tabel",
+	headerTitle:"Header",
+	footerTitle:"Footer",
+	firstheaderTitle:"Header Halaman Pertama",
+	firstfooterTitle:"Footer Halaman Pertama",
+	evenheaderTitle:"Header Halaman Genap",
+	evenfooterTitle:"Footer Halaman Genap",
+	oddheaderTitle:"Header Halaman Ganjil",
+	oddfooterTitle:"Footer Halaman Ganjil",
+	showTableBorder:"Tampilkan Batas Tabel",
+	list_none: "Tidak Ada",
+	SET_NUMBERING_VALUE: "Atur Nilai Penomoran",
+	BIDI_CONTENT_EDITING: "Dokumen ini meliputi konten bidireksional. Untuk bekerja dengan benar dengan dokumen ini, aktifkan dukungan bidireksional dalam preferensi HCL Connections Anda."
+})
+	
+

@@ -1,0 +1,40 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<configuration>
+	<!--
+		A "component" tag's or "param" tag's id attribute must not contain any of '," or \ or any characters considered invalid as a file name
+		The value attribute of the "option" tag must not contain any of the 3 of '," or \, but the text content of the "option" tag can contain any characters
+		The "name", "description" and "initial_value" tags can contain any characters
+		The text and text_area input types can accept user input of any characters
+		The types "file" and "password" cannot have an "initial_value"
+	-->
+	<component id="DocsProxy" depends_on="MiddlewareTFIM MiddlewareWebSphere Docs">
+		<param id="num_docsrp_nodes" type="option" publish="true">
+			<name>Number of IBMDocs DMZ Secure Proxy Server Nodes</name>
+			<description>The number of IBMDocs DMZ Secure Proxy Server nodes to deploy</description>
+			<options>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</options>
+			<initial_value>2</initial_value>
+		</param>
+	</component>
+</configuration>
+

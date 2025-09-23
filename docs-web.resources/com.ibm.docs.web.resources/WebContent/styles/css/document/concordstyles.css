@@ -1,0 +1,552 @@
+.tabletemplateDiv{
+ background-color: #FFFFFF;
+}
+table.st_plain > tbody > tr > th {
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_plain > tbody > tr > td {
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_plain_rows > tbody > tr > th {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border-color: #000000  ;
+    border-style: solid none;
+    border-width: 0.75pt medium;
+    color: #000000;
+    font-size: 12pt;
+}
+table.st_plain_rows > tbody > tr > td, table.st_plain_rows > tbody > tr.alternateRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border-color: #000000  ;
+    border-style: solid none;
+    border-width: 0.75pt medium;
+    color: #000000;
+    font-size: 12pt;
+}
+table.st_light_gray_rows > tbody > tr > th {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color: #000000  ;
+    border-style: solid none;
+    border-width: 0.75pt medium;
+    color: #000000;
+    font-size: 12pt;
+}
+table.st_light_gray_rows > tbody > tr > td, table.st_light_gray_rows > tbody > tr.alternateRow > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color: #000000  ;
+    border-style: solid none;
+    border-width: 0.75pt medium;
+    color: #000000;
+    font-size: 12pt;
+}
+table.st_dark_gray > tbody > tr > th {
+    background-color: #666666;
+    background-repeat: repeat;
+    border: 0.75pt solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+table.st_dark_gray > tbody > tr > td, table.st_dark_gray > tbody > tr.alternateRow > td {
+    background-color: #666666;
+    background-repeat: repeat;
+    border: 0.75pt solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+table.st_blue_style > tbody > tr > th {
+    background-color: #336666;
+    background-repeat: repeat;
+    border: 0.75pt solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+table.st_blue_style > tbody > tr > td, table.st_blue_style > tbody > tr.alternateRow > td {
+    background-color: #336666;
+    background-repeat: repeat;
+    border: 0.75pt solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+table.st_green_style > tbody > tr > th {
+    background-color: #669933;
+    background-repeat: repeat;
+    border: 0.75pt solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+table.st_green_style > tbody > tr > td, table.st_green_style > tbody > tr.alternateRow > td {
+    background-color: #669933;
+    background-repeat: repeat;
+    border: 0.75pt solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+table.st_gray_tint > tbody > tr.tableHeaderRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+    font-size: 12pt;
+}
+table.st_gray_tint > tbody > tr > th {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+    font-size: 12pt;
+}
+table.st_gray_tint > tbody > tr > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+    font-size: 12pt;
+}
+table.st_gray_tint > tbody > tr.alternateRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+    font-size: 12pt;
+}
+table.st_blue_tint > tbody > tr.tableHeaderRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_blue_tint > tbody > tr > th {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_blue_tint > tbody > tr > td {
+    background-color: #99CCFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_blue_tint > tbody > tr.alternateRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_purple_tint > tbody > tr.tableHeaderRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_purple_tint > tbody > tr > th {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_purple_tint > tbody > tr > td {
+    background-color: #CC99FF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_purple_tint > tbody > tr.alternateRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_green_tint > tbody > tr.tableHeaderRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_green_tint > tbody > tr > th {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_green_tint > tbody > tr > td {
+    background-color: #99CC99;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_green_tint > tbody > tr.alternateRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_red_tint > tbody > tr.tableHeaderRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_red_tint > tbody > tr > th {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_red_tint > tbody > tr > td {
+    background-color: #FF9999;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_red_tint > tbody > tr.alternateRow > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border: 0.75pt solid #000000;
+    color: #000000;
+}
+table.st_black_header {
+    border: 0.75pt solid #000000;
+}
+table.st_black_header > tbody > tr.tableHeaderRow > td {
+    background-color: #1C1C1C;
+    background-repeat: repeat;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0.75pt 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_black_header > tbody > tr > th {
+    background-color: #1C1C1C;
+    background-repeat: repeat;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0.75pt 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_black_header > tbody > tr > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border-color:   #000000;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_black_header > tbody > tr.alternateRow > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color:   #000000;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_black_header > tbody > tr.lastRow > td {
+    border-bottom: 0.75pt solid #000000;
+}
+table.st_green_header > tbody > tr.tableHeaderRow > td {
+    background-color: #669933;
+    background-repeat: repeat;
+    border-color:   #009900;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_green_header > tbody > tr > th {
+    background-color: #669933;
+    background-repeat: repeat;
+    border-color:   #009900;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_green_header > tbody > tr > td {
+    background-color: #B2B2B2;
+    background-repeat: repeat;
+    border-color:   #009900;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_green_header > tbody > tr.alternateRow > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color:   #009900;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_blue_header > tbody > tr.tableHeaderRow > td {
+    background-color: #003366;
+    background-repeat: repeat;
+    border-color:   #000066 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_blue_header > tbody > tr > th {
+    background-color: #003366;
+    background-repeat: repeat;
+    border-color:   #000066 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_blue_header > tbody > tr > td {
+    background-color: #6699CC;
+    background-repeat: repeat;
+    border-color:   #000066 ;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_blue_header > tbody > tr.alternateRow > td {
+    background-color: #99CCFF;
+    background-repeat: repeat;
+    border-color:   #000066;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_purple_header > tbody > tr.tableHeaderRow > td {
+    background-color: #663366;
+    background-repeat: repeat;
+    border-color:   #330066 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_purple_header > tbody > tr > th {
+    background-color: #663366;
+    background-repeat: repeat;
+    border-color:   #330066 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_purple_header > tbody > tr > td {
+    background-color: #CC99CC;
+    background-repeat: repeat;
+    border-color:   #330066;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_purple_header > tbody > tr.alternateRow > td {
+    background-color: #FFCCFF;
+    background-repeat: repeat;
+    border-color:   #330066;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_red_header > tbody > tr.tableHeaderRow > td {
+    background-color: #990000;
+    background-repeat: repeat;
+    border-color:   #330000 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_red_header > tbody > tr > th {
+    background-color: #990000;
+    background-repeat: repeat;
+    border-color:   #330000 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_red_header > tbody > tr > td {
+    background-color: #999999;
+    background-repeat: repeat;
+    border-color:   #330000;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_red_header > tbody > tr.alternateRow > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color:   #330000;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_dark_gray_header_footer > tbody > tr.tableHeaderRow > td {
+    background-color: #666666;
+    background-repeat: repeat;
+    border-color:   #333333 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_dark_gray_header_footer > tbody > tr > th {
+    background-color: #666666;
+    background-repeat: repeat;
+    border-color:   #333333 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_dark_gray_header_footer > tbody > tr > td {
+    background-color: #FFFFFF;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_dark_gray_header_footer > tbody > tr.alternateRow > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_dark_gray_header_footer > tbody > tr.lastRow > td {
+    background-color: #B2B2B2;
+    background-repeat: repeat;
+    border-color: #333333 ;
+    border-style: solid solid none;
+    border-width: 0.75pt 0.75pt medium;
+    color: #000000;
+}
+table.st_green_header_footer > tbody > tr.tableHeaderRow > td {
+    background-color: #669900;
+    background-repeat: repeat;
+    border-color:   #333333 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_green_header_footer > tbody > tr > th {
+    background-color: #669900;
+    background-repeat: repeat;
+    border-color:   #333333 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_green_header_footer > tbody > tr > td {
+    background-color: #B2B2B2;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_green_header_footer > tbody > tr.alternateRow > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_green_header_footer > tbody > tr.lastRow > td {
+    background-color: #99CC66;
+    background-repeat: repeat;
+    border-color: #333333 ;
+    border-style: solid solid none;
+    border-width: 0.75pt 0.75pt medium;
+    color: #000000;
+}
+table.st_red_header_footer > tbody > tr.tableHeaderRow > td {
+    background-color: #FF3333;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_red_header_footer > tbody > tr > th {
+    background-color: #FF3333;
+    background-repeat: repeat;
+    border-color:   #333333 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_red_header_footer > tbody > tr > td {
+    background-color: #B2B2B2;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_red_header_footer > tbody > tr.alternateRow > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+    color: #000000;
+}
+table.st_red_header_footer > tbody > tr.lastRow > td {
+    background-color: #FF6666;
+    background-repeat: repeat;
+    border-color: #333333 ;
+    border-style: solid solid none;
+    border-width: 0.75pt 0.75pt medium;
+    color: #000000;
+}
+table.st_light_blue_header_footer > tbody > tr.tableHeaderRow > td {
+    background-color: #669999;
+    background-repeat: repeat;
+    border-color:   #333333 ;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_light_blue_header_footer > tbody > tr > th {
+    background-color: #669999;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid solid;
+    border-width: medium 0.75pt 1.5pt;
+    color: #FFFFFF;
+}
+table.st_light_blue_header_footer > tbody > tr > td {
+    background-color: #B2B2B2;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+}
+table.st_light_blue_header_footer > tbody > tr.alternateRow > td {
+    background-color: #DDDDDD;
+    background-repeat: repeat;
+    border-color:   #333333;
+    border-style: none solid;
+    border-width: medium 0.75pt;
+}
+table.st_light_blue_header_footer > tbody > tr.lastRow > td {
+    background-color: #99CCCC;
+    background-repeat: repeat;
+    border-color: #333333 ;
+    border-style: solid solid none;
+    border-width: 0.75pt 0.75pt medium;
+}
+td.tablestyle_gallery_box {
+    border: 0.75pt solid #DCDCDC;
+    padding: 2.25pt;
+}
+td.tablestyle_gallery_box_hover {
+    background-color: #DFF1FF;
+    border: 3pt solid #316AC5;
+    padding: 0;
+}
+td.tablestyle_gallery_box_selected {
+    border: 0.75pt solid rgb(49,106,197);
+    background-color: rgb(223,241,255);
+    padding: 2.25pt;
+}

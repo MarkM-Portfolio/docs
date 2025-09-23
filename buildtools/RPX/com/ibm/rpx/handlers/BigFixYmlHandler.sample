@@ -1,0 +1,186 @@
+en:
+  attributes:
+    scm:
+      scoped_compliance: Scoped Compliance
+      compliance_history: Compliance History
+  models:
+    scm:
+      exception:
+        never: Never
+        deleted: Deleted
+        created: Created
+        edited: Edited
+        active: Active
+        expired: Expired
+        history: Exception History
+        checklist_slash_checks: Checklist / Checks
+        group_slash_computers: Group / Computers
+        errors:
+          no_affected_checks: Must select a checklist or at least one check
+          no_affected_computers: Must select a computer group or at least one computer
+      check_result:
+        states:
+          passed: Compliant
+          failed: Non-Compliant
+          excepted_passed: Excepted (C)
+          excepted_failed: Excepted (NC)
+          na: Not Applicable
+  scm:
+    rollup:
+      total_passed: Total Compliant
+      total_failed: Total Non-Compliant
+      total_excepted_passed: Total Excepted (C)
+      total_excepted_failed: Total Excepted (NC)
+      total_na: Total Not Applicable
+      count_computers: Computer Count
+      count_memberships: Computer Count
+      count_subscriptions: Computer Count
+      count_member_subscriptions: Computer Count
+      count_checks: Check Count
+      count_checklists: Checklist Count
+      count_computer_groups: Computer Group Count
+      count_children: Children Count
+      compliance_percentage: Compliance Percentage
+    reports:
+      checklist: Checklists
+      check_result: Check Results
+      check: Checks
+      computer: Computers
+      computer_group: Computer Groups
+      overview: Overview
+      compliance: Compliance
+      compliance_history: Compliance History
+      compliance_stacked_area:
+        title: Check Results History
+        y_axis: Check Results
+      compliance_quartiles:
+        title: Computers by Compliance Quartile
+        x_axis: Overall Compliance
+        y_axis: Computers
+      desired_values: Desired Values
+      and_n_more: "and %{count} more"
+      percent_compliant: "% Compliant"
+      none_applicable: <none applicable>
+      including_names: "including %{names}"
+      including_operating_systems: "with OSs including %{operating_systems}"
+      including_categories: "in categories including %{categories}"
+      group_prefix: "Group: {{name}}"
+      checklist_prefix: "Checklist: {{name}}"
+      selected_computers:
+        one: "%{count} computer"
+        other: "%{count} computers"
+      selected_checks:
+        one: "%{count} check"
+        other: "%{count} checks"
+      restore: Restore
+      edit: Edit
+      delete: Delete
+      check_description: Description
+      more_dialog: More Values
+      deleted_placeholder: (deleted)
+
+    report_components:
+      new_exception: New Exception...
+      exception_dialog_title: Edit Exception
+      exception_affected_checks: Affected Checks
+      exception_all_checks: All checks in checklist
+      exception_selected_checks: Selected checks
+      exception_affected_computers: Affected Computers
+      exception_all_computers: All computers in group
+      exception_selected_computers: Selected computers
+      exception_orphaned_checks:
+          one: 1 of the originally defined checks has been deleted.
+          other: "%{count} of the originally defined checks have been deleted."
+      exception_orphaned_checklist: The originally defined checklist has been deleted.
+      exception_orphaned_computers:
+          one: 1 of the originally defined computers has been deleted.
+          other: "%{count} of the originally defined computers have been deleted."
+      exception_orphaned_computer_group: The originally defined computer group has been deleted.
+
+    prompts:
+      exception:
+        reason: Enter a reason for this exception
+        check_ids: add checks here
+        computer_ids: add computers here
+
+  activemodel:
+    models:
+      scm:
+        exception:
+          one: Exception
+          other: Exceptions
+        checklist:
+          one: Checklist
+          other: Checklists
+        check:
+          one: Check
+          other: Checks
+        check_dimension:
+          one: Check
+          other: Checks
+        check_result:
+          one: Check Result
+          other: Check Results
+        exception_result:
+          one: Exception Result
+          other: Exception Results
+        check_property:
+          one: Check Property
+          other: Check Properties
+        measured_property:
+          one: Measured Value
+          other: Measured Values
+        sentinel:
+          one: Sentinel
+          other: Sentinels
+        raw_sentinel_result:
+          one: Raw Sentinel Result
+          other: Raw Sentinel Results
+        raw_check_result:
+          one: Raw Check Result
+          other: Raw Check Results
+        rollup:
+          one: Compliance
+          other: Historical Compliance
+
+    attributes:
+      scm:
+        exception:
+          id: ID
+          name: Name
+          user:
+            one: Editor
+            other: Editors
+          computer_group:
+            one: Target Group
+            other: Target Groups
+          check:
+            one: Check
+            other: Checks
+          check_ids: Checks
+          computer_ids: Computers
+          exception_to: Expiration Date
+          action: Action
+          action_date: Action date
+          # Reportable column overrides:
+          user_username: Last edit by
+          computer_group_name: Target Group
+          check_dimension_name: Check
+        check:
+          checklist_name: Checklist
+          name: Name
+        check_result:
+          state: State
+          # Reportable column overrides:
+          check_name: Check Name
+        exception_result:
+          value: State
+          # Reportable column overrides:
+          check_name: Check Name
+
+  domains:
+    scm:
+      name: "Security and Compliance"
+      long_name: "Security and Compliance Analytics"
+  permissions:
+    edit_scm_exceptions: Edit Exceptions

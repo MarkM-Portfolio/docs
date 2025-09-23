@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs.SmartCloud</groupId>
+    <artifactId>version.txt</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.SmartCloud</groupId>
+  <artifactId>viewer-ext-version.txt</artifactId>
+  <name>SmartCloud: viewer-ext-version.txt</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <ReleaseInfo>${viewer-ext.ReleaseInfo}</ReleaseInfo>
+    <product.name>${viewer-ext.product.name}</product.name>
+  </properties>
+
+</project>

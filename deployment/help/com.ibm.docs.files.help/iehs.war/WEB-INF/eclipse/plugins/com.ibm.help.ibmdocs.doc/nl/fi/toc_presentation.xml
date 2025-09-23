@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Esitysten käsittely" topic="text/presentation/presentations_frame.html">
+   <topic label="Esitysten käsittely" href="text/presentation/presentations_frame.html">
+      <topic label="Esitysten luonti ja siirto palvelimeen"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Esitysten luonti" href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Esitysten oletustiedostomuodon muutto"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Yhteiskäyttöön määritettävien esitysten siirto palvelimeen"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Aiemmin luotujen esitysten tuonti"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Tiedostojen yhteensopivuus ja esitysten vienti"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Esitysten tuetut tiedostomuodot"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Esitysten tallennus"
+                href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Esityksen version julkaisu"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Esitysten vienti muihin tiedostomuotoihin"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Esitysten määritys yhteiskäyttöön"
+             href="text/presentation/p_sharing_a_document.html">
+         <topic label="Esitysten määritys yhteiskäyttöön henkilöiden tai yhteisöjen kanssa"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Esitysten käyttötasojen määritys"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Reaaliaikainen esitysten yhteismuokkaus"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Esitysten reaaliaikainen yhteismuokkaus"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Tietoja esitysten yhteismuokkauksesta"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Esitysten yhteismuokkaus muiden käyttäjien kanssa"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Muokkaajien tekemien muutosten näyttäminen esityksissä"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Kommenttien käyttö yhteistyöhön esityksissä"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Tietoja esitysten kommenteista"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Kommenttien luonti esityksissä"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Esityksen kommenttien tarkastelu"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Esityksen kommenttien haku"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Diojen muotoilu" href="text/presentation/p_formatting_slides.html">
+         <topic label="Esitysten fonttien muuttaminen"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Objektien valinta ja siirto"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Objektien järjestäminen"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Numerointien tai luettelomerkkien lisäys dioihin"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Dian asettelun käyttö"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Päätyylin muuttaminen"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Esityksen oikeinkirjoituksen tarkistus"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Esitysten tallennus ja tulostus"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Esitysten tulostaminen PDF-tiedostoihin"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Kuvien käsittely esityksissä"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Kuvien lisäys esityksiin"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Esitysten kuvien siirto ja koon muutto"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Kuvan ominaisuuksien määritys esityksissä"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Diojen käsittely" href="text/presentation/p_slide_show.html">
+         <topic label="Diaesitysten toistaminen"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Vaihtojen käyttö dioissa"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Diojen poisto" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Diojen lisäys" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Diojen siirtäminen" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Diojen monistus" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Taulukoiden käsittely esityksissä"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Taulukoiden luonti esityksissä"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Rivien ja sarakkeiden lisäys esityksiin"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Esitysten rivien ja sarakkeiden siirto"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Rivien ja sarakkeiden koon muuttaminen esityksissä"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Solujen tekstin tasaus"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Taulukon tyylien muuttaminen esityksissä"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Taulukon otsikoiden määritys esityksissä"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Puhujan muistiinpanojen muokkaus"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Esitysten pikaohje" href="text/presentation/p_quick_ref.html"/>
+      <topic label="Esitysten pikanäppäimet"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

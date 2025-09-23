@@ -1,0 +1,1982 @@
+/* Menu dropdown - Changes border color of menu dropdowns */
+.oneui30 .dijitMenu {
+	border: 1px solid #181818 !important;
+}
+
+body.oneui30 #S_m.dijitMenuBar .dijitMenuItem {
+	margin: -1px -2px;
+}
+
+/* Menu - Removes borders and adjusts baackground gradient so that it 
+seemlessly flows into toolbar gradient */
+body.oneui30 .dijitMenuBar,body.oneui30  #S_m.dijitMenuBar {
+	border-left: 0px !important;
+	border-right: 0px !important;
+	border-bottom: 0px !important;
+	background: #F1F1F1; /* Old browsers */
+	//background: #eaeaea; /* Old browsers */
+	//background: -moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);
+	///* FF3.6+ */
+	//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4),
+	//	color-stop(100%, #eaeaea) ); /* Chrome,Safari4+ */
+	//background: -webkit-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);
+	///* Chrome10+,Safari5.1+ */
+	//background: -o-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);
+	///* Opera 11.10+ */
+	//background: -ms-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);
+	///* IE10+ */
+	////background: linear-gradient(to bottom, #f4f4f4 0%, #eaeaea 100%);
+	///* W3C */
+	//filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr =
+	//	'#f4f4f4', endColorstr = '#eaeaea', GradientType = 0 ); /* IE6-9 */
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-ms-box-shadow: none !important;
+}
+
+body.oneui30 .dijitMenuBar:not (.toolbarMenu ) .dijitMenuItemHover.dijitMenuItemDisabled,body.oneui30 .dijitMenuBar:not
+	(.toolbarMenu ) .dijitMenuItemSelected.dijitMenuItemDisabled {
+	background: transparent;
+	color: #222;
+}
+
+body.oneui30 .dijitMenuBar:not (.toolbarMenu ):not (.dijitMenuTable ) .dijitMenuItemHover:not
+	(.dijitMenuItemDisabled ),body.oneui30 .dijitMenuBar:not (.toolbarMenu
+	):not (.dijitMenuTable ) .dijitMenuItemSelected:not (.dijitMenuItemDisabled
+	),body.oneui30 .dijitMenu:not (.toolbarMenu ):not (.dijitMenuTable ) .dijitMenuItemHover:not
+	(.dijitMenuItemDisabled ),body.oneui30 .dijitMenu:not (.toolbarMenu ):not
+	(.dijitMenuTable ) .dijitMenuItemSelected:not (.dijitMenuItemDisabled ),body.oneui30 .lotusActionMenu:not
+	(.toolbarMenu ):not (.dijitMenuTable ) .dijitMenuItemHover:not (.dijitMenuItemDisabled
+	),body.oneui30 .lotusActionMenu:not (.toolbarMenu ):not (.dijitMenuTable
+	) .dijitMenuItemSelected:not (.dijitMenuItemDisabled ) {
+	background-color: #181818 !important;
+	color: #FFFFFF !important;
+}
+
+/* Menu Cursor - The cursor should not change from the default when 
+hovering menus */
+.dijitMenuItem {
+	cursor: default !important;
+}
+
+.oneui30 .dijitMenuBar .dijitMenuItem {
+	padding: 8px 14px !important;
+}
+
+.dijitMenuPopup .dijitMenuItemLabel {
+	padding: 8px 14px 8px 0px !important;
+}
+
+.dijitMenuPopup .dijitMenuItemRtl .dijitMenuItemLabel {
+	padding: 8px 0px 8px 14px !important;
+}
+
+.dijitMenuPopup .dijitMenuItemIconCell {
+	width: 13px !important;
+	padding: 0 5px !important;
+	text-align: center !important;
+}
+
+body.oneui30 .dijitMenuPopup .dijitMenuActive .dijitMenuItemDisabledFocused.dijitMenuItemDisabled,body.oneui30 .dijitMenuPopup .dijitMenuActive .dijitMenuItemDisabled.dijitMenuItemSelected
+	{
+	background-color: #fff !important
+}
+
+/* Update Checkmark - This would require an update to sprite. The following 
+code is a temporary hack. */
+.oneui30 .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon {
+	width: 13px !important;
+	height: 16px !important;
+	background-image: url(images/presToolbarSprite.png) !important;
+	background-repeat: no-repeat;
+	background-position: 0 -432px !important;
+}
+
+/* Keyboard Shortcuts - Updates color, padding and alignment of shortcuts. */
+.dijitReset .dijitMenuItemAccelKey {
+	color: #222222 !important;
+	text-align: right !important;
+	padding-right: 2px !important;
+}
+.dijitReset .dijitMenuItemSelected .dijitReset.dijitMenuItemAccelKey {
+	color: #ffffff !important;
+}
+.dijitReset .dijitMenuItemSelected.dijitMenuItemDisabled .dijitReset.dijitMenuItemAccelKey {
+	color: #222222 !important;
+}
+
+/* Menu Arrow (that opens submenu) spacing */
+.dijitMenuArrowCell {
+	min-width: 12px !important;
+}
+
+/* Disabled Menu Items - Color and removes 'hover' state. Disabled options
+should not display a 'hover' state. */
+.dijitDisabled *,.dijitDisabled {
+	color: #000000 !important;
+	background: none;
+}
+
+/* Toolbar - Padding */
+.oneui30 .dijitToolbar {
+	background: #F1F1F1; /* Old browsers */
+	//background: #eaeaea; /* Old browsers */
+	//background: -moz-linear-gradient(top, #eaeaea 0%, #e0e0e0 100%);
+	///* FF3.6+ */
+	//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaea),
+	//	color-stop(100%, #e0e0e0) ); /* Chrome,Safari4+ */
+	//background: -webkit-linear-gradient(top, #eaeaea 0%, #e0e0e0 100%);
+	///* Chrome10+,Safari5.1+ */
+	//background: -o-linear-gradient(top, #eaeaea 0%, #e0e0e0 100%);
+	///* Opera 11.10+ */
+	//background: -ms-linear-gradient(top, #eaeaea 0%, #e0e0e0 100%);
+	///* IE10+ */
+	//background: linear-gradient(to bottom, #eaeaea 0%, #e0e0e0 100%);
+	///* W3C */
+	//filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr =
+	//	'#eaeaea', endColorstr = '#e0e0e0', GradientType = 0 ); /* IE6-9 */
+	border-bottom: 1px solid #A4A4A4 !important;
+	/* Spreadsheet Toolbar - Bottom border */
+	padding: 3px 8px 5px !important;
+	border-bottom: 1px solid #A4A4A4 !important;
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-khtml-user-select: none !important;
+}
+
+.oneui30 .dijitToolbar>.dijitDisabled {
+	filter: alpha(opacity = 60);
+	opacity: 0.6;
+	-moz-opacity: 0.60;
+}
+
+.oneui30 .dijitToolbar .dijitButtonNode,.oneui30 .dijitToolbar .dijitButtonNode *
+	{
+	cursor: default !important;
+	color: #000000 !important;
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-khtml-user-select: none !important;
+}
+
+.oneui30 .dijitToolbar .dijitButtonContents {
+	padding: 0 !important;
+}
+
+.dj_webkit .oneui30 .dijitToolbar>span.dijitInline {
+	position: relative;
+}
+
+.oneui30 .dijitToolbar *,.oneui30 .toolbarPopup * {
+	outline: none;
+}
+
+.oneui30 .dijitToolbar .dijitButtonContents:focus,.oneui30 .dijitToolbar .dijitArrowButton:focus,
+.lineTypePanel .lineTypeBtnFocus
+ {
+	outline: 1px dotted black !important;
+}
+
+.oneui30 .dijitToolbar>.dijitButton,.oneui30 .dijitToolbar>.dijitToggleButton,.oneui30 .dijitToolbar>.dijitDropDownButton
+	{
+	margin-right: 0 !important;
+	padding: 0 !important;
+}
+
+/* Toolbar Buttons */
+.oneui30 .dijitToolbar .dijitButton .dijitButtonNode,.oneui30 .dijitToolbar .dijitDropDownButton .dijitButtonNode,.oneui30 .dijitComboButton .dijitButtonNode,.oneui30 .dijitToolbar .dijitToggleButton .dijitButtonNode
+	{
+	background: none repeat scroll 0 0 transparent !Important;
+	background-image: none;
+}
+
+/* Toolbar - Toolbar Separator left and right margins */
+.oneui30 .dijitToolbar .dijitToolbarSeparator {
+	margin: 0 3px 0 3px !important;
+	width: 4px;
+}
+
+/* Toolbar - Single button dropdown arrow position relative to icon,
+i.e. text color button */
+.oneui30 .dijitToolbar .dijitDownArrowButton .dijitArrowButtonInner {
+	/*background-position: -3px -2339px !important;*/
+	width: 11px !important;
+}
+
+body.oneui30 .dijitToolbar .lotusDijitButtonImg {
+	border: 0 !important;
+}
+
+/* Toolbar Button - Corner radius, size and padding */
+.oneui30 .dijitToolbar .dijitButton .dijitButtonNode,.oneui30 .dijitToolbar .dijitToggleButton .dijitButtonNode,.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked .dijitButtonNode,.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonDisabled .dijitButtonNode,.oneui30 .dijitToolbar .textToolbarButton .dijitButtonNode,.oneui30 .dijitToolbar .textToolbarButton.dijitButtonChecked .dijitButtonNode,.oneui30 .dijitToolbar .textToolbarButton.dijitButtonDisabled .dijitButtonNode,.oneui30 .dijitToolbar .dijitDropDownButton .dijitButtonNode
+	{
+	border-radius: 2px !important;
+	height: 16px !important;
+	padding: 3px !important;
+	margin-right: -1px !important;
+	border: 1px solid transparent !important;
+}
+
+/* Toolbar Button - Transition for interactions. It is acceptable that
+the transition does not happen in browsers that do not support 'transition'.
+The transition not being supported in older browsers does not detract from 
+the user's experience in those browsers. */
+.oneui30 .dijitToolbar .dijitButton .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitToggleButton .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton .dijitButtonNode
+{
+	transition: background-color .1s linear, border .1s linear, box-shadow
+		.1s linear;
+}
+
+.oneui30 .dijitToolbar .lotusDijitButtonImg .dijitButtonNode {
+	transition: background-color .1s linear, box-shadow .1s linear;
+}
+
+.oneui30 .dijitToolbar .dijitComboButton,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton
+{
+	border: 1px solid transparent;
+	margin-right : 1px !important;
+	border-radius: 2px !important;
+	transition: background-color .1s linear, border .1s linear, box-shadow .1s linear;
+	background: transparent !important;
+}
+
+.oneui30 .dijitToolbar .dijitComboButton .dijitArrowButton,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton .dijitArrowButton
+{
+	padding-left: 1px;
+}
+
+.oneui30 .dijitToolbar .dijitComboButton .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton .dijitButtonNode
+{
+	float: left;
+}
+
+.oneui30 .dijitToolbar .dijitRtl.dijitComboButton .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitRtl.dijitDropDownToggleButton .dijitButtonNode
+{
+	float: right;
+}
+
+/* Toolbar Button - _off (hover,focus,active) */
+.oneui30 .dijitToolbar .dijitButton:not(.dijitDisabled):hover .dijitButtonNode, 
+.oneui30 .dijitToolbar .dijitButton:not(.dijitDisabled):focus .dijitButtonNode, 
+.oneui30 .dijitToolbar .dijitDropDownToggleButton:not(.dijitDisabled):hover,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton:not(.dijitDisabled):focus,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton:not(.dijitDisabled):active,
+.oneui30 .dijitToolbar .dijitToggleButton:not(.dijitDisabled):hover .dijitButtonNode, 
+.oneui30 .dijitToolbar .dijitToggleButton:not(.dijitDisabled):focus .dijitButtonNode, 
+.oneui30 .dijitToolbar .dijitToggleButton:not(.dijitDisabled):active .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitComboButton:not(.dijitDisabled):hover,  
+.oneui30 .dijitToolbar .dijitComboButton:not(.dijitDisabled):focus,  
+.oneui30 .dijitToolbar .dijitComboButton:not(.dijitDisabled):active, 
+.oneui30 .dijitToolbar .textToolbarButton:not(.dijitDisabled):hover .dijitButtonNode, 
+.oneui30 .dijitToolbar .textToolbarButton:not(.dijitDisabled):focus .dijitButtonNode, 
+.oneui30 .dijitToolbar .textToolbarButton:not(.dijitDisabled):active .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton:not(.dijitDisabled):hover .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton:not(.dijitDisabled):focus .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton:not(.dijitDisabled):active .dijitButtonNode
+{
+    background-color: transparent !important;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.08))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#14000000',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #999999 !important;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.2) !important;
+    opacity: 1;
+}
+
+/* Toolbar Button - checked (hover,focus,active) */
+.oneui30 .dijitToolbar .dijitDropDownButton:not(.dijitDisabled).dijitOpened .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitComboButton:not(.dijitDisabled).dijitOpened,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton.dijitDropDownToggleButtonChecked,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton.dijitDropDownToggleButtonChecked:hover,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton.dijitDropDownToggleButtonChecked:focus,
+.oneui30 .dijitToolbar .dijitDropDownToggleButton.dijitDropDownToggleButtonChecked:active,
+.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked:hover .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked:focus .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked:active .dijitButtonNode,
+.oneui30 .dijitToolbar .textToolbarButton.dijitToggleButtonChecked .dijitButtonNode,
+.oneui30 .dijitToolbar .textToolbarButton.dijitToggleButtonChecked:hover .dijitButtonNode,
+.oneui30 .dijitToolbar .textToolbarButton.dijitToggleButtonChecked:focus .dijitButtonNode,
+.oneui30 .dijitToolbar .textToolbarButton.dijitToggleButtonChecked:active .dijitButtonNode
+	{
+	background-color: rgba(0, 0, 0, 0.10) !important;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0
+		, 0, 0.1) ), color-stop(100%, rgba(0, 0, 0, 0.18) ) );
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* W3C */
+	filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr =
+		'#1a000000', endColorstr = '#2e000000', GradientType = 0 );
+	/* IE6-9 */
+	border: 1px solid #808080 !important;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .2) !important;
+	opacity: 1;
+}
+
+/* Toolbar Button - Replaces current "icons.png" sprite with proposed 
+sprite */
+	/* Toolbar Button - Removes current vertical handles for toolbar. We would
+like to have seperators for tool groups. We will need to update sprite and change how 
+the buttons are grouped (see "IBM Docs Web Editor User Adoption Walkthough" 
+document for proposed groupings and seperator style). I can provide the 
+production assets and designs once this effort begins. */
+	/* Text style | Typeface | Type size */
+.oneui30 .dijitToolbar  #toolbar_font_name_label {
+	line-height: 12px;
+	width: 78px;
+	padding-right: 2px;
+	overflow: hidden;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButtonRtl #toolbar_font_name_label
+{
+	direction: ltr;
+}
+
+.oneui30 .dijitToolbar  #toolbar_font_size_label {
+	line-height: 12px;
+	width: 28px;
+	overflow: hidden;
+}
+
+.oneui30 .dijitToolbar  #toolbar_zoom_label {
+	line-height: 12px;
+	width: 35px;
+	overflow: hidden;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]
+{
+	margin-right: 3px !important;
+	margin-left: 4px !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]
+{
+	margin-right: 3px !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]
+{
+	margin-right: 6px !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"] .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"] .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"] .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"] .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"] .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"] .dijitButtonText
+	{
+	transition: all 0.1s linear !important;
+	text-align: left;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton.dijitDropDownButtonRtl[widgetid="toolbar_font_name"] .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton.dijitDropDownButtonRtl[widgetid="toolbar_font_size"] .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton.dijitDropDownButtonRtl[widgetid="toolbar_zoom"] .dijitButtonText
+	{
+	text-align: right;
+	padding: 5px 7px 3px 0 !important;
+	border-radius: 0 2px 2px 0 !important;
+	border-color: #999 #999 #999 transparent !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"] .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"] .dijitButtonContents,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"] .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"] .dijitButtonContents,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"] .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"] .dijitButtonContents
+	{
+	padding: 0 !important;
+	border: none !important;
+	height: 24px !important;
+	background: none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not(.dijitDisabled):hover .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not(.dijitDisabled):focus .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not(.dijitDisabled).dijitOpened .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not(.dijitDisabled):hover .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not(.dijitDisabled):focus .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not(.dijitDisabled).dijitOpened .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled) .dijitDownArrowButton:hover,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled).dijitOpened .dijitDownArrowButton  {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset !important;
+    border:none!important;
+}
+
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled) .dijitDownArrowButton:focus
+{
+	outline: 1px dotted black !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled):hover .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled):focus .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled).dijitOpened .dijitButtonNode
+{
+	 border:none!important;
+	 background-color: transparent !important;
+	 box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"] .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"] .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"] .dijitButtonText
+	{
+	height: 14px !important;
+	padding: 5px 5px 3px !important;
+	border-radius: 2px 0 0 2px !important;
+	border: 1px solid #999999 !important;
+	border-color: #999 transparent #999 #999 !important;
+	opacity: 0.7 !important;
+	font-weight: normal !important;
+	font-size: 12px !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	background: none !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not(.dijitDisabled ):hover .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not(.dijitDisabled ):focus .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not(.dijitDisabled ):active .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not(.dijitDisabled ):hover .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not(.dijitDisabled ):focus .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not(.dijitDisabled ):active .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled ):hover .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled ):focus .dijitButtonText,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled ):active .dijitButtonText {
+	opacity: 1 !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"] .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"] .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"] .dijitArrowButtonInner
+	{
+	height: 22px !important;
+	width: 15px !important;
+	border-radius: 0 2px 2px 0 !important;
+	border: 1px solid #999999 !important;
+	border-color: #999 #999 #999 transparent !important;
+	margin-left: -1px !important;
+	display: inline-block !important;
+	opacity: 0.7 !important;
+}
+
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled ).dijitOpened .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled ):hover .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled ):active .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not(.dijitDisabled ):focus .dijitArrowButtonInner,
+.ibmdocColorPalette .lineTypePanel .dijitDropDownButton[widgetid ="pres_widget_toolbar_FontSize_0" ]:not(.dijitDisabled ):focus .dijitArrowButtonInner,
+.ibmdocColorPalette .lineTypePanel .dijitDropDownButton[widgetid ="pres_widget_toolbar_FontSize_0" ]:not(.dijitDisabled ):hover .dijitArrowButtonInner,
+.ibmdocColorPalette .lineTypePanel .dijitDropDownButton[widgetid ="pres_widget_toolbar_FontSize_0" ]:not(.dijitDisabled ):active .dijitArrowButtonInner
+{
+	border-color: #999 #999 #999 #999 !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton.dijitDropDownButtonRtl[widgetid="toolbar_zoom"] .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton.dijitDropDownButtonRtl[widgetid="toolbar_font_name"] .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton.dijitDropDownButtonRtl[widgetid="toolbar_font_size"] .dijitArrowButtonInner {
+	border-radius: 2px 0 0 2px !important;
+	border-color: #999 transparent #999 #999 !important;
+	margin-right: -1px !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not
+	(.dijitDisabled ):hover .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not
+	(.dijitDisabled ):focus .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_zoom"]:not
+	(.dijitDisabled ):active .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not
+	(.dijitDisabled ):hover .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not
+	(.dijitDisabled ):focus .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"]:not
+	(.dijitDisabled ):active .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not
+	(.dijitDisabled ):hover .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not
+	(.dijitDisabled ):focus .dijitArrowButtonInner,
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"]:not
+	(.dijitDisabled ):active .dijitArrowButtonInner {
+	opacity: 1 !important;
+}
+
+/* Style/Typeface/Size Dropdowns */
+.oneui30 .toolbarMenu.lotusActionMenu {
+	border: 1px solid #A9A9A9 !important;
+	/*border-radius: 2px 2px 2px 2px !important; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15) !important;*/
+	margin: 0 !important;
+	padding: 0 !important;
+	width: auto !important;
+}
+
+.oneui30 .toolbarMenu.lotusActionMenu .dijitMenuTable {
+	border: none !important;
+}
+
+.oneui30 #S_m_MoreCurrenciesByCode,.oneui30 #S_m_MoreCurrencies {
+	padding-right: 0 !important;
+}
+
+.oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover,.oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused,.oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected
+	{
+	background: rgba(0, 0, 0, 0) !important;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.06) 100% ) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0
+		, 0, 0) ), color-stop(100%, rgba(0, 0, 0, 0.06) ) ) !important;
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.06) 100% ) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.06) 100% ) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.06) 100% ) !important; /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.06) 100% ) !important; /* W3C */
+	border: 0 solid !important;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15) inset !important;
+	color: inherit !important;
+	cursor: default !important;
+	margin: 0 !important;
+	outline: medium none !important;
+}
+
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover,.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused,.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected,.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover,.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused,.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected
+	{
+	box-shadow: none !important;
+}
+
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover>td
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused>td,.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected>td,.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover>td,.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused>td,.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected>td
+	{
+	box-shadow: 0px 4px 2px -3px rgba(0, 0, 0, 0.15) inset !important;
+}
+
+.dj_ie9 .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover td
+.dj_ie9 .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused td,.dj_ie9 .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected td
+	{
+	filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr =
+		'#00000000', endColorstr = '#0f000000', GradientType = 0 );
+	/* IE6-9 */
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_name"] .dijitButtonText,.oneui30 .dijitToolbar .dijitDropDownButton[widgetid="toolbar_font_size"] .dijitButtonText
+	{
+	padding: 5px 0 3px 7px !important;
+}
+
+.websheetToolbar #S_t_Currency {
+	opacity: 0.5 !important;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	top: -2px;
+	width: auto;
+	min-width: 16px;
+}
+
+.textToolbarButton .dijitButtonText {
+	color: #000000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Bullet List Button - Updated sprite */
+.cke_skin_lotus .cke_button_bulletedlist .cke_icon {
+	background-position: 0 -160px !important;
+}
+
+.dijitToolbarIcon {
+	background-image: url(images/presToolbarSprite.png);
+	background-position: 100px center;
+	background-repeat: no-repeat;
+	display: inline-block !important;
+	height: 16px;
+	width: 16px;
+	margin: 0px !important;
+}
+
+.dijitToolbarIcon.textDirLtrIcon
+{
+	background-image: url("../../../js/concord/widgets/css/images/bidiToolbarSprite.png");
+	background-position: 0px 0px;
+}
+.dijitToolbarIcon.textDirRtlIcon
+{
+	background-image: url("../../../js/concord/widgets/css/images/bidiToolbarSprite.png");
+	background-position: 0px -16px;
+}
+.rtl .bulletIcon {
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
+
+.rtl .numberingIcon {
+    background-image: url("../../../styles/css/document/img/docToolbarSprite.png");
+    background-position: 0 -466px;
+}
+
+.zoomFitIcon
+{
+	background-position: 0px -480px;
+}
+
+.newLinkIcon
+{
+	background-position: 0px -464px;
+}
+
+.formatPainterIcon {
+	background-position: 0px -530px;
+}
+
+.sorterHideIcon {
+	background-position: 0px -546px;
+}
+
+.sorterShowIcon {
+	background-position: 0px -562px;
+}
+
+.bulletIcon {
+	background-position: 0px -224px;
+}
+
+.numberingIcon {
+	background-position: 0px -240px;
+}
+
+.indentIcon {
+	background-position: 0px -272px;
+}
+
+.outdentIcon {
+	background-position: 0px -288px;
+}
+
+.undoIcon {
+	background-position: 0px 0px;
+}
+
+.redoIcon {
+	background-position: 0px -16px;
+}
+
+.dijitToolbarRtl .undoIcon {
+	background-position: 0px -16px;
+}
+
+.dijitToolbarRtl .redoIcon {
+	background-position: 0px 0px;
+}
+
+.boldIcon {
+	background-position: 0px -48px;
+}
+
+.italicIcon {
+	background-position: 0px -64px;
+}
+
+.underlineIcon {
+	background-position: 0px -80px;
+}
+
+.strikethroughIcon {
+	background-position: 0px -144px;
+}
+
+.fontColorIcon {
+	background-position: 0px -96px;
+}
+
+.bgColorIcon {
+	background-position: 0px -368px;
+}
+
+.borderIcon {
+	background-position: 0px -448px;
+}
+
+.slideIcon {
+	background-position: 0px -32px;
+}
+
+.numberFormatIcon {
+	background-position: 0px -32px;
+}
+
+.alignLeftIcon {
+	background-position: 0 -112px;
+}
+
+.alignCenterIcon {
+	background-position: 0 -128px;
+}
+
+.alignRightIcon {
+	background-position: 0 -144px;
+}
+
+.alignJusitifyIcon {
+	background-position: 0 -160px;
+}
+
+.alignTopIcon {
+	background-position: 0 -176px;
+}
+
+.alignMiddleIcon {
+	background-position: 0 -192px;
+}
+
+.alignBottomIcon {
+	background-position: 0 -208px;
+}
+
+.newTextIcon {
+	background-position: 0 -304px;
+}
+
+.newImageIcon {
+	background-position: 0 -320px;
+}
+
+.newShapeIcon {
+	background-position: 0 -336px;
+}
+
+.newTableIcon {
+	background-position: 0 -352px;
+}
+
+.slideShowIcon {
+	background-position: 0 -384px;
+}
+
+.dijitRtl .slideShowIcon {
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
+
+span[widgetid='toolbar_slide_show'] {
+	position: absolute !important;
+	right: 4px;
+}
+
+.dijitToolbarRtl span[widgetid='toolbar_slide_show'] {
+	position: absolute !important;
+	left: 4px;
+	right: auto;
+}
+
+/* Tooltip Style */
+.menuTooltip {
+	background-color: #ffffff;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.menuTooltip .dijitTooltipContainer {
+	border: 1px solid #999999;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+
+.menuTooltip.dijitTooltipBelow .dijitTooltipConnector {
+	width: 11px;
+	height: 8px;
+	background-image: url(images/presToolbarSprite.png);
+	position: absolute;
+	top: -5px;
+	background-position: 0 -416px;
+	background-repeat: no-repeat;
+}
+
+.menuTooltip.dijitTooltipRight .dijitTooltipConnector {
+	width: 16px;
+	height: 16px;
+	background-image: url(images/presToolbarSprite.png);
+	position: absolute;
+	left: -14px;
+	top: 4px;
+	background-position: 0 -497px;
+	background-repeat: no-repeat;
+}
+
+.menuTooltip.dijitTooltipAbove .dijitTooltipConnector {
+	width: 11px;
+	height: 8px;
+	background-image: url(images/presToolbarSprite.png);
+	background-position: 0 -400px;
+	bottom: -7px;
+	background-repeat: no-repeat;
+}
+
+.menuTooltip.dijitTooltipLeft .dijitTooltipConnector {
+	width: 16px;
+	height: 16px;
+	background-image: url(../presentation2/images/presToolbarSprite.png);
+	position: absolute;
+	right: -14px;
+	top: 4px;
+	background-position: 0 -513px;
+	background-repeat: no-repeat;
+}
+.tooltipLabel {
+	padding: 6px 8px;
+	color: #222222;
+	white-space: pre;
+}
+
+.tooltipAccelKey {
+	padding: 6px 8px 6px 0;
+	color: #aaaaaa;
+	white-space: pre;
+}
+
+.websheetToolbar .borderOpinionToolbar,.autoDirectionIcon,.ltrDirectionIcon,.rtlDirectionIcon,.sheetLtrDirectionIcon,.sheetRtlDirectionIcon
+	{
+	background-image: url(../images/cellb_sprite.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+}
+
+.ltrDirectionIcon {
+	background-image:
+		url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	background-position: 0px 0px;
+}
+
+.rtlDirectionIcon {
+	background-image:
+		url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	background-position: 0px -16px;
+}
+
+.autoDirectionIcon {
+	background-image:
+		url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	background-position: 0px -32px;
+}
+
+.sheetLtrDirectionIcon {
+	background-image:
+		url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	background-position: 0px -48px;
+}
+
+.sheetRtlDirectionIcon {
+	background-image:
+		url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	background-position: 0px -64px;
+}
+
+.borderOpinionToolbar * {
+	cursor: default !important;
+}
+
+.borderOpinionToolbar span[widgetId='S_t_OuterBorders'],.borderOpinionToolbar span[widgetId='S_t_LeftBorder'],.borderOpinionToolbar span[widgetId='S_t_TopBorder'],.borderOpinionToolbar span[widgetId='S_t_RightBorder'],.borderOpinionToolbar span[widgetId='S_t_BottomBorder']
+	{
+	margin-top: -1px;
+}
+
+.borderOpinionToolbar.dijitToolbar .dijitButtonContents {
+	padding: 1px 0 0 1px;
+}
+
+.borderOpinionToolbar .clearBordersIcon {
+	background-position: 0px 0px;
+}
+
+.borderOpinionToolbar .allBordersIcon {
+	background-position: 0px -15px;
+}
+
+.borderOpinionToolbar .innerBordersIcon {
+	background-position: 0px -30px;
+}
+
+.borderOpinionToolbar .horizontalBordersIcon {
+	background-position: 0px -45px;
+}
+
+.borderOpinionToolbar .verticalBordersIcon {
+	background-position: 0px -60px;
+}
+
+.borderOpinionToolbar .outerBordersIcon {
+	background-position: 0px -75px;
+}
+
+.borderOpinionToolbar .leftBorderIcon {
+	background-position: 0px -90px;
+}
+
+.borderOpinionToolbar .topBorderIcon {
+	background-position: 0px -105px;
+}
+
+.borderOpinionToolbar .rightBorderIcon {
+	background-position: 0px -120px;
+}
+
+.borderOpinionToolbar .bottomBorderIcon {
+	background-position: 0px -135px;
+}
+
+.borderOpinionToolbar .cellb_1px_solid {
+	background-position: 0px -150px;
+}
+
+.borderOpinionToolbar .cellb_1px_dot {
+	background-position: 0px -165px;
+}
+
+.borderOpinionToolbar .cellb_1px_dashIcon {
+	background-position: 0px -180px;
+}
+
+.borderOpinionToolbar .cellb_3px_solid {
+	background-position: 0px -195px;
+}
+
+.borderOpinionToolbar .cellb_3px_dot {
+	background-position: 0px -210px;
+}
+
+.borderOpinionToolbar .cellb_3px_dashIcon {
+	background-position: 0px -225px;
+}
+
+.dijitColorButtonOuter
+{
+	padding: 3px 6px 0 6px;
+	margin-top: 5px;
+}
+
+.dijitColorButtonInner
+{
+	text-align: center;
+	border: 1px solid #a0a0a0;
+	font-size: 12px;
+	cursor: pointer;
+	padding: 4px 0;
+	line-height: normal;
+}
+
+.dijitColorButtonIcon
+{
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3px;
+	margin-right: 3px;
+	background-image: url(images/no_fill_icon.png);
+}
+
+.dj_gecko .dijitColorButtonIcon
+{
+	margin-top: 4px;
+}
+
+.ibmdocColorPalette {
+	background-color: #FFFFFF;
+	border: 0;
+	padding: 2px;
+}
+
+.ibmdocShapePalette
+{
+	background-color: #FFFFFF;
+	border: 0;
+	padding: 0;
+	
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ibmdocShapePalette .shapeGroup
+{
+	padding: 6px 6px;
+}
+
+.ibmdocShapePalette .shapeSep
+{
+	height: 1px;
+	background: #aeaeae;
+}
+
+.ibmdocShapePalette .dijitPaletteShapeSpan
+{
+	border: none;
+	cursor: default;
+}
+
+.ibmdocColorPalette .dijitPaletteColorSpan {
+	border: none;
+	cursor: default;
+	width: 14px;
+	height: 14px;
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .25);
+	margin: 1px;
+}
+
+.ibmdocColorPalette .dijitPaletteCell,
+.ibmdocShapePalette .dijitPaletteCell {
+	transition: background-color .1s linear, border .1s linear, box-shadow
+		.1s linear;
+	border-radius: 2px !important;
+}
+
+.ibmdocColorPalette .dijitPaletteCell.dijitColorButton.dijitPaletteCellSelectedHighlight .dijitColorButtonInner
+{
+	background: white;
+}
+
+.ibmdocColorPalette .dijitPaletteCell.dijitPaletteCellSelectedHighlight,
+.ibmdocColorPalette .dijitPaletteCell.dijitPaletteCellSelectedHighlight:hover,
+.ibmdocShapePalette .dijitPaletteCell.dijitPaletteCellSelectedHighlight,
+.ibmdocShapePalette .dijitPaletteCell.dijitPaletteCellSelectedHighlight:hover
+	{
+	background-color: rgba(0, 0, 0, 0.10) !important;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0
+		, 0, 0.1) ), color-stop(100%, rgba(0, 0, 0, 0.18) ) );
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* W3C */
+	filter: progid :                        
+		  DXImageTransform.Microsoft.gradient (    
+		  
+		        
+		            startColorstr =             
+		             '#1a000000', endColorstr =                        
+		  '#2e000000', GradientType =         
+		      
+		          0 );
+	/* IE6-9 */
+	border: 1px solid #808080 !important;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .2) !important;
+	opacity: 1;
+	cursor: default;
+}
+
+.ibmdocColorPalette .dijitPaletteCell:hover,
+.ibmdocShapePalette .dijitPaletteCell:hover {
+	background-color: transparent;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0
+		, 0, 0) ), color-stop(100%, rgba(0, 0, 0, 0.08) ) );
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ); /* W3C */
+	filter: progid :                        
+		  DXImageTransform.Microsoft.gradient (    
+		  
+		        
+		            startColorstr =             
+		             '#00000000', endColorstr =                        
+		  '#14000000', GradientType =         
+		      
+		          0 );
+	/* IE6-9 */
+	border: 1px solid #999999 !important;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .2);
+	opacity: 1;
+	cursor: default;
+}
+
+.ibmdocColorPalette .dijitPaletteCell.dijitColorButton.dijitPaletteCellSelectedHighlight,
+.ibmdocColorPalette .dijitPaletteCell.dijitColorButton.dijitPaletteCellSelectedHighlight:hover
+{
+	background-color: transparent;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0
+		, 0, 0) ), color-stop(100%, rgba(0, 0, 0, 0.08) ) ) !important;
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ) !important; /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.08) 100% ) !important; /* W3C */
+	filter: progid :                        
+		  DXImageTransform.Microsoft.gradient (    
+		  
+		        
+		            startColorstr =             
+		             '#00000000', endColorstr =                        
+		  '#14000000', GradientType =         
+		      
+		          0 );
+	/* IE6-9 */
+	border: 1px solid #999999 !important;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .2);
+	opacity: 1;
+	cursor: default;
+}
+
+.oneui30 .ibmdocShapePalette .dijitPaletteCell {
+	border: 1px solid transparent;
+	padding: 4px;
+	height: 16px;
+	line-height: 0;
+	width: 16px;
+	cursor: default !important;
+	margin-right: -1px !important;
+}
+
+.oneui30 .ibmdocColorPalette .dijitPaletteCell {
+	border: 1px solid transparent;
+	padding: 3px;
+	height: 16px;
+	line-height: 0;
+	width: 16px;
+	cursor: default !important;
+	margin-right: -1px !important;
+}
+
+.oneui30 .ibmdocColorPalette .dijitColorButton.dijitPaletteCell
+{
+	border: 1px solid transparent;
+	padding: 3px;
+	width: auto;
+	height: auto;
+}
+
+.oneui30 .ibmdocColorPalette  div+div .dijitPaletteCell,
+.oneui30 .ibmdocShapePalette  div+div .dijitPaletteCell  {
+	margin-top: -1px !important;
+}
+
+div.hello_class {
+	color: #333;
+	background-color: #fff;
+	width: auto; /*200px;*/
+	height: auto; /*200px;*/
+	display: block;
+	padding: 0;
+	margin: 0;
+	/*font-family:sans-serif
+border-top:1px solid #cdcdcd;
+border-left:1px solid #cdcdcd;*/
+}
+
+div.hello_class table {
+	
+}
+
+div.hello_class table tbody tr {
+	height: 80px;
+}
+
+div.hello_class table tbody tr td {
+	padding: 15px;
+	border-right: 1px solid #cdcdcd;
+	border-bottom: 1px solid #cdcdcd;
+	cursor: pointer;
+	width: 62px;
+	text-align: center;
+	outline: none;
+}
+
+div.hello_class table tbody tr td.multi {
+	padding: 10px;
+}
+
+div.hello_class table tbody tr td p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+div.hello_class table tbody tr td p span {
+	
+}
+
+div.hello_class table tbody tr td.DisabledItem {
+	opacity: 0.3;
+}
+
+div.hello_class table tbody tr td.leftMost {
+	border-left: 1px solid #cdcdcd;
+}
+
+div.hello_class table tbody tr td.topMost {
+	border-top: 1px solid #cdcdcd;
+}
+
+div.hello_class table tbody tr td.ItemHover {
+	background-color: rgb(223, 241, 255);
+	border-right: 1px solid rgb(49, 106, 197);
+	border-bottom: 1px solid rgb(49, 106, 197);
+}
+
+div.hello_class table tbody tr td.ItemHoverHelperLeft {
+	border-right: 1px solid rgb(49, 106, 197);
+}
+
+div.hello_class table tbody tr td.ItemHoverHelperTop {
+	border-bottom: 1px solid rgb(49, 106, 197);
+}
+
+div.hello_class table tbody tr td.ItemHoverLeft {
+	border-left: 1px solid rgb(49, 106, 197);
+}
+
+div.hello_class table tbody tr td.ItemHoverTop {
+	border-top: 1px solid rgb(49, 106, 197);
+}
+
+div.hello_class table tbody tr td ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+div.hello_class table tbody tr td ul.indent-first {
+	margin-left: 10px;
+}
+
+div.hello_class table tbody tr td ul.indent-second {
+	margin-left: 20px;
+}
+
+div.hello_class table tbody tr td ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+div.hello_class table tbody tr td ul li span {
+	border-top: 2px solid #BBBBBB;
+	display: inline-block;
+	width: 30px;
+	vertical-align: middle;
+	height: 2px;
+	text-align: center;
+}
+
+div.hello_class table tbody tr td ul li span.single-line {
+	height: 1.5em;
+	border: none;
+	margin: 0;
+	overflow: hidden;
+	width: 80px;
+	white-space: nowrap;
+}
+
+div.hello_class table tbody tr td ul.upper-alpha {
+	/*list-style-type:upper-alpha;*/
+	
+}
+
+div.hello_class table tbody tr td ul.lower-alpha {
+	/*list-style-type:lower-alpha;*/
+	
+}
+
+div.hello_class table tbody tr td ul.lower-roman {
+	/*list-style-type:lower-roman;*/
+	
+}
+
+div.hello_class table tbody tr td ul.upper-roman {
+	/*list-style-type:upper-roman;*/
+	
+}
+
+div.hello_class table tbody tr td ul.circle {
+	/*list-style-type:circle;*/
+	
+}
+
+div.hello_class table tbody tr td ul.square {
+	/*list-style-type:square;*/
+	
+}
+
+div.hello_class table tbody tr td ul.decimal {
+	/*list-style-type:decimal;*/
+	
+}
+
+div.hello_class table.bulletList tr {
+	height: auto
+}
+
+div.hello_class table.bulletList tr td {
+	width: 70px;
+	height: 70px;
+	padding: 0;
+	text-align: center;
+}
+
+div.hello_class table.bulletList tr td span {
+	display: block;
+	text-align: center;
+}
+
+div.hello_class table.bulletList tr td span
+{
+	font-size: 120%;
+}
+
+div.hello_class table.bulletList tr td span.none
+{
+	font-size: 100%;
+}
+
+div.hello_class table.shapeList tr {
+	height: auto
+}
+
+div.hello_class table.shapeList tr td {
+	width: 44px;
+	height: 44px;
+	padding: 0 8px 0 8px;
+	text-align: center;
+}
+
+div.hello_class table.shapeList tr td span {
+	display: block;
+	padding-left: 14px;
+	text-align: center;
+}
+
+div.hello_class table.shapeList tr td.topMost.ItemHover {
+	border-top: 1px solid rgb(49, 106, 197);
+}
+
+div.hello_class table.numberList tr {
+	height: auto
+}
+
+div.hello_class table.numberList tr td {
+	width: 74px;
+	height: 74px;
+	padding: 0;
+	text-align: center;
+}
+
+div.hello_class table.tableList tr {
+	height: auto
+}
+
+div.hello_class table.tableList td {
+	height: auto;
+	width: auto;
+	padding: 10px;
+}
+
+div.hello_class table.tableList .cell {
+	width: 72px;
+	height: 24px;
+	background-image: url(images/tableSprite.png) !important;
+	background-repeat: no-repeat;
+}
+
+table.tableList .tr0 .td0 .cell {
+	background-position: 0 0;
+}
+
+table.tableList .tr0 .td1 .cell {
+	background-position: -79px 0;
+}
+
+table.tableList .tr0 .td2 .cell {
+	background-position: -158px 0;
+}
+
+table.tableList .tr0 .td3 .cell {
+	background-position: -240px 0;
+}
+
+table.tableList .tr0 .td4 .cell {
+	background-position: -319px 0;
+}
+
+table.tableList .tr1 .td0 .cell {
+	background-position: 0 -31px;
+}
+
+table.tableList .tr1 .td1 .cell {
+	background-position: -79px -31px;
+}
+
+table.tableList .tr1 .td2 .cell {
+	background-position: -158px -31px;
+}
+
+table.tableList .tr1 .td3 .cell {
+	background-position: -240px -31px;
+}
+
+table.tableList .tr1 .td4 .cell {
+	background-position: -319px -31px;
+}
+
+table.tableList .tr2 .td0 .cell {
+	background-position: 0 -62px;
+}
+
+table.tableList .tr2 .td1 .cell {
+	background-position: -79px -62px;
+}
+
+table.tableList .tr2 .td2 .cell {
+	background-position: -158px -62px;
+}
+
+table.tableList .tr2 .td3 .cell {
+	background-position: -240px -62px;
+}
+
+table.tableList .tr2 .td4 .cell {
+	background-position: -319px -62px;
+}
+
+table.tableList .tr3 .td0 .cell {
+	background-position: 0 -93px;
+}
+
+table.tableList .tr3 .td1 .cell {
+	background-position: -79px -93px;
+}
+
+table.tableList .tr3 .td2 .cell {
+	background-position: -158px -93px;
+}
+
+table.tableList .tr3 .td3 .cell {
+	background-position: -240px -93px;
+}
+
+table.tableList .tr3 .td4 .cell {
+	background-position: -319px -93px;
+}
+
+/*
+* Table picker style.
+*
+*/
+.table-picker {
+	font-size: 18px;
+}
+
+.table-picker-mousecatcher {
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	z-index: 1001;
+}
+
+.dijit_a11y .table-picker-unhighlighted {
+	border: 1px solid black;
+	position: relative;
+}
+
+.dijit_a11y .table-picker-highlighted {
+	position: absolute;
+	border: 1px solid black;
+	left: 5px;
+	top: 10px;
+}
+
+.table-picker-unhighlighted {
+	background: url("images/table-picker-unhighlighted.png") repeat scroll 0
+		0 transparent;
+	position: relative;
+}
+
+.table-picker-highlighted {
+	background: url("images/table-picker-highlighted.png") repeat scroll 0 0
+		transparent;
+	position: absolute;
+	left: 5px;
+	top: 10px;
+}
+
+.table-picker-status {
+	text-align: center;
+	font-size: 10pt;
+}
+
+.dijitButtonNode .colorDiv
+{
+	border: 0px solid black;
+	width: 14px;
+	height: 3px;
+	position: relative;
+	top: 12px;
+	left: 1px;
+	background: black;
+}
+
+.dj_ie10 .oneui30 .dijitMenuItemDisabled .dijitMenuItemIconCell,
+.dj_ie10 .oneui30 .dijitMenuItemDisabled  *
+{
+	color: lightgray;
+}
+
+.dj_ie10 .oneui30 .dijitMenuItemDisabled.dijitMenuItemHover
+{
+	background: #181818 !important;
+	background-color: #181818 !important;
+}
+
+.dijitSliderImageHandle
+{
+	outline: none;
+}
+
+.toolbarPopup .dijitSliderH
+{
+	width: 165px;
+	height: 24px;
+	border: 1px solid #cccccc;
+	background: white
+}
+
+.oneui30 .toolbarPopup .dijitSlider .dijitSliderProgressBarH, 
+.oneui30 .toolbarPopup .dijitSlider .dijitSliderLeftBumper
+{
+	border-color: #767676;
+	background-color: #767676;
+}
+
+.oneui30 .toolbarPopup .dijitSlider .dijitSliderRemainingBarH, 
+.oneui30 .toolbarPopup .dijitSlider .dijitSliderRightBumper
+{
+	border-color: #d7d7d7;
+	background-color: #d7d7d7;
+}
+
+.oneui30 .toolbarPopup .dijitSliderImageHandleH
+{
+	background-image: url("images/percentage-button.png");
+}
+
+.oneui30 .toolbarPopup .dijitSliderImageHandleH::hover,
+.oneui30 .toolbarPopup .dijitSliderImageHandleH.dojoMoveItem
+{
+	background-image: url("images/percentage-button-hover.png");
+}
+
+.dijitPopup span.lst-c,
+.dijitPopup span.lst-cs
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.dijitPopup span.lst-ra,
+.dijitPopup span.lst-cm
+{
+	font-family: Webdings, Dingbats, sans-serif;
+}
+
+.dijitPopup span.lst-d,
+.dijitPopup span.lst-da
+{
+	font-family: "Times New Roman", Times, serif;
+}
+
+.dijitPopup span.lst-a
+{
+	font-family: Symbol, sans-serif;
+}
+
+.dijitPopup span.lst-ta
+{
+	font-family: Wingdings, "Zapf Dingbats", Dingbats, sans-serif;
+}
+
+.dijitPopup span.lst-ps
+{
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+.fontSize .dijitArrowButtonInner
+{
+	background-image: none !important;
+	position: relative;
+}
+
+.fontSizeUpDown
+{
+	width: 11px;
+}
+
+.fontSizeUp
+{
+  	background-image: url("../../../js/dijit/themes/oneui30/form/images/smallbuttonArrows.png");
+  	background-repeat: no-repeat;
+  	background-position: 0px 1%;
+  	width: 15px;
+  	height: 11px;
+  	float: right;
+}
+
+.fontSizeWrapperSep
+{
+	width: 15px;
+	height: 1px;
+	float: right;
+	background: transparent;
+}
+
+.fontSizeDown
+{
+	background-image: url("../../../js/dijit/themes/oneui30/form/images/smallbuttonArrows.png");
+  	background-repeat: no-repeat;
+  	background-position: -51px 53%;
+  	width: 15px;
+  	height: 11px;
+  	float: right;
+}
+
+.oneui30 .dijitToolbar span.fontSizeWrapper
+{
+	width: 15px;
+  	height: 11px;
+  	float: right;
+  	transition: background-color .1s linear, border .1s linear, box-shadow .1s linear;
+	background: transparent !important;
+}
+
+.oneui30 .dijitToolbar #toolbar_font_size
+{
+	display: inline-block;
+}
+
+.fontSizeWrapper:not(.dijitDisabled):focus
+{
+	outline: 1px dotted black !important;
+}
+
+.dijitDropDownButton:not(.dijitDisabled) .fontSizeUpDown:focus .fontSizeWrapperSep,
+.dijitDropDownButton:not(.dijitDisabled) .fontSizeUpDown:hover .fontSizeWrapperSep
+{
+	background: #999999 !important;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton:not(.dijitDisabled) span.fontSizeWrapper:not(.dijitDisabled):focus,
+.oneui30 .dijitToolbar .dijitDropDownButton:not(.dijitDisabled) span.fontSizeWrapper:not(.dijitDisabled):hover
+{
+ 	background-color: transparent !important;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.08))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#14000000',GradientType=0 ); /* IE6-9 */
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.2) !important;
+    opacity: 1;
+}
+
+.oneui30 .dijitToolbar .dijitDropDownButton:not(.dijitDisabled) span.fontSizeWrapper:not(.dijitDisabled):active
+{
+	background-color: rgba(0, 0, 0, 0.10) !important;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0
+		, 0, 0.1) ), color-stop(100%, rgba(0, 0, 0, 0.18) ) );
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,
+		rgba(0, 0, 0, 0.18) 100% ); /* W3C */
+	filter: progid :                        
+		  DXImageTransform.Microsoft.gradient (    
+		  
+		        
+		            startColorstr =             
+		             '#1a000000', endColorstr =                        
+		  '#2e000000', GradientType =         
+		      
+		          0 );
+	/* IE6-9 */
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .2) !important;
+	opacity: 1;
+}
+
+.dijitDisabled .fontSizeUp,
+.dijitDisabled.fontSizeUp
+{
+	background-position: -100px 1%;
+}
+
+.dijitDisabled .fontSizeDown,
+.dijitDisabled.fontSizeDown
+{
+	background-position: -151px 53%;
+}
+
+.opacityPanel
+{
+	background: white;
+	padding: 2px 8px 2px 8px;
+	border: 2px solid #cecece;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+	-ms-box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.oneui30 .opacityPanelHandleBgPic
+{
+	background-image: url("images/percentage-button.png");
+}
+.oneui30 .opacityPanelHandleBgPic:hover
+{
+	background-image: url("images/percentage-button.png");
+	background-position: 0px;
+}
+.transparencyDialogCSS
+{
+	position: absolute;
+	height: 34px;
+	width: 164px;
+	margin-top: 6px;
+}
+
+.opacityContainerCSS
+{
+	float: left;
+	margin: 4px 8px 4px 8px;
+	width:180px;
+}
+
+.opacityPanelcover
+{
+	opacity: 0.3;
+}
+
+.opacitySeperatorCSS
+{
+	height: 1px;
+	background-color: gray;
+	opacity: 0.3;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.ibmdocColorPalette .lineTypePanel
+{
+	margin: 10px;
+	border: none; 
+	cursor: default;
+}
+
+.ibmdocColorPalette .lineTypePanel .fontSizeDownWrapper
+{
+	float:left;
+}
+
+.oneui30 .dijitInline  #pres_widget_toolbar_LineTypeWidth_0_label {
+	width: 22px;
+	padding: 5px 3px 0px 9px;
+}
+
+.lineTypePanel .dijitDropDownButton .dijitButtonNode
+{
+	background-color: white;
+	background-image: none;
+}
+
+.dijitDropDownButton[widgetid="pres_widget_toolbar_LineTypeWidth_0"] 
+{
+	padding:0px;
+	margin:0 !important;
+}
+.dijitDropDownButton[widgetid="pres_widget_toolbar_LineType_0"] ,
+.dijitDropDownButton[widgetid="pres_widget_toolbar_LineType_1"] 
+{
+	margin: 0px 0px 0px 5px;
+	padding: 0px !important;
+}
+
+.dijitDropDownButton[widgetid="pres_widget_toolbar_LineType_0"] .dijitArrowButtonInner,
+.dijitDropDownButton[widgetid="pres_widget_toolbar_LineType_1"] .dijitArrowButtonInner
+{
+	width:0;
+}
+
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_0"] .dijitMenuItemLabel,
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_0"] .dijitMenuItemAccelKey,
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_0"] .dijitMenuArrowCell,
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_0"] .dijitMenuExpand,
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_1"] .dijitMenuItemLabel,
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_1"] .dijitMenuItemAccelKey,
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_1"] .dijitMenuArrowCell,
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_1"] .dijitMenuExpand
+ {
+ 	min-width: 0px !important;
+ 	width:0 !important;
+	border:0 !important;
+	padding:0 !important;
+	margin:0 !important;
+ }
+
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_1"] .dijitMenuItemIconCell
+ {
+ 	padding: 8.5px 6.5px 8.5px 6.5px !important;
+ }
+
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_0"] .dijitMenuItemIconCell
+ {
+ 	padding: 12px 0 8px 6px !important;
+ }
+
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_0"] .dijitMenuItemIconCell .dijitToolbarIcon
+{
+ 	background-image: url(images/linestyleslices.png);
+ 	height: 6px;
+	width: 49px;
+}
+
+.dijitMenuPopup[dijitpopupparent="pres_widget_toolbar_LineType_1"] .dijitMenuItemIconCell .dijitToolbarIcon
+{
+ 	background-image: url(images/linestyleslices.png);
+ 	height: 8px;
+	width: 42px;
+}
+/*endpoints button*/
+.lineTypePanel .dijitDropDownButton[widgetid = "pres_widget_toolbar_LineType_0"] .dijitIcon
+{
+	 width: 40px ;
+	 height: 4px ;
+	 margin: 8px 0px 0px 4px !important;
+ 	 background-image: url(images/linestyleslices.png);
+}
+
+.lineTypePanel .dijitDropDownButton[widgetid = "pres_widget_toolbar_LineType_1"] .dijitIcon
+{
+	 width: 42px ;
+	 height: 7px ;
+	 margin: 6.5px 3px 0px 7px !important;
+ 	 background-image: url(images/linestyleslices.png);
+}
+
+.lineTypePanel .dijitDropDownButton[widgetid = "pres_widget_toolbar_LineType_1"] .head_none-tail_none 
+{
+	padding-bottom:2px;
+	margin: 4px 4px 4px 8px !important;
+}
+/*line width dropdown*/
+.toolbarMenu[widgetid="pres_widget_toolbar_LineTypeWidth_0_popup"] .dijitMenuItemLabel
+{
+	padding-right: 0px !important;
+}
+
+#pres_widget_toolbar_LineTypeWidth_0_label,
+#pres_widget_toolbar_LineTypeWidth_0_popup
+{
+	color: #747474;
+	font-weight: normal;
+}
+
+.oneui30 .ibmdocColorPalette .lineTypePanel .dijitDropDownButton .dijitButtonNode
+{
+	font-size: 12px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border: none;
+}
+
+.oneui30 .ibmdocColorPalette .lineTypePanel .dijitDropDownButton[widgetid = "pres_widget_toolbar_LineTypeWidth_0"]
+{
+    height: 23px;
+    width: 51px;
+    border: 1px solid #a0a0a0;
+}
+
+.oneui30 .ibmdocColorPalette .lineTypePanel .dijitDropDownButton[widgetid = "pres_widget_toolbar_LineType_0"],
+.oneui30 .ibmdocColorPalette .lineTypePanel .dijitDropDownButton[widgetid = "pres_widget_toolbar_LineType_1"]
+{
+    height: 23px;
+    width: 55px;
+    border: 1px solid #a0a0a0;
+}
+
+.oneui30 .ibmdocColorPalette .lineTypePanel .fontSizeWrapperSep
+{
+	display:none;
+}
+
+.dijitDropDownButton[widgetid="pres_widget_toolbar_LineTypeWidth_0"] .dijitButtonNode .dijitArrowButtonInner .fontSizeWrapper
+{
+	height: 11px;
+}

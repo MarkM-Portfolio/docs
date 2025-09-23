@@ -1,0 +1,55 @@
+<project name="rtc4web_server" basedir="." default="deploy">
+	<property name="src.dir" value="src"/>
+	<property name="webcontent.dir" value="WebContent"/>
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin"/>
+	<property name="war.dir" value="${bin.dir}/war"/>
+	<property name="ear.dir" value="../com.ibm.concord.ear/"/>
+		
+	<path id="project.classpath">		
+	</path>	
+	<path id="lib.classpath">
+		<pathelement path="${ear.dir}/lib/json4j.jar"/>
+		<pathelement path="${ear.dir}/lib/accesscontrol.jar"/>
+		<pathelement path="${ear.dir}/lib/configuration.jar"/>
+		<pathelement path="${ear.dir}/lib/polledcontainers.jar"/>
+		<pathelement path="${ear.dir}/lib/rtc.common.jar"/>
+	</path>	
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+	</path>
+	
+	<target name="war" >
+		<echo message="concord_version='${build.timestamp}';" file="${webcontent.dir}/version.txt"/>
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+					<globmapper from="*" to ="lib/*"/>
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath"/>
+		</pathconvert>
+		<pathconvert property="manifest.project.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+				</chainedmapper>
+			</mapper>
+			<path refid="project.classpath"/>
+		</pathconvert>
+		<mkdir dir="${war.dir}"/>
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${webcontent.dir}/"/>
+			<manifest>
+				<attribute name="Created-By" value="IBM"/>
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}"/>
+			</manifest>
+		</war>
+	</target>
+	<target name="deploy" depends="war">
+		<copy todir="${build.home}">
+			<fileset dir="${war.dir}"/>
+		</copy>
+    </target>
+</project>

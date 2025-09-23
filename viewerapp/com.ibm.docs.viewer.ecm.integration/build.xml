@@ -1,0 +1,113 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.docs.viewer.ecm.integration" basedir="." default="findbugs">
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${bin.dir}/classes"/>
+	<property name="jar.dir" value="${bin.dir}/jar"/>
+	<property name="ear.dir" value="../com.ibm.concord.viewer.ear/"/>
+  <property name="jar.path" value="${build.home}/${ant.project.name}.jar"/>	
+
+	<path id="project.classpath">
+		<pathelement path="${build.home}/com.ibm.concord.viewer.spi.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.platform.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.config.jar"/>
+	</path>
+	
+	<path id="lib.classpath">
+		<fileset dir="${ear.dir}/lib">
+			<include name = "**/chemistry-opencmis*.jar"/>
+			<include name="**/commons-configuration-*.jar"/>
+		</fileset>
+		<pathelement path="${ear.dir}/lib/commons-io*.jar"/>
+		<pathelement path="${ear.dir}/lib/axiom-api*.jar" />
+	 	<pathelement path="${ear.dir}/lib/axiom-impl*.jar" />
+    	<pathelement path="${ear.dir}/lib/activation*.jar"/>
+        <pathelement path="${ear.dir}/lib/jaxb-api*.jar"/>
+        <pathelement path="${ear.dir}/lib/jaxb-impl*.jar"/>
+        <pathelement path="${ear.dir}/lib/jaxws-api*.jar"/>
+    	<pathelement path="${ear.dir}/lib/jaxws-rt*.jar"/>
+    	<pathelement path="${ear.dir}/lib/mimepull*.jar"/>
+        <pathelement path="${ear.dir}/lib/resolver*.jar"/>
+    	<pathelement path="${ear.dir}/lib/saaj-api*.jar"/>
+        <pathelement path="${ear.dir}/lib/saaj-impl*.jar"/>
+        <pathelement path="${ear.dir}/lib/slf4j-api*.jar"/>
+		<pathelement path="${ear.dir}/lib/slf4j-jdk14*.jar"/>
+		<pathelement path="${ear.dir}/lib/slf4j-log4j12*.jar"/>
+        <pathelement path="${ear.dir}/lib/stax2-api*.jar"/>
+        <pathelement path="${ear.dir}/lib/stax-ex*.jar"/>
+    	<pathelement path="${ear.dir}/lib/streambuffer*.jar"/>
+        <pathelement path="${ear.dir}/lib/woodstox-core-asl*.jar"/>
+		<pathelement path="${ear.dir}/lib/lc.customAuthClient.jar"/>
+	</path>
+	
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+	</path>
+	
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath"/>
+			<classpath refid="lib.classpath"/>
+			<classpath refid="was.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="gather" depends="compile">
+		<copy todir="${classes.dir}" failonerror="true" overwrite="true">
+	   		<fileset dir="${src.dir}">
+      			<exclude name="**/*.java"/>
+    		</fileset>
+		</copy>		 
+	</target>
+
+	<target name="jar" depends="gather">
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">		    
+			<mapper>
+				<chainedmapper>  
+					<flattenmapper/>
+					<globmapper from="*" to ="lib/*"/>
+				</chainedmapper>  
+			</mapper>
+			<path refid="lib.classpath"/>
+  		</pathconvert>
+  		<pathconvert property="manifest.project.classpath" pathsep=" ">		    
+			<mapper>
+				<chainedmapper>  
+					<flattenmapper/>
+				</chainedmapper>  
+			</mapper>
+			<path refid="project.classpath"/>
+  		</pathconvert>
+		<mkdir dir="${jar.dir}"/>
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Created-By" value="IBM"/>
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}"/>
+			</manifest>
+		</jar>
+	</target>
+	<target name="deploy" depends="jar">
+		<copy todir="${build.home}">
+			<fileset dir="${jar.dir}"/>
+		</copy>
+    </target>
+  <target name="findbugs" depends="deploy">
+    <ant dir="${findbugs.home}" inheritAll="true"/>
+  </target>      
+</project>
+

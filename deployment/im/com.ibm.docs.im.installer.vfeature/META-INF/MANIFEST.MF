@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Visiblefeature
+Bundle-SymbolicName: com.ibm.docs.im.installer.vfeature;singleton:=true
+Bundle-Version: 2.0.0.qualifier
+Bundle-Vendor: IBM
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime,
+ com.ibm.cic.agent.core,
+ com.ibm.cic.common.core,
+ com.ibm.docs.im.installer.common
+Export-Package: com.ibm.docs.im.installer.vfeature

@@ -1,0 +1,289 @@
+
+.linkBox
+{
+	clear:both;
+	color: #676767;
+}
+
+.linkPanelTable
+{
+	border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.linkBox td
+{
+	border: 1px solid #cecece;
+}
+
+.linkBox td.left
+{
+	border-right: 0px
+}
+
+.linkBox .left > *
+{
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	display: block;
+}
+
+.linkBox 
+{
+	font-size: 13px;
+}
+
+.linkBox .left .select table
+{
+	height: 31px;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.linkBox .left  .dijitSelect .dijitButtonText {
+	float: none;
+	padding:0;
+}
+
+.linkBox .right > *,
+.linkBox .right input
+{
+	border: 0 !important;
+	height: 31px;
+	background-color: transparent !important;
+}
+
+.linkBox .right > *,
+.linkBox .right table
+{
+	height: 31px;
+	min-width: 215px !important;
+	width: 100%;
+}
+
+.linkBox .right.errorBox > *
+{
+	min-width: 300px !important;
+}
+
+.linkBox .right .dijitInputInner,
+.linkBox .right .textInput
+{
+	background: transparent !important;
+}
+
+.linkBox .right input
+{
+	outline: none !important;
+	padding: 0px 10px !important;
+	box-sizing: border-box;
+}
+
+.rtl .linkBox .right input {
+	padding: 0 0 !important;
+}
+
+.linkBox .right .dijitInputContainer
+{
+	background-color: transparent !important;
+}
+
+.linkBox  .dijitSelect .dijitArrowButton
+{
+	width: 20px;
+}
+
+.linkButtons
+{
+	clear: both;
+	font-size: 12px;
+}
+
+.linkButtons .left
+{
+	vertical-align: top;
+}
+
+.linkButtons .right
+{
+	text-align: right;	
+}
+
+.rtl .linkButtons .right
+{
+	text-align: left;	
+}
+
+.rtl .linkButtons .left
+{
+	float: right;	
+}
+
+.linkButtons button
+{
+	padding: 0px 18px;
+	line-height: 29px;
+	background: transparent;
+}
+
+.linkBox .left
+{
+	min-width: 100px;
+}
+
+.linkBox .right
+{
+}
+
+.linkBox .select
+{
+	border: 0;
+	background: transparent;
+}
+
+.linkBox .select *
+{
+	border:0  !important;
+	background: transparent;
+}
+
+.linkPanel
+{
+	background: white;
+	padding: 2px 10px 2px 10px;
+	border: 2px solid #cecece;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+	-ms-box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.linkPanel.rtl 
+{
+	direction: rtl;
+}
+
+.linkPanel input:-ms-input-placeholder
+{
+	color: lightGrey;
+}
+
+.linkPanel .linkSelectLabel,
+.linkPanel .bookmarkSelectLabel,
+.linkPanel input,
+.linkPanel label
+{
+	color: #676767;
+	font-weight: normal;
+}
+
+.linkPanel button
+{
+	outline : none;
+	margin-bottom: 4px;
+}
+
+.linkPanel .gotolink_button
+{
+	border: 1px solid transparent;
+	color: #4178be;
+	cursor: pointer;
+}
+
+.linkPanel .gotolink_button:focus,
+.linkPanel .gotolink_button:hover
+{
+	text-decoration: underline
+}
+
+.linkPanel .gotolink_button:disabled
+{
+	color: #d5d5d5;
+	cursor: auto;
+	text-decoration: none !important
+}
+
+.linkPanel .remove_button
+{
+	margin-left: 4px;
+}
+
+.linkPanel .remove_button,
+.linkPanel .done_button
+{
+	border: 1px solid #4178be;
+	color: #4178be;
+	min-width: 60px;
+	outline :1px solid transparent;
+}
+
+.linkPanel .remove_button:active,
+.linkPanel .done_button:active
+{
+	background: #ebf3fc !important;;
+	border: 1px solid #4178be !important;
+	outline: 1px solid transparent !important;
+}
+
+.linkPanel button::-moz-focus-inner {
+  border: 0;
+}
+
+.linkPanel .remove_button:focus,
+.linkPanel .done_button:focus,
+.linkPanel .remove_button:hover,
+.linkPanel .done_button:hover
+{
+	outline: 1px solid #4178be;
+}
+
+.linkPanel .remove_button:disabled,
+.linkPanel .done_button:disabled
+{
+	color: #d5d5d5;
+	border: 1px solid #d5d5d5 !important;;
+	outline: 1px solid transparent !important;
+}
+
+.oneui30 .dijitMenu.bookmarkSelectMenu,
+.oneui30 .dijitMenu.linkSlideMenu,
+.oneui30 .dijitMenu.linkSelectMenu {
+	border: none !important;
+	border-top: 1px solid #cecece !important;
+	border-left: 1px solid #cecece !important;
+	border-right: 1px solid #cecece !important;
+}
+
+.dijitMenu.linkSlideMenu{
+	max-height: 200px !important;
+}
+
+.oneui30 .dijitMenu.bookmarkSelectMenu .dijitMenuItem,
+.oneui30 .dijitMenu.linkSlideMenu .dijitMenuItem,
+.oneui30 .dijitMenu.linkSelectMenu .dijitMenuItem .dijitMenuItemLabel
+{
+  	padding: 8px 10px !important;
+  	color: #676767;
+  	font-size:13px;
+  	line-height:15px;
+  	text-indent:0px
+}
+
+.oneui30 .dijitMenu.bookmarkSelectMenu .dijitMenuItem
+{
+	text-indent:5px;
+	border: none !important
+}
+
+.oneui30 .dijitMenu.bookmarkSelectMenu .dijitMenuItemHover,
+.oneui30 .dijitMenu.bookmarkSelectMenu .dijitMenuItemSelected,
+.oneui30 .dijitMenu.linkSlideMenu .dijitMenuItemHover,
+.oneui30 .dijitMenu.linkSlideMenu .dijitMenuItemSelected,
+.oneui30 .dijitMenu.linkSelectMenu .dijitMenuItemHover,
+.oneui30 .dijitMenu.linkSelectMenu .dijitMenuItemFocused,
+.oneui30 .dijitMenu.linkSelectMenu .dijitMenuItemSelected
+{
+	background-color: #eaf1f2 !important;
+}

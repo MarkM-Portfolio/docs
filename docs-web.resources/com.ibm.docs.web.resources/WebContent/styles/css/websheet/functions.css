@@ -1,0 +1,27 @@
+/* This is for functions */
+
+/* UI_PROGRESS */
+div.progress-container {
+  border: 1px solid #ccc; 
+  width: 95%; 
+  margin: 2px 5px 2px 0; 
+  padding: 1px; 
+  float: left; 
+  background: white;
+}
+
+div.progress-container > div {
+  /* background-color: #ACE97C; */
+  height: 12px
+}
+
+
+div.pie {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url('./img/slices.gif');
+}

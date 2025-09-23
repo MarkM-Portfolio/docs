@@ -1,0 +1,17 @@
+<project name="com.ibm.concord.lcfiles.ext.war" basedir="." default="deploy">
+	<property name="webcontent.dir" value="WebContent"/>
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="war.dir" value="${bin.dir}/war"/>
+		
+	<target name="war">
+		<mkdir dir="${war.dir}"/>
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${webcontent.dir}/"/>
+		</war>
+	</target>	
+	<target name="deploy" depends="war">
+		<copy todir="${build.home}">
+			<fileset dir="${war.dir}"/>
+		</copy>
+    </target>
+</project>

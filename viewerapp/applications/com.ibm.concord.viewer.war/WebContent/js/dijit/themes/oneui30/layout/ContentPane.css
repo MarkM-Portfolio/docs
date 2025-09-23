@@ -1,0 +1,35 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* ContentPane
+ * .dijitContentPane
+ * 	set padding for basic content pane
+ * Nested layouts:
+ * .dijitTabContainerTop-dijitContentPane,
+ * .dijitTabContainerLeft-dijitContentPane,
+ * .dijitTabContainerBottom-dijitContentPane,
+ * .dijitTabContainerRight-dijitContentPane
+ * 	set background-color and padding of ContentPanes nested within TabContainer (can do top, left, bottom, or right) or Accordion Container
+ * .dijitAccordionContainer-dijitContentPane
+ * 	set background-color and padding of ContentPane nested within Accordion
+ * .dijitSplitContainer-dijitContentPane,
+ *	set background-color and padding of ContentPane nested within a SplitContainer
+ * .dijitBorderContainer-dijitContentPane
+ *	set background-color and padding of ContentPane nested within a BorderContainer
+ */
+.oneui30 .dijitContentPane {
+    padding: 0px;
+}
+
+/* nested layouts */
+.oneui30 .dijitTabContainerTop-dijitContentPane, .oneui30 .dijitTabContainerLeft-dijitContentPane, .oneui30 .dijitTabContainerBottom-dijitContentPane, .oneui30 .dijitTabContainerRight-dijitContentPane, .oneui30 .dijitAccordionContainer-dijitContentPane {
+    background-color: #fff;
+    padding: 8px;
+}
+
+.oneui30 .dijitSplitContainer-dijitContentPane, .oneui30 .dijitBorderContainer-dijitContentPane {
+    background-color: #fff;
+    padding: 8px;
+}

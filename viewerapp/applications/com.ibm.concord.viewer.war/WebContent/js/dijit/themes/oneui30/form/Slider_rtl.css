@@ -1,0 +1,46 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+.oneui30 .dijitSliderRtl .dijitSliderProgressBarH, .oneui30 .dijitSliderRtl .dijitSliderRemainingBarH, .oneui30 .dijitSliderRtl .dijitSliderLeftBumper, .oneui30 .dijitSliderRtl .dijitSliderRightBumper, .oneui30 .dijitSliderRtl .dijitSliderTopBumper {
+    background-position: top right;
+}
+
+.oneui30 .dijitSliderRtl .dijitSliderProgressBarV, .oneui30 .dijitSliderRtl .dijitSliderRemainingBarV, .oneui30 .dijitSliderRtl .dijitSliderBottomBumper {
+    background-position: bottom right;
+}
+
+.oneui30 .dijitSliderRtl .dijitSliderLeftBumper {
+    border-left-width: 0;
+    border-right-width: 1px;
+}
+
+.oneui30 .dijitSliderRtl .dijitSliderRightBumper {
+    border-left-width: 1px;
+    border-right-width: 0;
+}
+
+.oneui30 .dijitSliderRtl .dijitSliderIncrementIconH {
+    background-position: -357px 50%;
+}
+
+.oneui30 .dijitSliderRtl .dijitSliderDecrementIconH {
+    background-position: -251px 50%;
+}
+
+.oneui30 .dijitSliderRtl .dijitSliderDisabled .dijitSliderLeftBumper {
+    border-color: #eee;
+}
+
+.oneui30 .dijitSliderRtl .dijitSliderDisabled .dijitSliderRightBumper {
+    border-color: #ccc;
+}
+
+.oneui30 .dijitSliderRtlDisabled .dijitSliderDecrementIconH {
+    background-position: -215px 50%;
+}
+
+.oneui30 .dijitSliderRtlDisabled .dijitSliderIncrementIconH {
+    background-position: -321px 50%;
+}

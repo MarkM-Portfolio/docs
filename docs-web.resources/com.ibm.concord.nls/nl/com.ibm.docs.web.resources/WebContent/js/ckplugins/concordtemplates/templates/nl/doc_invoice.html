@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Factuur</title>
+</head>
+<body  class="concord_Doc_Style_7">
+
+<p class="page" id="invoice">
+
+	<p documentBlock="true" restyle="false"  concordTemplateComponent="letterhead" class="letterhead">
+		<p>Bedrag gaarne overmaken naar</p>
+		<h1>Naam bedrijf</h1>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li class="addressLine1">Straatnaam 1234</li>
+			<li class="addressLine2">Plaats, Staat 12345</li>
+			<li class="email">email@voorbeeld.com</li>
+			<li class="phone">(123) 456-7890</li>
+		</ul>
+		<hr></hr>
+	</p>
+
+	<p documentBlock="true"  class="section summary">
+		<h2>Factuurgegevens</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li>Factuurnummer</li>
+			<li class="date">Factuurdatum</li>
+			<li class="date">Vervaldatum</li>
+		</ul>
+	</p>
+
+	<p documentBlock="true"  class="section">
+		<h2>Factureren aan</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list_16">
+			<li class="name">Voornaam Achternaam</li>
+			<li class="addressLine1">Straatnaam 1234</li>
+			<li class="addressLine2">Plaats, Staat 12345</li>
+			<li class="email">email@voorbeeld.com</li>
+			<li class="phone">(123) 456-7890</li>
+		</ul>
+	</p>
+	
+	<p documentBlock="true"  class="section">
+		<h2>Details</h2>
+		<table documentBlock="true" restyle="true" class="smartTable STStyle3" concordTemplateComponent="smartTable">
+			<tr class="tableHeaderRow">
+				<th>Datum</th>
+				<th>Item</th>
+				<th>Beschrijving</th>
+				<th>Hoeveelheid</th>
+			</tr>
+			<tr>
+				<td>DD/MM/JJJJ</td>
+				<td>Werk</td>
+		<!--
+				<td>Dignissim definiebas intellegebat eu qui, laoreet impedit</td>
+		-->
+				<td>$50,00</td>
+			</tr>
+			<tr class="alternateRow">
+				<td>DD/MM/JJJJ</td>
+				<td>Werk</td>
+		<!--
+				<td>Sit ne sint aliquip nusquam, ut oblique salutandi sea, no erat </td>
+		-->
+				<td>$50,00</td>
+			</tr>
+			<tr>
+				<td colspan="3">Totaal</td>
+				<td>$0,00</td>
+			</tr>
+		</table>
+	</p>
+		
+	<p documentBlock="true" class="section conclusion">
+		<h2>Vervaldatum voor betaling</h2>
+		<ul>
+			<li>Factuurtotaal: $0,00</li>
+			<li>Betalingen/krediet: $0,00</li>
+			<li>Openstaand saldo: $0,00</li>
+		</ul>
+	</p>
+	
+</p>
+</body>
+</html>

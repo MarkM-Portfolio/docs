@@ -1,0 +1,22 @@
+({
+	question:"Dúvida",
+	issue:"Problema",
+	toDo:"Item Pendente",
+	comment:"Comentários",
+	done:"Concluído",
+	jan:"Jan",
+	feb:"Fev",
+	mar:"Mar",
+	apr:"Abr",
+	may:"Maio",
+	june:"Junho",
+	july:"Julho",
+	aug:"Ago",
+	sept:"Set",
+	oct:"Out",
+	nov:"Nov",
+	dec:"Dez",
+	pm:"PM",
+	am:"AM",
+	assignTo:"Designar a: "
+})

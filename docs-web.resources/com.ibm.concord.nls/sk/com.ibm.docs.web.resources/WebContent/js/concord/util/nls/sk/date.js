@@ -1,0 +1,22 @@
+({
+	question:"Otázka",
+	issue:"Problém",
+	toDo:"Zoznam úloh",
+	comment:"Komentár",
+	done:"Hotovo",
+	jan:"Jan",
+	feb:"Feb",
+	mar:"Mar",
+	apr:"Apr",
+	may:"Máj",
+	june:"Jún",
+	july:"Júl",
+	aug:"Aug",
+	sept:"Sept",
+	oct:"Okt",
+	nov:"Nov",
+	dec:"Dec",
+	pm:"PM",
+	am:"AM",
+	assignTo:"Priradiť k: "
+})

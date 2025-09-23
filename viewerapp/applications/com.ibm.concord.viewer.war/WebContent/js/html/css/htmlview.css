@@ -1,0 +1,43 @@
+.pagefixedPage {
+  	background-color:#FFFFFF;
+	border:1px solid black;
+	margin:20px auto 40px;
+	padding:55px 60px;
+	width:615px;
+	min-height:1100px;
+	word-wrap:break-word;
+}
+.viewerfixedpage {
+	background-color:#EEEEEE;
+	overflow:auto;
+}
+
+div.htmlthumbnail {
+	overflow-y: scroll; 
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	display: block;
+	position: absolute !important;
+}
+.lotusInformation
+{
+	background-color: #E6F1FE;
+	border-color: #B9CFEB;
+}
+.lotusMessage
+{
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	overflow: hidden;
+	zoom: 1;
+	position: absolute;
+	font-size: 12px;
+}
+.layoutClass
+{
+	display:none !important;
+}

@@ -1,0 +1,1 @@
+& $args[0] -invisible -conversionmode -headless -hidemenu -nofirststartwizard "-accept=socket,host=0.0.0.0,port=$args[1];urp;StarOffice.ServiceManager"

@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Selectare locale pentru formatare numere, monede, date şi ore",
+	INPUT_INVALID_LOCALENAME: "Nume locale invalid",
+	INPUT_EMPTY_LOCALENAME: "Selectaţi un locale.",
+	
+	Spain_Catalan: "Spania (Catalan)",
+	Denmark: "Danemarca",
+	Germany: "Germania",
+	Greek: "Grecia",
+	United_States: "Statele Unite",
+	United_Kingdom: "Regatul Unit",
+	Spain: "Spania",
+	Finland: "Finlanda",
+	France: "Franţa",
+	Italy: "Italia",
+	Japan: "Japonia",
+	Korean: "Coreea de Sud",
+	Norway: "Norvegia",
+	Netherlands: "Ţările de Jos",
+	Poland: "Polonia",
+	Brazil: "Brazilia",
+	Portugal: "Portugalia",
+	Russia: "Rusia",
+	Sweden: "Suedia",
+	Thailand: "Thailanda",
+	Turkey: "Turcia",
+	China: "China",
+	Taiwan_China: "Taiwan (China)",
+	Israel: "Israel"
+})
+

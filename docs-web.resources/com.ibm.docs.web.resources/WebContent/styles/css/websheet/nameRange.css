@@ -1,0 +1,37 @@
+.namesListLabel{
+font-weight:bold;
+}
+.helpLabel{
+width: 375px;
+}
+.namesList{
+width: 360px;
+}
+.dj_safari .namesList{
+width: 377px;
+}
+.namesList td{
+padding: 3px;
+}
+.tableDiv{
+border: 1px solid;
+height: 144px;
+width: 377px;
+overflow-y: scroll;
+}
+.namesInputBox{
+height:25px;
+width: 360px;
+}
+.referLabel{
+margin-top: 20px;
+}
+.selected{
+color: #FFFFFF;
+background-color: #316AC5;
+border-color:#000000;
+}
+.nrDeleteBt{
+cursor: pointer;
+font-weight:900;
+}

@@ -1,0 +1,23 @@
+* Here is a comment statement.
+*
+ID: APPN
+*
+Message:   5
+Type: PROBLEM
+Cause Type: Resource
+Cause:  There is not enough memory to start a transaction program in response$
+to an Attach received from another program.  If there is already a copy$
+of the same program active, the Attach will be queued waiting for it to$
+become free.  Otherwise, the session will be deactivated with a sense code$
+of 08640000.
+Action: Either decrease the system load (for example, by reducing the$
+number of active sessions), or increase the available memory.
+Flags: NONE
+*
+String: Not enough memory to start TP instance and conversation requested$
+by received Attach.$
+Local LU (Alias)   = %1 (%2)$
+Partner LU (Alias) = %4 (%7)$
+Mode name          = %5$
+Session identifier = %6$
+TP name            = %3

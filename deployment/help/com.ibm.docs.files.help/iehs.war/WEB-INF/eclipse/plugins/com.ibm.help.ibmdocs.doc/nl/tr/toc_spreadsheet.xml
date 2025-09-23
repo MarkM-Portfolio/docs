@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Elektronik sayfalarla çalışma"
+     topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="Elektronik sayfalarla çalışma"
+          href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="Elektronik sayfaları oluşturma ve alma"
+             href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="Şablonlardan elektronik sayfa oluşturma"
+                href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="Elektronik sayfaların varsayılan dosya biçimini değiştirme"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="Paylaşılacak elektronik sayfaları karşıya yükleme"
+                href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="Var olan elektronik belgeleri alma"
+                href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="Metin dosyalarını elektronik tablolara alma"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="Parola korumalı Excel dosyalarını açma"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="Dosya uyumluluğu ve elektronik sayfaları verme"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="Elektronik sayfalarda desteklenen dosya biçimleri"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="Elektronik sayfaları kaydetme"
+                href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="Elektronik sayfaların sürümlerini yayınlama"
+                href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="Elektronik sayfaları diğer dosya biçimlerine verme"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="Elektronik tabloları CSV dosyalarına verme"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="Elektronik sayfaları paylaşma"
+             href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="Elektronik sayfaları kişi ya da topluluklarla paylaşma"
+                href="text/spreadsheet/s_share_file.html"/>
+         <topic label="Elektronik sayfalar için erişim düzeylerini ayarlama"
+                href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="Elektronik sayfalar üzerinde gerçek zamanlı işbirliği yapma"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="Elektronik sayfalarda gerçek zamanlı olarak birlikte düzenleme"
+                href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="Elektronik sayfalarda birlikte düzenleme hakkında"
+                   href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="Elektronik sayfalarda diğer kişilerle birlikte düzenleme"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="Elektronik sayfalarda her bir düzenleyicinin değişikliklerini gösterme"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Elektronik sayfalardaki yorumları kullanarak işbirliği yapma"
+                href="text/spreadsheet/s_comments_overview.html">
+            <topic label="Elektronik sayfalardaki yorumlar hakkında"
+                   href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="Elektronik sayfalarda yorum oluşturma"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="Elektronik sayfalardaki yorumları görüntüleme"
+                   href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="Elektronik sayfalardaki yorumlarda arama yapma"
+                   href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Elektronik sayfalarınızın görünümünü değiştirme"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="Yazı tipleri, kenarlıklar ve renk"
+                href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="Elektronik sayfalarda yazı tiplerini değiştirme"
+                href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="Satır yüksekliğini ve sütun genişliğini değiştirme"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="Elektronik sayfalarda kenarlıkları değiştirme"
+                href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="Elektronik sayfa hücreleri için varsayılan biçimlendirmeyi geri yükleme"
+                href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="Sayıları biçimlendirme" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="Verileri girme ve düzenleme"
+             href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="Veri düzenlemeye ilişkin temel kavramlar"
+                href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="Hücre içeriğini bulma ve değiştirme"
+                href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="Hücreye köprü ekleme"
+                href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="Bağlantıyı köprüden kaldırma"
+                href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="Aralığı doldurmak için otomatik doldurmayı kullanma"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="Sayfa hücrelerini birleştirme ya da bölme"
+                href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="Elektronik sayfalarda yazım denetimi"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="Elektronik sayfaları PDF dosyası olarak yazdırma"
+                href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Elektronik sayfalarda resimlerle çalışma"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="Elektronik sayfalara resim ekleme"
+                href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="Elektronik sayfalardaki resimleri taşıma ve yeniden boyutlandırma"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="Elektronik sayfalarda resim özelliklerini ayarlama"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Elektronik sayfalarda grafiklerle çalışma"
+             href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="Elektronik sayfalara grafik ekleme"
+                href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="Elektronik sayfalardaki grafikleri taşıma ve yeniden boyutlandırma"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="Elektronik sayfalara grafikleri kopyalama"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="Veri aralıklarını yönetme" href="text/spreadsheet/s_data_ranges.html">
+         <topic label="Verileri sıralama" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="Anında süzgeçleri kullanma"
+                href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="Elektronik sayfalarda satırları ve sütunları dondurma"
+                href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="Satır ve sütunları gizleme" href="text/spreadsheet/s_hide.html"/>
+         <topic label="Satır ve sütunları gösterme" href="text/spreadsheet/s_show.html"/>
+         <topic label="Hücrelere başka bir sayfadan başvurma"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="Verileri ve resimleri elektronik sayfalara kopyalama"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="Bir aralığı adlandırma" href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="Adlandırılmış aralıkları bulma ya da düzenleme"
+                href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="Adlandırılmış bir aralığı kaldırma"
+                href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="Göreli ve mutlak başvurular"
+                href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="Hesaplamalarda formülleri kullanma"
+             href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="Formül ve işlevler hakkında"
+                href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="İşlevler listesi" href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="Kategoriye göre gruplanmış"
+                   href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="Dizi işlevleri" href="text/spreadsheet/s_functions_array.html">
+                  <topic label="Formüllerdeki satır içi dizi sabitleri"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="Koşullu dizi hesaplamaları"
+                         href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="Tarih ve saat işlevleri" href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="Mühendislik işlevi" href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="Bilgi işlevleri" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="Mantıksal işlevler" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="Matematiksel işlevler" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="Elektronik sayfa işlevleri"
+                      href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="İstatistiksel işlevler"
+                      href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="Metin işlevleri" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="ABS işlevi" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="ACOS işlevi" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="ACOSH işlevi" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="ADDRESS işlevi" href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="AND işlevi" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="ASIN işlevi" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="ASINH işlevi" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="ATAN işlevi" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="ATAN2 işlevi" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="ATANH işlevi" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="AVERAGE işlevi"
+                   href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="AVERAGEA işlevi"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="BASE işlevi" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="CEILING işlevi" href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="CHOOSE işlevi" href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="CHAR işlevi" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="CODE işlevi" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="COLUMN işlevi" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="COLUMNS işlevi" href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="COMBIN işlevi" href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="CONCATENATE işlevi"
+                   href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="CONVERT işlevi"
+                   href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="COS işlevi" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="COSH işlevi" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="COUNT işlevi" href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="COUNTA işlevi"
+                   href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="COUNTBLANK işlevi"
+                   href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="COUNTIF işlevi" href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="DATE işlevi" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="DATEDIF işlevi"
+                   href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="DATEVALUE işlevi" href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="DAY işlevi" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="DAYS işlevi" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="DEGREES işlevi" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="DOLLAR işlevi" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="ERRORTYPE işlevi" href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="EVEN işlevi" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="EXP işlevi" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="EXACT işlevi" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="FACT işlevi" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="FALSE işlevi" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="FIXED işlevi" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="FLOOR işlevi" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="FORMULA işlevi" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="FREQUENCY işlevi"
+                   href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="HLOOKUP işlevi" href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="HOUR işlevi" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="HYPERLINK işlevi"
+                   href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="IF işlevi" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="INDEX işlevi" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="INDIRECT işlevi" href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="INT işlevi" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="ISBLANK işlevi" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="ISERR işlevi" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="ISERROR işlevi" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="ISEVEN işlevi" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="ISFORMULA işlevi" href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="ISLOGICAL işlevi" href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="ISNA işlevi" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="ISNONTEXT işlevi" href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="ISNUMBER işlevi" href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="ISODD işlevi" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="ISREF işlevi" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="ISTEXT işlevi" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="LARGE işlevi" href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="LEFT işlevi" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="LEN işlevi" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="LENB işlevi" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="LN işlevi" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="LOG işlevi" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="LOG10 işlevi" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="LOWER işlevi" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="MAX işlevi" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="MEDIAN işlevi" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="MID işlevi" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="MIN işlevi" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="MINUTE işlevi" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="MMULT işlevi" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="MOD işlevi" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="MODE işlevi" href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="MONTH işlevi" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="N işlevi" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="NA işlevi" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="NETWORKDAYS işlevi"
+                   href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="NOT işlevi" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="NOW işlevi" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="ODD işlevi" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="OFFSET işlevi" href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="OR işlevi" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="PI işlevi" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="POWER işlevi" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="PRODUCT işlevi" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="PROPER işlevi" href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="RADIANS işlevi" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="RAND işlevi" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="RANDBETWEEN işlevi"
+                   href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="RANK işlevi" href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="REPLACE işlevi" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="REPT işlevi" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="RIGHT işlevi" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="RIGHTB işlevi" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="ROMAN işlevi" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="ROUND işlevi" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="ROUNDDOWN işlevi" href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="ROUNDUP işlevi" href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="ROW işlevi" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="ROWS işlevi" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="SEARCH işlevi" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="SECOND işlevi" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="SHEET işlevi" href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="SIN işlevi" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="SINH işlevi" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="SMALL işlevi" href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="SQRT işlevi" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="STDEV işlevi" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="STDEVP işlevi" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="SUBSTITUTE işlevi"
+                   href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="SUBTOTAL işlevi" href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="SUM işlevi" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="SUMIF işlevi" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="SUMPRODUCT işlevi"
+                   href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="T işlevi" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="TEXT işlevi" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="TIME işlevi" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="TODAY işlevi" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="TRIM işlevi" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="TRUE işlevi" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="TRUNC işlevi" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="TYPE işlevi" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="UPPER işlevi" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="VALUE işlevi" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="VLOOKUP işlevi" href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="VAR işlevi" href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="VARA işlevi" href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="VARP işlevi" href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="VARPA işlevi" href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="WEEKDAY işlevi" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="WEEKNUM işlevi"
+                   href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="YEAR işlevi" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="Elektronik sayfalara ilişkin hızlı başvuru"
+             href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="Elektronik sayfalar için klavye kısayolları"
+             href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

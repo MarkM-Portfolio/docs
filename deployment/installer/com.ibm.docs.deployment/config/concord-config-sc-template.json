@@ -1,0 +1,558 @@
+{
+	"component":
+	{
+		"components":
+		[
+			{
+				"id":"com.ibm.docs.repository",
+				"class":"com.ibm.docs.repository.RepositoryComponent",
+				"config":
+				{
+					"adapters" :
+        			[
+        				{
+        					"id" : "lcfiles",
+			        	  	"class" : "com.ibm.docs.repository.files.LCFilesCMISRepository",
+							"config" :
+							{
+								"server_url" : "$files_url",
+								"s2s_method" : "conn_live",
+								"s2s_token" : "dummy.local"
+							}
+			          	},
+			          	{
+			          		"id" : "box",
+			          		"class" : "com.ibm.docs.repository.external.rest.ExternalRestRepository",
+			          		"config" :
+			          		{
+			          			"s2s_method" : "oauth2",
+			          			"customer_id" : "box.com",
+			          			"oauth2_endpoint" : "https://app.box.com/api/oauth2/token",
+			          			"j2c_alias" : "",
+			          			"s2s_token" : "",
+			          			"token_key" : "",
+			          			"onbehalf_header" : "",
+			          			"media_meta_url" : "https://api.box.com/2.0/files/{ID}",
+			          			"media_get_url" : "https://api.box.com/2.0/files/{ID}/content",
+			          			"media_set_url" : "https://upload.box.com/api/2.0/files/{ID}/content",
+			          			"docs_callback_endpoint" : "$docs_call_back_url",
+			          			"repository_home" : "https://app.box.com",
+			          			"repository_name" : "Box"
+			          		}
+			          	}
+			      	],
+			      	"default" : "lcfiles"
+				}
+			},
+			{
+				"id":"com.ibm.concord.platform.task",
+				"class":"com.ibm.concord.platform.task.TaskComponentImpl",
+				"config":
+				{
+				 "adapter":
+					    {
+					    	"class" : "com.ibm.concord.platform.task.DocsActivityAdapter",
+					    	"config" :
+					    	{
+					    		"message_type" : "TASK"
+					    	}
+					    }
+				}
+			},
+			{
+				"id":"com.ibm.concord.platform.email.notice",
+				"class":"com.ibm.concord.platform.notification.EmailNoticeComponentImpl",
+				"config":
+				{
+				 "adapters":
+        		 [
+					    {
+					    	"id" : "lcfiles",
+					    	"class" : "com.ibm.concord.lc3.notification.ConnsEmailNoticeAdapter",
+					    	"config" :
+					    	{
+					    		"server_url" : "$email_url",
+					    		"restful_url" : "/opensocial/trusted/rest/activitystreams/",
+					    		"s2s_method" : "conn_live",
+					    		"s2s_token" : "dummy.local",
+					    		"generator":
+					    		{
+					    			"id":"IBMDocs",
+					    			"displayName": "Docs",
+    								"url": "http://www.ibm.com/"
+					    		}
+					    	}
+					    }
+				 ],
+			     "default" : "lcfiles"
+				}
+			},
+			{
+				"id":"com.ibm.concord.platform.conversion",
+				"class":"com.ibm.concord.platform.conversion.ConversionComponentImpl",
+				"config":
+				{
+					  "conversionService":
+					 {
+					 		"serviceurl":"$conversion_url/ConversionService",
+					 		"resulturl":"$conversion_url/ConversionResult",
+					 		"numberofretry":"120",
+					 		"intervalofretry":"1000",
+					 		"socketTimeout":"30000",
+					 		"s2s_method" : "conn_live",
+					 		"s2s_token" : "fallseason2011"
+					 }
+				}
+			},
+			{
+				"id":"com.ibm.concord.platform.draft",
+				"class":"com.ibm.concord.platform.draft.DraftComponent",
+				"config":
+				{
+					"adapter" :
+        			{
+        				"id" : "nls",
+			          	"class" : "com.ibm.concord.draft.spi.impl.NFSDraftStorageAdapterFactory"
+			        }
+				}
+			},
+			{
+				"id":"com.ibm.concord.platform.revision",
+				"class":"com.ibm.concord.revision.service.RevisionComponent",
+				"config":
+				{
+					"adapter" :
+        			{
+        				"storage-adapter":
+        				{
+        				"id" : "nfs",
+			          	"class" : "com.ibm.concord.revision.storage.NFSRevisionStorageAdapterFactory"
+			          	},
+			          	"meta-adapter":
+			          	{
+			          	"id" : "db",
+			          	"class": "com.ibm.concord.revision.meta.DBRevisionMetadataAdapterFactory"
+			          	}
+			        }
+				}
+			},
+			{
+				"id":"com.ibm.docs.authentication",
+				"class":"com.ibm.docs.authentication.AuthenticationComponent",
+				"config":
+				{
+					"adapters":
+        		    [
+					    {
+					    "id" : "lcfiles",
+						"class":"com.ibm.docs.authentication.filters.L2SAMLIntegrationAuth",
+						"config" : {
+						}
+						},
+						{
+							"id" : "box",
+							"class":"com.ibm.docs.authentication.filters.ExternalAuth",
+							"config" : {
+								"s2s_method" : "oauth2",
+								"bypass_sso":"false",
+								"oauth2_authorize_endpoint": "https://account.box.com/api/oauth2/authorize",
+								"customer_id": "box.com"
+							}
+						}
+					],
+			        "default" : "lcfiles"
+				}
+			},
+			{
+				"id":"com.ibm.docs.directory",
+				"class":"com.ibm.docs.directory.DirectoryComponent",
+				"config":
+				{
+					"adapters":
+        		    [
+					    {
+					    "id" : "lcfiles",
+						"class":"com.ibm.docs.directory.lotuslive.BssSubscriberDbDirectory",
+						"config" : {
+						}
+						},
+						{
+							"id": "box",
+							"class":"com.ibm.docs.directory.lotuslive.BssSubscriberDbDirectory",
+							"config" : {
+							}
+						}
+					],
+			        "default" : "lcfiles"
+				}
+			},
+			{
+				"id":"com.ibm.concord.platform.dao",
+				"class":"com.ibm.concord.platform.dao.DataAccessComponentImpl",
+				"config":
+				{
+				}
+			},
+			{
+				"id":"com.ibm.concord.document.services",
+				"class":"com.ibm.concord.document.services.DocumentServiceComponentImpl",
+				"config":
+				{
+					"providers" : [
+						{
+							"name":"text",
+							"class":"com.ibm.concord.writer.TextDocumentService",
+							"config":
+							{
+								"CLEnabled": "true",
+                      			"DocTrackChange": "true",
+								"limits":
+								{
+									"max-size": "30720",
+									"actual-max-size": "30720",
+									"max-image-size": "8192",
+									"max-html-size":"4096"
+								},
+								"mobile_limits":
+								{
+									"max-size": "30720",
+									"actual-max-size": "30720",
+									"max-image-size": "8192",
+									"max-html-size":"4096"
+								}
+							}
+						},
+						{
+							"name":"sheet",
+							"class":"com.ibm.concord.spreadsheet.SpreadsheetDocumentService",
+							"config":
+							{
+								"CLEnabled": "true",
+								"ACLEnabled":"true",
+								"NodeJSEnabled": "$nodejs_enabled",
+								"UseReferenceJS": "false",
+								"partial-level": "2",
+								"partial-row-count": "200",
+								"limits":
+								{
+									"max-size": "20480",
+									"actual-max-size": "20480",
+									"max-image-size": "8192",
+									"max-text-size": "5120",
+									"max-sheet-rows": "30000"
+								},
+								"mobile_limits":
+								{
+									"max-size": "2048",
+									"actual-max-size": "2048",
+									"max-image-size": "8192",
+									"max-sheet-rows": "5000",
+									"max-view-cols":"52",
+									"max-view-rows":"500"
+								},
+								"calculationService":
+								{
+									"url":"http://127.0.0.1:1337/",
+									"numberofretry":"3",
+									"intervalofretry":"60000",
+									"socketTimeout":"30000"
+								}
+							}
+						},
+						{
+							"name":"pres",
+							"class":"com.ibm.concord.presentation.PresentationDocumentService",
+							"config":
+							{
+								"CLEnabled": "true",
+								"limits":
+								{
+									"max-size": "102400",
+									"max-image-size": "8192",
+									"actual-max-size": "102400"
+								},
+								"mobile_limits":
+								{
+									"max-size": "51200",
+									"max-image-size": "8192",
+									"actual-max-size": "51200",
+									"max-pages": "50"
+								}
+							}
+						},
+						{
+							"comments":"The items in this section are set by default and are not allowed to be customized.",
+							"name":"note",
+							"class":"com.ibm.concord.writer.NoteDocumentService",
+							"config":
+							{
+								"CLEnabled": "true",
+								"limits":
+								{
+									"max-size": "51200",
+									"max-image-size": "8192",
+									"actual-max-size": "51200"
+								},
+								"mobile_limits":
+								{
+									"max-size": "51200",
+									"max-image-size": "8192",
+									"actual-max-size": "51200",
+									"max-pages": "50",
+									"max-graphics":"500"
+								}
+							}
+						}
+					],
+					"mime-types" : {
+						"application/msword" : "text",
+						"application/vnd.ms-powerpoint" : "pres",
+						"application/vnd.openxmlformats-officedocument.wordprocessingml.document" : "text",
+						"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" : "sheet",
+						"application/vnd.openxmlformats-officedocument.presentationml.presentation" : "pres",
+						"application/vnd.oasis.opendocument.text" : "text",
+						"application/vnd.oasis.opendocument.text-template" : "text",
+						"application/vnd.ms-excel" : "sheet",
+						"application/vnd.oasis.opendocument.spreadsheet" : "sheet",
+						"application/vnd.ms-excel.sheet.macroEnabled" : "sheet",
+						"application/vnd.ms-excel.sheet.macroEnabled.12" : "sheet",
+						"application/vnd.oasis.opendocument.spreadsheet-template" : "sheet",
+						"application/vnd.oasis.opendocument.presentation" : "pres",
+						"application/vnd.oasis.opendocument.presentation-template" : "pres",
+						"application/ccd-text" : "text",
+						"application/ccd-pres" : "pres",
+						"text/csv" : "sheet",
+						"text/plain" : "text",
+						"application/vnd.openxmlformats-officedocument.wordprocessingml.template" : "text",
+						"application/vnd.openxmlformats-officedocument.spreadsheetml.template" : "sheet",
+						"application/vnd.openxmlformats-officedocument.presentationml.template" : "pres",
+						"application/vnd.ibm-note" : "note"
+					}
+				}
+			},
+			{
+				"id":"com.ibm.concord.session.SessionManager",
+				"class":"com.ibm.concord.session.SessionManagerComponentImpl",
+				"config":
+				{
+
+				}
+			},
+			{
+				"id":"com.ibm.concord.platform.webmsg",
+				"class":"com.ibm.concord.platform.webmsg.WebMessageComponentImpl",
+				"config":
+				{
+					"adapter" :
+					{
+						"id" : "rtc4web",
+						"class" : "com.ibm.concord.webmsg.rtc4web.Rtc4WebMessageAdapter",
+						"config" :
+						{
+						}
+					}
+				}
+			},
+			{
+				"id":"com.ibm.concord.platform.journal",
+				"class":"com.ibm.concord.platform.journal.JournalComponentImpl",
+				"config":
+				{
+					"adapters":
+        		    [
+					    {
+					    "id" : "lcfiles",
+						"class":"com.ibm.concord.lotuslive.journal.JournalSCPublisher",
+						"config" :
+						{
+							"size":"10",
+							"count":"50",
+							"interval":"8"
+						}
+						}
+					],
+			        "default" : "lcfiles"
+				}
+			},
+			{
+				"id":"com.ibm.docs.entitlement",
+				"class":"com.ibm.docs.entitlement.EntitlementComponent",
+				"config":
+				{
+					"defaultLevel":"NONE",
+					"settings":
+					{
+						"FULL":
+						{
+							"coedit":"true",
+							"assignment":"false",
+							"conversion_during_upload":"true"
+						},
+						"SOCIAL":
+						{
+							"coedit":"true",
+							"assignment":"false",
+							"conversion_during_upload":"true"
+						},
+						"BASIC":
+						{
+							"coedit":"false",
+							"assignment":"false",
+							"conversion_during_upload":"false"
+						},
+						"CUSTOM_1":
+						{
+							"coedit":"true",
+							"assignment":"false",
+							"conversion_during_upload":"true"
+						}
+					}
+				}
+			},
+            {
+                "id":"com.ibm.concord.migration",
+                "class":"com.ibm.concord.migration.MigrationComponent",
+                "config":
+                {
+                        "enabled": "false",
+                        "interval": "2"
+                }
+            }
+		]
+	},
+	"session" :
+	{
+		"interval" : "30",
+		"timeout" : "30",
+		"retry" : "3",
+		"max-active-editing" : "1000",
+		"max-users-per-session" : "20",
+		"login-retry" : "false"
+	},
+	"auto-publish" :
+	{
+		"default-auto-publish" : "true",
+		"max-autopublish-interval" : "3600"
+	},
+	"s2s" :
+	{
+		"s2s_token" : "fallseason2011"
+	},
+	"cookies" :
+	{
+		"enforce_secure" : "true"
+	},
+	"docentrycache" :
+	{
+		"timetolive-seconds" : "60"
+	},
+	"typeahead" :
+	{
+		"showemail" : "true",
+		"is_cloud" : "true"
+	},
+	"viewersnapshot" :
+	{
+	  "enabled" : "true",
+	  "wait_viewer_reading_time" : "10"
+	},
+	"socialConfig" : {
+		"profile": "$profile_cfg",
+		"BIZCard": "$BIZCard_cfg",
+		"ST": "$ST_cfg"
+	},
+	"topology_shared" : {
+		"bss_be_url" : "$bss_be_url",
+		"virtual_hosts_junction_domain" : "$virtual_hosts_junction_domain"
+	},
+	"nativefilelock":
+	{
+	  "enabled" : "true"
+	},
+	"House_Keeping" :
+	{
+        "policy":
+        {
+            "A3": "126",
+            "SafeMode": "true",
+            "ScheduledAtOnce": "sp1,i1"
+        },
+        "frequency" : "weekly",
+        "age_threshold_of_upld_conv_per_org" : "21",
+        "age_threshold_of_draft_per_org" : "60",
+        "size_threshold_of_draft_per_org" : "0.7",
+        "age_threshold_of_rendition_cache_per_org" : "14",
+        "size_threshold_of_rendition_cache_per_org" : "0.7"
+	},
+    "multitenancy" :
+    {
+        "enablement" : "$mt",
+        "tenant_pattern" : "http://{org}",
+        "secure_tenant_pattern" : "https://{org}"
+    },
+	"http-params":
+	{
+		"cache-control": "public, max-age=31536000"
+	},
+	"Help" :
+	{
+		"contents_url" : "http://infolib.lotus.com/resources/lotuslive/symphony/tp3/tp3_lotuslive_symphony.pdf",
+		"text_helpurl" : "https://help.hcltechsw.com/docs/onprem_2.0/2.0_CR3_onprem_help/text/document/documents_frame.html",
+		"sheet_helpurl" : "https://help.hcltechsw.com/docs/onprem_2.0/2.0_CR3_onprem_help/text/spreadsheet/spreadsheets_frame.html",
+		"pres_helpurl" : "https://help.hcltechsw.com/docs/onprem_2.0/2.0_CR3_onprem_help/text/presentation/presentations_frame.html"
+	},
+	"lotusLiveIntegration":
+	{
+		"lotuslive_url": "",
+		"themeConfig":
+			{
+				"enabled": "false",
+				"theme_url": "/theming/theme/css/3"
+			}
+	},
+	"log" :
+	{
+		"level" : "report",
+		"size" : "40"
+	},
+	"CustomizedFonts" :
+	{
+		"enabled": "false",
+		"general": ["Arial/Arial, Helvetica, sans-serif", "Times New Roman/Times New Roman, Times, serif"],
+		"globalized":
+		{
+			"ca": [],
+			"da": [],
+			"de": [],
+			"el": [],
+			"en": [],
+			"es": [],
+			"fi": [],
+			"fr": [],
+			"it": [],
+			"ja": [],
+			"ko": [],
+			"nl": [],
+			"no": [],
+			"pl": [],
+			"pt": [],
+			"pt-br": [],
+			"ru": [],
+			"sv": [],
+			"th": [],
+			"tr": [],
+			"zh-cn": [],
+			"zh-tw": []
+		}
+	},
+	"WhiteDomainList": [
+		"https://*.box.com"
+	],
+    "build-info" :
+    {
+        "product_name" : "HCL Docs Cloud",
+        "build_version" : "$build_version",
+        "build_timestamp" : "$build_timestamp",
+        "build_description" : "HCL Docs Cloud $build_version"
+    }
+}

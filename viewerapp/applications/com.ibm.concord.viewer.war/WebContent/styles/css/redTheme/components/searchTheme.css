@@ -1,0 +1,21 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for search
+companion file is search.css*/
+/*** S E A R C H ***/
+.lotusSearch .lotusSearchButton{color:#ffffff;background-image:url(../../images/iconSearch16.png)}
+.lotusSearch .lotusSearchButton:hover, .lotusSearch .lotusSearchButton:focus{/*border-color:#666666;*/}
+.lotusSearch .lotusText, .lotusSearch .dijitTextBox, .lotusSearch select{border-color:#7a7e81;background-color:#fff}
+.lotusSearch .lotusScope{color:#000;background-color:#fff;border-color:#7a7e81;background-image:url(../../images/btnDropDownPadding.png);}
+.lotusSearch .lotusScope:hover, .lotusSearch .lotusScope:focus{color:#fff;background-color:#4d0100;background-image:url(../../images/btnDropDownHoverPadding.png)}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusSearch .lotusSearchButton{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -3089px}
+
+.lotusSpritesOn .lotusSearch .lotusScope{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -893px}
+.lotusSpritesOn .lotusSearch .lotusScope:hover, .lotusSpritesOn .lotusSearch .lotusScope:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -981px}
+/*[/sprite]*/
+
+/***********************************************************/

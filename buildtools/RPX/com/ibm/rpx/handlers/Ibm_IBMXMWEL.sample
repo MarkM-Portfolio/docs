@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<welcomePage title="Welcome to WebSphere Development Studio Client 4.0">
+  <intro>This page tells you what you should know before you start working with the 
+    IBM WebSphere Development Studio Client product. To learn more, read the 
+    <topic id="com.ibm.doc.helpcontent">Development Studio Client</topic> information.
+  </intro>
+</welcomePage>

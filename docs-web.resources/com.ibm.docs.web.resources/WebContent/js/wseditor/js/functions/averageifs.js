@@ -1,0 +1,40 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+
+dojo.provide("websheet.functions.averageifs");
+
+dojo.declare("websheet.functions.averageifs", [websheet.functions.sumif, websheet.functions._countifs], {
+	
+	constructor: function() {
+		this.minNumOfArgs = 3;
+		this.maxNumOfArgs = 255;
+		this.oddNumOfArgs = 1;
+		this._count = 0;
+	},
+
+	/*int*/calc: function(context) {
+		var values = this.args;
+		var prefixRange = this._getRange(values[0]);
+		var baseRange = this._getRange(values[1]);
+		var satisfyCells = this.getSatisfyCells(context, baseRange, prefixRange);
+		if (satisfyCells && satisfyCells.length) {
+			var total = this.calcTotal(context, prefixRange, baseRange, satisfyCells);
+			if (!context._count) {
+				throw websheet.Constant.ERRORCODE["532"];
+			}
+			return total / context._count;
+		} else {
+			throw websheet.Constant.ERRORCODE["532"];
+		}
+	}
+});

@@ -1,0 +1,3 @@
+Please DO NOT use conversion-config.json and the other configuration files in this folder as a deliver target.
+
+Please change concord_base/deployment/com.ibm.conversion.deployment/config/conversion-config.json and the others

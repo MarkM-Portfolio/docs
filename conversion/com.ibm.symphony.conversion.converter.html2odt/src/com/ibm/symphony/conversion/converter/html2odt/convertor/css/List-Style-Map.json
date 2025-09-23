@@ -1,0 +1,96 @@
+{
+	"lst-ur": {
+		"Type": 1,
+		"Num-Format": "I",
+		"Suffix": "0x2e",
+	},
+	"lst-lr": {
+		"Type": 1,
+		"Num-Format": "i",
+		"Suffix": "0x2e",
+	},
+	"lst-ua" : {
+		"Type": 1,
+		"Num-Format": "A",
+		"Suffix": "0x2e",
+	},
+	"lst-la" : {
+		"Type": 1,
+		"Num-Format": "a",
+		"Suffix": "0x2e",
+	}, 
+	"lst-n" : {
+		"Type": 1,
+		"Num-Format": "1",
+		"Suffix": "0x2e",
+	},
+	"lst-n2" : {
+		"Type": 1,
+		"Num-Format": "1",
+	},
+	"lst-uap" : {
+		"Type": 1,
+		"Num-Format": "A",
+		"Suffix": "0x29",
+	},
+	"lst-lap" : {
+		"Type": 1,
+		"Num-Format": "a",
+		"Suffix": "0x29",
+	},
+	"lst-np" : {
+		"Type": 1,
+		"Num-Format": "1",
+		"Suffix": "0x29",
+	},
+	"lst-j1" : {
+		"Type": 1,
+		"Num-Format": "イ, ロ, ハ, ...",
+		"Suffix": "0x29",
+	},
+	"lst-j2" : {
+		"Type": 1,
+		"Num-Format": "ア, イ, ウ, ...",
+		"Suffix": "0x29",
+		"Prefix": "0x28",
+	},
+	"lst-c": {
+		"Type": 0,
+		"Bullet-Char": "0x25cf",
+	},
+	"lst-cs": {
+		"Type": 0,
+		"Bullet-Char": "0x2756",
+	},
+	"lst-ra": {
+		"Type": 0,
+		"Bullet-Char": "0x25ba",
+	},
+	"lst-d": {
+		"Type": 0,
+		"Bullet-Char": "0x2666",
+		"MinLabelDistance": "0.5cm",
+	},
+	"lst-da": {
+		"Type": 0,
+		"Bullet-Char": "0x25a0",
+	},
+	"lst-a": {
+		"Type": 0,
+		"Bullet-Char": "0x002a",
+	},
+	"lst-ta": {
+		"Type": 0,
+		"Bullet-Char": "0x2794",
+	},
+	"lst-cm": {
+		"Type": 0,
+		"Bullet-Char": "0x2714",
+	},
+	"lst-ps": {
+		"Type": 0,
+		"Bullet-Char": "0x271a",
+	}
+	
+	
+}

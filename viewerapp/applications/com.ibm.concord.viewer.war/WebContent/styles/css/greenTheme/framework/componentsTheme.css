@@ -1,0 +1,628 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+******************************************************************************
+This file contains styles for components
+
+componentsTheme.css is created by including content from css files located in the
+components directory.
+
+companion file is components.css
+******************************************************************************/
+/****************************************/
+/*** C O M P O N E N T   S T Y L E S ****/
+/****************************************/
+
+
+/*****************************/
+/*** A C T I O N   M E N U ***/
+/*****************************/
+ul.lotusActionMenu{background-color:#fff;border-color:#919090;background-image:url(../../images/actionMenuBkgd.png)}
+ul.lotusActionMenu.lotusPlain{background-image:none}
+.lotusActionMenu li{background-color:transparent}
+.lotusActionMenu li.lotusSelected a{background-image:url(../../images/checkmark.png);}
+.lotusActionMenu li.lotusMenuSeparator{border-top-color:#C0C1C1 !important}
+.lotusActionMenu a{color:#000;}
+.lotusActionMenu a:hover, .lotusActionMenu a:focus, .lotusActionMenu a:active{color:#fff !important;background-color:#3a8345;}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusActionMenu li.lotusSelected a,
+.lotusSpritesOn .lotusActionMenu li.lotusSelected a:visited,
+.lotusSpritesOn .lotusActionMenu li.lotusSelected a:hover,
+.lotusSpritesOn .lotusActionMenu li.lotusSelected a:active,
+.lotusSpritesOn .lotusActionMenu li.lotusSelected a:focus
+{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:4px -1026px}
+/*[/sprite]*/
+
+/***********************************************************/
+
+
+/*** B R E A D C R U M B S ***/
+.lotusBreadcrumbs .lotusDivider{background-image:url(../../images/arrowClosedLight.png)}
+.lotusBreadcrumbs .lotusDivider:hover, .lotusBreadcrumbs .lotusDivider:focus, .lotusBreadcrumbs .lotusDivider:active{background-image:url(../../images/arrowClosedDark.png);}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusBreadcrumbs .lotusDivider{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -232px}
+.lotusSpritesOn .lotusBreadcrumbs .lotusDivider:hover, .lotusSpritesOn .lotusBreadcrumbs .lotusDivider:focus, .lotusSpritesOn .lotusBreadcrumbs .lotusDivider:active{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -116px}
+/*[/sprite]*/
+/***********************************************************/
+
+
+/*** B U T T O N S ***/
+/*form buttons are the same style right now as the special buttons*/
+/*action buttons (lotusActionBtn) just use the lotusBtn style now, if you want them to look different you can define a style*/
+/*lotusButton is a set width version of the button that goes in the left column*/
+/*our regular buttons*/
+.lotusBtn, .lotusButton{border-color:#c0c7cd;}/*default button outside border*/
+.lotusBtn a, .lotusBtn a:visited, .lotusButton a, .lotusButton a:visited{border-color:#dedede;}/*span buttons have an inside border*/
+.lotusBtn a, .lotusBtn a:visited, .lotusButton a, .lotusButton a:visited, input.lotusBtn, button.lotusBtn{color:#222;background-color:#dedede;background-image:url(../../images/btnBkgd.png);}
+
+/*form and other blue buttons*/
+.lotusBtnSpecial, .lotusFormButton, .lotusBtnImg{border-color:#66ad69}
+.lotusBtnSpecial a, .lotusBtnSpecial a:visited, .lotusBtnImg img, .lotusBtnImg input{color:#fff;border-color:#66ad69;}/*span buttons have an inside border*/
+.lotusBtnSpecial a, .lotusBtnSpecial a:visited, input.lotusBtnSpecial, button.lotusBtnSpecial, .lotusFormButton, .lotusBtnImg{color:#ffffff;background-color:#408253;background-image:url(../themeImages/btnSpecialBkgd.png);}
+
+/*hover states*/
+/*default buttons*/
+.lotusButton:hover, .lotusButton:focus, .lotusBtn:hover, .lotusBtn:focus, .lotusBtn:active{border-color:#8e8e8e;}
+.lotusBtn a:hover, .lotusBtn a:focus, .lotusBtn a:active{color:#222;}
+/*form and blue buttons*/
+.lotusBtnSpecial:hover, .lotusBtnSpecial:focus, .lotusBtnSpecial:active, .lotusFormButton:hover, .lotusFormButton:focus, .lotusBtnImg:hover, .lotusBtnImg:focus, .lotusBtnImg:active{border-color:#385e19}
+.lotusBtnSpecial a:hover, span.lotusBtnSpecial a:focus, .lotusBtnSpecial a:active, .lotusImagesOff  a.lotusBtnImg, .lotusImagesOff  a.lotusBtnImg:visited, .lotusImagesOff  a.lotusBtnImg:hover, .lotusImagesOff  a.lotusBtnImg:focus, .lotusImagesOff  a.lotusBtnImg:active{color:#ffffff}/*to make sure color sticks when images are turned off, etc.*/
+
+/*disabled button - styles need to be at the end of all our button styles so they are picked up.  Uses regular button styles and a grayed out text color*/
+.lotusBtnDisabled{border-color:#c0c7cd !important;}/*we don't want disabled button border color to change on hover*/
+.lotusBtnDisabled a, .lotusBtnDisabled a:visited{border-color:#dedede;}/*span buttons have an inside border*/
+.lotusBtnDisabled a, .lotusBtnDisabled a:visited, input.lotusBtnDisabled, button.lotusBtnDisabled{color:#b0b0b0 !important;background-color:#dedede;background-image:url(../../images/btnBkgd.png);}
+/*miscellaneous*/
+.lotusBtnDivider{border-color:#e0e0e0}/*add this as an additional container class when you need a bottom divider for the buttons*/
+/*not implemented in the prototype yet.*/
+.lotusAdd img{background-image:url(../../images/iconAdd16.png)}
+.lotusClose img{background-image:url(../../images/iconClose16.png)}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusBtn a,.lotusSpritesOn .lotusButton a,.lotusSpritesOn input.lotusBtn,.lotusSpritesOn button.lotusBtn,
+.lotusSpritesOn .lotusBtn a:hover,.lotusSpritesOn .lotusButton a:hover,.lotusSpritesOn input.lotusBtn:hover,.lotusSpritesOn button.lotusBtn:hover,
+.lotusSpritesOn .lotusBtn a:focus,.lotusSpritesOn .lotusButton a:focus,.lotusSpritesOn input.lotusBtn:focus,.lotusSpritesOn button.lotusBtn:focus,
+.lotusSpritesOn .lotusBtn a:active,.lotusSpritesOn .lotusButton a:active,.lotusSpritesOn input.lotusBtn:active,.lotusSpritesOn button.lotusBtn:active,
+.lotusSpritesOn .lotusBtn a:visited,.lotusSpritesOn .lotusButton a:visited,.lotusSpritesOn input.lotusBtn:visited,.lotusSpritesOn button.lotusBtn:visited
+{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 0}
+
+.lotusSpritesOn .lotusBtnDisabled a,.lotusSpritesOn input.lotusBtnDisabled,.lotusSpritesOn button.lotusBtnDisabled,
+.lotusSpritesOn .lotusBtnDisabled a:hover,.lotusSpritesOn input.lotusBtnDisabled:hover,.lotusSpritesOn button.lotusBtnDisabled:hover,
+.lotusSpritesOn .lotusBtnDisabled a:focus,.lotusSpritesOn input.lotusBtnDisabled:focus,.lotusSpritesOn button.lotusBtnDisabled:focus,
+.lotusSpritesOn .lotusBtnDisabled a:active,.lotusSpritesOn input.lotusBtnDisabled:active,.lotusSpritesOn button.lotusBtnDisabled:active,
+.lotusSpritesOn .lotusBtnDisabled a:visited,.lotusSpritesOn input.lotusBtnDisabled:visited,.lotusSpritesOn button.lotusBtnDisabled:visited
+{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 0}
+
+.lotusSpritesOn .lotusBtnSpecial a,.lotusSpritesOn input.lotusBtnSpecial,.lotusSpritesOn button.lotusBtnSpecial,.lotusSpritesOn .lotusFormButton,.lotusSpritesOn .lotusBtnImg,
+.lotusSpritesOn .lotusBtnSpecial a:hover,.lotusSpritesOn input.lotusBtnSpecial:hover,.lotusSpritesOn button.lotusBtnSpecial:hover,.lotusSpritesOn .lotusFormButton:hover,.lotusSpritesOn .lotusBtnImg:hover,
+.lotusSpritesOn .lotusBtnSpecial a:focus,.lotusSpritesOn input.lotusBtnSpecial:focus,.lotusSpritesOn button.lotusBtnSpecial:focus,.lotusSpritesOn .lotusFormButton:focus,.lotusSpritesOn .lotusBtnImg:focus,
+.lotusSpritesOn .lotusBtnSpecial a:active,.lotusSpritesOn input.lotusBtnSpecial:active,.lotusSpritesOn button.lotusBtnSpecial:active,.lotusSpritesOn .lotusFormButton:active,.lotusSpritesOn .lotusBtnImg:active,
+.lotusSpritesOn .lotusBtnSpecial a:visited,.lotusSpritesOn input.lotusBtnSpecial:visited,.lotusSpritesOn button.lotusBtnSpecial:visited,.lotusSpritesOn .lotusFormButton:visited,.lotusSpritesOn .lotusBtnImg:visited
+{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -1350px}
+
+.lotusSpritesOn .lotusAdd img{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2107px}
+.lotusSpritesOn .lotusClose img{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2275px}
+/*[/sprite]*/
+/****************************************************************/
+
+
+/*** C A P T I O N ***/
+.lotusCaption{background-color:#f3f3f3;border-color:#f3f3f3}
+/***********************************************************/
+
+
+
+/*** C O M M E N T ***/
+/*plain comments*/
+.lotusAddComment{background-color:#e2f1e3;}
+.lotusui .lotusAddComment a.lotusCommentInput, .lotusui .lotusAddComment a.lotusCommentInput:hover, .lotusui .lotusAddComment a.lotusCommentInput:focus{background-color:#fff;border-color:#66ad69 !important;}/*important is to keep this from clashing with lotusActions classes, if applied*/
+/*update status "comment"*/
+.lotusUpdateStatus{background-color:#b4d5fc;}
+.lotusUpdateStatus .lotusPostStatusControl{background-color:#fff;}
+/*comment containers*/
+ul.lotusCommentList li{border-top-color:#e3e2e2}
+/*style adjustments for comments on the board/wall*/
+.lotusBoard .lotusPost{border-top-color:#E8EDF3}
+.lotusBoard ul.lotusCommentList li.lotusFirst{background-image:url(../../images/commentPointBubble.png);}
+/*[sprite]*/
+.lotusSpritesOn .lotusBoard ul.lotusCommentList li.lotusFirst{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:15px -1137px}
+/*[/sprite]*/
+.lotusBoard .lotusCommentList .lotusPost, .lotusBoard .lotusCommentList .lotusAddComment{background-color:#ededed;}
+.lotusBoard .lotusCommentPaging { background-color:#E8EDF3; }
+/*styles for comments in a discussion forum*/
+.lotusForum .lotusPost{background-color:#d6f2c4;}
+.lotusForum .lotusPostAuthorInfo .lotusPostAvatar{background-image:url(../../images/commentPointForum.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusForum .lotusPostAuthorInfo .lotusPostAvatar{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -1373px}
+/*[/sprite]*/
+.lotusForum .lotusPostContent{background-color:#fff}
+.lotusForum ul.lotusCommentList .lotusPost{background-color:#ededed}
+.lotusForum ul.lotusCommentList .lotusChild{background-image: url(../../images/commentIndent.png);}
+.lotusForum .lotusPostDetails blockquote{color:#545454;background-color:#ededed;border-color:#DFE4E9;}
+/*simple comment bubble*/
+.lotusCommentBubble{background-image: url(../../images/commentPointBubble.png);}
+/*[sprite]*/
+.lotusSpritesOn .lotusCommentBubble{background-image: url(../themeImages/lotusSprite-8bit.png);background-position:15px -1137px}
+/*[/sprite]*/
+.lotusCommentBubbleBody{background-color:#ededed;}
+/***********************************************************/
+
+
+
+/*** C O P Y R I G H T **/
+div.lotusLegal .lotusLicense{background-image: url(../../images/ibmLogo.png);}
+.lotusLegal .lotusLicense{color:#666;}
+.lotusLegal .lotusBuild{color:#000}
+/***********************************************************/
+
+
+
+/*** D I A L O G ***/
+.lotusDialogBorder{border-color:#aaa;}
+.lotusDialog{background-color:#fff;}
+.lotusDialog h1{border-bottom-color:#e2f1e3;background-image:url(../../images/titleBkgd.png)}
+.lotusDialog .lotusDialogContent{border-bottom-color:#e2f1e3;}
+.lotusDialog .lotusDialogFooter{background-color:#e2f1e3;}
+.lotusDialog .lotusFormTable,
+.lotusDialog .lotusFormTable td{background-color:#fff;}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusDialog h1{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -900px}
+/*[/sprite]*/
+
+/***********************************************************/
+
+
+
+/***************************************/
+/*** D I S P L A Y   C O N T R O L S ***/
+/***************************************/
+.lotusViewControl div{background-color:#fff;background-image:url(../../images/btnBkgd.png);border-color:#c0c7cd}
+.lotusDetailsOff {background-image:url(../../images/viewDetails.png)}
+.lotusDetailsOff:hover, .lotusDetailsOff:focus{background-image:url(../../images/viewDetailsHover.png)}
+.lotusDetailsOn {background-image:url(../../images/viewDetailsSelected.png)}
+.lotusSummaryOff {background-image:url(../../images/viewSummary.png)}
+.lotusSummaryOff:hover, .lotusSummaryOff:focus {background-image:url(../../images/viewSummaryHover.png)}
+.lotusSummaryOn {background-image:url(../../images/viewSummarySelected.png)}
+.lotusTreeOff {background-image:url(../../images/viewTree.png)}
+.lotusTreeOff:hover, .lotusTreeOff:focus {background-image:url(../../images/viewTreeHover.png)}
+.lotusTreeOn {background-image:url(../../images/viewTreeSelected.png)}
+.lotusTileOff {background-image:url(../../images/viewThumbnail.png)}
+.lotusTileOff:hover, .lotusTileOff:focus {background-image:url(../../images/viewThumbnailHover.png)}
+.lotusTileOn {background-image:url(../../images/viewThumbnailSelected.png)}
+.lotusFolderOff {background-image:url(../../images/viewFolder.png)}
+.lotusFolderOff:hover, .lotusFolderOff:focus {background-image:url(../../images/viewFolderHover.png)}
+.lotusFolderOn {background-image:url(../../images/viewFolderSelected.png)}
+
+/*sprites on*/
+/*[sprite]*/
+.lotusSpritesOn .lotusViewControl div{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 0}
+.lotusSpritesOn .lotusViewControl a.lotusView{background-image:url(../themeImages/lotusSprite-8bit.png)}
+.lotusSpritesOn .lotusDetailsOff {background-position:0 -6438px}
+.lotusSpritesOn .lotusDetailsOff:hover, .lotusSpritesOn .lotusDetailsOff:focus{background-position:0 -6558px}
+.lotusSpritesOn .lotusDetailsOn {background-position:0 -6678px}
+.lotusSpritesOn .lotusSummaryOff {background-position:0 -7158px}
+.lotusSpritesOn .lotusSummaryOff:hover, .lotusSpritesOn .lotusSummaryOff:focus {background-position:0 -7218px}
+.lotusSpritesOn .lotusSummaryOn {background-position:0 -7278px}
+.lotusSpritesOn .lotusTreeOff {background-position:0 -7518px}
+.lotusSpritesOn .lotusTreeOff:hover, .lotusSpritesOn .lotusTreeOff:focus {background-position:0 -7578px}
+.lotusSpritesOn .lotusTreeOn {background-position:0 -7638px}
+.lotusSpritesOn .lotusTileOff {background-position:0 -7338px}
+.lotusSpritesOn .lotusTileOff:hover, .lotusSpritesOn .lotusTileOff:focus {background-position:0 -7398px}
+.lotusSpritesOn .lotusTileOn {background-position:0 -7458px}
+.lotusSpritesOn .lotusFolderOff {background-position:0 -6798px}
+.lotusSpritesOn .lotusFolderOff:hover, .lotusSpritesOn .lotusFolderOff:focus {background-position:0 -6918px}
+.lotusSpritesOn .lotusFolderOn {background-position:0 -7038px}
+/*[/sprite]*/
+/***********************************************************/
+
+
+/*** F E E D S **/
+/*the feed links under the content*/
+.lotusFeeds a.lotusFeed{background-image:url(../../images/iconFeed.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusFeeds a.lotusFeed{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2435px}
+/*[/sprite]*/
+/***********************************************************/
+
+
+
+/*** F O R M S ***/
+.lotusFormTable, .lotusFormTable td{background-color:#f1f9f3;}
+.lotusFormPlain .lotusTable, .lotusFormPlain .lotusFormTable td{background-color:#fff;}/*for a form that is always on the page and not inline*/
+.lotusFieldBorder{background-color:#E9E9E9;}
+.lotusFormError, .lotusFormRequired {color:#FF0000;}
+.lotusFormErrorField, .lotusFormErrorSummary td {background-color:#fffabc;}
+.lotusFormTable .lotusFormFooter {background-color:#e2f1e3;}
+/* form button element styles can be found in the button component */
+/***********************************************************/
+
+
+
+/*** H E A D E R ***/
+.lotusHeader .lotusDetails p{color:#666}
+.lotusFilters a.lotusFilter{background-color:#f4fcf6;border-color:#A8ECB4}
+.lotusFilters a .lotusClose{color:#A8ECB4}
+.lotusFilters a:hover .lotusClose{color:#999999}
+/***********************************************************/
+
+
+
+/*** I N F O   B O X ***/ /*this is used for help and tips*/
+.lotusInfoBox, .portlet-msg{background-color:#fef6ab;border-color:#e2c15a;}
+.lotusInfoBox h3, .portlet-msg h3{color:#b47429;}
+.lotusInfoBox h3 img, .portlet-msg h3 img{border-color:#d79846}
+.lotusInfoBox h3 img:hover, .portlet-msg h3 img:hover, .lotusInfoBox h3 img:focus, .portlet-msg h3 img:focus{border-color:#b8711c}
+.lotusHelp{background-color:#e0e0e0}
+.lotusHelp .lotusInfoBox{border-color:#c5c5c5;background-color:#f0f0f0;background-image:url(../../images/accentBkgd.png)}
+.lotusHelp h3{color:#222}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusHelp .lotusInfoBox{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -450px}
+/*[/sprite]*/
+
+/***********************************************************/
+
+
+
+/*** L I S T S ***/ /*use in conjuction with sections if you want a more complex list*/
+ul.lotusList li.lotusSelected{background-color:#e4e1e1}
+ul.lotusList li.lotusSelected a{color:#000;}
+.lotusList a, ul.lotusList li.lotusSelected a{border-color:transparent}
+/*delete icon for editable list*/
+ul.lotusEditable a.lotusDelete:hover{border-bottom-color:transparent}
+/*IE 6 hack. Need to use tag and person classes here and accommodate gray and white backgrounds*/
+.lotusui_ie6 .lotusList a{border-bottom-color:#f1f5fa}
+.lotusui_ie6 ul.lotusList li.lotusSelected a{border-bottom-color:#cfecff}
+.lotusui_ie6 ul.lotusEditable a.lotusDelete:hover{border-bottom-color:#f1f5fa}
+/***********************************************************/
+
+
+
+/*** M E N U ***/
+.lotusMenu, .portlet-menu{background-color:#eefee1;border-color:#ccebb5}
+.lotusMenu .lotusMenuSection{border-bottom-color:#ccebb5;}
+.lotusMenu h3{color:#4f9815}
+.lotusMenu h3.selected, .portlet-menu h3.selected{color:#fff;background-color:#73be59;border-color:#73be59;}
+.lotusMenu li.lotusSelected a, .lotusMenu li.lotusSelected a:visited, .lotusMenu li.lotusSelected a:active, .portlet-menu li.lotusSelected a, .portlet-menu li.lotusSelected a:visited, .portlet-menu li.lotusSelected a:active{color:#fff !important;background-color:#73be59;border-color:#73be59;}
+/*menu arrows are created as CSS sprites, using the lotusArrow class found in baseTheme.css*/
+.lotusTwistyOpenMenu{background-image:url(../../images/arrowOpenAlt.png)}/*the section is selected*/
+.lotusTwistyClosedMenu{background-image:url(../../images/arrowClosedAlt.png)}
+.lotusMenu h3.selected .lotusTwistyOpenMenu{background-image:url(../../images/arrowOpenReversed.png)}/*the section is selected*/
+.lotusMenu h3.selected .lotusTwistyClosedMenu{background-image:url(../../images/arrowClosedReversed.png)}
+.lotusMenu .lotusArrow, .lotusMenu .lotusArrow:hover, .lotusMenu .lotusArrow:focus{color:#fff;text-decoration:none}/*for alt text +/- icons*/
+
+/*[sprite]*/
+.lotusSpritesOn .lotusTwistyOpenMenu{background-position:0 -464px}
+.lotusSpritesOn .lotusTwistyClosedMenu{background-position:0 0}
+.lotusSpritesOn .lotusMenu h3.selected .lotusTwistyOpenMenu{background-image:url(../themeImages/lotusSprite-32bit.png);background-position:0 -580px}/*the section is selected*/
+.lotusSpritesOn .lotusMenu h3.selected .lotusTwistyClosedMenu{background-position:0 -348px}
+/*[/sprite]*/
+/***********************************************************/
+
+
+
+/*** M E S S A G E S ***/
+.lotusMessage{background-color:#fcc;border-color:#c66;}/*error message*/
+.lotusWarning{background-color:#ffffbc;border-color:#f7c455;}/*use iconWarning16.png*/
+.lotusSuccess{background-color:#ecf9df;border-color:#c8e2b8;}
+.lotusInfo{background-color:#d8eaff;border-color:#6295d6;}/*use iconInfo16.png*/
+.lotusConfirm{background-color:#dcfcc4;border-color:#80d047;}/*use iconConfirmation16.png*/
+/***********************************************************/
+
+
+
+/*** P A G I N G ***/
+.lotusPaging{color:#848484;background-color:#f1f3f5;}
+.lotusPaging ul li, .lotusPaging div{color:#848484;}
+.lotusPaging input{color:#848484;}
+.lotusPaging .lotusInlinelist li{border-color:#8d8d8d;}
+/***********************************************************/
+
+
+
+/*** P A L E T T E ***/
+/*this is the palette that opens under the place bar to allow users to customize the UI */
+.lotusPalette{background-color:#7a7f84;border-bottom-color:#676b6f}
+.lotusPalette .lotusLoading{background-image:url(../../images/loadingDark.gif)}
+.lotusPaletteHeader{background-color:#62656a;color:#fff;border-top-color:#62656a;border-bottom-color:#777b81}
+.lotusPaletteHeader h2, .lotusPaletteHeader a, .lotusPaletteHeader a, .lotusPaletteHeader a:hover, .lotusPaletteHeader a:focus, .lotusPaletteHeader .lotusTabs li a:hover, .lotusPaletteHeader .lotusTabs li a:focus{color:#fff}
+.lotusPaletteHeader .lotusTabs li, .lotusPaletteHeader .lotusTabs li.lotusSelected{background-color:transparent}
+.lotusPaletteHeader .lotusTabs li.lotusSelected a, .lotusPaletteHeader .lotusTabs li.lotusSelected a:visited{color:#fff;background-color:#408253;}
+.lotusPaletteBody{background-color:#414648;border-top-color:#222;border-bottom-color:#222;}
+.lotusPaletteNav{background-color:transparent;background-image:url(../../images/paletteNavShadow.png)}
+.lotusPaletteNav h3{color:#fff}
+.lotusPaletteNav h3 img{background-image:url(../../images/iconArrowBack16.png);color:#fff}
+/*[sprite]*/
+.lotusSpritesOn .lotusPaletteNav h3 .lotusBtnImg img{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2163px}
+/*[/sprite]*/
+.lotusPalette .lotusSearch input.lotusText{background-color:#fff;color:#222;border-color:#fff}
+.lotusPalette .lotusMenu{background-color:#232426;}
+.lotusPalette .lotusMenu li a, .lotusPalette .lotusMenu li a:visited, .lotusPalette .lotusMenu li a:hover, .lotusPalette .lotusMenu li a:focus{color:#fff;background-color:transparent;}
+.lotusPalette .lotusMenu li.lotusSelected, .lotusPalette .lotusMenu li.lotusSelected a, .lotusPalette .lotusMenu li.lotusSelected a:visited, .lotusPalette .lotusMenu li.lotusSelected a:active{background-color:#408253}
+.lotusPalette .lotusMenu li.lotusMore a{background-image:url(../../images/paletteMoreArrow.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusPalette .lotusMenu li.lotusMore a{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:94% -4237px}
+/*[/sprite]*/
+.lotusPaletteWidget{border-color:#222;background-color:#4d5054;color:#fff}
+.lotusPaletteWidgets .lotusSelected, .lotusPaletteWidget:hover, .lotusPaletteWidget:focus{border-color:#fff}
+.lotusPaletteWidget a, .lotusPaletteWidget a:hover, .lotusPaletteWidget a:focus{color:#fff}
+.lotusPaletteWidget a.lotusIcon{background-image:url(../../images/paletteAdd.png)}
+.lotusPaletteWidget a.lotusIcon:hover, .lotusPaletteWidget a.lotusIcon:focus{background-image:url(../../images/paletteAddHover.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusPaletteWidget a.lotusIcon{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -3982px}
+.lotusSpritesOn .lotusPaletteWidget a.lotusIcon:hover, .lotusSpritesOn .lotusPaletteWidget a.lotusIcon:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -4084px}
+/*[/sprite]*/
+.lotusPaletteWidget div.lotusIcon span{background-color:transparent}
+.lotusPaletteWidget .lotusRating0{background-image:url(../../images/paletteRating0.png)}
+.lotusPaletteWidget .lotusRating1{background-image:url(../../images/paletteRating1.png)}
+.lotusPaletteWidget .lotusRating2{background-image:url(../../images/paletteRating2.png)}
+.lotusPaletteWidget .lotusRating3{background-image:url(../../images/paletteRating3.png)}
+.lotusPaletteWidget .lotusRating4{background-image:url(../../images/paletteRating4.png)}
+.lotusPaletteWidget .lotusRating5{background-image:url(../../images/paletteRating5.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusPaletteWidget .lotusRating0, .lotusSpritesOn .lotusPaletteWidget .lotusRating1, .lotusSpritesOn .lotusPaletteWidget .lotusRating2, .lotusSpritesOn .lotusPaletteWidget .lotusRating3, .lotusSpritesOn .lotusPaletteWidget .lotusRating4, .lotusSpritesOn .lotusPaletteWidget .lotusRating5{background-image:url(../themeImages/lotusSprite-8bit.png)}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating0{background-position:0 -4367px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating1{background-position:0 -4469px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating2{background-position:0 -4673px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating3{background-position:0 -4877px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating4{background-position:0 -5081px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating5{background-position:0 -5285px}
+/*[/sprite]*/
+.lotusLargeWidgets .lotusPaletteWidget div.lotusIcon span{background-color:transparent}
+.lotusLargeWidgets .lotusPaletteWidget div.lotusIcon img{border-color:#000}
+.lotusPaletteContent{background-color:#37393c}
+.lotusPaletteContent .lotusPaging{background-color:transparent}
+.lotusPaletteContent .lotusPaging ul li, .lotusPaletteContent .lotusPaging div{color:#C1C0C0}
+.lotusPalette .lotusPaging input.lotusText{background-color:#222;color:#fff;border-color:#181818}
+.lotusPaletteContent .lotusPaging a, .lotusPaletteContent .lotusPaging a:hover, .lotusPaletteContent .lotusPaging a:focus{color:#fff}
+/*some additional options for widgets*/
+.lotusPalette .lotusAdded,  .lotusPalette .lotusAdded a{color:#0c0}/*to indicate that a widget has been added to the page*/
+.lotusPalette h4.lotusAdded,  .lotusPalette h4.lotusAdded a{color:#c1c0c0;}/*grays out header, if widget is already added to the page*/
+/***********************************************************/
+
+
+
+/*** S E A R C H ***/
+.lotusSearch .lotusSearchButton{color:#ffffff;background-image:url(../../images/iconSearch16.png)}
+.lotusSearch .lotusSearchButton:hover, .lotusSearch .lotusSearchButton:focus{/*border-color:#666666;*/}
+.lotusSearch .lotusText, .lotusSearch .dijitTextBox, .lotusSearch select{border-color:#7a7e81;background-color:#fff}
+.lotusSearch .lotusScope{color:#000;background-color:#fff;border-color:#7a7e81;background-image:url(../../images/btnDropDownPadding.png);}
+.lotusSearch .lotusScope:hover, .lotusSearch .lotusScope:focus{color:#fff;background-color:#3a8345;background-image:url(../../images/btnDropDownHoverPadding.png)}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusSearch .lotusSearchButton{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -3089px}
+
+.lotusSpritesOn .lotusSearch .lotusScope{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -893px}
+.lotusSpritesOn .lotusSearch .lotusScope:hover, .lotusSpritesOn .lotusSearch .lotusScope:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -981px}
+/*[/sprite]*/
+
+/***********************************************************/
+
+
+/*** S E A R C H   T A B ***/
+.lotusSearchTab{background-color:#fff;border-color:#ccc;}
+.lotusSearchTab:hover, .lotusTabExpanded{color:#414546}
+.tabExpanded{border-bottom-color:#fff;}
+.lotusSearchTab a, .lotusSearchTab a:visited{color:#000;background-image:url(../../images/searchArrowClosed.png);}
+.lotusSearchTab a:hover{background-image:url(../../images/searchArrowHover.png)}
+.lotusTabExpanded{border-bottom-color:#fff}
+.lotusTabExpanded a, .lotusTabExpanded a:visited{background-image:url(../../images/searchArrowOpen.png)}
+.lotusTabExpanded a:hover{background-image:url(../../images/searchArrowOpenHover.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusSearchTab a, .lotusSpritesOn .lotusSearchTab a:visited{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -5464px}
+.lotusSpritesOn .lotusSearchTab a:hover{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -5700px}
+.lotusSpritesOn .lotusTabExpanded a, .lotusTabExpanded a:visited{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -5936px}
+.lotusSpritesOn .lotusTabExpanded a:hover{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -6054px}
+/*[/sprite]*/
+.lotusSearchForm, .lotusSearchForm{background-color:#fff;border-color:#ccc;}
+.lotusSearchForm input, .lotusSearchForm input{color:#999}
+.lotusSearchForm option, .lotusSearchForm option{color:black}
+.lotusSearchForm .lotusText, .lotusSearchForm .lotusText{color:#999}
+.lotusSearchForm .lotusSearchButton{color:#ffffff;background-image:url(../../images/iconSearch16.png)}
+/***********************************************************/
+
+
+
+/*** S E C T I O N ***/
+/*this is the action menu icon*/
+.lotusSection h2 a.lotusActionMenu{background-image:url(../../images/iconActions.png)}
+.lotusSection h2 a.lotusActionMenu:hover, .lotusSection h2 a.lotusActionMenu:focus{background-image:url(../../images/iconActionsHover.png)}
+.lotusSectionBody{background-color:#fff}
+/*these twisties use lotusArrow sprite in baseTheme.css*/
+.lotusTwistyOpen{background-image:url(../../images/arrowOpenLight.png)}
+.lotusTwistyClosed{background-image:url(../../images/arrowClosedLight.png)}
+/*draggable sections*/
+.lotusSection .lotusDragHandle{background-image:url(../../images/dndHandle.png);}
+.lotusSection h2.lotusDraggable:hover .lotusDragHandle{visibility:visible}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusSection h2 a.lotusActionMenu{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -1921px}
+.lotusSpritesOn .lotusSection h2 a.lotusActionMenu:hover, .lotusSpritesOn .lotusSection h2 a.lotusActionMenu:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -2011px}
+.lotusSpritesOn .lotusTwistyOpen{background-position:0 -522px}
+.lotusSpritesOn .lotusTwistyClosed{background-position:0 -232px}
+.lotusSpritesOn .lotusSection .lotusDragHandle{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -1725px}
+/*[/sprite]*/
+/****************************************************************/
+
+
+
+/*** S O R T ***/
+.lotusSort .lotusAscending{background-image:url(../../images/sortAscending.png)}
+.lotusSort .lotusDescending{background-image:url(../../images/sortDescending.png)}
+.lotusSort a.lotusMoreSorts{background-image:url(../../images/btnDropDown.png);}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusSort .lotusAscending{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -6152px}
+.lotusSpritesOn .lotusSort .lotusDescending{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -6242px}
+.lotusSpritesOn .lotusSort a.lotusMoreSorts{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -764px}
+/*[/sprite]*/
+
+/****************************************************************/
+
+
+
+/*** T A B L E S ***/
+/*styles for displaying our data*/
+/*includes vertical tables, horizontal tabular display (summary, detail, and grid views) and highlighted information (announcements)*/
+.lotusVertTable th{color:#666;}
+.lotusTable{border-bottom-color:#e5e5e5;}
+.lotusTable td, .lotusTable th.lotusRowHeader, .lotusTable th.lotusSubHeader{border-top-color:#e5e5e5}
+.lotusTable .lotusLast td, .lotusTable .lotusLast th.lotusRowHeader{border-bottom-color:#e5e5e5}
+.lotusTable .lotusAltRow td, .lotusTable .lotusAltRow th.lotusRowHeader{background-color:#f8f8f8;}
+.lotusTable th.lotusAltCell, .lotusTable td.lotusAltCell{background-color:#f5f5f5;border-right-color:#fff;border-bottom-color:#fff}
+.lotusTable h4.lotusComplete, .lotusTable h4.lotusComplete a{color:#666}
+.lotusTable h5{color:#4f9815}
+.lotusTable caption, .portlet-table caption{color:#666;background-color:#f3f3f3;border-color:#e0e0e0;}
+.lotusTable .lotusSS{color:#666;}
+.lotusTable .lotusType{color:#666;}/*indicates entry types*/
+.lotusPrivate{background-image:url(../../images/iconPrivate.png)}/*private entry*/
+.lotusSecure{background-image:url(../../images/iconSecure.png)}/*secure entry*/
+/*[sprite]*/
+.lotusSpritesOn .lotusPrivate{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2767px}/*private entry*/
+.lotusSpritesOn .lotusSecure{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -3145px}/*secure entry*/
+/*[/sprite]*/
+.lotusTable .lotusPaging, .lotusCaption .lotusPaging, .portlet-table .lotusPaging{background-color:#f3f3f3}
+.lotusTable .lotusPaging td, .portlet-table .lotusPaging td{border-color:#e0e0e0;}
+/*announcements*/
+.lotusInfoTable{background-color:#f0f0f0;background-image:url("../../images/accentBkgd.png");border-color:#e3e3e3;}
+.lotusInfoTable h2 {color:#73BE59;}
+.lotusInfoTable .lotusClose{border-color:#b0b0b0}
+.lotusInfoTable .lotusClose:hover, .lotusInfoTable .lotusClose:focus{border-color:#918f8f}
+.lotusCaption .lotusPaging, .lotusCaption .lotusPaging td{background-color:transparent}
+.lotusCaption select{color:#666}
+/*[sprite]*/
+.lotusSpritesOn .lotusInfoTable{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -450px}
+/*[/sprite]*/
+/***********************************************************/
+
+
+
+/*** T A B S ***/
+.lotusTabContainer{border-bottom-color:#d9d9d9;}
+.lotusTabs li, .portlet-tab li{border-color:#e7e9ea;border-bottom-color:#d9d9d9;background-color:#e7e9ea}
+.lotusTabs li.lotusSelected, .portlet-tab li.lotusSelected{background-color:#fff;border-color:#d9d9d9;border-bottom-color:#fff;}
+.lotusTabs li.lotusSelected a, .lotusTabs li.lotusSelected a:visited, .portlet-tab li.lotusSelected a, .portlet-tab li.lotusSelected a:visited{color:#000;}
+/*a style that can be applied to a div that allows you to surround a tab content area with a border*/
+.lotusTabContent{border-color:#d9d9d9;}
+/***********************************************************/
+
+
+
+/*** T A G   C L O U D ***/
+a.lotusF5, a.lotusF5:visited{color:#1c5229}
+a.lotusF4, a.lotusF4:visited{color:#2b8e3b}
+a.lotusF3, a.lotusF3:visited{color:#44bb5a}
+a.lotusF2, a.lotusF2:visited{color:#64d873}
+a.lotusF1, a.lotusF1:visited{color:#8be893}
+/***********************************************************/
+
+
+
+/*** T R E E ***/
+/*the second class definition for each type of node accommodates a div version of the org chart*/
+.lotusOrgChart li a, .lotusOrgChartMiddle{background-image:url(../../images/orgParentNode.png);}
+.lotusOrgChart a.lotusTop, .lotusOrgChartTop{background-image:url(../../images/orgTopNode.png)}
+.lotusOrgChart .lotusBottom, .lotusOrgChartBottom{background-image:url(../../images/orgBottomNode.png)}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusOrgChart li a, .lotusOrgChartMiddle{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -3537px}
+.lotusSpritesOn .lotusOrgChart a.lotusTop, .lotusOrgChartTop{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -3765px}
+.lotusSpritesOn .lotusOrgChart .lotusBottom, .lotusOrgChartBottom{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -3304px}
+/*[/sprite]*/
+
+/***********************************************************/
+
+
+
+/****************************************/
+/*** V C A R D (P E R S O N   C A R D)***/
+.lotusVCard{background-color:#e0e0e0}
+.lotusVCard .lotusContainer{border-color:#c5c5c5;background-color:#f2f2f2}
+.lotusVCard a:link, .lotusVCard a:visited, .lotusVCard a:hover, .lotusVCard a:focus, a:active{color:#408253}
+.lotusVCard .lotusAppLinks td{background-color:#fff;background-image:url(../../images/titleBkgd.png);border-color:#c5c5c5;}
+/*the more arrow, for when there is a second row of application links*/
+.lotusVCard .lotusMore{background-image:url(../../images/iconMoreAppsClosed.png);}
+.lotusVCard .lotusMoreExpanded{background-image:url(../../images/iconMoreAppsOpen.png)}
+/*lotusDetails is the detail area of the card that contains all info for the person*/
+.lotusVCard .lotusDetails{border-top-color:#fff;background-color:#f2f2f2}
+.lotusVCard .lotusPhoto{border-color:#bdc4ca;}
+/*lotusVCardActions are actions you can perform on this person, from the person card*/
+.lotusVCard .lotusPersonActions{background-color:#fff;border-top-color:#c5c5c5}
+.lotusVCard .lotusPersonActions .lotusInlinelist li{border-left-color:#105cb6}
+.lotusVCard .lotusActionMenu a, .lotusActionMenu a:visited{color:#000}
+.lotusVCard .lotusActionMenu a:hover, .lotusVCard .lotusActionMenu a:focus, .lotusVCard .lotusActionMenu a:active{color:#fff !important;background-color:#3a8345;}
+/*lotusComments in the person card contains status information for the person*/
+.lotusVCard .lotusDetails .lotusCommentHeader{background-image:url(../../images/commentPointPersonCard.png);}
+.lotusVCard .lotusDetails .lotusCommentBody{color:#666;background-color:#fff;border-color:#a0acba;}
+/*adjustments for an inline version of the card*/
+.lotusInlineVCard .lotusEmail{border-color:#c5c5c5;}
+.lotusPivotNavToggle a{background-color:#d8d8e0;background-image:url(../../images/vCardClosed.png)}
+.lotusPivotNavOpen .lotusPivotNavToggle a{background-image:url(../../images/vCardOpen.png)}
+/***********************************************************/
+
+/*[sprite]*/
+.lotusSpritesOn .lotusVCard .lotusAppLinks td{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -900px}
+
+.lotusSpritesOn .lotusVCard .lotusMore{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:18px -2595px}
+.lotusSpritesOn .lotusVCard .lotusMoreExpanded{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:18px -2707px}
+
+.lotusSpritesOn .lotusVCard .lotusDetails .lotusCommentHeader{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -1510px}
+.lotusSpritesOn .lotusPivotNavToggle a{background-image:url(../themeImages/lotusSprite-8bit.png);background-position: 3px -6276px}
+.lotusSpritesOn .lotusPivotNavOpen .lotusPivotNavToggle a{background-image:url(../themeImages/lotusSprite-8bit.png);background-position: 0 -6373px}
+/*[/sprite]*/
+
+/*** V C A R D   H O V E R ***/
+.lotusVCardHover{border-color:#aeaeae;background-color:#fff79a;background-image:url(../../images/iconProfiles.png)}
+.lotusVCardHover:hover, .lotusVCardHover:focus{text-decoration:none}
+/*[sprite]*/
+.lotusSpritesOn .lotusVCardHover{background-image:url(../themeImages/lotusSprite-8bit.png);background-position: 5px -2873px}
+/*[/sprite]*/
+
+/***********************************************************/
+
+
+
+/*** W I D G E T ***/
+.lotusWidget{border-color:#E8ECEE;}
+.lotusWidget h2{background-color:#E8ECEE;background-image:url(../../images/titleBkgd.png);border-color:#E8ECEE;}
+.lotusWidget .lotusWidgetBody h2 {background-image:none}
+.lotusWidget h3{color:#444;border-bottom-color:#e8ecee}
+.lotusWidget .lotusWidgetFooter{border-top-color:#e8ecee}
+.lotusWidget .lotusPaging{background-color:transparent}/*paging controls within a widget*/
+/*action menu icon*/
+.lotusWidget h2 a.lotusActionMenu{background-image:url(../../images/iconActions.png)}
+.lotusWidget h2 a.lotusActionMenu:hover, .lotusWidget h2 a.lotusActionMenu:focus{background-image:url(../../images/iconActionsHover.png)}
+/*add any additional buttons you need to expose here*/
+
+/*[sprite]*/
+.lotusSpritesOn .lotusWidget h2{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -900px}
+.lotusSpritesOn .lotusWidget h2 a.lotusActionMenu{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -1921px}
+.lotusSpritesOn .lotusWidget h2 a.lotusActionMenu:hover, .lotusSpritesOn .lotusWidget h2 a.lotusActionMenu:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -2011px}
+/*[/sprite]*/
+/***********************************************************/
+
+
+/*** W I D G E T ***/
+.lotusWidget2{border-color:#E8ECEE;}
+.lotusWidget2 h2{background-color:#E8ECEE;background-image:url(../../images/titleBkgd.png);border-color:#E8ECEE;}
+.lotusWidget2 .lotusWidgetBody h2 {background-image:none}
+.lotusWidget2 h3{color:#444;border-bottom-color:#e8ecee}
+.lotusWidget2 .lotusWidgetFooter{border-top-color:#e8ecee}
+.lotusWidget2 .lotusPaging{background-color:transparent}/*paging controls within a widget*/
+/*action menu icon*/
+.lotusWidget2 h2 a.lotusActionMenu{background-image:url(../../images/iconActions.png)}
+.lotusWidget2 h2 a.lotusActionMenu:hover, .lotusWidget h2 a.lotusActionMenu:focus{background-image:url(../../images/iconActionsHover.png)}
+/*add any additional buttons you need to expose here*/
+
+/*[sprite]*/
+.lotusSpritesOn .lotusWidget2 h2{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -900px}
+.lotusSpritesOn .lotusWidget2 h2 a.lotusActionMenu{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -1921px}
+.lotusSpritesOn .lotusWidget2 h2 a.lotusActionMenu:hover, .lotusSpritesOn .lotusWidget2 h2 a.lotusActionMenu:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -2011px}
+/*[/sprite]*/
+/***********************************************************/
+
+

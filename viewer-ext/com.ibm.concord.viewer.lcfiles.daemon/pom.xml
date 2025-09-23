@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>viewer-ext</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.concord.viewer.lcfiles.daemon</artifactId>
+  <name>com.ibm.concord.viewer.lcfiles.daemon - jar</name>
+  <packaging>jar</packaging>
+
+  <dependencies>    
+	<dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+    </dependency>	
+	<dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>lc.customAuthClient</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>lc.events.spi</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>lc.events.internal</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm.websphere.plugins</groupId>
+      <artifactId>com.ibm.ws.admin.core</artifactId>
+    </dependency>  
+  </dependencies>
+</project>

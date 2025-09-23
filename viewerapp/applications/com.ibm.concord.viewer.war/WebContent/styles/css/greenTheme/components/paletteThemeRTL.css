@@ -1,0 +1,66 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for the customization palette
+companion file is paletteTheme.css*/
+/*** P A L E T T E ***/
+/*this is the palette that opens under the place bar to allow users to customize the UI */
+.lotusPalette{background-color:#7a7f84;border-bottom-color:#676b6f}
+.lotusPalette .lotusLoading{background-image:url(../../images/loadingDark.gif)}
+.lotusPaletteHeader{background-color:#62656a;color:#fff;border-top-color:#62656a;border-bottom-color:#777b81}
+.lotusPaletteHeader h2, .lotusPaletteHeader a, .lotusPaletteHeader a, .lotusPaletteHeader a:hover, .lotusPaletteHeader a:focus, .lotusPaletteHeader .lotusTabs li a:hover, .lotusPaletteHeader .lotusTabs li a:focus{color:#fff}
+.lotusPaletteHeader .lotusTabs li, .lotusPaletteHeader .lotusTabs li.lotusSelected{background-color:transparent}
+.lotusPaletteHeader .lotusTabs li.lotusSelected a, .lotusPaletteHeader .lotusTabs li.lotusSelected a:visited{color:#fff;background-color:#408253;}
+.lotusPaletteBody{background-color:#414648;border-top-color:#222;border-bottom-color:#222;}
+.lotusPaletteNav{background-color:transparent;background-image:url(../../images/paletteNavShadow_rtl.png)}
+.lotusPaletteNav h3{color:#fff}
+.lotusPaletteNav h3 img{background-image:url(../../images/iconArrowBack16_rtl.png);color:#fff}
+/*[sprite]*/
+.lotusSpritesOn .lotusPaletteNav h3 .lotusBtnImg img{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2219px}
+/*[/sprite]*/
+.lotusPalette .lotusSearch input.lotusText{background-color:#fff;color:#222;border-color:#fff}
+.lotusPalette .lotusMenu{background-color:#232426;}
+.lotusPalette .lotusMenu li a, .lotusPalette .lotusMenu li a:visited, .lotusPalette .lotusMenu li a:hover, .lotusPalette .lotusMenu li a:focus{color:#fff;background-color:transparent;}
+.lotusPalette .lotusMenu li.lotusSelected, .lotusPalette .lotusMenu li.lotusSelected a, .lotusPalette .lotusMenu li.lotusSelected a:visited, .lotusPalette .lotusMenu li.lotusSelected a:active{background-color:#408253}
+.lotusPalette .lotusMenu li.lotusMore a{background-image:url(../../images/paletteMoreArrow_rtl.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusPalette .lotusMenu li.lotusMore a{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:6px -4284px}
+/*[/sprite]*/
+.lotusPaletteWidget{border-color:#222;background-color:#4d5054;color:#fff}
+.lotusPaletteWidgets .lotusSelected, .lotusPaletteWidget:hover, .lotusPaletteWidget:focus{border-color:#fff}
+.lotusPaletteWidget a, .lotusPaletteWidget a:hover, .lotusPaletteWidget a:focus{color:#fff}
+.lotusPaletteWidget a.lotusIcon{background-image:url(../../images/paletteAdd.png)}
+.lotusPaletteWidget a.lotusIcon:hover, .lotusPaletteWidget a.lotusIcon:focus{background-image:url(../../images/paletteAddHover.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusPaletteWidget a.lotusIcon{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -4033px}
+.lotusSpritesOn .lotusPaletteWidget a.lotusIcon:hover, .lotusSpritesOn .lotusPaletteWidget a.lotusIcon:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -4135px}
+/*[/sprite]*/
+.lotusPaletteWidget div.lotusIcon span{background-color:transparent}
+.lotusPaletteWidget .lotusRating0{background-image:url(../../images/paletteRating0.png)}
+.lotusPaletteWidget .lotusRating1{background-image:url(../../images/paletteRating1_rtl.png)}
+.lotusPaletteWidget .lotusRating2{background-image:url(../../images/paletteRating2_rtl.png)}
+.lotusPaletteWidget .lotusRating3{background-image:url(../../images/paletteRating3_rtl.png)}
+.lotusPaletteWidget .lotusRating4{background-image:url(../../images/paletteRating4_rtl.png)}
+.lotusPaletteWidget .lotusRating5{background-image:url(../../images/paletteRating5.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusPaletteWidget .lotusRating0, .lotusSpritesOn .lotusPaletteWidget .lotusRating1, .lotusSpritesOn .lotusPaletteWidget .lotusRating2, .lotusSpritesOn .lotusPaletteWidget .lotusRating3, .lotusSpritesOn .lotusPaletteWidget .lotusRating4, .lotusSpritesOn .lotusPaletteWidget .lotusRating5{background-image:url(../themeImages/lotusSprite-8bit.png)}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating0{background-position:100% -4418px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating1{background-position:100% -4622px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating2{background-position:100% -4826px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating3{background-position:100% -5030px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating4{background-position:100% -5234px}
+.lotusSpritesOn .lotusPaletteWidget .lotusRating5{background-position:100% -5336px}
+/*[/sprite]*/
+.lotusLargeWidgets .lotusPaletteWidget div.lotusIcon span{background-color:transparent}
+.lotusLargeWidgets .lotusPaletteWidget div.lotusIcon img{border-color:#000}
+.lotusPaletteContent{background-color:#37393c}
+.lotusPaletteContent .lotusPaging{background-color:transparent}
+.lotusPaletteContent .lotusPaging ul li, .lotusPaletteContent .lotusPaging div{color:#C1C0C0}
+.lotusPalette .lotusPaging input.lotusText{background-color:#222;color:#fff;border-color:#181818}
+.lotusPaletteContent .lotusPaging a, .lotusPaletteContent .lotusPaging a:hover, .lotusPaletteContent .lotusPaging a:focus{color:#fff}
+/*some additional options for widgets*/
+.lotusPalette .lotusAdded,  .lotusPalette .lotusAdded a{color:#0c0}/*to indicate that a widget has been added to the page*/
+.lotusPalette h4.lotusAdded,  .lotusPalette h4.lotusAdded a{color:#c1c0c0;}/*grays out header, if widget is already added to the page*/
+/***********************************************************/
+

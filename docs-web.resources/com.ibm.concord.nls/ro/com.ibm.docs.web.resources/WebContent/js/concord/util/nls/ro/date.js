@@ -1,0 +1,22 @@
+({
+	question:"Întrebare",
+	issue:"Problemă",
+	toDo:"De făcut",
+	comment:"Comentariu",
+	done:"Gata",
+	jan:"Ian",
+	feb:"Feb",
+	mar:"Mar",
+	apr:"Apr",
+	may:"Mai",
+	june:"Iun",
+	july:"Iul",
+	aug:"Aug",
+	sept:"Sept",
+	oct:"Oct",
+	nov:"Nov",
+	dec:"Dec",
+	pm:"PM",
+	am:"AM",
+	assignTo:"Alocare la: "
+})

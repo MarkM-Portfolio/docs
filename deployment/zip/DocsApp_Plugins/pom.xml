@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>zip</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>DocsApp_Plugins</artifactId>
+  <name>DocsApp_Plugins - zip</name>
+  <packaging>pom</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <!-- Build DocsApp_Plugins.zip -->
+          <execution>
+            <id>Build DocsApp_Plugins.zip</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_DocsApp_Plugins.zip.xml</descriptor>
+              </descriptors>
+              <finalName>DocsApp_Plugins</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>        
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>    
+</project>

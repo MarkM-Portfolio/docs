@@ -1,0 +1,5 @@
+({
+	TRUE: "„TAČNO“",
+	FALSE: "„NETAČNO“"
+})
+

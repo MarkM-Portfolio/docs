@@ -1,0 +1,26 @@
+({
+	labelPrintConfig: "Za najbolje rezultate u štampanju, podesite podešavanje stranice vašeg pretraživača na sledeću konfiguraciju:",
+	labelConfigPageSize: "Veličina stranice: ${0}",
+	labelConfigOrientation: "Orijentacija: ${0}",
+	labelConfigHeader: "Heder: prazno",
+	labelConfigFooter: "Futer: prazno",
+	labelConfigMargins: "Margine: ",
+	labelConfigMarginTop: "Vrh: ${0}${1}",
+	labelConfigMarginBottom: "Dno: ${0}${1}",
+	labelConfigMarginLeft: "Levo: ${0}${1}",
+	labelConfigMarginRight: "Desno: ${0}${1}",
+	labelPrintContinue: "Nakon podešavanja pretraživača, kliknite OK da nastavite štampanje fajla.",
+	labelMm: "milimetara",
+	labelInch: "inča",
+	labelPortrait: "Portret",
+	labelPageA4: "A4",
+	labelLetter: "Pismo",
+	labelLandscape: "Pejsaž",
+	titlePrintConfig: "Podešavanja štampanja",
+	titlePrepare: "Priprema za štampu",
+	msgPrepare: "Fajl se priprema za štampu. Priprema može potrajati.",
+	errPrepare: "Dogodila se greška tokom pripreme podataka.\nŽelite da pokušate ponovo?",
+	titleErr: "Greška",
+	btnRetry: "Pokušaj ponovo"
+})
+

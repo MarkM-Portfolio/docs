@@ -1,0 +1,310 @@
+.line::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-1px
+}
+.line {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.arrow::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-19px;
+}
+.arrow {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.doublearrow::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-37px;
+}
+.doublearrow {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.isoscelestriangle::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-55px;
+}
+.isoscelestriangle {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.rectangle::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-73px;
+}
+.rectangle {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.diamond::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-91px
+}
+.diamond {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.hexagon::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-109px;
+}
+.hexagon {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.ellipse::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-127px;
+}
+.ellipse {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.roundedrectangle::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-145px;
+}
+.roundedrectangle {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.rectangularcallout::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-163px;
+}
+.rectangularcallout {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.fivepointedstar::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-181px;
+}
+.fivepointedstar {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.rttriangle::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-199px;
+}
+.rttriangle {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.trapezoid::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-217px;
+}
+.trapezoid {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.rightarrow::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-235px;
+}
+.rightarrow {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.leftrightarrow::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-253px;
+}
+.leftrightarrow {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.wedgeellipsecallout::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-271px;
+}
+.wedgeellipsecallout {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.cube::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-289px;
+}
+.cube {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.flowchartmagneticdisk::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-307px;
+}
+.flowchartmagneticdisk {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.chevron::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-325px;
+}
+.chevron {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+.elbowconnector::before {
+	content:url('images/shapes.png');
+	position:relative;
+	top:-343px;
+}
+.elbowconnector {
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+
+.shapeKindsDesc {
+	padding: 4px 0 4px 8px;
+	text-align: left;
+	border-left: 1px solid #cdcdcd;
+}
+/* set pointer-events: none to svg container node to make sure the container don't reponse mouse point event
+ only visible svg path receive mouse events */
+.shape_svg {
+  pointer-events: none;
+}
+.shape-visible-events {
+  pointer-events: visiblePainted;
+}
+/*For text node and comments node under shape, need get mouse point event*/
+.editor .shape_svg .draw_shape_classes span, .editor .shape_svg .box-comments {
+  pointer-events: all;
+}
+/*For IE pointer-event has bug for span, need add pointer-event to div*/
+.dj-ie .editor .shape_svg .draw_shape_classes {
+  pointer-events: all;
+}
+
+.solid
+{
+	background-position:0 -3.5px;
+}
+
+.dash
+{
+	background-position:0 -21px;
+}
+
+.sysDash
+{
+	background-position:0 -12px;
+}
+
+.sysDot
+{
+	background-position:0 -31px;
+}
+
+.dashDot
+{
+	background-position:0 -40px;
+}
+
+.lgDash
+{
+	background-position:0 -49px;
+}
+
+.head_none-tail_none
+{
+	font-weight: normal!important;
+	padding-left: 0px!important;
+	color: #747474;
+}
+
+.head_arrow-tail_none
+{
+	background-position:0 -83px;
+}
+
+.head_none-tail_arrow
+{
+	background-position:0 -65px;
+}
+
+.head_arrow-tail_arrow
+{
+	background-position:0 -74px;
+	
+}
+
+.head_triangle-tail_none
+{
+	background-position:0 -101px;
+}
+
+.head_none-tail_triangle
+{
+	background-position:0 -92px;
+}
+
+.head_triangle-tail_triangle
+{
+	background-position:0 -110px;
+}
+
+.head_oval-tail_triangle
+{
+	background-position:0 -156px;
+}
+
+.head_diamond-tail_triangle
+{
+	background-position:0 -119px;
+}
+
+.head_diamond-tail_diamond
+{
+	background-position:0 -128px;
+}
+
+.head_oval-tail_oval
+{
+	background-position:0 -136px;
+}

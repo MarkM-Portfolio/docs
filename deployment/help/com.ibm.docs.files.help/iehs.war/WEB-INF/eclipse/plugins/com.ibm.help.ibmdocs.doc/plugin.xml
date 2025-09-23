@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2020                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<?eclipse version="3.0"?><plugin id="com.ibm.help.ibmdocs.doc" name="HCL Docs" provider-name="IBM"
+        version="1.0.5">
+   <extension point="org.eclipse.help.toc">
+      <toc file="toptoc.xml" primary="true"/>
+      <toc file="toc_document.xml"/>
+      <toc file="toc_spreadsheet.xml"/>
+      <toc file="toc_presentation.xml"/>
+   </extension>
+</plugin>

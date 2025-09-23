@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prechecks productName="HCL Docs Conversion">
+	<precheck type="ConfigurablePrecheck">
+		<condition name="software_mode" value="Premise" expectResult="true"/>
+		<parameter name="checkingParameter" value="was_install_root"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<condition name="software_mode" value="Premise" expectResult="true"/>
+		<parameter name="checkingParameter" value="conversion_install_root"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<condition name="software_mode" value="Premise" expectResult="true"/>
+		<condition name="docs_shared_storage_type" value="local" expectResult="true"/>
+		<parameter name="checkingParameter" value="docs_shared_storage_local_path"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<condition name="software_mode" value="Premise" expectResult="true"/>
+		<condition name="docs_shared_storage_type" value="local" expectResult="false"/>
+		<parameter name="checkingParameter" value="docs_shared_storage_local_path"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsDrive" isHungCase="false" expectResult="true"/>
+		<precheck type="ConfigurablePrecheck">
+			<parameter name="checkingParameter" value="docs_shared_storage_remote_server"/>
+			<precheck type="ConfigurablePrecheck">
+				<parameter name="checkingParameter" value="docs_shared_storage_remote_path"/>
+				<task type="CheckNFSSharing" isHungCase="false" expectResult="true"/>
+			</precheck>
+		</precheck>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<condition name="software_mode" value="Premise" expectResult="true"/>
+		<condition name="viewer_shared_storage_type" value="local" expectResult="true"/>
+		<parameter name="checkingParameter" value="viewer_shared_storage_local_path"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<condition name="software_mode" value="Premise" expectResult="true"/>
+		<condition name="viewer_shared_storage_type" value="local" expectResult="false"/>
+		<parameter name="checkingParameter" value="viewer_shared_storage_local_path"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsDrive" isHungCase="false" expectResult="true"/>
+		<precheck type="ConfigurablePrecheck">
+			<parameter name="checkingParameter" value="viewer_shared_storage_remote_server"/>
+			<precheck type="ConfigurablePrecheck">
+				<parameter name="checkingParameter" value="viewer_shared_storage_remote_path"/>
+				<task type="CheckNFSSharing" isHungCase="false" expectResult="true"/>
+			</precheck>
+		</precheck>
+	</precheck>
+</prechecks>

@@ -1,0 +1,147 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2020                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<project name="com.ibm.symphony.conversion.service.rest.was.war" basedir="." default="deploy">
+	<property name="src.dir" value="src"/>
+	<property name="webcontent.dir" value="WebContent"/>
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${webinf.dir}/classes"/>
+	<property name="war.dir" value="${bin.dir}/war"/>
+	<property name="ear.dir" value="../com.ibm.symphony.conversion.service.rest.was.ear"/>
+
+	<path id="project.classpath">
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.service.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.service.rest.was.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.service.common.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.conversionlib.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.csv2json.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.doc2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.doc2odt.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.doc2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.docx2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.docx2odt.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.docx2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.html2doc.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.html2odp.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.html2odt.jar"/>
+		<!--pathelement path="${build.home}/com.ibm.symphony.conversion.converter.html2pdf.jar"/-->
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.html2ppt.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.html2pptx.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.json2ods.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.json2ots.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.json2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.json2xls.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.json2xlsx.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.metafile.common.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.libre.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odf2image.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odp.common.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odp2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odp2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odp2ppt.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ods.common.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ods2json.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ods2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ods2xls.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odsjson2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odt2doc.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odt2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odt2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ots2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ots2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ott2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ppt2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ppt2odp.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.ppt2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.pptx2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.pptx2odp.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.pptx2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.pptx2ppt.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.svg2png.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.svm2png.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.sym.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.txt2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.txt2odt.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.wmf2png.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.xls2html.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.xls2json.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.xls2ods.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.xls2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.xlsx2json.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.xlsx2ods.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.xlsx2pdf.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.odt2json.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.json2odt.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.doc2json.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.json2doc.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.docx2json.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.json2docx.jar"/>
+		<pathelement path="${build.home}/com.ibm.symphony.conversion.converter.txt2json.jar"/>
+		
+	</path>
+
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+	</path>
+
+	<target name="Clean" >
+		<delete dir="${bin.dir}"/>
+	</target>
+
+	<target name="compile" depends="Clean">
+		<mkdir dir="${classes.dir}"/>
+		<!-- no class to compile currently
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath"/>
+			<classpath refid="lib.classpath"/>
+			<classpath refid="was.classpath"/>
+		</javac>
+		-->
+	</target>
+
+	<target name="war" depends="compile">
+		<echo file="${webcontent.dir}/version.txt">{
+	"product_name" : "HCL Conversion",
+	"build_version" : "${build.version}" ,
+	"build_timestamp" : "${build.timestamp}"
+}
+		</echo>
+  		<pathconvert property="manifest.project.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+				</chainedmapper>
+			</mapper>
+			<path refid="project.classpath"/>
+  		</pathconvert>
+		<mkdir dir="${war.dir}"/>
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${webcontent.dir}/">
+				<exclude name="**/*.jar"/>
+			</fileset>
+			<manifest>
+				<attribute name="Created-By" value="IBM"/>
+				<attribute name="Class-Path" value="${manifest.project.classpath}"/>
+			</manifest>
+		</war>
+	</target>
+
+	<target name="deploy" depends="war">
+		<copy todir="${build.home}">
+			<fileset dir="${war.dir}"/>
+		</copy>
+    </target>
+
+</project>

@@ -1,0 +1,15 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for breadcrumbs
+companion file is breadcrumbs.css*/
+/*** B R E A D C R U M B S ***/
+.lotusBreadcrumbs .lotusDivider{background-image:url(../../images/arrowClosedLight_rtl.png)}
+.lotusBreadcrumbs .lotusDivider:hover, .lotusBreadcrumbs .lotusDivider:focus, .lotusBreadcrumbs .lotusDivider:active{background-image:url(../../images/arrowClosedDark_rtl.png);}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusBreadcrumbs .lotusDivider{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -290px}
+.lotusSpritesOn .lotusBreadcrumbs .lotusDivider:hover, .lotusSpritesOn .lotusBreadcrumbs .lotusDivider:focus, .lotusSpritesOn .lotusBreadcrumbs .lotusDivider:active{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -174px}
+/*[/sprite]*/
+/***********************************************************/

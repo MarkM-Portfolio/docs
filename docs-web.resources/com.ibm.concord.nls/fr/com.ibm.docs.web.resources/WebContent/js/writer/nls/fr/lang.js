@@ -1,0 +1,75 @@
+({
+	LOADING: "Chargement du contenu en cours.",
+	LOAD_FINISHED: "Le chargement du contenu est terminé.",
+	PAGE_SETUP: "Mise en page",
+	NOTE_INVALIDACTION_FOOTNOTE:"Ce n'est pas une action valide pour une note de bas de page.",
+	NOTE_INVALIDACTION_ENDNOTE:"Ce n'est pas une action valide pour une note de fin.",
+	PAGENUMBER_OF_TOTALNUMBER:"Page ${0} / ${1}", //page 1 of N
+	PAGE_NUMBER: "Page : ${pageNumber} / ${totalPageNumber}",
+	toc:{
+		title : "Table des matières",
+		update: "Mettre à jour",
+		del: "Supprimer",
+		toc: "Table des matières",
+		linkTip: "Cliquez en appuyant sur Ctrl pour naviguer",
+		pageNumber: "Numéro de page uniquement",
+		entireTable: "Tableau entier"
+	},
+	link:{
+		addlink:"Ajouter un lien",
+		gotolink: "Ouvrir le lien",
+		unlink	: "Retirer le lien",
+		editlink: "Editer le lien",
+		internalLink: "Lien interne",
+		ctrlLink: "Ctrl+clic pour aller au lien",
+		cannotOpen: " ne peut pas être ouvert depuis ${productName}."
+	},
+	field:{
+		update: "Mettre à jour la zone"
+	},
+	insertTime:"Insérer l'heure",
+	insertDate:"Insérer la date",
+	selectDate:"Sélectionner la date",
+	selectTime:"Sélectionner l'heure",
+	acc_blank: "vide",// when selection is nothing but space char and empty paragraph
+	acc_space: "espace",// string read out when the cursor is before one space char
+	acc_inLink: "dans le lien ",
+	acc_inField: "dans la zone ",
+	acc_selected :" sélectionné(e)",
+	acc_inTable: "dans la ligne de tableau ${0} la colonne ${1} ",
+	acc_imageSelected: "image sélectionnée",
+	acc_canvasSelected:"forme sélectionnée",
+	acc_textboxSelected:"zone de texte sélectionnée",
+	ACC_TABLE_TABLESIZE:"Vous avez sélectionné ${0} lignes, ${1} colonnes",
+	ACC_TABLE_MAXSIZE:" La taille maximale de tableau prise en charge est de 20*20",
+	ACC_headerFooterMode: "Mode d'édition d'en-tête et de pied de page",
+	ACC_EditorMode: "Mode d'édition de l'éditeur",
+	ACC_FootnotesMode: "Mode d'édition des notes de bas de page",
+	ACC_EndnotesMode: "Mode d'édition des notes de fin",
+	ACC_uniformTable: "Une nouvelle ligne est ajoutée",
+	Acc_column :"colonne ${0}",
+	acc_page :"page ${0}",
+	acc_section:"section ${0}",
+	acc_spellWarn:"L'orthographe est incorrecte",
+	acc_outTable:"Hors du tableau",
+	acc_link :"Lien",
+	acc_field :"Zone",
+	acc_footnote:"Note de bas de page",
+	acc_endnote:"Note de fin",	
+	acc_editor:"Edition par ${0}",
+	tablePropertyTitle: "Propriétés du tableau",
+	headerTitle:"En-tête",
+	footerTitle:"Pied de page",
+	firstheaderTitle:"En-tête de première page",
+	firstfooterTitle:"Pied de page de première page",
+	evenheaderTitle:"En-tête de page paire",
+	evenfooterTitle:"Pied de page de page paire",
+	oddheaderTitle:"En-tête de page impaire",
+	oddfooterTitle:"Pied de page de page impaire",
+	showTableBorder:"Afficher les contours du tableau",
+	list_none: "Sans",
+	SET_NUMBERING_VALUE: "Définir la valeur de numérotation...",
+	BIDI_CONTENT_EDITING: "Ce document comprend du contenu bidirectionnel. Pour travailler correctement avec ce document, activez la prise en charge bidirectionnelle dans vos préférences HCL Connections."
+})
+	
+

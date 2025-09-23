@@ -1,0 +1,70 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* Editor
+ * Styling Editor means styling the Editor inside iframe container (dijitEditorIFrameContainer)
+ * 1. Editor iframe container (default styling):
+ * 		.dijitEditorIFrameContainer - for background-color, border, padding
+ * 2. hovered Editor iframe container (ie, mouse hover on editor)
+ * 		.dijitEditorHover .dijitEditorIFrameContainer/dijitEditorIFrame - for background-color, border
+ * 3. focused Editor iframe container (ie, mouse focus on the editor pane)
+ * 		.dijitEditorFocused .dijitEditorIFrameContainer/dijitEditorIFrame - for background-color, border
+ * 3. disabled Editor iframe container
+ * 		.dijitEditorDisabled - for background-color, border
+ */
+.oneui30 .dijitEditorIFrameContainer {
+    padding: 5px 10px;
+}
+
+.oneui30 .dijitEditorIFrame {
+    background-color: #fff;
+}
+
+.oneui30 .dijitEditor {
+    border: 1px solid #aaa;
+}
+
+.oneui30 .dijitEditor .dijitButton, .oneui30 .dijitEditor .dijitButton .dijitButtonNode, .oneui30 .dijitEditor .dijitButtonDisabled .dijitButtonNode, .oneui30 .dijitEditor .dijitDropDownButtonDisabled .dijitButtonNode, .oneui30 .dijitEditor .dijitToggleButton .dijitButtonNode, .oneui30 .dijitEditor .dijitDropDownButton .dijitButtonNode, .oneui30 .dijitEditor .dijitComboButtonDisabled .dijitButtonNode, .oneui30 .dijitEditor .dijitToggleButtonDisabled .dijitButtonNode {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+.oneui30 .dijitEditor .dijitEditorIFrameContainer {
+    background-color: #fff;
+}
+
+.dj_ie6 .oneui30 .dijitEditor .dijitEditorIFrameContainer {
+    background-image: none;
+}
+
+.oneui30 .dijitEditorFocused .dijitEditorIFrameContainer, .oneui30 .dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame {
+    background-color: #fff;
+}
+
+/* Disabled */
+.oneui30 .dijitEditorDisabled {
+    border: 1px solid #ccc;
+    color: #666;
+    background-color: #eee !important;
+}
+
+.oneui30 .dijitEditorDisabled .dijitEditorIFrameContainer, claro .dijitEditorDisabled .dijitEditorIFrameContainer .dijitEditorIFrame {
+    background-color: #eee !important;
+}
+
+.oneui30 .dijitDisabled .dijitEditorIFrame, claro .dijitDisabled .dijitEditorIFrameContainer {
+    background-color: #eee;
+    background-image: none;
+}
+
+.oneui30 .dijitEditorIcon, .oneui30 .dijitDisabled .dijitEditorIcon {
+    background-image: url('images/editorIcons.png');
+}
+
+.oneui30 .dijitDisabled .dijitEditorIcon {
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    zoom: 1;
+}

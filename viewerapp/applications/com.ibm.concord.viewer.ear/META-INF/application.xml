@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
+	<display-name>ViewerApp</display-name>
+	<module id="EjbModule_1322547920234">
+		<ejb>com.ibm.concord.viewer.admin.jar</ejb>
+	</module>
+	<module id="WebModule_1322551796046">
+		<web>
+			<web-uri>com.ibm.concord.viewer.war.war</web-uri>
+			<context-root>viewer</context-root>
+		</web>
+	</module>
+	<security-role id="SecurityRole_1397120548074">
+		<description>
+		Viewer entitled user</description>
+		<role-name>entitledUser</role-name>
+	</security-role>
+	<security-role>
+		<description>
+		Viewer administrative role used by s2s call</description>
+		<role-name>viewerAdmin</role-name>
+	</security-role>
+</application>

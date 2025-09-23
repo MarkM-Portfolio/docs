@@ -1,0 +1,18 @@
+; Here is a comment statement.
+[TCPBEUI]
+ Type = Protocol
+ Title = "Here is the translatable title for this NIF file"
+ Version = 1.0
+ Drivername = tcpbeui$
+[NBAPI]
+DISPLAY = "Enable NetBIOS application support"
+Type = String
+StrLength = 3
+Default = "YES"
+Set = "YES","NO"
+Nlsset = "YES","NO"
+Scope = global
+Optional = yes
+Editable = yes
+Help = "This parameter specifies whether NetBIOS applications will be allowed
+        to run over this protocol."

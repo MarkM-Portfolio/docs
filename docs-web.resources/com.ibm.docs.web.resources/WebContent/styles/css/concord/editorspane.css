@@ -1,0 +1,401 @@
+.session_offline{
+}
+
+.session_online{
+}
+
+.key_navigating_dark {
+	outline: dotted !important;
+	outline-width: thin !important;
+	outline-offset: -1px !important;
+}
+.key_navigating_light {
+	outline: dotted !important;
+	outline-width: thin !important;
+	outline-color: white !important;
+	outline-offset: -4px !important;
+}
+
+.session_offline img {
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	outline: none;
+}
+
+.session_online img {
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	outline: none;
+}
+
+.session_offline .initial_name {
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	position: absolute;
+	left: 0px; 
+	top: 0px;
+	outline: none;
+}
+
+.session_online .initial_name {
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	position: absolute;
+	left: 0px; 
+	top: 0px;
+	outline: none;
+}
+
+.initial_name .initial_name_bg {
+	opacity: 0.5; 
+	filter:alpha(opacity=50);
+	width: 32px; 
+	height: 32px; 
+	align-self: center;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.initial_name .initial_name_fg {
+	width: 32px; 
+	height: 32px; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px;
+}
+
+.editorslist .initial_name .initial_name_ch {
+    cursor: pointer;
+}
+
+.initial_name .initial_name_ch {
+	width: 32px; 
+	text-align: center; 
+	padding: 0px; 
+	align-self: center; 
+	font-size: 12pt; 
+	color: #000000;
+	height: 32px; 
+	line-height: 32px;
+	margin: 0px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+
+.editor_pane {
+	max-height: 76px;
+    min-height: 41px;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    margin: 0px;
+    
+    padding-top: 20px !important;
+}
+.editor_pane .editorslist {
+
+	max-height: 76px;
+    min-height: 41px;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    position: relative;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.editor_pane .editorslist .icon-menu {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 26px;
+}
+.editor_pane .editorslist ul {
+    list-style: none outside none;
+    padding: 0px;
+    width: 100%;
+    
+    margin: 0px;
+}
+.editor_pane.dijitContentPaneRtl .editorslist ul {
+    display: flex;
+}
+
+.editor_pane.dijitContentPaneRtl .editorslist {
+    float: right;
+}
+
+.editor_pane .editorslist .menu_drop_iconXXX {
+    background-color: #E2EEFF;
+    border: 1px solid #ACB9CD;
+    color: #000000;
+    font-size: 0.8em;
+    padding: 2px;
+}
+.editor_pane .editorslist .menu_drop_icon img {
+    border: medium none;
+}
+.editor_pane .editorslist a.menu_drop_icon {
+    background: url("/theming/css/images/shared/iconsprite2_8.png") no-repeat scroll -32px -1px rgba(0, 0, 0, 0);
+    display: inline-block !important;
+    height: 12px;
+    margin-left: 2px !important;
+    width: 12px;
+}
+.editor_pane .editorslist a.menu_drop_icon:link, a.menu_drop_icon:visited {
+    color: #000000;
+    text-decoration: none;
+}
+.editor_pane .editorslist img.menu_drop_icon {
+    display: inline !important;
+    float: none !important;
+    height: 12px;
+    margin: 1px !important;
+    width: 12px;
+}
+
+.editor_pane .editorslist li {
+    float: left;
+    height: 34px;
+    margin-bottom: 4px;
+    margin-right: 3px;
+    position: relative;
+}
+
+.editor_pane .editorslist .default_photo_contianer {
+    position: relative;
+}
+.editor_pane .editorslist .default_photo_base {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+
+
+.editor_pane .editorslist .editor-with-color {
+	display:inline-block;
+}
+
+.editor_pane .editorslist .editor-without-color {
+	display:inline-block;
+}
+
+.editor_pane .editorslist .editor-with-color .editor-color {
+    display: block;
+    width: 32px;
+    height: 4px;
+}
+
+.dj_a11y .editor_pane .editorslist .editor-with-color .editor-color {
+    border: 2px solid;
+    box-sizing: border-box;
+}
+
+.editor_pane .editorslist .editor-without-color .editor-color {
+    display: none;
+    width: 32px;
+    height: 4px;
+}
+
+.unified_editor {
+    float: left;
+    height: 34px;
+    margin-bottom: 4px;
+    position: relative;
+    width: 34px;
+}
+
+.dijitRtl .unified_editor {
+    padding: 3px;
+    float: right;
+}
+
+.unified_editor .default_photo_contianer {
+    position: relative;
+}
+.unified_editor .default_photo_base {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.unified_editor .editor-with-color {
+	display:inline-block;
+}
+
+.unified_editor .editor-without-color {
+	display:inline-block;
+}
+
+.unified_editor .editor-with-color .editor-color {
+    display: inline-block;
+    width: 32px;
+    height: 4px;
+}
+
+.unified_editor .editor-without-color .editor-color {
+    display: none;
+    width: 32px;
+    height: 4px;
+}
+
+.personMenu {
+    background-color: #FAFAFA;
+    border: 3px solid rgba(3, 3, 3, 0.45);
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px rgba(34, 34, 34, 0.5);
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 34em;
+}
+.personMenu .topActionHolder {
+    background-color: #F1F1F1;
+    background-image: -moz-linear-gradient(center top , #FFFFFF 0%, #EBEBEB 100%);
+    border-bottom: 1px solid #CCCCCC;
+    height: 1.8em;
+    margin: 0;
+    padding: 0;
+}
+.personMenu .topActionHolder .topAction {
+    border-right: 1px solid #CBD2D9;
+    display: block;
+    float: left;
+    height: 21px;
+    padding: 0 10px;
+}
+.personMenu .topActionHolder .topAction a {
+    display: block;
+    float: left;
+    font-size: 1em;
+    margin-top: 0.2em;
+}
+.personMenu .photoCard {
+}
+.personMenu .photoCard img {
+}
+.personMenu .businessCard {
+    width: 21em;
+}
+.personMenu .businessCard ul {
+}
+.personMenu .businessCard .cardName {
+}
+.personMenu .businessCard li {
+}
+.personMenu .businessCard a {
+}
+.personMenu .personMenuActionsCompact {
+    background-color: #FFFFFF;
+}
+.personMenu .personMenuActions {
+    background-color: #FFFFFF;
+}
+.personMenu .personMenuActions tr, .personMenu .personMenuActions td {
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+.personMenu .personMenuActions a {
+    border: 1px solid;
+    color: #000000;
+    display: block;
+    padding: 1px 2px 1px 5px;
+}
+.personMenu .personMenuActions a:link, .personMenu .personMenuActions a:visited {
+    border-color: #FFFFFF;
+}
+.personMenu .personMenuActions a:hover, .personMenu .personMenuActions a:active, .personMenu .personMenuActions a:focus, .personMenu .personMenuActions a:active {
+    background-color: #EEEEEE;
+}
+.personMenu span.disabledLink, .personMenu span.disabledLink:hover, .personMenu span.disabledLink:focus, .personMenu span.disabledLink:active, .personMenu a.disabledLink, .personMenu a.disabledLink:hover, .personMenu a.disabledLink:focus, .personMenu a.disabledLink:active {
+    color: #808080;
+    cursor: default;
+    text-decoration: none;
+}
+.personMenu .a11y {
+    font-size: 0;
+    line-height: 0;
+    max-height: 0;
+    outline: 0 none;
+}
+
+.personMenu a {
+    color: #105CB6;
+    text-decoration: none;
+}
+.personMenu a:hover {
+    color: #105CB6;
+    text-decoration: underline;
+}
+.semtag_header {
+}
+.photoCard {
+    float: left;
+    margin: 10px 5px 10px 10px;
+    padding: 0;
+}
+.photoCard img {
+    background-color: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    height: 10em;
+    padding: 2px !important;
+    width: 10em;
+}
+.businessCard {
+    float: right;
+    line-height: 1.2em;
+    margin: 10px 3px;
+    padding-top: 0;
+}
+.businessCard ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+.businessCard li {
+    color: #000000;
+    font-size: 1em;
+    line-height: 150%;
+}
+.businessCard div.guestWarning {
+    background: none repeat scroll 0 0 #FEFBBB;
+    color: #767676;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px;
+}
+.businessCard .cardName {
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.businessCard .spacer {
+    line-height: 50%;
+}
+.businessCard .phone {
+    color: #767676;
+}
+.personMenuActions {
+    background-color: #FFFFFF;
+    clear: both;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+}
+.personMenuActions ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.personMenuActions li {
+}

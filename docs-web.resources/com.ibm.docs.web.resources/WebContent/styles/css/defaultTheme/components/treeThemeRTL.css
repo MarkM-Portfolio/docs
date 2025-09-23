@@ -1,0 +1,20 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for tree
+companion file is tree.css*/
+/*** T R E E ***/
+/*the second class definition for each type of node accommodates a div version of the org chart*/
+.lotusOrgChart li a, .lotusOrgChartMiddle{background-image:url(../../images/orgParentNode_rtl.png);}
+.lotusOrgChart a.lotusTop, .lotusOrgChartTop{background-image:url(../../images/orgTopNode_rtl.png)}
+.lotusOrgChart .lotusBottom, .lotusOrgChartBottom{background-image:url(../../images/orgBottomNode_rtl.png)}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusOrgChart li a, .lotusOrgChartMiddle{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -3687px}
+.lotusSpritesOn .lotusOrgChart a.lotusTop, .lotusOrgChartTop{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -3915px}
+.lotusSpritesOn .lotusOrgChart .lotusBottom, .lotusOrgChartBottom{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -3459px}
+/*[/sprite]*/
+
+/***********************************************************/
+

@@ -1,0 +1,12 @@
+{
+  "lotusJapanese":{
+    "style:country-asian": "JP", 
+    "style:language-asian": "ja", 
+  	"style:font-name-asian": "'MS PMincho','MS PGothic','Apple Gothic'",
+  	},
+  "lotusKorean":{
+    "style:country-asian": "KR", 
+    "style:language-asian": "ko", 
+  	"style:font-name-asian": "Gulim,GulimChe",
+  	}
+}

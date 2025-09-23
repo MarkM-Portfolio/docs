@@ -1,0 +1,13 @@
+<PAGENAME> Name of page.
+<PAGETITLE> Create file system
+<DESCRIPTION> Enables you to create a file system on the specified virtual server.
+<PAGEVALIDATE>
+<FLDLIST>
+<FLDNAME> File system name
+  <FLDDESC> The fully qualified device name of the file system you want to create.
+  <FLDRESTRICT> This name <STRONG>must</STRONG> be unique and cannot be an existing entry.
+</FLDNAME>
+<BUTTONLIST>
+  <BUTTON> Submit
+  <BUTTONDESC> Submits your input.
+</BUTTONLIST>

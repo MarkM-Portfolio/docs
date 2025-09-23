@@ -1,0 +1,521 @@
+/* get rid of competing styles defined elsewhere */
+.concord ol li, .concord ul li {
+	display : block;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display:block;
+	word-break:break-all;
+}
+
+
+/* list-style-type circle */
+.concord li.lst-c:before {
+	white-space: pre;
+	content: "\2022" "  ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type upper-roman */
+.concord li.lst-ur:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+}
+
+/* list-style-type lower-roman */
+.concord li.lst-lr:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+}
+
+/* list-style-type upper-alpha */
+.concord li.lst-ua:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+}
+
+/* list-style-type-lower-alpha */
+.concord li.lst-la:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+}
+
+/* list-style-type number */
+.concord li.lst-n:before {
+	white-space: pre;
+	content: attr(values) "." "   ";
+	padding-right: 0;
+}
+
+/* list-style-type numeric with leading zero */
+.concord li.lst-numwz:before{
+	white-space: pre;
+	content: attr(values) "\002e" " ";
+	padding-right: 0;
+}
+
+/* list-style-type-number-2 */
+.concord li.lst-n2:before{
+	white-space: pre;
+	content: attr(values)  "\003A" " ";
+	padding-right: 0;
+}
+
+/* list-style-type upper-alpha-parenthesis */
+.concord li.lst-uap:before {
+	white-space: pre;
+	content: attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+/* list-style-type-lower-alpha-parenthesis */ 
+.concord li.lst-lap:before {
+	white-space: pre;
+	content: "\0028" attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+/* make LIs blocks */
+.concord li.lst-ur, 
+.concord li.lst-lr, 
+.concord li.lst-ua, 
+.concord li.lst-la, 
+.concord li.lst-n, 
+.concord li.lst-n2, 
+.concord li.lst-numwz, 
+.concord li.lst-uap, 
+.concord li.lst-lap, 
+.concord li.lst-np, 
+.concord li.lst-c, 
+.concord li.lst-cs, 
+.concord li.lst-ra, 
+.concord li.lst-d, 
+.concord li.lst-da, 
+.concord li.lst-a, 
+.concord li.lst-ta, 
+.concord li.lst-cm, 
+.concord li.lst-ps,
+.concord li.lst-bc, 
+.concord li.lst-bs, 
+.concord li.lst-ba, 
+.concord li.lst-s, 
+.concord li.lst-reda, 
+.concord li.lst-blacka, 
+.concord li.lst-pa, 
+.concord li.lst-gc, 
+.concord li.lst-rx, 
+.concord li.lst-gf, 
+.concord li.lst-rf, 
+.concord li.lst-star
+{
+	display:block;
+}
+
+/* Margin and padding settings for regular text boxes */
+.concord li.lst-c,
+.concord li.lst-cs,
+.concord li.lst-ra,
+.concord li.lst-d,
+.concord li.lst-da,
+.concord li.lst-a,
+.concord li.lst-ta,
+.concord li.lst-cm,
+.concord li.lst-ps,
+.concord li.lst-n,
+.concord li.lst-n2,
+.concord li.lst-np,
+.concord li.lst-numwz,
+.concord li.lst-ua,
+.concord li.lst-uap,
+.concord li.lst-la,
+.concord li.lst-lap,
+.concord li.lst-ur,
+.concord li.lst-lr {
+	padding-left: 5%;
+	text-indent: -3.9%;
+}
+
+
+/* Margin and padding settings for 
+speaker notes, which are typically wider than the slide.
+   Here we roughly halve all the maring and padding values. */
+.notes_tweaks li.lst-c,
+.notes_tweaks li.lst-cs,
+.notes_tweaks li.lst-ra,
+.notes_tweaks li.lst-d,
+.notes_tweaks li.lst-da,
+.notes_tweaks li.lst-a,
+.notes_tweaks li.lst-ta,
+.notes_tweaks li.lst-cm,
+.notes_tweaks li.lst-ps,
+.notes_tweaks li.lst-n,
+.notes_tweaks li.lst-n2,
+.notes_tweaks li.lst-np,
+.notes_tweaks li.lst-numwz,
+.notes_tweaks li.lst-ua,
+.notes_tweaks li.lst-uap,
+.notes_tweaks li.lst-la,
+.notes_tweaks li.lst-lap,
+.notes_tweaks li.lst-ur,
+.notes_tweaks li.lst-lr {
+	padding-left: 2%;
+	text-indent: -2%;
+}
+
+.notes_tweaks li.lst-j1,
+.notes_tweaks li.lst-j2 {
+	padding-left: 4%;
+	text-indent: -4%;
+}
+
+.notes_tweaks li.lst-bc,
+.notes_tweaks li.lst-bs,
+.notes_tweaks li.lst-ba,
+.notes_tweaks li.lst-s,
+.notes_tweaks li.lst-reda,
+.notes_tweaks li.lst-blacka,
+.notes_tweaks li.lst-pa,
+.notes_tweaks li.lst-gc,
+.notes_tweaks li.lst-rx,
+.notes_tweaks li.lst-gf,
+.notes_tweaks li.lst-rf,
+.notes_tweaks li.lst-star {
+	padding-left: 2%;
+	text-indent: 0%;
+}
+
+.concord li.lst-j1, .concord li.lst-j2
+{
+	display:block;
+}
+
+.concord li.lst-j1,
+.concord li.lst-j2 {
+	padding-left: 9%;
+	text-indent: -9%;
+}
+
+.concord li.lst-bc,
+.concord li.lst-bs,
+.concord li.lst-ba,
+.concord li.lst-s,
+.concord li.lst-reda,
+.concord li.lst-blacka,
+.concord li.lst-pa,
+.concord li.lst-gc,
+.concord li.lst-rx,
+.concord li.lst-gf,
+.concord li.lst-rf,
+.concord li.lst-star {
+	margin-left: 5%;
+    text-indent: -4.5%;
+}
+
+/* list-style-type number-parenthesis */
+.concord li.lst-np:before{
+	white-space: pre;
+	content: attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+/* list-style-type-japanese-1 */
+.concord li.lst-j1:before {
+	white-space: pre;
+	content: attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+/* list-style-type-japanese-2 */
+.concord li.lst-j2:before {
+	white-space: pre;
+	content: "\0028" attr(values) "\0029" " ";
+	padding-right: 0;
+}
+
+
+/* list-style-type cutout-square */
+.concord li.lst-cs:before{
+	white-space: pre;
+	content: "\25D8" " ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type right-arrow */
+.concord li.lst-ra:before{
+	white-space: pre;
+	content: "\F034" "";
+	font-family: Webdings, Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type diamond */
+.concord li.lst-d:before{
+	white-space: pre;
+	content: "\2666" " ";
+	font-family: "Times New Roman", Times, serif;
+	padding-right: 0;
+}
+
+/* list-style-type double-arrow*/
+.concord li.lst-da:before{
+	white-space: pre;
+	content: "\00BB" " ";
+	font-family: "Times New Roman", Times, serif;
+	padding-right: 0;
+}
+
+/* list-style-type asterisk */
+.concord li.lst-a:before{
+	white-space: pre;
+	content: "\2217" " ";
+	font-family: Symbol, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type thin-arrow */
+.concord li.lst-ta:before {
+	white-space: pre;
+	content: "\F0E0" " ";
+	font-family: Wingdings, "Zapf Dingbats", Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type checkmark */
+.concord li.lst-cm:before{
+	white-space: pre;
+	content: "\F061" " ";
+	font-family: Webdings, Dingbats, sans-serif;
+	padding-right: 0;
+}
+
+/* list-style-type plus-sign */
+.concord li.lst-ps:before{
+	white-space: pre;
+	content: "\002B" " ";
+	font-family: Impact, Charcoal, sans-serif;
+	padding-right: 0;
+}
+
+/*
+Image bullet ======================================
+*/
+/* when in high contrast mode, 
+background images don't get displayed, 
+so display image bullets using a default bullet character */
+.concord.dijit_a11y li.lst-bc:before,
+.concord.dijit_a11y li.lst-bs:before,
+.concord.dijit_a11y li.lst-ba:before,
+.concord.dijit_a11y li.lst-s:before,
+.concord.dijit_a11y li.lst-reda:before,
+.concord.dijit_a11y li.lst-blacka:before,
+.concord.dijit_a11y li.lst-pa:before,
+.concord.dijit_a11y li.lst-gc:before,
+.concord.dijit_a11y li.lst-rx:before,
+.concord.dijit_a11y li.lst-gf:before,
+.concord.dijit_a11y li.lst-rf:before,
+.concord.dijit_a11y li.lst-star:before
+ {
+    white-space: pre;
+	content: "\2022" "  ";
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 0;
+}
+
+.concord.dijit_a11y li.lst-bc,
+.concord.dijit_a11y li.lst-bs,
+.concord.dijit_a11y li.lst-ba,
+.concord.dijit_a11y li.lst-s,
+.concord.dijit_a11y li.lst-reda,
+.concord.dijit_a11y li.lst-blacka,
+.concord.dijit_a11y li.lst-pa,
+.concord.dijit_a11y li.lst-gc,
+.concord.dijit_a11y li.lst-rx,
+.concord.dijit_a11y li.lst-gf,
+.concord.dijit_a11y li.lst-rf,
+.concord.dijit_a11y li.lst-star
+ {
+    background: none;
+	margin-left: 5%;
+    text-indent: -4.5%;
+}
+
+/* 
+	list-style-type
+   		various images
+*/
+/* .concord span.lst-bc { */
+.concord li.lst-bc:before {
+	background: url(../images/IBMDocs_1cube.png) no-repeat;
+}
+
+/* .concord span.lst-bs { */
+.concord li.lst-bs:before {
+	background: url(../images/IBMDocs_2square.png) no-repeat;
+}
+
+/* .concord span.lst-ba { */
+.concord li.lst-ba:before {
+	background: url(../images/IBMDocs_3leaf.png) no-repeat;
+}
+
+/* .concord span.lst-s { */
+.concord li.lst-s:before {
+	background: url(../images/IBMDocs_4bullet.png) no-repeat;
+}
+
+/* .concord span.lst-reda { */
+.concord li.lst-reda:before {
+	background: url(../images/IBMDocs_5arrow.png) no-repeat;
+}
+
+/* .concord span.lst-blacka { */
+.concord li.lst-blacka:before {
+	background: url(../images/IBMDocs_6arrow2.png) no-repeat;
+}
+
+/* .concord span.lst-pa { */
+.concord li.lst-pa:before {
+	background: url(../images/IBMDocs_7arrow3.png) no-repeat;
+}
+
+/* .concord span.lst-gc { */
+.concord li.lst-gc:before {
+	background: url(../images/IBMDocs_8check.png) no-repeat;
+}
+
+/* .concord span.lst-rx { */
+.concord li.lst-rx:before {
+	background: url(../images/IBMDocs_9x.png) no-repeat;
+}
+
+/* .concord span.lst-gf { */
+.concord li.lst-gf:before {
+	background: url(../images/IBMDocs_10flag.png) no-repeat;
+}
+
+/* .concord span.lst-rf { */
+.concord li.lst-rf:before {
+	background: url(../images/IBMDocs_11flag2.png) no-repeat;
+}
+
+/* .concord span.lst-star { */
+.concord li.lst-star:before {
+	background: url(../images/IBMDocs_12star.png) no-repeat;
+}
+
+/* 1st-level image bullet */
+.concord li.lst-bc:before,
+.concord li.lst-bs:before,
+.concord li.lst-ba:before,
+.concord li.lst-s:before,
+.concord li.lst-reda:before,
+.concord li.lst-blacka:before,
+.concord li.lst-pa:before,
+.concord li.lst-gc:before,
+.concord li.lst-rx:before,
+.concord li.lst-gf:before,
+.concord li.lst-rf:before,
+.concord li.lst-star:before {
+	background-position: center center;
+	background-size: 0.6em auto;
+	/* for FF 3.6 */
+	-moz-background-size: 0.6em auto;
+	content:"\8" " ";
+    display: inline-block;
+    font-size: 1em;
+    width: 1em;
+}
+
+.slideWrapper.ie8ss li.lst-bc {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_1cube_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-bs {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_2square_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-ba {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_3leaf_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-s {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_4bullet_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-reda {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_5arrow_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-blacka {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_6arrow2_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-pa {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_7arrow3_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-gc {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_8check_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-rx {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_9x_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-gf {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_10flag_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-rf {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_11flag2_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+.slideWrapper.ie8ss li.lst-star {
+	padding-left: 1.5em !important;
+	margin-left: 0;
+	background: url(../images/IBMDocs_12star_5x5.png) no-repeat;
+	background-position: 0 0.2em;
+}
+
+

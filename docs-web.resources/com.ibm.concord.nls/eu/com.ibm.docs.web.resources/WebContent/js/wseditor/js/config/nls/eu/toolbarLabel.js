@@ -1,0 +1,72 @@
+({
+		SAVE: "Gorde",
+		UNDO:"Desegin",
+		REDO:"Berregin",
+		INSERTROW:"Txertatu errenkada",
+		DELETEROW:"Ezabatu errenkada",
+		INSERTCOLUMN:"Txertatu zutabea",
+		DELETECOLUMN:"Ezabatu zutabea",
+		FONTSIZE:"Letra-tamaina",
+		FONTCOLOR:"Letra-kolorea",
+		BOLD:"Lodia",
+		ITALIC:"Etzana",
+		UNDERLINE:"Azpimarratu",
+		STRIKETHROUGH:"Marratu",
+		CURRENCYTIP:"Ezarri diru-formatua",
+		PERCENTLABEL:"%",
+		PERCENTTIP:"Ezarri ehuneko-formatua",
+		NUMBERFORMAT:"Zenbaki-formatua",
+		ALIGNLEFT:"Lerrokatu ezkerrean",
+		ALIGNCENTER:"Lerrokatu erdian",
+		ALIGNRIGHT:"Lerrokatu eskuinean",
+		SETCELLBORDER:"Ezarri gelaxkaren ertza",
+		BACKGROUNDCOLOR:"Atzeko planoaren kolorea",
+		TASK:"Esleitu sekzioa",
+		COMMENTS:"Gehitu iruzkina",
+		SUBMIT:"Bidali",
+		MERGECELL: "Konbinatu edo zatitu gelaxkak",
+		QUICKFORMULA: "Formula azkarra",
+		WRAPTEXT: "Moldatu testua",
+		EIGHT:"8 puntu",
+		NINE:"9 puntu",
+		TEN:"10 puntu",
+		ELEVEN:"11 puntu",
+		TWELVE:"12 puntu",
+		FOURTEEN:"14 puntu",
+		SIXTEEN:"16 puntu",
+		EIGHTEEN:"18 puntu",
+		TWENTY:"20 puntu",
+		TWENTYTWO:"22 puntu",
+		TWENTYFOUR:"24 puntu",
+		NUMBER:"Zenbakia",
+		CURRENCY:"Dirua",
+		PERCENT:"Ehunekoa",
+		DATE:"Data",
+		TIME:"Ordua",
+		DATETIME: "DataOrdua",
+		MORECURRENCY:"Moneta gehiago",
+		MOREDATE:"Formatu gehiago",
+		
+		
+		CAD: "kanadako dolarra",
+		USD: "dolarra",
+		EUR: "euroa",
+		CHF: "suitzar frankoa",
+		HKD: "hong kongeko dolarra",
+		DKK: "koroa",
+		LTL: "litas",
+		PHP: "pesoa",
+		BRL: "reala",
+		RUR: "errubloa",
+		GBP: "libera",
+		NLG: "guilderra", // Netherlands
+		TWD: "taiwango dolar berria",
+		THB: "baht", // Thailand
+		ITL: "lira", // Turkey
+		BGL: "lev", // Uzbekistan
+		VND: "dong", // Vietnam
+		KRW: "won",	// Korean 
+		CNY: "yuan", // RMB
+		JPY: "yen" // Japan Yen
+})
+

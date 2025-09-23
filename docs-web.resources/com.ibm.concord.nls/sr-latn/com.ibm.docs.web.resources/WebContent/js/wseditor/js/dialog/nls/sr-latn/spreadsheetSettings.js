@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Izaberite lokalni standard da biste oblikovali brojeve, valute, datume i vreme.",
+	INPUT_INVALID_LOCALENAME: "Nevažeće ime lokalnog standarda",
+	INPUT_EMPTY_LOCALENAME: "Izaberite lokalni standard.",
+	
+	Spain_Catalan: "Španija (katalonski)",
+	Denmark: "Danska",
+	Germany: "Nemačka",
+	Greek: "Grčka",
+	United_States: "Sjedinjene Američke Države",
+	United_Kingdom: "Ujedinjeno Kraljevstvo",
+	Spain: "Španija",
+	Finland: "Finska",
+	France: "Francuska",
+	Italy: "Italija",
+	Japan: "Japan",
+	Korean: "Južna Koreja",
+	Norway: "Norveška",
+	Netherlands: "Holandija",
+	Poland: "Poljska",
+	Brazil: "Brazil",
+	Portugal: "Portugalija",
+	Russia: "Rusija",
+	Sweden: "Švedska",
+	Thailand: "Tajland",
+	Turkey: "Turska",
+	China: "Kina",
+	Taiwan_China: "Tajvan (Kina)",
+	Israel: "Izrael"
+})
+

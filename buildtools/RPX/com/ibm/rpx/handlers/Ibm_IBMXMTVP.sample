@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TMSSource SYSTEM "tms.dtd">
+
+<TMSSource name="InstallMessages" tmsVersion="1.0" xml:lang="en">
+
+
+<Copyright>
+   Licensed Materials - Property of IBM
+   (C)Copyright IBM Corporation 2004.
+   All Rights Reserved
+   US Government Users Restricted Rights - Use, duplication
+   or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+</Copyright>
+
+
+<!-- ================================================================= -->
+<!--  CEIIN0001E    MSG_COMPLETE                                        -->
+<!-- ================================================================= -->
+  <Message ID="CEIIN0001E" prefix="yes"> 
+	 <MsgText pgmKey="CREATE_DIR_FAILED" varFormat="Java">The  directory 
+      	<Variable formatSpec="{0}">directory_name</Variable>
+     failed to  be created. </MsgText> 
+	 <Explanation> 
+		<p>See message.</p> 
+	 </Explanation> 
+	 <AdminResponse> 
+		<p>Consult the Common Event Infrastructure log files to determine the cause of the problem.</p> 
+	 </AdminResponse> 
+  </Message>
+
+</TMSSource>
+

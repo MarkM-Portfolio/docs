@@ -1,0 +1,124 @@
+{
+    "content": {
+        "chart_or_ole": [
+            {
+                "tagname": "draw:object"
+            },
+            {
+            	"tagname": "draw:object-ole"
+            }
+        ],
+        "graphic": [
+            {
+                "tagname": "draw:rect"
+            },
+            {
+                "tagname": "draw:line"
+            },
+            {
+                "tagname": "draw:polyline"
+            },
+            {
+                "tagname": "draw:polygon"
+            },
+            {
+                "tagname": "draw:regular-polygon"
+            },
+            {
+                "tagname": "draw:path"
+            },
+            {
+                "tagname": "draw:circle"
+            },
+            {
+                "tagname": "draw:ellipse"
+            },
+            {
+                "tagname": "draw:connector"
+            },
+            {
+                "tagname": "draw:caption"
+            },
+            {
+                "tagname": "draw:measure"
+            },
+            {
+                "tagname": "draw:g"
+            },
+            {
+                "tagname": "draw:glue-point"
+            },
+            {
+                "tagname": "draw:text-box"
+            },
+            {
+                "tagname": "draw:contour-polygon"
+            },
+            {
+                "tagname": "draw:contour-path"
+            },
+            {
+                "tagname": "draw:image-map"
+            },
+            {
+                "tagname": "draw:custom-shape"
+            },
+            {
+                "tagname": "draw:enhanced-geometry"
+            }
+        ],
+        "filter": [
+            {
+                "tagname": "table:filter"
+            },
+            {
+            	"tagname": "table:database-range",
+            	"attrs": [
+                    {
+                        "table:display-filter-buttons": "true"
+                    }
+                ]
+            }
+        ],
+        "group_or_outline": [
+            {
+                "tagname": "table:table-row-group"
+            },
+            {
+                "tagname": "table:table-column-group"
+            }
+        ],
+        "data_pilot":[
+        	{
+        		"tagname": "table:data-pilot-table"
+        	},
+        	{
+        		"tagname": "table:data-pilot-tables"
+        	}
+        ]
+    },
+    "style": {
+        "conditional_formatting": [
+            {
+                "tagname": "style:map",
+                "attrs": [
+                    {
+                        "style:condition": "cell-content"
+                    },
+                    {
+                        "style:condition": "is-true-formula"
+                    }
+                ]
+            }
+        ]
+    },
+    "featuresId": {
+    	"macro" : "701",
+    	"chart_or_ole" : "702",
+    	"graphic": "703",
+    	"filter": "704",
+    	"conditional_formatting": "706",
+    	"group_or_outline": "707",
+    	"data_pilot": "708"
+    }
+}

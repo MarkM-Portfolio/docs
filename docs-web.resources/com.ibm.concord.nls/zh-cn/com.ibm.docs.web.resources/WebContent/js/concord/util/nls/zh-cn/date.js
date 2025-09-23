@@ -1,0 +1,22 @@
+({
+	question:"问题",
+	issue:"议题",
+	toDo:"待办事宜",
+	comment:"注释",
+	done:"完成",
+	jan:"一月",
+	feb:"二月",
+	mar:"三月",
+	apr:"四月",
+	may:"五月",
+	june:"六月",
+	july:"七月",
+	aug:"八月",
+	sept:"九月",
+	oct:"十月",
+	nov:"十一月",
+	dec:"十二月",
+	pm:"下午",
+	am:"上午",
+	assignTo:"分配给："
+})

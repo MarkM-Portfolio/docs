@@ -1,0 +1,23 @@
+.* Here is a comment statement.
+#include "sample.hpp"
+:userdoc.
+:prolog.
+:title.This is the title of the document.
+:etitle.
+:eprolog.
+:body.
+:h1 id=firstheading.This is the first document heading.
+:p.This is a paragraph of information.  It can
+contain :hp2.highlighted:ehp2. text, as well as
+references to other headings (see :hdref refid=secondheading.).
+:ol compact.
+:li.First list item.
+:li.Second list item.
+#if defined(__OS2__)
+:li.Here is an OS/2 specific item.
+#elif defined(__WIN32__)
+:li.Here is a Windows specific item.
+#endif
+:eol.
+:ebody.
+:euserdoc.

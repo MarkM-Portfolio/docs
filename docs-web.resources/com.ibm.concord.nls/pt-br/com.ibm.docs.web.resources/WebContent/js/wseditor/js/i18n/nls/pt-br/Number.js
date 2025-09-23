@@ -1,0 +1,5 @@
+({
+	TRUE: "VERDADE",
+	FALSE: "FALSO"
+})
+

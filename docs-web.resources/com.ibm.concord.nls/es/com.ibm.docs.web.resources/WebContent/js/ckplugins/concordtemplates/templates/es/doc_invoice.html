@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Factura</title>
+</head>
+<body  class="concord_Doc_Style_7">
+
+<p class="page" id="invoice">
+
+	<p documentBlock="true" restyle="false"  concordTemplateComponent="letterhead" class="letterhead">
+		<p>Remita el pago a</p>
+		<h1>Nombre de la empresa</h1>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li class="addressLine1">1234 Dirección</li>
+			<li class="addressLine2">Ciudad, estado 12345</li>
+			<li class="email">correoelectrónico@ejemplo.com</li>
+			<li class="phone">(123) 456-7890</li>
+		</ul>
+		<hr></hr>
+	</p>
+
+	<p documentBlock="true"  class="section summary">
+		<h2>Información de la factura</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li>Número de factura</li>
+			<li class="date">Fecha de factura</li>
+			<li class="date">Fecha de vencimiento</li>
+		</ul>
+	</p>
+
+	<p documentBlock="true"  class="section">
+		<h2>Facturar a</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list_16">
+			<li class="name">Nombre Apellido</li>
+			<li class="addressLine1">1234 Dirección</li>
+			<li class="addressLine2">Ciudad, estado 12345</li>
+			<li class="email">correoelectrónico@ejemplo.com</li>
+			<li class="phone">(123) 456-7890</li>
+		</ul>
+	</p>
+	
+	<p documentBlock="true"  class="section">
+		<h2>Detalles</h2>
+		<table documentBlock="true" restyle="true" class="smartTable STStyle3" concordTemplateComponent="smartTable">
+			<tr class="tableHeaderRow">
+				<th>Fecha</th>
+				<th>Artículo</th>
+				<th>Descripción</th>
+				<th>Cantidad</th>
+			</tr>
+			<tr>
+				<td>MM/DD/AAAA</td>
+				<td>Trabajo</td>
+		<!--
+				<td>Dignissim definiebas intellegebat eu qui, laoreet impedit</td>
+		-->
+				<td>50,00 &euro;</td>
+			</tr>
+			<tr class="alternateRow">
+				<td>MM/DD/AAAA</td>
+				<td>Trabajo</td>
+		<!--
+				<td>Sit ne sint aliquip nusquam, ut oblique salutandi sea, no erat </td>
+		-->
+				<td>50,00 &euro;</td>
+			</tr>
+			<tr>
+				<td colspan="3">Total</td>
+				<td>$0,00</td>
+			</tr>
+		</table>
+	</p>
+		
+	<p documentBlock="true" class="section conclusion">
+		<h2>Pago pendiente</h2>
+		<ul>
+			<li>Total de la factura: $0,00</li>
+			<li>Pagos/créditos: 0,00 &euro;</li>
+			<li>Balance pendiente: $0,00</li>
+		</ul>
+	</p>
+	
+</p>
+</body>
+</html>

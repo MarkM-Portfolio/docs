@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: lib/json4j.jar 
+ com.ibm.concord.viewer.ear.jar
+

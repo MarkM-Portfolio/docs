@@ -1,0 +1,384 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/**
+ * TabContainer 
+ */
+
+/*** some common features ***/
+.oneui30 .dijitTabPaneWrapper {
+    background: #fff;
+}
+
+.oneui30 .dijitTabPaneWrapper, .oneui30 .dijitTabContainerTop-tabs, .oneui30 .dijitTabContainerBottom-tabs, .oneui30 .dijitTabContainerLeft-tabs, .oneui30 .dijitTabContainerRight-tabs {
+    border-color: #ccc;
+}
+
+.oneui30 .dijitTabListContainer-top { /*lotusTabContainer*/
+	border-bottom: 1px solid #ccc;
+	height: 2.917em !important;
+	top: 0 !important; /*for sliding tabContainer in themeTester.html*/
+	left: 0 !important; /*for sliding tabContainer in themeTester.html*/
+	position: relative;
+	overflow: visible;
+	z-index: 1;
+}
+
+.oneui30 .dijitTabListContainer-bottom { /*lotusTabContainer*/
+	border-top: 1px solid #ccc;
+	height: 2.917em !important;
+	position: relative;
+	overflow: visible;
+	z-index: 1;
+}
+
+.oneui30 .dijitTabListWrapper {
+	height: 2.917em !important;
+	top: auto !important;
+	bottom: -1px !important;
+}
+
+.dj_ie6 .oneui30 .dijitTabListWrapper {
+	bottom: -3px !important;
+}
+
+.oneui30 .dijitTabContainerBottomStrip, .oneui30 .dijitTabContainerBottomNone { 
+	/*extends .dijitTabListWrapper*/
+	bottom: auto !important;
+	top: -1px !important;
+}
+
+.oneui30 .tabStripButton-top {
+	height: 1.333em !important;
+	top: auto !important;
+	bottom: -1px !important;
+}
+
+.dj_ie6 .oneui30 .tabStripButton-top {
+	bottom: -2px !important;
+}
+
+.oneui30 .tabStripButton-bottom {
+	height: 1.333em !important;
+	top: -1px !important;
+	bottom: auto !important;
+}
+
+.oneui30 .dijitTabContainerTop-tabs { /*lotusTabs*/
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	border: 0;
+}
+
+.oneui30 .dijitTab * {
+	vertical-align: baseline;
+}
+
+.oneui30 .dijitTabCloseButton {
+	margin: -2px -3px -3px 1px;
+	width: 16px;
+    height: 1.25em;
+    background: url("images/tabClose.png") no-repeat;
+    opacity: .25;
+    filter: alpha(opacity = 25);
+    zoom: 1;
+}
+
+.dj_ie8 .oneui30 .dijitTabCloseButton {
+	margin-bottom: -5px;
+}
+
+.oneui30 .dijitTabCloseButtonHover, .oneui30 .dijitTabCloseButtonActive {
+    opacity: .4;
+    filter: alpha(opacity = 40);
+}
+
+.oneui30 .dijitTabSpacer {
+    display: none;
+}
+
+.oneui30 .dijitTabInnerDiv {
+    background-color: #fff;
+    color: #222;
+}
+
+.oneui30 .dijitTabHover .dijitTabInnerDiv, .oneui30 .dijitTabActive .dijitTabInnerDiv, .oneui30 .dijitTabChecked .dijitTabInnerDiv {
+    background-color: #fff;
+    color: #000;
+}
+
+.oneui30 .dijitTabContent {
+    color: #105CB6;
+}
+
+.oneui30 .dijitTabHover .dijitTabContent, .oneui30 .dijitTabActive .dijitTabContent {
+    border-color: #ccc;
+    color: #05386B;
+}
+
+.oneui30 .dijitTabChecked .dijitTabContent {
+    color: #000;
+    border-color: #aaa;
+    font-weight: bold;
+}
+
+.oneui30 .tabStripButton .dijitTabInnerDiv {
+    background-color: transparent;
+}
+
+.oneui30 .tabStripButton .dijitTabContent {
+    border: 0;
+}
+/*** end common ***/
+
+/*************** top tab ***************/
+.oneui30 .dijitTabContainerTop-tabs .dijitTab { /*li*/
+	padding: 0;
+	margin-right: 2px;
+	-moz-border-radius: 0 0 0 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	top: auto;
+	bottom: 0;
+}
+
+.oneui30 .dijitTabContainerTop-tabs .dijitTabChecked { /*li lotusSelected*/
+	border-color: #aaa #aaa #fff;
+}
+
+.oneui30 .dijitTabContainerTop-tabs .dijitTabContent { /*a*/
+    padding: 6px 8px 6px 4px;
+	display: block;
+	line-height: 1em;
+}
+
+.dj_ie6 .oneui30 .dijitTabContainerTop-tabs .dijitTabContent, .dj_ie7 .oneui30 .dijitTabContainerTop-tabs .dijitTabContent { /*a*/
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+
+/* checked status */
+.oneui30 .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabInnerDiv {
+    background-image: none;
+}
+
+.oneui30 .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabContent {
+    background-position: 0px -102px;
+    background-repeat: repeat-x;
+}
+
+/** end top tab **/
+/*************** bottom tab ***************/
+.oneui30 .dijitTabContainerBottom-tabs { /*lotusTabs*/
+	padding: 0;
+	top: 0;
+	margin: 0;
+	overflow: hidden !important;
+	position: absolute;
+	border: 0;
+}
+
+.oneui30 .dijitTabContainerBottom-tabs .dijitTab { /*li*/
+    padding: 0;
+	margin-right: 2px;
+	-moz-border-radius: 0 0 0 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	top: auto;
+}
+
+.oneui30 .dijitTabContainerBottom-tabs .dijitTabContent { /*a*/
+    padding: 5px 8px 7px 4px;
+	display: block;
+	line-height: 1em;
+}
+
+.dj_ie .oneui30 .dijitTabContainerBottom-tabs .dijitTabContent { /*a*/
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.dj_ie6 .oneui30 .dijitTabContainerBottom-tabs .dijitTabContent, .dj_ie7 .oneui30 .dijitTabContainerBottom-tabs .dijitTabContent { /*a*/
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+
+.oneui30 .dijitTabContainerBottom-tabs .dijitTabChecked { /*li lotusSelected*/
+    border-color: #fff #aaa #aaa;
+}
+/** end bottom tab **/
+
+/*************** left tab ***************/
+.oneui30 .dijitTabContainerLeft { /*container*/
+	overflow:visible;
+	white-space: nowrap;
+}
+
+.oneui30 .dijitTabContainerLeft-tabs { /*tabs*/
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	z-index: 1000;
+	float: left;
+	border: 0;
+}
+
+.oneui30 .dijitTabContainerLeft-tabs .dijitTab { /*tab*/
+    margin-bottom: 2px;
+	border: solid 1px #ccc;
+	white-space: nowrap;
+	background-color: white;
+	left: auto;
+}
+
+.dj_ie7 .oneui30 .dijitTabContainerLeft-tabs .dijitTabInnerDiv {
+	zoom: 1;
+}
+
+.oneui30 .dijitTabContainerLeft-tabs .dijitTabContent {
+    padding: 4px;
+}
+
+.oneui30 .dijitTabContainerLeft-tabs .dijitTabChecked {
+	border-color: #aaa #fff #aaa #aaa;
+}
+
+.oneui30 .dijitTabContainerLeft-container { /*content*/
+	border-left: solid 1px #ccc;
+	display: inline-block;
+	z-index: -1;
+	position: relative;
+	white-space: normal;
+	left: -1px !important;
+	width: auto !important;
+	overflow: visible;
+}
+
+.dj_ie6 .oneui30 .dijitTabContainerLeft-container { /*content*/
+	left: -4px !important;
+}
+
+.dj_ie6 .oneui30 .dijitTabContainerLeft-child, .dj_ie7 .oneui30 .dijitTabContainerLeft-child {
+	width: auto !important;
+}
+/** end left tab **/
+
+/*************** right tab ***************/
+.oneui30 .dijitTabContainerRight { /*container*/
+	overflow:visible;
+}
+
+.oneui30 .dijitTabContainerRight-tabs { /*tabs*/
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	z-index: 1000;
+	float: left;
+	margin-left: -1px;
+	border: 0;
+}
+
+.oneui30 .dijitTabContainerRight-tabs .dijitTab { /*tab*/
+    margin-bottom: 2px;
+	border: solid 1px #ccc;
+	white-space: nowrap;
+	background-color: white;
+	left: auto;
+}
+
+.dj_ie7 .oneui30 .dijitTabContainerRight-tabs .dijitTabInnerDiv {
+	zoom: 1;
+}
+
+.oneui30 .dijitTabContainerRight-tabs .dijitTabContent {
+    padding: 4px;
+}
+
+.oneui30 .dijitTabContainerRight-tabs .dijitTabChecked {
+	border-color: #aaa #aaa #aaa #fff;
+}
+
+.oneui30 .dijitTabContainerRight-container { /*content*/
+	border-right: solid 1px #ccc;
+}
+
+.dj_ie6 .oneui30 .dijitTabContainerRight-child, .dj_ie7 .oneui30 .dijitTabContainerRight-child {
+	width: auto !important;
+}
+/** end right tab **/
+
+/************ left/right scroll buttons + menu button ************/
+.oneui30 .tabStripButton {
+	padding: 4px 3px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));
+}
+
+.oneui30 .dijitTabStripIcon {
+    margin: 0 auto;
+	height: 15px;
+    width: 15px;
+    background: url("../form/images/buttonArrows.png") no-repeat -75px 50%;
+    background-color: transparent;
+}
+
+.oneui30 .dijitTabStripSlideRightIcon {
+    background-position: -24px 50%;
+}
+
+.oneui30 .dijitTabStripMenuIcon {
+    background-position: -51px 50%;
+}
+
+/* Nested Tabs */
+.oneui30 .dijitTabContainerNested .dijitTabListWrapper {
+    height: auto;
+}
+
+.oneui30 .dijitTabContainerNested .dijitTabContainerTop-container {
+    background: transparent !important;
+}
+
+.oneui30 .dijitTabContainerNested .dijitTabContainerTop-tabs { /*lotusTabContainer*/
+    padding: 10px 10px 5px;
+	border-bottom: solid 1px #ccc;
+}
+
+.oneui30 .dijitTabContainerTabListNested .dijitTab { /*lotusTabs and li*/
+    margin-right: 2px;
+	border: 0;
+}
+
+.oneui30 .dijitTabContainerTabListNested .dijitTabContent { /*a*/
+    padding: 6px 8px 6px 4px;
+}
+
+.oneui30 .dijitTabContainerTabListNested .dijitTab .dijitTabInnerDiv {
+    background: none;
+    border: none;
+    top: 0;
+}
+
+.oneui30 .dijitTabContainerTabListNested .dijitTabHover .tabLabel {
+    text-decoration: none;
+}
+
+.oneui30 .dijitTabContainerTabListNested .dijitTabChecked .dijitTabContent {
+    padding: 6px 8px 6px 4px;
+    border: solid 1px #aaa;
+}
+
+.oneui30 .dijitTabContainerTabListNested .dijitTabChecked .tabLabel {
+    text-decoration: none;
+    background-image: none;
+}
+
+.oneui30 .dijitTabPaneWrapperNested {
+    border: none;
+}

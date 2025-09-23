@@ -1,0 +1,85 @@
+{
+	"repositoryPath": "c:/conversionRepository",
+	"keepResultTime" :  36000,
+	"maxFileSize" : 10240,
+	   
+	"corePoolSize": 3,	
+	"maximumPoolSize" : 100,
+	"queueCapacity" : 3000,
+	"keepAliveTime" : 60000,
+	
+	"cleanTempFilesSchedule" : 60,
+	
+	"token" : "fallseason2011",
+	
+	"software_mode" : "Premise",
+	
+	"onpremise_authentication" : "token",
+	
+	"symphony": {
+		"host-config":
+		[
+			{"host": "localhost","port":8100}
+		],
+		"used-host-count": 1,
+		"max-queue-size": 8
+	},
+	"document": {
+		"max-page-count":300,
+		"max-pure-text-size":768
+	},
+	"spreadSheet":{
+		"max-sheet-rows":30000,
+		"max-sheet-columns": 1024,
+		"cell-max-num":1000000,
+		"formula-cell-max-num":100000
+	},
+	"presentation":{
+	   "image-down-size-width": 800,
+	   "image-down-size-height": 600,
+	   "image-down-size": 768,
+	   "image-down-size-pool": 10,
+	   "max-pages": 150,
+	   "max-graphics": 3000,
+	   "encode-graphics": true,
+	   "encode-threshold-graphics": 2048
+	},
+	"stellent":{
+		"path":"C:/DocsInstallation/IBMConversion/stellent/",
+		"timeout":120000,
+		"poolSize":4,	
+		"queueCapacity":32,
+		"tempdir":""
+	},
+	"convertDuringUpload":{
+		"idleResourcePercent":75
+	},
+	"conversionLib": {
+		"path": "C:/DocsInstallation/IBMConversion/conversionlib/",
+		"enabled": true,
+		"timeout":120000,
+		"maxInstanceNum": 8
+	},
+	"shared_storage": {
+	    "docs": {
+	        "type": "local",
+	    	"server": "127.0.0.1",
+	        "from": "/nas/shared/docs",
+	        "to": "w:",
+	        "retry": "-1",
+	        "timeo": "-1"
+	    },
+	    "viewer": {
+	        "type": "local",
+	        "server": "127.0.0.1",
+	        "from": "/nas/shared/viewer",
+	        "to": "v:",
+	        "retry": "-1",
+	        "timeo": "-1"
+	    }
+	},
+	"topology":
+	{
+		"viewer": "http://localhost:9080/viewer"
+	}
+}

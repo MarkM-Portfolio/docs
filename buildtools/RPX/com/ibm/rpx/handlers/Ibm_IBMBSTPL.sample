@@ -1,0 +1,18 @@
+[
+  "-- START NON-TRANSLATABLE --",
+  {
+     "PAGES": [
+        {
+           "PAGE_DATA": {
+              "DESCRIPTION": "Describes the WebSphere Business Monitor widgets",
+              "EDITOR": "Y",
+              "EDITORS": [
+              ],
+              "ID": "id_1212458714406",
+              "ISLOCALIZED": "Y",
+              "LAYOUT": "[[{\"width\": 100}]]",
+              "NAME": "Getting Started",
+              "OWNER": "",
+              "WIDGETS": "[[{\"ID\":\"view_1212458740453\"}]]"
+         },
+  ]}]

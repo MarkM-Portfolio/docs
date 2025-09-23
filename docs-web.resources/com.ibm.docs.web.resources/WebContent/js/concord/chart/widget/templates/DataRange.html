@@ -1,0 +1,23 @@
+<div class="lotusSectionBody lotusForm2 lotusSection2">   
+     <div class="lotusFormField">
+         <fieldset style="margin-left:4px" class="" dojoAttachPoint = "radioGroup">
+             <legend class="lotusHeading">${nls.DATA_RANGE}</legend>
+             <input class="lotusChunk lotusText inputBorder" title="${nls.DATA_RANGE}" dojoAttachPoint = "range">        
+             <div>
+                 <div class="lotusCheckbox" dojoType='dijit.form.RadioButton' name="radio" id="radio1" dojoAttachPoint="radio1"></div>
+                 <label for="radio1" class="lotusCheckbox">${nls.IN_ROWS}</label>
+             </div>
+             <div>
+             	 <div class="lotusCheckbox" dojoType='dijit.form.RadioButton' name="radio" id="radio2" dojoAttachPoint="radio2"></div>
+                 <label for="radio2" class="lotusCheckbox">${nls.IN_COLUMNS}</label>
+             </div>
+             <div>
+                 <div class="lotusCheckbox" dojoType='dijit.form.RadioButton' name="radio" id="radio3" dojoAttachPoint="radio3"></div>
+                 <label for="radio3" class="lotusCheckbox">${nls.AUTO}</label>
+             </div>         
+         </fieldset>
+     </div><!--end lotusChunk-->
+     <div style="margin-left:4px;margin-top:20px">
+     	 <div id="insert_chart_preview" style="width:330px;height:180px"></div>
+     </div>
+</div>

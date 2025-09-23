@@ -1,0 +1,1 @@
+{"orientation":"portrait","marginLeft":"1.778cm","pageHeight":"27.94cm","marginTop":"1.905cm","pageWidth":"21.59cm","marginBottom":"1.905cm","marginRight":"1.778cm","pageOrder":"ttb"}

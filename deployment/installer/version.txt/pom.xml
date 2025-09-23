@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>installer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs</groupId>
+  <artifactId>version.txt</artifactId>
+  <name>HCL Docs version.txt - pom</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>OnPremise</module>
+    <module>SmartCloud</module>
+  </modules>
+
+  <properties>
+    <docs.ReleaseInfo>HCL Connections Docs ${build.version}</docs.ReleaseInfo>
+    <docs.product.name>HCL Connections Docs</docs.product.name>
+
+    <viewer.ReleaseInfo>Viewer ${build.version}</viewer.ReleaseInfo>
+    <viewer.product.name>Viewer</viewer.product.name>
+
+    <proxy.ReleaseInfo>HCL Docs Proxy ${build.version}</proxy.ReleaseInfo>
+    <proxy.product.name>HCL Docs Proxy</proxy.product.name>
+
+    <conversion.ReleaseInfo>HCL Conversion ${build.version}</conversion.ReleaseInfo>
+    <conversion.product.name>HCL Conversion</conversion.product.name>
+
+    <docs-ext.ReleaseInfo>HCL Docs Extension ${build.version}</docs-ext.ReleaseInfo>
+    <docs-ext.product.name>HCL Docs Extension</docs-ext.product.name>
+
+    <viewer-ext.ReleaseInfo>File Viewer ${build.version}</viewer-ext.ReleaseInfo>
+    <viewer-ext.product.name>File Viewer</viewer-ext.product.name>
+
+    <viewerVerse.ReleaseInfo>ViewerVerse ${build.version}</viewerVerse.ReleaseInfo>
+    <viewerVerse.product.name>ViewerVerse</viewerVerse.product.name>
+
+    <sanity.ReleaseInfo>HCL Connections Docs ${build.version}</sanity.ReleaseInfo>
+    <sanity.product.name>HCLDocs</sanity.product.name>
+
+    <viewerSanity.ReleaseInfo>ViewerSanity ${build.version}</viewerSanity.ReleaseInfo>
+    <viewerSanity.product.name>ViewerSanity</viewerSanity.product.name>
+
+    <!--one exception the viewer war, the key is "viewer_version" -->
+    <key.build_timestamp>build_timestamp</key.build_timestamp>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>Generate version.txt</id>
+            <phase>validate</phase>
+            <configuration>
+              <target>
+                <echo file="${project.build.directory}/version.txt"><![CDATA[
+{
+  "build_description" : "${ReleaseInfo}",
+  "product_name" : "${product.name}",
+  "build_version" : "${build.version}",
+  "${key.build_timestamp}" : "${docs.build.timestamp}"
+}
+                ]]></echo>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>install version.txt</id>
+            <phase>install</phase>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <configuration>
+              <file>${project.build.directory}/version.txt</file>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>${project.artifactId}</artifactId>
+              <packaging>txt</packaging>
+              <version>${project.version}</version>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

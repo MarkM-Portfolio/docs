@@ -1,0 +1,669 @@
+.writer .document
+{
+  outline: none;
+  background-color: #F0F0F0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.writer .paging
+{
+  position: absolute;
+  z-index: 0;
+  background-color: #FFFFFF;
+  /*-webkit-box-shadow: 4pt 4pt 2pt #888888;
+  box-shadow: 4pt 4pt 2pt #888888;*/
+  border: 1px solid #cacaca;
+
+box-shadow: 0 0 4px rgba(0,0,0,0.1);
+-moz-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+body[style*="direction: rtl"] .writer {
+	direction: ltr;
+}
+
+.note .writer .paging
+{
+	border: 1px solid transparent;
+	box-shadow: none;
+}
+
+.note,
+body.note,
+.note .writer .document
+{
+	background: white;
+}
+
+.writer .paging .header
+{ 
+   background-image:url("headerbottom.png"); 
+}
+
+.writer .paging .headerTitle
+{    background-color:white;  
+}
+.writer .paging .headerTitleLeft{
+  background-image:url("headerleft.png");
+   background-position: 0 -1px; 
+   background-repeat: no-repeat;  
+   width: 17px;
+   float: left;
+}
+.writer .paging .headerTitleContent
+{
+ 	color:#333333; 
+  	font-family:Helvetica, Arial Regular;
+  	font-size:10pt;
+  	padding:3px 0;
+ 	background-color:white;
+  	float:left;
+}
+.writer .paging .headerTitleRight{
+ background-image:url("headerright.png") ;
+     background-position: 0 -1px; 
+     width: 17px;
+     float:right;
+     background-repeat: no-repeat;
+}
+.writer .paging .headerTitleBottom{ 
+  background-image:url("headerbottom.png"); 
+  background-repeat:repeat-x; 
+  background-position:bottom;
+  margin:0 17px;
+}
+
+.writer .paging .footer
+{
+   background-image:url("footertop.png");    
+}
+.writer .paging .footerTitle
+{    background-color:white;  
+}
+.writer .paging .footerTitleLeft{
+  background-image:url("footerleft.png");
+   background-position: 0 1px; 
+   background-repeat: no-repeat;  
+   width: 17px;
+   float: left;
+}
+.writer .paging .footerTitleContent
+{
+ 	color:#333333; 
+  	font-family:Helvetica, Arial Regular;
+  	font-size:10pt;
+  	padding:10px 0 1px;
+ 	background-color:white;
+  	float:left; 	
+}
+.writer .paging .footerTitleRight{
+ background-image:url("footerright.png") ;
+     background-position: 0 1px; 
+     width: 17px;
+     float:right;
+     background-repeat: no-repeat;
+}
+.writer .paging .footerTitleTop{ 
+  background-image:url("footertop.png"); 
+  background-repeat:repeat-x; 
+  background-position:top;
+  margin:0 17px;
+}
+
+/* Header/footer view mode */
+.writer .editingBody .paging .header,
+.writer .editingBody .paging .headerTitle
+{
+ 	display:none;
+}
+.writer .editingBody .paging .footer,
+.writer .editingBody .paging .footerTitle
+{
+ 	display:none;
+}
+.writer .editingBody .paging .headerArea, .writer .editingBody .paging .footerArea
+{ 	
+	opacity: 0.5;
+}
+.writer .editingBody .paging .header, .writer .editingBody .paging .footer
+{
+ 	border: 0px solid #c6c6c6;
+	opacity: 0.5;
+}
+
+/* Body Editing mode */
+.writer .editingHF .paging .body
+{
+	opacity: 0.5;
+}
+
+.writer .frame
+{
+  background-color: #FFFFFF;
+  border: 1px solid #F0F0F0;
+}
+
+.writer .line
+{
+  white-space: nowrap;
+}
+
+.writer .vanish .line{
+	border-bottom: 1px dotted #808080;
+}
+
+.carriageReturnDisabled .writer .vanish .line{
+	border-bottom: none !important;
+	display: none;
+}
+
+.writer .pagebreak
+{
+    clear: both;
+    display: inline-block;
+    float: none;
+    height: 11px;
+    width: 100%;
+    position: relative;
+    text-align:center;
+}
+
+.writer .breakdot
+{
+	position: absolute;
+    height: 0px; 
+    border-top: 1px dotted #999999;
+    top: 5px;
+    width:100%;
+}
+
+.writer .breaktext
+{
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight:normal;
+    text-decoration:none;
+    display: inline-block;
+    background: white;
+    position: relative;
+    padding: 0 2px;
+}
+
+.writer .sectionbreak
+{
+    clear: both;
+    display: inline-block;
+    float: none;
+    height: 11px;
+    width: 100%;
+    position: relative;
+    text-align:center;
+}
+
+.writer .anchorIndicator
+{
+	background: url("anchor.png") no-repeat scroll center center;
+	position: absolute;
+	top: 0px;
+	left: -30px;
+	width: 20px;
+	height: 20px;
+}
+
+.writer .anchorIndicatorInTable
+{
+	left: -10px !important;
+}
+
+.writer .run
+{
+  white-space: nowrap;
+  letter-spacing: 0;
+ /*  display:inline-block; defect 40910 Will cause text-decoration can't displayed. 
+     for Safari set inline style 'display: inline-block' in Run.js getStyleStr()
+ */
+}
+.writer .comments
+{
+/*  border-bottom: 1px dashed blue; */
+	 background-color: #FFF6C9  !important;
+}
+
+.writer .comments2
+{
+/* Two comments */
+	 background-color: #FFED9E  !important;
+}
+
+.writer .commentsMore
+{
+/* Three and more comments */
+	 background-color: #FFE57D  !important;
+}
+
+.writer .comments_resolved
+{
+	 background-color: #F1F1F1;
+}
+
+.writer .comments_resolved2
+{
+/* Two comments */
+	 background-color: #F1F1F1;
+}
+
+.writer .comments_resolvedMore
+{
+/* Three and more comments */
+	 background-color: #F1F1F1;
+}
+
+.writer .comments_img
+{
+  border-bottom: 2px dashed #FFED9E;
+}
+
+.writer .comments_resolvedimg
+{
+  border-bottom: 2px dashed #F1F1F1;
+}
+
+.writer .comment_selected
+{
+  border-bottom: 2px dashed #FFED9E;
+}
+
+.writer .task
+{
+	position: absolute; 
+	/*opacity: 0.5;*/
+	z-index: 10000; 
+	background-color: rgb(156, 156, 78); 
+	border: 0px solid rgb(156, 156, 78);
+}
+
+.writer .task_done
+{
+	position: absolute; 
+	/*opacity: 0.5;*/ 
+	z-index: 10000; 
+	background-color: rgb(192, 192, 192); 
+	border: 0px solid rgb(192, 192, 192);
+	
+}
+.writer .task_title
+{
+	background-color: white; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#000000; 
+	font-size:medium; 
+	font-weight:bold;
+	white-space:nowrap;
+	overflow:hidden;
+	position:absolute;
+	top:-20px;
+	z-index:10001;
+}
+.writer .toc
+{
+  background-color: #ebebeb;
+}
+
+.writer .field
+{
+  background-color: #F0F0F0;
+}
+
+.writer .Txbx , .writer .FLTextBox, .writer .TBTextBox, .writer .SQTextBox
+{
+  opacity:1;
+  background-color: #FFFFFF;
+}
+
+.inputWrapper
+{
+  position: absolute;
+  border: 0 none;
+  outline-style: none;
+  z-index: 100;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  top: -100px;
+}
+
+.writer .table .tableLine .tableBox
+{
+  border : 1px solid;
+}
+.writer .table{
+	border-collapse: collapse;
+	table-layout:fixed;
+	position:relative;
+}
+.writer .row{
+	position:relative;
+}
+.writer .cell{
+	position:absolute;
+}
+.writer .cell .borderGroup {
+	z-index: 1;
+	position: absolute;
+}
+.writer .cell .topGroup {
+	width: 100%;
+	top: 0;
+}
+.writer .cell .bottomGroup {
+	width: 100%;
+	bottom: 0;
+}
+.writer .cell .leftGroup {
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.writer .cell .rightGroup {
+	height: 100%;
+	right: 0;
+	top: 0;
+}
+.writer .italicCursor
+{
+	-moz-transform: rotate(13deg) ;
+	-webkit-transform: rotate(13deg);
+	transform: rotate(13deg);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.9743700647852351, M12=-0.22495105434386534, M21=0.22495105434386534, M22=0.9743700647852351, SizingMethod='auto expand')";
+}
+
+.bodyClass
+{
+/*	background-color: #caced3; // Gray */
+	background-color: #E0E0E0;
+	margin: 0px;
+}
+
+/* Override paragraph style*/
+.carriageReturnDisabled .carriageNode
+{	
+	display:none;	
+}
+.carriageReturnDisabled .pagebreak
+{	
+	display:none;	
+}
+.carriageReturnDisabled .sectionbreak
+{	
+	display:none;	
+}
+
+.columnsPanelShow .pagebreak
+{   
+    display:inline-block !important;   
+}
+
+.columnsPanelShow .sectionbreak
+{   
+    display:inline-block !important;   
+}
+
+.bookMarkDisabled .bookMark
+{
+	display:none;	
+}
+
+.track-show .track-inserted  {
+	position: relative;
+}
+
+.track-show .carriageNode.track-inserted
+{
+	position: relative;
+}
+
+.track-show .track-deleted
+{
+	position: relative !important;
+	display: inline-block !important;
+	z-index: 99999;
+	width: 0px;
+}
+
+.track-show .track-id-listed.track-deleted .delete-text
+{
+	
+}
+
+.track-show .track-id-listed.track-deleted .delete-triangle
+{
+    width: 5px !important;
+    height: 0 !important;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+    top: 5px !important;
+    left: -5px !important;
+    display: inline-block !important;
+}
+
+.track-show .track-id-listed.track-deleted > .delete-triangle:after
+{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-100px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 170px solid #4679BD;
+}
+
+.track_change_popup
+{
+    background: white;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+    z-index: 3000;
+    max-width: 700px;
+    max-height: 300px;
+    overflow: auto;
+    word-wrap: break-word;
+    outline: none !important;
+}
+
+.track_change_popup.image_popup
+{
+	overflow: hidden;
+}
+
+.track_change_popup .content
+{
+    padding: 3px 8px;
+}
+
+.track_change_popup .image
+{
+ 	max-width: 600px;
+    max-height: 300px;
+    min-width: 50px;
+    min-height: 25px;
+}
+
+.track_change_popup .del_txt
+{
+	text-decoration: line-through
+}
+
+.track_change_popup .ins_txt
+{
+}
+
+.track_change_popup .crt_tbl
+{
+	display: block;
+}
+
+.track_change_popup .del_tbl
+{
+	text-decoration: line-through;
+	display: block;
+}
+
+.track_change_popup .crt_para
+{
+    
+}
+
+.track_change_popup .mge_para
+{
+	text-decoration: line-through;
+}
+
+.track_change_popup .crt_para:after,
+.track_change_popup .mge_para:after
+{
+	content: " "; 
+	display: block
+}
+
+.oneui30.dropdownbtn .dijitButton .dijitButtonNode, 
+.oneui30.dropdownbtn .dijitDropDownButton .dijitButtonNode, 
+.oneui30.dropdownbtn .dijitComboButton .dijitButtonNode, 
+.oneui30.dropdownbtn .dijitToggleButton .dijitButtonNode{
+padding:0px;
+}
+
+.oneui30.dropdownbtn .dijitDropDownButton{
+padding:0px;
+margin:0px;
+}
+
+.oneui30.dropdownbtn .dijitButtonText{
+padding:0px;
+}
+.carriageNode
+{	
+	display:inline-block;
+	font-size:9pt;
+	font-family:Arial;
+	font-weight: normal;
+	font-style:normal;
+	text-decoration:none;
+	background-color:transparent;
+	color:#888888;
+}
+
+.carriageNode:before
+{
+	height:100%;
+}
+
+.line.rtl:before {
+	content: "\202B";
+}
+
+.line.rtl:after {
+	content: "\202C";
+}
+
+div.Toc .line.rtl span.run:before {
+	content: "\202B";
+}
+
+div.Toc .line.rtl span.run:after {
+	content: "\202C";
+}
+
+.writer .rtl .listSymbol {
+	display: inline-block;
+	direction: rtl;
+}
+
+div.Toc .line.rtl span.run:hover {
+	direction: rtl;
+}
+
+.rtl.bookMark {
+	transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
+
+.coEditToolip
+{
+	margin-left: 8px;
+	transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-webkit-transform : scale(0.9);
+	-moz-transform: scale(0.9);
+}
+
+.coEditToolip,
+.coEditToolip *
+{
+    outline:none !important;
+    border: none !important;
+}
+
+.coEditToolip
+{
+	margin-top: -2px;
+	margin-left: 10px;
+}
+
+.coEditToolip .dijitTooltipConnector
+{
+	display: none
+}
+
+.coEditToolip .dijitTooltipContainer
+{
+	border:0;
+	padding:0 2px 0 2px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 13px;
+	font-family: Helvetica, Arial, sans-serif;
+	white-space: nowrap;
+	box-shadow: none;
+ 	-webkit-box-shadow: none ;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+}
+
+.coEditToolip .dijitTooltipContents::before {
+	color: rgba(0, 0, 0, 0);
+	outline: none !important;
+    border: none !important;
+	content: ".";
+	height: 14px;
+	left: -7px;
+	position: absolute;
+	top: 3px;
+	width: 14px;
+	z-index: -1;
+	transform: rotate(45deg);
+	-ms-transform:  rotate(45deg);
+	-moz-transform:  rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+.forLine.coEditToolip 
+{
+	margin-top: 0px !important;
+}
+.forLine.coEditToolip .dijitTooltipContents::before {
+	right: -7px !important;
+	left:  auto !important;
+}
+
+.rtl.forLine.coEditToolip .dijitTooltipContents:before {
+	right: auto !important;
+	left: -7px !important;
+}

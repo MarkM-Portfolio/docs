@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+  <!-- Here is a comment statement -->
+  <!-- Comments can occur anywhere in the source file. -->
+
+  <HTML>
+  <HEAD>
+     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+     <SCRIPT LANGUAGE="JavaScript1.2">
+        var SampleVariable = "Here is some translatable JavaScript text." ;
+     </SCRIPT>
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF">
+  <H1><A NAME="header1">Heading level 1</A> </H1>
+  <P>Here is an ordered list:
+  <OL>
+  <LI>List item 1</LI>
+  <LI>List item 2</LI>
+  </OL>
+  <!-- START NON-TRANSLATABLE -->
+  <P>http:\\www.ibm.com\sample\test.html
+  <!-- END NON-TRANSLATABLE -->
+  <P>Here is a link using JavaScript tagging
+  <A HREF="http://w3.sample.ibm.com"
+     onMouseOver="window.status=SampleVariable; return true">
+  around this phrase</A> for testing.
+  </BODY>
+  </HTML>
+

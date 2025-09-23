@@ -1,0 +1,358 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2022                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.concord.viewer.war" basedir="." default="findbugs">
+	<property environment="env"/>
+	<property name="node.home" value="${env.NODE_HOME}"/>
+	<property name="src.dir" value="src"/>
+	<property name="webcontent.dir" value="WebContent"/>
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${webinf.dir}/classes"/>
+	<property name="war.dir" value="${bin.dir}/war"/>
+	<property name="ear.dir" value="../com.ibm.concord.viewer.ear/"/>
+	<property name="static.dir" value="${webcontent.dir}/static"/>
+	<property name="version.dir" value="${static.dir}/${build.timestamp}"/>
+	<property name="jstest.dir" value="${bin.dir}/jstest" />
+	<property name="appname" value="&lt;display-name&gt;ViewerApp&lt;/display-name&gt;" />
+	<property name="tab" value="&#x0009;"/>
+	<property name="lan.filter" value="${tab}&lt;filter&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;LLLanguageFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;filter-class&gt;language.filter.LanguageFilter&lt;/filter-class&gt;${line.separator}${tab}&lt;/filter&gt;${line.separator}${tab}&lt;filter-mapping&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;LLLanguageFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;url-pattern&gt;/*&lt;/url-pattern&gt;${line.separator}${tab}&lt;/filter-mapping&gt;${line.separator}"/>
+	<property name="ext.filter" value="${tab}&lt;filter&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;ExtensibleFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;filter-class&gt;com.ibm.lconn.core.web.extension.ExtensibleFilter&lt;/filter-class&gt;${line.separator}${tab}&lt;/filter&gt;${line.separator}${tab}&lt;filter-mapping&gt;${line.separator}${tab}${tab}&lt;filter-name&gt;ExtensibleFilter&lt;/filter-name&gt;${line.separator}${tab}${tab}&lt;url-pattern&gt;/*&lt;/url-pattern&gt;${line.separator}${tab}&lt;/filter-mapping&gt;${line.separator}"/>
+
+	<path id="project.classpath">
+		<pathelement path="${build.home}/com.ibm.concord.viewer.config.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.platform.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.services.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.cache.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.document.services.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.job.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.document.common.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.lc3.integration.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.tempstorage.integration.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.document.common.jar"/>
+		<pathelement path="${build.home}/com.ibm.concord.viewer.spi.jar"/>
+		<pathelement path="${build.home}/com.ibm.docs.viewer.ecm.integration.jar"/>
+	</path>
+
+	<path id="lib.classpath">
+		<pathelement path="${ear.dir}/lib/json4j.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/bss.shim*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/bss.json*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/shared.config*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/shared.authentication*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/shared.stringutils*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/shared.httpclient_wrapper*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/httpclient*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/slf4j-api*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/slf4j-jdk14*.jar"/>
+		<fileset dir="${ear.dir}" includes="lib/lc.util.web-3.0.jar"/>
+	</path>
+
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+	</path>
+
+	<target name="Build concord">
+		<delete includeemptydirs="true">
+			<fileset dir="${basedir}/WebContent/js/html/" includes="images/**"/>
+			<fileset dir="${basedir}/WebContent/js/html/" includes="styles/**"/>
+			<fileset dir="${basedir}/WebContent/js/html/" includes="js/**"/>
+		</delete>
+		<move todir="${basedir}/WebContent/js/html">
+			<fileset dir="../HTMLViewer">
+					<include name="**/images/"/>
+					<include name="**/styles/"/>
+			</fileset>
+		</move>
+		<mkdir dir="${basedir}/WebContent/js/html/js/wseditor/css/" />
+		<copy todir="${basedir}/WebContent/js/html/js/wseditor/css">
+			<fileset dir="../HTMLViewer/js/wseditor/css"/>
+		</copy>
+		<mkdir dir="${basedir}/WebContent/js/html/js/concord/text/" />
+		<copy todir="${basedir}/WebContent/js/html/js/concord/text">
+			<fileset dir="../HTMLViewer/js/concord/text"/>
+		</copy>
+		<mkdir dir="${jstest.dir}/" />
+		<move todir="${basedir}/${jstest.dir}">
+			<fileset dir="${webcontent.dir}/" >
+				<include name="js/util/**" />
+			</fileset>
+		</move>
+		<copy todir="${basedir}/buildtools/dojo">
+			<fileset dir="${basedir}/WebContent/js/dojo"/>
+		</copy>
+		<condition property="dojo.command" value="${basedir}/buildtools/util/buildscripts/build.sh" else="${basedir}/buildtools/util/buildscripts/build.bat">
+			<os family="unix" />
+		</condition>
+		<!-- <condition property="nodejs.command" value="${basedir}/buildtools/nodejs/node-v0.10.33-linux-x86/bin/node" else="${basedir}/buildtools/nodejs/node.exe">
+		    <os family="unix" />
+		</condition> -->
+		<condition property="nodejs.command" value="${node.home}/bin/node" else="${basedir}/buildtools/nodejs/node.exe">
+		    <os family="unix" />
+		</condition>
+		<!-- For unix OS, need to chmod +x for NodeJS executable-->
+		<!-- <exec osfamily="unix" executable="/bin/chmod">
+		    <arg line="+x" />
+			<arg line="${basedir}/buildtools/nodejs/node-v0.10.33-linux-x86/bin/node" />
+		</exec> -->
+		<exec osfamily="unix" executable="/bin/chmod">
+		    <arg line="+x" />
+			<arg line="${basedir}/buildtools/util/buildscripts/build.sh" />
+		</exec>
+		<condition property="modearg" value="--bin node" else="">
+			<os family="unix" />
+		</condition>
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${dojo.command}">
+			<arg line="${modearg}"/>
+			<arg line="action=clean,release"/>
+			<arg line="mini=true"/>
+			<arg line="profile=viewer"/>
+			<arg line="layerOptimize=uglify"/>
+			<arg line="releaseDir=../../../${version.dir}/" />
+			<arg line="cssOptimize=comments"/>
+			<arg line="optimize=uglify"/>
+			<arg line="selectorEngine=acme"/>
+			<arg line="copyTests=false"/>
+			<arg line="nodejs=${nodejs.command}" />
+			<arg line="uglifyjs=../../../buildtools/uglifyjs/UglifyJS-1.3.5/bin/uglifyjs" />
+		</exec>
+
+		<!-- regenerate pdf.worker.js to remove dojo wrapper -->
+		<exec dir="${basedir}/buildtools/nodejs" executable="${nodejs.command}" output="${basedir}/${version.dir}/dojo/pdfjs/pdf.worker.js">
+			<arg line="../../buildtools/uglify-js/bin/uglifyjs" />
+			<arg line="${basedir}/WebContent/js/pdfjs/pdf.worker.js" />
+		</exec>
+		<exec dir="${basedir}/buildtools/nodejs" executable="${nodejs.command}" output="${basedir}/${version.dir}/dojo/pdfjs/web/compatibility.js">
+			<arg line="../../buildtools/uglify-js/bin/uglifyjs" />
+			<arg line="${basedir}/WebContent/js/pdfjs/web/compatibility.js" />
+		</exec>
+
+<!--
+		<echo message="start closure compiler."/>
+		<mkdir dir="${basedir}/${version.dir}/js/pdfjs/" />
+		<condition property="closure.compiler.command" value="${basedir}/buildtools/util/buildscripts/pdfjscc.sh" else="${basedir}/buildtools/util/buildscripts/pdfjscc.bat">
+			<os family="unix" />
+		</condition>
+		<exec osfamily="unix" executable="/bin/chmod">
+		  <arg value="+x"/>
+		  <arg value="${closure.compiler.command}"/>
+		</exec>
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${closure.compiler.command}">
+			<arg line="==js &quot;${basedir}/WebContent/js/pdfjs/pdf.js&quot;"/>
+			<arg line="==js_output_file &quot;${basedir}/${version.dir}/js/pdfjs/pdf.js&quot;"/>
+		</exec>
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${closure.compiler.command}">
+			<arg line="==js &quot;${basedir}/WebContent/js/pdfjs/pdf.worker.js&quot;"/>
+			<arg line="==js_output_file &quot;${basedir}/${version.dir}/js/pdfjs/pdf.worker.js&quot;"/>
+		</exec>
+		<mkdir dir="${basedir}/${version.dir}/js/pdfjs/web/" />
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${closure.compiler.command}">
+			<arg line="==js &quot;${basedir}/WebContent/js/pdfjs/web/compatibility.js&quot;"/>
+			<arg line="==js_output_file &quot;${basedir}/${version.dir}/js/pdfjs/web/compatibility.js&quot;"/>
+		</exec>
+		-->
+	<!--
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${closure.compiler.command}">
+			<arg line="==js &quot;${basedir}/WebContent/js/pdfjs/web/debugger.js&quot;"/>
+			<arg line="==js_output_file &quot;${basedir}/${version.dir}/js/pdfjs/web/debugger.js&quot;"/>
+		</exec>
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${closure.compiler.command}">
+			<arg line="==js &quot;${basedir}/WebContent/js/pdfjs/web/l10n.js&quot;"/>
+			<arg line="==js_output_file &quot;${basedir}/${version.dir}/js/pdfjs/web/l10n.js&quot;"/>
+		</exec>
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${closure.compiler.command}">
+			<arg line="==js &quot;${basedir}/WebContent/js/pdfjs/web/pdfJsViewer.js&quot;"/>
+			<arg line="==js_output_file &quot;${basedir}/${version.dir}/js/pdfjs/web/pdfJsViewer.js&quot;"/>
+		</exec>
+		  -->
+	</target>
+
+	<target name="jstest" depends="Build concord">
+		<!--mkdir dir="${bin.dir}/${jstest.dir}/" /-->
+		<zip destfile="${bin.dir}/JSTest.zip">
+			<fileset dir="${jstest.dir}/" />
+		</zip>
+		<copy todir="${build.home}">
+			<fileset dir="${bin.dir}" includes="JSTest.zip" />
+		</copy>
+	</target>
+
+	<target name="Clean" depends="jstest">
+		<delete dir="${bin.dir}"/>
+	</target>
+
+	<target name="compile" depends="jstest">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath"/>
+			<classpath refid="lib.classpath"/>
+			<classpath refid="was.classpath"/>
+		</javac>
+	</target>
+
+	<target name="move2static" depends="compile">
+		<move file="${basedir}/${version.dir}/dojo" tofile="${basedir}/${version.dir}/js"/>
+		<move todir="${basedir}/${version.dir}/styles">
+			<fileset dir="${basedir}/${version.dir}/js/styles" />
+		</move>
+		<copy todir="${basedir}/${version.dir}/images">
+			<fileset dir="${basedir}/${webcontent.dir}/images"/>
+		</copy>
+		<delete includeEmptyDirs="true" verbose="false">
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="tests/**/"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="**/tests/**/"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="**/demos/**/"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="util/**"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="**/*.psd"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="**/*.fla"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="**/*.svg"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="**/*.as"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="**/*.swf"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojo" includes="**/*.uncompressed.js"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dijit" includes="**/*.uncompressed.js"/>
+				    <fileset dir="${basedir}/${version.dir}/js/dojox" includes="**/*.uncompressed.js"/>
+				    <fileset dir="${basedir}/${version.dir}/js/viewer" includes="**/*.uncompressed.js"/>
+				    <fileset dir="${basedir}/${version.dir}/js/pdfjs" includes="**/*.uncompressed.js"/>
+				    <fileset dir="${basedir}/${version.dir}/js/html" includes="**/*.uncompressed.js"/>
+				    <fileset dir="${basedir}/${version.dir}/js" includes="**/package.json"/>
+				    <fileset dir="${basedir}/${version.dir}/js" includes="**/package.js"/>
+				    <fileset dir="${basedir}/${version.dir}/js" includes="build-report.txt"/>
+		</delete>
+		<move todir="${basedir}/${version.dir}/js/html/js">
+			<fileset dir="../HTMLViewer/js"/>
+		</move>
+		<!-- start to compress static files -->
+		<!--echo message="Start to gzip css/js/html files in ${basedir}/${version.dir}/js."/>
+		<pathconvert pathsep=";" property="compressfiles">
+			<fileset dir="${basedir}/${version.dir}" includes="**/*.js"/>
+			<fileset dir="${basedir}/${version.dir}" includes="**/*.css"/>
+			<fileset dir="${basedir}/${version.dir}" includes="**/*.html"/>
+		</pathconvert>
+
+		<script language="javascript">
+			<![CDATA[
+				importPackage(java.io);
+				var files = project.getProperty("compressfiles").split(";"),
+					gzip,echo,change,i,len;
+
+				for (i=0, len=files.length; i < len; i++) {
+					gzip = project.createTask("gzip");
+					gzip.setSrc(new File(files[i]));
+					gzip.setDestfile(new File(files[i].replace(".js", ".js.gz").replace(".css", ".css.gz").replace(".html", ".html.gz")));
+					gzip.execute();
+					echo=project.createTask("delete");
+					echo.setFile(new File(files[i]));
+					echo.execute();
+					change=project.createTask("move");
+					change.setFile(new File(files[i].replace(".js", ".js.gz").replace(".css", ".css.gz").replace(".html", ".html.gz")));
+					change.setTofile(new File(files[i]));
+					change.execute();
+				}
+			]]>
+		</script>
+		<echo message="Gzip css/js/html finished.."/ -->
+		<move file="../HTMLViewer/currentBuildLabel.txt" tofile="${webcontent.dir}/docs_version.txt" />
+		<delete includeEmptyDirs="true">
+			<fileset dir="../HTMLViewer"/>
+		</delete >
+	</target>
+
+	<target name="war" depends="move2static">
+
+		<echo file="${webcontent.dir}/version.txt">
+			{
+			 "build_description" : "${ReleaseInfo}",
+			 "product_name" : "Viewer",
+			 "build_version" :  "${build.version}" ,
+			 "viewer_version" : "${build.timestamp}"
+			}
+		</echo>
+
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+					<globmapper from="*" to ="lib/*"/>
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath"/>
+		</pathconvert>
+		<pathconvert property="manifest.project.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+				</chainedmapper>
+			</mapper>
+			<path refid="project.classpath"/>
+		</pathconvert>
+		<mkdir dir="${war.dir}"/>
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${webcontent.dir}">
+				<exclude name="js/"/>
+				<exclude name="images/"/>
+				<exclude name="styles/"/>
+			</fileset>
+			<manifest>
+				<attribute name="Created-By" value="IBM"/>
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}"/>
+			</manifest>
+		</war>
+
+		<mkdir dir="${build.home}/sc"/>
+		<copyfile src="${webinf.dir}/web.xml" dest="${build.home}/sc/web.xml" forceoverwrite="true"/>
+		<!--
+			inject an SC filter to web.xml.  The classes are provided by smartcloud spi which is a shared library provided by AC team
+
+			    <filter>
+			        <filter-name>LLLanguageFilter</filter-name>
+			        <filter-class>language.filter.LanguageFilter</filter-class>
+			    </filter>
+			    <filter-mapping>
+			        <filter-name>LLLanguageFilter</filter-name>
+			        <url-pattern>/*</url-pattern>
+			    </filter-mapping>
+		-->
+		<replace file="${build.home}/sc/web.xml" token="${appname}" value="${appname}${line.separator}${lan.filter}"/>
+		<replace file="${build.home}/sc/web.xml" token="${appname}" value="${appname}${line.separator}${ext.filter}"/>
+		<war destfile="${build.home}/sc/${ant.project.name}.war" webxml="${build.home}/sc/web.xml">
+			<fileset dir="${webcontent.dir}">
+				<exclude name="js/"/>
+				<exclude name="images/"/>
+				<exclude name="styles/"/>
+			</fileset>
+			<manifest>
+				<attribute name="Created-By" value="IBM"/>
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}"/>
+			</manifest>
+		</war>
+	</target>
+
+	<target name="restore" depends="war">
+		<delete dir="${static.dir}"/>
+		<move todir="${webcontent.dir}/">
+			<fileset dir="${basedir}/${jstest.dir}">
+				<include name="js/util/**" />
+			</fileset>
+		</move>
+	</target>
+
+	<target name="deploy" depends="restore">
+		<copy todir="${build.home}">
+			<fileset dir="${war.dir}"/>
+		</copy>
+		<delete dir="${bin.dir}"/>
+	</target>
+	<target name="findbugs" depends="deploy">
+		<ant dir="${findbugs.home}" inheritAll="true"/>
+	</target>
+</project>

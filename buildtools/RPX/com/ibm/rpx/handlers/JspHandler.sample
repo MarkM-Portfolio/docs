@@ -1,0 +1,54 @@
+<%-- begin_generated_IBM_copyright_prolog                           --%>
+<!--                                                                -->
+<!--  Licensed Materials - Property of IBM                          -->
+<!--                                                                -->
+<!--  5724-K83                                                      -->
+<!--                                                                -->
+<!--  (C) Copyright IBM Corp. 2004,2005  All Rights Reserved.       -->
+<!--                                                                -->
+<!--  US Government Users Restricted Rights - Use, duplication or   -->
+<!--  disclosure restricted by GSA ADP Schedule Contract with       -->
+<!--  IBM Corp.                                                     -->
+<!--                                                                -->
+<%-- end_generated_IBM_copyright_prolog                             --%>
+<%@ page import="com.ibm.lifesci.score.ui.*, com.ibm.lifesci.score.ui.utils.*, org.apache.jetspeed.portlet.*" %>
+
+<table height="100%" width="100%" border="0" cellpadding="0" cellspacing="0" class="dialogContainer"> <!--style="border:1px solid rgb(160,160,160)"-->
+	<tr>
+		<td valign="top" class="dialogHeading" nowrap colspan="2" valign="top">
+			<table cellpadding="2" cellspacing="0">
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="100%">
+							<tr>
+								<td><b>Welcome</b></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" height="100%">
+			<table border="0" cellpadding="3" cellspacing="0">
+				<tr>
+					<td>
+						<table border="0" cellpadding="3" cellspacing="0">
+							<tr>
+								<td>
+								<img src="<%=response.encodeURL("images/login.gif")%>" alt="Login">
+								</td>
+								<td nowrap style="">
+								Select a repository task from the tree to work with <b><%=((WorkAreaSessionBean)((PortletRequest)request).getPortletSession().getAttribute(Const.SESSION_BEAN)).getRepository().getRepositoryName()%></b>.
+								</td>
+								<td width="100%"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

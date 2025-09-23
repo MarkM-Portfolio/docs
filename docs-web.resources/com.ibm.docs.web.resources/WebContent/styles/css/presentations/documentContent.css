@@ -1,0 +1,478 @@
+@import url("tablestyles.css");
+/******************** CAEDITOR  *********************/
+
+/* From Slide Sorder */
+.concord .draw_page a span {
+text-decoration: underline !important;
+color: #4178be;
+}
+.concord p {margin: 0px; }
+.concord ul,.concord ol{
+	margin:0 0 0 0px;
+	padding-left:0px;
+	list-style-position:outside;
+}
+
+.concord div[dir="rtl"] ul, .concord div[dir="rtl"] ol{
+	padding-right:0px;
+}
+
+div#slideEditorContainer.lotusDefault, body div#slideShowContainer  {
+	font-family:Arial,Helvetica,sans-serif;
+}
+div#slideEditorContainer.lotusJapanese, body.lotusJapanese div#slideShowContainer 
+{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+div#slideEditorContainer.lotusKorean, body.lotusKorean div#slideShowContainer  
+{
+	font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}
+
+.concord.ck_mainBody{
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+.concord.lotusJapanese.ck_mainBody{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+.concord.lotusKorean.ck_mainBody{
+	font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}
+
+/* From slide Editor 
+
+body.concord{
+	font-size: 12px;
+	font-family:Arial,Helvetica,sans-serif; 
+	margin: 0px;
+}
+div#slideEditorContainer.lotusDefault  {
+	font-family:Arial,Helvetica,sans-serif;
+}
+body.lotusJapanese, div#slideEditorContainer.lotusJapanese 
+{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+body.lotusKorean, div#slideEditorContainer.lotusKorean 
+{
+	font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}
+*/
+.concord p,.concord ul,.concord ol{
+	/*margin-top:0px;
+	margin-bottom: 0px;*/
+	font-size:1em;
+/*D13549 Change line-height to 1*/
+/*Don't use em which causes issues*/
+/*with different font sizes*/
+/*D17441 adjust lineheight to 1.2 to match  coediting indicator */
+	line-height:1.2558;
+	list-style-position:outside;
+}
+
+
+/* Newly added CSS */
+.concord ol li,.concord ul li {
+	font-size:1em;
+/*D13549 Change line-height to 1*/
+/*Don't use em which causes issues*/
+/*with different font sizes*/
+/*	line-height:1.3em;*/
+/* D15425 Updating the line spacing for bullets */
+	line-height:1.2558;
+/*	list-style-type: disc;*/
+	padding: 0 0 0 15px;
+	margin:0 0 0 18px;
+}
+
+.concord .table_table {
+	font-size:1em;
+	height: 100%;
+	width:100%;
+	word-wrap: break-word;
+	table-layout:fixed;
+	border-collapse:collapse;
+}
+
+.ce808 {background-repeat:repeat;}
+
+/* only for old draft, newly created table replace ConcordDefault with st_plain*/
+.ConcordDefault.table_table td {
+	border:1px solid; 
+	word-wrap: break-word;	
+	/*D37577 [Safari][SampleSpecial]Text in more table cells will lost after paste in view mode */
+	/* overflow:hidden; */
+}
+.ConcordDefault.table_table th {
+	border:1px solid; 
+	word-wrap: break-word;	
+	font-weight: bold;
+	text-align:left;
+	/*D37577 [Safari][SampleSpecial]Text in more table cells will lost after paste in view mode */
+	/* overflow:hidden; */
+}
+
+/* Smart Table Column Resizings */
+div#tableScreenResizeLayer {
+	position: absolute;
+	/* opacity: 1; */
+	opacity: 0.3;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #EEEEEE;
+	z-index: 199;
+}
+
+div#tableResizeLayer {
+	position: absolute;
+	opacity: 1;
+	/*
+	left: 0px;
+	top: 0px;
+	*/
+	padding: 0px;
+	margin: 0px;
+	background-color: #EEEEEE;
+	z-index: 199;
+}
+
+div.tableResizeHandle {
+	width: 4px;
+	top: 0px;
+	height: 100%;
+	background-color: silver;
+	/* cursor: w-resize; */
+	cursor: col-resize;
+	z-index: 199;
+	float: left;
+	position: absolute;
+	border-style: none;
+	border-width: 0px
+}
+
+div.tableResizeHandleSelected {
+	width: 1px;
+	border-style: dashed;
+	border-width: 1px
+}
+
+div.tableResizeCol {
+	border: 0px dashed red;
+	top: 0px;
+	height: 100%;
+	float: left;
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Smart Table Overrides */
+
+/* smartTable */
+table.smartTable {
+	/*font-size: 1.2em; */
+	border-collapse: collapse;
+	height:100%;	
+	/*margin: 3px 3px 3px 3px; */
+	/*padding: 0px 0px 0px 0px; */ 
+	}
+	
+	.table_table caption{
+	padding: 3px 3px 3px 3px;
+	text-align:center;
+	background-color: #eeeeee;
+	 
+	 
+}
+	
+table.smartTable caption{
+	padding: 3px 3px 3px 3px;
+	background-color: #eeeeee;	
+}
+
+table.smartTable tr.tableHeaderRow {
+	/*vertical-align: middle;*/ 
+}
+	
+/* STStyle1 */
+table.STStyle1 {
+	font-family: Trebuchet;
+	border: 1px solid #ccc;
+	}
+table.STStyle1 tr.tableHeaderRow {
+	font-size:13px;
+	font-style:bold;
+	background-image:url('../smartTables/images/STStyle1_headerbg.png');
+	color: #fff;
+	}
+table.STStyle1 th {
+	border-left: 1px solid #058cc0;
+	border-right: 1px solid #058cc0;
+	height: 40px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+	font-weight: bold;
+	}
+table.STStyle1 td {
+	padding: 5px 5px 5px 5px;
+	color: #555555;
+	font-size: 11px;
+	height: 35px;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	}
+table.STStyle1 td.tableHeaderCol {
+	font-size:13px !important;
+	font-style:bold !important;
+	background-color:#73CBF7 !important;
+	color: #fff !important;
+}
+table.STStyle1 tr.alternateRow td {
+	background-color: #f6f6ad;
+	color:#363636;
+	} 	
+table.STStyle1 tr td.selectedSTCell {
+	background-color: #BDE6F9;
+	} 
+	
+	
+/* STStyle2 */
+table.STStyle2 {
+	font-family: Trebuchet;
+	border: 1px solid #fff;
+	}
+table.STStyle2 tr.tableHeaderRow {
+	font-size:12px;
+	background-image:url('../smartTables/images/STStyle2_headerbg.png');
+	color: #fff;
+	}
+table.STStyle2 th {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	height: 35px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+	}
+table.STStyle2 td {
+	padding: 5px 5px 5px 5px;
+	color: #555555;
+	font-size: 11px;
+	height: 35px;
+	border: 1px solid #cccccc;
+	background-color: #efefef;
+	}
+table.STStyle2 td.tableHeaderCol {
+	font-size:12px;
+	background-image:url('../smartTables/images/STStyle2_headerbg.png');
+	color: #fff;	
+	}
+table.STStyle2 tr.alternateRow td {
+	background-color: #efefef;
+	color:#555555;
+	} 	
+table.STStyle2 tr td.selectedSTCell {
+	background-color: #ffffcc;
+	} 
+	
+	
+	
+/* STStyle3 */
+table.STStyle3 {
+	font-family: Arial;
+	border: 1px solid #fff;
+	}
+table.STStyle3 tr.tableHeaderRow {
+	font-size:12px;
+	font-style:bold;
+	background-image:url('../smartTables/images/STStyle3_headerbg.png');
+	color: #fff;
+	}
+table.STStyle3 th {
+	border-left: 1px solid #273a51;
+	border-right: 1px solid #273a51;
+	height: 35px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+	font-weight: bold;
+	vertical-align: middle !important;
+	}
+table.STStyle3 td {
+	padding: 5px 5px 5px 5px;
+	color: #555555;
+	font-size: 11px;
+	height: 35px;
+	border: 1px solid #ababab;
+	background-color: #efefef;
+	}
+table.STStyle3 td.tableHeaderCol {
+	font-size:12px;
+	font-style:bold;
+	background-image:url('../smartTables/images/STStyle3_headerbg.png');
+	color: #fff;
+	}
+table.STStyle3 tr.alternateRow td {
+	background-color: #e6e6e6;
+	color:#555555;
+	} 	
+table.STStyle3 tr td.selectedSTCell {
+	background-color: #ffffcc;
+	} 
+	
+	
+/* STStyle4 */
+table.STStyle4 {
+	font-family: Verdana;
+	border: 1px solid #ccc;
+	}
+table.STStyle4 tr.tableHeaderRow {
+	font-size:10px;
+	font-style:bold;
+	text-transform: uppercase;
+	background-image:url('../smartTables/images/STStyle4_headerbg.png');
+	color: #fff;
+	}
+table.STStyle4 th {
+	border-left: 1px solid #223339;
+	border-right: 1px solid #223339;
+	height: 25px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+	}
+table.STStyle4 td {
+	padding: 5px 5px 5px 5px;
+	color: #263d46;
+	font-size: 11px;
+	height: 25px;
+	border: 1px solid #86989e;
+	background-color: #ffffff;
+	}
+table.STStyle4 td.tableHeaderCol {
+		font-size:10px;
+		font-style:bold;
+		text-transform: uppercase;
+		background-image:url('../smartTables/images/STStyle4_headerbg.png');
+		color: #fff;
+	}	
+table.STStyle4 tr.alternateRow td {
+	background-color: #ebf3f5;
+	color:#555555;
+	} 	
+table.STStyle4 tr td.selectedSTCell {
+	background-color: #ffffcc;
+	} 
+	
+/* simpleStyle */
+table.simpleStyle {
+	/*font-family: Verdana;*/
+	/*border: 1px solid #223339;*/
+	}
+table.simpleStyle tr.tableHeaderRow {
+	/*font-size:11px;*/
+	/*font-style:bold;*/
+	/*color: #000;*/
+	}
+table.simpleStyle th {
+	/*border-left: 1px solid #223339;
+	border-right: 1px solid #223339;
+	height: 25px;
+	padding: 5px 5px 5px 5px;
+	text-align:center;
+	*/
+	}
+table.simpleStyle td {
+	/*padding: 5px 5px 5px 5px;
+	color: #000;
+	font-size: 11px;
+	height: 25px;
+	border: 1px solid #223339;
+	background-color: #ffffff;*/
+	}
+table.simpleStyle td.tableHeaderCol {
+	/*	font-size:10px;
+		font-style:bold;
+		color: #fff;*/
+	}	
+table.simpleStyle tr.alternateRow td {
+	
+	} 	
+table.simpleStyle tr td.selectedSTCell {
+	background-color: #ffffcc;
+	} 
+	
+.imgcomment{
+	position:relative; 
+	display:block; 
+	float:right; 
+	padding:0px; 
+	top:0px; 
+	text-decoration:none;
+	padding-top: 5px;
+}
+
+.layoutClassSS{
+	border: 2px solid rgb(232, 232, 232) !important; /*D17605 added important to ensure gray border style is not overwritten */
+	margin: -2px !important;
+	height:100%;
+	width:100%;
+}
+
+/* Updated padding for D9247*/	
+.draw_frame_classes {
+	margin: 0px !important;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:5px;
+}
+
+.cke_skin_lotus .cke_contents {
+    border-style: none !important;
+}
+
+div#slideEditorContainer:focus, div#slideEditorContainer *:focus { 
+	outline: none; 
+}
+
+.centerTextAlign {
+	text-align: center;
+}
+
+.centerVerticalAlign {
+	vertical-align: middle;
+}
+
+.iese .hideInIE {
+	display: none;
+}
+
+/*
+ * Don't hide "empty" lines
+ */
+.mainBody .iese p.userLineBreak > span + br.hideInIE,
+.mainBody .iese p.userLineBreak > br.hideInIE {
+	display: block;
+}
+
+/* normal hyper link style */
+span.nlink {
+	color: #0000ff !important;
+	text-decoration:underline !important;
+}
+/* visited hyper link style */
+span.vlink {
+	color: #800080 !important;
+	text-decoration:underline !important;
+}

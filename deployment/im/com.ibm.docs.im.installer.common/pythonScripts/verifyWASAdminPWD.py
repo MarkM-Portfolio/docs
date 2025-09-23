@@ -1,0 +1,1 @@
+print "VerifyWASAdminPWD::::"+"Successfully"

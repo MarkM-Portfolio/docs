@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>com.ibm.docs.viewer.automation.war</display-name>
+	<listener>
+		<display-name>Initializer</display-name>
+		<listener-class>com.ibm.docs.viewer.automation.ProxyInit</listener-class>
+	</listener>
+	<servlet-mapping>
+		<servlet-name>ViewerProxy</servlet-name>
+		<url-pattern>
+		/proxy</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ViewerProxy</display-name>
+		<servlet-name>ViewerProxy</servlet-name>
+		<servlet-class>com.ibm.docs.viewer.automation.ViewerProxy</servlet-class>
+	</servlet>
+</web-app>

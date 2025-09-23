@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="rpm" basedir="." default="rpm">
+
+    <property name="build.rpm.command" value="${basedir}/buildRpm"/>
+    <property name="checkError" value="false"/> 
+    <property name="rpm.folder" value="SC10.0_Docs_${build.timestamp}/Webkits"/>
+
+    
+    <target name="rpm">
+        <!-- replace timestamp 20120425-0100 with 2012040100 -->
+        <echo message="${build.timestamp}" file="${basedir}\timestamp.tmp" />
+        <loadfile property="rpm.timestamp" srcFile="${basedir}\timestamp.tmp">
+            <filterchain>
+                <tokenfilter>
+                    <replaceregex pattern="-" replace="" flags="g"/>
+                </tokenfilter>
+            </filterchain>
+        </loadfile>        
+
+        <replace file ="${basedir}\rpm.spec" token="@@@version@@@" value="${build.version}" />
+        <replace file ="${basedir}\rpm.spec" token="@@@timestamp@@@" value="${rpm.timestamp}" />
+        
+        <exec executable="chmod">
+            <arg value="+x"/>
+            <arg value="${build.rpm.command}"/>
+        </exec>
+        <exec executable="chmod" failonerror="${checkError}">
+            <arg value="755"/>
+			<arg value="-R"/>
+            <arg value="${basedir}/files"/>
+        </exec>	
+
+        <!-- do not break build before enable RPM totally -->
+        <exec executable="bash" failonerror="${checkError}" >
+            <arg line="${build.rpm.command} -basedir ${basedir} -timestamp"/>
+        </exec>
+
+        <mkdir dir="${build.home}/${rpm.folder}"/>
+        <copy todir="${build.home}/${rpm.folder}" failonerror="${checkError}">
+            <fileset dir="${basedir}/../target/RPMS/x86_64" includes="SC-*.rpm"/>
+	</copy>
+        
+    </target>  
+</project>
+
+

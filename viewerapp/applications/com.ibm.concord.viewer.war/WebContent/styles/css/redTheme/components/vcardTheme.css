@@ -1,0 +1,51 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+styles for the person card, a component sometimes used outside of our framework*/
+/****************************************/
+/*** V C A R D (P E R S O N   C A R D)***/
+.lotusVCard{background-color:#e0e0e0}
+.lotusVCard .lotusContainer{border-color:#c5c5c5;background-color:#f2f2f2}
+.lotusVCard a:link, .lotusVCard a:visited, .lotusVCard a:hover, .lotusVCard a:focus, a:active{color:#9f060d}
+.lotusVCard .lotusAppLinks td{background-color:#fff;background-image:url(../../images/titleBkgd.png);border-color:#c5c5c5;}
+/*the more arrow, for when there is a second row of application links*/
+.lotusVCard .lotusMore{background-image:url(../../images/iconMoreAppsClosed.png);}
+.lotusVCard .lotusMoreExpanded{background-image:url(../../images/iconMoreAppsOpen.png)}
+/*lotusDetails is the detail area of the card that contains all info for the person*/
+.lotusVCard .lotusDetails{border-top-color:#fff;background-color:#f2f2f2}
+.lotusVCard .lotusPhoto{border-color:#bdc4ca;}
+/*lotusVCardActions are actions you can perform on this person, from the person card*/
+.lotusVCard .lotusPersonActions{background-color:#fff;border-top-color:#c5c5c5}
+.lotusVCard .lotusPersonActions .lotusInlinelist li{border-left-color:#105cb6}
+.lotusVCard .lotusActionMenu a, .lotusActionMenu a:visited{color:#000}
+.lotusVCard .lotusActionMenu a:hover, .lotusVCard .lotusActionMenu a:focus, .lotusVCard .lotusActionMenu a:active{color:#fff !important;background-color:#4d0100;}
+/*lotusComments in the person card contains status information for the person*/
+.lotusVCard .lotusDetails .lotusCommentHeader{background-image:url(../../images/commentPointPersonCard.png);}
+.lotusVCard .lotusDetails .lotusCommentBody{color:#666;background-color:#fff;border-color:#a0acba;}
+/*adjustments for an inline version of the card*/
+.lotusInlineVCard .lotusEmail{border-color:#c5c5c5;}
+.lotusPivotNavToggle a{background-color:#d8d8e0;background-image:url(../../images/vCardClosed.png)}
+.lotusPivotNavOpen .lotusPivotNavToggle a{background-image:url(../../images/vCardOpen.png)}
+/***********************************************************/
+
+/*[sprite]*/
+.lotusSpritesOn .lotusVCard .lotusAppLinks td{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -900px}
+
+.lotusSpritesOn .lotusVCard .lotusMore{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:18px -2595px}
+.lotusSpritesOn .lotusVCard .lotusMoreExpanded{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:18px -2707px}
+
+.lotusSpritesOn .lotusVCard .lotusDetails .lotusCommentHeader{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -1510px}
+.lotusSpritesOn .lotusPivotNavToggle a{background-image:url(../themeImages/lotusSprite-8bit.png);background-position: 3px -6276px}
+.lotusSpritesOn .lotusPivotNavOpen .lotusPivotNavToggle a{background-image:url(../themeImages/lotusSprite-8bit.png);background-position: 0 -6373px}
+/*[/sprite]*/
+
+/*** V C A R D   H O V E R ***/
+.lotusVCardHover{border-color:#aeaeae;background-color:#fff79a;background-image:url(../../images/iconProfiles.png)}
+.lotusVCardHover:hover, .lotusVCardHover:focus{text-decoration:none}
+/*[sprite]*/
+.lotusSpritesOn .lotusVCardHover{background-image:url(../themeImages/lotusSprite-8bit.png);background-position: 5px -2873px}
+/*[/sprite]*/
+
+/***********************************************************/
+

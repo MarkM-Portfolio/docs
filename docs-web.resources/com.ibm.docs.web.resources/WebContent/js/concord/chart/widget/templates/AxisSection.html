@@ -1,0 +1,40 @@
+<div>
+        <label class="lotusLeft lotusHeading">${nls.axis}</label>
+        <div class="lotusRight" dojoType='concord.chart.widget.DropDownButton' value="${nls.selectAxis}" title="${nls.selectAxis}" dojoAttachPoint="axis_list_btn"></div>
+        <div class="lotusChunk10" dojoType='concord.chart.widget.Title' dojoAttachPoint="axis_title">
+        </div><!--end lotusChunk-->
+        
+        <div class="lotusChunk">
+            <label class="lotusLeft lotusHeading">${nls.labelfont}</label> 
+            <div class="fontstyle lotusRight" dojoType='concord.chart.widget.FontToolbar' dojoAttachPoint="label_font"></div>
+        </div><!--end lotusChunk-->
+        
+        <div class="lotusChunk">
+            <label class="lotusLeft lotusHeading">${nls.line}</label> 
+            <div class="fontstyle lotusRight" dojoType='concord.chart.widget.Border' dojoAttachPoint="line"></div>
+        </div><!--end lotusChunk-->
+        
+        <div class="lotusChunk scale" dojoAttachPoint="scale">
+            <label class="lotusLeft lotusHeading">${nls.scale}</label>
+            <div class="lotusRight" style="color:#B81324;font-weight:bold" dojoAttachPoint="scale_error"></div>
+            <div class="valuesetting lotusChunk">
+                <label class="lotusLeft">${nls.minimum}</label>
+                <input class="lotusText lotusRight inputBorder" style="width:130px" dojoAttachPoint="scale_min">
+            </div>
+
+            <div class="valuesetting lotusChunk">
+                <label class="lotusLeft">${nls.maximum}</label>
+                <input class="lotusText lotusRight inputBorder" style="width:130px" dojoAttachPoint="scale_max">
+            </div>
+
+            <div class="valuesetting lotusChunk">
+                <label class="lotusLeft">${nls.majorunit}</label>
+                <input class="lotusText lotusRight inputBorder" style="width:130px" dojoAttachPoint="scale_major">
+            </div>
+            <div class="valuesetting lotusChunk">
+                <label class="lotusLeft">${nls.minorunit}</label>
+                <input class="lotusText lotusRight inputBorder" style="width:130px" dojoAttachPoint="scale_minor">
+            </div>
+        </div>
+
+</div>

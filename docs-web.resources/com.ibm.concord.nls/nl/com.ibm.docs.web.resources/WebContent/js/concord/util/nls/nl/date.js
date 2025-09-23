@@ -1,0 +1,22 @@
+({
+	question:"Vraag",
+	issue:"Probleem",
+	toDo:"Actiepunt",
+	comment:"Commentaar",
+	done:"Gereed",
+	jan:"Jan",
+	feb:"Feb",
+	mar:"Mrt",
+	apr:"Apr",
+	may:"Mei",
+	june:"Jun",
+	july:"Jul",
+	aug:"Aug",
+	sept:"Sep",
+	oct:"Okt",
+	nov:"Nov",
+	dec:"Dec",
+	pm:"PM",
+	am:"AM",
+	assignTo:"Toewijzen aan: "
+})

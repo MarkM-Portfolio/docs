@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "เลือกโลแคลเพื่อจัดรูปแบบตัวเลข สกุลเงิน วันที่ และเวลา",
+	INPUT_INVALID_LOCALENAME: "ชื่อโลแคลไม่ถูกต้อง",
+	INPUT_EMPTY_LOCALENAME: "เลือกโลแคล",
+	
+	Spain_Catalan: "สเปน (ภาษาคาตาลัน)",
+	Denmark: "เดนมาร์ก",
+	Germany: "เยอรมนี",
+	Greek: "กรีซ",
+	United_States: "สหรัฐอเมริกา",
+	United_Kingdom: "สหราชอาณาจักร",
+	Spain: "สเปน",
+	Finland: "ฟินแลนด์",
+	France: "ฝรั่งเศส",
+	Italy: "อิตาลี",
+	Japan: "ญี่ปุ่น",
+	Korean: "เกาหลีใต้",
+	Norway: "นอร์เวย์",
+	Netherlands: "เนเธอร์แลนด์",
+	Poland: "โปแลนด์",
+	Brazil: "บราซิล",
+	Portugal: "โปรตุเกส",
+	Russia: "รัสเซีย",
+	Sweden: "สวีเดน",
+	Thailand: "ไทย",
+	Turkey: "ตุรกี",
+	China: "จีน",
+	Taiwan_China: "ไต้หวัน (จีน)",
+	Israel: "อิสราเอล"
+})
+

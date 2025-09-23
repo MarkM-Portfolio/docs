@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="ViewerLCCustomizeApp" basedir="." default="viewer.build">
+
+	<target name="lc35.osgi" depends="">
+	        <ant dir="com.ibm.concord.viewer.lcfiles.extension.provision" inheritAll="true"/>
+	   	</target>
+	
+	<target name="provision.package" depends="lc35.osgi">
+		<zip destfile="${build.home}/Viewer_LC35_OSGIExtension.zip">
+			<fileset dir="${build.home}" includes="com.ibm.concord.viewer.lcfiles.extension.provision*.jar"/>
+		</zip>
+	</target>
+	
+	<target name="ext.installer">
+		   <ant dir="com.ibm.concord.viewer.lcfiles.ext.deployment" inheritAll="true"/>
+	</target>
+	
+    <target name="license.build">
+			<ant dir="com.ibm.docs.viewer.lcfiles.ext.license" inheritAll="true"/>
+	</target>
+	
+	<target name="viewer.daemon.package" depends="">
+		<ant dir="com.ibm.concord.viewer.lcfiles.daemon" inheritAll="true"/>
+	</target>
+	
+   	<target name="viewer.build" depends="provision.package, viewer.daemon.package, ext.installer, license.build">   		
+		<zip destfile="${build.home}/ViewerLCCustomizeApp.zip">
+			<fileset dir="${build.home}" includes="Viewer_LC35_OSGIExtension.zip"/>
+			<fileset dir="${build.home}" includes="**/com.ibm.concord.viewer.lcfiles.daemon.jar"/>
+			<zipfileset dir="${build.home}/ext/installer" prefix="installer"/>
+			<zipfileset dir="${build.home}/License" prefix="License"/>
+			<zipfileset dir="${build.home}/daemon-config" prefix="config"/>
+		</zip>
+		
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}" includes="Viewer_LC35_OSGIExtension.zip"/>
+			<fileset dir="${build.home}/ext" />
+			<fileset dir="${build.home}/daemon-config" />
+   		</delete>
+   	</target>
+</project>
+

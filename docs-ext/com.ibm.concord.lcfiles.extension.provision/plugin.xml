@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+    Licensed Materials - Property of IBM
+    (c) Copyright IBM Corporation 2011. All Rights Reserved.
+    
+    Note to U.S. Government Users Restricted Rights:  
+    Use, duplication or disclosure restricted by GSA ADP Schedule 
+    Contract with IBM Corp. 
+ -->
+<plugin>
+    <extension point="net.jazz.ajax.webBundles">
+	    <alias value="concord" />
+    </extension>
+    <extension point="net.jazz.ajax.dojoModuleBinding">
+    	<dojoModuleBinding bind="concord.init" to="lconn.files.PersonalFiles" />
+    	<dojoModuleBinding bind="concord.init" to="lconn.files.PersonalFilesExtension" />
+    	<dojoModuleBinding bind="concord.comm_init" to="lconn.files.comm.ReferentialWidget" />
+    </extension>    
+</plugin>

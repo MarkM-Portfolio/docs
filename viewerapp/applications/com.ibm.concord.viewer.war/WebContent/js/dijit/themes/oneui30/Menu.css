@@ -1,0 +1,220 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* Menu 
+There are three areas of styling for the Menu: 
+ 1. The menu 
+ 	There are three types of menus:
+ 	i)Context Menu
+ 	ii)Drop down Menu
+ 	iii) Navigation Menu
+ 	All three types of menus are affected by the .dijitMenu class in which you can set the background-color, padding and border
+ 	.dijitMenu affects the drop down menu in TimeTextBox, Calendar, ComboBox and FilteringSelect
+  .dijitMenuTable - for padding - also affects Select widget 	
+ 2. The menu bar
+ 	.dijitMenuBar - for border, margins, padding, background-color of the menu bar
+ 	.dijitMenuBar .dijitMenuItem - for padding, text color of menu items in the menu bar (overrides .dijitMenuItem) 
+ 3. Menu items - items in the menu.  
+ 	.dijitMenuItem - for color
+ 	.dijitMenuItemHover, .dijitMenuItemSelected - for background-color, border, text color, padding of a menu item or menubar item that has been hovered over or selected	
+ 	.dijitMenuItemActive - for bacgkround-color of an active (mousedown) menu item
+	td.dijitMenuItemIconCell - for padding around a  menu item's icon
+	td.dijitMenuItemLabel - for padding around a menu item's label	
+	.dijitMenuSeparatorTop - for border, top border, of the separator
+	.dijitMenuSeparatorBottom - for bottom margin of the separator
+	Styles specific to ComboBox and FilteringSelect widgets:
+	.dijitComboBoxMenu .dijitMenuItem - for padding and border of a menu item in a ComboBox or FilteringSelect widget's menu
+	.dijitComboBoxMenu .dijitMenuItemSelected- for text color, background-color and border of a menu item in a ComboBox or FilteringSelect widget's menu
+*/
+.oneui30 .dijitMenuBar {
+    margin: 0;
+    padding: 0;
+	border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));
+}
+
+.oneui30 .dijitMenu {
+    margin-top: -1px;
+	background-repeat: repeat-y;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+.oneui30 .dijitMenuBar .dijitMenuItem {
+    padding: 5px 10px 7px;
+    margin: -1px -2px;
+	background-position: 0px 100px;
+    color: #222;
+}
+
+.dj_ie .oneui30 .dijitMenuBar .dijitMenuItem {
+    padding-top: 6px;
+	padding-bottom: 6px;
+	margin-left: -1px;
+	margin-right: 0;
+}
+
+.dj_ie6 .oneui30 .dijitMenuBar .dijitMenuItem, .dj_ie7 .oneui30 .dijitMenuBar .dijitMenuItem {
+    padding-top: 7px;
+	padding-bottom: 8px;
+}
+
+/* this prevents jiggling upon hover of a menu item */
+.oneui30 .dijitMenuTable {
+    padding: 0;
+	border-collapse: separate;
+    border-spacing: 0 0;
+}
+
+.oneui30 .dijitMenuPassive, .oneui30 .dijitMenuActive {
+	/*position: relative;*/
+}
+
+.oneui30 .dijitCalendar .dijitMenuPassive {
+	position: absolute;
+}
+
+.oneui30 .dijitMenuItem td {
+    padding: 1px;
+}
+
+/* hover over a MenuBarItem */
+.oneui30 .dijitMenuPassive .dijitMenuItemHover, .oneui30 .dijitMenuPassive .dijitMenuItemSelected {
+	background-color: #222;
+    color: #fff;
+/*    background-color: #fff;
+    color: #000;*/
+}
+
+.oneui30 .dijitCalendar .dijitMenuPassive .dijitMenuItemHover {
+	margin-left: 0;
+}
+
+.dj_ie .oneui30 .dijitMenuPassive .dijitMenuItemHover, .dj_ie .oneui30 .dijitMenuPassive .dijitMenuItemSelected {
+    padding-left: 10px;
+}
+
+/* MenuBarItem that has been selected and menu drops down from it */
+.oneui30 .dijitMenuActive .dijitMenuItemHover, .oneui30 .dijitMenuActive .dijitMenuItemSelected {
+    background-color: #222;
+    color: #fff;
+/*    background-color: #fff;
+    color: #000;*/
+    outline: none;
+}
+
+.dj_ie .oneui30 .dijitMenuPassive .dijitMenuItemHover, .dj_ie .oneui30 .dijitMenuPassive .dijitMenuItemSelected, .dj_ie .oneui30 .dijitMenuActive .dijitMenuItemHover, .dj_ie .oneui30 .dijitMenuActive .dijitMenuItemSelected {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: -1px;
+}
+
+.dj_ie7 .oneui30 .dijitMenuPassive .dijitMenuItemHover, .dj_ie7 .oneui30 .dijitMenuPassive .dijitMenuItemSelected, .dj_ie7 .oneui30 .dijitMenuActive .dijitMenuItemHover, .dj_ie7 .oneui30 .dijitMenuActive .dijitMenuItemSelected {
+	padding-top: 6px;
+	padding-bottom: 7px;
+}
+
+.dj_ie6 .oneui30 .dijitMenuPassive .dijitMenuItemHover, .dj_ie6 .oneui30 .dijitMenuPassive .dijitMenuItemSelected, .dj_ie6 .oneui30 .dijitMenuActive .dijitMenuItemHover, .dj_ie6 .oneui30 .dijitMenuActive .dijitMenuItemSelected {
+	padding-top: 7px;
+	padding-bottom: 6px;
+	top: -1px;
+}
+
+.dijitMenuPopup .dijitMenuActive .dijitMenuItemHover .dijitMenuItemSelected, .dijitMenuPopup .dijitMenuActive .dijitMenuItemSelected {
+    color: #fff;
+    background-color: #222;
+    border: 0px solid white;
+}
+
+/*.oneui30 .dijitMenuActive .dijitMenuItemActive {
+    background-color: #eee;
+}*/
+
+.oneui30 .dijitMenuActive .dijitMenuItemActive {
+    background-color: #fff;
+}
+
+.oneui30 td.dijitMenuItemIconCell {
+    padding: 0 4px;
+    margin: 0 4px;
+}
+
+.oneui30 td.dijitMenuItemLabel {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.dj_ie6 .oneui30 td.dijitMenuItemLabel, .dj_ie7 .oneui30 td.dijitMenuItemLabel {
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+.oneui30 .dijitMenuExpand {
+    margin-right: 3px;
+	width: 7px;
+    height: 7px;
+    background-image: url('images/spriteArrows.png');
+    background-position: -14px 0;
+}
+
+.oneui30 .dijitMenuItemDisabled .dijitMenuItemIconCell {
+    opacity: 1;
+}
+
+.oneui30 .dijitMenuSeparatorTop {
+	margin-bottom: -1px;
+    margin-top: 0; /* prevents spacing above separator */
+	border-bottom: 1px solid #ccc;
+    height: auto;
+}
+
+.oneui30 .dijitMenuSeparatorBottom {
+    margin-bottom: 1px;
+	height: auto;
+}
+
+/* the checked menu item */
+.oneui30 .dijitCheckedMenuItemIconChar {
+    display: none;
+}
+
+.oneui30 .dijitCheckedMenuItemIcon {
+    width: 15px;
+    height: 15px;
+}
+
+.oneui30 .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon {
+    background-image: url('form/images/checkboxRadioButtonStates.png');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+/*ComboBox Menu*/
+.oneui30 .dijitComboBoxMenu {
+    margin-left: 0px;
+    background-image: none;
+}
+
+.oneui30 .dijitComboBoxMenu .dijitMenuItem {
+    padding: 2px 0;
+    text-indent: 6px;
+    border-color: #fff;
+}
+
+.dijitComboBoxMenu .dijitMenuItemSelected ,.dijitComboBoxMenu .dijitMenuItemHover{
+    color: #fff;
+    background-color: #222;
+}
+
+.oneui30 .dijitComboBoxMenuActive .dijitMenuItemSelected {
+    background-position: 0 -177px;
+    background-color: #eee;
+}
+
+.oneui30 .dijitMenuPreviousButton, .oneui30 .dijitMenuNextButton {
+    font-style: italic;
+}

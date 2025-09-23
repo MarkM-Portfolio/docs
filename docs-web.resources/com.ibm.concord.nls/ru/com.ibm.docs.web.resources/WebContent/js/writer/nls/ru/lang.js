@@ -1,0 +1,75 @@
+({
+	LOADING: "Идет загрузка информации.",
+	LOAD_FINISHED: "Загрузка информации выполнена.",
+	PAGE_SETUP: "Параметры страницы",
+	NOTE_INVALIDACTION_FOOTNOTE:"Это действие недопустимо для сноски.",
+	NOTE_INVALIDACTION_ENDNOTE:"Это действие недопустимо для примечания.",
+	PAGENUMBER_OF_TOTALNUMBER:"Стр. ${0} из ${1}", //page 1 of N
+	PAGE_NUMBER: "Стр.: ${pageNumber} / ${totalPageNumber}",
+	toc:{
+		title : "Оглавление",
+		update: "Обновить",
+		del: "Удалить",
+		toc: "Оглавление",
+		linkTip: "Нажмите Ctrl для перехода",
+		pageNumber: "Только номер страницы",
+		entireTable: "Вся таблица"
+	},
+	link:{
+		addlink:"Добавить ссылку",
+		gotolink: "Открыть ссылку",
+		unlink	: "Удалить ссылку",
+		editlink: "Изменить ссылку",
+		internalLink: "Внутренняя ссылка",
+		ctrlLink: "Ctrl+щелчок для перехода по ссылке",
+		cannotOpen: " невозможно открыть в ${productName}."
+	},
+	field:{
+		update: "Обновить поле"
+	},
+	insertTime:"Вставить время",
+	insertDate:"Вставить дату",
+	selectDate:"Выбрать дату",
+	selectTime:"Выбрать время",
+	acc_blank: "пусто",// when selection is nothing but space char and empty paragraph
+	acc_space: "пробел",// string read out when the cursor is before one space char
+	acc_inLink: "в ссылке ",
+	acc_inField: "в поле ",
+	acc_selected :" выбрано",
+	acc_inTable: "в таблице (строка ${0}, столбец ${1}) ",
+	acc_imageSelected: "рисунок выбран",
+	acc_canvasSelected:"фигура выбрана",
+	acc_textboxSelected:"текстовое поле выбрано",
+	ACC_TABLE_TABLESIZE:"Выбрано строк: ${0}, столбцов: ${1}",
+	ACC_TABLE_MAXSIZE:" Максимальный размер таблицы составляет 20*20",
+	ACC_headerFooterMode: "режим редактирования верхнего/нижнего колонтитула",
+	ACC_EditorMode: "режим редакторской правки",
+	ACC_FootnotesMode: "режим редактирования сносок",
+	ACC_EndnotesMode: "режим редактирования примечаний",
+	ACC_uniformTable: "Добавлена новая строка",
+	Acc_column :"столбец ${0}",
+	acc_page :"страница ${0}",
+	acc_section:"раздел ${0}",
+	acc_spellWarn:"орфографическая ошибка",
+	acc_outTable:"за границей таблицы",
+	acc_link :"ссылка",
+	acc_field :"поле",
+	acc_footnote:"сноска",
+	acc_endnote:"примечание",	
+	acc_editor:"Изменено пользователем ${0}",
+	tablePropertyTitle: "Свойства таблицы",
+	headerTitle:"Верхний колонтитул",
+	footerTitle:"Нижний колонтитул",
+	firstheaderTitle:"Верхний колонтитул первой страницы",
+	firstfooterTitle:"Нижний колонтитул первой страницы",
+	evenheaderTitle:"Верхний колонтитул четной страницы",
+	evenfooterTitle:"Нижний колонтитул четной страницы",
+	oddheaderTitle:"Верхний колонтитул нечетной страницы",
+	oddfooterTitle:"Нижний колонтитул нечетной страницы",
+	showTableBorder:"Показать границы таблицы",
+	list_none: "Нет",
+	SET_NUMBERING_VALUE: "Указать значение нумерации",
+	BIDI_CONTENT_EDITING: "Этот документ содержит двунаправленный текст. Для правильной работы с документом включите поддержку двунаправленного текста в параметрах HCL Connections."
+})
+	
+

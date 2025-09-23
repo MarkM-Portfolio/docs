@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TMSSource SYSTEM "../specs/tms.dtd"[
+<!ENTITY dyk_test         "test">
+<!ENTITY dyk_object_test  "object test">
+<!-- Do not translate next line -->
+<!ENTITY dyk_dialog_test  "object test">
+<!ENTITY dyk_window       "window">
+<!ENTITY dyk_GetStart     "Getting Started">
+<!ENTITY dyk_AdminGuide   "Administrator's Guide">
+<!ENTITY dyk_CmdRef       "Command Reference">
+<!ENTITY dyk_ManageSLAs   "Managing Service Level Agreements">
+<!ENTITY dyk_SLMReports   "SLM Reports">
+<!ENTITY dyk_Trouble      "Troubleshooting">
+<!ENTITY dyk_Messages     "Messages">
+<!ENTITY dyk_RelNotes     "Release Notes">
+<!ENTITY nbsp   "&#160;">
+]>

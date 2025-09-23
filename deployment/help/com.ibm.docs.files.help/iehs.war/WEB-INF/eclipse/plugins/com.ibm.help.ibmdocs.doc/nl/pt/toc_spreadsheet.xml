@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Trabalhar com folhas de cálculo"
+     topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="Trabalhar com folhas de cálculo"
+          href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="Criar e importar folhas de cálculo"
+             href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="Criar folhas de cálculo a partir de modelos"
+                href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="Alterar o formato predefinido de folhas de cálculo"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="Transferir folhas de cálculo para partilhar"
+                href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="Importar folhas de cálculo existentes"
+                href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="Importar ficheiro de texto para folhas de cálculo"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="Abrir ficheiros Excel protegidos por palavra-passe"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="Compatibilidade de ficheiro e exportar folhas de cálculo"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="Formatos de ficheiro suportados em folhas de cálculo"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="Guardar folhas de cálculo"
+                href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="Publicar uma versão de folhas de cálculo"
+                href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="Exportar folhas de cálculo para outros formatos de ficheiro"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="Exportar folhas de cálculo para ficheiros CSV"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="Partilhar folhas de cálculo"
+             href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="Partilhar folhas de cálculo com pessoas ou comunidades"
+                href="text/spreadsheet/s_share_file.html"/>
+         <topic label="Definir níveis de acesso para folhas de cálculo"
+                href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="Colaborar em folhas de cálculo em tempo real"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="Co-edição de folhas de cálculo em tempo real"
+                href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="Acerca da co-edição em folhas de cálculo"
+                   href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="Co-edição de folhas de cálculo com outros"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="Mostrar alterações de cada editor em folhas de cálculo"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Colaborar através de comentários em folhas de cálculo"
+                href="text/spreadsheet/s_comments_overview.html">
+            <topic label="Acerca de comentários em folhas de cálculo"
+                   href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="Criar comentários em folhas de cálculo"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="Visualizar comentários em folhas de cálculo"
+                   href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="Procurar comentários em folhas de cálculo"
+                   href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Alterar o aspecto das folhas de cálculo"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="Tipos de letra, contornos e cor"
+                href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="Alterar tipos de letra em folhas de cálculo"
+                href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="Alterar a altura da linha ou a largura da coluna"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="Alterar contornos em folhas de cálculo"
+                href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="Restaurar formatação predefinida em células de folha de cálculo"
+                href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="Formatar números" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="Introduzir e editar dados"
+             href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="Princípios básicos da edição de dados"
+                href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="Localizar e substituir conteúdo da célula"
+                href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="Adicionar uma hiperligação a uma célula"
+                href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="Remover a ligação de uma hiperligação"
+                href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="Utilizar o preenchimento automático para preencher um intervalo de células"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="Unir ou dividir células numa folha"
+                href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="Efectuar a verificação ortográfica a folhas de cálculo"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="Imprimir folhas de cálculo como ficheiros PDF"
+                href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Trabalhar com imagens em folhas de cálculo"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="Inserir imagens em folhas de cálculo"
+                href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="Mover e redimensionar imagens em folhas de cálculo"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="Definir propriedades da imagem em folhas de cálculo"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Trabalhar com gráficos em folhas de cálculo"
+             href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="Inserir gráficos em folhas de cálculo"
+                href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="Mover e redimensionar gráficos em folhas de cálculo"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="Copiar gráficos em folhas de cálculo"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="Gerir intervalos de dados" href="text/spreadsheet/s_data_ranges.html">
+         <topic label="Ordenar dados" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="Utilizar filtros instantâneos"
+                href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="Fixar linhas e colunas em folhas de cálculo"
+                href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="Ocultar linhas e colunas" href="text/spreadsheet/s_hide.html"/>
+         <topic label="Mostrar linhas e colunas" href="text/spreadsheet/s_show.html"/>
+         <topic label="Referenciar células de outra folha"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="Copiar dados e imagens em folhas de cálculo"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="Atribuir nomes a um intervalo"
+                href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="Localizar ou editar intervalos especificados"
+                href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="Remover um intervalo especificado"
+                href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="Referências relativas e absolutas"
+                href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="Utilizar fórmulas em cálculos"
+             href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="Acerca de fórmulas e funções"
+                href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="Lista de funções" href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="Agrupadas por categoria" href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="Funções de matriz" href="text/spreadsheet/s_functions_array.html">
+                  <topic label="Constantes de matriz incluídas em fórmulas"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="Cálculos de matriz condicional"
+                         href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="Funções de data e hora" href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="Função de engenharia"
+                      href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="Funções de informação" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="Funções lógicas" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="Funções matemáticas" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="Funções de folha de cálculo"
+                      href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="Funções estatísticas"
+                      href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="Funções de texto" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="Função ABS" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="Função ACOS" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="Função ACOSH" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="Função ENDEREÇO" href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="Função E" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="Função ASEN" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="função ASINH" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="Função ATAN" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="função ATAN2" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="Função ATANH" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="Função MÉDIA"
+                   href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="Função MÉDIAA"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="Função BASE" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="Função ARRED.EXCESSO"
+                   href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="Função SELECCIONAR"
+                   href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="Função CARÁCT" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="função CÓDIGO" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="Função COL" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="Função COLS" href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="Função COMBIN" href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="Função CONCATENAR"
+                   href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="Função CONVERTER"
+                   href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="Função COS" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="função COSH" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="Função CONTAR" href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="Função CONTAR.VAL"
+                   href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="Função CONTAR.VAZIO"
+                   href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="Função CONTAR.SE" href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="Função DATA" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="Função DATADIF"
+                   href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="Função DATA.VALOR"
+                   href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="Função DIA" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="Função DIAS" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="Função GRAUS" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="Função MOEDA" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="Função TIPO.ERRO" href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="Função PAR" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="Função EXP" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="Função EXACTO" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="Função FACTORIAL" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="Função FALSO" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="Função FIXA" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="Função ARRED.DEFEITO" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="Função FÓRMULA" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="Função FREQUÊNCIA"
+                   href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="Função PROCH" href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="Função HORA" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="Função HIPERLIGAÇÃO"
+                   href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="Função SE" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="Função ÍNDICE" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="Função INDIRECTO"
+                   href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="Função INT" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="Função É.CÉL.VAZIA" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="Função É.ERR" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="Função É.ERRO" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="Função ÉPAR" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="Função ÉFÓRMULA" href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="Função É.LÓGICO" href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="Função É.NÃO.DISP" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="Função É.NÃO.TEXTO"
+                   href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="Função É.NÚMERO" href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="Função ÉÍMPAR" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="Função É.REF" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="Função É.TEXTO" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="Função MAIOR" href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="Função ESQUERDA" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="Função NÚM.CARACT" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="Função CARÁCTB" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="Função LN" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="Função LOG" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="Função LOG10" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="Função MINÚSCULAS" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="Função MÁXIMO" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="Função MED" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="Função SEG.TEXTO" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="Função MÍNIMO" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="Função MINUTO" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="Função MATRIZ.MULT" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="Função RESTO" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="Função MODA" href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="Função MÊS" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="Função N" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="Função NÃO.DISP" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="Função DIATRABALHOTOTAL"
+                   href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="Função NÃO" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="Função AGORA" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="Função ÍMPAR" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="Função DESLOCAMENTO"
+                   href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="Função OU" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="Função PI" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="Função POTÊNCIA" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="Função PRODUTO" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="Função INICIAL.MAIÚSCULA"
+                   href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="Função RADIANOS" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="Função ALEATÓRIO" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="Função ALEATÓRIOENTRE"
+                   href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="Função ORDEM" href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="Função SUBSTITUIR" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="Função REPETIR" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="Função DIREITA" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="Função DIREITAB" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="função ROMANO" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="Função ARRED" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="Função ARRED.PARA.BAIXO"
+                   href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="Função ARRED.PARA.CIMA"
+                   href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="Função LIN" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="Função LINS" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="Função PROCURAR" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="Função SEGUNDO" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="Função FOLHA" href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="Função SEN" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="Função SENH" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="Função MENOR" href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="Função RAIZQ" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="Função DESVPAD" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="Função DESVPADP" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="Função SUBST" href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="Função SUBTOTAL" href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="Função SOMA" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="Função SOMAR.SE" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="Função SOMARPRODUTO"
+                   href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="Função T" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="Função TEXTO" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="Função TEMPO" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="Função HOJE" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="Função COMPACTAR" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="Função VERDADEIRO" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="Função TRUNCAR" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="Função TIPO" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="Função MAIÚSCULAS" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="função VALOR" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="Função PROCV" href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="Função VAR" href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="Função VARA" href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="Função VARP" href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="Função VARPA" href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="Função DIA.SEMANA" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="Função NÚMSEMANA"
+                   href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="Função ANO" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="Guia de consulta rápida para folhas de cálculo"
+             href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="Atalhos de teclado em folhas de cálculo"
+             href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

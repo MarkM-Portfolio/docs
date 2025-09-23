@@ -1,0 +1,18 @@
+@import url("../styles/css/presentation2/all.css");
+@import url("newtheme.css");
+@import url("widgets.css");
+@media print{  
+	@import url("htmlprint.css");
+}
+.verticalWriting .draw_frame_classes, .verticalWriting .draw_shape_classes {
+	-webkit-writing-mode:vertical-rl;
+	writing-mode:tb-rl;
+	display:block !important;
+	padding: 0% !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+/* compact view doesn't need the right border */
+.sorter {
+  border-right: none;
+}

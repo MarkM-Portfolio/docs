@@ -1,0 +1,3 @@
+({
+	title :"Caràcter especial"
+})

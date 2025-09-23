@@ -1,0 +1,14 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for messages
+companion file is messages.css*/
+/*** M E S S A G E S ***/
+.lotusMessage{background-color:#fcc;border-color:#c66;}/*error message*/
+.lotusWarning{background-color:#ffffbc;border-color:#f7c455;}/*use iconWarning16.png*/
+.lotusSuccess{background-color:#ecf9df;border-color:#c8e2b8;}
+.lotusInfo{background-color:#d8eaff;border-color:#6295d6;}/*use iconInfo16.png*/
+.lotusConfirm{background-color:#dcfcc4;border-color:#80d047;}/*use iconConfirmation16.png*/
+/***********************************************************/
+

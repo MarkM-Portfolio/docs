@@ -1,0 +1,105 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>DocsProxyFilter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.SmartCloud</groupId>   
+  <artifactId>DocsProxyFilter</artifactId>
+  <name>SmartCloud DocsProxyFilter - zip</name>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ibm.docs.SmartCloud</groupId>
+      <artifactId>proxy-version.txt</artifactId>
+      <type>txt</type>
+      <version>${project.version}</version>
+    </dependency>    
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>concord.proxy.filter</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.proxy.lotuslive.saml</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.owasp.esapi</groupId>
+      <artifactId>esapi</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>joda-time</groupId>
+    	<artifactId>joda-time</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>log4j-over-slf4j</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.opensaml</groupId>
+    	<artifactId>opensaml</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.opensaml</groupId>
+    	<artifactId>openws</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.velocity</groupId>
+    	<artifactId>velocity</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.santuario</groupId>
+    	<artifactId>xmlsec</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.opensaml</groupId>
+    	<artifactId>xmltooling</artifactId>
+    </dependency> 
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <!-- Build DocsApp_Plugins.zip -->
+          <execution>
+            <id>Build SmartCloud_DocsProxyFilter.zip</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_SmartCloud_DocsProxyFilter.zip.xml</descriptor>
+              </descriptors>
+              <finalName>DocsProxyFilter</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>        
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>    
+</project>

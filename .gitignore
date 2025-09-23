@@ -1,0 +1,60 @@
+**/.project
+*.code-workspace
+.vscode
+run_ut.log
+.DS_Store
+/.jazz5
+/.metadata
+/.jazzShed
+/.settings
+/Build
+/target
+log.out
+build.log
+mavenLocalRepo
+*.orig
+
+
+
+# the following are created new by the build process for every build; thus they should not be in git
+
+# these files are placed to the paths below from other locations during the build process
+docs-web.resources/com.ibm.docs.web.resources/WebContent/**/nls/??*/
+
+# these files are placed to the paths below from other locations during the build process
+docs-ext/com.ibm.concord.lcfiles.ext.war/WebContent/**/nls/??*/
+docs-ext/com.ibm.concord.lcfiles.extension.provision/resources/nls/??*/
+
+# these files are created new during build time
+docs-web.resources/com.ibm.docs.web.resources/WebContent/WEB-INF/classes/
+docs-web.resources/com.ibm.docs.web.resources/WebContent/js/ckeditor/
+docs-web.resources/com.ibm.docs.web.resources/WebContent/js/ckplugins/
+docs-web.resources/com.ibm.docs.web.resources/WebContent/js/ckresource/
+docs-web.resources/com.ibm.docs.web.resources/WebContent/js/document/
+docs-web.resources/com.ibm.docs.web.resources/WebContent/js/concord/main/homepages/
+
+# these files are placed to the paths below from other locations during the build process
+# see viewerapp/applications/com.ibm.concord.viewer.war/buildjs4maven.xml#L22
+viewerapp/applications/com.ibm.concord.viewer.war/WebContent/js/html/js/
+viewerapp/applications/com.ibm.concord.viewer.war/WebContent/js/html/images/
+viewerapp/applications/com.ibm.concord.viewer.war/WebContent/js/html/styles/
+
+# these files are created new during build time
+viewerapp/applications/com.ibm.concord.viewer.war/WebContent/jsp/footer.html
+viewerapp/applications/com.ibm.concord.viewer.war/WebContent/jsp/header.html
+viewerapp/applications/com.ibm.concord.viewer.war/WebContent/static/
+
+# these files are placed in the path below from other locations by the build process
+# see viewerapp/applications/com.ibm.concord.viewer.war/buildjs4maven.xml#L43
+viewerapp/applications/com.ibm.concord.viewer.war/buildtools/dojo
+
+# the following are created by vscode plugins
+deployment/im/com.ibm.docs.im.*/bin/
+
+*.log
+.git
+.idea
+.terraform
+.venv
+__pycache__
+node_modules

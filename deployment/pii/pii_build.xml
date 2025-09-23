@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Concord" basedir="." default="nls.related">
+	<condition property="cond.COLLECT_PII">
+		<equals arg1="${env.COLLECT_PII}" arg2="true"/>
+	</condition>
+	<condition property="cond.PSEUDO_BUILD">
+		<equals arg1="${env.PSEUDO_BUILD}" arg2="true"/>
+	</condition>
+	<condition property="cond.RPX_BUILD">
+		<equals arg1="${env.RPX_BUILD}" arg2="true"/>
+	</condition>
+
+	<target name="collect_pii" if="cond.COLLECT_PII">
+		<echo message="Collecting PII resource ......"/>
+		<exec executable="perl">
+			<arg value="${script_home}/collect_pii.pl"/>
+			<arg value="-s"/>
+			<arg value="${build.src}"/>
+			<arg value="-t"/>
+			<arg value="${build.target}"/>
+		</exec>
+
+		<antcall target="rpx_build">
+			<param name="script_home" value="${script_home}"/>
+		</antcall>
+	</target>
+
+	<target name="rpx_build" if="cond.RPX_BUILD">
+		<echo message="Running rpx_build due to RPX_BUILD=${env.RPX_BUILD}"/>
+        <exec executable="bash" dir="${project.build.directory}">
+          <arg value="${script_home}/RpxPII_build.sh"/>
+          <arg value="${rpx.tool.home}"/>
+          <arg value="${project.build.directory}/pii"/>
+          <arg value="${project.build.directory}/pii.RpxPII"/>
+          <arg value="${env.RPXIDENTIFY}"/>
+		</exec>
+	</target>
+
+	<target name="pseudo_build" if="cond.PSEUDO_BUILD">
+        <exec executable="bash">
+          <arg value="${script_home}/pseudo_build.sh"/>
+          <arg value="${build.src}"/>
+          <arg value="${project.build.directory}/pii"/>
+          <arg value="${rpx.tool.home}"/>
+        </exec>
+	</target>
+    
+	<target name="nls.related">
+		<antcall target="collect_pii">
+			<param name="script_home" value="${script_home}"/>
+			<param name="chkpii_log" value="${chkpii_log}"/>
+		</antcall>
+		<antcall target="pseudo_build">
+			<param name="script_home" value="${script_home}"/>
+		</antcall>
+	</target>
+</project>

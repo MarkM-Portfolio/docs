@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "בחרו אזור לעיצוב מספרים, מטבעות, תאריכים ושעות.",
+	INPUT_INVALID_LOCALENAME: "שם אזור לא חוקי",
+	INPUT_EMPTY_LOCALENAME: "בחרו אזור.",
+	
+	Spain_Catalan: "ספרד (קטלאנית)",
+	Denmark: "דנמרק",
+	Germany: "גרמניה",
+	Greek: "יוון",
+	United_States: "ארצות הברית",
+	United_Kingdom: "בריטניה ",
+	Spain: "ספרד",
+	Finland: "פינלנד",
+	France: "צרפת",
+	Italy: "איטליה",
+	Japan: "יפן",
+	Korean: "דרום קוריאה",
+	Norway: "נורווגיה",
+	Netherlands: "הולנד",
+	Poland: "פולין",
+	Brazil: "ברזיל",
+	Portugal: "פורטוגל",
+	Russia: "רוסיה",
+	Sweden: "שוודיה",
+	Thailand: "תאילנד",
+	Turkey: "טורקיה",
+	China: "סין",
+	Taiwan_China: "טייוואן (סין)",
+	Israel: "ישראל"
+})
+

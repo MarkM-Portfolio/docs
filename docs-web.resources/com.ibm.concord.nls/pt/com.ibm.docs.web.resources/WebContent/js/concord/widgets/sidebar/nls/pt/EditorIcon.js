@@ -1,0 +1,21 @@
+define({
+	label_template:"${user_label}${sessionStatus_label}${colorIndicator_label}${STStatus_label}${BIZCard_label}",
+	user_label_template:"Editor: ${userName}; ",
+	STStatus_label_template:"Estado do HCL Sametime: ${ST_STATUS}; ",
+	stStatusMeeting:"Em reunião",
+	stStatusMobileMeeting:"Em reunião, no telemóvel",
+	stStatusAvailable:"Disponível",
+	stStatusMobileAvailable:"Disponível, no telemóvel",
+	stStatusAway:"Ausente",
+	stStatusMobileAway:"Ausente, no telemóvel",
+	stStatusBusy:"Ocupado",
+	stStatusOffline:"Offline",
+	stStatusDnd:"Não incomodar",
+	stStatusMobileDnd:"Não incomodar, no telemóvel",
+	BIZCard_label_template:"${BIZStatus}; ",
+	sessionOnline:"Está a editar o documento; ",
+	sessionOffline:"Não está actualmente a editar o documento; ",
+	color_on_template:"A indicação de cor está activada - faça clique ou prima Enter para desactivar; ",
+	color_off_template:"A indicação de cor está desactivada - faça clique ou prima entre para activar; ",
+	color_disable_template:"A indicação de cor está desactivada pela Vista do menu principal - Realces de co-edição: "
+})

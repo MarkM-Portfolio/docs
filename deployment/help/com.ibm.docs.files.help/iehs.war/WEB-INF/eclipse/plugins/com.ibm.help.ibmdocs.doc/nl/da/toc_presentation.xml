@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Arbejd med præsentationer"
+     topic="text/presentation/presentations_frame.html">
+   <topic label="Arbejd med præsentationer"
+          href="text/presentation/presentations_frame.html">
+      <topic label="Opret og upload præsentationer"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Opret præsentationer"
+                href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Ændring af præsentationers standardfilformat"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Upload præsentationer til deling"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Importér eksisterende præsentationer"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Filkompatibilitet og eksport af præsentationer"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Filformater, der understøttes i præsentationer"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Gem præsentationer" href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Publicér en version af præsentationer"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Eksportér præsentationer til andre filformater"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Del præsentationer" href="text/presentation/p_sharing_a_document.html">
+         <topic label="Del præsentationer med personer eller fællesskaber"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Angiv adgangsniveauer for præsentationer"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Samarbejde om præsentationer i realtid"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Samredigér i realtid i præsentationer"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Om samredigering i præsentationer"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Samredigér med andre i præsentationer"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Vis redaktørændringer i præsentationer"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Samarbejde ved hjælp af kommentarer i præsentationer"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Om kommentarer i præsentationer"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Opret kommentarer i præsentationer"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Vis kommentarer i præsentationer"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Søg i kommentarer i præsentationer"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Formatér dias" href="text/presentation/p_formatting_slides.html">
+         <topic label="Redigér skrifttyper i præsentationer"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Markér og flyt objekter"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Arrangér rækkefølgen af objekter"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Tilføj tal og punkttegn til dias"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Anvend et diaslayout"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Skift mastertypografi"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Stavekontrol af præsentationer"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Gem og udskriv præsentationer"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Udskriv præsentationer til PDF-filer"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Arbejd med billeder i præsentationer"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Indsæt grafik i præsentationer"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Flytning og tilpasning af størrelse på billeder i præsentationer"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Angiv billedegenskaber i præsentationer"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Arbejd med diasser" href="text/presentation/p_slide_show.html">
+         <topic label="Afspil diasshow" href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Anvend overgange mellem dias"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Slet dias" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Tilføj dias" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Flyt dias" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Kopiér dias" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Arbejd med tabeller i præsentationer"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Opret tabeller i præsentationer"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Tilføj rækker og kolonner i præsentationer"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Flyt rækker og kolonner i præsentationer"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Tilpas størrelsen på rækker og kolonner i præsentationer"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Justér tekst i celler"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Skift tabeltypografi i præsentationer"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Definér tabeloverskrifter i præsentationer"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Redigér talernoter"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Referencekort til Presentations"
+             href="text/presentation/p_quick_ref.html"/>
+      <topic label="Tastaturgenveje i præsentationer"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

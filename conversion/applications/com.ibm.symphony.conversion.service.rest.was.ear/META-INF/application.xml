@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
+	<display-name>IBMConversion</display-name>
+	<module id="WebModule_1301034390264">
+		<web>
+			<web-uri>com.ibm.symphony.conversion.service.rest.was.war.war</web-uri>
+			<context-root>conversion</context-root>
+		</web>
+	</module>
+	<security-role id="SecurityRole_1425959506006">
+		<description>
+		docsAdmin user role for s2s call from Docs and Viewer</description>
+		<role-name>docsAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1425905964675">
+		<description>
+		allAuthenticatedUsers user role for all authenticated users</description>
+		<role-name>allAuthenticatedUsers</role-name>
+	</security-role>	
+</application>

@@ -1,0 +1,133 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>viewer-ext</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.concord.viewer.lcfiles.extension.provision</artifactId>
+  <name>com.ibm.concord.viewer.lcfiles.extension.provision - pom</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>OnPremise</module>
+    <module>SmartCloud</module>
+  </modules> 
+  
+  <properties>
+    <assembly.file>assembly_com.ibm.concord.viewer.lcfiles.extension.provision.xml</assembly.file>
+  </properties>
+
+  <profiles>
+    <!-- Only execute on parent project -->
+    <profile>
+      <id>Parent Profile ${project.groupId}:${project.artifactId}</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <file>
+          <exists>${basedir}/${assembly.file}</exists>
+        </file>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>copy nls</id>
+                <phase>prepare-package</phase>
+                <configuration>           
+                  <target>                  
+                    <copy todir="${project.build.directory}/resources/nls/zh" failonerror="true">
+                      <fileset dir="${basedir}/resources/nls/zh-cn" includes="*.js"/>
+                    </copy>
+                  </target>
+                </configuration> 
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin> 
+        </plugins>
+      </build>
+    </profile>
+    
+    <!--only execute on child project -->
+    <profile>
+      <id>Profile ${project.groupId}:${project.artifactId}</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <file>
+          <missing>${basedir}/${assembly.file}</missing>
+        </file>
+      </activation>    
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-resources-plugin</artifactId>
+            <executions>
+              <!-- Filter the ${docs.build.timestamp} in MANIFEST.MF-->
+              <execution>
+                <id>copy and filter MANIFEST.MF to build target</id>
+                <phase>prepare-package</phase>
+                <goals>
+                  <goal>copy-resources</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>${project.build.directory}</outputDirectory>
+                  <resources>
+                    <resource>
+                      <directory>${project.parent.basedir}/META-INF</directory>
+                      <!-- filter the ${docs.build.timestamp} -->
+                      <filtering>true</filtering>
+                      <includes>
+                        <include>MANIFEST.MF</include>
+                      </includes>
+                    </resource>                   
+                  </resources>
+                </configuration>
+              </execution>
+            </executions>              
+          </plugin>              
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>       
+              <execution>
+                <id>assembly ${project.artifactId}</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>${project.parent.basedir}/${assembly.file}</descriptor>
+                  </descriptors>
+                  <archiverConfig>
+                    <manifestFile>${project.build.directory}/MANIFEST.MF</manifestFile>        
+                  </archiverConfig>
+                  <archive>
+                    <addMavenDescriptor>false</addMavenDescriptor>
+                    <manifest>                      
+                        <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+                        <addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
+                        <addClasspath>false</addClasspath>
+                    </manifest>
+                  </archive>                  
+                  <finalName>${project.artifactId}</finalName>
+                  <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>	  
+        </plugins>
+      </build>
+    </profile>
+  </profiles>  
+</project>

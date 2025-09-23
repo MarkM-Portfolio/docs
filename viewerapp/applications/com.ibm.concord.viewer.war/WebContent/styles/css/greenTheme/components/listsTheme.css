@@ -1,0 +1,18 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for lists
+companion file is lists.css*/
+/*** L I S T S ***/ /*use in conjuction with sections if you want a more complex list*/
+ul.lotusList li.lotusSelected{background-color:#e4e1e1}
+ul.lotusList li.lotusSelected a{color:#000;}
+.lotusList a, ul.lotusList li.lotusSelected a{border-color:transparent}
+/*delete icon for editable list*/
+ul.lotusEditable a.lotusDelete:hover{border-bottom-color:transparent}
+/*IE 6 hack. Need to use tag and person classes here and accommodate gray and white backgrounds*/
+.lotusui_ie6 .lotusList a{border-bottom-color:#f1f5fa}
+.lotusui_ie6 ul.lotusList li.lotusSelected a{border-bottom-color:#cfecff}
+.lotusui_ie6 ul.lotusEditable a.lotusDelete:hover{border-bottom-color:#f1f5fa}
+/***********************************************************/
+

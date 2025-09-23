@@ -1,0 +1,2296 @@
+.concord div li.LB_TRUE:before
+{
+	font-weight: bold !important
+}
+
+.concord div li.LB_FALSE:before
+{
+	font-weight: normal !important
+}
+
+.concord div li.LI_TRUE:before
+{
+	font-style: italic !important
+}
+
+.concord div li.LI_FALSE:before
+{
+	font-style: normal !important
+}
+
+/* Size : LS_*/
+
+.concord div li.LS_6:before
+{
+    font-size:0.3333333333333333em !important
+}
+
+
+.concord div li.LS_7:before
+{
+    font-size:0.3888888888888889em !important
+}
+
+
+.concord div li.LS_8:before
+{
+    font-size:0.4444444444444444em !important
+}
+
+
+.concord div li.LS_9:before
+{
+    font-size:0.5em !important
+}
+
+
+.concord div li.LS_10:before
+{
+    font-size:0.5555555555555556em !important
+}
+
+
+.concord div li.LS_11:before
+{
+    font-size:0.6111111111111112em !important
+}
+
+
+.concord div li.LS_12:before
+{
+    font-size:0.6666666666666666em !important
+}
+
+
+.concord div li.LS_13:before
+{
+    font-size:0.7222222222222222em !important
+}
+
+
+.concord div li.LS_14:before
+{
+    font-size:0.7777777777777778em !important
+}
+
+
+.concord div li.LS_15:before
+{
+    font-size:0.8333333333333334em !important
+}
+
+
+.concord div li.LS_16:before
+{
+    font-size:0.8888888888888888em !important
+}
+
+
+.concord div li.LS_17:before
+{
+    font-size:0.9444444444444444em !important
+}
+
+
+.concord div li.LS_18:before
+{
+    font-size:1em !important
+}
+
+
+.concord div li.LS_19:before
+{
+    font-size:1.0555555555555556em !important
+}
+
+
+.concord div li.LS_20:before
+{
+    font-size:1.1111111111111112em !important
+}
+
+
+.concord div li.LS_21:before
+{
+    font-size:1.1666666666666667em !important
+}
+
+
+.concord div li.LS_22:before
+{
+    font-size:1.2222222222222223em !important
+}
+
+
+.concord div li.LS_23:before
+{
+    font-size:1.2777777777777777em !important
+}
+
+
+.concord div li.LS_24:before
+{
+    font-size:1.3333333333333333em !important
+}
+
+
+.concord div li.LS_25:before
+{
+    font-size:1.3888888888888888em !important
+}
+
+
+.concord div li.LS_26:before
+{
+    font-size:1.4444444444444444em !important
+}
+
+
+.concord div li.LS_27:before
+{
+    font-size:1.5em !important
+}
+
+
+.concord div li.LS_28:before
+{
+    font-size:1.5555555555555556em !important
+}
+
+
+.concord div li.LS_29:before
+{
+    font-size:1.6111111111111112em !important
+}
+
+
+.concord div li.LS_30:before
+{
+    font-size:1.6666666666666667em !important
+}
+
+
+.concord div li.LS_31:before
+{
+    font-size:1.7222222222222223em !important
+}
+
+
+.concord div li.LS_32:before
+{
+    font-size:1.7777777777777777em !important
+}
+
+
+.concord div li.LS_33:before
+{
+    font-size:1.8333333333333333em !important
+}
+
+
+.concord div li.LS_34:before
+{
+    font-size:1.8888888888888888em !important
+}
+
+
+.concord div li.LS_35:before
+{
+    font-size:1.9444444444444444em !important
+}
+
+
+.concord div li.LS_36:before
+{
+    font-size:2em !important
+}
+
+
+.concord div li.LS_37:before
+{
+    font-size:2.0555555555555554em !important
+}
+
+
+.concord div li.LS_38:before
+{
+    font-size:2.111111111111111em !important
+}
+
+
+.concord div li.LS_39:before
+{
+    font-size:2.1666666666666665em !important
+}
+
+
+.concord div li.LS_40:before
+{
+    font-size:2.2222222222222223em !important
+}
+
+
+.concord div li.LS_41:before
+{
+    font-size:2.2777777777777777em !important
+}
+
+
+.concord div li.LS_42:before
+{
+    font-size:2.3333333333333335em !important
+}
+
+
+.concord div li.LS_43:before
+{
+    font-size:2.388888888888889em !important
+}
+
+
+.concord div li.LS_44:before
+{
+    font-size:2.4444444444444446em !important
+}
+
+
+.concord div li.LS_45:before
+{
+    font-size:2.5em !important
+}
+
+
+.concord div li.LS_46:before
+{
+    font-size:2.5555555555555554em !important
+}
+
+
+.concord div li.LS_47:before
+{
+    font-size:2.611111111111111em !important
+}
+
+
+.concord div li.LS_48:before
+{
+    font-size:2.6666666666666665em !important
+}
+
+
+.concord div li.LS_49:before
+{
+    font-size:2.7222222222222223em !important
+}
+
+
+.concord div li.LS_50:before
+{
+    font-size:2.7777777777777777em !important
+}
+
+
+.concord div li.LS_51:before
+{
+    font-size:2.8333333333333335em !important
+}
+
+
+.concord div li.LS_52:before
+{
+    font-size:2.888888888888889em !important
+}
+
+
+.concord div li.LS_53:before
+{
+    font-size:2.9444444444444446em !important
+}
+
+
+.concord div li.LS_54:before
+{
+    font-size:3em !important
+}
+
+
+.concord div li.LS_55:before
+{
+    font-size:3.0555555555555554em !important
+}
+
+
+.concord div li.LS_56:before
+{
+    font-size:3.111111111111111em !important
+}
+
+
+.concord div li.LS_57:before
+{
+    font-size:3.1666666666666665em !important
+}
+
+
+.concord div li.LS_58:before
+{
+    font-size:3.2222222222222223em !important
+}
+
+
+.concord div li.LS_59:before
+{
+    font-size:3.2777777777777777em !important
+}
+
+
+.concord div li.LS_60:before
+{
+    font-size:3.3333333333333335em !important
+}
+
+
+.concord div li.LS_61:before
+{
+    font-size:3.388888888888889em !important
+}
+
+
+.concord div li.LS_62:before
+{
+    font-size:3.4444444444444446em !important
+}
+
+
+.concord div li.LS_63:before
+{
+    font-size:3.5em !important
+}
+
+
+.concord div li.LS_64:before
+{
+    font-size:3.5555555555555554em !important
+}
+
+
+.concord div li.LS_65:before
+{
+    font-size:3.611111111111111em !important
+}
+
+
+.concord div li.LS_66:before
+{
+    font-size:3.6666666666666665em !important
+}
+
+
+.concord div li.LS_67:before
+{
+    font-size:3.7222222222222223em !important
+}
+
+
+.concord div li.LS_68:before
+{
+    font-size:3.7777777777777777em !important
+}
+
+
+.concord div li.LS_69:before
+{
+    font-size:3.8333333333333335em !important
+}
+
+
+.concord div li.LS_70:before
+{
+    font-size:3.888888888888889em !important
+}
+
+
+.concord div li.LS_71:before
+{
+    font-size:3.9444444444444446em !important
+}
+
+
+.concord div li.LS_72:before
+{
+    font-size:4em !important
+}
+
+
+.concord div li.LS_73:before
+{
+    font-size:4.055555555555555em !important
+}
+
+
+.concord div li.LS_74:before
+{
+    font-size:4.111111111111111em !important
+}
+
+
+.concord div li.LS_75:before
+{
+    font-size:4.166666666666667em !important
+}
+
+
+.concord div li.LS_76:before
+{
+    font-size:4.222222222222222em !important
+}
+
+
+.concord div li.LS_77:before
+{
+    font-size:4.277777777777778em !important
+}
+
+
+.concord div li.LS_78:before
+{
+    font-size:4.333333333333333em !important
+}
+
+
+.concord div li.LS_79:before
+{
+    font-size:4.388888888888889em !important
+}
+
+
+.concord div li.LS_80:before
+{
+    font-size:4.444444444444445em !important
+}
+
+
+.concord div li.LS_81:before
+{
+    font-size:4.5em !important
+}
+
+
+.concord div li.LS_82:before
+{
+    font-size:4.555555555555555em !important
+}
+
+
+.concord div li.LS_83:before
+{
+    font-size:4.611111111111111em !important
+}
+
+
+.concord div li.LS_84:before
+{
+    font-size:4.666666666666667em !important
+}
+
+
+.concord div li.LS_85:before
+{
+    font-size:4.722222222222222em !important
+}
+
+
+.concord div li.LS_86:before
+{
+    font-size:4.777777777777778em !important
+}
+
+
+.concord div li.LS_87:before
+{
+    font-size:4.833333333333333em !important
+}
+
+
+.concord div li.LS_88:before
+{
+    font-size:4.888888888888889em !important
+}
+
+
+.concord div li.LS_89:before
+{
+    font-size:4.944444444444445em !important
+}
+
+
+.concord div li.LS_90:before
+{
+    font-size:5em !important
+}
+
+
+.concord div li.LS_91:before
+{
+    font-size:5.055555555555555em !important
+}
+
+
+.concord div li.LS_92:before
+{
+    font-size:5.111111111111111em !important
+}
+
+
+.concord div li.LS_93:before
+{
+    font-size:5.166666666666667em !important
+}
+
+
+.concord div li.LS_94:before
+{
+    font-size:5.222222222222222em !important
+}
+
+
+.concord div li.LS_95:before
+{
+    font-size:5.277777777777778em !important
+}
+
+
+.concord div li.LS_96:before
+{
+    font-size:5.333333333333333em !important
+}
+
+
+.concord div li.LS_97:before
+{
+    font-size:5.388888888888889em !important
+}
+
+
+.concord div li.LS_98:before
+{
+    font-size:5.444444444444445em !important
+}
+
+
+.concord div li.LS_99:before
+{
+    font-size:5.5em !important
+}
+
+
+.concord div li.LS_100:before
+{
+    font-size:5.555555555555555em !important
+}
+
+
+.concord div li.LS_101:before
+{
+    font-size:5.611111111111111em !important
+}
+
+
+.concord div li.LS_102:before
+{
+    font-size:5.666666666666667em !important
+}
+
+
+.concord div li.LS_103:before
+{
+    font-size:5.722222222222222em !important
+}
+
+
+.concord div li.LS_104:before
+{
+    font-size:5.777777777777778em !important
+}
+
+
+.concord div li.LS_105:before
+{
+    font-size:5.833333333333333em !important
+}
+
+
+.concord div li.LS_106:before
+{
+    font-size:5.888888888888889em !important
+}
+
+
+.concord div li.LS_107:before
+{
+    font-size:5.944444444444445em !important
+}
+
+
+.concord div li.LS_108:before
+{
+    font-size:6em !important
+}
+
+
+.concord div li.LS_109:before
+{
+    font-size:6.055555555555555em !important
+}
+
+
+.concord div li.LS_110:before
+{
+    font-size:6.111111111111111em !important
+}
+
+
+.concord div li.LS_111:before
+{
+    font-size:6.166666666666667em !important
+}
+
+
+.concord div li.LS_112:before
+{
+    font-size:6.222222222222222em !important
+}
+
+
+.concord div li.LS_113:before
+{
+    font-size:6.277777777777778em !important
+}
+
+
+.concord div li.LS_114:before
+{
+    font-size:6.333333333333333em !important
+}
+
+
+.concord div li.LS_115:before
+{
+    font-size:6.388888888888889em !important
+}
+
+
+.concord div li.LS_116:before
+{
+    font-size:6.444444444444445em !important
+}
+
+
+.concord div li.LS_117:before
+{
+    font-size:6.5em !important
+}
+
+
+.concord div li.LS_118:before
+{
+    font-size:6.555555555555555em !important
+}
+
+
+.concord div li.LS_119:before
+{
+    font-size:6.611111111111111em !important
+}
+
+
+.concord div li.LS_120:before
+{
+    font-size:6.666666666666667em !important
+}
+
+
+.concord div li.LS_121:before
+{
+    font-size:6.722222222222222em !important
+}
+
+
+.concord div li.LS_122:before
+{
+    font-size:6.777777777777778em !important
+}
+
+
+.concord div li.LS_123:before
+{
+    font-size:6.833333333333333em !important
+}
+
+
+.concord div li.LS_124:before
+{
+    font-size:6.888888888888889em !important
+}
+
+
+.concord div li.LS_125:before
+{
+    font-size:6.944444444444445em !important
+}
+
+
+.concord div li.LS_126:before
+{
+    font-size:7em !important
+}
+
+
+.concord div li.LS_127:before
+{
+    font-size:7.055555555555555em !important
+}
+
+
+.concord div li.LS_128:before
+{
+    font-size:7.111111111111111em !important
+}
+
+
+.concord div li.LS_129:before
+{
+    font-size:7.166666666666667em !important
+}
+
+
+.concord div li.LS_130:before
+{
+    font-size:7.222222222222222em !important
+}
+
+
+.concord div li.LS_131:before
+{
+    font-size:7.277777777777778em !important
+}
+
+
+.concord div li.LS_132:before
+{
+    font-size:7.333333333333333em !important
+}
+
+
+.concord div li.LS_133:before
+{
+    font-size:7.388888888888889em !important
+}
+
+
+.concord div li.LS_134:before
+{
+    font-size:7.444444444444445em !important
+}
+
+
+.concord div li.LS_135:before
+{
+    font-size:7.5em !important
+}
+
+
+.concord div li.LS_136:before
+{
+    font-size:7.555555555555555em !important
+}
+
+
+.concord div li.LS_137:before
+{
+    font-size:7.611111111111111em !important
+}
+
+
+.concord div li.LS_138:before
+{
+    font-size:7.666666666666667em !important
+}
+
+
+.concord div li.LS_139:before
+{
+    font-size:7.722222222222222em !important
+}
+
+
+.concord div li.LS_140:before
+{
+    font-size:7.777777777777778em !important
+}
+
+
+.concord div li.LS_141:before
+{
+    font-size:7.833333333333333em !important
+}
+
+
+.concord div li.LS_142:before
+{
+    font-size:7.888888888888889em !important
+}
+
+
+.concord div li.LS_143:before
+{
+    font-size:7.944444444444445em !important
+}
+
+
+.concord div li.LS_144:before
+{
+    font-size:8em !important
+}
+
+
+.concord div li.LS_145:before
+{
+    font-size:8.055555555555555em !important
+}
+
+
+.concord div li.LS_146:before
+{
+    font-size:8.11111111111111em !important
+}
+
+
+.concord div li.LS_147:before
+{
+    font-size:8.166666666666666em !important
+}
+
+
+.concord div li.LS_148:before
+{
+    font-size:8.222222222222221em !important
+}
+
+
+.concord div li.LS_149:before
+{
+    font-size:8.277777777777779em !important
+}
+
+
+.concord div li.LS_150:before
+{
+    font-size:8.333333333333334em !important
+}
+
+
+.concord div li.LS_151:before
+{
+    font-size:8.38888888888889em !important
+}
+
+
+.concord div li.LS_152:before
+{
+    font-size:8.444444444444445em !important
+}
+
+
+.concord div li.LS_153:before
+{
+    font-size:8.5em !important
+}
+
+
+.concord div li.LS_154:before
+{
+    font-size:8.555555555555555em !important
+}
+
+
+.concord div li.LS_155:before
+{
+    font-size:8.61111111111111em !important
+}
+
+
+.concord div li.LS_156:before
+{
+    font-size:8.666666666666666em !important
+}
+
+
+.concord div li.LS_157:before
+{
+    font-size:8.722222222222221em !important
+}
+
+
+.concord div li.LS_158:before
+{
+    font-size:8.777777777777779em !important
+}
+
+
+.concord div li.LS_159:before
+{
+    font-size:8.833333333333334em !important
+}
+
+
+.concord div li.LS_160:before
+{
+    font-size:8.88888888888889em !important
+}
+
+
+.concord div li.LS_161:before
+{
+    font-size:8.944444444444445em !important
+}
+
+
+.concord div li.LS_162:before
+{
+    font-size:9em !important
+}
+
+
+.concord div li.LS_163:before
+{
+    font-size:9.055555555555555em !important
+}
+
+
+.concord div li.LS_164:before
+{
+    font-size:9.11111111111111em !important
+}
+
+
+.concord div li.LS_165:before
+{
+    font-size:9.166666666666666em !important
+}
+
+
+.concord div li.LS_166:before
+{
+    font-size:9.222222222222221em !important
+}
+
+
+.concord div li.LS_167:before
+{
+    font-size:9.277777777777779em !important
+}
+
+
+.concord div li.LS_168:before
+{
+    font-size:9.333333333333334em !important
+}
+
+
+.concord div li.LS_169:before
+{
+    font-size:9.38888888888889em !important
+}
+
+
+.concord div li.LS_170:before
+{
+    font-size:9.444444444444445em !important
+}
+
+
+.concord div li.LS_171:before
+{
+    font-size:9.5em !important
+}
+
+
+.concord div li.LS_172:before
+{
+    font-size:9.555555555555555em !important
+}
+
+
+.concord div li.LS_173:before
+{
+    font-size:9.61111111111111em !important
+}
+
+
+.concord div li.LS_174:before
+{
+    font-size:9.666666666666666em !important
+}
+
+
+.concord div li.LS_175:before
+{
+    font-size:9.722222222222221em !important
+}
+
+
+.concord div li.LS_176:before
+{
+    font-size:9.777777777777779em !important
+}
+
+
+.concord div li.LS_177:before
+{
+    font-size:9.833333333333334em !important
+}
+
+
+.concord div li.LS_178:before
+{
+    font-size:9.88888888888889em !important
+}
+
+
+.concord div li.LS_179:before
+{
+    font-size:9.944444444444445em !important
+}
+
+
+.concord div li.LS_180:before
+{
+    font-size:10em !important
+}
+
+
+.concord div li.LS_181:before
+{
+    font-size:10.055555555555555em !important
+}
+
+
+.concord div li.LS_182:before
+{
+    font-size:10.11111111111111em !important
+}
+
+
+.concord div li.LS_183:before
+{
+    font-size:10.166666666666666em !important
+}
+
+
+.concord div li.LS_184:before
+{
+    font-size:10.222222222222221em !important
+}
+
+
+.concord div li.LS_185:before
+{
+    font-size:10.277777777777779em !important
+}
+
+
+.concord div li.LS_186:before
+{
+    font-size:10.333333333333334em !important
+}
+
+
+.concord div li.LS_187:before
+{
+    font-size:10.38888888888889em !important
+}
+
+
+.concord div li.LS_188:before
+{
+    font-size:10.444444444444445em !important
+}
+
+
+.concord div li.LS_189:before
+{
+    font-size:10.5em !important
+}
+
+
+.concord div li.LS_190:before
+{
+    font-size:10.555555555555555em !important
+}
+
+
+.concord div li.LS_191:before
+{
+    font-size:10.61111111111111em !important
+}
+
+
+.concord div li.LS_192:before
+{
+    font-size:10.666666666666666em !important
+}
+
+
+.concord div li.LS_193:before
+{
+    font-size:10.722222222222221em !important
+}
+
+
+.concord div li.LS_194:before
+{
+    font-size:10.777777777777779em !important
+}
+
+
+.concord div li.LS_195:before
+{
+    font-size:10.833333333333334em !important
+}
+
+
+.concord div li.LS_196:before
+{
+    font-size:10.88888888888889em !important
+}
+
+
+.concord div li.LS_197:before
+{
+    font-size:10.944444444444445em !important
+}
+
+
+.concord div li.LS_198:before
+{
+    font-size:11em !important
+}
+
+
+.concord div li.LS_199:before
+{
+    font-size:11.055555555555555em !important
+}
+
+
+.concord div li.LS_200:before
+{
+    font-size:11.11111111111111em !important
+}
+
+/* Color : LC_*/
+/* color aliceblue  */
+.concord div li.LC_F0F8FF:before
+{
+     color: #F0F8FF !important
+}
+
+ 
+/* color antiquewhite  */
+.concord div li.LC_FAEBD7:before
+{
+     color: #FAEBD7 !important
+}
+
+ 
+/* color aqua  */
+.concord div li.LC_00FFFF:before
+{
+     color: #00FFFF !important
+}
+
+ 
+/* color aquamarine  */
+.concord div li.LC_7FFFD4:before
+{
+     color: #7FFFD4 !important
+}
+
+ 
+/* color azure  */
+.concord div li.LC_F0FFFF:before
+{
+     color: #F0FFFF !important
+}
+
+ 
+/* color beige  */
+.concord div li.LC_F5F5DC:before
+{
+     color: #F5F5DC !important
+}
+
+ 
+/* color bisque  */
+.concord div li.LC_FFE4C4:before
+{
+     color: #FFE4C4 !important
+}
+
+ 
+/* color black  */
+.concord div li.LC_000000:before
+{
+     color: #000000 !important
+}
+
+ 
+/* color blanchedalmond  */
+.concord div li.LC_FFEBCD:before
+{
+     color: #FFEBCD !important
+}
+
+ 
+/* color blue  */
+.concord div li.LC_0000FF:before
+{
+     color: #0000FF !important
+}
+
+ 
+/* color blueviolet  */
+.concord div li.LC_8A2BE2:before
+{
+     color: #8A2BE2 !important
+}
+
+ 
+/* color brown  */
+.concord div li.LC_A52A2A:before
+{
+     color: #A52A2A !important
+}
+
+ 
+/* color burlywood  */
+.concord div li.LC_DEB887:before
+{
+     color: #DEB887 !important
+}
+
+ 
+/* color cadetblue  */
+.concord div li.LC_5F9EA0:before
+{
+     color: #5F9EA0 !important
+}
+
+ 
+/* color chartreuse  */
+.concord div li.LC_7FFF00:before
+{
+     color: #7FFF00 !important
+}
+
+ 
+/* color chocolate  */
+.concord div li.LC_D2691E:before
+{
+     color: #D2691E !important
+}
+
+ 
+/* color coral  */
+.concord div li.LC_FF7F50:before
+{
+     color: #FF7F50 !important
+}
+
+ 
+/* color cornflowerblue  */
+.concord div li.LC_6495ED:before
+{
+     color: #6495ED !important
+}
+
+ 
+/* color cornsilk  */
+.concord div li.LC_FFF8DC:before
+{
+     color: #FFF8DC !important
+}
+
+ 
+/* color crimson  */
+.concord div li.LC_DC143C:before
+{
+     color: #DC143C !important
+}
+
+ 
+/* color cyan  */
+.concord div li.LC_00FFFF:before
+{
+     color: #00FFFF !important
+}
+
+ 
+/* color darkblue  */
+.concord div li.LC_00008B:before
+{
+     color: #00008B !important
+}
+
+ 
+/* color darkcyan  */
+.concord div li.LC_008B8B:before
+{
+     color: #008B8B !important
+}
+
+ 
+/* color darkgoldenrod  */
+.concord div li.LC_B8860B:before
+{
+     color: #B8860B !important
+}
+
+ 
+/* color darkgray  */
+.concord div li.LC_A9A9A9:before
+{
+     color: #A9A9A9 !important
+}
+
+ 
+/* color darkgreen  */
+.concord div li.LC_006400:before
+{
+     color: #006400 !important
+}
+
+.concord div li.LC_00B200:before
+{
+     color: #00B200 !important
+}
+ 
+/* color darkkhaki  */
+.concord div li.LC_BDB76B:before
+{
+     color: #BDB76B !important
+}
+
+ 
+/* color darkmagenta  */
+.concord div li.LC_8B008B:before
+{
+     color: #8B008B !important
+}
+
+/* color dark gray  */
+.concord div li.LC_8B8B8B:before
+{
+     color: #8B8B8B !important
+}
+ 
+/* color darkolivegreen  */
+.concord div li.LC_556B2F:before
+{
+     color: #556B2F !important
+}
+
+ 
+/* color darkorange  */
+.concord div li.LC_FF8C00:before
+{
+     color: #FF8C00 !important
+}
+
+ 
+/* color darkorchid  */
+.concord div li.LC_9932CC:before
+{
+     color: #9932CC !important
+}
+
+ 
+/* color darkred  */
+.concord div li.LC_8B0000:before
+{
+     color: #8B0000 !important
+}
+
+ 
+/* color darksalmon  */
+.concord div li.LC_E9967A:before
+{
+     color: #E9967A !important
+}
+
+ 
+/* color darkseagreen  */
+.concord div li.LC_8FBC8F:before
+{
+     color: #8FBC8F !important
+}
+
+ 
+/* color darkslateblue  */
+.concord div li.LC_483D8B:before
+{
+     color: #483D8B !important
+}
+
+ 
+/* color darkslategray  */
+.concord div li.LC_2F4F4F:before
+{
+     color: #2F4F4F !important
+}
+
+ 
+/* color darkturquoise  */
+.concord div li.LC_00CED1:before
+{
+     color: #00CED1 !important
+}
+
+ 
+/* color darkviolet  */
+.concord div li.LC_9400D3:before
+{
+     color: #9400D3 !important
+}
+
+ 
+/* color deeppink  */
+.concord div li.LC_FF1493:before
+{
+     color: #FF1493 !important
+}
+
+ 
+/* color deepskyblue  */
+.concord div li.LC_00BFFF:before
+{
+     color: #00BFFF !important
+}
+
+ 
+/* color dimgray  */
+.concord div li.LC_696969:before
+{
+     color: #696969 !important
+}
+
+ 
+/* color dodgerblue  */
+.concord div li.LC_1E90FF:before
+{
+     color: #1E90FF !important
+}
+
+.concord div li.LC_703DFF:before
+{
+     color: #703DFF !important
+}
+ 
+/* color feldspar  */
+.concord div li.LC_D19275:before
+{
+     color: #D19275 !important
+}
+
+ 
+/* color firebrick  */
+.concord div li.LC_B22222:before
+{
+     color: #B22222 !important
+}
+
+ 
+/* color floralwhite  */
+.concord div li.LC_FFFAF0:before
+{
+     color: #FFFAF0 !important
+}
+
+ 
+/* color forestgreen  */
+.concord div li.LC_228B22:before
+{
+     color: #228B22 !important
+}
+
+ 
+/* color fuchsia  */
+.concord div li.LC_FF00FF:before
+{
+     color: #FF00FF !important
+}
+
+ 
+/* color gainsboro  */
+.concord div li.LC_DCDCDC:before
+{
+     color: #DCDCDC !important
+}
+
+ 
+/* color ghostwhite  */
+.concord div li.LC_F8F8FF:before
+{
+     color: #F8F8FF !important
+}
+
+ 
+/* color gold  */
+.concord div li.LC_FFD700:before
+{
+     color: #FFD700 !important
+}
+
+ 
+/* color goldenrod  */
+.concord div li.LC_DAA520:before
+{
+     color: #DAA520 !important
+}
+
+ 
+/* color gray  */
+.concord div li.LC_808080:before
+{
+     color: #808080 !important
+}
+
+ 
+/* color green  */
+.concord div li.LC_008000:before
+{
+     color: #008000 !important
+}
+
+ 
+/* color greenyellow  */
+.concord div li.LC_ADFF2F:before
+{
+     color: #ADFF2F !important
+}
+
+ 
+/* color honeydew  */
+.concord div li.LC_F0FFF0:before
+{
+     color: #F0FFF0 !important
+}
+
+ 
+/* color hotpink  */
+.concord div li.LC_FF69B4:before
+{
+     color: #FF69B4 !important
+}
+
+ 
+/* color indianred   */
+.concord div li.LC_CD5C5C:before
+{
+     color: #CD5C5C !important
+}
+
+ 
+/* color indigo  */
+.concord div li.LC_4B0082:before
+{
+     color: #4B0082 !important
+}
+
+ 
+/* color ivory  */
+.concord div li.LC_FFFFF0:before
+{
+     color: #FFFFF0 !important
+}
+
+ 
+/* color khaki  */
+.concord div li.LC_F0E68C:before
+{
+     color: #F0E68C !important
+}
+
+ 
+/* color lavender  */
+.concord div li.LC_E6E6FA:before
+{
+     color: #E6E6FA !important
+}
+
+ 
+/* color lavenderblush  */
+.concord div li.LC_FFF0F5:before
+{
+     color: #FFF0F5 !important
+}
+
+ 
+/* color lawngreen  */
+.concord div li.LC_7CFC00:before
+{
+     color: #7CFC00 !important
+}
+
+ 
+/* color lemonchiffon  */
+.concord div li.LC_FFFACD:before
+{
+     color: #FFFACD !important
+}
+
+ 
+/* color lightblue  */
+.concord div li.LC_ADD8E6:before
+{
+     color: #ADD8E6 !important
+}
+
+ 
+/* color lightcoral  */
+.concord div li.LC_F08080:before
+{
+     color: #F08080 !important
+}
+
+ 
+/* color lightcyan  */
+.concord div li.LC_E0FFFF:before
+{
+     color: #E0FFFF !important
+}
+
+ 
+/* color lightgoldenrodyellow  */
+.concord div li.LC_FAFAD2:before
+{
+     color: #FAFAD2 !important
+}
+
+ 
+/* color lightgrey  */
+.concord div li.LC_D3D3D3:before
+{
+     color: #D3D3D3 !important
+}
+
+ 
+/* color lightgreen  */
+.concord div li.LC_90EE90:before
+{
+     color: #90EE90 !important
+}
+
+ 
+/* color lightpink  */
+.concord div li.LC_FFB6C1:before
+{
+     color: #FFB6C1 !important
+}
+
+ 
+/* color lightsalmon  */
+.concord div li.LC_FFA07A:before
+{
+     color: #FFA07A !important
+}
+
+ 
+/* color lightseagreen  */
+.concord div li.LC_20B2AA:before
+{
+     color: #20B2AA !important
+}
+
+ 
+/* color lightskyblue  */
+.concord div li.LC_87CEFA:before
+{
+     color: #87CEFA !important
+}
+
+ 
+/* color lightslateblue  */
+.concord div li.LC_8470FF:before
+{
+     color: #8470FF !important
+}
+
+ 
+/* color lightslategray  */
+.concord div li.LC_778899:before
+{
+     color: #778899 !important
+}
+
+ 
+/* color lightsteelblue  */
+.concord div li.LC_B0C4DE:before
+{
+     color: #B0C4DE !important
+}
+
+ 
+/* color lightyellow  */
+.concord div li.LC_FFFFE0:before
+{
+     color: #FFFFE0 !important
+}
+
+ 
+/* color lime  */
+.concord div li.LC_00FF00:before
+{
+     color: #00FF00 !important
+}
+
+ 
+/* color limegreen  */
+.concord div li.LC_32CD32:before
+{
+     color: #32CD32 !important
+}
+
+ 
+/* color linen  */
+.concord div li.LC_FAF0E6:before
+{
+     color: #FAF0E6 !important
+}
+
+ 
+/* color magenta  */
+.concord div li.LC_FF00FF:before
+{
+     color: #FF00FF !important
+}
+
+ 
+/* color maroon  */
+.concord div li.LC_800000:before
+{
+     color: #800000 !important
+}
+
+ 
+/* color mediumaquamarine  */
+.concord div li.LC_66CDAA:before
+{
+     color: #66CDAA !important
+}
+
+ 
+/* color mediumblue  */
+.concord div li.LC_0000CD:before
+{
+     color: #0000CD !important
+}
+
+ 
+/* color mediumorchid  */
+.concord div li.LC_BA55D3:before
+{
+     color: #BA55D3 !important
+}
+
+ 
+/* color mediumpurple  */
+.concord div li.LC_9370D8:before
+{
+     color: #9370D8 !important
+}
+
+ 
+/* color mediumseagreen  */
+.concord div li.LC_3CB371:before
+{
+     color: #3CB371 !important
+}
+
+ 
+/* color mediumslateblue  */
+.concord div li.LC_7B68EE:before
+{
+     color: #7B68EE !important
+}
+
+ 
+/* color mediumspringgreen  */
+.concord div li.LC_00FA9A:before
+{
+     color: #00FA9A !important
+}
+
+ 
+/* color mediumturquoise  */
+.concord div li.LC_48D1CC:before
+{
+     color: #48D1CC !important
+}
+
+ 
+/* color mediumvioletred  */
+.concord div li.LC_C71585:before
+{
+     color: #C71585 !important
+}
+
+ 
+/* color midnightblue  */
+.concord div li.LC_191970:before
+{
+     color: #191970 !important
+}
+
+ 
+/* color mintcream  */
+.concord div li.LC_F5FFFA:before
+{
+     color: #F5FFFA !important
+}
+
+ 
+/* color mistyrose  */
+.concord div li.LC_FFE4E1:before
+{
+     color: #FFE4E1 !important
+}
+
+ 
+/* color moccasin  */
+.concord div li.LC_FFE4B5:before
+{
+     color: #FFE4B5 !important
+}
+
+ 
+/* color navajowhite  */
+.concord div li.LC_FFDEAD:before
+{
+     color: #FFDEAD !important
+}
+
+ 
+/* color navy  */
+.concord div li.LC_000080:before
+{
+     color: #000080 !important
+}
+
+ 
+/* color oldlace  */
+.concord div li.LC_FDF5E6:before
+{
+     color: #FDF5E6 !important
+}
+
+ 
+/* color olive  */
+.concord div li.LC_808000:before
+{
+     color: #808000 !important
+}
+
+ 
+/* color olivedrab  */
+.concord div li.LC_6B8E23:before
+{
+     color: #6B8E23 !important
+}
+
+ 
+/* color orange  */
+.concord div li.LC_FFA500:before
+{
+     color: #FFA500 !important
+}
+
+ 
+/* color orangered  */
+.concord div li.LC_FF4500:before
+{
+     color: #FF4500 !important
+}
+
+ 
+/* color orchid  */
+.concord div li.LC_DA70D6:before
+{
+     color: #DA70D6 !important
+}
+
+ 
+/* color palegoldenrod  */
+.concord div li.LC_EEE8AA:before
+{
+     color: #EEE8AA !important
+}
+
+ 
+/* color palegreen  */
+.concord div li.LC_98FB98:before
+{
+     color: #98FB98 !important
+}
+
+ 
+/* color paleturquoise  */
+.concord div li.LC_AFEEEE:before
+{
+     color: #AFEEEE !important
+}
+
+ 
+/* color palevioletred  */
+.concord div li.LC_D87093:before
+{
+     color: #D87093 !important
+}
+
+ 
+/* color papayawhip  */
+.concord div li.LC_FFEFD5:before
+{
+     color: #FFEFD5 !important
+}
+
+ 
+/* color peachpuff  */
+.concord div li.LC_FFDAB9:before
+{
+     color: #FFDAB9 !important
+}
+
+ 
+/* color peru  */
+.concord div li.LC_CD853F:before
+{
+     color: #CD853F !important
+}
+
+ 
+/* color pink  */
+.concord div li.LC_FFC0CB:before
+{
+     color: #FFC0CB !important
+}
+
+ 
+/* color plum  */
+.concord div li.LC_DDA0DD:before
+{
+     color: #DDA0DD !important
+}
+
+ 
+/* color powderblue  */
+.concord div li.LC_B0E0E6:before
+{
+     color: #B0E0E6 !important
+}
+
+ 
+/* color purple  */
+.concord div li.LC_800080:before
+{
+     color: #800080 !important
+}
+
+ 
+/* color red  */
+.concord div li.LC_FF0000:before
+{
+     color: #FF0000 !important
+}
+
+ 
+/* color rosybrown  */
+.concord div li.LC_BC8F8F:before
+{
+     color: #BC8F8F !important
+}
+
+ 
+/* color royalblue  */
+.concord div li.LC_4169E1:before
+{
+     color: #4169E1 !important
+}
+
+ 
+/* color saddlebrown  */
+.concord div li.LC_8B4513:before
+{
+     color: #8B4513 !important
+}
+
+ 
+/* color salmon  */
+.concord div li.LC_FA8072:before
+{
+     color: #FA8072 !important
+}
+
+ 
+/* color sandybrown  */
+.concord div li.LC_F4A460:before
+{
+     color: #F4A460 !important
+}
+
+ 
+/* color seagreen  */
+.concord div li.LC_2E8B57:before
+{
+     color: #2E8B57 !important
+}
+
+ 
+/* color seashell  */
+.concord div li.LC_FFF5EE:before
+{
+     color: #FFF5EE !important
+}
+
+ 
+/* color sienna  */
+.concord div li.LC_A0522D:before
+{
+     color: #A0522D !important
+}
+
+ 
+/* color silver  */
+.concord div li.LC_C0C0C0:before
+{
+     color: #C0C0C0 !important
+}
+
+ 
+/* color skyblue  */
+.concord div li.LC_87CEEB:before
+{
+     color: #87CEEB !important
+}
+
+/* color skyblue1  */
+.concord div li.LC_8CB3E4:before
+{
+     color: #8CB3E4 !important
+}
+
+.concord div li.LC_333399:before
+{
+     color: #333399 !important
+}
+.concord div li.LC_063DE8:before
+{
+     color: #063DE8 !important
+}
+
+
+/* color slateblue  */
+.concord div li.LC_6A5ACD:before
+{
+     color: #6A5ACD !important
+}
+
+ 
+/* color slategray  */
+.concord div li.LC_708090:before
+{
+     color: #708090 !important
+}
+
+ 
+/* color snow  */
+.concord div li.LC_FFFAFA:before
+{
+     color: #FFFAFA !important
+}
+
+ 
+/* color springgreen  */
+.concord div li.LC_00FF7F:before
+{
+     color: #00FF7F !important
+}
+
+ 
+/* color steelblue  */
+.concord div li.LC_4682B4:before
+{
+     color: #4682B4 !important
+}
+
+ 
+/* color tan  */
+.concord div li.LC_D2B48C:before
+{
+     color: #D2B48C !important
+}
+
+ 
+/* color teal  */
+.concord div li.LC_008080:before
+{
+     color: #008080 !important
+}
+
+ 
+/* color thistle  */
+.concord div li.LC_D8BFD8:before
+{
+     color: #D8BFD8 !important
+}
+
+ 
+/* color tomato  */
+.concord div li.LC_FF6347:before
+{
+     color: #FF6347 !important
+}
+
+ 
+/* color turquoise  */
+.concord div li.LC_40E0D0:before
+{
+     color: #40E0D0 !important
+}
+
+ 
+/* color violet  */
+.concord div li.LC_EE82EE:before
+{
+     color: #EE82EE !important
+}
+
+ 
+/* color violetred  */
+.concord div li.LC_D02090:before
+{
+     color: #D02090 !important
+}
+
+ 
+/* color wheat  */
+.concord div li.LC_F5DEB3:before
+{
+     color: #F5DEB3 !important
+}
+
+ 
+/* color white  */
+.concord div li.LC_FFFFFF:before
+{
+     color: #FFFFFF !important
+}
+
+ 
+/* color whitesmoke  */
+.concord div li.LC_F5F5F5:before
+{
+     color: #F5F5F5 !important
+}
+
+ 
+/* color yellow  */
+.concord div li.LC_FFFF00:before
+{
+     color: #FFFF00 !important
+}
+
+ 
+/* color yellowgreen  */
+.concord div li.LC_9ACD32:before
+{
+     color: #9ACD32 !important
+}
+
+/*font name : LF_*/
+.concord div li.LF_arial:before
+{
+	font-family: Arial, Helvetica, sans-serif !important
+}
+
+.concord div li.LF_calibri:before
+{
+	font-family:Calibri, Arial, sans-serif !important
+}
+
+.concord div li.LF_comic_sans_ms:before
+{
+	font-family:Comic Sans MS, cursive !important
+}
+
+.concord div li.LF_constantia:before
+{
+	font-family:Constantia !important
+}
+
+
+.concord div li.LF_courier_new:before
+{
+	font-family:Courier New, Courier, monospace !important
+}
+
+.concord div li.LF_georgia:before
+{
+	font-family:Georgia, serif !important
+}
+
+.concord div li.LF_impact:before
+{
+	font-family:Impact !important
+}
+
+.concord div li.LF_lucida_sans_unicode:before
+{
+	font-family:Lucida Sans Unicode, Lucida Grande, sans-serif !important
+}
+
+.concord div li.LF_symbol:before
+{
+	font-family:Symbol !important
+}
+
+.concord div li.LF_tahoma:before
+{
+	font-family:Tahoma, Geneva, sans-serif !important
+}
+
+.concord div li.LF_times_new_roman:before
+{
+	font-family:Times New Roman, Times, serif !important
+}
+
+.concord div li.LF_trebuchet_ms:before
+{
+	font-family:Trebuchet MS, Helvetica, sans-serif !important
+}
+
+.concord div li.LF_verdana:before
+{
+	font-family:Verdana, Geneva, sans-serif !important
+}
+
+.concord div li.LF_webdings:before
+{
+	font-family:Webdings !important
+}
+
+.concord div li.LF_wingdings:before
+{
+	font-family:Wingdings !important
+}

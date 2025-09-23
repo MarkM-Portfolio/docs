@@ -1,0 +1,18 @@
+{
+    "featuresId": {
+    	"object group" : "801",
+    	"custom shape" : "802",
+    	"OLE" : "803",
+    	"Video or Sound" : "804",
+    	"speaker notes" : "805",    	
+     	"Animation" : "806",   	
+     	"Caption" : "807",
+      	"Header" : "808", 
+      	"ActiveX Control" : "809",
+      	"Chart" : "810",
+      	"WordArt" : "811",
+      	"SmartArt" : "812",
+      	"Theme" : "813",
+      	"Comments": "814"
+    }
+}

@@ -1,0 +1,26 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+  <id>Viewer.zip</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <files>
+    <file>
+      <source>${project.build.directory}/viewer-config-sc-template.json</source>
+      <outputDirectory>config</outputDirectory>
+      <destName>viewer-config.json</destName>
+    </file>     
+  </files>
+  <dependencySets>
+    <dependencySet>
+      <useProjectArtifact>false</useProjectArtifact>
+      <outputDirectory>./</outputDirectory>
+      <includes>
+        <include>com.ibm.docs.SmartCloud:com.ibm.concord.viewer.ear</include>
+      </includes>
+      <outputFileNameMapping>viewer.ear</outputFileNameMapping>
+    </dependencySet>     
+  </dependencySets>
+</assembly>

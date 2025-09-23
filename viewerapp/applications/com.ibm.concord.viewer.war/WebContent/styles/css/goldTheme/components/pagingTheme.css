@@ -1,0 +1,13 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for paging
+companion file is paging.css*/
+/*** P A G I N G ***/
+.lotusPaging{color:#848484;background-color:#f1f3f5;}
+.lotusPaging ul li, .lotusPaging div{color:#848484;}
+.lotusPaging input{color:#848484;}
+.lotusPaging .lotusInlinelist li{border-color:#8d8d8d;}
+/***********************************************************/
+

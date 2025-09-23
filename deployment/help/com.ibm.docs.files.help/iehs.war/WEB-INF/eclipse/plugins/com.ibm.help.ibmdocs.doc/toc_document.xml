@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Working with documents" topic="text/document/documents_frame.html">
+   <topic label="Working with documents" href="text/document/documents_frame.html">
+      <topic label="Creating and importing documents"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="About templates" href="text/document/d_templates.html"/>
+         <topic label="Creating documents from templates"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Changing the default file format of documents"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Uploading documents to share"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Importing existing documents"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Opening password-protected Word files"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="File compatibility and exporting documents"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="File formats that are supported in documents"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Saving documents" href="text/document/d_saving_documents.html"/>
+         <topic label="Publishing a version of documents"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Exporting documents to other file formats"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Sharing documents"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Sharing documents with people or communities"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Setting access levels for documents"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Collaborating on documents in real time"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Co-editing in real time in documents"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="About co-editing in documents"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Co-editing with others in documents"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Showing changes from each editor in documents"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Collaborating using comments in documents"
+                href="text/document/d_comments_overview.html">
+            <topic label="About comments in documents"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Creating comments in documents"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Viewing comments in documents"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Searching comments in documents"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Editing documents"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Formatting text in documents"
+                href="text/document/d_formatting_text.html">
+            <topic label="Setting font effects" href="text/document/d_setting_font_effects.html"/>
+            <topic label="Making text superscript or subscript"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Setting font size" href="text/document/d_setting_font_size.html"/>
+            <topic label="Aligning text" href="text/document/d_aligning_text.html"/>
+            <topic label="Indenting text" href="text/document/d_indenting_text.html"/>
+            <topic label="Adding bullets or numbers in documents"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Creating multilevel lists in documents"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Inserting links" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Creating headers and footers"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Creating a table of contents" href="text/document/d_create_toc.html"/>
+         <topic label="Inserting fields in documents"
+                href="text/document/d_inserting_fields.html"/>
+         <topic label="Spell-checking documents"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Printing documents" href="text/document/d_printing_a_document.html">
+            <topic label="Printing documents to PDF files"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Working with images in documents"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Inserting images in documents"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Setting image properties in documents"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Working with tables in documents"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Creating tables in documents"
+                href="text/document/d_creating_a_table.html"/>
+         <topic label="Changing table styles in documents"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Setting table properties in documents"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Setting background colors for table cells"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Aligning text in table cells in documents"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Adding rows and columns in tables"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Moving rows and columns in tables"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Merging or splitting table cells"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Resizing tables in documents"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Adding captions to tables in documents"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Defining headers for tables in documents"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Documents quick reference" href="text/document/d_quick_ref.html"/>
+      <topic label="Documents keyboard shortcuts" href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

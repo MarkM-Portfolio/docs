@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Работа с электронными таблицами"
+     topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="Работа с электронными таблицами"
+          href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="Создание и импорт электронных таблиц"
+             href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="Создание электронных таблиц на основе шаблонов"
+                href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="Изменение формата файла по умолчанию электронных таблиц"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="Загрузка электронных таблиц в общий каталог"
+                href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="Импорт электронных таблиц" href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="Импорт текстовых файлов в электронные таблицы"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="Открытие файлов Excel, защищенных с помощью пароля"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="Совместимость файлов и экспорт электронных таблиц"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="Форматы файлов, поддерживаемые в электронных таблицах"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="Сохранение электронных таблиц"
+                href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="Публикация версии электронной таблицы"
+                href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="Экспорт электронных таблиц в другие форматы файлов"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="Экспорт электронных таблиц в файлы CSV"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="Общий доступ к электронным таблицам"
+             href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="Предоставление пользователям и сообществам общего доступа к электронным таблицам"
+                href="text/spreadsheet/s_share_file.html"/>
+         <topic label="Настройка уровней доступа для электронных таблиц"
+                href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="Совместная работа с электронными таблицами в реальном времени"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="Совместное редактирование электронных таблиц в реальном времени"
+                href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="О совместном редактировании в электронных таблицах"
+                   href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="Совместное редактирование в электронных таблицах"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="Отображение изменений, внесенных каждым редактором в электронные таблицы"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Совместная работа с электронными таблицами с помощью комментариев"
+                href="text/spreadsheet/s_comments_overview.html">
+            <topic label="О комментариях в электронных таблицах"
+                   href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="Создание комментариев в электронных таблицах"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="Просмотр комментариев в электронной таблице"
+                   href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="Поиск комментариев в электронных таблицах"
+                   href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Изменение внешнего вида электронной таблицы"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="Шрифты, рамки и цвет"
+                href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="Изменение шрифтов в электронных таблицах"
+                href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="Изменение высоты строки или ширины столбца"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="Изменение границ в электронных таблицах"
+                href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="Восстановление стандартного форматирования ячеек электронной таблицы"
+                href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="Форматирование чисел" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="Ввод и изменение даты" href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="Основы редактирования данных"
+                href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="Поиск и замена значений ячеек"
+                href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="Добавление гиперссылки в ячейку"
+                href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="Удаление ссылки из гиперссылки"
+                href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="Использование автозаполнения для заполнения диапазона"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="Слияние и разбиение ячеек листа"
+                href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="Проверка орфографии в электронных таблицах"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="Печать электронных таблиц в файлы PDF"
+                href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Работа с изображениями в электронных таблицах"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="Вставка изображений в электронные таблицы"
+                href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="Перемещение и изменение размеров изображений в электронных таблицах"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="Настройка свойств изображений в электронных таблицах"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Работа с диаграммами в электронных таблицах"
+             href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="Вставка диаграмм в электронные таблицы"
+                href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="Перемещение и изменение размеров диаграмм в электронных таблицах"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="Копирование диаграмм в электронные таблицы"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="Управление диапазонами данных"
+             href="text/spreadsheet/s_data_ranges.html">
+         <topic label="Сортировка данных" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="Применение автофильтров" href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="Закрепление строк и столбцов в электронных таблицах"
+                href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="Сокрытие строк и столбцов" href="text/spreadsheet/s_hide.html"/>
+         <topic label="Отображение строк и столбцов" href="text/spreadsheet/s_show.html"/>
+         <topic label="Ссылка на ячейки из другого листа"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="Копирование данных и изображений в электронных таблицах"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="Указание имени диапазона" href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="Поиск/изменение именованных диапазонов"
+                href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="Удаление именованного диапазона"
+                href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="Абсолютные и относительные ссылки"
+                href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="Использование выражений в вычислениях"
+             href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="О формулах и функциях"
+                href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="Список функций" href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="Сгруппировать по категориям"
+                   href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="Функции для работы с массивами"
+                      href="text/spreadsheet/s_functions_array.html">
+                  <topic label="Константы массивов в формулах"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="Условные вычисления массива"
+                         href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="Функции даты и времени" href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="Инженерная функция" href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="Информационные функции" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="Логические функции" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="Математические функции" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="Функции электронных таблиц"
+                      href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="Статистические функции"
+                      href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="Текстовые функции" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="Функция ABS" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="Функция ACOS" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="Функция ACOSH" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="Функция ADDRESS" href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="Функция AND" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="Функция ASIN" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="Функция ASINH" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="Функция ATAN" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="Функция ATAN2" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="Функция ATANH" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="Функция AVERAGE"
+                   href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="Функция AVERAGEA"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="Функция BASE" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="Функция CEILING" href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="Функция CHOOSE" href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="Функция CHAR" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="Функция CODE" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="Функция COLUMN" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="Функция COLUMNS" href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="Функция COMBIN" href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="Функция CONCATENATE"
+                   href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="Функция CONVERT"
+                   href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="Функция COS" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="Функция COSH" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="Функция COUNT" href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="Функция COUNTA"
+                   href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="Функция COUNTBLANK"
+                   href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="Функция COUNTIF" href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="Функция DATE" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="Функция DATEDIF"
+                   href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="Функция DATEVALUE"
+                   href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="Функция DAY" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="Функция DAYS" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="Функция DEGREES" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="Функция DOLLAR" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="Функция ERRORTYPE"
+                   href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="Функция EVEN" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="Функция EXP" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="Функция EXACT" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="Функция FACT" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="Функция FALSE" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="Функция FIXED" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="Функция FLOOR" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="Функция FORMULA" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="Функция FREQUENCY"
+                   href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="Функция HLOOKUP" href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="Функция HOUR" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="Функция HYPERLINK"
+                   href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="Функция IF" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="Функция INDEX" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="Функция INDIRECT"
+                   href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="Функция INT" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="Функция ISBLANK" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="Функция ISERR" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="Функция ISERROR" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="Функция ISEVEN" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="Функция ISFORMULA"
+                   href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="Функция ISLOGICAL"
+                   href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="Функция ISNA" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="Функция ISNONTEXT"
+                   href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="Функция ISNUMBER" href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="Функция ISODD" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="Функция ISREF" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="Функция ISTEXT" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="Функция LARGE" href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="Функция LEFT" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="Функция LEN" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="Функция LENB" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="Функция LN" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="Функция LOG" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="Функция LOG10" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="Функция LOWER" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="Функция MAX" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="Функция MEDIAN" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="Функция MID" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="Функция MIN" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="Функция MINUTE" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="Функция MMULT" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="Функция MOD" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="Функция MODE" href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="Функция MONTH" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="Функция N" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="Функция NA" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="Функция NETWORKDAYS"
+                   href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="Функция NOT" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="Функция NOW" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="Функция ODD" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="Функция OFFSET" href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="Функция OR" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="Функция PI" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="Функция POWER" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="Функция PRODUCT" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="Функция PROPER" href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="Функция RADIANS" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="Функция RAND" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="Функция RANDBETWEEN"
+                   href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="Функция RANK" href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="Функция REPLACE" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="Функция REPT" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="Функция RIGHT" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="Функция RIGHTB" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="Функция ROMAN" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="Функция ROUND" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="Функция ROUNDDOWN"
+                   href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="Функция ROUNDUP" href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="Функция ROW" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="Функция ROWS" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="Функция SEARCH" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="Функция SECOND" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="Функция SHEET" href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="Функция SIN" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="Функция SINH" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="Функция SMALL" href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="Функция SQRT" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="Функция STDEV" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="Функция STDEVP" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="Функция SUBSTITUTE"
+                   href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="Функция SUBTOTAL" href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="Функция SUM" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="Функция SUMIF" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="Функция SUMPRODUCT"
+                   href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="Функция T" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="Функция TEXT" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="Функция TIME" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="Функция TODAY" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="Функция TRIM" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="Функция TRUE" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="Функция TRUNC" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="Функция TYPE" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="Функция UPPER" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="Функция VALUE" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="Функция VLOOKUP" href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="Функция VAR" href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="Функция VARA" href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="Функция VARP" href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="Функция VARPA" href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="Функция WEEKDAY" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="Функция WEEKNUM"
+                   href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="Функция YEAR" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="Spreadsheets - краткий справочник"
+             href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="Клавиши быстрого доступа для электронных таблиц"
+             href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

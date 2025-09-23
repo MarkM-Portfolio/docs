@@ -1,0 +1,67 @@
+<project name="com.ibm.rcp.spellcheck.webapp" basedir="." default="deploy">
+	<property name="src.dir" value="src" />
+	<property name="webcontent.dir" value="WebContent" />
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin" />
+	<property name="classes.dir" value="${webinf.dir}/classes" />
+	<property name="war.dir" value="${bin.dir}/war" />
+	<property name="report.dir" value="${build.home}/report" />
+
+	<path id="lib.classpath">
+		<fileset dir="${webinf.dir}/lib" includes="**/*.jar" />
+	</path>
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar" />
+	</path>
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+		<delete dir="${classes.dir}" />
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="lib.classpath" />
+			<classpath refid="was.classpath" />
+		</javac>
+	</target>
+	<target name="gather.plugins" depends="compile">
+		<copy todir="${webinf.dir}/eclipse/plugins">
+			<fileset dir="${build.home}" includes="**/com.ibm.docs.spellcheck.web*.jar"/>
+		</copy>
+	</target>
+	<target name="war" depends="gather.plugins">
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper />
+					<globmapper from="*" to="lib/*" />
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath" />
+		</pathconvert>
+		<mkdir dir="${war.dir}" />
+		<war destfile="${war.dir}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${webcontent.dir}">
+				<include name="META-INF/" />
+				<include name="WEB-INF/" />
+				<exclude name="WEB-INF/web.xml" />
+			</fileset>
+			<manifest>
+				<attribute name="Created-By" value="IBM" />
+				<attribute name="Class-Path" value="" />
+			</manifest>
+		</war>
+	</target>
+	<target name="delete.spellcheck.plugins" depends="war">
+		<delete>
+			<fileset dir="${webinf.dir}/eclipse/plugins" includes="**/com.ibm.docs.spellcheck*.jar" />
+		</delete>
+
+	</target>
+	<target name="deploy" depends="delete.spellcheck.plugins">
+		<copy todir="${build.home}">
+			<fileset dir="${war.dir}" />
+		</copy>
+	</target>
+</project>

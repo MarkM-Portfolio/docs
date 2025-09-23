@@ -1,0 +1,23 @@
+{
+	"zh-hk": "zh-tw",
+	"zh-mo": "zh-tw",
+	"zh-hant-tw": "zh-tw",
+	"zh-sg": "zh-cn",
+	"zh": "zh-cn",
+	"zh-hans-cn": "zh-cn",
+	"nb": "no",
+	"nb-no": "no",
+	"nn-no": "no",
+	"nn": "no",
+	"ja-jp": "ja",
+	"ko": "ko-kr",
+	"ko-kp": "ko-kr",
+	"en": "en-us",
+	"iw.*": "he",
+	"in": "id",
+	"id-id": "id",
+	"in-id": "id",
+	"sr.*": "sr-latn",
+	"he.*": "he",
+	"en-ca": "en-us"
+}

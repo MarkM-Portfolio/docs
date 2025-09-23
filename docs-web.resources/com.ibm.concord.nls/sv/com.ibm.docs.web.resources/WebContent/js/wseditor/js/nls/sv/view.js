@@ -1,0 +1,3 @@
+({
+	emptySheet: "Dokumentet saknar innehåll. "
+})

@@ -1,0 +1,54 @@
+ 
+  /* Header - Edit Button Style (using Comment Button) */ 
+  #html_edit{
+    background: none repeat scroll 0 0 !important;
+  }
+  
+  #html_print {
+    background: none repeat scroll 0 0 !important;
+    border-left: none !important;
+    padding: 10px 15px !important;
+  }
+  .onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#html_edit .dijitButton .lotusBtn{
+  	background-color: #0081b2 !important;
+  }
+ 
+  .onpremise.lotusui30 .lotusTitleBar2 .lotusBtn.dijitButtonNode {
+    background-color: #33383b !important;
+    background-image: none !important;
+    border-bottom: 1px solid rgba(0,0,0,.3) !important;
+    box-shadow: 0 1px 1px #000000;
+    text-shadow: 0 1px 0px #000000 !important;
+  }
+  .onpremise.lotusui30 .lotusTitleBar2 li#html_edit .lotusBtn.dijitButtonNode{
+    padding: 7px 18px 6px !important;
+  }
+  .onpremise.lotusui30 .lotusTitleBar2 li#html_print_pdf .lotusBtn.dijitButtonNode{
+    padding: 7px 18px 6px !important;
+  }
+  .onpremise.lotusui30 .lotusTitleBar2 li#html_sheet_viewer .lotusBtn.dijitButtonNode{
+    padding: 7px 18px 6px !important;
+  }
+  .onpremise.lotusui30 .lotusTitleBar2 li#html_print .lotusBtn.dijitButtonNode{
+    padding: 5px 8px 5px !important;
+  }
+  /* Editing Area Background */
+  #sheet_node {
+    background-color: rgba(0,0,0,.8) !important;
+  }
+  .htmlViewerPrintIcon {
+    background-image: url("../../../images/viewerPrint.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+   }
+   .onpremise.lotusui30 .lotusTitleBar2 li#html_sheet_viewer .dijitArrowButtonInner{
+   	background-image: url("../../../images/viewerBtnDropdown.png") !important;
+   	background-position: 0 center !important;
+   	height: 10px !important;
+   }
+  
+  .onpremise .oneui30 .dijitButton, .oneui30 .dijitDropDownButton, .oneui30 .dijitComboButton, .oneui30 .dijitToggleButton{
+    margin: 0 !important;
+  }

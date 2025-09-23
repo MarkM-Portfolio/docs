@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.concord.spi.jar 
+ com.ibm.concord.platform.jar 
+ lib/com.ibm.connections.directory.services.jar 
+ com.ibm.concord.config.jar 
+ lib/json4j.jar 
+ com.ibm.docs.authentication.jar 
+ com.ibm.docs.directory.jar 
+ com.ibm.docs.directory.lotuslive.jar
+

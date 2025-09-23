@@ -1,0 +1,52 @@
+LIZENZINFORMATIONEN
+
+Programmname:
+HCL Connections Docs v2.0.2.0
+
+Die folgenden Standardbedingungen gelten für die Nutzung des Programms durch den Lizenznehmer.
+
+Beschränktes Nutzungsrecht
+
+Wie in der Rahmenlizenzvereinbarung und in dieser Lizenzinformation beschrieben, gewährt HCL dem Lizenznehmer ein beschränktes Recht zur Nutzung des Programms. Dieses Recht ist auf die Stufe der autorisierten Nutzung beschränkt, wie beispielsweise eine Prozessor-Value-Unit („PVU“), eine Ressourcen-Value-Unit („RVU“), eine Value-Unit („VU“) oder eine andere angegebene Nutzungsstufe, die vom Lizenznehmer bezahlt wird, wie im Berechtigungsnachweis bescheinigt. Die Nutzung durch den Lizenznehmer kann auch auf eine angegebene Maschine oder nur als Rahmenprogramm beschränkt sein oder anderen Beschränkungen unterliegen. Da der Lizenznehmer nicht den gesamten wirtschaftlichen Wert des Programms bezahlt hat, ist keine andere Nutzung ohne die Zahlung zusätzlicher Gebühren zulässig. Darüber hinaus ist der Lizenznehmer nicht autorisiert, das Programm zu nutzen, um Drittparteien kommerzielle IT-Services bereitzustellen, kommerzielles Hosting oder Timesharing bereitzustellen oder das Programm unterzulizenzieren, zu vermieten oder zu leasen, es sei denn, dies ist in den anwendbaren Vereinbarungen, unter denen der Lizenznehmer die Berechtigungen zur Nutzung des Programms erwirbt, ausdrücklich vorgesehen. Zusätzliche Rechte können dem Lizenznehmer gegen Zahlung zusätzlicher Gebühren oder unter abweichenden oder ergänzenden Bestimmungen gewährt werden. HCL behält sich das Recht vor, zu entscheiden, ob dem Lizenznehmer solche zusätzlichen Rechte zur Verfügung gestellt werden.
+
+Spezifikationen
+
+Die Programmspezifikationen finden Sie in den Abschnitten „Beschreibung“ und „Technische Informationen“ der Ankündigungsschreiben des Programms.
+
+Rahmenprogramme
+
+Das Programm ist als Multiproduktpaket lizenziert und beinhaltet die unten aufgeführten Rahmenprogramme. Der Lizenznehmer darf solche Rahmenprogramme nur installieren und nutzen, um die Nutzung des Hauptprogramms durch den Lizenznehmer im Rahmen dieser Vereinbarung und innerhalb der Grenzen der Berechtigungsnachweise für das Programm zu unterstützen (es sei denn, an anderer Stelle in diesem Lizenzinformationsdokument sind weitergehende Rechte vorgesehen). Der Ausdruck „zur Unterstützung der Nutzung durch den Lizenznehmer“ würde nur diejenigen Nutzungen einschließen, die für eine lizenzierte Nutzung des Hauptprogramms oder eines anderen Rahmenprogramms erforderlich sind oder in direktem Zusammenhang damit stehen. Die Rahmenprogramme dürfen nicht für andere Zwecke genutzt werden. Der Lizenznehmer ist nicht autorisiert, die Rahmenprogramme separat vom Hauptprogramm zu übertragen oder wiederzuvermarkten. Einem Rahmenprogramm können Lizenzbestimmungen beigefügt sein, die gegebenenfalls für die Nutzung dieses Rahmenprogramms durch den Lizenznehmer gelten. Im Konfliktfall ersetzen die Bestimmungen in diesem Lizenzinformationsdokument die Bestimmungen des Rahmenprogramms. Wenn das Recht des Lizenznehmers zur Nutzung des Programms erlischt oder endet, muss der Lizenznehmer die Nutzung einstellen, alle Kopien der Rahmenprogramme zerstören oder unverzüglich an die Partei zurücksenden, von der der Lizenznehmer das Programm erworben hat. Wenn der Lizenznehmer die Rahmenprogramme heruntergeladen hat, sollte er sich an die Partei wenden, von der der Lizenznehmer das Programm erworben hat. Wenn der Lizenznehmer die Rahmenprogramme für eine Nutzung außerhalb der oben angegebenen Grenzen lizenzieren möchte, wenden Sie sich bitte an einen HCL Vertriebsmitarbeiter oder an die Partei, von der der Lizenznehmer das Programm erworben hat, um die entsprechende Lizenz zu erhalten.
+
+Im Folgenden finden Sie die mit dem Programm lizenzierten Rahmenprogramme:
+IBM WebSphere Application Server Network Deployment v8.5.5
+IBM DB2 Enterprise Serveredition, Version 11.1
+
+Nutzungsbestimmungen für Oracle Outside In Technology
+
+Die im Rahmen dieser Vereinbarung lizenzierten Programme umfassen Outside In Filter- und Dokumentenanzeigetechnologie (die „Outside In Technology“), die von Oracle USA, Inc. („Oracle“) bereitgestellt wird. Die Bestimmung „Outside In Technology“ umfasst alle Technologien, die Oracle von seinen Lieferanten lizenziert wurden. Wie in der Vereinbarung genutzt, gilt der Begriff „HCL Lieferant“ auch für Oracle und seine Lieferanten. Zusätzlich zu den Geschäftsbestimmungen dieser Vereinbarung stimmt der Lizenznehmer als Bedingung für die Nutzung der Outside In Technology ausdrücklich wie folgt zu:
+
+(1) Oracle USA, Inc. ist ein Drittpartei-Begünstigter dieser Vereinbarung.
+
+(2) Der Lizenznehmer darf das Programm nur durch vorherige schriftliche Mitteilung an HCL übertragen und unterliegt ansonsten den Bestimmungen dieses Vertrags.
+
+(3) Der Lizenznehmer darf die Ergebnisse von Benchmark-Tests, die mit Outside In Technology durchgeführt werden, nicht ohne vorherige schriftliche Erlaubnis veröffentlichen.
+
+(4) HCL kann HCL Lieferanten über die Ergebnisse der Konformitätsprüfung in Bezug auf die Komponenten dieser HCL Lieferanten informieren.
+
+(5) Soweit nach geltendem Recht erlaubt, findet der Uniform Computer Information Transactions Act („UCITA“) keine Anwendung.
+
+Autorisierter Benutzer
+
+Autorisierter Benutzer ist eine Maßeinheit, mit der das Programm lizenziert werden kann. Ein autorisierter Benutzer ist eine eindeutige Person, die Zugriff auf das Programm erhält. Das Programm kann auf beliebig vielen Computern oder Servern installiert werden, und jeder autorisierte Benutzer kann gleichzeitig auf eine beliebige Anzahl von Instanzen des Programms zugreifen. Der Lizenznehmer muss für jeden autorisierten Benutzer, dem auf jegliche Weise direkt oder indirekt Zugriff (z. B: über ein Multiplexprogramm, ein Gerät oder einen Anwendungsserver) auf das Programm erteilt wird, separate, dedizierte Berechtigungen erhalten. Eine Berechtigung für einen autorisierten Benutzer ist eindeutig für diesen autorisierten Benutzer und darf nicht geteilt oder neu zugewiesen werden, außer für die dauerhafte Übertragung der Berechtigung für den autorisierten Benutzer auf eine andere Person.
+
+Programmspezifische Bedingungen
+
+Rahmenprogrammdetails
+
+IBM DB2
+- Berechtigung: Verhältnis 1 PVU / 1 PVU
+- Nutzungsbeschränkungen: Nutzung durch Hauptprogramm
+
+„Verhältnis n/m“ bedeutet, dass der Lizenznehmer für jede angegebene Anzahl (‚m‘) von Berechtigungen des Hauptprogramms insgesamt einige Anzahlen (‚n‘) für das Rahmenprogramm erhält. Sofern nicht anders angegeben, wird die Anzahl der Berechtigungen für das Rahmenprogramm auf ein Vielfaches von ‚n‘ aufgerundet. Wenn beispielsweise ein Programm 100 PVUs für ein Rahmenprogramm pro 500 PVUs des Hauptprogramms beinhaltet und der Lizenznehmer 1.200 PVUs des Programms erwirbt, kann der Lizenznehmer das Rahmenprogramm installieren und über Prozessorkerne von bis zu 300 PVUs verfügen oder diese verwalten. Diese PVUs müssten nicht als Teil der gesamten PVU-Anforderung für die Installation des Programms durch den Lizenznehmer aufgrund der Installation des Rahmenprogramms gezählt werden (obwohl diese PVUs möglicherweise aus anderen Gründen gezählt werden müssten, wie z. B. die dem Hauptprogramm zur Verfügung gestellten Prozessorkerne).
+
+„Nutzung durch Hauptprogramm“ bedeutet, dass das Rahmenprogramm ausschließlich für die Nutzung durch das Hauptprogramm bereitgestellt wird. Weder der Lizenznehmer noch eine Anwendung, oder ein Programmiergerät ist autorisiert, die Services des Rahmenprogramms direkt zu nutzen oder darauf zuzugreifen, es sei denn, der Lizenznehmer darf auf das Rahmenprogramm zugreifen, um administrative Funktionen für das Rahmenprogramm wie Backup, Wiederherstellung und autorisierte Konfiguration auszuführen.

@@ -1,0 +1,501 @@
+html,body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+
+#mainNode
+{
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+
+.dj_gecko.dj_not_mac body
+{
+	image-rendering: optimizequality;
+}
+
+#P_d_Layout_containerNode
+{
+	width: auto !important;
+}
+
+.mobile .editor
+{
+	width: 834px !important;
+}
+
+.pres_app
+{
+	-webkit-backface-visibility: hidden;
+}
+
+.sorter {
+	width: 210px;
+	border-right: 1px solid #CCCCCC;
+	outline: none !important;
+	z-index: 99999999999;
+}
+
+.sorter div
+{
+	outline : none !important;
+}
+
+.sorterHeader
+{
+	height: 18px;
+	padding: 4px 0 4px 10px !important;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.rtl .sorterHeader
+{
+	text-align: right;
+	padding: 4px 10px 4px 0 !important;
+	direction: rtl;
+}
+
+.mobile .sorterHeader,
+.viewcompact .sorterHeader
+{
+	display: none;
+}
+
+.viewcompact .sorter
+{
+	overflow-x : auto;
+}
+
+.viewcompact .thumbnailSelected
+{
+	background: transparent;
+}
+
+.viewcompact .thumbWrapper
+{
+	overflow: auto;
+}
+
+.viewcompact .thumbnail,
+.viewcompact .thumbWrapper
+{
+	text-align: center;
+	padding: 0;
+	border: none !important;
+	overflow: visible;
+}
+
+.viewcompact .contentWrapper
+{
+	text-align: left;
+}
+
+.viewcompact .thumbnailSelected .contentWrapper
+{
+    outline:3px solid #6495ED !important;
+}
+
+.rtl .viewcompact .contentWrapper
+{
+	text-align: right;
+}
+
+.viewcompact .thumbWrapper > .markers,
+.viewcompact .thumbWrapper .label
+{
+	display: none;
+}
+
+.viewcompact .sorter
+{ 
+	padding-top: 19px !important;
+}
+
+.viewcompact .thumbnail .thumbWrapper 
+{
+	padding: 0 19px 19px 19px;
+}
+
+.viewcompact .thumbnail .thumbWrapper .contentWrapper
+{
+	margin: 0 auto;
+	float: none;
+	display: inline-block;
+	border: 1px solid #B8BABE;
+}
+
+.viewcompact .thumbnail .thumbWrapper .content
+{
+	border: none;
+}
+
+
+.presSidebar
+{
+	border-left: 1px solid #CCCCCC;
+	outline: none !important;
+	overflow: hidden;
+}
+
+.rtl .presSidebar {
+	border-right: 1px solid #CCCCCC;
+}
+
+.rtl .sorter {
+	border-left: 1px solid #CCCCCC;
+}
+
+#ll_sidebar_div
+{
+	right : 0 !important;
+	position: absolute !important;
+}
+
+.mobile .sorter {
+	width: 190px;
+	border-right: 0px;
+}
+
+.thumbnail .markers {
+	position: absolute;
+	z-index: 50000;
+}
+
+.mobile .thumbnail .markers 
+{
+	display: none
+}
+
+.thumbnail .slide_marker {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+	font-weight: bold;
+	height: 17px;
+	/* line-height: 17px; */
+	margin-top: 6px;
+	position: relative;
+	text-align: center;
+	padding: 0px 5px 0px 3px;
+	z-index: 1;
+	transition: opacity 0.2s;
+}
+
+.thumbnail .slide_marker::before {
+	color: rgba(0, 0, 0, 0);
+	content: ".";
+	height: 11px;
+	left: -6px;
+	position: absolute;
+	top: 3px;
+	width: 12px;
+	z-index: -1;
+	transform: rotate(45deg);
+	-ms-transform:  rotate(45deg);
+	-moz-transform:  rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.dj_ie .thumbnail .slide_marker::before {
+	height: 12px;
+}
+
+.thumbnail {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	position: relative;
+	padding: 4px 0;
+	outline: none !important;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+}
+
+.mobile .thumbnail
+{
+	border-top: 0px solid transparent;
+	border-bottom: 0px solid transparent;
+	padding: 0;
+}
+
+.thumbnail .cover {
+	outline: none !important;
+}
+
+.thumbWrapper {
+	position: relative;
+	padding: 4px 0 4px 0;
+	outline: none !important;
+}
+
+.mobile .thumbWrapper
+{
+	padding: 0
+}
+
+.thumbnail .cover {
+	z-index: 999999;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+}
+
+.thumbnail .label {
+	width: 24px;
+	height: 68px;
+	left: 14px;
+	float: left;
+	position: absolute;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+
+.mobile .label
+{
+	display: none
+}
+
+
+.thumbnail .contentWrapper {
+	z-index: 0;
+	overflow: hidden;
+	margin: 0px 0 0px 40px;
+	float: left;
+}
+
+.rtl .thumbnail .label {
+    float: right;
+    left: auto;
+    right: 1px;
+}
+
+.rtl .thumbnail .contentWrapper {
+	margin: 0px 0 0px 25px;
+}
+
+
+.thumbnailSelected {
+	background: #B8BABE;
+}
+
+.dijit_a11y .thumbnailSelected {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.thumbnail .content {
+	border: 1px #B8BABE solid;
+}
+
+.mobile .thumbnail .content{
+	border: 0px;
+}
+
+.toolbarPopup {
+	max-height: 380px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.concord .thumbnail  .PM1_concord {
+	border: none !important;
+}
+
+.concord .thumbnail .PM1_concord {
+	height: 98px;
+	/* jmt comment out for LOLA width:130px;  */
+	width: 130.50px;
+	font-size: 2.970747px;
+	position: relative;
+	overflow: hidden;
+}
+
+.concord .slideNumber {
+	color: #4C4C4C;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	height: 20px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.concord .slideTrans {
+	height: 12px;
+	width: 14px;
+	margin-left: -2px;
+	margin-top: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	overflow: hidden;
+}
+
+.concord .slideTransitions_wipeDown {
+	background-image:
+		url("./images/slidetrans/slideTransitions_wipeDown.png");
+}
+
+.concord .slideTransitions_wipeLeft {
+	background-image:
+		url("./images/slidetrans/slideTransitions_wipeLeft.png");
+}
+
+.concord .slideTransitions_wipeUp {
+	background-image:
+		url("./images/slidetrans/slideTransitions_wipeUp.png");
+}
+
+.concord .slideTransitions_wipeRight {
+	background-image:
+		url("./images/slidetrans/slideTransitions_wipeRight.png");
+}
+
+.concord .slideTransitions_coverDown {
+	background-image:
+		url("./images/slidetrans/slideTransitions_coverDown.png");
+}
+
+.concord .slideTransitions_coverLeft {
+	background-image:
+		url("./images/slidetrans/slideTransitions_coverLeft.png");
+}
+
+.concord .slideTransitions_coverRight {
+	background-image:
+		url("./images/slidetrans/slideTransitions_coverRight.png");
+}
+
+.concord .slideTransitions_coverUp {
+	background-image:
+		url("./images/slidetrans/slideTransitions_coverUp.png");
+}
+
+.concord .slideTransitions_pushDown {
+	background-image:
+		url("./images/slidetrans/slideTransitions_pushDown.png");
+}
+
+.concord .slideTransitions_pushLeft {
+	background-image:
+		url("./images/slidetrans/slideTransitions_pushLeft.png");
+}
+
+.concord .slideTransitions_pushRight {
+	background-image:
+		url("./images/slidetrans/slideTransitions_pushRight.png");
+}
+
+.concord .slideTransitions_pushUp {
+	background-image:
+		url("./images/slidetrans/slideTransitions_pushUp.png");
+}
+
+.concord .slideTransitions_fadeSmoothly {
+	background-image:
+		url("./images/slidetrans/slideTransitions_fadeSmoothly.png");
+}
+
+.concord .slideTransitions_notSupported {
+	background-image:
+		url("./images/slidetrans/slideTransitions_notSupported.png");
+}
+
+.concord .backgroundImage {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.dndDropPosBefore {
+	position: absolute;
+	width: 130px;
+	margin-left: 35px;
+	margin-right: 7px;
+	top: -10px;
+}
+
+.dndDropPosAfter {
+	position: absolute;
+	width: 130px;
+	margin-left: 35px;
+	margin-right: 7px;
+	bottom: -10px;
+}
+
+.container {
+	border: 3px solid #ccc;
+	padding: 1em 3em;
+	cursor: default;
+	radius: 8pt;
+	background: #fff;
+	-moz-border-radius: 8pt 8pt;
+}
+
+.dojoDndTargetDisabled {
+	background: #eee;
+}
+
+.dojoDndItemOver .dojoDndItemSelected {
+	background: #ededed;
+}
+
+.dojoDndItemOver .dojoDndItemAnchor {
+	background: #ededed;
+}
+
+.dojoDndItemOver {
+	border-top: 2px solid transparent !important;
+}
+
+.dojoDndItemBefore {
+	border-top: 2px solid #369;
+}
+
+.dojoDndItemOver.dojoDndItemBefore {
+	border-top: 2px solid #369 !important;
+}
+
+.dojoDndItemAfter {
+	border-bottom: 2px solid #369;
+}
+
+.dojoDndItemOver.dojoDndItemAfter {
+	border-bottom: 2px solid #369 !important;
+}
+
+.dojoDndAvatar {
+	font-size: 75%;
+	-moz-border-radius: 8pt 8pt;
+	radius: 8pt;
+	opacity: .5;
+}
+
+.dojoDndAvatarHeader {
+	background: #aaa;
+	display: none;
+}
+
+.dojoDndAvatarItem {
+	background: #fff;
+	border-bottom: 1px solid #666;
+}
+
+.dojoDndAvatarItem .PM1_concord {
+	border: 1px dashed #CCCCCC;
+	font-size: 3px !important;
+	height: 98px;
+	position: relative;
+	width: 130px;
+	margin: 0px;
+}

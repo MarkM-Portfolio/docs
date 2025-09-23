@@ -1,0 +1,352 @@
+/******************************************************
+ Concord Gallery CSS
+*******************************************************/
+
+/* Search input area */
+
+
+.clipPickerDialog {
+	width: 699px;
+	height:440px;
+	/*background:#eff0f1;*/
+	font-family:arial;
+	font-size:12px;
+	border:4px solid #999999;	
+	outline: none;  		
+	background-color:#FFFFFF;
+	height:auto;
+	min-height:440px;
+	padding:0;
+	z-index:1;		
+}
+
+.clipPickerDialogBody{
+	padding-top: 8px;
+}
+
+.clipPickerDialogTitleBar{
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:0;
+	/*height:20px;*/	
+	
+
+	background-color:#FFFFFF;
+	background-image:url("../images/spritesHeaderClose.png");
+	background-position:0 -50px;
+	background-repeat:repeat-x;
+	/*border-bottom:1px solid #DDDDDD;*/
+	color:#444444;
+	cursor:move;
+	font-size:20px;
+	font-weight:bold;
+	padding:12px 20px 3px;
+	position:relative;
+
+}
+
+.clipPickerDialogCloseBtn {
+	-moz-user-select:none;
+	background-image:url("../images/spritesHeaderClose.png");
+	background-position:-15px -15px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	height:15px;
+	position:absolute;
+	right:12px;
+	text-align:center;
+	top:12px;
+	width:15px;
+}
+
+
+.clipPickerDialogTitleText {
+	position:relative;
+	top:-5px;
+}
+
+
+.clipperSearchBar {
+	-moz-border-radius-bottomleft:15px;
+	-moz-border-radius-bottomright:15px;
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
+	/* background:#FFFFFF url(../images/search_icon.gif) no-repeat scroll 280px 50%; */
+	border:1px solid #C6D2DA;
+	color:#ACACAC;
+	/*margin:10px 12px;*/
+	margin-left: 8px !important;
+	padding:4px 20px 4px 8px;
+	width:300px;
+}
+
+
+.clipPickerDialogItem {
+	background:#FFFFFF;
+	border:0px solid #C6D2DA;
+	color:#ACACAC;
+	margin:6px 15px;
+	width:auto;
+	height:auto;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+}
+
+.clipPickerDialogItemSelected{
+	color:#ACACAC;
+	margin:6px 15px;
+	width:auto;
+	height:auto;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+	outline: 2px solid;
+	background-color:gray;
+	border:0px;
+}
+
+.clipPickerDialogItemHovered{
+	color:#ACACAC;
+	margin:6px 15px;
+	width:auto;
+	height:auto;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+	outline: 1px solid;
+	background-color:#CCCCCC;
+	border:0px;
+}
+
+.clipPickerDialogItemPreviewBox {
+	background:#FFFFFF;
+	border:2px solid #DCDCDC;
+	font-size:0.9em;
+	margin:2px;
+	padding:0px 0px 0px 0px;
+	width:110px;
+	height:95px;
+	white-space:normal;
+	color :#585858;
+	cursor:pointer;		
+}
+.clipPickerDialogItemText {
+    display: none;
+}
+.dijit_a11y .clipPickerDialogItemText {
+    display: inline-block;
+}
+
+.clipPickerTransitionDialogItem {
+	background:#FFFFFF;
+	border:0px solid #C6D2DA;
+	color:#ACACAC;
+	margin:6px 6px;
+	width:auto;
+	height:auto;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+}
+
+.dijitRtl .clipPickerTransitionDialogItem {
+    float: right;
+}
+
+.clipPickerTransitionDialogItemSelected{
+	color:#ACACAC;
+	margin:6px 6px;
+	width:auto;
+	height:auto;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+	outline: 2px solid;
+	background-color:gray;
+	border:0px;
+}
+
+.clipPickerTransitionDialogItemHovered{
+	color:#ACACAC;
+	margin:6px 6px;
+	width:auto;
+	height:auto;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+	outline: 1px solid;
+	background-color:#CCCCCC;
+	border:0px;
+}
+
+.clipPickerTransitionDialogItemPreviewBox {
+	background:#FFFFFF;
+	border:2px solid #DCDCDC;
+	font-size:0.9em;
+	margin:2px;
+	padding:0px 0px 0px 0px;
+	width:68px;
+	height:52px;
+	white-space:normal;
+	color :#585858;
+	cursor:pointer;		
+}
+
+.clipPickerDialogImagePreview{
+	height:100%;
+	width: 100%;
+    cursor:pointer;						
+}
+
+.clipPickerDialogTablePreview{
+	height:100%;
+	width: 100%;
+    cursor:pointer;						
+}
+
+/*
+.clipPickerDialogDescriptionBox{
+	position:relative;
+	top:0px;
+	left:0px;
+	border:2px;			
+	margin:2px;
+	padding:0px 0px 0px 0px;
+	width:boxWidth+px;
+	height:35px;
+	cursor:pointer;			
+}
+*/
+.clipPickerDialogItemName{
+	position:relative;
+	top:0px;
+	left:0px;
+	border:0px;			
+	margin:2px;
+	padding:0px 0px 0px 0px;
+	font-weight:bold;
+	color:black;
+	cursor:pointer;			
+}
+
+.clipPickerDialogItemDescription{
+	position:relative;
+	top:0px;
+	left:0px;
+	border:0px;			
+	margin:2px;
+	padding:0px 0px 0px 0px;
+	fontWeight:normal;
+	fontSize:.9em;
+	width:auto;
+	whiteSpace:normal;
+	cursor:pointer;		
+}
+
+.clipPickerDialogResultBox{
+	position:relative;
+	top:-10px;
+	color:blue;
+	background:#FFFFFF;
+	border:1px solid #C6D2DA;				
+	height:181px;
+	padding:3px 3px 5px 3px;
+	overflow:auto;
+	margin-top:15px;
+}
+
+
+.clipPickerDialogFilterSection{
+	position:relative;
+	top:0px;
+	background:transparent;
+	border:0px solid #C6D2DA;
+	color:black;
+	font-size:11px;
+	margin:4px;
+	padding:4px 4px 4px 4px;
+	height:1em;
+}
+
+
+.clipPickerDialogResultCount{
+	position:absolute;
+	top:0px;				
+	left:8px;
+	color:black;
+	border:0px solid #C6D2DA;				
+	background:transparent;
+}
+
+div[dir="rtl"] .clipPickerDialogResultCount {
+	right: 8px;
+	left: auto;
+}
+
+.clipPickerDialogFilterSpan{
+	position:absolute;
+	top:0px;
+	right:6px;
+	color:black;
+	border:0px solid #C6D2DA;				
+	background:transparent;
+	/*width:158px;*/
+}
+
+div[dir="rtl"] .clipPickerDialogFilterSpan {
+	left: 6px;
+	right: auto;
+}
+
+.clipPickerRefreshResultSpan{
+	position:absolute;
+	top:0px;
+	left:45%;
+	right:50%;
+	color:black;
+	cursor:pointer;				
+	background:transparent;
+	width:85px;
+	color:#008ABF;
+}
+
+
+
+.clipPickerDialogFilterSelected {
+	cursor:pointer;
+	color:black;
+}
+
+.clipPickerDialogFilterNotSelected {
+	cursor:pointer;
+	color:#008abf;
+}
+
+.clipPickerDialogButtonsSection{
+	background-color:#E0E8F0;
+	border-top:1px solid gray;
+	color:#000000;
+	font-family:arial;
+	height:25px;
+	margin:0;
+	padding:10px 25px;
+	position:relative;
+}
+
+.clipPickerDialogButton {	
+	background-color:#2C86EB;
+	/* background-image:url("../images/btnSpecialBkgd.png"); */
+	background-position:left center;
+	background-repeat:repeat-x;
+	border:1px solid #2C86EB;
+	color:#FFFFFF;
+	cursor:pointer;
+	display:inline-block;
+	font-size:0.9em;
+	font-weight:bold;
+	line-height:1.7em;
+	padding:1px 10px;
+	text-align:center;
+	width:35px;	
+}

@@ -1,0 +1,77 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.docs.viewer.automation.war" basedir="." default="war">
+	<property name="src.dir" value="src"/>
+	<property name="webcontent.dir" value="WebContent"/>
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin"/>
+	<property name="classes.dir" value="${webinf.dir}/classes"/>
+	<property name="ear.dir" value="../com.ibm.docs.viewer.automation.ear/"/>
+
+	<path id="lib.classpath">
+		<fileset dir="${ear.dir}/lib" includes="**/*.jar"/>
+	</path>
+
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar"/>
+	</path>
+
+	<target name="clean" >
+		<delete dir="${bin.dir}"/>
+	</target>
+	
+	<target name="init" depends="clean">
+		<mkdir dir="${bin.dir}"/>
+	</target>
+	
+	<target name="compile" depends="init">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="lib.classpath"/>
+			<classpath refid="was.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="war" depends="compile">
+		<copy file="${basedir}/src/com/ibm/docs/viewer/automation/proxy.json" tofile="${build.home}/proxy.json" />
+		<echo file="${webcontent.dir}/version.txt">
+					{
+					 "build_description" : "${ReleaseInfo}",
+					 "product_name" : "ViewerServerProxy",
+					 "build_version" :  "${build.version}" , 
+					 "viewer_version" : "${build.timestamp}" 
+					}
+		</echo>
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper/>
+					<globmapper from="*" to ="lib/*"/>
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath"/>
+		</pathconvert>
+		<mkdir dir="${build.home}"/>
+		<war destfile="${build.home}/${ant.project.name}.war" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${webcontent.dir}/"/>
+			<manifest>
+				<attribute name="Created-By" value="IBM"/>
+				<attribute name="Class-Path" value="${manifest.lib.classpath}"/>
+			</manifest>
+		</war>
+	</target>
+
+	<!--<target name="run_war" depends="war">
+		<ant dir="${build.home}" inheritAll="true"/>
+	</target>-->
+</project>

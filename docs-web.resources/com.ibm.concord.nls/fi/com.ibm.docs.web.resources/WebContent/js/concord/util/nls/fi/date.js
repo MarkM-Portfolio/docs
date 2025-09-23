@@ -1,0 +1,22 @@
+({
+	question:"Kysymys",
+	issue:"Julkistus",
+	toDo:"Tehtävät",
+	comment:"Kommentti",
+	done:"Valmis",
+	jan:"Tammikuu",
+	feb:"Helmikuu",
+	mar:"Maaliskuu",
+	apr:"Huhtikuu",
+	may:"Toukokuu",
+	june:"Kesäkuu",
+	july:"Heinäkuu",
+	aug:"Elokuu",
+	sept:"Syyskuu",
+	oct:"Lokakuu",
+	nov:"Marraskuu",
+	dec:"Joulukuu",
+	pm:"ip",
+	am:"ap",
+	assignTo:"Tekijä: "
+})

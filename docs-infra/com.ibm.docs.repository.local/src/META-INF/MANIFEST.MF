@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.docs.repository.jar 
+ com.ibm.concord.spi.jar 
+ com.ibm.docs.common.jar 
+ com.ibm.docs.directory.jar
+

@@ -1,0 +1,75 @@
+({
+	LOADING: "Indhold indlæses.",
+	LOAD_FINISHED: "Indhold er indlæst.",
+	PAGE_SETUP: "Sideopsætning",
+	NOTE_INVALIDACTION_FOOTNOTE:"Dette er ikke en gyldig handling til fodnote.",
+	NOTE_INVALIDACTION_ENDNOTE:"Dette er ikke en gyldig handling til slutnote.",
+	PAGENUMBER_OF_TOTALNUMBER:"Side ${0} af ${1}", //page 1 of N
+	PAGE_NUMBER: "Side: ${pageNumber} / ${totalPageNumber}",
+	toc:{
+		title : "Indholdsfortegnelse",
+		update: "Opdatér",
+		del: "Slet",
+		toc: "Indholdsfortegnelse",
+		linkTip: "Ctrl-klik for at navigere",
+		pageNumber: "Kun sidetal",
+		entireTable: "Hele indholdsfortegnelsen"
+	},
+	link:{
+		addlink:"Tilføj link",
+		gotolink: "Åbn link",
+		unlink	: "Fjern link",
+		editlink: "Redigér link",
+		internalLink: "Internt link",
+		ctrlLink: "Ctrl+klik for at gå til link",
+		cannotOpen: " kan ikke åbnes fra ${productName}."
+	},
+	field:{
+		update: "Opdatér felt"
+	},
+	insertTime:"Indsæt klokkeslæt",
+	insertDate:"Indsæt dato",
+	selectDate:"Vælg dato",
+	selectTime:"Vælg klokkeslæt",
+	acc_blank: "tom",// when selection is nothing but space char and empty paragraph
+	acc_space: "mellemrum",// string read out when the cursor is before one space char
+	acc_inLink: "i link ",
+	acc_inField: "i felt ",
+	acc_selected :" valgt",
+	acc_inTable: "i tabelrække ${0} -kolonne ${1} ",
+	acc_imageSelected: "grafik valgt",
+	acc_canvasSelected:"form valgt",
+	acc_textboxSelected:"tekstboks valgt",
+	ACC_TABLE_TABLESIZE:"Du har valgt ${0} rækker, ${1} kolonner",
+	ACC_TABLE_MAXSIZE:" Den understøttede maksimale tabelstørrelse er 20*20",
+	ACC_headerFooterMode: "redigeringstilstand for overskrift/bundtekst",
+	ACC_EditorMode: "redigeringstilstand for redaktør",
+	ACC_FootnotesMode: "redigeringstilstand for fodnoter",
+	ACC_EndnotesMode: "redigeringstilstand for slutnoter",
+	ACC_uniformTable: "En ny række er tilføjet",
+	Acc_column :"kolonne  ${0}",
+	acc_page :"side  ${0}",
+	acc_section:"afsnit  ${0}",
+	acc_spellWarn:"stavningen er forkert",
+	acc_outTable:"uden for tabel",
+	acc_link :"link",
+	acc_field :"felt",
+	acc_footnote:"fodnote",
+	acc_endnote:"slutnote",	
+	acc_editor:"Redigeret af ${0}",
+	tablePropertyTitle: "Tabelegenskaber",
+	headerTitle:"Overskrift",
+	footerTitle:"Bundtekst",
+	firstheaderTitle:"Overskrift på første side",
+	firstfooterTitle:"Bundtekst på første side",
+	evenheaderTitle:"Overskrift på lige sider",
+	evenfooterTitle:"Bundtekst på lige sider",
+	oddheaderTitle:"Overskrift på ulige sider",
+	oddfooterTitle:"Bundtekst på ulige sider",
+	showTableBorder:"Vis tabelgrænser",
+	list_none: "Ingen",
+	SET_NUMBERING_VALUE: "Angiv nummereringsværdi",
+	BIDI_CONTENT_EDITING: "Dokumentet indeholder tovejsindhold. Du skal aktivere tovejsstøtte i indstillingerne til HCL Connections for at arbejde med dokumentet."
+})
+	
+

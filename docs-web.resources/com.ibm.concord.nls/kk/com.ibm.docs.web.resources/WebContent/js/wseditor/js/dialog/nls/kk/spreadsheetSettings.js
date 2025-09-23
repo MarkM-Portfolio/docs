@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Сандарды, валюталарды, күндерді және уақытты пішімдеу үшін тілді таңдаңыз.",
+	INPUT_INVALID_LOCALENAME: "Жарамсыз тіл аты",
+	INPUT_EMPTY_LOCALENAME: "Тіл таңдаңыз.",
+	
+	Spain_Catalan: "Испания (Каталан)",
+	Denmark: "Дания",
+	Germany: "Германия",
+	Greek: "Грекия",
+	United_States: "Құрамы Штаттар",
+	United_Kingdom: "Біріккен Әмірлік",
+	Spain: "Испания",
+	Finland: "Финляндия",
+	France: "Франция",
+	Italy: "Италия",
+	Japan: "Жапония",
+	Korean: "Оңтүстік Корея",
+	Norway: "Норвегия",
+	Netherlands: "Нидерланд",
+	Poland: "Польша",
+	Brazil: "Бразилия",
+	Portugal: "Португалия",
+	Russia: "Ресей",
+	Sweden: "Швеция",
+	Thailand: "Тайланд",
+	Turkey: "Түркия",
+	China: "Қытай",
+	Taiwan_China: "Тайвань (Қытай)",
+	Israel: "Израиль"
+})
+

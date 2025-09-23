@@ -1,0 +1,794 @@
+@import url("./palette.css");
+@import url("./border.css");
+.colorDiv{
+border: 0px solid black;
+width :14px;
+height:3px;
+position:relative;
+top : 12px;
+left : 1px; 
+}
+
+.buttonDropiconButtonHover{
+	border:1px solid #808080!important;
+}
+#D_t_FindReplaceLeft, #D_t_FindReplaceCenter, #D_t_FindReplaceRight{
+	float: left;
+}
+#D_t_FindReplaceRight{
+	float: right;
+}
+
+div[dir="rtl"] #D_t_FindReplaceLeft, div[dir="rtl"] #D_t_FindReplaceCenter{
+	float: right;
+}
+
+div[dir="rtl"] #D_t_FindReplaceRight{
+	float: left;
+}
+
+/* Menu dropdown - Changes border color of menu dropdowns */
+.oneui30 .dijitMenu {
+    border: 1px solid #181818 !important;
+}
+
+
+body.oneui30 #document_menubar .dijitMenuItem {
+	margin: -1px -2px;
+}
+
+/* Menu - Removes borders and adjusts baackground gradient so that it 
+seemlessly flows into toolbar gradient */
+body.oneui30 .dijitMenuBar,
+body.oneui30  #document_menubar {
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+    background: #f1f1f1; /* Old browsers */
+   /* background: -moz-linear-gradient(top,  #f4f4f4 0%, #eaeaea 100%); /* FF3.6+ */
+   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+   /* background: -webkit-linear-gradient(top,  #f4f4f4 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+   /* background: -o-linear-gradient(top,  #f4f4f4 0%,#eaeaea 100%); /* Opera 11.10+ */
+   /* background: -ms-linear-gradient(top,  #f4f4f4 0%,#eaeaea 100%); /* IE10+ */
+   /* background: linear-gradient(to bottom,  #f4f4f4 0%,#eaeaea 100%); /* W3C */
+   /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+}
+
+
+body.oneui30 .dijitMenuBar:not(.toolbarMenu) .dijitMenuItemHover.dijitMenuItemDisabled, 
+body.oneui30 .dijitMenuBar:not(.toolbarMenu) .dijitMenuItemSelected.dijitMenuItemDisabled
+{
+	background: transparent;
+    color: #222;
+}
+
+
+body.oneui30 .dijitMenu:not(.toolbarMenu):not(.dijitMenuTable) .dijitMenuItemHover:not(.dijitMenuItemDisabled), 
+body.oneui30 .dijitMenu:not(.toolbarMenu):not(.dijitMenuTable) .dijitMenuItemSelected:not(.dijitMenuItemDisabled),
+body.oneui30 .lotusActionMenu:not(.toolbarMenu):not(.dijitMenuTable) .dijitMenuItemHover:not(.dijitMenuItemDisabled), 
+body.oneui30 .lotusActionMenu:not(.toolbarMenu):not(.dijitMenuTable) .dijitMenuItemSelected:not(.dijitMenuItemDisabled) {
+    background-color: #181818 !important;
+    color: #FFFFFF !important;
+}
+
+/* Menu Cursor - The cursor should not change from the default when 
+hovering menus */
+.dijitMenuItem {
+    cursor: default !important;
+}
+
+.oneui30 .dijitMenuBar .dijitMenuItem {padding: 8px 14px !important;}
+
+.dijitMenuPopup .dijitMenuItemLabel {
+    padding: 8px 14px 8px 0px !important;
+}
+
+.dijitRtl .dijitMenuItemLabel {
+    padding: 8px 0px 8px 14px !important;
+}
+
+.dijitMenuPopup .dijitMenuItemIconCell
+{
+	width: 13px !important;
+	padding: 0 5px !important;
+	text-align: center !important;
+}
+
+tr.dijitMenuItemDisabled .dijitMenuItemIconCell
+{
+	opacity: 1 !important;
+}
+
+body.oneui30 .dijitMenuPopup .dijitMenuActive .dijitMenuItemDisabledFocused.dijitMenuItemDisabled,
+body.oneui30 .dijitMenuPopup .dijitMenuActive .dijitMenuItemDisabled.dijitMenuItemSelected
+{
+	background-color: #fff !important
+}
+
+/* Update Checkmark - This would require an update to sprite. The following 
+code is a temporary hack. */
+.oneui30 .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon {    
+    width: 13px !important;
+    height: 16px !important;
+    background-image: url(img/docToolbarSprite.png) !important;
+   	background-repeat: no-repeat;
+   	background-position: 0 -384px !important;
+}
+
+/* Keyboard Shortcuts - Updates color, padding and alignment of shortcuts. */
+.dijitReset .dijitMenuItemAccelKey {
+    color: #999999 !important;
+    text-align: right !important;
+    padding-right: 2px !important;
+}
+
+/* Menu Arrow (that opens submenu) spacing */
+.dijitMenuArrowCell {
+    min-width: 12px !important;
+}
+
+/* Disabled Menu Items - Color and removes 'hover' state. Disabled options
+should not display a 'hover' state. */    
+.dijitDisabled *,
+.dijitDisabled {
+    color: #999999!important;
+    background: none;
+}
+
+.lotusTitleBar2 .dijitDisabled * {
+    color: #FFFFFF !important;
+}
+
+/* Toolbar - Padding */
+.oneui30 .dijitToolbar.docToolbar {
+    background: #f1f1f1; /* Old browsers */
+   /* background: -moz-linear-gradient(top,  #eaeaea 0%, #e0e0e0 100%); /* FF3.6+ */
+   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaeaea), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+   /* background: -webkit-linear-gradient(top,  #eaeaea 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+   /* background: -o-linear-gradient(top,  #eaeaea 0%,#e0e0e0 100%); /* Opera 11.10+ */
+   /* background: -ms-linear-gradient(top,  #eaeaea 0%,#e0e0e0 100%); /* IE10+ */
+   /* background: linear-gradient(to bottom,  #eaeaea 0%,#e0e0e0 100%); /* W3C */
+   /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+    border-bottom: 1px solid #A4A4A4!important; /* document Toolbar - Bottom border */
+    padding:0 !important;
+}
+
+.oneui30 .docToolbar .dijitToolbar { /*document toolbar*/
+   padding: 3px 8px 5px!important;
+    background-image: none !important;
+    background: none!important;
+    border-bottom: none!important;
+    -webkit-user-select: none !important;
+    -moz-user-select:none !important;
+	-khtml-user-select: none !important;
+}
+
+.oneui30 .docToolbar .dijitButtonNode,
+.oneui30 .docToolbar .dijitButtonNode * 
+{
+	cursor: default !important;
+	color: #000000 !important;
+}
+
+.oneui30 .docToolbar .dijitToolbar .dijitButtonContents
+{
+	padding: 0 !important;
+}
+
+.dj_webkit .oneui30 .docToolbar .dijitToolbar > span.dijitInline
+{
+	position: relative;
+}
+
+.oneui30 .docToolbar .dijitToolbar > .dijitButton,
+.oneui30 .docToolbar .dijitToolbar > .dijitToggleButton,
+.oneui30 .docToolbar .dijitToolbar > .dijitDropDownButton 
+{
+	margin-right: 0 !important;
+	padding: 0 !important;
+}
+
+/* Toolbar Buttons */
+.oneui30 .docToolbar .dijitButton .dijitButtonNode, 
+.oneui30 .docToolbar .dijitDropDownButton .dijitButtonNode, 
+.oneui30 .dijitComboButton .dijitButtonNode, 
+.oneui30 .docToolbar .dijitToggleButton .dijitButtonNode  {
+    background:none repeat scroll 0 0 transparent!Important;
+    background-image:none;
+}
+
+/* Toolbar - Toolbar Separator left and right margins */
+.oneui30 .docToolbar .dijitToolbarSeparator {
+    margin: 0 3px 0 3px !important;
+    width: 4px;
+}
+
+/* Toolbar - Single button dropdown arrow position relative to icon,
+i.e. text color button */
+.oneui30 .docToolbar .dijitDownArrowButton .dijitArrowButtonInner {
+    /*background-position: -3px -2339px !important;*/
+    width: 11px !important;
+}
+
+body.oneui30 .docToolbar .lotusDijitButtonImg
+{
+	border: 0 !important;
+}
+
+/* Toolbar Button - Corner radius, size and padding */
+/* .docToolbar */
+.oneui30 .docToolbar .dijitButton .dijitButtonNode, 
+.oneui30 .docToolbar .dijitToggleButton .dijitButtonNode,
+.oneui30 .docToolbar .dijitToggleButton.dijitToggleButtonChecked .dijitButtonNode,
+.oneui30 .docToolbar .dijitToggleButton.dijitToggleButtonDisabled .dijitButtonNode,
+.oneui30 .docToolbar .textToolbarButton .dijitButtonNode,
+.oneui30 .docToolbar .textToolbarButton.dijitButtonChecked .dijitButtonNode,
+.oneui30 .docToolbar .textToolbarButton.dijitButtonDisabled .dijitButtonNode,
+.oneui30 .docToolbar .dijitDropDownButton .dijitButtonNode {
+    border-radius: 2px !important;
+    height: 16px !important;
+    padding: 3px !important;
+    margin-right: -1px !important;
+    border:1px solid transparent!important;
+}
+
+/* Toolbar Button - Transition for interactions. It is acceptable that
+the transition does not happen in browsers that do not support 'transition'.
+The transition not being supported in older browsers does not detract from 
+the user's experience in those browsers. */
+.oneui30 .docToolbar .dijitButton .dijitButtonNode, 
+.oneui30 .docToolbar .dijitDropDownButton .dijitButtonNode, 
+.oneui30 .docToolbar .dijitToggleButton .dijitButtonNode,
+.oneui30 .docToolbar .dijitDropDownButton .dijitButtonNode  {
+    transition: background-color .1s linear,  border .1s linear, box-shadow .1s linear;
+}
+
+.oneui30 .docToolbar .lotusDijitButtonImg .dijitButtonNode
+{
+ 	transition: background-color .1s linear,  box-shadow .1s linear;
+}
+span:focus{
+	outline:1px dotted;
+}
+/* Toolbar Button - _off (hover,focus,active) */
+.oneui30 .docToolbar .dijitButton:not(.dijitDisabled):hover .dijitButtonNode, 
+.oneui30 .docToolbar .dijitButton:not(.dijitDisabled):focus .dijitButtonNode, 
+.oneui30 .docToolbar .dijitToggleButton:not(.dijitDisabled):hover .dijitButtonNode, 
+.oneui30 .docToolbar .dijitToggleButton:not(.dijitDisabled):focus .dijitButtonNode, 
+.oneui30 .docToolbar .dijitToggleButton:not(.dijitDisabled):active .dijitButtonNode,
+.oneui30 .docToolbar .textToolbarButton:not(.dijitDisabled):hover .dijitButtonNode, 
+.oneui30 .docToolbar .textToolbarButton:not(.dijitDisabled):focus .dijitButtonNode, 
+.oneui30 .docToolbar .textToolbarButton:not(.dijitDisabled):active .dijitButtonNode,
+.oneui30 .docToolbar .dijitDropDownButton:not(.dijitDisabled):hover .dijitButtonNode,
+.oneui30 .docToolbar .dijitDropDownButton:not(.dijitDisabled):focus .dijitButtonNode,
+.oneui30 .docToolbar .dijitDropDownButton:not(.dijitDisabled):active .dijitButtonNode
+{
+    background-color: transparent !important;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.08))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#14000000',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #999999 !important;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.2) !important;
+    opacity: 1;
+}
+
+
+/* Toolbar Button - checked (hover,focus,active) */
+.oneui30 .docToolbar .dijitDropDownButton:not(.dijitDisabled).dropDownExpanded .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked:hover .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked:focus .dijitButtonNode,
+.oneui30 .dijitToolbar .dijitToggleButton.dijitToggleButtonChecked:active .dijitButtonNode,
+.oneui30 .dijitToolbar .textToolbarButton.dijitToggleButtonChecked .dijitButtonNode,
+.oneui30 .dijitToolbar .textToolbarButton.dijitToggleButtonChecked:hover .dijitButtonNode,
+.oneui30 .dijitToolbar .textToolbarButton.dijitToggleButtonChecked:focus .dijitButtonNode,
+.oneui30 .dijitToolbar .textToolbarButton.dijitToggleButtonChecked:active .dijitButtonNode {
+    background-color: rgba(0, 0, 0, 0.10) !important;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.18) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.18))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.18) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#2e000000',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #808080 !important;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,.2) !important;
+    opacity: 1;
+}
+
+.oneui30 .docToolbar  #D_t_FontHeading_label
+{
+	line-height: 12px;
+	width: 78px;
+	padding-right: 2px;
+	overflow: hidden;
+}
+
+.oneui30 .docToolbar  #D_t_Zoom_label  
+{
+	line-height: 12px;
+	width: 38px;
+	padding-right: 2px;
+	overflow: hidden;
+}
+
+.oneui30 [dir="rtl"] .docToolbar #D_t_FontHeading_label,
+.oneui30 [dir="rtl"] .docToolbar #D_t_Zoom_label{
+	text-align: right;
+}
+
+.oneui30 .docToolbar  #D_t_FontName_label
+{
+	line-height: 12px;
+	width: 78px;
+	padding-right: 2px;
+	overflow: hidden;
+}
+
+.oneui30 [dir="rtl"] .docToolbar #D_t_FontName_label{
+	text-align: right;
+	direction: ltr;
+}
+
+.oneui30 .docToolbar  #D_t_FontSize_label{
+	line-height: 12px;
+	width:28px;
+	overflow: hidden;
+}
+
+.oneui30 [dir="rtl"] .docToolbar #D_t_FontSize_label{
+	text-align: right;
+}
+.oneui30 .docToolbar .dijitDropDownButton[widgetid="D_t_FontHeading"],
+.oneui30 .docToolbar .dijitDropDownButton[widgetid="D_t_Zoom"],
+.oneui30 .docToolbar .dijitDropDownButton[widgetid="D_t_FontName"] {
+    margin-right:3px!important;
+}
+.oneui30 .docToolbar .dijitDropDownButton[widgetid="D_t_FontSize"] {
+    margin-right:6px!important;
+}
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton .dijitButtonNode,
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton .dijitButtonText {
+    transition: all 0.1s linear!important;
+    text-align: left;
+}
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton .dijitButtonNode,
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton .dijitButtonContents {
+    padding:0!important;
+    border:none!important;
+    height:24px!important;
+    background: none!important;
+    background-color: transparent!important;
+    box-shadow:none!important;
+}
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled):hover .dijitButtonNode,
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled):focus .dijitButtonNode,
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled).dropDownExpanded .dijitButtonNode  {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset !important;
+    border:none!important;
+}
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton .dijitButtonText {
+    height:14px!important;
+    padding:5px 5px 3px!important;
+    border-radius: 2px 0 0 2px!important;
+    border: 1px solid #999999!important;
+    border-color: #999 transparent #999 #999 !important;
+    opacity:0.7!important;
+    font-weight:normal!important;
+    font-size:12px!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    background: none!important;
+}
+
+.oneui30 [dir="rtl"] .docToolbar .customizeDropdown.dijitDropDownButton .dijitButtonText {
+    border-color: #999 #999 #999 transparent !important;
+}
+
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled):hover .dijitButtonText, 
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled):focus .dijitButtonText, 
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled):active .dijitButtonText {
+    opacity: 1!important;
+}
+
+
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton .dijitArrowButtonInner {
+    height:22px!important;
+    width:15px!important;
+    border-radius: 0 2px 2px 0!important;
+    border: 1px solid #999999!important;
+    border-color: #999 #999 #999 transparent!important;
+    margin-left:-1px!important;
+    display:inline-block!important;
+    opacity:0.7!important;
+}
+
+.oneui30 [dir="rtl"] .docToolbar .customizeDropdown.dijitDropDownButton .dijitArrowButtonInner {
+    border-color: #999 transparent #999 #999 !important;
+    margin-right: -1px!important;
+    margin-left: auto!important;
+    border-radius: 2px 0 0 2px!important;
+}
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled):hover .dijitArrowButtonInner,
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled):focus .dijitArrowButtonInner,
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton:not(.dijitDisabled):active .dijitArrowButtonInner {
+    opacity:1!important;
+}
+.oneui30 .docToolbar .customizeDropdown.dijitDropDownButton .dijitButtonText
+{
+	padding: 5px 0 3px 7px !important;
+}
+
+.oneui30 [dir="rtl"] .docToolbar .customizeDropdown.dijitDropDownButton .dijitButtonText
+{
+	padding: 5px 7px 3px 0 !important;
+}
+
+/* Style/Typeface/Size Dropdowns */
+.oneui30 .toolbarMenu.lotusActionMenu {
+    border: 1px solid #A9A9A9 !important;
+    /*border-radius: 2px 2px 2px 2px !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15) !important;*/
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+
+.oneui30 .toolbarMenu.lotusActionMenu .dijitMenuTable
+{
+	border: none !important;
+}
+
+.oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover, 
+.oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused,
+.oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected {
+	background: rgba(0,0,0,0) !important;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.06))) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 100%) !important; /* W3C */
+    border: 0 solid !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15) inset !important;
+    color: inherit !important;
+    cursor: default !important;
+    margin: 0 !important;
+    outline: medium none !important;
+}
+
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover, 
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused,
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected,
+.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover, 
+.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused,
+.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected
+{
+	box-shadow: none !important;
+}
+
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover > td
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused > td,
+.dj_webkit .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected > td,
+.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover > td,
+.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused > td,
+.dj_ie .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected > td
+{
+    box-shadow: 0px 4px 2px -3px rgba(0, 0, 0, 0.15) inset !important;
+}
+
+.dj_ie9 .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemHover td
+.dj_ie9 .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemFocused td,
+.dj_ie9 .oneui30 .toolbarMenu.lotusActionMenu .dijitMenuItem.dijitMenuItemSelected td
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#0f000000',GradientType=0 ); /* IE6-9 */
+}
+
+.textToolbarButton .dijitButtonText {
+	color: #000000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.ltrDirectionIcon {
+    background-image: url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    background-position: 0px 0px;
+}
+
+.rtlDirectionIcon {
+    background-image: url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    background-position: 0px -16px;
+}
+
+.autoDirectionIcon {
+    background-image: url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    background-position: 0px -32px;
+}
+
+.docToolbar .docToolbarIcon {
+	background-image: url("img/docToolbarSprite.png");
+	background-position: 100px center;
+    background-repeat: no-repeat;
+   	display:inline-block!important;
+    height: 16px;
+    width: 16px;
+    margin: 0px !important;
+}
+
+.docToolbar .undoIcon {
+	background-position: 0px 0px;
+}
+
+.docToolbar .redoIcon {
+	background-position: 0px -16px;	
+}
+
+.docToolbar .boldIcon
+{
+	background-position: 0 -32px;
+}
+
+.docToolbar .italicIcon
+{
+	background-position: 0 -48px;
+}
+
+.docToolbar .underlineIcon
+{
+	background-position: 0 -64px;
+}
+
+.docToolbar .strikeIcon
+{
+	background-position: 0 -80px;
+}
+.docToolbar .fontColorIcon
+{
+	background-position: 0 -96px;
+	border:1px solid transparent;
+	padding:0px;
+}
+
+.docToolbar .highlightColorIcon
+{
+	background-position: 0 -112px;
+	border:1px solid transparent;
+	padding:0px;
+}
+
+.docToolbar .colorCellIcon
+{
+	background-position: 0 -554px;
+    border:1px solid transparent;
+    padding:0px;
+}
+
+.docToolbar .cellBorderIcon
+{
+	background-position: 0 -571px;
+	border:1px solid transparent;
+    padding:0px;
+}
+
+.docToolbar .leftIcon
+{
+	background-position: 0 -128px;
+}
+
+.docToolbar .centerIcon
+{
+	background-position: 0 -144px;
+}
+
+.docToolbar .rightIcon
+{
+	background-position: 0 -160px;
+}
+
+.docToolbar .justifyIcon
+{
+	background-position: 0 -176px;
+}
+.docToolbar .bulletListIcon
+{
+	background-position: 0 -192px;
+	border:1px solid transparent;
+	padding:0px;
+}
+.docToolbar .numberListIcon
+{
+	background-position: 0 -210px;
+	border:1px solid transparent;
+	padding:0px;
+}
+.docToolbar .multilevelListIcon
+{
+	background-position: 0 -228px;
+}
+
+.docToolbar .bulletListIcon.rtl
+{
+	background-position: 0 -448px;
+}
+
+.docToolbar .numberListIcon.rtl
+{
+	background-position: 0 -466px;
+}
+
+.docToolbar .multilevelListIcon.rtl
+{
+	background-position: 0 -484px;
+}
+
+.docToolbar .indentIcon
+{
+	background-position: 0 -244px;
+}
+
+.docToolbar .outdentIcon
+{
+	background-position: 0 -260px;
+}
+
+.docToolbar .formatPainterIcon
+{
+	background-position: 0 -502px;
+}
+
+.docToolbar .imageIcon
+{
+	background-position: 0 -276px;
+}
+
+.docToolbar .linkIcon
+{
+  background-position:0 -292px;
+}
+
+.docToolbar .tabelStyleIcon
+{
+	background-position: 0 -308px;
+}
+.docToolbar .tableBorderIcon
+{
+    background-position: 0 -308px;
+}
+.docToolbar .addRowIcon
+{
+	background-position: 0 -324px;
+    border:1px solid transparent;
+    padding:0px;
+}
+.docToolbar .addColumnIcon
+{
+	background-position: 0 -341px;
+    border:1px solid transparent;
+    padding:0px;
+}
+
+.docToolbar .findPrevIcon
+{
+	background-position: 0 -400px;
+}
+
+.docToolbar .findNextIcon
+{
+	background-position: 0 -416px;
+}
+
+.docToolbar[dir="rtl"] .findNextIcon
+{
+	background-position: 0 -400px;
+}
+
+.docToolbar[dir="rtl"] .findPrevIcon
+{
+	background-position: 0 -416px;
+}
+.docToolbar .closeFindIcon
+{
+	background-position: 0 -432px;
+}
+
+
+.docToolbar .cke_button_bidiltr {
+    background-image: url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    background-position: 0px 0px;
+}
+
+.docToolbar .cke_button_bidirtl {
+    background-image: url(../../../js/concord/widgets/css/images/bidiToolbarSprite.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    background-position: 0px -16px;
+}
+
+.toolbar_hidden{
+	display: none !important;
+}
+
+
+.toolbar_disabled{
+	border: solid 0px transparent !important;
+	border-radius: 3px;
+	filter: alpha(opacity=30); /* IE */
+	opacity: 0.3; /* Safari, Opera */
+	-moz-opacity: 0.30; /* FireFox */
+}
+
+
+/* Tooltip Style */
+.menuTooltip {
+         background-color:#ffffff;
+         padding: 0px !important;
+         margin: 0px !important;
+}
+
+.menuTooltip .dijitTooltipContainer
+{
+	border:1px solid #999999; 
+    box-shadow: 0 1px 4px rgba(0,0,0,.25); 
+}
+
+
+.menuTooltip.dijitTooltipAbove .dijitTooltipConnector {
+         width:11px;
+         height:8px; 
+         background-image: url(img/docToolbarSprite.png) !important;
+         background-position: 0 -360px;
+         bottom: -7px;
+         background-repeat: no-repeat;
+}
+.menuTooltip.dijitTooltipBelow .dijitTooltipConnector {
+         width:11px;
+         height:8px;       
+         position:absolute; 
+         top:-5px;
+         background-image: url(img/docToolbarSprite.png) !important;
+         background-position: 0 -376px;
+         background-repeat: no-repeat;
+}
+.menuTooltip.dijitTooltipRight .dijitTooltipConnector {
+	width: 16px  !important;;
+	height: 16px  !important;;
+	background-image: url(img/docToolbarSprite.png);
+	position: absolute;
+	left: -14px  !important;;
+	top: 4px  !important;;
+	background-position: 0 -521px  !important;;
+	background-repeat: no-repeat;
+}
+
+
+.tooltipLabel {
+    padding:6px 8px; 
+    color:#222222;
+    white-space: pre;
+}
+
+.tooltipAccelKey {
+    padding: 6px 8px 6px 0;
+    color:#aaaaaa;
+    white-space: pre;
+}

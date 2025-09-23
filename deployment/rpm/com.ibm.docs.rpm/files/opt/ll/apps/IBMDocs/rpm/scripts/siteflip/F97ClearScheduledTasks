@@ -1,0 +1,76 @@
+#!/usr/bin/python
+
+# ***************************************************************** 
+#                                                                   
+# Licensed Materials - Property of IBM.                                               
+#                                                                   
+# IBM Docs Source Materials                                              
+#                                                                   
+# (c) Copyright IBM Corporation 2012. All Rights Reserved.                                        
+#                                                                   
+# U.S. Government Users Restricted Rights: Use, duplication or 
+# disclosure restricted by GSA ADP Schedule Contract with 
+# IBM Corp.              
+#                                                                   
+# ***************************************************************** 
+
+import re,sys,os,subprocess,socket,shutil,distutils,time
+sys.path.append('/opt/ll/lib/registry')
+sys.path.append('/opt/ll/lib/apache/zookeeper')
+sys.path.append('/opt/ll/lib/nfs')
+from registryLib import *
+from zooKeeperLib import *
+
+def executeCommand(command, obfuscate=None):
+  log = 'Executing: '
+  if obfuscate:
+    log += command.replace(obfuscate, '***')
+  else:
+    log +=  command
+  print log
+  p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+  output = p.communicate()[0]
+  print output
+  if p.returncode:
+    raise Exception('Error executing command: ' + output)
+  print 'Command successful.'
+  
+  return output
+
+#---------------------------------------------------------------------------------------------
+# Main
+#---------------------------------------------------------------------------------------------
+
+#Initialize objects
+registryParser = RegistryParser()
+zooKeeperClient = ZooKeeperClient()
+
+#Check if scheduler has been cleared by other Docs node
+
+was_username = registryParser.getSetting('MiddlewareWebSphere','admin_username')
+was_password = registryParser.getSetting('MiddlewareWebSphere','admin_password')
+serviceName = 'was.server1'
+
+zooKeeperClient.updateActivationStatus('Clearing HouseKeeping scheduler in Docs')
+print('Clearing HouseKeeping scheduler in Docs')     
+
+try:
+  if zooKeeperClient.getData('/data/docs/housekeeping_owner_hostname') == socket.gethostname():
+    executeCommand('/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/wsadmin.sh -lang jython -username %s -password %s -f /opt/ll/apps/IBMDocs/rpm/DocsApp/installer/docs/tasks/clear_task_scheduler.py HouseKeeping' % (was_username, was_password))
+    zooKeeperClient.updateActivationStatus('HouseKeeping scheduler is cleared')
+  print('HouseKeeping scheduler is cleared') 
+except:
+  zooKeeperClient.updateActivationStatus('Error while executing /opt/ll/apps/IBMDocs/rpm/DocsApp/installer/docs/tasks/clear_task_scheduler.py.')
+  print('Error')
+  sys.exit(-1)
+    
+zooKeeperClient.updateActivationStatus('Recycling WAS App...')
+print('Recycling WAS App...')
+executeCommand('/etc/init.d/%s stop' % (serviceName))
+executeCommand('/etc/init.d/%s start' % (serviceName))  
+print('Server have restarted')
+zooKeeperClient.updateActivationStatus("Server have restarted")
+  
+
+
+

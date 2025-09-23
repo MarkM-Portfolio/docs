@@ -1,0 +1,22 @@
+({
+	question:"Kérdés",
+	issue:"Probléma",
+	toDo:"Teendő",
+	comment:"Megjegyzés",
+	done:"Kész",
+	jan:"Jan",
+	feb:"Febr",
+	mar:"Márc",
+	apr:"Ápr",
+	may:"Máj",
+	june:"Jún",
+	july:"Júl",
+	aug:"Aug",
+	sept:"Szept",
+	oct:"Okt",
+	nov:"Nov",
+	dec:"Dec",
+	pm:"du",
+	am:"de",
+	assignTo:"Hozzárendelés: "
+})

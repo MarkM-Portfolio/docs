@@ -1,0 +1,5491 @@
+ /* 
+ * Licensed Materials - Property of IBM.
+ * @concordstyles css
+ * Copyright IBM Corporation 2010. All Rights Reserved.
+ * U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
+ 
+/* CSS Document */
+
+/* Merge from ckplugins/fixedwidthpage/css/fixedwidthpage.css */
+/** 
+ * Licensed Materials - Property of IBM.
+ * @fixedwidthpage css CKEditor CSS
+ * Copyright IBM Corporation 2010. All Rights Reserved.
+ * U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
+/*
+.pageview body {
+	border-color:#CCCCCC #BBBBBB #BBBBBB #CCCCCC;
+	border-style:solid;
+	border-width:1px 2px 2px 1px;
+	margin:15px auto 25px;
+	padding:40px 50px;
+	width:648px !important;
+	min-height:1100px;
+	color:#000000;
+	background-color:#FFFFFF;
+}
+*/
+
+.concordfixedpage {
+	background-color:#EEEEEE;
+	overflow:auto;
+}
+
+.iOS6{
+	overflow:visible;
+}
+
+.concordfixedpage body {
+	background-color:#FFFFFF;
+	border:1px solid black;
+	margin:20px auto 40px;
+	padding:55px 60px;
+	width:615px;
+	min-height:1100px;
+	word-wrap:break-word;
+}
+
+.unfixedHeight body{
+	height:auto!important;
+	min-height:797px!important;
+}
+
+.nativeScroll {
+	-webkit-overflow-scrolling: touch;
+}
+
+.concordMobile body{
+	border-left-width:10px;
+	border-right-width:10px;
+	-webkit-border-image: url(./images/page_border.png) 0 10 0 10 round;
+	overflow:auto;
+	margin:0px 0px 0px 0px!important;
+	min-height:0px;
+	overflow-y:auto;
+}
+.concordMobile body >*{
+	-webkit-transform:transformZ(0);
+}
+/* End of merge */
+
+/* Merge from pagesetup.css */
+/* CSS Document */
+body {
+	/*text-align: center;*/
+	}
+div#coverpage {
+	height: 1020px;
+	background: #efefef;
+	}
+div.page {
+	margin: 0px auto 10px auto;
+	background: #fff;
+	text-align: left;
+	}
+div.letterhead {
+	background: #efefef;
+	padding: 40px;
+	margin-bottom:25px;
+	}
+	div#firstpage div.letterhead {
+		display: block;
+		}
+	div#coverpage div.letterhead {
+		visibility: hidden;
+		}
+/* End of merge */
+
+/* Start fixed width simulation for Patrick's work */ 
+/*
+div.page {
+	margin: 0cm auto;
+	padding: 1.0583cm;
+	width: 768px;
+	border: 0.75pt solid #666;
+	-moz-box-shadow: #ccc 3px 0.132cm 3px;
+	-webkit-box-shadow: #ccc 3px 0.132cm 3px;
+	box-shadow: #ccc 3px 0.132cm 3px;
+	}
+div.letterhead {
+	padding: 1.0583cm;
+	margin: -40px -40px 0.5292cm -40px;
+	}
+*/
+/* end fixed width simulation for Patrick's work */
+
+/* ------------------------------------ General Smart Table Stuff -------------------------------- */
+img.ConcordTab {
+	background-image: url('./images/spacer.gif');
+	margin-top:0.3cm;
+	height: 0cm;
+	width: 2cm;
+	border-top : 0cm; 
+	border-bottom: 0cm;
+}
+
+table.smartTable {
+	font-size: 12pt;
+	border-collapse: collapse;
+	margin: 0.079cm 0cm;
+	padding: 0cm 0cm 0cm 0cm;
+	/*width: 100%;  Patrick added this */
+	}
+table.smartTable th, table.smartTable td {
+	padding: 0.132cm;
+	vertical-align: top; /* Patrick added this */
+	}
+table.smartTable caption{
+	padding: 0.079cm 0.079cm 0.079cm 0.079cm;
+	background-color: #eeeeee;
+	font-size: 12pt; 
+}
+table.smartTable tr.displaySTFacets th.dataFacetCol
+{
+	background-image:url('./images/facet.gif');
+	background-repeat:no-repeat;
+	background-position:98% -0.132cm;
+}
+/* smartTable default style for import of tables from word or symphony */
+table.simpleStyle {
+	font-family: Verdana;
+	border: 0.75pt solid #223339;
+	}
+table.simpleStyle tr.tableHeaderRow {
+	font-size:12pt;
+	font-style:bold;
+	color: #000;
+	}
+table.simpleStyle th {
+	border-left: 0.75pt solid #223339;
+	border-right: 0.75pt solid #223339;
+	height: 0.66cm;
+	padding: 0.132cm 0.132cm 0.132cm 0.132cm;
+	text-align:center;
+	}
+table.simpleStyle td {
+	padding: 0.132cm 0.132cm 0.132cm 0.132cm;
+	color: #000;
+	font-size: 12pt;
+	height: 0.66cm;
+	border: 0.75pt solid #223339;
+	background-color: inherit;
+	}
+table.simpleStyle td.tableHeaderCol {
+		font-size:12pt;
+		font-style:bold;
+		color: #fff;
+	}	
+table.simpleStyle tr.alternateRow td {
+	
+	} 	
+td.selectedSTCell, th.selectedSTCell {
+	background-image: url('./images/tableSelection.png');
+	} 
+	
+/* ------------------------------------- BEGINNING OF DIFFERENT SELECTABLE STYLES ---------------------------------------------- */
+/*  Note each style definition is created for restyling at 2 levels:
+	1. restyling the complete document
+	2. restyling the individual component.  
+	
+	so for instance the style definition:  body.concord_Doc_Style_1 div.letterhead li, div.letterhead_1 li	{  style definitions here }
+	...specifies a style of for the "li" tag when either the whole document has a style of concord_Doc_Style_1 as specified on the <body> tag 
+	...or the individual division that is the letterhead has been set to concord_Doc_Style_1 
+  */
+
+	
+/* ------------------------------------- #1 DEFAULT STYLE ---------------------------------------------- */
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page */
+body.concord_Doc_Style_1 div.coverpage, div.coverpage_1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 
+/* specify both if using divisions to lay out the cover page and if using tables to lay out cover page */ 
+body.concord_Doc_Style_1 td.coverpageshapeA, div.coverpage_1 td.coverpageshapeA {
+	background-color:#999966;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_1 td.coverpageshapeB, div.coverpage_1 td.coverpageshapeB {
+	background-color:#999966;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_1 td.coverpageshapeC, div.coverpage_1 td.coverpageshapeC {
+	background-color:#999966;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_1 div.coverpageshapeA, div.coverpage_1 div.coverpageshapeA {
+	background-color:#999966;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_1 div.coverpageshapeB, div.coverpage_1 div.coverpageshapeB {
+	background-color:#999966;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_1 div.coverpageshapeC, div.coverpage_1 div.coverpageshapeC {
+	background-color:#999966;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_1 div.coverpage h1, div.coverpage_1 h1 {
+	font-size: 16.5pt;
+	letter-spacing: .75;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_1 div.coverpage h2, div.coverpage_1 h2 {
+	font-size: 15pt;
+	font-weight: normal;
+	letter-spacing: .50;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_1 div.coverpage ul, div.coverpage_1 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_1 div.coverpage li, div.coverpage_1 li {
+	}
+body.concord_Doc_Style_1 div.coverpage li.authorName, div.coverpage_1 li.authorName {
+	}
+body.concord_Doc_Style_1 div.coverpage li.documentDate, div.coverpage_1 li.documentDate {
+	}
+body.concord_Doc_Style_1 div.coverpage li.contactInfo1, div.coverpage_1 li.contactInfo1 {
+	}
+body.concord_Doc_Style_1 div.coverpage li.contactInfo2 , div.coverpage_1 li.contactInfo2 {
+	}
+/* LETTERHEAD */
+/* letterhead is individual styled */ 
+body.concord_Doc_Style_1 div.letterhead, div.letterhead_1 {
+	padding: 1.5875cm 1.0583cm 0.5292cm 1.0583cm;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #333;
+	/*width: 675px; commented this out due to new page width*/
+	}
+body.concord_Doc_Style_1 div.letterhead h1, div.letterhead_1 h1 {
+	font-size: 16.5pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_1 div.letterhead h2, div.letterhead_1 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_1 div.letterhead ul, div.letterhead_1 ul {
+	margin: 0cm;
+	padding: 0cm 0cm 1.0583cm 0cm;
+	list-style-type: none;
+	border-bottom: 0.75pt solid #666;
+	}
+body.concord_Doc_Style_1 div.letterhead li, div.letterhead_1 li {
+	display: inline;
+	margin: 0cm 0.2646cm 0cm 0cm;
+	padding: 0cm;
+	}	
+body.concord_Doc_Style_1 div.letterhead hr, div.letterhead_1 hr {
+	background-color: #668899;
+	color: #668899;
+	visibility: hidden;
+	}
+
+/* LIST */
+/* NOTE: DEFAULT LIST STYLE for document and for individual lists */
+/*	
+body.concord_Doc_Style_1 ul.list, ul.list_1 {
+	list-style-type: disc !important; 
+	padding: 0.3969cm !important;
+}
+*/
+ul.list_1 {
+	 	   /*  margin: 0; padding: 0 !important;*/
+      }
+ul.list_1 li
+      {
+      list-style-type: lower-roman !important;
+      padding:0.132cm 0.5292cm 0.0529cm; background-position: -0.40em 50%;      
+      }
+/* SECTION */
+/* section is styled according to the document style...sections can not be individually styled like other components  */ 
+body.concord_Doc_Style_1 div.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	padding: 0.2646cm 0cm;
+	margin: 0.2646cm 0cm;
+	color: #333;
+	/*width: 675px; commented this out due to new page width*/
+	}
+body.concord_Doc_Style_1 h1.cssHeading {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 0;
+/*    margin-left: 0.762cm; */
+    margin-top: 0;
+/*    text-indent: -0.762cm; */
+	line-height: 1.2;
+	}	
+body.concord_Doc_Style_1 h2.cssHeading {
+    font-size: 14pt;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0;
+/*    margin-left: 1.016cm; */
+    margin-top: 0;
+/*    text-indent: -1.016cm; */
+	line-height: 1.2;
+	}
+body.concord_Doc_Style_1 h3.cssHeading {
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 0.21209cm;
+/*    margin-left: 1.27cm; */
+    margin-top: 0.42291cm;
+/*    text-indent: -1.27cm; */
+	line-height: 1.2;
+	}
+body.concord_Doc_Style_1 h4.cssHeading {
+    font-family: Arial;
+    font-size: 12pt;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0.21209cm;
+/*    margin-left: 1.524cm; */
+    margin-top: 0.42291cm;
+/*    text-indent: -1.524cm; */
+	line-height: 1.2;
+	}
+body.concord_Doc_Style_1 h5.cssHeading {
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 0.21209cm;
+/*    margin-left: 1.778cm; */
+    margin-top: 0.42291cm;
+/*    text-indent: -1.778cm; */
+	line-height: 1.2;
+	}
+body.concord_Doc_Style_1 h6.cssHeading {
+    font-family: Arial;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-bottom: 0.21209cm;
+/*    margin-left: 2.032cm; */
+    margin-top: 0.42291cm;
+/*    text-indent: -2.032cm; */
+	line-height: 1.2;
+	}	
+body.concord_Doc_Style_1  p {
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	line-height: 1.2;
+	}
+body.concord_Doc_Style_1  ul {
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_1  li {
+	margin: 0cm;
+	padding:  0cm;
+	line-height: 1.2;
+	}
+body.concord_Doc_Style_1 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_1 div.subsection h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_1 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_1 div#resume li span {
+	float: right;
+	}
+body.concord_Doc_Style_1 div#resume h3 span {
+	float: right;
+	}
+body.concord_Doc_Style_1 div.textbox {
+	text-indent: 0cm;
+	}
+/* TABLE */
+/* smart tables are individually styled or styled by the overall document style  */ 	
+body.concord_Doc_Style_1 table.smartTable, table.smartTable_1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	/*border: 0.75pt solid black;*/
+	text-align: left;
+	}
+body.lotusJapanese table.smartTable, table.smartTable_1 {
+	font-family: MS PMincho,MS PGothic,Apple Gothic,Arial,Verdana,sans-serif;
+}
+body.lotusKorean  table.smartTable, table.smartTable_1 {
+	 font-family: "Gulim","GulimChe",Arial,Helvetica,sans-serif;
+}
+body.lotusZHCN table.smartTable, table.smartTable_1 {
+
+	font-family:宋体, Arial, Helvetica, sans-serif ;
+}
+table.STStyle1 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	border: 0.75pt solid black !important;
+	text-align: left !important;
+	}	
+	/* In IE the background color will override tableHeaderRow's background for stStyle_15
+body.concord_Doc_Style_1 table.smartTable tr.tableHeaderRow, table.smartTable_1 tr.tableHeaderRow {	
+	background:none repeat scroll 0 0 #000;
+	}
+table.STStyle1 tr.tableHeaderRow{
+	background:none repeat scroll 0 0 #000;
+	}	
+	*/
+body.concord_Doc_Style_1 table.smartTable th, table.smartTable_1 th {
+	text-align: left;
+	/* Below will override table style.
+	border-bottom: 0.75pt solid black;
+	border-right:0.75pt none black;
+	*/
+	/* color: #fff; Disable it in #48017*/
+	}
+table.STStyle1 th {
+	text-align: left !important;
+	border-bottom: 0.75pt solid black!important;
+	border-right:0.75pt none black !important;
+	color: #fff!important;
+	}	
+/* This will override the style of tablestyles.css.
+body.concord_Doc_Style_1 table.smartTable td, table.smartTable_1 td {
+	border-bottom: 0.75pt solid black;
+	}
+*/
+table.STStyle1 td {
+	border-bottom: 0.75pt solid black !important;
+	}
+/*	 This will override the style of tablestyles.css.	
+body.concord_Doc_Style_1 table.smartTable tr.alternateRow td, table.smartTable_1 tr.alternateRow td {
+	background-color: inherit;
+	}
+*/
+table.STStyle1 tr.alternateRow td {
+	background-color: #fff;
+	}
+/*
+body.concord_Doc_Style_1 table.smartTable td.selectedSTCell, table.smartTable_1 td.selectedSTCell, body.concord_Doc_Style_1 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_1 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+
+table.STStyle1 td.selectedSTCell, table.STStyle1 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+*/
+body.concord_Doc_Style_1 table.smartTable td.tableHeaderCol,table.smartTable_1 td.tableHeaderCol,body.concord_Doc_Style_1 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_1 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+ table.STStyle1 td.tableHeaderCol,table.STStyle1 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_1 div.references h2, div.references_1 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_1 div.references ul, div.references_1 ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_1 div.references li, div.references_1  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4233cm;
+	}
+
+	
+/* ------------------------------------- #2 CLEAN STYLE ---------------------------------------------- */
+
+
+/* COVERPAGE Templates:Meeting Minutes*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page */
+body.concord_Doc_Style_2 div.coverpage, div.coverpage_2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 	
+body.concord_Doc_Style_2 td.coverpageshapeA, div.coverpage_2 td.coverpageshapeA {
+	background-color:#0969A2;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_2 td.coverpageshapeB, div.coverpage_2 td.coverpageshapeB {
+	background-color:#FFBB00;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_2 td.coverpageshapeC, div.coverpage_2 td.coverpageshapeC {
+	background-color:#FF3D00;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_2 div.coverpageshapeA, div.coverpage_2 div.coverpageshapeA {
+	background-color:#0969A2;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_2 div.coverpageshapeB, div.coverpage_2 div.coverpageshapeB {
+	background-color:#FFBB00;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_2 div.coverpageshapeC, div.coverpage_2 div.coverpageshapeC {
+	background-color:#FF3D00;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_2 div.coverpage h1, div.coverpage_2 h1 {
+	font-size: 13.5pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_2 div.coverpage h2, div.coverpage_2 h2 {
+	font-size: 10.5pt;
+	font-weight: normal;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_2 div.coverpage ul, div.coverpage_2 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_2 div.coverpage li, div.coverpage_2 li {
+	}
+body.concord_Doc_Style_2 div.coverpage li.authorName, div.coverpage_2 li.authorName {
+	}
+body.concord_Doc_Style_2 div.coverpage li.documentDate, div.coverpage_2 li.documentDate {
+	}
+body.concord_Doc_Style_2 div.coverpage li.contactInfo1, div.coverpage_2 li.contactInfo1 {
+	}
+body.concord_Doc_Style_2 div.coverpage li.contactInfo2, div.coverpage_2 li.contactInfo2 {
+	}
+/* LETTERHEAD */
+body.concord_Doc_Style_2 div.letterhead, div.letterhead_2 {
+	padding: 1.0583cm 0cm 0.3969cm 0cm;
+	margin: 0cm 0cm 0.7938cm 0cm;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	letter-spacing: 0.0529cm;
+	color: #333;
+	background: #fff;
+	text-transform: uppercase;
+	/* border-bottom: 3px solid #e1350d; commented out by JMT */
+	/*width: 17.1979cm; commented this out due to new page width*/
+	}
+body.concord_Doc_Style_2 div.letterhead h1, div.letterhead_2 h1 {
+	font-size: 13.5pt;
+	letter-spacing: 1;
+	margin-bottom: 0.3969cm;
+	padding: 0cm;
+	color: #e1350d;
+	}
+body.concord_Doc_Style_2 div.letterhead h2, div.letterhead_2 h2 {
+	font-size: 9pt;
+	letter-spacing: .1;
+	margin: 0cm 0cm 0.3969cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_2 div.letterhead ul, div.letterhead_2 ul {
+	margin-bottom: 0.2646cm;
+	padding: 0cm;
+	list-style-type: none;
+	}
+body.concord_Doc_Style_2 div.letterhead li, div.letterhead_2 li {
+	display: inline;
+	margin: 0cm 0.2646cm 0cm 0cm;
+	padding: 0cm;
+	font-size: 8.25pt;
+	color: #555;
+	letter-spacing: .1;
+	}	
+body.concord_Doc_Style_2 div.letterhead hr, div.letterhead_2 hr {
+	border: 0;
+	color: #9E9E9E;
+	background-color: #9E9E9E;
+	height: 0.0794cm;
+	width: 100%;
+	text-align: left;
+	}
+body.concord_Doc_Style_2 p.custom1 {
+	border-bottom:0.75pt solid #BEBEBE;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	margin: 0cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_2 p.custom2 {
+	border-bottom:0.75pt solid #BEBEBB;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	margin: 0cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_2 p.custom_header {
+	border-bottom: 1.5pt solid #E1350D;
+	margin: 0cm 0cm 0cm 0cm;
+	color:#00A6A0;
+	font-family:arial;
+	font-size:7.5pt;
+	font-weight:bold;
+	letter-spacing:0.0265cm;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	text-align:left;
+	text-transform:uppercase;
+	}	
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_2 {
+	    margin: 0 !important;
+	    margin-bottom: 0.4233cm !important;	    
+	    padding: 0!important;
+      }
+ul.list_2 li
+      {
+      list-style: none !important;; 
+      background: url('./images/checkmark.gif') no-repeat !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: -0.40em 50% !important;   
+   } 
+/* SECTION */
+body.concord_Doc_Style_2 div.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8.25pt;
+	/* border-top: 3px solid #e1350d; commented out by JMT */
+	/* border-bottom: 3px solid #e1350d; commented out by JMT */
+	padding: 0.66cm 0cm;
+	margin: 0.2646cm 0cm 0.7938cm 0cm;
+	color: #333;
+	/*width: 17.1979cm; commented this out due to new page width*/
+	}
+body.concord_Doc_Style_2  div.section h2 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: 1.5;
+	color: #e1350d;
+	}
+body.concord_Doc_Style_2 h2 {
+	font-size: 14pt;
+	font-style: normal;
+	margin: 0.5018cm 0cm 0.2018cm 0cm;
+	}
+body.concord_Doc_Style_2 h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_2 h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+body.concord_Doc_Style_2 p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 15pt; commented out by NP*/
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	font-size: 9.5pt;
+	}
+body.concord_Doc_Style_2 ul {
+	margin-bottom: 0.4233cm;
+	margin-left: 0cm;
+	padding-left: 0.4763cm;
+	list-style-type: circle;
+	text-indent: 0;
+	}
+body.concord_Doc_Style_2 li {
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.3969cm; commented out by NP*/
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_2 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_2 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_2 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+body.concord_Doc_Style_2 div#resume li span {
+	float: right;
+	font-weight: normal;
+	color: #555;
+	}
+body.concord_Doc_Style_2 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	color: #555;
+	}
+/* TABLE */
+body.concord_Doc_Style_2 table.smartTable, table.smartTable_2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: left;	
+	border:0pt none;
+	}
+table.STStyle2 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;	
+	border: 0pt none !important;
+	}	
+body.concord_Doc_Style_2 table.smartTable tr.tableHeaderRow, table.smartTable_2 tr.tableHeaderRow {
+	background:none;
+	text-transform: uppercase;
+	}
+table.STStyle2 tr.tableHeaderRow {
+	background:none;
+	text-transform: uppercase !important;
+	}	
+body.concord_Doc_Style_2 table.smartTable th, table.smartTable_2 th {
+	padding: 0.0794cm 0.132cm 0.0794cm 0.132cm;
+	color: #4f565e;
+	border: 1.5pt;
+	border-bottom: 2.25pt solid #e1350d;
+	/*border-right: 3pt solid #fff; updated for resize bug*/
+	border-top:0pt ;
+	/*border-left:0.75pt solid #fff; updated for resize bug*/
+	text-align:left;
+	}
+table.STStyle2 th {
+	padding: 0.0794cm 0.132cm 0.0794cm 0.132cm !important;
+	color: #4f565e !important;
+	border: 1.5pt !important;
+	border-bottom: 2.25pt solid #e1350d !important;
+	/*border-right: 3pt solid #fff !important; updated for resize bug*/
+	border-top:0cm !important;
+	/*border-left:0.75pt solid #fff !important; updated for resize bug*/
+	text-align:left !important;
+	}	
+body.concord_Doc_Style_2 table.smartTable td, table.smartTable_2 td {
+	padding: 0.0794cm 0.132cm 0.0794cm 0.132cm;
+	color: #4f565e;
+	}
+table.STStyle2 td {
+	padding: 0.0794cm 0.132cm 0.0794cm 0.132cm !important;
+	color: #4f565e !important;
+	}	
+body.concord_Doc_Style_2 table.smartTable tr.alternateRow td, table.smartTable_2 tr.alternateRow td {
+	} 
+table.STStyle2 tr.alternateRow td {
+	} 		
+body.concord_Doc_Style_2 table.smartTable td.selectedSTCell, table.smartTable_2 td.selectedSTCell, body.concord_Doc_Style_2 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_2 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle2 td.selectedSTCell, table.STStyle2 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_2 table.smartTable td.tableHeaderCol, table.smartTable_2 td.tableHeaderCol,body.concord_Doc_Style_2 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_2 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle2 td.tableHeaderCol, table.STStyle2 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_2 div.references h2, div.references_2 h2 {
+	font-size: 7.5pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: 1.5;
+	color: #555;
+	}
+body.concord_Doc_Style_2 div.references ul, div.references_2 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	list-style-type: none;
+	}
+body.concord_Doc_Style_2 div.references li, div.references_2  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.3969cm;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+	
+	
+/* ------------------------------------- #3 CLASSIC BLACK STYLE ---------------------------------------------- */
+
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page */
+body.concord_Doc_Style_3 div.coverpage, div.coverpage_3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 	
+body.concord_Doc_Style_3 td.coverpageshapeA, div.coverpage_3 td.coverpageshapeA {
+	background-color:#E40045;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_3 td.coverpageshapeB, div.coverpage_3 td.coverpageshapeB {
+	background-color:#00AF64;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_3 td.coverpageshapeC, div.coverpage_3 td.coverpageshapeC {
+	background-color:#CCF600;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_3 div.coverpageshapeA, div.coverpage_3 div.coverpageshapeA {
+	background-color:#E40045;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_3 div.coverpageshapeB, div.coverpage_3 div.coverpageshapeB {
+	background-color:#00AF64;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_3 div.coverpageshapeC, div.coverpage_3 div.coverpageshapeC {
+	background-color:#CCF600;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_3 div.coverpage h1, div.coverpage_3 h1 {
+	font-size: 13.5pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_3 div.coverpage h2, div.coverpage_3 h2 {
+	font-size: 10.5pt;
+	font-weight: normal;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_3 div.coverpage ul, div.coverpage_3 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_3 div.coverpage li, div.coverpage_3 li {
+	}
+body.concord_Doc_Style_3 div.coverpage li.authorName, div.coverpage_3 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_3 li.documentDate {
+	}
+body.concord_Doc_Style_3 div.coverpage li.contactInfo1, div.coverpage_3 li.contactInfo1 {
+	}
+body.concord_Doc_Style_3 div.coverpage li.contactInfo2, div.coverpage_3 li.contactInfo2 {
+	}
+/* LETTERHEAD */
+body.concord_Doc_Style_3 div.letterhead, div.letterhead_3 {
+	background: #000;
+	padding: 1.0583cm;
+	padding-left: 2.1167cm;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	color: #fff;
+	}
+body.concord_Doc_Style_3 div.letterhead ul, div.letterhead_3 ul {
+	margin: 0cm;
+	padding: 0cm;
+	list-style-type: none;
+	}
+body.concord_Doc_Style_3 div.letterhead li, div.letterhead_3 li {
+	display: inline;
+	margin: 0cm 0.2646cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_3 div.letterhead hr, div.letterhead_3 hr {
+	
+	}	
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */	
+ul.list_3 {
+	 	    margin: 0 !important; padding: 0 !important;
+	 	    margin-bottom: 0.4233cm !important;	    	 	    
+      }
+ul.list_3 li
+      {
+      list-style: none !important;
+      background: url('./images/bboard.gif') no-repeat !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: -0.40em 50% !important;
+      }
+/* SECTION */
+body.concord_Doc_Style_3 div.section {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	border-bottom: 0.75pt dotted #666;
+	border-top: 0.75pt dotted #666;
+	padding: 0.7938cm 0cm;
+	margin: 0.1058cm 0cm;
+	margin-left: 1.058cm;
+	/* width: 17.1979cm; commented this out due to new page width*/
+	}
+body.concord_Doc_Style_3  h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: 1.0;
+	}
+body.concord_Doc_Style_3  h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_3  h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_3  p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.5292cm; commented out by NP*/
+	}
+body.concord_Doc_Style_3  ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: square;
+	}
+body.concord_Doc_Style_3  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4233cm; commented out by NP*/
+	}
+body.concord_Doc_Style_3 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_3 div.subsection h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_3 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_3 div#resume li span {
+	float: right;
+	}
+body.concord_Doc_Style_3 div#resume h3 span {
+	float: right;
+	}
+/* TABLE */
+body.concord_Doc_Style_3 table.smartTable, table.smartTable_3 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	border: 0.75pt solid #000;
+	border-top: 2.25pt solid #000;
+	}
+table.STStyle3 {
+	font-family: "Times New Roman", Times, serif !important;
+	text-align: center !important;
+	border: 0.75pt solid #000 !important;
+	border-top: 2.25pt solid #000 !important;
+	}	
+body.concord_Doc_Style_3 table.smartTable tr.tableHeaderRow, table.smartTable_3 tr.tableHeaderRow {
+	text-transform: uppercase;
+	background:none repeat scroll 0 0 #FFFFFF;
+	}
+table.STStyle3 tr.tableHeaderRow {
+	text-transform: uppercase !important;
+	background:none repeat scroll 0 0 #FFFFFF;
+	}	
+body.concord_Doc_Style_3 table.smartTable th, table.smartTable_3 th {
+	padding: 0.0794cm 0.132cm;
+	border: 0.75pt solid #000;
+	color: #333;
+	text-align:center;
+	}
+table.STStyle3 th {
+	padding: 0.0794cm 0.132cm !important;
+	border: 0.75pt solid #000 !important;
+	color: #333 !important;
+	text-align:center !important;	
+	}
+body.concord_Doc_Style_3 table.smartTable td, table.smartTable_3 td {
+	border: 0.75pt dotted #000;
+	border-left: 0.75pt solid #000;
+	border-right: 0.75pt solid #000;
+	padding: 0.0794cm 0.132cm;
+	color: #666;
+	}
+table.STStyle3 td {
+	border: 0.75pt dotted #000 !important;
+	border-left: 0.75pt solid #000 !important;
+	border-right: 0.75pt solid #000 !important;
+	padding: 0.0794cm 0.132cm !important;
+	color: #666 !important;
+	}	
+body.concord_Doc_Style_3 table.smartTable tr.alternateRow td, table.smartTable_3 tr.alternateRow td {
+	background-color: #fff;
+	} 
+table.STStyle3 tr.alternateRow td {
+	background-color: #fff;
+	} 		
+body.concord_Doc_Style_3 table.smartTable td.selectedSTCell, table.smartTable_3 td.selectedSTCell, body.concord_Doc_Style_3 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_3 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle3 td.selectedSTCell, table.STStyle3 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_3 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_3 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_3 td.tableHeaderCol,table.smartTable_3 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle3 td.tableHeaderCol,table.STStyle3 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_3 div.references h2, div.references_3 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: 1.0;
+	}
+body.concord_Doc_Style_3 div.references ul, div.references_3 ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_3 div.references li, div.references_3  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4233cm;
+	}
+	
+	
+/* ------------------------------------- #4 COURIER ---------------------------------------------- */
+
+
+/* COVERPAGE Templates: Fax Cover Sheet*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page */
+body.concord_Doc_Style_4 div.coverpage, div.coverpage_4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 	
+body.concord_Doc_Style_4 td.coverpageshapeA, div.coverpage_4 td.coverpageshapeA {
+	background-color:#EA326A;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_4 td.coverpageshapeB, div.coverpage_4 td.coverpageshapeB {
+	background-color:#2AC281;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_4 td.coverpageshapeC, div.coverpage_4 td.coverpageshapeC {
+	background-color:#D7F835;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_4 div.coverpageshapeA, div.coverpage_4 div.coverpageshapeA {
+	background-color:#EA326A;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_4 div.coverpageshapeB, div.coverpage_4 div.coverpageshapeB {
+	background-color:#2AC281;
+	border:0.75pt solid white;
+	}	
+body.concord_Doc_Style_4 div.coverpageshapeC, div.coverpage_4 div.coverpageshapeC {
+	background-color:#D7F835;
+	border:0.75pt solid white;
+	}
+body.concord_Doc_Style_4 div.coverpage h1, div.coverpage_4 h1 {
+	font-size: 13.5pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_4 div.coverpage h2, div.coverpage_4 h2 {
+	font-size: 10.5pt;
+	font-weight: normal;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_4 div.coverpage ul, div.coverpage_4 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_4 div.coverpage li, div.coverpage_4 li {
+	}
+body.concord_Doc_Style_4 div.coverpage li.authorName, div.coverpage_4 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_4 li.documentDate {
+	}
+body.concord_Doc_Style_4 div.coverpage li.contactInfo1, div.coverpage_4 li.contactInfo1 {
+	}
+body.concord_Doc_Style_4 div.coverpage li.contactInfo2, div.coverpage_4 li.contactInfo2 {
+	}
+/* LETTERHEAD */
+body.concord_Doc_Style_4 div.letterhead, div.letterhead_4 {
+	font-family: "Courier New", Courier;
+	font-size: 9pt;
+	color: #333;
+	background: white;
+	text-align: center;
+	padding: 0.7938cm;
+	margin: 1.0583cm 0cm 1.5875cm 0cm;
+	}
+body.concord_Doc_Style_4 div.letterhead h1, div.letterhead_4 h1 {
+	font-size: 15pt;
+	letter-spacing: 2.5;
+	margin: 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	}
+body.concord_Doc_Style_4 div.letterhead h2, div.letterhead_4 h2 {
+	font-size: 10.5pt;
+	letter-spacing: 1;
+	margin: 0cm;
+	padding: 0cm;
+	color: #333;
+	line-height: 0.3704cm;
+	text-transform: none;
+	font-family: "Courier New", Courier;
+	}
+body.concord_Doc_Style_4 div.letterhead ul, div.letterhead_4 ul {
+	list-style-type:none;
+	margin: 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_4 div.letterhead li, div.letterhead_4 li {
+	margin: 0cm;
+	padding: 0cm;
+	color: #333;
+	letter-spacing: 1;
+	line-height: 0.4763cm;
+	}
+body.concord_Doc_Style_4 div.letterhead hr, div.letterhead_4 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_4 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 12pt !important;	    	 	   
+      }
+ul.list_4 li
+      {
+      list-style: none !important; 
+      background: url('./images/right_plus.gif') no-repeat !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: -0.40em 50% !important;
+      }
+/* SECTION */
+body.concord_Doc_Style_4 div.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	padding: 0.2646cm 0cm;
+	margin: 0.2646cm 1.3229cm 0.7938cm 1.3229cm;
+	line-height: 0.3969cm;
+	color: #333;
+	letter-spacing: .9;
+	}
+body.concord_Doc_Style_4 h2 {
+	font-size: 9.75pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: 1;
+	color: #333;
+	font-family: "Courier New", Courier;
+	}
+body.concord_Doc_Style_4 h2.custom {
+	margin: 0.8117cm 0cm 0.2117cm 0cm;
+	font-style: normal;
+	}
+body.concord_Doc_Style_4 h3 {
+	font-size: 10pt;
+	margin: 0cm 0cm 0.1588cm 0cm;
+	padding-top: 0.2646cm;
+	letter-spacing: -.01;
+	font-family: "Courier New", Courier;
+	text-transform: uppercase;
+	color: #333;
+	}
+body.concord_Doc_Style_4 h4 {
+	font-size: 8.25pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0.132cm;
+	letter-spacing: none;
+	font-style: light;
+	font-family: "Courier New", Courier;
+	}
+body.concord_Doc_Style_4 p {
+	margin: 0.1058cm 0.1058cm 0.7408cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	font-family: "Courier New", Courier, mono;
+	text-transform: none;
+	}
+body.concord_Doc_Style_4 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: circle;
+	font-family: "Courier New", Courier, mono;
+	text-indent: 0;
+	}
+body.concord_Doc_Style_4 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+body.concord_Doc_Style_4 li.custom {
+	list-style-type: disc;
+	font-family: Arial;
+	list-style-position: inside;
+	text-indent: 0.50cm;
+	}
+body.concord_Doc_Style_4 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_4 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_4 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+body.concord_Doc_Style_4 div#resume li span {
+	float: right;
+	font-weight: normal;
+	color: #555;
+	}
+body.concord_Doc_Style_4 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	color: #555;
+	}
+/* TABLE */
+body.concord_Doc_Style_4 table.smartTable, table.smartTable_4 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 9pt;
+	text-align: left;	
+	}
+table.STStyle4 {
+	font-family: "Courier New", Courier, mono !important;
+	font-size: 9pt !important;
+	text-align: left !important;	
+	}	
+body.concord_Doc_Style_4 table.smartTable tr.tableHeaderRow, table.smartTable_4 tr.tableHeaderRow {	
+	}
+table.STStyle4 tr.tableHeaderRow {	
+	}	
+body.concord_Doc_Style_4 table.smartTable th, table.smartTable_4 th  {
+	text-align: left;
+	border-bottom: 0.75pt solid black;
+	border-width:0pt;
+	padding: 0.0794cm 0.132cm 0.0794cm 0.1588cm;
+	}
+table.STStyle4 th {
+	text-align: left !important;
+	border-bottom: 0.75pt solid black !important;
+	border-width:0pt !important;
+	padding: 0.0794cm 0.132cm 0.0794cm 0.1588cm !important;
+	}	
+body.concord_Doc_Style_4 table.smartTable td, table.smartTable_4 td {
+	border-bottom: 0.75pt solid black;
+	}
+table.STStyle4 td {
+	border-bottom: 0.75pt solid black !important;
+	}	
+body.concord_Doc_Style_4 table.smartTable tr.alternateRow td, table.smartTable_4 tr.alternateRow td {
+	background-color: #efefef;
+	}
+table.STStyle4 tr.alternateRow td {
+	background-color: #efefef;
+	}	 	
+body.concord_Doc_Style_4 table.smartTable td.selectedSTCell, table.smartTable_4 td.selectedSTCell, body.concord_Doc_Style_4 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_4 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle4 td.selectedSTCell, table.STStyle4 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_4 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_4 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_4 td.tableHeaderCol,table.smartTable_4 tr.alternateRow td.tableHeaderCol  {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle4 td.tableHeaderCol,table.STStyle4 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_4 div.references h2, div.references_4 h2 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: .05;
+	color: #68a818;
+	}
+body.concord_Doc_Style_4 div.references ul, div.references_4 ul {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4763cm;
+	letter-spacing: .05;
+	}
+body.concord_Doc_Style_4 div.references li, div.references_4  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4763cm;
+	letter-spacing: .05;
+	}
+
+
+/* ------------------------------------- #5 GREEN BLOCKS ---------------------------------------------- */
+
+
+/* COVERPAGE Templates : Research Paper*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_5 div.coverpage, div.coverpage_5 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_5 td.coverpageshapeA, div.coverpage_5 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_5 td.coverpageshapeB, div.coverpage_5 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_5 td.coverpageshapeC, div.coverpage_5 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_5 div.coverpageshapeA, div.coverpage_5 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_5 div.coverpageshapeB, div.coverpage_5 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_5 div.coverpageshapeC, div.coverpage_5 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_5 div.coverpage h1, div.coverpage_5 h1 {
+	}
+body.concord_Doc_Style_5 div.coverpage h2, div.coverpage_5 h2 {
+	}
+body.concord_Doc_Style_5 div.coverpage ul, div.coverpage_5 ul {
+	} 
+body.concord_Doc_Style_5 div.coverpage li, div.coverpage_5 li {
+	}
+body.concord_Doc_Style_5 div.coverpage li.authorName, div.coverpage_5 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_5 li.documentDate {
+	}
+body.concord_Doc_Style_5 div.coverpage li.contactInfo1, div.coverpage_5 li.contactInfo1 {
+	}
+body.concord_Doc_Style_5 div.coverpage li.contactInfo2, div.coverpage_5 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_5 div.letterhead, div.letterhead_5 {
+	background: #fff url(./images/greensquares.png) top left repeat-x;
+	padding-top: 2.6458cm;
+	padding-left:0cm;
+	}
+body.concord_Doc_Style_5 div.letterhead h1, div.letterhead_5 h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 21pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #578718;
+	margin: 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_5 div.letterhead h2, div.letterhead_5 h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13.5pt;
+	font-weight: normal;
+	font-style: italic;
+	letter-spacing: .1;
+	margin: 0cm 0cm 0.7938cm 0cm;
+	padding: 0cm;
+	color: #97c838;
+	}
+body.concord_Doc_Style_5 div.letterhead ul, div.letterhead_5 ul {
+	margin: 0cm;
+	padding: 0cm;
+	list-style-type: none;
+	}
+body.concord_Doc_Style_5 div.letterhead li, div.letterhead_5 li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	margin: 0cm;
+	padding: 0cm;
+	color: #707070;
+	letter-spacing: .1;
+	line-height: 0.4763cm;
+	}
+body.concord_Doc_Style_5 div.letterhead hr, div.letterhead_5 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_5 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_5 li
+      {
+      list-style: none !important; 
+      background: url('./images/bluearrowbullet.gif') no-repeat !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: -0.40em 50% !important;
+      }
+/* SECTION */
+body.concord_Doc_Style_5 div.section {
+	padding: 0.2646cm 0cm 0cm 5.8208cm;
+	margin: 0.2646cm 0cm 0.7938cm 0cm;
+	}
+body.concord_Doc_Style_5 div.section h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13.5pt;
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: .1;
+	color: #578718;		
+	margin: 0cm 0cm 0cm -5.8208cm;
+	padding: 0cm;
+	width: 5.5563cm;
+	z-index:99;
+	}
+body.concord_Doc_Style_5 h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: italic;
+	letter-spacing: .1;	
+	color: #6ea22a;
+	margin: 0cm 0cm 0cm 0cm;
+	padding:0.66cm 0cm;
+	/*text-indent: -220px; causing display issues */
+	}
+body.concord_Doc_Style_5 h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-style: italic;
+	color: #707070;
+	margin: 0cm 0cm 0cm 0cm;
+	padding:0.66cm 0cm;
+	/*text-indent: -220px; causing display issues */
+	}
+body.concord_Doc_Style_5 p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.4233cm; commented out by NP*/
+	letter-spacing: .1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #707070;
+	}
+body.concord_Doc_Style_5 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: square;
+	color: #707070;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-indent: 0;
+	}
+body.concord_Doc_Style_5 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+
+body.concord_Doc_Style_5 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_5 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding:0.66cm 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_5 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding:0.66cm 0cm;
+	font-style: italic;
+	}
+
+body.concord_Doc_Style_5 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_5 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_5 table.smartTable, table.smartTable_5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: left;
+	border:none;
+	}
+table.STStyle5 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;
+	border:none !important;		
+	}	
+body.concord_Doc_Style_5 table.smartTable tr.tableHeaderRow, table.smartTable_5 tr.tableHeaderRow  {
+	background-color: #fff;
+	}
+table.STStyle5 tr.tableHeaderRow {
+	background-color: #fff;
+	}	
+body.concord_Doc_Style_5 table.smartTable th, table.smartTable_5 th {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: left;
+	color: #578718;
+	border-top: 0.75pt dotted #707070;
+	border-bottom: 0.75pt dotted #707070;
+	}
+table.STStyle5 th {
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	text-align: left !important;
+	color: #578718 !important;
+	border-top: 0.75pt dotted #707070 !important;
+	border-bottom: 0.75pt dotted #707070 !important;
+	}	
+body.concord_Doc_Style_5 table.smartTable td, table.smartTable_5 td  {
+	color: #97c838;
+	border-bottom: 0.75pt dotted #707070;
+	}
+table.STStyle5 td {
+	color: #97c838 !important;
+	border-bottom: 0.75pt dotted #707070 !important;
+	}	
+body.concord_Doc_Style_5 table.smartTable tr.alternateRow td, table.smartTable_5 tr.alternateRow td {
+	background-color: #fff;
+	} 
+table.STStyle5 tr.alternateRow td {
+	background-color: #fff;
+	} 
+body.concord_Doc_Style_5 table.smartTable td.selectedSTCell, table.smartTable_5 td.selectedSTCell, body.concord_Doc_Style_5 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_5 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle5 td.selectedSTCell, table.STStyle5 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_5 table.smartTable td.tableHeaderCol, body.concord_Doc_Style_5 table.smartTable tr.alternateRow td.tableHeaderCol,table.smartTable_5 td.tableHeaderCol,table.smartTable_5 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle5 td.tableHeaderCol,table.STStyle5 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_5 div.references h2, div.references_5 h2 {
+	}
+body.concord_Doc_Style_5 div.references ul, div.references_5 ul {
+	}
+body.concord_Doc_Style_5 div.references li, div.references_5  li {
+	}
+
+
+/* ------------------------------------- #6 YELLOW DOTS ---------------------------------------------- */
+
+
+body.concord_Doc_style_6 div.page {
+	background: url(./images/yellowdots.png) top left repeat-y;
+	padding: 0cm 0cm 0cm 2.6458cm;
+	}
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_6 div.coverpage, div.coverpage_6 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_6 td.coverpageshapeA, div.coverpage_6 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_6 td.coverpageshapeB, div.coverpage_6 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_6 td.coverpageshapeC, div.coverpage_6 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_6 div.coverpageshapeA, div.coverpage_6 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_6 div.coverpageshapeB, div.coverpage_6 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_6 div.coverpageshapeC, div.coverpage_6 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_6 div.coverpage h1, div.coverpage_6 h1 {
+	}
+body.concord_Doc_Style_6 div.coverpage h2, div.coverpage_6 h2 {
+	}
+body.concord_Doc_Style_6 div.coverpage ul, div.coverpage_6 ul {
+	} 
+body.concord_Doc_Style_6 div.coverpage li, div.coverpage_6 li {
+	}
+body.concord_Doc_Style_6 div.coverpage li.authorName, div.coverpage_6 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_6 li.documentDate {
+	}
+body.concord_Doc_Style_6 div.coverpage li.contactInfo1, div.coverpage_6 li.contactInfo1 {
+	}
+body.concord_Doc_Style_6 div.coverpage li.contactInfo2, div.coverpage_6 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_6 div.letterhead, div.letterhead_6 {
+	/* margin: 0cm 0cm 100px -40px;  commenting out to fix in new page width*/	
+	}
+body.concord_Doc_Style_6 div.letterhead h1, div.letterhead_6 h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22.5pt;
+	font-weight: normal;
+	color: #fdb813;
+	margin: 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_6 div.letterhead h2, div.letterhead_6 h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10.5pt;
+	font-weight: normal;
+	letter-spacing: 1.5;
+	margin: 0cm 0cm 0cm 0.0794cm;
+	padding: 0cm;
+	color: #555;
+	text-transform: uppercase;
+	}
+body.concord_Doc_Style_6 div.letterhead ul, div.letterhead_6 ul {
+	margin: 0cm 0cm 0cm 0cm;
+	padding:0.5292cm 0 0;
+	list-style-type: none;
+	text-align: right;
+	}
+body.concord_Doc_Style_6 div.letterhead li, div.letterhead_6 li {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10.5pt;
+	margin: 0cm;
+	padding: 0cm 0.2646cm 0cm 0cm;
+	color: #959595;
+	letter-spacing: .1;
+	display: inline;
+	}
+body.concord_Doc_Style_6 div.letterhead hr, div.letterhead_6 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_6 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_6 li
+      {
+      list-style: none !important; 
+      background: url('./images/green_flagbullet.png') no-repeat !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: 0.40em 50% !important;
+      }
+/* SECTION */
+body.concord_Doc_Style_6 div.section {
+	padding: 0cm 1.0583cm 0cm 0cm;
+	margin: 0.2646cm 0cm 0.7938cm 0cm;
+	}
+body.concord_Doc_Style_6 div.section h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13.5pt;
+	font-weight: normal;
+	letter-spacing: .1;
+	color: #252525;		
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm 0cm 0.2646cm 0cm;
+	border-bottom: 2.25pt solid #ffe14f;
+	}
+body.concord_Doc_Style_6 h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-weight: normal;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	color: #252525;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm 0cm 0.2646cm 0cm;
+	border-bottom: 0.75pt solid #ffe14f;
+	}
+body.concord_Doc_Style_6 h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #555;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_6 p {
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .1;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	color: #555;
+	}
+body.concord_Doc_Style_6 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: disc;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	color: #555;
+	}
+body.concord_Doc_Style_6 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_6 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_6 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_6 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_6 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_6 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_6 table.smartTable, table.smartTable_6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	color: #555;
+	text-align: left ;	
+	border:none;
+	}
+table.STStyle6 {
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	font-size: 9pt !important;
+	color: #555 !important;
+	text-align: left !important;	
+	border: none !important;	
+	}	
+body.concord_Doc_Style_6 table.smartTable tr.tableHeaderRow, table.smartTable_6 tr.tableHeaderRow  {
+	background:none;
+	}
+table.STStyle6 tr.tableHeaderRow {
+	background:none;
+	}	
+body.concord_Doc_Style_6 table.smartTable th, table.smartTable_6 th  {
+	text-align: left;
+	color:#555555;
+	border-bottom:0 none;
+	}
+table.STStyle6 th {
+	text-align: left !important;
+	color:#555555 !important;
+	border-bottom:0 none !important;
+	}	
+body.concord_Doc_Style_6 table.smartTable td, table.smartTable_6 td  {
+	border-bottom:0 none ;
+	}
+table.STStyle6 td {
+	border-bottom:0 none !important;
+	}	
+body.concord_Doc_Style_6 table.smartTable tr.alternateRow td, table.smartTable_6 tr.alternateRow td {
+	background-color: #ffe14f;
+	} 
+table.STStyle6 tr.alternateRow td {
+	background-color: #ffe14f;
+	}
+body.concord_Doc_Style_6 table.smartTable td.selectedSTCell, table.smartTable_6 td.selectedSTCell, body.concord_Doc_Style_6 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_6 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle6 td.selectedSTCell, table.STStyle6 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_6 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_6 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_6 td.tableHeaderCol,table.smartTable_6 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle6 td.tableHeaderCol,table.STStyle6 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_6 div.references h2, div.references_6 h2 {
+	}
+body.concord_Doc_Style_6 div.references ul, div.references_6 ul {
+	}
+body.concord_Doc_Style_6 div.references li, div.references_6  li {
+	}
+
+
+/* ------------------------------------- #7 BLUE LOGO ---------------------------------------------- */
+
+
+/* COVERPAGE Templates: Invoice*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_7 div.coverpage, div.coverpage_7 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_7 td.coverpageshapeA, div.coverpage_7 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_7 td.coverpageshapeB, div.coverpage_7 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_7 td.coverpageshapeC, div.coverpage_7 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_7 div.coverpageshapeA, div.coverpage_7 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_7 div.coverpageshapeB, div.coverpage_7 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_7 div.coverpageshapeC, div.coverpage_7 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_7 div.coverpage h1, div.coverpage_7 h1 {
+	}
+body.concord_Doc_Style_7 div.coverpage h2, div.coverpage_7 h2 {
+	}
+body.concord_Doc_Style_7 div.coverpage ul, div.coverpage_7 ul {
+	} 
+body.concord_Doc_Style_7 div.coverpage li, div.coverpage_7 li {
+	}
+body.concord_Doc_Style_7 div.coverpage li.authorName, div.coverpage_7 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_7 li.documentDate {
+	}
+body.concord_Doc_Style_7 div.coverpage li.contactInfo1, div.coverpage_7 li.contactInfo1 {
+	}
+body.concord_Doc_Style_7 div.coverpage li.contactInfo2, div.coverpage_7 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_7 div.letterhead, div.letterhead_7 {
+	margin: 0cm;
+	background: url(./images/bluelogo.png) top right no-repeat;
+	}
+body.concord_Doc_Style_7 div.letterhead h1, div.letterhead_7 h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+	font-weight: normal;
+	color: #003f69;
+	margin: 0cm 0cm 0.2646cm 0cm;
+	padding: 0cm;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	}
+body.concord_Doc_Style_7 div.letterhead h2, div.letterhead_7 h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12pt;
+	font-weight: normal;
+	letter-spacing: .1;
+	margin: 0cm 0cm 0.7938cm 0cm;
+	padding: 0cm;
+	color: #00b0da;
+	}
+body.concord_Doc_Style_7 div.letterhead ul, div.letterhead_7 ul {
+	margin: 0cm 0cm 1.5875cm 0cm;
+	padding: 0cm;
+	list-style-type: none;
+	}
+body.concord_Doc_Style_7 div.letterhead li, div.letterhead_7 li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	margin: 0cm;
+	padding: 0cm 0.2646cm 0cm 0cm;
+	color: #00649d;
+	letter-spacing: .1;
+	display: inline;
+	}
+body.concord_Doc_Style_7 div.letterhead hr, div.letterhead_7 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_7 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_7 li
+      {
+      list-style: none !important; 
+      background: url('./images/redflagbullet.png') no-repeat !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: 0.40em 50% !important;
+      }
+/* SECTION */
+body.concord_Doc_Style_7 div.section {
+	padding: 0cm 1.0583cm;
+	margin: 0.2646cm 0cm 0.7938cm 0cm;
+	width: 12.7cm;
+	}
+body.concord_Doc_Style_7 div.section h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12pt;
+	font-weight: normal;
+	letter-spacing: .1;
+	color: #00649d;		
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_7 h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	color: #00b0da;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_7 h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #00b0da;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_7 p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #454545;
+	}
+body.concord_Doc_Style_7 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: circle;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #454545;
+	text-indent: 0;
+	}
+body.concord_Doc_Style_7 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_7 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_7 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_7 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_7 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_7 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_7 table.smartTable, table.smartTable_7  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #454545;
+	text-align: left ;		
+	}
+table.STStyle7 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	color: #454545 !important;
+	text-align: left !important;		
+	}	
+body.concord_Doc_Style_7 table.smartTable tr.tableHeaderRow, table.smartTable_7 tr.tableHeaderRow {
+	background-color: #003f69;
+	}
+table.STStyle7 tr.tableHeaderRow {
+	background-color: #003f69;
+	}
+body.concord_Doc_Style_7 table.smartTable th, table.smartTable_7 th  {
+	text-align: left;
+	color: #fff;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	}
+table.STStyle7 th {
+	text-align: left !important;
+	color: #fff !important;
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	font-weight: normal !important;
+	}	
+body.concord_Doc_Style_7 table.smartTable td, table.smartTable_7 td {
+	border-bottom: 0.75pt dotted #00b0da;
+	}
+table.STStyle7 td {
+	border-bottom: 0.75pt dotted #00b0da !important;
+	}	
+body.concord_Doc_Style_7 table.smartTable tr.alternateRow td, table.smartTable_7 tr.alternateRow td {
+	} 
+table.STStyle7 tr.alternateRow td {
+	} 
+body.concord_Doc_Style_7 table.smartTable td.selectedSTCell, table.smartTable_7 td.selectedSTCell, body.concord_Doc_Style_7 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_7 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle7 td.selectedSTCell, table.STStyle7 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_7 table.smartTable td.tableHeaderCol, body.concord_Doc_Style_7 table.smartTable tr.alternateRow td.tableHeaderCol,table.smartTable_7 td.tableHeaderCol,table.smartTable_7 tr.alternateRow td.tableHeaderCol  {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle7 td.tableHeaderCol,table.STStyle7 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_7 div.references h2, div.references_7 h2 {
+	}
+body.concord_Doc_Style_7 div.references ul, div.references_7 ul {
+	}
+body.concord_Doc_Style_7 div.references li, div.references_7  li {
+	}
+
+
+/* ------------------------------------- #8 GRID ---------------------------------------------- */
+
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_8 div.coverpage, div.coverpage_8 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_8 td.coverpageshapeA, div.coverpage_8 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_8 td.coverpageshapeB, div.coverpage_8 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_8 td.coverpageshapeC, div.coverpage_8 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_8 div.coverpageshapeA, div.coverpage_8 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_8 div.coverpageshapeB, div.coverpage_8 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_8 div.coverpageshapeC, div.coverpage_8 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_8 div.coverpage h1, div.coverpage_8 h1 {
+	}
+body.concord_Doc_Style_8 div.coverpage h2, div.coverpage_8 h2 {
+	}
+body.concord_Doc_Style_8 div.coverpage ul, div.coverpage_8 ul {
+	} 
+body.concord_Doc_Style_8 div.coverpage li, div.coverpage_8 li {
+	}
+body.concord_Doc_Style_8 div.coverpage li.authorName, div.coverpage_8 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_8 li.documentDate {
+	}
+body.concord_Doc_Style_8 div.coverpage li.contactInfo1, div.coverpage_8 li.contactInfo1 {
+	}
+body.concord_Doc_Style_8 div.coverpage li.contactInfo2, div.coverpage_8 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_8 div.letterhead h1, div.letterhead_8 h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 27pt;
+	font-weight: normal;
+	color: #252525;
+	margin: 0cm;
+	padding: 0.3969cm 0.5292cm;
+	letter-spacing: .5;
+	text-transform: uppercase;
+	border-top: 16.5pt solid #252525;
+	border-bottom: 3.75pt solid #252525;
+	}
+body.concord_Doc_Style_8 div.letterhead h2, div.letterhead_8 h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16.5pt;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: .5;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0.2646cm 0.5292cm;
+	color: #464646;
+	border-bottom: 1.5pt solid #252525;
+	}
+body.concord_Doc_Style_8 div.letterhead ul, div.letterhead_8 ul {
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0.1852cm 0.5292cm;
+	list-style-type: none;
+	border-bottom: 0.75pt solid #252525;
+	}
+body.concord_Doc_Style_8 div.letterhead li, div.letterhead_8 li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-transform: uppercase;
+	margin: 0cm;
+	padding: 0cm 0.2646cm 0cm 0cm;
+	color: #555;
+	letter-spacing: .5;
+	display: inline;
+	}
+body.concord_Doc_Style_8 div.letterhead hr, div.letterhead_8 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_8 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_8 li
+      {
+      list-style: none !important; 
+      background: url('./images/light_bulbbullet.gif') no-repeat !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: 0.10em 50% !important;
+      }
+/* SECTION */
+body.concord_Doc_Style_8 div.section {
+	padding: 0cm;
+	margin: -0.3969cm 0cm 1.3229cm 0cm;
+	}
+body.concord_Doc_Style_8 div.section h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	letter-spacing: 1.0;
+	text-transform: uppercase;
+	color: #252525;		
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0.132cm 0.5292cm;
+	border-top: 1.5pt solid #252525;
+	border-bottom: 0.75pt solid #252525;
+	}
+body.concord_Doc_Style_8 h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	letter-spacing: 1.0;
+	text-transform: uppercase;
+	color: #252525;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0.132cm 0.5292cm;
+	border-top: 0.75pt solid #252525;
+	}
+body.concord_Doc_Style_8 h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	letter-spacing: 1.0;
+	text-transform: uppercase;
+	color: #252525;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0.132cm 0.5292cm;
+	}
+body.concord_Doc_Style_8 p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm 0.5292cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #464646;
+	}
+body.concord_Doc_Style_8 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.926cm;
+	list-style-type: square;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #464646;
+	}
+body.concord_Doc_Style_8 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_8 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_8 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_8 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_8 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_8 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_8 table.smartTable, table.smartTable_8 {
+	text-align: center;
+	border: 0.75pt solid #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;	
+	}
+table.STStyle8 {
+	text-align: center !important;
+	border: 0.75pt solid #000 !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;	
+	}	
+body.concord_Doc_Style_8 table.smartTable tr.tableHeaderRow, table.smartTable_8 tr.tableHeaderRow {
+	background:none;
+	background-color: #000;
+	color: #fff;
+	}
+table.STStyle8 tr.tableHeaderRow {
+	background:none;
+	background-color: #000;
+	color: #fff !important;
+	}	
+body.concord_Doc_Style_8 table.smartTable th, table.smartTable_8 th {
+	text-align:center ;
+	padding: 0.0794cm 0.132cm;
+	color:#FFFFFF ;
+	}
+table.STStyle8 th {
+	text-align:center !important;
+	padding: 0.0794cm 0.132cm !important;
+	color:#FFFFFF !important;
+	}	
+body.concord_Doc_Style_8 table.smartTable td, table.smartTable_8 td {
+	border: 0.75pt solid black;
+	}
+table.STStyle8 td {
+	border: 0.75pt solid black !important;
+	}	
+body.concord_Doc_Style_8 table.smartTable tr.alternateRow td, table.smartTable_8 tr.alternateRow td {
+	border: 0.75pt solid #000;
+	padding: 0.0794cm 0.132cm;
+	} 
+table.STStyle8 tr.alternateRow td {
+	border: 0.75pt solid #000 !important;
+	padding: 0.0794cm 0.132cm !important;
+	} 		
+body.concord_Doc_Style_8 table.smartTable td.selectedSTCell, table.smartTable_8 td.selectedSTCell, body.concord_Doc_Style_8 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_8 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle8 td.selectedSTCell, table.STStyle8 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_8 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_8 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_8 td.tableHeaderCol,table.smartTable_8 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+
+table.STStyle8 td.tableHeaderCol,table.STStyle8 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_8 div.references h2, div.references_8 h2 {
+	}
+body.concord_Doc_Style_8 div.references ul, div.references_8 ul {
+	}
+body.concord_Doc_Style_8 div.references li, div.references_8  li {
+	}
+
+
+/* ------------------------------------- #9 DIAGONAL ---------------------------------------------- */
+
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_9 div.coverpage, div.coverpage_9 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_9 td.coverpageshapeA, div.coverpage_9 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_9 td.coverpageshapeB, div.coverpage_9 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_9 td.coverpageshapeC, div.coverpage_9 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_9 div.coverpageshapeA, div.coverpage_9 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_9 div.coverpageshapeB, div.coverpage_9 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_9 div.coverpageshapeC, div.coverpage_9 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_9 div.coverpage h1, div.coverpage_9 h1 {
+	}
+body.concord_Doc_Style_9 div.coverpage h2, div.coverpage_9 h2 {
+	}
+body.concord_Doc_Style_9 div.coverpage ul, div.coverpage_9 ul {
+	} 
+body.concord_Doc_Style_9 div.coverpage li, div.coverpage_9 li {
+	}
+body.concord_Doc_Style_9 div.coverpage li.authorName, div.coverpage_9 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_9 li.documentDate {
+	}
+body.concord_Doc_Style_9 div.coverpage li.contactInfo1, div.coverpage_9 li.contactInfo1 {
+	}
+body.concord_Doc_Style_9 div.coverpage li.contactInfo2, div.coverpage_9 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_9 div.letterhead {
+	background: url(./images/diagonal.png) top left repeat;
+	padding: 1.0583cm 2.1167cm;
+	position: relative;
+	height: 2.1167cm;
+	margin-bottom: 3.8365cm;
+	}
+body.concord_Doc_Style_9 div.letterhead h1, div.letterhead_9 h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.0583cm;
+	font-weight: normal;
+	font-style: italic;
+	color: #d72b02;
+	margin: 0cm;
+	padding: 0cm;
+	letter-spacing: .5;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: -0.2117cm;
+	left: 2.1167cm;
+	}
+body.concord_Doc_Style_9 div.letterhead h2, div.letterhead_9 h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 15pt;
+	font-weight: normal;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: .5;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	color: #d72b02;
+	position: absolute;
+	bottom: -0.5292cm;
+	right: 2.1167cm;
+	}
+body.concord_Doc_Style_9 div.letterhead ul, div.letterhead_9 ul {
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	list-style-type: none;
+	position: absolute;
+	top: 1.4552cm;
+	right: 2.1167cm;
+	text-align: right;
+	}
+body.concord_Doc_Style_9 div.letterhead li, div.letterhead_9 li {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10.5pt;
+	margin: 0cm;
+	padding: 0cm 0.2646cm 0cm 0cm;
+	color: #2c2c2c;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_9 div.letterhead hr, div.letterhead_9 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_9 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_9 li
+      {
+      list-style: none !important; 
+      background: url('./images/right_minusbullet.gif') no-repeat top left !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: 0.10em 50% !important;   
+      }
+/* SECTION */
+body.concord_Doc_Style_9 div.section {
+	padding: 0cm 1.0583cm;
+	margin: 0cm 0cm 0.7938cm 0cm;
+	}
+body.concord_Doc_Style_9 div.section h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 15pt;
+	font-weight: normal;
+	font-style: italic;
+	letter-spacing: .5;
+	text-transform: uppercase;
+	color: #d72b02;		
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	background: url(./images/diagonal.png) bottom right repeat-x;
+	}
+body.concord_Doc_Style_9 h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10.5pt;
+	font-weight: normal;
+	font-style: italic;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	color: #d72b02;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	background: url(./images/diagonal.png) bottom right repeat-x;
+	}
+body.concord_Doc_Style_9 h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #d72b02;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_9 p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.5292cm; commented out by NP*/
+	letter-spacing: .1;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	color: #2c2c2c;
+	}
+body.concord_Doc_Style_9 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: disc;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	color: #2c2c2c;
+	}
+body.concord_Doc_Style_9 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_9 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_9 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_9 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_9 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_9 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_9 table.smartTable, table.smartTable_9 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: left ;	
+	border:0 none ;	
+	}
+table.STStyle9 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;
+	border:0 none !important;	
+	}	
+body.concord_Doc_Style_9 table.smartTable tr.tableHeaderRow, table.smartTable_9 tr.tableHeaderRow {
+	background:none ;
+	}
+table.STStyle9 tr.tableHeaderRow {
+	background:none;
+	}	
+body.concord_Doc_Style_9 table.smartTable th, table.smartTable_9 th {
+	text-align: left;
+	color: #d72b02;		
+	}
+table.STStyle9 th {
+	text-align: left !important;
+	color: #d72b02 !important;		
+	}	
+body.concord_Doc_Style_9 table.smartTable td, table.smartTable_9 td {
+	}
+table.STStyle9 td {
+	}	
+body.concord_Doc_Style_9 table.smartTable tr.alternateRow td, table.smartTable_9 tr.alternateRow td {
+	background-color: #efefef;
+	} 	
+table.STStyle9 tr.alternateRow td {
+	background-color: #efefef;
+	} 	
+body.concord_Doc_Style_9 table.smartTable td.selectedSTCell, table.smartTable_9 td.selectedSTCell, body.concord_Doc_Style_9 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_9 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle9 td.selectedSTCell, table.STStyle9 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_9 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_9 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_9 td.tableHeaderCol,table.smartTable_9 tr.alternateRow td.tableHeaderCol  {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle9 td.tableHeaderCol,table.STStyle9 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_9 div.references h2, div.references_9 h2 {
+	}
+body.concord_Doc_Style_9 div.references ul, div.references_9 ul {
+	}
+body.concord_Doc_Style_9 div.references li, div.references_9  li {
+	}
+
+
+/* ------------------------------------- #10 DELICATE ---------------------------------------------- */
+
+
+/* COVERPAGE Templates: Memo Newsletter*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_10 div.coverpage, div.coverpage_10 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_10 td.coverpageshapeA, div.coverpage_10 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_10 td.coverpageshapeB, div.coverpage_10 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_10 td.coverpageshapeC, div.coverpage_10 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_10 div.coverpageshapeA, div.coverpage_10 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_10 div.coverpageshapeB, div.coverpage_10 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_10 div.coverpageshapeC, div.coverpage_10 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_10 div.coverpage h1, div.coverpage_10 h1 {
+	}
+body.concord_Doc_Style_10 div.coverpage h2, div.coverpage_10 h2 {
+	}
+body.concord_Doc_Style_10 div.coverpage ul, div.coverpage_10 ul {
+	} 
+body.concord_Doc_Style_10 div.coverpage li, div.coverpage_10 li {
+	}
+body.concord_Doc_Style_10 div.coverpage li.authorName, div.coverpage_10 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_10 li.documentDate {
+	}
+body.concord_Doc_Style_10 div.coverpage li.contactInfo1, div.coverpage_10 li.contactInfo1 {
+	}
+body.concord_Doc_Style_10 div.coverpage li.contactInfo2, div.coverpage_10 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_10 div.letterhead {
+	padding: 0cm;
+	text-align: center;
+	border-top: 2.25pt solid #c7e6f2;
+	border-bottom: 2.25pt solid #c7e6f2;
+	margin: 0.5292cm 1.0583cm 2.6458cm 1.0583cm;
+	}
+body.concord_Doc_Style_10 div.letterhead h1, div.letterhead_10 h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 15pt;
+	font-weight: bold;
+	color: #44788c;
+	margin: 0.1058cm 0cm 0.1058cm 0cm;
+	padding:0.2646cm 0cm;
+	letter-spacing: 1.0;
+	text-transform: uppercase;
+	border-top: 0.75pt dotted #c7e6f2;
+	}
+body.concord_Doc_Style_10 div.letterhead h2, div.letterhead_10 h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1.5;
+	margin: 0cm 0cm 0.291cm 0cm;
+	padding: 0cm;
+	color: #8abacc;
+	}
+body.concord_Doc_Style_10 div.letterhead ul, div.letterhead_10 ul {
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm 0cm 0.3175cm 0cm;
+	list-style-type: none;
+	border-bottom: 0.75pt dotted #c7e6f2;
+	}
+body.concord_Doc_Style_10 div.letterhead li, div.letterhead_10 li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7.5pt;
+	margin: 0cm;
+	padding: 0cm 0.2646cm 0cm 0cm;
+	color: #6397ab;
+	letter-spacing: 1.0;
+	display: inline;
+	text-transform: uppercase;
+	}
+body.concord_Doc_Style_10 div.letterhead hr, div.letterhead_10 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_10 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_10 li
+      {
+      list-style: none !important;
+      background: url('./images/greencheckbullet.gif') no-repeat top left !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: -0.40em 20% !important;   
+      }
+/* SECTION */
+body.concord_Doc_Style_10 p.section {
+	padding: 0cm 0cm;
+	margin: 0cm 0cm 0.7938cm 0cm;
+	}
+body.concord_Doc_Style_10 h2.section {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-weight: normal;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	color: #6397ab;		
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0.1588cm 0cm;
+	text-align: center;
+	border-top: 1.5pt solid #c7e6f2;
+	border-bottom: 1.5pt solid #c7e6f2;
+	}
+body.concord_Doc_Style_10 h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-weight: normal;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	color: #6397ab;		
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0.1058cm 0cm;
+	text-align: center;
+	border-top: 0.75pt dotted #c7e6f2;
+	border-bottom: 0.75pt dotted #c7e6f2;
+	}
+body.concord_Doc_Style_10 h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-weight: normal;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	color: #6397ab;		
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-align: center;
+	}
+body.concord_Doc_Style_10 p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.5292cm; commented out by NP*/
+	letter-spacing: .1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #3b4245;
+	}
+body.concord_Doc_Style_10 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: circle;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #3b4245;
+	text-indent: 0;
+	}
+body.concord_Doc_Style_10 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_10 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_10 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_10 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_10 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_10 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_10 table.smartTable, table.smartTable_10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	border:none;
+	border-collapse: separate;
+	color: #3b4245;
+	text-align: left;		
+	}
+table.STStyle10 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	border:none !important;
+	border-collapse: separate !important;
+	color: #3b4245 !important;
+	text-align: left !important;	
+	}	
+body.concord_Doc_Style_10 table.smartTable tr.tableHeaderRow, table.smartTable_10 tr.tableHeaderRow {
+	background:none ;
+	}
+table.STStyle10 tr.tableHeaderRow {
+	background:none;
+	}	
+body.concord_Doc_Style_10 table.smartTable th, table.smartTable_10 th {
+	text-align: left;
+	font-weight: normal;
+	border-bottom: 0.75pt dotted #c7e6f2;
+	color: #3b4245;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	}
+table.STStyle10 th {
+	text-align: left !important;
+	font-weight: normal !important;
+	border-bottom: 0.75pt dotted #c7e6f2 !important;
+	color: #3b4245 !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	}	 
+body.concord_Doc_Style_10 table.smartTable tr, table.smartTable_10 tr {
+	}
+table.STStyle10 tr {
+	}	
+body.concord_Doc_Style_10 table.smartTable td, table.smartTable_10 td {
+	border-top: 0.75pt dotted #c7e6f2;
+	border-bottom: 0.75pt dotted #c7e6f2;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	}
+table.STStyle10 td {
+	border-top: 0.75pt dotted #c7e6f2 !important;
+	border-bottom: 0.75pt dotted #c7e6f2 !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	}	
+body.concord_Doc_Style_10 table.smartTable tr.alternateRow td, table.smartTable_10 tr.alternateRow td {
+	border-top: 0.75pt dotted #c7e6f2;
+	border-bottom: 0.75pt dotted #c7e6f2;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	}
+table.STStyle10 tr.alternateRow td {
+	border-top: 0.75pt dotted #c7e6f2 !important;
+	border-bottom: 0.75pt dotted #c7e6f2 !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	}
+body.concord_Doc_Style_10 table.smartTable td.selectedSTCell, table.smartTable_10 td.selectedSTCell, body.concord_Doc_Style_10 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_10 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle10 td.selectedSTCell, table.STStyle10 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_10 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_10 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_10 td.tableHeaderCol,table.smartTable_10 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle10 td.tableHeaderCol,table.STStyle10 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_10 div.references h2, div.references_10 h2 {
+	}
+body.concord_Doc_Style_10 div.references ul, div.references_10 ul {
+	}
+body.concord_Doc_Style_10 div.references li, div.references_10  li {
+	}
+
+
+/* ------------------------------------- #11 MODERN ---------------------------------------------- */
+
+
+/* COVERPAGE  Templates: Cover Letter Resume*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_11 div.coverpage, div.coverpage_11 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_11 td.coverpageshapeA, div.coverpage_11 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_11 td.coverpageshapeB, div.coverpage_11 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_11 td.coverpageshapeC, div.coverpage_11 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_11 div.coverpageshapeA, div.coverpage_11 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_11 div.coverpageshapeB, div.coverpage_11 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_11 div.coverpageshapeC, div.coverpage_11 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_11 div.coverpage h1, div.coverpage_11 h1 {
+	}
+body.concord_Doc_Style_11 div.coverpage h2, div.coverpage_11 h2 {
+	}
+body.concord_Doc_Style_11 div.coverpage ul, div.coverpage_11 ul {
+	} 
+body.concord_Doc_Style_11 div.coverpage li, div.coverpage_11 li {
+	}
+body.concord_Doc_Style_11 div.coverpage li.authorName, div.coverpage_11 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_11 li.documentDate {
+	}
+body.concord_Doc_Style_11 div.coverpage li.contactInfo1, div.coverpage_11 li.contactInfo1 {
+	}
+body.concord_Doc_Style_11 div.coverpage li.contactInfo2, div.coverpage_11 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_11 div.letterhead {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 9pt;
+	color: #fff;
+	background: #333;
+	text-align: right;
+	padding: 0.7938cm;
+	border-bottom: 3.75pt solid #00A6A0;
+	}
+body.concord_Doc_Style_11 div.letterhead h1, div.letterhead_11 h1 {
+	font-size: 12pt;
+	letter-spacing: 0;
+	margin: 0cm;
+	padding-bottom: 0.132cm;
+	text-transform: none;
+	}
+body.concord_Doc_Style_11 div.letterhead h2, div.letterhead_11 h2 {
+	font-size: 7.5pt;
+	letter-spacing: 0.0265cm;
+	margin: 0 0 0.2117cm;
+	padding: 0cm;
+	color: #C5F6F4;
+	text-transform: uppercase;
+	font-family: Helvetica, Arial, sans-serif;
+	}
+body.concord_Doc_Style_11 div.letterhead ul, div.letterhead_11 ul {
+	margin: 0cm;
+	padding: 0cm;
+	list-style-type: none;
+	font-family: Georgia, Times, serif;
+	}
+body.concord_Doc_Style_11 div.letterhead li, div.letterhead_11 li {
+	margin: 0cm;
+	padding: 0cm;
+	color: #C5F6F4;
+	letter-spacing: .5px;
+	line-height: 0.4233cm;
+	font-family: Georgia, Times, serif;
+	}
+body.concord_Doc_Style_11 div.letterhead hr, div.letterhead_11 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_11 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_11 li
+      {
+      padding: 0.0265cm 0 0.0529cm 0.7938cm !important; 
+      list-style: none !important;
+      background: url('./images/highlightbullet.gif') no-repeat top left !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: 0.01em 50% !important;   
+      }
+/* SECTION */
+body.concord_Doc_Style_11 p.section {
+	color:#333333;
+	font-size:8.25pt;
+	letter-spacing:0.0238cm;
+	margin: 0cm 0cm 0.4233cm 0cm;
+	font-family: Georgia;
+	}
+body.concord_Doc_Style_11 h2.section {
+	font-family:Helvetica,Arial,sans-serif;
+	font-size: 7.5pt;
+	margin: 0.2646cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	text-transform: uppercase;
+	letter-spacing: 1;
+	color: #00A6A0;
+	}
+body.concord_Doc_Style_11 h3 {
+	font-size: 8.25pt;
+	margin-bottom: 0.132cm;
+	padding-bottom: 0.132cm;
+	padding-top: 0.2646cm;
+	letter-spacing: .1;
+	font-family: Georgia, Times, serif;
+	border-bottom: 0.75pt solid #00A6A0;
+	}
+body.concord_Doc_Style_11 h4 {
+	font-size: 8.25pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-family: Georgia, Times, serif;
+	}
+body.concord_Doc_Style_11 p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	font-family: Georgia;
+	}
+body.concord_Doc_Style_11 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: square;
+	text-indent : 0;
+	}
+body.concord_Doc_Style_11 ul.section {
+	color:#333333;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:8.25pt;
+	letter-spacing:0.0238cm;
+	padding:0cm 0;
+	width:15.875cm;
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.66cm;
+	list-style-type: square;
+}
+body.concord_Doc_Style_11 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_11 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_11 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_11 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_11 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_11 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_11 table.smartTable, table.smartTable_11 {
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:8.25pt;
+	letter-spacing:0;
+	margin:0.2117cm 0 0.635cm;
+	text-align: left ;	
+	border:0 none ;	
+	}
+table.STStyle11 {
+	font-family:Georgia,"Times New Roman",Times,serif !important;
+	font-size:8.25pt !important;
+	letter-spacing:0 !important;
+	margin:0.2117cm 0 0.635cm !important;
+	text-align: left !important;	
+	border:0 none !important;	
+	}	
+body.concord_Doc_Style_11 table.smartTable tr.tableHeaderRow, table.smartTable_11 tr.tableHeaderRow {
+	background:none ;
+	}
+table.STStyle11 tr.tableHeaderRow {
+	background:none;
+	}	
+body.concord_Doc_Style_11 table.smartTable th, table.smartTable_11 th  {
+	color:#00A6A0;
+	font-family:arial;
+	font-size:7.5pt;
+	font-weight:bold;
+	letter-spacing:0.0265cm;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	text-align:left;
+	text-transform:uppercase;
+	}
+table.STStyle11 th {
+	color:#00A6A0 !important;
+	font-family:arial !important;
+	font-size:7.5pt !important;
+	font-weight:bold !important;
+	letter-spacing:0.0265cm !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	text-align:left !important;
+	text-transform:uppercase !important;
+	}	
+body.concord_Doc_Style_11 table.smartTable td, table.smartTable_11 td {
+	border-bottom:0.75pt solid #BEBEBE;
+	border-top:0.75pt solid #BEBEBE;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	}
+table.STStyle11 td {
+	border-bottom:0.75pt solid #BEBEBE !important;
+	border-top:0.75pt solid #BEBEBE !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	}	
+body.concord_Doc_Style_11 table.smartTable tr.alternateRow td, table.smartTable_11 tr.alternateRow td {
+	} 
+table.STStyle11 tr.alternateRow td {
+	} 		
+body.concord_Doc_Style_11 table.smartTable td.selectedSTCell, table.smartTable_11 td.selectedSTCell, body.concord_Doc_Style_11 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_11 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle11 td.selectedSTCell,  table.STStyle11 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_11 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_11 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_11 td.tableHeaderCol,table.smartTable_11 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle11 td.tableHeaderCol,table.STStyle11 tr.alternateRow td.tableHeaderCol{
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_11 div.references h2, div.references_11 h2 {
+	}
+body.concord_Doc_Style_11 div.references ul, div.references_11 ul {
+	}
+body.concord_Doc_Style_11 div.references li, div.references_11  li {
+	}
+
+
+/* ------------------------------------- #12 CLASSIC ---------------------------------------------- */
+
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_12 div.coverpage, div.coverpage_12 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_12 td.coverpageshapeA, div.coverpage_12 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_12 td.coverpageshapeB, div.coverpage_12 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_12 td.coverpageshapeC, div.coverpage_12 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_12 div.coverpageshapeA, div.coverpage_12 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_12 div.coverpageshapeB, div.coverpage_12 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_12 div.coverpageshapeC, div.coverpage_12 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_12 div.coverpage h1, div.coverpage_12 h1 {
+	}
+body.concord_Doc_Style_12 div.coverpage h2, div.coverpage_12 h2 {
+	}
+body.concord_Doc_Style_12 div.coverpage ul, div.coverpage_12 ul {
+	} 
+body.concord_Doc_Style_12 div.coverpage li, div.coverpage_12 li {
+	}
+body.concord_Doc_Style_12 div.coverpage li.authorName, div.coverpage_12 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_12 li.documentDate {
+	}
+body.concord_Doc_Style_12 div.coverpage li.contactInfo1, div.coverpage_12 li.contactInfo1 {
+	}
+body.concord_Doc_Style_12 div.coverpage li.contactInfo2, div.coverpage_12 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_12 div.letterhead {
+	background:none repeat scroll 0 0 #FFFFFF;
+	background-color: #fff;
+	color:#000000;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:9pt;
+	margin:0.7938cm;
+	padding:0.7938cm;
+	text-align:left;
+	}
+body.concord_Doc_Style_12 div.letterhead h1, div.letterhead_12 h1 {
+	font-size:10.5pt;
+	letter-spacing:0.0529cm;
+	margin:0 0 0.2646cm;
+	padding:0;
+	text-transform:uppercase;
+	}
+body.concord_Doc_Style_12 div.letterhead h2, div.letterhead_12 h2 {
+	color:#000000;
+	font-family:Georgia,Times,serif;
+	font-size:10.5pt;
+	font-style:italic;
+	font-weight:normal;
+	letter-spacing:0;
+	margin:0 0 0.2117cm;
+	padding:0;
+	text-transform:none;
+	}
+body.concord_Doc_Style_12 div.letterhead ul, div.letterhead_12 ul {
+	margin: 0cm;
+	padding: 0cm;
+	list-style-type: none;
+	font-family: Georgia, Times, serif;
+	}
+body.concord_Doc_Style_12 div.letterhead li, div.letterhead_12 li {
+	color:#5A5A5A;
+	font-family:Georgia,Times,serif;
+	font-size:8.25pt;
+	letter-spacing:0;
+	line-height:0.4763cm;
+	margin:0;
+	padding:0;
+	}
+body.concord_Doc_Style_12 div.letterhead hr, div.letterhead_12 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_12 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_12 li
+      {
+      list-style: none !important;
+      background: url('./images/markerbullet.gif') no-repeat top left;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: 0.01em 50% !important;   
+      }
+/* SECTION */
+body.concord_Doc_Style_12 div.section {
+	color:#333333;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:8.25pt;
+	letter-spacing:0;
+	margin: 0.2646cm 0.7938cm;
+	padding: 0.2646cm 0.7938cm;
+	width:14.5521cm;
+	}
+body.concord_Doc_Style_12 div.section h2 {
+	border-bottom:0.75pt dotted #5a5a5a;
+	border-top:0.75pt dotted #5a5a5a;
+	color:#000000;
+	font-family:Georgia,Times,serif;
+	font-size:8.25pt;
+	letter-spacing:0.0265cm;
+	margin:0 0 0.2117cm;
+	padding:0.0794cm 0;
+	text-transform:uppercase;
+	}
+body.concord_Doc_Style_12 h3 {
+	color:#333333;
+	font-family:Georgia,Times,serif;
+	font-size:9pt;
+	font-style:italic;
+	font-weight:bold;
+	letter-spacing:0.0027cm;
+	margin-bottom:0.132cm;
+	padding-bottom:0.132cm;
+	padding-top: 0.2646cm;
+	}
+body.concord_Doc_Style_12 h4 {
+	font-size: 9pt;
+	margin: 0.2646cm 0 0.0794cm;
+	padding: 0cm;
+	font-style: italic;
+	font-family: Georgia, Times, serif;
+	font-weight:normal;
+	color:#5a5a5a;
+	}
+body.concord_Doc_Style_12 p {
+	font-family:Georgia,Times,Sans-serif;
+	letter-spacing:0.0013cm;
+	/*line-height:0.4763cm; commented out by NP*/
+	margin:0 0 0.2646cm;
+	padding: 0;
+	}
+body.concord_Doc_Style_12 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_12 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_12 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_12 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_12 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_12 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_12 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_12 table.smartTable, table.smartTable_12 {
+	color:#5A5A5A;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:8.25pt;
+	font-weight:bold;
+	letter-spacing:0;
+	text-align: left ;	
+	border:0pt none;	
+	}
+table.STStyle12 {
+	color:#5A5A5A !important;
+	font-family:Helvetica,Arial,sans-serif !important;
+	font-size:8.25pt !important;
+	font-weight:bold !important;
+	letter-spacing:0 !important;
+	text-align: left !important;
+	border:0pt none !important;		
+	}	
+body.concord_Doc_Style_12 table.smartTable tr.tableHeaderRow, table.smartTable_12 tr.tableHeaderRow {
+	background:none ;
+	}	
+table.STStyle12 tr.tableHeaderRow {
+	background:none;
+	}	
+body.concord_Doc_Style_12 table.smartTable th, table.smartTable_12 th {
+	border-top:0.75pt dotted #5A5A5A;
+	border-bottom:0pt none;
+	border-left:0pt none;
+	border-right:0pt none;
+	color:#333333;
+	font-family:Georgia,Times,serif;
+	font-size:7.5pt;
+	font-weight:bold;
+	letter-spacing:0.0397cm;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	text-align:left;
+	text-transform:uppercase;
+	}
+table.STStyle12 th {
+	border-top:0.75pt dotted #5A5A5A !important;
+	border-bottom:0pt none !important;
+	border-left:0pt none !important;
+	border-right:0pt none !important;
+	color:#333333 !important;
+	font-family:Georgia,Times,serif !important;
+	font-size:7.5pt !important;
+	font-weight:bold !important;
+	letter-spacing:0.0397cm !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	text-align:left !important;
+	text-transform:uppercase !important;
+	}	
+body.concord_Doc_Style_12 table.smartTable td, table.smartTable_12 td {
+	border-bottom:medium none;
+	border-top:medium none;
+	border-bottom:0pt none;
+	border-left:0pt none;
+	border-right:0pt none;	
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	}
+table.STStyle12 td {
+	border-bottom:medium none !important;
+	border-top:medium none !important;
+	border-bottom:0pt none !important;
+	border-left:0pt none !important;
+	border-right:0pt none !important;	
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	}	
+body.concord_Doc_Style_12 table.smartTable tr.alternateRow td, table.smartTable_12 tr.alternateRow td {
+	} 
+table.STStyle12 tr.alternateRow td {
+	} 
+body.concord_Doc_Style_12 table.smartTable td.selectedSTCell, table.smartTable_12 td.selectedSTCell, body.concord_Doc_Style_12 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_12 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle12 td.selectedSTCell, table.STStyle12 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_12 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_12 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_12 td.tableHeaderCol,table.smartTable_12 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle12 td.tableHeaderCol,table.STStyle12 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_12 div.references h2, div.references_12 h2 {
+	}
+body.concord_Doc_Style_12 div.references ul, div.references_12 ul {
+	}
+body.concord_Doc_Style_12 div.references li, div.references_12  li {
+	}
+
+
+/* ------------------------------------- #13 CORPORATE ---------------------------------------------- */
+
+
+/* COVERPAGE Templates: Bussiness Proposal*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_13 div.coverpage, div.coverpage_13 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_13 td.coverpageshapeA, div.coverpage_13 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_13 td.coverpageshapeB, div.coverpage_13 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_13 td.coverpageshapeC, div.coverpage_13 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_13 div.coverpageshapeA, div.coverpage_13 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_13 div.coverpageshapeB, div.coverpage_13 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_13 div.coverpageshapeC, div.coverpage_13 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_13 div.coverpage h1, div.coverpage_13 h1 {
+	}
+body.concord_Doc_Style_13 div.coverpage h2, div.coverpage_13 h2 {
+	}
+body.concord_Doc_Style_13 div.coverpage ul, div.coverpage_13 ul {
+	} 
+body.concord_Doc_Style_13 div.coverpage li, div.coverpage_13 li {
+	}
+body.concord_Doc_Style_13 div.coverpage li.authorName, div.coverpage_13 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_13 li.documentDate {
+	}
+body.concord_Doc_Style_13 div.coverpage li.contactInfo1, div.coverpage_13 li.contactInfo1 {
+	}
+body.concord_Doc_Style_13 div.coverpage li.contactInfo2, div.coverpage_13 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_13 div.letterhead {
+	background:none repeat scroll 0 0;
+	background-color: #FFFFFF;
+	color:#333333;
+	font-family:arial;
+	font-size:9.75pt;
+	line-height:0.5292cm;
+	text-align:center;
+	padding:0;
+	}
+body.concord_Doc_Style_13 div.letterhead h1, div.letterhead_13 h1 {
+	color:#003E69;
+	font-size:13.5pt;
+	letter-spacing:0;
+	margin:0;
+	padding:0.0794cm;
+	}
+body.concord_Doc_Style_13 div.letterhead h2, div.letterhead_13 h2 {
+	color:#DA172C;
+	font-family:Georgia, Times, serif;
+	font-size:10.5pt;
+	font-style:italic;
+	font-weight:normal;
+	letter-spacing:0;
+	margin:0;
+	padding:0;
+	}
+body.concord_Doc_Style_13 div.letterhead ul, div.letterhead_13 ul {
+	border-bottom:1.5pt solid #DA172C;
+	list-style-type:none;
+	margin:0 0.7938cm;
+	padding: 0.2646cm;
+	}
+body.concord_Doc_Style_13 div.letterhead li, div.letterhead_13 li {
+	color:#003E69;
+	display:inline;
+	font-size:7.5pt;
+	letter-spacing:0.0265cm;
+	line-height:0.5292cm;
+	margin:0;
+	padding: 0.2646cm;
+	text-transform:uppercase;
+	}
+body.concord_Doc_Style_13 div.letterhead hr, div.letterhead_13 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_13 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_13 li
+      {
+      list-style: none !important;
+      background: url('./images/plusbullet.gif') no-repeat top left !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: 0.10em 50% !important;   
+      }
+/* SECTION */
+body.concord_Doc_Style_13 div.section {
+	color:#333333;
+	font-family:Helvetica, arial, sans-serif;
+	font-size:8.25pt;
+	}
+body.concord_Doc_Style_13 div.section h2 {
+	background-color:#003E69;
+	border-top:1.5pt solid #DA172C;
+	color:#FFFFFF;
+	font-family:georgia;
+	font-size:8.25pt;
+	letter-spacing:0.0529cm;
+	margin:0.7938cm 0 0.2117cm;
+	padding:0.132cm 0.2646cm;
+	text-transform:uppercase;
+	}	
+body.concord_Doc_Style_13 p.section {
+	color:#333333;
+	font-family:Helvetica, arial, sans-serif;
+	font-size:8.25pt;
+	}
+body.concord_Doc_Style_13 h2.section {
+	background-color:#003E69;
+	border-top:1.5pt solid #DA172C;
+	color:#FFFFFF;
+	font-family:georgia;
+	font-size:8.25pt;
+	letter-spacing:0.0529cm;
+	margin:0.7938cm 0 0.2117cm;
+	padding:0.132cm 0.2646cm;
+	text-transform:uppercase;
+	}
+body.concord_Doc_Style_13 h3 {
+	color:#003E69;
+	font-family:georgia;
+	font-size:9.75pt;
+	font-style:italic;
+	font-weight:normal;
+	letter-spacing:0;
+	margin:0.5292cm 0 0.132cm;
+	padding:0 0.2646cm;
+	}
+body.concord_Doc_Style_13 h4 {
+	color:#DA172C;
+	font-family:georgia;
+	font-size:9pt;
+	font-style:italic;
+	font-weight:normal;
+	margin: 0.2646cm 0 0;
+	padding:0 0.2646cm 0.132cm;
+	}
+body.concord_Doc_Style_13 p {
+	letter-spacing:0.0013cm;
+	/*line-height:16px; commented out by NP*/
+	margin:0.132cm 0;
+	padding:0 0.2646cm;
+	}
+body.concord_Doc_Style_13 ul {
+	color:#333333;
+	font-family:Helvetica, arial, sans-serif;
+	font-size:8.25pt;
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.66cm;
+	list-style-type: disc;
+	text-indent: 0;
+	}
+body.concord_Doc_Style_13 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_13 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_13 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_13 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_13 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_13 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_13 table.smartTable, table.smartTable_13  {
+	font-family:Helvetica, arial, sans-serif;
+	font-size:8.25pt;
+	text-align: left;	
+	border:0 none;	
+	color:#222222;
+	}
+table.STStyle13 {
+	font-family:Helvetica, arial, sans-serif !important;
+	font-size:8.25pt !important;
+	text-align: left !important;	
+	border:	0 none !important;
+	color:#222222 !important;
+	}	
+body.concord_Doc_Style_13 table.smartTable tr.tableHeaderRow, table.smartTable_13 tr.tableHeaderRow {
+	background:none ;
+	}
+table.STStyle13 tr.tableHeaderRow {
+	background:none;
+	}	
+body.concord_Doc_Style_13 table.smartTable th, table.smartTable_13 th {
+	font-weight: normal;
+	text-align: left;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	font-family: Georgia, Times, serif;
+	border-left:0pt none;
+	border-right:0pt none;		
+	border-bottom:0.75pt solid #A7D0D9;
+	border-top:0.75pt solid #A7D0D9;	
+	color:#222222;
+	}
+table.STStyle13 th {
+	font-weight: normal !important;
+	text-align: left !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	font-family: Georgia, Times, serif !important;
+	border-left:0pt none !important;
+	border-right:0pt none !important;		
+	border-bottom:0.75pt solid #A7D0D9 !important;
+	border-top:0.75pt solid #A7D0D9 !important;
+	color:#222222 !important;	
+	}	
+body.concord_Doc_Style_13 table.smartTable td, table.smartTable_13 td {
+	border-bottom:0.75pt solid #A7D0D9;
+	border-top:0.75pt solid #A7D0D9;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm;
+	border-left:medium none ;
+	border-right:medium none ;	
+	}
+table.STStyle13 td {
+	border-bottom:0.75pt solid #A7D0D9 !important;
+	border-top:0.75pt solid #A7D0D9 !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	border-left:medium none !important;
+	border-right:medium none !important;
+	}	
+body.concord_Doc_Style_13 table.smartTable tr.alternateRow td, table.smartTable_13 tr.alternateRow td {
+	} 
+table.STStyle13 tr.alternateRow td {
+	}
+body.concord_Doc_Style_13 table.smartTable td.selectedSTCell, table.smartTable_13 td.selectedSTCell, body.concord_Doc_Style_13 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_13 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle13 td.selectedSTCell, table.STStyle13 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_13 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_13 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_13 td.tableHeaderCol,table.smartTable_13 tr.alternateRow td.tableHeaderCol{
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle13 td.tableHeaderCol,table.STStyle13 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_13 div.references h2, div.references_13 h2 {
+	}
+body.concord_Doc_Style_13 div.references ul, div.references_13 ul {
+	}
+body.concord_Doc_Style_13 div.references li, div.references_13  li {
+	}
+
+
+/* ------------------------------------- #14 GRAPHPAPER ---------------------------------------------- */
+
+
+/*body.concord_Doc_Style_14 div.page {
+	background: url(./images/grid.png) top left repeat;
+	}*/
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page
+body.concord_Doc_Style_14 div.coverpage, div.coverpage_14 {
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page 	
+body.concord_Doc_Style_14 td.coverpageshapeA, div.coverpage_14 td.coverpageshapeA {
+	}
+body.concord_Doc_Style_14 td.coverpageshapeB, div.coverpage_14 td.coverpageshapeB {
+	}	
+body.concord_Doc_Style_14 td.coverpageshapeC, div.coverpage_14 td.coverpageshapeC {
+	}
+body.concord_Doc_Style_14 div.coverpageshapeA, div.coverpage_14 div.coverpageshapeA {
+	}
+body.concord_Doc_Style_14 div.coverpageshapeB, div.coverpage_14 div.coverpageshapeB {
+	}	
+body.concord_Doc_Style_14 div.coverpageshapeC, div.coverpage_14 div.coverpageshapeC {
+	}
+body.concord_Doc_Style_14 div.coverpage h1, div.coverpage_14 h1 {
+	}
+body.concord_Doc_Style_14 div.coverpage h2, div.coverpage_14 h2 {
+	}
+body.concord_Doc_Style_14 div.coverpage ul, div.coverpage_14 ul {
+	} 
+body.concord_Doc_Style_14 div.coverpage li, div.coverpage_14 li {
+	}
+body.concord_Doc_Style_14 div.coverpage li.authorName, div.coverpage_14 li.authorName {
+	}
+body.concord_Doc_Style_3 div.coverpage li.documentDate, div.coverpage_14 li.documentDate {
+	}
+body.concord_Doc_Style_14 div.coverpage li.contactInfo1, div.coverpage_14 li.contactInfo1 {
+	}
+body.concord_Doc_Style_14 div.coverpage li.contactInfo2, div.coverpage_14 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+body.concord_Doc_Style_14 div.letterhead {
+	font-family: Palatino, "Palatino Linotype", Georgia, "Times New Roman", serif;
+	line-height: 12pt;
+	background: transparent;
+	color: #2d5f68;
+	letter-spacing: 0.0265cm;
+	}
+body.concord_Doc_Style_14 div.letterhead h1, div.letterhead_14 h1 {
+	line-height:.75em;
+	margin: 0.2117cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_14 div.letterhead h2, div.letterhead_14 h2 {
+	line-height:.75em;
+	margin: 0.1588cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_14 div.letterhead ul, div.letterhead_14 ul {
+	line-height:1em;
+	list-style-type: none;
+	margin: 0.291cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_14 div.letterhead li, div.letterhead_14 li {
+	font-size: .75em;
+	line-height:1em;
+	display: inline;
+	}
+body.concord_Doc_Style_14 div.letterhead hr, div.letterhead_14 hr {
+	background-color: #68a818;
+	color: #68a818;
+	visibility: hidden;
+	}		
+/* LIST */
+/* NOTE: List styles only restyle individually...Fancy list styles are not changed with the whole document but just individually */
+ul.list_14 {
+	 	    margin: 0 !important; padding: 0 !important;
+		    margin-bottom: 0.4233cm !important;	    	 	   	 	    
+      }
+ul.list_14 li
+      {
+      list-style: none !important;
+      background: url('./images/squarebullet.gif') no-repeat top left !important;
+      padding:0.132cm 0.5292cm 0.0529cm !important; background-position: 0.10em 50% !important;   
+      }
+/* SECTION */
+body.concord_Doc_Style_14 div.section {
+	font-family: Palatino, "Palatino Linotype", Georgia, "Times New Roman", serif;
+	font-size: 10pt;
+	line-height:15pt;
+	margin: 0cm 0cm 1.0583cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_14 div.section h2 {
+	letter-spacing: 0;
+	color: black;
+	font-size: 14pt;
+	color: #2d5f68;
+	margin: 0.1588cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_14 h3 {
+	font-size: 11pt;
+	letter-spacing: .1;
+	color: #2d5f68;
+	}
+body.concord_Doc_Style_14 h4 {
+	font-style: italic;
+	/*line-height: .5em; commented out by NP*/
+	color: #2d5f68;
+	}
+body.concord_Doc_Style_14 p {
+	letter-spacing: .05;
+	/*line-height: 21px; commented out by NP*/
+	}
+body.concord_Doc_Style_14 ul {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding-left: 0.3969cm;
+	list-style-type: circle;
+	}
+body.concord_Doc_Style_14 li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	letter-spacing: .05;
+	}
+/*
+body.concord_Doc_Style_14 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_14 div.subsection h3 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	letter-spacing: .1;
+	}
+body.concord_Doc_Style_14 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	font-style: italic;
+	}
+*/
+body.concord_Doc_Style_14 div#resume li span {
+	float: right;
+	font-weight: normal;
+	}
+body.concord_Doc_Style_14 div#resume h3 span {
+	float: right;
+	font-weight: normal;
+	}
+/* TABLE */
+body.concord_Doc_Style_14 table.smartTable, table.smartTable_14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #2d5f68;
+	border: 0.75pt solid #2d5f68;
+	text-align: left;		
+	}
+table.STStyle14 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	color: #2d5f68 !important;
+	border: 0.75pt solid #2d5f68 !important;
+	text-align: left !important;	
+	}	
+body.concord_Doc_Style_14 table.smartTable tr.tableHeaderRow, table.smartTable_14 tr.tableHeaderRow {
+	background:none ;
+	}
+table.STStyle14 tr.tableHeaderRow {
+	background:none;
+	}	
+body.concord_Doc_Style_14 table.smartTable th, table.smartTable_14 th {
+	color:#2D5F68 ;
+	text-align: left;
+	border-bottom: 0.75pt solid #2d5f68;
+	border:0.75pt solid;
+	padding: 0.132cm;
+	}
+table.STStyle14 th {
+	color:#2D5F68 !important;
+	text-align: left !important;
+	border-bottom: 0.75pt solid #2d5f68 !important;
+	border:0.75pt solid !important;
+	padding: 0.132cm !important;	
+	}	
+body.concord_Doc_Style_14 table.smartTable td, table.smartTable_14 td  {
+	border-left: 0.75pt solid #2d5f68;
+	border-right: 0.75pt solid #2d5f68;
+	padding: 0.132cm;	
+	}
+table.STStyle14 td {
+	border-left: 0.75pt solid #2d5f68 !important;
+	border-right: 0.75pt solid #2d5f68 !important;
+	padding: 0.132cm !important;	
+	}	
+body.concord_Doc_Style_14 table.smartTable tr.alternateRow td, table.smartTable_14 tr.alternateRow td {
+	}
+table.STStyle14 tr.alternateRow td {
+	}
+body.concord_Doc_Style_14 table.smartTable td.selectedSTCell, table.smartTable_14 td.selectedSTCell, body.concord_Doc_Style_14 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_14 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle14 td.selectedSTCell, table.STStyle14 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_14 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_14 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_14 td.tableHeaderCol,table.smartTable_14 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle14 td.tableHeaderCol,table.STStyle14 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_14 div.references h2, div.references_14 h2 {
+	}
+body.concord_Doc_Style_14 div.references ul, div.references_14 ul {
+	}
+body.concord_Doc_Style_14 div.references li, div.references_14  li {
+	}
+
+
+/* ------------------------------------- #15 PURPLE STYLE ---------------------------------------------- */
+
+
+body.concord_Doc_Style_15 div.page {
+	}
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page */
+/*body.concord_Doc_Style_15 div.coverpage, div.coverpage_15 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}*/
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 
+/* specify both if using divisions to lay out the cover page and if using tables to lay out cover page */ 
+/*
+body.concord_Doc_Style_15 td.coverpageshapeA, div.coverpage_15 td.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_15 td.coverpageshapeB, div.coverpage_15 td.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_15 td.coverpageshapeC, div.coverpage_15 td.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_15 div.coverpageshapeA, div.coverpage_15 div.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_15 div.coverpageshapeB, div.coverpage_15 div.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_15 div.coverpageshapeC, div.coverpage_15 div.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_15 div.coverpage h1, div.coverpage_15 h1 {
+	font-size: 16.5pt;
+	letter-spacing: .75;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_15 div.coverpage h2, div.coverpage_15 h2 {
+	font-size: 15pt;
+	font-weight: normal;
+	letter-spacing: .50;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_15 div.coverpage ul, div.coverpage_15 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_15 div.coverpage li, div.coverpage_15 li {
+	}
+body.concord_Doc_Style_15 div.coverpage li.authorName, div.coverpage_15 li.authorName {
+	}
+body.concord_Doc_Style_15 div.coverpage li.documentDate, div.coverpage_15 li.documentDate {
+	}
+body.concord_Doc_Style_15 div.coverpage li.contactInfo1, div.coverpage_15 li.contactInfo1 {
+	}
+body.concord_Doc_Style_15 div.coverpage li.contactInfo2 , div.coverpage_15 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+/* letterhead is individual styled */ 
+body.concord_Doc_Style_15 div.letterhead, div.letterhead_15 {
+	padding: 1.5875cm 1.0583cm 0.5292cm 1.0583cm;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #fff;
+	background: #30285e;
+	border-bottom: 3.75pt solid #273a51;
+	}
+body.concord_Doc_Style_15 div.letterhead h1, div.letterhead_15 h1 {
+	font-size: 16.5pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_15 div.letterhead h2, div.letterhead_15 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_15 div.letterhead ul, div.letterhead_15 ul {
+	margin: 0cm;
+	padding: 0cm 0cm 1.0583cm 0cm;
+	list-style-type: none;
+	}
+body.concord_Doc_Style_15 div.letterhead li, div.letterhead_15 li {
+	display: inline;
+	margin: 0cm 0.2646cm 0cm 0cm;
+	padding: 0cm;
+	}	
+body.concord_Doc_Style_15 div.letterhead hr, div.letterhead_15 hr {
+	background-color: #668899;
+	color: #668899;
+	visibility: hidden;
+	}
+/* LIST */
+/* NOTE: DEFAULT LIST STYLE for document and for individual lists */	
+/*      
+body.concord_Doc_Style_15 ul.list, ul.list_15 {
+	list-style-type: disc !important; 
+	padding: 0.3969cm !important;
+}
+*/
+ul.list_15 {
+	 	   /* margin: 0; padding: 0 !important;*/
+      }
+ul.list_15 li
+      {
+      list-style-type: disc !important;
+      background-position: -0.40em 50%;      
+     }
+
+/* SECTION */
+/* section is styled according to the document style...sections can not be individually styled like other components  */ 
+body.concord_Doc_Style_15 div.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	padding: 0.2646cm 0cm;
+	margin: 0.2646cm 0cm;
+	color: #333;
+	}
+body.concord_Doc_Style_15  div.section h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	color: #30285e;
+	}
+body.concord_Doc_Style_15  h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	color: #30285e;
+	}
+body.concord_Doc_Style_15  h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	color: #30285e
+	}
+body.concord_Doc_Style_15  p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.4233cm; commented out by NP*/
+	color: #333;
+	}
+body.concord_Doc_Style_15  ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_15  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4233cm; commented out by NP*/
+	}
+body.concord_Doc_Style_15 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_15 div.subsection h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_15 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_15 div#resume li span {
+	float: right;
+	}
+body.concord_Doc_Style_15 div#resume h3 span {
+	float: right;
+	}
+/* TABLE */
+body.concord_Doc_Style_15 table.smartTable, table.smartTable_15 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: left;		
+	}
+table.STStyle15 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 12pt !important;
+	text-align: left !important;		
+	}
+body.concord_Doc_Style_15 table.smartTable tr.tableHeaderRow, table.smartTable_15 tr.tableHeaderRow {
+	background-color: #3c3275;
+	background-image: -moz-linear-gradient(top, #8a84ac 0cm, #8a84ac 0.0265cm, #766f9e 0.0265cm, #463c7c 50%, #39306f 50%, #30285e 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #8a84ac), color-stop(0.03, #8a84ac), color-stop(0.03, #766f9e), color-stop(0.5, #463c7c), color-stop(0.5, #39306f), color-stop(1.0, #30285e));
+	}
+table.STStyle15 tr.tableHeaderRow {
+	background-color: #3c3275;
+	background-image: -moz-linear-gradient(top, #8a84ac 0cm, #8a84ac 0.0265cm, #766f9e 0.0265cm, #463c7c 50%, #39306f 50%, #30285e 100%) !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #8a84ac), color-stop(0.03, #8a84ac), color-stop(0.03, #766f9e), color-stop(0.5, #463c7c), color-stop(0.5, #39306f), color-stop(1.0, #30285e)) !important;
+	}	
+body.concord_Doc_Style_15 table.smartTable th, table.smartTable_15 th{
+	text-align: left;
+	border: 0.75pt solid #273a51;
+	color: #fff;
+	padding: 0.3969cm 0.132cm;
+	}
+table.STStyle15 th {
+	text-align: left !important;
+	border: 0.75pt solid #273a51 !important;
+	color: #fff !important;
+	padding: 0.3969cm 0.132cm !important;
+	}		
+body.concord_Doc_Style_15 table.smartTable td, table.smartTable_15 td {
+	border: 0.75pt solid #ababab;
+	background-color: #efefef;
+	padding: 0.3969cm 0.132cm;
+	}
+table.STStyle15 td {
+	border: 0.75pt solid #ababab !important;
+	background-color: #efefef;
+	padding: 0.3969cm 0.132cm !important;
+	}	
+body.concord_Doc_Style_15 table.smartTable tr.alternateRow td, table.smartTable_15 tr.alternateRow td {
+	background-color: #e6e6e6;
+	} 
+table.STStyle15 tr.alternateRow td {
+	background-color: #e6e6e6;
+	} 		
+body.concord_Doc_Style_15 table.smartTable td.selectedSTCell, table.smartTable_15 td.selectedSTCell, body.concord_Doc_Style_15 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_15 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle15 td.selectedSTCell, table.STStyle15 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_15 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_15 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_15 td.tableHeaderCol,table.smartTable_15 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle15 td.tableHeaderCol,table.STStyle15 tr.alternateRow td.tableHeaderCol {
+	font-size:12pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_15 div.references h2, div.references_15 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_15 div.references ul, div.references_15 ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_15 div.references li, div.references_15  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4233cm; commented out by NP*/
+	}
+
+
+/* ------------------------------------- #16 DARK GREEN STYLE ---------------------------------------------- */
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page */
+/*body.concord_Doc_Style_16 div.coverpage, div.coverpage_16 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}*/
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 
+/* specify both if using divisions to lay out the cover page and if using tables to lay out cover page */ 
+/*
+body.concord_Doc_Style_16 td.coverpageshapeA, div.coverpage_16 td.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_16 td.coverpageshapeB, div.coverpage_16 td.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_16 td.coverpageshapeC, div.coverpage_16 td.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_16 div.coverpageshapeA, div.coverpage_16 div.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_16 div.coverpageshapeB, div.coverpage_16 div.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_16 div.coverpageshapeC, div.coverpage_16 div.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_16 div.coverpage h1, div.coverpage_16 h1 {
+	font-size: 16.5pt;
+	letter-spacing: .75;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_16 div.coverpage h2, div.coverpage_16 h2 {
+	font-size: 15pt;
+	font-weight: normal;
+	letter-spacing: .50;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_16 div.coverpage ul, div.coverpage_16 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_16 div.coverpage li, div.coverpage_16 li {
+	}
+body.concord_Doc_Style_16 div.coverpage li.authorName, div.coverpage_16 li.authorName {
+	}
+body.concord_Doc_Style_16 div.coverpage li.documentDate, div.coverpage_16 li.documentDate {
+	}
+body.concord_Doc_Style_16 div.coverpage li.contactInfo1, div.coverpage_16 li.contactInfo1 {
+	}
+body.concord_Doc_Style_16 div.coverpage li.contactInfo2 , div.coverpage_16 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+/* letterhead is individual styled */ 
+body.concord_Doc_Style_16 div.letterhead, div.letterhead_16 {
+	padding: 1.5875cm 1.0583cm 0cm 1.0583cm;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	color: #86989e;
+	background-color:#23333c;
+	background-image:-moz-linear-gradient(#324753 0%, #23333c 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#324753), to(#23333c));
+	}
+body.concord_Doc_Style_16 div.letterhead h1, div.letterhead_16 h1 {
+	font-size: 16.5pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0.2646cm 0.132cm 0.132cm 0cm;
+	}
+body.concord_Doc_Style_16 div.letterhead h2, div.letterhead_16 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_16 div.letterhead ul, div.letterhead_16 ul {
+	margin: 0cm;
+	padding: 0cm 0cm 0.5292cm 0cm;
+	list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #999;
+	}
+body.concord_Doc_Style_16 div.letterhead li, div.letterhead_16 li {
+	display: inline;
+	margin: 0cm 0.2646cm 0cm 0cm;
+	padding: 0cm;
+	}	
+body.concord_Doc_Style_16 div.letterhead hr, div.letterhead_16 hr {
+	background-color: #668899;
+	color: #668899;
+	visibility: hidden;
+	}	
+/* LIST */
+/* NOTE: DEFAULT LIST STYLE for document and for individual lists */	
+/*body.concord_Doc_Style_16 ul.list, ul.list_16 {
+	list-style-type: disc !important; 
+	padding: 0.3969cm !important;
+}
+*/
+ul.list_16 {
+	 	   /* margin: 0; padding: 0 !important;*/
+	 	   padding-left:0cm !important;
+      }
+ul.list_16 li
+      {
+      list-style-type: none !important;
+      background-position: -0.40em 50%;      
+      }
+/* SECTION */
+/* section is styled according to the document style...sections can not be individually styled like other components  */ 
+body.concord_Doc_Style_16 div.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	padding: 0.2646cm 0cm;
+	margin: 0.2646cm 0cm 0cm 0cm;
+	color: #666;
+	width: 17.1979cm;
+	}
+body.concord_Doc_Style_16  div.section h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm -1.0583cm;
+	padding: 0.2646cm 0.132cm 0.2646cm 0.66cm;
+	color: #86989e;
+	background-color: #ebf3f5;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_16  h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_16  h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_16  p {
+	margin: 0cm 0cm 0.4233cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	}
+body.concord_Doc_Style_16  ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_16  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4233cm; commented out by NP*/
+	}
+body.concord_Doc_Style_16 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	}
+body.concord_Doc_Style_16 div.subsection h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_16 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_16 div#resume li span {
+	float: right;
+	}
+body.concord_Doc_Style_16 div#resume h3 span {
+	float: right;
+	}
+/* TABLE */
+body.concord_Doc_Style_16 table.smartTable, table.smartTable_16 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: left;	
+	}
+table.STStyle16 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;		
+	}	
+body.concord_Doc_Style_16 table.smartTable tr.tableHeaderRow, table.smartTable_16 tr.tableHeaderRow {
+	background-color:#23333c;
+	background-image:-moz-linear-gradient(#324753 0%, #23333c 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#324753), to(#23333c));
+	}
+table.STStyle16 tr.tableHeaderRow {
+	background-color:#23333c;
+	background-image:-moz-linear-gradient(#324753 0%, #23333c 100%) !important;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#324753), to(#23333c)) !important;
+	}	
+body.concord_Doc_Style_16 table.smartTable th, table.smartTable_16 th {
+	text-align: left;
+	border: 0.75pt solid #223339;
+	color: #efefef;
+	font-weight: normal;
+	padding: 0.3969cm 0.132cm;	
+	}
+table.STStyle16 th {
+	text-align: left !important;
+	border: 0.75pt solid #223339 !important;
+	color: #efefef !important;
+	font-weight: normal !important;
+	padding: 0.3969cm 0.132cm !important;	
+	}	
+body.concord_Doc_Style_16 table.smartTable td, table.smartTable_16 td {
+	border: 0.75pt solid #86989e;
+	padding: 0.3969cm 0.132cm;		
+	}
+table.STStyle16 td {
+	border: 0.75pt solid #86989e !important;
+	padding: 0.3969cm 0.132cm !important;		
+	}	
+body.concord_Doc_Style_16 table.smartTable tr.alternateRow td, table.smartTable_16 tr.alternateRow td {
+	background-color: #ebf3f5;
+	} 
+table.STStyle16 tr.alternateRow td {
+	background-color: #ebf3f5;
+	} 		
+body.concord_Doc_Style_16 table.smartTable td.selectedSTCell, table.smartTable_16 td.selectedSTCell,  body.concord_Doc_Style_16 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_16 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle16 td.selectedSTCell, table.STStyle16 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_16 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_16 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_16 td.tableHeaderCol,table.smartTable_16 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle16 td.tableHeaderCol,table.STStyle16 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_16 div.references h2, div.references_16 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_16 div.references ul, div.references_16 ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_16 div.references li, div.references_16  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4233cm;
+	}
+
+
+/* ------------------------------------- #17 BLUE AND YELLOW STYLE ---------------------------------------------- */
+
+/* COVERPAGE Templates: Bussiness Plan*/
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page */
+body.concord_Doc_Style_17 div.coverpage, div.coverpage_17 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 
+/* specify both if using divisions to lay out the cover page and if using tables to lay out cover page */ 
+/*
+body.concord_Doc_Style_17 td.coverpageshapeA, div.coverpage_17 td.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_17 td.coverpageshapeB, div.coverpage_17 td.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_17 td.coverpageshapeC, div.coverpage_17 td.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_17 div.coverpageshapeA, div.coverpage_17 div.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_17 div.coverpageshapeB, div.coverpage_17 div.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_17 div.coverpageshapeC, div.coverpage_17 div.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_17 div.coverpage h1, div.coverpage_17 h1 {
+	font-size: 16.5pt;
+	letter-spacing: .75;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_17 div.coverpage h2, div.coverpage_17 h2 {
+	font-size: 15pt;
+	font-weight: normal;
+	letter-spacing: .50;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_17 div.coverpage ul, div.coverpage_17 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_17 div.coverpage li, div.coverpage_17 li {
+	}
+body.concord_Doc_Style_17 div.coverpage li.authorName, div.coverpage_17 li.authorName {
+	}
+body.concord_Doc_Style_17 div.coverpage li.documentDate, div.coverpage_17 li.documentDate {
+	}
+body.concord_Doc_Style_17 div.coverpage li.contactInfo1, div.coverpage_17 li.contactInfo1 {
+	}
+body.concord_Doc_Style_17 div.coverpage li.contactInfo2 , div.coverpage_17 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+/* letterhead is individual styled */ 
+body.concord_Doc_Style_17 div.letterhead, div.letterhead_17 {
+	padding: 0cm 0cm 0cm 0cm;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #333;
+	border-top: 1.5pt solid #f6f6ad;
+	border-bottom: 1.5pt solid #f6f6ad;
+	margin: 0.5292cm 1.0583cm 1.3229cm 1.0583cm;
+	text-align: center;
+	color: #fff;
+	background-color:#6896ec;
+	background-image:-moz-linear-gradient(#c7daf8 0%, #88bbfd  7%, #566cb7 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#c7daf8), to(#566cb7), color-stop(.07, #88bbfd));
+	}
+body.concord_Doc_Style_17 div.letterhead h1, div.letterhead_17 h1 {
+	font-size: 16.5pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0.5292cm 0cm 0.132cm 0cm;
+	}
+body.concord_Doc_Style_17 div.letterhead h2, div.letterhead_17 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_17 div.letterhead h2.custom {
+    font-style: normal;
+	}
+body.concord_Doc_Style_17 div.letterhead ul, div.letterhead_17 ul {
+	margin: 0cm;
+	padding: 0cm 0cm 0.5292cm 0cm;
+	list-style-type: none;
+	border-bottom: 1.5pt solid #fff;
+	}
+body.concord_Doc_Style_17 div.letterhead li, div.letterhead_17 li {
+	display: inline;
+	margin: 0cm 0.2646cm 0cm 0cm;
+	padding: 0cm;
+	}	
+body.concord_Doc_Style_17 div.letterhead hr, div.letterhead_17 hr {
+	background-color: #668899;
+	color: #668899;
+	visibility: hidden;
+	}
+
+body.concord_Doc_Style_17 div.letterhead p, div.letterhead_17 p {
+	color: #fff;
+	margin: 0.2646cm 0cm 0.2646cm 0cm;
+	}	
+		
+/* LIST */
+/* NOTE: DEFAULT LIST STYLE for document and for individual lists */	
+/*body.concord_Doc_Style_17 ul.list, ul.list_17 {
+	list-style-type: disc !important; 
+	padding: 0.3969cm !important;
+}
+*/
+ul.list_17 {
+	 	   /* margin: 0; padding: 0 !important;*/
+      }
+ul.list_17 li
+      {
+      list-style-type: square !important;
+      background-position: -0.40em 50%;      
+      }
+/* SECTION */
+/* section is styled according to the document style...sections can not be individually styled like other components  */ 
+body.concord_Doc_Style_17 p.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	padding: 0cm;
+	margin: 0.132cm 0cm 0.2646cm 0cm;
+	color: #333;
+	}
+body.concord_Doc_Style_17 h2.section {
+	font-size: 12pt;
+	margin: 0.132cm 0cm 0.4763cm 0cm;
+	padding: 0cm;
+	color: #566cb7;
+	border-bottom: 1.5pt solid #f6f6ad;
+	}
+body.concord_Doc_Style_17  h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0.2381cm 0cm;
+	padding: 0cm;
+	color: #566cb7;
+	}
+body.concord_Doc_Style_17  h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	color: #566cb7;
+	}
+body.concord_Doc_Style_17  p {
+	margin: 0cm 0cm 0.6879cm 0cm;
+	padding: 0cm;
+	/*line-height: 0.5292cm; commented out by NP*/
+	color: #3b3b3b;
+	}
+body.concord_Doc_Style_17  ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	text-indent: 0;
+	}
+body.concord_Doc_Style_17  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4233cm; commented out by NP*/
+	}
+body.concord_Doc_Style_17 p.subsection {
+	margin: 0.2646cm 0cm 0.2646cm 0cm;
+	font-size: 9pt;
+	}
+body.concord_Doc_Style_17 h3.subsection  {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_17 h4.subsection {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_17 div#resume li span {
+	float: right;
+	}
+body.concord_Doc_Style_17 div#resume h3 span {
+	float: right;
+	}
+/* TABLE */
+body.concord_Doc_Style_17 table.smartTable, table.smartTable_17 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: left;		
+	}
+table.STStyle17 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;		
+	}	
+body.concord_Doc_Style_17 table.smartTable tr.tableHeaderRow, table.smartTable_17 tr.tableHeaderRow {
+	background-color:#6896ec;
+	background-image:-moz-linear-gradient(#c7daf8 0%, #88bbfd  7%, #566cb7 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#c7daf8), to(#566cb7), color-stop(.07, #88bbfd));
+	}
+table.STStyle17 tr.tableHeaderRow {
+	background-color:#6896ec;
+	background-image:-moz-linear-gradient(#c7daf8 0%, #88bbfd  7%, #566cb7 100%) !important;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#c7daf8), to(#566cb7), color-stop(.07, #88bbfd)) !important;
+	}	
+body.concord_Doc_Style_17 table.smartTable th, table.smartTable_17 th {
+	text-align: left;
+	border: 0.75pt solid #058cc0;
+	padding: 0.3969cm 0.132cm;
+	color: #fff;
+	font-weight: normal;
+	padding: 0.3969cm 0.132cm;	
+	}
+table.STStyle17 th {
+	text-align: left !important;
+	border: 0.75pt solid #058cc0 !important;
+	padding: 0.3969cm 0.132cm !important;
+	color: #fff !important;
+	font-weight: normal !important;
+	padding: 0.3969cm 0.132cm !important;	
+	}	
+body.concord_Doc_Style_17 table.smartTable td, table.smartTable_17 td {
+	border: 0.75pt solid #ccc;
+	padding: 0.3969cm 0.132cm ;	
+	}
+table.STStyle17 td {
+	border: 0.75pt solid #ccc !important;
+	padding: 0.3969cm 0.132cm !important;
+	}	
+body.concord_Doc_Style_17 table.smartTable tr.alternateRow td, table.smartTable_17 tr.alternateRow td {
+	background-color: #f6f6ad;
+	} 	
+table.STStyle17 tr.alternateRow td {
+	background-color: #f6f6ad;
+	} 	
+body.concord_Doc_Style_17 table.smartTable td.selectedSTCell, table.smartTable_17 td.selectedSTCell, body.concord_Doc_Style_17 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_17 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle17 td.selectedSTCell, table.STStyle17 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_17 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_17 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_17 td.tableHeaderCol,table.smartTable_17 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle17 td.tableHeaderCol,table.STStyle17 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_17 div.references h2, div.references_17 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_17 div.references ul, div.references_17 ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_17 div.references li, div.references_17  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4233cm;
+	}
+
+
+/* ------------------------------------- #18 SERIOUS GREY STYLE ---------------------------------------------- */
+
+/* COVERPAGE */
+/* WARNING : Do not style positional elements of cover page here....that needs to be done on each cover page */
+/*body.concord_Doc_Style_18 div.coverpage, div.coverpage_18 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}*/
+/* specify colors that work together for up to 3 shapes that may be on the cover page */ 
+/* specify both if using divisions to lay out the cover page and if using tables to lay out cover page */ 
+/*
+body.concord_Doc_Style_18 td.coverpageshapeA, div.coverpage_18 td.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_18 td.coverpageshapeB, div.coverpage_18 td.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_18 td.coverpageshapeC, div.coverpage_18 td.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_18 div.coverpageshapeA, div.coverpage_18 div.coverpageshapeA {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_18 div.coverpageshapeB, div.coverpage_18 div.coverpageshapeB {
+	background-color:#999966;
+	border:1px solid white;
+	}	
+body.concord_Doc_Style_18 div.coverpageshapeC, div.coverpage_18 div.coverpageshapeC {
+	background-color:#999966;
+	border:1px solid white;
+	}
+body.concord_Doc_Style_18 div.coverpage h1, div.coverpage_18 h1 {
+	font-size: 16.5pt;
+	letter-spacing: .75;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+body.concord_Doc_Style_18 div.coverpage h2, div.coverpage_18 h2 {
+	font-size: 15pt;
+	font-weight: normal;
+	letter-spacing: .50;
+	text-transform: capitalize;
+	}
+body.concord_Doc_Style_18 div.coverpage ul, div.coverpage_18 ul {
+	list-style-type: none;
+	} 
+body.concord_Doc_Style_18 div.coverpage li, div.coverpage_18 li {
+	}
+body.concord_Doc_Style_18 div.coverpage li.authorName, div.coverpage_18 li.authorName {
+	}
+body.concord_Doc_Style_18 div.coverpage li.documentDate, div.coverpage_18 li.documentDate {
+	}
+body.concord_Doc_Style_18 div.coverpage li.contactInfo1, div.coverpage_18 li.contactInfo1 {
+	}
+body.concord_Doc_Style_18 div.coverpage li.contactInfo2 , div.coverpage_18 li.contactInfo2 {
+	}
+*/
+/* LETTERHEAD */
+/* letterhead is individual styled */ 
+body.concord_Doc_Style_18 div.letterhead, div.letterhead_18 {
+	padding: 1.3229cm;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 8.25pt;
+	color: #333;
+	margin-bottom: 2.1167cm;
+	}
+body.concord_Doc_Style_18 div.letterhead h1, div.letterhead_18 h1 {
+	font-size: 16.5pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_18 div.letterhead h2, div.letterhead_18 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.1058cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_18 div.letterhead ul, div.letterhead_18 ul {
+	margin: 0cm;
+	padding: 0cm 0cm 0cm 0cm;
+	list-style-type: none;
+	}
+body.concord_Doc_Style_18 div.letterhead li, div.letterhead_18 li {
+	display: inline;
+	margin: 0cm 0.2646cm 0cm 0cm;
+	padding: 0cm;
+	}	
+body.concord_Doc_Style_18 div.letterhead hr, div.letterhead_18 hr {
+	background-color: #668899;
+	color: #668899;
+	visibility: hidden;
+	}	
+/* LIST */
+/* NOTE: DEFAULT LIST STYLE for document and for individual lists */	
+/*body.concord_Doc_Style_18 ul.list, ul.list_18 {
+	list-style-type: disc !important; 
+	padding: 0.3969cm !important;
+}
+*/
+ul.list_18 {
+	 	   /* margin: 0; padding: 0 !important;*/
+      }
+ul.list_18 li
+      {
+      list-style-type: decimal !important;
+      background-position: -0.40em 50%;      
+      }
+/* SECTION */
+/* section is styled according to the document style...sections can not be individually styled like other components  */ 
+body.concord_Doc_Style_18 div.section {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 8.25pt;
+	padding:0cm 0.2646cm;
+	margin: 0.2646cm 0cm;
+	color: #333;
+	}
+body.concord_Doc_Style_18  h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_18  h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_18  h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_18  p {
+	margin:0cm 0cm 0.5292cm;
+	padding: 0cm 0cm 0cm 0.5292cm;
+	/*line-height: 0.4763cm; commented out by NP*/
+	border-left: 0.75pt dotted #ccc;
+	}
+body.concord_Doc_Style_18  ul {
+	margin:0.1058cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_18  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	/*line-height: 0.4233cm; commented out by NP*/
+	}
+body.concord_Doc_Style_18 div.subsection {
+	margin: 0.132cm 0cm 0cm 0cm;
+	padding: 0.2646cm 0.2646cm 0cm;
+	}
+body.concord_Doc_Style_18 div.subsection h3 {
+	font-size: 10.5pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_18 div.subsection h4 {
+	font-size: 9pt;
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_18 div#resume li span {
+	float: right;
+	}
+body.concord_Doc_Style_18 div#resume h3 span {
+	float: right;
+	}
+/* TABLE */
+body.concord_Doc_Style_18 table.smartTable, table.smartTable_18 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 8.25pt;
+	text-align: left ;		
+	}
+table.STStyle18 {
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	font-size: 8.25pt !important;
+	text-align: left !important;	
+	}	
+body.concord_Doc_Style_18 table.smartTable tr.tableHeaderRow, table.smartTable_18 tr.tableHeaderRow {
+	background-color:#333;
+	background-image:-moz-linear-gradient(#525252 0%, #1d1d1d 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#525252), to(#1d1d1d));
+	}
+table.STStyle18 tr.tableHeaderRow {
+	background-color:#333;
+	background-image:-moz-linear-gradient(#525252 0%, #1d1d1d 100%) !important;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#525252), to(#1d1d1d)) !important;
+	}	
+body.concord_Doc_Style_18 table.smartTable th, table.smartTable_18 th {
+	text-align: left;
+	border: 0.75pt solid #fff;
+	padding: 0.3969cm 0.132cm;
+	color: #fff;
+	}
+table.STStyle18 th {
+	text-align: left !important;
+	border: 0.75pt solid #fff !important;
+	padding: 0.3969cm 0.132cm !important;
+	color: #fff !important;
+	}
+body.concord_Doc_Style_18 table.smartTable td, table.smartTable_18 td {
+	border: 0.75pt solid #ccc;
+	padding: 0.3969cm 0.132cm;
+	background-color: #efefef;
+	}
+table.STStyle18 td {
+	border: 0.75pt solid #ccc !important;
+	padding: 0.3969cm 0.132cm !important;
+	background-color: #efefef;
+	}	
+body.concord_Doc_Style_18 table.smartTable tr.alternateRow td, table.smartTable_18 tr.alternateRow td {
+	background-color: #efefef;
+	}
+table.STStyle18 tr.alternateRow td {
+	background-color: #efefef;
+	} 
+body.concord_Doc_Style_18 table.smartTable td.selectedSTCell, table.smartTable_18 td.selectedSTCell, body.concord_Doc_Style_18 table.smartTable tr.alternateRow td.selectedSTCell, table.smartTable_18 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}
+table.STStyle18 td.selectedSTCell, table.STStyle18 tr.alternateRow td.selectedSTCell {
+	background-color: #ffffcc;
+	}	
+body.concord_Doc_Style_18 table.smartTable td.tableHeaderCol,body.concord_Doc_Style_18 table.smartTable tr.alternateRow td.tableHeaderCol, table.smartTable_18 td.tableHeaderCol,table.smartTable_18 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+table.STStyle18 td.tableHeaderCol,table.STStyle18 tr.alternateRow td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* REFERENCE */
+/* references section of the document */ 	
+body.concord_Doc_Style_18 div.references h2, div.references_18 h2 {
+	font-size: 12pt;
+	margin: 0cm 0cm 0.2117cm 0cm;
+	padding: 0cm;
+	}
+body.concord_Doc_Style_18 div.references ul, div.references_18 ul {
+	margin: 0cm 0cm 0.4233cm 0.5292cm;
+	padding: 0cm;
+	list-style-type: disc;
+	}
+body.concord_Doc_Style_18 div.references li, div.references_18  li {
+	margin: 0cm;
+	padding: 0.1058cm 0cm;
+	line-height: 0.4233cm;
+	}
+
+/* list-style-type-upper-roman */
+li.lst-ur:before,  h1.lst-ur:before, h2.lst-ur:before, h3.lst-ur:before, h4.lst-ur:before, h5.lst-ur:before, h6.lst-ur:before {
+	white-space:pre;
+	content:attr(values) "\002e" "   ";
+}
+
+li.lst-ur.rtl:before,  h1.lst-ur.rtl:before, h2.lst-ur.rtl:before, h3.lst-ur.rtl:before, h4.lst-ur.rtl:before, h5.lst-ur.rtl:before, h6.lst-ur.rtl:before {
+	content:attr(values) "\002e" "   \200F";
+}
+
+/* list-style-type-lower-roman */
+li.lst-lr:before,  h1.lst-lr:before, h2.lst-lr:before, h3.lst-lr:before, h4.lst-lr:before, h5.lst-lr:before, h6.lst-lr:before {
+	white-space:pre;
+	content:attr(values) "\002e" "    ";
+
+}
+
+li.lst-lr.rtl:before,  h1.lst-lr.rtl:before, h2.lst-lr.rtl:before, h3.lst-lr.rtl:before, h4.lst-lr.rtl:before, h5.lst-lr.rtl:before, h6.lst-lr.rtl:before {
+	content:attr(values) "\002e" "    \200F";
+}
+
+/* list-style-type-upper-alpha */
+li.lst-ua:before,  h1.lst-ua:before, h2.lst-ua:before, h3.lst-ua:before, h4.lst-ua:before, h5.lst-ua:before, h6.lst-ua:before {
+	white-space:pre;
+	content:attr(values) "\002e" "   ";
+
+}
+
+li.lst-ua.rtl:before,  h1.lst-ua.rtl:before, h2.lst-ua.rtl:before, h3.lst-ua.rtl:before, h4.lst-ua.rtl:before, h5.lst-ua.rtl:before, h6.lst-ua.rtl:before {
+	content:attr(values) "\002e" "   \200F";
+}
+
+/* list-style-type-lower-alpha */
+
+li.lst-la:before,  h1.lst-la:before, h2.lst-la:before, h3.lst-la:before, h4.lst-la:before, h5.lst-la:before, h6.lst-la:before {
+	white-space:pre;
+	content:attr(values) "\002e" "    ";
+	
+}
+
+li.lst-la.rtl:before,  h1.lst-la.rtl:before, h2.lst-la.rtl:before, h3.lst-la.rtl:before, h4.lst-la.rtl:before, h5.lst-la.rtl:before, h6.lst-la.rtl:before {
+	content:attr(values) "\002e" "    \200F";
+}
+
+/* list-style-type-number */
+li.lst-n:before,  h1.lst-n:before, h2.lst-n:before, h3.lst-n:before, h4.lst-n:before, h5.lst-n:before, h6.lst-n:before {
+	white-space:pre;
+	content:attr(values) "\002e" "   ";
+}
+
+/* list-style-type-number-leading-zero */
+li.lst-n2:before,  h1.lst-n2:before, h2.lst-n2:before, h3.lst-n2:before, h4.lst-n2:before, h5.lst-n2:before, h6.lst-n2:before {
+	white-space:pre;
+	content:attr(values) "   ";
+	
+}
+
+/* list-style-type-upper-alpha-parenthesis */
+li.lst-uap:before,  h1.lst-uap:before, h2.lst-uap:before, h3.lst-uap:before, h4.lst-uap:before, h5.lst-uap:before, h6.lst-uap:before {
+	white-space:pre;
+	content:attr(values) "\0029" "   ";
+	
+}
+
+li.lst-uap.rtl:before,  h1.lst-uap.rtl:before, h2.lst-uap.rtl:before, h3.lst-uap.rtl:before, h4.lst-uap.rtl:before, h5.lst-uap.rtl:before, h6.lst-uap.rtl:before {
+	content:attr(values) "\0029" "   \200F";
+}
+
+/* list-style-type-lower-alpha-parenthesis */ 
+li.lst-lap:before,  h1.lst-lap:before, h2.lst-lap:before, h3.lst-lap:before, h4.lst-lap:before, h5.lst-lap:before, h6.lst-lap:before {
+	white-space:pre;
+	content:attr(values) "\0029" "  ";
+	
+}
+
+li.lst-lap.rtl:before,  h1.lst-lap.rtl:before, h2.lst-lap.rtl:before, h3.lst-lap.rtl:before, h4.lst-lap.rtl:before, h5.lst-lap.rtl:before, h6.lst-lap.rtl:before {
+	content:attr(values) "\0029" "  \200F";	
+}
+
+/* list-style-type-number-parenthesis */
+li.lst-np:before,  h1.lst-np:before, h2.lst-np:before, h3.lst-np:before, h4.lst-np:before, h5.lst-np:before, h6.lst-np:before {
+	white-space:pre;
+	content:attr(values) "\0029" "  ";
+}
+
+/* list-style-type-japanese-1 */
+li.lst-j1:before,  h1.lst-j1:before, h2.lst-j1:before, h3.lst-j1:before, h4.lst-j1:before, h5.lst-j1:before, h6.lst-j1:before {
+	white-space:pre;
+	content:attr(values) "\0029" "  ";
+}
+
+/* list-style-type-japanese-2 */
+li.lst-j2:before,  h1.lst-j2:before, h2.lst-j2:before, h3.lst-j2:before, h4.lst-j2:before, h5.lst-j2:before, h6.lst-j2:before {
+	white-space:pre;
+	content:"\0028" attr(values) "\0029" "  ";
+}
+
+/* list-style-type-circle */
+li.lst-c:before,  h1.lst-c:before, h2.lst-c:before, h3.lst-c:before, h4.lst-c:before, h5.lst-c:before, h6.lst-c:before {
+	white-space:pre;
+	content:"\25CF" "    ";
+	font-family: Arial;
+}
+
+/* list-style-type-cutout-square */
+li.lst-cs:before,  h1.lst-cs:before, h2.lst-cs:before, h3.lst-cs:before, h4.lst-cs:before, h5.lst-cs:before, h6.lst-cs:before {
+	white-space:pre;
+	content:"\2756" "   ";
+	font-family: Arial;
+}
+
+
+/* list-style-type-right-arrow */
+li.lst-ra:before,  h1.lst-ra:before, h2.lst-ra:before, h3.lst-ra:before, h4.lst-ra:before, h5.lst-ra:before, h6.lst-ra:before {
+	white-space:pre;
+	content:"\25BA" "   ";
+	font-family: Arial;
+}
+
+/* list-style-type-diamond */
+li.lst-d:before,  h1.lst-d:before, h2.lst-d:before, h3.lst-d:before, h4.lst-d:before, h5.lst-d:before, h6.lst-d:before {
+	white-space:pre;
+	content:"\2666" "    ";
+	font-family: Arial;
+}
+
+/* list-style-type-double-arrow*/
+li.lst-da:before,  h1.lst-da:before, h2.lst-da:before, h3.lst-da:before, h4.lst-da:before, h5.lst-da:before, h6.lst-da:before {
+	white-space:pre;
+	content:"\25A0" "    ";
+	font-family: Arial;
+}
+
+/* list-style-type-asterisk */
+li.lst-a:before,  h1.lst-a:before, h2.lst-a:before, h3.lst-a:before, h4.lst-a:before, h5.lst-a:before, h6.lst-a:before {
+	white-space:pre;
+	content:"\002A" "   ";
+	font-family: Arial;
+}
+
+/* list-style-type-thin-arrow */
+li.lst-ta:before,  h1.lst-ta:before, h2.lst-ta:before, h3.lst-ta:before, h4.lst-ta:before, h5.lst-ta:before, h6.lst-ta:before {
+	white-space:pre;
+	content:"\2794" "   ";
+	font-family: Arial;
+}
+
+/* list-style-type-checkmark */
+li.lst-cm:before,  h1.lst-cm:before, h2.lst-cm:before, h3.lst-cm:before, h4.lst-cm:before, h5.lst-cm:before, h6.lst-cm:before {
+	white-space:pre;
+	content:"\2714" "   ";
+	font-family: Arial;
+}
+
+/* list-style-type-plus-sign */
+li.lst-ps:before,  h1.lst-ps:before, h2.lst-ps:before, h3.lst-ps:before, h4.lst-ps:before, h5.lst-ps:before, h6.lst-ps:before {
+	white-space:pre;
+	content:"\271A" "   ";
+	font-family: Arial;
+}
+.lst-ur li, .lst-lr li, .lst-ua li, .lst-la li, .lst-n li, .lst-n2 li, .lst-uap li, .lst-lap li, .lst-np li, .lst-c li, .lst-cs li, .lst-ra li, .lst-d li, .lst-da li, .lst-a li, .lst-ta li, .lst-cm li, .lst-ps li {
+	display:block;
+}
+li {
+	display:block;
+}
+
+ul, ol {
+	padding: 0px; 
+	margin-left: 0.741cm;
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	text-indent: -0.741cm;
+}
+
+ul.rtl, ol.rtl 
+{ 
+	margin-right: 0.741cm;
+	margin-left: 0;
+}
+
+/* For heading outline */
+/*
+ul.roman_1, ol.roman_1, ul.roman_2, ol.roman_2, ul.roman_3, ol.roman_3, ul.roman_4, ol.roman_4, ul.roman_5, ol.roman_5, ul.roman_6, ol.roman_6, ul.roman_7, ol.roman_7, ul.roman_8, ol.roman_8, ul.roman_9, ol.roman_9 
+{
+	margin-left: 0cm;
+	text-indent: 0cm;
+}
+*/
+
+ul.number_1, ol.number_1
+{
+	margin-left: 0.95cm;
+	text-indent: -0.95cm;
+}
+
+ul.number_2, ol.number_2
+{
+	margin-left: 0.284cm;
+	text-indent: -1.234cm;
+}
+
+ul.number_3, ol.number_3
+{
+	margin-left: 0.454cm;
+	text-indent: -1.658cm;
+}
+
+ul.number_4, ol.number_4
+{
+	margin-left: 0.104cm;
+	text-indent: -1.762cm;
+}
+
+ul.number_5, ol.number_5
+{
+	margin-left: 0.374cm;
+	text-indent: -2.136cm;
+}
+
+ul.number_6, ol.number_6
+{
+	margin-left: 0.08cm;
+	text-indent: -2.216cm;
+}
+
+ul.number_7, ol.number_7
+{
+	margin-left: 0.224cm;
+	text-indent: -2.54cm;
+}
+
+ul.number_8, ol.number_8
+{
+	margin-left: 0.324cm;
+	text-indent: -2.864cm;
+}
+
+ul.number_9, ol.number_9
+{
+	margin-left: 0.324cm;
+	text-indent: -3.188cm;
+}
+
+/* ------------------------------------- BEGINNING OF TABLE STYLES ------------------------------------------------ */
+/*  Table styles that can be selected from tool bar button, 20 table styles in total. Related plugin is tablestyles.*/
+
+/* plain style*/
+table.st_plain>tbody>tr>th {color:#000000;border:0.75pt solid #000000; background-repeat:repeat;}
+table.st_plain>tbody>tr>td {color:#000000;border:0.75pt solid #000000; background-repeat:repeat;}
+
+/* plain rows style*/
+table.st_plain_rows>tbody>tr>th {color:#000000;border-top:0.75pt solid #000000;background-color:#ffffff;border-left:none;background-repeat:repeat;border-right:none;border-bottom:0.75pt solid #000000;font-size:12pt;}
+table.st_plain_rows>tbody>tr>td, table.st_plain_rows>tbody>tr.alternateRow>td {color:#000000;border-top:0.75pt solid #000000;background-color:#ffffff;border-left:none;background-repeat:repeat;border-right:none;border-bottom:0.75pt solid #000000;font-size:12pt;}
+
+/* light gray rows style*/
+table.st_light_gray_rows>tbody>tr>th {color:#000000;border-top:0.75pt solid #000000;background-color:#dddddd;border-left:none;background-repeat:repeat;border-right:none;border-bottom:0.75pt solid #000000;font-size:12pt;}
+table.st_light_gray_rows>tbody>tr>td, table.st_light_gray_rows>tbody>tr.alternateRow>td {color:#000000;border-top:0.75pt solid #000000;background-color:#dddddd;border-left:none;background-repeat:repeat;border-right:none;border-bottom:0.75pt solid #000000;font-size:12pt;}
+
+/* dark gray rows style*/
+table.st_dark_gray>tbody>tr>th {color:#ffffff;background-color:#666666;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+table.st_dark_gray>tbody>tr>td, table.st_dark_gray>tbody>tr.alternateRow>td {color:#ffffff;background-color:#666666;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+
+/* blue_style style*/
+table.st_blue_style>tbody>tr>th {color:#ffffff;background-color:#336666;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+table.st_blue_style>tbody>tr>td, table.st_blue_style>tbody>tr.alternateRow>td {color:#ffffff;background-color:#336666;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+
+/* green style */
+table.st_green_style>tbody>tr>th {color:#ffffff;background-color:#669933;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+table.st_green_style>tbody>tr>td, table.st_green_style>tbody>tr.alternateRow>td {color:#ffffff;background-color:#669933;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+
+/* gray tint */
+table.st_gray_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;font-size:12pt;}
+table.st_gray_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;font-size:12pt;}
+table.st_gray_tint>tbody>tr>td  {color:#000000;background-color:#dddddd;background-repeat:repeat;border:0.75pt solid #000000;font-size:12pt;}
+table.st_gray_tint>tbody>tr.alternateRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;font-size:12pt;}
+
+/* blue tint */
+table.st_blue_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_blue_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_blue_tint>tbody>tr>td  {color:#000000;background-color:#99ccff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_blue_tint>tbody>tr.alternateRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+
+/* purple tint */
+table.st_purple_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_purple_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_purple_tint>tbody>tr>td  {color:#000000;background-color:#cc99ff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_purple_tint>tbody>tr.alternateRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+
+/* green tint */
+table.st_green_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_green_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_green_tint>tbody>tr>td  {color:#000000;background-color:#99cc99;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_green_tint>tbody>tr.alternateRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+
+/* red tint */
+table.st_red_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_red_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_red_tint>tbody>tr>td  {color:#000000;background-color:#ff9999;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_red_tint>tbody>tr.alternateRow>td {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+
+/* black header */
+table.st_black_header {border: 0.75pt solid #000000;}
+table.st_black_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:0.75pt solid #000000;background-color:#1c1c1c;border-left:0.75pt solid #000000;background-repeat:repeat;border-right:0.75pt solid #000000;border-bottom:1.5pt solid #000000;}
+table.st_black_header>tbody>tr>th  {color:#ffffff;border-top:0.75pt solid #000000;background-color:#1c1c1c;border-left:0.75pt solid #000000;background-repeat:repeat;border-right:0.75pt solid #000000;border-bottom:1.5pt solid #000000;}
+table.st_black_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#ffffff;border-left:0.75pt solid #000000;background-repeat:repeat;border-right:0.75pt solid #000000;border-bottom:none;}
+table.st_black_header>tbody>tr.alternateRow>td  {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #000000;background-repeat:repeat;border-right:0.75pt solid #000000;border-bottom:none;}
+table.st_black_header>tbody>tr.lastRow>td  {border-bottom:0.75pt solid #000000;}
+
+/* green header */
+table.st_green_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#669933;border-left:0.75pt solid #009900;background-repeat:repeat;border-right:0.75pt solid #009900;border-bottom:1.5pt solid #ffffff;}
+table.st_green_header>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#669933;border-left:0.75pt solid #009900;background-repeat:repeat;border-right:0.75pt solid #009900;border-bottom:1.5pt solid #ffffff;}
+table.st_green_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#b2b2b2;border-left:0.75pt solid #009900;background-repeat:repeat;border-right:0.75pt solid #009900;border-bottom:none;}
+table.st_green_header>tbody>tr.alternateRow>td  {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #009900;background-repeat:repeat;border-right:0.75pt solid #009900;border-bottom:none;}
+
+/* blue header style*/
+table.st_blue_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#003366;border-left:0.75pt solid #000066;background-repeat:repeat;border-right:0.75pt solid #000066;border-bottom:1.5pt solid #ffffff;}
+table.st_blue_header>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#003366;border-left:0.75pt solid #000066;background-repeat:repeat;border-right:0.75pt solid #000066;border-bottom:1.5pt solid #ffffff;}
+table.st_blue_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#6699cc;border-left:0.75pt solid #000066;background-repeat:repeat;border-right:0.75pt solid #000066;border-bottom:none;}
+table.st_blue_header>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#99ccff;border-left:0.75pt solid #000066;background-repeat:repeat;border-right:0.75pt solid #000066;border-bottom:none;}
+
+/* purple header style*/
+table.st_purple_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#663366;border-left:0.75pt solid #330066;background-repeat:repeat;border-right:0.75pt solid #330066;border-bottom:1.5pt solid #ffffff;}
+table.st_purple_header>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#663366;border-left:0.75pt solid #330066;background-repeat:repeat;border-right:0.75pt solid #330066;border-bottom:1.5pt solid #ffffff;}
+table.st_purple_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#cc99cc;border-left:0.75pt solid #330066;background-repeat:repeat;border-right:0.75pt solid #330066;border-bottom:none;}
+table.st_purple_header>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#ffccff;border-left:0.75pt solid #330066;background-repeat:repeat;border-right:0.75pt solid #330066;border-bottom:none;}
+
+/* red header style*/
+table.st_red_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#990000;border-left:0.75pt solid #330000;background-repeat:repeat;border-right:0.75pt solid #330000;border-bottom:1.5pt solid #ffffff;}
+table.st_red_header>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#990000;border-left:0.75pt solid #330000;background-repeat:repeat;border-right:0.75pt solid #330000;border-bottom:1.5pt solid #ffffff;}
+table.st_red_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#999999;border-left:0.75pt solid #330000;background-repeat:repeat;border-right:0.75pt solid #330000;border-bottom:none;}
+table.st_red_header>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #330000;background-repeat:repeat;border-right:0.75pt solid #330000;border-bottom:none;}
+
+/* dark gray header footer style*/
+table.st_dark_gray_header_footer>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#666666;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_dark_gray_header_footer>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#666666;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_dark_gray_header_footer>tbody>tr>td  {color:#000000;border-top:none;background-color:#ffffff;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_dark_gray_header_footer>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_dark_gray_header_footer>tbody>tr.lastRow>td {color:#000000;border-top:0.75pt solid #333333;background-color:#b2b2b2;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+
+/* green header footer style*/
+table.st_green_header_footer>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#669900;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_green_header_footer>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#669900;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_green_header_footer>tbody>tr>td {color:#000000;border-top:none;background-color:#b2b2b2;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_green_header_footer>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_green_header_footer>tbody>tr.lastRow>td {color:#000000;border-top:0.75pt solid #333333;background-color:#99cc66;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+
+/* red header footer style*/
+table.st_red_header_footer>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#ff3333;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_red_header_footer>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#ff3333;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_red_header_footer>tbody>tr>td {color:#000000;border-top:none;background-color:#b2b2b2;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_red_header_footer>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_red_header_footer>tbody>tr.lastRow>td {color:#000000;border-top:0.75pt solid #333333;background-color:#ff6666;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+
+/* light blue header footer style*/
+table.st_light_blue_header_footer>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#669999;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_light_blue_header_footer>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#669999;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_light_blue_header_footer>tbody>tr>td  {border-top:none;background-color:#b2b2b2;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_light_blue_header_footer>tbody>tr.alternateRow>td  {border-top:none;background-color:#dddddd;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_light_blue_header_footer>tbody>tr.lastRow>td  {border-top:0.75pt solid #333333;background-color:#99cccc;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+
+td.tablestyle_gallery_box { padding: 2.25pt; border:0.75pt solid #DCDCDC; } 
+td.tablestyle_gallery_box_hover { padding: 0pt; background-color: #DFF1FF; border: 3pt solid #316AC5;}
+td.tablestyle_gallery_box_selected {padding: 0pt; border: 3pt solid #22EEFF;}  
+
+
+/* ------------------------------------- BEGINNING OF TABLE OF CONTENTS STYLES ------------------------------------------------ */
+
+div p.toc_title
+{
+    font-size: 14pt;
+    font-weight: bold;
+    text-indent: 0;
+    margin-top: 0pt;
+    margin-bottom: 5pt;
+    
+}
+
+div p.toc1,div p.toc2,div p.toc3,div p.toc4,div p.toc5,div p.toc6
+{
+  font-size: 12pt;
+  text-indent: 0;
+  text-align: left;
+}
+
+div p.toc1
+{
+	margin-left: 0pt;
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+}
+div p.toc2
+{
+	margin-left: 11pt;
+	margin-bottom: 0pt;
+}
+div p.toc3
+{
+	margin-left: 22pt;
+	margin-bottom: 0pt;
+}
+
+div p.toc4
+{
+	margin-left: 33pt;
+	margin-bottom: 0pt;
+}
+div p.toc5
+{
+	margin-left: 44pt;
+	margin-bottom: 0pt;
+}
+div p.toc6
+{
+	margin-left: 55pt;
+	margin-bottom: 0pt;
+}
+
+a.toclink span, a.toclink
+{
+	text-decoration: none;
+	cursor:pointer;
+}
+
+a.toclink
+{
+	color: black;
+}
+
+a.toclink span:hover, a.toclink:hover
+{
+	cursor:arrow;
+}
+div.TOC span::selection, div.TOC p::selection,div.TOC a::selection,
+div.TOC_uneditable span::selection, div.TOC_uneditable p::selection,div.TOC_uneditable a::selection
+{
+}
+
+/*
+div.TOC a::-moz-selection,
+div.TOC_uneditable span::-moz-selection, div.TOC_uneditable p::-moz-selection,div.TOC_uneditable a::-moz-selection
+{
+} */
+
+div.TOC_uneditable, div.TOC{
+	padding-top:11pt; 
+	padding-bottom:11pt;
+	background-color:#EBEBEB;
+	display:block;
+}
+
+a.bookmark
+{
+	text-decoration: none;
+	color: black;
+	cursor:pointer;
+}

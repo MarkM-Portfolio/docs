@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="使用文件" topic="text/document/documents_frame.html">
+   <topic label="使用文件" href="text/document/documents_frame.html">
+      <topic label="建立及匯入文件" href="text/document/d_creating_importing_a_document.html">
+         <topic label="關於範本" href="text/document/d_templates.html"/>
+         <topic label="從範本建立文件" href="text/document/d_create_document_from_template.html"/>
+         <topic label="變更文件的預設檔案格式"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="上傳文件以分享" href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="匯入現有文件" href="text/document/d_importing_existing_document.html"/>
+         <topic label="開啟受密碼保護的 Word 檔案"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="檔案相容性及匯出文件" href="text/document/d_file_conversion_compatibility.html">
+         <topic label="文件中支援的檔案格式" href="text/document/d_supported_file_formats.html"/>
+         <topic label="儲存文件" href="text/document/d_saving_documents.html"/>
+         <topic label="發佈文件" href="text/document/d_publish_a_version.html"/>
+         <topic label="將文件匯出成其他檔案格式" href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="分享文件" href="text/document/d_sharing_a_document_overview.html">
+         <topic label="與他人或社群分享文件" href="text/document/d_sharing_a_file.html"/>
+         <topic label="設定文件的存取層次" href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="文件的即時分工合作" href="text/document/d_collaborating_on_a_document.html">
+         <topic label="即時共同編輯文件" href="text/document/d_real_time_coediting.html">
+            <topic label="關於文件中的共同編輯" href="text/document/d_coediting_concept.html"/>
+            <topic label="與其他人共同編輯文件" href="text/document/d_coediting_with_others.html"/>
+            <topic label="顯示文件中每位編輯者的變更"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="使用文件中的註解分工合作" href="text/document/d_comments_overview.html">
+            <topic label="關於文件中的註解" href="text/document/d_comments_concept.html"/>
+            <topic label="建立文件中的註解" href="text/document/d_creating_comments_document.html"/>
+            <topic label="檢視文件中的註解" href="text/document/d_viewing_comments.html"/>
+            <topic label="搜尋文件中的註解" href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="編輯文件" href="text/document/d_editing_a_document_overview.html">
+         <topic label="在文件中進行文字格式化" href="text/document/d_formatting_text.html">
+            <topic label="設定字型效果" href="text/document/d_setting_font_effects.html"/>
+            <topic label="使文字變成上標或下標" href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="設定字型大小" href="text/document/d_setting_font_size.html"/>
+            <topic label="對齊文字" href="text/document/d_aligning_text.html"/>
+            <topic label="縮排文字" href="text/document/d_indenting_text.html"/>
+            <topic label="在文件中新增項目符號或號碼" href="text/document/d_adding_bullets.html"/>
+            <topic label="在文件中建立多層次清單" href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="插入鏈結" href="text/document/d_inserting_a_link.html"/>
+         <topic label="建立頁首及頁尾" href="text/document/d_creating_header_footer.html"/>
+         <topic label="建立目錄" href="text/document/d_create_toc.html"/>
+         <topic label="在文件中插入欄位" href="text/document/d_inserting_fields.html"/>
+         <topic label="對文件進行拼字檢查" href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="列印文件" href="text/document/d_printing_a_document.html">
+            <topic label="將文件列印成 PDF 檔" href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="在文件中使用影像" href="text/document/d_working_with_graphics.html">
+         <topic label="在文件中插入影像" href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="設定文件中的影像內容" href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="在文件中使用表格" href="text/document/d_working_with_tables.html">
+         <topic label="在文件中建立表格" href="text/document/d_creating_a_table.html"/>
+         <topic label="變更文件中的表格樣式" href="text/document/d_changing_styles.html"/>
+         <topic label="設定文件中的表格內容" href="text/document/d_setting_table_properties.html"/>
+         <topic label="設定表格儲存格的背景顏色" href="text/document/d_setting_table_background_color.html"/>
+         <topic label="對齊文件中表格儲存格的文字" href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="在表格中新增列和直欄" href="text/document/d_adding_rows_columns.html"/>
+         <topic label="在表格中移動列和直欄" href="text/document/d_moving_rows_columns.html"/>
+         <topic label="合併或分割表格儲存格" href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="調整文件中表格的大小" href="text/document/d_resizing_columns.html"/>
+         <topic label="在文件中新增表格的標題" href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="定義文件的表格標頭" href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="文件快速參照" href="text/document/d_quick_ref.html"/>
+      <topic label="文件鍵盤快速鍵" href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

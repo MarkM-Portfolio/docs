@@ -1,0 +1,61 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2020                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<configuration>
+        <!--
+                A "component" tag's or "param" tag's id attribute must not contain any of '," or \ or any characters considered invalid as a file name
+                The value attribute of the "option" tag must not contain any of the 3 of '," or \, but the text content of the "option" tag can contain any characters
+                The "name", "description" and "initial_value" tags can contain any characters
+                The text and text_area input types can accept user input of any characters
+                The types "file" and "password" cannot have an "initial_value"
+        -->
+        <component id="DocsConversion">
+          <param id="num_docscr_nodes" type="option" publish="true">
+                  <name>Number of HCL Docs Conversion Server Nodes</name>
+                  <description>The number of HCL Docs Conversion Server nodes to deploy</description>
+                  <options>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                  </options>
+                  <initial_value>6</initial_value>
+          </param>
+          <param id="symphony_instance_number" type="text">
+            <name>Symphony Instance Number</name>
+            <description>The number of Symphony instances to deploy to each IBM Conversion servers. The value should be exactly the same to CPU number of the machine.</description>
+            <initial_value>8</initial_value>
+          </param>
+          <param id="stellent_instance_number" type="text">
+            <name>Stellent Instance Number</name>
+            <description>The number of Stellent instances to deploy to each IBM Conversion servers. The value should be exactly the same to CPU number of the machine.</description>
+            <initial_value>8</initial_value>
+          </param>
+          <param id="docscr_drive_disk" type="option" publish="true">
+                  <name>Docs Conversion server deployment drive disk</name>
+                  <description>The drive disk name Docs Conversion will be deployed to. "D:" is used as default value.</description>
+                  <options>
+                          <option value="C:">C:</option>
+                          <option value="D:">D:</option>
+                          <option value="E:">E:</option>
+                          <option value="F:">F:</option>
+                  </options>
+                  <initial_value>D:</initial_value>
+          </param>
+        </component>
+</configuration>

@@ -1,0 +1,44 @@
+# -*- encoding: utf8 -*-
+# ***************************************************************** 
+#                                                                   
+# IBM Confidential                                                  
+#                                                                   
+# IBM Docs Source Materials                                         
+#                                                                   
+# (c) Copyright IBM Corporation 2012. All Rights Reserved.          
+#                                                                   
+# U.S. Government Users Restricted Rights: Use, duplication or      
+# disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+#                                                                   
+# ***************************************************************** 
+
+
+def start_it(args):
+  from util import wsadminlib
+  wsadminlib.enableDebugMessages()
+
+  if not wsadminlib.isND():
+    return
+
+  # FIXME because wsadmin cannot accept "" parameter, so cannot pass empty scope_name like server or cluster
+  # scope, cluster_name, cluster_name
+  # scope, servername, node_name
+  scope_name, arg2, arg3 = args
+  servers = []
+  clusters = []
+  if scope_name.lower() == "server":
+    wsadminlib.startServer(arg3, arg2)
+  if scope_name.lower() == "cluster":
+    wsadminlib.startCluster(arg2)
+
+  wsadminlib.save()
+
+if __name__ == "__main__":
+  import sys
+  """
+    #  required parameters
+    #  ear_name, servername, nodename, clustername, 
+  """
+  if len(sys.argv) < 3:
+    sys.exit()
+  start_it(sys.argv)

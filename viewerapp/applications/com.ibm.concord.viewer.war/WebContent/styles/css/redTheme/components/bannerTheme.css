@@ -1,0 +1,17 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for the banner (layout)
+companion file is banner.css*/
+/*** B A N N E R **/
+/*this is the very top of the UI, that contains the logo, application links, user name, login/logout*/
+.lotusBanner{background-color:transparent;}
+.lotusBanner ul.lotusInlinelist li{color:#000;background-color:transparent;border-color:#766a3d}
+.lotusBanner ul li.lotusFirst{background-image:none}
+.lotusBanner ul.lotusLinks a{color:#4d0100}
+.lotusBanner ul.lotusLinks li.lotusSelected{background-color:#6f0207;}
+.lotusBanner ul.lotusLinks li.lotusSelected a{color:#fff}
+.lotusBanner ul.lotusUtility a{color:#766a3d}
+/***********************************************************/
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2016. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<web-bnd 
+	xmlns="http://websphere.ibm.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://websphere.ibm.com/xml/ns/javaee http://websphere.ibm.com/xml/ns/javaee/ibm-web-bnd_1_1.xsd"
+	version="1.1">
+
+	<virtual-host name="default_host" />
+
+	<resource-ref name="com/ibm/concord/datasource" binding-name="com/ibm/concord/datasource" />
+	<resource-ref name="jms/IBMDocsPublish" binding-name="jms/IBMDocsPublish" />
+	<resource-ref name="com/ibm/concord/workmanager" binding-name="com/ibm/concord/workmanager" />
+	<resource-ref name="com/ibm/concord/house_keeping_scheduler" binding-name="com/ibm/concord/house_keeping_scheduler" />
+	<resource-ref name="com/ibm/docs/housekeeping/timermanager" binding-name="com/ibm/docs/housekeeping/timermanager" />	
+	<resource-ref name="jms/IBMDocsJournalTopic" binding-name="jms/IBMDocsJournalTopic" />
+	<resource-ref name="com/ibm/docs/autosave/workmanager" binding-name="com/ibm/docs/autosave/workmanager" />
+	<resource-ref name="com/ibm/docs/autopublish/workmanager" binding-name="com/ibm/docs/autopublish/workmanager" />
+	<resource-ref name="com/ibm/docs/upload/convert/workmanager" binding-name="com/ibm/docs/upload/convert/workmanager" />
+	<resource-ref name="com/ibm/docs/migration/workmanager" binding-name="com/ibm/docs/migration/workmanager" />
+	<resource-ref name="com/ibm/docs/savechunk/workmanager" binding-name="com/ibm/docs/savechunk/workmanager" />
+	<resource-ref name="com/ibm/docs/nodejscalc/workmanager" binding-name="com/ibm/docs/nodejscalc/workmanager" />
+</web-bnd>

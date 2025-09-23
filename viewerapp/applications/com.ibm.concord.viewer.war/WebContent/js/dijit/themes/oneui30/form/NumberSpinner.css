@@ -1,0 +1,106 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+.oneui30 .dijitSpinnerButtonContainer {
+    padding: 0 2px;
+	overflow: hidden;
+    width: auto;
+}
+
+.oneui30 .dijitSpinnerButtonContainer .dijitSpinnerButtonInner {
+    border-width: 1px 0;
+    border-style: solid none;
+}
+
+/* button */
+.oneui30 .dijitSpinner .dijitArrowButton {
+    width: auto;
+    overflow: hidden;
+}
+
+.dj_iequirks .oneui30 .dijitSpinner .dijitArrowButton {
+    overflow: visible; /* 0 height w/o this */
+}
+
+.oneui30 .dijitSpinner .dijitSpinnerButtonInner {
+    width: 15px;
+}
+
+/* up & down button icons */
+.oneui30 .dijitSpinner .dijitArrowButtonInner {
+    margin: -1px 0; /* compensate for inner border */
+	padding: 2px 2px 0;
+	border: solid 0px #fff;
+    border-bottom-width: 0; /* 2 top borders = 1 top+bottom border in ComboBox */
+    background-image: url("images/smallcommonFormArrows.png");
+    background-repeat: no-repeat;
+    width: 15px;
+    background-position: -139px 75%;
+}
+
+.dj_iequirks .oneui30 .dijitSpinner .dijitArrowButtonInner {
+    width: 19px;
+}
+
+.oneui30 .dijitSpinner .dijitDownArrowButton .dijitArrowButtonInner {
+    background-position: -34px;
+}
+
+.oneui30 .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+    padding: 0;
+}
+
+/** hover & focused status **/
+.oneui30 .dijitSpinner .dijitUpArrowButtonHover .dijitArrowButtonInner {
+    background-position: -174px 75%;
+}
+
+.oneui30 .dijitSpinner .dijitDownArrowButtonHover .dijitArrowButtonInner {
+    background-position: -69px;
+}
+
+.oneui30 .dijitSpinnerFocused {
+    background-color: #fff;
+    background-image: none;
+}
+
+.oneui30 .dijitSpinner .dijitDownArrowButtonActive, .oneui30 .dijitSpinner .dijitUpArrowButtonActive {
+    background-position: 0px -177px;
+}
+
+.oneui30 .dijitSpinner .dijitUpArrowButtonActive .dijitArrowButtonInner, .oneui30 .dijitSpinner .dijitDownArrowButtonActive .dijitArrowButtonInner { /* hide inner border while button is depressed */
+    margin-right: 2px;
+    margin-bottom: 1px;
+    padding: 1px;
+    border: 0px;
+}
+
+.oneui30 .dijitSpinner .dijitUpArrowButtonActive .dijitArrowButtonInner {
+    background-position: -174px 75%;
+}
+
+.oneui30 .dijitSpinner .dijitDownArrowButtonActive .dijitArrowButtonInner {
+    background-position: -69px;
+}
+
+/* disabled */
+.oneui30 .dijitSpinnerDisabled .dijitArrowButtonInner {
+    background-color: #eee;
+}
+
+.oneui30 .dijitSpinnerDisabled .dijitUpArrowButton .dijitArrowButtonInner {
+    background-position: -139px 75%;
+}
+
+.oneui30 .dijitSpinnerDisabled .dijitDownArrowButton .dijitArrowButtonInner {
+    background-position: -34px;
+}
+
+/** hacks for browsers **/
+/* for IE 7, when div is enlarged,
+ * should be no empty space between dijitInputLayoutContainer and dijitSpinner*/
+.dj_ie7 .oneui30 .dijitSpinner {
+    overflow: visible;
+}

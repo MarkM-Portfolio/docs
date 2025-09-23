@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.concord.spi.jar 
+ lib/json4j.jar 
+ com.ibm.concord.platform.jar 
+ com.ibm.concord.document.services.jar 
+ com.ibm.concord.config.jar 
+ com.ibm.docs.repository.jar 
+ com.ibm.docs.common.jar 
+ com.ibm.docs.directory.jar 
+ lib/acf-2.5.0.29.jar 
+ lib/html-parser-2.5.0.29.jar
+

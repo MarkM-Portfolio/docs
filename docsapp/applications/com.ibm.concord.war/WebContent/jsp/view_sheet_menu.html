@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    dojo.require("dijit.MenuBar");
+    dojo.require("dijit.PopupMenuBarItem");
+    dojo.require("dijit.Menu");
+    dojo.require("dijit.MenuItem");
+    dojo.require("dijit.PopupMenuItem");
+</script>
+<div dojoType="dijit.MenuBar" id="mainMenu" style="display:none;">
+    <div dojoType="dijit.PopupMenuBarItem" id="fileMenuBarItem">
+        <span>File</span>
+        <div dojoType="dijit.Menu">
+            <div dojoType="dijit.MenuItem" onClick="exportToPDF(); " id="exportToPDFItem">Export As PDF</div>
+            <div dojoType="dijit.MenuItem" onClick="exportToPDF(); " id="printItem">Print...</div>
+        </div>
+    </div>
+    <div dojoType="dijit.PopupMenuBarItem" id="viewMenuBarItem">
+        <span>View</span>
+        <div dojoType="dijit.Menu" id="viewMenu">
+            <div dojoType="dijit.CheckedMenuItem" onClick="triggerGridLines(); " id="gridLineItem">Show or Hide Grid Lines</div>
+            <div dojoType="dijit.CheckedMenuItem" onClick="triggerExpandFullString(); " id="expandFullStringItem">Expand Full String</div>
+        </div>
+    </div>
+    <div dojoType="dijit.PopupMenuBarItem" id="helpMenuBarItem">
+        <span>Help</span>
+        <div dojoType="dijit.Menu" id="helpMenu">
+            <div dojoType="dijit.MenuItem" onClick="helpOverview(); " id="overviewItem">Help Contents</div>
+            <div dojoType="dijit.MenuItem" onClick="helpAbout(); " id="aboutItem">About...</div>
+        </div>
+    </div>
+</div>
+    

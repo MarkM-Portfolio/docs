@@ -1,0 +1,19 @@
+%MR MRI_D.US (US English)
+%**  Here is a comment statement.
+
+%FI AUDIOMU.TXT
+
+%MT AudioSetupMenuTitleText
+Audio Setup...
+
+%**Help for Audio Setup
+%HT AudioSetupHelpTitleText
+Help for Audio Setup
+
+%TE AudioSetupHelpTitleText AudioSetupHelp
+
+%**Select this option to configure the
+%**Audio feature.
+%HW AudioSetupHelp
+Select this option to configure the
+Audio feature.

@@ -1,0 +1,93 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* HCL Confidential                                                  */
+/*                                                                   */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* Copyright HCL Technologies Limited 2020                           */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        PAGE_BREAK_TEXT: "Interruzione di pagina",
+        SECTION_BREAK_TEXT: "Interruzione di sezione",
+        LINE_BREAK_TEXT: "Interruzione riga",
+        COLUMN_BREAK_TEXT: "Interruzione colonna",
+        INSERT_IMAGE_NOT_PROPER_PLACE: "È possibile aggiungere immagini solo nel corpo del testo e nelle tabelle, non nella posizione corrente.",
+        LOADING: "Caricamento del contenuto in corso.",
+        LOAD_FINISHED: "Caricamento del contenuto terminato.",
+        PAGE_SETUP: "Impostazione pagina",
+        NOTE_INVALIDACTION_FOOTNOTE: "Non è un'azione valida per una nota a più di pagina.",
+        NOTE_INVALIDACTION_ENDNOTE: "Non è un'azione valida per una nota di chiusura.",
+        PAGENUMBER_OF_TOTALNUMBER: "Pagina ${0} di ${1}", //page 1 of N
+        PAGE_NUMBER: "Pagina: ${pageNumber} / ${totalPageNumber}",
+        toc: {
+            title: "Indice",
+            update: "Aggiorna",
+            del: "Elimina",
+            toc: "Indice",
+            linkTip: "Fare clic su Ctrl per esplorare",
+            linkTip_Mac: "\u2318 clic per esplorare",
+            pageNumber: "Solo numero di pagina",
+            entireTable: "Intera tabella"
+        },
+        link: {
+            addlink: "Aggiungi collegamento",
+            gotolink: "Apri collegamento",
+            unlink: "Rimuovi collegamento",
+            editlink: "Modifica collegamento",
+            internalLink: "Collegamento interno",
+            ctrlLink: "Ctrl+clic per passare al collegamento",
+            ctrlLink_Mac: "\u2318Clic per andare al collegamento",
+            cannotOpen: " non può essere aperto da ${productName}."
+        },
+        field: {
+            update: "Aggiorna campo"
+        },
+        insertTime: "Inserisci ora",
+        insertDate: "Inserisci data",
+        selectDate: "Seleziona data",
+        selectTime: "Seleziona ora",
+        acc_blank: "vuoto", // when selection is nothing but space char and empty paragraph
+        acc_space: "spazio", // string read out when the cursor is before one space char
+        acc_inLink: "nel collegamento ",
+        acc_inField: "nel campo ",
+        acc_selected: " selezionato",
+        acc_inTable: "nella riga di tabella ${0} colonna ${1} ",
+        acc_imageSelected: "grafico selezionato",
+        acc_canvasSelected: "forma selezionata",
+        acc_textboxSelected: "casella di testo selezionata",
+        ACC_TABLE_TABLESIZE: "Sono state selezionate ${0} righe, ${1} colonne",
+        ACC_TABLE_MAXSIZE: " Le dimensioni massime supportate per la tabella sono 20*20",
+        ACC_headerFooterMode: "modalità modifica intestazione/piè di pagina",
+        ACC_EditorMode: "modalità modifica editor",
+        ACC_FootnotesMode: "modalità modifica note a piè di pagina",
+        ACC_EndnotesMode: "modalità modifica note finali",
+        ACC_uniformTable: "Viene aggiunta una nuova riga",
+        Acc_column: "colonna  ${0}",
+        acc_page: "pagina  ${0}",
+        acc_section: "sezione  ${0}",
+        acc_spellWarn: "ortografia non corretta",
+        acc_outTable: "fuori tabella",
+        acc_link: "collegamento",
+        acc_field: "campo",
+        acc_footnote: "nota a piè di pagina",
+        acc_endnote: "nota finale",
+        acc_editor: "Modifica per ${0}",
+        tablePropertyTitle: "Proprietà tabella",
+        headerTitle: "Intestazione",
+        footerTitle: "Piè di pagina",
+        firstheaderTitle: "Intestazione prima pagina",
+        firstfooterTitle: "Piè di pagina prima pagina",
+        evenheaderTitle: "Intestazione pagine pari",
+        evenfooterTitle: "Piè di pagina pagine pari",
+        oddheaderTitle: "Intestazione pagine dispari",
+        oddfooterTitle: "Piè di pagina pagine dispari",
+        showTableBorder: "Mostra contorni tabella",
+        list_none: "Nessuno",
+        SET_NUMBERING_VALUE: "Imposta valore di numerazione",
+        BIDI_CONTENT_EDITING: "Questo documento include contenuto bidirezionale. Per utilizzare correttamente questo documento, attivare il supporto bidirezionale nelle preferenze di HCL Connections."
+});

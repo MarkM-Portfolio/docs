@@ -1,0 +1,131 @@
+{
+	"templates":
+	[
+		{
+			"template":
+			{
+				"id":"none",
+				"title":"None",
+				"description":"None",
+				"previewImg":"none.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"fade_crossfade_none",
+				"title":"Fade Smoothly",
+				"description":"Fade Smoothly",
+				"previewImg":"fadesmoothly.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"barWipe_topToBottom_none",
+				"title":"Wipe Down",
+				"description":"Wipe Down",
+				"previewImg":"wipedown.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"barWipe_leftToRight_none",
+				"title":"Wipe Right",
+				"description":"Wipe Right",
+				"previewImg":"wiperight.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"barWipe_topToBottom_reverse",
+				"title":"Wipe Up",
+				"description":"Wipe Up",
+				"previewImg":"wipeup.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"barWipe_leftToRight_reverse",
+				"title":"Wipe Left",
+				"description":"Wipe Left",
+				"previewImg":"wipeleft.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"slideWipe_fromTop_none",
+				"title":"Cover Down",
+				"description":"Cover Down",
+				"previewImg":"coverdown.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"slideWipe_fromLeft_none",
+				"title":"Cover Right",
+				"description":"Cover Right",
+				"previewImg":"coverright.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"slideWipe_fromBottom_none",
+				"title":"Cover Up",
+				"description":"Cover Up",
+				"previewImg":"coverup.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"slideWipe_fromRight_none",
+				"title":"Cover Left",
+				"description":"Cover Left",
+				"previewImg":"coverleft.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"pushWipe_fromTop_none",
+				"title":"Push Down",
+				"description":"Push Down",
+				"previewImg":"pushdown.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"pushWipe_fromLeft_none",
+				"title":"Push Right",
+				"description":"Push Right",
+				"previewImg":"pushright.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"pushWipe_fromBottom_none",
+				"title":"Push Up",
+				"description":"Push Up",
+				"previewImg":"pushup.png"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"pushWipe_fromRight_none",
+				"title":"Push Left",
+				"description":"Push Left",
+				"previewImg":"pushleft.png"
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+gcc -fPIC -shared -I /opt/IBM/WebSphere/AppServer/java/include -I /opt/IBM/WebSphere/AppServer/java/include/linux FileUtil.c -o libFileUtil.so

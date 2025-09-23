@@ -1,0 +1,11 @@
+{
+   "WebMsgServlet": 
+      {  
+         "busName": "ConcordBus", 
+         "destination": "Default.Topic.Space", 
+         "clientCanPublish": false,
+         "longPollTimeout": 30
+      }
+
+}
+      

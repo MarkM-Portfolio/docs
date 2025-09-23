@@ -1,0 +1,22 @@
+({
+	question:"Pregunta",
+	issue:"Emitir",
+	toDo:"Pendiente",
+	comment:"Comentarios",
+	done:"Hecho",
+	jan:"Ene",
+	feb:"Feb",
+	mar:"Mar",
+	apr:"Abr",
+	may:"Mayo",
+	june:"Junio",
+	july:"Julio",
+	aug:"Agos",
+	sept:"Sept",
+	oct:"Oct",
+	nov:"Nov",
+	dec:"Dic",
+	pm:"PM",
+	am:"AM",
+	assignTo:"Asignar a: "
+})

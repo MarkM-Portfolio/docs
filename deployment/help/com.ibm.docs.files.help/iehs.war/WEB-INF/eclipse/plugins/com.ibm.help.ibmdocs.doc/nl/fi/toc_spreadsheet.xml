@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Laskentataulukoiden käsittely"
+     topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="Laskentataulukoiden käsittely"
+          href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="Laskentataulukoiden luonti ja tuonti"
+             href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="Laskentataulukoiden luonti mallipohjista"
+                href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="Laskentataulukoiden oletustiedostomuodon muutto"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="Taulukoiden siirto palvelimeen yhteiskäyttöä varten"
+                href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="Aiemmin luotujen laskentataulukoiden tuonti"
+                href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="Tekstitiedostojen tuonti laskentataulukoihin"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="Salasanalla suojattujen Excel-tiedostojen avaus"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="Tiedostojen yhteensopivuus ja laskentataulukoiden vienti"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="Laskentataulukoissa tuetut tiedostomuodot"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="Laskentataulukoiden tallennus"
+                href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="Laskentataulukon version julkaisu"
+                href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="Laskentataulukoiden vienti muihin tiedostomuotoihin"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="Laskentataulukoiden vienti CSV-tiedostoihin"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="Laskentataulukoiden määritys yhteiskäyttöön"
+             href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="Laskentataulukoiden määritys yhteiskäyttöön henkilöiden tai yhteisöjen kanssa"
+                href="text/spreadsheet/s_share_file.html"/>
+         <topic label="Laskentataulukoiden käyttötasojen määritys"
+                href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="Reaaliaikainen laskentataulukoiden yhteismuokkaus"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="Laskentataulukoiden reaaliaikainen yhteismuokkaus"
+                href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="Tietoja laskentataulukoiden yhteismuokkauksesta"
+                   href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="Laskentataulukoiden yhteismuokkaus muiden käyttäjien kanssa"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="Eri muokkaajien tekemien muutosten näyttäminen laskentataulukoissa"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Kommenttien käyttö yhteistyöhön laskentataulukoissa"
+                href="text/spreadsheet/s_comments_overview.html">
+            <topic label="Tietoja laskentataulukoiden kommenteista"
+                   href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="Kommenttien luonti laskentataulukoissa"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="Laskentataulukon kommenttien tarkastelu"
+                   href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="Laskentataulukon kommenttien haku"
+                   href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Laskentataulukoiden ulkoasun muuttaminen"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="Fontit, reunat ja värit"
+                href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="Laskentataulukoiden fonttien muuttaminen"
+                href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="Rivin korkeuden tai sarakkeen leveyden muuttaminen"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="Laskentataulukoiden reunojen muuttaminen"
+                href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="Laskentataulukon solujen oletusmuotoilun palautus"
+                href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="Lukujen muotoileminen" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="Tietojen syöttö ja muokkaus"
+             href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="Tietojen muokkauksen perusteet"
+                href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="Solujen sisällön etsintä ja korvaus"
+                href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="Hyperlinkin lisäys soluun"
+                href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="Linkin poisto hyperlinkistä"
+                href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="Alueen täyttäminen automaattisen täytön avulla"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="Taulukon solujen yhdistäminen ja jakaminen"
+                href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="Laskentataulukoiden oikeinkirjoituksen tarkistus"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="Laskentataulukoiden tulostaminen PDF-tiedostoihin"
+                href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Laskentataulukoiden kuvien käsittely"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="Kuvien lisäys laskentataulukoihin"
+                href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="Laskentataulukoiden kuvien siirto ja koon muutto"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="Kuvan ominaisuuksien määritys laskentataulukossa"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Laskentataulukoiden kaavioiden käsittely"
+             href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="Kaavioiden lisäys laskentataulukoihin"
+                href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="Laskentataulukoiden kaavioiden siirto ja koon muutto"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="Kaavioiden kopiointi laskentataulukoihin"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="Tietoalueiden hallinta" href="text/spreadsheet/s_data_ranges.html">
+         <topic label="Tietojen lajittelu" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="Pikasuodattimien käyttö" href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="Rivien ja sarakkeiden lukitus laskentataulukoissa"
+                href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="Rivien ja sarakkeiden piilotus" href="text/spreadsheet/s_hide.html"/>
+         <topic label="Rivien ja sarakkeiden näyttö" href="text/spreadsheet/s_show.html"/>
+         <topic label="Muiden taulukoiden soluihin viittaaminen"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="Laskentataulukoiden tietojen ja kuvien kopiointi"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="Alueen nimeäminen" href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="Nimettyjen alueiden etsintä tai muokkaus"
+                href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="Nimetyn alueen poisto" href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="Suhteelliset ja tarkat viitteet"
+                href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="Kaavojen käyttö laskutoimituksissa"
+             href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="Tietoja kaavoista ja funktioista"
+                href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="Luettelo funktioista" href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="Ryhmitelty luokan mukaan"
+                   href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="Taulukkofunktiot" href="text/spreadsheet/s_functions_array.html">
+                  <topic label="Inline-taulukkovakioiden käyttö kaavoissa"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="Ehdolliset taulukkolaskutoimitukset"
+                         href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="Päivämäärä- ja kellonaikafunktiot"
+                      href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="Tekniikkafunktiot" href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="Tietofunktiot" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="Loogiset funktiot" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="Matemaattiset funktiot" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="Laskentataulukkofunktiot"
+                      href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="Tilastofunktiot" href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="Tekstifunktiot" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="ABS-funktio" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="ACOS-funktio" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="ACOSH-funktio" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="ADDRESS-funktio" href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="AND-funktio" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="ASIN-funktio" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="ASINH-funktio" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="ATAN-funktio" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="ATAN2-funktio" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="ATANH-funktio" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="AVERAGE-funktio"
+                   href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="AVERAGEA-funktio"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="BASE-funktio" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="CEILING-funktio" href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="CHOOSE-funktio" href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="CHAR-funktio" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="CODE-funktio" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="COLUMN-funktio" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="COLUMNS-funktio" href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="COMBIN-funktio" href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="CONCATENATE-funktio"
+                   href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="CONVERT-funktio"
+                   href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="COS-funktio" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="COSH-funktio" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="COUNT-funktio" href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="COUNTA-funktio"
+                   href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="COUNTBLANK-funktio"
+                   href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="COUNTIF-funktio" href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="DATE-funktio" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="DATEDIF-funktio"
+                   href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="DATEVALUE-funktio"
+                   href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="DAY-funktio" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="DAYS-funktio" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="DEGREES-funktio" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="DOLLAR-funktio" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="ERRORTYPE-funktio"
+                   href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="EVEN-funktio" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="EXP-funktio" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="EXACT-funktio" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="FACT-funktio" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="FALSE-funktio" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="FIXED-funktio" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="FLOOR-funktio" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="FORMULA-funktio" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="FREQUENCY-funktio"
+                   href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="HLOOKUP-funktio" href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="HOUR-funktio" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="HYPERLINK-funktio"
+                   href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="IF-funktio" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="INDEX-funktio" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="INDIRECT-funktio"
+                   href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="INT-funktio" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="ISBLANK-funktio" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="ISERR-funktio" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="ISERROR-funktio" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="ISEVEN-funktio" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="ISFORMULA-funktio"
+                   href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="ISLOGICAL-funktio"
+                   href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="ISNA-funktio" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="ISNONTEXT-funktio"
+                   href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="ISNUMBER-funktio" href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="ISODD-funktio" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="ISREF-funktio" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="ISTEXT-funktio" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="LARGE-funktio" href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="LEFT-funktio" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="LEN-funktio" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="LENB-funktio" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="LN-funktio" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="LOG-funktio" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="LOG10-funktio" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="LOWER-funktio" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="MAX-funktio" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="MEDIAN-funktio" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="MID-funktio" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="MIN-funktio" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="MINUTE-funktio" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="MMULT-funktio" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="MOD-funktio" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="MODE-funktio" href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="MONTH-funktio" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="N-funktio" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="NA-funktio" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="NETWORKDAYS-funktio"
+                   href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="NOT-funktio" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="NOW-funktio" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="ODD-funktio" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="OFFSET-funktio" href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="OR-funktio" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="PI-funktio" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="POWER-funktio" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="PRODUCT-funktio" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="PROPER-funktio" href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="RADIANS-funktio" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="RAND-funktio" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="RANDBETWEEN-funktio"
+                   href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="RANK-funktio" href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="REPLACE-funktio" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="REPT-funktio" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="RIGHT-funktio" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="RIGHTB-funktio" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="ROMAN-funktio" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="ROUND-funktio" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="ROUNDDOWN-funktio"
+                   href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="ROUNDUP-funktio" href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="ROW-funktio" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="ROWS-funktio" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="SEARCH-funktio" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="SECOND-funktio" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="SHEET-funktio" href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="SIN-funktio" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="SINH-funktio" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="SMALL-funktio" href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="SQRT-funktio" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="STDEV-funktio" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="STDEVP-funktio" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="SUBSTITUTE-funktio"
+                   href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="SUBTOTAL-funktio" href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="SUM-funktio" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="SUMIF-funktio" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="SUMPRODUCT-funktio"
+                   href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="T-funktio" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="TEXT-funktio" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="TIME-funktio" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="TODAY-funktio" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="TRIM-funktio" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="TRUE-funktio" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="TRUNC-funktio" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="TYPE-funktio" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="UPPER-funktio" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="VALUE-funktio" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="VLOOKUP-funktio" href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="VAR-funktio" href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="VARA-funktio" href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="VARP-funktio" href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="VARPA-funktio" href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="WEEKDAY-funktio" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="WEEKNUM-funktio"
+                   href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="YEAR-funktio" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="Laskentataulukoiden pikaohje" href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="Laskentataulukoiden pikanäppäimet"
+             href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

@@ -1,0 +1,28 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for search tab
+companion file is searchTab.css*/
+/*** S E A R C H   T A B ***/
+.lotusSearchTab{background-color:#fff;border-color:#ccc;}
+.lotusSearchTab:hover, .lotusTabExpanded{color:#414546}
+.tabExpanded{border-bottom-color:#fff;}
+.lotusSearchTab a, .lotusSearchTab a:visited{color:#000;background-image:url(../../images/searchArrowClosed.png);}
+.lotusSearchTab a:hover{background-image:url(../../images/searchArrowHover.png)}
+.lotusTabExpanded{border-bottom-color:#fff}
+.lotusTabExpanded a, .lotusTabExpanded a:visited{background-image:url(../../images/searchArrowOpen.png)}
+.lotusTabExpanded a:hover{background-image:url(../../images/searchArrowOpenHover.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusSearchTab a, .lotusSpritesOn .lotusSearchTab a:visited{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -5464px}
+.lotusSpritesOn .lotusSearchTab a:hover{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -5700px}
+.lotusSpritesOn .lotusTabExpanded a, .lotusTabExpanded a:visited{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -5936px}
+.lotusSpritesOn .lotusTabExpanded a:hover{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -6054px}
+/*[/sprite]*/
+.lotusSearchForm, .lotusSearchForm{background-color:#fff;border-color:#ccc;}
+.lotusSearchForm input, .lotusSearchForm input{color:#999}
+.lotusSearchForm option, .lotusSearchForm option{color:black}
+.lotusSearchForm .lotusText, .lotusSearchForm .lotusText{color:#999}
+.lotusSearchForm .lotusSearchButton{color:#ffffff;background-image:url(../../images/iconSearch16.png)}
+/***********************************************************/
+

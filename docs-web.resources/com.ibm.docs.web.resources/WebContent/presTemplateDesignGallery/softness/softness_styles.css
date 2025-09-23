@@ -1,0 +1,129 @@
+/*styles for title page title element*/
+.Softness-title p
+{
+	text-align:center;
+}
+.Softness-title {
+	/*font-size:44pt;*/
+	font-size:3em;
+	font-family:Arial;
+	color:red;
+}
+.Softness-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+}
+.Softness-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Softness-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Softness-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Softness-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:center;
+	text-indent:0cm;
+}
+.Softness-subtitle {
+	/*font-size:32pt;*/
+	font-size:2.18em;
+	font-family:Arial;
+	color:blue;
+}
+.Softness-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+}
+.Softness-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Softness-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Softness-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.Softness_default {
+	/*font-size:32pt;*/
+	/*font-size:1.2em;*/
+	font-family:Arial;
+	color:orange;
+}
+/*styles for other page (non title page) title */
+.Softness_text-title p
+{
+	text-align:center;
+}
+.Softness_text-title {
+	/*font-size:44pt;*/
+	font-size:3em;
+	font-family:Arial;
+	color:green;
+}
+.Softness_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+}
+.Softness_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Softness_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Softness_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Softness_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Softness_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Softness_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Softness_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Softness_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Softness_text-outline1 {
+	/*font-size:32pt;*/
+	font-size:1.2em;
+	font-family:Arial;
+	color:orange;
+}

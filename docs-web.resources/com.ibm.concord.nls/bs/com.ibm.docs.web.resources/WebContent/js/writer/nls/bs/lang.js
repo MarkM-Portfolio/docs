@@ -1,0 +1,75 @@
+({
+	LOADING: "Sadržaj se učitava.",
+	LOAD_FINISHED: "Učitavanje sadržaja je završeno.",
+	PAGE_SETUP: "Podešavanje strane",
+	NOTE_INVALIDACTION_FOOTNOTE:"Ovo nije važeća akcija za fusnotu.",
+	NOTE_INVALIDACTION_ENDNOTE:"Ovo nije važeća akcija za bilješku na kraju.",
+	PAGENUMBER_OF_TOTALNUMBER:"Strana ${0} od ${1}", //page 1 of N
+	PAGE_NUMBER: "Strana: ${pageNumber} / ${totalPageNumber}",
+	toc:{
+		title : "Tabela sadržaja",
+		update: "Ažuriraj",
+		del: "Izbriši",
+		toc: "Tabela sadržaja",
+		linkTip: "Ctrl klik za odlazak",
+		pageNumber: "Samo broj strane",
+		entireTable: "Čitava tabela"
+	},
+	link:{
+		addlink:"Dodaj link",
+		gotolink: "Otvori link",
+		unlink	: "Ukloni link",
+		editlink: "Uredi link",
+		internalLink: "Interni link",
+		ctrlLink: "Ctrl+klik za odlazak na link",
+		cannotOpen: " ne može se otvoriti iz ${productName}."
+	},
+	field:{
+		update: "Ažuriraj polje"
+	},
+	insertTime:"Ubaci vrijeme",
+	insertDate:"Ubaci datum",
+	selectDate:"Izaberi datum",
+	selectTime:"Izaberi vrijeme",
+	acc_blank: "prazno mjesto",// when selection is nothing but space char and empty paragraph
+	acc_space: "razmak",// string read out when the cursor is before one space char
+	acc_inLink: "u vezi ",
+	acc_inField: "u polju ",
+	acc_selected :" izabrano",
+	acc_inTable: "u redu tabele ${0}, koloni ${1} ",
+	acc_imageSelected: "izabrana slika",
+	acc_canvasSelected:"izabrani oblik",
+	acc_textboxSelected:"izabrani tekst okvir",
+	ACC_TABLE_TABLESIZE:"Izabrali ste ${0} redova, ${1} kolona",
+	ACC_TABLE_MAXSIZE:" Maksimalna podržana veličina tabele je 20*20",
+	ACC_headerFooterMode: "način uređivanja zaglavlja podnožja",
+	ACC_EditorMode: "način uređivanja urednika",
+	ACC_FootnotesMode: "način uređivanja fusnote",
+	ACC_EndnotesMode: "način uređivanja bilješke",
+	ACC_uniformTable: "Dodan je novi red",
+	Acc_column :"kolona  ${0}",
+	acc_page :"strana  ${0}",
+	acc_section:"sekcija ${0}",
+	acc_spellWarn:"greške u pravopisu",
+	acc_outTable:"izvan tabele",
+	acc_link :"link",
+	acc_field :"polje",
+	acc_footnote:"fusnota",
+	acc_endnote:"bilješka",	
+	acc_editor:"Uredio ${0}",
+	tablePropertyTitle: "Osobine tabele",
+	headerTitle:"Zaglavlje",
+	footerTitle:"Podnožje",
+	firstheaderTitle:"Zaglavlje prve strane",
+	firstfooterTitle:"Podnožje prve strane",
+	evenheaderTitle:"Zaglavlje parne strane",
+	evenfooterTitle:"Podnožje parne strane",
+	oddheaderTitle:"Zaglavlje neparne strane",
+	oddfooterTitle:"Podnožje neparne strane",
+	showTableBorder:"Pokaži granice tabele",
+	list_none: "Ništa",
+	SET_NUMBERING_VALUE: "Postavi vrijednost numerisanja",
+	BIDI_CONTENT_EDITING: "Ovaj dokument sadrži dvosmjerni sadržaj. Da biste mogli pravilno raditi s ovim dokumentom, uključite podršku za dvosmjerni sadržaj u preferencama HCL Connectionsa."
+})
+	
+

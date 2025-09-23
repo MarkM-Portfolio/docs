@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>root-pom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>deployment</artifactId>
+  <name>deployment - pom</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <deployment.dir>${docs.root.dir}/deployment</deployment.dir>
+    <common.deployment.resources.dir>${deployment.dir}/installer/com.ibm.docs.common.deployment</common.deployment.resources.dir>
+    <docsapp.deployment.resources.dir>${deployment.dir}/installer/com.ibm.docs.deployment</docsapp.deployment.resources.dir>
+    <proxyfilter.deployment.resources.dir>${deployment.dir}/installer/com.ibm.proxy.filter.deployment</proxyfilter.deployment.resources.dir>
+    <conversion.deployment.resources.dir>${deployment.dir}/installer/com.ibm.conversion.deployment</conversion.deployment.resources.dir>
+    <viewer.deployment.resources.dir>${deployment.dir}/installer/com.ibm.concord.viewer.deployment</viewer.deployment.resources.dir>
+    <docs.lcfiles.ext.deployment.resources.dir>${deployment.dir}/installer/com.ibm.docs.lcfiles.ext.deployment</docs.lcfiles.ext.deployment.resources.dir>
+    <viewer.lcfiles.ext.deployment.resources.dir>${deployment.dir}/installer/com.ibm.concord.viewer.lcfiles.ext.deployment</viewer.lcfiles.ext.deployment.resources.dir>
+    <license.dir>${deployment.dir}/License/docs</license.dir>
+    <python.file>${deployment.dir}/Python273</python.file>
+    <pii.docs.dir>${docs.root.dir}/docs-web.resources</pii.docs.dir>
+    <pii.docs-ext.dir>${docs.root.dir}/docs-ext</pii.docs-ext.dir>
+    <pii.viewer.dir>${docs.root.dir}/viewerapp</pii.viewer.dir>
+    <pii.viewer-ext.dir>${docs.root.dir}/viewer-ext</pii.viewer-ext.dir>
+    <pii.im.dir>${deployment.dir}/im</pii.im.dir>
+    <docs.help.dir>${deployment.dir}/help/com.hcl.docs.help/</docs.help.dir>
+  </properties>
+
+  <!-- Modules -->
+  <modules>
+  	<module>help</module>
+    <module>installer</module>
+    <module>zip</module>
+    <module>rpm</module>
+    <module>im</module>
+    <module>pii</module>
+    <module>deploy</module>
+  </modules>
+</project>

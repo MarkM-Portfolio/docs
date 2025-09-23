@@ -1,0 +1,75 @@
+({
+	LOADING: "Innholdet lastes inn.",
+	LOAD_FINISHED: "Innlasting av innhold fullført.",
+	PAGE_SETUP: "Sideoppsett",
+	NOTE_INVALIDACTION_FOOTNOTE:"Dette er ikke en gyldig handling for en fotnote.",
+	NOTE_INVALIDACTION_ENDNOTE:"Dette er ikke en gyldig handling for en sluttnote.",
+	PAGENUMBER_OF_TOTALNUMBER:"Side ${0} av ${1}", //page 1 of N
+	PAGE_NUMBER: "Side: ${pageNumber} / ${totalPageNumber}",
+	toc:{
+		title : "Innholdsfortegnelse",
+		update: "Oppdater",
+		del: "Slett",
+		toc: "Innholdsfortegnelse",
+		linkTip: "Ctrl+klikk for å navigere",
+		pageNumber: "Bare sidetall",
+		entireTable: "Hele tabellen"
+	},
+	link:{
+		addlink:"Legg til kobling",
+		gotolink: "Åpne kobling",
+		unlink	: "Fjern kobling",
+		editlink: "Rediger kobling",
+		internalLink: "Intern kobling",
+		ctrlLink: "Ctrl+klikk for å gå til kobling",
+		cannotOpen: " Kan ikke åpnes fra ${productName}."
+	},
+	field:{
+		update: "Oppdater felt"
+	},
+	insertTime:"Sett inn klokkeslett",
+	insertDate:"Sett inn dato",
+	selectDate:"Velg dato",
+	selectTime:"Velg klokkeslett",
+	acc_blank: "Blank",// when selection is nothing but space char and empty paragraph
+	acc_space: "mellomrom",// string read out when the cursor is before one space char
+	acc_inLink: "i kobling ",
+	acc_inField: "i felt ",
+	acc_selected :" valgt",
+	acc_inTable: "i tabellrad ${0} kolonne ${1} ",
+	acc_imageSelected: "grafikk valgt",
+	acc_canvasSelected:"form valgt",
+	acc_textboxSelected:"tekstboks valgt",
+	ACC_TABLE_TABLESIZE:"Du har valgt ${0} rader og ${1} kolonner",
+	ACC_TABLE_MAXSIZE:" Støttet maksimal tabellstørrelse er 20*20",
+	ACC_headerFooterMode: "bunntekst topptekst redigeringsmodus",
+	ACC_EditorMode: "redigeringsmodus for redigerer",
+	ACC_FootnotesMode: "fotnoter redigeringsmodus",
+	ACC_EndnotesMode: "sluttnoter redigeringsmodus",
+	ACC_uniformTable: "En ny rad er lagt til",
+	Acc_column :"kolonne ${0}",
+	acc_page :"side ${0}",
+	acc_section:"seksjon ${0}",
+	acc_spellWarn:"stavingen er feil",
+	acc_outTable:"utenfor tabell",
+	acc_link :"kobling",
+	acc_field :"felt",
+	acc_footnote:"fotnote",
+	acc_endnote:"sluttnote",	
+	acc_editor:"Redigert av ${0}",
+	tablePropertyTitle: "Tabellegenskaper",
+	headerTitle:"Topptekst",
+	footerTitle:"Bunntekst",
+	firstheaderTitle:"Topptekst på første side",
+	firstfooterTitle:"Bunntekst på første side",
+	evenheaderTitle:"Topptekst på partallssider",
+	evenfooterTitle:"Bunntekst på partallssider",
+	oddheaderTitle:"Topptekst på oddetallssider",
+	oddfooterTitle:"Bunntekst på oddetallssider",
+	showTableBorder:"Vis tabellgrenser",
+	list_none: "Ingen",
+	SET_NUMBERING_VALUE: "Angi nummereringsverdi",
+	BIDI_CONTENT_EDITING: "Dette dokumentet inneholder toveisinnhold. For å kunne arbeide med dette dokumentet på riktig måte må du slå på toveisstøtte i HCL Connections-innstillingene."
+})
+	
+

@@ -1,0 +1,497 @@
+ /* 
+ * Licensed Materials - Property of IBM.
+ * @concordstyles css
+ * Copyright IBM Corporation 2010. All Rights Reserved.
+ * U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
+ 
+ /*
+ * LockBox, such as network issue, log in another client. 
+ * LoadingBox
+ * ProgressBox
+ * Welcome dialog.
+ * ConfirmBox
+ * FileDeepDetectDialog
+ * MessageBox
+ * OfflineBox
+ * Unsupported dialog
+ * Encrypt password validator dialog
+ */
+.oneui30 #C_d_LockBox,
+.oneui30 #C_d_LoadingBox,
+.oneui30 #C_d_Welcome,
+.oneui30 #C_d_MessageBox,
+.oneui30 #C_d_OfflineBox,
+.oneui30 #C_d_ProgressBox,
+.oneui30 #C_d_UnsupportFeature,
+.oneui30 #C_d_ConfirmBox,
+.oneui30 #C_d_FileDeepDetectDialog,
+.oneui30 #C_d_EncryptPwdValidatorDialog {
+    border: 3px solid #c0c5d1;
+    box-shadow: 0 0 200px #ffffff;
+    background: none repeat scroll 0 0 rgba(40, 58, 99, 0.9);
+    -webkit-border-radius: 10px;
+}
+
+.oneui30 #C_d_LockBox:after,
+.oneui30 #C_d_LoadingBox:after,
+.oneui30 #C_d_Welcome:after,
+.oneui30 #C_d_MessageBox:after,
+.oneui30 #C_d_OfflineBox:after,
+.oneui30 #C_d_ProgressBox:after,
+.oneui30 #C_d_UnsupportFeature:after,
+.oneui30 #C_d_ConfirmBox:after,
+.oneui30 #C_d_FileDeepDetectDialog:after,
+.oneui30 #C_d_EncryptPwdValidatorDialog:after  {
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.15));
+    border-radius: 7px 7px 40% 40% / 7px 7px 7px 7px;
+    content: "";
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.oneui30 #C_d_LockBox:before,
+.oneui30 #C_d_LoadingBox:before,
+.oneui30 #C_d_Welcome:before,
+.oneui30 #C_d_MessageBox:before,
+.oneui30 #C_d_OfflineBox:before,
+.oneui30 #C_d_ProgressBox:before,
+.oneui30 #C_d_UnsupportFeature:before,
+.oneui30 #C_d_ConfirmBox:before,
+.oneui30 #C_d_FileDeepDetectDialog:before,
+.oneui30 #C_d_EncryptPwdValidatorDialog:before {
+	border: 3px solid rgba(0,0,0,0);
+	-webkit-border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    content: "";
+    height: 100%;
+    left: -3px;
+    position: absolute;
+    top: -3px;
+    width: 100%;
+}
+
+.oneui30 #C_d_LockBox .dijitDialogPaneContent,
+.oneui30 #C_d_LoadingBox .dijitDialogPaneContent,
+.oneui30 #C_d_ConfirmBox .dijitDialogPaneContent,
+.oneui30 #C_d_FileDeepDetectDialog .dijitDialogPaneContent,
+.oneui30 #C_d_MessageBox .dijitDialogPaneContent,
+.oneui30 #C_d_OfflineBox .dijitDialogPaneContent,
+.oneui30 #C_d_ProgressBox .dijitDialogPaneContent,
+.oneui30 #C_d_UnsupportFeature .dijitDialogPaneContent,
+.oneui30 #C_d_Welcome .dijitDialogPaneContent,
+.oneui30 #C_d_EncryptPwdValidatorDialog .dijitDialogPaneContent {
+	background: rgba(0,0,0,0);
+    padding: 15px 10px;
+    position: relative;
+    color: #FFFFFF;
+    font: 17px Arial,Helvetica,sans-serif;
+    text-align: center;
+    text-shadow: 0 -2px 1px black;
+    -webkit-border-radius: 10px;
+}
+
+.oneui30 #C_d_LockBox .dijitDialogTitleBar,
+.oneui30 #C_d_LoadingBox .dijitDialogTitleBar,
+.oneui30 #C_d_ConfirmBox .dijitDialogTitleBar,
+.oneui30 #C_d_MessageBox .dijitDialogTitleBar,
+.oneui30 #C_d_OfflineBox .dijitDialogTitleBar,
+.oneui30 #C_d_ProgressBox .dijitDialogTitleBar,
+.oneui30 #C_d_Welcome .dijitDialogTitleBar {
+    display: none;
+}
+
+#C_d_LockBox .lotusui30_layout .lotusErrorForm,
+#C_d_ProgressBox .lotusui30_layout .lotusErrorForm,
+#C_d_LoadingBox .lotusui30_layout .lotusErrorForm {
+	margin: 0 10px 0 10px;
+	width: 250px;
+}
+
+.oneui30 #C_d_LockBox .lotusErrorForm > table,
+.oneui30 #C_d_LoadingBox .lotusErrorForm > table {
+	width: 250px !important;
+}
+
+#C_d_LockBox .lotusui30_layout .lotusErrorContent,
+#C_d_ProgressBox .lotusui30_layout .lotusErrorContent,
+#C_d_LoadingBox .lotusui30_layout .lotusErrorContent {
+	padding: 0px;
+}
+
+.oneui30 #C_d_LockBox .lotusErrorContent > img.dlg_progress_processing,
+.oneui30 #C_d_ProgressBox .lotusErrorContent > img.dlg_progress_processing,
+.oneui30 #C_d_LoadingBox .lotusErrorContent > img.dlg_progress_processing {
+	position: absolute;
+	top: 120%;
+	left: 116px;
+	background-image: url("../../../images/activityIndicator.gif");
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+}
+
+.oneui30 #C_d_LockBox .lotusErrorContent > img.yourProductSprite-msgError48 {
+	display: none;
+}
+
+.oneui30 #C_d_OfflineBox .lotusErrorContent > img{
+	display: none;
+}
+
+.oneui30 #C_d_ProgressBox .lotusErrorForm > div:last-child{
+	display: none;
+}
+
+.oneui30 #C_d_LockBox .dijitDialogPaneContentArea {
+	padding-bottom: 5px;
+}
+
+ /*
+ * ConfirmBox
+ * FileDeepDetectDialog
+ * Welcome dialog
+ * MessageBox
+ * OfflineBox
+ * Unsupported dialog
+ * Encrypt password validator dialog
+ */
+ .oneui30 #C_d_Welcome .welcomeRight > p:first-child{
+	font-weight: bold;
+}
+ 
+.oneui30 #C_d_Welcome .welcomeRight > p:first-child{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.oneui30 #C_d_ConfirmBox .dijitDialogPaneActionBar,
+.oneui30 #C_d_FileDeepDetectDialog .dijitDialogPaneActionBar,
+.oneui30 #C_d_MessageBox .dijitDialogPaneActionBar,
+.oneui30 #C_d_OfflineBox .dijitDialogPaneActionBar,
+.oneui30 #C_d_Welcome .dijitDialogPaneActionBar,
+.oneui30 #C_d_EncryptPwdValidatorDialog .dijitDialogPaneActionBar{
+	border-style: none;
+	text-align: center;
+	padding-top: 0px;
+}
+
+#C_d_Welcome .welcomeRight{
+	width: 25em;
+}
+
+#C_d_UnsupportFeature .dijitDialogPaneContentArea > div {
+	width: 36em !important;
+}
+
+#C_d_ConfirmBox .dijitDialogPaneContentArea > div > div,
+#C_d_MessageBox .dijitDialogPaneContent,
+#C_d_OfflineBox .lotusErrorForm >div{
+	width: 300px !important;
+}
+
+#C_d_OfflineBox .lotusErrorForm{
+	margin: 0 0 0 0;
+}
+
+#C_d_FileDeepDetectDialog .dijitDialogPaneContentArea > div > div,
+#C_d_FileDeepDetectDialog .dijitDialogTitleBar{
+	width: 350px !important;
+}
+
+.oneui30 #C_d_Welcome .dijitDialogPaneActionBar .dijitButton,
+.oneui30 #C_d_UnsupportFeature .dijitDialogPaneActionBar .dijitButton,
+.oneui30 #C_d_MessageBox .dijitDialogPaneActionBar .dijitButton,
+.oneui30 #C_d_OfflineBox .dijitDialogPaneActionBar .dijitButton,
+.oneui30 #C_d_EncryptPwdValidatorDialog .dijitDialogPaneActionBar .dijitButton {
+	width: 100%;
+	margin:0 0 0 0;
+}
+
+.oneui30 #C_d_ConfirmBox .dijitDialogPaneActionBar .dijitButton,
+.oneui30 #C_d_FileDeepDetectDialog .dijitDialogPaneActionBar .dijitButton {
+	width: 48%;
+	margin: 0 2px 0 2px;
+}
+
+.oneui30 #C_d_ConfirmBox .dijitDialogPaneActionBar .dijitButton .dijitButtonNode,
+.oneui30 #C_d_FileDeepDetectDialog .dijitDialogPaneActionBar .dijitButton .dijitButtonNode,
+.oneui30 #C_d_MessageBox .dijitDialogPaneActionBar .dijitButton .dijitButtonNode,
+.oneui30 #C_d_OfflineBox .dijitDialogPaneActionBar .dijitButton .dijitButtonNode,
+.oneui30 #C_d_UnsupportFeature .dijitDialogPaneActionBar .dijitButton .dijitButtonNode,
+.oneui30 #C_d_Welcome .dijitDialogPaneActionBar .dijitButton .dijitButtonNode,
+.oneui30 #C_d_EncryptPwdValidatorDialog .dijitDialogPaneActionBar .dijitButton .dijitButtonNode {
+	width: 100%;
+	margin:0 0 0 0;
+	padding: 2px 0px;
+}
+
+.oneui30 #C_d_ConfirmBox .dijitButton .dijitButtonNode,
+.oneui30 #C_d_FileDeepDetectDialog .dijitButton .dijitButtonNode,
+.oneui30 #C_d_MessageBox .dijitButton .dijitButtonNode,
+.oneui30 #C_d_OfflineBox .dijitButton .dijitButtonNode,
+.oneui30 #C_d_UnsupportFeature .dijitButton .dijitButtonNode,
+.oneui30 #C_d_Welcome .dijitButton .dijitButtonNode,
+.oneui30 #C_d_EncryptPwdValidatorDialog .dijitButton .dijitButtonNode{
+	border: 1px solid #202A47;
+	-webkit-border-radius: 4px;
+	background-image: -webkit-linear-gradient(top, #B9BECC 0%, #818AA3 50%, #626D8C 50%, #747e99 100%);
+	color: #ffffff;
+	box-shadow: 0 2px 0px #586484;
+}
+
+#C_d_Welcome .dijitReset input{
+	height: 1em;
+}
+
+.oneui30 #C_d_ConfirmBox .dijitButtonText,
+.oneui30 #C_d_FileDeepDetectDialog .dijitButtonText,
+.oneui30 #C_d_MessageBox .dijitButtonText,
+.oneui30 #C_d_OfflineBox .dijitButtonText,
+.oneui30 #C_d_UnsupportFeature .dijitButtonText,
+.oneui30 #C_d_Welcome .dijitButtonText,
+.oneui30 #C_d_EncryptPwdValidatorDialog .dijitButtonText {
+	padding: 6px;
+}
+
+#C_d_FileDeepDetectDialog .dijitDialogCloseIcon,
+#C_d_UnsupportFeature .dijitDialogCloseIcon {
+	display: none;
+}
+
+/*
+ * Encrypt password validator dialog
+*/
+#C_d_EncryptPwdValidatorDialog .dijitValidationTextBox{
+	width: 100% !important;
+}
+
+#C_d_EncryptPwdValidatorDialog .dijitValidationTextBox input{
+	color: #000000;
+}
+
+#C_d_EncryptPwdValidatorDialog label > img#id_imageicon{
+	display: none !important;
+}
+
+#C_d_EncryptPwdValidatorDialog .dlg_processing2_container {
+	bottom: 55px;
+	left: 44%;
+}
+
+#C_d_EncryptPwdValidatorDialog .concordEncryptedPwdError {
+	color : #000000;
+	text-shadow: 0 -2px 1px white;
+}
+
+#C_d_EncryptPwdValidatorDialog #id_decryption_form {
+	height : auto !important;
+}
+
+div[id='C_d_EncryptPwdValidatorDialog'].dijitDialogFocused{
+	top:209px !important;
+}
+/*
+ * FileDeepDetectDialog
+ * Unsupported dialog
+ * Encrypt password validator dialog
+*/
+.oneui30 #C_d_UnsupportFeature .dijitDialogTitleBar,
+.oneui30 #C_d_FileDeepDetectDialog .dijitDialogTitleBar,
+.oneui30 #C_d_EncryptPwdValidatorDialog .dijitDialogTitleBar {
+	background: rgba(0,0,0,0);
+	border-bottom: none;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	padding: 8px 0;
+	text-align: center;
+}
+
+.oneui30 #C_d_FileDeepDetectDialog .dijitDialogTitleBar{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.oneui30 #C_d_UnsupportFeature .dijitDialogTitle,
+.oneui30 #C_d_FileDeepDetectDialog .dijitDialogTitle,
+.oneui30 #C_d_EncryptPwdValidatorDialog .dijitDialogTitle {
+	font: bold 20px Arial, Helvetica, sans-serif;
+	padding-top: 10px;
+}
+
+/*
+* Publish version dialog
+* Save as dialog
+*/
+#C_d_PublishDialog .dijitDialogCloseIcon,
+#C_d_SaveAsDialog .dijitDialogCloseIcon {
+	display: none;
+}
+
+.oneui30 #C_d_PublishDialog .dijitDialogTitleBar,
+.oneui30 #C_d_SaveAsDialog .dijitDialogTitleBar {
+    background: -webkit-linear-gradient(top, #333333 0%, #232323 95%, #111111 100%);
+	border-bottom: 1px solid #797f90;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	padding: 11px 0;
+	text-align: center;
+	box-shadow: 0 1px 1px rgba(255,255,255,0.5) inset;
+}
+
+.oneui30 #C_d_PublishDialog .dijitDialogTitle,
+.oneui30 #C_d_SaveAsDialog .dijitDialogTitle {
+	font: bold 17px Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	text-shadow: none;
+}
+
+.oneui30 #C_d_PublishDialog,
+.oneui30 #C_d_SaveAsDialog {
+	border: none;
+	border-radius: 4px 4px 0px 0px;
+	box-shadow: 0 0 200px #ffffff;
+}
+
+.oneui30 #C_d_PublishDialog:before,
+.oneui30 #C_d_SaveAsDialog:before {
+	border-radius: 4px 4px 0px 0px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.oneui30 #C_d_PublishDialog .dijitDialogPaneContent,
+.oneui30 #C_d_SaveAsDialog .dijitDialogPaneContent {
+	background: -webkit-linear-gradient(top, #e6e6e6 0%, #dddddd 100%);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3) inset;
+	padding: 20px 15px;
+}
+
+.oneui30 #C_d_PublishDialog #publishSummaryMsgDiv {
+	display: none;
+}
+
+.oneui30 #C_d_SaveAsDialog .dijitDialogPaneContentArea > div {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #303030;
+	margin-bottom: 10px;
+}
+
+.oneui30 #C_d_PublishDialog #publishVersionDescriptionMsgDiv{
+	color: #303030;
+	font-size: 13px;
+}
+
+.oneui30 #C_d_PublishDialog #publishNotificationMsgDiv {
+	color: #626262;
+	font-size: 13px;
+}
+
+.oneui30 #C_d_PublishDialog .dijitTextArea {
+	width: 100% !important;
+	height:80px;
+	border-radius: 4px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.oneui30 #C_d_SaveAsDialog #widget_C_d_SaveAsDialogInputArea {
+	width: 100% !important;
+	border-radius: 4px;
+	margin-bottom: 0;
+}
+
+.oneui30 #C_d_SaveAsDialog #widget_C_d_SaveAsDialogInputArea .dijitInputField {
+	margin: 0 5px;
+}
+
+.oneui30 #C_d_PublishDialog .dijitDialogPaneActionBar,
+.oneui30 #C_d_SaveAsDialog .dijitDialogPaneActionBar {
+	border-style: none;
+	padding: 0;
+	margin-top: 0;
+}
+
+.oneui30 #C_d_PublishDialog span[widgetid="C_d_PublishDialogOKButton"],
+.oneui30 #C_d_SaveAsDialog span[widgetid="C_d_SaveAsDialogOKButton"] {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin: 0 0 0 0;
+	background: transparent none !important;
+}
+
+.oneui30 #C_d_PublishDialog span[widgetid="C_d_PublishDialogOKButton"] > .dijitButtonNode,
+.oneui30 #C_d_SaveAsDialog span[widgetid="C_d_SaveAsDialogOKButton"] > .dijitButtonNode {
+	position: relative;
+	top: -37px;
+	left: -105%;
+	background: transparent -webkit-linear-gradient(top, #007399 0%, #006288 100%) repeat !important;
+	border: 1px solid #131313;
+}
+
+.oneui30 #C_d_PublishDialog span[widgetid="C_d_PublishDialogCancelButton"],
+.oneui30 #C_d_SaveAsDialog span[widgetid="C_d_SaveAsDialogCancelButton"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 0 0 0;
+	background: transparent none !important;
+}
+
+.oneui30 #C_d_PublishDialog span[widgetid="C_d_PublishDialogCancelButton"] > .dijitButtonNode,
+.oneui30 #C_d_SaveAsDialog span[widgetid="C_d_SaveAsDialogCancelButton"] > .dijitButtonNode {
+	position: relative;
+	top: -37px;
+	left: 7px;
+	background: transparent none repeat !important;
+	border: 1px solid #131313;
+}
+
+.oneui30 #C_d_PublishDialog .dijitButtonNode,
+.oneui30 #C_d_SaveAsDialog .dijitButtonNode {
+	color: #ffffff;
+	text-shadow: 0 -1px 1px #445F92;
+	border-radius: 3px;
+	font: bold 13px Arial, Helvetica, sans-serif;
+	box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2) inset, 0 1px 0px rgba(255,255,255,0.2);
+	padding: 3px 6px;
+}
+
+#C_d_PublishDialog .dlg_processing2_container,
+#C_d_SaveAsDialog .dlg_processing2_container {
+	padding: 0;
+	top: 50%;
+	left: 45%;
+}
+
+#C_d_PublishDialog .dlg_processing2_container .dlg_processing2_img {
+	top: -10px;
+	left: -10px;
+}
+
+
+/*
+* For underlay of dialog
+*/
+.oneui30 .dijitDialogUnderlay {
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	zoom: 1.1;
+}
+
+/*
+* remove html border
+*/
+.cke_skin_lotus .cke_editor .cke_contents{
+	border-width: 0px !important;
+}

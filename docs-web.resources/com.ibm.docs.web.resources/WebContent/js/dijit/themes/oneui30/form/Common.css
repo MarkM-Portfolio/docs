@@ -1,0 +1,175 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* oneui/form/Common.css */
+
+/*========================= common css =========================*/
+
+/* 'dijitTextBox' refers to 'dijit(TextBox|DateTextBox|CurrencyTextBox|...)' */
+
+.oneui30 a, .oneui30 a:visited {
+    color: #105cb6;
+    text-decoration: none;
+}
+
+.oneui30 a:hover, .oneui30 a:focus, .oneui30 a:active {
+    color: #05386B;
+    text-decoration: underline;
+}
+
+.oneui30 .dijitSpinner .dijitSpinnerButtonContainer {
+    border-width: 0 !important;
+}
+
+.oneui30 .dijitSpinner .dijitSpinnerButtonContainer .dijitDownArrowButton {
+    border-top-width: 0 !important;
+}
+
+.oneui30 .dijitComboBox .dijitArrowButtonContainer {
+	padding: 2px 2px 2px 0;
+    border-width: 0 !important;
+}
+
+.oneui30 textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.lotusJapanese textarea {
+    font-family: "MS UI Gothic","MS PGothic","Apple Gothic",Arial,Helvetica,sans-serif;
+}
+
+.lotusKorean textarea {
+    font-family: "Gulim","GulimChe",Arial,Helvetica,sans-serif;
+}
+
+.oneui30 .dijitTextBoxError .dijitValidationContainer {
+    background-color: #e3352e;
+    background-image: url('images/error.png');
+    background-position: center center;
+	background-repeat: no-repeat;
+    border: solid #d46464 0;
+    border-left-width: 1px;
+    width: 9px;
+    display:none;
+}
+
+.oneui30 .dijitTextBoxError .dijitValidationIcon {
+    width: 0;
+    background-color: transparent !important; /* so the INPUT doesn't obscure the border in rtl+a11y */
+}
+
+/* .dijitInputField .dijitPlaceHolder is explicitly listed below because dijitPlaceHolder is absolutely positioned, so padding set on dijitInputField won't affect it */
+.oneui30 .dijitTextBox .dijitInputContainer, .oneui30 .dijitTextArea, .oneui30 .dijitInputField .dijitPlaceHolder {
+    padding: 0;
+}
+
+.oneui30 .dijitTextBox, .oneui30 .dijitTextBox .dijitButtonNode { /* color for (outer) border on *TextBox widgets, and border between input and buttons on ComboBox and Spinner */
+    border-color: #aaa;
+}
+
+.oneui30 .dijitTextBox {
+    background-color: #fff;
+    padding: 0;
+}
+
+/* error state */
+.oneui30 .dijitTextBoxError, .oneui30 .dijitTextBoxError .dijitButtonNode {
+    border-color: #d46464;
+}
+
+.oneui30 .dijitTextBoxError, .oneui30 .dijitTextBoxError .dijitInputContainer {
+    background-color: #fff;
+}
+
+/* focused state */
+.oneui30 .dijitTextBoxFocused {
+    background-color: #fff;
+}
+
+.oneui30 .dijitTextBoxFocused .dijitInputContainer {
+    background: #fff;
+}
+
+.oneui30 .dijitTextBoxErrorFocused, .oneui30 .dijitTextBoxErrorFocused .dijitButtonNode {
+    border-color: #d46464
+}
+
+/* disabled state */
+.oneui30 .dijitTextBoxDisabled, .oneui30 .dijitTextBoxDisabled .dijitButtonNode {
+    border-color: #ccc;
+}
+
+.oneui30 .dijitTextBoxDisabled {
+    background-color: #eee;
+    color: #666;
+}
+
+.dj_webkit .oneui30 .dijitTextBoxDisabled INPUT {
+    color: black;   
+}
+
+/*========================= for special widgets =========================*/
+/* ComboBox */
+.oneui30 .dijitComboBox .dijitArrowButtonInner {
+    margin: 0;
+	padding: 1px;
+	background-image: url("images/smallcommonFormArrows.png");
+    background-position: -35px 53%;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 100%;
+    border: 0 solid #fff;
+}
+
+.oneui30 .dijitTextBox .dijitInputField {
+    padding: 0px 0;
+	border: 0;
+}
+
+.oneui30 .dijitTextBox .dijitArrowButton {
+	/* this is for a combo box with no arrow displayed; we set baseClass=TextBox */
+	display:none;
+}
+
+.oneui30 .dijitTextBox .dijitInputInner, .oneui30 .dijitTextBox .dijitValidationContainer { 
+    padding: 1px 0;
+}
+
+/* hover state */
+.oneui30 .dijitComboBoxHover .dijitArrowButtonInner {
+    background-position: -70px 53%;
+}
+
+/* focused state */
+.oneui30 .dijitComboBoxFocused .dijitButtonNode {
+    padding: 2px 2px 2px 0;
+	background-position: 0 -177px;
+}
+
+.oneui30 .dijitComboBoxFocused .dijitArrowButtonInner {
+    background-position: -70px 53%;
+    border: 0;
+}
+
+/*========================= hacks for browsers =========================*/
+/* it seems the input[type="hidden"] has a height (16px) too... this may cause the widget's height calculate error */
+.dj_ff3 .oneui30 .dijitInputField input[ type = "hidden"] {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+/* In quirks mode strangely all browsers do border-box sizing for input nodes.
+ * Drop the 1px white border around ComboBox arrow to fix misalignment of icon, and to jump on focus.
+ * Note also that these rules are copying what is done on focus.
+ */
+.dj_quirks .oneui30 .dijitComboBox .dijitArrowButtonInner {
+    border: 0
+}
+
+.dj_quirks .oneui30 .dijitComboBox .dijitArrowButtonContainer {
+    padding: 1px
+}

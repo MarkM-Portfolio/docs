@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Dec 04 14:54:02 CST 2015
+zookeeper-3.4.6.jar>=
+zookeeper-3.4.6.pom>=

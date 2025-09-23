@@ -1,0 +1,16 @@
+({	
+	jan:"Jan",
+	feb:"Fév",
+	mar:"Mar",
+	apr:"Avr",
+	may:"Mai",
+	june:"Juin",
+	july:"Juillet",
+	aug:"Août",
+	sept:"Sept",
+	oct:"Oct",
+	nov:"Nov",
+	dec:"Déc",
+	pm:"PM",
+	am:"AM"
+})

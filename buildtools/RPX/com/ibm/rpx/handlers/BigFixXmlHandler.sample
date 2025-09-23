@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceBundle locale="en-us" bundleName="solarisRollbackWizard">
+
+        
+    <map>
+      <key>wizard_title</key>
+      <value>Solaris Patch Rollback Wizard</value>
+    </map>
+
+    <map>
+      <key>flash_warning</key>
+      <value>You need to install/upgrade your Flash Player to version 9 <a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">Download Flash Player from Adobe</a></value>
+    </map>
+
+    <map>
+      <key>wizard_welcome</key>
+      <value><h2>Welcome to the Solaris Patch Rollback Wizard</h2></value>
+    </map>
+        
+    <map>
+      <key>wizard_desc</key>
+      <value><p>This Wizard will enable you to uninstall Solaris patches from Solaris 7, 8, 9 and 10 computers. Upon completion of this Wizard, the Take Action dialog box will appear, which will allow you to uninstall the selected Solaris patch.</p></value>
+    </map>
+        
+    <map>
+      <key>wizard_warning</key>
+      <value><p><b>Important Note: </b>If the patch selected was installed without backing up the original files, or if the patch is required by other installed patches, the patch will not be uninstalled and the action will fail.</p></value>
+    </map>
+        
+    <map>
+      <key>wizard_propnote_disabled</key>
+      <value><p><b>Note:</b> The retrieved property 'Patchrm Output' should be activated to view detailed results of this action.</p></value>
+    </map>
+        
+    <map>
+      <key>wizard_propnote_active</key>
+      <value><p><b>Note:</b> The retrieved property 'Patchrm Output' is activated and can be used to view more detailed results of this action.</p></value>
+    </map>
+        
+    <map>
+      <key>wizard_propnote_activewait</key>
+      <value><p><b>Note:</b> After activating the retrieved property, please wait for computers to report before running the Wizard again.</p></value>
+    </map>
+        
+    <map>
+      <key>wizard_propnote_activemaster</key>
+      <value><p><b>Note:</b> For detailed messages about the results of this action, this wizard should be used by a master operator to activate the retrieved property 'Patchrm Output.'</p></value>
+    </map>
+        
+    <map>
+      <key>wizard_propnote_activemaster_error</key>
+      <value>There was an error determining whether or not the user is a master operator!</value>
+    </map>
+        
+    <map>
+      <key>wizard_prop_error</key>
+      <value>There was an error in importing the retrieved property</value>
+    </map>
+        
+    <map>
+      <key>wizard_import_error</key>
+      <value>There was an error importing the action.</value>
+    </map>
+        
+    <map>
+      <key>wizard_input_error</key>
+      <value>Please select or enter a patch ID in the form '123456-01'</value>
+    </map>
+        
+        <map>
+            <key>localization_init_error</key>
+            <value>Unable to initialize localization utilities: </value>
+        </map>
+        
+        <map>
+            <key>parmop</key>
+            <value><p><span class="pseudo_link" onMousedown="this.style.cursor='wait'" onMouseup="ActivateParmOP(); this.style.cursor='hand'">Click <u>here</u></span> to activate the 'Patchrm Output' property.</p></value>
+        </map>
+        
+        <map>
+            <key>selectpatch</key>
+            <value>Select a Solaris patch from the drop-down menu or type in the Patch ID.  Do not include any spaces.</value>
+        </map>
+        
+        <map>
+            <key>Finish</key>
+            <value>Finish</value>
+        </map>
+        
+        <map>
+            <key>Quit</key>
+            <value>Quit</value>
+        </map>
+        
+
+        <map>
+            <key>Quit</key>
+            <value>Quit</value>
+        </map>
+        
+        <map>
+            <key>uninstall</key>
+            <value>Uninstall Solaris Patch</value>
+        </map>
+</ResourceBundle>

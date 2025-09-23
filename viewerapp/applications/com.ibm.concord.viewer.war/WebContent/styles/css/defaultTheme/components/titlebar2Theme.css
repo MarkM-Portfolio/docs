@@ -1,0 +1,69 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for the title bar (layout)
+companion files: titlebar.css / titlebarTheme.css
+companion files: titlebarRTL.css / titlebarThemeRTL.css*/
+/*** T I T L E   B A R 	***/
+/*the bar under the banner that contains breadcrumb navigation, buttons, and search UI*/
+
+
+
+.lotusui30 .lotusTitleBar2 {margin:0; background-color:#222; 
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;}
+.lotusui30 .lotusTitleBar2 .lotusInner {padding-left:15px; padding-right:15px;}
+.lotusui30 .lotusTitleBar2 .lotusHeading {color:#fff;}
+.lotusui30 .lotusTitleBar2 .lotusGlobalSearch {right:15px;}
+.lotusui30 .lotusTitleBar2 .lotusGlobalSearch .lotusText {border-color:#000; color:#ccc; 
+	-moz-box-shadow:inset 0 2px 15px #000;
+	-webkit-box-shadow:inset 0 2px 15px #000; 
+	box-shadow:inset 0 2px 15px #000;
+	background:#000;
+	background:-moz-linear-gradient(center top, #222 25%, #373737 100%); 
+	background:-webkit-gradient(linear, left top, left bottom, from(#222), color-stop(25%, #222), to(#373737));}
+.lotusui30 .lotusTitleBar2 .lotusGlobalSearch .lotusSearchButton {background-position:-513px -8px; opacity:0.7; filter:alpha(opacity=70);}
+.lotusui30 .lotusTitleBar2 .lotusBreadcrumbs a, .lotusui30 .lotusTitleBar2 .lotusBreadcrumbs a:hover, .lotusui30 .lotusTitleBar2 .lotusBreadcrumbs .lotusDivider {color:#fff;}
+.lotusui30 .lotusTitleBar2 .lotusBtn {background-color:#404040; border-color:#5e6065; color:#fff; outline-color:#0c0c0c;
+	background-image:-moz-linear-gradient(#525459, #2d2f33);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#525459), to(#2d2f33));
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;}
+.lotusui_ie .lotusui30 .lotusTitleBar2 .lotusBtn {border-color: #0c0c0c;}
+.lotusui30 .lotusTitleBar2 .lotusBtn .lotusDropDownSprite {background-position:0 -656px;}
+
+/* tabs */
+.lotusui30 .lotusTitleBar2 .lotusTabNavigation .lotusInner {padding:0 15px;}
+.lotusui30 .lotusTitleBar2 .lotusTabs li {border-color:#5e6065 #5e6065 #2d2f33; outline-color:#0c0c0c; background:#404040;
+	background:-moz-linear-gradient(#525459, #2d2f33);
+	background:-webkit-gradient(linear, left top, left bottom, from(#525459), to(#2d2f33));}
+.lotusui_ie .lotusui30 .lotusTitleBar2 .lotusTabs li {border-color: #0c0c0c #0c0c0c #404040;}
+.lotusui_ie8 .lotusui30 .lotusTitleBar2 .lotusTabs li {border-bottom-color:#404040;}
+.lotusui30 .lotusTitleBar2 .lotusTabs li.lotusSelected {border-color:#fff #fff #e9e9e9; 
+	background:-moz-linear-gradient(#fff, #e9e9e9);
+	background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#e9e9e9));}
+.lotusui_ie .lotusui30 .lotusTitleBar2 .lotusTabs li.lotusSelected {border-color:#0c0c0c #0c0c0c #e9e9e9;}
+.lotusui30 .lotusTitleBar2 .lotusTabs li a, .lotusui30 .lotusTitleBar2 .lotusTabs li a:visited {color:#fff;}
+.lotusui30 .lotusTitleBar2 li.lotusTabOverflow {background:none; border:none; margin:0; outline:none;} /*needed here again to override above*/
+
+
+
+
+
+.lotusui30 .lotusTitleBar2 {border-top:1px solid #494949; 
+	background:-moz-linear-gradient(top, #333539 0%, #222 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #333539), color-stop(100%, #222));}
+.lotusui30 .lotusTitleBar2 .lotusRightCorner {
+	-moz-box-shadow:-4px 2px 4px #b6b6b6;
+	-webkit-box-shadow:-4px 2px 4px #b6b6b6;
+	-box-shadow:-4px 2px 4px #b6b6b6;}
+.lotusui30 .lotusTitleBar2 .lotusTabNavigation {
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-box-shadow:none;}
+
+/***********************************************************/
+

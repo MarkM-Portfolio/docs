@@ -1,0 +1,22 @@
+({
+	question:"Pytanie",
+	issue:"Problem",
+	toDo:"Czynność do wykonania",
+	comment:"Komentarz",
+	done:"Gotowe",
+	jan:"sty",
+	feb:"lut",
+	mar:"mar",
+	apr:"kwi",
+	may:"maj",
+	june:"cze",
+	july:"lip",
+	aug:"sie",
+	sept:"wrz",
+	oct:"paź",
+	nov:"lis",
+	dec:"gru",
+	pm:"po południu",
+	am:"przed południem",
+	assignTo:"Przypisz do: "
+})

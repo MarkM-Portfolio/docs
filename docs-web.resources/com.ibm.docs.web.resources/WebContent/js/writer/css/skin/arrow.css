@@ -1,0 +1,42 @@
+.leftArrow {
+	background-image: url("arrow2.bmp");
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 20px;
+	width: 9px;
+	overflow: hidden;
+	color: #999 border :   1px #CECECE solid;
+}
+.rightArrow {
+	background-image: url("arrow1.bmp");
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 20px;
+	width: 9px;
+	overflow: hidden;
+	color: #999 border :   1px #CECECE solid;
+}
+.upArrow {
+	background-image: url("upArrow.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 20px;
+	width: 17px;
+	border: 1px solid;
+}
+.downArrow {
+	background-image: url("downArrow.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 20px;
+	width: 17px;
+	border: 1px solid
+}

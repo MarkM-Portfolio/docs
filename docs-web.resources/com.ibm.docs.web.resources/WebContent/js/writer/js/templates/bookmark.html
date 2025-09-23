@@ -1,0 +1,18 @@
+<div id="bookmarkPanel" tabindex="0" role="region" class="popupDlg" data-dojo-attach-point="PopupNode" data-dojo-attach-event="onkeydown:_onStickyKeyDown">
+    <img src="" tabindex="-1" data-dojo-attach-point="arrowNode">
+  	
+  	<div class="wrapper">
+	  	<div class="inputCtl inlineDiv">
+		  	<input id="C_i_InputBox" type="text" class="inputbox" name="bookmarkName" value="" data-dojo-attach-point="inputTextBox" data-dojo-type="dijit/form/ValidationTextBox">
+		  	<div class="textAlign" data-dojo-attach-point="listWrapper"></div>		  	
+	  	</div>
+	  	<div class="inlineDiv">
+	  	 <button class="btn ok" role="button" data-dojo-attach-point="okNode" data-dojo-attach-event="onkeydown:_onKeyDown,onclick:_onclick">OK</button>
+		 <button class="btn edit" role="button" data-dojo-attach-point="editNode" data-dojo-attach-event="onkeydown:_onKeyDown,onclick:_onclick">Edit</button>
+	  	</div>
+	  	<div class="inlineDiv">
+	  	  <button class="btn cancel" role="button" data-dojo-attach-point="cancelNode" data-dojo-attach-event="onkeydown:_onKeyDown,onclick:_onclick">Cancel</button>
+	      <button class="btn remove" role="button" data-dojo-attach-point="removeNode" data-dojo-attach-event="onkeydown:_onKeyDown,onclick:_onclick">Remove</button>
+	  	</div>
+  	</div>  	 	
+</div>

@@ -1,0 +1,63 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2022                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<project name="getDocsZipPkg" basedir="." default="deploy">
+	<!--target name="fetchdocs" if="ServerADDR"-->
+	<target name="fetchdocs">
+		<property name="remoteBaseDir" value="daily/Concord/Sprint_Build/On-premise1.0.7_Docs"/>
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteBaseDir}">
+			<fileset dir="${DOWNLOAD_HOME}" includes="currentBuildLabel.txt"/>
+		</ftp> -->
+
+		<echo message="remoteBaseDir = ${remoteBaseDir}" />
+		<echo message="DOWNLOAD_HOME = ${DOWNLOAD_HOME}" />
+
+		<copy todir="${DOWNLOAD_HOME}">
+			<fileset dir="${remoteBaseDir}">
+				<include name="currentBuildLabel.txt"/>
+			</fileset>
+		</copy>
+
+		<loadfile property="curBldLabel" srcFile="${DOWNLOAD_HOME}/currentBuildLabel.txt">
+			<filterchain>
+				<striplinebreaks/>
+			</filterchain>
+		</loadfile>
+
+		<!-- <ftp action="get" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="${remoteBaseDir}/${curBldLabel}/">
+			<fileset dir="${DOWNLOAD_HOME}" includes="DocsApp.zip"/>
+			<fileset dir="${DOWNLOAD_HOME}" includes="DocsProxyFilter.zip"/>
+			<fileset dir="${DOWNLOAD_HOME}" includes="DocsLCExtension.zip"/>
+		</ftp> -->
+
+		<echo message="remoteBaseDir = ${remoteBaseDir}" />
+		<echo message="DOWNLOAD_HOME = ${DOWNLOAD_HOME}" />
+
+		<copy todir="${DOWNLOAD_HOME}">
+			<fileset dir="${remoteBaseDir}/${curBldLabel}">
+				<include name="DocsApp.zip"/>
+				<include name="DocsProxyFilter.zip"/>
+				<include name="DocsLCExtension.zip"/>
+			</fileset>
+		</copy>
+
+		<delete includeEmptyDirs="true">
+			<fileset dir="${DOWNLOAD_HOME}" includes="currentBuildLabel.txt"/>
+		</delete>
+	</target>
+	<target name="deploy" depends="fetchdocs">
+	</target>
+</project>
+

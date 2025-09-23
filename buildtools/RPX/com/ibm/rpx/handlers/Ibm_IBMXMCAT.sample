@@ -1,0 +1,16 @@
+<catsim>
+  <head>
+    <meta name="version" content="5.5.0" />
+    <meta name="title" content="Simulation" />
+  </head>
+  <body>
+    <step type="click" dialog="217,443,557,557"
+        precomment="We are going to create a new catalog of components" 
+        objective="Let us start the Catalog workbench" 
+        instructions="Select the Start menu">
+      <area type="goodclick" coords="23,21,64,40" fgcolor="#ff0000" />
+      <mouse clicks="1" button="1" />
+      <img src="../Publish/2089/$File/Settings0001.gif" />
+    </step>
+  </body>
+</catsim>

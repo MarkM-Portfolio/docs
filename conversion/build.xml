@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Conversion" basedir="." default="conversion.build">
+	<property name="build.debug" value="true"/>
+	<property name="build.debuglevel" value="source,lines"/>
+	<property environment="env"/>
+	<condition property="needPackSymphony">
+		<isset property="ServerADDR"/>
+	</condition>
+	<!-- Part I: Converter Bundle Targets -->
+	<!-- target name="osgi.was.build" depends="conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.service.osgi.was" inheritAll="true"/>
+	</target-->
+	<target name="metafile.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.metafile.common" inheritAll="true"/>
+	</target>
+	<target name="odf2image.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odf2image" inheritAll="true"/>
+	</target>
+	<target name="odt2html.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odt2html" inheritAll="true"/>
+	</target>
+	<target name="ods.common.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ods.common" inheritAll="true"/>
+	</target>
+	<target name="odp.common.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odp.common" inheritAll="true"/>
+	</target>
+	<target name="odsjson2html.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odsjson2html" inheritAll="true"/>
+	</target>
+	<target name="ods2json.build" depends="conversion.common.build,conversion.service.build,ods.common.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ods2json" inheritAll="true"/>
+	</target>
+	<target name="csv2json.build" depends="conversion.common.build,conversion.service.build,ods.common.build">
+		<ant dir="com.ibm.symphony.conversion.converter.csv2json" inheritAll="true"/>
+	</target>
+	<target name="html2odt.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.html2odt" inheritAll="true"/>
+	</target>
+	<target name="json2ods.build" depends="conversion.common.build,conversion.service.build,ods.common.build">
+		<ant dir="com.ibm.symphony.conversion.converter.json2ods" inheritAll="true"/>
+	</target>
+	<target name="odp2html.build" depends="conversion.common.build,conversion.service.build,odp.common.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odp2html" inheritAll="true"/>
+	</target>
+	<target name="html2pptx.build" depends="conversion.common.build,conversion.service.build,conversionlib.build">
+		<ant dir="com.ibm.symphony.conversion.converter.html2pptx" inheritAll="true"/>
+	</target>
+	<target name="pptx2html.build" depends="conversion.common.build,conversion.service.build,sym.build,conversionlib.build">
+		<ant dir="com.ibm.symphony.conversion.converter.pptx2html" inheritAll="true"/>
+	</target>
+	<!--  symphony converters begin  -->
+	<target name="doc2html.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.doc2html" inheritAll="true"/>
+	</target>
+	<target name="libre.build" depends="conversion.common.build,conversion.service.build,sym.build">
+			<ant dir="com.ibm.symphony.conversion.converter.libre" inheritAll="true"/>
+	</target>
+	<target name="doc2odt.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.doc2odt" inheritAll="true"/>
+	</target>
+	<target name="doc2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.doc2pdf" inheritAll="true"/>
+	</target>
+	<target name="docx2html.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.docx2html" inheritAll="true"/>
+	</target>
+	<target name="docx2odt.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.docx2odt" inheritAll="true"/>
+	</target>
+	<target name="docx2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.docx2pdf" inheritAll="true"/>
+	</target>
+	<target name="xlsx2ods.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.xlsx2ods" inheritAll="true"/>
+	</target>
+	<target name="xlsx2json.build" depends="conversion.common.build,conversion.service.build,sym.build,conversionlib.build">
+		<ant dir="com.ibm.symphony.conversion.converter.xlsx2json" inheritAll="true"/>
+	</target>
+	<target name="json2xlsx.build" depends="conversion.common.build,conversion.service.build,conversionlib.build">
+		<ant dir="com.ibm.symphony.conversion.converter.json2xlsx" inheritAll="true"/>
+	</target>
+	<target name="pptx2odp.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.pptx2odp" inheritAll="true"/>
+	</target>
+	<target name="pptx2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.pptx2pdf" inheritAll="true"/>
+	</target>
+	<target name="pptx2ppt.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.pptx2ppt" inheritAll="true"/>
+	</target>
+	<target name="json2ots.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.json2ots" inheritAll="true"/>
+	</target>
+	<target name="json2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build,conversionlib.build,json2ods.build">
+		<ant dir="com.ibm.symphony.conversion.converter.json2pdf" inheritAll="true"/>
+	</target>
+	<target name="json2xls.build" depends="conversion.common.build,conversion.service.build,sym.build,json2ods.build">
+		<ant dir="com.ibm.symphony.conversion.converter.json2xls" inheritAll="true"/>
+	</target>
+	<target name="ods2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ods2pdf" inheritAll="true"/>
+	</target>
+	<target name="ods2xls.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ods2xls" inheritAll="true"/>
+	</target>
+	<target name="odt2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odt2pdf" inheritAll="true"/>
+	</target>
+	<target name="odt2doc.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odt2doc" inheritAll="true"/>
+	</target>
+	<target name="ots2html.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ots2html" inheritAll="true"/>
+	</target>
+	<target name="ots2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ots2pdf" inheritAll="true"/>
+	</target>
+	<target name="ott2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ott2pdf" inheritAll="true"/>
+	</target>
+	<target name="odp2ppt.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odp2ppt" inheritAll="true"/>
+	</target>
+	<target name="odp2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odp2pdf" inheritAll="true"/>
+	</target>
+	<target name="ppt2html.build" depends="conversion.common.build,conversion.service.build,sym.build,odp2html.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ppt2html" inheritAll="true"/>
+	</target>
+	<target name="ppt2odp.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ppt2odp" inheritAll="true"/>
+	</target>
+	<target name="ppt2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.ppt2pdf" inheritAll="true"/>
+	</target>
+	<target name="xls2html.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.xls2html" inheritAll="true"/>
+	</target>
+	<target name="xls2json.build" depends="conversion.common.build,conversion.service.build,sym.build,ods2json.build">
+		<ant dir="com.ibm.symphony.conversion.converter.xls2json" inheritAll="true"/>
+	</target>
+	<target name="xls2ods.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.xls2ods" inheritAll="true"/>
+	</target>
+	<target name="xls2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.xls2pdf" inheritAll="true"/>
+	</target>
+	<target name="xlsx2pdf.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.xlsx2pdf" inheritAll="true"/>
+	</target>
+	<target name="html2doc.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.html2doc" inheritAll="true"/>
+	</target>
+	<target name="html2odp.build" depends="conversion.common.build,conversion.service.build,sym.build, odp.common.build">
+		<ant dir="com.ibm.symphony.conversion.converter.html2odp" inheritAll="true"/>
+	</target>
+	<!--  symphony converters end  -->
+	<target name="html2ppt.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.html2ppt" inheritAll="true"/>
+	</target>
+	<target name="wmf2png.build" depends="conversion.common.build,conversion.service.build,metafile.build">
+		<ant dir="com.ibm.symphony.conversion.converter.wmf2png" inheritAll="true"/>
+	</target>
+	<target name="svm2png.build" depends="conversion.common.build,conversion.service.build,metafile.build">
+		<ant dir="com.ibm.symphony.conversion.converter.svm2png" inheritAll="true"/>
+	</target>
+	<target name="txt2odt.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.txt2odt" inheritAll="true"/>
+	</target>
+	<target name="txt2html.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.txt2html" inheritAll="true"/>
+	</target>
+	<target name="txt2json.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.txt2json" inheritAll="true"/>
+	</target>
+	<target name="svg2png.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.svg2png" inheritAll="true"/>
+	</target>
+	<!-- Part II: Web Application Targets -->
+	<target name="conversion.common.build">
+		<ant dir="com.ibm.symphony.conversion.service.common" inheritAll="true"/>
+	</target>
+	<target name="conversion.service.build" depends="conversion.common.build">
+		<ant dir="com.ibm.symphony.conversion.service" inheritAll="true"/>
+	</target>
+	<target name="conversionlib.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.conversionlib" inheritAll="true"/>
+	</target>
+	
+	<target name="sym.build" depends="conversion.common.build,conversion.service.build">
+		<ant dir="com.ibm.symphony.conversion.converter.sym" inheritAll="true"/>
+	</target>
+
+	<!--Layout engine converters-->
+	<target name="odt2json.build" depends="conversion.common.build,conversion.service.build,conversionlib.build">
+		<ant dir="com.ibm.symphony.conversion.converter.odt2json" inheritAll="true"/>
+	</target>
+	<target name="json2odt.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.json2odt" inheritAll="true"/>
+	</target>
+	<target name="doc2json.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.doc2json" inheritAll="true"/>
+	</target>
+	<target name="json2doc.build" depends="conversion.common.build,conversion.service.build,sym.build">
+		<ant dir="com.ibm.symphony.conversion.converter.json2doc" inheritAll="true"/>
+	</target>
+	<target name="docx2json.build" depends="conversion.common.build,conversion.service.build,conversionlib.build">
+		<ant dir="com.ibm.symphony.conversion.converter.docx2json" inheritAll="true"/>
+	</target>
+	<target name="json2docx.build" depends="conversion.common.build,conversion.service.build,conversionlib.build">
+		<ant dir="com.ibm.symphony.conversion.converter.json2docx" inheritAll="true"/>
+	</target>
+
+	<target name="rest.build" depends="conversion.service.build,sym.build,libre.build,conversionlib.build,conversion.common.build">
+		<ant dir="com.ibm.symphony.conversion.service.rest.was" inheritAll="true"/>
+	</target>
+	<target name="sanity.build" if="enableSanityBuild">
+		<copy todir="../SymphonyConversion/com.ibm.docs.sanity.war">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.sanity.war"/>
+		</copy>
+		<copy todir="../SymphonyConversion/com.ibm.docs.sanity.ear">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.sanity.ear"/>
+		</copy>
+		<ant dir="com.ibm.docs.sanity.war" inheritAll="true"/>
+		<condition property="isDocs">
+			<istrue value="false"/>
+		</condition>
+		<ant dir="com.ibm.docs.sanity.ear" inheritAll="true"/>
+		<copy todir="../SymphonyConversion/com.ibm.docs.common.deployment">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.common.deployment"/>
+		</copy>
+	</target>
+	<target name="war.build" depends="rest.build,metafile.build,wmf2png.build,svm2png.build,svg2png.build,odt2html.build,ods2json.build,
+		json2ods.build,json2xls.build,json2pdf.build,csv2json.build,odp2html.build,doc2html.build,doc2odt.build,doc2pdf.build,docx2html.build,docx2odt.build,xlsx2ods.build,xlsx2json.build,
+		json2xlsx.build,pptx2odp.build,pptx2html.build,docx2pdf.build,json2ots.build,ods2pdf.build,ods2xls.build,odt2pdf.build,odsjson2html.build,ots2html.build,ots2pdf.build,ott2pdf.build,
+		ppt2html.build,ppt2odp.build,xls2html.build,xls2json.build,xls2ods.build,xls2pdf.build,html2odp.build,html2odt.build,html2ppt.build,odp2ppt.build,html2doc.build,odt2doc.build,
+	    xlsx2pdf.build,odp2pdf.build,ppt2pdf.build,pptx2pdf.build,pptx2ppt.build,odf2image.build,txt2odt.build,txt2html.build,txt2json.build,conversionlib.build,html2pptx.build,
+	    odt2json.build,json2odt.build,doc2json.build,json2doc.build,docx2json.build,json2docx.build,libre.build,libre.build">
+		<ant dir="com.ibm.symphony.conversion.service.rest.was.war" inheritAll="true"/>
+	</target>
+	<!-- Part III: Component Level Targets -->
+	<target name="oiexport_x64.build">
+		<ant dir="org.oracle.oiexport.win32_x64" inheritAll="true"/>
+	</target>
+	<target name="ear.build" depends="war.build,sanity.build">
+		<ant dir="com.ibm.symphony.conversion.service.rest.was.ear" inheritAll="true"/>
+	</target>
+	<!-- target name="osgi.build" depends="osgi.was.build,metafile.build,wmf2png.build,svm2png.build,svg2png.build,odt2html.build,ods2json.build,json2ods.build,json2xls.build,json2pdf.build,csv2json.build,
+    		odp2html.build,doc2html.build,doc2odt.build,doc2pdf.build,docx2html.build,docx2odt.build,xlsx2ods.build,xlsx2json.build,json2xlsx.build,pptx2odp.build,pptx2html.build,
+    		docx2pdf.build,json2ots.build,ods2pdf.build,ods2xls.build,odt2pdf.build,odsjson2html.build,ots2html.build,
+    		ots2pdf.build,ott2pdf.build,ppt2html.build,ppt2odp.build,xls2html.build,xls2json.build,xls2ods.build,
+    		xls2pdf.build,html2odp.build,html2odt.build,html2ppt.build,odp2ppt.build,html2doc.build,odt2doc.build,
+		    xlsx2pdf.build,odp2pdf.build,ppt2pdf.build,pptx2pdf.build,pptx2ppt.build,libre.build,stellent.build,odf2image.build,txt2odt.build,txt2html.build,conversionlib.build,html2pptx.build,libre.build">
+		<zip destfile="${build.home}/ConversionOSGI_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}" includes="**/*.jar">
+				<exclude name="com.ibm.symphony.conversion.service.rest.was.jar"/>
+				<exclude name="com.ibm.symphony.conversion.service.jar"/>
+			</fileset>
+		</zip>
+	</target-->
+	<target name="symphony.build" if="needPackSymphony">
+
+		<!-- <ftp action="recv" server="${ServerADDR}" userid="${UserName}" password="${PassWord}" binary="yes" remotedir="daily/Symphony/Sym_CS1.x/SymCS1.x_20141015.1130/setup/w32">
+			<fileset dir="${build.home}" includes="OOo_*_W32x86_install.zip"/>
+		</ftp> -->
+
+		<!-- FYI Tony Estrada - I didn't find 'SymCS1.x_20141015.1130' on icautomation.cnx.cwp.pnp-hcl.com, so I used the latest build I could find there -->
+		<!-- To-do: pull based on value within currentBuildLabel.txt -->
+		<copy todir="${build.home}">
+			<fileset dir="${env.SYMPHONY}/Sym_CS1.x/SymCS1.x_20171031.1400/setup/w32/">
+				<include name="OOo_*_W32x86_install.zip"/>
+			</fileset>
+		</copy>
+
+	</target>
+	<target name="native.build" depends="conversionlib.build,wmf2png.build">
+		<zip destfile="${build.home}/native.zip">
+			<fileset dir="${build.home}" includes="conversionlib/**,wmf2png/**" />
+		</zip>
+	</target>
+	<target name="deployment">
+		<ant dir="com.ibm.conversion.deployment" inheritAll="true"/>
+        <ant dir="com.ibm.docs.common.deployment" inheritAll="true"/>
+	</target>
+	<target name="sc-replace-bldtag">
+		<echo message="${build.timestamp}" file="sc.tmp.file"/>
+		<loadfile property="sc.timestamp" srcFile="sc.tmp.file">
+			<filterchain>
+				<tokenfilter>
+					<replaceregex pattern="-" replace="." flags="g"/>
+				</tokenfilter>
+			</filterchain>
+		</loadfile>
+	</target>
+	<target name="license.build">
+		<ant dir="com.ibm.conversion.license" inheritAll="true"/>
+	</target>
+	<target name="rim_artifacts">
+		<mkdir dir="${build.home}/rim_artifacts"/>
+		<echo message="${build.version}_${build.timestamp}" file="${build.home}/conversionVersion.txt"/>
+		<!-- ear and version files -->
+		<zip destfile="${build.home}/rim_artifacts/conversion_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}" includes="**/*.ear"/>
+			<fileset file="${build.home}/conversionVersion.txt"/>
+			<fileset file="${build.home}/currentBuildLabel.txt"/>
+		</zip>
+		<!-- configuration files -->
+		<zip destfile="${build.home}/rim_artifacts/conversion_config_${build.version}_${build.timestamp}.zip">
+			<zipfileset dir="${build.home}/config"/>
+		</zip>
+		<!-- python and jython install scripts. -->
+		<zip destfile="${build.home}/rim_artifacts/conversion_install_script_${build.version}_${build.timestamp}.zip">
+			<zipfileset dir="${build.home}/installer" excludes="installCF.bat interface.xml conversion/installCF.py util/*_win.py util/runWebSphereAs.bat"/>
+		</zip>
+		<!-- soffice -->
+		<zip destfile="${build.home}/rim_artifacts/conversion_OOo_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}" includes="OOo_*_W32x86_install.zip"/>
+		</zip>
+		<!-- stellent -->
+		<zip destfile="${build.home}/rim_artifacts/conversion_oracle_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}" includes="**/org.oracle.oiexport.*.zip"/>
+		</zip>
+		<!-- osgi bundles -->
+		<!--zip destfile="${build.home}/rim_artifacts/conversion_osgi_bundle_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}" includes="ConversionOSGI_${build.version}_${build.timestamp}.zip"/>
+		</zip-->
+		<!-- native files -->
+		<zip destfile="${build.home}/rim_artifacts/conversion_native_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}" includes="conversionlib/**,wmf2png/**" />
+		</zip>
+		<!-- licenses -->
+		<zip destfile="${build.home}/rim_artifacts/conversion_license_${build.version}_${build.timestamp}.zip">
+			<zipfileset dir="${build.home}/License"/>
+		</zip>
+		<!-- python273 without testtar.tar -->
+		<zip destfile="${build.home}/rim_artifacts/python_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}/python" includes="python*.amd64.msi"/>
+		</zip>
+	</target>
+	<!-- Part IV: Main Target -->
+	<target name="conversion.build" depends="oiexport_x64.build,ear.build,symphony.build,native.build,deployment,sc-replace-bldtag,license.build,rim_artifacts">
+		<zip destfile="${build.home}/DocsConversion.zip">
+			<fileset dir="${build.home}" includes="**/*.ear"/>
+			<!-- fileset dir="${build.home}" includes="ConversionOSGI_${build.version}_${build.timestamp}.zip"/-->
+			<fileset dir="${build.home}" includes="native.zip"/>
+			<fileset dir="${build.home}" includes="OOo_*_W32x86_install.zip"/>
+			<fileset dir="${build.home}" includes="**/org.oracle.oiexport.*.zip"/>
+			<fileset file="${build.home}/conversionVersion.txt"/>
+			<fileset file="${build.home}/currentBuildLabel.txt"/>
+			<zipfileset dir="${build.home}/config" prefix="config"/>
+			<zipfileset dir="${build.home}/installer" prefix="installer" excludes="installCF.bat interface.xml conversion/installCF.py util/*_win.py util/runWebSphereAs.bat"/>
+			<zipfileset dir="${build.home}/License" prefix="License"/>
+		</zip>
+		<mkdir dir="${build.home}/SC10.0_DocsConversion_${build.timestamp}/WebKits"/>
+		<zip destfile="${build.home}/SC10.0_DocsConversion_${build.timestamp}/WebKits/SC-DocsConversion-Config-${build.version}-${sc.timestamp}.zip">
+			<fileset dir="${build.home}" includes="**/*.ear"/>
+			<!-- fileset dir="${build.home}" includes="ConversionOSGI_${build.version}_${build.timestamp}.zip"/-->
+			<fileset dir="${build.home}" includes="native.zip"/>
+			<fileset dir="${build.home}" includes="OOo_*_W32x86_install.zip"/>
+			<fileset dir="${build.home}" includes="**/org.oracle.oiexport.*.zip"/>
+			<fileset file="${build.home}/conversionVersion.txt"/>
+			<fileset file="${build.home}/currentBuildLabel.txt"/>
+			<zipfileset dir="${build.home}/config" prefix="config"/>
+			<zipfileset dir="${build.home}/installer" prefix="installer" excludes="installCF.bat interface.xml product/**"/>
+			<zipfileset dir="${build.home}/License" prefix="License"/>
+			<zipfileset dir="${build.home}" includes="installer/installCF.bat" fullpath="install.bat"/>
+		</zip>
+		<copy file="${build.home}/installer/interface.xml" tofile="${build.home}/SC10.0_DocsConversion_${build.timestamp}/WebKits/interface.xml"/>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}">
+				<exclude name="DocsConversion.zip"/>
+				<exclude name="SC10.0_DocsConversion_${build.timestamp}/WebKits/**"/>
+				<exclude name="rim_artifacts/**"/>
+			</fileset>
+		</delete>
+	</target>
+</project>
+

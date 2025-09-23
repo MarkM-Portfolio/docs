@@ -1,0 +1,5 @@
+/viewer/verse/version.txt unprotected
+/viewer/verse/app protected
+/viewer/verse/api unprotected_api
+/viewer/verse/upload unprotected_api
+/viewer/verse/thumbnail unprotected_api

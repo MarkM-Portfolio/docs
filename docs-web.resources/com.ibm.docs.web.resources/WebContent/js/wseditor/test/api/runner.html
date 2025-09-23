@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>API Test Suite Runner</title>
+
+  <link rel="stylesheet" type="text/css" href="../../../util/jasmine-1.3.1/jasmine.css">
+  <link rel="stylesheet" type="text/css" href="../jasmine_extended.css">
+  <script type="text/javascript" src="../../../util/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="../../../util/jasmine-1.3.1/jasmine-html.js"></script>
+  <script type="text/javascript" src="../../../dojo/dojo.js"></script>
+  <script type="text/javascript" src="../jasmine_doh_adapter.js"></script>
+  <script type="text/javascript" src="../jasmine_seed.js"></script>
+
+  <script type="text/javascript">
+  	window.Env = {
+  		mode: "API",
+  		log: true
+  	};
+  	
+  	dojo.registerModulePath("websheet", "../wseditor/js");
+  	dojo.registerModulePath("websheet.test", "../wseditor/test");
+  	
+  	dojo.require("dojo.aspect");
+  	var onceWrapper = function(method) {
+		return function(target, cut, f, args) {
+			var signal;
+			var f2 = function() {
+				if (signal && signal.remove) {
+					signal.remove();
+				}
+				f();
+			};
+			signal = method(target, cut, f2, args);
+			return signal;
+		};
+	};
+  	dojo.aspect.afterOnce = onceWrapper(dojo.aspect.after);
+	dojo.aspect.beforeOnce = onceWrapper(dojo.aspect.before);
+	
+  	dojo.require("websheet.test.utils")
+	dojo.require("websheet.test.actions");
+  	dojo.require("websheet.test.checkers");
+  	dojo.require("websheet.test.deferreds");
+  	dojo.require("websheet.test.builders");
+  	dojo.require("websheet.test.entries");
+  	dojo.require("websheet.test.helpers");
+  	
+  	var params = window.utils.parseReqParams();	
+	params.repository = params.repository || "concord.storage";
+	var url = ["/docs/app/doc/", params.repository, "/", params.sample, "/edit/content"].join("");
+	
+	window.app = window.open(url);
+	
+	dojo.require("websheet.test.api." + params.script);
+  </script>
+</head>
+
+<body>
+</body>
+</html>

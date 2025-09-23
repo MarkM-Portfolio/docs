@@ -1,0 +1,44 @@
+<div class="linkPanel"><form data-dojo-attach-event="onsubmit:onSubmit">
+<table cellspacing="0" role="presentation" cellspadding="0" class="linkPanelTable">
+<tr class="linkBox selectLinkBox" data-dojo-attach-point="linkBox">
+<td class="left">
+	<div class="select" data-dojo-attach-point="selectWrapper"></div>
+</td>
+<td class="right">
+	<input type="text" data-dojo-attach-point="linkInput" data-dojo-type="dijit/form/TextBox"> 
+	<div class="select" data-dojo-attach-point="bookmarksWrapper"></div> 
+</td>
+</tr>
+<tr class="linkBox" style="display:none" data-dojo-attach-point="subjectBox">
+	<td class="left">
+		<label for="mailSubject">${strs.link_subject}</label>
+	</td>
+	<td class="right">
+		<input type="text" id="mailSubject" class="textInput" maxlength="256" data-dojo-attach-point="subjectInput" autocomplete="off"> 
+	</td>
+</tr>
+<tr class="linkBox" style="display:none" data-dojo-attach-point="textBox">
+	<td class="left">
+		<label for="displayText">${strs.link_text}</label>
+	</td>
+	<td class="right">
+		<input type="text" id="displayText" class="textInput" data-dojo-attach-point="textInput" autocomplete="off"> 
+	</td>
+</tr>
+<tr class="linkBox" style="display:none" data-dojo-attach-point="errorBox">
+	<td class="right errorBox" colspan="2">
+		<input type="text" value="${strs.link_not_support}" disabled data-dojo-attach-point="errorInput" data-dojo-type="dijit/form/TextBox"> 
+	</td>
+</tr>
+<tr class="linkButtons" data-dojo-attach-point="buttons">
+	<td class="left">
+		<button class="gotolink_button" data-dojo-attach-point="gotoButton" data-dojo-attach-event="onclick:gotoLink">${strs.link_goto}</button>
+	</td>
+	<td class="right">
+		<button type="submit" class="done_button" data-dojo-attach-point="doneButton">${strs.link_done}</button>
+		<button class="remove_button" data-dojo-attach-point="removeButton" data-dojo-attach-event="onclick:removeLink">${strs.link_remove}</button>
+	</td>
+</tr>
+</table>
+</form>
+</div>

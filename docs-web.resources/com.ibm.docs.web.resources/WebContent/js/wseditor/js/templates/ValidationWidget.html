@@ -1,0 +1,48 @@
+<div>
+	<div style="background-color: #ffffff; padding-top:15px; padding-bottom:15px; border: 1px solid #aaaaaa" dojoAttachPoint = "pane">
+		<div>
+			<div style = "height: 15px;">
+				<div dojoAttachPoint="refValue"></div>
+			</div>
+			<div class = "errorValidationInput" style = 'padding-top: 0px' >
+				<div style = 'display:none' dojoAttachPoint = "ref_error"  role = "alert"></div>
+			</div>
+		</div>
+		<div style= "margin-bottom: 20px" dojoType='dijit.form.DropDownButton' value="${nls.dvType}" title="${nls.dvType}" dojoAttachPoint="validation_type"></div>
+		<div dojoAttachPoint = "validation_details">
+		<div dojoAttachPoint = "listContainer" style = "display: none">
+			<input class ="validationInput" placeholder="${nls.addItems}" dojoAttachPoint="listInput"  title="${nls.addItems}" aria-required="true"/>
+			<div class = 'addItemBtn' tabindex = '0' dojoAttachPoint = "addItemBtn" role = 'button' alt = "${nls.addItem}"  title = "${nls.addItem}"  aria-label = "${nls.addItem}" >
+				<div class = 'll_DV_image_alttext'>+</div>
+			</div>
+			<div class = "errorValidationInput">
+				<div dojoAttachPoint = "list_error" role = "alert"></div>
+			</div>
+			<div dojoAttachPoint = "listDiv" style = 'overflow: auto;'></div>
+		</div>
+		<div dojoAttachPoint = "input1Container" style = "display: none">
+			<input class ="validationInput" dojoAttachPoint="input1" aria-required="true"/>
+			<input class ="validationInput" dojoType ='dijit.form.DateTextBox' style='display: none' dojoAttachPoint="input1Date"/>
+			<div class = "errorValidationInput">
+				<span dojoAttachPoint = "value1_error" role = "alert"></span>
+			</div>
+		</div>
+		<div dojoAttachPoint = "input2Container" style = "display: none">
+			<div>${nls.and}</div>
+			<input class ="validationInput"  placeholder="${nls.max}" dojoAttachPoint="input2" title="${nls.max}" aria-required="true"/>
+			<input class ="validationInput" dojoType ='dijit.form.DateTextBox' style='display: none' title="${nls.max}" dojoAttachPoint="input2Date"/>
+			<div class = "errorValidationInput">
+				<span dojoAttachPoint = "value2_error" role = "alert"></span>
+			</div>
+		</div>
+		<div>
+			<input style= "margin-bottom: 15px" class ="validationInput" placeholder="${nls.hintLabel}" dojoAttachPoint="hintMsg" title="${nls.hintLabel}" aria-required="true" maxlength = "255"/>
+		</div>
+		</div>
+		<div dojoAttachPoint = "buttonContainer" style = "text-align: right">
+			<div class = 'dvButtonCancel' dojoType='dijit.form.ToggleButton' value="${nls.ok}" title="${nls.ok}" dojoAttachPoint="ok">${nls.ok}</div>
+			<div class = 'dvButtonCancel' dojoType='dijit.form.ToggleButton' value="${nls.remove}" title="${nls.remove}" dojoAttachPoint="remove">${nls.remove}</div>
+			<div style = "margin-right: 5%"  class = 'dvButton' dojoType='dijit.form.ToggleButton' value="${nls.cancel}" title="${nls.cancel}" dojoAttachPoint="cancel">${nls.cancel}</div>
+		</div>
+	</div>
+</div>

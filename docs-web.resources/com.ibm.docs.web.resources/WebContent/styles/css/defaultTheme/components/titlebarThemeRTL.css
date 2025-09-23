@@ -1,0 +1,38 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for the title bar (layout)
+companion files: titlebar.css / titlebarTheme.css
+companion files: titlebarRTL.css / titlebarThemeRTL.css*/
+/*** T I T L E   B A R 	***/
+/*the blue bar under the , that contains tabs and search UI*/
+
+
+
+.lotusui30 .lotusTitleBar {margin:0;border-bottom:8px solid #fff;background-color:#222;
+    background-image:-moz-linear-gradient(#8495ad 0, #8495ad 1px, #6f849f 1px, #3c587d 50%, #304b70 50%, #283f5e 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#8495ad), to(#283f5e), color-stop(.03, #8495ad), color-stop(.03, #6f849f), color-stop(50%, #3c587d), color-stop(50%, #304b70), color-stop(100%, #283f5e));-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
+.lotusui30 .lotusTitleBar .lotusInner, .lotusui30 .lotusTitleBar .lotusRightCorner {background-image:none;background-color:transparent;}
+.lotusui30 .lotusTitleBar .lotusRightCorner {border-bottom:1px solid #1e2f47;}
+.lotusui30 .lotusTitleBar .lotusSearch .lotusText, .lotusui30 .lotusTitleBar .lotusSearch .lotusScope, .lotusui30 .lotusTitleBar .lotusSearch .lotusBtnImg, .lotusTitleBar .lotusTabs li{border-color:#1e2f47;}
+.lotusui30 .lotusTitleBar .lotusTabs li{border-color:#1e2f47;border-bottom-color:#1e2f47;background-color:#283f5e;}
+.lotusui30 .lotusTitleBar .lotusSearch .lotusScope, .lotusui30 .lotusTitleBar .lotusSearch .lotusBtnImg{background-color:#283f5e;color:#fff;}
+.lotusui_ie6 .lotusui30 .lotusTitleBar .lotusSearch .lotusScope, .lotusui_ie6 .lotusui30 .lotusTitleBar .lotusSearch .lotusScope:visited{color:#fff;}
+.lotusui30 .lotusTitleBar .lotusTabs li.lotusSelected{border-color:#1e2f47;border-bottom-color:#fff;}
+.lotusui30 .lotusTitleBar .lotusTabs{margin-right:5px;bottom:0;}
+.lotusui_ie6 .lotusui30 .lotusTabs{bottom:-1px;}
+.lotusui30 .lotusTitleBar .lotusHeading{color:#fff;padding-top:8px;}
+.lotusui30 .lotusTitleBar .lotusTabs li{margin-left:3px;padding:0;}
+.lotusui30 .lotusTitleBar .lotusTabs li a{color:#fff;}
+.lotusui30 .lotusTitleBar .lotusTabs li a:hover, .lotusui30 .lotusTitleBar .lotusTabs li a:focus, .lotusui30 .lotusTitleBar .lotusTabs li a:active{color:#fff;}
+.lotusui30 .lotusTitleBar .lotusTabs li.lotusSelected a{background-color:#fff;color:#000;}
+.lotusui30 .lotusTitleBar .lotusSearch {top:.5em;left:20px;}
+.lotusui30 .lotusTitleBar .lotusSearch .lotusBtnImg{padding:3px;background-image:none;}
+
+/* temporary fix for search scope dropdown icon */
+.lotusui30 .lotusTitleBar .lotusSearch .lotusScope{background-position:0 -928px;}
+/*accesibility*/
+.lotusImagesOff .lotusui30 .lotusTitleBar{border-bottom-width:0;}
+.lotusImagesOff .lotusui30 .lotusTitleBar .lotusBtnImg .lotusAltText{color:#fff;}
+
+/***********************************************************/

@@ -1,0 +1,22 @@
+({
+	question:"Spørgsmål",
+	issue:"Problem",
+	toDo:"Opgave",
+	comment:"Kommentar",
+	done:"Udført",
+	jan:"Jan",
+	feb:"Feb",
+	mar:"Mar",
+	apr:"Apr",
+	may:"Maj",
+	june:"Juni",
+	july:"Juli",
+	aug:"Aug",
+	sept:"Sept",
+	oct:"Okt",
+	nov:"Nov",
+	dec:"Dec",
+	pm:"PM",
+	am:"AM",
+	assignTo:"Tildel til:"
+})

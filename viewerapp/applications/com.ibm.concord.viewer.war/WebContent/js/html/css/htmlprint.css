@@ -1,0 +1,81 @@
+div#mainContainer,div.dijitTooltip{
+	display: none;
+}
+body{
+	margin: 0mm;
+	padding: 0mm;
+	overflow: hidden; 
+}
+div#print{
+	vertical-align:middle;
+	display:block;
+}
+
+
+
+#presHtmlPrintContentSelectDiv {
+	float: left;
+	overflow: visible;
+	margin-top: 4px;
+	margin-left: 10px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+
+.presHtmlPrintHelpParagraph {
+	margin-bottom: 10px !important;
+	padding: 0 0 0 0 !important;
+}
+
+.presHtmlPrintHelpList {
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 0 !important;
+}
+
+.presHtmlPrintHelpListItem {
+	padding: 0 0 0 0 !important;
+}
+
+.presHtmlPrintSlide {
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.presHtmlPrintHeaderRow {
+	height:  4%;
+	vertical-align: top;
+}
+
+.presHtmlPrintHeaderRow {
+	height:  4%;
+	vertical-align: bottom;
+}
+
+.presHtmlPrintSlideRow {
+	width: 100%;
+}
+
+.presHtmlPrintHeaderFooterLeftCell {
+	width: 50%;
+}
+
+.presHtmlPrintHeaderFooterRightCell {
+	width: 50%;
+	text-align: right;
+}
+
+.presHtmlPrintSlidePage {
+	position : relative;
+	width: 100%;
+	height:  auto;
+	border: none;
+	cellpadding: 2px;
+}

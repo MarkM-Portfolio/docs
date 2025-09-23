@@ -1,0 +1,247 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* Slider
+ * Styling Slider mainly includes styling the Slider progress bar (dijitSliderProgressBar)
+ * Slider progress bar:
+ * 1. Slider progress bar (default styling):
+ * 		.dijitSliderProgressBarH(horizontal) - for background, border
+ * 		.dijitSliderLeftBumper - for background, border
+ * 		.dijitSliderRightBumper - for background, border
+ * 		.dijitSliderProgressBarV(vertical) - for background, border
+ * 		.dijitSliderTopBumper - for background, border
+ * 		.dijitSliderBottomtBumper - for background, border
+ * 2. hovered Slider progress bar (ie, mouse hover on progress bar)
+ * 		.dijitSliderHover .dijitSliderProgressBarH(horizontal) - for background, border
+ * 3. focused Slider progress bar (ie, mouse focused on progress bar)
+ * 		.dijitSliderFocused .dijitSliderProgressBarH(horizontal) - for background, border
+ * 4. disabled/read-only Slider progress bar
+ * 		.dijitSliderDisabled .dijitSliderProgressBarH(horizontal) - for background, border
+ * Slider Thumbs:
+ * 1. Slider Thumbs (default styling):
+ * 		.dijitSliderImageHandleH(horizontal) - for background, border
+ * 		.dijitSliderImageHandleV(vertical) - for background, border
+ * 2. hovered Slider Thumbs (ie, mouse hover on slider thumbs)
+ * 		.dijitSliderHover .dijitSliderImageHandleH(horizontal) - for background, border
+ * 3. focused Slider progress bar (ie, mouse focused on slider thumbs)
+ * 		.dijitSliderFocused .dijitSliderImageHandleV(vertical) - for background, border
+ * Slider Increment/Decrement Buttons:
+ * 1. Slider Increment/Decrement Buttons (default styling):
+ * 		.dijitSliderDecrementIconH(horizontal) - for background, border
+ * 		.dijitSliderIncrementIconH(horizontal) - for background, border
+ * 		.dijitSliderDecrementIconV(vertical) - for background, border
+ * 		.dijitSliderIncrementIconV(vertical) - for background, border
+ * 2. hovered Slider Increment/Decrement Buttons (ie, mouse hover on Buttons)
+ * 		.dijitSliderHover .dijitSliderDecrementIconH(horizontal) - for background, border
+ * 3. active Slider Increment/Decrement Buttons (ie, mouse down on Buttons)
+ * 		.dijitSliderActive .dijitSliderIncrementIconV(vertical) - for background, border
+ * 4. disabled/read-only Slider Increment/Decrement Buttons
+ * 		.dijitSliderDisabled .dijitSliderDecrementIconH(horizontal) - for background
+ * 		.dijitSliderReadOnly .dijitSliderIncrementIconV(vertical) - for background
+ */
+.oneui30 .dijitRuleMark {
+    border: 1px solid #aaa;
+}
+
+.oneui30 .dijitSliderBar {
+    border-style: solid;
+    outline: 1px;
+}
+
+.oneui30 .dijitSliderFocused .dijitSliderBar, .oneui30 .dijitSliderHover .dijitSliderBar, .oneui30 .dijitSliderDisabled .dijitSliderBar {
+    border-color: #eee;
+}
+
+/* Horizontal Slider */
+.oneui30 .dijitRuleLabelsContainerH {
+    padding: 2px 0;
+}
+
+.oneui30 .dijitSlider .dijitSliderProgressBarH, .oneui30 .dijitSlider .dijitSliderLeftBumper {
+    border-color: #aaa;
+    background-color: #aaa;
+}
+
+.oneui30 .dijitSlider .dijitSliderRemainingBarH, .oneui30 .dijitSlider .dijitSliderRightBumper {
+    border-color: #eee;
+    background-color: #eee;
+}
+
+.oneui30 .dijitSliderRightBumper {
+    border-right: solid 1px #eee;
+}
+
+.oneui30 .dijitSliderLeftBumper {
+    border-left: solid 1px #eee;
+}
+
+.oneui30 .dijitSliderHover .dijitSliderProgressBarH, .oneui30 .dijitSliderHover .dijitSliderLeftBumper, .oneui30 .dijitSliderFocused .dijitSliderProgressBarH, .oneui30 .dijitSliderFocused .dijitSliderLeftBumper {
+    background-color: #aaa;
+    border-color: #aaa
+}
+
+.oneui30 .dijitSliderHover .dijitSliderRemainingBarH, .oneui30 .dijitSliderHover .dijitSliderRightBumper {
+    background-color: #eee;
+    border-color: #eee
+}
+
+.oneui30 .dijitSliderFocused .dijitSliderRemainingBarH, .oneui30 .dijitSliderFocused .dijitSliderRightBumper, .oneui30 .dijitSliderDisabled .dijitSliderRemainingBarH, .oneui30 .dijitSliderDisabled .dijitSliderRightBumper {
+    background-color: #eee
+}
+
+.oneui30 .dijitSliderDisabled .dijitSliderProgressBarH, .oneui30 .dijitSliderDisabled .dijitSliderLeftBumper {
+    background-color: #ccc
+}
+
+/* Vertical Slider */
+.oneui30 .dijitRuleLabelsContainerV {
+    padding: 0px 2px;
+}
+
+.oneui30 .dijitSlider .dijitSliderProgressBarV, .oneui30 .dijitSlider .dijitSliderBottomBumper {
+    border-color: #aaa;
+    background-color: #aaa;
+}
+
+.oneui30 .dijitSlider .dijitSliderRemainingBarV, .oneui30 .dijitSlider .dijitSliderTopBumper {
+    border-color: #eee;
+    background-color: #eee;
+}
+
+.oneui30 .dijitSliderBottomBumper {
+    border-bottom: solid 1px #eee;
+}
+
+.oneui30 .dijitSliderTopBumper {
+    border-top: solid 1px #eee;
+}
+
+.oneui30 .dijitSliderHover .dijitSliderProgressBarV, .oneui30 .dijitSliderHover .dijitSliderBottomBumper, .oneui30 .dijitSliderFocused .dijitSliderProgressBarV, .oneui30 .dijitSliderFocused .dijitSliderBottomBumper {
+    background-color: #aaa;
+}
+
+.oneui30 .dijitSliderHover .dijitSliderRemainingBarV, .oneui30 .dijitSliderHover .dijitSliderTopBumper, .oneui30 .dijitSliderFocused .dijitSliderRemainingBarV, .oneui30 .dijitSliderFocused .dijitSliderTopBumper, .oneui30 .dijitSliderDisabled .dijitSliderRemainingBarV, .oneui30 .dijitSliderDisabled .dijitSliderTopBumper {
+    background-color: #eee;
+}
+
+.oneui30 .dijitSliderDisabled .dijitSliderProgressBarV, .oneui30 .dijitSliderDisabled .dijitSliderBottomBumper {
+    background-color: #ccc;
+}
+
+/* ------- Thumbs ------- */
+.oneui30 .dijitSliderImageHandleH {
+    border: 0;
+    width: 18px;
+    height: 16px;
+    background-image: url("images/sliderThumbs.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.oneui30 .dijitSliderProgressBarH .dijitSliderThumbHover, .oneui30 .dijitSliderProgressBarH .dijitSliderThumbActive {
+    background-position: -36px 0;
+}
+
+.oneui30 .dijitSliderReadOnly .dijitSliderImageHandleH, .oneui30 .dijitSliderDisabled .dijitSliderImageHandleH {
+    background-position: 0 0;
+}
+
+.oneui30 .dijitSliderImageHandleV {
+    border: 0;
+    width: 18px;
+    height: 16px;
+    background-image: url("images/sliderThumbs.png");
+    background-repeat: no-repeat;
+    background-position: -289px 0;
+}
+
+.oneui30 .dijitSliderFocused .dijitSliderImageHandleV, .oneui30 .dijitSliderProgressBarV .dijitSliderThumbHover, .oneui30 .dijitSliderProgressBarV .dijitSliderThumbActive {
+    background-position: -325px 0;
+}
+
+.oneui30 .dijitSliderReadOnly .dijitSliderImageHandleV, .oneui30 .dijitSliderDisabled .dijitSliderImageHandleV {
+    background-position: -289px 0;
+}
+
+/* ---- Increment/Decrement Buttons ---- */
+.oneui30 .dijitSliderButtonContainerH {
+    padding: 1px 3px 1px 2px;
+}
+
+.oneui30 .dijitSliderButtonContainerV {
+    padding: 3px 1px 2px;
+}
+
+.oneui30 .dijitSliderDecrementIconH, .oneui30 .dijitSliderIncrementIconH, .oneui30 .dijitSliderDecrementIconV, .oneui30 .dijitSliderIncrementIconV {
+    background-image: url('images/commonFormArrows.png');
+    background-repeat: no-repeat;
+    font-size: 1px;
+}
+
+.oneui30 .dijitSliderDecrementIconH, .oneui30 .dijitSliderIncrementIconH {
+    height: 12px;
+    width: 9px;
+}
+
+.oneui30 .dijitSliderDecrementIconV, .oneui30 .dijitSliderIncrementIconV {
+    height: 9px;
+    width: 12px;
+}
+
+.oneui30 .dijitSliderDecrementIconH {
+    background-position: -357px 50%;
+}
+
+.oneui30 .dijitSliderActive .dijitSliderDecrementIconH, .oneui30 .dijitSliderButtonContainerH .dijitSliderDecrementButtonHover {
+    background-position: -393px 50%;
+}
+
+.oneui30 .dijitSliderIncrementIconH {
+    background-position: -251px 50%;
+}
+
+.oneui30 .dijitSliderActive .dijitSliderIncrementIconH, .oneui30 .dijitSliderButtonContainerH .dijitSliderIncrementButtonHover {
+    background-position: -283px 50%;
+}
+
+.oneui30 .dijitSliderDecrementIconV {
+    background-position: -38px 50%;
+}
+
+.oneui30 .dijitSliderActive .dijitSliderDecrementIconV, .oneui30 .dijitSliderButtonContainerV .dijitSliderIncrementButtonHover {
+    background-position: -73px 50%;
+}
+
+.oneui30 .dijitSliderIncrementIconV {
+    background-position: -143px 49%;
+}
+
+.oneui30 .dijitSliderActive .dijitSliderIncrementIconV, .oneui30 .dijitSliderButtonContainerV .dijitSliderDecrementButtonHover {
+    background-position: -178px 49%;
+}
+
+.oneui30 .dijitSliderButtonInner {
+    visibility: hidden;
+}
+
+.oneui30 .dijitSliderReadOnly *, .oneui30 .dijitSliderDisabled * {
+    color: #999;
+}
+
+.oneui30 .dijitSliderReadOnly .dijitSliderDecrementIconH, .oneui30 .dijitSliderDisabled .dijitSliderDecrementIconH {
+    background-position: -321px 50%;
+}
+
+.oneui30 .dijitSliderReadOnly .dijitSliderIncrementIconH, .oneui30 .dijitSliderDisabled .dijitSliderIncrementIconH {
+    background-position: -215px 50%;
+}
+
+.oneui30 .dijitSliderReadOnly .dijitSliderDecrementIconV, .oneui30 .dijitSliderDisabled .dijitSliderDecrementIconV {
+    background-position: -3px 49%;
+}
+
+.oneui30 .dijitSliderReadOnly .dijitSliderIncrementIconV, .oneui30 .dijitSliderDisabled .dijitSliderIncrementIconV {
+    background-position: -107px 49%;
+}

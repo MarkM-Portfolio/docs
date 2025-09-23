@@ -1,0 +1,6 @@
+chart
+oleObject
+vbaProject
+pic
+drawing
+dataModel

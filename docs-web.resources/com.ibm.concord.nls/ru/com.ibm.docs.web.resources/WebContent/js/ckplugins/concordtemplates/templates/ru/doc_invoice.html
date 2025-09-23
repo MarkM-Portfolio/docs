@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Счет-фактура</title>
+</head>
+<body  class="concord_Doc_Style_7">
+
+<p class="page" id="invoice">
+
+	<p documentBlock="true" restyle="false"  concordTemplateComponent="letterhead" class="letterhead">
+		<p>Пожалуйста, отправьте платеж на имя</p>
+		<h1>Название компании</h1>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li class="addressLine1">1234 Улица</li>
+			<li class="addressLine2">Город, штат 12345</li>
+			<li class="email">email@example.com</li>
+			<li class="phone">(123) 456-7890</li>
+		</ul>
+		<hr></hr>
+	</p>
+
+	<p documentBlock="true"  class="section summary">
+		<h2>Информация счет-фактуры</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list">
+			<li>Номер счет-фактуры</li>
+			<li class="date">Дата счет-фактуры</li>
+			<li class="date">Дата выполнения</li>
+		</ul>
+	</p>
+
+	<p documentBlock="true"  class="section">
+		<h2>Счет по адресу</h2>
+		<ul restyle="true" concordtemplatecomponent="list" class="list_16">
+			<li class="name">Имя Фамилия</li>
+			<li class="addressLine1">1234 Улица</li>
+			<li class="addressLine2">Город, штат 12345</li>
+			<li class="email">email@example.com</li>
+			<li class="phone">(123) 456-7890</li>
+		</ul>
+	</p>
+	
+	<p documentBlock="true"  class="section">
+		<h2>Сведения</h2>
+		<table documentBlock="true" restyle="true" class="smartTable STStyle3" concordTemplateComponent="smartTable">
+			<tr class="tableHeaderRow">
+				<th>Дата</th>
+				<th>Элемент</th>
+				<th>Описание</th>
+				<th>Сумма</th>
+			</tr>
+			<tr>
+				<td>мм/дд/гггг</td>
+				<td>Рабочий</td>
+		<!--
+				<td>Dignissim definiebas intellegebat eu qui, laoreet impedit</td>
+		-->
+				<td>$50,00</td>
+			</tr>
+			<tr class="alternateRow">
+				<td>мм/дд/гггг</td>
+				<td>Рабочий</td>
+		<!--
+				<td>Sit ne sint aliquip nusquam, ut oblique salutandi sea, no erat </td>
+		-->
+				<td>$50,00</td>
+			</tr>
+			<tr>
+				<td colspan="3">Итого</td>
+				<td>$0,00</td>
+			</tr>
+		</table>
+	</p>
+		
+	<p documentBlock="true" class="section conclusion">
+		<h2>Ожидаемый платеж</h2>
+		<ul>
+			<li>Всего по накладной: $0,00</li>
+			<li>Платежи/кредиты: $0,00</li>
+			<li>Баланс: $0,00</li>
+		</ul>
+	</p>
+	
+</p>
+</body>
+</html>

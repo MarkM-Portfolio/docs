@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<service-config>
+  <handlers product="concord">
+
+    <!-- General Services -->
+    <!-- <handler url="/fonts" class="com.ibm.concord.services.rest.handlers.CustomFontsHandler" secure="true" gatekeeper="true"/> -->
+    <handler url="/entitlement" class="com.ibm.concord.services.rest.handlers.EntitlementHandler" secure="false"/>
+    <handler url="/people" class="com.ibm.concord.services.rest.handlers.PeopleHandler" secure="true"/>   
+    <handler url="/version" class="com.ibm.concord.services.rest.handlers.VersionHandler" secure="false"/>
+    <handler url="/apitest" class="com.ibm.concord.services.rest.handlers.DocsAPITestHandler" secure="false"/>
+    <handler url="/snoop" class="com.ibm.concord.services.rest.handlers.SnoopHandler" secure="false"/>    
+    <handler url="/list" class="com.ibm.concord.services.rest.handlers.ListHandler" secure="false"/>
+    <handler url="/domain" class="com.ibm.concord.services.rest.handlers.DomainHandler" secure="false"/>
+    
+    <handler url="/recentfiles" class="com.ibm.concord.services.rest.handlers.RecentFilesHandler" secure="false"/>
+    <handler url="/deleterecentfile" class="com.ibm.concord.services.rest.handlers.RecentFileDeleteHandler" secure="true"/>
+    <handler url="/notifications" class="com.ibm.concord.services.rest.handlers.NotificationMessageHandler" secure="false"/>
+    
+    <!-- web-based language sensitive sorting -->  
+    <handler url="/sort" class="com.ibm.concord.services.rest.handlers.LocaleSensitiveSortHandler" secure="true"/>
+    <handler url="/svg2png/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.Svg2PngHandler" secure="false"/>  
+    
+	<!-- A set of url that related with document session -->
+	<!-- The repo-id and uri in the url pattern is used by router plug-in to
+	     route each document to dedicated server node, AKA document session affinity -->
+	<!-- /docsvr/{repo-id}/{uri}/edit -->
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentEditHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/att/(.+)" class="com.ibm.concord.services.rest.handlers.docsvr.DraftAttachmentHandler" secure="true" formtoken="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/settings/(.+)" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentSettingsHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/att" class="com.ibm.concord.services.rest.handlers.docsvr.DraftAttachmentsHandler" secure="true" formtoken="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/usp" class="com.ibm.concord.services.rest.handlers.docsvr.UpdateStringPoolHandler" secure="false"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/datasource" class="com.ibm.concord.services.rest.handlers.docsvr.DataSourceImportHandler" secure="false" formtoken="true"/>	
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/msg" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentMessageHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/parts/([^/]+)" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentPartsHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/hb" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentHeartBeatHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/edit/report" class="com.ibm.concord.services.rest.handlers.docsvr.ReportHandler" secure="true"/>	
+	<handler url="/docsvr/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/editors" class="com.ibm.concord.services.rest.handlers.editors.EditorsHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/onlineeditors" class="com.ibm.concord.services.rest.handlers.editors.OnlineEditorsHandler" secure="false"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/permission" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentPermissionHandler" secure="false"/>
+    <handler url="/docsvr/([^/]+)/([^/]+)/draft/content" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentDraftContentHandler" secure="false"/>
+    <handler url="/docsvr/([^/]+)/([^/]+)/draft/snapshot" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentDraftSnapshotHandler" secure="false"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/draft" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentDraftHandler" secure="false"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/editorview" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentEditOrViewHandler" secure="false"/>
+	<handler url="/docsvr/([^/]+)" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentCreateHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/upload" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentUploadHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/delete" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentDeleteHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/decrypt" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentDecryptHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/uploadversion" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentUploadNewVersionHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/autopublish" class="com.ibm.concord.services.rest.handlers.docsvr.DocumentAutoPublishHandler" secure="true"/>
+	<handler url="/docsvr/([^/]+)/([^/]+)/ccmsubmitforreview" class="com.ibm.concord.services.rest.handlers.docsvr.CCMSubmitForReviewHandler" secure="false"/>
+	
+
+	<!-- Document Reference(Fragment) API -->
+	<!-- /frgsvr/{repo-id}/{uri} -->
+	<handler url="/frgsvr/([^/]+)/([^/]+)/fragment" class="com.ibm.concord.services.rest.handlers.docsvr.FragmentCreateHandler" secure="true"/>
+	<!-- GET|POST /atsvr/{repo-id}/{uri} -->
+	<handler url="/atsvr/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.atsvr.DocumentMentionHandler" secure="true"/>	
+	<!--  Activity -->
+	<!-- GET|POST|PUT /actsvr/{repo-id}/{uri}  --> 
+	<handler url="/actsvr/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.actsvr.DocumentActivityHandler" secure="true"/>
+	
+	<!-- GET /actsvr/list -->
+	<handler url="/actsvr/myactivities" class="com.ibm.concord.services.rest.handlers.actsvr.ActivityProxyHandler" secure="false"/>
+	
+	<!-- GET|POST /tasksvr/{repo-id}/{uri} -->
+	<handler url="/tasksvr/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.tasksvr.DocumentTaskHandler" secure="true"/>
+	<!-- PUT|GET|DELETE /tasksvr/{repo-id}/{uri}/{todo-id} -->
+	<handler url="/tasksvr/([^/]+)/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.tasksvr.TaskHandler" secure="true"/>
+	<!-- GET /tasksvr/{repo-id}/{uri}/{todo-id}/history -->
+	<handler url="/tasksvr/([^/]+)/([^/]+)/([^/]+)/history" class="com.ibm.concord.services.rest.handlers.tasksvr.TaskHistoryHandler" secure="true"/>		
+
+	<handler url="/reposvr/([^/]+)/my" class="com.ibm.concord.services.rest.handlers.reposvr.MyLibraryHandler" secure="false"/>
+	<handler url="/reposvr/([^/]+)/library/([^/]+)/feed" class="com.ibm.concord.services.rest.handlers.reposvr.LibraryDocumentsHandler" secure="false"/>
+	<handler url="/reposvr/([^/]+)/collection/([^/]+)/feed" class="com.ibm.concord.services.rest.handlers.reposvr.CollectionDocumentsHandler" secure="false"/>
+	<handler url="/reposvr/([^/]+)/([^/]+)/entry" class="com.ibm.concord.services.rest.handlers.reposvr.RepositoryDocumentsHandler" secure="false"/>
+	<handler url="/reposvr/filetypes" class="com.ibm.concord.services.rest.handlers.reposvr.FileTypesHandler" secure="false"/>
+
+	<!--  we need repo-id and uri be in the url because of cluster support -->
+	<!--  /job/{repo-id}/{uri}/{job-id} -->
+	<handler url="/job/([^/]+)/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.job.JobHandler" secure="false"/>
+	
+	<!-- Revision -->
+	<handler url="/revsvr/([^/]+)/([^/]+)/revisions" class="com.ibm.concord.services.rest.handlers.revsvr.DocumentRevisionHandler" secure="true"/>
+	<!--  GET /revsvr/{repo-id}/{uri}/{revNo}/content -->
+	<!--  POST /revsvr/{repo-id}/{uri}/{revNo}/restore|delete -->	
+	<handler url="/revsvr/([^/]+)/([^/]+)/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.revsvr.DocumentRevisionContentHandler" secure="true"/>
+	
+	<!-- CSV export, GET /csvexport/{repo-id}/{document-uri}/{csv-name} -->
+	<handler url="/httpwriterexp/([^/]+)/([^/]+)/([^/]+)" class="com.ibm.concord.services.rest.handlers.HttpWriterExportHandler" />
+  </handlers>
+</service-config>

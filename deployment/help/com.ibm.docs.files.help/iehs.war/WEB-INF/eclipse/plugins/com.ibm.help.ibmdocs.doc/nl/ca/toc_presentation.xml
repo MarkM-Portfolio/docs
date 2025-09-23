@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Treball amb presentacions"
+     topic="text/presentation/presentations_frame.html">
+   <topic label="Com treballar amb presentacions"
+          href="text/presentation/presentations_frame.html">
+      <topic label="Creació i càrrega de presentacions"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Creació de presentacions"
+                href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Canvi del format de fitxer per defecte de les presentacions"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Càrrega de presentacions per compartir-les"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Importació de presentacions existents"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Compatibilitat de fitxers i exportació de presentacions"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Formats de fitxer admesos a les presentacions"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Com desar presentacions"
+                href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Publicació d'una versió de les presentacions"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Exportació de presentacions a altres formats de fitxer"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Ús compartit de presentacions"
+             href="text/presentation/p_sharing_a_document.html">
+         <topic label="Com compartir presentacions amb persones o comunitats"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Definició nivells d'accés per a presentacions"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Col·laboració en presentacions en temps real"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Coedició de presentacions en temps real"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Quant a la coedició a les presentacions"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Coedició amb altres en presentacions"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Com visualitzar canvis de l'editor a les presentacions"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Col·laboració amb comentaris a les presentacions"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Quant als comentaris a presentacions"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Creació de comentaris a les presentacions"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Visualització de comentaris a les presentacions"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Cerca de comentaris a les presentacions"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Formatació de diapositives"
+             href="text/presentation/p_formatting_slides.html">
+         <topic label="Canvi de tipus de lletra a les presentacions"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Selecció i trasllat d'objectes"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Organització de l'ordre dels objectes"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Addició de números o vinyetes a diapositives"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Aplicació d'un disseny de diapositives"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Canvi de l'estil mestre"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Comprovació ortogràfica a presentacions"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Com desar i imprimir presentacions"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Impressió de presentacions a fitxers PDF"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Treball amb imatges a presentacions"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Inserció de gràfic a presentacions"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Com desplaçar i redimensionar imatges a les presentacions"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Definició de les propietats d'imatge d'una presentació"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Treball amb diapositives" href="text/presentation/p_slide_show.html">
+         <topic label="Reproducció de visualitzacions de diapositives"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Aplicació de transicions entre diapositives"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Supressió de diapositives"
+                href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Addició de diapositives" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Desplaçament de diapositives"
+                href="text/presentation/p_moving_slides.html"/>
+         <topic label="Duplicació de diapositives"
+                href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Treball amb taules a presentacions"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Creació de taules a les presentacions"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Addició de files i columnes a presentacions"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Desplaçament de files i columnes a les presentacions"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Redimensionament de files i columnes a presentacions"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Alineació de text en cel·les"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Canvi dels estils de taula en una presentació"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Definició de capçaleres de taula a presentacions"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Edició de notes de l'orador"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Consulta ràpida de Presentations"
+             href="text/presentation/p_quick_ref.html"/>
+      <topic label="Dreceres de teclat a les presentacions"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

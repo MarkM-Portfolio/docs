@@ -1,0 +1,93 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* TitlePane
+ * Styling TitlePane means styling the TitlePane title and its content container  (dijitTitlePane)
+ * TitlePane title:
+ * 1. TitlePane title (default styling):
+ * 		.dijitTitlePaneTitle - for background-color, border, padding
+ * 2. hovered TitlePane title (ie, mouse hover on a title bar)
+ * 		.dijitTitlePaneTitleHover - for background-color, border
+ * 3. active TitlePane title (ie, mouse down on a title bar)
+ * 		.dijitTreeRowActive - for background-color, border
+ * TitlePane Content Container:
+ * 1. inner container:
+ * 		.dijitTitlePaneContentOuter - for background-color, border, padding
+ * 2. inner container:
+ * 		.dijitTitlePaneContentInner - for border, padding
+ */
+
+.oneui30 .dijitTitlePane {
+    overflow: visible;
+}
+
+.oneui30 .dijitTitlePaneTitle {
+    padding:0px 7px 3px 7px;
+	-webkit-box-shadow: #eee 0 3px 5px;
+    -moz-box-shadow: #eee 0 3px 5px;
+    box-shadow: #eee 0 3px 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    background-image: none;
+    background-image: -moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));
+	background-position: left top;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	min-height: 17px;
+}
+
+.dj_ie6 .oneui30 .dijitTitlePaneTitle, .dj_ie7 .oneui30 .dijitTitlePaneTitle {
+	padding-top: 6px;
+	padding-bottom: 5px;
+}
+
+.oneui30 .dijitTitlePaneTitleFocus {
+    margin-top: 3px;
+    padding-bottom: 2px;
+}
+
+.oneui30 .dijitTitlePane .dijitArrowNode {
+    background-image: url('images/spriteArrows.png');
+    background-repeat: no-repeat;
+    height: 8px;
+    width: 7px;
+}
+
+.oneui30 .dijitTitlePane .dijitOpen .dijitArrowNode {
+    background-position: 0 0;
+}
+
+.oneui30 .dijitTitlePane .dijitClosed .dijitArrowNode {
+    background-position: -14px 0;
+}
+
+.oneui30 .dijitTitlePaneFocused .dijitTitlePaneTextNode {
+    color: #000;
+}
+
+.oneui30 .dijitTitlePaneContentOuter {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-top: none;
+    -webkit-box-shadow: #eee 0 3px 5px;
+    -moz-box-shadow: #eee 0 3px 5px;
+    box-shadow: #eee 0 3px 5px;
+}
+
+.oneui30 .dijitTitlePaneContentInner {
+    padding: 5px 10px;
+}
+
+.oneui30 .dijitTitlePaneTextNode {
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #222;
+    font-weight: bold;
+    vertical-align: text-top;
+}

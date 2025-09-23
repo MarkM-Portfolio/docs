@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Treball amb fulls de càlcul"
+     topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="Treball amb fulls de càlcul"
+          href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="Creació i importació de fulls de càlcul"
+             href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="Creació de fulls de càlcul a partir de plantilles"
+                href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="Canvi del format de fitxer per defecte dels fulls de càlcul"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="Càrrega de fulls de càlcul per compartir-los"
+                href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="Importació de fulls de càlcul existents"
+                href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="Importació de fitxers de text en fulls de càlcul"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="Com obrir fitxers de l'Excel protegits amb contrasenya"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="Compatibilitat de fitxers i exportació de fulls de càlcul"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="Formats de fitxers admesos als fulls de càlcul"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="Com desar fulls de càlcul"
+                href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="Publicació d'una versió dels fulls de càlcul"
+                href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="Exportació de fulls de càlcul a altres formats de fitxer"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="Exportació de fulls de càlcul a fitxers CSV"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="Ús compartit de fulls de càlcul"
+             href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="Com compartir fulls de càlcul amb persones i comunitats"
+                href="text/spreadsheet/s_share_file.html"/>
+         <topic label="Definició dels nivells d'accés per a fulls de càlcul"
+                href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="Col·laboració en fulls de càlcul en temps real"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="Coedició de fulls de càlcul en temps real"
+                href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="Quant a la coedició als fulls de càlcul"
+                   href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="Coedició amb altres en fulls de càlcul"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="Com visualitzar els canvis de cada editor als fulls de càlcul"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Col·laboració amb comentaris a fulls de càlcul"
+                href="text/spreadsheet/s_comments_overview.html">
+            <topic label="Quant als comentaris a fulls de càlcul"
+                   href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="Creació de comentaris als fulls de càlcul"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="Visualització de comentaris als fulls de càlcul"
+                   href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="Cerca de comentaris als fulls de càlcul"
+                   href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Canvi de l'aspecte dels fulls de càlcul"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="Tipus de lletra, vores i colors"
+                href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="Canvi de tipus de lletra als fulls de càlcul"
+                href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="Canvi de l'alçada de fila i l'amplada de columna"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="Canvi de vores als fulls de càlculs"
+                href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="Restauració del format per defecte en cel·les de fulls de càlcul"
+                href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="Formatació de números" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="Introducció i edició de dades"
+             href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="Introducció a l'edició de dades"
+                href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="Cerca i substitució de contingut de la cel·la"
+                href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="Addició d'un hiperenllaç a una cel·la"
+                href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="Eliminació de l'enllaç d'hiperenllaç"
+                href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="Utilització de l'emplenament automàtic per emplenar un abast"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="Combinació o divisió de cel·les d'un full"
+                href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="Comprovació de l'ortografia a fulls de càlcul"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="Impressió de fulls de càlcul a fitxers PDF"
+                href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Treball amb imatges als fulls de càlcul"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="Inserció d'imatges als fulls de càlcul"
+                href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="Com desplaçar i redimensionar imatges als fulls de càlculs"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="Definició de les propietats d'imatge d'un full de càlcul"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Treball amb gràfics als fulls de càlcul"
+             href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="Inserció de gràfics en fulls de càlcul"
+                href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="Com desplaçar i canviar la mida de gràfics dels fulls de càlcul"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="Còpia de gràfics a fulls de càlcul"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="Gestió d'abasts de dades" href="text/spreadsheet/s_data_ranges.html">
+         <topic label="Ordenació de dades" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="Ús dels filtres instantanis"
+                href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="Immobilització de files i columnes als fulls de càlcul"
+                href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="Com ocultar files i columnes" href="text/spreadsheet/s_hide.html"/>
+         <topic label="Com visualitzar files i columnes" href="text/spreadsheet/s_show.html"/>
+         <topic label="Com fer referència a cel·les d'un altre full"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="Còpia de dades i imatges en fulls de càlcul"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="Denominació d'un interval" href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="Cerca o edició d'intervals amb nom"
+                href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="Eliminació d'un interval amb nom"
+                href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="Referències absolutes i relatives"
+                href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="Utilització de fórmules en càlculs"
+             href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="Quant a fórmules i funcions"
+                href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="Llista de funcions" href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="Agrupades per categoria" href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="Funcions de matriu" href="text/spreadsheet/s_functions_array.html">
+                  <topic label="Constants de matriu en línia a fórmules"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="Càlculs de matriu condicional"
+                         href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="Data i hora de les funcions"
+                      href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="Funció d'enginyeria"
+                      href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="Funcions d'informació" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="Funcions lògiques" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="Funcions matemàtiques" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="Funcions de full de càlcul"
+                      href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="Funcions estadístiques"
+                      href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="Funcions de text" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="funció ABS" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="Funció ACOS" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="Funció ACOSH" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="Funció ADDRESS" href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="funció AND" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="Funció ASIN" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="Funció ASINH" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="Funció ATAN" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="Funció ATAN2" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="Funció ATANH" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="Funció AVERAGE"
+                   href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="Funció AVERAGEA"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="Funció BASE" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="Funció CEILING" href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="Funció CHOOSE" href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="Funció CHAR" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="Funció CODE" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="Funció COLUMN" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="Funció COLUMNS" href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="Funció COMBIN" href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="funció CONCATENATE"
+                   href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="Funció CONVERT"
+                   href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="Funció COS" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="Funció COSH" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="funció COUNT" href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="funció COUNTA"
+                   href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="funció COUNTBLANK"
+                   href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="Funció COUNTIF" href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="Funció DATE" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="Funció DATEDIF"
+                   href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="Funció DATEVALUE" href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="Funció DAY" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="Funció DAYS" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="Funció DEGREES" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="Funció DOLLAR" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="Funció ERRORTYPE" href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="Funció EVEN" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="Funció EXP" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="Funció EXACT" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="funció FACT" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="Funció FALSE" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="Funció FIXED" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="Funció FLOOR" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="Funció FORMULA" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="Funció FREQUENCY"
+                   href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="Funció HLOOKUP" href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="funció HOUR" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="Funció HYPERLINK"
+                   href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="Funció IF" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="Funció INDEX" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="Funció INDIRECT" href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="Funció INT" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="funció ISBLANK" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="funció ISERR" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="Funció ISERROR" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="Funció ISEVEN" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="funció ISFORMULA" href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="funció ISLOGICAL" href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="funció ISNA" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="funció ISNONTEXT" href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="funció ISNUMBER" href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="Funció ISODD" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="funció ISREF" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="funció ISTEXT" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="Funció LARGE" href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="Funció LEFT" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="Funció LEN" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="Funció LENB" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="Funció LN" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="Funció LOG" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="Funció LOG10" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="Funció LOWER" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="funció MAX" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="Funció MEDIAN" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="funció MID" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="funció MIN" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="Funció MINUTE" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="Funció MMULT" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="Funció MOD" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="Funció MODE" href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="Funció MONTH" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="funció N" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="Funció NA" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="funció NETWORKDAYS"
+                   href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="funció NOT" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="Funció NOW" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="Funció ODD" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="Funció OFFSET" href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="funció OR" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="Funció PI" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="Funció POWER" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="funció PRODUCT" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="Funció PROPER" href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="Funció RADIANS" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="Funció RAND" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="Funció RANDBETWEEN"
+                   href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="Funció RANK" href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="Funció REPLACE" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="Funció REPT" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="Funció RIGHT" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="Funció RIGHTB" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="Funció ROMAN" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="funció ROUND" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="Funció ROUNDDOWN" href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="Funció ROUNDUP" href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="Funció ROW" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="Funció ROWS" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="Funció SEARCH" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="Funció SECOND" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="Funció SHEET" href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="Funció SIN" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="Funció SINH" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="Funció SMALL" href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="Funció SQRT" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="Funció STDEV" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="Funció STDEVP" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="Funció SUBSTITUTE"
+                   href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="Funció SUBTOTAL" href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="funció SUM" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="Funció SUMIF" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="Funció SUMPRODUCT"
+                   href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="Funció T" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="Funció TEXT" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="Funció TIME" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="Funció TODAY" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="Funció TRIM" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="funció TRUE" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="funció TRUNC" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="Funció TYPE" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="Funció UPPER" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="Funció VALUE" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="Funció VLOOKUP" href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="Funció VAR" href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="Funció VARA" href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="Funció VARP" href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="Funció VARPA" href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="Funció WEEKDAY" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="Funció WEEKNUM"
+                   href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="Funció YEAR" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="Consulta ràpida d'Spreadsheets" href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="Dreceres de teclat als fulls de càlcul"
+             href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

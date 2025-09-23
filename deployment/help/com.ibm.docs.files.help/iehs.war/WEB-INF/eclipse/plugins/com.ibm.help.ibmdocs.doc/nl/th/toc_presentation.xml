@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2556--><!--© ลิขสิทธิ์ของ IBM Corp. 2556-->
+<toc label="การทำงานกับการนำเสนอ" topic="text/presentation/presentations_frame.html">
+   <topic label="การทำงานกับการนำเสนอ" href="text/presentation/presentations_frame.html">
+      <topic label="การสร้างและการอัพโหลดการนำเสนอ"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="การสร้างการนำเสนอ" href="text/presentation/p_creating_presentation.html"/>
+         <topic label="การเปลี่ยนรูปแบบไฟล์ดีฟอลต์ของการนำเสนอ"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="การอัพโหลดการนำเสนอเพื่อแบ่งใช้"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="การอิมพอร์ตการนำเสนอที่มีอยู่"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="ความเข้ากันได้ของไฟล์และการเอ็กซ์พอร์ตการนำเสนอ"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="รูปแบบไฟล์ที่สนับสนุนในการนำเสนอ"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="การบันทึกการนำเสนอ" href="text/presentation/p_saving_presentations.html"/>
+         <topic label="การเผยแพร่เวอร์ชันของการนำเสนอ"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="การเอ็กซ์พอร์ตการนำเสนอไปยังไฟล์รูปแบบอื่น"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="การแบ่งใช้การนำเสนอ" href="text/presentation/p_sharing_a_document.html">
+         <topic label="การแบ่งใช้การนำเสนอกับบุคคลหรือชุมชน"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="การตั้งค่าระดับการเข้าถึงสำหรับการนำเสนอ"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="การทำงานร่วมกันบนการนำเสนอในแบบเรียลไทม์"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="การแก้ไขร่วมในแบบเรียลไทม์ในการนำเสนอ"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="เกี่ยวกับการแก้ไขร่วมในการนำเสนอ"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="การแก้ไขร่วมกับผู้อื่นในการนำเสนอ"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="การแสดงการเปลี่ยนแปลงในการนำเสนอของเอดิเตอร์"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="การทำงานร่วมกันโดยใช้ข้อคิดเห็นในการนำเสนอ"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="เกี่ยวกับข้อคิดเห็นในการนำเสนอ"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="การสร้างข้อคิดเห็นในการนำเสนอ"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="การดูข้อคิดเห็นในการนำเสนอ"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="การค้นหาข้อคิดเห็นในการนำเสนอ"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="การจัดรูปแบบสไลด์" href="text/presentation/p_formatting_slides.html">
+         <topic label="การเปลี่ยนฟอนต์ในการนำเสนอ" href="text/presentation/p_change_fonts.html"/>
+         <topic label="การเลือกและการย้ายอ็อบเจ็กต์"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="การจัดเรียงลำดับอ็อบเจ็กต์"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="การเพิ่มหมายเลขหรือสัญลักษณ์แสดงหัวข้อย่อยให้กับสไลด์"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="การใช้โครงร่างสไลด์"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="การเปลี่ยนสไตล์หลัก"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="การตรวจสอบการสะกดคำของการนำเสนอ"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="การบันทึกและการพิมพ์การนำเสนอ"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="การพิมพ์การนำเสนอไปยังไฟล์ PDF"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="การทำงานกับอิมเมจในการนำเสนอ"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="การแทรกกราฟิกในการนำเสนอ"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="การย้ายและการปรับขนาดอิมเมจในการนำเสนอ"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="การตั้งค่าคุณสมบัติอิมเมจในการนำเสนอ"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="การทำงานกับสไลด์" href="text/presentation/p_slide_show.html">
+         <topic label="การแสดงสไลด์โชว์" href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="การนำการเปลี่ยนระหว่างสไลด์ไปใช้งาน"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="การลบสไลด์" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="การเพิ่มสไลด์" href="text/presentation/p_adding_slides.html"/>
+         <topic label="การย้ายสไลด์" href="text/presentation/p_moving_slides.html"/>
+         <topic label="การทำซ้ำสไลต์" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="การทำงานกับตารางในการนำเสนอ"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="การสร้างตารางในการนำเสนอ"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="การเพิ่มแถวและคอลัมน์ในการนำเสนอ"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="การย้ายแถวและคอลัมน์ในการนำเสนอ"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="การปรับขนาดแถวและคอลัมน์ในการนำเสนอ"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="การจัดวางข้อความในเซลล์"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="การเปลี่ยนสไตล์ตารางในการนำเสนอ"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="การนิยามส่วนหัวตารางในการนำเสนอ"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="การแก้ไขบันทึกย่อผู้บรรยาย"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="การอ้างอิงแบบด่วนของการนำเสนอ" href="text/presentation/p_quick_ref.html"/>
+      <topic label="คีย์บอร์ดช็อตคัตการนำเสนอ"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

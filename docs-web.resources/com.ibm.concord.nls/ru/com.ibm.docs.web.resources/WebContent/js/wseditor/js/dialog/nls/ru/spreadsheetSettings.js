@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Выберите локаль для правильного форматирования чисел, денежной единицы, даты и времени.",
+	INPUT_INVALID_LOCALENAME: "Недопустимое имя локали",
+	INPUT_EMPTY_LOCALENAME: "Выберите локаль.",
+	
+	Spain_Catalan: "Испания (Каталония)",
+	Denmark: "Дания",
+	Germany: "Германия",
+	Greek: "Греция",
+	United_States: "США",
+	United_Kingdom: "Великобритания",
+	Spain: "Испания",
+	Finland: "Финляндия",
+	France: "Франция",
+	Italy: "Италия",
+	Japan: "Япония",
+	Korean: "Южная Корея",
+	Norway: "Норвегия",
+	Netherlands: "Нидерланды",
+	Poland: "Польша",
+	Brazil: "Бразилия",
+	Portugal: "Португалия",
+	Russia: "Россия",
+	Sweden: "Швеция",
+	Thailand: "Таиланд",
+	Turkey: "Турция",
+	China: "Китай",
+	Taiwan_China: "Тайвань (Китай)",
+	Israel: "Израиль"
+})
+

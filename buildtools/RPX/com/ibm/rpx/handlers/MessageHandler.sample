@@ -1,0 +1,69 @@
+############################################################
+#	Filename:	test01-04-02.m
+#	Description:	This tests for support of do not
+#			translate keywords used within Unix
+#			message files.  Note comments in
+#			the following lines:
+#			34, 39, 43, 49, 54
+#	Original File:	ks.m
+############################################################
+
+#  "@(#)ks.m	2.3 4/25/91"
+# ------------------------------------------------------------------
+# | Copyright Unpublished, Atria Software, Inc.  All Rights        |
+# | Reserved.  This software contains proprietary and confidential |
+# | information of Atria and its suppliers.  Use, disclosure or    |
+# | reproduction is prohibited without the prior express written   |
+# | consent of Atria.                                              |
+# ------------------------------------------------------------------
+#
+#  leblang  	04/14/91    	added some common messages
+#  minard	12/11/90	initial version
+#
+%HNAME _KS_UGH_
+# Warning DO NOT CHANGE THE SUBSET NUMBER
+%SUBSET 9
+# It is used for internationalization, and must remain constant
+%SUBSYS KS_SUBSYS ks
+
+#1   KS_SUBSYS "libks"
+
+2   KS_MSG_STR_NL "%s\n"
+9   KS_MSG_STR "%s"
+3   KS_MSG_NL "\n"
+# Do not translate next line
+4   KS_MSG_PERROR_OP_ONLY "Operation %s: %s\n"
+5   KS_MSG_PERROR_OP_PN "Operation %s, %s: %s\n"
+6   KS_MSG_CANT_OPEN "Unable to open %s: %s\n"
+7   KS_MSG_PATHERR "%s: %s\n"
+8   KS_MSG_Do_Not_Translate_UNEXP_ERR "Unexpected error.\n"
+10  KS_MSG_BAD_INSTALL "%%1BThis product is not installed correctly.%%0B\n"
+11  KS_MSG_INSTALL_NO_HDIR "Can't find host data directory, tried: \"%s\".\n"
+12  KS_MSG_CANT_CHOWN "Could not chown file \"%s\": %s\n"
+13  KS_MSG_CANT_CHMOD "Could not Do_Not_Translate chmod file \"%s\": %s\n"
+14  KS_MSG_PROTECTING "Protecting \"%s\"...\n"
+15  KS_MSG_BAD_FMT "Bad format number for \"%s\"\n"
+16  KS_MSG_CANT_ABS "Could not get an absolute pathname for \"%s\".\n"
+17  KS_MSG_NULL_ALLOC_STG "Unable to allocate storage.\n"
+18  KS_MSG_CANT_GET_ENET_ID "Unable to get Ethernet address for this computer.\n"
+#Begin do not translate block
+19  KS_MSG_NO_CLEARCASE_GRP_OLD "Can not find a group named \"clearcase\".\n"
+39  KS_MSG_NO_CLEARCASE_GRP "Can not find a group named \"%s\".\n"
+26  KS_MSG_NO_MEMORY "Out of memory"
+21  KS_MSG_BAD_OPTION "Bad option"
+# End do not translate block
+22  KS_MSG_DUP_OPTION "Duplicate or conflicting option"
+23  KS_MSG_BAD_ARGUMENT "Bad argument"
+24  KS_MSG_UNKNOWN_ERR "Unknown error"
+
+20  KS_MSG_CANT_READ "Unable to read file \"%s\": %s.\n"
+32  KS_MSG_PERROR_OP_ONLY_W32 "Operation %s: %d\n"
+33  KS_MSG_PERROR_OP_PN_W32 "Operation %s, %s: %d\n"
+
+28  KS_MSG_HASH_UNEXP "Unexpected error in hash package.\n"
+29  KS_MSG_HASH_LEAK "hash_str_free on a hash table with copied keys. Memory leak.\n"
+30  KS_MSG_UNIQUE_ERR "Internal error: fileutl_make_unique_pn: bad suffix control value '%d'\n"
+31  KS_MSG_EXIT_PROMPT "The application will exit ... "
+37  KS_MSG_ALBD_XREV "The ALBD server on host \"%s\" must be updated to be\ncompatible with this product version.\n"
+40  KS_MSG_SERVER_LOCK_SLINK_DISALLOWED "Unable to open server lock file \"%s\": pathname must not be a symbolic link.\n"
+41  KS_MSG_FILE_CHANGED_SIZE "File \"%s\" changed size during read.\n"

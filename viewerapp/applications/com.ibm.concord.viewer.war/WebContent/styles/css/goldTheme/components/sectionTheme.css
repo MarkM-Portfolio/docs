@@ -1,0 +1,27 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for section
+companion file is section.css*/
+/*** S E C T I O N ***/
+/*this is the action menu icon*/
+.lotusSection h2 a.lotusActionMenu{background-image:url(../../images/iconActions.png)}
+.lotusSection h2 a.lotusActionMenu:hover, .lotusSection h2 a.lotusActionMenu:focus{background-image:url(../../images/iconActionsHover.png)}
+.lotusSectionBody{background-color:#fff}
+/*these twisties use lotusArrow sprite in baseTheme.css*/
+.lotusTwistyOpen{background-image:url(../../images/arrowOpenLight.png)}
+.lotusTwistyClosed{background-image:url(../../images/arrowClosedLight.png)}
+/*draggable sections*/
+.lotusSection .lotusDragHandle{background-image:url(../../images/dndHandle.png);}
+.lotusSection h2.lotusDraggable:hover .lotusDragHandle{visibility:visible}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusSection h2 a.lotusActionMenu{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -1921px}
+.lotusSpritesOn .lotusSection h2 a.lotusActionMenu:hover, .lotusSpritesOn .lotusSection h2 a.lotusActionMenu:focus{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:3px -2011px}
+.lotusSpritesOn .lotusTwistyOpen{background-position:0 -522px}
+.lotusSpritesOn .lotusTwistyClosed{background-position:0 -232px}
+.lotusSpritesOn .lotusSection .lotusDragHandle{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -1725px}
+/*[/sprite]*/
+/****************************************************************/
+

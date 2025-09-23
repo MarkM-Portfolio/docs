@@ -1,0 +1,244 @@
+.concord .slideNumber{
+	color:#FFFFFF !important;
+}
+
+#thumbnailPane{
+	background:none repeat scroll 0 0 rgba(0, 0, 0, 0.8) !important;
+}
+
+#contentPane{
+	background:none repeat scroll 0 0 rgba(0, 0, 0, 0.8) !important;
+}
+
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#stop_review {
+	padding: 10px 8px 10px 0 !important;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#stop_review .dijitButton {
+    margin: 0;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#stop_review .dijitButton .lotusBtn {
+    background-color: #0081B2 !important;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#reject {
+	padding: 10px 8px 10px 0 !important;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#reject .dijitButton {
+    margin: 0;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#reject .dijitButton .lotusBtn {
+    background-color: #0081B2 !important;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#approve {
+	padding: 10px 8px 10px 0 !important;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#approve .dijitButton {
+    margin: 0;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#approve .dijitButton .lotusBtn {
+    background-color: #0081B2 !important;
+}
+
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#html_edit {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 15px 10px 0 !important;
+}
+#html_edit {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#html_edit .dijitButton {
+    margin: 0;
+}
+
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#html_edit .dijitButton .lotusBtn {
+    background-color: #0081B2 !important;
+}
+.onpremise.lotusui30 .lotusTitleBar2 li#html_edit .lotusBtn.dijitButtonNode {
+    padding: 7px 18px 6px !important;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusBtn.dijitButtonNode {
+    background-color: #767676;
+    background-image: linear-gradient(to bottom, #767676 0%, #484848 100%);
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #000000;
+    color: #FFFFFF;
+    margin: 0;
+    outline: medium none;
+    padding: 8px 18px;
+    text-shadow: 0 1px 1px #000000;
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusBtn.dijitButtonNode {
+    background-color: #33383B !important;
+    background-image: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 1px 1px #000000;
+    text-shadow: 0 1px 0 #000000 !important;
+}
+
+.tusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#html_print,
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#html_play {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 8px 10px 0 !important;
+}
+
+#html_print,#html_play{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border-left: medium none !important;
+    padding: 10px 8px 10px 0 !important;
+}
+
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#html_print .dijitButton,
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner ul.lotusInlinelist li#html_play .dijitButton{
+    margin: 0;
+}
+
+.onpremise.lotusui30 .lotusTitleBar2 li#html_print .lotusBtn.dijitButtonNode,
+.onpremise.lotusui30 .lotusTitleBar2 li#html_play .lotusBtn.dijitButtonNode{
+    padding: 5px 8px !important;
+}	
+.htmlViewerPrintIcon {
+    background-image: url("../images/viewerPrint.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+}
+.htmlViewerPlayIcon {
+    background-image: url("../images/viewerPresent.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+}
+.dijitRtl .htmlViewerPlayIcon {
+	background-image: url("../images/viewerPresent_rtl.png");
+}
+.onpremise.lotusui30 .lotusTitleBar2 .lotusInner {
+    padding: 0 0 0 15px !important;
+}
+
+.onpremise.lotusui30 .lotusTitleBar2 .lotusHeading {
+    padding: 8px 0;
+}
+.viewerLoadingUnderlay{
+  	opacity: 0.8 !important;
+ }
+ .lotusErrorContent .viewerDialogBold li{
+ 	display: list-item !important;
+ }
+ .lotusui30 .lotusInfo {
+    background-color: #D9F1FB !important;
+    border-color: #00B0DA !important;
+}
+.concord #normalView .slideUtil {
+	display:none;
+}
+.concord #thumbnailPane .PM1_concord{
+	border: 7px solid rgba(0, 0, 0, 0.8);
+}
+
+.concord #thumbnailPane .draw_page:hover{
+	border: 7px solid rgba(0, 0, 0, 0.8) !important;
+}
+.concord #thumbnailPane .slideSelected, .concord #thumbnailPane .slideSelected:hover{
+	border: 7px solid #CFCFCF !important;
+}
+/****************************************************************/
+.onpremise.lotusui30 div#T_Zoomer .lotusBtn.dijitButtonNode {
+    background-color: #767676;
+    background-image: linear-gradient(to bottom, #767676 0%, #484848 100%);
+    border: 0 none;
+    border-radius: 2px;  
+    color: #FFFFFF;
+    margin: -1px;
+    outline: medium none;
+    padding: 8px 18px;
+}
+.onpremise.lotusui30 div#T_Zoomer .lotusBtn.dijitButtonNode {
+    background-color: #222222 !important;
+    background-image: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+.onpremise.lotusui30 div#T_Zoomer ul.lotusInlinelist li#html_zoomIn,
+.onpremise.lotusui30 div#T_Zoomer ul.lotusInlinelist li#html_fitWidth,
+.onpremise.lotusui30 div#T_Zoomer ul.lotusInlinelist li#html_zoomOut {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    padding: 0px !important;
+}
+
+#html_zoomOut,#html_zoomIn,#html_fitWidth {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border-left: medium none !important;
+    padding: 0px !important;
+}
+
+.onpremise.lotusui30 div#T_Zoomer ul.lotusInlinelist li#html_zoomIn .dijitButton,
+.onpremise.lotusui30 div#T_Zoomer ul.lotusInlinelist li#html_fitWidth .dijitButton,
+.onpremise.lotusui30 div#T_Zoomer ul.lotusInlinelist li#html_zoomOut .dijitButton{
+    margin: 0;
+}
+
+.onpremise.lotusui30 div#T_Zoomer li#html_zoomIn .lotusBtn.dijitButtonNode,
+.onpremise.lotusui30 div#T_Zoomer li#html_fitWidth .lotusBtn.dijitButtonNode,
+.onpremise.lotusui30 div#T_Zoomer li#html_zoomOut .lotusBtn.dijitButtonNode  {
+    padding: 3px 8px !important;
+}
+.zoomInIcon1 {
+    background-image: url("../../../images/zoom_in.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+}
+.dijitButtonDisabled .zoomInIcon1 {
+    background-image: url("../../../images/zoom_in.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    filter:alpha(opacity=30);
+    -moz-opacity:0.3;
+    opacity:0.3;
+    background-position: center;
+}
+.zoomOutIcon1 {
+    background-image: url("../../../images/zoom_out.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+}
+.dijitButtonDisabled .zoomOutIcon1 {
+    background-image: url("../../../images/zoom_out.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    filter:alpha(opacity=30);
+    -moz-opacity:0.3;
+    opacity:0.3;
+    background-position: center;
+}
+.fitWidthIcon1 {
+    background-image: url("../../../images/restore_default.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+}
+.htmlZoomerContainer{
+	border: 7px solid #CFCFCF;
+	border-radius: 5px;
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;
+	min-width:102px;
+}
+.htmlZoomerContainer:hover{
+	border: 7px solid #CFCFCF;
+	border-radius: 5px;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+	min-width:102px;
+}

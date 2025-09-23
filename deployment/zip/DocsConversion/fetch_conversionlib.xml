@@ -1,0 +1,81 @@
+<project name="fetchfile" basedir="." default="fetchlib">
+	<property environment="env"/>
+	<target name="fetchlib">
+		<delete includeEmptyDirs="true">
+			<fileset dir="${build.target}/"/>
+		</delete>
+		<mkdir dir="${build.target}"/>
+		<!-- get CL Windows build-->
+
+		<!-- <echo message="Downloading /mnt/mlsa2/workplace/dailybuilds/docs_cl_w32/currentBuildLabel.txt"/> -->
+		<echo message="Downloading ${env.DAILYBUILDS}/docs_cl_w32/currentBuildLabel.txt"/>
+
+		<copy todir="${build.target}">
+			<!-- <fileset dir="/mnt/mlsa2/workplace/dailybuilds/docs_cl_w32" includes="**/currentBuildLabel.txt"/> -->
+			<fileset dir="${env.DAILYBUILDS}/docs_cl_w32" includes="currentBuildLabel.txt"/>
+		</copy>
+
+		<echo message="Setting property 'curBldLabel' based on value of ${build.target}/currentBuildLabel.txt"/>
+
+		<loadfile property="curBldLabel" srcFile="${build.target}/currentBuildLabel.txt">
+			<filterchain>
+				<striplinebreaks/>
+			</filterchain>
+		</loadfile>
+
+		<echo message="Current windows CL build label is ${curBldLabel}"/>
+
+		<!-- <echo message="Downloading /mnt/mlsa2/workplace/dailybuilds/docs_cl_w32/${curBldLabel}/repository/conversionlib/fe.zip to ${build.target}"/> -->
+		<echo message="Downloading ${env.DAILYBUILDS}/docs_cl_w32/${curBldLabel}/repository/conversionlib/fe.zip to ${build.target}"/>
+
+		<copy todir="${build.target}">
+			<!-- <fileset dir="/mnt/mlsa2/workplace/dailybuilds/docs_cl_w32/${curBldLabel}/repository/conversionlib" includes="**/fe.zip"/> -->
+			<fileset dir="${env.DAILYBUILDS}/docs_cl_w32/${curBldLabel}/repository/conversionlib" includes="fe.zip"/>
+		</copy>
+
+		<echo message="Setting permissions of ${build.target}/fe.zip to 755"/>
+		<chmod file="${build.target}/fe.zip" perm="755"/>
+
+		<unzip src="${build.target}/fe.zip" dest="${build.target}"/>
+		<unzip src="${build.target}/lwp/build/conversionlib/data/pptx/template/template.zip" dest="${build.target}/lwp/build/conversionlib/data/pptx/template"/>
+		<delete file="${build.target}/lwp/build/conversionlib/data/pptx/template/template.zip"/>
+		<copy file="${build.target}/lwp/build/conversionlib/bin/OOXMLConvertor.exe" tofile="${build.target}/OOXMLConvertor.exe"/>
+		<copy todir="${build.target}/data">
+			<fileset dir="${build.target}/lwp/build/conversionlib/data"/>
+		</copy>
+
+		<!-- get CL linux build-->
+		<!-- <echo message="Downloading /mnt/mlsa2/workplace/dailybuilds/docs_cl_lnx/currentBuildLabel.txt"/> -->
+		<echo message="Downloading ${env.DAILYBUILDS}/docs_cl_lnx/currentBuildLabel.txt"/>
+
+		<delete file="${build.target}/currentBuildLabel.txt"/>
+
+		<copy todir="${build.target}">
+			<!-- <fileset dir="/mnt/mlsa2/workplace/dailybuilds/docs_cl_lnx" includes="**/currentBuildLabel.txt"/> -->
+			<fileset dir="${env.DAILYBUILDS}/docs_cl_lnx" includes="currentBuildLabel.txt"/>
+		</copy>
+
+		<echo message="Setting property 'curLinuxBldLabel' based on value of ${build.target}/currentBuildLabel.txt"/>
+
+		<loadfile property="curLinuxBldLabel" srcFile="${build.target}/currentBuildLabel.txt">
+			<filterchain>
+				<striplinebreaks/>
+			</filterchain>
+		</loadfile>
+
+		<echo message="Current linux CL build label is ${curLinuxBldLabel}"/>
+
+		<!-- <echo message="Downloading /mnt/mlsa2/workplace/dailybuilds/docs_cl_lnx/${curLinuxBldLabel}/ooxmlconvertor to ${build.target}"/> -->
+		<echo message="Downloading ${env.DAILYBUILDS}/docs_cl_lnx/${curLinuxBldLabel}/ooxmlconvertor to ${build.target}"/>
+
+		<copy todir="${build.target}">
+			<!-- <fileset dir="/mnt/mlsa2/workplace/dailybuilds/docs_cl_lnx/${curLinuxBldLabel}" includes="**/ooxmlconvertor"/> -->
+			<fileset dir="${env.DAILYBUILDS}/docs_cl_lnx/${curLinuxBldLabel}" includes="ooxmlconvertor"/>
+		</copy>
+
+		<delete includeEmptyDirs="true">
+			<file file="${build.target}/fe.zip"/>
+			<fileset dir="${build.target}/lwp"/>
+		</delete>
+	</target>
+</project>

@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Selecione o código do idioma para formatar números, moedas, datas e horários.",
+	INPUT_INVALID_LOCALENAME: "Nome inválido de código do idioma",
+	INPUT_EMPTY_LOCALENAME: "Selecione um código de idioma.",
+	
+	Spain_Catalan: "Espanha (Catalão)",
+	Denmark: "Dinamarca",
+	Germany: "Alemanha",
+	Greek: "Grécia",
+	United_States: "Estados Unidos",
+	United_Kingdom: "Reino Unido",
+	Spain: "Espanha",
+	Finland: "Finlândia",
+	France: "França",
+	Italy: "Itália",
+	Japan: "Japão",
+	Korean: "Coreia do Sul",
+	Norway: "Noruega",
+	Netherlands: "Holanda",
+	Poland: "Polônia",
+	Brazil: "Brasil",
+	Portugal: "Portugal",
+	Russia: "Rússia",
+	Sweden: "Suécia",
+	Thailand: "Tailândia",
+	Turkey: "Turquia",
+	China: "China",
+	Taiwan_China: "Taiwan (China)",
+	Israel: "Israel"
+})
+

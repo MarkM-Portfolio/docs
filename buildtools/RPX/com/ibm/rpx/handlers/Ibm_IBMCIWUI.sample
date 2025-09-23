@@ -1,0 +1,6 @@
+// Here is a comment statement.
++EYUNAME=EYUE0016
++EYUMOS A.0016.0001
+"Here is some translatable text.  Text must reside on a single line."
++ Control statement start with a plus in column 1.
+"Replacement variables %1 through %9 can be anywhere in the text."

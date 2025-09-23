@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>API Test Suite Runner</title>
+
+  <link rel="stylesheet" type="text/css" href="../../../util/jasmine-1.3.1/jasmine.css">
+  <link rel="stylesheet" type="text/css" href="jasmine_extended.css">
+  <script type="text/javascript" src="../../../util/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="../../../util/jasmine-1.3.1/jasmine-html.js"></script>
+  <script type="text/javascript" src="../../../dojo/dojo.js"></script>
+  <script type="text/javascript" src="aspect.js"></script>
+  <script type="text/javascript" src="jasmine_seed.js"></script>
+
+  <script type="text/javascript">	
+  	dojo.registerModulePath("pres", "../presentation/js");
+  	dojo.registerModulePath("pres.test", "../presentation/test");
+  	
+	window.parseReqParams = function() {
+		var ret = {};
+		
+		var qstr = window.location.search.substr(1);
+		if(!qstr.length){
+			return ret;
+		}
+		var qparts = qstr.split("&");
+		for(var x=0; x<qparts.length; x++){
+			var tp = qparts[x].split("="), name=tp[0], value=tp[1].replace(/[<>"':\(\)]/g, "");
+			//Avoid URLs that use the same protocol but on other domains, for security reasons.
+			if (value.indexOf("//") === 0 || value.indexOf("\\\\") === 0) {
+				throw "Unsupported URL";
+			}
+			ret[name] = value;
+		}
+		return ret;
+	};
+	
+	var req = window.parseReqParams();
+	req.repository = req.repository || "concord.storage";
+	var url = ["/docs/app/doc/", req.repository, "/", req.sample, "/edit/content"].join("");
+	
+	window.app = window.open(url);
+	
+	dojo.require("pres.test.runner.deferreds");
+	dojo.require("pres.test.runner.entries");
+	dojo.require("pres.test.api." + req.script);
+	
+	deferreds.initialize().addCallback(function() {
+		
+		//dojo.require("pres.test.api." + req.script);
+		jasmine.getEnv().execute();
+	});
+	
+  </script>
+</head>
+
+<body>
+</body>
+</html>

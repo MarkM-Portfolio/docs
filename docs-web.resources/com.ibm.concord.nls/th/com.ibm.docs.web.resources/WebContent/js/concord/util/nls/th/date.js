@@ -1,0 +1,22 @@
+({
+	question:"คำถาม",
+	issue:"ปัญหา",
+	toDo:"To-do",
+	comment:"ข้อคิดเห็น",
+	done:"เสร็จสิ้น",
+	jan:"ม.ค.",
+	feb:"ก.พ.",
+	mar:"มี.ค.",
+	apr:"เม.ย.",
+	may:"พ.ค.",
+	june:"มิ.ย.",
+	july:"ก.ค.",
+	aug:"ส.ค.",
+	sept:"Sept",
+	oct:"ต.ค.",
+	nov:"พ.ย.",
+	dec:"ธ.ค.",
+	pm:"PM",
+	am:"AM",
+	assignTo:"กำหนดให้แก่: "
+})

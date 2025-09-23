@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: lib/json4j.jar 
+ lib/commons-configuration-1.1.jar 
+ lib/commons-configuration-1.5-plus-node-clone.jar
+

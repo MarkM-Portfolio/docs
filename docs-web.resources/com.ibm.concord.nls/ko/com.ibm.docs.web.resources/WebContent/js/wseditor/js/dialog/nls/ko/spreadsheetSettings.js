@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "숫자, 통화, 날짜 및 시간을 형식화하기 위한 로케일을 선택하십시오.",
+	INPUT_INVALID_LOCALENAME: "로케일 이름이 올바르지 않습니다.",
+	INPUT_EMPTY_LOCALENAME: "로케일을 선택하십시오.",
+	
+	Spain_Catalan: "스페인(카탈로니아어)",
+	Denmark: "덴마크",
+	Germany: "독일",
+	Greek: "그리스",
+	United_States: "미국",
+	United_Kingdom: "영국",
+	Spain: "스페인",
+	Finland: "핀란드",
+	France: "프랑스",
+	Italy: "이탈리아",
+	Japan: "일본",
+	Korean: "대한민국",
+	Norway: "노르웨이",
+	Netherlands: "네덜란드",
+	Poland: "폴란드",
+	Brazil: "브라질",
+	Portugal: "포르투갈",
+	Russia: "러시아",
+	Sweden: "스웨덴",
+	Thailand: "타이",
+	Turkey: "터키",
+	China: "중국",
+	Taiwan_China: "타이완(중국)",
+	Israel: "이스라엘"
+})
+

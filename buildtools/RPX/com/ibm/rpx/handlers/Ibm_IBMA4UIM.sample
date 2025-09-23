@@ -1,0 +1,19 @@
+.* Here is a comment statement.
+.*
+:PNLGRP hlpshelf=list.
+:class  name=objcl basetype='objname 10 generic'.
+:eclass.
+:var name=que class=objcl.
+:var name=lib class=objcl.
+:panel  name=panel1  help='help/help'   keyl=panelkeys topsep=space   enter='return 2'.Panel title
+:data  depth=2   layout=horiz   help='help/panel1data'.
+:datai  var=que    usage=out.Queue
+:datai  var=lib    usage=out.Library
+:edata.
+:data depth=2 bodysep=none compact.
+:datacol width='8'.
+:datacol width=5.
+:botinst.Press Enter to continue.
+:edata.
+:epanel.
+:EPNLGRP.

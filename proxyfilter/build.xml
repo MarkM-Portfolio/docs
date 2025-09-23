@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="ConcordProxyFilter" basedir="." default="concord.proxy.filter.build">
+	<target name="concord.proxy.filter.build">
+		<copy todir="../ConcordProxyFilter/com.ibm.docs.common.deployment">
+			<fileset dir="../Sanity_WAS/com.ibm.docs.common.deployment"/>
+		</copy>	
+		<ant dir="com.ibm.docs.proxy.lotuslive.saml" inheritAll="true"/>
+		<ant dir="concord.proxy.filter" inheritAll="true"/>
+		<ant dir="com.ibm.proxy.filter.deployment" inheritAll="true"/>
+		<ant dir="com.ibm.proxy.filter.license" inheritAll="true"/>
+		<ant dir="com.ibm.docs.common.deployment" inheritAll="true"/>
+		
+		<zip destfile="${build.home}/DocsProxyFilter.zip">
+			<fileset dir="${build.home}" includes="**/*.jar"/>
+			<fileset dir="${build.home}" includes="installer/**"/>
+			<zipfileset dir="${build.home}/License" prefix="License"/>
+		</zip>
+
+		<!-- begin build artifacts for the new RIM based installer. -->
+		<mkdir dir="${build.home}/rim_artifacts"/>
+		<zip destfile="${build.home}/rim_artifacts/proxy_filter_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}" includes="**/concord.proxy.filter.jar"/>
+		</zip>
+		<zip destfile="${build.home}/rim_artifacts/proxy_install_script_${build.version}_${build.timestamp}.zip">
+			<fileset dir="${build.home}/installer_im"/>
+		</zip>
+		<zip destfile="${build.home}/rim_artifacts/proxy_license_${build.version}_${build.timestamp}.zip">
+			<zipfileset dir="${build.home}/License"/>
+		</zip>
+		<!-- end build artifacts. -->
+		
+		<delete includeemptydirs="true">
+			<fileset dir="${build.home}">
+				<exclude name="DocsProxyFilter.zip"/>
+				<exclude name="**/rim_artifacts/**"/>
+				<exclude name="**/report/**" />
+			</fileset>
+		</delete>
+		
+		<ant dir="com.ibm.docs.dmz.rpm" inheritAll="true"/>
+		<ant dir="com.ibm.docs.dmz.cron.rpm" inheritAll="true"/>
+		
+		<!-- alter the DocsProxyFilter.zip to delete opensaml files for on-premise -->
+		<mkdir dir="${build.home}/DocsProxyPremise"/>
+		<unzip src="${build.home}/DocsProxyFilter.zip" dest="${build.home}/DocsProxyPremise" overwrite="yes"/>
+		<delete file="${build.home}/DocsProxyFilter.zip"/>
+		<delete file="${build.home}/DocsProxyPremise/com.ibm.docs.proxy.lotuslive.saml.jar"/>
+		<delete dir="${build.home}/DocsProxyPremise/opensaml"/>
+		<zip destfile="${build.home}/DocsProxyFilter.zip">
+			<fileset dir="${build.home}/DocsProxyPremise" includes="**/*.jar"/>
+			<fileset dir="${build.home}/DocsProxyPremise" includes="installer/**"/>
+			<zipfileset dir="${build.home}/DocsProxyPremise/License" prefix="License"/>
+		</zip>
+		<delete dir="${build.home}/DocsProxyPremise"/>
+	</target>
+</project>

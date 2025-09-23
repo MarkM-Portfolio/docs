@@ -1,0 +1,4 @@
+({
+	discardQuestionMsg: "Eliminare la bozza?"
+})
+

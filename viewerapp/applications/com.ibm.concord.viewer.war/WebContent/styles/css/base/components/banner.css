@@ -1,0 +1,71 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for the banner (layout)
+companion files: banner.css / bannerTheme.css
+companion files: bannerRTL.css / bannerThemeRTL.css*/
+/*** B A N N E R **/
+/*this is the very top of the UI, that contains the logo, application links, user name, login/logout*/
+
+.lotusui30 .lotusBanner {padding:5px 10px; text-align:left; overflow:hidden; zoom:1;}
+.lotusui30 .lotusBanner .lotusLogo {float:left;}
+.lotusui30 .lotusBanner .lotusLogo img {display:none; margin-right:20px;width:40px;height:15px;background-position:-218px -9px;background-image:url(../../images/lotusHSprite-8bit.png);} /*to display the image instead of the text, remove this display:none and the display:block in the below lotusAltText selector*/
+.lotusui30 .lotusBanner .lotusLogo .lotusAltText {display:block; padding:1px 10px;}
+.lotusui30 .lotusBanner ul {padding:0;}
+.lotusui_ie6 .lotusui30 .lotusBanner ul {margin-top:0; margin-bottom:2px;}
+.lotusui30 .lotusBanner ul.lotusInlinelist li {margin:0 2px; padding:0; color:#000; border-left-width:0;}
+.lotusui30 .lotusBanner ul.lotusLinks li {margin:0;}
+.lotusui30 .lotusBanner ul.lotusLinks li.lotusSelected a {text-decoration:underline; font-weight:bold;}
+.lotusui30 .lotusBanner ul.lotusUtility li {font-size:.9em;}
+.lotusui30 .lotusBanner ul li a {padding:1px 10px;}
+.lotusui30 .lotusBanner ul.lotusUtility {float:right;}
+.lotusui30 .lotusBanner ul.lotusUtility li a {padding:1px 5px;}
+.lotusui30 .lotusBanner img.lotusArrow{opacity:0.75;filter:alpha(opacity=75);}
+.lotusImagesOff .lotusui30 .lotusBanner img.lotusArrow {display:none;}
+.lotusui30 .lotusBanner .lotusUnreadBadge {margin-left:5px; padding:0 0.4em; color:#fff; background:#595B5D; display:inline;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.lotusui30 .lotusBanner ul.lotusInlinelist li.lotusUser a {margin:0; padding:12px 0 11px 37px; position:relative;}
+.lotusui30 .lotusBanner ul.lotusUtility li a .lotusPhoto {position:absolute; left:3px; top:8px;}
+.lotusui_ie6 .lotusui30 .lotusBanner ul.lotusUtility li a .lotusPhoto {left:-34px;}
+/* Add custom CSS for your prototype here. */
+.lotusui30 .lotusBanner ul.lotusUtility a.lotusShare {margin-right:7px; padding:2px 5px; position:relative; background:#ccc; border:0; text-shadow:none; color:#222; font-weight:normal;}
+
+.lotusui30 a.lotusShare .lotusShareConnector {background-image:url(../../images/lotusHSprite-8bit.png); position:absolute;top:5px; right:-6px;background-position:-977px -13px; width:7px; height:7px; }
+.lotusui_ie6 .lotusui30 a.lotusShare .lotusShareConnector{right:0;}
+
+
+
+
+
+
+
+/***********************************************************/
+
+
+/*****************************/
+/*** N A V I G A T I O N   M E N U ***/
+/*****************************/
+
+.lotusui30 .lotusNavMenu {margin:0; position:absolute; border:1px solid #5f5f5f; display:table; z-index:900px;}
+.lotusui30 .lotusNavMenu table {margin:0; padding:5px 0; list-style-type:none; background-color:#fff;}
+.lotusui30 .lotusNavMenu tr {white-space:nowrap; zoom:1; background-color:transparent; color:#666;}
+.lotusui30 .lotusNavMenu th, .lotusui30 .lotusNavMenu td {text-align:left; padding:0 5px;}
+.lotusui30 .lotusNavMenu table.lotusAlignRight th, .lotusui30 .lotusNavMenu table.lotusAlignRight td {text-align:right;}
+.lotusui30 .lotusNavMenu tr.lotusMenuSeparator th, .lotusui30 .lotusNavMenu tr.lotusMenuSeparator td {border-bottom:1px solid #ccc;}
+.lotusui30 .lotusNavMenu tr img {margin:0 3px;}
+.lotusui_ie .lotusui30 .lotusNavMenu tr img {margin-top:-10px;}/*image alignment adjustment*/
+.lotusui30 .lotusNavMenu tr a, .lotusui30 .lotusNavMenu tr span {display:inline-block; padding:5px;}  
+.lotusui30 .lotusNavMenu .dijitTooltipContainer a:hover {text-decoration:underline;}   
+.lotusui30 .lotusNavMenu .dijitTooltipContainer {background-image:none; background-color:transparent; border-width:0;}
+.lotusui30 .lotusNavMenu .dijitTooltipConnector {display:none;}
+/*spacing adjustments*/
+.lotusui30 .lotusNavMenu tr.lotusMenuSeparator th, .lotusui30 .lotusNavMenu tr.lotusMenuSeparator td {padding-bottom:5px;}
+.lotusui30 .lotusNavMenu tr.lotusMenuSeparator + tr th, .lotusui30 .lotusNavMenu tr.lotusMenuSeparator + tr td {padding-top:5px}/*this won't work in IE6*/
+.lotusui30 .lotusNavMenu tr a, .lotusui30 .lotusNavMenu tr a:visited {color:#222;}
+
+
+
+
+
+/***********************************************************/
+

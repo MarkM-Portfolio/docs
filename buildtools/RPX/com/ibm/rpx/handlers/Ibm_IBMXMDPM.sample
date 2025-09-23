@@ -1,0 +1,9 @@
+<!-- Here is a comment statement -->
+<PMData description="this defines DB2 PM Threads in lock conflicts data">
+<PMDetail symbname="REPTHRD">
+<PMPage label="Threads in Lock Conflicts">
+<PMCounter symbname="QWHCAID"  label="Primary Authorization" 
+      slabel="Primary Authorization" rank="2"/>
+</PMPage>
+</PMDetail>
+</PMData>

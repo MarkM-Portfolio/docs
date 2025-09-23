@@ -1,0 +1,10 @@
+<project name="com.ibm.docs.help.installer" basedir="." default="deploy">
+
+	<target name="deploy">
+		<mkdir dir="${build.home}/installer"/>
+		<copy todir="${build.home}/installer">
+			<fileset dir="${basedir}/installer" includes="**/*"/>
+		</copy>
+  </target>
+</project>
+

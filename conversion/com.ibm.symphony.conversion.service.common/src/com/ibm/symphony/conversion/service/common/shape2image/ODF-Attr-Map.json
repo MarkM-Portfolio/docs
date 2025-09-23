@@ -1,0 +1,8 @@
+{
+	"fo:wrap-option":{"wrap":"break-word", "no-wrap":"normal"},
+	"fo:text-align":{"start":"left", "end":"right", "left":"left", "right":"right","center":"center", "justify":"justify" },
+	"style:num-format":{"A":"upper-alpha","a":"lower-alpha","1":"decimal","I":"upper-roman","i":"lower-roman"},
+	"style:use-window-font-color":{"true":"#000000"},
+	"style:repeat":{"repeat":"repeat","no-repeat":"no-repeat","stretch":"no-repeat"},
+	"style:writing-mode":{"lr-tb":"ltr","rl-tb":"rtl","page":"page"}
+}

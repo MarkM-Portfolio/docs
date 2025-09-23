@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=9" >
+   <link rel="stylesheet" href="/connections/resources/web/_style?include=com.ibm.lconn.core.styles.oneui3/base/package3.css" />
+   <link rel="stylesheet" href="/connections/resources/web/_style?include=com.ibm.lconn.core.styles.oneui3/sprites.css" />
+   <link rel="stylesheet" href="/connections/resources/web/_lconntheme/gen4.css?version=oneui3" />
+   <link rel="stylesheet" href="/connections/resources/web/_lconnappstyles/gen4/communities.css?version=oneui3" />
+   <link rel="stylesheet" href="/connections/resources/web/_style?include=quickr.lw/css/styles.css" />
+   <link rel="stylesheet" href="/connections/resources/web/_style?include=quickr.lw/css/sprite-quickr-lw.css" />
+   
+   <script>
+	  // for elder browser such as IE7, which dose not support X-Frame-Options, use JS code to prevent UI readdressing
+      if(self!=top)
+	  {
+		try{
+			if(self.location.hostname!=top.location.hostname)
+				top.location = self.location;
+		}
+		catch(e)
+		{
+			top.location = self.location;
+		}
+	  }
+      <!-- Dojo setup -->
+      var root = location.pathname.replace(/\/[^/]*$/, '');
+      
+      window.baseUrl = window.parent.location.protocol + "//" + window.parent.location.hostname; //'http://bxv7v610.cn.ibm.com/'
+      var eTag = new Date().valueOf();
+      var blankGif = "/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif";
+      var djConfig = {
+	     parseOnLoad: true,
+         baseUrl: window.baseUrl,
+         blankGif: blankGif,
+         locale: window.top.dojo.locale,
+		 localizationComplete: true
+      };          
+   </script>      
+   
+
+   <script>
+      <!-- Set up global variables -->
+      ibmConfig = {};
+      ibmConfig.contextRootEnabler = "/communities"
+      ibmConfig.loadServices = false;
+      ibmConfig.proxyURL = "/communities/ajaxProxy";
+      ibmConfig.serviceName = "communities";
+      ibmConfig.loadingHTML = '<img src="/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif" height="130" width="0"></img>';
+      ibmConfig.versionStamp = eTag;
+      
+      communityUuid = window.parent.DOC_SCENE.communityID; //"eb6b0659-60c5-4e86-a252-a0a504545045"; 
+      ic_comm_communityUuid = window.parent.DOC_SCENE.communityID;
+      ic_comm_communityType = window.parent.DOC_SCENE.communityType; //"public"
+      ic_comm_communitiesSvcRef = window.parent.DOC_SCENE.communityUrl; //"http://bxv7v610.cn.ibm.com/communities"   
+   </script>
+</head>
+<body class="lotusui lotusui30dojo lotusui30_body lotusui30_fonts lotusui30 lotusSpritesOn" style="background: none transparent;">   	
+   <script src="/connections/resources/web/_js/?include=dojo.main"></script>
+   <script src="/connections/resources/web/_js?include=dojo.i18n~net.jazz.ajax.xdloader~quickr.lw.iwidget.MultiModeLibraryWidgetQCS~quickr.lw.enabler.IContext~quickr.lw.action.SubmitForReview~quickr.lw.action.ApproveReview~quickr.lw.action.RejectReview~quickr.lw.action.StopReview&exclude=dojo.main"></script>
+   <script>
+      dojo.addOnLoad(function() {
+        if (dojo.isFF)
+      	{
+   			window.oldGetComputedStyle = window.getComputedStyle;
+   			window.getComputedStyle = function (element, pseudoElt) {
+      			var t = window.oldGetComputedStyle(element, pseudoElt);
+      			if (t === null) {
+        			 return {};
+      			} else{
+        			 return t;
+      			}
+   			};
+	  	} 
+		
+         onError = function()
+         {
+         	console.warn("The widgets can not been initialized correctly!");
+         	window.parent.pe.scene.hideReviewFrame();
+         };
+         
+         processUntilAvailable = function (callback, errback, test, passedInParam, pThrowIfExhausted, pWaitBetweenTries, pMaxTries) 
+   		 {
+   			if( typeof(callback) != "function" ) 
+   				return; // nothing to call back, so just get out
+   			// defaults
+   			var waitBetweenTries = 100; // milliseconds
+   			var maxTries = 200; // intervals before giving up
+   			var throwIfExhausted = true; // throw err exhausted all tries
+   			if( typeof(pWaitBetweenTries) == "number") waitBetweenTries = pWaitBetweenTries; // override with supplied parameter
+   				if( typeof(pMaxTries) == "number") 
+   					maxTries = pMaxTries; // override with supplied parameter
+   			if( typeof(pThrowIfExhausted) == "boolean") 
+   				throwIfExhausted = pThrowIfExhausted; // override with supplied parameter
+   			var intervalId = "";
+   			var tried = 0;
+   			if(eval(test))
+   			{
+   				if(passedInParam != null)
+   					callback(passedInParam);
+   				else
+   					callback();
+   				return;
+   			}
+   			intervalId = window.setInterval(function()
+   			{
+   				tried++;
+   				if(eval(test))
+   				{
+   					window.clearInterval(intervalId);
+   					if(passedInParam != null)
+   						callback(passedInParam);
+   					else
+   						callback();
+   				}
+   				else if(tried == maxTries)
+   				{
+   					window.clearInterval(intervalId);
+   					if (errback)
+   						errback();
+   					if( throwIfExhausted ) 
+   						throw new Error( "processUntilAvailable: test was never met: " + test );
+   				}
+   			}, waitBetweenTries);
+   		 };  		
+      
+         var library = new quickr.lw.iwidget.MultiModeLibraryWidgetQCS();
+		 var ds = null;
+		 var feedItem = null;
+		 var newItem = null;
+         
+         var widgetProperties = {};
+         widgetProperties["rootFeed"] = baseUrl + "/dm/atom/library/" + window.parent.DOC_SCENE.libraryID + "/feed"; //"http://bxv7v610.cn.ibm.com/dm/atom/library/669DCFBD-0666-440D-9B76-5B6828D22618;7AED15BB-92E6-415D-8942-3780710A255C/feed";
+         widgetProperties["generator"] = window.parent.DOC_SCENE.libraryGenerator; //"Social ECM Documents: P8";
+         
+         var iContext = new quickr.lw.enabler.IContext("madeupid", widgetProperties);
+         iContext.getRootElement = function() {
+            return dojo.body();
+         }
+
+         library.iContext = iContext;
+         
+         var mydiv = dojo.create("div", {}, dojo.body());
+         library.getDiv = function() {
+             return mydiv;
+         }
+         
+         library.onLoad();
+         library.onfullpage();		
+		 
+		 var initialized = false;
+		 
+         runImpl = function(dialogType) {         	                        
+               if (dialogType == "SubmitForReview")
+               {                             
+               		window.submitForReview.execute(ds, newItem);
+               }
+               else if (dialogType == "CreateDocument")
+               {
+                   window.newTextDlg.execute(ds, newItem);
+               }
+               else if (dialogType == "CreatePresentation")
+               {
+                   window.newPresDlg.execute(ds, newItem);
+               }
+               else if (dialogType == "CreateSpreadsheet")
+               {
+                   window.newSheetDlg.execute(ds, newItem);
+               }               
+         };
+
+		 
+         runInitialize = function(dialogType) {         	
+            var itemUrl = baseUrl + "/dm/atom/library/" + window.parent.DOC_SCENE.libraryID + "/draft/%7B" + window.parent.DOC_SCENE.docId.replace(/^idd_/i, "") + "%7D/entry?acls=true&includeRecommendation=true&includeTags=true&includeNotification=true&includeDownloadInfo=true&includeCurrentVersion=true&includeSecurityInheritance=true&includeLocked=true&includeLockOwner=true&includeWorkingDraftInfo=true&includeApprovers=true";
+            var feedItemUrl = baseUrl + "/dm/atom/library/" + window.parent.DOC_SCENE.libraryID + "/feed";            
+            ds = library.fullWidget.df.getDataStore("LibraryFeed", {url: feedItemUrl});
+            
+            var item = ds.newItem({category:"draft", urlEntry:itemUrl});     
+            feedItem = {feedItem: library.fullWidget.df.iw.library};                   
+                        
+            var itemLoaded = function(result, ioArgs) {
+               if(!result.documentElement)
+               {
+                 setTimeout(function(){
+               	    window.parent.pe.scene.onErrorAndHideReviewFrame(dialogType);
+               	 }, 100);  
+               	 return;                   
+               }
+               newItem = new quickr.lw.bean.qcs.Draft(result.documentElement, null);
+               newItem.ds = item.ds;
+               
+               var onSuccess = function()
+               {                      	
+               	window.parent.pe.scene.successReview();               	
+               }
+               var onCancel = function()
+               {
+               	setTimeout(function(){
+               	window.parent.pe.scene.hideReviewFrame();
+               	}, 100);            	             
+               }
+               var onSuccessAndClose = function()
+               {
+               	setTimeout(function(){
+               	window.parent.pe.scene.goBackToFileDetails();
+               	}, 100);            	             
+               }
+                                          
+          	   window.submitForReview = new quickr.lw.action.SubmitForReview(library.fullWidget, library.fullWidget.dojoWidget.currentScene, feedItem);
+          	   window.submitForReview.allowCheckInWhileEditing = true;          	                  		
+          	   library.connect(window.submitForReview, "onsuccess", itemLoaded, onSuccess);
+          	   window.submitForReview.connect(window.submitForReview, "onDialogCancel", itemLoaded, onCancel);                 		               	
+             
+        	   window.newTextDlg = new quickr.lw.action.CreateDocument(library.fullWidget, library.fullWidget.dojoWidget.currentScene, feedItem);
+               window.newTextDlg.connect(window.newTextDlg, "onDialogCancel", itemLoaded, onCancel);
+      
+               window.newPresDlg = new quickr.lw.action.CreatePresentation(library.fullWidget, library.fullWidget.dojoWidget.currentScene, feedItem);
+               window.newPresDlg.connect(window.newPresDlg, "onDialogCancel", itemLoaded, onCancel);
+      
+               window.newSheetDlg = new quickr.lw.action.CreateSpreadsheet(library.fullWidget, library.fullWidget.dojoWidget.currentScene, feedItem);
+               window.newSheetDlg.connect(window.newSheetDlg, "onDialogCancel", itemLoaded, onCancel);
+
+			   initialized = true;
+			   runImpl(dialogType)
+            }
+            
+            var opts = {
+                  url: itemUrl,
+                  handleAs: "xml",
+                  sync: true,
+                  handle: dojo.hitch(this, itemLoaded)
+            };
+
+            library.fullWidget.net.get(opts);
+            ds.revert();
+         };		 		 
+   		 
+   		 run = function(type)
+   		 {
+		   if(!initialized)
+		   {
+		     processUntilAvailable(runInitialize,onError,"library&& library.fullWidget &&library.fullWidget.df &&library.fullWidget.df.getDataStore ",type,false);
+		   } 
+		   else
+           {
+		     runImpl(type);
+           }		   
+   		 };       
+      });
+   </script>
+   <div>
+   <div>
+</body>
+</html>

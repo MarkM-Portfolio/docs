@@ -1,0 +1,10 @@
+Bundle-ManifestVersion: 2
+Bundle-Name: ConcordProxyFilter
+Bundle-SymbolicName: com.ibm.concord.proxy.filter; singleton:=true
+Bundle-Vendor: IBM
+Bundle-Version: 7.0
+Bundle-Localization: fragment
+Manifest-Version: 1.0
+Require-Bundle: com.ibm.ws.runtime
+Fragment-Host: com.ibm.ws.proxy
+Export-Package: concord.proxy.filter

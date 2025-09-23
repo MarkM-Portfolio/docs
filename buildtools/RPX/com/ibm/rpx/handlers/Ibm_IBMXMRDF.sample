@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding='UTF-8'?>
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+       xmlns:nc="http://home.netscape.com/NC-rdf#">
+  <rdf:Description about="urn:root" nc:base="chrome://help/locale/glossary.html">
+    <nc:subheadings>
+      <rdf:Seq>
+        <rdf:li> <rdf:Desc nc:name="authentication" nc:link="glossary.html#998782"/> </rdf:li>
+        <rdf:li> <rdf:Desc nc:name="bookmark" nc:link="glossary.html#bookmark"/> </rdf:li>
+      </rdf:Seq>
+    </nc:subheadings>
+  </rdf:Description>
+  </rdf:RDF>

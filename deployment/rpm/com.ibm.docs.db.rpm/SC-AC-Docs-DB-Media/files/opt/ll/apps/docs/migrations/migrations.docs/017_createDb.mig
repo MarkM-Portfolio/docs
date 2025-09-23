@@ -1,0 +1,26 @@
+<?php
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* Apollo Source Materials                                           */
+/*                                                                   */
+/* Copyright IBM Corp. 2007, 2008                                    */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+
+
+function up_017_createDb($dbh){
+	global $migPath;
+	
+	$sqlFile = "$migPath/017_createDb.sql";
+	$tempFile = "$migPath/017_createDbWithConnect.sql";
+
+	invokeDb2($sqlFile, $tempFile);
+}
+
+?>

@@ -1,0 +1,22 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2014. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+
+({
+	userinteract_title: "참여하시겠습니까?",
+	userinteract_joindialog_title: "편집에 참여하시겠습니까?",
+	userinteract_joindialog_desc: "다른 사용자가 이 문서를 편집 중입니다.",
+	userinteract_joindialog_ask: "참여하시겠습니까?",
+	userinteract_joindialog_joinmode: "참여",
+	userinteract_joindialog_viewmode: "보기",
+	userinteract_joindialog_button: "확인"
+})

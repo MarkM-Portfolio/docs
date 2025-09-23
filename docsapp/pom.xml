@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>root-pom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>docsapp</artifactId>
+  <name>docsapp - pom</name>
+  <packaging>pom</packaging>
+
+  <!-- Modules -->
+  <modules>
+    <module>com.ibm.concord.admin</module>
+    <module>com.ibm.concord.collaboration</module>
+    <module>com.ibm.concord.config</module>
+    <module>com.ibm.concord.dao.db2</module>
+    <module>com.ibm.concord.document.common</module>
+    <module>com.ibm.concord.document.services</module>
+    <module>com.ibm.concord.draft</module>
+    <module>com.ibm.concord.job</module>
+    <module>com.ibm.concord.lc3.integration</module>
+    <module>com.ibm.concord.localtest.integration</module>
+    <module>com.ibm.concord.lotuslive.integration</module>
+    <module>com.ibm.concord.migration</module>
+    <module>com.ibm.concord.platform</module>
+    <module>com.ibm.concord.presentation</module>
+    <module>com.ibm.concord.revision</module>
+    <module>com.ibm.concord.services</module>
+    <module>com.ibm.concord.spreadsheet</module>   
+    <module>com.ibm.concord.webmsg.rtc4web</module>
+    <module>com.ibm.concord.writer</module>
+    <module>com.ibm.docs.authentication</module>
+    <module>com.ibm.docs.housekeeping</module>    
+    <module>com.ibm.docs.ecm.integration</module>
+    <module>com.ibm.docs.journal.subscriber.sample</module>
+    <module>applications</module>
+  </modules>
+</project>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Arbejd med dokumenter" topic="text/document/documents_frame.html">
+   <topic label="Arbejd med dokumenter" href="text/document/documents_frame.html">
+      <topic label="Opret og importér dokumenter"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="Om skabeloner" href="text/document/d_templates.html"/>
+         <topic label="Udarbejd dokumenter fra skabeloner"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="Ændring af dokumenters standardfilformat"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="Upload dokumenter til deling"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="Importér eksisterende dokumenter"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="Åbn Word-filer, der er beskyttet med adgangskode"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="Filkompatibilitet og eksport af dokumenter"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="Filformater, der understøttes i dokumenter"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="Gem dokumenter" href="text/document/d_saving_documents.html"/>
+         <topic label="Publicér en version af dokumenter"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="Eksportér dokumenter til andre filformater"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="Del dokumenter" href="text/document/d_sharing_a_document_overview.html">
+         <topic label="Del dokumenter med personer eller fællesskaber"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="Angiv adgangsniveauer for dokumenter"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="Samarbejde om dokumenter i realtid"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="Samredigér i realtid i dokumenter"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="Om samredigering i dokumenter"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="Samredigér med andre i dokumenter"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="Vis ændringer fra hver redaktør i dokumenter"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Samarbejde ved hjælp af kommentarer i dokumenter"
+                href="text/document/d_comments_overview.html">
+            <topic label="Om kommentarer i dokumenter"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="Opret kommentarer i dokumenter"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="Vis kommentarer i dokumenter"
+                   href="text/document/d_viewing_comments.html"/>
+            <topic label="Søg i kommentarer i dokumenter"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Redigér dokumenter"
+             href="text/document/d_editing_a_document_overview.html">
+         <topic label="Formatér tekst i dokumenter" href="text/document/d_formatting_text.html">
+            <topic label="Angiv skrifteffekter" href="text/document/d_setting_font_effects.html"/>
+            <topic label="Hæv eller sænk tekst"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="Angiv skriftstørrelse" href="text/document/d_setting_font_size.html"/>
+            <topic label="Justér tekst" href="text/document/d_aligning_text.html"/>
+            <topic label="Indryk tekst" href="text/document/d_indenting_text.html"/>
+            <topic label="Tilføj punkttegn eller tal til dokumenter"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="Opret liste på flere niveauer i dokumenter"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="Indsæt link" href="text/document/d_inserting_a_link.html"/>
+         <topic label="Opret sidehoveder og sidefødder"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="Opret en indholdsfortegnelse" href="text/document/d_create_toc.html"/>
+         <topic label="Indsæt felter i dokumenter" href="text/document/d_inserting_fields.html"/>
+         <topic label="Stavekontrol af dokumenter"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="Udskriv dokumenter" href="text/document/d_printing_a_document.html">
+            <topic label="Udskriv dokumenter til PDF-filer"
+                   href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="Arbejde med billeder i dokumenter"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="Indsæt billeder i dokumenter"
+                href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="Angiv billedegenskaber i dokumenter"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Arbejde med tabeller i dokumenter"
+             href="text/document/d_working_with_tables.html">
+         <topic label="Opret tabeller i dokumenter"
+                href="text/document/d_creating_a_table.html"/>
+         <topic label="Skift tabeltypografi i dokumenter"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="Angiv tabelegenskaber i dokumenter"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="Angiv baggrundsfarver til tabelceller"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="Justér tekst i tabelceller i dokumenter"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="Tilføj rækker og kolonner i tabeller"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="Flytning af rækker og kolonner i tabeller"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="Flet og opdel tabelceller"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="Tilpas størrelse på tabeller i dokumenter"
+                href="text/document/d_resizing_columns.html"/>
+         <topic label="Tilføj billedtekster til tabeller i dokumenter"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="Definér overskrifter for tabeller i dokumenter"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Referencekort til Documents" href="text/document/d_quick_ref.html"/>
+      <topic label="Tastaturgenveje i dokumenter" href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

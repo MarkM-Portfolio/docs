@@ -1,0 +1,22 @@
+({
+	question:"Vprašanje",
+	issue:"Težava",
+	toDo:"Kaj storiti",
+	comment:"Komentiraj",
+	done:"Končano",
+	jan:"Jan",
+	feb:"Feb",
+	mar:"Mar",
+	apr:"Apr",
+	may:"Maj",
+	june:"Junij",
+	july:"Julij",
+	aug:"Avg",
+	sept:"Sept",
+	oct:"Okt",
+	nov:"Nov",
+	dec:"Dec",
+	pm:"PM",
+	am:"AM",
+	assignTo:"Dodeli uporabniku: "
+})

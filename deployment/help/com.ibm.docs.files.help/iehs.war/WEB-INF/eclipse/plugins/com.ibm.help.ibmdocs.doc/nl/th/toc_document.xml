@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2556--><!--© ลิขสิทธิ์ของ IBM Corp. 2556-->
+<toc label="การทำงานกับเอกสาร" topic="text/document/documents_frame.html">
+   <topic label="การทำงานกับเอกสาร" href="text/document/documents_frame.html">
+      <topic label="การสร้างและการอิมพอร์ตเอกสาร"
+             href="text/document/d_creating_importing_a_document.html">
+         <topic label="เกี่ยวกับเท็มเพลต" href="text/document/d_templates.html"/>
+         <topic label="การสร้างเอกสารจากเท็มเพลต"
+                href="text/document/d_create_document_from_template.html"/>
+         <topic label="การเปลี่ยนรูปแบบไฟล์ดีฟอลต์ของเอกสาร"
+                href="text/document/d_changing_the_default_file_format.html"/>
+         <topic label="การอัพโหลดเอกสารเพื่อแบ่งใช้"
+                href="text/document/d_uploading_file_to_share.html"/>
+         <topic label="การอิมพอร์ตเอกสารที่มีอยู่"
+                href="text/document/d_importing_existing_document.html"/>
+         <topic label="การเปิดไฟล์ Word ที่ป้องกันรหัสผ่านไว้"
+                href="text/document/d_opening_password_protected_document.html"/>
+      </topic>
+      <topic label="ความเข้ากันได้ของไฟล์และการเอ็กซ์พอร์ตเอกสาร"
+             href="text/document/d_file_conversion_compatibility.html">
+         <topic label="รูปแบบไฟล์ที่สนับสนุนในเอกสาร"
+                href="text/document/d_supported_file_formats.html"/>
+         <topic label="การบันทึกเอกสาร" href="text/document/d_saving_documents.html"/>
+         <topic label="การเผยแพร่เวอร์ชันของเอกสาร"
+                href="text/document/d_publish_a_version.html"/>
+         <topic label="การเอ็กซ์พอร์ตเอกสารไปยังไฟล์รูปแบบอื่น"
+                href="text/document/d_exporting_documents.html"/>
+      </topic>
+      <topic label="การแบ่งใช้เอกสาร"
+             href="text/document/d_sharing_a_document_overview.html">
+         <topic label="การแบ่งใช้เอกสารกับบุคคลหรือชุมชน"
+                href="text/document/d_sharing_a_file.html"/>
+         <topic label="การตั้งค่าระดับการเข้าถึงสำหรับเอกสาร"
+                href="text/document/d_setting_access_level.html"/>
+      </topic>
+      <topic label="การทำงานร่วมกันบนเอกสารในแบบเรียลไทม์"
+             href="text/document/d_collaborating_on_a_document.html">
+         <topic label="การแก้ไขร่วมในแบบเรียลไทม์ในเอกสาร"
+                href="text/document/d_real_time_coediting.html">
+            <topic label="เกี่ยวกับการแก้ไขร่วมในเอกสาร"
+                   href="text/document/d_coediting_concept.html"/>
+            <topic label="การแก้ไขร่วมกับผู้อื่นในเอกสาร"
+                   href="text/document/d_coediting_with_others.html"/>
+            <topic label="การแสดงการเปลี่ยนแปลงในเอกสารจากเอดิเตอร์แต่ละราย"
+                   href="text/document/d_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="การทำงานร่วมกันโดยใช้ข้อคิดเห็นในเอกสาร"
+                href="text/document/d_comments_overview.html">
+            <topic label="เกี่ยวกับข้อคิดเห็นในเอกสาร"
+                   href="text/document/d_comments_concept.html"/>
+            <topic label="การสร้างข้อคิดเห็นในเอกสาร"
+                   href="text/document/d_creating_comments_document.html"/>
+            <topic label="การดูข้อคิดเห็นในเอกสาร" href="text/document/d_viewing_comments.html"/>
+            <topic label="การค้นหาข้อคิดเห็นในเอกสาร"
+                   href="text/document/d_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="การแก้ไขเอกสาร" href="text/document/d_editing_a_document_overview.html">
+         <topic label="การจัดรูปแบบข้อความในเอกสาร" href="text/document/d_formatting_text.html">
+            <topic label="การตั้งค่าฟอนต์เอฟเฟ็กต์"
+                   href="text/document/d_setting_font_effects.html"/>
+            <topic label="การทำข้อความเป็นตัวยกหรือตัวห้อย"
+                   href="text/document/d_making_text_subscript_superscipt.html"/>
+            <topic label="การตั้งค่าขนาดฟอนต์" href="text/document/d_setting_font_size.html"/>
+            <topic label="การจัดวางข้อความ" href="text/document/d_aligning_text.html"/>
+            <topic label="การเยื้องข้อความ" href="text/document/d_indenting_text.html"/>
+            <topic label="การเพิ่มสัญลักษณ์แสดงหัวข้อย่อยหรือหมายเลขในเอกสาร"
+                   href="text/document/d_adding_bullets.html"/>
+            <topic label="การสร้างรายการแบบหลายระดับในเอกสาร"
+                   href="text/document/d_create_multilevel_list.html"/>
+         </topic>
+         <topic label="การแทรกลิงก์" href="text/document/d_inserting_a_link.html"/>
+         <topic label="การสร้างส่วนหัวและส่วนท้าย"
+                href="text/document/d_creating_header_footer.html"/>
+         <topic label="การสร้างสารบัญ" href="text/document/d_create_toc.html"/>
+         <topic label="การแทรกฟิลด์ในเอกสาร" href="text/document/d_inserting_fields.html"/>
+         <topic label="การตรวจสอบการสะกดคำในเอกสาร"
+                href="text/document/d_spell_checking_a_document.html"/>
+         <topic label="การพิมพ์เอกสาร" href="text/document/d_printing_a_document.html">
+            <topic label="การพิมพ์เอกสารไปยังไฟล์ PDF" href="text/document/d_printing_to_pdf.html"/>
+         </topic>
+      </topic>
+      <topic label="การทำงานกับอิมเมจในเอกสาร"
+             href="text/document/d_working_with_graphics.html">
+         <topic label="การแทรกอิมเมจในเอกสาร" href="text/document/d_inserting_a_graphic.html"/>
+         <topic label="การตั้งค่าคุณสมบัติอิมเมจในเอกสาร"
+                href="text/document/d_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="การทำงานกับตารางในเอกสาร"
+             href="text/document/d_working_with_tables.html">
+         <topic label="การสร้างตารางในเอกสาร" href="text/document/d_creating_a_table.html"/>
+         <topic label="การเปลี่ยนสไตล์ตารางในเอกสาร"
+                href="text/document/d_changing_styles.html"/>
+         <topic label="การตั้งค่าคุณสมบัติตารางในเอกสาร"
+                href="text/document/d_setting_table_properties.html"/>
+         <topic label="การตั้งค่าสีพื้นหลังสำหรับเซลล์ตาราง"
+                href="text/document/d_setting_table_background_color.html"/>
+         <topic label="การจัดวางข้อความในเซลล์ตารางในเอกสาร"
+                href="text/document/d_aligning_text_in_cells.html"/>
+         <topic label="การเพิ่มแถวและคอลัมน์ในตาราง"
+                href="text/document/d_adding_rows_columns.html"/>
+         <topic label="การย้ายแถวและคอลัมน์ในตาราง"
+                href="text/document/d_moving_rows_columns.html"/>
+         <topic label="การผสานหรือการแบ่งเซลล์ตาราง"
+                href="text/document/d_merging_splitting_cells.html"/>
+         <topic label="การปรับขนาดตารางในเอกสาร" href="text/document/d_resizing_columns.html"/>
+         <topic label="การเพิ่มคำอธิบายให้กับตารางในเอกสาร"
+                href="text/document/d_adding_captions_to_tables.html"/>
+         <topic label="การนิยามส่วนหัวสำหรับตารางในเอกสาร"
+                href="text/document/d_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="การอ้างอิงเอกสารแบบด่วน" href="text/document/d_quick_ref.html"/>
+      <topic label="ช็อตคัตคีย์บอร์ดของเอกสาร" href="text/document/d_shortcut_keys.html"/>
+   </topic>
+</toc>

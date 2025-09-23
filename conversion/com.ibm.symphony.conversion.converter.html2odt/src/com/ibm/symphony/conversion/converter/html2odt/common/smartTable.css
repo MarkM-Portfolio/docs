@@ -1,0 +1,770 @@
+/* ------------------------------------ General Smart Table Stuff -------------------------------- */
+table.smartTable {
+	font-size: 12pt;
+	border-collapse: collapse;
+	margin: 0.079cm 0cm;
+	padding: 0cm 0cm 0cm 0cm;
+}
+table.smartTable th, table.smartTable td {
+	padding: 0.132cm;
+	vertical-align: top;
+   }
+table.smartTable caption{
+	padding: 0.079cm 0.079cm 0.079cm 0.079cm;
+	background-color: #eeeeee;
+	font-size: 12pt; 
+}
+table.smartTable th.dataFacetCol
+{
+	background-image:url('./images/facet.gif');
+	background-repeat:no-repeat;
+	background-position:98% -0.132cm;
+}
+/* smartTable default style for import of tables from word or symphony */
+table.simpleStyle {
+	font-family: Verdana;
+	border: 0.75pt solid #223339;
+   }
+table.simpleStyle tr.tableHeaderRow {
+	font-size:12pt;
+	font-style:bold;
+	color: #000;
+   }
+table.simpleStyle th {
+	border-left: 0.75pt solid #223339;
+	border-right: 0.75pt solid #223339;
+	height: 0.66cm;
+	padding: 0.132cm 0.132cm 0.132cm 0.132cm;
+	text-align:center;
+   }
+table.simpleStyle td {
+	padding: 0.132cm 0.132cm 0.132cm 0.132cm;
+	color: #000;
+	font-size: 12pt;
+	height: 0.66cm;
+	border: 0.75pt solid #223339;
+	background-color: inherit;
+   }
+table.simpleStyle td.tableHeaderCol {
+		font-size:12pt;
+		font-style:bold;
+		color: #fff;
+   }   
+table.simpleStyle tr.alternateRow {
+   
+   }   
+/* ---------------------------- #1 DEFAULT STYLE-------------------------------------------------*/
+
+body.concord_Doc_Style_1 table.smartTable{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-align: left;
+}
+body.lotusJapanese table.smartTable{
+	font-family: MS PMincho,MS PGothic,Apple Gothic,Arial,Verdana,sans-serif;
+}
+body.lotusKorean  table.smartTable{
+	 font-family: "Gulim","GulimChe",Arial,Helvetica,sans-serif;
+}
+body.lotusZHCN table.smartTable {
+	font-family:宋体, Arial, Helvetica, sans-serif ;
+}
+body.concord_Doc_Style_1 table.smartTable th{
+	text-align: left;
+}
+body.concord_Doc_Style_1 table.smartTable td.tableHeaderCol{
+	font-size:9pt ;
+	font-style:bold ;
+	background-color:#73CBF7 ;
+	color: #fff ;
+}
+
+table.STStyle1 {
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-size: 9pt !important;
+   border: 0.75pt solid #000000 !important;
+   text-align: left !important;
+}
+table.STStyle1 th {
+	text-align: left !important;
+	border-bottom: 0.75pt solid #000000!important;
+	border-right:0.75pt none #000000 !important;
+	color: #fff!important;
+}
+table.STStyle1 td {
+   border-bottom: 0.75pt solid #000000 !important;
+}
+table.STStyle1 tr.alternateRow {
+   background-color: #fff;
+}
+   
+table.STStyle1 td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------#2 CLEAN STYLE-----------------------------------------------*/
+table.STStyle2 {
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-size: 9pt !important;
+   text-align: left !important;   
+   border: 0pt none !important;
+   }
+table.STStyle2 tr.tableHeaderRow {
+   background:none;
+   text-transform: uppercase !important;
+   }
+
+table.STStyle2 th {
+	padding: 0.0794cm 0.132cm 0.0794cm 0.132cm !important;
+	color: #4f565e !important;
+	border: 1.5pt !important;
+	border-bottom: 2.25pt solid #e1350d !important;
+	border-top:0cm !important;
+	text-align:left !important;
+   }
+table.STStyle2 td {
+	padding: 0.0794cm 0.132cm 0.0794cm 0.132cm !important;
+	color: #4f565e !important;
+   }
+table.STStyle2 tr.alternateRow {
+   }
+table.STStyle2 td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ---------------------------#3 CLASSIC BLACK STYLE--------------------------------------------------*/
+table.STStyle3 {
+   font-family: "Times New Roman", Times, serif !important;
+   text-align: center !important;
+   border: 0.75pt solid #000 !important;
+   border-top: 2.25pt solid #000 !important;
+   }
+table.STStyle3 tr.tableHeaderRow {
+   text-transform: uppercase !important;
+   background-color: #FFFFFF;
+   }
+table.STStyle3 th {
+	border: 0.75pt dotted #000 !important;
+	border-left: 0.75pt solid #000 !important;
+	border-right: 0.75pt solid #000 !important;
+	padding: 0.0794cm 0.132cm !important;
+	text-align:center !important;	
+	}
+table.STStyle3 td {
+	border: 0.75pt dotted #000 !important;
+	border-left: 0.75pt solid #000 !important;
+	border-right: 0.75pt solid #000 !important;
+	padding: 0.0794cm 0.132cm !important;
+  color: #666 !important;
+}
+table.STStyle3 tr.alternateRow {
+   background-color: #fff;
+} 
+table.STStyle3 td.tableHeaderCol{
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+
+/* ------------------------------#4 COURIER ----------------------------------------------------------------------*/
+table.STStyle4 {
+   font-family: "Courier New", Courier, mono !important;
+   font-size: 9pt !important;
+   text-align: left !important;
+}
+
+table.STStyle4 tr.tableHeaderRow {
+}
+
+table.STStyle4 th {
+	text-align: left !important;
+	border-bottom: 0.75pt solid black !important;
+	border-width:0pt !important;
+	padding: 0.0794cm 0.132cm 0.0794cm 0.1588cm !important;
+}
+table.STStyle4 td {
+   border-bottom: 0.75pt solid #000000 !important;
+}
+
+table.STStyle4 tr.alternateRow {
+   background-color: #efefef;
+}
+
+table.STStyle4 td.tableHeaderCol{
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* -----------------------------------#5 GREEN BLOCKS -----------------------------------------------------------------*/
+
+table.STStyle5 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;
+	border:none !important;		
+	}
+table.STStyle5 tr.tableHeaderRow {
+	background: #fff !important;
+	}
+table.STStyle5 th {
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	text-align: left !important;
+	color: #578718 !important;
+	border-top: 0.75pt dotted #707070 !important;
+	border-bottom: 0.75pt dotted #707070 !important;
+	}
+table.STStyle5 td {
+	color: #97c838 !important;
+	border-bottom: 0.75pt dotted #707070 !important;
+	}
+table.STStyle5 tr.alternateRow {
+   background-color: #fff;
+}	 
+table.STStyle5 td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+
+/* ------------------------------------- #6 YELLOW DOTS ----------------------------------------------*/
+table.STStyle6 {
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	font-size: 9pt !important;
+	color: #555 !important;
+	text-align: left !important;	
+	border: none !important;	
+	}	
+table.STStyle6 tr.tableHeaderRow {
+	background:none !important;
+	}	
+table.STStyle6 th {
+	text-align: left !important;
+	color:#555555 !important;
+	border-bottom:0 none !important;
+	}	
+table.STStyle6 td {
+	border-bottom:0 none !important;
+	}	
+table.STStyle6 tr.alternateRow {
+	background-color: #ffe14f;
+	}
+
+table.STStyle6 td.tableHeaderCol {
+	font-size:9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}			
+/* ------------------------------------- #7 BLUE LOGO ----------------------------------------------*/
+table.STStyle7 {
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-size: 9pt !important;
+   color: #454545 !important;
+   text-align: left !important;
+}
+table.STStyle7 tr.tableHeaderRow {
+   background-color: #003f69;
+}
+table.STStyle7 th {
+   text-align: left !important;
+   color: #fff !important;
+   font-family: Georgia, "Times New Roman", Times, serif !important;
+   font-weight: normal !important;
+}
+table.STStyle7 td {
+   border-bottom: 0.75pt dotted #00b0da !important;
+}
+table.STStyle7 tr.alternateRow {
+} 
+table.STStyle7 td.tableHeaderCol {
+   font-size: 9pt !important;
+   font-style:bold !important;
+   background-color:#73CBF7;
+   color: #fff !important;
+}
+/* ------------------------------------- #8 GRID ---------------------------------------------- */
+table.STStyle8 {
+	text-align: center !important;
+	border: 0.75pt solid #000 !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;	
+	}
+table.STStyle8 tr.tableHeaderRow {
+	background:none !important;
+	background-color: #000;
+	color: #fff !important;
+	}
+table.STStyle8 th {
+	text-align:center !important;
+	padding: 0.0794cm 0.132cm !important;
+	color:#FFFFFF !important;
+	}	
+table.STStyle8 td {
+	border: 0.75pt solid #000000 !important;
+	}
+table.STStyle8 tr.alternateRow {
+	border: 0.75pt solid #000 !important;
+	padding: 0.0794cm 0.132cm !important;
+	}
+ table.STStyle8 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #9 DIAGONAL ---------------------------------------------- */
+table.STStyle9 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;
+	border:0 none !important;	
+	}	
+table.STStyle9 tr.tableHeaderRow {
+	background:none !important;
+	}	
+table.STStyle9 th {
+	text-align: left !important;
+	color: #d72b02 !important;		
+	}
+table.STStyle9 td {
+	}
+table.STStyle9 tr.alternateRow {
+	background-color: #efefef;
+	}
+table.STStyle9 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #10 DELICATE ---------------------------------------------- */
+table.STStyle10 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	border:none !important;
+	border-collapse: separate !important;
+	color: #3b4245 !important;
+	text-align: left !important;	
+	}
+table.STStyle10 tr.tableHeaderRow {
+	background:none !important;
+	}	
+table.STStyle10 th {
+	text-align: left !important;
+	font-weight: normal !important;
+	border-bottom: 0.75pt dotted #c7e6f2 !important;
+	color: #3b4245 !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm; !important;
+	}
+table.STStyle10 tr {
+	}
+table.STStyle10 td {
+	border-top: 0.75pt dotted #c7e6f2 !important;
+	border-bottom: 0.75pt dotted #c7e6f2 !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm; !important;
+	}	
+table.STStyle10 tr.alternateRow {
+	border-top: 0.75pt dotted #c7e6f2 !important;
+	border-bottom: 0.75pt dotted #c7e6f2 !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm; !important;
+	}
+table.STStyle10 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #11 MODERN ---------------------------------------------- */
+table.STStyle11 {
+	font-family:Georgia,"Times New Roman",Times,serif !important;
+	font-size: 8.25pt !important;
+	letter-spacing:0 !important;
+	margin:0.2117cm 0 0.635cm !important;
+	text-align: left !important;	
+	border:0 none !important;	
+	}	
+table.STStyle11 tr.tableHeaderRow {
+	background:none !important;
+	}
+table.STStyle11 th {
+	color:#00A6A0 !important;
+	font-family:arial !important;
+	font-size:7.5pt !important;
+	font-weight:bold !important;
+	letter-spacing:0.0265cm !important;
+	padding: 0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	text-align:left !important;
+	text-transform:uppercase !important;
+	}	
+table.STStyle11 td {
+	border-bottom:0.75pt solid #BEBEBE !important;
+	border-top:0.75pt solid #BEBEBE !important;
+	padding:0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	}
+table.STStyle11 tr.alternateRow {
+	}
+table.STStyle11 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #12 CLASSIC ---------------------------------------------- */
+table.STStyle12 {
+	color:#5A5A5A !important;
+	font-family:Helvetica,Arial,sans-serif !important;
+	font-size: 8.25pt !important;
+	font-weight:bold !important;
+	letter-spacing:0 !important;
+	text-align: left !important;
+	border:0pt none !important;		
+	}	
+table.STStyle12 tr.tableHeaderRow {
+	background:none !important;
+	}
+table.STStyle12 th {
+	border-top:0.75pt dotted #5A5A5A !important;
+	border-bottom:0pt none !important;
+	border-left:0pt none !important;
+	border-right:0pt none !important;
+	color:#333333 !important;
+	font-family:Georgia,Times,serif !important;
+	font-size:7.5pt !important;
+	font-weight:bold !important;
+	letter-spacing:0.0397cm !important;
+	padding:  0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	text-align:left !important;
+	text-transform:uppercase !important;
+	}	
+table.STStyle12 td {
+	border-bottom:medium none !important;
+	border-top:medium none !important;
+	border-bottom:0pt none !important;
+	border-left:0pt none !important;
+	border-right:0pt none !important;	
+	padding:0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	}
+table.STStyle12 tr.alternateRow {
+	}
+table.STStyle12 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #13 CORPORATE ---------------------------------------------- */
+table.STStyle13 {
+	font-family:Helvetica, arial, sans-serif !important;
+	font-size: 8.25pt !important;
+	text-align: left !important;	
+	border:	0 none !important;
+	color:#222222 !important;
+	}	
+table.STStyle13 tr.tableHeaderRow {
+	background:none !important;
+	}
+table.STStyle13 th {
+	font-weight: normal !important;
+	text-align: left !important;
+	padding:  0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	font-family: Georgia, Times, serif !important;
+	border-left:0pt none !important;
+	border-right:0pt none !important;		
+	border-bottom:0.75pt solid #A7D0D9 !important;
+	border-top:0.75pt solid #A7D0D9 !important;
+	color:#222222 !important;	
+	}
+table.STStyle13 td {
+	border-bottom:0.75pt solid #A7D0D9 !important;
+	border-top:0.75pt solid #A7D0D9 !important;
+	padding:0.132cm 0.132cm 0.132cm 0.1588cm !important;
+	border-left:medium none !important;
+	border-right:medium none !important;
+	}
+table.STStyle13 tr.alternateRow {
+	}
+table.STStyle13 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #14 GRAPHPAPER ---------------------------------------------- */
+table.STStyle14 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	color: #2d5f68 !important;
+	border: 0.75pt solid #2d5f68 !important;
+	text-align: left !important;	
+	}	
+table.STStyle14 tr.tableHeaderRow {
+	background:none !important;
+	}
+table.STStyle14 th {
+	color:#2D5F68 !important;
+	text-align: left !important;
+	border-bottom:0.75pt solid #2d5f68 !important;
+	border:0.75pt solid !important;
+	padding: 0.132cm !important;	
+	}
+table.STStyle14 td {
+	border-left: 0.75pt solid #2d5f68 !important;
+	border-right: 0.75pt solid #2d5f68 !important;
+	padding:0.132cm !important;	
+	}
+table.STStyle14 tr.alternateRow {
+	}
+table.STStyle14 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #15 PURPLE STYLE ---------------------------------------------- */
+table.STStyle15 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 12pt !important;
+	text-align: left !important;		
+	}
+	table.STStyle15 tr.tableHeaderRow {
+	background-color: #3c3275;
+	background-image: -moz-linear-gradient(top, #8a84ac 0cm, #8a84ac 0.0265cm, #766f9e 0.0265cm, #463c7c 50%, #39306f 50%, #30285e 100%) !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #8a84ac), color-stop(0.03, #8a84ac), color-stop(0.03, #766f9e), color-stop(0.5, #463c7c), color-stop(0.5, #39306f), color-stop(1.0, #30285e)) !important;
+	}
+table.STStyle15 th {
+	text-align: left !important;
+	border:0.75pt solid #273a51 !important;
+	color:#fff !important;
+	padding:0.3969cm 0.132cm !important;
+	}	
+table.STStyle15 td {
+	border:0.75pt solid #ababab !important;
+	background-color: #efefef;
+	padding:0.3969cm 0.132cm !important;
+	}	
+table.STStyle15 tr.alternateRow {
+	background-color: #e6e6e6;
+	}
+table.STStyle15 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #16 DARK GREEN STYLE ---------------------------------------------- */
+table.STStyle16 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;		
+	}
+table.STStyle16 tr.tableHeaderRow {
+	background-color:#23333c;
+	background-image:-moz-linear-gradient(#324753 0%, #23333c 100%) !important;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#324753), to(#23333c)) !important;
+	}
+table.STStyle16 th {
+	text-align: left !important;
+	border: 0.75pt solid #223339 !important;
+	color: #efefef !important;
+	font-weight: normal !important;
+	padding: 0.3969cm 0.132cm !important;	
+	}
+table.STStyle16 td {
+	border: 0.75pt solid #86989e !important;
+	padding: 0.3969cm 0.132cm !important;		
+	}
+table.STStyle16 tr.alternateRow {
+	background-color: #ebf3f5;
+	} 
+table.STStyle16 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #17 BLUE AND YELLOW STYLE ---------------------------------------------- */
+table.STStyle17 {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 9pt !important;
+	text-align: left !important;
+	}	
+table.STStyle17 tr.tableHeaderRow {
+	background-color:#6896ec;
+	background-image:-moz-linear-gradient(#c7daf8 0%, #88bbfd  7%, #566cb7 100%) !important;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#c7daf8), to(#566cb7), color-stop(.07, #88bbfd)) !important;
+	}
+table.STStyle17 th {
+	text-align: left !important;
+	border: 0.75pt solid #058cc0 !important;
+	padding: 0.3969cm 0.132cm !important;
+	color: #fff !important;
+	font-weight: normal !important;
+	}
+table.STStyle17 td {
+	border: 0.75pt solid #ccc !important;
+	padding: 0.3969cm 0.132cm !important;
+	}
+table.STStyle17 tr.alternateRow {
+	background-color: #f6f6ad;
+	}
+table.STStyle17 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+/* ------------------------------------- #18 SERIOUS GREY STYLE ---------------------------------------------- */
+table.STStyle18 {
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	font-size: 8.25pt !important;
+	text-align: left !important;	
+	}
+table.STStyle18 tr.tableHeaderRow {
+	background-color:#333;
+	background-image:-moz-linear-gradient(#525252 0%, #1d1d1d 100%) !important;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#525252), to(#1d1d1d)) !important;
+	}
+table.STStyle18 th {
+	text-align: left !important;
+	border: 0.75pt solid #fff !important;
+	padding: 0.3969cm 0.132cm !important;
+	color: #fff !important;
+	}
+table.STStyle18 td {
+	border: 0.75pt solid #ccc !important;
+	padding: 0.3969cm 0.132cm !important;
+	background-color: #efefef;
+	}
+table.STStyle18 tr.alternateRow {
+	background-color: #efefef;
+	}
+table.STStyle18 td.tableHeaderCol {
+	font-size: 9pt !important;
+	font-style:bold !important;
+	background-color:#73CBF7;
+	color: #fff !important;
+}
+
+/* ------------------------------------- BEGINNING OF TABLE STYLES ------------------------------------------------ */
+/*  Table styles that can be selected from tool bar button, 20 table styles in total. Related plugin is tablestyles.*/
+
+/* plain style*/
+table.st_plain>tbody>tr>th {color:#000000;border:0.75pt solid #000000; background-repeat:repeat;}
+table.st_plain>tbody>tr>td {color:#000000;border:0.75pt solid #000000; background-repeat:repeat;}
+
+/* plain rows style*/
+table.st_plain_rows>tbody>tr>th {color:#000000;border-top:0.75pt solid #000000;background-color:#ffffff;border-left:none;background-repeat:repeat;border-right:none;border-bottom:0.75pt solid #000000;font-size:12pt;}
+table.st_plain_rows>tbody>tr>td, table.st_plain_rows>tbody>tr.alternateRow>td {color:#000000;border-top:0.75pt solid #000000;background-color:#ffffff;border-left:none;background-repeat:repeat;border-right:none;border-bottom:0.75pt solid #000000;font-size:12pt;}
+
+/* light gray rows style*/
+table.st_light_gray_rows>tbody>tr>th {color:#000000;border-top:0.75pt solid #000000;background-color:#dddddd;border-left:none;background-repeat:repeat;border-right:none;border-bottom:0.75pt solid #000000;font-size:12pt;}
+table.st_light_gray_rows>tbody>tr>td, table.st_light_gray_rows>tbody>tr.alternateRow>td {color:#000000;border-top:0.75pt solid #000000;background-color:#dddddd;border-left:none;background-repeat:repeat;border-right:none;border-bottom:0.75pt solid #000000;font-size:12pt;}
+
+/* dark gray rows style*/
+table.st_dark_gray>tbody>tr>th {color:#ffffff;background-color:#666666;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+table.st_dark_gray>tbody>tr>td, table.st_dark_gray>tbody>tr.alternateRow>td {color:#ffffff;background-color:#666666;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+
+/* blue_style style*/
+table.st_blue_style>tbody>tr>th {color:#ffffff;background-color:#336666;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+table.st_blue_style>tbody>tr>td, table.st_blue_style>tbody>tr.alternateRow>td {color:#ffffff;background-color:#336666;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+
+/* green style */
+table.st_green_style>tbody>tr>th {color:#ffffff;background-color:#669933;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+table.st_green_style>tbody>tr>td, table.st_green_style>tbody>tr.alternateRow>td {color:#ffffff;background-color:#669933;background-repeat:repeat;border:0.75pt solid #ffffff;font-size:12pt;}
+
+/* gray tint */
+table.st_gray_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;font-size:12pt;}
+table.st_gray_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;font-size:12pt;}
+table.st_gray_tint>tbody>tr>td  {color:#000000;background-color:#dddddd;background-repeat:repeat;border:0.75pt solid #000000;font-size:12pt;}
+table.st_gray_tint>tbody>tr.alternateRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;font-size:12pt;}
+
+/* blue tint */
+table.st_blue_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_blue_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_blue_tint>tbody>tr>td  {color:#000000;background-color:#99ccff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_blue_tint>tbody>tr.alternateRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+
+/* purple tint */
+table.st_purple_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_purple_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_purple_tint>tbody>tr>td  {color:#000000;background-color:#cc99ff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_purple_tint>tbody>tr.alternateRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+
+/* green tint */
+table.st_green_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_green_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_green_tint>tbody>tr>td  {color:#000000;background-color:#99cc99;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_green_tint>tbody>tr.alternateRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+
+/* red tint */
+table.st_red_tint>tbody>tr.tableHeaderRow>td  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_red_tint>tbody>tr>th  {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_red_tint>tbody>tr>td  {color:#000000;background-color:#ff9999;background-repeat:repeat;border:0.75pt solid #000000;}
+table.st_red_tint>tbody>tr.alternateRow>td {color:#000000;background-color:#ffffff;background-repeat:repeat;border:0.75pt solid #000000;}
+
+/* black header */
+table.st_black_header {border: 0.75pt solid #000000;}
+table.st_black_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:0.75pt solid #000000;background-color:#1c1c1c;border-left:0.75pt solid #000000;background-repeat:repeat;border-right:0.75pt solid #000000;border-bottom:1.5pt solid #000000;}
+table.st_black_header>tbody>tr>th  {color:#ffffff;border-top:0.75pt solid #000000;background-color:#1c1c1c;border-left:0.75pt solid #000000;background-repeat:repeat;border-right:0.75pt solid #000000;border-bottom:1.5pt solid #000000;}
+table.st_black_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#ffffff;border-left:0.75pt solid #000000;background-repeat:repeat;border-right:0.75pt solid #000000;border-bottom:none;}
+table.st_black_header>tbody>tr.alternateRow>td  {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #000000;background-repeat:repeat;border-right:0.75pt solid #000000;border-bottom:none;}
+table.st_black_header>tbody>tr.lastRow>td  {border-bottom:0.75pt solid #000000;}
+
+/* green header */
+table.st_green_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#669933;border-left:0.75pt solid #009900;background-repeat:repeat;border-right:0.75pt solid #009900;border-bottom:1.5pt solid #ffffff;}
+table.st_green_header>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#669933;border-left:0.75pt solid #009900;background-repeat:repeat;border-right:0.75pt solid #009900;border-bottom:1.5pt solid #ffffff;}
+table.st_green_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#b2b2b2;border-left:0.75pt solid #009900;background-repeat:repeat;border-right:0.75pt solid #009900;border-bottom:none;}
+table.st_green_header>tbody>tr.alternateRow>td  {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #009900;background-repeat:repeat;border-right:0.75pt solid #009900;border-bottom:none;}
+
+/* blue header style*/
+table.st_blue_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#003366;border-left:0.75pt solid #000066;background-repeat:repeat;border-right:0.75pt solid #000066;border-bottom:1.5pt solid #ffffff;}
+table.st_blue_header>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#003366;border-left:0.75pt solid #000066;background-repeat:repeat;border-right:0.75pt solid #000066;border-bottom:1.5pt solid #ffffff;}
+table.st_blue_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#6699cc;border-left:0.75pt solid #000066;background-repeat:repeat;border-right:0.75pt solid #000066;border-bottom:none;}
+table.st_blue_header>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#99ccff;border-left:0.75pt solid #000066;background-repeat:repeat;border-right:0.75pt solid #000066;border-bottom:none;}
+
+/* purple header style*/
+table.st_purple_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#663366;border-left:0.75pt solid #330066;background-repeat:repeat;border-right:0.75pt solid #330066;border-bottom:1.5pt solid #ffffff;}
+table.st_purple_header>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#663366;border-left:0.75pt solid #330066;background-repeat:repeat;border-right:0.75pt solid #330066;border-bottom:1.5pt solid #ffffff;}
+table.st_purple_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#cc99cc;border-left:0.75pt solid #330066;background-repeat:repeat;border-right:0.75pt solid #330066;border-bottom:none;}
+table.st_purple_header>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#ffccff;border-left:0.75pt solid #330066;background-repeat:repeat;border-right:0.75pt solid #330066;border-bottom:none;}
+
+/* red header style*/
+table.st_red_header>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#990000;border-left:0.75pt solid #330000;background-repeat:repeat;border-right:0.75pt solid #330000;border-bottom:1.5pt solid #ffffff;}
+table.st_red_header>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#990000;border-left:0.75pt solid #330000;background-repeat:repeat;border-right:0.75pt solid #330000;border-bottom:1.5pt solid #ffffff;}
+table.st_red_header>tbody>tr>td  {color:#000000;border-top:none;background-color:#999999;border-left:0.75pt solid #330000;background-repeat:repeat;border-right:0.75pt solid #330000;border-bottom:none;}
+table.st_red_header>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #330000;background-repeat:repeat;border-right:0.75pt solid #330000;border-bottom:none;}
+
+/* dark gray header footer style*/
+table.st_dark_gray_header_footer>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#666666;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_dark_gray_header_footer>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#666666;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_dark_gray_header_footer>tbody>tr>td  {color:#000000;border-top:none;background-color:#ffffff;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_dark_gray_header_footer>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_dark_gray_header_footer>tbody>tr.lastRow>td {color:#000000;border-top:0.75pt solid #333333;background-color:#b2b2b2;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+
+/* green header footer style*/
+table.st_green_header_footer>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#669900;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_green_header_footer>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#669900;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_green_header_footer>tbody>tr>td {color:#000000;border-top:none;background-color:#b2b2b2;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_green_header_footer>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_green_header_footer>tbody>tr.lastRow>td {color:#000000;border-top:0.75pt solid #333333;background-color:#99cc66;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+
+/* red header footer style*/
+table.st_red_header_footer>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#ff3333;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_red_header_footer>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#ff3333;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_red_header_footer>tbody>tr>td {color:#000000;border-top:none;background-color:#b2b2b2;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_red_header_footer>tbody>tr.alternateRow>td {color:#000000;border-top:none;background-color:#dddddd;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_red_header_footer>tbody>tr.lastRow>td {color:#000000;border-top:0.75pt solid #333333;background-color:#ff6666;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+
+/* light blue header footer style*/
+table.st_light_blue_header_footer>tbody>tr.tableHeaderRow>td  {color:#ffffff;border-top:none;background-color:#669999;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_light_blue_header_footer>tbody>tr>th  {color:#ffffff;border-top:none;background-color:#669999;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:1.5pt solid #333333;}
+table.st_light_blue_header_footer>tbody>tr>td  {border-top:none;background-color:#b2b2b2;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_light_blue_header_footer>tbody>tr.alternateRow>td  {border-top:none;background-color:#dddddd;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}
+table.st_light_blue_header_footer>tbody>tr.lastRow>td  {border-top:0.75pt solid #333333;background-color:#99cccc;border-left:0.75pt solid #333333;background-repeat:repeat;border-right:0.75pt solid #333333;border-bottom:none;}

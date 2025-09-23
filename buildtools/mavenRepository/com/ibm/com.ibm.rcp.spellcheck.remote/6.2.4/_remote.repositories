@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Mar 09 16:04:40 CST 2015
+com.ibm.rcp.spellcheck.remote-6.2.4.jar>=
+com.ibm.rcp.spellcheck.remote-6.2.4.jar>central=
+com.ibm.rcp.spellcheck.remote-6.2.4.pom>central=

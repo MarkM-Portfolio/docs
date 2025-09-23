@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Izberite področno nastavitev za oblikovanje številk, valut, datuma in časa.",
+	INPUT_INVALID_LOCALENAME: "Neveljavno ime področne nastavitve",
+	INPUT_EMPTY_LOCALENAME: "Izberite področno nastavitev.",
+	
+	Spain_Catalan: "Španija (katalonščina)",
+	Denmark: "Danska",
+	Germany: "Nemčija",
+	Greek: "Grčija",
+	United_States: "Združene države Amerike",
+	United_Kingdom: "Združeno Kraljestvo",
+	Spain: "Španija",
+	Finland: "Finska",
+	France: "Francija",
+	Italy: "Italija",
+	Japan: "Japonska",
+	Korean: "Južna Koreja",
+	Norway: "Norveška",
+	Netherlands: "Nizozemska",
+	Poland: "Poljska",
+	Brazil: "Brazilija",
+	Portugal: "Portugalska",
+	Russia: "Rusija",
+	Sweden: "Švedska",
+	Thailand: "Tajska",
+	Turkey: "Turčija",
+	China: "Kitajska",
+	Taiwan_China: "Tajvan (Kitajska)",
+	Israel: "Izrael"
+})
+

@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>docs-infra</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.docs.common</artifactId>
+  <name>com.ibm.docs.common - jar</name>
+  <packaging>jar</packaging>
+
+  <dependencies>
+    <!-- 3rd party dependencies -->
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>bss.shim</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+    </dependency>
+    <dependency>
+	  <groupId>com.ibm</groupId>
+	  <artifactId>acf</artifactId>
+    </dependency>    
+    <dependency>
+	  <groupId>3rd-dependencies</groupId>
+	  <artifactId>commons-configuration-1.5-plus</artifactId>
+    </dependency> 
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.chemistry.opencmis</groupId>
+	  <artifactId>chemistry-opencmis-client-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.chemistry.opencmis</groupId>
+      <artifactId>chemistry-opencmis-client-impl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.chemistry.opencmis</groupId>
+      <artifactId>chemistry-opencmis-client-bindings</artifactId>
+    </dependency>
+    <dependency>
+	  <groupId>org.apache.chemistry.opencmis</groupId>
+	  <artifactId>chemistry-opencmis-commons-api</artifactId>
+    </dependency>
+    
+    <!-- dependencies that cannot find official repository -->
+    <dependency>
+	  <groupId>com.ibm</groupId>
+	  <artifactId>lc.customAuthClient</artifactId>
+    </dependency>
+    
+
+    <!-- WAS lib dependencies -->
+    <dependency>
+      <groupId>com.ibm.websphere.plugins</groupId>
+      <artifactId>com.ibm.ws.admin.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.websphere.plugins</groupId>
+      <artifactId>com.ibm.ws.runtime</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.websphere.lib</groupId>
+      <artifactId>j2ee</artifactId>
+    </dependency>    
+  </dependencies>
+
+</project>

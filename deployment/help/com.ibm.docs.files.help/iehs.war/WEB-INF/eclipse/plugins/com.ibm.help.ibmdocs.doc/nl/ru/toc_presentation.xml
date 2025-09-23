@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Работа с Presentations"
+     topic="text/presentation/presentations_frame.html">
+   <topic label="Работа с презентациями"
+          href="text/presentation/presentations_frame.html">
+      <topic label="Создание презентаций и их загрузка на сайт"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Создание презентаций"
+                href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Изменение формата файла по умолчанию презентаций"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Загрузка презентаций в общий каталог"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Импорт презентаций" href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Совместимость файлов и экспорт презентаций"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Форматы файлов, поддерживаемые в презентациях"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Сохранение презентаций"
+                href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Публикация версии презентации"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Экспорт презентаций в другие форматы"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Предоставление общего доступа к презентациям"
+             href="text/presentation/p_sharing_a_document.html">
+         <topic label="Предоставление пользователям и сообществам общего доступа к презентациям"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Настройка уровней доступа для презентаций"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Совместная работа над презентациями в реальном времени"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Совместное редактирование в презентациях в режиме реального времени"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="О совместном редактировании в презентациях"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Совместное редактирование в презентациях"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Просмотр изменений из редактора в презентациях"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Сотрудничество с использованием комментариев в презентациях"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Сведения о комментариях в презентациях"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Создание комментариев в презентациях"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Просмотр комментариев в презентациях"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Сохранение комментариев в презентациях"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Форматирование слайдов"
+             href="text/presentation/p_formatting_slides.html">
+         <topic label="Изменение шрифтов в презентациях"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Выбор и перемещение объектов"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Изменение порядка объектов"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Добавление маркировки или нумерации на слайды"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Применение макета слайда"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Изменение главного стиля"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Проверка орфографии в презентациях"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Сохранение и печать презентаций"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Печать презентаций в файлы PDF"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Работа с изображениями в презентациях"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Вставка графических объектов в презентации"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Перемещение и изменение размеров изображений в презентациях"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Настройка свойств изображений в презентациях"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Работа со слайдами" href="text/presentation/p_slide_show.html">
+         <topic label="Воспроизведение демонстрации слайдов"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Применение переходов между слайдами"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Удаление слайдов" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Добавление слайдов" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Перемещение слайдов" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Дублирование слайдов" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Работа с таблицами в презентациях"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Создание таблиц в презентациях"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Добавление строк и столбцов в презентации"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Перемещение строк и столбцов в презентациях"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Изменение размера строк и столбцов в презентации"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Выравнивание текста в ячейках"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Настройка стилей таблиц в презентациях"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Создание заголовков в презентациях"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Изменение примечаний докладчика"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Presentations - краткий справочник"
+             href="text/presentation/p_quick_ref.html"/>
+      <topic label="Клавиши быстрого доступа для презентаций"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

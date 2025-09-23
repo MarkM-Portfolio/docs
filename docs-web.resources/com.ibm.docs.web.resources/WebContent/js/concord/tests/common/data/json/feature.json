@@ -1,0 +1,38 @@
+{
+	"text": {
+		"feature":[
+			{
+				"versionID": "1.3.3",
+				"featureIDs": ["TEXT_FormatPainter","TEXT_DOWNLOAD","TEXT_ClearFormat"]
+			},
+			{
+				"versionID": "1.3.6",
+				"featureIDs": ["CREATE_BOOKMARK"]
+			}
+		]
+	},
+	"sheet": {
+		"feature":[
+			{
+				"versionID": "1.3.3",
+				"featureIDs": ["SHEET_NEW_FORMULA","SHEET_DOWNLOAD"]
+			},
+			{
+				"versionID": "1.3.6",
+				"featureIDs": ["SHEET_NEW_MORECOLUMNS", "SHEET_NEW_VERTICALMERGE"]
+			}
+		]	
+	},
+	"pres": {
+		"feature":[
+			{
+				"versionID": "1.3.3",
+				"featureIDs": ["PRES_Sorter","PRES_Zoom","PRES_Download","PRES_Toolbar","PRES_Shape"]
+			},
+			{
+				"versionID": "1.3.6",
+				"featureIDs": ["PRES_NINE_NEW_SHAPE","PRES_HYPERLINK","PRES_LINESPACE","PRES_COMMENTS_ROUNDTRIP"]
+			}
+		]	
+	}
+}

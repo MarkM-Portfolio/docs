@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>deploy</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.tests</groupId>
+  <artifactId>deploy</artifactId>
+  <name>Tests deploy - pom</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <tests.build.output.dir>${build.output.dir}/tests</tests.build.output.dir>
+  </properties>  
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>JSTest.docs</artifactId>
+      <version>${project.version}</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>JSTest.viewer</artifactId>
+      <version>${project.version}</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>viewer.automation</artifactId>
+      <version>${project.version}</version>
+      <type>zip</type>
+    </dependency>    
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy OnPremise packages to build output directory</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem> 
+                  <groupId>com.ibm.docs</groupId>
+                  <artifactId>JSTest.docs</artifactId>
+                  <type>zip</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${tests.build.output.dir}</outputDirectory>
+                </artifactItem>
+                <artifactItem> 
+                  <groupId>com.ibm.docs</groupId>
+                  <artifactId>JSTest.viewer</artifactId>
+                  <type>zip</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${tests.build.output.dir}</outputDirectory>
+                </artifactItem>
+                <artifactItem> 
+                  <groupId>com.ibm.docs</groupId>
+                  <artifactId>viewer.automation</artifactId>
+                  <type>zip</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${tests.build.output.dir}</outputDirectory>
+                </artifactItem>                
+              </artifactItems>
+              <stripVersion>true</stripVersion>
+              <overWriteReleases>false</overWriteReleases>
+              <overWriteSnapshots>true</overWriteSnapshots>
+            </configuration>
+          </execution>
+        </executions>        
+      </plugin>
+    </plugins>    
+  </build>
+</project>

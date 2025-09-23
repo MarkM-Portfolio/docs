@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Muotoile luvut, valuuttamuodot, päivämäärät ja kellonajat valitsemalla paikallistunnus.",
+	INPUT_INVALID_LOCALENAME: "Paikallistunnuksen nimi on virheellinen",
+	INPUT_EMPTY_LOCALENAME: "Valitse paikallistunnus.",
+	
+	Spain_Catalan: "Espanja (katalaani)",
+	Denmark: "Tanska",
+	Germany: "Saksa",
+	Greek: "Kreikka",
+	United_States: "Yhdysvallat",
+	United_Kingdom: "Iso-Britannia",
+	Spain: "Espanja",
+	Finland: "Suomi",
+	France: "Ranska",
+	Italy: "Italia",
+	Japan: "Japani",
+	Korean: "Etelä-Korea",
+	Norway: "Norja",
+	Netherlands: "Alankomaat",
+	Poland: "Puola",
+	Brazil: "Brasilia",
+	Portugal: "Portugali",
+	Russia: "Venäjä",
+	Sweden: "Ruotsi",
+	Thailand: "Thaimaa",
+	Turkey: "Turkki",
+	China: "Kiina",
+	Taiwan_China: "Taiwan (Kiina)",
+	Israel: "Israel"
+})
+

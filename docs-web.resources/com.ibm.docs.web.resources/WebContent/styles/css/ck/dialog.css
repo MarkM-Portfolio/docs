@@ -1,0 +1,923 @@
+/*
+Copyright (c) 2003-2009, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+
+Portions Copyright IBM Corp., 2009.
+*/
+
+/* Restore the dialog visibility */
+body .cke_dialog
+{
+	visibility: visible;
+}
+
+/* Force Gecko to consider table as positioned */
+.cke_skin_lotus table.cke_dialog.cke_browser_gecko
+{
+	display:block;
+}
+.cke_skin_lotus .cke_dialog_body
+{
+	/* margin-left: 16px;	/* Removed */
+	/* margin-right: 16px;	/* Removed */
+	/* margin-top: 2px;		/* Removed */
+	/* margin-bottom: 20px;	/* Removed */
+	/* 'cke_dialog' element has been fixed positioned in all but IE6, while we
+		need it to be positioned to hold e.g. close button. */
+	position: relative;
+
+	z-index: 1;
+	border: 4px solid #999;	/* Added */
+}
+
+.cke_skin_lotus .cke_dialog_tl,
+.cke_skin_lotus .cke_dialog_tr,
+.cke_skin_lotus .cke_dialog_tc,
+.cke_skin_lotus .cke_dialog_bl,
+.cke_skin_lotus .cke_dialog_br,
+.cke_skin_lotus .cke_dialog_bc
+{
+	/*background-image: url(images/sprites_ie6.png); */ /* Modified (sprites.png) */
+	background-repeat: no-repeat;
+	position: absolute;
+
+	/* IE6 does not support full color transparent PNG. */
+	/*_background-image: url(images/sprites_ie6.png); */
+}
+
+.cke_skin_lotus .cke_dialog_tl
+{
+	background-position: -16px -16px;
+	height: 16px;
+	width: 16px;
+	top: 0;
+	left: 0;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_tl
+{
+	background-position: -16px -397px;
+}
+
+.cke_skin_lotus .cke_dialog_tr
+{
+	background-position: -16px -76px;
+	height: 16px;
+	width: 16px;
+	top: 0;
+	right: 0;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_tr
+{
+	background-position: -16px -457px;
+}
+
+.cke_skin_lotus .cke_dialog_tc
+{
+	background-position: 0 -136px;
+	background-repeat: repeat-x;
+	height: 16px;
+	top: 0;
+	left: 0px;	/* Modified (16px) */
+	right: 0px;	/* Modified (16px) */
+
+
+
+
+}
+
+.cke_skin_lotus .cke_dialog_bl
+{
+	background-position: -16px -196px;
+	height: 51px;
+	width: 30px;
+	bottom: 0;
+	left: 0;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_bl
+{
+	background-position: -16px -517px;
+}
+
+.cke_skin_lotus .cke_dialog_br
+{
+	background-position: -16px -263px;
+	height: 51px;
+	width: 30px;
+	bottom: 0;
+	right: 0;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_br
+{
+	background-position: -16px -584px;
+}
+
+.cke_skin_lotus .cke_dialog_bc
+{
+	background-position: 0 -330px;
+	background-repeat: repeat-x;
+	height: 51px;
+	bottom: 0;
+	left: 30px;
+	right: 30px;
+}
+
+.cke_skin_lotus .cke_dialog_ml,
+.cke_skin_lotus .cke_dialog_mr
+{
+	/* background-image: url(images/dialog_sides.png);*/
+	background-repeat: repeat-y;
+	position: absolute;
+	width: 16px;
+	top: 16px;
+	bottom: 39px; /* Modified (51px) */
+
+
+
+	/* IE6 does not support full color transparent PNG. */
+	/* _background-image: url(images/dialog_sides.gif); */
+
+	/* IE quirks gets confused when we have both top and bottom. */
+	_top: auto;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_ml,
+.cke_skin_lotus .cke_rtl .cke_dialog_mr
+{
+	/* background-image: url(images/dialog_sides_rtl.png); */
+
+	/* IE6 does not support full color transparent PNG. */
+	/* _background-image: url(images/dialog_sides.gif); */
+}
+
+.cke_skin_lotus .cke_dialog_ml
+{
+	background-position: 0 0;
+	left: 0;
+}
+
+.cke_skin_lotus .cke_dialog_mr
+{
+	background-position: -16px 0;
+	right: 0;
+}
+
+.cke_skin_lotus .cke_browser_iequirks .cke_dialog_ml,
+.cke_skin_lotus .cke_browser_iequirks .cke_dialog_mr
+{
+	margin-top: 3px;
+}
+
+.cke_skin_lotus .cke_dialog_title
+{
+	font-weight: bold;
+	font-size: 20px;				/* Modified (14pt) */
+	color: #444444;					/* Modified (#737353) */
+
+
+
+
+	background-color: #fff; 		/* Modified (#e3e3c7) */
+	padding: 12px 20px 48px 20px;	/* Modified (3px 10px 26px 10px) */
+	cursor: move;
+	position: relative;
+	background-image: url(images/spritesHeaderClose.png);	/* Added */
+	background-repeat: repeat-x;							/* Added */
+	background-position: 0 -50px;							/* Added */
+	/*border-bottom: solid 1px #dddddd;	*/					/* Added */
+}
+
+.cke_skin_lotus .cke_browser_ie.cke_rtl .cke_dialog_title
+{
+	position: static !important;
+	unicode-bidi: bidi-override;
+}
+
+.cke_skin_lotus .cke_dialog_contents
+{
+	background-color: #fff;			/* Modified (#f1f1e3) */
+	/* border: #d5d59d 1px solid;	/* Removed */
+	overflow: auto;
+	padding: 5px 10px;
+	border-top: #fff 1px solid;			/* Added */
+	border-bottom: #c0d8f8 1px solid;	/* Added */
+}
+
+.cke_skin_lotus .cke_dialog_footer
+{
+	background-color: #e0e8f0;	/* Modified (#e3e3c7) */
+	text-align: left;			/* Modified (right) */
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_footer
+{
+	text-align:right; /* Modified (left) */
+}
+
+/* tabs */
+
+.cke_skin_lotus .cke_dialog_tabs
+{
+	height: 23px;
+	background-color: transparent none repeat scroll 0; /* Modified (#e3e3c7) */
+
+
+	display: inline-block;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:-23px;
+	position: absolute;
+	z-index: 2;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_tabs
+{
+	right: 10px;
+}
+
+.cke_skin_lotus a.cke_dialog_tab,
+.cke_skin_lotus a:link.cke_dialog_tab,
+.cke_skin_lotus a:active.cke_dialog_tab,
+.cke_skin_lotus a:hover.cke_dialog_tab,
+.cke_skin_lotus a:visited.cke_dialog_tab
+{
+	color: #105CB6; /* Modified (#737357) */
+
+
+	border-left: 1px solid #dddddd;		/* Modified (d5d59d) */
+	border-right: 1px solid #dddddd;	/* Modified (d5d59d) */
+	border-top: 1px solid #dddddd;		/* Modified (d5d59d) */
+	height: 14px;
+	padding: 4px 5px;
+	display: inline-block;
+	cursor: pointer;
+	background-color: #eeeeee;			/* Added */
+	margin-right: 3px;					/* Added */
+}
+
+/* Gecko 1.8 layout workaround. */
+.cke_skin_lotus .cke_browser_gecko18 a.cke_dialog_tab,
+.cke_skin_lotus .cke_browser_gecko18 a:link.cke_dialog_tab,
+.cke_skin_lotus .cke_browser_gecko18 a:active.cke_dialog_tab,
+.cke_skin_lotus .cke_browser_gecko18 a:hover.cke_dialog_tab,
+.cke_skin_lotus .cke_browser_gecko18 a:visited.cke_dialog_tab
+{
+	display: -moz-box;		/* Modified (inline) */
+
+
+	/* position: relative;	/* Removed */
+	/* top: 6px; 			/* Removed */
+
+
+}
+
+.cke_skin_lotus a:hover.cke_dialog_tab
+{
+	background-color: #fff; /* Modified (#f1f1e3) */
+}
+
+.cke_skin_lotus a.cke_dialog_tab_selected,
+.cke_skin_lotus a:link.cke_dialog_tab_selected,
+.cke_skin_lotus a:active.cke_dialog_tab_selected,
+.cke_skin_lotus a:hover.cke_dialog_tab_selected,
+.cke_skin_lotus a:visited.cke_dialog_tab_selected
+{
+	border-bottom: 1px solid #fff;	/* Modified (#f1f1e3) */
+	background-color: #fff;			/* Modified (#f1f1e3) */
+	/* font-weight: bold;			/* Removed */
+	cursor: default;
+	margin-right:3px;				/* Added */
+	color: black;					/* Added */
+}
+
+/* single_page */
+
+.cke_skin_lotus .cke_single_page .cke_dialog_tabs
+{
+	display: none;
+}
+
+.cke_skin_lotus .cke_single_page .cke_dialog_title
+{
+	padding-bottom: 3px;
+}
+
+.cke_skin_lotus .cke_dialog_ui_vbox table,
+.cke_skin_lotus .cke_dialog_ui_hbox table
+{
+	margin: auto;
+}
+
+.cke_skin_lotus .cke_dialog_ui_vbox_child
+{
+	padding: 5px 0px;
+}
+
+.cke_skin_lotus input.cke_dialog_ui_input_text,
+.cke_skin_lotus input.cke_dialog_ui_input_password
+{
+	background-color: white;
+	border: none;
+	padding: 0px;
+	width: 100%;
+	height: 18px; /* Modified (14px) */
+}
+
+.cke_skin_lotus div.cke_dialog_ui_input_text,
+.cke_skin_lotus div.cke_dialog_ui_input_password
+{
+	background-color: white;
+	border: 1px solid #a0a0a0;
+	padding: 1px 0px;
+}
+
+.cke_skin_lotus textarea.cke_dialog_ui_input_textarea
+{
+	background-color: white;
+	border: none;
+	padding: 0px;
+	width: 100%;
+	/*
+	 * IE6 BUG: Scrollbars in textareas can overflow even if the outer DIV is set to overflow:hidden.
+	 * So leave 1% width for the scrollbar. In most situations the 1% isn't noticeable by users.
+	 */
+	_width: 99%;
+	overflow: auto;
+	resize: none;
+}
+
+.cke_skin_lotus div.cke_dialog_ui_input_textarea
+{
+	background-color: white;
+	border: 1px solid #a0a0a0;
+	padding: 1px 0px;
+}
+
+.cke_skin_lotus div.cke_disabled .cke_dialog_ui_labeled_content *
+{
+	background-color : #a0a0a0;
+	cursor : default;
+}
+
+.cke_skin_lotus .cke_dialog_ui_hbox
+{
+	width: 100%;
+}
+
+.cke_skin_lotus .cke_dialog_ui_hbox_first,
+.cke_skin_lotus .cke_dialog_ui_hbox_child,
+.cke_skin_lotus .cke_dialog_ui_hbox_last
+{
+	vertical-align: middle; /* Modified (top) */
+}
+
+.cke_skin_lotus .cke_ltr .cke_dialog_ui_hbox_first,
+.cke_skin_lotus .cke_ltr .cke_dialog_ui_hbox_child
+{
+	padding-right: 10px;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_ui_hbox_first,
+.cke_skin_lotus .cke_rtl .cke_dialog_ui_hbox_child
+{
+	padding-left: 10px;
+}
+
+/* button */
+
+.cke_skin_lotus a.cke_dialog_ui_button
+{
+	border-collapse: separate;
+	cursor: default;
+}
+
+.cke_skin_lotus span.cke_dialog_ui_button
+{
+	border: #2C86EB 1px solid;	/* Modified (#737357) */
+	padding: 1px 10px;			/* Modified (2px 10px) */
+
+
+
+
+	text-align: center;
+	color: #fff;				/* Modified (#3b3b1f) */
+
+
+	background-color: #2c86eb;	/* Modified (#c7c78f) */
+	display: inline-block;
+	cursor: pointer;			/* Modified (default) */
+	cursor: hand;				/* Added*/
+	background-image: url(images/btnSpecialBkgd.png);	/* Added */
+    background-position:left center;	/* Added */
+    background-repeat:repeat-x;			/* Added */
+	font-weight: bold;					/* Added */
+    font-size:.9em;						/* Added */
+    line-height:1.7em;					/* Added */
+	margin: 0px 1px;					/* Added */
+
+
+}
+
+/* Gecko 1.8 does not support display: inline-block */
+.cke_skin_lotus .cke_browser_gecko18 .cke_dialog_footer_buttons span.cke_dialog_ui_button
+{
+	display: -moz-box;	/* Modified (block) */
+	margin-bottom: 9px;	/* Added */
+}
+
+.cke_skin_lotus a.cke_dialog_ui_button span.cke_disabled
+{
+	border: #898980 1px solid;
+	color: #5e5e55;
+	background-color: #c5c5b3;
+}
+
+.cke_skin_lotus a:focus span.cke_dialog_ui_button,
+.cke_skin_lotus a:active span.cke_dialog_ui_button
+{
+	/* background-color: #e3e3c7; /* Removed */
+}
+
+.cke_skin_lotus .cke_dialog_footer_buttons
+{
+	display: inline-table;
+	margin-right: 20px;	/* Modified (12px) */
+	margin-left: 20px;	/* Modified (12px) */
+	width: auto;
+	position: relative;
+}
+
+/* Gecko 1.8 does not support for display: inline-table */
+.cke_skin_lotus .cke_browser_gecko18 .cke_dialog_footer_buttons
+{
+	display: inline;
+}
+
+.cke_skin_lotus .cke_dialog_footer_buttons span.cke_dialog_ui_button
+{
+	/* width: 60px;					/* Removed */
+	margin: 12px 0px 12px 0;		/* Modified (7px 0) */
+	border-color: rgb(47,118,185);	/* Added */
+	cursor: hand;					/* Added */
+	cursor: pointer;				/* Added */
+
+
+
+
+}
+
+.cke_skin_lotus strong
+{
+	font-weight: bold;
+}
+
+/* close_button */
+
+.cke_skin_lotus .cke_dialog_close_button
+{
+	background-image: url(images/spritesHeaderClose.png);	/* Modified (sprites.png) */
+	background-repeat: no-repeat;
+	background-position: -15px -15px;	/* Modified (-16px -651px) */
+	position: absolute;
+	cursor: pointer;
+	text-align: center;
+	height: 15px;	/* Modified (20px) */
+	width: 15px;	/* Modified (20px) */
+	top: 12px;		/* Modified (5px) */
+
+
+
+
+
+
+
+	/* IE6 does not support full color transparent PNG. */
+	_background-image: url(images/spritesHeaderClose.png); /* Modified (sprites_ie6.png) */
+}
+
+.cke_skin_lotus .cke_dialog_close_button span
+{
+	display: none;
+}
+
+.cke_skin_lotus .cke_dialog_close_button:hover
+{
+	/* background-position: -16px -687px; /* Removed */
+}
+
+.cke_skin_lotus .cke_ltr .cke_dialog_close_button
+{
+	right: 12px;		/* Modified (10px) */
+
+
+	/* _right: 22px;	/* Removed */
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_close_button
+{
+	left: 12px;		/* Modified (10px) */
+
+
+	/* _left: 16px;	/* Removed */
+	/* _top: 7px;   /* Removed */
+}
+
+.cke_skin_lotus .cke_browser_ie6.cke_rtl .cke_dialog_close_button
+{
+	position: relative;
+	float: left;
+	margin-top: -55px;
+	margin-left: -7px;
+}
+
+.cke_skin_lotus .cke_browser_iequirks.cke_rtl.cke_single_page .cke_dialog_close_button
+{
+	margin-top: -32px;
+}
+
+.cke_skin_lotus .cke_browser_iequirks.cke_ltr .cke_dialog_close_button
+{
+	margin-top: 0;
+}
+
+.cke_skin_lotus .cke_dialog_ui_input_select
+{
+	border: 1px solid #a0a0a0;
+	background-color: white;
+}
+
+.cke_skin_lotus iframe.cke_dialog_ui_input_file
+{
+	width: 100%;
+	height: 25px;
+}
+
+/*
+ * Some utility CSS classes for dialog authors.
+ */
+.cke_skin_lotus .cke_dialog .dark_background /* Has been renamed in official skin */
+{
+	background-color: #e0e8f0; /* Modified (#eaead1) */
+}
+
+.cke_skin_lotus .cke_dialog .hand /* Has been renamed in official skin */
+{
+	cursor: pointer;
+}
+
+.cke_skin_lotus .cke_dialog .centered /* Has been renamed in official skin */
+{
+	text-align: center;
+}
+/*
+!important added to force IE6 to display the icons properly
+Without this Lotus skin fails to display them
+*/
+.cke_skin_lotus .cke_dialog .cke_btn_reset
+{
+	float: right;
+	background-position: 0 -32px !important;
+	/* background-image: url(images/mini.gif) !important; */
+	width: 16px !important;
+	height: 16px !important;
+	background-repeat: no-repeat !important;
+	border: 1px none;
+	font-size: 1px;
+}
+
+.cke_skin_lotus .cke_rtl .cke_btn_reset /* Has been renamed in official skin */
+{
+	float: left;
+}
+
+.cke_skin_lotus .cke_dialog .cke_btn_locked,
+.cke_skin_lotus .cke_dialog .cke_btn_unlocked
+{
+	float: right; /* Modified (left) */
+    background-position: 0 0 !important;
+    /* background-image: url(images/mini.gif) !important; */
+	width: 16px !important;
+	height: 16px !important;
+	background-repeat: no-repeat !important;
+	border: none 1px;
+	font-size: 1px;
+}
+
+.cke_skin_lotus .cke_rtl .cke_btn_locked,
+.cke_skin_lotus .cke_rtl .cke_btn_unlocked
+{
+	float: left; /* Modified (right) */
+
+
+}
+
+.cke_skin_lotus .cke_dialog .cke_btn_unlocked
+{
+	background-position: 0 -16px !important;
+	/* background-image: url(images/mini.gif) !important; */
+}
+
+.cke_skin_lotus .cke_dialog .cke_btn_over
+{
+	border: outset 1px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.cke_skin_lotus .cke_dialog  #ImagePreviewBox
+{
+	white-space : normal;
+	border : 2px ridge black;
+	overflow : scroll;
+	height : 160px;
+	width : 100%;		/* Modified (230px) */
+
+
+	padding : 2px;
+	margin-top : 5px;	/* Added */
+	background-color : white;
+}
+.cke_skin_lotus .cke_dialog  #ImagePreviewLoader
+{
+	position: absolute;
+	white-space : normal;
+	overflow : hidden;
+	height : 160px;
+	width : 230px;
+	margin : 2px;
+	padding : 2px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+
+	background-color : #e4e4e4;
+}
+
+.cke_skin_lotus .cke_dialog  #FlashPreviewBox
+{
+	white-space : normal;
+	border : 2px ridge black;
+	overflow : auto;
+	height : 160px;
+	width: 375px;	/* Modified (390px) */
+
+
+	padding : 2px;
+	background-color : white;
+}
+
+.cke_skin_lotus .cke_dialog .cke_dark_background
+{
+	text-align : center;
+	background-color: #fff; /* Modified (eaead1) */
+	font-size : 14px;
+}
+
+.cke_skin_lotus .cke_dialog .cke_light_background
+{
+	text-align : center;
+	background-color: #fff; /* Modified (ffffbe) */
+}
+
+.cke_skin_lotus .cke_dialog .cke_hand
+{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.cke_skin_lotus .cke_disabled
+{
+	color: #a0a0a0;
+}
+
+/* High Contrast Mode */
+.cke_skin_lotus .cke_hc .cke_dialog_title,
+.cke_skin_lotus .cke_hc .cke_dialog_tabs,
+.cke_skin_lotus .cke_hc .cke_dialog_contents,
+.cke_skin_lotus .cke_hc .cke_dialog_footer
+{
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+.cke_skin_lotus .cke_hc .cke_dialog_title
+{
+	border-top: 1px solid;
+}
+
+.cke_skin_lotus .cke_hc .cke_dialog_footer
+{
+	border-bottom: 1px solid;
+}
+
+.cke_skin_lotus .cke_hc .cke_dialog_close_button span
+{
+	display: inline;
+	cursor: pointer;
+	cursor: hand;
+	font-weight: bold;
+	position: relative;
+	top: 3px;
+}
+
+.cke_skin_lotus .cke_hc a.cke_btn_locked,
+.cke_skin_lotus .cke_hc a.cke_btn_unlocked,
+.cke_skin_lotus .cke_hc a.cke_btn_reset
+{
+	border-style: solid;
+}
+
+.cke_skin_lotus a.cke_smile img
+{
+	/* IE6 does not support transparent borders */
+	border: 2px solid #E0E8F0; /* Modified (#eaead1) */
+}
+
+.cke_skin_lotus a.cke_smile:focus img,
+.cke_skin_lotus a.cke_smile:active img,
+.cke_skin_lotus a.cke_smile:hover img
+{
+	border-color: #2F76B9; /* Modified (#C7C78F) */
+}
+
+
+/* Everything past this point has been added */
+/* Labels */
+.cke_skin_lotus .cke_dialog_ui_labeled_label,
+.cke_dialog_ui_html
+{
+    font-weight: bold;
+	padding-right: 10px;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_ui_labeled_label,
+.cke_dialog_ui_html
+{
+    font-weight: bold;
+	padding-left: 10px;
+}
+
+.cke_skin_lotus .cke_dialog_ui_hbox_first
+{
+	text-align: right;
+	vertical-align: middle;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_ui_hbox_first
+{
+	text-align: left;
+}
+
+.cke_skin_lotus .cke_dialog .WhiteBackground{
+	text-align: center;
+	background-color: #fff;
+	font-size: 14px;
+}
+
+.cke_skin_lotus .cke_dialog .BlueBackground{
+	text-align: center;
+	background-color: #e0e8f0;
+}
+
+/* Button size fix for FF2 */
+.cke_skin_lotus .cke_browser_gecko18 span.cke_dialog_ui_button{
+	padding: 2px 10px 4px;
+}
+
+/* Special close button positioning for ie6 */
+.cke_skin_lotus .cke_browser_ie6.cke_rtl .cke_dialog_close_button
+{
+	position: absolute;
+	margin: 0px -15px 0px 0px;
+	left: -100%;
+}
+
+.cke_skin_lotus .cke_dialog_flash_html
+{
+	text-align: right;
+	font-weight: bold;
+	white-space: normal;
+	padding: 5px 0;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_flash_html
+{
+	text-align: left;
+}
+
+.cke_skin_lotus .cke_dialog_table_html
+{
+	text-align: right;
+	font-weight: bold;
+	padding: 5px 0;
+	white-space: normal;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_table_html
+{
+	text-align: left;
+}
+
+.cke_skin_lotus .cke_dialog_table_divspace
+{
+	padding: 5px 0;
+}
+
+.cke_skin_lotus .cke_dialog_image_html
+{
+	text-align: right;
+	font-weight: bold;
+	padding: 10px 0;
+	white-space: normal;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_image_html
+{
+	text-align: left;
+}
+
+.cke_skin_lotus .cke_ltr .cke_dialog #FlashPreviewBox
+{
+	padding-right : 20px;
+
+
+}
+
+.cke_skin_lotus .cke_dialog_ui_textButton
+{
+	color: #2594f0;
+	text-decoration: underline;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.cke_skin_lotus a.cke_dialog_ui_button_cancel
+{
+	background-position: 0 -1104px;
+}
+
+.cke_skin_lotus a.cke_dialog_ui_button_cancel span
+{
+	background: none;
+}
+
+ .cke_skin_lotus .cke_rtl a.cke_dialog_ui_button_cancel span
+{
+	background-position: left -1245px;
+}
+
+.cke_skin_lotus .cke_dialog_ui_button_cancel span
+{
+	border: none;
+	color: #105CB6;
+	font-weight: normal;
+	text-decoration: underline;
+	padding: 0;
+	margin: 0;
+}
+
+
+.cke_skin_lotus .cke_browser_gecko18 .cke_dialog_ui_button_cancel span
+{
+	padding: 0;
+}
+
+
+/* This is a fix to make smiley more useable in HC */
+.cke_skin_lotus .cke_hc a.cke_smile img
+{
+	border: none;
+	margin: 2px;
+}
+
+/* This is part of the above */
+.cke_skin_lotus .cke_hc a.cke_smile:focus img,
+.cke_skin_lotus .cke_hc a.cke_smile:active img,
+.cke_skin_lotus .cke_hc a.cke_smile:hover img
+{
+	border: 2px solid purple;
+	margin: 0px;
+}
+
+.cke_skin_lotus .cke_dialog_formatter_label
+{
+	text-align: right;
+	font-weight: bold;
+	padding: 5px 0;
+	white-space: normal;
+}
+
+.cke_skin_lotus .cke_rtl .cke_dialog_formatter_label
+{
+	text-align: left;
+}
+
+.cke_skin_lotus .cke_dialog_formatter_divspace
+{
+	padding: 5px 0;
+}

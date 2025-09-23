@@ -1,0 +1,26 @@
+{
+	"default_text": 
+	{
+		"editorType":"writer;",
+		"width":"21590;",
+  		"left":"2000;",
+   		"height":"27940;",
+    	"bottom":"2000;",
+        "top":"2000;",
+        "right":"2000;",
+       	"header":"true;",
+        "footer":"true;",
+        "HH":"2000;",
+        "FH":"2000;",
+	},
+	"default_presentation": 
+    {
+    	"editorType":"presentation;",
+        "width":"21590;",
+        "height":"27940;",
+        "left":"2000;",       
+        "bottom":"2000;",
+        "top":"2000;",
+        "right":"2000;",
+    }
+}

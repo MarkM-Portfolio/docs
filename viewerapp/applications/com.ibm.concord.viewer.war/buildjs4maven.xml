@@ -1,0 +1,139 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2022                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.concord.viewer.war" default="move2static">
+
+	<target name="Build concord">
+		<delete file="${basedir}/WebContent/js/html/sheetview.js"/>
+		<delete includeemptydirs="true">
+			<fileset dir="${basedir}/WebContent/js/html/" includes="images/**"/>
+			<fileset dir="${basedir}/WebContent/js/html/" includes="styles/**"/>
+			<fileset dir="${basedir}/WebContent/js/html/" includes="js/**"/>
+		</delete>
+		<move todir="${basedir}/WebContent/js/html">
+			<fileset dir="${HTMLViewer.dir}">
+					<include name="**/images/"/>
+					<include name="**/styles/"/>
+			</fileset>
+		</move>
+		<mkdir dir="${basedir}/WebContent/js/html/js/wseditor/css/" />
+		<copy todir="${basedir}/WebContent/js/html/js/wseditor/css">
+			<fileset dir="${HTMLViewer.dir}/js/wseditor/css"/>
+		</copy>
+		<mkdir dir="${basedir}/WebContent/js/html/js/writer/css/" />
+		<copy todir="${basedir}/WebContent/js/html/js/writer/css">
+			<fileset dir="${HTMLViewer.dir}/js/writer/css"/>
+		</copy>
+		<mkdir dir="${jstest.dir}/"/>
+		<mkdir dir="${version.dir}/"/>
+		<copy todir="${jstest.dir}"> <!-- TE 20200320: was <move></move>, but moving triggers a git unstaged change for these files -->
+			<fileset dir="${webcontent.dir}/" >
+				<include name="js/util/**" />
+			</fileset>
+		</copy>
+		<copy todir="${basedir}/buildtools/dojo">
+			<fileset dir="${basedir}/WebContent/js/dojo"/>
+		</copy>
+		<condition property="dojo.command" value="${basedir}/buildtools/util/buildscripts/build.sh" else="${basedir}/buildtools/util/buildscripts/build.bat">
+			<os family="unix" />
+		</condition>
+		<condition property="nodejs.command" value="${node.tool.home}/bin/node" else="${basedir}/buildtools/nodejs/node.exe">
+			<os family="unix" />
+		</condition>
+		<!-- For unix OS, need to chmod +x for NodeJS executable-->
+		<!-- <exec osfamily="unix" executable="/bin/chmod">
+			<arg line="+x" />
+			<arg line="${node.tool.home}/bin/node" />
+		</exec> -->
+		<exec osfamily="unix" executable="/bin/chmod">
+			<arg line="+x" />
+			<arg line="${basedir}/buildtools/util/buildscripts/build.sh" />
+		</exec>
+		<condition property="modearg" value="--bin node" else="">
+			<os family="unix" />
+		</condition>
+
+		<exec dir="${basedir}/buildtools/util/buildscripts" executable="${dojo.command}">
+			<arg line="${modearg}"/>
+			<arg line="action=clean,release"/>
+			<arg line="mini=true"/>
+			<arg line="profile=viewer"/>
+			<arg line="layerOptimize=uglify"/>
+			<arg line="releaseDir=${version.dir}" />
+			<arg line="cssOptimize=comments"/>
+			<arg line="optimize=uglify"/>
+			<arg line="selectorEngine=acme"/>
+			<arg line="copyTests=false"/>
+			<arg line="nodejs=${nodejs.command}" />
+			<!-- <arg line="uglifyjs=../../../buildtools/uglifyjs/UglifyJS-1.3.5/bin/uglifyjs" /> -->
+			<arg line="uglifyjs=/usr/bin/uglifyjs" />
+		</exec>
+
+		<!-- regenerate pdf.worker.js to remove dojo wrapper -->
+		<exec dir="${basedir}/buildtools/nodejs" executable="${nodejs.command}" output="${version.dir}/dojo/pdfjs/pdf.worker.js">
+			<!-- <arg line="../../buildtools/uglify-js/bin/uglifyjs" /> -->
+			<arg line="/usr/bin/uglifyjs" />
+			<arg line="${basedir}/WebContent/js/pdfjs/pdf.worker.js" />
+		</exec>
+		<exec dir="${basedir}/buildtools/nodejs" executable="${nodejs.command}" output="${version.dir}/dojo/pdfjs/web/compatibility.js">
+			<!-- <arg line="../../buildtools/uglify-js/bin/uglifyjs" /> -->
+			<arg line="/usr/bin/uglifyjs" />
+			<arg line="${basedir}/WebContent/js/pdfjs/web/compatibility.js" />
+		</exec>
+	</target>
+
+	<target name="jstest" depends="Build concord">
+		<zip destfile="${project.build.directory}/JSTest.zip">
+			<fileset dir="${jstest.dir}/"/>
+		</zip>
+	</target>
+
+	<target name="move2static" depends="jstest">
+		<move file="${version.dir}/dojo" tofile="${version.dir}/js"/>
+		<move todir="${version.dir}/styles">
+			<fileset dir="${version.dir}/js/styles" />
+		</move>
+		<copy todir="${version.dir}/images">
+			<fileset dir="${basedir}/WebContent/images"/>
+		</copy>
+		<delete includeEmptyDirs="true" verbose="false">
+			<fileset dir="${version.dir}/js/dojo" includes="tests/**/"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/tests/**/"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/demos/**/"/>
+			<fileset dir="${version.dir}/js/dojo" includes="util/**"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/*.psd"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/*.fla"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/*.svg"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/*.as"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/*.swf"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/*.uncompressed.js"/>
+			<fileset dir="${version.dir}/js/dijit" includes="**/*.uncompressed.js"/>
+			<fileset dir="${version.dir}/js/dojox" includes="**/*.uncompressed.js"/>
+			<fileset dir="${version.dir}/js/viewer" includes="**/*.uncompressed.js"/>
+			<fileset dir="${version.dir}/js/pdfjs" includes="**/*.uncompressed.js"/>
+			<fileset dir="${version.dir}/js/html" includes="**/*.uncompressed.js"/>
+			<fileset dir="${version.dir}/js/dojo" includes="**/*.map"/>
+			<fileset dir="${version.dir}/js/dijit" includes="**/*.map"/>
+			<fileset dir="${version.dir}/js/dojox" includes="**/*.map"/>
+			<fileset dir="${version.dir}/js/viewer" includes="**/*.map"/>
+			<fileset dir="${version.dir}/js/pdfjs" includes="**/*.map"/>
+			<fileset dir="${version.dir}/js/html" includes="**/*.map"/>
+			<fileset dir="${version.dir}/js" includes="**/package.json"/>
+			<fileset dir="${version.dir}/js" includes="**/package.js"/>
+			<fileset dir="${version.dir}/js" includes="build-report.txt"/>
+		</delete>
+		<move todir="${version.dir}/js/html/js">
+			<fileset dir="${HTMLViewer.dir}/js"/>
+		</move>
+	</target>
+</project>

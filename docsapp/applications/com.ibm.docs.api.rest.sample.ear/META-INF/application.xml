@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
+	<display-name>com.ibm.docs.api.rest.sample.ear</display-name>
+	<module id="WebModule_1435642276283">
+		<web>
+			<web-uri>com.ibm.docs.api.rest.sample.war.war</web-uri>
+			<context-root>com.ibm.docs.api.rest.sample.war</context-root>
+		</web>
+	</module>
+	<security-role id="SecurityRole_1425905964675">
+		<description>
+		allAuthenticatedUsers user role for all authenticated users</description>
+		<role-name>allAuthenticatedUsers</role-name>
+	</security-role>
+</application>

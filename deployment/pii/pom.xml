@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>deployment</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>pii</artifactId>
+  <name>deployment - pom</name>
+  <packaging>pom</packaging>
+
+  <!-- Modules -->
+  <modules>
+    <module>docs</module>
+    <module>docs-ext</module>
+    <module>viewer</module>
+    <module>viewer-ext</module>
+    <module>im</module>
+  </modules>
+
+  <properties>
+    <pii.build.xml>../pii_build.xml</pii.build.xml>
+  </properties>  
+  
+  <profiles>
+    <!-- 
+      nls related build, to enable, run maven with parameters:
+      mvn clean install -Dcond.COLLECT_PII -Dcond.RPX_BUILD -Dcond.PSEUDO_BUILD
+    -->
+    <profile>
+      <id>collect pii file</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <os>
+          <family>unix</family>
+        </os>
+        <file>
+          <missing>${basedir}/pii_build.xml</missing>
+        </file>
+      </activation>
+      <build>
+        <plugins>  
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>run pii build</id>
+                <phase>process-sources</phase>
+                <configuration>
+                  <target>
+                    <property name="pii.build.xml" value="${pii.build.xml}"/>
+                    <ant antfile="${pii.build.xml}"/>
+                  </target>
+                </configuration>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>      
+        </plugins>    
+      </build>
+    </profile>
+    <profile>
+      <id>zip pii file</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <os>
+          <family>unix</family>
+        </os>
+        <file>
+          <missing>${basedir}/pii_build.xml</missing>
+        </file>        
+        <property>
+          <name>cond.COLLECT_PII</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>Build ${project.groupId}:${project.artifactId}</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>${project.parent.basedir}/assembly_pii.zip.xml</descriptor>
+                  </descriptors><!--
+                  <finalName>${pii.file.name}</finalName>-->
+                  <finalName>${project.artifactId}</finalName>
+                  <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

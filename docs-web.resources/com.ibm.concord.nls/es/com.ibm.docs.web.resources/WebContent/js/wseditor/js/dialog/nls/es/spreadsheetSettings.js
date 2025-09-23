@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Seleccione el entorno local que se utilizará para el formato de números, monedas, fechas y horas.",
+	INPUT_INVALID_LOCALENAME: "Nombre de entorno local no válido",
+	INPUT_EMPTY_LOCALENAME: "Seleccione un entorno local.",
+	
+	Spain_Catalan: "España (Catalán)",
+	Denmark: "Dinamarca",
+	Germany: "Alemania",
+	Greek: "Grecia",
+	United_States: "Estados Unidos",
+	United_Kingdom: "Reino Unido",
+	Spain: "España",
+	Finland: "Finlandia",
+	France: "Francia",
+	Italy: "Italia",
+	Japan: "Japón",
+	Korean: "Corea del Sur",
+	Norway: "Noruega",
+	Netherlands: "Países Bajos",
+	Poland: "Polonia",
+	Brazil: "Brasil",
+	Portugal: "Portugal",
+	Russia: "Rusia",
+	Sweden: "Suecia",
+	Thailand: "Tailandia",
+	Turkey: "Turquía",
+	China: "China",
+	Taiwan_China: "Taiwán (China)",
+	Israel: "Israel"
+})
+

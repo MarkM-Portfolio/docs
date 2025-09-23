@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>zip</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs</groupId>
+  <artifactId>ViewerNext</artifactId>
+  <name>ViewerNext - pom</name>
+  <packaging>pom</packaging>
+  
+  <modules>
+    <module>Windows</module>
+    <module>Linux</module>
+  </modules>  
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ibm.docs.ViewerVerse</groupId>
+      <artifactId>com.ibm.concord.viewer.ear</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.docs.viewer.sanity.ear</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>    
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.sharedlib</artifactId>
+      <version>${project.version}</version>
+      <type>jar</type>
+    </dependency>
+     <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.gatekeeper</artifactId>
+      <version>${project.version}</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.platform</artifactId>
+      <version>${project.version}</version>
+      <type>jar</type>
+    </dependency>
+	<dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+    </dependency>
+  <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+	<dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>json4j</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.zookeeper</groupId>
+      <artifactId>zookeeper</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>registryLib</artifactId>
+    </dependency>	
+    <dependency>
+      <groupId>com.ibm</groupId>
+      <artifactId>shared.gatekeeper</artifactId>
+    </dependency> 
+    <dependency>
+      <groupId>org.bouncycastle145</groupId>
+      <artifactId>bcprov</artifactId>
+    </dependency> 
+    <dependency>
+      <groupId>com.ibm.docs.SmartCloud</groupId>
+      <artifactId>ViewerVerseInstaller-version.txt</artifactId>
+      <version>${project.version}</version>
+      <type>txt</type>
+    </dependency>
+  </dependencies>   
+</project>

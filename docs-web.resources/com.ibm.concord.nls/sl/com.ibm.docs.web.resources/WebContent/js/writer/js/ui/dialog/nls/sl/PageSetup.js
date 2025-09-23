@@ -1,0 +1,57 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        ORIENTATION_LABEL: "Usmerjenost",
+        PORTRAIT: "Pokončno",
+        LANDSCAPE: "Ležeče",
+        HEADER: "Glava",
+        FOOTER: "Noga",
+        MARGINS_LABEL: "Robovi",
+        TOP: "Zgornji:",
+        BOTTOM: "Spodnji:",
+        LEFT: "Levi:",
+        RIGHT: "Desni:",
+        PAPER_FORMAT_LABEL: "Oblika papirja",
+        PAPER_SIZE_LABEL: "Velikost papirja:",
+        HEIGHT: "Višina:",
+        WIDTH: "Širina:",
+        HEIGHT_DESC: "Višina papirja, v centimetrih",
+        HEIGHT_DESC2: "Višina papirja, v palcih",
+        WIDTH_DESC: "Širina papirja, v centimetrih",
+        WIDTH_DESC2: "Širina papirja, v palcih",
+        BOTTOM_DESC: "Spodnji rob, v centimetrih",
+        BOTTOM_DESC2: "Spodnji rob, v palcih",
+        TOP_DESC: "Zgornji rob, v centimetrih",
+        TOP_DESC2: "Zgornji rob, v palcih",
+        LEFT_DESC: "Levi rob, v centimetrih",
+        LEFT_DESC2: "Levi rob, v palcih",
+        RIGHT_DESC: "Desni rob, v centimetrih",
+        RIGHT_DESC2: "Desni rob, v palcih",
+        CM_LABEL: "cm",
+        LETTER: "Letter",
+        LEGAL: "Legal",
+        TABLOID: "Tabloid",
+        USER: "Uporabnik",
+        SIZE1: "Env. #6 3/4",
+        SIZE2: "Env. Monarch",
+        SIZE3: "Env. #9",
+        SIZE4: "Env. #10",
+        SIZE5: "Env. #11",
+        SIZE6: "Env. #12",
+        SIZE7: "16 kai",
+        SIZE8: "32 kai",
+        SIZE9: "32 kai large",
+        INVALID_MSG: "Vnos je neveljaven in je bil samodejno popravljen. Če želite drugačen rezultat, poskusite vnesti drugo vrednost.",
+        INVALID_WIDTH_FOR_COLUMNS: "Vnos je neveljaven, širina vsebine je premajhna, da bi vsebovala stolpce."
+});
+

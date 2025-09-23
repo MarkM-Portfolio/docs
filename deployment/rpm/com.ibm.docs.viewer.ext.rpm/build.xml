@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ext.rpm" basedir="." default="rpm">
+
+	<property name="build.rpm.command" value="${basedir}/buildRpm"/>
+
+	<target name="prereq">
+		<condition property="dorpm">
+			<and>
+				<os family="unix"/>
+			</and>
+		</condition>
+		<echo message="${dorpm}"/>
+	</target>
+
+	<target name="quitrpm" unless="dorpm">
+		<echo message="Ignore RPM package"/>
+	</target>
+
+	<available file="${build.home}/Webkits" type="dir" property="webkitsExists" />
+
+	<target name="cleanRpm" if="webkitsExists">
+		<delete includeEmptyDirs="true">
+			<fileset dir="${build.home}/Webkits" includes="SC-Docs-Ext*.rpm" />
+		</delete>
+	</target>
+
+	<target name="clean" depends="cleanRpm">
+		<delete file="${basedir}/files/opt/ll/apps/docs/ext/extension.zip"/>
+		<delete dir="${build.home}/sc/provision.web" includeEmptyDirs="true"/>
+		<delete dir="${build.home}/sc/daemon" includeEmptyDirs="true"/>
+		<delete dir="${build.home}/sc/gatekeeper" includeEmptyDirs="true"/>
+		<delete dir="${basedir}/../target" includeEmptyDirs="true"/>
+	</target>
+
+	<target name="rpm" depends="clean, prereq, quitrpm" if="dorpm">
+		<echo message="Start to package extension RPM..."/>
+		<echo message="${build.timestamp}" file="${basedir}\timestamp.tmp" />
+		<loadfile property="rpm.timestamp" srcFile="${basedir}\timestamp.tmp">
+			<filterchain>
+				<tokenfilter>
+					<replaceregex pattern="-" replace="" flags="g"/>
+				</tokenfilter>
+			</filterchain>
+		</loadfile>
+
+		<echo message="${rpm.timestamp}" />
+
+		<replace file="${basedir}\rpm.spec" token="@@@version@@@" value="${build.version}" />
+		<replace file="${basedir}\rpm.spec" token="@@@revision@@@" value="${rpm.timestamp}" />
+		<mkdir dir="${build.home}/sc/provision.web"/>
+		<copy todir="${build.home}/sc/provision.web">
+			<fileset dir="${build.home}" includes="com.ibm.concord.viewer.lcfiles.extension.provision*.jar"/>
+			<fileset dir="${build.home}" includes="com.ibm.concord.lcfiles.extension.provision*.jar"/>
+		</copy>
+		<mkdir dir="${build.home}/sc/daemon"/>
+		<copy todir="${build.home}/sc/daemon">
+			<fileset dir="${build.home}" includes="com.ibm.concord.viewer.lcfiles.daemon.jar"/>
+			<fileset dir="${build.home}" includes="com.ibm.docs.lcfiles.daemon.jar"/>
+		</copy>
+
+		<mkdir dir="${build.home}/sc/gatekeeper"/>
+		<copy todir="${build.home}/sc/gatekeeper">
+			<fileset dir="${build.home}" includes="com.ibm.concord.viewer.gatekeeper.jar"/>
+			<fileset dir="${build.home}" includes="json4j-*.jar"/>
+			<fileset dir="${build.home}" includes="bcprov-*.jar"/>
+			<fileset dir="${build.home}" includes="registryLib-*.jar"/>
+			<fileset dir="${build.home}" includes="shared.gatekeeper-*.jar"/>
+			<fileset dir="${build.home}" includes="zookeeper-*.jar"/>
+			<fileset dir="${build.home}" includes="slf4j-api-*.jar" />
+		</copy>
+
+		<zip destfile="${basedir}/files/opt/ll/apps/docs/ext/extension.zip">
+			<zipfileset dir="${build.home}/sc/provision.web" prefix="provision.web" />
+			<zipfileset dir="${build.home}/sc/daemon" prefix="daemon" />
+			<zipfileset dir="${build.home}/sc/gatekeeper" prefix="gatekeeper" />
+		</zip>
+
+		<exec executable="chmod">
+			<arg value="+x"/>
+			<arg value="${build.rpm.command}"/>
+		</exec>
+
+		<exec executable="chmod" failonerror="true">
+			<arg value="755"/>
+			<arg value="-R"/>
+			<arg value="${basedir}/files"/>
+		</exec>
+
+		<exec executable="bash" failonerror="true" >
+			<arg line="${build.rpm.command} -basedir ${basedir} -timestamp"/>
+		</exec>
+
+		<mkdir dir="${build.home}/Webkits"/>
+		<move todir="${build.home}/Webkits">
+			<fileset dir="${basedir}/../target/RPMS/x86_64" includes="*.rpm"/>
+		</move>
+
+		<delete dir="${basedir}/../target" includeEmptyDirs="true"/>
+	</target>
+</project>
+
+

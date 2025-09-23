@@ -1,0 +1,16 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for feeds
+companion files: feeds.css / feedsTheme.css
+companion files: feedsRTL.css / feedsThemeRTL.css*/
+/*** F E E D S **/
+/*the feed links under the content*/
+
+.lotusui30 .lotusFeeds{margin:5px 10px;}
+.lotusui30 .lotusFeeds a.lotusFeed{padding-right:16px;margin-left:7px;background:url(../../images/lotusSprite-8bit.png) 100% -2077px no-repeat;display:-moz-inline-box;display:inline-block;zoom:1;min-height:12px/*ff2 fix*/}
+.lotusImagesOff .lotusui30 .lotusFeeds a.lotusFeed{padding-right:0}
+
+/***********************************************************/
+

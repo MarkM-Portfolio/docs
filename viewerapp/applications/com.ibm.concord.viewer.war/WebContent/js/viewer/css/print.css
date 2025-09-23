@@ -1,0 +1,21 @@
+@media print
+{
+	div#mainContainer,div.dijitTooltip {
+		display: none;
+	}
+	
+	body {
+		margin: 0mm;
+		padding: 0mm;
+		overflow: hidden;
+	}
+	
+	div#printImgContainer {
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	div#printImgContainer,img.printImg {
+		border: 0 none;
+	}
+}

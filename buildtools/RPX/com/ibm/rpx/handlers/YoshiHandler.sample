@@ -1,0 +1,20 @@
+<!-------------------------------------------------------
+// Rational Software PGS TM file tool generated.
+//   Original File: D:\en-US\rosejava.mnu
+//   Generated on: 08/13/2003 10:49:54.
+//------------------------------------------------------->
+<MENU_1><H1>Tools</H1>
+<MENU_2><H1>Java / J2EE</H1>
+<OPTION_1><H1>&amp;Project Specification...</H1>
+<OPTION_2><H1>&amp;Syntax Check</H1>
+<OPTION_3><H1>&amp;Edit Code...</H1>
+<OPTION_4><H1>&amp;Generate Code</H1>
+<OPTION_5><H1>&amp;Reverse Engineer...</H1>
+<OPTION_6><H1>&amp;CheckIn</H1>
+<OPTION_7><H1>&amp;CheckOut</H1>
+<OPTION_8><H1>&amp;Undo CheckOut</H1>
+<OPTION_9><H1>&amp;Use Source Code Control Explorer</H1>
+<OPTION_10><H1>New EJB...</H1>
+<OPTION_11><H1>New Servlet...</H1>
+<OPTION_12><H1>Generate EJB-JAR File</H1>
+<OPTION_13><H1>Generate WAR File</H1>

@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>DocsApp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.SmartCloud</groupId>  
+  <artifactId>DocsApp</artifactId>
+  <name>SmartCloud DocsApp</name>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>IBMDocsSanity</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>   
+    <dependency>
+      <groupId>com.ibm.docs.SmartCloud</groupId>
+      <artifactId>com.ibm.concord.ear</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs.SmartCloud</groupId>
+      <artifactId>com.ibm.docs.spellcheck.ear</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs.SmartCloud</groupId>
+      <artifactId>docs-version.txt</artifactId>
+      <version>${project.version}</version>
+      <type>txt</type>
+    </dependency>    
+  </dependencies>  
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <!-- Build DocsApp.zip -->
+          <execution>
+            <id>Build DocsApp.zip</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_SmartCloud_DocsApp.zip.xml</descriptor>
+              </descriptors>
+              <finalName>DocsApp</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>            
+          </execution>
+        </executions>
+      </plugin>      
+    </plugins>
+  </build>  
+</project>

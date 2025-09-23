@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committes/xliff/documents/xliff.dtd" >
+<xliff version='1.1'>
+ <file source-language="EN" datatype="plaintext" original="D:\en-US\DefaultStereotypes.ini">
+    <header></header>
+     <body>
+      <trans-unit id="Use_Case_Package:organization_unit_TOOLTIP">
+       <source>Creates an organization unit\nOrganization unit</source>
+       <target>Creates an organization unit\nOrganization unit</target>
+      </trans-unit>
+      <trans-unit id="Logical_Package:subsystem_TOOLTIP">
+       <source>Creates a subsystem package\nSubsystem Package</source>
+       <target>Creates a subsystem package\nSubsystem Package</target>
+      </trans-unit>
+      <trans-unit id="Component:Database_TOOLTIP">
+       <source>Creates a database\nDatabase</source>
+       <target>Creates a database\nDatabase</target>
+      </trans-unit>
+     </body>
+ </file>
+</xliff>
+

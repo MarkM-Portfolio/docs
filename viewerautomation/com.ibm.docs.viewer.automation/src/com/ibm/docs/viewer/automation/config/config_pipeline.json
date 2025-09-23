@@ -1,0 +1,70 @@
+{
+	"server": 
+	{
+		"host": "https://apps.docspipeline.cn.ibm.com",
+		"context_root": "/viewer/verse",
+		"repositoryId": "lcfiles",
+		"loginURI": "/pkmslogin.form",
+		"env": "smartcloud",
+		"nodenum": 3,
+		"repeat": 10
+	},
+	"client": 
+	{
+		"agent": "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/16.0"
+	},
+	"sample_base": "./samples",
+	"proxy": 
+	{
+		"enabled": "false",
+		"fileviewer": "true",
+		"htmlview": 
+		{
+			"enabled": "true",
+			"exclude": "ppt"
+		},
+		"enable_fullviewer": "false"
+	},
+	"cases": 
+		{
+			"snoop": "true",
+			"view_attach_pdf": "true",
+			"verse_callflow": "true",
+			"view_attach_doc": "true",
+			"view_attach_ppt": "true",
+			"view_attach_xls": "true",
+			"view_attach_docx": "true",
+			"view_attach_pptx": "true",
+			"view_attach_xlsx": "true",
+			"view_attach_odt": "true",
+			"view_attach_odp": "true",
+			"view_attach_ods": "true",
+			"view_filelink_in_verse": "true",
+			"view_files": "true",
+			"thumbnails_on_upload": "true"
+		},
+	"users": 
+		[
+			{
+				"id": "docsfvt_001@concordla.cn.ibm.com",
+				"password": "passw0rd",
+				"entitled": "false",
+				"currentUser": "false",
+				"disabled_case":[]
+			},
+			{
+				"id": "docstest01@concordla.cn.ibm.com",
+				"password": "passw0rd",
+				"entitled": "true",
+				"currentUser": "true",
+				"disabled_case":
+				[
+					"snoop", "verse_callflow",
+	 				"view_attach_odt","view_attach_doc","view_attach_docx",
+	 				"view_attach_odp","view_attach_ppt","view_attach_pptx",
+	 				"view_attach_ods","view_attach_xls","view_attach_xlsx",
+	 				"view_attach_pdf"
+	 			]
+			}
+		],
+}

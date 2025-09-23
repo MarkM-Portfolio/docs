@@ -1,0 +1,158 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* Button | DropDownButton | ComboButton | ToggleButton
+ * Styling Buttons mainly includes:
+ * 1. Containers
+ * 		.dijitButton
+ * 		.dijitDropDownButton
+ * 		.dijitComboButton
+ * 		.dijitButtonNode - common button/arrow wrapper shared across all three button types
+ * 2. Button text
+ * 		.dijitButtonText
+ * 3. Arrows - only for DropDownButton and ComboButton
+ * 	     There are total four diredtions arrows - down, left, right, up:
+ * 		.dijitArrowButtonInner - down arrow by default
+ *      .dijitLeftArrowButton .dijitArrowButtonInner - left arrow
+ *      .dijitRightArrowButton .dijitArrowButtonInner - right arrow
+ *      .dijitUpArrowButton .dijitArrowButtonInner - up arrow
+ * 4. States - Hover, Active, Disabled, e.g.
+ * 		.dijitButtonHover .dijitButtonNode
+ * 		.dijitButtonActive .dijitButtonNode
+ * 		.dijitButtonDisabled .dijitButtonNode
+ *      .dijitDisabled .dijitArrowButtonInner  - disabled arrow states
+ */
+
+/* follows Style Guide's 5px rule. overriding top and bottom messes up InlineEditBox buttons. */
+.oneui30 .dijitButton, .oneui30 .dijitDropDownButton, .oneui30 .dijitComboButton, .oneui30 .dijitToggleButton {
+	margin-right: 5px;
+	margin-left: 0px;
+}
+
+/* rules for dijit.form.*Button widgets (see ComboButton section below) */
+.oneui30 .dijitButton .dijitButtonNode, .oneui30 .dijitDropDownButton .dijitButtonNode, .oneui30 .dijitComboButton .dijitButtonNode, .oneui30 .dijitToggleButton .dijitButtonNode {
+	padding: 2px 6px 4px;
+    border: 1px solid #aaa;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #000;
+    background-color: #fafafa;
+    background-image: -moz-linear-gradient(center top , #fff 0%, #ebebeb 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ebebeb));
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+.oneui30 .dijitDropDownButton .dijitButtonNode {
+	padding-right: 4px;
+}
+
+.oneui30 .dijitComboButton .dijitArrowButton {
+    padding: 4px 2px;
+	border-left-width: 0;
+}
+
+.oneui30 .dijitButtonContents {
+	background-color: transparent;
+}
+	.dijit_a11y .dijitButtonNode {
+	   border: black outset medium !important;        
+        padding: 1 !important;
+	}
+	
+	.dijit_a11y .dijitButtonContents{
+	        margin: 0.25em; /* Margin needed to make focus outline visible */
+	}
+	
+.oneui30 .dijitButtonText {
+    padding: 2px;
+    text-align: center;
+}
+
+.oneui30 .dijitDisabled .dijitButtonText {
+    color: #b0b0b0;
+    opacity:0.5;
+}
+
+/*opacity 0.5 will make the text totally un-accessible in high contrast mode on FF;*/
+.oneui30.dijit_a11y .dijitDisabled .dijitButtonText {
+    color: #b0b0b0;
+    opacity:1 !important;
+}
+
+/*arrow styles for down/up/left/right directions*/
+.oneui30 .dijitArrowButtonInner {
+    width: 12px;
+    height: 15px;
+    margin: 0 auto;
+    background-image: url("images/smallbuttonArrows.png");
+    background-repeat: no-repeat;
+    background-position: -52px 53%;
+}
+
+.oneui30 .dijitLeftArrowButton .dijitArrowButtonInner {
+    background-position: -77px 53%;
+}
+
+.oneui30 .dijitRightArrowButton .dijitArrowButtonInner {
+    background-position: -26px 53%;
+}
+
+.oneui30 .dijitUpArrowButton .dijitArrowButtonInner {
+    background-position: 0px 53%;
+}
+
+.oneui30 .dijitDisabled .dijitArrowButtonInner {
+    background-position: -152px 53%;
+}
+
+.oneui30 .dijitDisabled .dijitLeftArrowButton .dijitArrowButtonInner {
+    background-position: -177px 53%;
+}
+
+.oneui30 .dijitDisabled .dijitRightArrowButton .dijitArrowButtonInner {
+    background-position: -126px 53%;
+}
+
+.oneui30 .dijitDisabled .dijitUpArrowButton .dijitArrowButtonInner {
+    background-position: -100px 53%;
+}
+
+/* hover status */
+.oneui30 .dijitButtonHover .dijitButtonNode, .oneui30 .dijitDropDownButtonHover .dijitButtonNode, .oneui30 .dijitComboButton .dijitButtonNodeHover, .oneui30 .dijitComboButton .dijitDownArrowButtonHover {
+    border-color: #666;
+}
+
+/* disabled status */
+.oneui30 .dijitButtonDisabled .dijitButtonNode, .oneui30 .dijitDropDownButtonDisabled .dijitButtonNode, .oneui30 .dijitComboButtonDisabled .dijitButtonNode, .oneui30 .dijitToggleButtonDisabled .dijitButtonNode {
+    background-color: #eee;
+    border: solid 1px #ccc;
+    color: #b0b0b0;
+}
+
+.oneui30 .dijitComboButtonDisabled .dijitArrowButton {
+    border-left-width: 0;
+}
+
+/* for ComboButton */
+.oneui30 table.dijitComboButton {
+    border-collapse: separate; /* override dijit.css so that ComboBox rounded corners work */
+	margin-bottom: 0;
+}
+
+.oneui30 .dijitComboButton .dijitStretch {
+    -moz-border-radius: 2px 0 0 2px;
+    -webkit-border-radius: 0;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+}
+
+.oneui30 .dijitComboButton .dijitArrowButton {
+    -moz-border-radius: 0 2px 2px 0;
+    -webkit-border-radius: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+}

@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jan 25 11:52:13 CST 2016
+https\://repo.maven.apache.org/maven2/.lastUpdated=1453340824201
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.error=
+@default-java.net-http\://download.java.net/maven/2/.lastUpdated=1453340823764
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.lastUpdated=1453693933341
+http\://download.java.net/maven/2/.error=Could not transfer artifact org.apache.zookeeper\:zookeeper\:pom\:3.4.6 from/to java.net (http\://download.java.net/maven/2/)\: Connect to download.java.net\:80 [download.java.net/184.26.162.88, download.java.net/184.26.162.89] failed\: Connection timed out\: connect

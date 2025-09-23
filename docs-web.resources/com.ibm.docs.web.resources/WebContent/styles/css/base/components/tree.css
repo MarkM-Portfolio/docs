@@ -1,0 +1,26 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for tree
+companion file is treeTheme.css*/
+/*** T R E E ***/ /*needs review - need additional tree visuals from Jason*/
+ul.lotusTree, ul.portlet-tree{margin:0;padding:0;list-style-type:none;line-height:1.5em;}
+.lotusTree ul, .portlet-tree ul{margin:0 0 0 14px;padding:0;list-style-type:none;}
+.lotusTree ul *, .portlet-tree ul *{list-style-type:none} /*makes sure all nested lists don't have bullets*/
+.lotusTree li, .portlet-tree li{margin:0;padding:0;}
+.lotusTree a, .portlet-tree a{text-decoration:none;}
+.lotusTree a:hover, .lotusTree a:focus, .portlet-tree a:hover, .portlet-tree a:focus{text-decoration:underline}
+.lotusTree .lotusIcon{margin-right:3px}
+.lotusTree input{margin:0 4px 0 2px;padding:0}
+/*this is a specific type of tree*/
+.lotusOrgChart ul{margin-left:11px}
+.lotusOrgChart li{padding:2px 0}
+.lotusOrgChart li a{margin:0;padding:0 0 5px 20px;background-position:left top;background-repeat:no-repeat;}
+.lotusOrgChart .lotusBottom{padding:2px 0 5px 20px;background-position:left 5px;background-repeat:no-repeat;}
+.lotusOrgChartTop, .lotusOrgChartMiddle, .lotusOrgChartBottom{padding-left:20px;background-position:left center;background-repeat:no-repeat;}
+/*images off adjustments*/
+.lotusImagesOff ul.lotusTree, .lotusImagesOff .lotusTree ul * {list-style-type:square;}
+.lotusImagesOff .lotusOrgChart li a, .lotusImagesOff .lotusBottom{padding-left:0 !important;}
+/***********************************************************/
+

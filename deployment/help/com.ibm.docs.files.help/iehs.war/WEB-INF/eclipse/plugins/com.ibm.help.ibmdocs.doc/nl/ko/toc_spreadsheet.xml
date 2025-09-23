@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="스프레드시트에 대한 작업" topic="text/spreadsheet/spreadsheets_frame.html">
+   <topic label="스프레드시트에 대한 작업" href="text/spreadsheet/spreadsheets_frame.html">
+      <topic label="스프레드시트 작성 및 가져오기" href="text/spreadsheet/s_your_sheets_on_web.html">
+         <topic label="템플리트에서 스프레드시트 작성" href="text/spreadsheet/s_create_from_template.html"/>
+         <topic label="스프레드시트의 기본 파일 형식 변경"
+                href="text/spreadsheet/s_changing_the_default_file_format.html"/>
+         <topic label="공유할 스프레드시트 업로드" href="text/spreadsheet/s_uploading_sheet.html"/>
+         <topic label="기존 스프레드시트 가져오기" href="text/spreadsheet/s_import_sheet.html"/>
+         <topic label="스프레드시트에 텍스트 파일 가져오기"
+                href="text/spreadsheet/s_importing_text_files_to_spreadsheets.html"/>
+         <topic label="비밀번호로 보호된 Excel 파일 열기"
+                href="text/spreadsheet/s_opening_password_protected_spreadsheet.html"/>
+      </topic>
+      <topic label="파일 호환성 및 스프레드시트 내보내기"
+             href="text/spreadsheet/s_compatible_file_formats.html">
+         <topic label="스프레드시트에서 지원되는 파일 형식"
+                href="text/spreadsheet/s_supported_file_formats.html"/>
+         <topic label="스프레드시트 저장" href="text/spreadsheet/s_saving_spreadsheets.html"/>
+         <topic label="스프레드시트 버전 공개" href="text/spreadsheet/s_publish_a_version.html"/>
+         <topic label="기타 파일 형식으로 스프레드시트 내보내기"
+                href="text/spreadsheet/s_exporting_spreadsheets.html"/>
+         <topic label="CSV 파일로 스프레드시트 내보내기"
+                href="text/spreadsheet/s_exporting_spreadsheets_to_csv_files.html"/>
+      </topic>
+      <topic label="스프레드시트 공유" href="text/spreadsheet/s_sheets_shared.html">
+         <topic label="스프레드시트를 사용자 또는 커뮤니티와 공유" href="text/spreadsheet/s_share_file.html"/>
+         <topic label="스프레드시트의 엑세스 레벨 설정" href="text/spreadsheet/s_setting_access_level.html"/>
+      </topic>
+      <topic label="실시간으로 스프레드시트 협업"
+             href="text/spreadsheet/s_collaborating_on_a_document.html">
+         <topic label="스프레드시트에서 실시간으로 공동 편집" href="text/spreadsheet/s_real_time_coediting.html">
+            <topic label="스프레드시트의 공동 편집 정보" href="text/spreadsheet/s_coediting_concept.html"/>
+            <topic label="스프레드시트에서 다른 사용자와 공동 편집"
+                   href="text/spreadsheet/s_coediting_with_others.html"/>
+            <topic label="스프레드시트에 각 편집자의 변경사항 표시"
+                   href="text/spreadsheet/s_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="스프레드시트에서 주석을 사용하여 협업" href="text/spreadsheet/s_comments_overview.html">
+            <topic label="스프레드시트의 주석 정보" href="text/spreadsheet/s_comments_concept.html"/>
+            <topic label="스프레드시트에 주석 작성"
+                   href="text/spreadsheet/s_creating_comments_spreadsheet.html"/>
+            <topic label="스프레드시트의 주석 보기" href="text/spreadsheet/s_viewing_comments.html"/>
+            <topic label="스프레드시트의 주석 검색" href="text/spreadsheet/s_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="스프레드시트의 모양 변경"
+             href="text/spreadsheet/s_professional_looking_sheets.html">
+         <topic label="글꼴, 테두리 및 색상" href="text/spreadsheet/s_fonts_borders_colors.html"/>
+         <topic label="스프레드시트의 글꼴 변경" href="text/spreadsheet/s_change_fonts.html"/>
+         <topic label="행 높이 또는 열 너비 변경"
+                href="text/spreadsheet/s_change_row_height_column_width.html"/>
+         <topic label="스프레드시트의 테두리 변경" href="text/spreadsheet/s_change_borders.html"/>
+         <topic label="기본 형식화를 스프레드시트 셀로 복원" href="text/spreadsheet/s_undo_formatting.html"/>
+      </topic>
+      <topic label="숫자 형식화" href="text/spreadsheet/s_number_formats.html"/>
+      <topic label="데이터 입력 및 편집" href="text/spreadsheet/s_enter_edit_data.html">
+         <topic label="데이터 편집 기본사항" href="text/spreadsheet/s_entering_editing_basics.html"/>
+         <topic label="셀 컨텐츠 찾기 및 바꾸기" href="text/spreadsheet/s_find_replace.html"/>
+         <topic label="셀에서 하이퍼링크 추가" href="text/spreadsheet/s_add_hyperlink_in_cell.html"/>
+         <topic label="하이퍼링크에서 링크 제거" href="text/spreadsheet/s_remove_hyperlink_from_cell.html"/>
+         <topic label="자동 채우기를 사용하여 범위 입력"
+                href="text/spreadsheet/s_filling_range_by_dragging.html"/>
+         <topic label="용지 셀 병합 또는 분할" href="text/spreadsheet/s_merge_split_cells.html"/>
+         <topic label="스프레드시트 맞춤법 검사"
+                href="text/spreadsheet/s_spell_checking_spreadsheets.html"/>
+         <topic label="스프레드시트를 PDF 파일로 인쇄" href="text/spreadsheet/s_printing_to_pdf.html"/>
+      </topic>
+      <topic label="스프레드시트의 이미지 작업"
+             href="text/spreadsheet/s_working_with_images_container.html">
+         <topic label="스프레드시트에 이미지 삽입" href="text/spreadsheet/s_inserting_images.html"/>
+         <topic label="스프레드시트의 이미지 이동 및 크기 조정"
+                href="text/spreadsheet/s_moving_and_resizing_images.html"/>
+         <topic label="스프레드시트에서 이미지 특성 설정"
+                href="text/spreadsheet/s_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="스프레드시트에서 차트 작업" href="text/spreadsheet/s_working_with_charts.html">
+         <topic label="스프레드시트에 차트 삽입" href="text/spreadsheet/s_inserting_charts.html"/>
+         <topic label="스프레드시트에서 차트 이동 및 크기 조정"
+                href="text/spreadsheet/s_moving_and_resizing_charts.html"/>
+         <topic label="스프레드시트에서 차트 복사"
+                href="text/spreadsheet/s_copying_charts_in_spreadsheets.html"/>
+      </topic>
+      <topic label="데이터 범위 관리" href="text/spreadsheet/s_data_ranges.html">
+         <topic label="데이터 정렬" href="text/spreadsheet/s_sort_data.html"/>
+         <topic label="인스턴트 필터 사용" href="text/spreadsheet/s_instant_filter.html"/>
+         <topic label="스프레드시트에서 행 및 열 고정" href="text/spreadsheet/s_creating_freeze_window.html"/>
+         <topic label="행 및 열 숨기기" href="text/spreadsheet/s_hide.html"/>
+         <topic label="행 및 열 표시" href="text/spreadsheet/s_show.html"/>
+         <topic label="다른 용지에서 셀 참조"
+                href="text/spreadsheet/s_reference_cells_from_other_sheet.html"/>
+         <topic label="스프레드시트에서 데이터 및 이미지 복사"
+                href="text/spreadsheet/s_copy_to_other_spreadsheets.html"/>
+         <topic label="범위 이름 지정" href="text/spreadsheet/s_naming_range.html"/>
+         <topic label="지정된 범위 찾기 또는 편집" href="text/spreadsheet/s_find_edit_named_ranges.html"/>
+         <topic label="지정된 범위 제거" href="text/spreadsheet/s_delete_named_range.html"/>
+         <topic label="상대 및 절대 참조" href="text/spreadsheet/s_relative_absolute_references.html"/>
+      </topic>
+      <topic label="계산에 수식 사용" href="text/spreadsheet/s_formulas_and_functions.html">
+         <topic label="수식 및 함수 정보" href="text/spreadsheet/s_formulas_functions_explained.html"/>
+         <topic label="함수 목록" href="text/spreadsheet/s_functionsbyalpha.html">
+            <topic label="카테고리별 그룹화" href="text/spreadsheet/s_functionsbygroup.html">
+               <topic label="배열 함수" href="text/spreadsheet/s_functions_array.html">
+                  <topic label="수식의 인라인 배열 상수"
+                         href="text/spreadsheet/s_inline_array_constants_in_formulas.html"/>
+                  <topic label="조건부 배열 계산" href="text/spreadsheet/s_conditional_array_calculations.html"/>
+               </topic>
+               <topic label="날짜 및 시간 함수" href="text/spreadsheet/s_functions_date.html"/>
+               <topic label="엔지니어링 함수" href="text/spreadsheet/s_functions_engineering.html"/>
+               <topic label="정보 함수" href="text/spreadsheet/s_functions_info.html"/>
+               <topic label="논리 함수" href="text/spreadsheet/s_functions_logical.html"/>
+               <topic label="수학 함수" href="text/spreadsheet/s_functions_math.html"/>
+               <topic label="스프레드시트 함수" href="text/spreadsheet/s_functions_lookup.html"/>
+               <topic label="통계 함수" href="text/spreadsheet/s_functions_statistical.html"/>
+               <topic label="텍스트 함수" href="text/spreadsheet/s_functions_text.html"/>
+            </topic>
+            <topic label="ABS 함수" href="text/spreadsheet/s_abs_function_math.html"/>
+            <topic label="ACOS 함수" href="text/spreadsheet/s_acos_function_math.html"/>
+            <topic label="ACOSH 함수" href="text/spreadsheet/s_acosh_function_math.html"/>
+            <topic label="ADDRESS 함수" href="text/spreadsheet/s_address_function_lookup.html"/>
+            <topic label="AND 함수" href="text/spreadsheet/s_and_function_logical.html"/>
+            <topic label="ASIN 함수" href="text/spreadsheet/s_asin_function_math.html"/>
+            <topic label="ASINH 함수" href="text/spreadsheet/s_asinh_function_math.html"/>
+            <topic label="ATAN 함수" href="text/spreadsheet/s_atan_function_math.html"/>
+            <topic label="ATAN2 함수" href="text/spreadsheet/s_atan2_function_math.html"/>
+            <topic label="ATANH 함수" href="text/spreadsheet/s_atanh_function_math.html"/>
+            <topic label="AVERAGE 함수" href="text/spreadsheet/s_average_function_statistical.html"/>
+            <topic label="AVERAGEA 함수"
+                   href="text/spreadsheet/s_averagea_function_statistical.html"/>
+            <topic label="BASE 함수" href="text/spreadsheet/s_base_function_text.html"/>
+            <topic label="CEILING 함수" href="text/spreadsheet/s_ceiling_function_math.html"/>
+            <topic label="CHOOSE 함수" href="text/spreadsheet/s_choose_function_lookup.html"/>
+            <topic label="CHAR 함수" href="text/spreadsheet/s_char_function_text.html"/>
+            <topic label="CODE 함수" href="text/spreadsheet/s_code_function_text.html"/>
+            <topic label="COLUMN 함수" href="text/spreadsheet/s_column_function_lookup.html"/>
+            <topic label="COLUMNS 함수" href="text/spreadsheet/s_columns_function_lookup.html"/>
+            <topic label="COMBIN 함수" href="text/spreadsheet/s_combin_function_math.html"/>
+            <topic label="CONCATENATE 함수" href="text/spreadsheet/s_concatenate_function_text.html"/>
+            <topic label="CONVERT 함수" href="text/spreadsheet/s_convert_function_engineering.html"/>
+            <topic label="COS 함수" href="text/spreadsheet/s_cos_function_math.html"/>
+            <topic label="COSH 함수" href="text/spreadsheet/s_cosh_function_math.html"/>
+            <topic label="COUNT 함수" href="text/spreadsheet/s_count_function_statistical.html"/>
+            <topic label="COUNTA 함수" href="text/spreadsheet/s_counta_function_statistical.html"/>
+            <topic label="COUNTBLANK 함수" href="text/spreadsheet/s_countblank_function_math.html"/>
+            <topic label="COUNTIF 함수" href="text/spreadsheet/s_countif_function_math.html"/>
+            <topic label="DATE 함수" href="text/spreadsheet/s_date_function_date.html"/>
+            <topic label="DATEDIF 함수" href="text/spreadsheet/s_datedif_function_date_time.html"/>
+            <topic label="DATEVALUE 함수" href="text/spreadsheet/s_datevalue_function_date.html"/>
+            <topic label="DAY 함수" href="text/spreadsheet/s_day_function_date_time.html"/>
+            <topic label="DAYS 함수" href="text/spreadsheet/s_days_function_date.html"/>
+            <topic label="DEGREES 함수" href="text/spreadsheet/s_degrees_function_math.html"/>
+            <topic label="DOLLAR 함수" href="text/spreadsheet/s_dollar_function_text.html"/>
+            <topic label="ERRORTYPE 함수" href="text/spreadsheet/s_errortype_function_info.html"/>
+            <topic label="EVEN 함수" href="text/spreadsheet/s_even_function_math.html"/>
+            <topic label="EXP 함수" href="text/spreadsheet/s_exp_function_math.html"/>
+            <topic label="EXACT 함수" href="text/spreadsheet/s_exact_function_text.html"/>
+            <topic label="FACT 함수" href="text/spreadsheet/s_fact_function_math.html"/>
+            <topic label="FALSE 함수" href="text/spreadsheet/s_false_function_logical.html"/>
+            <topic label="FIXED 함수" href="text/spreadsheet/s_fixed_function_text.html"/>
+            <topic label="FLOOR 함수" href="text/spreadsheet/s_floor_function_math.html"/>
+            <topic label="FORMULA 함수" href="text/spreadsheet/s_formula_function_info.html"/>
+            <topic label="FREQUENCY 함수" href="text/spreadsheet/s_frequency_function_array.html"/>
+            <topic label="HLOOKUP 함수" href="text/spreadsheet/s_hlookup_function_lookup.html"/>
+            <topic label="HOUR 함수" href="text/spreadsheet/s_hour_function_date.html"/>
+            <topic label="HYPERLINK 함수" href="text/spreadsheet/s_hyperlink_function_lookup.html"/>
+            <topic label="IF 함수" href="text/spreadsheet/s_if_function_logical.html"/>
+            <topic label="INDEX 함수" href="text/spreadsheet/s_index_function_lookup.html"/>
+            <topic label="INDIRECT 함수" href="text/spreadsheet/s_indirect_function_lookup.html"/>
+            <topic label="INT 함수" href="text/spreadsheet/s_int_function_math.html"/>
+            <topic label="ISBLANK 함수" href="text/spreadsheet/s_isblank_function_info.html"/>
+            <topic label="ISERR 함수" href="text/spreadsheet/s_iserr_function_info.html"/>
+            <topic label="ISERROR 함수" href="text/spreadsheet/s_iserror_function_info.html"/>
+            <topic label="ISEVEN 함수" href="text/spreadsheet/s_iseven_function_info.html"/>
+            <topic label="ISFORMULA 함수" href="text/spreadsheet/s_isformula_function_info.html"/>
+            <topic label="ISLOGICAL 함수" href="text/spreadsheet/s_islogical_function_info.html"/>
+            <topic label="ISNA 함수" href="text/spreadsheet/s_isna_function_info.html"/>
+            <topic label="ISNONTEXT 함수" href="text/spreadsheet/s_isnontext_function_info.html"/>
+            <topic label="ISNUMBER 함수" href="text/spreadsheet/s_isnumber_function_info.html"/>
+            <topic label="ISODD 함수" href="text/spreadsheet/s_isodd_function_info.html"/>
+            <topic label="ISREF 함수" href="text/spreadsheet/s_isref_function_info.html"/>
+            <topic label="ISTEXT 함수" href="text/spreadsheet/s_istext_function_info.html"/>
+            <topic label="LARGE 함수" href="text/spreadsheet/s_large_function_statistical.html"/>
+            <topic label="LEFT 함수" href="text/spreadsheet/s_left_function_text.html"/>
+            <topic label="LEN 함수" href="text/spreadsheet/s_len_function_text.html"/>
+            <topic label="LENB 함수" href="text/spreadsheet/s_lenb_function_text.html"/>
+            <topic label="LN 함수" href="text/spreadsheet/s_ln_function_math.html"/>
+            <topic label="LOG 함수" href="text/spreadsheet/s_log_function_math.html"/>
+            <topic label="LOG10 함수" href="text/spreadsheet/s_log10_function_math.html"/>
+            <topic label="LOWER 함수" href="text/spreadsheet/s_lower_function_text.html"/>
+            <topic label="MAX 함수" href="text/spreadsheet/s_max_function_statistical.html"/>
+            <topic label="MEDIAN 함수" href="text/spreadsheet/s_median_function_info.html"/>
+            <topic label="MID 함수" href="text/spreadsheet/s_mid_function_info.html"/>
+            <topic label="MIN 함수" href="text/spreadsheet/s_min_function_statistical.html"/>
+            <topic label="MINUTE 함수" href="text/spreadsheet/s_minute_function_date.html"/>
+            <topic label="MMULT 함수" href="text/spreadsheet/s_mmult_function_array.html"/>
+            <topic label="MOD 함수" href="text/spreadsheet/s_mod_function_math.html"/>
+            <topic label="MODE 함수" href="text/spreadsheet/s_mode_function_statistical.html"/>
+            <topic label="MONTH 함수" href="text/spreadsheet/s_month_function_date_time.html"/>
+            <topic label="N 함수" href="text/spreadsheet/s_n_function_info.html"/>
+            <topic label="NA 함수" href="text/spreadsheet/s_na_function_info.html"/>
+            <topic label="NETWORKDAYS 함수" href="text/spreadsheet/s_networkdays_function_date.html"/>
+            <topic label="NOT 함수" href="text/spreadsheet/s_not_function_logical.html"/>
+            <topic label="NOW 함수" href="text/spreadsheet/s_now_function_date_time.html"/>
+            <topic label="ODD 함수" href="text/spreadsheet/s_odd_function_math.html"/>
+            <topic label="OFFSET 함수" href="text/spreadsheet/s_offset_function_lookup.html"/>
+            <topic label="OR 함수" href="text/spreadsheet/s_or_function_logical.html"/>
+            <topic label="PI 함수" href="text/spreadsheet/s_pi_function_math.html"/>
+            <topic label="POWER 함수" href="text/spreadsheet/s_power_function_math.html"/>
+            <topic label="PRODUCT 함수" href="text/spreadsheet/s_product_function_math.html"/>
+            <topic label="PROPER 함수" href="text/spreadsheet/s_proper_function_text.html"/>
+            <topic label="RADIANS 함수" href="text/spreadsheet/s_radians_function_math.html"/>
+            <topic label="RAND 함수" href="text/spreadsheet/s_rand_function_math.html"/>
+            <topic label="RANDBETWEEN 함수" href="text/spreadsheet/s_randbetween_function_math.html"/>
+            <topic label="RANK 함수" href="text/spreadsheet/s_rank_function_statistical.html"/>
+            <topic label="REPLACE 함수" href="text/spreadsheet/s_replace_function_text.html"/>
+            <topic label="REPT 함수" href="text/spreadsheet/s_rept_function_text.html"/>
+            <topic label="RIGHT 함수" href="text/spreadsheet/s_right_function_text.html"/>
+            <topic label="RIGHTB 함수" href="text/spreadsheet/s_rightb_function_text.html"/>
+            <topic label="ROMAN 함수" href="text/spreadsheet/s_roman_function_math.html"/>
+            <topic label="ROUND 함수" href="text/spreadsheet/s_round_function_math.html"/>
+            <topic label="ROUNDDOWN 함수" href="text/spreadsheet/s_rounddown_function_math.html"/>
+            <topic label="ROUNDUP 함수" href="text/spreadsheet/s_roundup_function_math.html"/>
+            <topic label="ROW 함수" href="text/spreadsheet/s_row_function_lookup.html"/>
+            <topic label="ROWS 함수" href="text/spreadsheet/s_rows_function_lookup.html"/>
+            <topic label="SEARCH 함수" href="text/spreadsheet/s_search_function_text.html"/>
+            <topic label="SECOND 함수" href="text/spreadsheet/s_second_function_date.html"/>
+            <topic label="SHEET 함수" href="text/spreadsheet/s_sheet_function_lookup.html"/>
+            <topic label="SIN 함수" href="text/spreadsheet/s_sin_function_math.html"/>
+            <topic label="SINH 함수" href="text/spreadsheet/s_sinh_function_math.html"/>
+            <topic label="SMALL 함수" href="text/spreadsheet/s_small_function_statistical.html"/>
+            <topic label="SQRT 함수" href="text/spreadsheet/s_sqrt_function_math.html"/>
+            <topic label="STDEV 함수" href="text/spreadsheet/s_stdev_function_info.html"/>
+            <topic label="STDEVP 함수" href="text/spreadsheet/s_stdevp_function_info.html"/>
+            <topic label="SUBSTITUTE 함수" href="text/spreadsheet/s_substitute_function_text.html"/>
+            <topic label="SUBTOTAL 함수" href="text/spreadsheet/s_subtotal_function_math.html"/>
+            <topic label="SUM 함수" href="text/spreadsheet/s_sum_function_math.html"/>
+            <topic label="SUMIF 함수" href="text/spreadsheet/s_sumif_function_math.html"/>
+            <topic label="SUMPRODUCT 함수" href="text/spreadsheet/s_sumproduct_function_array.html"/>
+            <topic label="T 함수" href="text/spreadsheet/s_t_function_text.html"/>
+            <topic label="TEXT 함수" href="text/spreadsheet/s_text_function_text.html"/>
+            <topic label="TIME 함수" href="text/spreadsheet/s_time_function_date.html"/>
+            <topic label="TODAY 함수" href="text/spreadsheet/s_today_function_date.html"/>
+            <topic label="TRIM 함수" href="text/spreadsheet/s_trim_function_text.html"/>
+            <topic label="TRUE 함수" href="text/spreadsheet/s_true_function_logical.html"/>
+            <topic label="TRUNC 함수" href="text/spreadsheet/s_trunc_function_math.html"/>
+            <topic label="TYPE 함수" href="text/spreadsheet/s_type_function_info.html"/>
+            <topic label="UPPER 함수" href="text/spreadsheet/s_upper_function_text.html"/>
+            <topic label="VALUE 함수" href="text/spreadsheet/s_value_function_text.html"/>
+            <topic label="VLOOKUP 함수" href="text/spreadsheet/s_vlookup_function_lookup.html"/>
+            <topic label="VAR 함수" href="text/spreadsheet/s_var_function_statistical.html"/>
+            <topic label="VARA 함수" href="text/spreadsheet/s_vara_function_statistical.html"/>
+            <topic label="VARP 함수" href="text/spreadsheet/s_varp_function_statistical.html"/>
+            <topic label="VARPA 함수" href="text/spreadsheet/s_varpa_function_statistical.html"/>
+            <topic label="WEEKDAY 함수" href="text/spreadsheet/s_weekday_function_date.html"/>
+            <topic label="WEEKNUM 함수" href="text/spreadsheet/s_weeknum_function_date_time.html"/>
+            <topic label="YEAR 함수" href="text/spreadsheet/s_year_function_date_time.html"/>
+         </topic>
+      </topic>
+      <topic label="스프레드시트 빠른 참조" href="text/spreadsheet/s_quick_ref.html"/>
+      <topic label="스프레드시트 키보드 단축키" href="text/spreadsheet/s_keyboard_shortcuts.html"/>
+   </topic>
+</toc>

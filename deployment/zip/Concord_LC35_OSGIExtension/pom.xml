@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>zip</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>Concord_LC35_OSGIExtension</artifactId>
+  <name>Concord_LC35_OSGIExtension - pom</name>
+  <packaging>pom</packaging>
+  
+  <modules>
+    <module>OnPremise</module>
+    <module>SmartCloud</module>
+  </modules> 
+
+  <properties>
+    <assembly.file>${project.parent.basedir}/assembly_docs_osgi.zip.xml</assembly.file>
+  </properties>
+
+  <profiles>
+    <profile>
+      <id>Profile for docs_lc35_osgiextension</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <file>
+          <missing>${basedir}/assembly_docs_osgi.zip.xml</missing>
+        </file>
+      </activation>   
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>build for viewer_lc35_osgiextension</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>${assembly.file}</descriptor>
+                  </descriptors>              
+                  <finalName>${project.artifactId}</finalName>
+                  <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>	  
+        </plugins>
+      </build>
+    </profile>    
+  </profiles>  
+  
+</project>

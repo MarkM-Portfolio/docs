@@ -1,0 +1,29 @@
+(* Here is a comment statement.  *)
+STRING ADMIN_MAX_CLIENT_1;
+  'Here is some translatable text.';
+  Comment 'Here is another comment statement.';
+END;
+STRING ADMIN_MAX_CLIENT_2 'Here are some replacement
+variables: %1%s, and {{1:abbreviation}}, 
+and %!b_labels[B_PRE_MIGRATION_MENU_ITEM].';
+
+FORM( APPLICATIONS_PAGE, 1000 );
+  WINDOW
+    GEOMETRY
+      WINDOWS -32767, -32767, 284, 283;
+    END;
+    TITLE 'Applications';
+    STYLE  TitleBar, Minimize, Resize, DialogBorder, SysMenu;
+  END;
+  DEFINE( GUI_APP_TABLE, 1001 ): Table;
+    COLUMNLIST
+      COLUMN APP_TABLE_NAME;
+        Label 'Name';
+        LENGTH
+          WINDOWS 110;
+        END;
+        Format 0;
+      END;
+    END;
+  END;
+END;

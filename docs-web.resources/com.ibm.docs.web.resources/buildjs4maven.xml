@@ -1,0 +1,192 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2022                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.docs.web.resources" default="buildDocsJS">
+  <target name="buildDocsJS">
+    <echo message="--------------------------[ 1. merge.nls.resource ]----------------------------"/>
+    <exec osfamily="unix" executable="bash">
+      <arg value="${script_home}/merge_nls_resource.sh"/>
+      <arg value="${build.src}"/>
+    </exec>
+
+    <echo message="--------------------------[ 2. merge pii ckplugins ]----------------------------"/>
+    <exec osfamily="unix" executable="perl">
+      <arg value="${script_home}/merge_pii_ckplugins.pl"/>
+      <arg value="-s"/>
+      <arg value="${build.src}"/>
+    </exec>
+
+    <echo message="--------------------------[ 3. merge pii ckstring" />
+    <exec osfamily="unix" executable="perl">
+      <arg value="${script_home}/merge_pii_ckstring.pl"/>
+      <arg value="-s"/>
+      <arg value="${build.src}"/>
+    </exec>
+
+    <echo message="--------------------------[ 4. Prepare build js ]----------------------------"/>
+    <copy todir="${basedir}/buildtools/dojo">
+      <fileset dir="${basedir}/WebContent/js/dojo" />
+    </copy>
+    <copy todir="${basedir}/buildtools/util/doh">
+      <fileset dir="${basedir}/WebContent/js/util/doh" />
+    </copy>
+    <copy todir="${basedir}/buildtools/util/shrinksafe">
+      <fileset dir="${basedir}/WebContent/js/util/shrinksafe" />
+    </copy>
+    <mkdir dir="${target.version.dir}"/>
+    <mkdir dir="${jstest.dir}/"/>
+    <copy todir="${jstest.dir}">
+      <fileset dir="${webcontent.dir}/" >
+        <include name="js/concord/tests/**" />
+        <include name="js/wseditor/test/**" />
+        <include name="js/util/**" />
+      </fileset>
+      <fileset dir="${basedir}/teststools" >
+        <include name="run_ut.log" />
+        <include name="jscover-report/**" />
+        <include name="jscover-report-spreadsheet/**" />
+        <include name="jscover-report-presentation/**" />
+        <include name="jscover-report-document/**" />
+        <include name="jscover-report-common/**" />
+      </fileset>
+    </copy>
+
+    <echo message="--------------------------[ 5. build dojo and concord js code ]----------------------------"/>
+    <!-- prepare dojo build command -->
+    <condition property="dojo.command" value="${basedir}/buildtools/util/buildscripts/build.sh" else="${basedir}/buildtools/util/buildscripts/build.bat">
+      <os family="unix" />
+    </condition>
+    <exec osfamily="unix" executable="/bin/chmod">
+      <arg line="+x" />
+      <arg line="${dojo.command}"/>
+    </exec>
+
+    <!-- build dojo and concord js code with shrinksafe-->
+    <exec dir="${basedir}/buildtools/util/buildscripts" executable="${dojo.command}" failonerror="false" osfamily="unix">
+      <arg line="action=release" />
+      <arg line="mini=true" />
+      <arg line="profile=concord" />
+      <arg line="layerOptimize=comments" />
+      <arg line="releaseDir=${target.version.dir}"/>
+      <arg line="releaseName=js" />
+      <arg line="cssOptimize=comments" />
+      <arg line="optimize=shrinksafe" />
+      <arg line="copyTests=true" />
+      <arg line="--bin node" />
+    </exec>
+
+    <exec dir="${basedir}/buildtools/util/buildscripts" executable="${dojo.command}" failonerror="false" osfamily="windows">
+      <arg line="action=release" />
+      <arg line="mini=true" />
+      <arg line="profile=concord" />
+      <arg line="layerOptimize=comments" />
+      <arg line="releaseDir=${target.version.dir}"/>
+      <arg line="releaseName=js" />
+      <arg line="cssOptimize=comments" />
+      <arg line="optimize=shrinksafe" />
+      <arg line="copyTests=true" />
+    </exec>
+
+    <echo message="--------------------------[ 5.5 re-optimize with uglifyjs ]----------------------------"/>
+    <!--define a substring script-->
+    <scriptdef name="substring" language="javascript">
+       <attribute name="text" />
+       <attribute name="suffix" />
+       <attribute name="property" />
+       <![CDATA[
+         var text = attributes.get("text");
+         var suffix = attributes.get("suffix");
+         project.setProperty(attributes.get("property"), text.substring(0, text.length()-suffix.length()));
+       ]]>
+    </scriptdef>
+
+    <!-- setup which uglifyjs to exec -->
+    <property name="uglifyjs" value="${basedir}/../../buildtools/uglifyjs/node_modules/uglify-js/bin/uglifyjs" />
+    <echo message="uglifyjs exec: ${uglifyjs}" />
+    <exec executable="${uglifyjs}" failonerror="false" osfamily="unix">
+      <arg line="-V"/>
+    </exec>
+
+    <!-- re-optimize concord_*.uncompressed.js one by one -->
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+      <classpath>
+        <pathelement location="${ant.tool.home}/lib/ant-contrib-1.0b3.jar"/>
+      </classpath>
+    </taskdef>
+
+    <for param="file" keepgoing="true">
+      <path>
+        <fileset dir="${target.version.dir}/js/concord/">
+          <include name="*.uncompressed.js"/>
+        </fileset>
+        <fileset dir="${target.version.dir}/js/dojo/">
+          <include name="dojo.js.uncompressed.js"/>
+        </fileset>
+      </path>
+      <sequential>
+        <substring text="@{file}" suffix=".uncompressed.js" property="subtext" />
+        <echo message="uglifyjs compress file: @{file} -> ${subtext}" />
+        <exec executable="${uglifyjs}" failonerror="true" osfamily="unix">
+          <arg line="@{file}" />
+          <arg line="--compress drop_console=true,booleans=false,warnings=false" />
+          <arg line="--mangle "/>
+          <arg line="--output ${subtext}" />
+        </exec>
+        <exec executable="cmd" failonerror="true" osfamily="windows">
+          <arg line="/c"/>
+          <arg line="uglifyjs.cmd" />
+          <arg line="@{file}" />
+          <arg line="-c" />
+          <arg line="drop_console=true,booleans=false,warnings=false" />
+          <arg line="-m"/>
+          <arg line="-o" />
+          <arg line="${subtext}" />
+        </exec>
+      </sequential>
+    </for>
+
+    <echo message="--------------------------[ 6. release WebContent ]----------------------------"/>
+    <move todir="${target.version.dir}/styles">
+      <fileset dir="${target.version.dir}/js/styles"/>
+    </move>
+    <move todir="${jstest.dir}/">
+          <fileset dir="${target.version.dir}/js/concord" includes="concord_RTE.js,concord_sheet_NodeJS.js"/>
+    </move>
+    <move todir="${project.build.directory}/viewer">
+      <fileset dir="${target.version.dir}/js/viewer"/>
+    </move>
+    <move file="${target.version.dir}/js/pres/clipboard/pastefromword.js" todir="${target.version.dir}/js/presentation/js/clipboard"/>
+    <delete includeemptydirs="true" failonerror="false">
+      <fileset dir="${target.version.dir}/js" includes="**/*uncompressed.js,build-report.txt"></fileset>
+      <fileset dir="${target.version.dir}/js/lconn"></fileset>
+      <fileset dir="${target.version.dir}/js/util"></fileset>
+      <fileset dir="${target.version.dir}/js/websheet"></fileset>
+      <fileset dir="${target.version.dir}/js/pres"></fileset>
+      <fileset dir="${target.version.dir}/js/writer" excludes="css/"></fileset>
+      <fileset dir="${target.version.dir}/js/concord" excludes="*.js,nls/,scenes/ErrorScene.js,scenes/nls/,util/strings.js,util/Bidi*.js,templates/,widgets/css/,widgets/imageGallery/,widgets/layoutGallery/,widgets/newPresentationGallery/,widgets/slideTransitionGallery/,widgets/social/SametimeStatusBar.js,widgets/social/nls/"></fileset>
+    </delete>
+  <!-- copy other resources -->
+  <copy todir="${target.version.dir}">
+    <fileset dir="${webcontent.dir}">
+      <include name="clipshare/" />
+      <include name="images/" />
+    </fileset>
+  </copy>
+
+    <echo message="--------------------------[ 7. Build JSTest.zip for docs ]----------------------------"/>
+    <zip destfile="${project.build.directory}/JSTest.zip">
+    <fileset dir="${jstest.dir}/"/>
+  </zip>
+
+  </target>
+</project>

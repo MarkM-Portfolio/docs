@@ -1,0 +1,279 @@
+.ODT_PN{
+	border:1px dotted black;
+	background:#EEEEEE;
+}
+.ODT_DT{
+	border:1px dotted black;
+	background:#EEEEEE;
+}
+.span_unfocus
+{
+	border:1px transparent solid;
+}
+.span_focus
+{
+	border:1px #316AC5 solid;
+	background:#DFF1FF;
+}
+.header_table
+{
+}
+.header_div
+{
+	position:absolute;
+	border:1px #696969 solid;
+	overflow:hidden;
+}
+.header_button
+{
+	/*border: solid 1px transparent;  Modified (#efefde) */
+	display: inline-block;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	outline: none;
+	padding-top: 6px;		/* Modified (2px) */
+	padding-left: 6px;		/* Modified (4px) */
+	padding-right: 6px;		/* Modified (4px) */
+	padding-bottom: 6px;	/* Modified (2px) */
+	height: 18px;
+	cursor: default;
+	_border-top: white;		/* Added */
+	_border-bottom: white;	/* Added */
+	_border-left: none;		/* Added */
+	_border-right: none;	/* Added */
+	_margin: 0px 1px;		/* Added */
+}
+.header_icon
+{
+	background-image: url("/com.ibm.docs.web.resources/js/concord/widgets/headerfooter/skin/icons.png"); /* Modified (icons.gif) */
+	background-position: 100px;
+	background-repeat:no-repeat;
+	margin-top:1px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+.header_split {
+    background-image: url("/com.ibm.docs.web.resources/js/concord/widgets/headerfooter/skin/toolbar_start.gif");
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    height: 16px;
+    margin-bottom: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 8px;
+    width: 3px;
+}
+.header_bold .header_icon
+{
+	background-position: 0 -304px;
+}
+.header_italic .header_icon
+{
+	background-position: 0 -320px;
+}
+.header_underline .header_icon
+{
+	background-position: 0 -336px;
+}
+.header_strike .header_icon
+{
+	background-position: 0 -352px;
+}
+.header_image .header_icon
+{
+	background-position: 0 -576px;
+}
+.header_pagenumber .header_icon
+{
+	background-position: 0 -640px;
+}
+.header_date .header_icon
+{
+	background-position: 0 -640px;
+}
+.header_time .header_icon
+{
+	background-position: 0 -640px;
+}
+.header_bgcolor .header_icon
+{
+	background-position: 0 -720px;
+}
+.header_justifyleft .header_icon
+{
+	background-position: 0 -464px;
+}
+
+.header_justifycenter .header_icon
+{
+	background-position: 0 -480px;
+}
+
+.header_justifyright .header_icon
+{
+	background-position: 0 -496px;
+}
+
+.header_justifyblock .header_icon
+{
+	background-position: 0 -512px;
+}
+
+
+/*****************************************header footer toolbar styles********************************/
+.precontent{
+    display:none;
+}
+
+.editor{
+    width:100%;
+    height:100%;
+    margin:0px auto;
+}
+
+.editor iframe{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100%;
+    border:0px;
+    width:100%;
+    background-color:white;
+}
+
+.button{
+    text-align:center;
+    width:100%;
+    margin:16px auto;
+}
+
+.editor .bar{
+    margin:0px;
+    padding:0px;
+    padding:3px 6px;
+    height:65px;
+    border-bottom:black 1px solid;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.editor .bar input{
+    border:red 1px solid;
+    cursor:pointer;
+    height:30px;
+    font-size:14px;
+}
+
+.headerfooter_iframe{
+	overflow-x:hidden;
+}
+.headerfooter_expand{
+	background-image: url("2.png");
+	background-position:center center;
+	background-repeat:no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 18px;
+	width:18px;
+	top:128px;
+ 	overflow:hidden;
+ 	border:1px #CECECE solid;
+ 	background-color:#EEEEEE;
+}
+.headerfooter_collapse{
+	background-image: url("1.png");
+	background-position:center center;
+	background-repeat:no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 18px;
+	width:18px;
+	top:128px;
+ 	overflow:hidden;
+ 	border:1px #CECECE solid;
+ 	background-color:#EEEEEE;
+}
+.headerfooter_expand1{
+	background-image: url("2.png");
+	background-position:center center;
+	background-repeat:no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 18px;
+	width:18px;
+	bottom:15px;
+ 	overflow:hidden;
+ 	border:1px #CECECE solid;
+ 	background-color:#EEEEEE;
+}
+.headerfooter_collapse1{
+	background-image: url("1.png");
+	background-position:center center;
+	background-repeat:no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 18px;
+	width:18px;
+	bottom:15px;
+ 	overflow:hidden;
+ 	border:1px #CECECE solid;
+ 	background-color:#EEEEEE;
+}
+.name{
+	width:150px;
+}
+.size{
+	width:50px;
+}
+.button_in_toolbar{
+	border:1px solid grey;
+	width:60px;
+	padding:1px;
+}
+.footer_div_con{
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-color: black;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    bottom: 0px;
+    height: 65px;
+    position:absolute;
+	overflow:hidden;
+ }
+ .header_div_con{
+    border-bottom-color: black;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-top-color: black;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    top: 114px;
+    height: 65px;
+    position:absolute;
+	overflow:hidden;
+ }
+ 
+div#toolbarCon .dijitDropDownButtonFocused .dijitButtonNode,
+div#toolbarCon .dijitButtonFocused .dijitButtonNode,
+div#toolbarCon table.dijitFocused{
+ 	border: 1px solid #316AC5;
+ 	padding: 1px;
+ 	background-color: #DFF1FF;
+ }

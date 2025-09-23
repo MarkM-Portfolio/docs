@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Invoke
+Bundle-SymbolicName: com.ibm.docs.im.invoke
+Bundle-Version: 2.0.0.qualifier
+Bundle-Vendor: IBM
+Require-Bundle: org.eclipse.core.runtime,
+ com.ibm.cic.common.core,
+ com.ibm.cic.agent.core,
+ com.ibm.docs.im.installer
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.ibm.docs.im.installer.common.util

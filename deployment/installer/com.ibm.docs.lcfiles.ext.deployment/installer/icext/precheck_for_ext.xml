@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prechecks productName="HCL Docs Extension">
+	<precheck type="ConfigurablePrecheck">
+		<parameter name="checkingParameter" value="ext_install_root"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<parameter name="checkingParameter" value="was_install_root"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<parameter name="checkingParameter" value="ic_extension_path"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<parameter name="checkingParameter" value="deamon_shared_path"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+</prechecks>

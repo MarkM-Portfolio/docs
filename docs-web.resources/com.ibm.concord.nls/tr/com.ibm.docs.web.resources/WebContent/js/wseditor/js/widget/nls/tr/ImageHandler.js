@@ -1,0 +1,3 @@
+({	
+	imageSizeMsg:"Resim konuma yapıştırılamıyor."
+})

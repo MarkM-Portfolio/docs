@@ -1,0 +1,10 @@
+;  Here is a comment statement.
+*  Here is another type of comment statement.
+
+variable_name_1 =Here is some translatable text.  It continues to the end of this line.
+variable_name_2  there is no translatable text on this line
+
+;  variable_name_3 =Notice this is not translatable because it is in a comment.
+
+variable_name_4 =  Blanks following the equal sign are part of the translatable text.
+variable_name_5 ="Notice the double quotes are considered part of the translatable text."

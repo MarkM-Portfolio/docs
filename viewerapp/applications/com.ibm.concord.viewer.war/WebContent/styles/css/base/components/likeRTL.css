@@ -1,0 +1,63 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for like
+companion files: like.css / likeTheme.css
+companion files: likeRTL.css / likeThemeRTL.css*/
+/*** L I K E ***/
+
+.lotusui30 .lotusLike {display:inline-block; color:#666; font-size:0.9em;}
+.lotusui30 .lotusLike .lotusLikeCount {padding:2px 22px 2px 4px; margin-left:5px; position:relative; display:inline-block; background:#f2f2f2; border:1px solid #ddd;
+	-moz-border-radius: 2px;
+	border-radius: 2px;}
+.lotusui30 .lotusLike .lotusIconLike {position:absolute; right:3px;}
+.lotusui30 .lotusLike .lotusDivider {margin:0 2px; color:#ccc;}
+.lotusui30 .lotusLike .lotusLikeConnector {background-image:url(../../images/lotusHSprite-8bit.png); background-position:-1029px -13px; width:7px; height:6px; position:absolute; bottom:4px; left:-7px;}
+
+.lotusui_ie .lotusui30 .lotusLike .lotusLikeCount {display:inline; zoom:1; margin-left:8px;} /* inline-block fix and spacing */
+.lotusui_ie .lotusui30 .lotusLike, .lotusui_ie .lotusui30 .lotusLike .lotusLikeText {display:inline; zoom:1;} /* inline-block fix */
+.lotusui_ie .lotusui30 .lotusLike .lotusLikeDescription, .lotusui_ie .lotusui30 .lotusLike .lotusDivider, .lotusui_ie .lotusui30 .lotusLike .lotusLikeAction {padding-bottom:3px; zoom:1;} /* match the bubble padding and border to make the text align */
+.lotusui_ie6 .lotusui30 .lotusLike .lotusLikeConnector {bottom:auto; top:11px;} /* position the connector in IE6 */
+
+/* when there are no likes */
+.lotusui30 .lotusLike .lotusNoLikes {padding-right:10px; padding-left:9px; text-decoration:none;}
+
+/* when only you like it */
+.lotusui30 .lotusLike .lotusDisabled {text-decoration:none; color:#666;}
+
+.lotusImagesOff .lotusui30 .lotusLike .lotusLikeCount {padding-right:5px;} /* remove icon placeholder space */
+.lotusImagesOff .lotusui30 .lotusLike .lotusLikeText {display:inline;} /* make this inline with lotusAltText */
+.lotusImagesOff .lotusui30 .lotusLike .lotusNoLikes {display:none;} /* don't even show the link when it provides no context */
+
+/* light box */
+.lotusui30 .lotusLikeLightBox {width:300px;}
+.lotusui30 .lotusLikeLightBox .lotusLike {float:right;} /* needed for IE6/7 */
+.lotusui30 .lotusLikeLightBox .lotusLikeHeader {border-bottom:1px solid #ccc; padding:8px 10px; overflow:hidden; zoom:1;}
+.lotusui30 .lotusLikeLightBox .lotusLikeHeaderText {padding:3px 5px 3px 0; float:left; text-align:left; font-size:0.9em; color:#666;}
+.lotusImagesOff .lotusui30 .lotusLikeLightBox .lotusLikeHeaderText {padding-left:10px;} /*allow room for the dialog close icon*/
+.lotusui30 .lotusLikeLightBox ul.lotusList {overflow:auto; height:360px;}
+.lotusui30 .lotusLikeLightBox ul.lotusList li {margin:0; padding:5px 10px; border-bottom:1px solid #ccc; overflow:hidden;}
+.lotusui30 .lotusLikeLightBox .lotusLikeAvatar {float:right;}
+.lotusui30 .lotusLikeLightBox .lotusPerson {overflow:hidden; padding:7px 10px 7px 0; font-weight:bold;}
+
+/*.lotusui30 .lotusLike {display:inline-block; background:#fff;}
+.lotusui_ie .lotusui30 .lotusLike {display:inline; zoom:1;}
+.lotusui30 .lotusLike .lotusInlinelist {font-size:0.9em; color:#222;}
+.lotusui30 .lotusLike .lotusInlinelist li {padding:0; border-right:0;}
+.lotusui30 .lotusLike .lotusInlinelist li .lotusAltText {display:none;}
+.lotusImagesOff .lotusui30 .lotusLike .lotusInlinelist li .lotusAltText {display:inline;}
+.lotusui30 .lotusLike .lotusDash {margin:0 3px; color:#ccc;}
+.lotusImagesOff .lotusui30 .lotusLike .lotusIconLike {display:none;}*/
+
+/* light box */
+/*.lotusui30 .lotusLike .lotusLikeHeader {border-bottom:1px solid #ccc; padding:8px 10px; overflow:hidden;}
+.lotusui30 .lotusLike .lotusLikeHeader .lotusInlinelist {float:right;}
+.lotusui30 .lotusLike .lotusLikeHeader .lotusPopupCount, .lotusui30 .lotusLike .lotusLikeHeader .lotusPopupCount:visited, .lotusui30 .lotusLike .lotusLikeHeader .lotusPopupCount:hover, .lotusui30 .lotusLike .lotusLikeHeader .lotusPopupCount:focus, .lotusui30 .lotusLike .lotusLikeHeader .lotusPopupCount:active {color:#666; text-decoration:none;}
+.lotusui30 .lotusLike ul.lotusList {overflow:auto; height:357px; padding:0;}
+.lotusui30 .lotusLike ul.lotusList li {margin:0; padding:5px 10px; border-bottom:1px solid #ccc; overflow:hidden;}
+.lotusui30 .lotusLike .lotusLikeAvatar {float:right; width:42px;}
+.lotusui30 .lotusLike .lotusPerson {overflow:hidden; padding-top:7px; font-weight:bold;}*/
+
+/***********************************************************/
+

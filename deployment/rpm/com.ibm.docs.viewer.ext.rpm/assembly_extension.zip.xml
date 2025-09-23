@@ -1,0 +1,43 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+  <id>Concord_LC35_OSGIExtension</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  
+  <dependencySets>       
+    <dependencySet>
+      <useProjectArtifact>false</useProjectArtifact>
+      <outputDirectory>./provision.web</outputDirectory>
+      <includes>        
+        <include>com.ibm.docs.SmartCloud:com.ibm.concord.lcfiles.extension.provision</include>
+        <include>com.ibm.docs.SmartCloud:com.ibm.concord.viewer.lcfiles.extension.provision</include>        
+      </includes>
+	  <outputFileNameMapping>${artifact.artifactId}_${build.smartcloud.version}.${docs.build.timestamp}.${artifact.extension}</outputFileNameMapping>
+    </dependencySet>
+    <dependencySet>
+      <useProjectArtifact>false</useProjectArtifact>
+      <outputDirectory>./daemon</outputDirectory>
+      <includes>        
+        <include>com.ibm.docs:com.ibm.docs.lcfiles.daemon</include>
+        <include>com.ibm.docs:com.ibm.concord.viewer.lcfiles.daemon</include>        
+      </includes>
+	  <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+    </dependencySet>  
+    <dependencySet>
+      <useProjectArtifact>false</useProjectArtifact>
+      <outputDirectory>./gatekeeper</outputDirectory>
+      <includes>        
+        <include>com.ibm.docs:com.ibm.concord.viewer.gatekeeper</include>
+        <include>org.slf4j:slf4j-api</include> 
+        <include>com.ibm:json4j</include> 
+        <include>org.apache.zookeeper:zookeeper</include> 
+        <include>com.ibm:registryLib</include> 
+        <include>com.ibm:shared.gatekeeper</include> 
+        <include>org.bouncycastle145:bcprov</include>      
+      </includes>
+    </dependencySet>   
+  </dependencySets>
+</assembly>

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.concord.spi.jar 
+ lib/polledcontainers.jar 
+ com.ibm.concord.platform.jar 
+ com.ibm.concord.config.jar
+

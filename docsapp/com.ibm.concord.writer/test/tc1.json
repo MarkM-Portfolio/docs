@@ -1,0 +1,3443 @@
+{
+	"body": [{
+		"pPr": {
+			
+		},
+		"c": "This is a very simple document for header\/footer and section.",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"font-weight": "bold",
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_0041846763346500",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "61",
+			"ch": [{
+			     "t":"del",
+			     "d":12313
+			}]
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPrCh": [{
+                 "t":"del",
+                 "d":12313
+            }],
+		"c": "This page is the firt normal page with header\/footer.",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"font-weight": "bold",
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_9169572414789358",
+		"fmt": [{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 18
+		},
+		{"ch": [{
+                 "t":"del",
+                 "d":12313
+            }],
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 18,
+			"l": 9
+		},
+		{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 27,
+			"l": 9
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#00CCFF",
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 34,
+			"l": "19"
+		}]
+	},
+	{
+	"rPrCh": [{
+                 "t":"del",
+                 "d":12313
+            }],
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_6962446457058145"
+	},
+	{
+	"rPrCh": [{
+                 "t":"del",
+                 "d":12313
+            }],
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_3281682799610491"
+	},
+	{
+		"pPr": {
+			"numPr": {
+				"numId": {
+					"val": "1"
+				},
+				"ilvl": {
+					"val": "0"
+				}
+			}
+		},
+		"c": "Hello world",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"color": "#FF0000",
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_2995194248275436",
+		"fmt": [{
+		"ch": [{
+                 "t":"del",
+                 "d":12313
+            }],
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#0000ff",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 1
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#006400",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 1,
+			"l": 7
+		},
+		{
+		"ch": [{
+                 "t":"del",
+                 "d":12313
+            }],
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#006400",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 7,
+			"l": 1
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#006400",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 8,
+			"l": 1
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#006400",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 9,
+			"l": 1
+		}]
+	},
+	{
+		"pPr": {
+			"numPr": {
+				"numId": {
+					"val": "1"
+				},
+				"ilvl": {
+					"val": "0"
+				}
+			}
+		},
+		"c": "adsfadsfasdf soft-br beforesoft-br after adsfdsaf",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"color": "#FF0000",
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_2391460439020153",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 12
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 2,
+			"l": 1
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 3,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 8,
+			"l": 6
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 7,
+			"l": 5
+		},
+		{
+			"br": {
+				
+			},
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 27,
+			"l": -13
+		},
+		{
+			"br": {
+				
+			},
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 14,
+			"l": 1
+		},
+		{
+			"br": {
+				
+			},
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 15,
+			"l": 34
+		}]
+	},
+	{
+		"pPr": {
+			"numPr": {
+				"numId": {
+					"val": "1"
+				},
+				"ilvl": {
+					"val": "0"
+				}
+			}
+		},
+		"c": "asdfadsfdsafdsaf",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"color": "#FF0000",
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_0292238274218716",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#7b68ee",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 2
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#FF0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 2,
+			"l": 14
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_9718989554471726"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "fdsfds\u4f5b\u6321\u6740\u4f5b\u4f5b\u6321\u6740\u4f5b\u5385\u57ce\u6751\u67d8\u57ce\u662f\u975e\u5f97\u5931\u5730\u5385\u573e\u6709\u6254\u4f55\u5e74\u4f55\u6708 \u7684\u6781\u574f\u67af\u65e0\u53ef\u5948\u4f55\u82b1\u843d\u53bb\u5385\u9700\u8981\u5385\u5730\u4fdd\u62a4\u819c\u4f55\u5e74\u4f55\u6708 ",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4771153818699912",
+		"fmt": [{
+			"style": {
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 11
+		},
+		{
+			"style": {
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 3,
+			"l": 8
+		},
+		{
+			"style": {
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 6,
+			"l": 5
+		},
+		{
+			"style": {
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 8,
+			"l": 3
+		},
+		{
+			"style": {
+				"color": "#000000",
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 9,
+			"l": 1
+		},
+		{
+			"style": {
+				"color": "#000000",
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 10,
+			"l": 2
+		},
+		{
+			"style": {
+				"color": "#8b0000",
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 8,
+			"l": 3
+		},
+		{
+			"style": {
+				"color": "#8b0000",
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 11,
+			"l": 1
+		},
+		{
+			"style": {
+				"color": "#000000",
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 12,
+			"l": 1
+		},
+		{
+			"style": {
+				"font-weight": "bold"
+			},
+			"rt": "rPr",
+			"s": 17,
+			"l": 9
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Hello world",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_5667629970359894",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"background-color": "#ffffff",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"background-color": "#ffffff",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 1
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"background-color": "#ffffff",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 6,
+			"l": 5
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_8703381113220333"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Italic Hello world",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"font-style": "italic",
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_7673466451417711",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"font-style": "italic",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "7"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#ff0000",
+				"font-style": "italic",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 7,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"font-style": "italic",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 12,
+			"l": 6
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"u": {
+				"val": "single"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_8253686855477644"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Underline Some content here.",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"u": {
+				"val": "single"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_2662275700372859",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"u": {
+					"val": "single"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "10"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"u": {
+					"val": "single"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "10",
+			"l": "18"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "8pt"
+			},
+			"font-size": "8pt"
+		},
+		"t": "p",
+		"id": "id_8723974175290778"
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "8pt"
+			},
+			"font-size": "8pt"
+		},
+		"t": "p",
+		"id": "id_2316303521901842"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Font sizes:",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "8pt"
+			},
+			"font-size": "8pt"
+		},
+		"t": "p",
+		"id": "id_0288010690408942",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "8pt"
+				},
+				"font-size": "8pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "11"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content here",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "10pt"
+			},
+			"font-size": "10pt"
+		},
+		"t": "p",
+		"id": "id_9264264874463805",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "10pt"
+				},
+				"font-size": "10pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "17"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content here",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			}
+		},
+		"t": "p",
+		"id": "id_5890672943705350",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				}
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "17"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content here",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "16pt"
+			},
+			"font-size": "16pt"
+		},
+		"t": "p",
+		"id": "id_5006110143933548",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "16pt"
+				},
+				"font-size": "16pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "16pt"
+				},
+				"font-size": "16pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 7
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "16pt"
+				},
+				"font-size": "16pt"
+			},
+			"rt": "rPr",
+			"s": 12,
+			"l": 7
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content here",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "18pt"
+			},
+			"font-size": "18pt"
+		},
+		"t": "p",
+		"id": "id_9629262340849954",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#000000",
+				"preserve": {
+					"szCs": "18pt"
+				},
+				"font-size": "18pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#dc143c",
+				"preserve": {
+					"szCs": "18pt"
+				},
+				"font-size": "18pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 7
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#dc143c",
+				"preserve": {
+					"szCs": "18pt"
+				},
+				"font-size": "18pt"
+			},
+			"rt": "rPr",
+			"s": 12,
+			"l": 7
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content here",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "22pt"
+			},
+			"font-size": "22pt"
+		},
+		"t": "p",
+		"id": "id_8756184049667376",
+		"fmt": [{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "22pt"
+				},
+				"font-size": "22pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 5
+		},
+		{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "22pt"
+				},
+				"font-size": "22pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 7
+		},
+		{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "22pt"
+				},
+				"font-size": "22pt"
+			},
+			"rt": "rPr",
+			"s": 12,
+			"l": 7
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content here",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "26pt"
+			},
+			"font-size": "26pt"
+		},
+		"t": "p",
+		"id": "id_3931630869442439",
+		"fmt": [{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "26pt"
+				},
+				"font-size": "26pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "26pt"
+				},
+				"font-size": "26pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 7
+		},
+		{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "26pt"
+				},
+				"font-size": "26pt"
+			},
+			"rt": "rPr",
+			"s": 10,
+			"l": 1
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "26pt"
+				},
+				"font-size": "26pt"
+			},
+			"rt": "rPr",
+			"s": 11,
+			"l": 2
+		},
+		{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "26pt"
+				},
+				"font-size": "26pt"
+			},
+			"rt": "rPr",
+			"s": 13,
+			"l": 2
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content here",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "36pt"
+			},
+			"font-size": "36pt"
+		},
+		"t": "p",
+		"id": "id_4626132355371538",
+		"fmt": [{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "36pt"
+				},
+				"font-size": "36pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 5
+		},
+		{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "36pt"
+				},
+				"font-size": "36pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 6
+		},
+		{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "36pt"
+				},
+				"font-size": "36pt"
+			},
+			"rt": "rPr",
+			"s": 11,
+			"l": 6
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content here",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "48pt"
+			},
+			"font-size": "48pt"
+		},
+		"t": "p",
+		"id": "id_6118208229296541",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "48pt"
+				},
+				"font-size": "48pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "17"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4833111546399658"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_2704993039772306",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#ff4500",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 10
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#ff4500",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 10,
+			"l": 3
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#ff4500",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 13,
+			"l": 3
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_1673238650218745"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Page 2 normal page without header\/footer",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_6924907262705829",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 8
+		},
+		{
+			"style": {
+				"text-decoration": " underline ",
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 8,
+			"l": 16
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 24,
+			"l": 16
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_6777557350976512"
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_3986329091618636"
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_2355476736555574"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Different font names:",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4031205273501150",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "21"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial Black",
+				"hAnsi": "Arial Black"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_6941172439663430",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial Black",
+					"hAnsi": "Arial Black"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "9"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial Black",
+					"hAnsi": "Arial Black"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "9",
+			"l": "3"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "BatangChe",
+				"eastAsia": "BatangChe",
+				"hAnsi": "BatangChe"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_1107019180071337",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "BatangChe",
+					"eastAsia": "BatangChe",
+					"hAnsi": "BatangChe"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "BatangChe",
+					"eastAsia": "BatangChe",
+					"hAnsi": "BatangChe"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "BatangChe",
+					"eastAsia": "BatangChe",
+					"hAnsi": "BatangChe"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 10,
+			"l": 5
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Some content",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Bookman Old Style",
+				"hAnsi": "Bookman Old Style"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_5457228777530383",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Bookman Old Style",
+					"hAnsi": "Bookman Old Style"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 6
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Bookman Old Style",
+					"hAnsi": "Bookman Old Style"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 6,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Bookman Old Style",
+					"hAnsi": "Bookman Old Style"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 11,
+			"l": 5
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4945890922099758"
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4221858864224946"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "Hello world",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial Narrow",
+				"hAnsi": "Arial Narrow"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_7506303064139168",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial Narrow",
+					"hAnsi": "Arial Narrow"
+				},
+				"font-weight": "bold",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 5
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial Narrow",
+					"hAnsi": "Arial Narrow"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 5
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_0900259187621655"
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_7410635976240537"
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_1548648375954041"
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_3602435002910836"
+	},
+	{
+		"pPr": {
+			"secId": "id_7348319996684484"
+		},
+		"c": "Hellqo world",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_9374102045964021",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 0,
+			"l": 7
+		},
+		{
+			"style": {
+				"rFonts": {
+					"ascii": "Arial"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 4,
+			"l": 3
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 5,
+			"l": 2
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#dda0dd",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 6,
+			"l": 1
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 7,
+			"l": 4
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"color": "#ff0000",
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": 7,
+			"l": 5
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_8281473400531999",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_6418793869003788"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_8127046737284893",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4648248378072421"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4310661728139514",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4309761689357451"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_0600524965191556",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_2798030362241008"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_5844260949892702",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_3195048530934343"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_0523158793149503",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_7448520034586618"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_0580979647985281",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_9589079880097157"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_0472362285382292",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_6038417981909657"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_7958619198152888",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_9156151162022634"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4272005503282646",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_6362488688758433"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_9869014238441416",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_1881199803228651"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_0021569935578476",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_7892438950750712"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_2600251010036869",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_7861468834019789"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_5255642350020585",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	},
+	{
+		"pPr": {
+			
+		},
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_4182028570881426"
+	},
+	{
+		"pPr": {
+			
+		},
+		"c": "This is Section2, landscape page with two columns",
+		"rPr": {
+			"rFonts": {
+				"cs": "Arial",
+				"ascii": "Arial",
+				"hAnsi": "Arial"
+			},
+			"preserve": {
+				"szCs": "14pt"
+			},
+			"font-size": "14pt"
+		},
+		"t": "p",
+		"id": "id_8617375798320932",
+		"fmt": [{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "0",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "8",
+			"l": "8"
+		},
+		{
+			"style": {
+				"rFonts": {
+					"cs": "Arial",
+					"ascii": "Arial",
+					"hAnsi": "Arial"
+				},
+				"preserve": {
+					"szCs": "14pt"
+				},
+				"font-size": "14pt"
+			},
+			"rt": "rPr",
+			"s": "16",
+			"l": "33"
+		}]
+	}]
+}

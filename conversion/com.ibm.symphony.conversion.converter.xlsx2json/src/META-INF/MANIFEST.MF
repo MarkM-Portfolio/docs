@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.symphony.conversion.converter.conversionlib.jar 
+ com.ibm.symphony.conversion.converter.ods.common.jar 
+ com.ibm.symphony.conversion.converter.sym.jar 
+ com.ibm.symphony.conversion.service.common.jar 
+ com.ibm.symphony.conversion.service.jar 
+ lib/jackson-core-asl-1.7.3.jar 
+ lib/json4j.jar
+

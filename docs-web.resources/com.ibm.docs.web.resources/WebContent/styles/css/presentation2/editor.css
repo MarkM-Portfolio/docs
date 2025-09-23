@@ -1,0 +1,1758 @@
+@import url("../presentations/documentContent.css");
+@import url("../presentations/liststyles.css");
+@import url("liststyles.css");
+.editor .box>div:first-child {
+	box-shadow: 0 0 4px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.dj_ie .editor .draw_frame[widgetId],
+.dj_ie .editor .draw_frame[widgetId] .g_draw_frame
+{
+	background: url(/images/realTransparent.png) repeat;
+}
+
+.pres_app
+{
+	background: #F1F1F1;
+}
+
+.oneui30 .notes .notes-box li:before
+{
+	font-size: 12px !important;
+}
+
+.dijitMenuPopup
+{
+	-webkit-user-select: none
+}
+
+.hideShape
+{
+	visibility: hidden
+}
+
+.oneui30 .locker_tooltip
+{
+	margin-left: 8px;
+	transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-webkit-transform : scale(0.9);
+	-moz-transform: scale(0.9);
+}
+
+.oneui30.hidden_sidebar .locker_tooltip_notes
+{
+	right: 1px !important;
+	left: auto !important;
+	width: auto !important;
+	margin-top: -11px;
+}
+
+.oneui30 .locker_tooltip.locker_coedit_tooltip
+{
+	margin-top: -2px;
+	margin-left: 10px;
+}
+
+.oneui30 .locker_tooltip.locker_coedit_tooltip.rtl
+{
+	margin-left: -10px;
+}
+
+.oneui30 .locker_tooltip .dijitTooltipConnector
+{
+	display: none
+}
+
+.oneui30 .locker_tooltip .dijitTooltipContainer
+{
+	border:0;
+	padding:0 1px 0 1px;
+	height: 20px;
+	box-shadow: none;
+ 	-webkit-box-shadow: none ;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+}
+
+.oneui30 .locker_tooltip .dijitTooltipContents::before {
+	color: rgba(0, 0, 0, 0);
+	content: ".";
+	height: 14px;
+	left: -7px;
+	position: absolute;
+	top: 3px;
+	width: 14px;
+	z-index: -1;
+	transform: rotate(45deg);
+	-ms-transform:  rotate(45deg);
+	-moz-transform:  rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+#userIndicators
+{
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+}
+
+.oneui30 .locker_tooltip.rtl .dijitTooltipContents::before
+{
+	right: -7px;
+	left: auto;
+}
+
+.pasteBin {
+	position: absolute;
+	top: -50000px;
+	left: -50000px;
+	overflow: hidden;
+	width: 1000px;
+	height: 500px;
+}
+
+table.disableSelection { /*	-webkit-touch-callout: none !important; */
+	/*	-moz-user-select: -moz-none !important; */
+	-moz-user-select: none !important;
+	-webkit-user-select: none !important;
+	-ms-user-select: none !important;
+	-o-user-select: none !important;
+	-khtml-user-select: none !important;
+	user-select: none !important
+}
+
+#P_d_presPrintToPdf td.rightDiv {
+	width: 46%;
+}
+
+.dj_ie .hideInIE {
+	display: none
+}
+
+.editor, .editor>div,.box *, .notes-box *{
+	outline: none;
+}
+
+.editor .resize-wrapper
+{
+	display: none;
+}
+
+.editor .resize-wrapper .resize-handler
+{
+	z-index: 16666666;
+}
+
+
+.editor .boxSelected .resize-wrapper
+{
+	display: block;
+}
+
+.editor .resize-box-out-border
+{
+	position: absolute;
+	background: #3CAAFF;
+}
+
+.editor .boxSelected.boxPreSelected .resize-box-out-border
+{
+	background: #A0A0A0;
+}
+
+.editor .resize-wrapper .resize-box-out-top-border,
+.editor .resize-wrapper .resize-box-out-bottom-border
+{
+	width: 100%;
+	height: 1px;
+}
+
+.editor .resize-wrapper .resize-box-out-left-border,
+.editor .resize-wrapper .resize-box-out-right-border
+{
+	width: 1px;
+	height: 100%;
+}
+
+.editor .resize-wrapper .resize-box-out-top-border
+{
+	bottom: 0px;
+}
+
+.editor .resize-wrapper .resize-box-out-left-border
+{
+	right: 0px;
+}
+
+.resize-handler-rh {
+	top: -24px;
+	margin-left: -3px;
+	left: 50%;
+	border-radius: 5px;
+}
+
+.mobileBrowser .resize-handler-rh {
+	top: -50px;
+    margin-left: -9px;
+    width: 24px;
+    height: 24px;
+}
+
+.resize-handler.resize-handler-ah{
+	margin-left: -3.5px;
+	margin-top: -3.5px;
+	border-radius: 5px;
+	background: #FDD600;
+	z-index: 16666666;
+	display: block;
+}
+
+.editor .resize-wrapper .resize-box-out-rot-connector{
+	position: absolute;
+	top: -18px;
+	height: 16px;
+	left: 50%;
+	width: 1px;
+	background: #3CAAFF;
+}
+
+.mobileBrowser .editor .resize-wrapper .resize-box-out-rot-connector {
+    top: -40px;
+ 	height: 40px;
+}
+
+.editor .drag {
+	border: 1px solid #3CAAFF;
+	background: transparent;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.editor .drag.newBox {
+	background: none;
+	border: 1px solid #3CAAFF;
+	margin: -1px;
+	cursor: crosshair;
+}
+
+.editor .dijitSplitter {
+	height: 3px !important;
+	background: transparent !important;
+}
+
+.oneui30 .editor .dijitSplitterH .dijitSplitterThumb {
+	background: #ccc !important;
+	height: 1px;
+	top: 1px;
+	left: 0px;
+	width: 100%;
+	position: relative;
+}
+
+.editor .dijitContentPane {
+	left: 0 !important;
+	right: 0 !important;
+	border: 0 !important;
+	padding: 0 !important;
+}
+
+.dijitContentPane.notes {
+	min-height: 20px;
+}
+
+.dijitContentPane.notes .notes-box {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	background: white;
+}
+
+.dijitContentPane.notes .notes-box>div,
+.dijitContentPane.notes .notes-box .notes_tweaks_parent {
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+	position: static !important;
+	z-index:0 !important;
+	display: block !important;
+	width:100% !important;
+	height:100% !important;
+	padding:3px !important;
+	box-sizing: border-box !important;
+}
+
+.dijitContentPane.notes .notes-box  .draw_text-box,
+.dijitContentPane.notes .notes-box>div {
+	border: none !important;
+	border-width: 0 !important;
+	margin: 0 !important;
+}
+
+.resize-wrapper {
+}
+
+.resize-box-out-top {
+	position: absolute;
+	width: 100%;
+	top: -8px;
+	height: 8px;
+}
+
+.mobileBrowser .resize-box-out-top {
+	top: -12px;
+	height: 12px;
+}
+
+.resize-box-out-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: -8px;
+	height: 8px;
+}
+
+.mobileBrowser .resize-box-out-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: -12px;
+	height: 12px;
+}
+
+.resize-box-out-left {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	left: -8px;
+	width: 8px;
+}
+
+.mobileBrowser .resize-box-out-left {
+	left: -12px;
+	width: 12px;
+}
+
+.resize-box-out-right {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	right: -8px;
+	width: 8px;
+}
+
+.mobileBrowser .resize-box-out-right {
+	right: -12px;
+	width: 12px;
+}
+
+.resize-handler {
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 5px;
+	height: 5px;
+	border: 1px solid gray;
+	background-color: white;
+	pointer-events: all;
+}
+
+.mobileBrowser .resize-handler {
+	width: 19px;
+	height: 19px;
+}
+
+.dn .resize-handler-n, .dne .resize-handler-nw, .de .resize-handler-w, .dse .resize-handler-sw,
+.ds .resize-handler-s, .dsw .resize-handler-se, .dw .resize-handler-e, .dnw .resize-handler-ne,
+.dne.flipx .resize-handler-ne, .de.flipx .resize-handler-e, .dse.flipx .resize-handler-se,
+.dsw.flipx .resize-handler-sw, .dw.flipx .resize-handler-w, .dnw.flipx .resize-handler-nw,
+.dn.flipy .resize-handler-s, .dne.flipy .resize-handler-sw, .dse.flipy .resize-handler-nw,
+.ds.flipy .resize-handler-n, .dsw.flipy .resize-handler-ne, .dnw.flipy .resize-handler-se,
+.dn.flipx.flipy .resize-handler-s, .dne.flipx.flipy .resize-handler-se, .de.flipx.flipy .resize-handler-e, .dse.flipx.flipy .resize-handler-ne,
+.ds.flipx.flipy .resize-handler-n, .dsw.flipx.flipy .resize-handler-nw, .dw.flipx.flipy .resize-handler-w, .dnw.flipx.flipy .resize-handler-sw
+{
+	cursor: n-resize
+}
+.dn .resize-handler-ne, .dne .resize-handler-n, .de .resize-handler-nw, .dse .resize-handler-w,
+.ds .resize-handler-sw, .dsw .resize-handler-s, .dw .resize-handler-se, .dnw .resize-handler-e,
+.dn.flipx .resize-handler-nw, .de.flipx .resize-handler-ne, .dse.flipx .resize-handler-e,
+.ds.flipx .resize-handler-se, .dw.flipx .resize-handler-sw, .dnw.flipx .resize-handler-w,
+.dn.flipy .resize-handler-se, .dne.flipy .resize-handler-s, .de.flipy .resize-handler-sw,
+.ds.flipy .resize-handler-nw, .dsw.flipy .resize-handler-n, .dw.flipy .resize-handler-ne,
+.dn.flipx.flipy .resize-handler-sw, .dne.flipx.flipy .resize-handler-s, .de.flipx.flipy .resize-handler-se, .dse.flipx.flipy .resize-handler-e,
+.ds.flipx.flipy .resize-handler-ne, .dsw.flipx.flipy .resize-handler-n, .dw.flipx.flipy .resize-handler-nw, .dnw.flipx.flipy .resize-handler-w
+{
+	cursor: ne-resize
+}
+.dn .resize-handler-e, .dne .resize-handler-ne, .de .resize-handler-n, .dse .resize-handler-nw,
+.ds .resize-handler-w, .dsw .resize-handler-sw, .dw .resize-handler-s, .dnw .resize-handler-se,
+.dn.flipx .resize-handler-w, .dne.flipx .resize-handler-nw, .dse.flipx .resize-handler-ne,
+.ds.flipx .resize-handler-e, .dsw.flipx .resize-handler-se, .dnw.flipx .resize-handler-sw,
+.dne.flipy .resize-handler-se, .de.flipy .resize-handler-s, .dse.flipy .resize-handler-sw,
+.dsw.flipy .resize-handler-nw, .dw.flipy .resize-handler-n, .dnw.flipy .resize-handler-ne,
+.dn.flipx.flipy .resize-handler-w, .dne.flipx.flipy .resize-handler-sw, .de.flipx.flipy .resize-handler-s, .dse.flipx.flipy .resize-handler-se,
+.ds.flipx.flipy .resize-handler-e, .dsw.flipx.flipy .resize-handler-ne, .dw.flipx.flipy .resize-handler-n, .dnw.flipx.flipy .resize-handler-nw
+{
+	cursor: e-resize
+}
+.dn .resize-handler-se, .dne .resize-handler-e, .de .resize-handler-ne, .dse .resize-handler-n,
+.ds .resize-handler-nw, .dsw .resize-handler-w, .dw .resize-handler-sw, .dnw .resize-handler-s,
+.dn.flipx .resize-handler-sw, .de.flipx .resize-handler-nw, .dse.flipx .resize-handler-n,
+.ds.flipx .resize-handler-ne, .dw.flipx .resize-handler-se, .dnw.flipx .resize-handler-s,
+.dn.flipy .resize-handler-ne, .de.flipy .resize-handler-se, .dse.flipy .resize-handler-s,
+.ds.flipy .resize-handler-sw, .dw.flipy .resize-handler-nw, .dnw.flipy .resize-handler-n,
+.dn.flipx.flipy .resize-handler-nw, .dne.flipx.flipy .resize-handler-w, .de.flipx.flipy .resize-handler-sw, .dse.flipx.flipy .resize-handler-s,
+.ds.flipx.flipy .resize-handler-se, .dsw.flipx.flipy .resize-handler-e, .dw.flipx.flipy .resize-handler-ne, .dnw.flipx.flipy .resize-handler-n
+{
+	cursor: se-resize
+}
+.dn .resize-handler-s, .dne .resize-handler-se, .de .resize-handler-e, .dse .resize-handler-ne,
+.ds .resize-handler-n, .dsw .resize-handler-nw, .dw .resize-handler-w, .dnw .resize-handler-sw,
+.dne.flipx .resize-handler-sw, .de.flipx .resize-handler-w, .dse.flipx .resize-handler-nw,
+.dsw.flipx .resize-handler-ne, .dw.flipx .resize-handler-e, .dnw.flipx .resize-handler-se,
+.dn.flipy .resize-handler-n, .dne.flipy .resize-handler-ne, .dse.flipy .resize-handler-se,
+.ds.flipy .resize-handler-s, .dsw.flipy .resize-handler-sw, .dnw.flipy .resize-handler-nw,
+.dn.flipx.flipy .resize-handler-n, .dne.flipx.flipy .resize-handler-nw, .de.flipx.flipy .resize-handler-w, .dse.flipx.flipy .resize-handler-sw,
+.ds.flipx.flipy .resize-handler-s, .dsw.flipx.flipy .resize-handler-se, .dw.flipx.flipy .resize-handler-e, .dnw.flipx.flipy .resize-handler-ne
+{
+	cursor: s-resize
+}
+.dn .resize-handler-sw, .dne .resize-handler-s, .de .resize-handler-se, .dse .resize-handler-e,
+.ds .resize-handler-ne, .dsw .resize-handler-n, .dw .resize-handler-nw, .dnw .resize-handler-w,
+.dn.flipx .resize-handler-se, .de.flipx .resize-handler-sw, .dse.flipx .resize-handler-w,
+.ds.flipx .resize-handler-nw, .dw.flipx .resize-handler-ne, .dnw.flipx .resize-handler-e,
+.dn.flipy .resize-handler-nw, .dne.flipy .resize-handler-n, .de.flipy .resize-handler-ne,
+.ds.flipy .resize-handler-se, .dsw.flipy .resize-handler-s, .dw.flipy .resize-handler-sw,
+.dn.flipx.flipy .resize-handler-ne, .dne.flipx.flipy .resize-handler-n, .de.flipx.flipy .resize-handler-nw, .dse.flipx.flipy .resize-handler-w,
+.ds.flipx.flipy .resize-handler-sw, .dsw.flipx.flipy .resize-handler-s, .dw.flipx.flipy .resize-handler-se, .dnw.flipx.flipy .resize-handler-e
+{
+	cursor: sw-resize
+}
+.dn .resize-handler-w, .dne .resize-handler-sw, .de .resize-handler-s, .dse .resize-handler-se,
+.ds .resize-handler-e, .dsw .resize-handler-ne, .dw .resize-handler-n, .dnw .resize-handler-nw,
+.dne.flipx .resize-handler-se, .de.flipx .resize-handler-s, .dse.flipx .resize-handler-sw,
+.dsw.flipx .resize-handler-nw, .dw.flipx .resize-handler-n, .dnw.flipx .resize-handler-ne,
+.dne.flipy .resize-handler-nw, .de.flipy .resize-handler-n, .dse.flipy .resize-handler-ne,
+.dsw.flipy .resize-handler-se, .dw.flipy .resize-handler-s, .dnw.flipy .resize-handler-sw,
+.dn.flipx.flipy .resize-handler-e, .dne.flipx.flipy .resize-handler-ne, .de.flipx.flipy .resize-handler-n, .dse.flipx.flipy .resize-handler-nw,
+.ds.flipx.flipy .resize-handler-w, .dsw.flipx.flipy .resize-handler-sw, .dw.flipx.flipy .resize-handler-s, .dnw.flipx.flipy .resize-handler-se
+{
+	cursor: w-resize
+}
+.dn .resize-handler-nw, .dne .resize-handler-w, .de .resize-handler-sw, .dse .resize-handler-s,
+.ds .resize-handler-se, .dsw .resize-handler-e, .dw .resize-handler-ne, .dnw .resize-handler-n,
+.dn.flipx .resize-handler-ne, .dne.flipx .resize-handler-e, .de.flipx .resize-handler-se,
+.ds.flipx .resize-handler-sw, .dsw.flipx .resize-handler-w, .dw.flipx .resize-handler-nw,
+.dn.flipy .resize-handler-sw, .dne.flipy .resize-handler-w, .de.flipy .resize-handler-nw, .dse.flipy .resize-handler-n,
+.ds.flipy .resize-handler-ne, .dsw.flipy .resize-handler-e, .dw.flipy .resize-handler-se, .dnw.flipy .resize-handler-s,
+.dn.flipx.flipy .resize-handler-se, .dne.flipx.flipy .resize-handler-e, .de.flipx.flipy .resize-handler-ne, .dse.flipx.flipy .resize-handler-n,
+.ds.flipx.flipy .resize-handler-nw, .dsw.flipx.flipy .resize-handler-w, .dw.flipx.flipy .resize-handler-sw, .dnw.flipx.flipy .resize-handler-s
+{
+	cursor: nw-resize
+}
+
+.resize-handler-nw {
+	top: -4px;
+	left: -4px;
+}
+
+.mobileBrowser .resize-handler-nw {
+	top: -10px;
+	left: -10px;
+}
+
+.resize-handler-n {
+	top: -4px;
+	margin-left: -3px;
+	left: 50%;
+}
+
+.mobileBrowser .resize-handler-n {
+	top: -10px;
+	margin-left: -9px;
+}
+
+.resize-handler-ne {
+	top: -4px;
+	right: -4px;
+}
+
+.mobileBrowser .resize-handler-ne {
+	top: -10px;
+	right: -10px;
+}
+
+.resize-handler-sw {
+	bottom: -4px;
+	left: -4px;
+}
+
+.mobileBrowser .resize-handler-sw {
+	bottom: -10px;
+	left: -10px;
+}
+
+.resize-handler-s {
+	bottom: -4px;
+	margin-left: -3px;
+	left: 50%;
+}
+
+.mobileBrowser .resize-handler-s {
+	bottom: -10px;
+	margin-left: -9px;
+}
+
+.resize-handler-se {
+	bottom: -4px;
+	right: -4px;
+}
+
+.mobileBrowser .resize-handler-se {
+	bottom: -10px;
+	right: -10px;
+}
+
+.resize-handler-e {
+	margin-top: -3px;
+	top: 50%;
+	right: -4px;
+}
+
+.mobileBrowser .resize-handler-e {
+	margin-top: -9px;
+	right: -10px;
+}
+
+.resize-handler-w {
+	top: 50%;
+	margin-top: -3px;
+	left: -4px;
+}
+
+.mobileBrowser .resize-handler-w {
+	margin-top: -9px;
+	left: -10px;
+}
+
+.row-resize {
+	position: absolute;
+	cursor: row-resize;
+	height: 6px;
+	z-index: 16666666
+}
+
+.row-resize div
+{
+	position: relative;
+	top: 2px;
+	height: 2px;
+	background-color: #004;
+}
+
+.col-resize {
+	position: absolute;
+	cursor: col-resize;
+	width: 6px;
+	z-index: 16666666
+}
+
+.col-resize div
+{
+	position: relative;
+	left: 2px;
+	width: 2px;
+	height: 100%;
+	background-color: #004;
+}
+
+html body .box table .table_table-cell.cellselected {
+	background-repeat: no-repeat !important;
+	border-color: blue !important;
+	border-top-color: blue !important;
+	border-bottom-color: blue !important;
+	border-left-color: blue !important;
+	border-right-color: blue !important;
+	background-image: none !important;
+	background-color: lightblue ;
+}
+
+.dijit_a11y .draw_page {
+    border: 4px solid transparent;
+}
+.dijit_a11y .editor .boxSelected {
+    border: 4px solid transparent;
+}
+.dijit_a11y .box table .table_table-cell.cellselected {
+    border: 4px solid transparent;
+}
+
+#pres_assist_tip{
+	position: fixed;
+	z-index: 1000000;
+	
+	font-family: Helvetica Neue, Helvetica, Arial, Roboto, sans-serif;
+	font-size: 12px;
+	font-weight: lighter;
+	color: black;
+	
+	
+	height: 18px;
+	padding-left: 6px;
+	padding-right: 6px;
+	background: #F4F4F4;
+	
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+ /* color aliceblue  */
+.selcover_aliceblue
+{
+     background: none !important;
+     background-color: #A7CEEB !important
+}
+
+
+ /* color antiquewhite  */
+.selcover_antiquewhite
+{
+     background: none !important;
+     background-color: #ADC6D3 !important
+}
+
+
+ /* color aqua  */
+.selcover_aqua
+{
+     background: none !important;
+     background-color: #17D2EB !important
+}
+
+
+ /* color aquamarine  */
+.selcover_aquamarine
+{
+     background: none !important;
+     background-color: #63D2D2 !important
+}
+
+
+ /* color azure  */
+.selcover_azure
+{
+     background: none !important;
+     background-color: #A7D2EB !important
+}
+
+
+ /* color beige  */
+.selcover_beige
+{
+     background: none !important;
+     background-color: #AACCD6 !important
+}
+
+
+ /* color bisque  */
+.selcover_bisque
+{
+     background: none !important;
+     background-color: #B0C2C8 !important
+}
+
+
+ /* color black  */
+.selcover_black
+{
+     background: none !important;
+     background-color: #173952 !important
+}
+
+
+ /* color blanchedalmond  */
+.selcover_blanchedalmond
+{
+     background: none !important;
+     background-color: #B0C6CD !important
+}
+
+
+ /* color blue  */
+.selcover_blue
+{
+     background: none !important;
+     background-color: #1739EB !important
+}
+
+
+ /* color blueviolet  */
+.selcover_blueviolet
+{
+     background: none !important;
+     background-color: #6A53DA !important
+}
+
+
+ /* color brown  */
+.selcover_brown
+{
+     background: none !important;
+     background-color: #7A526C !important
+}
+
+
+ /* color burlywood  */
+.selcover_burlywood
+{
+     background: none !important;
+     background-color: #9CA8A3 !important
+}
+
+
+ /* color cadetblue  */
+.selcover_cadetblue
+{
+     background: none !important;
+     background-color: #5098B2 !important
+}
+
+
+ /* color chartreuse  */
+.selcover_chartreuse
+{
+     background: none !important;
+     background-color: #63D252 !important
+}
+
+
+ /* color chocolate  */
+.selcover_chocolate
+{
+     background: none !important;
+     background-color: #957864 !important
+}
+
+
+ /* color coral  */
+.selcover_coral
+{
+     background: none !important;
+     background-color: #B08582 !important
+}
+
+
+ /* color cornflowerblue  */
+.selcover_cornflowerblue
+{
+     background: none !important;
+     background-color: #5393E1 !important
+}
+
+
+ /* color cornsilk  */
+.selcover_cornsilk
+{
+     background: none !important;
+     background-color: #B0CED6 !important
+}
+
+
+ /* color crimson  */
+.selcover_crimson
+{
+     background: none !important;
+     background-color: #9B4576 !important
+}
+
+
+ /* color cyan  */
+.selcover_cyan
+{
+     background: none !important;
+     background-color: #17D2EB !important
+}
+
+
+ /* color darkblue  */
+.selcover_darkblue
+{
+     background: none !important;
+     background-color: #1739A6 !important
+}
+
+
+ /* color darkcyan  */
+.selcover_darkcyan
+{
+     background: none !important;
+     background-color: #178DA6 !important
+}
+
+
+ /* color darkgoldenrod  */
+.selcover_darkgoldenrod
+{
+     background: none !important;
+     background-color: #858A59 !important
+}
+
+
+ /* color darkgray  */
+.selcover_darkgray
+{
+     background: none !important;
+     background-color: #7C9FB8 !important
+}
+
+
+ /* color darkgreen  */
+.selcover_darkgreen
+{
+     background: none !important;
+     background-color: #177552 !important
+}
+
+
+ /* color darkkhaki  */
+.selcover_darkkhaki
+{
+     background: none !important;
+     background-color: #88A793 !important
+}
+
+
+ /* color darkmagenta  */
+.selcover_darkmagenta
+{
+     background: none !important;
+     background-color: #6A39A6 !important
+}
+
+
+ /* color darkolivegreen  */
+.selcover_darkolivegreen
+{
+     background: none !important;
+     background-color: #4A796F !important
+}
+
+
+ /* color darkorange  */
+.selcover_darkorange
+{
+     background: none !important;
+     background-color: #B08D52 !important
+}
+
+
+ /* color darkorchid  */
+.selcover_darkorchid
+{
+     background: none !important;
+     background-color: #7357CD !important
+}
+
+
+ /* color darkred  */
+.selcover_darkred
+{
+     background: none !important;
+     background-color: #6A3952 !important
+}
+
+
+ /* color darksalmon  */
+.selcover_darksalmon
+{
+     background: none !important;
+     background-color: #A3939C !important
+}
+
+
+ /* color darkseagreen  */
+.selcover_darkseagreen
+{
+     background: none !important;
+     background-color: #6DAAA8 !important
+}
+
+
+ /* color darkslateblue  */
+.selcover_darkslateblue
+{
+     background: none !important;
+     background-color: #425EA6 !important
+}
+
+
+ /* color darkslategray  */
+.selcover_darkslategray
+{
+     background: none !important;
+     background-color: #336982 !important
+}
+
+
+ /* color darkturquoise  */
+.selcover_darkturquoise
+{
+     background: none !important;
+     background-color: #17B5D0 !important
+}
+
+
+ /* color darkviolet  */
+.selcover_darkviolet
+{
+     background: none !important;
+     background-color: #7039D1 !important
+}
+
+
+ /* color deeppink  */
+.selcover_deeppink
+{
+     background: none !important;
+     background-color: #B045AB !important
+}
+
+
+ /* color deepskyblue  */
+.selcover_deepskyblue
+{
+     background: none !important;
+     background-color: #17ACEB !important
+}
+
+
+ /* color dimgray  */
+.selcover_dimgray
+{
+     background: none !important;
+     background-color: #567891 !important
+}
+
+
+ /* color dodgerblue  */
+.selcover_dodgerblue
+{
+     background: none !important;
+     background-color: #2990EB !important
+}
+
+
+ /* color feldspar  */
+.selcover_feldspar
+{
+     background: none !important;
+     background-color: #949199 !important
+}
+
+
+ /* color firebrick  */
+.selcover_firebrick
+{
+     background: none !important;
+     background-color: #824E67 !important
+}
+
+
+ /* color floralwhite  */
+.selcover_floralwhite
+{
+     background: none !important;
+     background-color: #B0CFE2 !important
+}
+
+
+ /* color forestgreen  */
+.selcover_forestgreen
+{
+     background: none !important;
+     background-color: #2B8D67 !important
+}
+
+
+ /* color fuchsia  */
+.selcover_fuchsia
+{
+     background: none !important;
+     background-color: #B039EB !important
+}
+
+
+ /* color gainsboro  */
+.selcover_gainsboro
+{
+     background: none !important;
+     background-color: #9BBDD6 !important
+}
+
+
+ /* color ghostwhite  */
+.selcover_ghostwhite
+{
+     background: none !important;
+     background-color: #ACCEEB !important
+}
+
+
+ /* color gold  */
+.selcover_gold
+{
+     background: none !important;
+     background-color: #B0BA52 !important
+}
+
+
+ /* color goldenrod  */
+.selcover_goldenrod
+{
+     background: none !important;
+     background-color: #9A9C66 !important
+}
+
+
+ /* color gray  */
+.selcover_gray
+{
+     background: none !important;
+     background-color: #64869F !important
+}
+
+
+ /* color green  */
+.selcover_green
+{
+     background: none !important;
+     background-color: #178652 !important
+}
+
+
+ /* color greenyellow  */
+.selcover_greenyellow
+{
+     background: none !important;
+     background-color: #7FD26F !important
+}
+
+
+ /* color honeydew  */
+.selcover_honeydew
+{
+     background: none !important;
+     background-color: #A7D2E2 !important
+}
+
+
+ /* color hotpink  */
+.selcover_hotpink
+{
+     background: none !important;
+     background-color: #B078BE !important
+}
+
+
+ /* color indianred   */
+.selcover_indianred 
+{
+     background: none !important;
+     background-color: #92708A !important
+}
+
+
+ /* color indigo  */
+.selcover_indigo
+{
+     background: none !important;
+     background-color: #4439A0 !important
+}
+
+
+ /* color ivory  */
+.selcover_ivory
+{
+     background: none !important;
+     background-color: #B0D2E2 !important
+}
+
+
+ /* color khaki  */
+.selcover_khaki
+{
+     background: none !important;
+     background-color: #A7C3A6 !important
+}
+
+
+ /* color lavender  */
+.selcover_lavender
+{
+     background: none !important;
+     background-color: #A1C3E8 !important
+}
+
+
+ /* color lavenderblush  */
+.selcover_lavenderblush
+{
+     background: none !important;
+     background-color: #B0C9E5 !important
+}
+
+
+ /* color lawngreen  */
+.selcover_lawngreen
+{
+     background: none !important;
+     background-color: #61D052 !important
+}
+
+
+ /* color lemonchiffon  */
+.selcover_lemonchiffon
+{
+     background: none !important;
+     background-color: #B0CFCD !important
+}
+
+
+ /* color lightblue  */
+.selcover_lightblue
+{
+     background: none !important;
+     background-color: #7FBBDC !important
+}
+
+
+ /* color lightcoral  */
+.selcover_lightcoral
+{
+     background: none !important;
+     background-color: #A7869F !important
+}
+
+
+ /* color lightcyan  */
+.selcover_lightcyan
+{
+     background: none !important;
+     background-color: #9DD2EB !important
+}
+
+
+ /* color lightgoldenrodyellow  */
+.selcover_lightgoldenrodyellow
+{
+     background: none !important;
+     background-color: #ADCFD0 !important
+}
+
+
+ /* color lightgrey  */
+.selcover_lightgrey
+{
+     background: none !important;
+     background-color: #95B8D1 !important
+}
+
+
+ /* color lightgreen  */
+.selcover_lightgreen
+{
+     background: none !important;
+     background-color: #6DC8A9 !important
+}
+
+
+ /* color lightpink  */
+.selcover_lightpink
+{
+     background: none !important;
+     background-color: #B0A6C6 !important
+}
+
+
+ /* color lightsalmon  */
+.selcover_lightsalmon
+{
+     background: none !important;
+     background-color: #B0999C !important
+}
+
+
+ /* color lightseagreen  */
+.selcover_lightseagreen
+{
+     background: none !important;
+     background-color: #2AA4B8 !important
+}
+
+
+ /* color lightskyblue  */
+.selcover_lightskyblue
+{
+     background: none !important;
+     background-color: #68B5E8 !important
+}
+
+
+ /* color lightslateblue  */
+.selcover_lightslateblue
+{
+     background: none !important;
+     background-color: #667CEB !important
+}
+
+
+ /* color lightslategray  */
+.selcover_lightslategray
+{
+     background: none !important;
+     background-color: #5E8BAE !important
+}
+
+
+ /* color lightsteelblue  */
+.selcover_lightsteelblue
+{
+     background: none !important;
+     background-color: #80AFD8 !important
+}
+
+
+ /* color lightyellow  */
+.selcover_lightyellow
+{
+     background: none !important;
+     background-color: #B0D2D9 !important
+}
+
+
+ /* color lime  */
+.selcover_lime
+{
+     background: none !important;
+     background-color: #17D252 !important
+}
+
+
+ /* color limegreen  */
+.selcover_limegreen
+{
+     background: none !important;
+     background-color: #35B470 !important
+}
+
+
+ /* color linen  */
+.selcover_linen
+{
+     background: none !important;
+     background-color: #ADC9DC !important
+}
+
+
+ /* color magenta  */
+.selcover_magenta
+{
+     background: none !important;
+     background-color: #B039EB !important
+}
+
+
+ /* color maroon  */
+.selcover_maroon
+{
+     background: none !important;
+     background-color: #643952 !important
+}
+
+
+ /* color mediumaquamarine  */
+.selcover_mediumaquamarine
+{
+     background: none !important;
+     background-color: #54B4B8 !important
+}
+
+
+ /* color mediumblue  */
+.selcover_mediumblue
+{
+     background: none !important;
+     background-color: #1739CD !important
+}
+
+
+ /* color mediumorchid  */
+.selcover_mediumorchid
+{
+     background: none !important;
+     background-color: #866CD1 !important
+}
+
+
+ /* color mediumpurple  */
+.selcover_mediumpurple
+{
+     background: none !important;
+     background-color: #6F7CD4 !important
+}
+
+
+ /* color mediumseagreen  */
+.selcover_mediumseagreen
+{
+     background: none !important;
+     background-color: #3BA596 !important
+}
+
+
+ /* color mediumslateblue  */
+.selcover_mediumslateblue
+{
+     background: none !important;
+     background-color: #6178E1 !important
+}
+
+
+ /* color mediumspringgreen  */
+.selcover_mediumspringgreen
+{
+     background: none !important;
+     background-color: #17CFAF !important
+}
+
+
+ /* color mediumturquoise  */
+.selcover_mediumturquoise
+{
+     background: none !important;
+     background-color: #42B7CD !important
+}
+
+
+ /* color mediumvioletred  */
+.selcover_mediumvioletred
+{
+     background: none !important;
+     background-color: #8E46A2 !important
+}
+
+
+ /* color midnightblue  */
+.selcover_midnightblue
+{
+     background: none !important;
+     background-color: #264896 !important
+}
+
+
+ /* color mintcream  */
+.selcover_mintcream
+{
+     background: none !important;
+     background-color: #AAD2E8 !important
+}
+
+
+ /* color mistyrose  */
+.selcover_mistyrose
+{
+     background: none !important;
+     background-color: #B0C2D9 !important
+}
+
+
+ /* color moccasin  */
+.selcover_moccasin
+{
+     background: none !important;
+     background-color: #B0C2BF !important
+}
+
+
+ /* color navajowhite  */
+.selcover_navajowhite
+{
+     background: none !important;
+     background-color: #B0BEBA !important
+}
+
+
+ /* color navy  */
+.selcover_navy
+{
+     background: none !important;
+     background-color: #17399F !important
+}
+
+
+ /* color oldlace  */
+.selcover_oldlace
+{
+     background: none !important;
+     background-color: #AFCCDC !important
+}
+
+
+ /* color olive  */
+.selcover_olive
+{
+     background: none !important;
+     background-color: #648652 !important
+}
+
+
+ /* color olivedrab  */
+.selcover_olivedrab
+{
+     background: none !important;
+     background-color: #578E67 !important
+}
+
+
+ /* color orange  */
+.selcover_orange
+{
+     background: none !important;
+     background-color: #B09C52 !important
+}
+
+
+ /* color orangered  */
+.selcover_orangered
+{
+     background: none !important;
+     background-color: #B06352 !important
+}
+
+
+ /* color orchid  */
+.selcover_orchid
+{
+     background: none !important;
+     background-color: #9A7CD3 !important
+}
+
+
+ /* color palegoldenrod  */
+.selcover_palegoldenrod
+{
+     background: none !important;
+     background-color: #A6C4B8 !important
+}
+
+
+ /* color palegreen  */
+.selcover_palegreen
+{
+     background: none !important;
+     background-color: #72D0AE !important
+}
+
+
+ /* color paleturquoise  */
+.selcover_paleturquoise
+{
+     background: none !important;
+     background-color: #80C8E1 !important
+}
+
+
+ /* color palevioletred  */
+.selcover_palevioletred
+{
+     background: none !important;
+     background-color: #987CAB !important
+}
+
+
+ /* color papayawhip  */
+.selcover_papayawhip
+{
+     background: none !important;
+     background-color: #B0C9D2 !important
+}
+
+
+ /* color peachpuff  */
+.selcover_peachpuff
+{
+     background: none !important;
+     background-color: #B0BCC1 !important
+}
+
+
+ /* color peru  */
+.selcover_peru
+{
+     background: none !important;
+     background-color: #928978 !important
+}
+
+
+ /* color pink  */
+.selcover_pink
+{
+     background: none !important;
+     background-color: #B0ACCC !important
+}
+
+
+ /* color plum  */
+.selcover_plum
+{
+     background: none !important;
+     background-color: #9B99D7 !important
+}
+
+
+ /* color powderblue  */
+.selcover_powderblue
+{
+     background: none !important;
+     background-color: #80C0DC !important
+}
+
+
+ /* color purple  */
+.selcover_purple
+{
+     background: none !important;
+     background-color: #64399F !important
+}
+
+
+ /* color red  */
+.selcover_red
+{
+     background: none !important;
+     background-color: #B03952 !important
+}
+
+
+ /* color rosybrown  */
+.selcover_rosybrown
+{
+     background: none !important;
+     background-color: #888FA8 !important
+}
+
+
+ /* color royalblue  */
+.selcover_royalblue
+{
+     background: none !important;
+     background-color: #3E78D9 !important
+}
+
+
+ /* color saddlebrown  */
+.selcover_saddlebrown
+{
+     background: none !important;
+     background-color: #6A635E !important
+}
+
+
+ /* color salmon  */
+.selcover_salmon
+{
+     background: none !important;
+     background-color: #AD8697 !important
+}
+
+
+ /* color sandybrown  */
+.selcover_sandybrown
+{
+     background: none !important;
+     background-color: #A99C8C !important
+}
+
+
+ /* color seagreen  */
+.selcover_seagreen
+{
+     background: none !important;
+     background-color: #328D87 !important
+}
+
+
+ /* color seashell  */
+.selcover_seashell
+{
+     background: none !important;
+     background-color: #B0CCE1 !important
+}
+
+
+ /* color sienna  */
+.selcover_sienna
+{
+     background: none !important;
+     background-color: #776A6D !important
+}
+
+
+ /* color silver  */
+.selcover_silver
+{
+     background: none !important;
+     background-color: #8AACC6 !important
+}
+
+
+ /* color skyblue  */
+.selcover_skyblue
+{
+     background: none !important;
+     background-color: #68B5DF !important
+}
+
+
+ /* color slateblue  */
+.selcover_slateblue
+{
+     background: none !important;
+     background-color: #566FCD !important
+}
+
+
+ /* color slategray  */
+.selcover_slategray
+{
+     background: none !important;
+     background-color: #5A86A9 !important
+}
+
+
+ /* color snow  */
+.selcover_snow
+{
+     background: none !important;
+     background-color: #B0CFE8 !important
+}
+
+
+ /* color springgreen  */
+.selcover_springgreen
+{
+     background: none !important;
+     background-color: #17D29F !important
+}
+
+
+ /* color steelblue  */
+.selcover_steelblue
+{
+     background: none !important;
+     background-color: #4187BE !important
+}
+
+
+ /* color tan  */
+.selcover_tan
+{
+     background: none !important;
+     background-color: #95A5A6 !important
+}
+
+
+ /* color teal  */
+.selcover_teal
+{
+     background: none !important;
+     background-color: #17869F !important
+}
+
+
+ /* color thistle  */
+.selcover_thistle
+{
+     background: none !important;
+     background-color: #98ACD4 !important
+}
+
+
+ /* color tomato  */
+.selcover_tomato
+{
+     background: none !important;
+     background-color: #B0757D !important
+}
+
+
+ /* color turquoise  */
+.selcover_turquoise
+{
+     background: none !important;
+     background-color: #3DC0CF !important
+}
+
+
+ /* color violet  */
+.selcover_violet
+{
+     background: none !important;
+     background-color: #A687E1 !important
+}
+
+
+ /* color violetred  */
+.selcover_violetred
+{
+     background: none !important;
+     background-color: #944CA9 !important
+}
+
+
+ /* color wheat  */
+.selcover_wheat
+{
+     background: none !important;
+     background-color: #AABEBE !important
+}
+
+
+ /* color white  */
+.selcover_white
+{
+     background: none !important;
+     background-color: #B0D2EB !important
+}
+
+
+ /* color whitesmoke  */
+.selcover_whitesmoke
+{
+     background: none !important;
+     background-color: #AACCE5 !important
+}
+
+
+ /* color yellow  */
+.selcover_yellow
+{
+     background: none !important;
+     background-color: #B0D252 !important
+}
+
+
+ /* color yellowgreen  */
+.selcover_yellowgreen
+{
+     background: none !important;
+     background-color: #73B470 !important
+}
+
+ /* color empty  */
+.selcover_empty
+{
+     background: none !important;
+     background-color: rgba(0,125,255,.4) !important
+}

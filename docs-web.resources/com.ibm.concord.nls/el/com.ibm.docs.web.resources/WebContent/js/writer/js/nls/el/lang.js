@@ -1,0 +1,93 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* HCL Confidential                                                  */
+/*                                                                   */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* Copyright HCL Technologies Limited 2020                           */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        PAGE_BREAK_TEXT: "Αλλαγή σελίδας",
+        SECTION_BREAK_TEXT: "Αλλαγή ενότητας",
+        LINE_BREAK_TEXT: "Αλλαγή γραμμής",
+        COLUMN_BREAK_TEXT: "Αλλαγή στήλης",
+        INSERT_IMAGE_NOT_PROPER_PLACE: "Δεν είναι δυνατή η προσθήκη εικόνων στην τρέχουσα θέση. Εικόνες μπορούν να προστεθούν μόνο στο κυρίως κείμενο και στους πίνακες.",
+        LOADING: "Το περιεχόμενο φορτώνεται.",
+        LOAD_FINISHED: "Η φόρτωση του περιεχομένου ολοκληρώθηκε.",
+        PAGE_SETUP: "Ρύθμιση σελίδας",
+        NOTE_INVALIDACTION_FOOTNOTE: "Αυτή δεν είναι μια έγκυρη ενέργεια για υποσημειώσεις.",
+        NOTE_INVALIDACTION_ENDNOTE: "Αυτή δεν είναι μια έγκυρη ενέργεια για σημειώσεις τέλους.",
+        PAGENUMBER_OF_TOTALNUMBER: "Σελίδα ${0} από ${1}", //page 1 of N
+        PAGE_NUMBER: "Σελίδα: ${pageNumber} / ${totalPageNumber}",
+        toc: {
+            title: "Πίνακας περιεχομένων",
+            update: "Ενημέρωση",
+            del: "Διαγραφή",
+            toc: "Πίνακας περιεχομένων",
+            linkTip: "Πατήστε το κουμπί του ποντικιού κρατώντας πατημένο το πλήκτρο Ctrl.",
+            linkTip_Mac: "Πατήστε \u2318 για να πλοηγηθείτε.",
+            pageNumber: "Μόνο αριθμός σελίδας",
+            entireTable: "Ολόκληρος πίνακας"
+        },
+        link: {
+            addlink: "Προσθήκη διασύνδεσης",
+            gotolink: "Άνοιγμα διασύνδεσης",
+            unlink: "Αφαίρεση διασύνδεσης",
+            editlink: "Τροποποίηση διασύνδεσης",
+            internalLink: "Εσωτερική διασύνδεση",
+            ctrlLink: "Κρατήστε πατημένο το πλήκτρο Ctrl και πατήστε το κουμπί του ποντικιού για να μεταβείτε στη διασύνδεση.",
+            ctrlLink_Mac: "Πατήστε \u2318 για να μεταβείτε στη διασύνδεση.",
+            cannotOpen: " - Δεν είναι δυνατό το άνοιγμα από το ${productName}."
+        },
+        field: {
+            update: "Ενημέρωση πεδίου"
+        },
+        insertTime: "Εισαγωγή ώρας",
+        insertDate: "Εισαγωγή ημερομηνίας",
+        selectDate: "Επιλογή ημερομηνίας",
+        selectTime: "Επιλογή ώρας",
+        acc_blank: "Κενό", // when selection is nothing but space char and empty paragraph
+        acc_space: "κενό", // string read out when the cursor is before one space char
+        acc_inLink: "στη διασύνδεση ",
+        acc_inField: "στο πεδίο ",
+        acc_selected: " έχει επιλεγεί",
+        acc_inTable: "στη γραμμή ${0} και τη στήλη ${1} του πίνακα ",
+        acc_imageSelected: "επιλεγμένο γραφικό",
+        acc_canvasSelected: "επιλεγμένο σχήμα",
+        acc_textboxSelected: "επιλεγμένο πλαίσιο",
+        ACC_TABLE_TABLESIZE: "Έχετε επιλέξει ${0} γραμμές και ${1} στήλες.",
+        ACC_TABLE_MAXSIZE: " Οι μέγιστες υποστηριζόμενες διαστάσεις πίνακα είναι 20*20.",
+        ACC_headerFooterMode: "κατάσταση τροποποίησης κεφαλίδας/υποσέλιδου",
+        ACC_EditorMode: "κατάσταση τροποποίησης προγράμματος σύνταξης",
+        ACC_FootnotesMode: "κατάσταση τροποποίησης υποσημειώσεων",
+        ACC_EndnotesMode: "κατάσταση τροποποίησης σημειώσεων τέλους",
+        ACC_uniformTable: "Προστέθηκε μια νέα γραμμή.",
+        Acc_column: "στήλη ${0}",
+        acc_page: "σελίδα ${0}",
+        acc_section: "ενότητα ${0}",
+        acc_spellWarn: "εσφαλμένη ορθογραφία",
+        acc_outTable: "εκτός πίνακα",
+        acc_link: "διασύνδεση",
+        acc_field: "πεδίο",
+        acc_footnote: "υποσημείωση",
+        acc_endnote: "σημείωση τέλους",
+        acc_editor: "Τροποποίηση από ${0}",
+        tablePropertyTitle: "Ιδιότητες πίνακα",
+        headerTitle: "Κεφαλίδα",
+        footerTitle: "Υποσέλιδο",
+        firstheaderTitle: "Κεφαλίδα πρώτης σελίδας",
+        firstfooterTitle: "Υποσέλιδο πρώτης σελίδας",
+        evenheaderTitle: "Κεφαλίδα ζυγών σελίδων",
+        evenfooterTitle: "Υποσέλιδο ζυγών σελίδων",
+        oddheaderTitle: "Κεφαλίδα μονών σελίδων",
+        oddfooterTitle: "Υποσέλιδο μονών σελίδων",
+        showTableBorder: "Εμφάνιση ορίων πίνακα",
+        list_none: "Χωρίς",
+        SET_NUMBERING_VALUE: "Ορισμός τιμής αρίθμησης",
+        BIDI_CONTENT_EDITING: "Αυτό το έγγραφο περιέχει κείμενο διπλής κατεύθυνσης. Για να εργαστείτε σωστά με αυτό το έγγραφο, πρέπει να έχετε ενεργοποιήσει την υποστήριξη κειμένου διπλής κατεύθυνσης στις Προτιμήσεις του HCL Connections."
+});

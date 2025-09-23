@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Mar 11 11:27:16 CST 2015
+wstx-asl-3.2.3.jar>=
+wstx-asl-3.2.3.jar>central=
+wstx-asl-3.2.3.pom>central=

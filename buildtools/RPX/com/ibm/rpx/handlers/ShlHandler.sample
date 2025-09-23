@@ -1,0 +1,20 @@
+[Data]
+IKF_ERROR_PLAY_AVI=Unable to display progress indicator ....\n
+TITLE_MAIN=_not_to_be_translated_
+COMPANY_NAME=IBM
+ERROR_COMPONENT=Component:
+ERROR_MOVEDATA=An error occurred during the move data process: %d
+IKF_OK_TO_EXIT=\n\nPress OK to exit ...\n
+UNINST_KEY=_not_to_be_translated_
+IKF_INTRO_1=Do you want to start the configuration of \n\n\n
+TITLE_CAPTIONBAR=_not_to_be_translated_
+IKF_ERROR_OPEN_FILE=Unable to open File \n
+IKF_ERROR_FAILED=The following ERROR occured:  \n
+PRODUCT_NAME=_not_to_be_translated_
+IKF_FILE_EMPTY=File is empty, no return code available ....
+
+[General]
+Language=0009
+Type=STRINGTABLESPECIFIC
+Version=1.00.000
+

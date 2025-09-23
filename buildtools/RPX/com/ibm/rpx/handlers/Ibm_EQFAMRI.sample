@@ -1,0 +1,111 @@
+/*
+ *
+ *   Tivoli Comprehensive Network Address Translator NetView Extensions
+ */
+
+Application 'CNAT'
+{
+    Description
+    {
+        "Tivoli Comprehensive Network Address Translator NetView Extensions",
+        "Performs Tivoli CNAT management tasks."
+    }
+
+    Version 'V7.1.1';
+
+    Copyright {
+      "Licensed Program Product:",
+      "  Tivoli CNAT NetView Extensions",
+      "    (C) COPYRIGHT 2000-2001 Tivoli Systems Inc., an IBM Company.",
+      "    All Rights Reserved",
+      ""
+    }
+
+
+    MenuBar "Tools"
+    {
+        <75> "CNAT Operations" _N f.menu CNATMenu;
+    }
+
+    Menu 'CNATMenu'
+    {
+      "Launch All CNAT Discovery and Update Tasks" _A   f.action 'nvcnat_run_all';
+      "Discover All CNAT Nodes"                    _D   f.action 'nvcnat_discover_all';
+      "Determine if Node is CNAT"                  _N   f.action 'nvcnat_discover_selected';
+      "Download Node CNAT Table"                   _C   f.action 'nvcnat_collect_selected';
+      "Download All CNAT Tables"                   _T   f.action 'nvcnat_collect_all';
+      "Build CNAT Master Store"                    _B   f.action 'nvcnat_build_master_store';
+      "Update NetView From Master Store"           _U   f.action 'nvcnat_update_ovw';
+      "Refresh NetView From Master Store"          _R   f.action 'nvcnat_refresh_ovw';
+    }
+
+    Action 'nvcnat_run_all'
+    {
+        /*
+         * Discover all CNAT servers, download all CNAT tables, build
+         * the CNAT Master Store, and update OVw.
+         */
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_run_all.tcl GUI';
+    }
+
+    Action 'nvcnat_discover_all'
+    {
+        /*
+         * Attempt to discover all possible CNAT servers.
+         */
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_discover_all.tcl GUI';
+    }
+
+    Action 'nvcnat_discover_selected'
+    {
+        /*
+         * Test the selected node to see if it is a CNAT server.
+         */
+        MinSelected 1;
+        MaxSelected 1;
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_discover_node.tcl $OVwSelection1 GUI';
+    }
+
+    Action 'nvcnat_collect_selected'
+    {
+        /*
+         * Download the CNAT table from the selected CNAT node.
+         */
+        SelectionRule isNode && isCNAT;
+        MinSelected 1;
+        MaxSelected 1;
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_get_table.tcl $OVwSelection1 GUI';
+    }
+
+    Action 'nvcnat_collect_all'
+    {
+        /*
+         * Get the CNAT table from each member of the CNATServers SmartSet.
+         */
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_get_all_tables.tcl GUI';
+    }
+
+    Action 'nvcnat_build_master_store'
+    {
+        /*
+         * Iterate over all collected CNAT tables and construct a new Master Store.
+         */
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_build_store.tcl GUI';
+    }
+
+    Action 'nvcnat_update_ovw'
+    {
+        /*
+         * Iterate over all IP interfaces and their nodes; normalize as needed.
+         */
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_update_ovw.tcl GUI';
+    }
+
+    Action 'nvcnat_refresh_ovw'
+    {
+        /*
+         * Iterate over all IP interfaces and their nodes; normalize and un-normalize as needed.
+         */
+        Command 'tclsh80 /usr/ov/tcl/nvcnat_refresh_ovw.tcl GUI';
+    }
+}

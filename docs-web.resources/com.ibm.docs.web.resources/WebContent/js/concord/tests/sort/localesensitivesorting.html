@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Language Sensitive Sorting</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<style type="text/css">
+    @import "../../../dijit/themes/tundra/tundra.css";
+    @import "../../../dojo/resources/dojo.css"
+</style>
+	<script type="text/javascript" src="../../../dojo/dojo.js" djConfig="parseOnLoad: true, isDebug:false"></script>
+	<script type="text/javascript" src="../../../ckeditor/ckeditor.js"></script>
+	<script type="text/javascript">
+		var serverURL = document.location.protocol +"//" + document.location.host+"/";
+		var index = 0;
+		var items = {};
+		function add(){
+			var ipt = document.getElementById("inputItem");
+			if(ipt.value == "") {
+				alert("Please input a string before adding.");
+				ipt.focus();
+				return;
+			}
+			index++;
+			var table = document.getElementById("dataTable");  
+			var newRow = table.insertRow(-1);
+			newRow.insertCell(-1).innerHTML = index;
+			newRow.insertCell(-1).innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+			newRow.insertCell(-1).innerHTML = ipt.value;
+			items[index] = ipt.value;
+			ipt.value = "";
+			ipt.focus();	
+		}
+		
+		function removerows(){
+			var table = document.getElementById("dataTable"); 
+			var rowscount = table.rows.length;
+			for(i=rowscount - 1;i >= 0; i--){
+				table.deleteRow(i);
+			}
+		}
+		
+		function GetRadioValue(RadioName){
+		    var obj;   
+		    obj=document.getElementsByName(RadioName);
+		    if(obj!=null){
+		        var i;
+		        for(i=0;i<obj.length;i++){
+		            if(obj[i].checked){
+		                return obj[i].value;           
+		            }
+		        }
+		    }
+		    return null;
+		}
+		
+		function clean(){
+			removerows();
+			index = 0;
+			items = {};
+		}
+		
+		function sort(){
+			var obj = {
+					data : items,
+					lang: document.getElementById("locale").value
+		        };
+			var table = document.getElementById("dataTable"); 
+			if(table.rows.length == 0) {
+				alert("No data to be sorted.");
+				document.getElementById("inputItem").focus();
+				return;
+			}
+				
+			var sData = dojo.toJson(obj);
+			var request = {					
+					url: serverURL + "docs/api/sort",
+					handleAs: "json",
+					handle: function(r, io)
+					{ 
+						var order = GetRadioValue("order");
+						if(order == "Descending")
+							r.items.reverse();
+						removerows();
+						var table = document.getElementById("dataTable"); 
+						for(var i = 0; i < r.items.length; i++){
+							var newRow = table.insertRow(-1);
+							newRow.insertCell(-1).innerHTML = r.items[i];
+							newRow.insertCell(-1).innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+							newRow.insertCell(-1).innerHTML = items[r.items[i]];
+						}
+						
+					}, 						
+					sync: true, 
+					contentType: "text/plain",
+					postData: sData
+			};
+			dojo.xhrPost(request);
+		}
+	</script>
+
+</head>
+<body>
+	<h1 class="samples">
+		Language Sensitive Sorting
+	</h1>
+	<div class="description">
+	<p>
+		This sample validate the server side API of language sentive sorting.
+	</p>
+	
+	<form>
+		<table>
+			<tr>
+				<td>Select Language</td>
+				<td><select id="locale" style="height:25px;width:204px;" name="multipleselect">
+					<option value ="zh-CN">Chinese</option>
+					<option value ="en-US">English</option>
+					<option value ="fr">French</option>
+					<option value ="de">German</option>
+					<option value ="ja">Japanese</option>
+					<option value ="ko">Korean</option>
+				</select> 
+				</td>
+				<td>&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>Input Text</td>
+				<td><input type="text" style="height:20px;width:200px;" id = "inputItem" value=""/></td>
+				<td> &nbsp;&nbsp;&nbsp;
+					<input type="button" style="height:25px;width:100px;" value="add" onclick="add();"/>
+					<input type="button" style="height:25px;width:100px;" value="clean" onclick="clean();"/>
+					<input type="button" style="height:25px;width:100px;" value="sort" onclick="sort();"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<label>
+						<input type="radio" name="order" value="Ascending" checked="true" id="radio1" />&nbsp;Ascending
+					</label>
+					<label>
+						&nbsp;&nbsp;
+					<input type="radio" name="order" value="Descending" id="radio2" />&nbsp;Descending
+					</label>
+				</td>
+				<td> 
+				</td>
+			</tr>
+		</table>
+
+
+	</form>
+	<hr></hr>
+	<table id = "dataTable"></table>
+</body>
+</html>

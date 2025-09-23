@@ -1,0 +1,15 @@
+<project name="com.ibm.docs.common.deployment" basedir="." default="deploy">
+	<target name="clean">
+	</target>
+
+	<target name="init" depends="clean">
+	</target>
+
+	<target name="deploy">
+		<mkdir dir="${build.home}/installer/common"/>
+		<copy todir="${build.home}/installer/common">
+			<fileset dir="${basedir}/installer/common" includes="**/*"/>
+        </copy>
+  </target>
+</project>
+

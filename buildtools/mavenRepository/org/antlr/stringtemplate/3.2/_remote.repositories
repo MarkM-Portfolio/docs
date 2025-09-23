@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Mar 11 11:27:14 CST 2015
+stringtemplate-3.2.jar>central=
+stringtemplate-3.2.jar>=
+stringtemplate-3.2.pom>central=

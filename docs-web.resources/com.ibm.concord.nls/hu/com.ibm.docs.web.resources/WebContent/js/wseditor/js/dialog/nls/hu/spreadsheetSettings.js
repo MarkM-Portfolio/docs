@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "A területi beállítások megadása a számok, pénznemek, dátumok és idők formázásához.",
+	INPUT_INVALID_LOCALENAME: "Érvénytelen területi beállítás",
+	INPUT_EMPTY_LOCALENAME: "Válasszon területi beállítást.",
+	
+	Spain_Catalan: "Spanyolország (Katalónia)",
+	Denmark: "Dánia",
+	Germany: "Németország",
+	Greek: "Görögország",
+	United_States: "Amerikai Egyesült Államok",
+	United_Kingdom: "Egyesült Királyság",
+	Spain: "Spanyolország",
+	Finland: "Finnország",
+	France: "Franciaország",
+	Italy: "Olaszország",
+	Japan: "Japán",
+	Korean: "Dél-Korea",
+	Norway: "Norvégia",
+	Netherlands: "Hollandia",
+	Poland: "Lengyelország",
+	Brazil: "Brazília",
+	Portugal: "Portugália",
+	Russia: "Oroszország",
+	Sweden: "Svédország",
+	Thailand: "Thaiföld",
+	Turkey: "Törökország",
+	China: "Kína",
+	Taiwan_China: "Tajvan (Kína)",
+	Israel: "Izrael"
+})
+

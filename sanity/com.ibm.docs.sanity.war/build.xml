@@ -1,0 +1,129 @@
+<project name="com.ibm.docs.sanity.war" basedir="." default="war">
+	<property name="src.dir" value="src" />
+	<property name="webcontent.dir" value="WebContent" />
+	<property name="webinf.dir" value="${webcontent.dir}/WEB-INF/" />
+	<property name="bin.dir" value="bin" />
+	<property name="classes.dir" value="${webinf.dir}/classes" />
+	<property name="war.dir" value="${bin.dir}/war" />
+	<property name="ear.dir" value="../com.ibm.docs.sanity.ear/" />
+	<property name="static.dir" value="${webcontent.dir}/static" />
+	<property name="version.dir" value="${static.dir}/${build.timestamp}" />
+	<property name="report.dir" value="${build.home}/report" />
+
+	<path id="project.classpath">
+	</path>
+	<path id="lib.classpath">
+		<pathelement path="${ear.dir}/lib/bss.json-2.32-20140114.114305-42.jar" />
+		<pathelement path="${ear.dir}/lib/bss.shim-2.32-20140117.200827-88.jar" />
+		<pathelement path="${ear.dir}/lib/commons-beanutils-1.8.2.jar" />
+		<pathelement path="${ear.dir}/lib/commons-codec-1.4.jar" />
+		<pathelement path="${ear.dir}/lib/commons-collections-3.2.1.jar" />
+		<pathelement path="${ear.dir}/lib/commons-configuration-1.1.jar" />
+		<pathelement path="${ear.dir}/lib/commons-dbcp-1.2.2.jar" />
+		<pathelement path="${ear.dir}/lib/commons-digester-2.0.jar" />
+		<pathelement path="${ear.dir}/lib/commons-httpclient-3.1.jar" />
+		<pathelement path="${ear.dir}/lib/commons-io-2.0.1.jar" />
+		<pathelement path="${ear.dir}/lib/commons-lang-2.5.jar" />
+		<pathelement path="${ear.dir}/lib/commons-logging-1.1.1.jar" />
+		<pathelement path="${ear.dir}/lib/commons-pool-1.5.5.jar" />
+		<pathelement path="${ear.dir}/lib/commons-validator-1.3.1.jar" />		
+		<pathelement path="${ear.dir}/lib/httpclient-4.0.3.jar" />
+		<pathelement path="${ear.dir}/lib/httpcore-4.0.1.jar" />		
+		<pathelement path="${ear.dir}/lib/json4j.jar" />
+		<!--Upgrading log4j version 2.17.2-->
+		<pathelement path="${ear.dir}/lib/log4j-1.2-api-2.17.2.jar" />
+		<pathelement path="${ear.dir}/lib/log4j-api-2.17.2.jar" />
+		<pathelement path="${ear.dir}/lib/log4j-core-2.17.2.jar" />
+		<pathelement path="${ear.dir}/lib/oro-2.0.8.jar" />
+		<pathelement path="${ear.dir}/lib/com.ibm.icu_51.1.jar" />
+		<pathelement path="${ear.dir}/lib/jsoup-1.6.1.jar" />
+		<pathelement path="${ear.dir}/lib/lc.customAuthClient.jar" />
+		<!--pathelement path="${ear.dir}/lib/db2jcc_license_cu-9.5.4.jar" />
+		<pathelement path="${ear.dir}/lib/db2jcc-9.5.4.jar" />
+		<pathelement path="${ear.dir}/lib/sanity-agent-1.40.14-SNAPSHOT.jar" />
+		<pathelement path="${ear.dir}/lib/shared.authentication-1.40.1-20120126.155534-55.jar" />
+		<pathelement path="${ear.dir}/lib/shared.config-1.40.14-SNAPSHOT.jar" />
+		<pathelement path="${ear.dir}/lib/shared.httpclient_wrapper_noauth-1.40.14-20121003.103724-22.jar" />
+		<pathelement path="${ear.dir}/lib/shared.httpclient_wrapper-1.40.1-20120126.155534-55.jar" />
+		<pathelement path="${ear.dir}/lib/shared.stringutils-1.40.1-20120126.155534-55.jar" /-->
+	</path>
+	<path id="was.classpath">
+		<fileset dir="${was.home}" includes="**/*.jar" />
+	</path>
+	<path id="findbugs.classpath">
+		<fileset dir="${findbugs.home}/lib" includes="*.jar"/>
+	</path>
+
+	<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" classpathref="findbugs.classpath" />
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath" />
+			<classpath refid="lib.classpath" />
+			<classpath refid="was.classpath" />
+		</javac>
+	</target>
+	<target name="findbugs-condition" depends="compile">
+		<condition property="enablefindbugs">
+			<istrue value="${findbugs.enable}" />
+		</condition>
+	</target>
+	<target name="findbugs" depends="findbugs-condition" if="enablefindbugs">
+		<mkdir dir="${report.dir}" />
+		<findbugs home="${findbugs.home}" output="xml" outputFile="${report.dir}/${ant.project.name}.xml" warningsProperty="bugs.found">
+			<auxClasspath refid="project.classpath" />
+			<auxClasspath refid="lib.classpath" />
+			<auxClasspath refid="was.classpath" />
+			<sourcePath path="${src.dir}" />
+			<class location="${classes.dir}" />
+		</findbugs>
+		<condition property="build.fail">
+			<and>
+				<istrue value="${bugs.found}" />
+				<istrue value="${findbugs.fail}" />
+			</and>
+		</condition>
+		<fail if="build.fail" message="Find bugs in ${ant.project.name}, see ${report.dir}/${ant.project.name}.xml for details." />
+	</target>
+	<target name="war" depends="findbugs">
+		<echo file="${webcontent.dir}/version.txt">
+			{"build_description" : "${ReleaseInfo}" , "product_name" : "IBMDocs", 
+			"build_version" :  "${build.version}" , "build_timestamp" : "${build.timestamp}" }
+		</echo>
+		<copy todir="${webcontent.dir}/WEB-INF/classes/check_data">
+			<fileset dir="src/check_data/" />
+		</copy>
+		<pathconvert property="manifest.lib.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper />
+					<globmapper from="*" to="lib/*" />
+				</chainedmapper>
+			</mapper>
+			<path refid="lib.classpath" />
+		</pathconvert>
+		<pathconvert property="manifest.project.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<flattenmapper />
+				</chainedmapper>
+			</mapper>
+			<path refid="project.classpath" />
+		</pathconvert>
+		<mkdir dir="${war.dir}" />
+		<war destfile="${war.dir}/${ant.project.name}" webxml="${webinf.dir}/web.xml">
+			<fileset dir="${webcontent.dir}/" />
+			<manifest>
+				<attribute name="Created-By" value="IBM" />
+				<attribute name="Class-Path" value="${manifest.project.classpath} ${manifest.lib.classpath}" />
+			</manifest>
+		</war>
+		<copy todir="${build.home}">
+			<fileset dir="${war.dir}" />
+		</copy>
+	</target>
+</project>

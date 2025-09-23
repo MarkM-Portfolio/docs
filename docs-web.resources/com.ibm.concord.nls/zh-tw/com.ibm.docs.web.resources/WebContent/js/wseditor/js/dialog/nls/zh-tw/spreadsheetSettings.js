@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "選取語言環境以格式化數字、貨幣、日期和時間。",
+	INPUT_INVALID_LOCALENAME: "語言環境名稱無效",
+	INPUT_EMPTY_LOCALENAME: "請選取語言環境。",
+	
+	Spain_Catalan: "西班牙（加泰蘭省）",
+	Denmark: "丹麥",
+	Germany: "德國",
+	Greek: "希臘",
+	United_States: "美國",
+	United_Kingdom: "英國",
+	Spain: "西班牙",
+	Finland: "芬蘭",
+	France: "法國",
+	Italy: "義大利",
+	Japan: "日本",
+	Korean: "南韓",
+	Norway: "挪威",
+	Netherlands: "荷蘭",
+	Poland: "波蘭",
+	Brazil: "巴西",
+	Portugal: "葡萄牙",
+	Russia: "俄羅斯",
+	Sweden: "瑞典",
+	Thailand: "泰國",
+	Turkey: "土耳其",
+	China: "中國",
+	Taiwan_China: "台灣",
+	Israel: "以色列"
+})
+

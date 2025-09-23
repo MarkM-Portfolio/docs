@@ -1,0 +1,145 @@
+.dijitTabContainerNoLayout {
+    width: 100%;
+}
+.dijitTabContainerBottom-tabs, .dijitTabContainerTop-tabs, .dijitTabContainerLeft-tabs, .dijitTabContainerRight-tabs {
+    overflow: visible !important;
+}
+.dijitRtl .dijitTabContainerBottom-tabs, .dijitTabContainerTop-tabs, .dijitTabContainerLeft-tabs, .dijitTabContainerRight-tabs {
+    text-align: right !important;
+}
+
+.dijitRtl#S_d_select_chart_style .dijitTabContainerTop-tabs, .dijitRtl#S_d_ChartProp .dijitTabContainerTop-tabs {
+    text-align: left !important;
+}
+
+.dijitTabContainerBottom-container, .dijitTabContainerTop-container, .dijitTabContainerLeft-container, .dijitTabContainerRight-container {
+    border: 1px solid #000000;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.oneui30 .lotusTabDialog .dijitDialogPaneActionBar {
+	padding-bottom: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.oneui30 .lotusTabDialog .dijitDialogTitleBar {
+	background: #222428;
+	background:-moz-linear-gradient(top,  #3C3C3C 0%, #252525 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#3C3C3C), color-stop(100%,#252525));
+    padding-bottom: 5px;
+    border-bottom: 0px;
+}
+.oneui30 .lotusTabDialog .dijitDialogPaneContent{
+    padding: 0;
+}
+
+.oneui30 .lotusTabDialog .dijitTabListContainer-top {
+    background: #222428;
+	background:-moz-linear-gradient(top, #252525 0%, #141414 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#252525), color-stop(100%,#141414));
+    border-bottom: 0 none;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.dj_ie6 .oneui30 .lotusTabDialog .dijitTabListContainer-top {
+    padding-left: 20px;
+}
+.oneui30 .lotusTabDialog .dijitTabContainerTop-tabs .dijitTab {
+    border: 0 none;
+}
+.oneui30 .lotusTabDialog .dijitTabPaneWrapper {
+    border: 0 none;
+}
+.oneui30 .lotusTabDialog .dijitTabContainerTop-container, .lotusui30dojo .lotusTabDialog .dijitTabContainerBottom-container, .lotusui30dojo .lotusTabDialog .dijitTabContainerLeft-container, .lotusui30dojo .lotusTabDialog .dijitTabContainerRight-container {
+    border: 0 none;
+}
+.oneui30 .lotusTabDialog .dijitTabContainerTop-dijitContentPane, .lotusui30dojo .lotusTabDialog .dijitTabContainerBottom-dijitContentPane, .lotusui30dojo .lotusTabDialog .dijitTabContainerLeft-dijitContentPane, .lotusui30dojo .lotusTabDialog .dijitTabContainerRight-dijitContentPane {
+    padding: 15px 20px;
+}
+.oneui30 .lotusTabDialog .dijitTabListWrapper {
+    bottom: 0 !important;
+}
+.dj_ie6 .oneui30 .lotusTabDialog .dijitTabListWrapper {
+    bottom: -3px !important;
+}
+.oneui30 .lotusTabDialog .dijitTabStripButton {
+    bottom: 0 !important;
+}
+.oneui30 .lotusTabDialog .dijitTabContainerTop-tabs .dijitTab {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin: 0;
+}
+.dj_ie7 .oneui30 .lotusTabDialog .dijitTabContainerTop-tabs .dijitTab {
+    top: auto;
+}
+.oneui30 .lotusTabDialog .dijitTabContainerTop-tabs .dijitTabInnerDiv {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding-bottom: 15px;
+}
+.oneui30 .lotusTabDialog .dijitTabContainerTop-tabs .dijitTabContent {
+    border-left: 1px solid #666666;
+    color: #CCCCCC;
+    padding: 0 10px;
+}
+.oneui30 .lotusTabDialog .dijitTab:first-child .dijitTabContent {
+    border-left: 0 none;
+}
+.oneui30 .lotusTabDialog .dijitTabContainerTop-tabs .dijitTabRtl.dijitTabContent {
+    border-right: 1px solid #666666;
+    border-left: 0 none;
+}
+.oneui30 .lotusTabDialog .dijitTab[dir="rtl"]:first-child .dijitTabContent {
+    border-right: 0 none;
+}
+
+.oneui30 .lotusTabDialog .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabContent {
+    color: #FFFFFF;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.oneui30 .lotusTabDialog .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabInnerDiv {
+    background-image: url("../images/TabSharkfinLightUp.png");
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+}
+.oneui30 .lotusTabDialog .dijitTabButtonIcon {
+    display: none;
+}
+.oneui30 .lotusTabDialog .dijitTabCloseButton {
+    /* background-image: url("../images/DeleteLight12.png"); */
+    height: 12px;
+    margin: 0 -3px -1px 3px;
+    opacity: 0.5;
+    width: 12px;
+}
+.oneui30 .lotusTabDialog .dijitTabCloseButtonHover, .lotusui30dojo .lotusTabDialog .dijitTabCloseButtonActive {
+    opacity: 0.75;
+}
+.oneui30 .lotusTabDialog .tabStripButton {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    bottom: 0 !important;
+    padding: 12px 3px;
+}
+.oneui30 .lotusTabDialog .dijitTabStripIcon {
+    height: 12px;
+    opacity: 0.5;
+    width: 12px;
+}
+.oneui30 .lotusTabDialog .dijitTabStripSlideLeftIcon {
+    /* background: url("../images/TriangleMediumLightLeft12.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); */
+}
+.oneui30 .lotusTabDialog .dijitTabStripSlideRightIcon {
+    /* background: url("../images/TriangleMediumLightRight12.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); */
+}
+.oneui30 .lotusTabDialog .dijitTabStripMenuIcon {
+   /* background: url("../images/OverflowChevronLight12.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); */
+}
+.oneui30 .lotusTabDialog .tabStripButtonHover .dijitTabStripSlideLeftIcon, .lotusui30dojo .lotusTabDialog .tabStripButtonHover .dijitTabStripSlideRightIcon, .lotusui30dojo .lotusTabDialog .tabStripButtonHover .dijitTabStripMenuIcon {
+    opacity: 0.75;
+}

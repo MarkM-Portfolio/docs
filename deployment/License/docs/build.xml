@@ -1,0 +1,9 @@
+<project name="com.ibm.conversion.license" basedir="." default="deploy">
+	<target name="deploy">
+        <mkdir dir="${build.home}/License"/>
+        <copy todir="${build.home}/License">
+            <fileset dir="${basedir}/License" includes="**/*"/>
+        </copy>
+    </target>
+</project>
+

@@ -1,0 +1,30 @@
+<div class="filterContextMenu">
+    <div class="lotusActionMenu" style="width:250px" dojoType="websheet.AutoFilter._Menu" dojoAttachPoint="common">
+      <div dojoType="dijit.MenuItem" dojoAttachPoint="sortAZ">${nls.STR_SortAscending}</div>
+      <div dojoType="dijit.MenuItem" dojoAttachPoint="sortZA">${nls.STR_SortDescending}</div>
+      <div dojoType="dijit.MenuSeparator"></div>
+      <div dojoType="dijit.CheckedMenuItem" dojoAttachPoint="customFilter">${nls.CustomFilter}</div>
+      <div dojoType="dijit.MenuItem" dojoAttachPoint="clearFilterItem">${nls.ClearFilter}</div>
+      <div dojoType="dijit.MenuSeparator"></div>
+    </div>
+    
+    <div class="filterClearArea">
+      <label>${nls.STR_FILTER}  </label>
+      <div dojoType='dijit.form.Button' dojoAttachPoint="clearBtn">${nls.STR_DESELECT_ALL}</div>
+      <label>  -  </label>
+      <div dojoType='dijit.form.Button' dojoAttachPoint="selectAllBtn">${nls.STR_SELECT_ALL}</div>
+    </div>
+    
+    <div class="filterKeywordList">
+        <div dojoAttachPoint="workingLabel">${nls.STR_WORKING}</div>
+    	<div class="keywordlistWrapper" dojoAttachPoint="keywordlistWrapper">
+	        <div class="" dojoType="websheet.AutoFilter._Menu" dojoAttachPoint="keywordlist"></div>
+   		</div>
+    </div>
+    
+    <div style="margin-top:10px;margin-left:110px">
+    	<div dojoType="concord.widgets.LotusTextButton" dojoAttachPoint="okBtn">${nls.STR_OK_LABEL}</div>
+    	<div dojoType="concord.widgets.LotusTextButton" dojoAttachPoint="cancelBtn">${nls.STR_CANCEL_LABEL}</div>
+    </div>
+    
+</div>

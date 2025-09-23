@@ -1,0 +1,96 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+this file contains contains namespaced default styles
+companion file is base.css*/
+/******************************/
+/*** B A S E   S T Y L E S ****/
+/******************************/
+
+/*** R E S E T ***/
+
+/*redefinitions*/
+.lotusui a{color:#105cb6}
+.lotusui a:hover, .lotusui a:focus, .lotusui a:active{color:#05386b}
+.lotusui dt{background-color:#eee;font-weight:bold}/*used in metrics screen*/
+.lotusui h1, .lotusui h2{color:#444}
+/***********************************************************/
+
+/*** S P E C I A L   L I N K S ***/
+a.lotusPerson, a.lotusPerson:visited{color:#578cca;}/*person links pop up a related menu*/
+.lotusTags a:link, .lotusTags a:visited, a.lotusTag:link, a.lotusTag:visited{color:#578cca;}/*tag*/
+.lotusRelatedTags a{background-image:url(../../images/iconRelatedTag.png);border-color:transparent/*to keep related tags from jumping*/}
+.lotusui_ie6 .lotusRelatedTags a{border-color:#fff}/*ie6 doesn't support transparent border color*/
+/*[sprite]*/
+.lotusSpritesOn .lotusRelatedTags a{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:100% -3036px}
+/*[/sprite]*/
+/*my links indicate bookmarks you have created - add this onto people and tag class links*/
+a.lotusMyLink, a.lotusMyLink:visited, .lotusMyLinks a, .lotusMyLinks a:visited{color:#44a244 !important}
+a.lotusDelete{background-image:url(../../images/iconDelete.png);}
+/*[sprite]*/.lotusSpritesOn a.lotusDelete{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2331px}/*[/sprite]*/
+/*link hover styles*/
+.lotusTags a:hover, .lotusTags a:focus, .lotusTags a:active, a.lotusTag:hover, a.lotusTag:focus, a.lotusTag:active, a.lotusPerson:hover, a.lotusPerson:focus, a.lotusPerson:active{border-bottom-color:#05386b;color:#05386b;}
+a.lotusMyLink:hover, a.lotusMyLink:focus, .lotusMyLinks a:hover, .lotusMyLinks a:focus {color:#05386b !important;border-bottom-color:#05386b;}
+/*single and group action links*/
+/*this is to provide a class for overriding link colors in groups of links to indicate that the link is an action link (like the "Tag this" link in a tag group*/
+a.lotusAction, a.lotusAction:visited{color:#105cb6 !important;}
+a.lotusAction:hover, a.lotusAction:focus, a.lotusAction:active, .lotusActions a:hover, .lotusActions a:focus, .lotusActions a:active, .lotusTags a.lotusAction:hover, .lotusTags a.lotusAction:focus, .lotusTags a.lotusAction:active{color:#05386b !important;}
+/*to assign an icon to an action link, you need to assign a unique id to the link and give it a background image.  The rest of the code is in this css declaration*/
+.lotusActions a, .lotusActions a:visited{color:#105cb6;}
+a.lotusDropDown, a.lotusDropDown:visited, a.lotusDropDown:active{background-color:transparent;background-image: url(../../images/btnDropDown.png)}
+/*[sprite]*/
+a.lotusDropDown, a.lotusDropDown:visited, a.lotusDropDown:active{background-color:transparent;background-image: url(../themeImages/lotusSprite-8bit.png);background-position:0 -728px}
+/*[/sprite]*/
+a.lotusDelete:hover, a.lotusDelete:active{background-image:url(../../images/iconDeleteHover.png);}
+/*[sprite]*/.lotusSpritesOn a.lotusDelete:hover, a.lotusDelete:active{background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -2383px}/*[/sprite]*/
+/*general class for 16 pixel icons created as background images, where a link surrounds blank.gif*/
+/*NOTES: 
+assign the lotusIcon16 class along with one of the following classes to your link tag
+classes match the icon graphic name with a lotus prefix*/
+.lotusIconShow{background-image:url(../../images/iconShow.png)}
+.lotusIconHide{background-image:url(../../images/iconHide.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusIcon16{background-image:url(../themeImages/lotusSprite-8bit.png);}
+.lotusSpritesOn .lotusIconShow{background-position:0 -3257px}
+.lotusSpritesOn .lotusIconHide{background-position:0 -2547px}
+/*[/sprite]*/
+/***********************************************************/
+
+/*** G E N E R A L   S T Y L E S ***/
+.lotusui .lotusBorderTop, .lotusui .lotusBorderBottom{border-color:#e5e5e5}
+.lotusui .lotusLoading{background-image:url(../../images/loading.gif)}
+.lotusui .lotusRequired{color:#efa229}
+.lotusui .lotusMeta{color:#666}
+.lotusui .lotusHighlighted{color:#f00}/*red*/
+.lotusui .lotusInactive{color:#999}
+.lotusui .lotusLogo, .lotusLoginLogo{height:18px;width:126px;background-image:url(../../images/logo.png);background-repeat:no-repeat;}/*height, width values are in this file to aid in retheming*/
+.lotusui .lotusIBMLogo {width:94px;height:37px;background-image:url(../../images/ibmLogo.png);background-repeat:no-repeat;}/*height, width values are in this file to aid in retheming*/
+.lotusImagesOff .lotusIBMLogo {display:none}
+.lotusui .lotusIBMLogoFooter {width:66px;height:28px;background-image:url(../../images/ibmLogoFooter.png);background-repeat:no-repeat;}/*height, width values are in this file to aid in retheming*/
+.lotusImagesOff .lotusIBMLogoFooter {display:none}
+/*[sprite]*/
+.lotusSpritesOn .lotusIBMLogo {background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -1782px}
+.lotusSpritesOn .lotusIBMLogoFooter {background-image:url(../themeImages/lotusSprite-8bit.png);background-position:0 -1859px}
+/*[/sprite]*/
+/***********************************************************/
+
+/*** I N L I N E   L I S T S ***/ 
+.lotusui .lotusInlinelist li{border-color:#ccc;}
+/***********************************************************/
+
+/*** A R R O W S ***/
+/*drop-down arrows*/
+.lotusDropDownSprite{background-image:url(../../images/btnDropDown.png)}
+.lotusDropDownActionSprite{background-image:url(../../images/btnDropDownAction.png)}
+/*scrolling arrows*/
+.lotusScrollUp{background-image:url(../../images/arrowScrollUp.png)}
+.lotusScrollDown{background-image:url(../../images/arrowScrollDown.png)}
+/*[sprite]*/
+.lotusSpritesOn .lotusDropDownSprite{background-position:0 -728px}
+.lotusSpritesOn .lotusDropDownActionSprite{background-position:0 -814px}
+.lotusSpritesOn .lotusScrollUp{background-position:0 -683px}
+.lotusSpritesOn .lotusScrollDown{background-position:0 -638px}
+/*[/sprite]*/
+
+/***********************************************************/

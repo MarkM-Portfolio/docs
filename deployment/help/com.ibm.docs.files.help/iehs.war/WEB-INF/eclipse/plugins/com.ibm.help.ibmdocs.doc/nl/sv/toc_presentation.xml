@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013--><!--© Copyright IBM Corp 2013-->
+<toc label="Arbeta med presentationer"
+     topic="text/presentation/presentations_frame.html">
+   <topic label="Arbeta med presentationer"
+          href="text/presentation/presentations_frame.html">
+      <topic label="Skapa och överföra presentationer"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Skapa presentationer"
+                href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Ändra standardfilformat för presentationer"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Överföra och dela presentationer"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Importera presentationer"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Filkompatibilitet och export av presentation"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Filformat som hanteras i presentationer"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Spara presentationer"
+                href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Publicera en version av presentationer"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Exportera presentationer till andra filformat"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Dela presentationer" href="text/presentation/p_sharing_a_document.html">
+         <topic label="Dela presentationer med personer eller gemenskaper"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Ange behörighetsnivåer för presentationer"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Samarbeta om presentationer i realtid"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Samredigering i realtid i presentationer"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Om samredigering i presentationer"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Samredigering med andra i presentationer"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Visa ändringar som redigerare har gjort i presentationer"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Samarbeta med kommentarer i presentationer"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Om kommentarer i presentationer"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Skriva kommentarer i presentationer"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Läsa kommentarer i presentationer"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Söka kommentarer i presentationer"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Formatera bilder" href="text/presentation/p_formatting_slides.html">
+         <topic label="Ändra teckensnitt i presentationer"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Markera och flytta objekt"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Sortera objekt"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Lägga till numrerade listor eller punktlistor i bilder"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Använda bildlayouter"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Ändra bakgrundsformat"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Stavningskontrollera presentationer"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Spara och skriva ut presentationer"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Skriva ut presentationer till PDF-filer"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Arbeta med bilder i presentationer"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Infoga grafik i presentationer"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Flytta och storleksändra bilder i presentationer"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Ange bildegenskaper i presentationer"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Arbeta med bilder" href="text/presentation/p_slide_show.html">
+         <topic label="Spela upp bildspel"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Lägga på övergångar mellan bilder"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Ta bort presentationsbilder"
+                href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Lägga till bilder" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Flytta bilder" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Duplicera presentationsbilder"
+                href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Arbeta med tabeller i presentationer"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Skapa tabeller i presentationer"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Lägga till rader och kolumner i presentationer"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Flytta rader och kolumner i presentationer"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Ändra storlek på rader och kolumner i presentationer"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Justera text i celler"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Ändra tabellformat i presentationer"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Definiera tabellrubriker i presentationer"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Redigera stödanteckningar"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Snabbreferens för presentationer"
+             href="text/presentation/p_quick_ref.html"/>
+      <topic label="Kortkommandon för presentationer"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

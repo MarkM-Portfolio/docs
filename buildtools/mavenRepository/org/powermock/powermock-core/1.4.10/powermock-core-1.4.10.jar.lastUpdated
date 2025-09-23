@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Dec 16 17:15:51 CST 2015
+https\://repo.maven.apache.org/maven2/.lastUpdated=1450257351229
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.error=
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.lastUpdated=1450257289640
+@default-java.net-http\://download.java.net/maven/2/.lastUpdated=1450257330652
+http\://download.java.net/maven/2/.error=Could not transfer artifact org.powermock\:powermock-core\:jar\:1.4.10 from/to java.net (http\://download.java.net/maven/2/)\: Failed to transfer file\: http\://download.java.net/maven/2/org/powermock/powermock-core/1.4.10/powermock-core-1.4.10.jar. Return code is\: 408 , ReasonPhrase\:Request Time-out.

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="프리젠테이션에 대한 작업" topic="text/presentation/presentations_frame.html">
+   <topic label="프리젠테이션에 대한 작업" href="text/presentation/presentations_frame.html">
+      <topic label="프리젠테이션 작성 및 업로드"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="프리젠테이션 작성" href="text/presentation/p_creating_presentation.html"/>
+         <topic label="프리젠테이션의 기본 파일 형식 변경"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="공유할 프리젠테이션 업로드"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="기존 프리젠테이션 가져오기" href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="파일 호환성 및 프리젠테이션 내보내기"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="프리젠테이션에서 지원되는 파일 형식"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="프리젠테이션 저장" href="text/presentation/p_saving_presentations.html"/>
+         <topic label="프리젠테이션 버전 공개" href="text/presentation/p_publish_a_version.html"/>
+         <topic label="기타 파일 형식으로 프리젠테이션 내보내기"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="프리젠테이션 공유" href="text/presentation/p_sharing_a_document.html">
+         <topic label="프리젠테이션을 사용자 또는 커뮤니티와 공유"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="프리젠테이션의 액세스 레벨 설정"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="실시간으로 프리젠테이션 협업"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="프리젠테이션에서 실시간으로 공동 편집"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="프리젠테이션의 공동 편집 정보" href="text/presentation/p_coediting_concept.html"/>
+            <topic label="프리젠테이션에서 다른 사용자와 공동 편집"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="프리젠테이션에 편집기 변경사항 표시"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="프리젠테이션에서 주석을 사용하여 협업" href="text/presentation/p_comments_overview.html">
+            <topic label="프리젠테이션의 주석 정보" href="text/presentation/p_comments_concept.html"/>
+            <topic label="프리젠테이션에 주석 작성"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="프리젠테이션의 주석 보기" href="text/presentation/p_viewing_comments.html"/>
+            <topic label="프리젠테이션의 주석 검색" href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="슬라이드 형식화" href="text/presentation/p_formatting_slides.html">
+         <topic label="프리젠테이션에서 글꼴 변경" href="text/presentation/p_change_fonts.html"/>
+         <topic label="오브젝트 선택 및 이동"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="오브젝트 순서 배열" href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="슬라이드에 번호 또는 글머리 기호 추가"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="슬라이드 레이아웃 적용" href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="마스터 스타일 변경" href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="맞춤법 검사 프리젠테이션"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="프리젠테이션 저장 및 인쇄"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="프리젠테이션을 PDF 파일로 인쇄" href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="프리젠테이션에서 이미지 작업" href="text/presentation/p_working_with_graphics.html">
+         <topic label="프리젠테이션에 그래픽 삽입" href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="프리젠테이션의 이미지 이동 및 크기 조정"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="프리젠테이션에서 이미지 특성 설정"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="슬라이드에 대한 작업" href="text/presentation/p_slide_show.html">
+         <topic label="슬라이드 쇼 재생" href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="슬라이드 간 전환 적용"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="슬라이드 삭제" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="슬라이드 추가" href="text/presentation/p_adding_slides.html"/>
+         <topic label="슬라이드 이동" href="text/presentation/p_moving_slides.html"/>
+         <topic label="슬라이드 복제" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="프리젠테이션의 테이블에 대한 작업" href="text/presentation/p_working_with_tables.html">
+         <topic label="프리젠테이션에 테이블 작성" href="text/presentation/p_creating_tables.html"/>
+         <topic label="프리젠테이션에 행 및 열 추가"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="프리젠테이션의 행 및 열 이동"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="프리젠테이션의 행 및 열 크기 조정" href="text/presentation/p_resizing_columns.html"/>
+         <topic label="셀에서 텍스트 맞춤" href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="프리젠테이션의 테이블 스타일 변경" href="text/presentation/p_changing_styles.html"/>
+         <topic label="프리젠테이션의 테이블 머리글 정의"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="발표자 메모 편집" href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="프리젠테이션 빠른 참조" href="text/presentation/p_quick_ref.html"/>
+      <topic label="프리젠테이션 키보드 단축키"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Spreadsheet formula area unit test suite runner</title>
+  <meta charset="utf-8"/>
+  <!-- Runner that loads full model stack -->
+
+  <link rel="stylesheet" type="text/css" href="../../../util/jasmine-1.3.1/jasmine.css">
+  <script type="text/javascript" src="../../../util/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="../../../util/jasmine-1.3.1/jasmine-html.js"></script>
+  <script type="text/javascript" src="../../../dojo/dojo.js"></script>
+  <!-- <script type="text/javascript" src="../../../dojo/i18n.js"></script> -->
+  <script type="text/javascript" src="../jasmine_doh_adapter.js"></script>
+  <script type="text/javascript" src="../jasmine_seed.js"></script>
+  
+  <script type="text/javascript">
+  	dojo.registerModulePath("websheet", "../wseditor/js");
+	dojo.registerModulePath("websheet.test", "../wseditor/test");
+	
+	window.app = window;
+	
+	dojo.require("websheet.test.utils");
+	dojo.require("websheet.test.builders");
+	dojo.require("websheet.test.checkers");
+
+	// set global settings used across cases
+    window.g_partialLevel = websheet.Constant.PartialLevel.ALL;
+    window.g_bidiOn = true;
+    window.g_locale = "en";
+    window.g_maxSheetRows = 10000;
+	
+	// include any source files needed
+	// first include any stub implementations that the test target script depends on
+	// The IObject is included to import interfaces stub models need
+	dojo.require("websheet.test.stubs.i18n.Number");
+	dojo.require("websheet.test.stubs.widget._Rectangle");
+	dojo.require("websheet.test.stubs.widget.SelectRect");
+	dojo.require("websheet.test.stubs.widget.InlineEditor");
+	dojo.require("websheet.functions.IObject");
+	dojo.require("websheet.model.BasicModel");
+	dojo.require("websheet.model.RulesObject.RuleVal");
+	dojo.require("websheet.model.RulesObject.RulesObj");
+	dojo.require("websheet.model.RulesObject.DataValidation");
+	dojo.require("websheet.model.RulesObject.ConditionalFormat");
+	dojo.require("websheet.model.RulesObject.ConditionalCriteria");
+	dojo.require("websheet.model.RulesObject.ConditionalFvos");
+	dojo.require("websheet.model.Range");
+	dojo.require("websheet.test.stubs.style.StyleManager");
+	dojo.require("websheet.test.stubs.Controller");
+	dojo.require("websheet.test.stubs.Main");
+	dojo.require("websheet.test.stubs.CalcManager");
+	dojo.require("websheet.test.stubs.parse.ParseHelper");
+	dojo.require("websheet.test.stubs.model.IDManager");
+	dojo.require("websheet.test.stubs.model.Document");
+	dojo.require("websheet.test.stubs.model.ModelHelper");
+	/* then include any other required scripts */
+	dojo.require("concord.util.browser");
+	dojo.require("websheet.test.ut.formulaTestHelper");
+	
+	dojo.addOnLoad(function() {
+		jasmine.getEnv().execute();
+	});
+  </script>
+	
+  <!-- then include test target scripts, include it as static to let Jasmine output helpful stack trace information -->
+
+  <!-- style and format -->
+  <script type="text/javascript" src="../../js/Utils.js"></script>
+  <script type="text/javascript" src="../../js/functions/Formulas.js"></script>
+  <script type="text/javascript" src="../../js/style/StyleCode.js"></script>
+  <script type="text/javascript" src="../../js/model/Sheet.js"></script>
+  <script type="text/javascript" src="../../js/model/Row.js"></script>
+  <!-- script type="text/javascript" src="../../js/i18n/Number.js"></script-->
+  <script type="text/javascript" src="../../js/parse/RefToken.js"></script>
+  <script type="text/javascript" src="../../js/parse/ParsedRef.js"></script>
+  <script type="text/javascript" src="../../js/parse/Area.js"></script>
+  <script type="text/javascript" src="../../js/parse/AreaManager.js"></script>
+  <script type="text/javascript" src="../../js/parse/AreaPage.js"></script>
+  <script type="text/javascript" src="../../js/parse/Reference.js"></script>
+  <script type="text/javascript" src="../../js/parse/SharedReferenceRef.js"></script>
+  <script type="text/javascript" src="../../js/parse/SharedFormulaRefBase.js"></script>
+  <script type="text/javascript" src="../../js/parse/SharedFormulaRef4RulesObj.js"></script>
+  <script type="text/javascript" src="../../js/parse/SharedFormulaRef4DV.js"></script>
+  <script type="text/javascript" src="../../js/parse/SharedFormulaRef4CF.js"></script>
+  <script type="text/javascript" src="../../js/parse/NameArea.js"></script>
+  <script type="text/javascript" src="../../js/functions/Formulas.js"></script>
+  <script type="text/javascript" src="../../js/functions/Util.js"></script>
+  <!-- new formula parser -->
+  <script type="text/javascript" src="../../js/parse/FormulaLexer.js"></script>
+  <script type="text/javascript" src="../../js/parse/FormulaParser.js"></script>
+  <script type="text/javascript" src="../../js/parse/FormulaParseHelper.js"></script>
+  
+  <!-- old formula parser -->
+  <script type="text/javascript" src="formula/antlr/antlr3-all-min.js"></script>
+  <script type="text/javascript" src="formula/parser/FormulaHelper.js"></script>
+  <script type="text/javascript" src="formula/parser/FormulaLexerParser.js"></script>
+  <script type="text/javascript" src="formula/parser/JsFormulaCommaParserParser.js"></script>
+  
+  <!-- defined name -->
+  <script type="text/javascript" src="../../js/dialog/nameRange.js"></script>
+  <script type="text/javascript" src="../../js/widget/NameRangeHandler.js"></script>
+
+  <script type="text/javascript" src="../../js/TaskManager.js"></script>
+  <script type="text/javascript" src="../../js/model/Cell.js"></script>
+   
+  <!-- finally, include test target scripts, include it as static to let Jasmine output helpful stack trace information -->
+  <script type="text/javascript" src="formula/sharedFormulaRef4RulesObj.js"></script>
+  <script type="text/javascript" src="formula/sharedFormulaRef4DV.js"></script>
+  <script type="text/javascript" src="formula/sharedFormulaRef4CF.js"></script>
+  <script type="text/javascript" src="formula/sharedReferenceRef.js"></script>
+  <script type="text/javascript" src="formula/sharedFormulaRefBase.js"></script>
+  <script type="text/javascript" src="formula/area.js"></script>
+  <script type="text/javascript" src="formula/ut_formulaUtil.js"></script>
+  <script type="text/javascript" src="formula/ut_areaManager.js"></script>
+  <script type="text/javascript" src="formula/ut_formulaLexer.js"></script>
+  <script type="text/javascript" src="formula/ut_formulaParser.js"></script>
+  <script type="text/javascript" src="formula/ut_model.js"></script>
+  <script type="text/javascript" src="formula/ut_functionIfs.js"></script>
+  <script type="text/javascript" src="formula/ut_functionPMT.js"></script>
+  <script type="text/javascript" src="formula/ut_functionLogical.js"></script>
+  <script type="text/javascript" src="formula/ut_functionMath.js"></script>
+</head>
+<body>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<div class="permissionWidget">
+
+	<div class="rangeTypeSelectArea">
+		<div class="rangeSelect">
+			<div dojoType="dijit.form.TextBox" dojoAttachPoint="rangeSelector"></div>
+		</div>
+		<div class="typeSelect">
+			<div dojoType="dijit.form.DropDownButton" dojoAttachPoint="typeSelector"></div>
+		</div>
+	</div>
+	
+	<div class="warningMsg" dojoAttachPoint="rangeWarning" role="alert"></div>
+	<div class="userSelectorDiv" >
+		<div dojoType="websheet.ACL.UserMultiSelector" dojoAttachPoint="userSelector" ></div>
+	</div>
+	
+	<div class="userIconListArea">
+		<div dojoType="websheet.ACL.UserIconList" dojoAttachPoint="userIcons" data-dojo-props="'fixed':false"></div>
+	</div>
+	
+	<div class="footer">
+	    <div dojoType="concord.widgets.LotusTextButton" dojoAttachPoint="okBtn">${nls.STR_OK_LABEL}</div>
+    	<div dojoType="concord.widgets.LotusTextButton" dojoAttachPoint="cancelBtn">${nls.STR_CANCEL_LABEL}</div>
+	</div>
+</div>

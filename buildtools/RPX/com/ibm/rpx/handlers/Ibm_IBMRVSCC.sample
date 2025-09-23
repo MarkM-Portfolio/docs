@@ -1,0 +1,7 @@
+BAML_Name,Resource_Key,Category,Readability,Modifiability,Comments,Value
+AuthenticationUI.g.resources:baml,Window_1:com.ibm.team.process.ui.RepositoryDialog.$Content,None,True,True,TRANSLATABLE,Document title
+AuthenticationUI.g.resources:baml,Window_1:System.Windows.Window.ShowInTaskbar,None,NON-TRANSLATABLE,FALSE
+AuthenticationUI.g.resources:baml,UniformGrid_1:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,NON-TRANSLATABLE,Bottom
+AuthenticationUI.g.resources:baml,UniformGrid_1:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,NON-TRANSLATABLE,Right 
+AuthenticationUI.g.resources:baml,UniformGrid_1:System.Windows.FrameworkElement.Margin,None,False,True,NON-TRANSLATABLE,"10, 5, 10, 5"
+AuthenticationUI.g.resources:baml,Button_OK:System.Windows.Controls.Button.$Content,Button,True,True,TRANSLATABLE,OK

@@ -1,0 +1,12 @@
+{
+	"class":"com.ibm.concord.lc3.entitlements.CommunityRegistrationCookieFilter",
+	"config":
+	{
+		"communities": 
+		[
+			{"id":"208f37d1-0154-4850-9e39-4308686c1775"}
+		],
+		"registration_page": "http://concord110.cn.ibm.com/communities/service/html/communityview?communityUuid=208f37d1-0154-4850-9e39-4308686c1775",
+		"files_home_page": "http://concord110.cn.ibm.com/files"
+	}
+}

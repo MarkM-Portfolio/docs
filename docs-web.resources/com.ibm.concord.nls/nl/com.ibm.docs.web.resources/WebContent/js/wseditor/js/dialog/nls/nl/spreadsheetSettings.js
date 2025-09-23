@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Selecteer uw locale voor de notatie van getallen, valuta, datum en tijd.",
+	INPUT_INVALID_LOCALENAME: "Ongeldige locale",
+	INPUT_EMPTY_LOCALENAME: "Selecteer een locale.",
+	
+	Spain_Catalan: "Spanje (Catalaans)",
+	Denmark: "Denemarken",
+	Germany: "Duitsland",
+	Greek: "Griekenland",
+	United_States: "Verenigde Staten",
+	United_Kingdom: "Verenigd Koninkrijk",
+	Spain: "Spanje",
+	Finland: "Finland",
+	France: "Frankrijk",
+	Italy: "Italië",
+	Japan: "Japan",
+	Korean: "Zuid-Korea",
+	Norway: "Noorwegen",
+	Netherlands: "Nederland",
+	Poland: "Polen",
+	Brazil: "Brazilië",
+	Portugal: "Portugal",
+	Russia: "Rusland",
+	Sweden: "Zweden",
+	Thailand: "Thailand",
+	Turkey: "Turkije",
+	China: "China",
+	Taiwan_China: "Taiwan (China)",
+	Israel: "Israël"
+})
+

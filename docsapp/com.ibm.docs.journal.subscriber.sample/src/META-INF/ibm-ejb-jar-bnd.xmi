@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejb="ejb.xmi" xmlns:ejbbnd="ejbbnd.xmi" xmi:id="EJBJarBinding_1107123385675">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:type="ejbbnd:MessageDrivenBeanBinding" xmi:id="MessageDrivenBeanBinding_1107123385675" ejbName="PackageReceived" activationSpecJndiName="eis/IBMDocsActivationSpec" destinationJndiName="jms/IBMDocsJournalTopic">
+    <enterpriseBean xmi:type="ejb:MessageDriven" href="META-INF/ejb-jar.xml#com.ibm.docs.journal.subscriber.sample.PackageReceivedBean"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

@@ -1,0 +1,15 @@
+<?xml-10 version="1.0" ?>
+  <METADATA>
+     <TAXONOMY_ENTRIES>
+        <TAXONOMY_ENTRY
+           CATEGORY="Connecting_to___Using_the_Internet"
+           URI="c:\ibmtools\ibmhelp\ibmhelp.chm::/adsl.htm"
+           TITLE="Using an ADSL service"
+           DESCRIPTION="Information about obtaining and using ADSL sevices."
+           TYPE="1"
+           ACTION="ADD">
+              <KEYWORD>ADSL</KEYWORD>
+              <KEYWORD>Internet</KEYWORD>
+        </TAXONOMY_ENTRY>
+     </TAXONOMY_ENTRIES>
+  </METADATA>

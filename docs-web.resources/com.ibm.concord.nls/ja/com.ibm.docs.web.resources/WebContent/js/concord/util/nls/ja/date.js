@@ -1,0 +1,22 @@
+({
+	question:"質問",
+	issue:"問題",
+	toDo:"To Do",
+	comment:"コメント",
+	done:"完了",
+	jan:"1 月",
+	feb:"2 月",
+	mar:"3 月",
+	apr:"4 月",
+	may:"5 月",
+	june:"6 月",
+	july:"7 月",
+	aug:"8 月",
+	sept:"9 月",
+	oct:"10 月",
+	nov:"11 月",
+	dec:"12 月",
+	pm:"PM",
+	am:"AM",
+	assignTo:"割り当て先: "
+})

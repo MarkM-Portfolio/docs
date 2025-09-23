@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ibm</groupId>
+  <artifactId>httpqueue.channel</artifactId>
+  <versioning>
+    <release>NONE</release>
+    <versions>
+      <version>NONE</version>
+    </versions>
+    <lastUpdated>20150126090203</lastUpdated>
+  </versioning>
+</metadata>

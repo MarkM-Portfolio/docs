@@ -1,0 +1,83 @@
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="com.ibm.docs.viewer.test" basedir="." default="junit">
+	<property name="src.dir" value="src" />
+	<property name="bin.dir" value="bin" />
+	<property name="jar.dir" value="${bin.dir}/jar" />
+	<property name="lib.dir" value="lib" />
+	<property name="ear.dir" value="../com.ibm.concord.viewer.ear/"/>
+	<property name="report.dir" value="${build.home}/report" />
+	<property name="xml.dir" value="${report.dir}/html" />
+
+	<path id="project.classpath">
+		<fileset dir="${build.home}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<path id="lib.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${ear.dir}">
+			<include name="**/json4j*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+		<delete>
+			<fileset dir="${src.dir}">
+				<include name="**/*.class" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="${bin.dir}" />
+		<javac srcdir="${src.dir}" destdir="${src.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${javac.source}" target="${javac.target}">
+			<classpath refid="project.classpath" />
+			<classpath refid="lib.classpath" />
+		</javac>
+
+	</target>
+
+	<target name="junit" depends="compile">
+		<mkdir dir="${xml.dir}" />
+
+		<junit printsummary="true" haltonerror="yes" haltonfailure="yes" fork="yes">
+			<formatter type="xml" />
+
+			<classpath path="${src.dir}">
+			</classpath>
+			<classpath refid="lib.classpath">
+			</classpath>
+			<classpath refid="project.classpath">
+			</classpath>
+
+			<batchtest todir="${report.dir}">
+				<fileset dir="${src.dir}">
+					<include name="**/Test*.class" />
+				</fileset>
+			</batchtest>
+		</junit>
+
+		<junitreport todir="${report.dir}">
+			<fileset dir="${report.dir}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="${xml.dir}" />
+		</junitreport>
+	</target>
+</project>
+

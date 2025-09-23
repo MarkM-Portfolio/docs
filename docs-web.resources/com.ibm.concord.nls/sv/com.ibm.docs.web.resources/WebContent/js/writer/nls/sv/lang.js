@@ -1,0 +1,75 @@
+({
+	LOADING: "Innehållet läses in.",
+	LOAD_FINISHED: "Innehållet har lästs in.",
+	PAGE_SETUP: "Utskriftsalternativ",
+	NOTE_INVALIDACTION_FOOTNOTE:"Ogiltig fotnotsåtgärd.",
+	NOTE_INVALIDACTION_ENDNOTE:"Ogiltig slutnotsåtgärd.",
+	PAGENUMBER_OF_TOTALNUMBER:"Sida ${0} av ${1}", //page 1 of N
+	PAGE_NUMBER: "Sida: ${pageNumber}/${totalPageNumber}",
+	toc:{
+		title : "Innehållsförteckning",
+		update: "Uppdatera",
+		del: "Ta bort",
+		toc: "Innehållsförteckning",
+		linkTip: "Ctrl-klicka för att navigera",
+		pageNumber: "Endast sidnummer",
+		entireTable: "Hel tabell"
+	},
+	link:{
+		addlink:"Lägg till länk",
+		gotolink: "Öppna länk",
+		unlink	: "Ta bort länk",
+		editlink: "Redigera länk",
+		internalLink: "Intern länk",
+		ctrlLink: "Ctrl-klicka för att följa länken",
+		cannotOpen: " kan inte öppnas från ${productName}."
+	},
+	field:{
+		update: "Uppdatera fält"
+	},
+	insertTime:"Infoga klockslag",
+	insertDate:"Infoga datum",
+	selectDate:"Välj datum",
+	selectTime:"Välj tid",
+	acc_blank: "tom",// when selection is nothing but space char and empty paragraph
+	acc_space: "blanktecken",// string read out when the cursor is before one space char
+	acc_inLink: "i länk ",
+	acc_inField: "i fält ",
+	acc_selected :" vald",
+	acc_inTable: "på rad ${0}, kolumn ${1} ",
+	acc_imageSelected: "vald grafik",
+	acc_canvasSelected:"vald form",
+	acc_textboxSelected:"vald textruta",
+	ACC_TABLE_TABLESIZE:"Du har valt ${0} rader, ${1} kolumner",
+	ACC_TABLE_MAXSIZE:" Den maximala tabellstorleken är 20*20",
+	ACC_headerFooterMode: "redigeringsläge för sidhuvud/sidfot",
+	ACC_EditorMode: "redigeringsläge för redigerare",
+	ACC_FootnotesMode: "redigeringsläge för fotnoter",
+	ACC_EndnotesMode: "redigeringsläge för slutnoter",
+	ACC_uniformTable: "En ny rad har lagts till",
+	Acc_column :"kolumn ${0}",
+	acc_page :"sida ${0}",
+	acc_section:"avsnitt ${0}",
+	acc_spellWarn:"felstavat",
+	acc_outTable:"från tabell",
+	acc_link :"länk",
+	acc_field :"fält",
+	acc_footnote:"fotnot",
+	acc_endnote:"slutnot",	
+	acc_editor:"Redigeras av ${0}",
+	tablePropertyTitle: "Tabellegenskaper",
+	headerTitle:"Sidhuvud",
+	footerTitle:"Sidfot",
+	firstheaderTitle:"Sidhuvud på första sidan",
+	firstfooterTitle:"Sidfot på första sidan",
+	evenheaderTitle:"Sidhuvud på jämna sidor",
+	evenfooterTitle:"Sidfot på jämna sidor",
+	oddheaderTitle:"Sidhuvud på udda sidor",
+	oddfooterTitle:"Sidfot på udda sidor",
+	showTableBorder:"Visa tabellgränser",
+	list_none: "Ingen",
+	SET_NUMBERING_VALUE: "Välj numreringsvärde",
+	BIDI_CONTENT_EDITING: "Dokumentet innehåller dubbelriktat innehåll. Aktivera funktioner för dubbelriktat innehåll i HCL Connections-inställningar så att du kan arbeta på rätt sätt med dokumentet."
+})
+	
+

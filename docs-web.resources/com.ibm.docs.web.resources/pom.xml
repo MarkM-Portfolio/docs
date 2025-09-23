@@ -1,0 +1,156 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>docs-web.resources</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.docs.web.resources</artifactId>
+  <name>com.ibm.docs.web.resources - war</name>
+  <packaging>jar</packaging>
+
+  <properties>
+    <webcontent.dir>${project.basedir}/WebContent</webcontent.dir>
+    <target.webcontent.dir>${project.build.directory}/WebContent</target.webcontent.dir>
+    <target.version.dir>${project.build.directory}/WebContent/static/${docs.build.timestamp}</target.version.dir>
+    <jstest.dir>${project.build.directory}/jstest</jstest.dir>
+    <!-- nls.related -->
+    <script_home>${project.basedir}/buildtools/util/nls_scripts</script_home>
+    <build.src>${docs.root.dir}/docs-web.resources</build.src>  
+  </properties>
+
+  <dependencies>
+    <!-- WAS lib dependencies -->
+    <dependency>
+      <groupId>com.ibm.websphere.lib</groupId>
+      <artifactId>j2ee</artifactId>
+    </dependency>
+  </dependencies>
+
+  <!-- Check OS to choose the correct script to run. -->
+  <profiles>
+    <!-- Only build js in UNIX environmet or run mvn with  -PbuildDocsJS -->
+    <profile>
+      <id>buildDocsJS</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <os>
+          <family>unix</family>
+        </os>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>invoke ant task for docs js build</id>
+                <phase>prepare-package</phase>
+                <configuration>
+                  <target name="Build docs js">
+                    <ant antfile="buildjs4maven.xml"/>
+                  </target>
+                </configuration>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <artifactId>maven-install-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>install JSTest.docs</id>
+                <phase>install</phase>
+                <goals>
+                  <goal>install-file</goal>
+                </goals>
+                <configuration>
+                  <file>${project.build.directory}/JSTest.zip</file>
+                  <groupId>com.ibm.docs</groupId>
+                  <artifactId>JSTest.docs</artifactId>
+                  <packaging>zip</packaging>
+                  <version>${project.version}</version>    
+                </configuration>
+              </execution>              
+            </executions>
+          </plugin>          
+        </plugins>    
+      </build>      
+    </profile>    
+  </profiles>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>Build com.ibm.docs.web.resources.war</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_com.ibm.docs.web.resources.war.xml</descriptor>
+              </descriptors>
+              <archiverConfig>
+              </archiverConfig>
+              <archive>
+                <addMavenDescriptor>false</addMavenDescriptor>
+                <manifest>
+                  <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+                  <addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
+                  <addClasspath>false</addClasspath>
+                </manifest>
+              </archive>
+              <finalName>${project.artifactId}</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>            
+          </execution>
+          <execution>
+            <id>Build viewer offerings</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_viewer_offerings.xml</descriptor>
+              </descriptors>
+              <finalName>viewer_offerings</finalName>
+              <appendAssemblyId>false</appendAssemblyId>          
+            </configuration>            
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>install viewer offerings</id>
+            <phase>install</phase>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <configuration>
+              <file>${project.build.directory}/viewer_offerings.zip</file>
+              <groupId>com.ibm.docs</groupId>
+              <artifactId>viewer_offerings</artifactId>
+              <packaging>zip</packaging>
+              <version>${project.version}</version>    
+            </configuration>            
+          </execution>                
+        </executions>
+      </plugin>          
+    </plugins>    
+  </build>
+</project>

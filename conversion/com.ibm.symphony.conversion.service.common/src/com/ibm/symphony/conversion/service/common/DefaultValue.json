@@ -1,0 +1,15 @@
+{
+  "paragraph":{
+  	"margin-top": "0cm",
+  	"margin-bottom": "0cm",
+  },
+  "table":{
+    "word-wrap": "break-word",
+    "table-layout":"fixed",
+    "border-collapse":"collapse",
+  },
+  "table-cell":{
+    "vertical-align": "top",
+   	"overflow": "hidden",    
+  }
+}

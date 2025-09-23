@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- HCL Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright HCL Technologies Limited 2020                           -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<application id="Application_ID" version="5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
+	<display-name>Spellcheck4IBMDocs</display-name>
+	<module id="WebModule_1401082715855">
+		<web>
+			<web-uri>com.ibm.rcp.spellcheck.webapp.war</web-uri>
+			<context-root>/docs/spellcheck</context-root>
+		</web>
+	</module>
+	<security-role id="SecurityRole_1401083322498">
+		<description>
+		All HCL Docs users</description>
+		<role-name>LLSymphonyUser</role-name>
+	</security-role>
+</application>

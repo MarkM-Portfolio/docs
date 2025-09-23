@@ -1,0 +1,508 @@
+/*make sure native font is used to present '\' in Japanese and Korean locale **/
+@import "../lotuslive/bs_font.css";
+
+.concordEncryptedPwdError{background-color:#ffe3e0;border-color:#efa6a5;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;padding:5px; width: 95%}
+.concordEncryptedPwdIcon {margin:2px 5px 0 0;float:left;}
+div[dir="rtl"] .concordEncryptedPwdIcon {margin:2px 0 0 5px;float:right;}
+.concordEncryptedPwdIcon2 {margin:0 0 0 4px;}
+.concordBetaIcon {margin:0 0 0 4px;}
+.concordEncryptedPwdSpacing {padding-top: 8px;}
+/**
+.concordEncryptedPwdBody{margin:0 20px;}
+**/
+
+.concordDialog {
+background-color:#ffffff;
+font-family:Arial, Helvetica, sans-serif;
+color:#000000;
+border:4px #999999 solid;
+}
+.concordDialogForm {
+	height: auto !important;
+}
+
+/**
+this is a fix for defect 2561 because the ul/ol css defs from documentContent.css
+were causing the type ahead drop down on the comment pane to look bad.
+**/
+.concord ul#type_ahead_popup,.concord ol#type_ahead_popup {
+	margin:0 0 0 0px;
+	padding-left:0px;
+	list-style-position:outside;
+}
+
+.dtitle {
+	font-size:16pt; 
+	font-weight:bold; 
+	color:#666666; 
+	padding:5px 10px 5px 10px;
+}
+.dtitle span {float:right; padding:5px;}
+
+.dinner {
+	position:relative; 
+	margin-left:8px;
+	margin-right: 8px;
+	margin-top: 8px;
+	margin-bottom: 18px; 
+	font-size:12px; 
+	line-height:150%;
+}
+/*.dinner span {width:150px;}*/
+
+.dfooter {
+	background:#E0E8F0;
+	border-top:1px #C0D8F8 solid; 
+	height:36px !important;
+	height: 46px;
+	padding: 5px 0 0 15px; 
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: -10px;
+}
+
+select{font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+/*using native fonts selected by browser to input text*/
+input {font-family: sans-serif; font-size:12px;}
+
+.btn {
+	border:1px #2F76B9 solid;
+}
+.btn2 a {
+	display:block; 
+	font-size:12px; 
+	color:#FFFFFF; 
+	font-weight:bold; 
+	text-decoration:none;
+}
+.btn2 a:hover {
+	display:block; 
+	font-size:12px; 
+	color:#FFFFFF; 
+	font-weight:bold; 
+	text-decoration:none;
+}
+
+.concordDialogBold {
+font-weight:bold !important;
+}
+
+.concordDialogPaddingTop {
+	padding-top:8px;
+}
+
+.dlgImageInformation {
+	float: left;
+}
+
+.progressDialogLoading {
+	font-weight:bold !important;
+	font-size: 16px;
+	margin-bottom: 20px !important;
+}
+
+.concordDialogTitleMessage {
+	font-style:normal;
+	font-size:2.0em;
+}
+
+.concordDialogWarningMsg {
+color:#B81324;
+font-weight:bold;
+font-style:normal;
+font-size:1.0em;
+}
+
+.concordDialogRadio {
+margin-right:7px;
+overflow: hidden;
+}
+
+.concordDialogDivMargin {
+margin-top:5px;
+margin-bottom:5px;
+}
+
+.saveDocumentDescText {
+height:25px;
+}
+.inputBox {
+height:1.8em;
+}
+.saveDocumentDescLabel {
+margin-left:20px;
+margin-right:40px;
+}
+.saveAsDocumentDescLabel {
+margin-right:20px;
+}
+.shareDocumentInputArea {
+	margin:4px !important;
+	width:260px !important;
+}
+
+.shareDocumentLabelTD {
+}
+
+.shareDocumentTipShareWith {
+	font-size:11px;
+	margin-left:2px;
+}
+
+.image_btn_reset
+{
+	float: right;
+	background-position: 0 -32px !important;
+	background-image: url('../images/mini.gif') !important;
+	width: 16px !important;
+	height: 16px !important;
+	background-repeat: no-repeat !important;
+	border: 1px none;
+	font-size: 1px;
+}
+
+
+.image_btn_locked,
+.image_btn_unlocked
+{
+	float: right; /* Modified (left) */
+    background-position: 0 0 !important;
+    background-image: url('../images/mini.gif') !important;
+	width: 16px !important;
+	height: 16px !important;
+	background-repeat: no-repeat !important;
+	border: none 1px;
+	font-size: 1px;
+}
+
+.image_btn_unlocked
+{
+	background-position: 0 -16px !important;
+	background-image: url('../images/mini.gif') !important;
+}
+
+.uploaderTable
+{
+	border:0 none;
+	padding:15px 0px;
+	width:30em;
+	height:auto !important;
+}
+.uploaderFilepath
+{
+	width:20em;
+	display: inline-block;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+.uploaderFile
+{
+	padding-bottom: 2px;
+}
+.uploaderLabel
+{
+	vertical-align: top;
+	text-align: left;
+	white-space: nowrap;
+	padding-top: 1px;
+	width:6em;
+}
+.dijitDialogRtl .uploaderLabel {
+    text-align: right;
+}
+
+.dijitDialogRtl .printSpreadsheetRadio {
+	margin-right: 0.5em !important;
+}
+
+.uploaderButton
+{
+	padding-left:5px;
+	vertical-align: top;	
+}
+
+.uploaderTypeImg
+{
+	display: inline-block;
+	vertical-align: top !important;
+}
+
+.dlg_task_history_title
+{	
+	font-size:14px;
+	font-weight: bold;
+}
+.dlg_task_history_general
+{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+ 	overflow:hidden;
+ 	margin-top: 2px;
+}
+.dlg_history_task_create
+{
+  background-image: url('../images/taskhistory/Person16.png');
+}
+.dlg_history_task_approve
+{
+  background-image: url('../images/taskhistory/ClipboardApprove16.png');
+}
+.dlg_history_task_review
+{
+  background-image: url('../images/taskhistory/Review16.png');
+}
+.dlg_history_task_workdone
+{
+  background-image: url('../images/taskhistory/Checkbox16.png');
+}
+.dlg_history_task_reject
+{
+  background-image: url('../images/taskhistory/ClipboardReject16.png');
+}
+.dlg_history_task_edit
+{
+  background-image: url('../images/taskhistory/Section16.png');
+}
+.dlg_history_task_working
+{
+  background-image: url('../images/taskhistory/Section16.png');
+}
+.dlg_history_task_submitprivate
+{
+  background-image: url('../images/taskhistory/SubmitPrivate16.png');
+}
+.dlg_history_task_cancelprivate
+{
+  background-image: url('../images/taskhistory/CancelPrivate16.png');
+}
+.dlg_history_task_reassign
+{
+  background-image: url('../images/taskhistory/Person16.png');
+}
+.dlg_history_task_reopen
+{
+  background-image: url('../images/taskhistory/Section16.png');
+}
+.dlg_progress_processing
+{
+  background-image: url('../images/loading38.gif');width:38px;height:38px;background-repeat:no-repeat;
+}
+.dlg_processing2_container
+{
+  position: absolute;
+  padding: 5px 2px 0px 0px; 
+}
+
+.dlg_processing2_img
+{
+  height: 32px;
+  width: 32px;
+  background-image: url('../images/loading.gif');
+  background-repeat:no-repeat;
+  position: absolute;
+}
+
+.dlg_task_content {
+	font-family:Arial, Helvetica, sans-serif;
+	word-wrap: break-word;
+	overflow: hidden;
+	color: #222;
+	width:380px;
+	display:block;
+}
+.dlg_task_content_space {
+	padding-top:8px;
+}
+.dlg_task_history_content {
+	padding-left:25px;
+	color: #222;
+	width:335px;
+}
+.dlg_task_history_panel{
+    height: 180px;
+    width: 400px;    
+    overflow: auto;
+    position: relative;
+}
+.dlg_task_history_date {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333;
+	display:block;
+}
+.dlg_task_history_createdate {
+	padding-left:25px;
+}
+.dlg_task_history_emptyline {
+	margin-bottom:8px;
+}
+
+.dlg_sc_sc_wait_div 
+{
+	padding-left: 42%;
+	padding-top: 25%;
+}
+.dlg_sc_sc_asyncImg 
+{
+  background-image: url("../images/loading38.gif");
+  height: 38px;
+  width: 38px;
+  position: absolute;
+}
+
+.lotusui30 .ie_task_input input   
+{
+  height: 20px;
+}
+.activitySelectLabel .dijitReset .dijitInline .dijitSelectLabel
+{
+   width: 370px;
+   overflow: hidden;
+   text-align: left;
+} 
+
+/* start print to pdf dialog */
+.printSpreadsheetTable{
+	table-layout:fixed;
+	width: 45em;
+}
+.printSpreadSheetDivLabel{
+	font-weight:bold;
+}
+.printSpreadsheetLabel{
+	width:10em;
+	display: inline-block;
+	margin-left: 0.5em;
+	word-wrap: break-word;
+}
+.printSpreadsheetRadio{
+	margin-left: 0.5em !important;
+	margin-right:0.41 !important;
+	vertical-align:middle !important;
+}
+.printSpreadsheetSelect{
+	margin-left: 0.5em !important;
+	margin-right:0.41 !important;
+	vertical-align:middle !important;
+}
+.printSpreadsheetText{
+	width:6.6em !important;
+	height:1.5em !important;
+	display: inline-block !important;
+	vertical-align: top !important;
+}
+.printSpreadsheetText_ie{
+	width:6.6em !important;
+	height:1.48em !important;
+	display: inline-block !important;
+	vertical-align: top !important;
+}
+.printSpreadsheetCombox{
+	width:8.25em;
+	height:1.485em;
+	display: inline-block;
+}
+.printSpreadSheetCMLabel{
+	margin-left:0.08em;
+	width:1.65em;
+	font-style:italic;
+	white-space:nowrap;
+}
+.leftDiv{
+	float:left;
+ 	width:50%;
+ 	height:100%; 
+}
+.rightDiv{
+	float:right;
+ 	width:50%;
+ 	height:100%; 
+}
+
+div[dir="rtl"] .leftDiv{
+	float:right;
+}
+
+div[dir="rtl"] .rightDiv{
+	float:left;
+}
+
+.sigleDiv{
+	padding: 0px;
+ 	min-height:26px;
+}
+/* end print to pdf dialog */
+
+/* start New & SaveAs dialog */
+.externalDiv {
+	margin-top: 1.5em;
+}
+.externalCheckbox {
+	margin-left: 0px !important;
+	vertical-align:middle !important;	
+}
+/* end New & SaveAs dialog */
+
+.unsupportDlgHeader{
+	margin-bottom:1em;
+}
+.cannotpreserved{
+	color:#ff0000
+}
+.notshowWarning{
+	padding: 0.5em 0.6em 0.4em 0.5em !important 
+}
+.welcomeChk{
+	padding: 10px 5px 10px 0px !important; 
+}
+.welcomeRight{
+	padding: 5px 5px 5px 15px !important; 
+	width: 34em;
+}
+
+li.dijitMenuItemHover, li.dijitMenuItemSelected{
+	background-color: #222;
+    color: #fff;
+}
+
+.dijitMenu .searchDirectory{
+	background-image: url('../images/iconSearch16.png');
+    background-position: 2px center;
+    background-repeat: no-repeat;
+    color: #105CB6;
+    font-weight: bold;
+    padding-left: 20px !important;
+}
+
+UL.dijitMenu LI{
+	list-style-type: none;
+	list-style-image: none;
+	cursor: pointer;
+	zoom: 1;
+	padding-left: 0px;
+}
+
+.BlueBackground{
+	background-color: #e0e8f0;
+}
+
+/* conflict dialogs */
+.profile-pic {
+  width: 36px;
+  height: 36px;
+  float:left;
+  margin-right: 10px;
+}
+
+.span-link {
+  text-decoration:underline;
+  color: #105CB6;
+  padding: 0 4px;
+}
+
+.reminder {
+  color: #6C6C6C;
+}

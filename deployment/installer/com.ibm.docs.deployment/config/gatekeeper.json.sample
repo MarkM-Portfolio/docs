@@ -1,0 +1,186 @@
+[
+	{
+		"task":"entitleGlobalFeatures",
+		"config":
+		{
+			"features": 
+			[
+				{				
+	 				"featureId": "CustomizedFonts",
+	 				"featureName": "Customized Fonts",
+	 				"featureDetail": "Arial/Arial, Helvetica, sans-serif; Times New Roman/Times New Roman, Times, serif; \u5b8b\u4f53; \u4eff\u5b8b",
+	 				"featureUrl": "api/font1; api/font2",
+	 				"enabled": true
+	 			},
+	 			{
+	 				"featureId": "NewTheme",
+	 				"featureName": "New Docs theme",
+	 				"featureDetail": "colorStyle:green; dialogStyle:rectangle",
+	 				"featureUrl": "api/theme1; api/theme2",
+	 				"enabled": true	 		
+	 			},
+	 			{
+	 				"featureId": "DocTrackChange",
+	 				"featureName": "Document Track History Changes",
+	 				"featureUrl": "",
+	 				"featureDetail": "{\"liveDays\":30}",
+	 				"enabled": true
+	 			},
+	 			{
+	 				"featureId": "DisableDownload",
+	 				"featureName": "Disable downloading/printing documents from Docs UI",
+	 				"featureDetail": "",
+	 				"featureUrl": "",
+	 				"enabled": true
+	 			}
+	 		]
+		}
+	},
+	{
+		"task":"turnOnOffGlobalFeaturesByIDs",
+		"config":
+		{
+			"featureIds": [{"id": "CustomizedFonts", "enabled": false},{"id": "NewTheme", "enabled": true}] 				
+		}
+	},				
+	{
+		"task":"removeGlobalFeaturesByIDs",
+		"config":
+		{
+			"featureIds": [{"id": "CustomizedFonts"},{"id": "NewTheme"}] 				
+		}
+	},
+	{
+		"task":"entitleFeatures4Orgs",
+		"config": 
+		{
+			"organizations":
+			[
+				{
+					"orgId": "208f37d1-0154-4850-9e39-4308686c1775",
+					"orgName": "Org1",
+					"levelName": "Org1_level",
+					"features": 
+					[
+						{
+		 					"featureId": "CustomizedFonts",
+		 					"featureName": "Customized Fonts",
+		 					"featureDetail": "Arial/Arial, Helvetica, sans-serif; Times New Roman/Times New Roman, Times, serif; \u5b8b\u4f53; \u4eff\u5b8b",
+		 					"featureUrl": "api/font1; api/font2",
+		 					"enabled": true
+		 				}
+		 			]
+		 		},
+		 		{
+					"orgId": "208f37d1-0154-4850-9e39-4308686c1776",
+					"orgName": "Org2",
+					"levelName": "Org2_level",
+					"features": 
+					[
+						{
+		 					"featureId": "NewTheme",
+		 					"featureName": "New Docs theme",
+		 					"featureDetail": "colorStyle:blue; dialogStyle:circle",
+		 					"featureUrl": "api/theme1; api/theme2",
+		 					"enabled": true
+		 				}
+		 			]
+		 		}	 		
+		 	]
+	 	}
+	},	
+	{
+		"task":"updateFeatures4Org",
+		"config":
+		{
+			"orgId": "208f37d1-0154-4850-9e39-4308686c1775",
+			"orgName": "Org1",
+			"features": 
+			[
+				{				
+	 				"featureId": "CustomizedFonts",
+	 				"featureName": "Customized Fonts",
+	 				"featureDetail": "Arial/Arial, Helvetica, sans-serif; Times New Roman/Times New Roman, Times, serif; \u5b8b\u4f53; \u4eff\u5b8b",
+	 				"featureUrl": "api/font1; api/font2",
+	 				"enabled": true
+	 			},
+	 			{
+	 				"featureId": "NewTheme",
+	 				"featureName": "New Docs theme",
+	 				"featureDetail": "colorStyle:green; dialogStyle:rectangle",
+	 				"featureUrl": "api/theme1; api/theme2",
+	 				"enabled": true	 		
+	 			}
+	 		]	 				
+		}
+	},
+	{
+		"task":"deleteFeatures4Org",
+		"config":
+		{
+			"orgId": "208f37d1-0154-4850-9e39-4308686c1775",
+			"orgName": "Org1",
+			"featureIds": [{"id": "CustomizedFonts"},{"id": "NewTheme"}] 				
+		}
+	},
+	{
+		"task":"entitleFeatures4Users",
+		"config":
+		{	
+			"userIds": [{"id": "309f37d1-0154-4850-9e40-4308686c1103"}, {"id": "309f37d1-0154-4850-9e40-4308686c1104"}],
+			"orgId": "208f37d1-0154-4850-9e39-4308686c1776",
+			"levelName": "test_level",
+			"features": 
+			[
+				{				
+	 				"featureId": "CustomizedFonts",
+	 				"featureName": "Customized Fonts",
+	 				"featureDetail": "Arial/Arial, Helvetica, sans-serif; Times New Roman/Times New Roman, Times, serif; \u5b8b\u4f53; \u4eff\u5b8b",
+	 				"featureUrl": "api/font1; api/font2",
+	 				"enabled": true
+	 			},
+	 			{
+	 				"featureId": "NewTheme",
+	 				"featureName": "New Docs theme",
+	 				"featureDetail": "colorStyle:yellow; dialogStyle:rectangle",
+	 				"featureUrl": "api/theme1; api/theme2",
+	 				"enabled": true	 		
+	 			}
+	 		]
+		}
+	},
+	{
+		"task":"updateFeatures4Users",
+		"config":
+		{
+			"userIds": [{"id": "309f37d1-0154-4850-9e40-4308686c1103"}, {"id": "309f37d1-0154-4850-9e40-4308686c1104"}],
+			"orgId": "208f37d1-0154-4850-9e39-4308686c1775",
+			"features": 
+			[
+				{				
+	 				"featureId": "CustomizedFonts",
+	 				"featureName": "Customized Fonts",
+	 				"featureDetail": "Arial/Arial, Helvetica, sans-serif; Times New Roman/Times New Roman, Times, serif; \u5b8b\u4f53; \u4eff\u5b8b",
+	 				"featureUrl": "api/font1; api/font2",
+	 				"enabled": true
+	 			},
+	 			{
+	 				"featureId": "NewTheme",
+	 				"featureName": "New Docs theme",
+	 				"featureDetail": "colorStyle:red; dialogStyle:triangle",
+	 				"featureUrl": "api/theme1; api/theme2",
+	 				"enabled": true	 		
+	 			}
+	 		]	 				
+		}
+	},
+	{
+		"task":"deleteFeatures4Users",
+		"config":
+		{
+			"userIds": [{"id": "309f37d1-0154-4850-9e40-4308686c1103"}, {"id": "309f37d1-0154-4850-9e40-4308686c1104"}],
+			"orgId": "208f37d1-0154-4850-9e39-4308686c1775",
+			"featureIds": [{"id": "CustomizedFonts"}, {"id": "NewTheme"}]			
+		}
+	}			
+]

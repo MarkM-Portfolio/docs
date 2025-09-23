@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>applications.conversion</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.ibm.symphony.conversion.service.rest.was.war</artifactId>
+  <name>com.ibm.symphony.conversion.service.rest.was.war - pom</name>
+  <packaging>war</packaging>
+
+  <properties>
+    <webcontent.dir>${project.basedir}/WebContent</webcontent.dir>
+  </properties>
+  
+  <dependencies>
+  	<dependency>
+		<groupId>com.ibm.docs</groupId>
+		<artifactId>com.ibm.docs.common</artifactId>
+		<version>${project.version}</version>
+  	</dependency>
+  	<!-- WAS lib dependencies -->
+    <dependency>
+		<groupId>com.ibm.websphere.lib</groupId>
+		<artifactId>j2ee</artifactId>
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <configuration>
+            <webResources>
+              <resource>
+                <directory>${webcontent.dir}</directory>
+                <filtering>false</filtering>
+                <includes>
+                  <include>**/*</include>
+                </includes>           
+              </resource>            
+            </webResources>
+            <webXml>${webcontent.dir}/WEB-INF/web.xml</webXml>
+            <outputFileNameMapping>@{artifactId}@.@{extension}@</outputFileNameMapping>
+            <warName>${project.artifactId}</warName>
+            <archive>
+              <addMavenDescriptor>false</addMavenDescriptor>
+              <manifest>                      
+                  <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+                  <addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
+                  <addClasspath>false</addClasspath>
+              </manifest>
+            </archive> 
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>      
+  </build>
+</project>

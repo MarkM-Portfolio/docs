@@ -1,0 +1,57 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* IBM Confidential                                                  */
+/*                                                                   */
+/* IBM Docs Source Materials                                         */
+/*                                                                   */
+/* (c) Copyright IBM Corporation 2012. All Rights Reserved.          */
+/*                                                                   */
+/* U.S. Government Users Restricted Rights: Use, duplication or      */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        ORIENTATION_LABEL: "Ориентация",
+        PORTRAIT: "Книжная",
+        LANDSCAPE: "Альбомная",
+        HEADER: "Верхний колонтитул",
+        FOOTER: "Нижний колонтитул",
+        MARGINS_LABEL: "Поля",
+        TOP: "Сверху:",
+        BOTTOM: "Снизу:",
+        LEFT: "Слева:",
+        RIGHT: "Справа:",
+        PAPER_FORMAT_LABEL: "Формат бумаги",
+        PAPER_SIZE_LABEL: "Размер бумаги:",
+        HEIGHT: "Высота:",
+        WIDTH: "Ширина:",
+        HEIGHT_DESC: "Высота бумаги (см)",
+        HEIGHT_DESC2: "Высота бумаги (дюймы)",
+        WIDTH_DESC: "Ширина бумаги (см)",
+        WIDTH_DESC2: "Ширина бумаги (дюймы)",
+        BOTTOM_DESC: "Нижнее поле (см)",
+        BOTTOM_DESC2: "Нижнее поле (дюймы)",
+        TOP_DESC: "Верхнее поле (см)",
+        TOP_DESC2: "Верхнее поле (дюймы)",
+        LEFT_DESC: "Левое поле (см)",
+        LEFT_DESC2: "Левое поле (дюймы)",
+        RIGHT_DESC: "Правое поле (см)",
+        RIGHT_DESC2: "Правое поле (дюймы)",
+        CM_LABEL: "см",
+        LETTER: "Letter",
+        LEGAL: "Legal",
+        TABLOID: "Tabloid",
+        USER: "Пользовательский",
+        SIZE1: "Конв. N6 3/4",
+        SIZE2: "Конв. Monarch",
+        SIZE3: "Конв. N9",
+        SIZE4: "Конв. N10",
+        SIZE5: "Конв. N11",
+        SIZE6: "Конв. N12",
+        SIZE7: "16 kai",
+        SIZE8: "32 kai",
+        SIZE9: "32 kai large",
+        INVALID_MSG: "Недопустимый вывод был исправлен в автоматическом режиме. Для получения другого результата введите другое значение.",
+        INVALID_WIDTH_FOR_COLUMNS: "Недопустимый ввод. Ширина недостаточна для размещения столбцов."
+});
+

@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Izaberite lokalizaciju za format brojeva, valuta, datuma i vremena.",
+	INPUT_INVALID_LOCALENAME: "Pogrešno ime lokalizacije",
+	INPUT_EMPTY_LOCALENAME: "Izaberite lokalizaciju.",
+	
+	Spain_Catalan: "Španjolska (Katalonija)",
+	Denmark: "Danska",
+	Germany: "Njemačka",
+	Greek: "Grčka",
+	United_States: "Sjedinjene Države",
+	United_Kingdom: "Ujedinjeno Kraljevstvo",
+	Spain: "Španjolska",
+	Finland: "Finska",
+	France: "Francuska",
+	Italy: "Italija",
+	Japan: "Japan",
+	Korean: "Južna Koreja",
+	Norway: "Norveška",
+	Netherlands: "Nizozemska",
+	Poland: "Poljska",
+	Brazil: "Brazil",
+	Portugal: "Portugal",
+	Russia: "Rusija",
+	Sweden: "Švedska",
+	Thailand: "Tajland",
+	Turkey: "Turska",
+	China: "Kina",
+	Taiwan_China: "Tajvan (Kina)",
+	Israel: "Izrael"
+})
+

@@ -1,0 +1,14 @@
+{
+  "Transform":{"title":"TransformTitle.jpg","page":"TransformPage.jpg","text-name":"Transform-text"},
+  "Bluecircles":{"title":"bluecircles_title.png","page":"bluecircles_blank.png","text-name":"Bluecircles-text"},
+  "Block":{"title":"block_title.png","page":"block_blank.png","text-name":"Block-text"},
+  "Delicate":{"title":"delicate_title.png","page":"delicate_blank.png","text-name":"Delicate-text"},
+  "Diagonal":{"title":"diagonal_title.png","page":"diagonal_blank.png","text-name":"Diagonal-text"},
+  "Greenblocks":{"title":"greenblocks_title.png","page":"greenblocks_blank.png","text-name":"Greenblocks-text"},
+  "Grid":{"title":"grid_title.png","page":"grid_blank.png","text-name":"Grid-text"},
+  "Yellowdots":{"title":"yellowdots_title.png","page":"yellowdots_blank.png","text-name":"Yellowdots-text"},
+  "Bluewaves":{"title":"bluewavesTitle.png","page":"bluewavesPage.png","text-name":"Bluewaves-text"},
+  "Purpletwist":{"title":"purpletwistTitle.png","page":"purpletwistPage.png","text-name":"Purpletwist-text"},
+  "Socialbusiness":{"title":"socialbusiness_title.png","page":"socialbusiness_blank.png","text-name":"Socialbusiness-text"},
+  "Orange":{"title":"orange_title.jpg","page":"orange_blank.jpg","text-name":"Orange-text"}
+}

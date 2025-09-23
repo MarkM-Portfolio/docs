@@ -1,0 +1,21 @@
+{
+	"app_name":"com.ibm.concord.viewer.ear",
+	"was_version":"7.0.0.25",
+	"dmgr_host":"localhost",
+	"soap_port":"8880",
+	"was_user":"wasadmin",
+	"was_password":"wasadmin",
+	"instances":
+	{
+		"1":
+		{
+			"node_name":"sept11Node01",
+			"process":"server1"
+		},
+		"2":
+		{
+			"node_name":"sept11Node02",
+			"process":"server1"
+		}
+	}
+}

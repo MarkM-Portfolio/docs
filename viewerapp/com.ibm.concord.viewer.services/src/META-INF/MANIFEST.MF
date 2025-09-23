@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Class-Path: lib/commons-fileupload-1.2.1.jar 
+ lib/json4j.jar 
+ lib/abdera-0.4.0-incubating.jar 
+ lib/axiom-api-1.2.1.jar 
+ lib/axiom-impl-1.2.1.jar 
+ lib/jaxen-1.1.1.jar 
+ lib/commons-lang-2.4.jar 
+ lib/commons-io-1.4.jar 
+ lib/jsoup-1.8.1.jar 
+ com.ibm.concord.viewer.ear.jar 
+ com.ibm.concord.viewer.admin.jar 
+ com.ibm.concord.viewer.config.jar 
+ com.ibm.concord.viewer.document.services.jar 
+ com.ibm.concord.viewer.document.common.jar 
+ com.ibm.concord.viewer.metadata.jar 
+ com.ibm.concord.viewer.platform.jar 
+ com.ibm.concord.viewer.spi.jar 
+ com.ibm.concord.viewer.lc3.integration.jar 
+ lib/files.spi.remote.jar 
+ lib/jackson-core-asl-1.7.3.jar 
+ lib/com.ibm.concord.spreadsheet.common.jar 
+ lib/com.ibm.concord.presentation.common.jar 
+ com.ibm.docs.viewer.ecm.integration.jar 
+ com.ibm.docs.viewer.mail.integration.jar 
+ lib/antlr-3.1.1-runtime.jar
+

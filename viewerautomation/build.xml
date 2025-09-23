@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM.                             -->
+<!--                                                                   -->
+<!-- IBM Docs Source Materials                                         -->
+<!--                                                                   -->
+<!-- (c) Copyright IBM Corporation 2012. All Rights Reserved.          -->
+<!--                                                                   -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<project name="viewerAutomation" basedir="." default="zipBuild">
+	<target name="client.build">
+		<ant dir="com.ibm.docs.viewer.automation" inheritAll="true"/>
+	</target>
+	
+	<target name="war.build">
+		<ant dir="com.ibm.docs.viewer.automation.war" inheritAll="true"/>
+	</target>
+	
+	<target name="installer.build">
+		<ant dir="com.ibm.docs.viewer.automation.deployment" inheritAll="true"/>
+	</target>
+
+	<target name="ear.build" depends="war.build">
+		<ant dir="com.ibm.docs.viewer.automation.ear" inheritAll="true"/>
+	</target>
+	
+	<target name="zipBuild" depends="client.build, ear.build, installer.build">
+		<zip destfile="${build.home}/viewer.automation.zip">
+			<fileset dir="${build.home}" includes="**/*"/>
+		</zip>
+	
+		<delete includeemptydirs="true">					
+			<fileset dir="${build.home}" includes="**/*.ear" />
+			<fileset dir="${build.home}" includes="**/*.war" />
+			<fileset dir="${build.home}" includes="**/*.json" />
+			<fileset dir="${build.home}/com.ibm.docs.viewer.automation"/>
+			<fileset dir="${build.home}/installer"/>
+			
+		</delete>
+	</target>
+</project>

@@ -1,0 +1,45 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 21 2011. (version: OneUI-3.0.1_20110621-0300)
+these are the styles for buttons
+companion files: buttons.css / buttonsTheme.css
+companion files: buttonsRTL.css / buttonsThemeRTL.css*/
+/*** B U T T O N S ***/
+
+/*all buttons*/
+.lotusui30 .lotusBtn, .lotusui30 .lotusBtnImg{margin:0;/*reset to get rid of Safari 0em user agent style*/background-color:#f1f1f1;background-image:-moz-linear-gradient(top, #ffffff 0%, #ebebeb 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebebeb));color:#000;font-weight:bold;text-align:center;border:1px solid #aaa;}
+.lotusui30 .lotusBtn{font-size:.9em;}
+/*all buttons created using an input or button tag*/
+.lotusui30 .lotusBtn{margin-left:5px;padding:2px 7px;cursor:pointer;}
+.lotusui_ie .lotusui30 .lotusBtn{padding:1px;}/*adjustment for IE funky extra padding*/
+.lotusui_ie .lotusui30 .lotusBtn{line-height:1.7em;}/*fix for discrepency in button tag height between buttons with and without an image*/
+.lotusui_ie .lotusui30 .lotusBtn img{margin:.5em 0 .3em 0;} /*need this for button with drop-down arrow to look okay in IE*/
+/*image buttons - an imput type=image wrapped with a span or an img wrapped with a link*/
+.lotusui30 .lotusBtnImg{padding:2px;display:-moz-inline-box;display:inline-block;vertical-align:middle;line-height:1;}/*default padding, which makes a 16 pixel icon if the image uses the default image size*/
+.lotusui30 .lotusBtnImg input{margin:0;width:16px;height:16px;background-repeat:no-repeat;vertical-align:middle;/*fixes IE6*/}/*default margin, padding and size*/
+.lotusui_ie .lotusui30 .lotusBtnImg{vertical-align:top;}
+.lotusui_ie .lotusui30 .lotusBtnImg input{margin-top:-1px;}/*extra tweak to center image in IE*/
+.lotusImagesOff .lotusui30 .lotusBtnImg input{display:none;}
+/*disabled buttons*/
+.lotusui30 .lotusBtnDisabled{color:#b0b0b0 !important;background-color:#eee !important;cursor:default !important;border-color:#ccc !important;}/*we don't want disabled button border color to change on hover*/
+.lotusui30 .lotusBtnDisabled input, .lotusui30 .lotusBtnDisabled a{cursor:default;}
+/*for high contrast mode*/
+.lotusui30 .lotusBtnDisabled input{opacity:.3 !important;filter:alpha(opacity=30) !important;}/*for image buttons*/
+.lotusImagesOff .lotusui30 .lotusBtnImg a.lotusAltText, .lotusImagesOff .lotusui30 .lotusBtnImg a.lotusAltText:visited, .lotusImagesOff .lotusui30 .lotusBtnImg a.lotusAltText:hover, .lotusImagesOff .lotusui30 .lotusBtnImg a.lotusAltText:focus, .lotusImagesOff .lotusui30 .lotusBtnImg a.lotusAltText:active{color:#000;text-decoration:none;}
+.lotusImagesOff .lotusui30 .lotusBtnDisabled{opacity:.5;color:#000 !important;filter:alpha(opacity=50) !important;} 
+/*miscellaneous*/
+.lotusui30 .lotusBtnContainer{white-space:nowrap;overflow:hidden;}/*put this around a bunch of "link" buttons*/
+.lotusui30 .lotusBtnDivider{border-bottom:1px solid #e0e0e0;padding-bottom:5px;}/*add this as an additional class when you need a bottom divider for the buttons*/
+/*generic/common buttons*/
+/*put the style on the wrapper span along with the lotusBtnImg class*/
+.lotusui30 .lotusAdd input{background-image:url(../../images/lotusHSprite-8bit.png);background-position:-423px -8px;opacity:0.40;filter:alpha(opacity=40)}
+.lotusui30 .lotusClose input{width:16px;height:16px;background-image:url(../../images/lotusHSprite-8bit.png);background-position:-459px -8px;opacity:0.40;filter:alpha(opacity=40);}
+.lotusui30 .lotusClose input:hover, .lotusui30 .lotusClose input:focus, .lotusui30 .lotusClose input:active{opacity:0.50;filter:alpha(opacity=50);}
+/*hover states*/
+.lotusui30 .lotusBtn:hover, .lotusui30 .lotusBtn:focus, .lotusui30 .lotusBtn:active, .lotusui30 .lotusBtnImg:hover, .lotusui30 .lotusBtnImg:focus, .lotusui30 .lotusBtnImg:active{border-color:#666;}
+
+
+
+/***********************************************************/
+

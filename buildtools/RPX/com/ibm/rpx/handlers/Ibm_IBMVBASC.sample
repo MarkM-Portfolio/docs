@@ -1,0 +1,19 @@
+VERSION 5.00
+Begin VB.Form SampleObject 
+   Caption         =   "Sample Object"
+   ClientHeight    =   4335
+   ClientLeft      =   45
+   ClientTop       =   330
+   ClientWidth     =   4920
+   Begin VB.TextBox txtServer 
+      Height          =   285
+      Left            =   1680
+      Text            =   "Sample text."
+      Top             =   828
+      Width           =   3135
+   End
+End
+' Here is a comment statement.
+Private Sub cmdOK_Click()
+    Unload Me
+  End Sub

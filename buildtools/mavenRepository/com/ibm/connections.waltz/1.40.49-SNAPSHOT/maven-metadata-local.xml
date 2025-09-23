@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.ibm</groupId>
+  <artifactId>connections.waltz</artifactId>
+  <version>1.40.49-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>201602122314</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.40.49-SNAPSHOT</value>
+        <updated>201602122314</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.40.49-SNAPSHOT</value>
+        <updated>201602122314</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

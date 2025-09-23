@@ -1,0 +1,13 @@
+{
+  "OpenSymbol":"MS Gothic,Tahoma",
+  "Wingdings":"zapfdingbats,webdings,symbol,Tahoma",
+  "Wingdings 2":"wingdings,zapfdingbats,webdings,symbol,Tahoma",
+  "Wingdings 3":"wingdings,zapfdingbats,webdings,symbol,Tahoma",
+  "zapfdingbats":"webdings,symbol,Tahoma",
+  "itczapfdingbats":"dingbats,Tahoma",
+  "monotypesorts":"dingbats,Tahoma",
+  "starbats":"dingbats,Tahoma",
+  "dingbats":"starbats,Tahoma",
+  "webdings":"symbol,Tahoma",
+  "WP MathA":"symbol,Tahoma"
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="rpm" basedir="." default="rpm">
+	<property name="checkError" value="false"/> 
+	<property name="scFolderName" value="SC10.0_DocsProxy"/>	
+        	
+	<target name="rpm">	
+        <!-- replace timestamp 20120425-0100 with 201204250100 -->
+        <echo message="${build.timestamp}" file="${basedir}\timestamp.tmp"/>
+        <loadfile property="rpm.timestamp" srcFile="${basedir}\timestamp.tmp">
+            <filterchain>
+                <tokenfilter>
+                    <replaceregex pattern="-" replace="" flags="g"/>
+                </tokenfilter>
+            </filterchain>
+        </loadfile>        
+        
+        <replace file ="${basedir}\rpm.spec" token="@@@version@@@" value="${build.version}" />
+        <replace file ="${basedir}\rpm.spec" token="@@@timestamp@@@" value="${rpm.timestamp}" />
+        
+        <property name="build.rpm.command" value="${basedir}/buildRpm"/>                    
+		
+        <exec executable="chmod" failonerror="${checkError}">
+            <arg value="+x"/>
+            <arg value="${build.rpm.command}"/>
+        </exec>
+		
+        <exec executable="chmod" failonerror="${checkError}">
+            <arg value="755"/>
+			<arg value="-R"/>
+            <arg value="${basedir}/files"/>
+        </exec>		
+
+        <exec executable="${build.rpm.command}" failonerror="${checkError}">
+			<arg line="-basedir ${basedir}"/>
+			<arg line="-timestamp"/>
+        </exec>
+				
+		<property name="scFolderNameWithVersion" value="${scFolderName}_${build.timestamp}"/>
+        <property name="scTargetFolder" value="${build.home}/${scFolderNameWithVersion}/Webkits"/>
+		<mkdir dir="${scTargetFolder}"/>
+		<copy todir="${scTargetFolder}" failonerror="${checkError}">
+			<fileset dir="${basedir}/../target/RPMS/x86_64" includes="*.rpm"/>
+		</copy>
+		
+   	</target>
+  
+</project>
+
+

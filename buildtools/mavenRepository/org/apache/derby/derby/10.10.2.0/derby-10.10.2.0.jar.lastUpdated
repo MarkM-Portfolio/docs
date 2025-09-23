@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Dec 16 16:52:45 CST 2015
+https\://repo.maven.apache.org/maven2/.lastUpdated=1450255965624
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.error=
+file\://C\:\\Work\\DocsWorkspaceSandbox\\SCMainStreamDocs\\buildtools/mavenRepository/.lastUpdated=1450255917020
+@default-java.net-http\://download.java.net/maven/2/.lastUpdated=1450255959033
+http\://download.java.net/maven/2/.error=Could not transfer artifact org.apache.derby\:derby\:jar\:10.10.2.0 from/to java.net (http\://download.java.net/maven/2/)\: Connect to download.java.net\:80 [download.java.net/23.3.98.11, download.java.net/23.3.98.25] failed\: Connection timed out\: connect

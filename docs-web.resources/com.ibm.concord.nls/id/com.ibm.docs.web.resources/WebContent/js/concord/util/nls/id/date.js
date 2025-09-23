@@ -1,0 +1,22 @@
+({
+	question:"Pertanyaan",
+	issue:"Masalah",
+	toDo:"Tugas",
+	comment:"Komentar",
+	done:"Selesai",
+	jan:"Jan",
+	feb:"Feb",
+	mar:"Mar",
+	apr:"Apr",
+	may:"Mei",
+	june:"Juni",
+	july:"Juli",
+	aug:"Agst",
+	sept:"Sept",
+	oct:"Okt",
+	nov:"Nov",
+	dec:"Des",
+	pm:"PM",
+	am:"AM",
+	assignTo:"Tugaskan untuk: "
+})

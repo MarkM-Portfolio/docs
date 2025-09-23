@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prechecks productName="HCL Docs">
+	<precheck type="ConfigurablePrecheck">
+		<condition name="software_mode" value="Premise" expectResult="true"/>
+		<parameter name="checkingParameter" value="shared_data_dir"/>
+		<task type="CheckExistence" isHungCase="false" expectResult="true"/>
+		<task type="CheckIsPath" isHungCase="false" expectResult="true"/>
+		<task type="CheckReadable" isHungCase="false" expectResult="true"/>
+		<task type="CheckWritable" isHungCase="false" expectResult="true"/>
+	</precheck>
+	<precheck type="ConfigurablePrecheck">
+		<condition name="software_mode" value="Premise" expectResult="true"/>
+		<parameter name="checkingParameter" value="files_url"/>
+		<task type="CheckURL" isHungCase="false" expectResult="true"/>
+	</precheck>
+</prechecks>

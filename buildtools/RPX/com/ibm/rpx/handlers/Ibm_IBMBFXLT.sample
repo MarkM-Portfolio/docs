@@ -1,0 +1,6 @@
+&Edit	&Edit
+&Paste{_tab}Ctrl-V	&Paste{_tab}Ctrl-V
+1 minute, 1 second	1 minute, 1 second
+1 minute, {seconds} seconds	1 minute, {seconds} seconds
+Action "{actionTitle}" has completed.	Action "{actionTitle}" has completed.
+test	year<image href="#"/>month&#38;day&nbsp;hour

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>rtc4web_server</display-name>
+	<servlet>
+		<servlet-name>RTCServlet</servlet-name>
+		<servlet-class>com.ibm.rtc.servlet.RTCServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>PolledMapServlet</servlet-name>
+		<servlet-class>com.ibm.rtc.servlet.PolledMapServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>PolledListServlet</servlet-name>
+		<servlet-class>com.ibm.rtc.servlet.PolledListServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>ChannelServlet</servlet-name>
+		<servlet-class>com.ibm.rtc.servlet.ChannelServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>RTCServlet</servlet-name>
+		<url-pattern>/RTCServlet/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PolledMapServlet</servlet-name>
+		<url-pattern>/map/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PolledListServlet</servlet-name>
+		<url-pattern>/list/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChannelServlet</servlet-name>
+		<url-pattern>/channel/*</url-pattern>
+	</servlet-mapping>	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

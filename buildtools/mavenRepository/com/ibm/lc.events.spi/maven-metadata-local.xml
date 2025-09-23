@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ibm</groupId>
+  <artifactId>lc.events.spi</artifactId>
+  <versioning>
+    <release>NONE</release>
+    <versions>
+      <version>NONE</version>
+    </versions>
+    <lastUpdated>20150412120059</lastUpdated>
+  </versioning>
+</metadata>

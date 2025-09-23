@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: lib/commons-io-1.4.jar 
+ com.ibm.concord.viewer.ear.jar 
+ com.ibm.concord.viewer.platform.jar 
+ com.ibm.concord.viewer.spi.jar 
+ com.ibm.concord.viewer.cache.jar
+

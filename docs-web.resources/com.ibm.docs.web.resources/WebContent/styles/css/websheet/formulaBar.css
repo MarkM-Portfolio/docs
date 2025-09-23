@@ -1,0 +1,65 @@
+.formulaBar {
+width:100%; 
+background-color:#f1f1f1; 
+border-bottom:1px #999999 solid; 
+overflow:hidden;
+}
+
+.namebox {
+border-color: #AAAAAA #E2E2E2 #E2E2E2 #AAAAAA;
+border-width: 1px;
+height:15px; 
+width:120px; 
+font-family:Arial, Helvetica, sans-serif; 
+font-size:12px; 
+color:#000000; 
+margin:1px 5px 1px 10px; 
+padding:2px; 
+background-color:#F1F7FF;
+vertical-align: middle;
+
+}
+
+.AllFormulas {
+width:150px; 
+height:20px; 
+border:1px #aaaaaa solid;
+background:#ffffff url(./img/bg_btn_formula.gif) bottom  repeat-x; 
+font-family:Arial, Helvetica, sans-serif; 
+font-size:11px; 
+color:#000000;
+margin:1px 5px 1px 0px; 
+}
+
+
+.inputline{
+padding:2px !important; 
+border-color: #AAAAAA #E2E2E2 #E2E2E2 #AAAAAA;
+border-width: 1px;
+height:14px; 
+font-family:Arial, Helvetica, sans-serif; 
+font-size:12px; 
+vertical-align: middle;
+color:#000000; 
+overflow:hidden;
+margin:1px 5px 1px 5px; 
+}
+
+.formualListLabel{
+font-weight:bold;
+}
+.formulaList{
+width: 360px;
+}
+.formulaDiscp{
+width: 360px;
+height: 75px;
+}
+.formulaSyntax{
+margin-top: 20px;
+}
+
+div.dijitDialogRtl .formulaSyntax {
+    direction: ltr;
+    text-align: right;
+}

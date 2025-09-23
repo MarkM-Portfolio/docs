@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+  <parent>
+    <groupId>com.ibm.docs</groupId>
+    <artifactId>ViewerLCCustomizeApp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.ibm.docs.SmartCloud</groupId>
+  <artifactId>ViewerLCCustomizeApp</artifactId>
+  <name>SmartCloud ViewerLCCustomizeApp - zip</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <build.version>${build.smartcloud.version}</build.version>
+  </properties>    
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ibm.docs.SmartCloud</groupId>
+      <artifactId>Viewer_LC35_OSGIExtension</artifactId>
+      <version>${project.version}</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.docs.SmartCloud</groupId>
+      <artifactId>viewer-ext-version.txt</artifactId>
+      <version>${project.version}</version>
+      <type>txt</type>
+    </dependency>       
+    <dependency>
+      <groupId>com.ibm.docs</groupId>
+      <artifactId>com.ibm.concord.viewer.lcfiles.daemon</artifactId>
+      <version>${project.version}</version>
+    </dependency>    
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>Build SmartCloud ViewerLCCustomizeApp.zip</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly_SmartCloud_ViewerLCCustomizeApp.zip.xml</descriptor>
+              </descriptors>
+              <finalName>${project.artifactId}</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
+            </configuration>            
+          </execution>
+        </executions>
+      </plugin>      
+    </plugins>
+  </build>  
+</project>

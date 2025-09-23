@@ -1,0 +1,17 @@
+<project name="com.ibm.docs.web.resources" basedir="." default="deploy">
+	<property name="bin.dir" value="bin"/>
+	<target name="clean">
+		<delete dir="${bin.dir}"/>
+	</target>
+	
+	<target name="init" depends="clean">
+		<mkdir dir="${bin.dir}"/>
+	</target>
+    
+	<target name="deploy" depends="init">			
+        <ear destfile="${build.home}/${ant.project.name}.ear" appxml="${basedir}/META-INF/application.xml">
+            <fileset dir="${build.home}/" includes="**/com.ibm.docs.web.resources*.war"/>
+        	<fileset dir="." includes="META-INF/"/>
+        </ear>
+	</target>
+</project>

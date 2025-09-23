@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadata version='0.0.4'?>
+<offering assemblyId='com.ibm.docs.im.installer.main' assemblyVersion='__VERSION__.qualifier' id='com.ibm.docs.im.installer' version='__VERSION__.qualifier'>
+	<information name='%offering.display.name' version='__VERSION__.0'>
+	%offering.description
+	</information>
+	<property name='vendor.name' value='%vendor.name.value'/>
+	<property name='default.location.win32' value='C:\IBM\ConnectionsDocs'/>
+	<property name='default.location.linux' value='/opt/IBM/ConnectionsDocs'/>
+	<property name='default.user.location.win32' value='${homeLocation}\IBM\ConnectionsDocs'/>
+	<property name='default.user.location.linux' value='${homeLocation}/IBM/ConnectionsDocs'/>
+	<property name='default.group.location.win32' value='${homeLocation}\IBM\ConnectionsDocs'/>
+	<property name='default.group.location.linux' value='${homeLocation}/IBM/ConnectionsDocs'/>
+	<property name='default.commonlocation.win32' value='C:\IBM\IMDocsShared'/>
+	<property name='default.commonlocation.linux' value='/opt/IBM/IMDocsShared'/>
+	<property name='default.user.commonlocation.win32' value='${homeLocation}\IBM\IMDocsShared'/>
+	<property name='default.user.commonlocation.linux' value='${homeLocation}/IBM/IMDocsShared'/>
+	<property name='default.group.commonlocation.win32' value='${homeLocation}/IBM/IMDocsShared'/>
+	<property name='default.group.commonlocation.linux' value='${homeLocation}/IBM/IMDocsShared'/>
+	<property name='default.profile' value='HCL Connections Docs'/>
+	<property name='intuitive.uninstall.install.order.required' value='true'/>
+	<!--property name='localeLanguages' value='iw, ro, da, zh_HK, ko, fi, sk, en_ZZ, el, cs, th, ja, en, zh, pl, tr, de, en_AA, hr, es, hu, it, nl, ru, ar, zh_TW, pt_BR, no, sv, fr, sl'/-->
+	<property name='prereq.bundles.precheck' value='[1.3.2,1.3.3000):com.ibm.cic.agent.precheck.workitem21876'/>
+	<featureGroup kind='RequiredAndVisible'>
+		<information name='%feature.display.name.10000'/>
+		<featureGroup exclusive='true' kind='SelectedByDefault'>
+			<information name='%feature.ConnectionsDocs.IBMProductsIntegrationG.name'>	
+			  %feature.ConnectionsDocs.IBMProductsIntegrationG.description
+			</information>
+			<feature id='IBMConnections' kind='SelectedByDefault' selectionId='IBMConnections'>
+				<information name='%feature.ConnectionsDocs.IBMConnections.name'>
+				%feature.ConnectionsDocs.IBMConnections.description
+				</information>
+			</feature>
+		</featureGroup>
+		<feature id='IBMConversion' kind='SelectedByDefault' selectionId='IBMConversion'>
+			<information name='%feature.IBMDocs.IBMConversion.name'>
+			%feature.IBMDocs.IBMConversion.description
+			</information>
+			<selectedByBundle class='ConvFeature' id='com.ibm.docs.im.installer.vfeature'/>
+		</feature>
+		<feature id='IBMDocs' kind='SelectedByDefault' selectionId='IBMDocs'>
+			<information name='%feature.IBMDocs.IBMDocs.name'>
+			%feature.IBMDocs.IBMDocs.description
+			</information>
+			<selectedByBundle class='DocsFeature' id='com.ibm.docs.im.installer.vfeature'/>
+		</feature>
+		<feature id='IBMViewer' kind='SelectedByDefault' selectionId='IBMViewer'>
+			<information name='%feature.IBMDocs.IBMViewer.name'>
+			%feature.IBMDocs.IBMViewer.description
+			</information>
+			<selectedByBundle class='ViewerFeature' id='com.ibm.docs.im.installer.vfeature'/>
+		</feature>
+		<feature id='IBMDocsProxy' kind='SelectedByDefault' selectionId='IBMDocsProxy'>
+			<information name='%feature.IBMDocs.IBMDocsProxy.name'>
+			%feature.IBMDocs.IBMDocsProxy.description
+			</information>
+			<selectedByBundle class='DocsProxyFeature' id='com.ibm.docs.im.installer.vfeature'/>
+		</feature>
+		<feature id='IBMDocsExt' kind='SelectedByDefault' selectionId='IBMDocsExt'>
+			<information name='%feature.IBMDocs.IBMDocsExt.name'>
+			%feature.IBMDocs.IBMDocsExt.description
+			</information>
+			<selectedByBundle class='ExtFeature' id='com.ibm.docs.im.installer.vfeature'/>
+		</feature>
+		<feature id='IBMViewerExt' kind='SelectedByDefault' selectionId='IBMViewerExt'>
+			<information name='%feature.IBMDocs.IBMViewerExt.name'>
+			%feature.IBMDocs.IBMViewerExt.description
+			</information>
+		</feature>
+	</featureGroup>
+	<offeringBundle id='com.ibm.docs.im.installer.vfeature'>
+		<selectedByExpression>
+			<or>
+				<selectedBy id='InstallHandler'/>
+				<selectedBy id='InstallWizardPages'/>
+			</or>
+		</selectedByExpression>
+	</offeringBundle>
+	<offeringBundle id='com.ibm.docs.im.installer.common'>
+		<selectedByExpression>
+			<or>
+				<selectedBy id='InstallHandler'/>
+				<selectedBy id='InstallWizardPages'/>
+			</or>
+		</selectedByExpression>
+	</offeringBundle>
+	<offeringBundle id='com.ibm.docs.im.installer'>
+		<selectedByExpression>
+			<or>
+				<selectedBy id='InstallHandler'/>
+				<selectedBy id='InstallWizardPages'/>
+			</or>
+		</selectedByExpression>
+	</offeringBundle>
+	<offeringBundle id='com.ibm.docs.im.installer.lic'>
+		<selectedBy id='OfferingLicense'/>
+	</offeringBundle>
+	<property name='allowExistingEclipse' value='false'/>
+	<property name='supportedPlatforms' value='(|(&amp;(os=win32)(arch=x86_64))(&amp;(os=linux)(arch=x86_64)))'/>
+	<property name='offering.efdVersion' value='__VERSION__.0'/>
+	<property name='offering.supports.64bit.im' value='true'/>
+	<property name='offering.RequiresAdmin' value='false'/>
+	<property name='offering.SupportsGroupMode' value='true'/>
+	<property name='default.user.commonlocation' value='${homeLocation}\IBM\IMDocsShared'/>
+	<property name='default.user.location' value='${homeLocation}\IBM\ConnectionsDocs'/>
+	<property name='default.location' value='C:\IBM\ConnectionsDocs'/>
+	<property name='default.commonlocation' value='C:\IBM\IMDocsShared'/>
+	<property name='default.group.location' value='${homeLocation}/IBM/ConnectionsDocs'/>
+	<property name='default.group.commonlocation' value='${homeLocation}/IBM/IMDocsShared'/>
+</offering>

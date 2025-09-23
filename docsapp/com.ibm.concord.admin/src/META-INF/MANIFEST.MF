@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.concord.platform.jar 
+ com.ibm.concord.draft.jar 
+ com.ibm.concord.job.jar 
+ lib/abdera-0.4.0-incubating.jar 
+ lib/json4j.jar 
+ com.ibm.docs.repository.jar 
+ com.ibm.docs.common.jar 
+ com.ibm.concord.document.services.jar
+

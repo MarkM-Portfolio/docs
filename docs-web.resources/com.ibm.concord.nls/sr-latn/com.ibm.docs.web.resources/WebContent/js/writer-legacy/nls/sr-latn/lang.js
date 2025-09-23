@@ -1,0 +1,77 @@
+({
+	LOADING: "Sadržaj se učitava.",
+	LOAD_FINISHED: "Učitavanje sadržaja je završeno.",
+	PAGE_SETUP: "Podešavanje stranice",
+	NOTE_INVALIDACTION_FOOTNOTE:"Ovo nije važeća radnja za napomenu.",
+	NOTE_INVALIDACTION_ENDNOTE:"Ovo nije važeća radnja za endnotu.",
+	PAGENUMBER_OF_TOTALNUMBER:"Stranica ${0} od ${1}", //page 1 of N
+	PAGE_NUMBER: "Stranica: ${pageNumber}/${totalPageNumber}",
+	toc:{
+		title : "Sadržaj",
+		update: "Ažuriraj",
+		del: "Brisanje",
+		toc: "Sadržaj",
+		linkTip: "Ctrl+klik za navigaciju",
+		linkTip_Mac: "\u2318 kliknite za navigaciju",
+		pageNumber: "Samo broj stranice",
+		entireTable: "Čitavu tabelu"
+	},
+	link:{
+		addlink:"Dodaj link",
+		gotolink: "Otvori link",
+		unlink	: "Ukloni link",
+		editlink: "Uredi link",
+		internalLink: "Interni link",
+		ctrlLink: "Ctrl+klik za otvaranje linka",
+		ctrlLink_Mac: "\u2318Kliknite da biste otvorili link",
+		cannotOpen: " nije moguće otvoriti pomoću aplikacije ${productName}."
+	},
+	field:{
+		update: "Ažuriraj polje"
+	},
+	insertTime:"Umetanje vremena",
+	insertDate:"Umetanje datuma",
+	selectDate:"Izaberite datum",
+	selectTime:"Izaberite vreme",
+	acc_blank: "prazno",// when selection is nothing but space char and empty paragraph
+	acc_space: "razmak",// string read out when the cursor is before one space char
+	acc_inLink: "u linku ",
+	acc_inField: "u polju ",
+	acc_selected :" izabrano",
+	acc_inTable: "u tabeli, red ${0} kolona ${1} ",
+	acc_imageSelected: "grafika je izabrana",
+	acc_canvasSelected:"oblik je izabran",
+	acc_textboxSelected:"okvir za tekst je izabran",
+	ACC_TABLE_TABLESIZE:"Izabrali ste ${0} red(ov)a, ${1} kolone/a",
+	ACC_TABLE_MAXSIZE:" Podržana maksimalna veličina tabele je 20*20",
+	ACC_headerFooterMode: "režim uređivanja zaglavlja i podnožja",
+	ACC_EditorMode: "režim uređivanja za uređivača",
+	ACC_FootnotesMode: "režim uređivanja za napomene",
+	ACC_EndnotesMode: "režim uređivanja za endnote",
+	ACC_uniformTable: "Dodat je novi red",
+	Acc_column :"kolona ${0}",
+	acc_page :"stranica ${0}",
+	acc_section:"odeljak ${0}",
+	acc_spellWarn:"neispravno napisano",
+	acc_outTable:"van tabele",
+	acc_link :"link",
+	acc_field :"polje",
+	acc_footnote:"napomena",
+	acc_endnote:"endnota",	
+	acc_editor:"Uredio/la ${0}",
+	tablePropertyTitle: "Svojstva tabele",
+	headerTitle:"Zaglavlje",
+	footerTitle:"Podnožje",
+	firstheaderTitle:"Zaglavlje prve stranice",
+	firstfooterTitle:"Podnožje prve stranice",
+	evenheaderTitle:"Zaglavlje parne stranice",
+	evenfooterTitle:"Podnožje parne stranice",
+	oddheaderTitle:"Zaglavlje neparne stranice",
+	oddfooterTitle:"Podnožje neparne stranice",
+	showTableBorder:"Prikaži granice tabele",
+	list_none: "Nijedan",
+	SET_NUMBERING_VALUE: "Podešavanje vrednosti numeracije",
+	BIDI_CONTENT_EDITING: "Ovaj dokument obuhvata dvosmerni sadržaj. Da biste ispravno radili sa ovim dokumentom, uključite podršku za dvosmerni sadržaj u ličnim podešavanjima programa HCL Connections."
+})
+	
+

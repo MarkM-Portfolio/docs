@@ -1,0 +1,156 @@
+/*styles for title page title element*/
+.Grid-title p
+{
+	text-align:left;
+}
+.Grid-title {
+	/*font-size:30.6pt;*/
+	font-size:1.7em;
+	font-family:Arial;
+	color: #252525;
+	text-transform: uppercase
+}
+.Grid-title li {
+		/*font-family:StarSymbol;
+		font-size:45%;*/
+}
+.Grid-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Grid-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Grid-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+
+/*styles for title page subtitle element*/
+.Grid-subtitle p
+{
+	margin-left: 0cm;
+	margin-right:0cm;
+	text-align:left;
+	text-indent:0cm;
+}
+.Grid-subtitle {
+	/*font-size:16.2pt;*/
+	font-size:0.9em;
+	font-family:Arial;
+	color: #464646;
+	text-transform: uppercase
+}
+.Grid-subtitle li {
+		font-family:StarSymbol;
+		font-size:45%;
+}
+.Grid-subtitle li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Grid-subtitle li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Grid-subtitle li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+.concord .Grid-datetime {
+	font-family:Arial;
+	color:#464646;
+	text-align:left;	
+}
+
+.concord .Grid-pagenumber {
+	font-family:Arial;
+	color:#464646;
+	text-align:right;	
+}
+
+.concord .Grid-footer {
+	font-family:Arial;
+	color:#464646;
+	text-align:center;	
+}
+.Grid_default {
+	/*font-size:44pt;*/
+	/*font-size:2em;*/
+	font-family:Arial;
+	color:#464646;
+}
+/*styles for other page (non title page) title */
+.Grid_text-title p
+{
+	text-align:left;
+}
+.Grid_text-title {
+	/*font-size:36pt;*/
+	font-size:2em;
+	font-family:Arial;
+	color:#252525;
+}
+.Grid_text-title li {
+	/*
+		font-family:StarSymbol;
+		font-size:45%;
+		*/
+}
+.Grid_text-title li ul li {
+		/*padding-left: 0.6cm;*/
+		padding-left: 2.14%;
+}
+.Grid_text-title li ul li ul li{
+		/*padding-left: 1.2cm;*/
+		padding-left: 4.28%;
+}
+.Grid_text-title li ul li ul li ul li{
+		/*padding-left: 1.8cm;*/
+		padding-left: 6.43%;
+}
+/*styles for outline */
+.Grid_text-outline1 p
+{
+	margin-top: 0cm;
+	/*margin-bottom: 0.5cm;*/
+	margin-bottom:2.38%;
+}
+.Grid_text-outline1 li {
+		/*font-family:StarSymbol;*//* only for the bullet icon*/
+		/*padding-left: 0.3cm;*/
+		padding-left: 1.07%;
+		/*font-size:45%;*//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.9cm"*/
+}
+.Grid_text-outline1 li ul li {
+		/*padding-left: 1.5cm;*/
+		padding-left: 5.36%;
+}
+.Grid_text-outline1 li ul li ul li{
+		/*padding-left: 2.8cm;*/
+		padding-left: 10%;
+		/*font-size:75%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Grid_text-outline1 li ul li ul li ul li{
+		/*padding-left: 4.2cm;*/
+		padding-left: 15%;
+		/*font-size:45%; *//* only for the bullet icon*/
+		/*conversion of text:min-label-width="0.6cm"*/
+}
+.Grid_text-outline1 {
+	/*font-size:25.2pt;*/
+	font-size:1.4em;
+	font-family:Arial;
+	color:#464646;
+}
+
+body.lotusJapanese .Grid-title, body.lotusJapanese .Grid-subtitle,body.lotusJapanese .Grid_default, body.lotusJapanese .Grid_text-title,body.lotusJapanese  .Grid_text-outline1{
+	font-family: MS PMincho, MS PGothic, Apple Gothic, Arial, Verdana, sans-serif;
+}
+
+body.lotusKorean .Grid-title, body.lotusKorean .Grid-subtitle, body.lotusKorean .Grid_default, body.lotusKorean .Grid_text-title,body.lotusKorean .Grid_text-outline1{
+     font-family: "Gulim","GulimChe",Arial, Helvetica, sans-serif ;
+}

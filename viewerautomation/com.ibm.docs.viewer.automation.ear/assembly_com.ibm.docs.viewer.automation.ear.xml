@@ -1,0 +1,40 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+  <id>${project.artifactId}</id>
+  <formats>
+    <format>ear</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>${project.basedir}</directory>
+      <outputDirectory>./</outputDirectory>
+      <includes>
+        <include>META-INF/</include>
+      </includes>        
+    </fileSet>
+  </fileSets>
+  <dependencySets>
+    <dependencySet>
+      <useProjectArtifact>false</useProjectArtifact>
+      <outputDirectory>./lib</outputDirectory>
+      <includes>
+        <include>commons-configuration:commons-configuration</include>
+        <include>3rd-dependencies:commons-configuration-1.5-plus</include>
+        <include>commons-lang:commons-lang</include>
+        <include>com.ibm:json4j</include>
+      </includes>
+      <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+    </dependencySet>
+    <dependencySet>
+      <useProjectArtifact>false</useProjectArtifact>
+      <outputDirectory>./</outputDirectory>
+      <includes>
+        <include>com.ibm.docs:com.ibm.docs.viewer.automation.war</include>
+      </includes>
+      <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+    </dependencySet>    
+  </dependencySets>
+
+</assembly>

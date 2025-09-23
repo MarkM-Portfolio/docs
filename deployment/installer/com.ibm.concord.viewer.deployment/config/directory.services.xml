@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ***************************************************************** --><!-- --><!-- IBM Confidential --><!-- --><!-- OCO Source Materials --><!-- --><!-- Copyright IBM Corp. 2007, 2015     --><!-- --><!-- The source code for this program is not published or otherwise --><!-- divested of its trade secrets, irrespective of what has been --><!-- deposited with the U.S. Copyright Office. --><!-- --><!-- ***************************************************************** --><config id="directory.services" version="3.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="directory.services.xsd">
+
+<!-- ***************************************** -->
+<!-- LDAP Profile Provider w/ BSS Extension -->
+<!-- ***************************************** -->
+<profileProvider class="com.ibm.lotus.lotuslive.connections.waltz.LDAPServiceProviderBSSEx">
+
+<!-- *************************** -->
+<!-- LDAP Profile Provider -->
+<!-- *************************** -->
+<!-- <profileProvider class="com.ibm.connections.directory.services.provider.LDAPServiceProvider"> -->
+
+<property name="java.naming.factory.initial">com.sun.jndi.ldap.LdapCtxFactory</property>
+<property name="java.naming.provider.url">ldap://hostname:port</property>
+<property name="java.naming.security.authentication">none</property>
+
+<!-- LDAP authentication
+<property name="java.naming.security.authentication">simple</property>
+<property name="java.naming.security.principal">cn=PublicGroupReader</property>
+<property name="java.naming.security.principal">cn=users</property>
+<property name="java.naming.security.principal">o=ibm</property>
+<property name="java.naming.security.principal">c=us</property>
+<property name="java.naming.security.credentials">Base64 Encoded Secret</property>
+LDAP authentication -->
+
+<!-- search base -->
+<property name="com.ibm.connections.directory.services.search.base.person">cn=users</property>
+<property name="com.ibm.connections.directory.services.search.base.person">o=ibm</property>
+<property name="com.ibm.connections.directory.services.search.base.person">c=us</property>
+
+<property name="com.ibm.connections.directory.services.search.base.group">cn=groups</property>
+<property name="com.ibm.connections.directory.services.search.base.group">o=ibm</property>
+<property name="com.ibm.connections.directory.services.search.base.group">c=us</property>
+
+<property name="com.ibm.connections.directory.services.search.base.organization">o=ibm</property>
+<property name="com.ibm.connections.directory.services.search.base.organization">c=us</property>
+
+<property name="com.ibm.connections.directory.services.search.base.policy">cn=policies</property>
+<property name="com.ibm.connections.directory.services.search.base.policy">o=ibm</property>
+<property name="com.ibm.connections.directory.services.search.base.policy">c=us</property>
+
+<!-- organizational subtree search base entry -->
+<property name="com.ibm.connections.directory.services.search.base.subtree.organizational">
+<![CDATA[
+o={0}
+]]>
+</property>
+
+<!-- object class -->
+<property name="com.ibm.connections.directory.services.attribute.objectclass.person">saasPerson</property>
+<property name="com.ibm.connections.directory.services.attribute.objectclass.group">ibm-saasGroup</property>
+<property name="com.ibm.connections.directory.services.attribute.objectclass.organization">organization</property>
+<property name="com.ibm.connections.directory.services.attribute.objectclass.policy">ibm-saasPolicy</property>
+
+<!-- ID attribute -->
+<property name="com.ibm.connections.directory.services.attribute.id.person">saasSubscriberID</property>
+<property name="com.ibm.connections.directory.services.attribute.id.group">ibm-saasUUID</property>
+<property name="com.ibm.connections.directory.services.attribute.id.organization">saasCustomerID</property>
+<property name="com.ibm.connections.directory.services.attribute.id.policy">ibm-saasPolicyId</property>
+
+<!-- RDN attribute -->
+<property name="com.ibm.connections.directory.services.attribute.rdn.group">ibm-saasUUID</property>
+
+<!-- default policy object -->
+<property name="com.ibm.connections.directory.services.value.id.policy.default">DefaultLotusLivePolicy</property>
+
+<!-- name attribute -->
+<property name="com.ibm.connections.directory.services.attribute.name.person">displayName</property>
+<property name="com.ibm.connections.directory.services.attribute.name.group">cn</property>
+<property name="com.ibm.connections.directory.services.attribute.name.organization">o</property>
+<property name="com.ibm.connections.directory.services.attribute.name.policy">cn</property>
+
+<!-- mail attribute -->
+<property name="com.ibm.connections.directory.services.attribute.mail.person">mail</property>
+
+<!-- login attribute -->
+<property name="com.ibm.connections.directory.services.attribute.login.person">uid</property>
+<property name="com.ibm.connections.directory.services.attribute.login.person">mail</property>
+
+<!-- group member attribute -->
+<property name="com.ibm.connections.directory.services.attribute.member.group">ibm-memberGroup</property>
+
+<!-- operational attribute for group membership -->
+<property name="com.ibm.connections.directory.services.attribute.membership.group">ibm-allGroups</property>
+
+<!-- operational attribute for member expansion -->
+<property name="com.ibm.connections.directory.services.attribute.expansion.member">ibm-allMembers</property>
+
+
+<!-- attribute list to be returned -->
+<property name="com.ibm.connections.directory.services.returned.attribute.person">objectclass</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.person">cn</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.person">mail</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.person">uid</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.person">saasCustomerID</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.person">saasSubscriberID</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.person">displayName</property>
+
+<property name="com.ibm.connections.directory.services.returned.attribute.group">objectclass</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.group">cn</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.group">description</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.group">ibm-saasUUID</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.group">saasCustomerID</property>
+
+<property name="com.ibm.connections.directory.services.returned.attribute.organization">objectclass</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.organization">o</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.organization">saasCustomerID</property>
+
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">objectclass</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">cn</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">ibm-saasPolicyId</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">ibm-saasPolicyType</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">ibm-saasHasGroups</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">ibm-saasSharingIntent</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">ibm-saasCommunities-EnableOrgPublic</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">ibm-saasCommunities-Moderated-EnableOrgPublic</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">ibm-saasFiles-EnableOrgPublic</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">ibm-saasPolicySet</property>
+<property name="com.ibm.connections.directory.services.returned.attribute.policy">saasCustomerID</property>
+
+<!-- cache capacity -->
+<property name="com.ibm.connections.directory.services.cache.capacity.entry.dn">300</property>
+<property name="com.ibm.connections.directory.services.cache.capacity.time.match.id.exact">300</property>
+<property name="com.ibm.connections.directory.services.cache.capacity.time.membership.group">300</property>
+<property name="com.ibm.connections.directory.services.cache.capacity.time.expansion.member">300</property>
+<property name="com.ibm.connections.directory.services.cache.capacity.match.userid.login.exact">300</property>
+
+<!-- cache expiration time in hour -->
+<property name="com.ibm.connections.directory.services.cache.expiration.time.entry.dn">1</property>
+<property name="com.ibm.connections.directory.services.cache.expiration.time.match.id.exact">1</property>
+<property name="com.ibm.connections.directory.services.cache.expiration.time.membership.group">12</property>
+<property name="com.ibm.connections.directory.services.cache.expiration.time.expansion.member">12</property>
+<property name="com.ibm.connections.directory.services.cache.expiration.time.match.userid.login.exact">1</property>
+
+<!-- search filter -->
+<property name="com.ibm.connections.directory.services.search.filter.name.lookup.person">
+<![CDATA[
+(&(objectClass=saasPerson)(|(mail={0})(cn={0})(sn={0})))
+]]>
+</property>
+
+<property name="com.ibm.connections.directory.services.search.filter.name.lookup.group">
+<![CDATA[
+(&(objectClass=ibm-saasGroup)(cn={0}))
+]]>
+</property>
+
+<property name="com.ibm.connections.directory.services.search.filter.name.lookup.organization">
+<![CDATA[
+(&(objectClass=organization)(cn={0}))
+]]>
+</property>
+
+<property name="com.ibm.connections.directory.services.search.filter.name.lookup.policy">
+<![CDATA[
+(&(objectClass=ibm-saasPolicy)(cn={0}))
+]]>
+</property>
+
+<property name="com.ibm.connections.directory.services.search.filter.groups.lookup.member">
+<![CDATA[
+(&(objectclass=ibm-saasGroup)(member={0}))
+]]>
+</property>
+
+<property name="com.ibm.connections.directory.services.search.filter.userid.map.lookup.person">
+<![CDATA[
+(&(objectClass=saasPerson)(|(mail={0})(uid={0})))
+]]>
+</property>
+
+<property name="com.ibm.connections.directory.services.search.filter.mail.lookup.person">
+<![CDATA[
+(&(objectClass=saasPerson)(mail={0}))
+]]>
+</property>
+
+<property name="com.ibm.connections.directory.services.search.filter.organizational.lookup.policy">
+<![CDATA[
+(&(objectclass=ibm-saasPolicy)(cn={0}))
+]]>
+</property>
+
+<!-- WCI, which can only be used when Waltz is running on SSO enabled environment -->
+<property name="com.ibm.connections.directory.services.waltz.communities.integration.service.enabled">true</property>
+<property name="com.ibm.connections.directory.services.waltz.communities.integration.service.url">http://hostname:port/communities/dsx/</property>
+<property name="com.ibm.connections.directory.services.waltz.communities.integration.service.auth.alias">connectionsAdmin</property>
+
+</profileProvider>
+
+</config>

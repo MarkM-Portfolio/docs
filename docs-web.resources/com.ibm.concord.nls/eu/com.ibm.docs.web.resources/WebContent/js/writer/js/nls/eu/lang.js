@@ -1,0 +1,93 @@
+/* ***************************************************************** */
+/*                                                                   */
+/* HCL Confidential                                                  */
+/*                                                                   */
+/* OCO Source Materials                                              */
+/*                                                                   */
+/* Copyright HCL Technologies Limited 2020                           */
+/*                                                                   */
+/* The source code for this program is not published or otherwise    */
+/* divested of its trade secrets, irrespective of what has been      */
+/* deposited with the U.S. Copyright Office.                         */
+/*                                                                   */
+/* ***************************************************************** */
+define({
+        PAGE_BREAK_TEXT: "Orri-jauzia",
+        SECTION_BREAK_TEXT: "Sekzio-jauzia",
+        LINE_BREAK_TEXT: "Lerro-jauzia",
+        COLUMN_BREAK_TEXT: "Zutabe-jauzia",
+        INSERT_IMAGE_NOT_PROPER_PLACE: "Barkatu, testuaren gorputzean eta tauletan bakarrik gehi daitezke irudiak, ez uneko kokapenean.",
+        LOADING: "Edukia kargatzen.",
+        LOAD_FINISHED: "Edukiaren kargatze-prozesua osatu da.",
+        PAGE_SETUP: "Orriaren konfigurazioa",
+        NOTE_INVALIDACTION_FOOTNOTE: "Ekintza hau ez da onartzen oin-oharretan.",
+        NOTE_INVALIDACTION_ENDNOTE: "Ekintza hau ez da onartzen amaiera-oharretan.",
+        PAGENUMBER_OF_TOTALNUMBER: "${0}. orria ${1}(e)tik", //page 1 of N
+        PAGE_NUMBER: "Orria: ${pageNumber} / ${totalPageNumber}",
+        toc: {
+            title: "Eduki-taula",
+            update: "Eguneratu",
+            del: "Ezabatu",
+            toc: "Eduki-taula",
+            linkTip: "Sakatu Ctrl nabigatzeko",
+            linkTip_Mac: "\u2318 sakatu nabigatzeko",
+            pageNumber: "Orrialde-zenbakia bakarrik",
+            entireTable: "Taula osoa"
+        },
+        link: {
+            addlink: "Gehitu esteka",
+            gotolink: "Ireki esteka",
+            unlink: "Kendu esteka",
+            editlink: "Editatu esteka",
+            internalLink: "Barneko esteka",
+            ctrlLink: "Ctrl+klik estekara joateko",
+            ctrlLink_Mac: "\u2318Sakatu estekara joateko",
+            cannotOpen: " ezin da hemendik ireki: ${productName}."
+        },
+        field: {
+            update: "Eguneratu eremua"
+        },
+        insertTime: "Txertatu ordua",
+        insertDate: "Txertatu data",
+        selectDate: "Hautatu data",
+        selectTime: "Hautatu ordua",
+        acc_blank: "hutsik", // when selection is nothing but space char and empty paragraph
+        acc_space: "zuriunea", // string read out when the cursor is before one space char
+        acc_inLink: "estekan ",
+        acc_inField: "eremuan ",
+        acc_selected: " hautatuta",
+        acc_inTable: "taulako ${0}. errenkada eta ${1}. zutabean ",
+        acc_imageSelected: "grafikoa hautatuta",
+        acc_canvasSelected: "forma hautatuta",
+        acc_textboxSelected: "testu-koadroa hautatuta",
+        ACC_TABLE_TABLESIZE: "${0} errenkada eta ${1} zutabe hautatu dituzu",
+        ACC_TABLE_MAXSIZE: " Onartzen den gehienezko taula-tamaina 20*20 da",
+        ACC_headerFooterMode: "goiburu eta oinaren edizio-modua",
+        ACC_EditorMode: "editorearen edizio-modua",
+        ACC_FootnotesMode: "oin-oharren edizio-modua",
+        ACC_EndnotesMode: "amaiera-oharren edizio-modua",
+        ACC_uniformTable: "Errenkada berri bat gehitu da",
+        Acc_column: "${0}. zutabea",
+        acc_page: "${0}. orria",
+        acc_section: "${0}. sekzioa",
+        acc_spellWarn: "ortografia zuzena da",
+        acc_outTable: "taulaz kanpo",
+        acc_link: "esteka",
+        acc_field: "eremua",
+        acc_footnote: "oin-oharra",
+        acc_endnote: "amaiera-oharra",
+        acc_editor: "${0}(e)k editatua",
+        tablePropertyTitle: "Taularen propietateak",
+        headerTitle: "Goiburua",
+        footerTitle: "Orri-oina",
+        firstheaderTitle: "Lehenengo orriaren goiburua",
+        firstfooterTitle: "Lehenengo orriaren oina",
+        evenheaderTitle: "Orri bikoitien goiburua",
+        evenfooterTitle: "Orri bikoitien oina",
+        oddheaderTitle: "Orri bakoitien goiburua",
+        oddfooterTitle: "Orri bakoitien oina",
+        showTableBorder: "Erakutsi taularen mugak",
+        list_none: "Bat ere ez",
+        SET_NUMBERING_VALUE: "Ezarri numerazio-balioa",
+        BIDI_CONTENT_EDITING: "Dokumentu honek bi noranzkoko edukia dauka. Dokumentu hau arazorik gabe kudeatzeko, aktibatu bi noranzkoko laguntza HCL Connections gunearen hobespenetan."
+});

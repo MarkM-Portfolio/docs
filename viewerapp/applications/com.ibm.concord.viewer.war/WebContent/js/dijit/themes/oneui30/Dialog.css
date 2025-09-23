@@ -1,0 +1,159 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2011.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on June 18 2011. (version: OneUI-3.0.1_20110618-0300)*/
+
+/* Dialog
+ * Styling Dialog includes two sections:Dialog and Tooltip & TooltipDialog
+ * Dialog:
+ * 1. Dialog (default styling):
+ * 		.dijitDialog - for border, shadow
+ * 2. Dialog title
+ * 		.dijitDialogTitleBar - for background-color, border
+ * 		.dijitDialogTitle - for font
+ * 3. Dialog content
+ * 		.dijitDialogPaneContent - for background-color, border
+ * 		.dijitDialogPaneContentArea - for padding, margin
+ * 4. Dialog action bar
+ * 		.dijitDialogPaneActionBar - for background-color, border, padding
+ * 5. Dialog underlay
+ * 		.dijitDialogUnderlay - for background-color
+ * Tooltip & TooltipDialog:
+ * 1. tooltip content container:
+ * 		.dijitTooltipContainer - for background-color, border, padding
+ * 2. tooltip connector:
+ * 		.dijitTooltipConnector - for position, size, background
+ */
+.oneui30 .dijitDialog {
+	overflow: visible;
+	outline: none;
+    border:7px solid #999/*this is needed for IE*/;
+	border:7px solid rgba(3, 3, 3, 0.33);
+    -moz-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 0px 0px 15px #aaa;
+	-webkit-box-shadow:  0px 0px 15px #aaa;
+	box-shadow: 0px 0px 15px #aaa;
+}
+
+.oneui30 .dijitDialogPaneContent {
+	background: #fff;
+    position: relative;
+	padding: 15px 20px;
+}
+
+.oneui30 .dijitDialogPaneActionBar { /* gray bar at bottom of dialog with OK/Cancel buttons */
+	margin-top: 15px;
+	padding-top: 15px;
+    text-align: right;
+	border-top: 1px solid #aaa;
+}
+
+.oneui30 .dijitDialogPaneActionBar .dijitButton {
+    margin: 0 0 0 10px;
+}
+
+.oneui30 .dijitDialogTitleBar { /* outer container for the titlebar of the dialog */
+    padding: 15px 20px;
+	border-bottom:1px solid #111;
+	background: #222428;
+	background:-moz-linear-gradient(top, #424448 0%, #393B3F 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#424448), color-stop(100%,#393B3F));
+}
+
+.oneui30 .dijitDialogTitle { /* typography and styling of the dialog title */
+    font-size: 1.5em;
+    line-height: 1.2;
+	display: block;
+	color:#fff;
+	text-shadow:0 1px 2px #000;
+}
+
+.oneui30 .dijitDialogCloseIcon { /* the default close icon for the dialog */
+    background-image: url("images/ClosePopup32.png");
+    width: 32px;
+    height: 32px;
+	position: absolute;
+    right: -18px;
+    top: -18px;
+    zoom: 1;
+}
+
+.dijit_a11y .dijitDialog .dijitDialogCloseIcon {
+	height: auto;
+	width: auto;
+	right: 15px;
+	top: 5px;	
+}
+
+.oneui30 .dijitDialogCloseIconHover, .oneui30 .dijitDialogCloseIconActive {
+    
+}
+
+/* Tooltip and TooltipDialog */
+.oneui30 .dijitTooltip, .oneui30 .dijitTooltipDialog { /* the outermost dom node, holding the connector and container */
+    background: transparent; /* make the area on the sides of the arrow transparent */
+}
+
+.oneui30 .dijitTooltipDialog {
+    overflow: hidden;
+}
+
+.oneui30 .dijitTooltipAbove, .oneui30 .dijitTooltipBelow {
+    padding: 5px;
+	margin-left: -5px;
+}
+
+.oneui30 .dijitTooltipContainer { /* the part with the text */
+    padding: 1px;
+	background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px #eee;
+    -webkit-box-shadow: 0 2px 5px #eee;
+    -moz-box-shadow: 0 2px 5px #eee;
+}
+
+.dj_ie6 .oneui30 .dijitTooltipContainer {
+    background-image: none;
+}
+
+.oneui30 .dijitTooltipLeft {
+    padding-right: 5px;
+}
+
+.oneui30 .dijitTooltipLeft .dijitTooltipConnector { /* the arrow piece for tooltips to the left of an element, bottom borders aligned */
+    right: 0px;
+    bottom: 3px;
+    background-position: 0px 0%;
+    width: 16px;
+    height: 14px;
+}
+
+.oneui30 .dijitTooltipRight {
+    padding-left: 5px;
+}
+
+.oneui30 .dijitTooltipRight .dijitTooltipConnector { /* the arrow piece for tooltips to the right of an element, bottom borders aligned */
+    left: 0px;
+    bottom: 3px;
+    background-position: -48px 0%;
+    width: 16px;
+    height: 14px;
+}
+
+.oneui30 .dijitDialogUnderlay {
+    background: #000;
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+    zoom: 1;
+}
+
+/* Lotus One UI dialog that controls the entire content area */
+.oneui30 .lotusSimpleDialog .dijitDialogTitleBar {padding:0; border:0;}
+.oneui30 .lotusSimpleDialog .dijitDialogTitle {display:none;}
+.oneui30 .lotusSimpleDialog .dijitDialogCloseIcon {z-index:10000;}
+.oneui30 .lotusSimpleDialog .dijitDialogPaneContent {padding:0; height:auto !important; width:auto !important;} /* !importants needed for Safari */
+
+/* Lotus One UI slim header and cleared content */
+.oneui30 .lotusAltDialogHeader .dijitDialogTitleBar {padding-top:10px; padding-bottom:10px;}
+.oneui30 .lotusAltDialogHeader .dijitDialogPaneContent {padding:0;}

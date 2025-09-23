@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+		<script type="text/javascript">
+			// window.location.href = "/concord/js/util/doh/runner.html?testUrl=/concord/js/concord/tests/module.js&testModule=concord.tests.module";
+			
+		var url = window.location.href;
+		var group = url.match(/group=(.*?)(&|$)/);
+		group = group ? group[1] : "";
+		var files = url.match(/files=(.*?)(&|$)/);
+		files = files ? files[1] : "";
+		var toUrl =  "/docs/js/util/doh/runner.html?registerModulePath=concord,../concord&testModule=concord.tests.iframemodule&group=" + group + "&testFiles=" + files;
+		window.location.href = toUrl;
+			
+		</script>
+</html>
+

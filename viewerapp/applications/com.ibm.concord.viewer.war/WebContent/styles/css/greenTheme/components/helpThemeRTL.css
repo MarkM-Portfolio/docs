@@ -1,0 +1,21 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on August 21 2009. (version: OneUI-2.0.1_20090821-0327)
+these are the styles for help
+companion file is help.css*/
+/*** I N F O   B O X ***/ /*this is used for help and tips*/
+.lotusInfoBox, .portlet-msg{background-color:#fef6ab;border-color:#e2c15a;}
+.lotusInfoBox h3, .portlet-msg h3{color:#b47429;}
+.lotusInfoBox h3 img, .portlet-msg h3 img{border-color:#d79846}
+.lotusInfoBox h3 img:hover, .portlet-msg h3 img:hover, .lotusInfoBox h3 img:focus, .portlet-msg h3 img:focus{border-color:#b8711c}
+.lotusHelp{background-color:#e0e0e0}
+.lotusHelp .lotusInfoBox{border-color:#c5c5c5;background-color:#f0f0f0;background-image:url(../../images/accentBkgd.png)}
+.lotusHelp h3{color:#222}
+
+/*[sprite]*/
+.lotusSpritesOn .lotusHelp .lotusInfoBox{background-image:url(../themeImages/lotusHorzBgSprite-8bit.png);background-position:0 -450px}
+/*[/sprite]*/
+
+/***********************************************************/
+

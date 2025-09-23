@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2013-->
+<toc label="Praca z prezentacjami"
+     topic="text/presentation/presentations_frame.html">
+   <topic label="Praca z prezentacjami" href="text/presentation/presentations_frame.html">
+      <topic label="Tworzenie i przesyłanie prezentacji"
+             href="text/presentation/p_creating_and_importing_a_presentation.html">
+         <topic label="Tworzenie prezentacji"
+                href="text/presentation/p_creating_presentation.html"/>
+         <topic label="Zmienianie domyślnego formatu plików prezentacji"
+                href="text/presentation/p_changing_the_default_file_format.html"/>
+         <topic label="Przesyłanie prezentacji w celu udostępnienia ich do współużytkowania"
+                href="text/presentation/p_uploading_a_file_to_your_file_share.html"/>
+         <topic label="Importowanie istniejących prezentacji"
+                href="text/presentation/p_import_presentation.html"/>
+      </topic>
+      <topic label="Zgodność plików i eksportowanie prezentacji"
+             href="text/presentation/p_file_conversion_and_compatibility.html">
+         <topic label="Formaty plików obsługiwane w komponencie Presentations"
+                href="text/presentation/p_file_formats_that_are_supported_in_presentation.html"/>
+         <topic label="Zapisywanie prezentacji"
+                href="text/presentation/p_saving_presentations.html"/>
+         <topic label="Publikowanie wersji prezentacji"
+                href="text/presentation/p_publish_a_version.html"/>
+         <topic label="Eksportowanie prezentacji do innych formatów plików"
+                href="text/presentation/p_exporting_presentation.html"/>
+      </topic>
+      <topic label="Współużytkowanie prezentacji"
+             href="text/presentation/p_sharing_a_document.html">
+         <topic label="Współużytkowanie prezentacji z innymi osobami lub społecznościami"
+                href="text/presentation/p_sharing_a_file_with_a_person_or_community.html"/>
+         <topic label="Ustawianie poziomów dostępu do prezentacji"
+                href="text/presentation/p_setting_an_access_level_readers_or_authors.html"/>
+      </topic>
+      <topic label="Współpraca nad prezentacjami w czasie rzeczywistym"
+             href="text/presentation/p_collaborating_on_a_document.html">
+         <topic label="Współedytowanie w czasie rzeczywistym w prezentacjach"
+                href="text/presentation/p_real_time_coediting.html">
+            <topic label="Informacje na temat współedytowania w prezentacjach"
+                   href="text/presentation/p_coediting_concept.html"/>
+            <topic label="Współedytowanie z innymi osobami w prezentacjach"
+                   href="text/presentation/p_coediting_with_others.html"/>
+            <topic label="Wyświetlanie zmian wprowadzonych przez osoby edytujące w prezentacjach"
+                   href="text/presentation/p_displaying_changes_with_color_indicator.html"/>
+         </topic>
+         <topic label="Praca grupowa z użyciem komentarzy w prezentacjach"
+                href="text/presentation/p_comments_overview.html">
+            <topic label="Informacje o komentarzach w prezentacjach"
+                   href="text/presentation/p_comments_concept.html"/>
+            <topic label="Tworzenie komentarzy w prezentacjach"
+                   href="text/presentation/p_creating_comments_presentation.html"/>
+            <topic label="Wyświetlanie komentarzy w prezentacjach"
+                   href="text/presentation/p_viewing_comments.html"/>
+            <topic label="Wyszukiwanie komentarzy w prezentacjach"
+                   href="text/presentation/p_searching_comments.html"/>
+         </topic>
+      </topic>
+      <topic label="Formatowanie slajdów" href="text/presentation/p_formatting_slides.html">
+         <topic label="Zmienianie czcionek w prezentacjach"
+                href="text/presentation/p_change_fonts.html"/>
+         <topic label="Wybieranie i przenoszenie obiektów"
+                href="text/presentation/p_selecting_and_moving_objects.html"/>
+         <topic label="Określanie kolejności obiektów"
+                href="text/presentation/P_Arranging_the_objects_order.html"/>
+         <topic label="Dodawanie numeracji lub wypunktowania do slajdów"
+                href="text/presentation/p_adding_numbering_or_bullets.html"/>
+         <topic label="Stosowanie układu slajdu"
+                href="text/presentation/p_setting_slide_layout.html"/>
+         <topic label="Zmienianie stylu wzorcowego"
+                href="text/presentation/p_changing_the_slide_template.html"/>
+      </topic>
+      <topic label="Sprawdzanie pisowni w prezentacjach"
+             href="text/presentation/p_spell_checking_a_presentation.html"/>
+      <topic label="Zapisywanie i drukowanie prezentacji"
+             href="text/presentation/p_saving_and_printing_a_presentation.html">
+         <topic label="Drukowanie prezentacji do plików PDF"
+                href="text/presentation/p_printing_to_pdf.html"/>
+      </topic>
+      <topic label="Praca z obrazami w prezentacjach"
+             href="text/presentation/p_working_with_graphics.html">
+         <topic label="Wstawianie grafiki do prezentacji"
+                href="text/presentation/p_inserting_a_graphic.html"/>
+         <topic label="Przenoszenie obrazów i zmienianie ich wielkości w prezentacjach"
+                href="text/presentation/p_moving_and_resizing_images.html"/>
+         <topic label="Ustawianie właściwości obrazu w prezentacjach"
+                href="text/presentation/p_setting_graphic_properties.html"/>
+      </topic>
+      <topic label="Praca ze slajdami" href="text/presentation/p_slide_show.html">
+         <topic label="Odtwarzanie pokazów slajdów"
+                href="text/presentation/p_playing_the_slide_show.html"/>
+         <topic label="Stosowanie przejść między slajdami"
+                href="text/presentation/p_setting_the_slide_transition.html"/>
+         <topic label="Usuwanie slajdów" href="text/presentation/p_deleting_slides.html"/>
+         <topic label="Dodawanie slajdów" href="text/presentation/p_adding_slides.html"/>
+         <topic label="Przenoszenie slajdów" href="text/presentation/p_moving_slides.html"/>
+         <topic label="Duplikowanie slajdów" href="text/presentation/p_duplicate_slide.html"/>
+      </topic>
+      <topic label="Praca z tabelami w prezentacjach"
+             href="text/presentation/p_working_with_tables.html">
+         <topic label="Tworzenie tabel w prezentacjach"
+                href="text/presentation/p_creating_tables.html"/>
+         <topic label="Dodawanie wierszy i kolumn w prezentacji"
+                href="text/presentation/p_adding_rows_and_columns.html"/>
+         <topic label="Przenoszenie wierszy i kolumn w prezentacjach"
+                href="text/presentation/p_moving_rows_and_columns.html"/>
+         <topic label="Zmienianie wielkości wierszy i kolumn w prezentacji"
+                href="text/presentation/p_resizing_columns.html"/>
+         <topic label="Wyrównywanie tekstu w komórkach"
+                href="text/presentation/p_aligning_text_in_cells.html"/>
+         <topic label="Zmienianie stylów tabel w prezentacjach"
+                href="text/presentation/p_changing_styles.html"/>
+         <topic label="Definiowanie nagłówków tabel w prezentacjach"
+                href="text/presentation/p_defining_headers_for_tables.html"/>
+      </topic>
+      <topic label="Edytowanie notatek prelegenta"
+             href="text/presentation/p_editing_speaker_notes.html"/>
+      <topic label="Prezentacje - krótki przegląd" href="text/presentation/p_quick_ref.html"/>
+      <topic label="Skróty klawiaturowe w prezentacjach"
+             href="text/presentation/p_accessibility_in_presentations.html"/>
+   </topic>
+</toc>

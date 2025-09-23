@@ -1,0 +1,20 @@
+{
+	"server":
+	{
+		"host" : "https://docs10.cn.ibm.com",
+		"context_root": "/viewer",
+		"repositoryId" : "lcfiles",
+		"loginURI" : "/files/j_security_check",
+		"env" : "onpremise",
+		"user":
+		{
+			"id": "docs80",
+			"password": "Conc0rd"
+		}
+	},
+	"client":
+	{
+		"agent": "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/16.0"
+	},
+	"sample_base": "./samples"
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "id" : "1",
+    "display_name" : "test1",
+    "email" : "test1@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test1@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "0",
+    "role_name" : "administrator"
+  },
+  {
+    "id" : "2",
+    "display_name" : "test2",
+    "email" : "test2@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test2@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "3",
+    "display_name" : "test3",
+    "email" : "test3@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test3@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "4",
+    "display_name" : "test4",
+    "email" : "test4@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test4@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "5",
+    "display_name" : "test5",
+    "email" : "test5@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test5@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "6",
+    "display_name" : "test6",
+    "email" : "test6@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test6@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "7",
+    "display_name" : "test7",
+    "email" : "test7@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test7@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "8",
+    "display_name" : "test8",
+    "email" : "test8@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test8@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "9",
+    "display_name" : "test9",
+    "email" : "test9@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test9@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "10",
+    "display_name" : "test10",
+    "email" : "test10@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test10@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "11",
+    "display_name" : "test11",
+    "email" : "test11@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test11@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "12",
+    "display_name" : "test12",
+    "email" : "test12@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test12@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "13",
+    "display_name" : "test13",
+    "email" : "test13@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test13@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "14",
+    "display_name" : "test14",
+    "email" : "test14@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test14@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "15",
+    "display_name" : "test15",
+    "email" : "test15@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test15@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "16",
+    "display_name" : "test16",
+    "email" : "test16@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test16@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "17",
+    "display_name" : "test17",
+    "email" : "test17@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test17@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "18",
+    "display_name" : "test18",
+    "email" : "test18@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test18@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "19",
+    "display_name" : "test19",
+    "email" : "test19@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test19@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  },
+  {
+    "id" : "20",
+    "display_name" : "test20",
+    "email" : "test20@cn.ibm.com",
+    "password" : "passw0rd",
+    "dn" : "test20@cn.ibm.com",
+    "org_id" : "ibm",
+    "customer_id" : "1",
+    "role_id" : "1",
+    "role_name" : "user"
+  }  
+]

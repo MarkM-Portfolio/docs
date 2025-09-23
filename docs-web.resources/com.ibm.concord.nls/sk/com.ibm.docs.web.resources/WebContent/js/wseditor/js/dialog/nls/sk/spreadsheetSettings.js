@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Vyberte miestne nastavenia na formátovanie čísiel, mien, dátumov a časov.",
+	INPUT_INVALID_LOCALENAME: "Neplatný názov miestnych nastavení",
+	INPUT_EMPTY_LOCALENAME: "Vyberte miestne nastavenia.",
+	
+	Spain_Catalan: "Španielsko (Katalánsko)",
+	Denmark: "Dánsko",
+	Germany: "Nemecko",
+	Greek: "Grécko",
+	United_States: "Spojené štáty",
+	United_Kingdom: "Spojené kráľovstvo",
+	Spain: "Španielsko",
+	Finland: "Fínsko",
+	France: "Francúzsko",
+	Italy: "Taliansko",
+	Japan: "Japonsko",
+	Korean: "Južná Kórea",
+	Norway: "Nórsko",
+	Netherlands: "Holandsko",
+	Poland: "Poľsko",
+	Brazil: "Brazília",
+	Portugal: "Portugalsko",
+	Russia: "Rusko",
+	Sweden: "Švédsko",
+	Thailand: "Thajsko",
+	Turkey: "Turecko",
+	China: "Čína",
+	Taiwan_China: "Taiwan (Čína)",
+	Israel: "Izrael"
+})
+

@@ -1,0 +1,137 @@
+{
+	"templates":
+	[
+		{
+			"template":
+			{
+				"id":"default",
+				"title":"default",
+				"description":"default",
+				"type":"template",
+				"file":"/default/default.json",
+				"previewCssClass":"templateDesignGallery templateDesign_default"
+			}
+		},		
+		{
+			"template":
+			{
+				"id":"delicate",
+				"title":"Delicate",
+				"description":"delicate",
+				"type":"template",
+				"file":"/delicate/delicate.json",
+				"previewCssClass":"templateDesignGallery templateDesign_delicate"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"yellowdots",
+				"title":"Yellow Dots",
+				"description":"yellow dots",
+				"type":"template",
+				"file":"/yellowdots/yellowdots.json",
+				"previewCssClass":"templateDesignGallery templateDesign_yellowdots"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"grid",
+				"title":"Grid",
+				"description":"grid",
+				"type":"template",
+				"file":"/grid/grid.json",
+				"previewCssClass":"templateDesignGallery templateDesign_grid"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"diagonal",
+				"title":"Diagonal",
+				"description":"diagonal",
+				"type":"template",
+				"file":"/diagonal/diagonal.json",
+				"previewCssClass":"templateDesignGallery templateDesign_diagonal"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"bluecircles",
+				"title":"Blue Circles",
+				"description":"blue circles",
+				"type":"template",
+				"file":"/bluecircles/bluecircles.json",
+				"previewCssClass":"templateDesignGallery templateDesign_bluecircles"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"block",
+				"title":"Block",
+				"description":"block",
+				"type":"template",
+				"file":"/block/block.json",
+				"previewCssClass":"templateDesignGallery templateDesign_block"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"greenblocks",
+				"title":"Green Blocks",
+				"description":"green blocks",
+				"type":"template",
+				"file":"/greenblocks/greenblocks.json",
+				"previewCssClass":"templateDesignGallery templateDesign_greenblocks"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"transform",
+				"title":"Transform",
+				"description":"transform",
+				"type":"template",
+				"file":"/transform/transform.json",
+				"previewCssClass":"templateDesignGallery templateDesign_transform"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"bluewaves",
+				"title":"Blue Waves",
+				"description":"blue waves",
+				"type":"template",
+				"file":"/bluewaves/bluewaves.json",
+				"previewCssClass":"templateDesignGallery templateDesign_bluewaves"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"orange",
+				"title":"Orange",
+				"description":"orange",
+				"type":"template",
+				"file":"/orange/orange.json",
+				"previewCssClass":"templateDesignGallery templateDesign_orange"
+			}
+		},
+		{
+			"template":
+			{
+				"id":"purpletwist",
+				"title":"Purple Twist",
+				"description":"purple twist",
+				"type":"template",
+				"file":"/purpletwist/purpletwist.json",
+				"previewCssClass":"templateDesignGallery templateDesign_purpletwist"
+			}
+		}
+	]
+}

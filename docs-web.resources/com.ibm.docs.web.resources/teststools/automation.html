@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<title>IBM Docs Automation</title>
+
+
+
+</head>
+
+
+<body>
+<div id="headingDiv">
+<h1>IBM Docs Automation Status</h1>
+
+<a href="" id="jscover_full_coverage" target="_blank">Unit Test Full Coverage Report</a>
+<br>
+<br>
+<a href="" id="spreadsheet_coverage" target="_blank">Spreadsheet Unit Test Coverage Report</a>
+<br>
+<a href="" id="spreadsheet_utlog" target="_blank">Spreadsheet Unit Test log</a>
+<br>
+<br>
+<a href="" id="presentation_coverage" target="_blank">Presentation Unit Test Coverage Report</a>
+<br>
+<a href="" id="presentation_utlog" target="_blank">Presentation Unit Test log</a>
+<br>
+<br>
+<a href="" id="document_coverage" target="_blank">Document Unit Test Coverage Report</a>
+<br>
+<a href="" id="document_utlog" target="_blank">Document Unit Test log</a>
+
+</div>
+
+<script type="text/javascript">
+
+var hostname = location.hostname;
+var staticVersion = "";
+var protocol = location.protocol;
+	
+var xmlHttp;
+
+if(window.ActiveXObject) 
+{
+	xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+else if(window.XMLHttpRequest)
+{
+	xmlHttp = new XMLHttpRequest();
+}
+
+    if (xmlHttp==null){
+        alert('get docs version failed');
+    }
+
+    var url="https://"+hostname+"/docs/version.txt";
+    
+    xmlHttp.open("GET",url,true);
+    xmlHttp.onreadystatechange=setVersion;
+    xmlHttp.send();
+
+    function setVersion(){
+    if(xmlHttp.readyState==1||xmlHttp.readyState==2||xmlHttp.readyState==3){
+                         
+    }
+    if (xmlHttp.readyState==4 && xmlHttp.status==200){
+    	
+    	staticVersion=eval("("+xmlHttp.responseText+")");
+    	
+    	//alert(staticVersion.build_timestamp);
+    	
+    	var reportUrl = protocol+"//"+hostname+"/docs/static/"+staticVersion.build_timestamp;
+    	
+        var jscover_full_coverage = reportUrl +"/" + "jscover-report/jscoverage.html"
+        document.getElementById("jscover_full_coverage").href=jscover_full_coverage;
+
+        
+        var spreadsheet_coverage = reportUrl +"/" + "jscover-report-spreadsheet/jscoverage.html"
+        document.getElementById("spreadsheet_coverage").href=spreadsheet_coverage;
+
+        
+        var spreadsheet_utlog = reportUrl +"/" + "jscover-report-spreadsheet/test_run.log"
+        document.getElementById("spreadsheet_utlog").href=spreadsheet_utlog;
+
+        var presentation_coverage = reportUrl +"/" + "jscover-report-presentation/jscoverage.html"
+        document.getElementById("presentation_coverage").href=presentation_coverage;
+
+        var presentation_utlog = reportUrl +"/" + "jscover-report-presentation/test_run.log"
+        document.getElementById("presentation_utlog").href=presentation_utlog;
+        
+        var document_coverage = reportUrl +"/" + "jscover-report-document/jscoverage.html"
+        document.getElementById("document_coverage").href=document_coverage;
+
+        var document_utlog = reportUrl +"/" + "jscover-report-document/test_run.log"
+        document.getElementById("document_utlog").href=document_utlog;
+
+        //alert(jscoverResultUrl);
+                           
+    }
+}
+
+
+
+</script>
+
+</body>
+</html>

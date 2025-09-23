@@ -1,0 +1,31 @@
+({
+	LOCALE_DESC: "Välj språkmiljö för formatering av tal, valuta, datum och klockslag.",
+	INPUT_INVALID_LOCALENAME: "Namnet på språkmiljön är ogiltigt",
+	INPUT_EMPTY_LOCALENAME: "Välj en språkmiljö.",
+	
+	Spain_Catalan: "Spanien (katalanska)",
+	Denmark: "Danmark",
+	Germany: "Tyskland",
+	Greek: "Grekland",
+	United_States: "USA",
+	United_Kingdom: "Storbritannien ",
+	Spain: "Spanien",
+	Finland: "Finland",
+	France: "Frankrike",
+	Italy: "Italien",
+	Japan: "Japan",
+	Korean: "Sydkorea",
+	Norway: "Norge",
+	Netherlands: "Nederländerna",
+	Poland: "Polen",
+	Brazil: "Brasilien",
+	Portugal: "Portugal",
+	Russia: "Ryssland",
+	Sweden: "Sverige",
+	Thailand: "Thailand",
+	Turkey: "Turkiet",
+	China: "Kina",
+	Taiwan_China: "Taiwan (Kina)",
+	Israel: "Israel"
+})
+

@@ -1,0 +1,19 @@
+<?xml-10 version="1.0" encoding="UTF-8"?>
+  <iw:iwidget id="htmlFragment" xmlns:iw="http://www.ibm.com/iWidget" iScope="com.ibm.mm.builder.htmlFragment">
+    <iw:eventDescription
+         id="displayHtmlEventDescription_id"
+         playloadType="string"
+         lang="en-US"
+         description="This event will take an URL and display the response (HTML) in a frame">
+    </iw:eventDescription>
+    <iw:event id="displayHtml" description="displayHtmlEventDescription_id" handled="true"/>
+    <iw:content mode="view">
+       <![CDATA[
+           <div id="_IWID_htmlFragment_view_confirm" style="display:none;">
+           <span id="_IWID_htmlFragment_view_confirm_text" style="margin-right:10px"></span>
+           <input id="_IWID_htmlFragment_view_confirm_continueButton" type="button" />
+           </div>
+           <iframe class="rootFrame" style="width:100%;min-width:500px; min-height:500px;border:0px;"></iframe> 
+        ]]>
+    </iw:content>
+   </iw:iwidget>

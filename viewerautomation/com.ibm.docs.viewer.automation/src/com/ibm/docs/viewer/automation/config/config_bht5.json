@@ -1,0 +1,26 @@
+{
+	"server":
+	{
+		"host" : "https://apps.collabservsvt3.swg.usma.ibm.com",
+		"context_root" : "/viewer/verse",
+		"repositoryId" : "lcfiles",
+		"loginURI" : "/pkmslogin.form",
+		"env" : "smartcloud",
+		"user":
+		{
+			"id": "1012svt_user1012.bht5_ibm_docs_svt_001@ivthouse.com",
+			"password": "passw0rd"
+		}
+	},
+	"client":
+	{
+		"agent": "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/16.0"
+	},
+	"sample_base": "./samples",
+	"proxy": 
+	{
+		"enable" : "false",
+		"htmlview": "false",
+		"enable_fullviewer": "false"
+	}
+}
